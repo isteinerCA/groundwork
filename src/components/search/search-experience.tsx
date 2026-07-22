@@ -30,10 +30,14 @@ export function SearchExperience({
   programs,
   dataVerifiedAt,
   initialCategory,
+  initialFullyFunded,
+  initialFormat,
 }: {
   programs: Program[];
   dataVerifiedAt: string | null;
   initialCategory?: ProgramCategoryId;
+  initialFullyFunded?: boolean;
+  initialFormat?: import("@/lib/constants/filters").ProgramFormatId;
 }) {
   const validCategory =
     initialCategory &&
@@ -44,6 +48,8 @@ export function SearchExperience({
   const [filters, setFilters] = useState<SearchFilters>({
     ...DEFAULT_SEARCH_FILTERS,
     categories: validCategory ? [validCategory] : [],
+    fullyFundedOnly: initialFullyFunded ?? false,
+    formats: initialFormat ? [initialFormat] : [],
   });
   const [sort, setSort] = useState<SortOption>("selectivity");
   const [gradeError, setGradeError] = useState(false);

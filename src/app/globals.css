@@ -55,3 +55,15 @@ a {
 a:hover {
   color: var(--color-navy);
 }
+
+@media print {
+  header,
+  footer,
+  aside {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+  }
+}

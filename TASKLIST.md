@@ -449,11 +449,13 @@ Per PRD §12:
 | **S1** | Setup + data | Repo, design tokens, CSV import script, seeded DB, 138 programs queryable |
 | **S2** | Search MVP | Landing page, `/search` with chips + cards + flags + sort + zero state |
 | **S3** | Chat + polish | Rule-based chat parser, filter sync, active filter bar, disclaimer UI |
-| **S4** | Auth + pay | Google sign-in, Stripe $49 pass, save gate |
-| **S5** | Workspace | Dashboard, shortlists, notes, status, deadlines |
-| **S6** | Compare + share + export | Compare view, share links, CSV/PDF export |
-| **S7** | Contact + analytics | Contact form, Plausible events |
+| **S4** | Workspace UX | Dashboard, shortlists, notes, status, deadlines (localStorage until auth) |
+| **S5** | Compare + share + export | Compare view, share links, CSV/PDF export |
+| **S6** | Contact + analytics | Contact form, Plausible events |
+| **S7** | Auth + pay | Google sign-in, Stripe $49 pass, migrate workspace to account |
 | **S8** | QA + security + launch | Full PRD §14 pass, pen test, production deploy |
+
+**Note:** S4 (auth/pay) was originally sprint 4 but is deferred until workspace UX (old S5–S6) is validated. Shortlist data uses browser `localStorage` until S7 wires Supabase + entitlements.
 
 ---
 
