@@ -78,7 +78,20 @@ When included:
 
 Implementation: `src/lib/data/matches-price-filter.ts`
 
-## Gotcha flags (CSV → JSON)
+## Gotcha flags (curated layer)
+
+PRD §4.2 / §7.3 flags are maintained in `data/seed/flags.json` and merged onto programs at import by program name match. Each flag requires `sourceCitation` and `sourceDate`.
+
+| Program match | Flags |
+|---|---|
+| All **COSMOS** rows (6 campuses) | CA residents only; $200 non-refundable deposit |
+| **MIT Research Science Institute (RSI)** | ~4% acceptance; PSAT Math 740+ floor; fully funded |
+| **Harvard Secondary School Program (SSP)** | SEVP certification terminated May 2025; 55% campus crime increase 2022–2023 |
+| **Interlochen Arts Camp** | Abuse allegations; external investigation; Epstein donor 1990–2003 |
+| **Outward Bound** | Mandatory 24–72 hr solo wilderness camping |
+| **Overland Summers** | Staff pay $2,000–3,000/summer; turnover risk |
+
+Additional flags (e.g. Wake Forest deposit) may be added as research warrants. CSV `Flags` column JSON merges with and can override curated flags by `id`.
 
 Each flag object:
 

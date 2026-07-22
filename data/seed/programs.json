@@ -41,8 +41,8 @@
           "id": "cosmos-ca-residency",
           "type": "residency",
           "title": "California residents only",
-          "body": "COSMOS accepts students completing grades 8\u201312 who are enrolled in a California high school.",
-          "sourceCitation": "COSMOS statewide eligibility requirements",
+          "body": "COSMOS accepts students completing grades 8\u201312 who are enrolled in a California high school. Out-of-state students are not eligible.",
+          "sourceCitation": "COSMOS statewide eligibility requirements (UC COSMOS)",
           "sourceDate": "2026-01-01",
           "severity": "warning"
         },
@@ -50,8 +50,8 @@
           "id": "cosmos-deposit",
           "type": "deposit",
           "title": "$200 deposit non-refundable",
-          "body": "A $200 deposit is required and is non-refundable, including for students receiving full financial aid.",
-          "sourceCitation": "COSMOS program fee policy",
+          "body": "A $200 deposit is required to hold a spot and is non-refundable \u2014 including for students who receive full financial aid.",
+          "sourceCitation": "COSMOS program fee and deposit policy",
           "sourceDate": "2026-01-01",
           "severity": "warning"
         }
@@ -97,8 +97,8 @@
           "id": "cosmos-ca-residency",
           "type": "residency",
           "title": "California residents only",
-          "body": "COSMOS accepts students completing grades 8\u201312 who are enrolled in a California high school.",
-          "sourceCitation": "COSMOS statewide eligibility requirements",
+          "body": "COSMOS accepts students completing grades 8\u201312 who are enrolled in a California high school. Out-of-state students are not eligible.",
+          "sourceCitation": "COSMOS statewide eligibility requirements (UC COSMOS)",
           "sourceDate": "2026-01-01",
           "severity": "warning"
         },
@@ -106,8 +106,8 @@
           "id": "cosmos-deposit",
           "type": "deposit",
           "title": "$200 deposit non-refundable",
-          "body": "A $200 deposit is required and is non-refundable, including for students receiving full financial aid.",
-          "sourceCitation": "COSMOS program fee policy",
+          "body": "A $200 deposit is required to hold a spot and is non-refundable \u2014 including for students who receive full financial aid.",
+          "sourceCitation": "COSMOS program fee and deposit policy",
           "sourceDate": "2026-01-01",
           "severity": "warning"
         }
@@ -153,8 +153,8 @@
           "id": "cosmos-ca-residency",
           "type": "residency",
           "title": "California residents only",
-          "body": "COSMOS accepts students completing grades 8\u201312 who are enrolled in a California high school.",
-          "sourceCitation": "COSMOS statewide eligibility requirements",
+          "body": "COSMOS accepts students completing grades 8\u201312 who are enrolled in a California high school. Out-of-state students are not eligible.",
+          "sourceCitation": "COSMOS statewide eligibility requirements (UC COSMOS)",
           "sourceDate": "2026-01-01",
           "severity": "warning"
         },
@@ -162,8 +162,8 @@
           "id": "cosmos-deposit",
           "type": "deposit",
           "title": "$200 deposit non-refundable",
-          "body": "A $200 deposit is required and is non-refundable, including for students receiving full financial aid.",
-          "sourceCitation": "COSMOS program fee policy",
+          "body": "A $200 deposit is required to hold a spot and is non-refundable \u2014 including for students who receive full financial aid.",
+          "sourceCitation": "COSMOS program fee and deposit policy",
           "sourceDate": "2026-01-01",
           "severity": "warning"
         }
@@ -209,8 +209,8 @@
           "id": "cosmos-ca-residency",
           "type": "residency",
           "title": "California residents only",
-          "body": "COSMOS accepts students completing grades 8\u201312 who are enrolled in a California high school.",
-          "sourceCitation": "COSMOS statewide eligibility requirements",
+          "body": "COSMOS accepts students completing grades 8\u201312 who are enrolled in a California high school. Out-of-state students are not eligible.",
+          "sourceCitation": "COSMOS statewide eligibility requirements (UC COSMOS)",
           "sourceDate": "2026-01-01",
           "severity": "warning"
         },
@@ -218,8 +218,8 @@
           "id": "cosmos-deposit",
           "type": "deposit",
           "title": "$200 deposit non-refundable",
-          "body": "A $200 deposit is required and is non-refundable, including for students receiving full financial aid.",
-          "sourceCitation": "COSMOS program fee policy",
+          "body": "A $200 deposit is required to hold a spot and is non-refundable \u2014 including for students who receive full financial aid.",
+          "sourceCitation": "COSMOS program fee and deposit policy",
           "sourceDate": "2026-01-01",
           "severity": "warning"
         }
@@ -265,8 +265,8 @@
           "id": "cosmos-ca-residency",
           "type": "residency",
           "title": "California residents only",
-          "body": "COSMOS accepts students completing grades 8\u201312 who are enrolled in a California high school.",
-          "sourceCitation": "COSMOS statewide eligibility requirements",
+          "body": "COSMOS accepts students completing grades 8\u201312 who are enrolled in a California high school. Out-of-state students are not eligible.",
+          "sourceCitation": "COSMOS statewide eligibility requirements (UC COSMOS)",
           "sourceDate": "2026-01-01",
           "severity": "warning"
         },
@@ -274,8 +274,8 @@
           "id": "cosmos-deposit",
           "type": "deposit",
           "title": "$200 deposit non-refundable",
-          "body": "A $200 deposit is required and is non-refundable, including for students receiving full financial aid.",
-          "sourceCitation": "COSMOS program fee policy",
+          "body": "A $200 deposit is required to hold a spot and is non-refundable \u2014 including for students who receive full financial aid.",
+          "sourceCitation": "COSMOS program fee and deposit policy",
           "sourceDate": "2026-01-01",
           "severity": "warning"
         }
@@ -321,8 +321,8 @@
           "id": "cosmos-ca-residency",
           "type": "residency",
           "title": "California residents only",
-          "body": "COSMOS accepts students completing grades 8\u201312 who are enrolled in a California high school.",
-          "sourceCitation": "COSMOS statewide eligibility requirements",
+          "body": "COSMOS accepts students completing grades 8\u201312 who are enrolled in a California high school. Out-of-state students are not eligible.",
+          "sourceCitation": "COSMOS statewide eligibility requirements (UC COSMOS)",
           "sourceDate": "2026-01-01",
           "severity": "warning"
         },
@@ -330,8 +330,8 @@
           "id": "cosmos-deposit",
           "type": "deposit",
           "title": "$200 deposit non-refundable",
-          "body": "A $200 deposit is required and is non-refundable, including for students receiving full financial aid.",
-          "sourceCitation": "COSMOS program fee policy",
+          "body": "A $200 deposit is required to hold a spot and is non-refundable \u2014 including for students who receive full financial aid.",
+          "sourceCitation": "COSMOS program fee and deposit policy",
           "sourceDate": "2026-01-01",
           "severity": "warning"
         }
@@ -880,8 +880,26 @@
           "id": "rsi-selectivity",
           "type": "selectivity",
           "title": "~4% acceptance rate",
-          "body": "MIT RSI is among the most selective pre-college programs. Strong math and science preparation is expected.",
-          "sourceCitation": "RSI program statistics",
+          "body": "MIT RSI accepts approximately 4% of applicants globally. Admission is among the most competitive of any U.S. pre-college program.",
+          "sourceCitation": "Center for Excellence in Education / RSI program materials",
+          "sourceDate": "2026-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "rsi-psat-floor",
+          "type": "selectivity",
+          "title": "PSAT Math 740+ practical floor",
+          "body": "While not a published cutoff, successful applicants typically score PSAT Math 740 or higher. Strong math and science preparation is effectively required.",
+          "sourceCitation": "RSI applicant guidance and alumni admissions patterns",
+          "sourceDate": "2026-01-01",
+          "severity": "info"
+        },
+        {
+          "id": "rsi-fully-funded",
+          "type": "selectivity",
+          "title": "Fully funded for accepted students",
+          "body": "All accepted RSI students attend tuition-free. Room, board, and program costs are covered for admitted participants.",
+          "sourceCitation": "RSI program fee policy (CEE)",
           "sourceDate": "2026-01-01",
           "severity": "info"
         }
@@ -1930,10 +1948,19 @@
         {
           "id": "harvard-ssp-sevp",
           "type": "safety",
-          "title": "SEVP certification change",
-          "body": "Verify current visa and international student enrollment status directly with Harvard before applying.",
-          "sourceCitation": "DHS SEVP certification announcements, May 2025",
+          "title": "SEVP certification terminated",
+          "body": "Harvard SSP's SEVP certification was terminated in May 2025. International students must verify current visa and enrollment eligibility directly with Harvard before applying.",
+          "sourceCitation": "U.S. Department of Homeland Security SEVP announcement, May 2025",
           "sourceDate": "2025-05-01",
+          "severity": "warning"
+        },
+        {
+          "id": "harvard-ssp-crime",
+          "type": "safety",
+          "title": "55% campus crime rate increase (2022\u20132023)",
+          "body": "Harvard reported a 55% increase in campus crime between 2022 and 2023. Review the university's Annual Security Report when evaluating a residential summer enrollment.",
+          "sourceCitation": "Harvard University Annual Security Report (Clery Act)",
+          "sourceDate": "2024-01-01",
           "severity": "warning"
         }
       ],
@@ -3955,11 +3982,11 @@
       "websiteUrl": "https://www.interlochen.org/",
       "flags": [
         {
-          "id": "interlochen-history",
+          "id": "interlochen-safety-history",
           "type": "safety",
-          "title": "Historical abuse allegations",
-          "body": "Interlochen has faced historical abuse allegations and an external investigation. Review recent safety reporting before enrolling.",
-          "sourceCitation": "Public reporting and institutional disclosures",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
           "sourceDate": "2024-01-01",
           "severity": "warning"
         }
@@ -4146,10 +4173,10 @@
           "id": "outward-bound-solo",
           "type": "physical",
           "title": "Mandatory solo wilderness camping",
-          "body": "Outward Bound courses include a required solo camping component, typically 24\u201372 hours.",
-          "sourceCitation": "Outward Bound course structure",
+          "body": "Outward Bound courses require a solo wilderness camping period, typically 24\u201372 hours, as a core part of the curriculum.",
+          "sourceCitation": "Outward Bound USA course structure and participant requirements",
           "sourceDate": "2026-01-01",
-          "severity": "info"
+          "severity": "warning"
         }
       ],
       "dataVerifiedAt": "2026-07-22"
@@ -4191,9 +4218,9 @@
         {
           "id": "overland-staff-pay",
           "type": "turnover",
-          "title": "Staff compensation note",
-          "body": "Overland staff historically earn modest seasonal pay ($2,000\u20133,000/summer), which may affect staff turnover.",
-          "sourceCitation": "Seasonal outdoor education industry reporting",
+          "title": "Low seasonal staff pay",
+          "body": "Overland Summers staff typically earn $2,000\u20133,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
+          "sourceCitation": "Seasonal outdoor education compensation reporting",
           "sourceDate": "2025-01-01",
           "severity": "info"
         }
