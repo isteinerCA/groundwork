@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit",
     "prebuild": "python3 scripts/generate_seed.py",
     "import:programs": "tsx scripts/import-programs.ts",
-    "verify:data": "tsx scripts/verify-normalization.ts"
+    "verify:data": "tsx scripts/verify-normalization.ts",
+    "verify:chat": "tsx scripts/verify-chat-parser.ts"
   },
   "dependencies": {
     "next": "^15.5.0",
