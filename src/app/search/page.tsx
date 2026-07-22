@@ -1,4 +1,6 @@
 import { SearchExperience } from "@/components/search/search-experience";
+import { SiteFooter } from "@/components/layout/site-footer";
+import { SiteHeader } from "@/components/layout/site-header";
 import { getDataVerifiedAt, getPrograms } from "@/lib/programs";
 import type { ProgramCategoryId } from "@/lib/constants/categories";
 
@@ -13,10 +15,14 @@ export default async function SearchPage({
   const initialCategory = params.category as ProgramCategoryId | undefined;
 
   return (
-    <SearchExperience
-      programs={programs}
-      dataVerifiedAt={dataVerifiedAt}
-      initialCategory={initialCategory}
-    />
+    <>
+      <SiteHeader />
+      <SearchExperience
+        programs={programs}
+        dataVerifiedAt={dataVerifiedAt}
+        initialCategory={initialCategory}
+      />
+      <SiteFooter />
+    </>
   );
 }
