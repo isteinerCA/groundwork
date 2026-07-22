@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ADMISSION_TYPE_BY_ID } from "@/lib/constants/admission-types";
 import { PROGRAM_CATEGORIES, type ProgramCategoryId } from "@/lib/constants/categories";
+import { useWorkspace } from "@/components/workspace/workspace-provider";
 import type { Program } from "@/lib/types/program";
 
 function categoryLabel(id: ProgramCategoryId): string {
@@ -11,6 +12,8 @@ function categoryLabel(id: ProgramCategoryId): string {
 
 export function ProgramCard({ program }: { program: Program }) {
   const admission = ADMISSION_TYPE_BY_ID[program.admissionType];
+  const { isSaved, toggleSave, hydrated } = useWorkspace();
+  const saved = hydrated && isSaved(program.id);
 
   return (
     <article className="rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[var(--shadow-card)]">
@@ -50,6 +53,20 @@ export function ProgramCard({ program }: { program: Program }) {
             <p className="mt-1 text-sm text-[var(--color-text-muted)]">{program.trackDetail}</p>
           )}
         </div>
+        <button
+          type="button"
+          onClick={() => toggleSave(program.id)}
+          aria-pressed={saved}
+          aria-label={saved ? "Remove from shortlist" : "Save to shortlist"}
+          title={saved ? "Saved — view on dashboard" : "Save to shortlist"}
+          className={`shrink-0 rounded-full border p-2 text-lg leading-none transition ${
+            saved
+              ? "border-red-200 bg-red-50 text-red-600"
+              : "border-[var(--color-border)] text-[var(--color-text-muted)] hover:border-red-200 hover:text-red-500"
+          }`}
+        >
+          {saved ? "♥" : "♡"}
+        </button>
       </div>
 
       <dl className="mt-4 grid gap-2 text-sm sm:grid-cols-2">
@@ -116,6 +133,12 @@ export function ProgramCard({ program }: { program: Program }) {
         >
           Visit program website ↗
         </a>
+        <Link
+          href="/dashboard"
+          className="inline-flex items-center px-2 py-2 text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-navy)]"
+        >
+          My shortlist
+        </Link>
         <Link
           href={`/contact?program=${encodeURIComponent(program.name)}`}
           className="inline-flex items-center px-2 py-2 text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-navy)]"

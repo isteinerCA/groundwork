@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Lora, Source_Sans_3 } from "next/font/google";
+import { AppProviders } from "@/components/workspace/app-providers";
 import "./globals.css";
 
 const lora = Lora({
@@ -27,7 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${lora.variable} ${sourceSans.variable}`}>
-      <body className="min-h-screen antialiased">{children}</body>
+      <body className="min-h-screen antialiased">
+        <AppProviders>{children}</AppProviders>
+      </body>
     </html>
   );
 }
