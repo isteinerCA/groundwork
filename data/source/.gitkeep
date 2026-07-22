@@ -1,0 +1,5 @@
+# Place final CSV here before running: npm run import:programs
+
+Expected filename: `summer-programs.csv`
+
+See docs/DATA.md for column schema.

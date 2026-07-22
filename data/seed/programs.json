@@ -1,0 +1,6 @@
+{
+  "verifiedAt": null,
+  "count": 0,
+  "programs": [],
+  "_note": "Run npm run import:programs after placing CSV in data/source/"
+}
