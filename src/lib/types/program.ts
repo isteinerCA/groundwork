@@ -40,7 +40,8 @@ export interface Program {
   admissionType: AdmissionTypeId;
   admissionDisplay: string;
 
-  format: ProgramFormatId;
+  formatDisplay: string;
+  formatTags: ProgramFormatId[];
   durationBucket: DurationBucketId;
   lengthDisplay: string;
   datesDisplay: string;
@@ -96,21 +97,21 @@ export const DEFAULT_SEARCH_FILTERS: SearchFilters = {
   excludeUnknownPrice: false,
 };
 
-/** Expected columns in the final CSV (gotcha flags may be JSON column or separate sheet) */
+/** Expected columns in the program CSV */
 export interface ProgramCsvRow {
   "Program Name": string;
   "Primary Category": string;
   "Secondary Tags"?: string;
-  "Any additional details about specific track"?: string;
+  "Track/Session"?: string;
+  Format: string;
   Grades: string;
   "Admission Type": string;
   Length: string;
   "Dates 2026"?: string;
   Location: string;
-  Format: string;
   Credit: string;
   Price: string;
   URL: string;
-  /** JSON array or pipe-delimited — finalize when CSV is ready */
+  /** Optional JSON array of ProgramFlag objects */
   Flags?: string;
 }

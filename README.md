@@ -42,14 +42,10 @@ When a user applies a price filter, programs with **unknown price** (`Contact pr
 
 See [docs/DATA.md](./docs/DATA.md) for full details.
 
-## Import programs (when CSV is ready)
-
-```bash
-# Copy final CSV to:
-#   data/source/summer-programs.csv
-npm run import:programs
-# → data/seed/programs.json
-```
+# After updating CSV:
+#   python3 scripts/generate_seed.py
+#   — or, with Node installed:
+#   npm run import:programs
 
 ## Project structure
 
