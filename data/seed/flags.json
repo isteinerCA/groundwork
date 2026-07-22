@@ -1,0 +1,109 @@
+[
+  {
+    "match": { "nameIncludes": "COSMOS" },
+    "flags": [
+      {
+        "id": "cosmos-ca-residency",
+        "type": "residency",
+        "title": "California residents only",
+        "body": "COSMOS accepts students completing grades 8–12 who are enrolled in a California high school.",
+        "sourceCitation": "COSMOS statewide eligibility requirements",
+        "sourceDate": "2026-01-01",
+        "severity": "warning"
+      },
+      {
+        "id": "cosmos-deposit",
+        "type": "deposit",
+        "title": "$200 deposit non-refundable",
+        "body": "A $200 deposit is required and is non-refundable, including for students receiving full financial aid.",
+        "sourceCitation": "COSMOS program fee policy",
+        "sourceDate": "2026-01-01",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": { "nameIncludes": "MIT Research Science Institute" },
+    "flags": [
+      {
+        "id": "rsi-selectivity",
+        "type": "selectivity",
+        "title": "~4% acceptance rate",
+        "body": "MIT RSI is among the most selective pre-college programs. Strong math and science preparation is expected.",
+        "sourceCitation": "RSI program statistics",
+        "sourceDate": "2026-01-01",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": { "nameIncludes": "Harvard Secondary School Program" },
+    "flags": [
+      {
+        "id": "harvard-ssp-sevp",
+        "type": "safety",
+        "title": "SEVP certification change",
+        "body": "Verify current visa and international student enrollment status directly with Harvard before applying.",
+        "sourceCitation": "DHS SEVP certification announcements, May 2025",
+        "sourceDate": "2025-05-01",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": { "nameIncludes": "Interlochen" },
+    "flags": [
+      {
+        "id": "interlochen-history",
+        "type": "safety",
+        "title": "Historical abuse allegations",
+        "body": "Interlochen has faced historical abuse allegations and an external investigation. Review recent safety reporting before enrolling.",
+        "sourceCitation": "Public reporting and institutional disclosures",
+        "sourceDate": "2024-01-01",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": { "nameIncludes": "Outward Bound" },
+    "flags": [
+      {
+        "id": "outward-bound-solo",
+        "type": "physical",
+        "title": "Mandatory solo wilderness camping",
+        "body": "Outward Bound courses include a required solo camping component, typically 24–72 hours.",
+        "sourceCitation": "Outward Bound course structure",
+        "sourceDate": "2026-01-01",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": { "nameIncludes": "Overland Summers" },
+    "flags": [
+      {
+        "id": "overland-staff-pay",
+        "type": "turnover",
+        "title": "Staff compensation note",
+        "body": "Overland staff historically earn modest seasonal pay ($2,000–3,000/summer), which may affect staff turnover.",
+        "sourceCitation": "Seasonal outdoor education industry reporting",
+        "sourceDate": "2025-01-01",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": { "nameIncludes": "Wake Forest Summer Immersion" },
+    "flags": [
+      {
+        "id": "wake-forest-deposit",
+        "type": "deposit",
+        "title": "$550 non-refundable deposit",
+        "body": "Wake Forest requires a $550 non-refundable deposit in addition to tuition.",
+        "sourceCitation": "Wake Forest Summer Immersion fee schedule",
+        "sourceDate": "2026-01-01",
+        "severity": "warning"
+      }
+    ]
+  }
+]
