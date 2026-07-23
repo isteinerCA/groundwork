@@ -8,6 +8,7 @@ interface ChipProps {
   onClick?: () => void;
   variant?: "default" | "green" | "amber" | "red";
   disabled?: boolean;
+  compact?: boolean;
 }
 
 const variantClasses = {
@@ -23,6 +24,7 @@ export function Chip({
   onClick,
   variant = "default",
   disabled,
+  compact,
 }: ChipProps) {
   return (
     <button
@@ -30,7 +32,8 @@ export function Chip({
       disabled={disabled}
       onClick={onClick}
       className={cn(
-        "rounded-full border px-3 py-1.5 text-sm transition-colors",
+        "shrink-0 rounded-full border transition-colors",
+        compact ? "px-2 py-1 text-xs" : "px-3 py-1.5 text-sm",
         selected
           ? "border-[var(--color-navy)] bg-[var(--color-navy)] text-white"
           : variantClasses[variant],

@@ -187,3 +187,19 @@
     background: white;
   }
 }
+
+@keyframes assistant-hint-pulse {
+  0%,
+  100% {
+    background-color: var(--color-sage-soft);
+    border-color: var(--color-sage);
+  }
+  50% {
+    background-color: color-mix(in srgb, var(--color-sage) 35%, white);
+    border-color: var(--color-navy-light);
+  }
+}
+
+.assistant-hint-pulse {
+  animation: assistant-hint-pulse 1.2s ease-in-out 2;
+}

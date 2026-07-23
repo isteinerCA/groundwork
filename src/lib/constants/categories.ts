@@ -43,7 +43,7 @@ export const PROGRAM_CATEGORIES = [
     id: "outdoor-wilderness",
     csvValue: "Outdoor/Wilderness",
     label: "Wilderness & Adventure",
-    description: "Outdoor leadership, expeditions, survival & exploration",
+    description: "Outdoor leadership, expeditions & exploration",
   },
   {
     id: "cultural-exchange",
@@ -78,6 +78,22 @@ export const PROGRAM_CATEGORIES = [
 ] as const;
 
 export type ProgramCategoryId = (typeof PROGRAM_CATEGORIES)[number]["id"];
+
+/** Homepage grid order — longer labels (wilderness, pre-med) on the bottom row. */
+export const HOME_CATEGORY_ORDER: ProgramCategoryId[] = [
+  "artificial-intelligence",
+  "stem-engineering",
+  "college-credit-pre-college",
+  "marine-science",
+  "writing-humanities",
+  "traditional-camp",
+  "cultural-exchange",
+  "leadership-gifted",
+  "mathematics",
+  "arts",
+  "outdoor-wilderness",
+  "biomedical",
+];
 
 export const CATEGORY_BY_CSV_VALUE = Object.fromEntries(
   PROGRAM_CATEGORIES.map((c) => [c.csvValue, c]),

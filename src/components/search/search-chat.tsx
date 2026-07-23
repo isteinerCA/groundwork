@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { btnPrimary } from "@/components/ui/button-styles";
 import { logChatEvent } from "@/lib/chat-analytics";
 import { trackEvent } from "@/lib/analytics";
@@ -42,6 +42,33 @@ export function SearchChat({
 
   const context: ChatParserContext = { filters, resultCount };
   const openingHint = getChatOpeningPrompt(context);
+
+  const refreshKey = useMemo(
+    () =>
+      JSON.stringify({
+        grades: filters.gradesCompleted,
+        categories: filters.categories,
+        admissionTypes: filters.admissionTypes,
+        formats: filters.formats,
+        durationBuckets: filters.durationBuckets,
+        priceFilter: filters.priceFilter,
+        collegeCreditOnly: filters.collegeCreditOnly,
+        fullyFundedOnly: filters.fullyFundedOnly,
+        usOnly: filters.usOnly,
+        excludeUnknownPrice: filters.excludeUnknownPrice,
+        resultCount,
+      }),
+    [filters, resultCount],
+  );
+
+  const [hintPulse, setHintPulse] = useState(false);
+
+  useEffect(() => {
+    if (filters.gradesCompleted.length === 0) return;
+    setHintPulse(true);
+    const timer = window.setTimeout(() => setHintPulse(false), 2600);
+    return () => window.clearTimeout(timer);
+  }, [refreshKey, filters.gradesCompleted.length]);
 
   useEffect(() => {
     listRef.current?.scrollTo({ top: listRef.current.scrollHeight, behavior: "smooth" });
@@ -86,12 +113,20 @@ export function SearchChat({
   };
 
   return (
-    <aside className={embedded ? undefined : "lg:sticky lg:top-4 lg:self-start"}>
+    <aside id="search-assistant" className={embedded ? undefined : "lg:sticky lg:top-4 lg:self-start"}>
       <div className="overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]">
         <div className="flex items-center justify-between border-b border-[var(--color-border)] bg-[var(--color-parchment-dark)]/40 px-4 py-3">
-          <div>
+          <div className="min-w-0 flex-1">
             <h2 className="text-base text-[var(--color-navy)]">Search assistant</h2>
-            <p className="text-xs text-[var(--color-text-muted)]">{openingHint}</p>
+            <p
+              className={`mt-1 rounded-[var(--radius-sm)] border border-transparent px-1 py-0.5 text-xs transition-colors ${
+                hintPulse
+                  ? "assistant-hint-pulse border-[var(--color-sage)] font-semibold text-[var(--color-navy)]"
+                  : "text-[var(--color-text-muted)]"
+              }`}
+            >
+              {openingHint}
+            </p>
           </div>
           <button
             type="button"

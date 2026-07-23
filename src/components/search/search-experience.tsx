@@ -12,12 +12,13 @@ import { PROGRAM_CATEGORIES, type ProgramCategoryId } from "@/lib/constants/cate
 import {
   DURATION_BUCKETS,
   GRADE_CHIPS,
-  PRICE_FILTERS,
+  PRICE_FILTER_OPTIONS,
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
 import { filterPrograms, sortPrograms, type SortOption } from "@/lib/data/filter-programs";
 import { btnPrimary } from "@/components/ui/button-styles";
 import { summarizeSearchFilters, trackEvent } from "@/lib/analytics";
+import { getChatOpeningPrompt } from "@/lib/chat-parser";
 import { loadLastSearchFilters, saveLastSearchFilters } from "@/lib/search/last-filters";
 import type { Program, SearchFilters } from "@/lib/types/program";
 import { DEFAULT_SEARCH_FILTERS } from "@/lib/types/program";
@@ -36,6 +37,10 @@ function hasUrlSeed(
   initialFormat?: import("@/lib/constants/filters").ProgramFormatId,
 ): boolean {
   return Boolean(initialCategory || initialFullyFunded || initialFormat);
+}
+
+function scrollToSearchAssistant() {
+  document.getElementById("search-assistant")?.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
 export function SearchExperience({
@@ -82,6 +87,29 @@ export function SearchExperience({
     if (filters.gradesCompleted.length === 0) return [];
     return sortPrograms(filterPrograms(programs, filters), sort);
   }, [programs, filters, sort]);
+
+  const assistantHint = useMemo(
+    () => getChatOpeningPrompt({ filters, resultCount: results.length }),
+    [filters, results.length],
+  );
+
+  const assistantRefreshKey = useMemo(
+    () =>
+      JSON.stringify({
+        grades: filters.gradesCompleted,
+        categories: filters.categories,
+        admissionTypes: filters.admissionTypes,
+        formats: filters.formats,
+        durationBuckets: filters.durationBuckets,
+        priceFilter: filters.priceFilter,
+        collegeCreditOnly: filters.collegeCreditOnly,
+        fullyFundedOnly: filters.fullyFundedOnly,
+        usOnly: filters.usOnly,
+        excludeUnknownPrice: filters.excludeUnknownPrice,
+        resultCount: results.length,
+      }),
+    [filters, results.length],
+  );
 
   const runSearch = () => {
     if (filters.gradesCompleted.length === 0) {
@@ -146,10 +174,11 @@ export function SearchExperience({
             <h2 className="text-lg text-[var(--color-navy)]">
               What grade did your child just complete? <span className="text-red-600">*</span>
             </h2>
-            <div className="mt-3 flex flex-wrap gap-2">
+            <div className="mt-3 flex flex-nowrap gap-1.5 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               {GRADE_CHIPS.map((grade) => (
                 <Chip
                   key={grade}
+                  compact
                   label={`${grade}th`}
                   selected={filters.gradesCompleted.includes(grade)}
                   onClick={() =>
@@ -238,13 +267,18 @@ export function SearchExperience({
                 ))}
               </FilterGroup>
 
-              <FilterGroup title="Max price">
-                {PRICE_FILTERS.map((p) => (
+              <FilterGroup title="Max price" singleRow>
+                {PRICE_FILTER_OPTIONS.map((p) => (
                   <Chip
                     key={p.id}
+                    compact
                     label={p.label}
                     selected={filters.priceFilter === p.id}
-                    onClick={() => update({ priceFilter: p.id })}
+                    onClick={() =>
+                      update({
+                        priceFilter: filters.priceFilter === p.id ? "any" : p.id,
+                      })
+                    }
                   />
                 ))}
               </FilterGroup>
@@ -304,7 +338,15 @@ export function SearchExperience({
         </aside>
 
         <div className="min-w-0">
-          <ActiveFilterBar filters={filters} onRemove={update} onClearAll={clearAll} />
+          <ActiveFilterBar
+            filters={filters}
+            onRemove={update}
+            onClearAll={clearAll}
+            assistantHint={assistantHint}
+            onScrollToAssistant={scrollToSearchAssistant}
+            showAssistantTip={filters.gradesCompleted.length > 0}
+            assistantRefreshKey={assistantRefreshKey}
+          />
 
           {hasActiveFilters && filters.gradesCompleted.length > 0 && (
             <div className="mt-4 flex flex-wrap items-center gap-2 text-sm">
@@ -355,11 +397,27 @@ export function SearchExperience({
   );
 }
 
-function FilterGroup({ title, children }: { title: string; children: ReactNode }) {
+function FilterGroup({
+  title,
+  children,
+  singleRow,
+}: {
+  title: string;
+  children: ReactNode;
+  singleRow?: boolean;
+}) {
   return (
     <div>
       <h3 className="mb-2 text-sm font-medium text-[var(--color-text-muted)]">{title}</h3>
-      <div className="flex flex-wrap gap-2">{children}</div>
+      <div
+        className={
+          singleRow
+            ? "flex flex-nowrap gap-1.5 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            : "flex flex-wrap gap-2"
+        }
+      >
+        {children}
+      </div>
     </div>
   );
 }

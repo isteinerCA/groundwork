@@ -22,6 +22,9 @@ export const PRICE_FILTERS = [
   { id: "10k_plus", label: "$10k+", min: 10000 },
 ] as const;
 
+/** Price chips shown in the UI — "any" is the default when none selected. */
+export const PRICE_FILTER_OPTIONS = PRICE_FILTERS.filter((p) => p.id !== "any");
+
 export type PriceFilterId = (typeof PRICE_FILTERS)[number]["id"];
 
 /**
