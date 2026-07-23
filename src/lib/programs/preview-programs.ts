@@ -45,6 +45,9 @@ export function getPreviewPrograms(programs: Program[], limit = 3): Program[] {
   return picked;
 }
 
-export function formatProgramCatalogLabel(count: number): string {
-  return `${count} curated programs`;
+/** Marketing-facing catalog size (rounded, stable across imports). */
+export const MARKETING_PROGRAM_COUNT_LABEL = "140+";
+
+export function formatProgramCatalogLabel(_count?: number): string {
+  return `${MARKETING_PROGRAM_COUNT_LABEL} curated programs`;
 }

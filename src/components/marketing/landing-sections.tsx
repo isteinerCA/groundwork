@@ -5,15 +5,19 @@ import { ButtonLink, SectionEyebrow } from "@/components/ui/button-link";
 import { btnOutlineOnDark } from "@/components/ui/button-styles";
 import { CategoryIcon } from "@/components/icons/category-icons";
 import { HOME_CATEGORY_ORDER, PROGRAM_CATEGORIES } from "@/lib/constants/categories";
-import { formatProgramCatalogLabel } from "@/lib/programs/preview-programs";
+import {
+  formatProgramCatalogLabel,
+  MARKETING_PROGRAM_COUNT_LABEL,
+} from "@/lib/programs/preview-programs";
 import type { Program } from "@/lib/types/program";
 
 export function LandingHero({
-  programCount,
   previewPrograms,
+  previewResultCount,
 }: {
-  programCount: number;
   previewPrograms: Program[];
+  /** Shown in the hero search mockup — e.g. programs matching sample grade filter. */
+  previewResultCount: number;
 }) {
   return (
     <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-20">
@@ -25,8 +29,9 @@ export function LandingHero({
           here.
         </h1>
         <p className="text-lg font-medium leading-relaxed text-[var(--color-navy)]">
-          Compare {programCount} curated summer programs by grade, budget, and selectivity — with
-          sourced gotchas on every card — and build a shortlist in about 90 seconds, free.
+          Compare {MARKETING_PROGRAM_COUNT_LABEL} curated summer programs by grade, budget, and
+          selectivity — with sourced gotchas on every card — and build a shortlist in about 90
+          seconds, free.
         </p>
         <p className="leading-relaxed text-[var(--color-text-muted)]">
           Built for parents researching middle and high school summer programs — not elementary
@@ -44,12 +49,15 @@ export function LandingHero({
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-600" aria-hidden />
             No account required to search
           </li>
-          <li>{formatProgramCatalogLabel(programCount)}</li>
+          <li>{formatProgramCatalogLabel()}</li>
         </ul>
       </div>
 
       <div className="relative">
-        <SearchProductPreview programs={previewPrograms} />
+        <SearchProductPreview
+          programs={previewPrograms}
+          resultCount={previewResultCount}
+        />
         <div className="absolute -bottom-4 -left-2 max-w-[220px] rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-white p-4 shadow-[var(--shadow-card)] sm:-left-6">
           <p className="text-2xl font-normal text-[var(--color-navy)]">90 seconds</p>
           <p className="text-sm font-medium text-[var(--color-navy-light)]">

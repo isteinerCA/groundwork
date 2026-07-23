@@ -18,10 +18,12 @@ function categoryLabel(id: ProgramCategoryId): string {
 export function ProgramCard({
   program,
   preview = false,
+  compact = false,
   emphasizeTrack = false,
 }: {
   program: Program;
   preview?: boolean;
+  compact?: boolean;
   /** When multiple cards share the same program name, lead with the track/session. */
   emphasizeTrack?: boolean;
 }) {
@@ -65,9 +67,9 @@ export function ProgramCard({
         />
       )}
       <article
-        className={`rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[var(--shadow-card)] ${
-          preview ? "opacity-95" : ""
-        }`}
+        className={`rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)] ${
+          compact ? "p-3.5" : "p-5"
+        } ${preview ? "opacity-95" : ""}`}
       >
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0 flex-1">
