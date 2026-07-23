@@ -1,4 +1,5 @@
 import type { Program } from "@/lib/types/program";
+import { matchesLocationQuery, resolveLocationQuery } from "@/lib/data/matches-location";
 
 /** Build searchable text from all CSV-backed program fields and gotcha flags. */
 export function programSearchText(program: Program): string {
@@ -28,11 +29,20 @@ export function programSearchText(program: Program): string {
 }
 
 export function matchesDataQuery(program: Program, query: string): boolean {
-  const trimmed = query.trim().toLowerCase();
+  const trimmed = query.trim();
   if (!trimmed) return true;
 
+  const resolvedLocation = resolveLocationQuery(trimmed);
+  if (resolvedLocation && matchesLocationQuery(program, resolvedLocation)) {
+    return true;
+  }
+
+  if (matchesLocationQuery(program, trimmed)) {
+    return true;
+  }
+
   const haystack = programSearchText(program);
-  const terms = trimmed.split(/\s+/).filter(Boolean);
+  const terms = trimmed.toLowerCase().split(/\s+/).filter(Boolean);
   return terms.every((term) => haystack.includes(term));
 }
 

@@ -5,6 +5,7 @@ import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
 import type { PriceFilterId, ProgramFormatId } from "@/lib/constants/filters";
 import { filterPrograms } from "@/lib/data/filter-programs";
 import { matchesDataQuery, programSearchText } from "@/lib/data/matches-data-query";
+import { resolveLocationQuery } from "@/lib/data/matches-location";
 import type { Program, SearchFilters } from "@/lib/types/program";
 import { DEFAULT_SEARCH_FILTERS } from "@/lib/types/program";
 
@@ -146,42 +147,6 @@ function parsePriceFilter(input: string): PriceFilterId | null {
   return null;
 }
 
-const LOCATION_ALIASES: [RegExp, string][] = [
-  [/\b(?:california|cali)\b/i, "california"],
-  [/\b(?:new york|nyc)\b/i, "new york"],
-  [/\b(?:massachusetts|boston)\b/i, "massachusetts"],
-  [/\b(?:texas|austin|houston)\b/i, "texas"],
-  [/\b(?:florida|miami)\b/i, "florida"],
-  [/\b(?:illinois|chicago)\b/i, "illinois"],
-  [/\b(?:washington|seattle)\b/i, "washington"],
-];
-
-const STATE_ABBREVS: Record<string, string> = {
-  AL: "alabama",
-  AK: "alaska",
-  AZ: "arizona",
-  AR: "arkansas",
-  CA: "california",
-  CO: "colorado",
-  CT: "connecticut",
-  FL: "florida",
-  GA: "georgia",
-  IL: "illinois",
-  MA: "massachusetts",
-  MD: "maryland",
-  MI: "michigan",
-  MN: "minnesota",
-  NC: "north carolina",
-  NJ: "new jersey",
-  NY: "new york",
-  OH: "ohio",
-  OR: "oregon",
-  PA: "pennsylvania",
-  TX: "texas",
-  VA: "virginia",
-  WA: "washington",
-};
-
 function parseDataQuery(input: string): string | undefined {
   if (/\b(?:clear|remove|drop)\s+(?:location|data|text|search)\b/i.test(input)) {
     return "";
@@ -190,28 +155,23 @@ function parseDataQuery(input: string): string | undefined {
     return "";
   }
 
-  const abbrevMatch = input.match(/\b(?:in|from)\s+([a-z]{2})\s+only\b/i);
-  if (abbrevMatch) {
-    const mapped = STATE_ABBREVS[abbrevMatch[1].toUpperCase()];
-    if (mapped) return mapped;
-  }
+  const direct = resolveLocationQuery(input);
+  if (direct) return direct;
 
-  for (const [pattern, term] of LOCATION_ALIASES) {
-    if (pattern.test(input)) return term;
-  }
-
-  const inMatch = input.match(/\b(?:in|from|near|around)\s+([a-z][a-z\s,.-]{1,40}?)(?:\s+only|\s+programs?)?\s*$/i);
+  const inMatch = input.match(
+    /\b(?:in|from|near|around)\s+([a-z][a-z\s,.-]{1,40}?)(?:\s+only|\s+programs?|\s+camps?)?\s*$/i,
+  );
   if (inMatch) {
-    const term = inMatch[1].trim().toLowerCase();
-    if (term.length >= 2) return term;
+    const resolved = resolveLocationQuery(inMatch[1]) ?? inMatch[1].trim().toLowerCase();
+    if (resolved.length >= 2) return resolved;
   }
 
   const onlyMatch = input.match(/^([a-z][a-z\s,.-]{1,40}?)\s+only\s*$/i);
   if (onlyMatch) {
-    const term = onlyMatch[1].trim().toLowerCase();
-    if (term.length >= 2 && !/^(fully funded|residential|online|selective)$/i.test(term)) {
-      return term;
-    }
+    const raw = onlyMatch[1].trim().toLowerCase();
+    if (/^(fully funded|residential|online|selective)$/i.test(raw)) return undefined;
+    const resolved = resolveLocationQuery(raw) ?? raw;
+    if (resolved.length >= 2) return resolved;
   }
 
   return undefined;
@@ -257,11 +217,10 @@ function answerQuestion(input: string, context: ChatParserContext): string {
     return 'Try phrases like "under 5000 dollars", "only fully funded programs", or "hide unlisted prices". Price filters include programs marked "Contact program" unless you hide unlisted prices.';
   }
 
-  const locationQuestion = LOCATION_ALIASES.find(([pattern]) => pattern.test(input));
-  if (locationQuestion && scoped.length > 0) {
-    const term = locationQuestion[1];
-    const count = scoped.filter((program) => matchesDataQuery(program, term)).length;
-    return `${count} program${count === 1 ? "" : "s"} in your grade range mention ${term} (location, residency, or gotchas). Say "in ${term} only" to filter your results.`;
+  const locationTerm = resolveLocationQuery(input);
+  if (locationTerm && scoped.length > 0) {
+    const count = scoped.filter((program) => matchesDataQuery(program, locationTerm)).length;
+    return `${count} program${count === 1 ? "" : "s"} in your grade range mention ${locationTerm} (location, residency, or gotchas). Say "in ${locationTerm} only" to filter your results.`;
   }
 
   if (/\b(?:gotcha|hidden detail|flag|deposit|safety|sevp)\b/i.test(input)) {
