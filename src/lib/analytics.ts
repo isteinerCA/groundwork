@@ -10,7 +10,8 @@ export type AnalyticsEvent =
   | "program_unsaved"
   | "contact_form_submitted"
   | "status_changed"
-  | "flag_clicked";
+  | "flag_clicked"
+  | "payment_completed";
 
 type EventProps = Record<string, string | number | boolean>;
 

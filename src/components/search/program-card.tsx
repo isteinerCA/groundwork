@@ -1,6 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import { useSession } from "next-auth/react";
+import { useState } from "react";
+import { SaveGateModal } from "@/components/auth/save-gate-modal";
+import { isEarlyBirdPricingShown } from "@/lib/constants/pricing";
 import { ADMISSION_TYPE_BY_ID } from "@/lib/constants/admission-types";
 import { PROGRAM_CATEGORIES, type ProgramCategoryId } from "@/lib/constants/categories";
 import { useWorkspace } from "@/components/workspace/workspace-provider";
@@ -12,11 +16,38 @@ function categoryLabel(id: ProgramCategoryId): string {
 
 export function ProgramCard({ program }: { program: Program }) {
   const admission = ADMISSION_TYPE_BY_ID[program.admissionType];
+  const { data: session, update } = useSession();
   const { isSaved, toggleSave, hydrated } = useWorkspace();
+  const [gateMode, setGateMode] = useState<"signin" | "pay" | null>(null);
   const saved = hydrated && isSaved(program.id);
 
+  const handleSaveClick = async () => {
+    if (!session?.user) {
+      setGateMode("signin");
+      return;
+    }
+    if (!session.user.seasonPassActive) {
+      if (isEarlyBirdPricingShown()) {
+        const refreshed = await update();
+        if (refreshed?.user?.seasonPassActive) {
+          toggleSave(program.id);
+        }
+        return;
+      }
+      setGateMode("pay");
+      return;
+    }
+    toggleSave(program.id);
+  };
+
   return (
-    <article className="rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[var(--shadow-card)]">
+    <>
+      <SaveGateModal
+        open={gateMode !== null}
+        mode={gateMode ?? "signin"}
+        onClose={() => setGateMode(null)}
+      />
+      <article className="rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[var(--shadow-card)]">
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
@@ -55,7 +86,7 @@ export function ProgramCard({ program }: { program: Program }) {
         </div>
         <button
           type="button"
-          onClick={() => toggleSave(program.id)}
+          onClick={handleSaveClick}
           aria-pressed={saved}
           aria-label={saved ? "Remove from shortlist" : "Save to shortlist"}
           title={saved ? "Saved — view on dashboard" : "Save to shortlist"}
@@ -147,5 +178,6 @@ export function ProgramCard({ program }: { program: Program }) {
         </Link>
       </div>
     </article>
+    </>
   );
 }

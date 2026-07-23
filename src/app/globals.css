@@ -4,12 +4,13 @@
   /* PRD §16.4 — navy, parchment, amber */
   --color-navy: #1a365d;
   --color-navy-light: #2c5282;
+  --color-navy-dark: #0f2744;
   --color-parchment: #f9f8f6;
   --color-parchment-dark: #f0ebe3;
-  --color-amber: #c9a227;
+  --color-amber: #b8860b;
   --color-amber-soft: #f5ecd4;
   --color-text: #1a202c;
-  --color-text-muted: #4a5568;
+  --color-text-muted: #5a6578;
   --color-border: #e2ddd4;
   --color-surface: #ffffff;
 
@@ -54,6 +55,17 @@ a {
 
 a:hover {
   color: var(--color-navy);
+}
+
+/* Keep CTA link text readable — global link styles must not override buttons */
+a[class*="bg-[var(--color-navy)]"],
+a[class*="bg-white"] {
+  color: inherit;
+}
+
+strong {
+  color: var(--color-navy);
+  font-weight: 600;
 }
 
 .field-input {
