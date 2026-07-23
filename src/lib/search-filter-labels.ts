@@ -109,5 +109,14 @@ export function getActiveFilterItems(filters: SearchFilters): ActiveFilterItem[]
     });
   }
 
+  if (filters.dataQuery.trim()) {
+    const label = filters.dataQuery.trim().replace(/\b\w/g, (c) => c.toUpperCase());
+    items.push({
+      key: "data-query",
+      label,
+      remove: { dataQuery: "" },
+    });
+  }
+
   return items;
 }

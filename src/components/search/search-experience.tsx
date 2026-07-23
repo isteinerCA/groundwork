@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { ActiveFilterBar } from "@/components/search/active-filter-bar";
 import { SearchChat } from "@/components/search/search-chat";
+import { SearchShortlistCta } from "@/components/search/search-shortlist-cta";
 import { Chip } from "@/components/ui/chip";
 import { InfoTooltip } from "@/components/ui/info-tooltip";
 import { ProgramCard } from "@/components/search/program-card";
@@ -12,7 +13,7 @@ import { PROGRAM_CATEGORIES, type ProgramCategoryId } from "@/lib/constants/cate
 import {
   DURATION_BUCKETS,
   GRADE_CHIPS,
-  PRICE_FILTERS,
+  PRICE_FILTER_OPTIONS,
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
 import { filterPrograms, sortPrograms, type SortOption } from "@/lib/data/filter-programs";
@@ -74,7 +75,7 @@ export function SearchExperience({
       return;
     }
     const last = loadLastSearchFilters();
-    if (last) setFilters(last);
+    if (last) setFilters({ ...DEFAULT_SEARCH_FILTERS, ...last });
     setRestoredLastSearch(true);
   }, [restoredLastSearch, validCategory, initialFullyFunded, initialFormat]);
 
@@ -123,7 +124,8 @@ export function SearchExperience({
     filters.fullyFundedOnly ||
     filters.priceFilter !== "any" ||
     filters.usOnly ||
-    filters.excludeUnknownPrice;
+    filters.excludeUnknownPrice ||
+    filters.dataQuery.trim().length > 0;
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6">
@@ -139,17 +141,18 @@ export function SearchExperience({
         </div>
       </div>
 
-      {/* PRD v1.2: filters + assistant left, results right. Legacy layout: search-experience.legacy.tsx */}
+      {/* Filters left; results + search assistant right (assistant sits below active filters). */}
       <div className="grid gap-6 lg:grid-cols-[minmax(300px,380px)_minmax(0,1fr)] lg:items-start">
-        <aside className="space-y-4 lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto lg:pr-1">
+        <aside className="lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto lg:pr-1">
           <section className="rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[var(--shadow-card)]">
             <h2 className="text-lg text-[var(--color-navy)]">
               What grade did your child just complete? <span className="text-red-600">*</span>
             </h2>
-            <div className="mt-3 flex flex-wrap gap-2">
+            <div className="mt-3 flex flex-nowrap gap-1.5 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               {GRADE_CHIPS.map((grade) => (
                 <Chip
                   key={grade}
+                  compact
                   label={`${grade}th`}
                   selected={filters.gradesCompleted.includes(grade)}
                   onClick={() =>
@@ -238,13 +241,18 @@ export function SearchExperience({
                 ))}
               </FilterGroup>
 
-              <FilterGroup title="Max price">
-                {PRICE_FILTERS.map((p) => (
+              <FilterGroup title="Max price" singleRow>
+                {PRICE_FILTER_OPTIONS.map((p) => (
                   <Chip
                     key={p.id}
+                    compact
                     label={p.label}
                     selected={filters.priceFilter === p.id}
-                    onClick={() => update({ priceFilter: p.id })}
+                    onClick={() =>
+                      update({
+                        priceFilter: filters.priceFilter === p.id ? "any" : p.id,
+                      })
+                    }
                   />
                 ))}
               </FilterGroup>
@@ -294,72 +302,114 @@ export function SearchExperience({
               )}
             </div>
           </section>
-
-          <SearchChat
-            embedded
-            filters={filters}
-            resultCount={results.length}
-            onApplyFilters={applyFilters}
-          />
         </aside>
 
         <div className="min-w-0">
-          <ActiveFilterBar filters={filters} onRemove={update} onClearAll={clearAll} />
+          {filters.gradesCompleted.length > 0 ? (
+            <div className="overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]">
+              <ActiveFilterBar
+                embedded
+                filters={filters}
+                onRemove={update}
+                onClearAll={clearAll}
+              />
 
-          {hasActiveFilters && filters.gradesCompleted.length > 0 && (
-            <div className="mt-4 flex flex-wrap items-center gap-2 text-sm">
-              <span className="font-medium text-[var(--color-navy)]">
-                {results.length} result{results.length === 1 ? "" : "s"}
-              </span>
-              <label className="ml-auto flex items-center gap-2 text-[var(--color-text-muted)]">
-                Sort by
-                <select
-                  value={sort}
-                  onChange={(e) => setSort(e.target.value as SortOption)}
-                  className="rounded border border-[var(--color-border)] bg-white px-2 py-1 text-sm"
-                >
-                  <option value="selectivity">Selectivity</option>
-                  <option value="price">Price</option>
-                  <option value="duration">Duration</option>
-                  <option value="name">Name</option>
-                </select>
-              </label>
+              <SearchChat
+                embedded
+                inPanel
+                programs={programs}
+                filters={filters}
+                resultCount={results.length}
+                onApplyFilters={applyFilters}
+              />
+
+              {results.length > 0 && (
+                <div className="border-b border-[var(--color-border)] bg-[var(--color-parchment)]/40 px-4 py-3">
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                    <p className="text-sm font-semibold text-[var(--color-navy)]">
+                      {results.length} result{results.length === 1 ? "" : "s"}
+                    </p>
+                    <label className="flex items-center gap-2 text-sm text-[var(--color-text-muted)]">
+                      Sort by
+                      <select
+                        value={sort}
+                        onChange={(e) => setSort(e.target.value as SortOption)}
+                        className="rounded border border-[var(--color-border)] bg-white px-2 py-1 text-sm"
+                      >
+                        <option value="selectivity">Selectivity</option>
+                        <option value="price">Price</option>
+                        <option value="duration">Duration</option>
+                        <option value="name">Name</option>
+                      </select>
+                    </label>
+                    <div className="ml-auto">
+                      <SearchShortlistCta programs={results} compact />
+                    </div>
+                  </div>
+                  <p className="mt-2 text-xs text-[var(--color-text-muted)]">
+                    Tap <span aria-hidden>♡</span> on any program card to build your shortlist.
+                  </p>
+                </div>
+              )}
+
+              <div className="space-y-4 p-4">
+                {results.length === 0 && (
+                  <div className="rounded-[var(--radius-md)] border border-dashed border-[var(--color-border)] bg-[var(--color-parchment)]/50 p-8 text-center">
+                    <p className="text-lg text-[var(--color-navy)]">No programs match these filters.</p>
+                    <p className="mt-2 text-[var(--color-text-muted)]">
+                      Try removing a filter, asking the assistant to broaden your search, or say
+                      &quot;start over&quot;.
+                    </p>
+                    <button
+                      type="button"
+                      onClick={clearAll}
+                      className="mt-4 text-sm font-medium text-[var(--color-navy-light)]"
+                    >
+                      Clear all filters
+                    </button>
+                  </div>
+                )}
+
+                {results.map((program) => (
+                  <ProgramCard key={program.id} program={program} />
+                ))}
+              </div>
+            </div>
+          ) : (
+            <div className="rounded-[var(--radius-lg)] border border-dashed border-[var(--color-border)] bg-[var(--color-parchment)]/50 px-6 py-16 text-center">
+              <p className="text-lg text-[var(--color-navy)]">Select a grade to see programs</p>
+              <p className="mt-2 text-sm text-[var(--color-text-muted)]">
+                Choose a grade on the left, then refine with filters or the search assistant.
+              </p>
             </div>
           )}
-
-          <div className="mt-6 space-y-4">
-            {filters.gradesCompleted.length > 0 && results.length === 0 && (
-              <div className="rounded-[var(--radius-md)] border border-[var(--color-border)] bg-white p-8 text-center">
-                <p className="text-lg text-[var(--color-navy)]">No programs match these filters.</p>
-                <p className="mt-2 text-[var(--color-text-muted)]">
-                  Try removing a category, broadening your price range, or ask the assistant to
-                  relax filters.
-                </p>
-                <button
-                  type="button"
-                  onClick={clearAll}
-                  className="mt-4 text-sm font-medium text-[var(--color-navy-light)]"
-                >
-                  Clear all filters
-                </button>
-              </div>
-            )}
-
-            {results.map((program) => (
-              <ProgramCard key={program.id} program={program} />
-            ))}
-          </div>
         </div>
       </div>
     </div>
   );
 }
 
-function FilterGroup({ title, children }: { title: string; children: ReactNode }) {
+function FilterGroup({
+  title,
+  children,
+  singleRow,
+}: {
+  title: string;
+  children: ReactNode;
+  singleRow?: boolean;
+}) {
   return (
     <div>
       <h3 className="mb-2 text-sm font-medium text-[var(--color-text-muted)]">{title}</h3>
-      <div className="flex flex-wrap gap-2">{children}</div>
+      <div
+        className={
+          singleRow
+            ? "flex flex-nowrap gap-1.5 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            : "flex flex-wrap gap-2"
+        }
+      >
+        {children}
+      </div>
     </div>
   );
 }

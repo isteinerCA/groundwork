@@ -1,4 +1,3 @@
-import { getPrograms, getDataVerifiedAt } from "@/lib/programs";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { HomePricingSection } from "@/components/marketing/home-pricing-section";
@@ -14,14 +13,11 @@ import {
 } from "@/components/marketing/landing-sections";
 
 export default function HomePage() {
-  const programCount = getPrograms().length;
-  const dataVerifiedAt = getDataVerifiedAt();
-
   return (
     <>
       <SiteHeader logoPriority />
       <main>
-        <LandingHero programCount={programCount} dataVerifiedAt={dataVerifiedAt} />
+        <LandingHero />
         <ProblemSection />
         <CategoriesSection />
         <FinePrintSection />

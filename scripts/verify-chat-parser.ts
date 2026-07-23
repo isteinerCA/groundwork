@@ -2,15 +2,20 @@
  * PRD §14.2 chat parser scenarios.
  * Run: npx tsx scripts/verify-chat-parser.ts
  */
+import { readFileSync } from "node:fs";
 import {
   DEFAULT_SEARCH_FILTERS,
   type SearchFilters,
 } from "../src/lib/types/program";
+import { filterPrograms } from "../src/lib/data/filter-programs";
 import { mergeFilterPatch, parseChatMessage } from "../src/lib/chat-parser";
+import { programMatchesCategory } from "../src/lib/data/matches-category";
+import type { Program } from "../src/lib/types/program";
 
 const baseContext = {
-  filters: DEFAULT_SEARCH_FILTERS,
+  filters: { ...DEFAULT_SEARCH_FILTERS, gradesCompleted: [10] },
   resultCount: 42,
+  programs: [] as import("../src/lib/types/program").Program[],
 };
 
 type Case = {
@@ -78,6 +83,36 @@ const cases: Case[] = [
       if (!/harvard ssp/i.test(message)) throw new Error("expected Harvard SSP explanation");
     },
   },
+  {
+    input: "find girl only programs",
+    expectType: "unknown",
+    assert: (_patch, message) => {
+      if (!/doesn't have that information at this point/i.test(message)) {
+        throw new Error("expected honest limitation message");
+      }
+    },
+  },
+  {
+    input: "in california only",
+    expectType: "filter",
+    assert: (patch) => {
+      if (patch?.dataQuery !== "california") throw new Error("expected california dataQuery");
+    },
+  },
+  {
+    input: "camps in Massachusets",
+    expectType: "filter",
+    assert: (patch) => {
+      if (patch?.dataQuery !== "massachusetts") throw new Error("expected massachusetts dataQuery");
+    },
+  },
+  {
+    input: "in MA only",
+    expectType: "filter",
+    assert: (patch) => {
+      if (patch?.dataQuery !== "massachusetts") throw new Error("expected massachusetts from MA");
+    },
+  },
 ];
 
 let failed = 0;
@@ -106,6 +141,36 @@ const merged = mergeFilterPatch(DEFAULT_SEARCH_FILTERS, {
 if (!merged.fullyFundedOnly || merged.gradesCompleted[0] !== 11) {
   console.error("FAIL mergeFilterPatch");
   failed++;
+}
+
+if (failed === 0) {
+  const rsi = {
+    category: "stem-engineering",
+    secondaryTags: ["Leadership/Gifted"],
+  } as Program;
+  if (!programMatchesCategory(rsi, "leadership-gifted")) {
+    console.error("FAIL secondary tag category match for RSI");
+    failed++;
+  }
+}
+
+if (failed === 0) {
+  const data = JSON.parse(readFileSync("data/seed/programs.json", "utf-8")) as {
+    programs: Program[];
+  };
+  const filters: SearchFilters = {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [10],
+    dataQuery: "massachusetts",
+  };
+  const results = filterPrograms(data.programs, filters);
+  const falsePositives = results.filter((program) => /,\s*CA\b/i.test(program.locationDisplay));
+  if (falsePositives.length > 0) {
+    console.error(
+      `FAIL MA filter included CA programs: ${falsePositives.map((p) => p.name).join(", ")}`,
+    );
+    failed++;
+  }
 }
 
 if (failed === 0) {

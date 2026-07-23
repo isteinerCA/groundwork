@@ -3,15 +3,17 @@ import Link from "next/link";
 import { ButtonLink, SectionEyebrow } from "@/components/ui/button-link";
 import { btnOutlineOnDark } from "@/components/ui/button-styles";
 import { CategoryIcon } from "@/components/icons/category-icons";
-import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
+import { HOME_CATEGORY_ORDER, PROGRAM_CATEGORIES } from "@/lib/constants/categories";
 
-export function LandingHero({ programCount }: { programCount: number; dataVerifiedAt?: string | null }) {
+export function LandingHero() {
   return (
     <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-20">
       <div className="flex flex-col gap-5">
         <SectionEyebrow>For families searching grades 6–12</SectionEyebrow>
         <h1 className="text-4xl leading-[1.12] font-normal md:text-5xl lg:text-[3.25rem]">
-          The summer that changes everything starts here.
+          The summer that{" "}
+          <em className="font-serif italic text-[var(--color-sage)]">changes everything</em> starts
+          here.
         </h1>
         <p className="text-lg leading-relaxed text-[var(--color-text)]">
           Hundreds of programs across science, arts, wilderness, and pre-college —
@@ -34,7 +36,7 @@ export function LandingHero({ programCount }: { programCount: number; dataVerifi
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-600" aria-hidden />
             No account required to search
           </li>
-          <li>{programCount}+ curated programs</li>
+          <li>140+ curated programs</li>
         </ul>
       </div>
 
@@ -69,16 +71,16 @@ export function ProblemSection() {
       <div className="mx-auto max-w-3xl text-center">
         <SectionEyebrow>The problem</SectionEyebrow>
         <h2 className="mt-3 text-3xl md:text-4xl">
-          A stack of program brochures. No way to compare them.
+          A stack of brochures and websites. No way to compare them.
         </h2>
         <p className="mt-6 text-lg leading-relaxed text-[var(--color-text)]">
           A fully-funded MIT program accepting 80 students globally sits in the same
           undifferentiated Google results as a $17,800 sleepaway camp with open enrollment.
           Parents and students open dozens of program websites — each formatted differently —
-          just to extract the basic facts.{" "}
-          <strong className="font-semibold text-[var(--color-navy)]">
-            Groundwork replaces that.
-          </strong>
+          just to extract the basic facts.
+        </p>
+        <p className="mt-4 text-lg font-semibold text-[var(--color-navy)]">
+          Groundwork replaces that.
         </p>
         <ButtonLink href="/search" className="mt-8">
           Start your shortlist
@@ -98,13 +100,15 @@ export function CategoriesSection() {
           Twelve pathways. Countless opportunities.
         </p>
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {PROGRAM_CATEGORIES.map((cat) => (
+          {HOME_CATEGORY_ORDER.map((categoryId) => {
+            const cat = PROGRAM_CATEGORIES.find((c) => c.id === categoryId)!;
+            return (
             <Link
               key={cat.id}
               href={`/search?category=${cat.id}`}
               className="flex items-start gap-4 rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-4 text-left no-underline shadow-sm transition hover:border-[var(--color-navy)] hover:shadow-[var(--shadow-card)]"
             >
-              <CategoryIcon categoryId={cat.id} className="h-11 w-11" />
+              <CategoryIcon categoryId={cat.id} className="h-11 w-11 shrink-0" />
               <div className="min-w-0">
                 <h3 className="text-base font-semibold text-[var(--color-navy)]">
                   {cat.label}
@@ -114,7 +118,8 @@ export function CategoriesSection() {
                 </p>
               </div>
             </Link>
-          ))}
+            );
+          })}
         </div>
         <ButtonLink href="/search" variant="secondary" className="mt-10">
           Start your shortlist
@@ -278,8 +283,13 @@ export function WorkspaceSection() {
               key={item.title}
               className="rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-sm"
             >
-              <h3 className="font-semibold text-[var(--color-navy)]">{item.title}</h3>
-              <p className="mt-2 text-sm text-[var(--color-text-muted)]">{item.desc}</p>
+              <h3 className="flex items-start gap-2 font-semibold text-[var(--color-navy)]">
+                <span className="mt-0.5 shrink-0 font-bold text-[var(--color-sage)]" aria-hidden>
+                  ✓
+                </span>
+                {item.title}
+              </h3>
+              <p className="mt-2 pl-6 text-sm text-[var(--color-text-muted)]">{item.desc}</p>
             </div>
           ))}
         </div>

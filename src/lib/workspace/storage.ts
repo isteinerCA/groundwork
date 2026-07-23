@@ -42,6 +42,34 @@ export function isProgramSaved(state: WorkspaceState, programId: string): boolea
   );
 }
 
+export function saveProgramsToShortlist(
+  state: WorkspaceState,
+  programIds: string[],
+): WorkspaceState {
+  const list = getActiveShortlist(state);
+  const existing = new Set(list.items.map((item) => item.programId));
+  const toAdd = programIds.filter((id) => !existing.has(id));
+  if (toAdd.length === 0) return state;
+
+  const nextItems = [
+    ...list.items,
+    ...toAdd.map((programId) => ({
+      programId,
+      status: "researching" as const,
+      deadline: null,
+      notes: "",
+      savedAt: new Date().toISOString(),
+    })),
+  ];
+
+  return {
+    ...state,
+    shortlists: state.shortlists.map((s) =>
+      s.id === list.id ? { ...s, items: nextItems } : s,
+    ),
+  };
+}
+
 export function toggleSaveProgram(
   state: WorkspaceState,
   programId: string,

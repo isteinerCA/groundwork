@@ -1,4 +1,6 @@
 import type { AdmissionTypeId } from "@/lib/constants/admission-types";
+import { programMatchesCategory } from "@/lib/data/matches-category";
+import { matchesDataQuery } from "@/lib/data/matches-data-query";
 import { matchesPriceFilter } from "@/lib/data/matches-price-filter";
 import { formatMatchesFilter } from "@/lib/data/normalize-format";
 import { gradeMatchesFilter } from "@/lib/data/normalize-grade";
@@ -15,7 +17,7 @@ export function matchesProgram(program: Program, filters: SearchFilters): boolea
 
   if (
     filters.categories.length > 0 &&
-    !filters.categories.includes(program.category)
+    !filters.categories.some((categoryId) => programMatchesCategory(program, categoryId))
   ) {
     return false;
   }
@@ -51,6 +53,8 @@ export function matchesProgram(program: Program, filters: SearchFilters): boolea
   }
 
   if (filters.usOnly && program.isInternational) return false;
+
+  if (!matchesDataQuery(program, filters.dataQuery)) return false;
 
   return true;
 }

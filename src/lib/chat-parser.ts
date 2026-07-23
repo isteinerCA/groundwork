@@ -3,7 +3,10 @@ import { ADMISSION_TYPES } from "@/lib/constants/admission-types";
 import type { ProgramCategoryId } from "@/lib/constants/categories";
 import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
 import type { PriceFilterId, ProgramFormatId } from "@/lib/constants/filters";
-import type { SearchFilters } from "@/lib/types/program";
+import { filterPrograms } from "@/lib/data/filter-programs";
+import { matchesDataQuery, programSearchText } from "@/lib/data/matches-data-query";
+import { resolveLocationQuery } from "@/lib/data/matches-location";
+import type { Program, SearchFilters } from "@/lib/types/program";
 import { DEFAULT_SEARCH_FILTERS } from "@/lib/types/program";
 
 export type ChatParseResult = {
@@ -15,6 +18,7 @@ export type ChatParseResult = {
 export interface ChatParserContext {
   filters: SearchFilters;
   resultCount: number;
+  programs: Program[];
 }
 
 const CATEGORY_KEYWORDS: [RegExp, ProgramCategoryId][] = [
@@ -143,8 +147,56 @@ function parsePriceFilter(input: string): PriceFilterId | null {
   return null;
 }
 
+function parseDataQuery(input: string): string | undefined {
+  if (/\b(?:clear|remove|drop)\s+(?:location|data|text|search)\b/i.test(input)) {
+    return "";
+  }
+  if (/^(?:anywhere|any location|all locations)$/i.test(input)) {
+    return "";
+  }
+
+  const direct = resolveLocationQuery(input);
+  if (direct) return direct;
+
+  const inMatch = input.match(
+    /\b(?:in|from|near|around)\s+([a-z][a-z\s,.-]{1,40}?)(?:\s+only|\s+programs?|\s+camps?)?\s*$/i,
+  );
+  if (inMatch) {
+    const resolved = resolveLocationQuery(inMatch[1]) ?? inMatch[1].trim().toLowerCase();
+    if (resolved.length >= 2) return resolved;
+  }
+
+  const onlyMatch = input.match(/^([a-z][a-z\s,.-]{1,40}?)\s+only\s*$/i);
+  if (onlyMatch) {
+    const raw = onlyMatch[1].trim().toLowerCase();
+    if (/^(fully funded|residential|online|selective)$/i.test(raw)) return undefined;
+    const resolved = resolveLocationQuery(raw) ?? raw;
+    if (resolved.length >= 2) return resolved;
+  }
+
+  return undefined;
+}
+
+function gradeScopedPrograms(context: ChatParserContext): Program[] {
+  if (context.filters.gradesCompleted.length === 0) return [];
+  return filterPrograms(context.programs, {
+    ...context.filters,
+    dataQuery: "",
+    categories: [],
+    admissionTypes: [],
+    formats: [],
+    durationBuckets: [],
+    collegeCreditOnly: false,
+    fullyFundedOnly: false,
+    priceFilter: "any",
+    usOnly: false,
+    excludeUnknownPrice: false,
+  });
+}
+
 function answerQuestion(input: string, context: ChatParserContext): string {
   const lower = input.toLowerCase();
+  const scoped = gradeScopedPrograms(context);
 
   if (lower.includes("harvard") && lower.includes("ssp")) {
     const gradeSelected = context.filters.gradesCompleted.length > 0;
@@ -165,7 +217,43 @@ function answerQuestion(input: string, context: ChatParserContext): string {
     return 'Try phrases like "under 5000 dollars", "only fully funded programs", or "hide unlisted prices". Price filters include programs marked "Contact program" unless you hide unlisted prices.';
   }
 
-  return "I can adjust filters for you — try describing grade, category, budget, or format. For explanations, ask why a program appears or how pricing filters work.";
+  const locationTerm = resolveLocationQuery(input);
+  if (locationTerm && scoped.length > 0) {
+    const count = scoped.filter((program) => matchesDataQuery(program, locationTerm)).length;
+    return `${count} program${count === 1 ? "" : "s"} in your grade range mention ${locationTerm} (location, residency, or gotchas). Say "in ${locationTerm} only" to filter your results.`;
+  }
+
+  if (/\b(?:gotcha|hidden detail|flag|deposit|safety|sevp)\b/i.test(input)) {
+    const flagged = scoped.filter((program) => program.flags.length > 0);
+    if (flagged.length === 0) {
+      return "No gotcha flags in your current grade range. Select a grade first, then ask about a specific program name.";
+    }
+    const examples = flagged
+      .slice(0, 3)
+      .map((program) => `${program.name} (${program.flags[0]?.title ?? "flag"})`)
+      .join("; ");
+    return `${flagged.length} program${flagged.length === 1 ? "" : "s"} in your grade range have hidden-detail flags — e.g. ${examples}. Say a location or topic to narrow, or open a program card for full citations.`;
+  }
+
+  if (/\bhow many\b/i.test(input) && scoped.length > 0) {
+    return `You have ${context.resultCount} program${context.resultCount === 1 ? "" : "s"} with your current filters. I can also search location and gotchas from our program data — try "in California only" or "programs with deposit flags".`;
+  }
+
+  return "Groundwork doesn't have that information at this point. I can search program locations, gotchas, and descriptions — or adjust grade, category, budget, format, and admission filters.";
+}
+
+function buildUnknownMessage(input: string): string {
+  if (/\b(?:girl|boy|boys|girls|women|men|female|male|single[- ]sex|gender)\b/i.test(input)) {
+    return "Groundwork doesn't have that information at this point — we can't filter by gender or single-sex programs yet, but we hope to support more search options in the future. Try category, format, budget, or admission type, or browse your results.";
+  }
+
+  const summary = input.length > 72 ? `${input.slice(0, 69)}…` : input;
+
+  if (/\b(?:find|show|filter|only|looking for|want|need|programs?)\b/i.test(input)) {
+    return `Groundwork doesn't have that information at this point — I couldn't match "${summary}" in our program data or filters. Try a location ("in California only"), budget, category, or a gotcha keyword like "deposit".`;
+  }
+
+  return "Groundwork doesn't have that information at this point. I can search locations, gotchas, and program details — or adjust grade, category, budget, format, and admission filters.";
 }
 
 function describePatch(patch: Partial<SearchFilters>): string {
@@ -196,6 +284,9 @@ function describePatch(patch: Partial<SearchFilters>): string {
   if (patch.priceFilter && patch.priceFilter !== "any") {
     parts.push(`max price: ${patch.priceFilter.replace(/_/g, " ")}`);
   }
+  if (patch.dataQuery?.trim()) {
+    parts.push(`search: "${patch.dataQuery.trim()}"`);
+  }
 
   return parts.length > 0 ? parts.join(" · ") : "filters updated";
 }
@@ -205,6 +296,7 @@ export function parseChatMessage(
   context: ChatParserContext = {
     filters: DEFAULT_SEARCH_FILTERS,
     resultCount: 0,
+    programs: [],
   },
 ): ChatParseResult {
   const input = normalizeInput(raw);
@@ -283,33 +375,61 @@ export function parseChatMessage(
     changed = true;
   }
 
-  if (!changed) {
-    const hint =
-      context.resultCount >= 25
-        ? 'Lots of results — try "under $5000", "residential only", or "selective programs only".'
-        : context.resultCount <= 8 && context.filters.gradesCompleted.length > 0
-          ? 'Few matches — try "fully funded only" or removing a category filter.'
-          : 'Try "only fully funded programs", "just finished 11th grade", or "residential only".';
-    return { type: "unknown", message: hint };
+  const dataQuery = parseDataQuery(input);
+  if (dataQuery !== undefined) {
+    patch.dataQuery = dataQuery;
+    changed = true;
   }
 
+  if (!changed) {
+    const fallbackQuery = input
+      .replace(/\b(?:find|show|list|programs?|options?|looking for)\b/gi, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+    if (fallbackQuery.length >= 3 && context.programs.length > 0) {
+      const scoped = gradeScopedPrograms(context);
+      const matches = scoped.filter((program) =>
+        programSearchText(program).includes(fallbackQuery.toLowerCase()),
+      );
+      if (matches.length > 0 && matches.length < scoped.length) {
+        patch.dataQuery = fallbackQuery;
+        changed = true;
+      }
+    }
+  }
+
+  if (!changed) {
+    return { type: "unknown", message: buildUnknownMessage(input) };
+  }
+
+  const nextFilters = mergeFilterPatch(context.filters, patch);
+  const nextCount =
+    context.programs.length > 0
+      ? filterPrograms(context.programs, nextFilters).length
+      : context.resultCount;
+
   const followUp =
-    context.resultCount >= 25
+    nextCount >= 25
       ? " Still a long list — try narrowing budget or admission type."
-      : context.resultCount <= 8 && context.filters.gradesCompleted.length > 0
+      : nextCount <= 8 && nextFilters.gradesCompleted.length > 0
         ? " Short list — ask me to broaden if you want more options."
         : "";
+
+  const countNote =
+    patch.dataQuery !== undefined && context.programs.length > 0
+      ? ` ${nextCount} program${nextCount === 1 ? "" : "s"} match.`
+      : "";
 
   return {
     type: "filter",
     filterPatch: patch,
-    message: `Applied ${describePatch(patch)}. Results update on the right.${followUp}`,
+    message: `Applied ${describePatch(patch)}.${countNote}${followUp}`,
   };
 }
 
 export function getChatOpeningPrompt(context: ChatParserContext): string {
   if (context.filters.gradesCompleted.length === 0) {
-    return "Start with a grade — e.g. \"just finished 10th grade\" — then I'll help refine.";
+    return 'Start with a grade — e.g. "just finished 10th grade" — then try "in California only" or budget filters.';
   }
   if (context.resultCount === 0) {
     return "No matches — ask me to broaden categories, raise your budget, or say \"start over.\"";
@@ -320,7 +440,7 @@ export function getChatOpeningPrompt(context: ChatParserContext): string {
   if (context.resultCount >= 25) {
     return `${context.resultCount} programs — try narrowing by budget, format, or admission type.`;
   }
-  return `${context.resultCount} programs — refine with plain English (budget, format, category).`;
+  return `${context.resultCount} programs — refine with plain English (budget, location, gotchas).`;
 }
 
 export function mergeFilterPatch(
