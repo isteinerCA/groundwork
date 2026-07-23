@@ -15,7 +15,13 @@ function categoryLabel(id: ProgramCategoryId): string {
   return PROGRAM_CATEGORIES.find((c) => c.id === id)?.label ?? id;
 }
 
-export function ProgramCard({ program }: { program: Program }) {
+export function ProgramCard({
+  program,
+  preview = false,
+}: {
+  program: Program;
+  preview?: boolean;
+}) {
   const admission = ADMISSION_TYPE_BY_ID[program.admissionType];
   const { data: session, update } = useSession();
   const { isSaved, toggleSave, hydrated } = useWorkspace();
@@ -48,12 +54,18 @@ export function ProgramCard({ program }: { program: Program }) {
 
   return (
     <>
-      <SaveGateModal
-        open={gateMode !== null}
-        mode={gateMode ?? "signin"}
-        onClose={() => setGateMode(null)}
-      />
-      <article className="rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[var(--shadow-card)]">
+      {!preview && (
+        <SaveGateModal
+          open={gateMode !== null}
+          mode={gateMode ?? "signin"}
+          onClose={() => setGateMode(null)}
+        />
+      )}
+      <article
+        className={`rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[var(--shadow-card)] ${
+          preview ? "opacity-95" : ""
+        }`}
+      >
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
@@ -90,20 +102,22 @@ export function ProgramCard({ program }: { program: Program }) {
             <p className="mt-1 text-sm text-[var(--color-text-muted)]">{program.trackDetail}</p>
           )}
         </div>
-        <button
-          type="button"
-          onClick={handleSaveClick}
-          aria-pressed={saved}
-          aria-label={saved ? "Remove from shortlist" : "Save to shortlist"}
-          title={saved ? "Saved — view on dashboard" : "Save to shortlist"}
-          className={`shrink-0 rounded-full border p-2 text-lg leading-none transition ${
-            saved
-              ? "border-red-200 bg-red-50 text-red-600"
-              : "border-[var(--color-border)] text-[var(--color-text-muted)] hover:border-red-200 hover:text-red-500"
-          }`}
-        >
-          {saved ? "♥" : "♡"}
-        </button>
+        {!preview && (
+          <button
+            type="button"
+            onClick={handleSaveClick}
+            aria-pressed={saved}
+            aria-label={saved ? "Remove from shortlist" : "Save to shortlist"}
+            title={saved ? "Saved — view on dashboard" : "Save to shortlist"}
+            className={`shrink-0 rounded-full border p-2 text-lg leading-none transition ${
+              saved
+                ? "border-red-200 bg-red-50 text-red-600"
+                : "border-[var(--color-border)] text-[var(--color-text-muted)] hover:border-red-200 hover:text-red-500"
+            }`}
+          >
+            {saved ? "♥" : "♡"}
+          </button>
+        )}
       </div>
 
       {showSavedBanner && saved && (
@@ -173,28 +187,30 @@ export function ProgramCard({ program }: { program: Program }) {
         </p>
       )}
 
-      <div className="mt-5 flex flex-wrap gap-3">
-        <a
-          href={program.websiteUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={btnOutline}
-        >
-          Visit program website ↗
-        </a>
-        <Link
-          href="/dashboard"
-          className="inline-flex items-center px-2 py-2 text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-navy)]"
-        >
-          My shortlist
-        </Link>
-        <Link
-          href={`/contact?program=${encodeURIComponent(program.name)}`}
-          className="inline-flex items-center px-2 py-2 text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-navy)]"
-        >
-          Contact us / report an issue
-        </Link>
-      </div>
+      {!preview && (
+        <div className="mt-5 flex flex-wrap gap-3">
+          <a
+            href={program.websiteUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={btnOutline}
+          >
+            Visit program website ↗
+          </a>
+          <Link
+            href="/dashboard"
+            className="inline-flex items-center px-2 py-2 text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-navy)]"
+          >
+            My shortlist
+          </Link>
+          <Link
+            href={`/contact?program=${encodeURIComponent(program.name)}`}
+            className="inline-flex items-center px-2 py-2 text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-navy)]"
+          >
+            Contact us / report an issue
+          </Link>
+        </div>
+      )}
     </article>
     </>
   );

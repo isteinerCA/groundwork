@@ -8,6 +8,7 @@ import { SearchShortlistCta } from "@/components/search/search-shortlist-cta";
 import { Chip } from "@/components/ui/chip";
 import { InfoTooltip } from "@/components/ui/info-tooltip";
 import { ProgramCard } from "@/components/search/program-card";
+import { SearchPreviewPanel } from "@/components/search/search-preview-panel";
 import { ADMISSION_TYPES } from "@/lib/constants/admission-types";
 import { PROGRAM_CATEGORIES, type ProgramCategoryId } from "@/lib/constants/categories";
 import {
@@ -17,7 +18,7 @@ import {
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
 import { filterPrograms, sortPrograms, type SortOption } from "@/lib/data/filter-programs";
-import { btnPrimary } from "@/components/ui/button-styles";
+import { getPreviewPrograms } from "@/lib/programs/preview-programs";
 import { summarizeSearchFilters, trackEvent } from "@/lib/analytics";
 import { loadLastSearchFilters, saveLastSearchFilters } from "@/lib/search/last-filters";
 import type { Program, SearchFilters } from "@/lib/types/program";
@@ -65,8 +66,9 @@ export function SearchExperience({
     formats: initialFormat ? [initialFormat] : [],
   }));
   const [sort, setSort] = useState<SortOption>("selectivity");
-  const [gradeError, setGradeError] = useState(false);
   const [restoredLastSearch, setRestoredLastSearch] = useState(false);
+
+  const previewPrograms = useMemo(() => getPreviewPrograms(programs, 3), [programs]);
 
   useEffect(() => {
     if (restoredLastSearch) return;
@@ -84,24 +86,27 @@ export function SearchExperience({
     return sortPrograms(filterPrograms(programs, filters), sort);
   }, [programs, filters, sort]);
 
-  const runSearch = () => {
-    if (filters.gradesCompleted.length === 0) {
-      setGradeError(true);
-      return;
-    }
-    setGradeError(false);
-    saveLastSearchFilters(filters);
+  const runSearch = (nextFilters: SearchFilters, resultTotal: number) => {
+    if (nextFilters.gradesCompleted.length === 0) return;
+    saveLastSearchFilters(nextFilters);
     trackEvent("search_run", {
-      ...summarizeSearchFilters(filters),
-      result_count: results.length,
+      ...summarizeSearchFilters(nextFilters),
+      result_count: resultTotal,
     });
   };
 
   const applyFilters = (next: SearchFilters) => {
+    const hadGrade = filters.gradesCompleted.length > 0;
     setFilters(next);
     if (next.gradesCompleted.length > 0) {
-      setGradeError(false);
       saveLastSearchFilters(next);
+      const resultTotal =
+        next.gradesCompleted.length > 0
+          ? sortPrograms(filterPrograms(programs, next), sort).length
+          : 0;
+      if (!hadGrade && next.gradesCompleted.length > 0) {
+        runSearch(next, resultTotal);
+      }
     }
   };
 
@@ -111,7 +116,6 @@ export function SearchExperience({
 
   const clearAll = () => {
     applyFilters(DEFAULT_SEARCH_FILTERS);
-    setGradeError(false);
   };
 
   const hasActiveFilters =
@@ -161,12 +165,9 @@ export function SearchExperience({
                 />
               ))}
             </div>
-            {gradeError && (
-              <p className="mt-2 text-sm text-red-600">Select at least one grade to search.</p>
-            )}
             {filters.gradesCompleted.length === 0 && (
               <p className="mt-3 rounded-[var(--radius-md)] border border-dashed border-[var(--color-border)] bg-[var(--color-parchment)] px-3 py-2 text-sm text-[var(--color-text-muted)]">
-                Select a grade above to see matching programs.
+                Select a grade to filter by eligibility — sample programs appear on the right.
               </p>
             )}
 
@@ -283,15 +284,8 @@ export function SearchExperience({
               </FilterGroup>
             </div>
 
-            <div className="mt-6 flex flex-wrap gap-3">
-              <button
-                type="button"
-                onClick={runSearch}
-                className={btnPrimary}
-              >
-                Search
-              </button>
-              {hasActiveFilters && (
+            {hasActiveFilters && (
+              <div className="mt-6">
                 <button
                   type="button"
                   onClick={clearAll}
@@ -299,8 +293,8 @@ export function SearchExperience({
                 >
                   Clear all
                 </button>
-              )}
-            </div>
+              </div>
+            )}
           </section>
         </aside>
 
@@ -376,12 +370,7 @@ export function SearchExperience({
               </div>
             </div>
           ) : (
-            <div className="rounded-[var(--radius-lg)] border border-dashed border-[var(--color-border)] bg-[var(--color-parchment)]/50 px-6 py-16 text-center">
-              <p className="text-lg text-[var(--color-navy)]">Select a grade to see programs</p>
-              <p className="mt-2 text-sm text-[var(--color-text-muted)]">
-                Choose a grade on the left, then refine with filters or the search assistant.
-              </p>
-            </div>
+            <SearchPreviewPanel programs={previewPrograms} />
           )}
         </div>
       </div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { UserMenu } from "@/components/auth/user-menu";
 import { GroundworkLogo } from "@/components/layout/groundwork-logo";
+import { ShortlistNavLink } from "@/components/layout/shortlist-nav-link";
 import { ButtonLink } from "@/components/ui/button-link";
 
 const NAV = [
@@ -28,12 +29,7 @@ export function SiteHeader({ logoPriority = false }: { logoPriority?: boolean })
 
         <div className="flex items-center gap-3 sm:gap-4">
           <UserMenu />
-          <Link
-            href="/dashboard"
-            className="hidden text-sm font-medium text-[var(--color-navy-dark)] no-underline hover:text-[var(--color-navy)] md:inline"
-          >
-            My shortlist
-          </Link>
+          <ShortlistNavLink />
           <ButtonLink href="/search" className="px-4 py-2 text-sm">
             Start your shortlist
           </ButtonLink>
