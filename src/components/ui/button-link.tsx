@@ -4,15 +4,11 @@ import { cn } from "@/lib/utils";
 
 type Variant = "primary" | "secondary" | "ghost" | "primary-on-dark";
 
-const styles: Record<Variant, string> = {
-  primary:
-    "bg-[var(--color-navy)] text-white shadow-[var(--shadow-card)] hover:bg-[var(--color-navy-light)] hover:text-white",
-  secondary:
-    "border-2 border-[var(--color-navy-dark)] bg-white text-[var(--color-navy-dark)] hover:bg-[var(--color-parchment-dark)] hover:text-[var(--color-navy-dark)]",
-  ghost:
-    "border border-transparent bg-[var(--color-parchment-dark)] text-[var(--color-navy-dark)] hover:bg-[var(--color-border)] hover:text-[var(--color-navy)]",
-  "primary-on-dark":
-    "bg-white text-[var(--color-navy-dark)] shadow-md hover:bg-[var(--color-parchment)] hover:text-[var(--color-navy-dark)]",
+const variantClass: Record<Variant, string> = {
+  primary: "btn btn-primary",
+  secondary: "btn btn-secondary",
+  ghost: "btn btn-ghost",
+  "primary-on-dark": "btn btn-on-dark",
 };
 
 export function ButtonLink({
@@ -27,14 +23,7 @@ export function ButtonLink({
   className?: string;
 }) {
   return (
-    <Link
-      href={href}
-      className={cn(
-        "inline-flex items-center justify-center rounded-[var(--radius-md)] px-6 py-3 text-sm font-semibold no-underline transition-colors",
-        styles[variant],
-        className,
-      )}
-    >
+    <Link href={href} className={cn(variantClass[variant], className)}>
       {children}
     </Link>
   );

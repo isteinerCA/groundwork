@@ -1,17 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  /* PRD §16.4 — navy, parchment, amber */
-  --color-navy: #1a365d;
-  --color-navy-light: #2c5282;
-  --color-navy-dark: #0f2744;
-  --color-parchment: #f9f8f6;
-  --color-parchment-dark: #f0ebe3;
-  --color-amber: #b8860b;
-  --color-amber-soft: #f5ecd4;
-  --color-text: #1a202c;
-  --color-text-muted: #5a6578;
-  --color-border: #e2ddd4;
+  /* Groundwork brand — wordmark navy, sage leaf, cream ground */
+  --color-navy: #12222e;
+  --color-navy-light: #2a4254;
+  --color-navy-dark: #0a141b;
+  --color-parchment: #fcfaf7;
+  --color-parchment-dark: #f3efe8;
+  --color-sage: #97a68b;
+  --color-sage-soft: #e8ede4;
+  /* Eyebrows / soft accents — aligned with logo leaf */
+  --color-amber: #7d8f72;
+  --color-amber-soft: #e8ede4;
+  --color-text: #12222e;
+  --color-text-muted: #5c6b63;
+  --color-border: #e5e0d8;
   --color-surface: #ffffff;
 
   --color-admission-first-come: #276749;
@@ -25,7 +28,7 @@
   --radius-sm: 0.375rem;
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
-  --shadow-card: 0 1px 3px rgb(26 54 93 / 8%), 0 4px 12px rgb(26 54 93 / 6%);
+  --shadow-card: 0 1px 3px rgb(18 34 46 / 8%), 0 4px 12px rgb(18 34 46 / 6%);
 }
 
 @theme inline {
@@ -35,42 +38,127 @@
   --font-serif: var(--font-serif);
 }
 
-body {
-  background: var(--color-parchment);
-  color: var(--color-text);
-  font-family: var(--font-sans);
-  -webkit-font-smoothing: antialiased;
+@layer base {
+  body {
+    background: var(--color-parchment);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif);
+    color: var(--color-navy);
+  }
+
+  /* Content links only — button classes below set their own colors */
+  a:where(:not(.btn)) {
+    color: var(--color-navy-light);
+  }
+
+  a:where(:not(.btn)):hover {
+    color: var(--color-navy);
+  }
+
+  strong {
+    color: var(--color-navy);
+    font-weight: 600;
+  }
 }
 
-h1,
-h2,
-h3 {
-  font-family: var(--font-serif);
-  color: var(--color-navy);
-}
+/*
+ * Shared button styles — must live in @layer components so they beat base link
+ * styles and aren't overridden by unlayered CSS (which breaks Tailwind utilities).
+ */
+@layer components {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    text-decoration: none;
+    transition:
+      color 0.15s ease,
+      background-color 0.15s ease,
+      border-color 0.15s ease;
+  }
 
-a {
-  color: var(--color-navy-light);
-}
+  .btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
 
-a:hover {
-  color: var(--color-navy);
-}
+  .btn-primary {
+    background-color: var(--color-navy);
+    color: #ffffff;
+    box-shadow: var(--shadow-card);
+  }
 
-/* Keep CTA link text readable — global link styles must not override buttons */
-a[class*="bg-[var(--color-navy)]"],
-a[class*="bg-white"],
-button[class*="bg-[var(--color-navy)]"] {
-  color: inherit;
-}
+  .btn-primary:hover {
+    background-color: var(--color-navy-light);
+    color: #ffffff;
+  }
 
-button[class*="bg-[var(--color-navy)]"] {
-  color: white;
-}
+  .btn-secondary {
+    border: 2px solid var(--color-navy-dark);
+    background-color: #ffffff;
+    color: var(--color-navy-dark);
+  }
 
-strong {
-  color: var(--color-navy);
-  font-weight: 600;
+  .btn-secondary:hover {
+    background-color: var(--color-parchment-dark);
+    color: var(--color-navy-dark);
+  }
+
+  .btn-ghost {
+    border: 1px solid transparent;
+    background-color: var(--color-parchment-dark);
+    color: var(--color-navy-dark);
+  }
+
+  .btn-ghost:hover {
+    background-color: var(--color-border);
+    color: var(--color-navy);
+  }
+
+  .btn-on-dark {
+    background-color: #ffffff;
+    color: var(--color-navy-dark);
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%);
+  }
+
+  .btn-on-dark:hover {
+    background-color: var(--color-parchment);
+    color: var(--color-navy-dark);
+  }
+
+  .btn-outline-on-dark {
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+  }
+
+  .btn-outline-on-dark:hover {
+    background-color: #ffffff;
+    color: var(--color-navy-dark);
+  }
+
+  .btn-outline {
+    border: 1px solid var(--color-navy);
+    background-color: transparent;
+    color: var(--color-navy);
+  }
+
+  .btn-outline:hover {
+    background-color: var(--color-navy);
+    color: #ffffff;
+  }
 }
 
 .field-input {

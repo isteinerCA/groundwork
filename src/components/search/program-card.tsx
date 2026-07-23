@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useSession } from "next-auth/react";
 import { useState } from "react";
 import { SaveGateModal } from "@/components/auth/save-gate-modal";
+import { btnOutline } from "@/components/ui/button-styles";
 import { isEarlyBirdPricingShown } from "@/lib/constants/pricing";
 import { ADMISSION_TYPE_BY_ID } from "@/lib/constants/admission-types";
 import { PROGRAM_CATEGORIES, type ProgramCategoryId } from "@/lib/constants/categories";
@@ -177,7 +178,7 @@ export function ProgramCard({ program }: { program: Program }) {
           href={program.websiteUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center rounded-[var(--radius-md)] border border-[var(--color-navy)] px-4 py-2 text-sm font-medium text-[var(--color-navy)] no-underline hover:bg-[var(--color-navy)] hover:text-white"
+          className={btnOutline}
         >
           Visit program website ↗
         </a>

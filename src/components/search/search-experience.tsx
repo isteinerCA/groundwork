@@ -16,6 +16,7 @@ import {
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
 import { filterPrograms, sortPrograms, type SortOption } from "@/lib/data/filter-programs";
+import { btnPrimary } from "@/components/ui/button-styles";
 import { summarizeSearchFilters, trackEvent } from "@/lib/analytics";
 import { loadLastSearchFilters, saveLastSearchFilters } from "@/lib/search/last-filters";
 import type { Program, SearchFilters } from "@/lib/types/program";
@@ -278,7 +279,7 @@ export function SearchExperience({
               <button
                 type="button"
                 onClick={runSearch}
-                className="rounded-[var(--radius-md)] bg-[var(--color-navy)] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[var(--color-navy-light)]"
+                className={btnPrimary}
               >
                 Search
               </button>

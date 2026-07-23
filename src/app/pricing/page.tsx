@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { signIn, useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
+import { btnPrimary } from "@/components/ui/button-styles";
 import { PricingFaq, PriceDisplay } from "@/components/marketing/pricing-faq";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
@@ -91,7 +92,7 @@ export default function PricingPage() {
               </p>
               <Link
                 href="/dashboard"
-                className="mt-4 inline-block rounded-[var(--radius-md)] bg-[var(--color-navy)] px-6 py-3 text-sm font-medium text-white no-underline"
+                className={`${btnPrimary} mt-4`}
               >
                 Go to dashboard
               </Link>
@@ -100,7 +101,7 @@ export default function PricingPage() {
             <button
               type="button"
               onClick={() => signIn("google", { callbackUrl: "/pricing" })}
-              className="mt-8 w-full rounded-[var(--radius-md)] bg-[var(--color-navy)] px-6 py-3 text-sm font-medium text-white hover:bg-[var(--color-navy-light)]"
+              className={`${btnPrimary} mt-8 w-full`}
             >
               {earlyBird
                 ? "Sign in with Google — free early bird access"
@@ -124,7 +125,7 @@ export default function PricingPage() {
               type="button"
               onClick={startCheckout}
               disabled={loading}
-              className="mt-8 w-full rounded-[var(--radius-md)] bg-[var(--color-navy)] px-6 py-3 text-sm font-medium text-white hover:bg-[var(--color-navy-light)] disabled:opacity-60"
+              className={`${btnPrimary} mt-8 w-full disabled:opacity-60`}
             >
               {loading
                 ? "Redirecting to checkout…"

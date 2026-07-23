@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink, SectionEyebrow } from "@/components/ui/button-link";
+import { btnOutlineOnDark } from "@/components/ui/button-styles";
 import { CategoryIcon } from "@/components/icons/category-icons";
 import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
 
@@ -306,10 +307,7 @@ export function FinalCtaSection() {
           <ButtonLink href="/search" variant="primary-on-dark">
             Start your shortlist
           </ButtonLink>
-          <Link
-            href="#categories"
-            className="inline-flex items-center justify-center rounded-[var(--radius-md)] border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white no-underline transition hover:bg-white hover:text-[var(--color-navy-dark)]"
-          >
+          <Link href="#categories" className={btnOutlineOnDark}>
             See the categories
           </Link>
         </div>

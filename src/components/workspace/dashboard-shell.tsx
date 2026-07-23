@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
+import { GroundworkLogo } from "@/components/layout/groundwork-logo";
 import { ValueBanner } from "@/components/marketing/value-banner";
 import { NewShortlistDialog } from "@/components/workspace/new-shortlist-dialog";
 
@@ -31,15 +32,7 @@ export function DashboardShell({
       <NewShortlistDialog open={newListOpen} onClose={() => setNewListOpen(false)} />
       <div className="mx-auto flex max-w-[1400px]">
         <aside className="hidden w-56 shrink-0 border-r border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-6 lg:block">
-          <Link href="/" className="flex items-center gap-2 no-underline">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--color-navy)] text-sm text-white">
-              G
-            </span>
-            <div>
-              <p className="font-serif text-lg text-[var(--color-navy)]">Groundwork</p>
-              <p className="text-[10px] text-[var(--color-text-muted)]">Summer Programs Explorer</p>
-            </div>
-          </Link>
+          <GroundworkLogo subtitle="Summer Programs Explorer" imageClassName="h-8" />
 
           <nav className="mt-8 space-y-1">
             {NAV.map((item) => {

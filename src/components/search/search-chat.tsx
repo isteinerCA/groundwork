@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { btnPrimary } from "@/components/ui/button-styles";
 import { logChatEvent } from "@/lib/chat-analytics";
 import { trackEvent } from "@/lib/analytics";
 import {
@@ -144,7 +145,7 @@ export function SearchChat({
                 />
                 <button
                   type="submit"
-                  className="shrink-0 rounded-[var(--radius-md)] bg-[var(--color-navy)] px-3 py-2 text-sm font-medium text-white hover:bg-[var(--color-navy-light)]"
+                  className={`${btnPrimary} shrink-0 px-3 py-2`}
                 >
                   Send
                 </button>

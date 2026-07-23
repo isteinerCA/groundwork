@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { signIn } from "next-auth/react";
+import { btnPrimary } from "@/components/ui/button-styles";
 import {
   formatSeasonPassPrice,
   isEarlyBirdPricingShown,
@@ -36,7 +37,7 @@ export function SaveGateModal({
             <button
               type="button"
               onClick={() => signIn("google", { callbackUrl: "/pricing" })}
-              className="mt-6 w-full rounded-[var(--radius-md)] bg-[var(--color-navy)] px-4 py-3 text-sm font-medium text-white"
+              className={`${btnPrimary} mt-6 w-full`}
             >
               Continue with Google
             </button>
@@ -49,10 +50,7 @@ export function SaveGateModal({
               {formatSeasonPassPrice()} seasonal pass (valid through June 30). Search remains
               free.
             </p>
-            <Link
-              href="/pricing"
-              className="mt-6 block w-full rounded-[var(--radius-md)] bg-[var(--color-navy)] px-4 py-3 text-center text-sm font-medium text-white no-underline"
-            >
+            <Link href="/pricing" className={`${btnPrimary} mt-6 w-full`}>
               View pricing
             </Link>
           </>

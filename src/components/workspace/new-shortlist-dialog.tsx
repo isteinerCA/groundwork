@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { btnPrimary } from "@/components/ui/button-styles";
 import {
   defaultArchiveShortlistName,
   uniqueShortlistName,
@@ -71,7 +72,7 @@ export function NewShortlistDialog({
                 startNewShortlist(archiveName.trim());
                 onClose();
               }}
-              className="rounded-[var(--radius-md)] bg-[var(--color-navy)] px-4 py-2.5 text-sm font-medium text-white hover:bg-[var(--color-navy-light)] disabled:opacity-50"
+              className={`${btnPrimary} disabled:opacity-50`}
             >
               Start new list
             </button>

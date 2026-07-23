@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { INQUIRY_TYPES, slaForInquiry, type InquiryTypeId } from "@/lib/contact/types";
+import { INQUIRY_TYPES, inquiryRequiresProgramFields, inquiryRequiresProgramUrl, slaForInquiry, type InquiryTypeId } from "@/lib/contact/types";
 import { clientIpFromRequest, isRateLimited } from "@/lib/contact/rate-limit";
 import { persistSubmission, sendContactEmail, type StoredSubmission } from "@/lib/contact/store";
 import { isValidEmail, isValidUrl, sanitizeText } from "@/lib/sanitize";
@@ -44,11 +44,19 @@ export async function POST(request: Request) {
   if (!isValidEmail(email)) {
     return NextResponse.json({ error: "Please enter a valid email address." }, { status: 400 });
   }
-  if (!programName) {
-    return NextResponse.json({ error: "Please enter a program name." }, { status: 400 });
-  }
   if (!inquiryType) {
     return NextResponse.json({ error: "Please select an inquiry type." }, { status: 400 });
+  }
+
+  const needsProgram = inquiryRequiresProgramFields(inquiryType);
+  if (needsProgram && !programName) {
+    return NextResponse.json({ error: "Please enter a program name." }, { status: 400 });
+  }
+  if (inquiryRequiresProgramUrl(inquiryType) && !websiteUrl.trim()) {
+    return NextResponse.json({ error: "Please enter the program website URL." }, { status: 400 });
+  }
+  if (needsProgram && !isValidUrl(websiteUrl)) {
+    return NextResponse.json({ error: "Please enter a valid website URL." }, { status: 400 });
   }
   if (message.length < 10) {
     return NextResponse.json(
@@ -56,18 +64,15 @@ export async function POST(request: Request) {
       { status: 400 },
     );
   }
-  if (!isValidUrl(websiteUrl)) {
-    return NextResponse.json({ error: "Please enter a valid website URL." }, { status: 400 });
-  }
 
   const submission: StoredSubmission = {
     id: crypto.randomUUID(),
     name,
     email,
-    programName,
+    programName: needsProgram ? programName : "",
     inquiryType,
     message,
-    websiteUrl,
+    websiteUrl: needsProgram ? websiteUrl : "",
     submittedAt: new Date().toISOString(),
     clientIp,
   };

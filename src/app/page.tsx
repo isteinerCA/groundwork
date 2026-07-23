@@ -19,7 +19,7 @@ export default function HomePage() {
 
   return (
     <>
-      <SiteHeader />
+      <SiteHeader logoPriority />
       <main>
         <LandingHero programCount={programCount} dataVerifiedAt={dataVerifiedAt} />
         <ProblemSection />

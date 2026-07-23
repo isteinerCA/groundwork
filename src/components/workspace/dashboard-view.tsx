@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Suspense, useMemo, useState } from "react";
 import { useSession } from "next-auth/react";
+import { btnPrimary } from "@/components/ui/button-styles";
 import { CheckoutSuccessHandler } from "@/components/auth/checkout-success-handler";
 import { EarlyBirdBanner } from "@/components/marketing/pricing-faq";
 import { DashboardShell } from "@/components/workspace/dashboard-shell";
@@ -140,7 +141,7 @@ export function DashboardView({ programs }: { programs: Program[] }) {
           </div>
           <Link
             href="/search"
-            className="inline-flex items-center gap-2 rounded-[var(--radius-md)] bg-[var(--color-navy)] px-4 py-2.5 text-sm font-medium text-white no-underline hover:bg-[var(--color-navy-light)]"
+            className={`${btnPrimary} inline-flex items-center gap-2`}
           >
             + Add Program
           </Link>
