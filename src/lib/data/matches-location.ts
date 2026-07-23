@@ -199,15 +199,9 @@ function segmentHasStateAbbrev(segment: string, abbr: string): boolean {
   return new RegExp(`(?:^|[,\\s])${abbr}(?:\\b|$)`, "i").test(normalized);
 }
 
-function residencyText(program: Program): string {
-  return [program.gradeDisplay, program.stateRestriction].filter(Boolean).join(" ").toLowerCase();
-}
-
 function residencyMatchesState(program: Program, state: UsState): boolean {
-  const text = residencyText(program);
-  if (!text) return false;
-  if (program.stateRestriction?.toUpperCase() === state.abbr) return true;
-  return new RegExp(`\\b${state.abbr.toLowerCase()}\\b`).test(text);
+  if (!program.stateRestriction) return false;
+  return program.stateRestriction.toUpperCase() === state.abbr;
 }
 
 function segmentMatchesState(segment: string, state: UsState): boolean {
@@ -217,7 +211,7 @@ function segmentMatchesState(segment: string, state: UsState): boolean {
   if (lower.includes(state.name)) return true;
 
   for (const alias of state.aliases) {
-    if (new RegExp(`\\b${alias}\\b`, "i").test(lower) && segmentHasStateAbbrev(segment, state.abbr)) {
+    if (new RegExp(`\\b${alias.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i").test(lower)) {
       return true;
     }
   }
@@ -240,11 +234,7 @@ export function matchesLocationQuery(program: Program, query: string): boolean {
   const needle = query.trim().toLowerCase();
   if (!needle) return false;
 
-  const locationText = [
-    program.locationDisplay,
-    program.stateRestriction,
-    program.gradeDisplay,
-  ]
+  const locationText = [program.locationDisplay, program.stateRestriction]
     .filter(Boolean)
     .join(" ")
     .toLowerCase();

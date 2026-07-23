@@ -11,13 +11,18 @@ import {
   ProblemSection,
   WorkspaceSection,
 } from "@/components/marketing/landing-sections";
+import { getPreviewPrograms } from "@/lib/programs/preview-programs";
+import { getPrograms } from "@/lib/programs";
 
 export default function HomePage() {
+  const programs = getPrograms();
+  const previewPrograms = getPreviewPrograms(programs, 4);
+
   return (
     <>
       <SiteHeader logoPriority />
       <main>
-        <LandingHero />
+        <LandingHero previewPrograms={previewPrograms} />
         <ProblemSection />
         <CategoriesSection />
         <FinePrintSection />

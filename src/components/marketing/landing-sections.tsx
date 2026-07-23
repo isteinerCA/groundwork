@@ -1,11 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
+import { DashboardOverviewPreview } from "@/components/marketing/dashboard-overview-preview";
 import { ButtonLink, SectionEyebrow } from "@/components/ui/button-link";
 import { btnOutlineOnDark } from "@/components/ui/button-styles";
 import { CategoryIcon } from "@/components/icons/category-icons";
 import { HOME_CATEGORY_ORDER, PROGRAM_CATEGORIES } from "@/lib/constants/categories";
+import {
+  formatProgramCatalogLabel,
+  MARKETING_PROGRAM_COUNT_LABEL,
+} from "@/lib/programs/preview-programs";
+import type { Program } from "@/lib/types/program";
 
-export function LandingHero() {
+export function LandingHero({
+  previewPrograms,
+}: {
+  previewPrograms: Program[];
+}) {
   return (
     <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-20">
       <div className="flex flex-col gap-5">
@@ -15,15 +25,15 @@ export function LandingHero() {
           <em className="font-serif italic text-[var(--color-sage)]">changes everything</em> starts
           here.
         </h1>
-        <p className="text-lg leading-relaxed text-[var(--color-text)]">
-          Hundreds of programs across science, arts, wilderness, and pre-college —
-          different prices, deadlines, and selectivity levels with no good way to compare
-          them. Groundwork lets you filter by grade, interest, format, and budget to build
-          a shortlist in minutes, not hours.
+        <p className="text-lg font-medium leading-relaxed text-[var(--color-navy)]">
+          Compare {MARKETING_PROGRAM_COUNT_LABEL} curated summer programs by grade, budget, and
+          selectivity — with sourced gotchas on every card — and build a shortlist in about 90
+          seconds, free.
         </p>
         <p className="leading-relaxed text-[var(--color-text-muted)]">
-          Plus the fine print — acceptance floors, deposit policies, and safety records —
-          so you can apply with confidence.
+          Built for parents researching middle and high school summer programs — not elementary
+          camps or gap-year adults. Plus the fine print: acceptance floors, deposit policies, and
+          safety records, so you can apply with confidence.
         </p>
         <div className="flex flex-wrap gap-3 pt-1">
           <ButtonLink href="/search">Start your shortlist</ButtonLink>
@@ -36,25 +46,16 @@ export function LandingHero() {
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-600" aria-hidden />
             No account required to search
           </li>
-          <li>140+ curated programs</li>
+          <li>{formatProgramCatalogLabel()}</li>
         </ul>
       </div>
 
-      <div className="relative">
-        <div className="relative aspect-[4/3] overflow-hidden rounded-[var(--radius-lg)] shadow-[var(--shadow-card)]">
-          <Image
-            src="/images/hero-desk.png"
-            alt="Notebook, calendar, and passport on a desk — doing the groundwork for summer program research"
-            fill
-            className="object-cover"
-            priority
-            sizes="(max-width: 1024px) 100vw, 50vw"
-          />
-        </div>
-        <div className="absolute -bottom-4 -left-2 max-w-[240px] rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-white p-4 shadow-[var(--shadow-card)] sm:-left-6">
+      <div className="relative lg:max-w-xl">
+        <DashboardOverviewPreview programs={previewPrograms} />
+        <div className="absolute -bottom-4 -left-2 max-w-[220px] rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-white p-4 shadow-[var(--shadow-card)] sm:-left-6">
           <p className="text-2xl font-normal text-[var(--color-navy)]">90 seconds</p>
           <p className="text-sm font-medium text-[var(--color-navy-light)]">
-            Create your program shortlist in 90 seconds
+            Search, save, and track in one place
           </p>
           <p className="mt-2 text-xs text-[var(--color-text-muted)]">
             Fully funded options included
@@ -82,9 +83,6 @@ export function ProblemSection() {
         <p className="mt-4 text-lg font-semibold text-[var(--color-navy)]">
           Groundwork replaces that.
         </p>
-        <ButtonLink href="/search" className="mt-8">
-          Start your shortlist
-        </ButtonLink>
       </div>
     </section>
   );
@@ -121,9 +119,6 @@ export function CategoriesSection() {
             );
           })}
         </div>
-        <ButtonLink href="/search" variant="secondary" className="mt-10">
-          Start your shortlist
-        </ButtonLink>
       </div>
     </section>
   );
@@ -171,9 +166,6 @@ export function FinePrintSection() {
               </li>
             ))}
           </ul>
-          <ButtonLink href="/search" className="mt-8">
-            Start your shortlist
-          </ButtonLink>
         </div>
       </div>
     </section>
@@ -188,8 +180,8 @@ const STEPS = [
   },
   {
     num: "02",
-    title: "Refine with a plain-English chat",
-    body: "'Only fully funded' or 'two weeks or less, residential' updates your filters in real time. Chat and chips stay in sync.",
+    title: "Refine with a plain-English assistant",
+    body: "'Only fully funded' or 'in California only' updates your filters in real time. The assistant and chips stay in sync.",
   },
   {
     num: "03",
@@ -223,9 +215,6 @@ export function HowItWorksSection() {
                 </li>
               ))}
             </ol>
-            <ButtonLink href="/search" className="mt-8">
-              Start your shortlist
-            </ButtonLink>
           </div>
           <div className="relative aspect-[16/10] overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-parchment)]">
             <Image
@@ -293,8 +282,8 @@ export function WorkspaceSection() {
             </div>
           ))}
         </div>
-        <ButtonLink href="/dashboard" variant="secondary" className="mt-8">
-          Start your shortlist
+        <ButtonLink href="/search" variant="secondary" className="mt-8">
+          Try search free
         </ButtonLink>
       </div>
     </section>

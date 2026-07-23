@@ -4,6 +4,7 @@ import type { ProgramCategoryId } from "@/lib/constants/categories";
 import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
 import type { PriceFilterId, ProgramFormatId } from "@/lib/constants/filters";
 import { filterPrograms } from "@/lib/data/filter-programs";
+import { formatDataQueryLabel } from "@/lib/search/format-data-query-label";
 import { matchesDataQuery, programSearchText } from "@/lib/data/matches-data-query";
 import { resolveLocationQuery } from "@/lib/data/matches-location";
 import type { Program, SearchFilters } from "@/lib/types/program";
@@ -285,7 +286,7 @@ function describePatch(patch: Partial<SearchFilters>): string {
     parts.push(`max price: ${patch.priceFilter.replace(/_/g, " ")}`);
   }
   if (patch.dataQuery?.trim()) {
-    parts.push(`search: "${patch.dataQuery.trim()}"`);
+    parts.push(formatDataQueryLabel(patch.dataQuery.trim()));
   }
 
   return parts.length > 0 ? parts.join(" · ") : "filters updated";
