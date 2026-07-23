@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SearchProductPreview } from "@/components/marketing/search-product-preview";
+import { DashboardOverviewPreview } from "@/components/marketing/dashboard-overview-preview";
 import { ButtonLink, SectionEyebrow } from "@/components/ui/button-link";
 import { btnOutlineOnDark } from "@/components/ui/button-styles";
 import { CategoryIcon } from "@/components/icons/category-icons";
@@ -13,11 +13,8 @@ import type { Program } from "@/lib/types/program";
 
 export function LandingHero({
   previewPrograms,
-  previewResultCount,
 }: {
   previewPrograms: Program[];
-  /** Shown in the hero search mockup — e.g. programs matching sample grade filter. */
-  previewResultCount: number;
 }) {
   return (
     <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-20">
@@ -53,15 +50,12 @@ export function LandingHero({
         </ul>
       </div>
 
-      <div className="relative">
-        <SearchProductPreview
-          programs={previewPrograms}
-          resultCount={previewResultCount}
-        />
+      <div className="relative lg:max-w-xl">
+        <DashboardOverviewPreview programs={previewPrograms} />
         <div className="absolute -bottom-4 -left-2 max-w-[220px] rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-white p-4 shadow-[var(--shadow-card)] sm:-left-6">
           <p className="text-2xl font-normal text-[var(--color-navy)]">90 seconds</p>
           <p className="text-sm font-medium text-[var(--color-navy-light)]">
-            Pick a grade, filter, and shortlist
+            Search, save, and track in one place
           </p>
           <p className="mt-2 text-xs text-[var(--color-text-muted)]">
             Fully funded options included
