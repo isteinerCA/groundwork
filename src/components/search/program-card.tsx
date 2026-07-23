@@ -19,6 +19,7 @@ export function ProgramCard({ program }: { program: Program }) {
   const { data: session, update } = useSession();
   const { isSaved, toggleSave, hydrated } = useWorkspace();
   const [gateMode, setGateMode] = useState<"signin" | "pay" | null>(null);
+  const [showSavedBanner, setShowSavedBanner] = useState(false);
   const saved = hydrated && isSaved(program.id);
 
   const handleSaveClick = async () => {
@@ -30,14 +31,18 @@ export function ProgramCard({ program }: { program: Program }) {
       if (isEarlyBirdPricingShown()) {
         const refreshed = await update();
         if (refreshed?.user?.seasonPassActive) {
-          toggleSave(program.id);
+          const ok = toggleSave(program.id);
+          if (ok && !saved) setShowSavedBanner(true);
         }
         return;
       }
       setGateMode("pay");
       return;
     }
-    toggleSave(program.id);
+    const wasSaved = saved;
+    const ok = toggleSave(program.id);
+    if (ok && !wasSaved) setShowSavedBanner(true);
+    if (wasSaved) setShowSavedBanner(false);
   };
 
   return (
@@ -99,6 +104,18 @@ export function ProgramCard({ program }: { program: Program }) {
           {saved ? "♥" : "♡"}
         </button>
       </div>
+
+      {showSavedBanner && saved && (
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-[var(--radius-md)] border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-900">
+          <span>Saved to your shortlist!</span>
+          <Link
+            href="/dashboard"
+            className="font-semibold text-[var(--color-navy)] no-underline hover:text-[var(--color-navy-light)]"
+          >
+            View dashboard →
+          </Link>
+        </div>
+      )}
 
       <dl className="mt-4 grid gap-2 text-sm sm:grid-cols-2">
         <div>
@@ -174,7 +191,7 @@ export function ProgramCard({ program }: { program: Program }) {
           href={`/contact?program=${encodeURIComponent(program.name)}`}
           className="inline-flex items-center px-2 py-2 text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-navy)]"
         >
-          Report an issue
+          Contact us / report an issue
         </Link>
       </div>
     </article>

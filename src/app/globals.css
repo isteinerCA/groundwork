@@ -59,8 +59,13 @@ a:hover {
 
 /* Keep CTA link text readable — global link styles must not override buttons */
 a[class*="bg-[var(--color-navy)]"],
-a[class*="bg-white"] {
+a[class*="bg-white"],
+button[class*="bg-[var(--color-navy)]"] {
   color: inherit;
+}
+
+button[class*="bg-[var(--color-navy)]"] {
+  color: white;
 }
 
 strong {

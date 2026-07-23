@@ -143,13 +143,13 @@ export default function PricingPage() {
 
         <p className="mt-12 text-sm text-[var(--color-text-muted)]">
           Still have questions?{" "}
-          <Link href="/contact" className="text-[var(--color-navy-light)]">
-            Contact us
+          <Link href="/contact" className="font-medium text-[var(--color-navy)]">
+            Contact us / report an issue
           </Link>
           .
         </p>
       </main>
-      <SiteFooter />
+      <SiteFooter showAbout={false} />
     </>
   );
 }

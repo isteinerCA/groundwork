@@ -31,7 +31,7 @@ export default async function SearchPage({
         initialFullyFunded={initialFullyFunded}
         initialFormat={initialFormat}
       />
-      <SiteFooter />
+      <SiteFooter showAbout={true} />
     </>
   );
 }

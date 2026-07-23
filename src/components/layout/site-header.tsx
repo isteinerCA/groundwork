@@ -4,8 +4,6 @@ import { ButtonLink } from "@/components/ui/button-link";
 
 const NAV = [
   { href: "/#categories", label: "Categories" },
-  { href: "/#fine-print", label: "Fine print" },
-  { href: "/#workspace", label: "Workspace" },
   { href: "/#pricing", label: "Pricing" },
 ] as const;
 
@@ -30,7 +28,7 @@ export function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="font-medium text-[var(--color-text)] no-underline hover:text-[var(--color-navy)]"
+              className="font-medium text-[var(--color-navy-dark)] no-underline hover:text-[var(--color-navy)]"
             >
               {item.label}
             </Link>
@@ -41,7 +39,7 @@ export function SiteHeader() {
           <UserMenu />
           <Link
             href="/dashboard"
-            className="hidden text-sm font-medium text-[var(--color-text-muted)] no-underline hover:text-[var(--color-navy)] md:inline"
+            className="hidden text-sm font-medium text-[var(--color-navy-dark)] no-underline hover:text-[var(--color-navy)] md:inline"
           >
             My shortlist
           </Link>

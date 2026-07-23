@@ -8,11 +8,11 @@ const styles: Record<Variant, string> = {
   primary:
     "bg-[var(--color-navy)] text-white shadow-[var(--shadow-card)] hover:bg-[var(--color-navy-light)] hover:text-white",
   secondary:
-    "border-2 border-[var(--color-navy)] bg-white text-[var(--color-navy)] hover:bg-[var(--color-parchment-dark)] hover:text-[var(--color-navy)]",
+    "border-2 border-[var(--color-navy-dark)] bg-white text-[var(--color-navy-dark)] hover:bg-[var(--color-parchment-dark)] hover:text-[var(--color-navy-dark)]",
   ghost:
-    "text-[var(--color-navy-light)] hover:bg-[var(--color-parchment-dark)] hover:text-[var(--color-navy)]",
+    "border border-transparent bg-[var(--color-parchment-dark)] text-[var(--color-navy-dark)] hover:bg-[var(--color-border)] hover:text-[var(--color-navy)]",
   "primary-on-dark":
-    "bg-white text-[var(--color-navy)] shadow-md hover:bg-[var(--color-parchment)] hover:text-[var(--color-navy)]",
+    "bg-white text-[var(--color-navy-dark)] shadow-md hover:bg-[var(--color-parchment)] hover:text-[var(--color-navy-dark)]",
 };
 
 export function ButtonLink({

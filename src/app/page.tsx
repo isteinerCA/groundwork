@@ -31,7 +31,7 @@ export default function HomePage() {
         <FinalCtaSection />
         <AdminSection />
       </main>
-      <SiteFooter />
+      <SiteFooter showAbout={false} />
     </>
   );
 }

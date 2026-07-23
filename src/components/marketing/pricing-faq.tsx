@@ -50,6 +50,13 @@ export function PricingFaq() {
           </div>
         ))}
       </dl>
+      <p className="mt-8 text-sm text-[var(--color-text-muted)]">
+        Something wrong with a listing?{" "}
+        <a href="/contact" className="font-medium text-[var(--color-navy)] no-underline hover:text-[var(--color-navy-light)]">
+          Contact us / report an issue
+        </a>
+        .
+      </p>
     </section>
   );
 }

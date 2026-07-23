@@ -21,10 +21,12 @@ export function SearchChat({
   filters,
   resultCount,
   onApplyFilters,
+  embedded = false,
 }: {
   filters: SearchFilters;
   resultCount: number;
   onApplyFilters: (next: SearchFilters) => void;
+  embedded?: boolean;
 }) {
   const [collapsed, setCollapsed] = useState(false);
   const [input, setInput] = useState("");
@@ -32,7 +34,7 @@ export function SearchChat({
     {
       id: "welcome",
       role: "assistant",
-      text: "Hi — I can set filters from plain English. Chips above stay in sync.",
+      text: "I'm here to refine your filters — try \"fully funded only\" or \"under $5k.\" Your chips stay in sync as we go.",
     },
   ]);
   const listRef = useRef<HTMLDivElement>(null);
@@ -83,9 +85,9 @@ export function SearchChat({
   };
 
   return (
-    <aside className="lg:sticky lg:top-4 lg:self-start">
+    <aside className={embedded ? undefined : "lg:sticky lg:top-4 lg:self-start"}>
       <div className="overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]">
-        <div className="flex items-center justify-between border-b border-[var(--color-border)] px-4 py-3">
+        <div className="flex items-center justify-between border-b border-[var(--color-border)] bg-[var(--color-parchment-dark)]/40 px-4 py-3">
           <div>
             <h2 className="text-base text-[var(--color-navy)]">Search assistant</h2>
             <p className="text-xs text-[var(--color-text-muted)]">{openingHint}</p>
@@ -93,7 +95,7 @@ export function SearchChat({
           <button
             type="button"
             onClick={() => setCollapsed((v) => !v)}
-            className="rounded border border-[var(--color-border)] px-2 py-1 text-xs text-[var(--color-text-muted)] lg:hidden"
+            className="rounded border border-[var(--color-border)] bg-white px-2 py-1 text-xs text-[var(--color-text-muted)] lg:hidden"
             aria-expanded={!collapsed}
           >
             {collapsed ? "Show" : "Hide"}
@@ -104,7 +106,9 @@ export function SearchChat({
           <>
             <div
               ref={listRef}
-              className="max-h-64 space-y-3 overflow-y-auto px-4 py-3 text-sm lg:max-h-[420px]"
+              className={`space-y-3 overflow-y-auto px-4 py-3 text-sm ${
+                embedded ? "max-h-48 lg:max-h-56" : "max-h-64 lg:max-h-[420px]"
+              }`}
             >
               {messages.map((message) => (
                 <div

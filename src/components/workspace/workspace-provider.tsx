@@ -16,11 +16,13 @@ import { trackEvent } from "@/lib/analytics";
 import { mergeWorkspace } from "@/lib/workspace/merge";
 import {
   acknowledgeNotesPrivacy,
+  archiveActiveAndStartNew,
   createShortlist,
   getActiveShortlist,
   isProgramSaved,
   loadWorkspace,
   removeFromShortlist,
+  renameShortlist,
   saveWorkspace,
   toggleSaveProgram,
   updateShortlistItem,
@@ -37,6 +39,8 @@ interface WorkspaceContextValue {
   ) => boolean;
   removeItem: (programId: string) => boolean;
   addShortlist: (name: string) => boolean;
+  startNewShortlist: (archiveName: string) => boolean;
+  renameShortlist: (shortlistId: string, name: string) => boolean;
   setDisplayName: (name: string) => void;
   acknowledgePrivacy: () => void;
   hydrated: boolean;
@@ -131,6 +135,21 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
       addShortlist: (name) => {
         if (!guardWrite()) return false;
         persist((prev) => createShortlist(prev, name));
+        return true;
+      },
+      startNewShortlist: (archiveName) => {
+        if (!guardWrite()) return false;
+        persist((prev) => {
+          const active = getActiveShortlist(prev);
+          if (active.items.length === 0) return prev;
+          if (!archiveName.trim()) return prev;
+          return archiveActiveAndStartNew(prev, archiveName.trim());
+        });
+        return true;
+      },
+      renameShortlist: (shortlistId, name) => {
+        if (!guardWrite()) return false;
+        persist((prev) => renameShortlist(prev, shortlistId, name));
         return true;
       },
       setDisplayName: (name) => persist((prev) => ({ ...prev, displayName: name })),

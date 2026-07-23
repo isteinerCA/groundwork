@@ -1,4 +1,5 @@
 import type { AdmissionTypeId } from "@/lib/constants/admission-types";
+import { ADMISSION_TYPES } from "@/lib/constants/admission-types";
 import type { ProgramCategoryId } from "@/lib/constants/categories";
 import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
 import type { PriceFilterId, ProgramFormatId } from "@/lib/constants/filters";
@@ -148,7 +149,7 @@ function answerQuestion(input: string, context: ChatParserContext): string {
   if (lower.includes("harvard") && lower.includes("ssp")) {
     const gradeSelected = context.filters.gradesCompleted.length > 0;
     return gradeSelected
-      ? "Harvard SSP still appears because it matches your grade filter and any active category or format filters. It is not hidden by default — check the Hidden Details panel on its card for SEVP and safety context. Try adding Highly Competitive or Pre-College filters, or search for a specific program name in the results list."
+      ? "Harvard SSP still appears because it matches your grade filter and any active category or format filters. It is not hidden by default — check the Hidden Details panel on its card for SEVP and safety context. Try adding Selective or Pre-College filters, or search for a specific program name in the results list."
       : "Harvard SSP will appear once you select a grade it accepts (typically grades 10–12). Select a grade chip first, then narrow with categories or admission type if you want fewer results.";
   }
 
@@ -180,7 +181,10 @@ function describePatch(patch: Partial<SearchFilters>): string {
     parts.push(`categories: ${labels.join(", ")}`);
   }
   if (patch.admissionTypes?.length) {
-    parts.push(`admission: ${patch.admissionTypes.join(", ")}`);
+    const labels = patch.admissionTypes.map(
+      (id) => ADMISSION_TYPES.find((a) => a.id === id)?.label ?? id,
+    );
+    parts.push(`admission: ${labels.join(", ")}`);
   }
   if (patch.formats?.length) {
     parts.push(`format: ${patch.formats.join(", ")}`);
@@ -280,34 +284,43 @@ export function parseChatMessage(
   }
 
   if (!changed) {
-    return {
-      type: "unknown",
-      message:
-        'Try "only fully funded programs", "just finished 11th grade", or "residential only, not online".',
-    };
+    const hint =
+      context.resultCount >= 25
+        ? 'Lots of results — try "under $5000", "residential only", or "selective programs only".'
+        : context.resultCount <= 8 && context.filters.gradesCompleted.length > 0
+          ? 'Few matches — try "fully funded only" or removing a category filter.'
+          : 'Try "only fully funded programs", "just finished 11th grade", or "residential only".';
+    return { type: "unknown", message: hint };
   }
+
+  const followUp =
+    context.resultCount >= 25
+      ? " Still a long list — try narrowing budget or admission type."
+      : context.resultCount <= 8 && context.filters.gradesCompleted.length > 0
+        ? " Short list — ask me to broaden if you want more options."
+        : "";
 
   return {
     type: "filter",
     filterPatch: patch,
-    message: `Updated filters: ${describePatch(patch)}.`,
+    message: `Applied ${describePatch(patch)}. Results update on the right.${followUp}`,
   };
 }
 
 export function getChatOpeningPrompt(context: ChatParserContext): string {
   if (context.filters.gradesCompleted.length === 0) {
-    return "Tell me your child's grade to get started — e.g. \"just finished 10th grade\".";
+    return "Start with a grade — e.g. \"just finished 10th grade\" — then I'll help refine.";
   }
   if (context.resultCount === 0) {
-    return "No matches yet. Ask me to broaden categories, raise your budget, or say \"start over\".";
+    return "No matches — ask me to broaden categories, raise your budget, or say \"start over.\"";
   }
   if (context.resultCount <= 8) {
-    return "Only a few matches — want to broaden categories or relax the price filter?";
+    return `${context.resultCount} programs — want to broaden categories or relax price?`;
   }
   if (context.resultCount >= 25) {
-    return "Lots of results — try narrowing by budget, format, or admission type.";
+    return `${context.resultCount} programs — try narrowing by budget, format, or admission type.`;
   }
-  return "Refine your search in plain English — grade, budget, format, or category.";
+  return `${context.resultCount} programs — refine with plain English (budget, format, category).`;
 }
 
 export function mergeFilterPatch(

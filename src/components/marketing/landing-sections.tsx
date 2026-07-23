@@ -4,13 +4,7 @@ import { ButtonLink, SectionEyebrow } from "@/components/ui/button-link";
 import { CategoryIcon } from "@/components/icons/category-icons";
 import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
 
-export function LandingHero({
-  programCount,
-  dataVerifiedAt,
-}: {
-  programCount: number;
-  dataVerifiedAt: string | null;
-}) {
+export function LandingHero({ programCount }: { programCount: number; dataVerifiedAt?: string | null }) {
   return (
     <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-20">
       <div className="flex flex-col gap-5">
@@ -37,10 +31,9 @@ export function LandingHero({
         <ul className="flex flex-wrap gap-x-4 gap-y-2 pt-2 text-sm text-[var(--color-text-muted)]">
           <li className="flex items-center gap-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-600" aria-hidden />
-            No account to search
+            No account required to search
           </li>
           <li>{programCount}+ curated programs</li>
-          {dataVerifiedAt && <li>Updated {dataVerifiedAt}</li>}
         </ul>
       </div>
 
@@ -56,9 +49,9 @@ export function LandingHero({
           />
         </div>
         <div className="absolute -bottom-4 -left-2 max-w-[240px] rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-white p-4 shadow-[var(--shadow-card)] sm:-left-6">
-          <p className="text-2xl font-normal text-[var(--color-navy)]">6 programs</p>
+          <p className="text-2xl font-normal text-[var(--color-navy)]">90 seconds</p>
           <p className="text-sm font-medium text-[var(--color-navy-light)]">
-            shortlisted in under 90 seconds
+            Create your program shortlist in 90 seconds
           </p>
           <p className="mt-2 text-xs text-[var(--color-text-muted)]">
             Fully funded options included
@@ -315,7 +308,7 @@ export function FinalCtaSection() {
           </ButtonLink>
           <Link
             href="#categories"
-            className="inline-flex items-center justify-center rounded-[var(--radius-md)] border-2 border-white/50 px-6 py-3 text-sm font-semibold text-white no-underline transition hover:border-white hover:bg-white/10"
+            className="inline-flex items-center justify-center rounded-[var(--radius-md)] border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white no-underline transition hover:bg-white hover:text-[var(--color-navy-dark)]"
           >
             See the categories
           </Link>

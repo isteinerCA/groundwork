@@ -119,6 +119,46 @@ export function createShortlist(state: WorkspaceState, name: string): WorkspaceS
   };
 }
 
+/** Archive the active shortlist under `archiveName`, then start a fresh empty list. */
+export function archiveActiveAndStartNew(
+  state: WorkspaceState,
+  archiveName: string,
+): WorkspaceState {
+  const active = getActiveShortlist(state);
+  const newActiveId = newId();
+
+  let shortlists = state.shortlists.map((s) =>
+    s.id === active.id && active.items.length > 0 ? { ...s, name: archiveName } : s,
+  );
+
+  shortlists = [
+    ...shortlists,
+    {
+      id: newActiveId,
+      name: "My Shortlist",
+      createdAt: new Date().toISOString(),
+      items: [],
+    },
+  ];
+
+  return { ...state, shortlists, activeShortlistId: newActiveId };
+}
+
+export function renameShortlist(
+  state: WorkspaceState,
+  shortlistId: string,
+  name: string,
+): WorkspaceState {
+  const trimmed = name.trim();
+  if (!trimmed) return state;
+  return {
+    ...state,
+    shortlists: state.shortlists.map((s) =>
+      s.id === shortlistId ? { ...s, name: trimmed } : s,
+    ),
+  };
+}
+
 export function acknowledgeNotesPrivacy(state: WorkspaceState): WorkspaceState {
   return { ...state, notesPrivacyAcknowledged: true };
 }
