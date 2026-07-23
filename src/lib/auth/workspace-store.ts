@@ -26,13 +26,4 @@ export async function saveServerWorkspace(
   await writeFile(filePath, JSON.stringify(state, null, 2), "utf-8");
 }
 
-export function mergeWorkspace(
-  local: WorkspaceState,
-  remote: WorkspaceState | null,
-): WorkspaceState {
-  if (!remote) return local;
-  if (local.shortlists.every((s) => s.items.length === 0)) return remote;
-  return local;
-}
-
 export { DEFAULT_WORKSPACE };

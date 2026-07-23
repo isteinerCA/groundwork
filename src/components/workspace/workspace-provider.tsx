@@ -13,7 +13,7 @@ import {
 import { useSession } from "next-auth/react";
 import type { ShortlistItem, WorkspaceState } from "@/lib/types/workspace";
 import { trackEvent } from "@/lib/analytics";
-import { mergeWorkspace } from "@/lib/auth/workspace-store";
+import { mergeWorkspace } from "@/lib/workspace/merge";
 import {
   acknowledgeNotesPrivacy,
   createShortlist,
