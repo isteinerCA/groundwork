@@ -7,6 +7,7 @@ export type AnalyticsEvent =
   | "search_run"
   | "chat_sent"
   | "program_saved"
+  | "programs_bulk_saved"
   | "program_unsaved"
   | "contact_form_submitted"
   | "status_changed"

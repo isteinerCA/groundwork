@@ -165,7 +165,21 @@ function answerQuestion(input: string, context: ChatParserContext): string {
     return 'Try phrases like "under 5000 dollars", "only fully funded programs", or "hide unlisted prices". Price filters include programs marked "Contact program" unless you hide unlisted prices.';
   }
 
-  return "I can adjust filters for you — try describing grade, category, budget, or format. For explanations, ask why a program appears or how pricing filters work.";
+  return "Groundwork doesn't have that information at this point. I can help refine filters for grade, category, budget, format, and admission type — or explain why a program appears in your results.";
+}
+
+function buildUnknownMessage(input: string): string {
+  if (/\b(?:girl|boy|boys|girls|women|men|female|male|single[- ]sex|gender)\b/i.test(input)) {
+    return "Groundwork doesn't have that information at this point — we can't filter by gender or single-sex programs yet, but we hope to support more search options in the future. Try category, format, budget, or admission type, or browse your results.";
+  }
+
+  const summary = input.length > 72 ? `${input.slice(0, 69)}…` : input;
+
+  if (/\b(?:find|show|filter|only|looking for|want|need|programs?)\b/i.test(input)) {
+    return `Groundwork doesn't have that information at this point — I couldn't turn "${summary}" into a filter. I only understand grade, category, budget, format, and admission type. Try one of those, or browse the results below.`;
+  }
+
+  return "Groundwork doesn't have that information at this point. I can adjust filters for grade, category, budget, format, and admission type — for example \"under $5000\" or \"fully funded only\".";
 }
 
 function describePatch(patch: Partial<SearchFilters>): string {
@@ -284,13 +298,7 @@ export function parseChatMessage(
   }
 
   if (!changed) {
-    const hint =
-      context.resultCount >= 25
-        ? 'Lots of results — try "under $5000", "residential only", or "selective programs only".'
-        : context.resultCount <= 8 && context.filters.gradesCompleted.length > 0
-          ? 'Few matches — try "fully funded only" or removing a category filter.'
-          : 'Try "only fully funded programs", "just finished 11th grade", or "residential only".';
-    return { type: "unknown", message: hint };
+    return { type: "unknown", message: buildUnknownMessage(input) };
   }
 
   const followUp =

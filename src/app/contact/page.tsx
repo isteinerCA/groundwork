@@ -15,13 +15,10 @@ function ContactPageContent() {
     <>
       <SiteHeader />
       <main className="mx-auto max-w-2xl px-4 py-12 sm:px-6">
-        <p className="text-sm font-medium tracking-wide text-[var(--color-text-muted)] uppercase">
-          Add or update a program
-        </p>
-        <h1 className="mt-2 text-3xl">Contact us / Report an issue</h1>
+        <h1 className="text-3xl">Contact us / Report an issue</h1>
         <p className="mt-3 text-[var(--color-text-muted)]">
-          Spot outdated info, disagree with a flag, or want a program added? Send us the
-          details and we&apos;ll follow up per the response times below.
+          Have questions about Groundwork? Spot outdated info, disagree with a flag, or want a
+          program added? Send us the details and we&apos;ll follow up per the response times below.
         </p>
         <ContactForm initialProgramName={initialProgram} />
         <Link href="/" className="mt-8 inline-block text-sm text-[var(--color-navy-light)]">

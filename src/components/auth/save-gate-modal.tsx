@@ -28,11 +28,11 @@ export function SaveGateModal({
       >
         {mode === "signin" ? (
           <>
-            <h2 className="text-xl text-[var(--color-navy)]">Sign in to save programs</h2>
+            <h2 className="text-xl text-[var(--color-navy)]">Sign up to save into your shortlist</h2>
             <p className="mt-2 text-sm text-[var(--color-text-muted)]">
               {isEarlyBirdPricingShown()
-                ? `Early bird: workspace is free for a limited time (regular price ${formatSeasonPassPrice()}/season). Sign in with Google to save programs — search stays free.`
-                : "Create your shortlist with Google — search stays free."}
+                ? `Early bird: workspace is free for a limited time (regular price ${formatSeasonPassPrice()}/season). Sign in with Google to save programs.`
+                : "Create your shortlist with Google."}
             </p>
             <button
               type="button"
@@ -47,8 +47,7 @@ export function SaveGateModal({
             <h2 className="text-xl text-[var(--color-navy)]">Season pass required</h2>
             <p className="mt-2 text-sm text-[var(--color-text-muted)]">
               Saving programs, notes, and compare tools are included with the{" "}
-              {formatSeasonPassPrice()} seasonal pass (valid through June 30). Search remains
-              free.
+              {formatSeasonPassPrice()} seasonal pass (valid through June 30).
             </p>
             <Link href="/pricing" className={`${btnPrimary} mt-6 w-full`}>
               View pricing

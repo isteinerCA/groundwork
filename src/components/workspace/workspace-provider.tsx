@@ -23,6 +23,7 @@ import {
   loadWorkspace,
   removeFromShortlist,
   renameShortlist,
+  saveProgramsToShortlist,
   saveWorkspace,
   toggleSaveProgram,
   updateShortlistItem,
@@ -33,6 +34,7 @@ interface WorkspaceContextValue {
   activeShortlist: ReturnType<typeof getActiveShortlist>;
   isSaved: (programId: string) => boolean;
   toggleSave: (programId: string) => boolean;
+  savePrograms: (programIds: string[]) => boolean;
   updateItem: (
     programId: string,
     patch: Partial<Pick<ShortlistItem, "status" | "deadline" | "notes">>,
@@ -119,6 +121,19 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
           const wasSaved = isProgramSaved(prev, programId);
           trackEvent(wasSaved ? "program_unsaved" : "program_saved");
           return toggleSaveProgram(prev, programId);
+        });
+        return true;
+      },
+      savePrograms: (programIds) => {
+        if (!guardWrite()) return false;
+        const unique = [...new Set(programIds)];
+        persist((prev) => {
+          const before = unique.filter((id) => isProgramSaved(prev, id)).length;
+          const next = saveProgramsToShortlist(prev, unique);
+          const after = unique.filter((id) => isProgramSaved(next, id)).length;
+          const added = after - before;
+          if (added > 0) trackEvent("programs_bulk_saved", { count: added });
+          return next;
         });
         return true;
       },

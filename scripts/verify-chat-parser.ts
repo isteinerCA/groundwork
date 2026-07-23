@@ -78,6 +78,15 @@ const cases: Case[] = [
       if (!/harvard ssp/i.test(message)) throw new Error("expected Harvard SSP explanation");
     },
   },
+  {
+    input: "find girl only programs",
+    expectType: "unknown",
+    assert: (_patch, message) => {
+      if (!/doesn't have that information at this point/i.test(message)) {
+        throw new Error("expected honest limitation message");
+      }
+    },
+  },
 ];
 
 let failed = 0;

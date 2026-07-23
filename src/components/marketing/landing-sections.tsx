@@ -5,7 +5,7 @@ import { btnOutlineOnDark } from "@/components/ui/button-styles";
 import { CategoryIcon } from "@/components/icons/category-icons";
 import { HOME_CATEGORY_ORDER, PROGRAM_CATEGORIES } from "@/lib/constants/categories";
 
-export function LandingHero({ programCount }: { programCount: number; dataVerifiedAt?: string | null }) {
+export function LandingHero() {
   return (
     <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-20">
       <div className="flex flex-col gap-5">
@@ -36,7 +36,7 @@ export function LandingHero({ programCount }: { programCount: number; dataVerifi
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-600" aria-hidden />
             No account required to search
           </li>
-          <li>{programCount}+ curated programs</li>
+          <li>140+ curated programs</li>
         </ul>
       </div>
 

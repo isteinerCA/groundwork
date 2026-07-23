@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { ActiveFilterBar } from "@/components/search/active-filter-bar";
 import { SearchChat } from "@/components/search/search-chat";
+import { SearchShortlistCta } from "@/components/search/search-shortlist-cta";
 import { Chip } from "@/components/ui/chip";
 import { InfoTooltip } from "@/components/ui/info-tooltip";
 import { ProgramCard } from "@/components/search/program-card";
@@ -39,8 +40,11 @@ function hasUrlSeed(
   return Boolean(initialCategory || initialFullyFunded || initialFormat);
 }
 
-function scrollToSearchAssistant() {
+function focusSearchAssistant() {
   document.getElementById("search-assistant")?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  window.setTimeout(() => {
+    document.getElementById("search-chat-input")?.focus();
+  }, 300);
 }
 
 export function SearchExperience({
@@ -167,9 +171,9 @@ export function SearchExperience({
         </div>
       </div>
 
-      {/* PRD v1.2: filters + assistant left, results right. Legacy layout: search-experience.legacy.tsx */}
+      {/* Filters left; results + search assistant right (assistant sits below active filters). */}
       <div className="grid gap-6 lg:grid-cols-[minmax(300px,380px)_minmax(0,1fr)] lg:items-start">
-        <aside className="space-y-4 lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto lg:pr-1">
+        <aside className="lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto lg:pr-1">
           <section className="rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[var(--shadow-card)]">
             <h2 className="text-lg text-[var(--color-navy)]">
               What grade did your child just complete? <span className="text-red-600">*</span>
@@ -328,13 +332,6 @@ export function SearchExperience({
               )}
             </div>
           </section>
-
-          <SearchChat
-            embedded
-            filters={filters}
-            resultCount={results.length}
-            onApplyFilters={applyFilters}
-          />
         </aside>
 
         <div className="min-w-0">
@@ -343,10 +340,21 @@ export function SearchExperience({
             onRemove={update}
             onClearAll={clearAll}
             assistantHint={assistantHint}
-            onScrollToAssistant={scrollToSearchAssistant}
+            onFocusAssistant={focusSearchAssistant}
             showAssistantTip={filters.gradesCompleted.length > 0}
             assistantRefreshKey={assistantRefreshKey}
           />
+
+          {filters.gradesCompleted.length > 0 && (
+            <div className="mt-3">
+              <SearchChat
+                embedded
+                filters={filters}
+                resultCount={results.length}
+                onApplyFilters={applyFilters}
+              />
+            </div>
+          )}
 
           {hasActiveFilters && filters.gradesCompleted.length > 0 && (
             <div className="mt-4 flex flex-wrap items-center gap-2 text-sm">
@@ -367,6 +375,10 @@ export function SearchExperience({
                 </select>
               </label>
             </div>
+          )}
+
+          {filters.gradesCompleted.length > 0 && results.length > 0 && (
+            <SearchShortlistCta programs={results} />
           )}
 
           <div className="mt-6 space-y-4">
