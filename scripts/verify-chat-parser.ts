@@ -2,10 +2,12 @@
  * PRD §14.2 chat parser scenarios.
  * Run: npx tsx scripts/verify-chat-parser.ts
  */
+import { readFileSync } from "node:fs";
 import {
   DEFAULT_SEARCH_FILTERS,
   type SearchFilters,
 } from "../src/lib/types/program";
+import { filterPrograms } from "../src/lib/data/filter-programs";
 import { mergeFilterPatch, parseChatMessage } from "../src/lib/chat-parser";
 import { programMatchesCategory } from "../src/lib/data/matches-category";
 import type { Program } from "../src/lib/types/program";
@@ -148,6 +150,25 @@ if (failed === 0) {
   } as Program;
   if (!programMatchesCategory(rsi, "leadership-gifted")) {
     console.error("FAIL secondary tag category match for RSI");
+    failed++;
+  }
+}
+
+if (failed === 0) {
+  const data = JSON.parse(readFileSync("data/seed/programs.json", "utf-8")) as {
+    programs: Program[];
+  };
+  const filters: SearchFilters = {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [10],
+    dataQuery: "massachusetts",
+  };
+  const results = filterPrograms(data.programs, filters);
+  const falsePositives = results.filter((program) => /,\s*CA\b/i.test(program.locationDisplay));
+  if (falsePositives.length > 0) {
+    console.error(
+      `FAIL MA filter included CA programs: ${falsePositives.map((p) => p.name).join(", ")}`,
+    );
     failed++;
   }
 }

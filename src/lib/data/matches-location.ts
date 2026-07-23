@@ -76,6 +76,11 @@ const STATE_BY_ABBR = Object.fromEntries(US_STATES.map((state) => [state.abbr, s
   UsState
 >;
 
+const STATE_BY_NAME = Object.fromEntries(US_STATES.map((state) => [state.name, state])) as Record<
+  string,
+  UsState
+>;
+
 const LOCATION_STOP_WORDS = new Set([
   "in",
   "at",
@@ -145,6 +150,16 @@ function findStateByToken(token: string): UsState | null {
   return null;
 }
 
+function resolveState(query: string): UsState | null {
+  const trimmed = query.trim().toLowerCase();
+  if (!trimmed) return null;
+
+  const direct = findStateByToken(trimmed);
+  if (direct) return direct;
+
+  return STATE_BY_NAME[trimmed] ?? null;
+}
+
 /** Resolve free-text location input to a canonical state name for filtering. */
 export function resolveLocationQuery(input: string): string | undefined {
   const trimmed = input.trim().toLowerCase();
@@ -163,50 +178,78 @@ export function resolveLocationQuery(input: string): string | undefined {
 }
 
 export function expandLocationQuery(query: string): string[] {
-  const trimmed = query.trim().toLowerCase();
-  if (!trimmed) return [];
-
-  const state = findStateByToken(trimmed);
+  const state = resolveState(query);
   if (state) {
-    return [state.name, state.abbr.toLowerCase(), ...state.aliases, ...state.misspellings];
+    return [state.name, state.abbr.toLowerCase(), ...state.aliases];
   }
-
-  return [trimmed];
+  return [query.trim().toLowerCase()].filter(Boolean);
 }
 
-function locationHaystack(program: Program): string {
-  return [
+/** Location segments — split combined formats like "Cambridge, MA & Online". */
+function locationSegments(locationDisplay: string): string[] {
+  return locationDisplay
+    .split(/\s*&\s*|\s*;\s*/)
+    .map((part) => part.trim())
+    .filter(Boolean);
+}
+
+function segmentHasStateAbbrev(segment: string, abbr: string): boolean {
+  const normalized = segment.trim();
+  if (!normalized) return false;
+  return new RegExp(`(?:^|[,\\s])${abbr}(?:\\b|$)`, "i").test(normalized);
+}
+
+function residencyText(program: Program): string {
+  return [program.gradeDisplay, program.stateRestriction].filter(Boolean).join(" ").toLowerCase();
+}
+
+function residencyMatchesState(program: Program, state: UsState): boolean {
+  const text = residencyText(program);
+  if (!text) return false;
+  if (program.stateRestriction?.toUpperCase() === state.abbr) return true;
+  return new RegExp(`\\b${state.abbr.toLowerCase()}\\b`).test(text);
+}
+
+function segmentMatchesState(segment: string, state: UsState): boolean {
+  if (segmentHasStateAbbrev(segment, state.abbr)) return true;
+
+  const lower = segment.toLowerCase();
+  if (lower.includes(state.name)) return true;
+
+  for (const alias of state.aliases) {
+    if (new RegExp(`\\b${alias}\\b`, "i").test(lower) && segmentHasStateAbbrev(segment, state.abbr)) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+export function matchesLocationQuery(program: Program, query: string): boolean {
+  const state = resolveState(query);
+  if (state) {
+    if (residencyMatchesState(program, state)) return true;
+
+    for (const segment of locationSegments(program.locationDisplay)) {
+      if (segmentMatchesState(segment, state)) return true;
+    }
+
+    return false;
+  }
+
+  const needle = query.trim().toLowerCase();
+  if (!needle) return false;
+
+  const locationText = [
     program.locationDisplay,
     program.stateRestriction,
     program.gradeDisplay,
-    program.name,
-    program.institution,
-    ...program.secondaryTags,
   ]
     .filter(Boolean)
     .join(" ")
     .toLowerCase();
-}
 
-export function matchesLocationQuery(program: Program, query: string): boolean {
-  const terms = expandLocationQuery(query);
-  if (terms.length === 0) return false;
-
-  const haystack = locationHaystack(program);
-  const location = program.locationDisplay.toLowerCase();
-  const restriction = (program.stateRestriction ?? "").toLowerCase();
-
-  return terms.some((term) => {
-    if (term.length === 2) {
-      return (
-        new RegExp(`(?:^|[,\\s])${term}(?:\\b|$)`, "i").test(location) ||
-        restriction === term ||
-        haystack.includes(` ${term}`) ||
-        haystack.includes(`, ${term}`)
-      );
-    }
-    return haystack.includes(term);
-  });
+  return locationText.includes(needle);
 }
 
 export function getStateAbbrev(stateName: string): string | undefined {

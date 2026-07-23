@@ -5,7 +5,6 @@ import { signIn } from "next-auth/react";
 import { btnPrimary } from "@/components/ui/button-styles";
 import {
   formatSeasonPassPrice,
-  isEarlyBirdPricingShown,
 } from "@/lib/constants/pricing";
 
 export function SaveGateModal({
@@ -30,9 +29,7 @@ export function SaveGateModal({
           <>
             <h2 className="text-xl text-[var(--color-navy)]">Sign up to save into your shortlist</h2>
             <p className="mt-2 text-sm text-[var(--color-text-muted)]">
-              {isEarlyBirdPricingShown()
-                ? `Early bird: workspace is free for a limited time (regular price ${formatSeasonPassPrice()}/season). Sign in with Google to save programs.`
-                : "Create your shortlist with Google."}
+              Use your Google account to sign up.
             </p>
             <button
               type="button"

@@ -33,8 +33,8 @@ export function matchesDataQuery(program: Program, query: string): boolean {
   if (!trimmed) return true;
 
   const resolvedLocation = resolveLocationQuery(trimmed);
-  if (resolvedLocation && matchesLocationQuery(program, resolvedLocation)) {
-    return true;
+  if (resolvedLocation) {
+    return matchesLocationQuery(program, resolvedLocation);
   }
 
   if (matchesLocationQuery(program, trimmed)) {
