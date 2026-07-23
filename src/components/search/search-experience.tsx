@@ -15,6 +15,7 @@ import {
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
 import { filterPrograms, sortPrograms, type SortOption } from "@/lib/data/filter-programs";
+import { summarizeSearchFilters, trackEvent } from "@/lib/analytics";
 import type { Program, SearchFilters } from "@/lib/types/program";
 import { DEFAULT_SEARCH_FILTERS } from "@/lib/types/program";
 
@@ -65,6 +66,10 @@ export function SearchExperience({
       return;
     }
     setGradeError(false);
+    trackEvent("search_run", {
+      ...summarizeSearchFilters(filters),
+      result_count: results.length,
+    });
   };
 
   const applyFilters = (next: SearchFilters) => {

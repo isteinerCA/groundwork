@@ -10,6 +10,7 @@ import {
   type ReactNode,
 } from "react";
 import type { ShortlistItem, WorkspaceState } from "@/lib/types/workspace";
+import { trackEvent } from "@/lib/analytics";
 import {
   acknowledgeNotesPrivacy,
   createShortlist,
@@ -64,7 +65,12 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
       activeShortlist,
       hydrated,
       isSaved: (programId) => isProgramSaved(state, programId),
-      toggleSave: (programId) => persist((prev) => toggleSaveProgram(prev, programId)),
+      toggleSave: (programId) =>
+        persist((prev) => {
+          const wasSaved = isProgramSaved(prev, programId);
+          trackEvent(wasSaved ? "program_unsaved" : "program_saved");
+          return toggleSaveProgram(prev, programId);
+        }),
       updateItem: (programId, patch) =>
         persist((prev) => updateShortlistItem(prev, programId, patch)),
       removeItem: (programId) => persist((prev) => removeFromShortlist(prev, programId)),

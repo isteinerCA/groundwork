@@ -9,6 +9,7 @@ import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
 import type { Program } from "@/lib/types/program";
 import { exportShortlistCsv } from "@/lib/workspace/export-csv";
 import { buildShareUrl } from "@/lib/workspace/share";
+import { trackEvent } from "@/lib/analytics";
 import {
   computeWorkspaceStats,
   getRecentNotes,
@@ -195,7 +196,10 @@ export function DashboardView({ programs }: { programs: Program[] }) {
                         <td className="px-3 py-4">
                           <StatusSelect
                             value={item.status}
-                            onChange={(status) => updateItem(item.programId, { status })}
+                            onChange={(status) => {
+                              updateItem(item.programId, { status });
+                              trackEvent("status_changed", { status });
+                            }}
                           />
                         </td>
                         <td className="px-3 py-4">

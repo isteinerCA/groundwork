@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { logChatEvent } from "@/lib/chat-analytics";
+import { trackEvent } from "@/lib/analytics";
 import {
   getChatOpeningPrompt,
   mergeFilterPatch,
@@ -66,6 +67,7 @@ export function SearchChat({
     if (result.type === "clear" && result.filterPatch) {
       onApplyFilters(result.filterPatch as SearchFilters);
       logChatEvent(text, result.type, result.filterPatch as SearchFilters, 0);
+      trackEvent("chat_sent", { parse_type: result.type });
       return;
     }
 
@@ -73,8 +75,10 @@ export function SearchChat({
       const next = mergeFilterPatch(filters, result.filterPatch);
       onApplyFilters(next);
       logChatEvent(text, result.type, next, resultCount);
+      trackEvent("chat_sent", { parse_type: result.type });
     } else {
       logChatEvent(text, result.type, filters, resultCount);
+      trackEvent("chat_sent", { parse_type: result.type });
     }
   };
 
