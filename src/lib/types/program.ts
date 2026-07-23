@@ -82,6 +82,8 @@ export interface SearchFilters {
    * price filters. Set true to hide them when filtering by price.
    */
   excludeUnknownPrice: boolean;
+  /** Free-text search across location, gotchas, descriptions, and other CSV fields. */
+  dataQuery: string;
 }
 
 export const DEFAULT_SEARCH_FILTERS: SearchFilters = {
@@ -95,6 +97,7 @@ export const DEFAULT_SEARCH_FILTERS: SearchFilters = {
   priceFilter: "any",
   usOnly: false,
   excludeUnknownPrice: false,
+  dataQuery: "",
 };
 
 /** Expected columns in the program CSV */

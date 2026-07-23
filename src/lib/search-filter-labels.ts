@@ -109,5 +109,13 @@ export function getActiveFilterItems(filters: SearchFilters): ActiveFilterItem[]
     });
   }
 
+  if (filters.dataQuery.trim()) {
+    items.push({
+      key: "data-query",
+      label: `"${filters.dataQuery.trim()}"`,
+      remove: { dataQuery: "" },
+    });
+  }
+
   return items;
 }

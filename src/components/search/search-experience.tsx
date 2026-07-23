@@ -19,7 +19,6 @@ import {
 import { filterPrograms, sortPrograms, type SortOption } from "@/lib/data/filter-programs";
 import { btnPrimary } from "@/components/ui/button-styles";
 import { summarizeSearchFilters, trackEvent } from "@/lib/analytics";
-import { getChatOpeningPrompt } from "@/lib/chat-parser";
 import { loadLastSearchFilters, saveLastSearchFilters } from "@/lib/search/last-filters";
 import type { Program, SearchFilters } from "@/lib/types/program";
 import { DEFAULT_SEARCH_FILTERS } from "@/lib/types/program";
@@ -38,13 +37,6 @@ function hasUrlSeed(
   initialFormat?: import("@/lib/constants/filters").ProgramFormatId,
 ): boolean {
   return Boolean(initialCategory || initialFullyFunded || initialFormat);
-}
-
-function focusSearchAssistant() {
-  document.getElementById("search-assistant")?.scrollIntoView({ behavior: "smooth", block: "nearest" });
-  window.setTimeout(() => {
-    document.getElementById("search-chat-input")?.focus();
-  }, 300);
 }
 
 export function SearchExperience({
@@ -83,7 +75,7 @@ export function SearchExperience({
       return;
     }
     const last = loadLastSearchFilters();
-    if (last) setFilters(last);
+    if (last) setFilters({ ...DEFAULT_SEARCH_FILTERS, ...last });
     setRestoredLastSearch(true);
   }, [restoredLastSearch, validCategory, initialFullyFunded, initialFormat]);
 
@@ -91,29 +83,6 @@ export function SearchExperience({
     if (filters.gradesCompleted.length === 0) return [];
     return sortPrograms(filterPrograms(programs, filters), sort);
   }, [programs, filters, sort]);
-
-  const assistantHint = useMemo(
-    () => getChatOpeningPrompt({ filters, resultCount: results.length }),
-    [filters, results.length],
-  );
-
-  const assistantRefreshKey = useMemo(
-    () =>
-      JSON.stringify({
-        grades: filters.gradesCompleted,
-        categories: filters.categories,
-        admissionTypes: filters.admissionTypes,
-        formats: filters.formats,
-        durationBuckets: filters.durationBuckets,
-        priceFilter: filters.priceFilter,
-        collegeCreditOnly: filters.collegeCreditOnly,
-        fullyFundedOnly: filters.fullyFundedOnly,
-        usOnly: filters.usOnly,
-        excludeUnknownPrice: filters.excludeUnknownPrice,
-        resultCount: results.length,
-      }),
-    [filters, results.length],
-  );
 
   const runSearch = () => {
     if (filters.gradesCompleted.length === 0) {
@@ -155,7 +124,8 @@ export function SearchExperience({
     filters.fullyFundedOnly ||
     filters.priceFilter !== "any" ||
     filters.usOnly ||
-    filters.excludeUnknownPrice;
+    filters.excludeUnknownPrice ||
+    filters.dataQuery.trim().length > 0;
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6">
@@ -335,74 +305,84 @@ export function SearchExperience({
         </aside>
 
         <div className="min-w-0">
-          <ActiveFilterBar
-            filters={filters}
-            onRemove={update}
-            onClearAll={clearAll}
-            assistantHint={assistantHint}
-            onFocusAssistant={focusSearchAssistant}
-            showAssistantTip={filters.gradesCompleted.length > 0}
-            assistantRefreshKey={assistantRefreshKey}
-          />
+          {filters.gradesCompleted.length > 0 ? (
+            <div className="overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]">
+              <ActiveFilterBar
+                embedded
+                filters={filters}
+                onRemove={update}
+                onClearAll={clearAll}
+              />
 
-          {filters.gradesCompleted.length > 0 && (
-            <div className="mt-3">
               <SearchChat
                 embedded
+                inPanel
+                programs={programs}
                 filters={filters}
                 resultCount={results.length}
                 onApplyFilters={applyFilters}
               />
-            </div>
-          )}
 
-          {hasActiveFilters && filters.gradesCompleted.length > 0 && (
-            <div className="mt-4 flex flex-wrap items-center gap-2 text-sm">
-              <span className="font-medium text-[var(--color-navy)]">
-                {results.length} result{results.length === 1 ? "" : "s"}
-              </span>
-              <label className="ml-auto flex items-center gap-2 text-[var(--color-text-muted)]">
-                Sort by
-                <select
-                  value={sort}
-                  onChange={(e) => setSort(e.target.value as SortOption)}
-                  className="rounded border border-[var(--color-border)] bg-white px-2 py-1 text-sm"
-                >
-                  <option value="selectivity">Selectivity</option>
-                  <option value="price">Price</option>
-                  <option value="duration">Duration</option>
-                  <option value="name">Name</option>
-                </select>
-              </label>
-            </div>
-          )}
+              {results.length > 0 && (
+                <div className="border-b border-[var(--color-border)] bg-[var(--color-parchment)]/40 px-4 py-3">
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                    <p className="text-sm font-semibold text-[var(--color-navy)]">
+                      {results.length} result{results.length === 1 ? "" : "s"}
+                    </p>
+                    <label className="flex items-center gap-2 text-sm text-[var(--color-text-muted)]">
+                      Sort by
+                      <select
+                        value={sort}
+                        onChange={(e) => setSort(e.target.value as SortOption)}
+                        className="rounded border border-[var(--color-border)] bg-white px-2 py-1 text-sm"
+                      >
+                        <option value="selectivity">Selectivity</option>
+                        <option value="price">Price</option>
+                        <option value="duration">Duration</option>
+                        <option value="name">Name</option>
+                      </select>
+                    </label>
+                    <div className="ml-auto">
+                      <SearchShortlistCta programs={results} compact />
+                    </div>
+                  </div>
+                  <p className="mt-2 text-xs text-[var(--color-text-muted)]">
+                    Tap <span aria-hidden>♡</span> on any program card to build your shortlist.
+                  </p>
+                </div>
+              )}
 
-          {filters.gradesCompleted.length > 0 && results.length > 0 && (
-            <SearchShortlistCta programs={results} />
-          )}
+              <div className="space-y-4 p-4">
+                {results.length === 0 && (
+                  <div className="rounded-[var(--radius-md)] border border-dashed border-[var(--color-border)] bg-[var(--color-parchment)]/50 p-8 text-center">
+                    <p className="text-lg text-[var(--color-navy)]">No programs match these filters.</p>
+                    <p className="mt-2 text-[var(--color-text-muted)]">
+                      Try removing a filter, asking the assistant to broaden your search, or say
+                      &quot;start over&quot;.
+                    </p>
+                    <button
+                      type="button"
+                      onClick={clearAll}
+                      className="mt-4 text-sm font-medium text-[var(--color-navy-light)]"
+                    >
+                      Clear all filters
+                    </button>
+                  </div>
+                )}
 
-          <div className="mt-6 space-y-4">
-            {filters.gradesCompleted.length > 0 && results.length === 0 && (
-              <div className="rounded-[var(--radius-md)] border border-[var(--color-border)] bg-white p-8 text-center">
-                <p className="text-lg text-[var(--color-navy)]">No programs match these filters.</p>
-                <p className="mt-2 text-[var(--color-text-muted)]">
-                  Try removing a category, broadening your price range, or ask the assistant to
-                  relax filters.
-                </p>
-                <button
-                  type="button"
-                  onClick={clearAll}
-                  className="mt-4 text-sm font-medium text-[var(--color-navy-light)]"
-                >
-                  Clear all filters
-                </button>
+                {results.map((program) => (
+                  <ProgramCard key={program.id} program={program} />
+                ))}
               </div>
-            )}
-
-            {results.map((program) => (
-              <ProgramCard key={program.id} program={program} />
-            ))}
-          </div>
+            </div>
+          ) : (
+            <div className="rounded-[var(--radius-lg)] border border-dashed border-[var(--color-border)] bg-[var(--color-parchment)]/50 px-6 py-16 text-center">
+              <p className="text-lg text-[var(--color-navy)]">Select a grade to see programs</p>
+              <p className="mt-2 text-sm text-[var(--color-text-muted)]">
+                Choose a grade on the left, then refine with filters or the search assistant.
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </div>

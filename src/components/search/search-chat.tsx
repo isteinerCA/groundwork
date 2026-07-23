@@ -10,7 +10,7 @@ import {
   parseChatMessage,
   type ChatParserContext,
 } from "@/lib/chat-parser";
-import type { SearchFilters } from "@/lib/types/program";
+import type { Program, SearchFilters } from "@/lib/types/program";
 
 interface ChatMessage {
   id: string;
@@ -21,13 +21,17 @@ interface ChatMessage {
 export function SearchChat({
   filters,
   resultCount,
+  programs,
   onApplyFilters,
   embedded = false,
+  inPanel = false,
 }: {
   filters: SearchFilters;
   resultCount: number;
+  programs: Program[];
   onApplyFilters: (next: SearchFilters) => void;
   embedded?: boolean;
+  inPanel?: boolean;
 }) {
   const [collapsed, setCollapsed] = useState(false);
   const [input, setInput] = useState("");
@@ -35,12 +39,12 @@ export function SearchChat({
     {
       id: "welcome",
       role: "assistant",
-      text: "I'm here to refine your filters — try \"fully funded only\" or \"under $5k.\" Your chips stay in sync as we go.",
+      text: 'I refine chip filters and search our program data — locations, gotchas, descriptions. Try "in California only", "fully funded only", or "programs with deposit flags".',
     },
   ]);
   const listRef = useRef<HTMLDivElement>(null);
 
-  const context: ChatParserContext = { filters, resultCount };
+  const context: ChatParserContext = { filters, resultCount, programs };
   const openingHint = getChatOpeningPrompt(context);
 
   const refreshKey = useMemo(
@@ -56,6 +60,7 @@ export function SearchChat({
         fullyFundedOnly: filters.fullyFundedOnly,
         usOnly: filters.usOnly,
         excludeUnknownPrice: filters.excludeUnknownPrice,
+        dataQuery: filters.dataQuery,
         resultCount,
       }),
     [filters, resultCount],
@@ -113,15 +118,29 @@ export function SearchChat({
   };
 
   return (
-    <aside id="search-assistant" className={embedded ? undefined : "lg:sticky lg:top-4 lg:self-start"}>
-      <div className="overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]">
-        <div className="flex items-center justify-between border-b border-[var(--color-border)] bg-[var(--color-parchment-dark)]/40 px-4 py-3">
+    <aside id="search-assistant" className={embedded && !inPanel ? undefined : inPanel ? undefined : "lg:sticky lg:top-4 lg:self-start"}>
+      <div
+        className={
+          inPanel
+            ? undefined
+            : "overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]"
+        }
+      >
+        <div
+          className={`flex items-center justify-between px-4 py-3 ${
+            inPanel
+              ? "border-b border-[var(--color-border)] bg-[var(--color-sage-soft)]/35"
+              : "border-b border-[var(--color-border)] bg-[var(--color-parchment-dark)]/40"
+          }`}
+        >
           <div className="min-w-0 flex-1">
-            <h2 className="text-base text-[var(--color-navy)]">Search assistant</h2>
+            <p className="text-xs font-semibold tracking-wide text-[var(--color-navy)] uppercase">
+              Search assistant
+            </p>
             <p
-              className={`mt-1 rounded-[var(--radius-sm)] border border-transparent px-1 py-0.5 text-xs transition-colors ${
+              className={`mt-1 rounded-[var(--radius-sm)] border border-transparent px-1 py-0.5 text-sm transition-colors ${
                 hintPulse
-                  ? "assistant-hint-pulse border-[var(--color-sage)] font-semibold text-[var(--color-navy)]"
+                  ? "assistant-hint-pulse border-[var(--color-sage)] font-medium text-[var(--color-navy)]"
                   : "text-[var(--color-text-muted)]"
               }`}
             >
@@ -175,7 +194,7 @@ export function SearchChat({
                   id="search-chat-input"
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
-                  placeholder='e.g. "only fully funded programs"'
+                  placeholder='e.g. "in California only"'
                   className="min-w-0 flex-1 rounded-[var(--radius-md)] border border-[var(--color-border)] px-3 py-2 text-sm"
                 />
                 <button

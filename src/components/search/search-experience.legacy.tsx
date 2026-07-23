@@ -302,7 +302,12 @@ export function SearchExperience({
           </div>
         </div>
 
-        <SearchChat filters={filters} resultCount={results.length} onApplyFilters={applyFilters} />
+        <SearchChat
+          programs={programs}
+          filters={filters}
+          resultCount={results.length}
+          onApplyFilters={applyFilters}
+        />
       </div>
     </div>
   );

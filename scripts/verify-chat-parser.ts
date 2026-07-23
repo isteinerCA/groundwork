@@ -9,8 +9,9 @@ import {
 import { mergeFilterPatch, parseChatMessage } from "../src/lib/chat-parser";
 
 const baseContext = {
-  filters: DEFAULT_SEARCH_FILTERS,
+  filters: { ...DEFAULT_SEARCH_FILTERS, gradesCompleted: [10] },
   resultCount: 42,
+  programs: [] as import("../src/lib/types/program").Program[],
 };
 
 type Case = {
@@ -85,6 +86,13 @@ const cases: Case[] = [
       if (!/doesn't have that information at this point/i.test(message)) {
         throw new Error("expected honest limitation message");
       }
+    },
+  },
+  {
+    input: "in california only",
+    expectType: "filter",
+    assert: (patch) => {
+      if (patch?.dataQuery !== "california") throw new Error("expected california dataQuery");
     },
   },
 ];
