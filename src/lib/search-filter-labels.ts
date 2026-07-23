@@ -5,6 +5,7 @@ import {
   PRICE_FILTERS,
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
+import { formatDataQueryLabel } from "@/lib/search/format-data-query-label";
 import type { SearchFilters } from "@/lib/types/program";
 
 export interface ActiveFilterItem {
@@ -110,10 +111,9 @@ export function getActiveFilterItems(filters: SearchFilters): ActiveFilterItem[]
   }
 
   if (filters.dataQuery.trim()) {
-    const label = filters.dataQuery.trim().replace(/\b\w/g, (c) => c.toUpperCase());
     items.push({
       key: "data-query",
-      label,
+      label: formatDataQueryLabel(filters.dataQuery),
       remove: { dataQuery: "" },
     });
   }

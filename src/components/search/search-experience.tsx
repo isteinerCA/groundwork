@@ -86,6 +86,16 @@ export function SearchExperience({
     return sortPrograms(filterPrograms(programs, filters), sort);
   }, [programs, filters, sort]);
 
+  const duplicateResultNames = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const program of results) {
+      counts.set(program.name, (counts.get(program.name) ?? 0) + 1);
+    }
+    return new Set(
+      [...counts.entries()].filter(([, count]) => count > 1).map(([name]) => name),
+    );
+  }, [results]);
+
   const runSearch = (nextFilters: SearchFilters, resultTotal: number) => {
     if (nextFilters.gradesCompleted.length === 0) return;
     saveLastSearchFilters(nextFilters);
@@ -365,7 +375,11 @@ export function SearchExperience({
                 )}
 
                 {results.map((program) => (
-                  <ProgramCard key={program.id} program={program} />
+                  <ProgramCard
+                    key={program.id}
+                    program={program}
+                    emphasizeTrack={duplicateResultNames.has(program.name)}
+                  />
                 ))}
               </div>
             </div>

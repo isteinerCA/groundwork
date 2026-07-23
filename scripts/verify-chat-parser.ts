@@ -171,6 +171,36 @@ if (failed === 0) {
     );
     failed++;
   }
+  const paPrograms = results.filter((program) =>
+    /\b(?:pittsburgh|philadelphia)\b/i.test(program.locationDisplay),
+  );
+  if (paPrograms.length > 0) {
+    console.error(
+      `FAIL MA filter included PA programs: ${paPrograms.map((p) => `${p.name} (${p.locationDisplay})`).join(", ")}`,
+    );
+    failed++;
+  }
+}
+
+if (failed === 0) {
+  const data = JSON.parse(readFileSync("data/seed/programs.json", "utf-8")) as {
+    programs: Program[];
+  };
+  const filters: SearchFilters = {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [10, 11],
+    categories: ["arts"],
+    dataQuery: "massachusetts",
+  };
+  const results = filterPrograms(data.programs, filters);
+  const cmuInPa = results.filter(
+    (program) =>
+      program.name === "CMU Pre-College" && /pittsburgh,\s*pa/i.test(program.locationDisplay),
+  );
+  if (cmuInPa.length > 0) {
+    console.error("FAIL Boston/MA arts search included CMU Pittsburgh programs");
+    failed++;
+  }
 }
 
 if (failed === 0) {

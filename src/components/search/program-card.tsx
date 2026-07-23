@@ -18,9 +18,12 @@ function categoryLabel(id: ProgramCategoryId): string {
 export function ProgramCard({
   program,
   preview = false,
+  emphasizeTrack = false,
 }: {
   program: Program;
   preview?: boolean;
+  /** When multiple cards share the same program name, lead with the track/session. */
+  emphasizeTrack?: boolean;
 }) {
   const admission = ADMISSION_TYPE_BY_ID[program.admissionType];
   const { data: session, update } = useSession();
@@ -97,8 +100,12 @@ export function ProgramCard({
               </span>
             )}
           </div>
-          <h3 className="mt-2 text-xl text-[var(--color-navy)]">{program.name}</h3>
-          {program.trackDetail && (
+          <h3 className="mt-2 text-xl text-[var(--color-navy)]">
+            {emphasizeTrack && program.trackDetail
+              ? `${program.name} — ${program.trackDetail}`
+              : program.name}
+          </h3>
+          {program.trackDetail && !emphasizeTrack && (
             <p className="mt-1 text-sm text-[var(--color-text-muted)]">{program.trackDetail}</p>
           )}
         </div>

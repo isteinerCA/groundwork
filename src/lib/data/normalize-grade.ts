@@ -98,6 +98,19 @@ export function normalizeGrade(raw: string): GradeResult {
     }
   }
 
+  if (lower.includes("rising") && /jr\s*\/?\s*sr/.test(lower)) {
+    const ageMatch = lower.match(/\((\d+)\s+by\s+(?:jun|july)/i);
+    if (ageMatch) {
+      return {
+        gradeDisplay,
+        gradeCompletedMin: 10,
+        gradeCompletedMax: 11,
+        gradeSource: "mixed",
+        stateRestriction,
+      };
+    }
+  }
+
   if (lower.includes("rising")) {
     const nums = [...lower.matchAll(/(\d+)(?:st|nd|rd|th)?/g)].map((m) => Number(m[1]));
     if (nums.length >= 2) {
