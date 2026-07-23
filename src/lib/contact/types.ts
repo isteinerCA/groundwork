@@ -32,6 +32,15 @@ export interface ContactFormPayload {
   websiteUrl: string;
 }
 
+/** Program name + URL fields apply only to listing changes. */
+export function inquiryRequiresProgramFields(type: InquiryTypeId): boolean {
+  return type === "update" || type === "add_new";
+}
+
+export function inquiryRequiresProgramUrl(type: InquiryTypeId): boolean {
+  return type === "add_new";
+}
+
 export function slaForInquiry(type: InquiryTypeId): string {
   return INQUIRY_TYPES.find((t) => t.id === type)?.sla ?? INQUIRY_TYPES[3].sla;
 }

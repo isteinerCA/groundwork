@@ -1,8 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { Suspense, useMemo, useState } from "react";
+import { useSession } from "next-auth/react";
+import { btnPrimary } from "@/components/ui/button-styles";
+import { CheckoutSuccessHandler } from "@/components/auth/checkout-success-handler";
+import { EarlyBirdBanner } from "@/components/marketing/pricing-faq";
 import { DashboardShell } from "@/components/workspace/dashboard-shell";
+import {
+  formatSeasonPassPrice,
+  isEarlyBirdPricingShown,
+} from "@/lib/constants/pricing";
 import { StatusBadge, StatusSelect } from "@/components/workspace/status-badge";
 import { useWorkspace } from "@/components/workspace/workspace-provider";
 import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
@@ -22,9 +30,12 @@ function categoryLabel(id: string): string {
 }
 
 export function DashboardView({ programs }: { programs: Program[] }) {
-  const { state, activeShortlist, updateItem, removeItem, acknowledgePrivacy } = useWorkspace();
+  const { data: session } = useSession();
+  const { state, activeShortlist, updateItem, removeItem, acknowledgePrivacy, canWrite } =
+    useWorkspace();
   const [viewMode, setViewMode] = useState<"table" | "board">("table");
   const [shareMessage, setShareMessage] = useState<string | null>(null);
+  const [removeTarget, setRemoveTarget] = useState<{ id: string; name: string } | null>(null);
 
   const programsById = useMemo(
     () => new Map(programs.map((p) => [p.id, p])),
@@ -65,7 +76,59 @@ export function DashboardView({ programs }: { programs: Program[] }) {
 
   return (
     <DashboardShell showBanner>
+      {removeTarget && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4">
+          <div
+            role="dialog"
+            aria-modal
+            className="w-full max-w-sm rounded-[var(--radius-lg)] bg-white p-6 shadow-xl"
+          >
+            <h2 className="text-lg text-[var(--color-navy)]">Remove program?</h2>
+            <p className="mt-2 text-sm text-[var(--color-text-muted)]">
+              Remove <strong>{removeTarget.name}</strong> from your shortlist? Notes and deadline
+              for this program will be deleted.
+            </p>
+            <div className="mt-5 flex gap-3">
+              <button
+                type="button"
+                onClick={() => {
+                  removeItem(removeTarget.id);
+                  setRemoveTarget(null);
+                }}
+                className="rounded-[var(--radius-md)] bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-red-700"
+              >
+                Remove program
+              </button>
+              <button
+                type="button"
+                onClick={() => setRemoveTarget(null)}
+                className="rounded-[var(--radius-md)] border border-[var(--color-border)] px-4 py-2 text-sm"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
       <div className="px-4 py-8 sm:px-6 lg:px-8">
+        <Suspense fallback={null}>
+          <CheckoutSuccessHandler />
+        </Suspense>
+
+        {!canWrite && session?.user && !isEarlyBirdPricingShown() && (
+          <p className="mb-6 rounded-[var(--radius-md)] border border-[var(--color-amber)]/40 bg-[var(--color-amber-soft)]/50 px-4 py-3 text-sm text-[var(--color-navy)]">
+            View-only mode —{" "}
+            <Link href="/pricing" className="font-medium text-[var(--color-navy-light)]">
+              get a season pass ({formatSeasonPassPrice()})
+            </Link>{" "}
+            to save and edit your shortlist.
+          </p>
+        )}
+
+        {!canWrite && session?.user && isEarlyBirdPricingShown() && (
+          <EarlyBirdBanner className="mb-6" />
+        )}
+
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div>
             <h1 className="flex items-center gap-2 text-3xl">
@@ -78,7 +141,7 @@ export function DashboardView({ programs }: { programs: Program[] }) {
           </div>
           <Link
             href="/search"
-            className="inline-flex items-center gap-2 rounded-[var(--radius-md)] bg-[var(--color-navy)] px-4 py-2.5 text-sm font-medium text-white no-underline hover:bg-[var(--color-navy-light)]"
+            className={`${btnPrimary} inline-flex items-center gap-2`}
           >
             + Add Program
           </Link>
@@ -169,7 +232,9 @@ export function DashboardView({ programs }: { programs: Program[] }) {
                       <th className="px-3 py-3 font-medium">Dates</th>
                       <th className="px-3 py-3 font-medium">Cost</th>
                       <th className="px-3 py-3 font-medium">Status</th>
+                      <th className="px-3 py-3 font-medium">Deadline</th>
                       <th className="px-3 py-3 font-medium">Notes</th>
+                      <th className="px-3 py-3 font-medium"> </th>
                     </tr>
                   </thead>
                   <tbody>
@@ -211,8 +276,11 @@ export function DashboardView({ programs }: { programs: Program[] }) {
                                 deadline: e.target.value || null,
                               })
                             }
-                            className="mb-1 block w-full max-w-[130px] rounded border border-[var(--color-border)] px-1 py-0.5 text-xs"
+                            aria-label={`Deadline for ${program!.name}`}
+                            className="block w-full max-w-[140px] rounded border border-[var(--color-border)] px-2 py-1 text-xs"
                           />
+                        </td>
+                        <td className="px-3 py-4">
                           <textarea
                             value={item.notes}
                             onFocus={() => {
@@ -225,14 +293,18 @@ export function DashboardView({ programs }: { programs: Program[] }) {
                             }
                             placeholder="Add a note…"
                             rows={2}
-                            className="w-full max-w-[160px] rounded border border-[var(--color-border)] px-2 py-1 text-xs"
+                            className="w-full max-w-[180px] rounded border border-[var(--color-border)] px-2 py-1 text-xs"
                           />
+                        </td>
+                        <td className="px-3 py-4">
                           <button
                             type="button"
-                            onClick={() => removeItem(item.programId)}
-                            className="mt-1 text-xs text-red-600"
+                            onClick={() =>
+                              setRemoveTarget({ id: item.programId, name: program!.name })
+                            }
+                            className="rounded border border-red-200 px-2 py-1 text-xs font-medium text-red-700 hover:bg-red-50"
                           >
-                            Remove
+                            Remove program
                           </button>
                         </td>
                       </tr>

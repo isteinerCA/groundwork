@@ -91,7 +91,7 @@ export default function SharePage() {
       <Suspense fallback={<main className="px-6 py-16 text-center">Loading…</main>}>
         <ShareContent />
       </Suspense>
-      <SiteFooter />
+      <SiteFooter showAbout={false} />
     </>
   );
 }

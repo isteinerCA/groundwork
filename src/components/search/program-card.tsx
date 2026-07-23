@@ -1,6 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { useSession } from "next-auth/react";
+import { useState } from "react";
+import { SaveGateModal } from "@/components/auth/save-gate-modal";
+import { btnOutline } from "@/components/ui/button-styles";
+import { isEarlyBirdPricingShown } from "@/lib/constants/pricing";
 import { ADMISSION_TYPE_BY_ID } from "@/lib/constants/admission-types";
 import { PROGRAM_CATEGORIES, type ProgramCategoryId } from "@/lib/constants/categories";
 import { useWorkspace } from "@/components/workspace/workspace-provider";
@@ -12,11 +17,43 @@ function categoryLabel(id: ProgramCategoryId): string {
 
 export function ProgramCard({ program }: { program: Program }) {
   const admission = ADMISSION_TYPE_BY_ID[program.admissionType];
+  const { data: session, update } = useSession();
   const { isSaved, toggleSave, hydrated } = useWorkspace();
+  const [gateMode, setGateMode] = useState<"signin" | "pay" | null>(null);
+  const [showSavedBanner, setShowSavedBanner] = useState(false);
   const saved = hydrated && isSaved(program.id);
 
+  const handleSaveClick = async () => {
+    if (!session?.user) {
+      setGateMode("signin");
+      return;
+    }
+    if (!session.user.seasonPassActive) {
+      if (isEarlyBirdPricingShown()) {
+        const refreshed = await update();
+        if (refreshed?.user?.seasonPassActive) {
+          const ok = toggleSave(program.id);
+          if (ok && !saved) setShowSavedBanner(true);
+        }
+        return;
+      }
+      setGateMode("pay");
+      return;
+    }
+    const wasSaved = saved;
+    const ok = toggleSave(program.id);
+    if (ok && !wasSaved) setShowSavedBanner(true);
+    if (wasSaved) setShowSavedBanner(false);
+  };
+
   return (
-    <article className="rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[var(--shadow-card)]">
+    <>
+      <SaveGateModal
+        open={gateMode !== null}
+        mode={gateMode ?? "signin"}
+        onClose={() => setGateMode(null)}
+      />
+      <article className="rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[var(--shadow-card)]">
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
@@ -55,7 +92,7 @@ export function ProgramCard({ program }: { program: Program }) {
         </div>
         <button
           type="button"
-          onClick={() => toggleSave(program.id)}
+          onClick={handleSaveClick}
           aria-pressed={saved}
           aria-label={saved ? "Remove from shortlist" : "Save to shortlist"}
           title={saved ? "Saved — view on dashboard" : "Save to shortlist"}
@@ -68,6 +105,18 @@ export function ProgramCard({ program }: { program: Program }) {
           {saved ? "♥" : "♡"}
         </button>
       </div>
+
+      {showSavedBanner && saved && (
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-[var(--radius-md)] border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-900">
+          <span>Saved to your shortlist!</span>
+          <Link
+            href="/dashboard"
+            className="font-semibold text-[var(--color-navy)] no-underline hover:text-[var(--color-navy-light)]"
+          >
+            View dashboard →
+          </Link>
+        </div>
+      )}
 
       <dl className="mt-4 grid gap-2 text-sm sm:grid-cols-2">
         <div>
@@ -129,7 +178,7 @@ export function ProgramCard({ program }: { program: Program }) {
           href={program.websiteUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center rounded-[var(--radius-md)] border border-[var(--color-navy)] px-4 py-2 text-sm font-medium text-[var(--color-navy)] no-underline hover:bg-[var(--color-navy)] hover:text-white"
+          className={btnOutline}
         >
           Visit program website ↗
         </a>
@@ -143,9 +192,10 @@ export function ProgramCard({ program }: { program: Program }) {
           href={`/contact?program=${encodeURIComponent(program.name)}`}
           className="inline-flex items-center px-2 py-2 text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-navy)]"
         >
-          Report an issue
+          Contact us / report an issue
         </Link>
       </div>
     </article>
+    </>
   );
 }

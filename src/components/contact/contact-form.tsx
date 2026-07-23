@@ -1,25 +1,52 @@
 "use client";
 
 import { useState, type FormEvent, type ReactNode } from "react";
-import { INQUIRY_TYPES, type InquiryTypeId } from "@/lib/contact/types";
+import {
+  INQUIRY_TYPES,
+  inquiryRequiresProgramFields,
+  inquiryRequiresProgramUrl,
+  type InquiryTypeId,
+} from "@/lib/contact/types";
+import { btnPrimary } from "@/components/ui/button-styles";
 import { trackEvent } from "@/lib/analytics";
 
 interface ContactFormProps {
   initialProgramName?: string;
 }
 
+const MESSAGE_PLACEHOLDERS: Record<InquiryTypeId, string> = {
+  update: "What's outdated or incorrect about this listing?",
+  add_new: "Grades served, dates, cost, format, admission type — anything we should know.",
+  dispute_flag: "Which program and flag are you disputing? Include sources if you have them.",
+  other: "How can we help?",
+};
+
 export function ContactForm({ initialProgramName = "" }: ContactFormProps) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [inquiryType, setInquiryType] = useState<InquiryTypeId>(
+    initialProgramName ? "update" : "other",
+  );
   const [programName, setProgramName] = useState(initialProgramName);
-  const [inquiryType, setInquiryType] = useState<InquiryTypeId>("update");
-  const [message, setMessage] = useState("");
   const [websiteUrl, setWebsiteUrl] = useState("");
+  const [message, setMessage] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<{ referenceId: string; sla: string } | null>(null);
   const [submitting, setSubmitting] = useState(false);
 
+  const showProgramFields = inquiryRequiresProgramFields(inquiryType);
+  const programUrlRequired = inquiryRequiresProgramUrl(inquiryType);
   const selectedSla = INQUIRY_TYPES.find((t) => t.id === inquiryType)?.sla;
+
+  const handleInquiryTypeChange = (next: InquiryTypeId) => {
+    setInquiryType(next);
+    if (!inquiryRequiresProgramFields(next)) {
+      setProgramName("");
+      setWebsiteUrl("");
+    } else if (next === "update" && initialProgramName && !programName) {
+      setProgramName(initialProgramName);
+    }
+  };
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -33,10 +60,10 @@ export function ContactForm({ initialProgramName = "" }: ContactFormProps) {
         body: JSON.stringify({
           name,
           email,
-          programName,
           inquiryType,
           message,
-          websiteUrl,
+          programName: showProgramFields ? programName : "",
+          websiteUrl: showProgramFields ? websiteUrl : "",
         }),
       });
 
@@ -102,22 +129,10 @@ export function ContactForm({ initialProgramName = "" }: ContactFormProps) {
         />
       </Field>
 
-      <Field label="Program name" required>
-        <input
-          type="text"
-          value={programName}
-          onChange={(e) => setProgramName(e.target.value)}
-          required
-          maxLength={200}
-          placeholder="e.g. MIT RSI"
-          className="field-input"
-        />
-      </Field>
-
       <Field label="Inquiry type" required>
         <select
           value={inquiryType}
-          onChange={(e) => setInquiryType(e.target.value as InquiryTypeId)}
+          onChange={(e) => handleInquiryTypeChange(e.target.value as InquiryTypeId)}
           className="field-input"
         >
           {INQUIRY_TYPES.map((type) => (
@@ -131,16 +146,38 @@ export function ContactForm({ initialProgramName = "" }: ContactFormProps) {
         )}
       </Field>
 
-      <Field label="Program website (optional)">
-        <input
-          type="url"
-          value={websiteUrl}
-          onChange={(e) => setWebsiteUrl(e.target.value)}
-          placeholder="https://"
-          maxLength={500}
-          className="field-input"
-        />
-      </Field>
+      {showProgramFields && (
+        <>
+          <Field label="Program name" required>
+            <input
+              type="text"
+              value={programName}
+              onChange={(e) => setProgramName(e.target.value)}
+              required
+              maxLength={200}
+              placeholder="e.g. MIT RSI"
+              className="field-input"
+            />
+          </Field>
+
+          <Field label="Program website" required={programUrlRequired}>
+            <input
+              type="url"
+              value={websiteUrl}
+              onChange={(e) => setWebsiteUrl(e.target.value)}
+              required={programUrlRequired}
+              placeholder="https://"
+              maxLength={500}
+              className="field-input"
+            />
+            {!programUrlRequired && (
+              <p className="mt-1 text-xs text-[var(--color-text-muted)]">
+                Optional — helps us verify the listing faster.
+              </p>
+            )}
+          </Field>
+        </>
+      )}
 
       <Field label="Message" required>
         <textarea
@@ -150,7 +187,7 @@ export function ContactForm({ initialProgramName = "" }: ContactFormProps) {
           minLength={10}
           maxLength={5000}
           rows={5}
-          placeholder="What's outdated, missing, or incorrect?"
+          placeholder={MESSAGE_PLACEHOLDERS[inquiryType]}
           className="field-input"
         />
       </Field>
@@ -164,7 +201,7 @@ export function ContactForm({ initialProgramName = "" }: ContactFormProps) {
       <button
         type="submit"
         disabled={submitting}
-        className="rounded-[var(--radius-md)] bg-[var(--color-navy)] px-6 py-3 text-sm font-medium text-white hover:bg-[var(--color-navy-light)] disabled:opacity-60"
+        className={btnPrimary}
       >
         {submitting ? "Sending…" : "Submit"}
       </button>

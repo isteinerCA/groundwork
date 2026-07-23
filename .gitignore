@@ -35,6 +35,10 @@ yarn-error.log*
 # contact form dev logs
 /data/submissions/*.jsonl
 
+# auth dev stores (use Supabase in production)
+/data/entitlements.json
+/data/workspaces/*.json
+
 # vercel
 .vercel
 

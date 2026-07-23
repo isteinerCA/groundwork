@@ -7,19 +7,22 @@ export const ADMISSION_TYPES = [
     id: "first_come",
     label: "First-Come",
     chipColor: "green",
-    description: "Open or rolling enrollment without competitive selection",
+    description:
+      "First-come or rolling — register before the program fills; no competitive selection process.",
   },
   {
     id: "application",
     label: "Application",
     chipColor: "amber",
-    description: "Application required; selective but not elite-tier",
+    description:
+      "Application required — if your student meets the criteria, they have a good chance of getting in.",
   },
   {
     id: "highly_competitive",
-    label: "Highly Competitive",
+    label: "Selective",
     chipColor: "red",
-    description: "Low acceptance rates or highly selective admission",
+    description:
+      "Highly selective — competition for seats is high. Polish the application and keep backup options ready.",
   },
 ] as const;
 

@@ -1,10 +1,11 @@
 "use client";
 
-import { useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { ActiveFilterBar } from "@/components/search/active-filter-bar";
 import { SearchChat } from "@/components/search/search-chat";
 import { Chip } from "@/components/ui/chip";
+import { InfoTooltip } from "@/components/ui/info-tooltip";
 import { ProgramCard } from "@/components/search/program-card";
 import { ADMISSION_TYPES } from "@/lib/constants/admission-types";
 import { PROGRAM_CATEGORIES, type ProgramCategoryId } from "@/lib/constants/categories";
@@ -15,7 +16,9 @@ import {
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
 import { filterPrograms, sortPrograms, type SortOption } from "@/lib/data/filter-programs";
+import { btnPrimary } from "@/components/ui/button-styles";
 import { summarizeSearchFilters, trackEvent } from "@/lib/analytics";
+import { loadLastSearchFilters, saveLastSearchFilters } from "@/lib/search/last-filters";
 import type { Program, SearchFilters } from "@/lib/types/program";
 import { DEFAULT_SEARCH_FILTERS } from "@/lib/types/program";
 
@@ -25,6 +28,14 @@ function toggle<T>(list: T[], value: T): T[] {
 
 function mergeFilters(current: SearchFilters, patch: Partial<SearchFilters>): SearchFilters {
   return { ...current, ...patch };
+}
+
+function hasUrlSeed(
+  initialCategory?: ProgramCategoryId,
+  initialFullyFunded?: boolean,
+  initialFormat?: import("@/lib/constants/filters").ProgramFormatId,
+): boolean {
+  return Boolean(initialCategory || initialFullyFunded || initialFormat);
 }
 
 export function SearchExperience({
@@ -46,14 +57,26 @@ export function SearchExperience({
       ? initialCategory
       : undefined;
 
-  const [filters, setFilters] = useState<SearchFilters>({
+  const [filters, setFilters] = useState<SearchFilters>(() => ({
     ...DEFAULT_SEARCH_FILTERS,
     categories: validCategory ? [validCategory] : [],
     fullyFundedOnly: initialFullyFunded ?? false,
     formats: initialFormat ? [initialFormat] : [],
-  });
+  }));
   const [sort, setSort] = useState<SortOption>("selectivity");
   const [gradeError, setGradeError] = useState(false);
+  const [restoredLastSearch, setRestoredLastSearch] = useState(false);
+
+  useEffect(() => {
+    if (restoredLastSearch) return;
+    if (hasUrlSeed(validCategory, initialFullyFunded, initialFormat)) {
+      setRestoredLastSearch(true);
+      return;
+    }
+    const last = loadLastSearchFilters();
+    if (last) setFilters(last);
+    setRestoredLastSearch(true);
+  }, [restoredLastSearch, validCategory, initialFullyFunded, initialFormat]);
 
   const results = useMemo(() => {
     if (filters.gradesCompleted.length === 0) return [];
@@ -66,6 +89,7 @@ export function SearchExperience({
       return;
     }
     setGradeError(false);
+    saveLastSearchFilters(filters);
     trackEvent("search_run", {
       ...summarizeSearchFilters(filters),
       result_count: results.length,
@@ -74,7 +98,10 @@ export function SearchExperience({
 
   const applyFilters = (next: SearchFilters) => {
     setFilters(next);
-    if (next.gradesCompleted.length > 0) setGradeError(false);
+    if (next.gradesCompleted.length > 0) {
+      setGradeError(false);
+      saveLastSearchFilters(next);
+    }
   };
 
   const update = (patch: Partial<SearchFilters>) => {
@@ -99,7 +126,7 @@ export function SearchExperience({
     filters.excludeUnknownPrice;
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
+    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6">
       <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
         <div>
           <Link href="/" className="text-sm text-[var(--color-text-muted)] no-underline">
@@ -112,8 +139,9 @@ export function SearchExperience({
         </div>
       </div>
 
-      <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
-        <div>
+      {/* PRD v1.2: filters + assistant left, results right. Legacy layout: search-experience.legacy.tsx */}
+      <div className="grid gap-6 lg:grid-cols-[minmax(300px,380px)_minmax(0,1fr)] lg:items-start">
+        <aside className="space-y-4 lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto lg:pr-1">
           <section className="rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[var(--shadow-card)]">
             <h2 className="text-lg text-[var(--color-navy)]">
               What grade did your child just complete? <span className="text-red-600">*</span>
@@ -133,6 +161,11 @@ export function SearchExperience({
             {gradeError && (
               <p className="mt-2 text-sm text-red-600">Select at least one grade to search.</p>
             )}
+            {filters.gradesCompleted.length === 0 && (
+              <p className="mt-3 rounded-[var(--radius-md)] border border-dashed border-[var(--color-border)] bg-[var(--color-parchment)] px-3 py-2 text-sm text-[var(--color-text-muted)]">
+                Select a grade above to see matching programs.
+              </p>
+            )}
 
             <div className="mt-6 space-y-5">
               <FilterGroup title="Category">
@@ -148,19 +181,38 @@ export function SearchExperience({
                 ))}
               </FilterGroup>
 
-              <FilterGroup title="Admission type">
-                {ADMISSION_TYPES.map((a) => (
-                  <Chip
-                    key={a.id}
-                    label={a.label}
-                    selected={filters.admissionTypes.includes(a.id)}
-                    variant={a.chipColor as "green" | "amber" | "red"}
-                    onClick={() =>
-                      update({ admissionTypes: toggle(filters.admissionTypes, a.id) })
-                    }
-                  />
-                ))}
-              </FilterGroup>
+              <div>
+                <h3 className="mb-2 flex items-center text-sm font-medium text-[var(--color-text-muted)]">
+                  Admission type
+                  <InfoTooltip label="Admission type definitions">
+                    <strong className="text-[var(--color-navy)]">First-Come / Rolling:</strong>{" "}
+                    register before the program fills.
+                    <br />
+                    <strong className="mt-1 inline-block text-[var(--color-navy)]">
+                      Application:
+                    </strong>{" "}
+                    apply formally; qualified students have a good chance.
+                    <br />
+                    <strong className="mt-1 inline-block text-[var(--color-navy)]">
+                      Selective:
+                    </strong>{" "}
+                    high competition — polish the application and plan backups.
+                  </InfoTooltip>
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {ADMISSION_TYPES.map((a) => (
+                    <Chip
+                      key={a.id}
+                      label={a.label}
+                      selected={filters.admissionTypes.includes(a.id)}
+                      variant={a.chipColor as "green" | "amber" | "red"}
+                      onClick={() =>
+                        update({ admissionTypes: toggle(filters.admissionTypes, a.id) })
+                      }
+                    />
+                  ))}
+                </div>
+              </div>
 
               <FilterGroup title="Format">
                 {PROGRAM_FORMATS.map((f) => (
@@ -227,7 +279,7 @@ export function SearchExperience({
               <button
                 type="button"
                 onClick={runSearch}
-                className="rounded-[var(--radius-md)] bg-[var(--color-navy)] px-5 py-2.5 text-sm font-medium text-white hover:bg-[var(--color-navy-light)]"
+                className={btnPrimary}
               >
                 Search
               </button>
@@ -235,7 +287,7 @@ export function SearchExperience({
                 <button
                   type="button"
                   onClick={clearAll}
-                  className="rounded-[var(--radius-md)] border border-[var(--color-border)] px-4 py-2.5 text-sm text-[var(--color-text-muted)]"
+                  className="rounded-[var(--radius-md)] border-2 border-[var(--color-navy)] bg-white px-4 py-2.5 text-sm font-medium text-[var(--color-navy)] hover:bg-[var(--color-parchment-dark)]"
                 >
                   Clear all
                 </button>
@@ -243,6 +295,15 @@ export function SearchExperience({
             </div>
           </section>
 
+          <SearchChat
+            embedded
+            filters={filters}
+            resultCount={results.length}
+            onApplyFilters={applyFilters}
+          />
+        </aside>
+
+        <div className="min-w-0">
           <ActiveFilterBar filters={filters} onRemove={update} onClearAll={clearAll} />
 
           {hasActiveFilters && filters.gradesCompleted.length > 0 && (
@@ -267,19 +328,12 @@ export function SearchExperience({
           )}
 
           <div className="mt-6 space-y-4">
-            {filters.gradesCompleted.length === 0 && (
-              <p className="rounded-[var(--radius-md)] border border-dashed border-[var(--color-border)] p-8 text-center text-[var(--color-text-muted)]">
-                Select a grade above to see matching programs — or ask the assistant on the
-                right.
-              </p>
-            )}
-
             {filters.gradesCompleted.length > 0 && results.length === 0 && (
               <div className="rounded-[var(--radius-md)] border border-[var(--color-border)] bg-white p-8 text-center">
                 <p className="text-lg text-[var(--color-navy)]">No programs match these filters.</p>
                 <p className="mt-2 text-[var(--color-text-muted)]">
-                  Try removing a category, broadening your price range, or ask the assistant
-                  to relax filters.
+                  Try removing a category, broadening your price range, or ask the assistant to
+                  relax filters.
                 </p>
                 <button
                   type="button"
@@ -296,8 +350,6 @@ export function SearchExperience({
             ))}
           </div>
         </div>
-
-        <SearchChat filters={filters} resultCount={results.length} onApplyFilters={applyFilters} />
       </div>
     </div>
   );

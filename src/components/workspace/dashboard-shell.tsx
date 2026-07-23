@@ -2,9 +2,11 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
+import { GroundworkLogo } from "@/components/layout/groundwork-logo";
 import { ValueBanner } from "@/components/marketing/value-banner";
+import { NewShortlistDialog } from "@/components/workspace/new-shortlist-dialog";
 
 const NAV = [
   { href: "/dashboard", label: "Dashboard", icon: "▦" },
@@ -15,13 +17,6 @@ const NAV = [
   { href: "/notes", label: "Notes", icon: "✎" },
 ] as const;
 
-const PRESETS = [
-  { href: "/search?category=stem-engineering", label: "STEM Focus", icon: "⚗" },
-  { href: "/search?fullyFunded=1", label: "Fully Funded", icon: "$" },
-  { href: "/search?format=residential", label: "Residential", icon: "⌂" },
-  { href: "/search?category=cultural-exchange", label: "International", icon: "🌐" },
-] as const;
-
 export function DashboardShell({
   children,
   showBanner = false,
@@ -30,20 +25,14 @@ export function DashboardShell({
   showBanner?: boolean;
 }) {
   const pathname = usePathname();
+  const [newListOpen, setNewListOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-[var(--color-parchment)]">
+      <NewShortlistDialog open={newListOpen} onClose={() => setNewListOpen(false)} />
       <div className="mx-auto flex max-w-[1400px]">
         <aside className="hidden w-56 shrink-0 border-r border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-6 lg:block">
-          <Link href="/" className="flex items-center gap-2 no-underline">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--color-navy)] text-sm text-white">
-              G
-            </span>
-            <div>
-              <p className="font-serif text-lg text-[var(--color-navy)]">Groundwork</p>
-              <p className="text-[10px] text-[var(--color-text-muted)]">Summer Programs Explorer</p>
-            </div>
-          </Link>
+          <GroundworkLogo subtitle="Summer Programs Explorer" imageClassName="h-8" />
 
           <nav className="mt-8 space-y-1">
             {NAV.map((item) => {
@@ -70,21 +59,28 @@ export function DashboardShell({
 
           <div className="mt-8">
             <p className="px-3 text-xs font-semibold tracking-wide text-[var(--color-text-muted)] uppercase">
-              Filter presets
+              Shortlist actions
             </p>
             <div className="mt-2 space-y-1">
-              {PRESETS.map((preset) => (
-                <Link
-                  key={preset.label}
-                  href={preset.href}
-                  className="flex items-center gap-2 rounded-[var(--radius-md)] px-3 py-2 text-sm text-[var(--color-text-muted)] no-underline hover:bg-[var(--color-parchment)] hover:text-[var(--color-navy)]"
-                >
-                  <span aria-hidden className="w-4 text-center opacity-70">
-                    {preset.icon}
-                  </span>
-                  {preset.label}
-                </Link>
-              ))}
+              <Link
+                href="/search"
+                className="flex items-center gap-2 rounded-[var(--radius-md)] px-3 py-2 text-sm font-medium text-[var(--color-navy)] no-underline hover:bg-[var(--color-parchment)]"
+              >
+                <span aria-hidden className="w-4 text-center opacity-70">
+                  ↺
+                </span>
+                Refine search
+              </Link>
+              <button
+                type="button"
+                onClick={() => setNewListOpen(true)}
+                className="flex w-full items-center gap-2 rounded-[var(--radius-md)] px-3 py-2 text-left text-sm text-[var(--color-text-muted)] hover:bg-[var(--color-parchment)] hover:text-[var(--color-navy)]"
+              >
+                <span aria-hidden className="w-4 text-center opacity-70">
+                  +
+                </span>
+                Start new shortlist
+              </button>
             </div>
           </div>
         </aside>

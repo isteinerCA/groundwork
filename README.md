@@ -5,8 +5,8 @@ Freemium web app for discovering and tracking elite summer programs (grades 6–
 ## Stack
 
 - **Next.js 15** (App Router) + TypeScript + Tailwind CSS v4
+- **NextAuth** (Google) + **Stripe** seasonal pass ($49)
 - **Vercel** for hosting (custom domain optional later)
-- Supabase, Stripe, Google Auth — later sprints
 
 ## Getting started
 
@@ -18,6 +18,23 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
+
+### Auth & early bird (launch mode)
+
+Copy `.env.example` → `.env.local`:
+
+```bash
+EARLY_BIRD_FREE=true
+NEXT_PUBLIC_EARLY_BIRD=true
+AUTH_SECRET=<openssl rand -base64 32>
+AUTH_URL=http://localhost:3000
+GOOGLE_CLIENT_ID=...
+GOOGLE_CLIENT_SECRET=...
+```
+
+**Early bird:** workspace is **free** for sign-in users; UI shows regular price **$49/season** with a limited-time free offer. Stripe stays off until you set `NEXT_PUBLIC_STRIPE_CHECKOUT_ENABLED=true`.
+
+Save flow: **Sign in with Google** → free early bird pass → save programs.
 
 ## Data model (Sprint 1)
 
