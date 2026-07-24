@@ -18,7 +18,7 @@ function ContactPageContent() {
         <h1 className="text-3xl">Contact us / Report an issue</h1>
         <p className="mt-3 text-[var(--color-text-muted)]">
           Have questions about Groundwork? Spot outdated info, disagree with a flag, or want a
-          program added? Send us the details and we&apos;ll follow up per the response times below.
+          program added? Send us the details and we&apos;ll be happy to follow up with you.
         </p>
         <ContactForm initialProgramName={initialProgram} />
         <Link href="/" className="mt-8 inline-block text-sm text-[var(--color-navy-light)]">
