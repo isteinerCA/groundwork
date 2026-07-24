@@ -84,6 +84,9 @@ export function ProblemSection() {
         <p className="mt-4 text-lg font-semibold text-[var(--color-navy)]">
           Groundwork replaces that.
         </p>
+        <ButtonLink href="/search" className="mt-8">
+          Start your shortlist
+        </ButtonLink>
       </div>
     </section>
   );
@@ -120,6 +123,9 @@ export function CategoriesSection() {
             );
           })}
         </div>
+        <ButtonLink href="/search" variant="secondary" className="mt-10">
+          Start your shortlist
+        </ButtonLink>
       </div>
     </section>
   );
@@ -167,6 +173,9 @@ export function FinePrintSection() {
               </li>
             ))}
           </ul>
+          <ButtonLink href="/search" className="mt-8">
+            Start your shortlist
+          </ButtonLink>
         </div>
       </div>
     </section>
@@ -216,6 +225,9 @@ export function HowItWorksSection() {
                 </li>
               ))}
             </ol>
+            <ButtonLink href="/search" className="mt-8">
+              Start your shortlist
+            </ButtonLink>
           </div>
           <div className="relative aspect-[16/10] overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-parchment)]">
             <Image
@@ -284,7 +296,7 @@ export function WorkspaceSection() {
           ))}
         </div>
         <ButtonLink href="/search" variant="secondary" className="mt-8">
-          Try search free
+          Start your shortlist
         </ButtonLink>
       </div>
     </section>

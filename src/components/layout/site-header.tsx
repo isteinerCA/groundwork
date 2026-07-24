@@ -5,6 +5,7 @@ import { WorkspaceNavLink } from "@/components/layout/workspace-nav-link";
 import { ButtonLink } from "@/components/ui/button-link";
 
 const NAV = [
+  { href: "/about", label: "About" },
   { href: "/#categories", label: "Categories" },
   { href: "/#pricing", label: "Pricing" },
 ] as const;

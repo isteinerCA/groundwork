@@ -25,7 +25,7 @@ function ContactPageContent() {
           ← Back home
         </Link>
       </main>
-      <SiteFooter showAbout={false} />
+      <SiteFooter />
     </>
   );
 }
