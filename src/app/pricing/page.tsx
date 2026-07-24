@@ -91,10 +91,10 @@ export default function PricingPage() {
                 .
               </p>
               <Link
-                href="/dashboard"
+                href="/workspace"
                 className={`${btnPrimary} mt-4`}
               >
-                Go to dashboard
+                Open workspace
               </Link>
             </div>
           ) : !session ? (

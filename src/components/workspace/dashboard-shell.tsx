@@ -9,9 +9,8 @@ import { ValueBanner } from "@/components/marketing/value-banner";
 import { NewShortlistDialog } from "@/components/workspace/new-shortlist-dialog";
 
 const NAV = [
-  { href: "/dashboard", label: "Dashboard", icon: "▦" },
+  { href: "/workspace", label: "My shortlist", icon: "♡" },
   { href: "/search", label: "Search Programs", icon: "⌕" },
-  { href: "/dashboard", label: "My Shortlist", icon: "♡" },
   { href: "/compare", label: "Compare", icon: "⇔" },
   { href: "/calendar", label: "Calendar", icon: "◷" },
   { href: "/notes", label: "Notes", icon: "✎" },

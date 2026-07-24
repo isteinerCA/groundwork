@@ -8,6 +8,7 @@ import { btnOutline } from "@/components/ui/button-styles";
 import { isEarlyBirdPricingShown } from "@/lib/constants/pricing";
 import { ADMISSION_TYPE_BY_ID } from "@/lib/constants/admission-types";
 import { PROGRAM_CATEGORIES, type ProgramCategoryId } from "@/lib/constants/categories";
+import { formatShortlistMembershipLabel } from "@/lib/workspace/shortlist-membership";
 import { useWorkspace } from "@/components/workspace/workspace-provider";
 import type { Program } from "@/lib/types/program";
 
@@ -29,10 +30,13 @@ export function ProgramCard({
 }) {
   const admission = ADMISSION_TYPE_BY_ID[program.admissionType];
   const { data: session, update } = useSession();
-  const { isSaved, toggleSave, hydrated } = useWorkspace();
+  const { isSavedInActive, getShortlistsForProgram, activeShortlist, toggleSave, hydrated } =
+    useWorkspace();
   const [gateMode, setGateMode] = useState<"signin" | "pay" | null>(null);
   const [showSavedBanner, setShowSavedBanner] = useState(false);
-  const saved = hydrated && isSaved(program.id);
+  const savedInActive = hydrated && isSavedInActive(program.id);
+  const memberLists = hydrated ? getShortlistsForProgram(program.id) : [];
+  const membershipLabel = formatShortlistMembershipLabel(memberLists, activeShortlist.id);
 
   const handleSaveClick = async () => {
     if (!session?.user) {
@@ -44,14 +48,14 @@ export function ProgramCard({
         const refreshed = await update();
         if (refreshed?.user?.seasonPassActive) {
           const ok = toggleSave(program.id);
-          if (ok && !saved) setShowSavedBanner(true);
+          if (ok && !savedInActive) setShowSavedBanner(true);
         }
         return;
       }
       setGateMode("pay");
       return;
     }
-    const wasSaved = saved;
+    const wasSaved = savedInActive;
     const ok = toggleSave(program.id);
     if (ok && !wasSaved) setShowSavedBanner(true);
     if (wasSaved) setShowSavedBanner(false);
@@ -101,6 +105,14 @@ export function ProgramCard({
                 Fully Funded
               </span>
             )}
+            {!preview && memberLists.length > 0 && (
+              <Link
+                href="/workspace"
+                className="inline-flex items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-xs font-medium text-emerald-900 no-underline hover:border-emerald-300"
+              >
+                In {membershipLabel} →
+              </Link>
+            )}
           </div>
           <h3 className="mt-2 text-xl text-[var(--color-navy)]">
             {emphasizeTrack && program.trackDetail
@@ -115,28 +127,38 @@ export function ProgramCard({
           <button
             type="button"
             onClick={handleSaveClick}
-            aria-pressed={saved}
-            aria-label={saved ? "Remove from shortlist" : "Save to shortlist"}
-            title={saved ? "Saved — view on dashboard" : "Save to shortlist"}
+            aria-pressed={savedInActive}
+            aria-label={
+              savedInActive
+                ? `Remove from ${activeShortlist.name}`
+                : `Save to ${activeShortlist.name}`
+            }
+            title={
+              savedInActive
+                ? `Saved to ${activeShortlist.name} — open workspace`
+                : `Save to ${activeShortlist.name}`
+            }
             className={`shrink-0 rounded-full border p-2 text-lg leading-none transition ${
-              saved
+              savedInActive
                 ? "border-red-200 bg-red-50 text-red-600"
                 : "border-[var(--color-border)] text-[var(--color-text-muted)] hover:border-red-200 hover:text-red-500"
             }`}
           >
-            {saved ? "♥" : "♡"}
+            {savedInActive ? "♥" : "♡"}
           </button>
         )}
       </div>
 
-      {showSavedBanner && saved && (
+      {showSavedBanner && savedInActive && (
         <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-[var(--radius-md)] border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-900">
-          <span>Saved to your shortlist!</span>
+          <span>
+            Saved to <strong>{activeShortlist.name}</strong>
+          </span>
           <Link
-            href="/dashboard"
+            href="/workspace"
             className="font-semibold text-[var(--color-navy)] no-underline hover:text-[var(--color-navy-light)]"
           >
-            View dashboard →
+            Open workspace →
           </Link>
         </div>
       )}
@@ -206,12 +228,6 @@ export function ProgramCard({
           >
             Visit program website ↗
           </a>
-          <Link
-            href="/dashboard"
-            className="inline-flex items-center px-2 py-2 text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-navy)]"
-          >
-            My shortlist
-          </Link>
           <Link
             href={`/contact?program=${encodeURIComponent(program.name)}`}
             className="inline-flex items-center px-2 py-2 text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-navy)]"

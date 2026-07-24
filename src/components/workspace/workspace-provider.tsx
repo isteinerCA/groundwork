@@ -11,7 +11,7 @@ import {
   type ReactNode,
 } from "react";
 import { useSession } from "next-auth/react";
-import type { ShortlistItem, WorkspaceState } from "@/lib/types/workspace";
+import type { Shortlist, ShortlistItem, WorkspaceState } from "@/lib/types/workspace";
 import { trackEvent } from "@/lib/analytics";
 import { mergeWorkspace } from "@/lib/workspace/merge";
 import {
@@ -19,7 +19,9 @@ import {
   archiveActiveAndStartNew,
   createShortlist,
   getActiveShortlist,
+  getShortlistsContainingProgram,
   isProgramSaved,
+  isProgramSavedInActiveShortlist,
   loadWorkspace,
   removeFromShortlist,
   renameShortlist,
@@ -33,6 +35,8 @@ interface WorkspaceContextValue {
   state: WorkspaceState;
   activeShortlist: ReturnType<typeof getActiveShortlist>;
   isSaved: (programId: string) => boolean;
+  isSavedInActive: (programId: string) => boolean;
+  getShortlistsForProgram: (programId: string) => Shortlist[];
   toggleSave: (programId: string) => boolean;
   savePrograms: (programIds: string[]) => boolean;
   updateItem: (
@@ -115,10 +119,12 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
       hydrated,
       canWrite,
       isSaved: (programId) => isProgramSaved(state, programId),
+      isSavedInActive: (programId) => isProgramSavedInActiveShortlist(state, programId),
+      getShortlistsForProgram: (programId) => getShortlistsContainingProgram(state, programId),
       toggleSave: (programId) => {
         if (!guardWrite()) return false;
         persist((prev) => {
-          const wasSaved = isProgramSaved(prev, programId);
+          const wasSaved = isProgramSavedInActiveShortlist(prev, programId);
           trackEvent(wasSaved ? "program_unsaved" : "program_saved");
           return toggleSaveProgram(prev, programId);
         });
@@ -128,9 +134,11 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
         if (!guardWrite()) return false;
         const unique = [...new Set(programIds)];
         persist((prev) => {
-          const before = unique.filter((id) => isProgramSaved(prev, id)).length;
+          const before = unique.filter((id) =>
+            isProgramSavedInActiveShortlist(prev, id),
+          ).length;
           const next = saveProgramsToShortlist(prev, unique);
-          const after = unique.filter((id) => isProgramSaved(next, id)).length;
+          const after = unique.filter((id) => isProgramSavedInActiveShortlist(next, id)).length;
           const added = after - before;
           if (added > 0) trackEvent("programs_bulk_saved", { count: added });
           return next;

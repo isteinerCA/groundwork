@@ -27,8 +27,8 @@ export default function CalendarPage() {
         {deadlines.length === 0 ? (
           <div className="mt-10 rounded-[var(--radius-lg)] border border-dashed border-[var(--color-border)] p-10 text-center">
             <p className="text-[var(--color-text-muted)]">No upcoming deadlines yet.</p>
-            <Link href="/dashboard" className="mt-3 inline-block text-[var(--color-navy-light)]">
-              Add deadlines on your dashboard →
+            <Link href="/workspace" className="mt-3 inline-block text-[var(--color-navy-light)]">
+              Add deadlines in your workspace →
             </Link>
           </div>
         ) : (

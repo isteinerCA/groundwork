@@ -37,7 +37,21 @@ export function getActiveShortlist(state: WorkspaceState): Shortlist {
 }
 
 export function isProgramSaved(state: WorkspaceState, programId: string): boolean {
-  return state.shortlists.some((list) =>
+  return getShortlistsContainingProgram(state, programId).length > 0;
+}
+
+export function isProgramSavedInActiveShortlist(
+  state: WorkspaceState,
+  programId: string,
+): boolean {
+  return getActiveShortlist(state).items.some((item) => item.programId === programId);
+}
+
+export function getShortlistsContainingProgram(
+  state: WorkspaceState,
+  programId: string,
+): Shortlist[] {
+  return state.shortlists.filter((list) =>
     list.items.some((item) => item.programId === programId),
   );
 }

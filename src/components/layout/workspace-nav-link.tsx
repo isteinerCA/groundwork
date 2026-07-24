@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useSession } from "next-auth/react";
 import { useWorkspace } from "@/components/workspace/workspace-provider";
 
-/** Show shortlist nav only when the user has saved programs or is signed in. */
-export function ShortlistNavLink() {
+/** Show workspace nav when the user has saved programs or is signed in. */
+export function WorkspaceNavLink() {
   const { data: session } = useSession();
   const { hydrated, state } = useWorkspace();
 
@@ -20,10 +20,10 @@ export function ShortlistNavLink() {
 
   return (
     <Link
-      href="/dashboard"
+      href="/workspace"
       className="hidden text-sm font-medium text-[var(--color-navy-dark)] no-underline hover:text-[var(--color-navy)] md:inline"
     >
-      My shortlist
+      Workspace
     </Link>
   );
 }
