@@ -1,6 +1,7 @@
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { HomePricingSection } from "@/components/marketing/home-pricing-section";
+import { ProgramGallerySection } from "@/components/marketing/program-gallery-section";
 import {
   AdminSection,
   CategoriesSection,
@@ -25,6 +26,7 @@ export default function HomePage() {
         <LandingHero previewPrograms={previewPrograms} />
         <ProblemSection />
         <CategoriesSection />
+        <ProgramGallerySection />
         <FinePrintSection />
         <HowItWorksSection />
         <WorkspaceSection />
