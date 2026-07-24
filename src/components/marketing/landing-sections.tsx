@@ -52,15 +52,13 @@ export function LandingHero({
 
       <div className="relative lg:max-w-xl">
         <DashboardOverviewPreview programs={previewPrograms} />
-        <div className="absolute -top-3 -right-1 z-10 max-w-[210px] rounded-[var(--radius-lg)] border border-[var(--color-navy-dark)] bg-[var(--color-navy)] p-4 text-white shadow-[0_8px_24px_rgb(10_20_27_/_28%)] ring-2 ring-white/90 sm:-right-4 sm:-top-4">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--color-sage)]">
-            Fast start
+        <div className="absolute -top-3 -right-1 z-10 max-w-[240px] rounded-[var(--radius-lg)] border border-[var(--color-navy-dark)] bg-[var(--color-navy)] p-4 text-white shadow-[0_8px_24px_rgb(10_20_27_/_28%)] ring-2 ring-white/90 sm:-right-4 sm:-top-4">
+          <p className="text-lg font-medium leading-snug text-white">
+            Make your shortlist in 90 seconds
           </p>
-          <p className="mt-1 font-serif text-3xl leading-none text-white">90 sec</p>
-          <p className="mt-2 text-sm font-medium leading-snug text-white/90">
-            Search, save, and track in one place
+          <p className="mt-2 text-sm leading-snug text-white/80">
+            Search, save and track in one place
           </p>
-          <p className="mt-2 text-xs text-white/65">Fully funded options included</p>
         </div>
       </div>
     </section>
