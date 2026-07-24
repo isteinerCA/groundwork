@@ -1,7 +1,6 @@
-import { DashboardView } from "@/components/workspace/dashboard-view";
-import { getPrograms } from "@/lib/programs";
+import { redirect } from "next/navigation";
 
-export default function DashboardPage() {
-  const programs = getPrograms();
-  return <DashboardView programs={programs} />;
+/** Legacy route — workspace replaced dashboard in user-facing copy. */
+export default function LegacyDashboardRedirect() {
+  redirect("/workspace");
 }

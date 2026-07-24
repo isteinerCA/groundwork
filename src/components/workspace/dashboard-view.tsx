@@ -136,7 +136,7 @@ export function DashboardView({ programs }: { programs: Program[] }) {
               <span aria-hidden>☀️</span>
             </h1>
             <p className="mt-1 text-[var(--color-text-muted)]">
-              Here&apos;s your program search overview.
+              {activeShortlist.name} · {rows.length} program{rows.length === 1 ? "" : "s"}
             </p>
           </div>
           <Link

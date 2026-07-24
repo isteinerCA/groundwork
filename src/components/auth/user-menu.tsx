@@ -15,7 +15,7 @@ export function UserMenu() {
     return (
       <button
         type="button"
-        onClick={() => signIn("google", { callbackUrl: "/dashboard" })}
+        onClick={() => signIn("google", { callbackUrl: "/workspace" })}
         className="hidden text-sm text-[var(--color-text-muted)] hover:text-[var(--color-navy)] sm:inline"
       >
         Sign in

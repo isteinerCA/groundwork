@@ -19,7 +19,7 @@ export function LandingHero({
   return (
     <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-20">
       <div className="flex flex-col gap-5">
-        <SectionEyebrow>For families searching grades 6–12</SectionEyebrow>
+        <SectionEyebrow>For families with students in grades 6–12</SectionEyebrow>
         <h1 className="text-4xl leading-[1.12] font-normal md:text-5xl lg:text-[3.25rem]">
           The summer that{" "}
           <em className="font-serif italic text-[var(--color-sage)]">changes everything</em> starts
@@ -52,13 +52,14 @@ export function LandingHero({
 
       <div className="relative lg:max-w-xl">
         <DashboardOverviewPreview programs={previewPrograms} />
-        <div className="absolute -bottom-4 -left-2 max-w-[220px] rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-white p-4 shadow-[var(--shadow-card)] sm:-left-6">
-          <p className="text-2xl font-normal text-[var(--color-navy)]">90 seconds</p>
-          <p className="text-sm font-medium text-[var(--color-navy-light)]">
-            Search, save, and track in one place
+        <div className="absolute -top-3 -right-1 z-10 max-w-[240px] rounded-[var(--radius-lg)] border border-[color-mix(in_srgb,var(--color-sage)_70%,var(--color-navy-dark))] bg-[var(--color-sage)] p-4 shadow-[0_8px_24px_rgb(151_166_139_/_32%)] ring-2 ring-white/90 sm:-right-4 sm:-top-4">
+          <p className="text-lg font-medium leading-snug text-[var(--color-navy-dark)]">
+            Make your shortlist
+            <br />
+            in 90 seconds
           </p>
-          <p className="mt-2 text-xs text-[var(--color-text-muted)]">
-            Fully funded options included
+          <p className="mt-2 text-sm leading-snug text-[var(--color-navy-dark)]/80">
+            Search, save and track in one place
           </p>
         </div>
       </div>

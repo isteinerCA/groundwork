@@ -17,14 +17,19 @@ export function SearchShortlistCta({
   compact?: boolean;
 }) {
   const { data: session, update } = useSession();
-  const { isSaved, savePrograms, hydrated } = useWorkspace();
+  const { isSavedInActive, savePrograms, hydrated, state } = useWorkspace();
   const [gateMode, setGateMode] = useState<"signin" | "pay" | null>(null);
   const [justSavedCount, setJustSavedCount] = useState<number | null>(null);
 
+  const savedCount = state.shortlists.reduce(
+    (total, list) => total + list.items.length,
+    0,
+  );
+
   const unsavedPrograms = useMemo(() => {
     if (!hydrated) return programs;
-    return programs.filter((program) => !isSaved(program.id));
-  }, [programs, hydrated, isSaved]);
+    return programs.filter((program) => !isSavedInActive(program.id));
+  }, [programs, hydrated, isSavedInActive]);
 
   const runBulkSave = async () => {
     if (unsavedPrograms.length === 0) return;
@@ -76,12 +81,14 @@ export function SearchShortlistCta({
           ) : (
             <span className="text-xs font-medium text-emerald-800">All saved</span>
           )}
-          <Link
-            href="/dashboard"
-            className="text-xs font-semibold text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
-          >
-            View shortlist →
-          </Link>
+          {savedCount > 0 && (
+            <Link
+              href="/workspace"
+              className="text-xs font-semibold text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
+            >
+              Open workspace →
+            </Link>
+          )}
         </div>
       </>
     );
@@ -114,9 +121,11 @@ export function SearchShortlistCta({
           ) : (
             <span className="text-sm font-medium text-emerald-800">All results saved</span>
           )}
-          <Link href="/dashboard" className={`${btnOutline} px-3 py-2 text-sm`}>
-            View shortlist
-          </Link>
+          {savedCount > 0 && (
+            <Link href="/workspace" className={`${btnOutline} px-3 py-2 text-sm`}>
+              Open workspace
+            </Link>
+          )}
         </div>
       </div>
     </>

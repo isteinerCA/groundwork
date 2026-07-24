@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-07-23",
+  "verifiedAt": "2026-07-24",
   "count": 143,
   "programs": [
     {
@@ -36,7 +36,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://cosmos.ucdavis.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "cosmos-ca-residency",
@@ -92,7 +92,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.cosmos.uci.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "cosmos-ca-residency",
@@ -148,7 +148,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://cosmos.ucla.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "cosmos-ca-residency",
@@ -204,7 +204,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://cosmos.ucmerced.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "cosmos-ca-residency",
@@ -260,7 +260,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://cosmos.ucsc.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "cosmos-ca-residency",
@@ -316,7 +316,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://jacobsschool.ucsd.edu/cosmos/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "cosmos-ca-residency",
@@ -371,7 +371,7 @@
       "fullyFunded": true,
       "financialAidAvailable": true,
       "websiteUrl": "https://ai4all.spcs.stanford.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -407,7 +407,7 @@
       "fullyFunded": true,
       "financialAidAvailable": true,
       "websiteUrl": "https://ai4all.spcs.stanford.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -440,7 +440,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.inspiritai.com/liveonline",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -476,7 +476,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://esap.seas.upenn.edu/about/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -512,7 +512,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://web.mit.edu/wtp/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -546,7 +546,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summerinstitutes.spcs.stanford.edu/courses/2026/artificial-intelligence",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -581,7 +581,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://engineering.jhu.edu/education/engineering-summer-ai-institute/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -617,7 +617,7 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -653,7 +653,7 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -687,7 +687,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -723,7 +723,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -757,7 +757,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -791,7 +791,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -825,7 +825,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -860,7 +860,7 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cee.org/programs/research-science-institute",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "rsi-selectivity",
@@ -923,7 +923,7 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://mites.mit.edu/discover-mites/mites-summer/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -956,7 +956,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summerscience.org/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -990,7 +990,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://lawrencehallofscience.org/teen-internship-programs/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1025,7 +1025,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.education.purdue.edu/geri/youth-programs/summer-residential/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1058,7 +1058,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://outreach.engineering.columbia.edu/shape/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1091,7 +1091,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.wpi.edu/academics/pre-collegiate/summer-programs/frontiers",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1128,7 +1128,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://ei.jhu.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1162,7 +1162,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://cooper.edu/engineering/stem/summer",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1196,7 +1196,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://cooper.edu/engineering/stem/summer",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1231,7 +1231,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://education.ucdavis.edu/young-scholars-program",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1269,7 +1269,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.brown.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1302,7 +1302,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://learnmore.duke.edu/precollege/all-programs",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1337,7 +1337,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://learnmore.duke.edu/precollege/duke-university-marine-lab",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1370,7 +1370,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://immersion.summer.wfu.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "wake-forest-deposit",
@@ -1416,7 +1416,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.georgetown.edu/pre-college-programs/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1452,7 +1452,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.georgetown.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1486,7 +1486,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://universitycollege.tufts.edu/pre-college/browse/tufts-college-experience",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1520,7 +1520,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://universitycollege.tufts.edu/pre-college/academics/summer-hallmark-courses",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1554,7 +1554,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bu.edu/summer/high-school-programs/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1588,7 +1588,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bu.edu/summer/high-school-programs/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1622,7 +1622,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bu.edu/summer/high-school-programs/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1656,7 +1656,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.marist.edu/admission/summer-pre-college",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1690,7 +1690,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.marist.edu/admission/summer-pre-college",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1725,7 +1725,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.summer.ucsb.edu/programs/pre-college",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1759,7 +1759,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.umass.edu/juniper-young-writers/programs/summer-umass",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1793,7 +1793,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.umass.edu/uww/pre-college/programs",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1827,7 +1827,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://case.precollegeprograms.org/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1862,7 +1862,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.harvard.edu/high-school-programs/pre-college-program/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1900,7 +1900,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.harvard.edu/high-school-programs/secondary-school-program/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "harvard-ssp-sevp",
@@ -1952,7 +1952,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://hs.sas.upenn.edu/summer-programs/pre-college-program",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -1987,7 +1987,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.uchicago.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2020,7 +2020,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.nyu.edu/admissions/high-school-and-middle-school-programs/high-school-programs/nyu-precollege/explore-precollege.html",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2053,7 +2053,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.berkeley.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2086,7 +2086,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.usc.edu/summer-programs/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2123,7 +2123,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://admissions.rochester.edu/pre-college/programs/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2156,7 +2156,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.barnard.edu/prebaccalaureate",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2190,7 +2190,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/index.php",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2224,7 +2224,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/commuter-experience.php",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2258,7 +2258,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/commuter-experience.php",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2294,7 +2294,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/biotechnology.php",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2330,7 +2330,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/robotics-engineering.php",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2364,7 +2364,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/health-professions.php",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2398,7 +2398,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/creative-problem-solving-for-competitions.php",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2432,7 +2432,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/pre-law.php",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2466,7 +2466,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/environmental-science-in-the-worm-lab.php",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2502,7 +2502,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://salishseasciences.org/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2538,7 +2538,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/southampton/somas_info.php",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2571,7 +2571,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://cpe.ucdavis.edu/course/uc-davis-pre-college-program-coastal-marine-science",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2606,7 +2606,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://sea.edu/programs/finder/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2619,8 +2619,8 @@
       "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
-      "admissionType": "first_come",
-      "admissionDisplay": "First-come",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
       "formatDisplay": "Residential",
       "formatTags": [
         "residential"
@@ -2639,7 +2639,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://seaturtlecamp.com/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2674,7 +2674,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://islandschool.org/high-school-semester-summer-term/summer-program/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2709,7 +2709,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sunsetbaywharf.com/home",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2744,7 +2744,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.field-studies-council.org/courses-and-experiences/static-courses/marine-science-camp/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2779,7 +2779,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://earthwatch.org/teen-expeditions",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2814,7 +2814,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://copperriver.org/programs/watershed-education/copper-river-stewardship-program/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2849,7 +2849,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.actionquest.com",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2883,7 +2883,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.disl.edu/dhp/summer-camps/marine-science-class/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2897,8 +2897,8 @@
       "gradeCompletedMin": 9,
       "gradeCompletedMax": 11,
       "gradeSource": "mixed",
-      "admissionType": "first_come",
-      "admissionDisplay": "First-come",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
       "formatDisplay": "Day",
       "formatTags": [
         "residential"
@@ -2917,7 +2917,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.disl.edu/dhp/summer-camps/coastal-fisheries/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2952,7 +2952,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.seatrekbvi.com/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -2986,7 +2986,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://whalecamp.com/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3020,7 +3020,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://acadiainstitute.com/advanced-marine-science-camp-program/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3056,7 +3056,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.dcie.miami.edu/summer-programs/academies/credit/index.html",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3091,7 +3091,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.spinnakersailing.com/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3129,7 +3129,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.rosettainstitute.org/biomedical-summer-camps/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3162,7 +3162,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.boldsummers.com/summer-programs/penn-medicine-summer-program/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3195,7 +3195,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.georgiacenter.uga.edu/youth/summer-academy/mini-medical-school-b",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3230,7 +3230,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.msm.edu/Prospective_Students/admissions/PipelinePrograms/BenCarson.php",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3265,7 +3265,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bostonleadershipinstitute.com/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3298,7 +3298,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://hiprc.org/training/high-school/insight-hs/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3334,7 +3334,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://entomology.ca.uky.edu/content/entomology-leadership-program",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3367,7 +3367,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.awesomemath.org/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3400,7 +3400,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "http://www.mathpath.org/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3433,7 +3433,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://promys.org/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3466,7 +3466,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.mathcamp.org/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3501,7 +3501,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://sumac.spcs.stanford.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3534,7 +3534,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.imacs.org/program/summer/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3569,7 +3569,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cybermath.org/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3607,7 +3607,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://alphastar.academy/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3640,7 +3640,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://iyws.program.uiowa.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3673,7 +3673,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summerhumanities.stanford.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3706,7 +3706,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://kenyonreview.org/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3743,7 +3743,7 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://psjp.princeton.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3778,7 +3778,7 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.tellurideassociation.org/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3813,7 +3813,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://linguistics.osu.edu/undergrad/sliys",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3846,7 +3846,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.camplaurel.com/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3881,7 +3881,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.interlochen.org/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "interlochen-safety-history",
@@ -3906,8 +3906,8 @@
       "gradeCompletedMin": 4,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
-      "admissionType": "first_come",
-      "admissionDisplay": "First-come",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
       "formatDisplay": "Residential",
       "formatTags": [
         "residential"
@@ -3926,7 +3926,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://explo.org/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3959,7 +3959,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://bccymca.org/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -3994,7 +3994,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.adirondackcamp.com/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4029,7 +4029,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.nols.edu/teen-expeditions/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4064,7 +4064,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.outwardbound.org/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "outward-bound-solo",
@@ -4109,7 +4109,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://overlandsummers.com/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "overland-staff-pay",
@@ -4152,7 +4152,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://lastingadventures.com/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4188,7 +4188,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.apogeeadventures.com/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4223,7 +4223,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://boldearth.com/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4258,7 +4258,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://moondanceadventures.com/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4291,7 +4291,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.wildernessadventures.com/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4326,7 +4326,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://globalscholars.yale.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4361,7 +4361,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://amigosinternational.org/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4394,7 +4394,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.ciee.org/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4427,7 +4427,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://afs.org/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4462,7 +4462,7 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://yes-abroad.org/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4495,7 +4495,7 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.rotary.org/en/our-programs/youth-exchanges",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4530,7 +4530,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.goputney.com/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4565,7 +4565,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://arccprograms.com/summer-overview/summer-programs-high-school/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4599,7 +4599,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.thatsmandarin.com/chinese-summer-camp/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4633,7 +4633,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://goeastmandarin.com/kids-chinese-camp/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4666,7 +4666,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://keatschinese.com/chinese-language-courses/summer-camp-in-china/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4699,7 +4699,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.chinainternshipplacements.com/study-abroad-china/chinese-summer-camp-teens/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4732,7 +4732,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://ltl-school.com/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4765,7 +4765,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://pty.vanderbilt.edu/for-students/vsa/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4798,7 +4798,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.ctd.northwestern.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4832,7 +4832,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://globalyouth.wharton.upenn.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4866,7 +4866,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://globalyouth.wharton.upenn.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4902,7 +4902,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://cty.jhu.edu/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4937,7 +4937,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://global.lehigh.edu/iacocca-institute/high-school",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -4970,7 +4970,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://global.lehigh.edu/programs/iacocca-global-future-leaders-lab-silicon-valley",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -5005,7 +5005,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summerspringboard.com/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -5039,7 +5039,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.envisionexperience.com/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -5075,7 +5075,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://sce.cornell.edu/precollege/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -5111,7 +5111,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://sce.cornell.edu/precollege/",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     },
     {
@@ -5146,7 +5146,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://changemaker.berkeley.edu/pre-college",
-      "dataVerifiedAt": "2026-07-23",
+      "dataVerifiedAt": "2026-07-24",
       "flags": []
     }
   ]
