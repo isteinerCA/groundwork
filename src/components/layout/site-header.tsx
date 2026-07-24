@@ -6,8 +6,8 @@ import { ButtonLink } from "@/components/ui/button-link";
 
 const NAV = [
   { href: "/about", label: "About" },
-  { href: "/#categories", label: "Categories" },
-  { href: "/#pricing", label: "Pricing" },
+  { href: "/contact", label: "Contact" },
+  { href: "/pricing", label: "Pricing" },
 ] as const;
 
 export function SiteHeader({ logoPriority = false }: { logoPriority?: boolean }) {
