@@ -52,14 +52,15 @@ export function LandingHero({
 
       <div className="relative lg:max-w-xl">
         <DashboardOverviewPreview programs={previewPrograms} />
-        <div className="absolute -bottom-4 -left-2 max-w-[220px] rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-white p-4 shadow-[var(--shadow-card)] sm:-left-6">
-          <p className="text-2xl font-normal text-[var(--color-navy)]">90 seconds</p>
-          <p className="text-sm font-medium text-[var(--color-navy-light)]">
+        <div className="absolute -top-3 -right-1 z-10 max-w-[210px] rounded-[var(--radius-lg)] border border-[var(--color-navy-dark)] bg-[var(--color-navy)] p-4 text-white shadow-[0_8px_24px_rgb(10_20_27_/_28%)] ring-2 ring-white/90 sm:-right-4 sm:-top-4">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--color-sage)]">
+            Fast start
+          </p>
+          <p className="mt-1 font-serif text-3xl leading-none text-white">90 sec</p>
+          <p className="mt-2 text-sm font-medium leading-snug text-white/90">
             Search, save, and track in one place
           </p>
-          <p className="mt-2 text-xs text-[var(--color-text-muted)]">
-            Fully funded options included
-          </p>
+          <p className="mt-2 text-xs text-white/65">Fully funded options included</p>
         </div>
       </div>
     </section>
