@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { DashboardOverviewPreview } from "@/components/marketing/dashboard-overview-preview";
+import { SearchPreviewPanel } from "@/components/search/search-preview-panel";
 import { ButtonLink, SectionEyebrow } from "@/components/ui/button-link";
 import { btnOutlineOnDark } from "@/components/ui/button-styles";
 import { CategoryIcon } from "@/components/icons/category-icons";
@@ -51,7 +51,12 @@ export function LandingHero({
       </div>
 
       <div className="relative lg:max-w-xl">
-        <DashboardOverviewPreview programs={previewPrograms} />
+        <SearchPreviewPanel
+          programs={previewPrograms.slice(0, 3)}
+          compact
+          headline="Real programs with the fine print surfaced"
+          subline="Sample cards from our catalog — click through to filter by grade and build your shortlist."
+        />
         <div className="absolute -top-3 -right-1 z-10 max-w-[240px] rounded-[var(--radius-lg)] border border-[color-mix(in_srgb,var(--color-sage)_70%,var(--color-navy-dark))] bg-[var(--color-sage)] p-4 shadow-[0_8px_24px_rgb(151_166_139_/_32%)] ring-2 ring-white/90 sm:-right-4 sm:-top-4">
           <p className="text-lg font-medium leading-snug text-[var(--color-navy-dark)]">
             Make your shortlist
@@ -67,26 +72,79 @@ export function LandingHero({
   );
 }
 
-export function ProblemSection() {
+const STEPS = [
+  {
+    num: "01",
+    title: "Filter by what actually matters",
+    body: "Grade just completed, category, format, duration, and budget. Multi-select chips — not a wall of dropdowns.",
+  },
+  {
+    num: "02",
+    title: "Refine with a plain-English assistant",
+    body: "'Only fully funded' or 'in California only' updates your filters in real time. The assistant and chips stay in sync.",
+  },
+  {
+    num: "03",
+    title: "Save, compare, and decide",
+    body: "Shortlist becomes a tracker: status, deadlines, notes, side-by-side compare, and a shareable link for co-review.",
+  },
+];
+
+export function ProblemHowItWorksSection() {
   return (
     <section className="border-y border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-20 sm:px-6">
-      <div className="mx-auto max-w-3xl text-center">
-        <SectionEyebrow>The problem</SectionEyebrow>
-        <h2 className="mt-3 text-3xl md:text-4xl">
-          A stack of brochures and websites. No way to compare them.
-        </h2>
-        <p className="mt-6 text-lg leading-relaxed text-[var(--color-text)]">
-          A fully-funded MIT program accepting 80 students globally sits in the same
-          undifferentiated Google results as a $17,800 sleepaway camp with open enrollment.
-          Parents and students open dozens of program websites — each formatted differently —
-          just to extract the basic facts.
-        </p>
-        <p className="mt-4 text-lg font-semibold text-[var(--color-navy)]">
-          Groundwork replaces that.
-        </p>
-        <ButtonLink href="/search" className="mt-8">
-          Start your shortlist
-        </ButtonLink>
+      <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-3xl text-center">
+          <SectionEyebrow>The problem</SectionEyebrow>
+          <h2 className="mt-3 text-3xl md:text-4xl">
+            A stack of brochures and websites. No way to compare them.
+          </h2>
+          <p className="mt-6 text-lg leading-relaxed text-[var(--color-text)]">
+            A fully-funded MIT program accepting 80 students globally sits in the same
+            undifferentiated Google results as a $17,800 sleepaway camp with open enrollment.
+            Parents and students open dozens of program websites — each formatted differently —
+            just to extract the basic facts.
+          </p>
+          <p className="mt-4 text-lg font-semibold text-[var(--color-navy)]">
+            Groundwork replaces that.
+          </p>
+        </div>
+
+        <div className="mt-16 grid gap-12 lg:grid-cols-2 lg:items-center">
+          <div>
+            <SectionEyebrow>How it works</SectionEyebrow>
+            <h2 className="mt-3 text-3xl md:text-4xl">
+              From overwhelm to shortlist in under 90 seconds.
+            </h2>
+            <ol className="mt-10 space-y-8">
+              {STEPS.map((step) => (
+                <li key={step.num} className="flex gap-5">
+                  <span className="font-serif text-3xl text-[var(--color-amber)]">{step.num}</span>
+                  <div>
+                    <h3 className="text-lg font-semibold text-[var(--color-navy)]">
+                      {step.title}
+                    </h3>
+                    <p className="mt-1 text-sm leading-relaxed text-[var(--color-text-muted)]">
+                      {step.body}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+            <ButtonLink href="/search" className="mt-8">
+              Start your shortlist
+            </ButtonLink>
+          </div>
+          <div className="relative aspect-[16/10] overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-parchment)]">
+            <Image
+              src="/images/search-story.png"
+              alt="Illustration of scattered program cards organized into a filterable search list"
+              fill
+              className="object-contain p-4"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -182,68 +240,6 @@ export function FinePrintSection() {
   );
 }
 
-const STEPS = [
-  {
-    num: "01",
-    title: "Filter by what actually matters",
-    body: "Grade just completed, category, format, duration, and budget. Multi-select chips — not a wall of dropdowns.",
-  },
-  {
-    num: "02",
-    title: "Refine with a plain-English assistant",
-    body: "'Only fully funded' or 'in California only' updates your filters in real time. The assistant and chips stay in sync.",
-  },
-  {
-    num: "03",
-    title: "Save, compare, and decide",
-    body: "Shortlist becomes a tracker: status, deadlines, notes, side-by-side compare, and a shareable link for co-review.",
-  },
-];
-
-export function HowItWorksSection() {
-  return (
-    <section className="bg-[var(--color-surface)] px-4 py-20 sm:px-6">
-      <div className="mx-auto max-w-6xl">
-        <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-          <div>
-            <SectionEyebrow>How it works</SectionEyebrow>
-            <h2 className="mt-3 text-3xl md:text-4xl">
-              From overwhelm to shortlist in under 90 seconds.
-            </h2>
-            <ol className="mt-10 space-y-8">
-              {STEPS.map((step) => (
-                <li key={step.num} className="flex gap-5">
-                  <span className="font-serif text-3xl text-[var(--color-amber)]">{step.num}</span>
-                  <div>
-                    <h3 className="text-lg font-semibold text-[var(--color-navy)]">
-                      {step.title}
-                    </h3>
-                    <p className="mt-1 text-sm leading-relaxed text-[var(--color-text-muted)]">
-                      {step.body}
-                    </p>
-                  </div>
-                </li>
-              ))}
-            </ol>
-            <ButtonLink href="/search" className="mt-8">
-              Start your shortlist
-            </ButtonLink>
-          </div>
-          <div className="relative aspect-[16/10] overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-parchment)]">
-            <Image
-              src="/images/search-story.png"
-              alt="Illustration of scattered program cards organized into a filterable search list"
-              fill
-              className="object-contain p-4"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 const WORKSPACE_FEATURES = [
   {
     title: "Deadline tracking",
@@ -303,48 +299,25 @@ export function WorkspaceSection() {
   );
 }
 
-export function FinalCtaSection() {
+export function AdminSection() {
   return (
     <section className="bg-[var(--color-navy)] px-4 py-20 text-white sm:px-6">
       <div className="mx-auto max-w-3xl text-center">
-        <SectionEyebrow className="text-[var(--color-amber-soft)]">Do the Groundwork</SectionEyebrow>
+        <SectionEyebrow className="text-[var(--color-amber-soft)]">For camp administrators</SectionEyebrow>
         <h2 className="mt-3 text-3xl text-white md:text-4xl">
-          Applications open in September. Start now.
-        </h2>
-        <p className="mt-4 text-lg text-white/90">
-          Ninety seconds of filtering beats an evening of open tabs. Bring your child&apos;s
-          grade, interests, and rough budget — leave with a real shortlist.
-        </p>
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <ButtonLink href="/search" variant="primary-on-dark">
-            Start your shortlist
-          </ButtonLink>
-          <Link href="#categories" className={btnOutlineOnDark}>
-            See the categories
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-export function AdminSection() {
-  return (
-    <section className="bg-[var(--color-surface)] px-4 py-20 sm:px-6">
-      <div className="mx-auto max-w-3xl text-center">
-        <SectionEyebrow>For camp administrators</SectionEyebrow>
-        <h2 className="mt-3 text-3xl md:text-4xl">
           Make sure your program is represented accurately.
         </h2>
-        <p className="mt-4 text-[var(--color-text-muted)]">
+        <p className="mt-4 text-lg text-white/90">
           Add a new program or update an existing listing so families can find accurate
           information about dates, costs, admission, and aid.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <ButtonLink href="/contact">Add or update program</ButtonLink>
-          <ButtonLink href="/search" variant="secondary">
-            See current listings
+          <ButtonLink href="/contact" variant="primary-on-dark">
+            Add or update program
           </ButtonLink>
+          <Link href="/search" className={btnOutlineOnDark}>
+            See current listings
+          </Link>
         </div>
       </div>
     </section>

@@ -6,10 +6,8 @@ import {
   AdminSection,
   CategoriesSection,
   FinePrintSection,
-  FinalCtaSection,
-  HowItWorksSection,
   LandingHero,
-  ProblemSection,
+  ProblemHowItWorksSection,
   WorkspaceSection,
 } from "@/components/marketing/landing-sections";
 import { getPreviewPrograms } from "@/lib/programs/preview-programs";
@@ -17,21 +15,19 @@ import { getPrograms } from "@/lib/programs";
 
 export default function HomePage() {
   const programs = getPrograms();
-  const previewPrograms = getPreviewPrograms(programs, 4);
+  const previewPrograms = getPreviewPrograms(programs, 3);
 
   return (
     <>
       <SiteHeader logoPriority />
       <main>
         <LandingHero previewPrograms={previewPrograms} />
-        <ProblemSection />
+        <ProblemHowItWorksSection />
         <CategoriesSection />
         <FinePrintSection />
-        <HowItWorksSection />
         <ProgramGallerySection />
         <WorkspaceSection />
         <HomePricingSection />
-        <FinalCtaSection />
         <AdminSection />
       </main>
       <SiteFooter />

@@ -18,7 +18,10 @@ import {
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
 import { filterPrograms, sortPrograms, type SortOption } from "@/lib/data/filter-programs";
-import { getPreviewPrograms } from "@/lib/programs/preview-programs";
+import {
+  formatProgramCountLabel,
+  getPreviewPrograms,
+} from "@/lib/programs/preview-programs";
 import { summarizeSearchFilters, trackEvent } from "@/lib/analytics";
 import { loadLastSearchFilters, saveLastSearchFilters } from "@/lib/search/last-filters";
 import type { Program, SearchFilters } from "@/lib/types/program";
@@ -150,7 +153,7 @@ export function SearchExperience({
           </Link>
           <h1 className="mt-2 text-3xl">Search programs</h1>
           <p className="mt-2 text-[var(--color-text-muted)]">
-            {programs.length} programs · Last verified {dataVerifiedAt ?? "—"}
+            {formatProgramCountLabel()} · Last verified {dataVerifiedAt ?? "—"}
           </p>
         </div>
       </div>
