@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ButtonLink, SectionEyebrow } from "@/components/ui/button-link";
 
 const GALLERY_IMAGES = [
@@ -44,18 +45,19 @@ export function ProgramGallerySection() {
 
         <div className="mt-10 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-7">
           {GALLERY_IMAGES.map((image) => (
-            <div
+            <Link
               key={image.src}
-              className="relative aspect-square overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-sm"
+              href="/search"
+              className="group relative aspect-square overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-sm no-underline transition hover:border-[var(--color-sage)] hover:shadow-[var(--shadow-card)]"
             >
               <Image
                 src={image.src}
                 alt={image.alt}
                 fill
-                className="object-cover"
+                className="object-cover transition duration-300 group-hover:scale-105"
                 sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 140px"
               />
-            </div>
+            </Link>
           ))}
         </div>
 
