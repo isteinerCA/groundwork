@@ -1,54 +1,36 @@
 import Image from "next/image";
-import Link from "next/link";
-import type { ProgramCategoryId } from "@/lib/constants/categories";
-import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
-import { SectionEyebrow } from "@/components/ui/button-link";
+import { ButtonLink, SectionEyebrow } from "@/components/ui/button-link";
 
-const GALLERY_TILES: {
-  image: string;
-  categoryId: ProgramCategoryId;
-  alt: string;
-}[] = [
+const GALLERY_IMAGES = [
   {
-    image: "/images/gallery/tech-robotics.jpg",
-    categoryId: "artificial-intelligence",
-    alt: "Students collaborating on a robotics and AI project",
+    src: "/images/gallery/tech-robotics.jpg",
+    alt: "Students collaborating on a robotics project",
   },
   {
-    image: "/images/gallery/marine-science.jpg",
-    categoryId: "marine-science",
-    alt: "Students conducting marine science research on a boat",
+    src: "/images/gallery/marine-science.jpg",
+    alt: "Students conducting field research on the water",
   },
   {
-    image: "/images/gallery/wilderness-hiking.jpg",
-    categoryId: "outdoor-wilderness",
-    alt: "Students hiking on an alpine trail",
+    src: "/images/gallery/wilderness-hiking.jpg",
+    alt: "Students hiking together outdoors",
   },
   {
-    image: "/images/gallery/arts-dance.jpg",
-    categoryId: "arts",
-    alt: "Students in a dance and theater rehearsal",
+    src: "/images/gallery/arts-dance.jpg",
+    alt: "Students rehearsing dance and theater",
   },
   {
-    image: "/images/gallery/global-travel.jpg",
-    categoryId: "cultural-exchange",
-    alt: "Students exploring a city abroad with a map",
+    src: "/images/gallery/global-travel.jpg",
+    alt: "Students exploring a city abroad",
   },
   {
-    image: "/images/gallery/writing-humanities.jpg",
-    categoryId: "writing-humanities",
-    alt: "Students discussing books in a study group",
+    src: "/images/gallery/writing-humanities.jpg",
+    alt: "Students reading and discussing together",
   },
   {
-    image: "/images/gallery/pre-med-lab.jpg",
-    categoryId: "biomedical",
-    alt: "Students working in a life sciences laboratory",
+    src: "/images/gallery/pre-med-lab.jpg",
+    alt: "Students working in a science laboratory",
   },
-];
-
-function categoryLabel(id: ProgramCategoryId): string {
-  return PROGRAM_CATEGORIES.find((c) => c.id === id)?.label ?? id;
-}
+] as const;
 
 export function ProgramGallerySection() {
   return (
@@ -59,31 +41,27 @@ export function ProgramGallerySection() {
           Find the right program{" "}
           <span className="font-serif italic text-[var(--color-sage)]">for you</span> this summer
         </h2>
-        <p className="mx-auto mt-3 max-w-2xl text-[var(--color-text-muted)]">
-          STEM, arts, travel, research, and adventure — tap a photo to explore programs in that
-          pathway.
-        </p>
 
         <div className="mt-10 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-7">
-          {GALLERY_TILES.map((tile) => (
-            <Link
-              key={tile.image}
-              href={`/search?category=${tile.categoryId}`}
-              className="group relative aspect-square overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-sm no-underline transition hover:border-[var(--color-sage)] hover:shadow-[var(--shadow-card)]"
+          {GALLERY_IMAGES.map((image) => (
+            <div
+              key={image.src}
+              className="relative aspect-square overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-sm"
             >
               <Image
-                src={tile.image}
-                alt={tile.alt}
+                src={image.src}
+                alt={image.alt}
                 fill
-                className="object-cover transition duration-300 group-hover:scale-105"
+                className="object-cover"
                 sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 140px"
               />
-              <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[var(--color-navy-dark)]/80 to-transparent px-2 pb-2 pt-8 text-left text-xs font-medium text-white opacity-0 transition group-hover:opacity-100 group-focus-visible:opacity-100">
-                {categoryLabel(tile.categoryId)} →
-              </span>
-            </Link>
+            </div>
           ))}
         </div>
+
+        <ButtonLink href="/search" className="mt-10">
+          Start your shortlist
+        </ButtonLink>
       </div>
     </section>
   );

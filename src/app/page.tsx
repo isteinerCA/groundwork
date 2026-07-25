@@ -26,9 +26,9 @@ export default function HomePage() {
         <LandingHero previewPrograms={previewPrograms} />
         <ProblemSection />
         <CategoriesSection />
-        <ProgramGallerySection />
         <FinePrintSection />
         <HowItWorksSection />
+        <ProgramGallerySection />
         <WorkspaceSection />
         <HomePricingSection />
         <FinalCtaSection />
