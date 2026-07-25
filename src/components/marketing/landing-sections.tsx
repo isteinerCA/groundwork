@@ -45,11 +45,18 @@ export function LandingHero() {
         </ul>
       </div>
 
-      <div className="lg:max-w-md">
+      <div className="relative lg:max-w-lg">
         <HeroShortlistMock />
-        <p className="mt-3 text-center text-xs text-[var(--color-text-muted)]">
-          Pick a grade, filter, heart favorites — your shortlist in about 90 seconds.
-        </p>
+        <div className="absolute -top-3 -right-1 z-10 max-w-[220px] rounded-[var(--radius-lg)] border border-[color-mix(in_srgb,var(--color-sage)_70%,var(--color-navy-dark))] bg-[var(--color-sage)] p-3.5 shadow-[0_8px_24px_rgb(151_166_139_/_32%)] ring-2 ring-white/90 sm:-right-4 sm:-top-4">
+          <p className="text-base font-medium leading-snug text-[var(--color-navy-dark)]">
+            Make your shortlist
+            <br />
+            in 90 seconds
+          </p>
+          <p className="mt-1.5 text-xs leading-snug text-[var(--color-navy-dark)]/80">
+            Filter, heart favorites, and track in one place
+          </p>
+        </div>
       </div>
     </section>
   );
