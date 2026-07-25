@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SearchPreviewPanel } from "@/components/search/search-preview-panel";
+import { HeroShortlistMock } from "@/components/marketing/hero-shortlist-mock";
 import { ButtonLink, SectionEyebrow } from "@/components/ui/button-link";
 import { btnOutlineOnDark } from "@/components/ui/button-styles";
 import { CategoryIcon } from "@/components/icons/category-icons";
@@ -9,13 +9,8 @@ import {
   formatProgramCatalogLabel,
   MARKETING_PROGRAM_COUNT_LABEL,
 } from "@/lib/programs/preview-programs";
-import type { Program } from "@/lib/types/program";
 
-export function LandingHero({
-  previewPrograms,
-}: {
-  previewPrograms: Program[];
-}) {
+export function LandingHero() {
   return (
     <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-20">
       <div className="flex flex-col gap-5">
@@ -44,29 +39,17 @@ export function LandingHero({
         <ul className="flex flex-wrap gap-x-4 gap-y-2 pt-2 text-sm text-[var(--color-text-muted)]">
           <li className="flex items-center gap-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-600" aria-hidden />
-            No account required to search
+            No account required to browse
           </li>
           <li>{formatProgramCatalogLabel()}</li>
         </ul>
       </div>
 
-      <div className="relative lg:max-w-xl">
-        <SearchPreviewPanel
-          programs={previewPrograms.slice(0, 3)}
-          compact
-          headline="Real programs with the fine print surfaced"
-          subline="Sample cards from our catalog — click through to filter by grade and build your shortlist."
-        />
-        <div className="absolute -top-3 -right-1 z-10 max-w-[240px] rounded-[var(--radius-lg)] border border-[color-mix(in_srgb,var(--color-sage)_70%,var(--color-navy-dark))] bg-[var(--color-sage)] p-4 shadow-[0_8px_24px_rgb(151_166_139_/_32%)] ring-2 ring-white/90 sm:-right-4 sm:-top-4">
-          <p className="text-lg font-medium leading-snug text-[var(--color-navy-dark)]">
-            Make your shortlist
-            <br />
-            in 90 seconds
-          </p>
-          <p className="mt-2 text-sm leading-snug text-[var(--color-navy-dark)]/80">
-            Search, save and track in one place
-          </p>
-        </div>
+      <div className="lg:max-w-md">
+        <HeroShortlistMock />
+        <p className="mt-3 text-center text-xs text-[var(--color-text-muted)]">
+          Pick a grade, filter, heart favorites — your shortlist in about 90 seconds.
+        </p>
       </div>
     </section>
   );
