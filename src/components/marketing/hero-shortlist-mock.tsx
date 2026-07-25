@@ -1,6 +1,4 @@
 import type { ReactNode } from "react";
-import { CategoryIcon } from "@/components/icons/category-icons";
-import type { ProgramCategoryId } from "@/lib/constants/categories";
 
 /** Compact static mock of the shortlist flow — filters left, abbreviated results right. */
 export function HeroShortlistMock() {
@@ -53,7 +51,6 @@ export function HeroShortlistMock() {
             Heart <span aria-hidden>♡</span> programs to add them to your shortlist.
           </p>
           <MockProgramCard
-            categoryId="stem-engineering"
             categoryLabel="STEM"
             admissionLabel="Selective"
             admissionTone="red"
@@ -62,7 +59,6 @@ export function HeroShortlistMock() {
             showHiddenDetails
           />
           <MockProgramCard
-            categoryId="artificial-intelligence"
             categoryLabel="AI & CS"
             admissionLabel="Selective"
             admissionTone="red"
@@ -118,7 +114,6 @@ function MockChip({
 }
 
 function MockProgramCard({
-  categoryId,
   categoryLabel,
   admissionLabel,
   admissionTone,
@@ -128,7 +123,6 @@ function MockProgramCard({
   showHiddenDetails = false,
   compact = false,
 }: {
-  categoryId: ProgramCategoryId;
   categoryLabel: string;
   admissionLabel: string;
   admissionTone: "red" | "amber" | "green";
@@ -151,46 +145,39 @@ function MockProgramCard({
         compact ? "p-2" : "p-2.5"
       }`}
     >
-      <div className="flex items-start gap-2">
-        <CategoryIcon categoryId={categoryId} className="h-7 w-7 shrink-0" />
-        <div className="min-w-0 flex-1">
-          <div className="flex flex-wrap items-center gap-1">
-            <span className="rounded-full bg-[var(--color-parchment-dark)] px-1.5 py-0.5 text-[9px] font-medium text-[var(--color-navy)]">
-              {categoryLabel}
-            </span>
-            <span
-              className={`rounded-full px-1.5 py-0.5 text-[9px] font-medium ${admissionClass}`}
-            >
-              {admissionLabel}
-            </span>
-            {fundedLabel && (
-              <span className="rounded-full bg-[var(--color-amber-soft)] px-1.5 py-0.5 text-[9px] font-semibold text-[var(--color-navy)]">
-                {fundedLabel}
-              </span>
-            )}
-          </div>
-          <div className="mt-1 flex items-start justify-between gap-2">
-            <div className="min-w-0">
-              <p
-                className={`truncate font-semibold text-[var(--color-navy)] ${
-                  compact ? "text-[11px]" : "text-xs"
-                }`}
-              >
-                {name}
-              </p>
-              <p className="mt-0.5 truncate text-[10px] text-[var(--color-text-muted)]">{meta}</p>
-            </div>
-            <span className="shrink-0 text-sm text-[var(--color-navy-light)]" aria-hidden>
-              ♡
-            </span>
-          </div>
-          {showHiddenDetails && (
-            <span className="mt-1.5 inline-block rounded-full bg-[var(--color-amber-soft)] px-2 py-0.5 text-[10px] font-medium text-[var(--color-navy)]">
-              The hidden details
-            </span>
-          )}
-        </div>
+      <div className="flex flex-wrap items-center gap-1">
+        <span className="rounded-full bg-[var(--color-parchment-dark)] px-1.5 py-0.5 text-[9px] font-medium text-[var(--color-navy)]">
+          {categoryLabel}
+        </span>
+        <span className={`rounded-full px-1.5 py-0.5 text-[9px] font-medium ${admissionClass}`}>
+          {admissionLabel}
+        </span>
+        {fundedLabel && (
+          <span className="rounded-full bg-[var(--color-amber-soft)] px-1.5 py-0.5 text-[9px] font-semibold text-[var(--color-navy)]">
+            {fundedLabel}
+          </span>
+        )}
       </div>
+      <div className="mt-1 flex items-start justify-between gap-2">
+        <div className="min-w-0">
+          <p
+            className={`truncate font-semibold text-[var(--color-navy)] ${
+              compact ? "text-[11px]" : "text-xs"
+            }`}
+          >
+            {name}
+          </p>
+          <p className="mt-0.5 truncate text-[10px] text-[var(--color-text-muted)]">{meta}</p>
+        </div>
+        <span className="shrink-0 text-sm text-[var(--color-navy-light)]" aria-hidden>
+          ♡
+        </span>
+      </div>
+      {showHiddenDetails && (
+        <span className="mt-1.5 inline-block rounded-full bg-[var(--color-amber-soft)] px-2 py-0.5 text-[10px] font-medium text-[var(--color-navy)]">
+          The hidden details
+        </span>
+      )}
     </div>
   );
 }
