@@ -41,7 +41,7 @@ export function HomePricingSection() {
               <CheckItem>Direct links to program sites</CheckItem>
             </ul>
             <ButtonLink href="/search" variant="secondary" className="mt-8 w-full">
-              Start searching
+              Start your shortlist
             </ButtonLink>
           </div>
 
@@ -64,7 +64,7 @@ export function HomePricingSection() {
               Regular price {formatSeasonPassPrice()}/season — free during early bird.
             </p>
             <p className="mt-1 text-sm text-[var(--color-text-muted)]">
-              Sign in with Google — no credit card required.
+              Search first — sign in with Google when you&apos;re ready to save.
             </p>
             <ul className="mt-6 flex-1 space-y-3">
               <CheckItem>Everything in Browse</CheckItem>
@@ -73,8 +73,8 @@ export function HomePricingSection() {
               <CheckItem>Side-by-side compare + shareable link</CheckItem>
               <CheckItem>Export to CSV (print for PDF)</CheckItem>
             </ul>
-            <ButtonLink href="/pricing" variant="primary" className="mt-8 w-full">
-              Start a shortlist
+            <ButtonLink href="/search" variant="primary" className="mt-8 w-full">
+              Start your shortlist
             </ButtonLink>
           </div>
         </div>

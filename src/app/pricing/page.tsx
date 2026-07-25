@@ -150,7 +150,7 @@ export default function PricingPage() {
           .
         </p>
       </main>
-      <SiteFooter showAbout={false} />
+      <SiteFooter />
     </>
   );
 }

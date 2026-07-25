@@ -1,6 +1,7 @@
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { HomePricingSection } from "@/components/marketing/home-pricing-section";
+import { ProgramGallerySection } from "@/components/marketing/program-gallery-section";
 import {
   AdminSection,
   CategoriesSection,
@@ -27,12 +28,13 @@ export default function HomePage() {
         <CategoriesSection />
         <FinePrintSection />
         <HowItWorksSection />
+        <ProgramGallerySection />
         <WorkspaceSection />
         <HomePricingSection />
         <FinalCtaSection />
         <AdminSection />
       </main>
-      <SiteFooter showAbout={false} />
+      <SiteFooter />
     </>
   );
 }

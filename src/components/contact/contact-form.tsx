@@ -31,12 +31,11 @@ export function ContactForm({ initialProgramName = "" }: ContactFormProps) {
   const [websiteUrl, setWebsiteUrl] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState<string | null>(null);
-  const [success, setSuccess] = useState<{ referenceId: string; sla: string } | null>(null);
+  const [success, setSuccess] = useState<{ referenceId: string } | null>(null);
   const [submitting, setSubmitting] = useState(false);
 
   const showProgramFields = inquiryRequiresProgramFields(inquiryType);
   const programUrlRequired = inquiryRequiresProgramUrl(inquiryType);
-  const selectedSla = INQUIRY_TYPES.find((t) => t.id === inquiryType)?.sla;
 
   const handleInquiryTypeChange = (next: InquiryTypeId) => {
     setInquiryType(next);
@@ -81,7 +80,6 @@ export function ContactForm({ initialProgramName = "" }: ContactFormProps) {
 
       setSuccess({
         referenceId: data.referenceId ?? "",
-        sla: data.sla ?? "",
       });
       trackEvent("contact_form_submitted", { inquiry_type: inquiryType });
     } catch {
@@ -100,7 +98,6 @@ export function ContactForm({ initialProgramName = "" }: ContactFormProps) {
             Reference: <span className="font-mono">{success.referenceId}</span>
           </p>
         )}
-        <p className="mt-3 text-sm text-emerald-800">{success.sla}</p>
       </div>
     );
   }
@@ -141,9 +138,6 @@ export function ContactForm({ initialProgramName = "" }: ContactFormProps) {
             </option>
           ))}
         </select>
-        {selectedSla && (
-          <p className="mt-1 text-xs text-[var(--color-text-muted)]">{selectedSla}</p>
-        )}
       </Field>
 
       {showProgramFields && (

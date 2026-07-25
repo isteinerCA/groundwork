@@ -5,8 +5,9 @@ import { WorkspaceNavLink } from "@/components/layout/workspace-nav-link";
 import { ButtonLink } from "@/components/ui/button-link";
 
 const NAV = [
-  { href: "/#categories", label: "Categories" },
-  { href: "/#pricing", label: "Pricing" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
+  { href: "/pricing", label: "Pricing" },
 ] as const;
 
 export function SiteHeader({ logoPriority = false }: { logoPriority?: boolean }) {
