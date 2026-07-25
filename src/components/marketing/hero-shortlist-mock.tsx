@@ -1,4 +1,6 @@
 import type { ReactNode } from "react";
+import { CategoryIcon } from "@/components/icons/category-icons";
+import type { ProgramCategoryId } from "@/lib/constants/categories";
 
 /** Compact static mock of the shortlist flow — filters left, abbreviated results right. */
 export function HeroShortlistMock() {
@@ -38,8 +40,8 @@ export function HeroShortlistMock() {
           </FilterRow>
           <FilterRow label="Max price">
             <MockChip label="Free" />
-            <MockChip label="Under $5k" selected />
-            <MockChip label="Any" />
+            <MockChip label="Under $5k" />
+            <MockChip label="Any" selected />
           </FilterRow>
         </div>
 
@@ -47,14 +49,26 @@ export function HeroShortlistMock() {
           <p className="text-[11px] text-[var(--color-text-muted)]">
             <span className="font-semibold text-[var(--color-navy)]">24 programs</span> to compare
           </p>
+          <p className="text-[10px] text-[var(--color-text-muted)]">
+            Heart <span aria-hidden>♡</span> programs to add them to your shortlist.
+          </p>
           <MockProgramCard
+            categoryId="stem-engineering"
+            categoryLabel="STEM"
+            admissionLabel="Selective"
+            admissionTone="red"
             name="COSMOS UC Davis"
-            meta="Selective · 4 weeks · CA"
+            meta="4 weeks · CA residents"
             showHiddenDetails
           />
           <MockProgramCard
+            categoryId="artificial-intelligence"
+            categoryLabel="AI & CS"
+            admissionLabel="Selective"
+            admissionTone="red"
+            fundedLabel="Fully Funded"
             name="Stanford AI4ALL"
-            meta="Selective · Residential · Fully funded"
+            meta="Residential · Summer session"
             compact
           />
         </div>
@@ -104,42 +118,79 @@ function MockChip({
 }
 
 function MockProgramCard({
+  categoryId,
+  categoryLabel,
+  admissionLabel,
+  admissionTone,
+  fundedLabel,
   name,
   meta,
   showHiddenDetails = false,
   compact = false,
 }: {
+  categoryId: ProgramCategoryId;
+  categoryLabel: string;
+  admissionLabel: string;
+  admissionTone: "red" | "amber" | "green";
+  fundedLabel?: string;
   name: string;
   meta: string;
   showHiddenDetails?: boolean;
   compact?: boolean;
 }) {
+  const admissionClass =
+    admissionTone === "red"
+      ? "bg-red-50 text-red-900"
+      : admissionTone === "amber"
+        ? "bg-amber-50 text-amber-900"
+        : "bg-emerald-50 text-emerald-900";
+
   return (
     <div
       className={`rounded-[var(--radius-md)] border border-[var(--color-border)] bg-white ${
         compact ? "p-2" : "p-2.5"
       }`}
     >
-      <div className="flex items-start justify-between gap-2">
-        <div className="min-w-0">
-          <p
-            className={`truncate font-semibold text-[var(--color-navy)] ${
-              compact ? "text-[11px]" : "text-xs"
-            }`}
-          >
-            {name}
-          </p>
-          <p className="mt-0.5 truncate text-[10px] text-[var(--color-text-muted)]">{meta}</p>
+      <div className="flex items-start gap-2">
+        <CategoryIcon categoryId={categoryId} className="h-7 w-7 shrink-0" />
+        <div className="min-w-0 flex-1">
+          <div className="flex flex-wrap items-center gap-1">
+            <span className="rounded-full bg-[var(--color-parchment-dark)] px-1.5 py-0.5 text-[9px] font-medium text-[var(--color-navy)]">
+              {categoryLabel}
+            </span>
+            <span
+              className={`rounded-full px-1.5 py-0.5 text-[9px] font-medium ${admissionClass}`}
+            >
+              {admissionLabel}
+            </span>
+            {fundedLabel && (
+              <span className="rounded-full bg-[var(--color-amber-soft)] px-1.5 py-0.5 text-[9px] font-semibold text-[var(--color-navy)]">
+                {fundedLabel}
+              </span>
+            )}
+          </div>
+          <div className="mt-1 flex items-start justify-between gap-2">
+            <div className="min-w-0">
+              <p
+                className={`truncate font-semibold text-[var(--color-navy)] ${
+                  compact ? "text-[11px]" : "text-xs"
+                }`}
+              >
+                {name}
+              </p>
+              <p className="mt-0.5 truncate text-[10px] text-[var(--color-text-muted)]">{meta}</p>
+            </div>
+            <span className="shrink-0 text-sm text-[var(--color-navy-light)]" aria-hidden>
+              ♡
+            </span>
+          </div>
+          {showHiddenDetails && (
+            <span className="mt-1.5 inline-block rounded-full bg-[var(--color-amber-soft)] px-2 py-0.5 text-[10px] font-medium text-[var(--color-navy)]">
+              The hidden details
+            </span>
+          )}
         </div>
-        <span className="shrink-0 text-sm text-[var(--color-navy-light)]" aria-hidden>
-          ♡
-        </span>
       </div>
-      {showHiddenDetails && (
-        <span className="mt-1.5 inline-block rounded-full bg-[var(--color-amber-soft)] px-2 py-0.5 text-[10px] font-medium text-[var(--color-navy)]">
-          The hidden details
-        </span>
-      )}
     </div>
   );
 }

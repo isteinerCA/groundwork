@@ -45,9 +45,9 @@ export function LandingHero() {
         </ul>
       </div>
 
-      <div className="relative lg:max-w-lg">
+      <div className="relative pb-6 lg:max-w-lg lg:pb-8">
         <HeroShortlistMock />
-        <div className="absolute -top-3 -right-1 z-10 max-w-[220px] rounded-[var(--radius-lg)] border border-[color-mix(in_srgb,var(--color-sage)_70%,var(--color-navy-dark))] bg-[var(--color-sage)] p-3.5 shadow-[0_8px_24px_rgb(151_166_139_/_32%)] ring-2 ring-white/90 sm:-right-4 sm:-top-4">
+        <div className="absolute -bottom-3 -right-1 z-10 max-w-[220px] rounded-[var(--radius-lg)] border border-[color-mix(in_srgb,var(--color-sage)_70%,var(--color-navy-dark))] bg-[var(--color-sage)] p-3.5 shadow-[0_8px_24px_rgb(151_166_139_/_32%)] ring-2 ring-white/90 sm:-right-4 sm:-bottom-4">
           <p className="text-base font-medium leading-snug text-[var(--color-navy-dark)]">
             Make your shortlist
             <br />
