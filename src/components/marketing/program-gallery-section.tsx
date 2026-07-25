@@ -8,12 +8,12 @@ const GALLERY_IMAGES = [
     alt: "Students collaborating on a robotics project",
   },
   {
-    src: "/images/gallery/marine-science.jpg",
-    alt: "Students conducting field research on the water",
-  },
-  {
     src: "/images/gallery/wilderness-hiking.jpg",
     alt: "Students hiking together outdoors",
+  },
+  {
+    src: "/images/gallery/marine-science.jpg",
+    alt: "Students conducting field research on the water",
   },
   {
     src: "/images/gallery/arts-dance.jpg",

@@ -18,7 +18,10 @@ import {
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
 import { filterPrograms, sortPrograms, type SortOption } from "@/lib/data/filter-programs";
-import { getPreviewPrograms } from "@/lib/programs/preview-programs";
+import {
+  formatProgramCountLabel,
+  getPreviewPrograms,
+} from "@/lib/programs/preview-programs";
 import { summarizeSearchFilters, trackEvent } from "@/lib/analytics";
 import { loadLastSearchFilters, saveLastSearchFilters } from "@/lib/search/last-filters";
 import type { Program, SearchFilters } from "@/lib/types/program";
@@ -68,7 +71,7 @@ export function SearchExperience({
   const [sort, setSort] = useState<SortOption>("selectivity");
   const [restoredLastSearch, setRestoredLastSearch] = useState(false);
 
-  const previewPrograms = useMemo(() => getPreviewPrograms(programs, 3), [programs]);
+  const previewPrograms = useMemo(() => getPreviewPrograms(programs, 2), [programs]);
 
   useEffect(() => {
     if (restoredLastSearch) return;
@@ -148,9 +151,10 @@ export function SearchExperience({
           <Link href="/" className="text-sm text-[var(--color-text-muted)] no-underline">
             ← Groundwork
           </Link>
-          <h1 className="mt-2 text-3xl">Search programs</h1>
-          <p className="mt-2 text-[var(--color-text-muted)]">
-            {programs.length} programs · Last verified {dataVerifiedAt ?? "—"}
+          <h1 className="mt-2 text-3xl">Build your shortlist</h1>
+          <p className="mt-2 max-w-xl text-[var(--color-text-muted)]">
+            Filter {formatProgramCountLabel()} by grade and interests, then heart programs to
+            save. Last verified {dataVerifiedAt ?? "—"}.
           </p>
         </div>
       </div>
@@ -159,7 +163,10 @@ export function SearchExperience({
       <div className="grid gap-6 lg:grid-cols-[minmax(300px,380px)_minmax(0,1fr)] lg:items-start">
         <aside className="lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto lg:pr-1">
           <section className="rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[var(--shadow-card)]">
-            <h2 className="text-lg text-[var(--color-navy)]">
+            <p className="text-xs font-semibold tracking-wide text-[var(--color-amber)] uppercase">
+              Step 1 · Filter
+            </p>
+            <h2 className="mt-1 text-lg text-[var(--color-navy)]">
               What grade did your child just complete? <span className="text-red-600">*</span>
             </h2>
             <div className="mt-3 flex flex-nowrap gap-1.5 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
@@ -177,7 +184,7 @@ export function SearchExperience({
             </div>
             {filters.gradesCompleted.length === 0 && (
               <p className="mt-3 rounded-[var(--radius-md)] border border-dashed border-[var(--color-border)] bg-[var(--color-parchment)] px-3 py-2 text-sm text-[var(--color-text-muted)]">
-                Select a grade to filter by eligibility — sample programs appear on the right.
+                Select a grade — programs for your shortlist appear on the right.
               </p>
             )}
 
@@ -311,6 +318,12 @@ export function SearchExperience({
         <div className="min-w-0">
           {filters.gradesCompleted.length > 0 ? (
             <div className="overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]">
+              {results.length > 0 && (
+                <div className="border-b border-[var(--color-border)] px-4 pt-4">
+                  <SearchShortlistCta programs={results} />
+                </div>
+              )}
+
               <ActiveFilterBar
                 embedded
                 filters={filters}
@@ -331,7 +344,7 @@ export function SearchExperience({
                 <div className="border-b border-[var(--color-border)] bg-[var(--color-parchment)]/40 px-4 py-3">
                   <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
                     <p className="text-sm font-semibold text-[var(--color-navy)]">
-                      {results.length} result{results.length === 1 ? "" : "s"}
+                      {results.length} program{results.length === 1 ? "" : "s"} to compare
                     </p>
                     <label className="flex items-center gap-2 text-sm text-[var(--color-text-muted)]">
                       Sort by
@@ -351,7 +364,7 @@ export function SearchExperience({
                     </div>
                   </div>
                   <p className="mt-2 text-xs text-[var(--color-text-muted)]">
-                    Tap <span aria-hidden>♡</span> on any program card to build your shortlist.
+                    Heart <span aria-hidden>♡</span> programs to add them to your shortlist.
                   </p>
                 </div>
               )}
@@ -359,9 +372,11 @@ export function SearchExperience({
               <div className="space-y-4 p-4">
                 {results.length === 0 && (
                   <div className="rounded-[var(--radius-md)] border border-dashed border-[var(--color-border)] bg-[var(--color-parchment)]/50 p-8 text-center">
-                    <p className="text-lg text-[var(--color-navy)]">No programs match these filters.</p>
+                    <p className="text-lg text-[var(--color-navy)]">
+                      No programs match — try broadening your filters.
+                    </p>
                     <p className="mt-2 text-[var(--color-text-muted)]">
-                      Try removing a filter, asking the assistant to broaden your search, or say
+                      Remove a filter, ask the assistant to widen your search, or say
                       &quot;start over&quot;.
                     </p>
                     <button

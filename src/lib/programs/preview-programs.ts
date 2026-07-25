@@ -51,3 +51,8 @@ export const MARKETING_PROGRAM_COUNT_LABEL = "140+";
 export function formatProgramCatalogLabel(_count?: number): string {
   return `${MARKETING_PROGRAM_COUNT_LABEL} curated programs`;
 }
+
+/** User-facing count for search headers and metadata (never the raw import total). */
+export function formatProgramCountLabel(): string {
+  return `${MARKETING_PROGRAM_COUNT_LABEL} programs`;
+}
