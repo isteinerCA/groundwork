@@ -231,7 +231,7 @@ export function sanitizeFilterPatch(
         (!strippedForMonths || monthFillerPattern.test(strippedForMonths))
       ) {
         const existing = sanitized.includeMonths ?? patch.includeMonths ?? [];
-        sanitized.includeMonths = [...new Set([...existing, ...monthsFromQuery])].sort(
+        sanitized.includeMonths = clampMonths([...existing, ...monthsFromQuery]).sort(
           (a, b) => a - b,
         );
         sanitized.dataQuery = "";
