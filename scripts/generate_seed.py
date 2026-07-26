@@ -81,32 +81,50 @@ def normalize_format(raw: str) -> dict:
     has_day = "day" in lower and not has_comm
     if has_online:
         tags.add("online")
-    if has_res or has_comm or has_day or lower == "varies":
+    if has_res:
         tags.add("residential")
-    if not tags:
+    if has_comm or has_day:
+        tags.add("commuter")
+    if not tags or lower == "varies":
         tags.add("residential")
     if has_online and (has_res or has_comm):
         tags.add("both")
     return {"formatDisplay": display, "formatTags": sorted(tags)}
 
 
+def parse_length_days(raw: str) -> dict:
+    lower = raw.strip().lower()
+    if not lower or "self-paced" in lower or "varies" in lower:
+        return {"lengthMinDays": None, "lengthMaxDays": None}
+    day_values = []
+    week_range = re.search(r"(\d+(?:\.\d+)?)\s*[-–]\s*(\d+(?:\.\d+)?)\s*weeks?", lower)
+    if week_range:
+        day_values.extend(
+            [round(float(week_range.group(1)) * 7), round(float(week_range.group(2)) * 7)]
+        )
+    for match in re.finditer(r"(\d+(?:\.\d+)?)\s*weeks?", lower):
+        day_values.append(round(float(match.group(1)) * 7))
+    day_range = re.search(r"(\d+)\s*[-–]\s*(\d+)\s*days?", lower)
+    if day_range:
+        day_values.extend([int(day_range.group(1)), int(day_range.group(2))])
+    for match in re.finditer(r"(\d+)\s*days?", lower):
+        day_values.append(int(match.group(1)))
+    if not day_values:
+        return {"lengthMinDays": None, "lengthMaxDays": None}
+    return {"lengthMinDays": min(day_values), "lengthMaxDays": max(day_values)}
+
+
 def normalize_duration(raw: str) -> dict:
     display = raw.strip()
-    lower = display.lower()
-    days = 0
-    wm = re.search(r"(\d+(?:\.\d+)?)\s*weeks?", lower)
-    dm = re.search(r"(\d+)\s*days?", lower)
-    if wm:
-        days = int(float(wm.group(1)) * 7)
-    elif dm:
-        days = int(dm.group(1))
-    if days < 14:
+    length = parse_length_days(display)
+    bucket_days = length["lengthMinDays"] or length["lengthMaxDays"] or 0
+    if bucket_days < 14:
         bucket = "under_2_weeks"
-    elif days <= 28:
+    elif bucket_days <= 28:
         bucket = "two_to_four_weeks"
     else:
         bucket = "four_plus_weeks"
-    return {"durationBucket": bucket, "lengthDisplay": display}
+    return {"durationBucket": bucket, "lengthDisplay": display, **length}
 
 
 def normalize_grade(raw: str) -> dict:

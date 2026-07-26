@@ -137,13 +137,19 @@ export function SearchExperience({
     filters.admissionTypes.length > 0 ||
     filters.formats.length > 0 ||
     filters.durationBuckets.length > 0 ||
+    filters.minDurationWeeks != null ||
+    filters.maxDurationWeeks != null ||
     filters.collegeCreditOnly ||
     filters.fullyFundedOnly ||
     filters.priceFilter !== "any" ||
+    filters.maxPrice != null ||
+    filters.minPrice != null ||
     filters.usOnly ||
     filters.excludeUnknownPrice ||
     filters.dataQuery.trim().length > 0 ||
-    filters.excludeLocation.trim().length > 0;
+    filters.excludeLocation.trim().length > 0 ||
+    filters.includeRegions.length > 0 ||
+    filters.includeLocations.length > 0;
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6">

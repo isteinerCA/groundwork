@@ -8,6 +8,7 @@ import {
   PRICE_FILTERS,
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
+import { US_REGIONS } from "@/lib/data/us-regions";
 import {
   llmParseResponseSchema,
   parseLlmResponse,
@@ -26,6 +27,9 @@ function buildSystemPrompt(): string {
   const durations = DURATION_BUCKETS.map((d) => `- ${d.id}: ${d.label}`).join("\n");
   const prices = PRICE_FILTERS.map((p) => `- ${p.id}: ${p.label}`).join("\n");
   const grades = GRADE_CHIPS.join(", ");
+  const regions = US_REGIONS.map(
+    (r) => `- ${r.id}: ${r.label} (${r.states.slice(0, 4).join(", ")}…)`,
+  ).join("\n");
 
   return `You are Groundwork's search assistant. You translate parent messages into structured summer-program search filters.
 
@@ -41,20 +45,29 @@ ${categories}
 ${admission}
 - formats: string[] — valid IDs:
 ${formats}
-- durationBuckets: string[] — valid IDs:
+  "commuter" = day/commuter programs (no overnight). "residential" = overnight/on-campus. Programs can have both tags.
+- durationBuckets: string[] — coarse buckets; valid IDs:
 ${durations}
+- minDurationWeeks / maxDurationWeeks: number | null — exact week bounds from CSV length data (e.g. "3 weeks" → min=max=3, "one week" → 1). Prefer over buckets for specific requests like "just one week" or "6 weeks". Null to clear.
 - collegeCreditOnly: boolean
 - fullyFundedOnly: boolean
-- priceFilter: string — valid IDs:
+- priceFilter: string — coarse buckets; valid IDs:
 ${prices}
+- maxPrice / minPrice: number | null — exact dollar cap/floor using parsed program prices (e.g. "under $3000" → maxPrice: 3000). Prefer over buckets for specific amounts. Programs marked "Contact program" may be omitted unless excludeUnknownPrice is false — mention this in unexpressible when relevant.
 - usOnly: boolean — US programs only (exclude international)
 - excludeUnknownPrice: boolean — hide programs with unlisted/contact-for-price
 - dataQuery: string — free-text for POSITIVE location include, program names, gotcha topics (deposit, SEVP, safety), or other include constraints. Use lowercase. Clear with empty string when removed.
 - excludeLocation: string — exclude programs in a US state/location (canonical lowercase state name, e.g. "california"). Use for "not in California", "exclude Texas", "outside Massachusetts". Clear with empty string when removed. NEVER put negated locations in dataQuery.
+- includeRegions: string[] — include programs in a US region (OR logic). Valid IDs:
+${regions}
+  Use for "east coast only", "west coast", "midwest", "northeast", "the south". Clear with empty array [] when removed. NEVER put regional phrases in dataQuery.
+- includeLocations: string[] — include programs in specific US states (OR logic). Use canonical lowercase state names (e.g. "new york", "massachusetts", "california"). Use for multi-state requests: "NY or MA", "New York or Massachusetts only", "California or Texas". Clear with empty array [] when removed. NEVER put multi-state lists in dataQuery.
 
 ## Location rules (critical)
-- "in California", "California only" → dataQuery: "california", excludeLocation: ""
-- "not in California", "exclude California", "outside CA" → excludeLocation: "california", dataQuery: "" (clear any prior include)
+- "in California", "California only" → dataQuery: "california" OR includeLocations: ["california"]; clear excludeLocation and includeRegions
+- "NY or MA only", "New York or Massachusetts" → includeLocations: ["new york", "massachusetts"]; dataQuery: "", excludeLocation: "", includeRegions: []
+- "east coast only", "programs on the east coast" → includeRegions: ["east-coast"], dataQuery: "", excludeLocation: "", includeLocations: []
+- "not in California", "exclude California", "outside CA" → excludeLocation: "california", dataQuery: "", includeRegions: [], includeLocations: []
 - dataQuery and excludeLocation must NOT target the same location
 - Do NOT set usOnly unless the user explicitly asks for US-only or domestic programs
 
@@ -71,12 +84,18 @@ Set clearAll: true when the user wants to reset all filters ("start over", "clea
 - Zip code / radius search
 - Specific acceptance rates or competitiveness beyond admission type
 - Real-time availability or seat counts
+- Exact dates/months (June, July) — no date filter yet
+- Programs where price or length could not be parsed from our data ("Contact program", "Varies")
 - Anything not in our program data
 
 ## dataQuery usage
 Use dataQuery for POSITIVE matches only: include a US state/city, program name searches, gotcha/flag keywords. Prefer structured filters when possible (categories, price, format, etc.).
 
 Use excludeLocation for negated location requests — never encode "not in X" as dataQuery.
+
+Use includeRegions for multi-state regional requests (east coast, west coast, etc.) — never put "east coast" in dataQuery.
+
+Use includeLocations for explicit multi-state OR requests (NY or MA, California and Texas) — never put "ny or ma" in dataQuery.
 
 ## Questions
 If the user asks a question without requesting filter changes, leave filterPatch empty (or only fields they explicitly asked to change) and answer in assistantMessage.`;

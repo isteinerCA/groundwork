@@ -1,5 +1,6 @@
 export const PROGRAM_FORMATS = [
   { id: "residential", label: "Residential" },
+  { id: "commuter", label: "Commuter / Day" },
   { id: "online", label: "Online" },
   { id: "both", label: "Both" },
 ] as const;
