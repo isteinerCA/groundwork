@@ -6,6 +6,7 @@ import { DashboardShell } from "@/components/workspace/dashboard-shell";
 import { useWorkspace } from "@/components/workspace/workspace-provider";
 import { ADMISSION_TYPE_BY_ID } from "@/lib/constants/admission-types";
 import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
+import { formatPriceDisplay } from "@/lib/data/format-price-display";
 import type { Program } from "@/lib/types/program";
 
 const MAX_COMPARE = 4;
@@ -110,7 +111,7 @@ export function CompareView({ programs }: { programs: Program[] }) {
                       ["Location", (p: Program) => p.locationDisplay],
                       ["Dates", (p: Program) => p.datesDisplay || "—"],
                       ["Length", (p: Program) => p.lengthDisplay],
-                      ["Cost", (p: Program) => p.priceDisplay],
+                      ["Cost", (p: Program) => formatPriceDisplay(p)],
                       ["College credit", (p: Program) => (p.hasCollegeCredit ? "Yes" : "No")],
                       [
                         "Hidden details",

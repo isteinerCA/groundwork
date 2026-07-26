@@ -11,7 +11,10 @@ import {
   categoryLabelForId,
   getProgramCategoryIds,
 } from "@/lib/data/matches-category";
-import { formatShortlistMembershipLabel } from "@/lib/workspace/shortlist-membership";
+import {
+  formatPriceDisplay,
+  isPriceDisplayMuted,
+} from "@/lib/data/format-price-display";
 import { useWorkspace } from "@/components/workspace/workspace-provider";
 import type { Program } from "@/lib/types/program";
 
@@ -190,8 +193,8 @@ export function ProgramCard({
         </div>
         <div>
           <dt className="text-[var(--color-text-muted)]">Cost</dt>
-          <dd className={program.priceUnknown ? "italic text-[var(--color-text-muted)]" : ""}>
-            {program.priceDisplay}
+          <dd className={isPriceDisplayMuted(program) ? "italic text-[var(--color-text-muted)]" : ""}>
+            {formatPriceDisplay(program)}
           </dd>
         </div>
       </dl>

@@ -14,6 +14,7 @@ import {
 import { StatusBadge, StatusSelect } from "@/components/workspace/status-badge";
 import { useWorkspace } from "@/components/workspace/workspace-provider";
 import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
+import { formatPriceDisplay } from "@/lib/data/format-price-display";
 import type { Program } from "@/lib/types/program";
 import { exportShortlistCsv } from "@/lib/workspace/export-csv";
 import { buildShareUrl } from "@/lib/workspace/share";
@@ -257,7 +258,7 @@ export function DashboardView({ programs }: { programs: Program[] }) {
                         <td className="px-3 py-4 text-[var(--color-text-muted)]">
                           {program!.datesDisplay || "—"}
                         </td>
-                        <td className="px-3 py-4">{program!.priceDisplay}</td>
+                        <td className="px-3 py-4">{formatPriceDisplay(program!)}</td>
                         <td className="px-3 py-4">
                           <StatusSelect
                             value={item.status}
@@ -330,7 +331,7 @@ export function DashboardView({ programs }: { programs: Program[] }) {
                                 {program!.name}
                               </p>
                               <p className="text-xs text-[var(--color-text-muted)]">
-                                {program!.priceDisplay}
+                                {formatPriceDisplay(program!)}
                               </p>
                             </li>
                           ))}

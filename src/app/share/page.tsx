@@ -7,6 +7,7 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { StatusBadge } from "@/components/workspace/status-badge";
 import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
+import { formatPriceDisplay } from "@/lib/data/format-price-display";
 import { getPrograms } from "@/lib/programs";
 import { decodeSharePayload } from "@/lib/workspace/share";
 
@@ -61,7 +62,7 @@ function ShareContent() {
                   <p className="text-xs text-[var(--color-text-muted)]">{category}</p>
                   <h2 className="text-lg text-[var(--color-navy)]">{program.name}</h2>
                   <p className="mt-1 text-sm text-[var(--color-text-muted)]">
-                    {program.locationDisplay} · {program.priceDisplay}
+                    {program.locationDisplay} · {formatPriceDisplay(program)}
                   </p>
                 </div>
                 <StatusBadge status={item.status} />
