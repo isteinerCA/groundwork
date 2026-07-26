@@ -41,14 +41,16 @@ Return a partial filterPatch with ONLY fields that should change. Omit unchanged
   NEVER use gradesCompleted for "participants older than X", "teen only", "no kids under 12", "minimum age 13+", or similar — see "Participant age floor" below.
 - categories: string[] — OR logic. Valid IDs:
 ${categories}
-  When ADDING categories, return the full combined list (current + new).
+  When ADDING or EXPANDING categories ("expand to marine science", "also include STEM"), return the full combined list (current + new).
   When the user says "only X" (without "or"), return ONLY those categories (replace list).
 - admissionTypes: string[] — valid IDs (OR logic — programs matching ANY selected type):
 ${admission}
   Selecting types INCLUDES only those programs. There is no exclude-admission filter — use positive selection (e.g. first_come only) instead of trying to exclude application programs.
-- formats: string[] — valid IDs:
+- formats: string[] — valid IDs (OR logic — programs matching ANY selected format):
 ${formats}
   "commuter" = day/commuter programs (no overnight). "residential" = overnight/on-campus. Programs can have both tags.
+  When ADDING or EXPANDING formats ("expand to online", "also show commuter"), return the full combined list (current + new).
+  When the user says "only online" or "online only", return ONLY those formats (replace list).
 - durationBuckets: string[] — coarse buckets; valid IDs:
 ${durations}
 - minDurationWeeks / maxDurationWeeks: number | null — exact week bounds from CSV length data (e.g. "3 weeks" → min=max=3, "one week" → 1). Prefer over buckets for specific requests like "just one week" or "6 weeks". Null to clear.
@@ -65,6 +67,12 @@ ${prices}
 ${regions}
   Use for "east coast only", "west coast", "midwest", "northeast", "the south". Clear with empty array [] when removed. NEVER put regional phrases in dataQuery.
 - includeLocations: string[] — include programs in specific US states (OR logic). Use canonical lowercase state names (e.g. "new york", "massachusetts", "california"). Use for multi-state requests: "NY or MA", "New York or Massachusetts only", "California or Texas". Clear with empty array [] when removed. NEVER put multi-state lists in dataQuery.
+
+## Expanding vs replacing filters (critical)
+- **Expand / add** keeps existing compatible filters and adds new ones (OR logic). Examples: "expand to CA and WA", "expand to marine science", "expand to online programs", "also include commuter".
+- For OR-array fields (categories, formats, admissionTypes, durationBuckets, includeRegions, includeLocations): on expand, return the **full combined list** — values from currentFilters plus newly requested values.
+- For locations specifically: when currentFilters has dataQuery or includeLocations and the user expands, include those existing states in includeLocations alongside new states. Clear dataQuery and includeRegions when moving to includeLocations.
+- **Replace / narrow** ("California only", "only marine science", "online only", "switch to Texas"): return ONLY the new value(s). Do not carry over previous filters unless the user asked to keep them.
 
 ## Location rules (critical)
 - "in California", "California only" → dataQuery: "california" OR includeLocations: ["california"]; clear excludeLocation and includeRegions

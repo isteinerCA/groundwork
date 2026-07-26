@@ -4,7 +4,7 @@
  */
 import { DEFAULT_SEARCH_FILTERS } from "../src/lib/types/program";
 import { filterPrograms } from "../src/lib/data/filter-programs";
-import { mergeFilterPatch } from "../src/lib/search/merge-filter-patch";
+import { mergeFilterPatch, isExpandIntent } from "../src/lib/search/merge-filter-patch";
 import {
   filterPatchSchema,
   llmParseResponseSchema,
@@ -118,6 +118,74 @@ const mergedExclude = mergeFilterPatch(
 );
 assert(mergedExclude.dataQuery === "", "merge clears dataQuery when excluding same location");
 assert(mergedExclude.excludeLocation === "california", "merge keeps excludeLocation");
+
+// expand location: union existing NY with new CA/WA
+const nyOnly = {
+  ...DEFAULT_SEARCH_FILTERS,
+  gradesCompleted: [10],
+  dataQuery: "new york",
+};
+const expandedLocations = mergeFilterPatch(
+  nyOnly,
+  { includeLocations: ["california", "washington"] },
+  { expandFilters: true },
+);
+assert(
+  expandedLocations.includeLocations.includes("new york") &&
+    expandedLocations.includeLocations.includes("california") &&
+    expandedLocations.includeLocations.includes("washington"),
+  "expandFilters keeps NY when expanding to CA and WA",
+);
+assert(expandedLocations.dataQuery === "", "expandFilters clears dataQuery after location merge");
+
+const replacedLocations = mergeFilterPatch(nyOnly, {
+  includeLocations: ["california", "washington"],
+});
+assert(
+  !replacedLocations.includeLocations.includes("new york") &&
+    replacedLocations.includeLocations.includes("california"),
+  "replace mode drops NY when setting new includeLocations",
+);
+
+// expand category: union wilderness + marine science
+const wildernessOnly = {
+  ...DEFAULT_SEARCH_FILTERS,
+  gradesCompleted: [10],
+  categories: ["outdoor-wilderness" as const],
+};
+const expandedCategories = mergeFilterPatch(
+  wildernessOnly,
+  { categories: ["marine-science"] },
+  { expandFilters: true },
+);
+assert(
+  expandedCategories.categories.includes("outdoor-wilderness") &&
+    expandedCategories.categories.includes("marine-science"),
+  "expandFilters keeps wilderness when expanding to marine science",
+);
+
+// expand format: union residential + online
+const residentialOnly = {
+  ...DEFAULT_SEARCH_FILTERS,
+  gradesCompleted: [10],
+  formats: ["residential" as const],
+};
+const expandedFormats = mergeFilterPatch(
+  residentialOnly,
+  { formats: ["online"] },
+  { expandFilters: true },
+);
+assert(
+  expandedFormats.formats.includes("residential") &&
+    expandedFormats.formats.includes("online"),
+  "expandFilters keeps residential when expanding to online",
+);
+
+assert(isExpandIntent("expand to CA and WA state"), "detects expand intent");
+assert(isExpandIntent("expand to marine science"), "detects expand for categories");
+assert(isExpandIntent("expand to online programs"), "detects expand for formats");
+assert(!isExpandIntent("only CA and WA"), "detects replace-only intent");
+assert(!isExpandIntent("online only"), "detects format replace intent");
 
 // east coast region from dataQuery promotion
 const eastCoastPatch = sanitizeFilterPatch({ dataQuery: "east coast only" });
