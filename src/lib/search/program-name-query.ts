@@ -42,6 +42,18 @@ export function constrainFilterPatchForProgramNameQuery(
   return { dataQuery };
 }
 
+/** Deterministic parse for bare program/institution name searches (no LLM). */
+export function buildProgramNameParseResponse(message: string): LlmParseResponse {
+  const dataQuery = message.trim().toLowerCase();
+  return {
+    clearAll: false,
+    filterPatch: { dataQuery },
+    applied: `Search: ${dataQuery}`,
+    unexpressible: "",
+    assistantMessage: `Searching for "${dataQuery}" in program names and descriptions.`,
+  };
+}
+
 /** Rewrite LLM copy so it doesn't claim filters the user didn't ask for. */
 export function constrainProgramNameSearchResponse(
   message: string,

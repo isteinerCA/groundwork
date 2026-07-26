@@ -7,7 +7,7 @@ import {
   PRICE_FILTERS,
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
-import { parseMonthList, isNegatedMonthQuery, type MonthNumber } from "@/lib/constants/months";
+import { parseMonthList, isNegatedMonthQuery, MONTH_NUMBERS, type MonthNumber } from "@/lib/constants/months";
 import { parseMultiStateLocations, resolveLocationQuery } from "@/lib/data/matches-location";
 import { resolveRegionQuery, US_REGION_IDS } from "@/lib/data/us-regions";
 import { stripNoOpFilterPatch } from "@/lib/search/filter-patch-delta";
@@ -36,9 +36,12 @@ const priceIds = PRICE_FILTERS.map((p) => p.id) as [
   ...(typeof PRICE_FILTERS)[number]["id"][],
 ];
 
-const monthNumberSchema = z.custom<MonthNumber>(
-  (val) => typeof val === "number" && Number.isInteger(val) && val >= 1 && val <= 12,
-);
+// Use numeric bounds (not z.custom) so OpenAI structured-output JSON Schema stays valid.
+const monthNumberSchema = z
+  .number()
+  .int()
+  .min(MONTH_NUMBERS[0])
+  .max(MONTH_NUMBERS[MONTH_NUMBERS.length - 1]);
 
 export const filterPatchSchema = z
   .object({
@@ -119,7 +122,9 @@ export const parseRequestSchema = z.object({
   history: z.array(chatHistoryMessageSchema).max(12).optional(),
 });
 
-export type ParseRequest = z.infer<typeof parseRequestSchema>;
+export type ParseRequest = Omit<z.infer<typeof parseRequestSchema>, "currentFilters"> & {
+  currentFilters: SearchFilters;
+};
 
 function clampGrades(grades: number[]): number[] {
   const valid = new Set<number>(GRADE_CHIPS);
