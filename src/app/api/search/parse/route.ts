@@ -13,8 +13,8 @@ import {
 import { stripNoOpFilterPatch } from "@/lib/search/filter-patch-delta";
 import { isSearchParseRateLimited } from "@/lib/search/rate-limit";
 
-export async function POST(request: Request) {
-  const clientIp = clientIpFromRequest(request);
+export async function POST(req: Request) {
+  const clientIp = clientIpFromRequest(req);
 
   if (isSearchParseRateLimited(clientIp)) {
     return NextResponse.json(
@@ -25,7 +25,7 @@ export async function POST(request: Request) {
 
   let body: unknown;
   try {
-    body = await request.json();
+    body = await req.json();
   } catch {
     return NextResponse.json({ error: "Invalid JSON body." }, { status: 400 });
   }
@@ -35,20 +35,20 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid request." }, { status: 400 });
   }
 
-  const request = parsed.data as ParseRequest;
+  const parseRequest = parsed.data as ParseRequest;
 
-  if (isLikelyProgramNameQuery(request.message)) {
-    const result = buildProgramNameParseResponse(request.message);
-    result.filterPatch = stripNoOpFilterPatch(request.currentFilters, result.filterPatch);
+  if (isLikelyProgramNameQuery(parseRequest.message)) {
+    const result = buildProgramNameParseResponse(parseRequest.message);
+    result.filterPatch = stripNoOpFilterPatch(parseRequest.currentFilters, result.filterPatch);
     return NextResponse.json(result);
   }
 
   try {
-    const result = await parseSearchMessageWithLlm(request);
+    const result = await parseSearchMessageWithLlm(parseRequest);
 
     if (process.env.NODE_ENV === "development") {
       console.debug("[search/parse]", {
-        messageLength: request.message.length,
+        messageLength: parseRequest.message.length,
         clearAll: result.clearAll,
         patchKeys: Object.keys(result.filterPatch),
         latencyMs: "logged",
