@@ -21,9 +21,16 @@ export function levenshtein(a: string, b: string): number {
 }
 
 function maxEditDistance(termLength: number): number {
-  if (termLength >= 8) return 2;
+  if (termLength >= 8) return 1;
   if (termLength >= 5) return 1;
   return 0;
+}
+
+function isSimilarEnough(a: string, b: string, maxDistance: number): boolean {
+  const distance = levenshtein(a, b);
+  if (distance > maxDistance) return false;
+  if (distance === 0) return true;
+  return 1 - distance / Math.max(a.length, b.length) >= 0.8;
 }
 
 function significantWords(text: string): string[] {
@@ -53,13 +60,13 @@ export function termMatchesInText(term: string, text: string): boolean {
 
   for (const word of significantWords(haystack)) {
     if (trimmed.length >= 4 && word.startsWith(trimmed)) return true;
-    if (levenshtein(trimmed, word) <= editBudget) return true;
+    if (isSimilarEnough(trimmed, word, editBudget)) return true;
 
     const wordCompact = normalizeAlphanumeric(word);
     if (
       termCompact.length >= 4 &&
       wordCompact.length >= 4 &&
-      levenshtein(termCompact, wordCompact) <= editBudget
+      isSimilarEnough(termCompact, wordCompact, editBudget)
     ) {
       return true;
     }

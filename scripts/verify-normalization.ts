@@ -177,6 +177,23 @@ if (!gradeMatchesFilter(risingJrSrGrade, [11])) {
   failed++;
 }
 
+const hsJuniors = normalizeGrade("HS Juniors");
+if (hsJuniors.gradeCompletedMin !== 10 || hsJuniors.gradeCompletedMax !== 10) {
+  console.error(
+    `FAIL: HS Juniors should map to completed grade 10, got ${hsJuniors.gradeCompletedMin}-${hsJuniors.gradeCompletedMax}`,
+  );
+  failed++;
+}
+const princetonGrade = {
+  gradeCompletedMin: hsJuniors.gradeCompletedMin,
+  gradeCompletedMax: hsJuniors.gradeCompletedMax,
+  gradeSource: hsJuniors.gradeSource,
+};
+if (gradeMatchesFilter(princetonGrade, [12])) {
+  console.error("FAIL: HS Juniors program should not match completed grade 12");
+  failed++;
+}
+
 if (failed === 0) {
   console.log("All normalization checks passed.");
 } else {
