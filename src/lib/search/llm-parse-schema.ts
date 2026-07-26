@@ -8,6 +8,7 @@ import {
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
 import { DEFAULT_SEARCH_FILTERS, type SearchFilters } from "@/lib/types/program";
+import { resolveLocationQuery } from "@/lib/data/matches-location";
 
 const categoryIds = PROGRAM_CATEGORIES.map((c) => c.id) as [
   (typeof PROGRAM_CATEGORIES)[number]["id"],
@@ -44,6 +45,7 @@ export const filterPatchSchema = z
     usOnly: z.boolean().optional(),
     excludeUnknownPrice: z.boolean().optional(),
     dataQuery: z.string().optional(),
+    excludeLocation: z.string().optional(),
   })
   .strict();
 
@@ -59,6 +61,7 @@ export const searchFiltersSchema = z.object({
   usOnly: z.boolean(),
   excludeUnknownPrice: z.boolean(),
   dataQuery: z.string(),
+  excludeLocation: z.string(),
 });
 
 export const llmParseResponseSchema = z.object({
@@ -92,6 +95,18 @@ function clampGrades(grades: number[]): number[] {
 
 function sanitizeDataQuery(value: string): string {
   return value.trim().slice(0, 100);
+}
+
+function sanitizeExcludeLocation(value: string): string {
+  const trimmed = value.trim().slice(0, 100);
+  if (!trimmed) return "";
+  return resolveLocationQuery(trimmed) ?? trimmed.toLowerCase();
+}
+
+function resolvedLocationKey(value: string): string | undefined {
+  const trimmed = value.trim();
+  if (!trimmed) return undefined;
+  return resolveLocationQuery(trimmed) ?? trimmed.toLowerCase();
 }
 
 /** Normalize and validate a filter patch from the LLM before applying. */
@@ -132,6 +147,22 @@ export function sanitizeFilterPatch(
   }
   if (patch.dataQuery !== undefined) {
     sanitized.dataQuery = sanitizeDataQuery(patch.dataQuery);
+  }
+  if (patch.excludeLocation !== undefined) {
+    sanitized.excludeLocation = sanitizeExcludeLocation(patch.excludeLocation);
+  }
+
+  // Location include vs exclude are mutually exclusive for the same place.
+  const includeKey =
+    sanitized.dataQuery !== undefined
+      ? resolvedLocationKey(sanitized.dataQuery)
+      : undefined;
+  const excludeKey =
+    sanitized.excludeLocation !== undefined
+      ? resolvedLocationKey(sanitized.excludeLocation)
+      : undefined;
+  if (includeKey && excludeKey && includeKey === excludeKey) {
+    sanitized.dataQuery = "";
   }
 
   return sanitized;

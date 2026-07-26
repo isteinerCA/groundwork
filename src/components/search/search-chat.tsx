@@ -56,6 +56,7 @@ export function SearchChat({
         usOnly: filters.usOnly,
         excludeUnknownPrice: filters.excludeUnknownPrice,
         dataQuery: filters.dataQuery,
+        excludeLocation: filters.excludeLocation,
         resultCount,
       }),
     [filters, resultCount],

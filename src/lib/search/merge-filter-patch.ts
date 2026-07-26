@@ -1,8 +1,28 @@
+import { resolveLocationQuery } from "@/lib/data/matches-location";
 import type { SearchFilters } from "@/lib/types/program";
+
+function resolvedLocationKey(value: string): string | undefined {
+  const trimmed = value.trim();
+  if (!trimmed) return undefined;
+  return resolveLocationQuery(trimmed) ?? trimmed.toLowerCase();
+}
 
 export function mergeFilterPatch(
   current: SearchFilters,
   patch: Partial<SearchFilters>,
 ): SearchFilters {
-  return { ...current, ...patch };
+  const next: SearchFilters = { ...current, ...patch };
+
+  const includeKey = resolvedLocationKey(next.dataQuery);
+  const excludeKey = resolvedLocationKey(next.excludeLocation);
+
+  if (includeKey && excludeKey && includeKey === excludeKey) {
+    if (patch.excludeLocation !== undefined) {
+      next.dataQuery = "";
+    } else if (patch.dataQuery !== undefined) {
+      next.excludeLocation = "";
+    }
+  }
+
+  return next;
 }

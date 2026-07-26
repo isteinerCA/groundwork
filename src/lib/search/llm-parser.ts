@@ -49,7 +49,14 @@ ${durations}
 ${prices}
 - usOnly: boolean — US programs only (exclude international)
 - excludeUnknownPrice: boolean — hide programs with unlisted/contact-for-price
-- dataQuery: string — free-text for location keywords, program names, gotcha topics (deposit, SEVP, safety), or other constraints not covered above. Use lowercase. Clear with empty string when user removes location/text search.
+- dataQuery: string — free-text for POSITIVE location include, program names, gotcha topics (deposit, SEVP, safety), or other include constraints. Use lowercase. Clear with empty string when removed.
+- excludeLocation: string — exclude programs in a US state/location (canonical lowercase state name, e.g. "california"). Use for "not in California", "exclude Texas", "outside Massachusetts". Clear with empty string when removed. NEVER put negated locations in dataQuery.
+
+## Location rules (critical)
+- "in California", "California only" → dataQuery: "california", excludeLocation: ""
+- "not in California", "exclude California", "outside CA" → excludeLocation: "california", dataQuery: "" (clear any prior include)
+- dataQuery and excludeLocation must NOT target the same location
+- Do NOT set usOnly unless the user explicitly asks for US-only or domestic programs
 
 ## clearAll
 Set clearAll: true when the user wants to reset all filters ("start over", "clear all", "reset").
@@ -67,7 +74,9 @@ Set clearAll: true when the user wants to reset all filters ("start over", "clea
 - Anything not in our program data
 
 ## dataQuery usage
-Use dataQuery for: US state/city location text, program name searches, gotcha/flag keywords. Prefer structured filters when possible (categories, price, format, etc.).
+Use dataQuery for POSITIVE matches only: include a US state/city, program name searches, gotcha/flag keywords. Prefer structured filters when possible (categories, price, format, etc.).
+
+Use excludeLocation for negated location requests — never encode "not in X" as dataQuery.
 
 ## Questions
 If the user asks a question without requesting filter changes, leave filterPatch empty (or only fields they explicitly asked to change) and answer in assistantMessage.`;

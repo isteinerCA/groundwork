@@ -1,6 +1,7 @@
 import type { AdmissionTypeId } from "@/lib/constants/admission-types";
 import { programMatchesCategory } from "@/lib/data/matches-category";
 import { matchesDataQuery } from "@/lib/data/matches-data-query";
+import { matchesLocationQuery } from "@/lib/data/matches-location";
 import { matchesPriceFilter } from "@/lib/data/matches-price-filter";
 import { formatMatchesFilter } from "@/lib/data/normalize-format";
 import { gradeMatchesFilter } from "@/lib/data/normalize-grade";
@@ -53,6 +54,9 @@ export function matchesProgram(program: Program, filters: SearchFilters): boolea
   }
 
   if (filters.usOnly && program.isInternational) return false;
+
+  const excludeLocation = filters.excludeLocation.trim();
+  if (excludeLocation && matchesLocationQuery(program, excludeLocation)) return false;
 
   if (!matchesDataQuery(program, filters.dataQuery)) return false;
 

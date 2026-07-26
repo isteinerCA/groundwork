@@ -86,6 +86,34 @@ const clearResponse = parseLlmResponse({
 });
 assert(clearResponse.clearAll === true, "clearAll response parses");
 
+// excludeLocation for negated location
+const excludeResponse = parseLlmResponse({
+  clearAll: false,
+  filterPatch: {
+    excludeLocation: "california",
+    dataQuery: "",
+  },
+  applied: "Excluded California programs",
+  unexpressible: "",
+  assistantMessage: "Excluded programs in California.",
+});
+assert(
+  excludeResponse.filterPatch.excludeLocation === "california",
+  "excludeLocation resolves california",
+);
+assert(excludeResponse.filterPatch.dataQuery === "", "exclude clears conflicting dataQuery");
+
+const mergedExclude = mergeFilterPatch(
+  {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [10],
+    dataQuery: "california",
+  },
+  { excludeLocation: "california" },
+);
+assert(mergedExclude.dataQuery === "", "merge clears dataQuery when excluding same location");
+assert(mergedExclude.excludeLocation === "california", "merge keeps excludeLocation");
+
 if (failed === 0) {
   console.log("All LLM parse schema checks passed.");
 } else {

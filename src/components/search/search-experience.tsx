@@ -142,7 +142,8 @@ export function SearchExperience({
     filters.priceFilter !== "any" ||
     filters.usOnly ||
     filters.excludeUnknownPrice ||
-    filters.dataQuery.trim().length > 0;
+    filters.dataQuery.trim().length > 0 ||
+    filters.excludeLocation.trim().length > 0;
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6">

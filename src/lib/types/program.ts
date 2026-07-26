@@ -84,6 +84,8 @@ export interface SearchFilters {
   excludeUnknownPrice: boolean;
   /** Free-text search across location, gotchas, descriptions, and other CSV fields. */
   dataQuery: string;
+  /** Canonical state/location name to exclude (e.g. "california" for "not in California"). */
+  excludeLocation: string;
 }
 
 export const DEFAULT_SEARCH_FILTERS: SearchFilters = {
@@ -98,6 +100,7 @@ export const DEFAULT_SEARCH_FILTERS: SearchFilters = {
   usOnly: false,
   excludeUnknownPrice: false,
   dataQuery: "",
+  excludeLocation: "",
 };
 
 /** Expected columns in the program CSV */

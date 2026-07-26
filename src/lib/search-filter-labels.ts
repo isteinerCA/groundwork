@@ -118,5 +118,13 @@ export function getActiveFilterItems(filters: SearchFilters): ActiveFilterItem[]
     });
   }
 
+  if (filters.excludeLocation.trim()) {
+    items.push({
+      key: "exclude-location",
+      label: `Exclude ${formatDataQueryLabel(filters.excludeLocation)}`,
+      remove: { excludeLocation: "" },
+    });
+  }
+
   return items;
 }
