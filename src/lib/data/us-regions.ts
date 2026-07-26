@@ -11,6 +11,7 @@ export const US_REGIONS = [
       "atlantic coast",
       "east coast only",
       "the east coast",
+      "east coast destinations",
     ],
     states: [
       "maine",
@@ -81,7 +82,7 @@ export const US_REGIONS = [
   {
     id: "northeast",
     label: "Northeast",
-    aliases: ["northeast", "north east", "north-east", "northeast only", "the northeast"],
+    aliases: ["northeast", "north east", "north-east", "northeast only", "the northeast", "new england"],
     states: [
       "maine",
       "new hampshire",
@@ -102,6 +103,24 @@ const REGION_BY_ID = Object.fromEntries(US_REGIONS.map((r) => [r.id, r])) as Rec
   UsRegionId,
   (typeof US_REGIONS)[number]
 >;
+
+/** Multi-state phrases that appear in program location fields (not just state names). */
+const REGION_LOCATION_PHRASES: Record<UsRegionId, string[]> = {
+  "east-coast": ["new england", "mid-atlantic", "east coast"],
+  "northeast": ["new england", "berkshires"],
+  "west-coast": ["pacific northwest", "pacific nw", "west coast", "sierra nevada"],
+  midwest: ["boundary waters"],
+  south: ["southeast us", "deep south"],
+};
+
+function programLocationText(program: Program): string {
+  return [program.locationDisplay, program.trackDetail].filter(Boolean).join(" ").toLowerCase();
+}
+
+function locationMatchesRegionPhrases(program: Program, regionId: UsRegionId): boolean {
+  const text = programLocationText(program);
+  return (REGION_LOCATION_PHRASES[regionId] ?? []).some((phrase) => text.includes(phrase));
+}
 
 function normalizeRegionInput(input: string): string {
   return input
@@ -139,6 +158,7 @@ export function getRegionLabel(regionId: string): string {
 export function programMatchesRegion(program: Program, regionId: UsRegionId): boolean {
   const region = REGION_BY_ID[regionId];
   if (!region) return false;
+  if (locationMatchesRegionPhrases(program, regionId)) return true;
   return region.states.some((state) => matchesLocationQuery(program, state));
 }
 

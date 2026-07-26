@@ -187,6 +187,20 @@ if (failed === 0) {
   const hasCa = eastCoastResults.some((p) => /,\s*CA\b/i.test(p.locationDisplay));
   assert(hasNy, "east coast includes NY programs");
   assert(!hasCa, "east coast excludes CA programs");
+
+  const apogee = data.programs.find((p) => p.name === "Apogee Adventures");
+  if (apogee) {
+    const apogeeEastCoast = filterPrograms(data.programs, {
+      ...DEFAULT_SEARCH_FILTERS,
+      gradesCompleted: [10],
+      categories: ["outdoor-wilderness"],
+      includeRegions: ["east-coast"],
+    });
+    assert(
+      apogeeEastCoast.some((p) => p.name === "Apogee Adventures"),
+      "east coast matches New England in location text (Apogee)",
+    );
+  }
 }
 
 if (failed === 0) {

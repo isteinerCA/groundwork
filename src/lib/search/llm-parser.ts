@@ -68,10 +68,13 @@ ${regions}
 ## Location rules (critical)
 - "in California", "California only" → dataQuery: "california" OR includeLocations: ["california"]; clear excludeLocation and includeRegions
 - "NY or MA only", "New York or Massachusetts" → includeLocations: ["new york", "massachusetts"]; dataQuery: "", excludeLocation: "", includeRegions: []
-- "east coast only", "programs on the east coast" → includeRegions: ["east-coast"], dataQuery: "", excludeLocation: "", includeLocations: []
+- "east coast only", "programs on the east coast", "east coast destinations", "narrow to east coast" → includeRegions: ["east-coast"], dataQuery: "", excludeLocation: "", includeLocations: []
 - "not in California", "exclude California", "outside CA" → excludeLocation: "california", dataQuery: "", includeRegions: [], includeLocations: []
 - dataQuery and excludeLocation must NOT target the same location
 - Do NOT set usOnly unless the user explicitly asks for US-only or domestic programs
+
+## Category + region
+Region filters match program location only — they do not override category filters. A NY camp in Traditional Camps will not appear when Wilderness & Adventure is selected, even if it is on the east coast. If results drop to zero after adding a region, mention that active category filters still apply.
 
 ## clearAll
 Set clearAll: true when the user wants to reset all filters ("start over", "clear all", "reset").
