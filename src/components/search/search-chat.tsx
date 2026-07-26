@@ -4,13 +4,10 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { btnPrimary } from "@/components/ui/button-styles";
 import { logChatEvent } from "@/lib/chat-analytics";
 import { trackEvent } from "@/lib/analytics";
-import {
-  getChatOpeningPrompt,
-  mergeFilterPatch,
-  parseChatMessage,
-  type ChatParserContext,
-} from "@/lib/chat-parser";
-import type { Program, SearchFilters } from "@/lib/types/program";
+import { getOpeningHint } from "@/lib/search/opening-hint";
+import { mergeFilterPatch } from "@/lib/search/merge-filter-patch";
+import type { LlmParseResponse } from "@/lib/search/llm-parse-schema";
+import { DEFAULT_SEARCH_FILTERS, type SearchFilters } from "@/lib/types/program";
 
 interface ChatMessage {
   id: string;
@@ -21,20 +18,19 @@ interface ChatMessage {
 export function SearchChat({
   filters,
   resultCount,
-  programs,
   onApplyFilters,
   embedded = false,
   inPanel = false,
 }: {
   filters: SearchFilters;
   resultCount: number;
-  programs: Program[];
   onApplyFilters: (next: SearchFilters) => void;
   embedded?: boolean;
   inPanel?: boolean;
 }) {
   const [collapsed, setCollapsed] = useState(false);
   const [input, setInput] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>(() => [
     {
       id: "welcome",
@@ -44,8 +40,7 @@ export function SearchChat({
   ]);
   const listRef = useRef<HTMLDivElement>(null);
 
-  const context: ChatParserContext = { filters, resultCount, programs };
-  const openingHint = getChatOpeningPrompt(context);
+  const openingHint = getOpeningHint({ filters, resultCount });
 
   const refreshKey = useMemo(
     () =>
@@ -79,9 +74,9 @@ export function SearchChat({
     listRef.current?.scrollTo({ top: listRef.current.scrollHeight, behavior: "smooth" });
   }, [messages]);
 
-  const send = () => {
+  const send = async () => {
     const text = input.trim();
-    if (!text) return;
+    if (!text || isLoading) return;
 
     const userMessage: ChatMessage = {
       id: `user-${Date.now()}`,
@@ -89,31 +84,108 @@ export function SearchChat({
       text,
     };
 
-    const result = parseChatMessage(text, context);
-    const assistantMessage: ChatMessage = {
-      id: `assistant-${Date.now()}`,
-      role: "assistant",
-      text: result.message,
-    };
-
-    setMessages((prev) => [...prev, userMessage, assistantMessage]);
+    setMessages((prev) => [...prev, userMessage]);
     setInput("");
+    setIsLoading(true);
 
-    if (result.type === "clear" && result.filterPatch) {
-      onApplyFilters(result.filterPatch as SearchFilters);
-      logChatEvent(text, result.type, result.filterPatch as SearchFilters, 0);
-      trackEvent("chat_sent", { parse_type: result.type });
-      return;
-    }
+    try {
+      const history = [...messages, userMessage]
+        .filter((m) => m.id !== "welcome")
+        .slice(-6)
+        .map((m) => ({ role: m.role, text: m.text }));
 
-    if (result.type === "filter" && result.filterPatch) {
-      const next = mergeFilterPatch(filters, result.filterPatch);
-      onApplyFilters(next);
-      logChatEvent(text, result.type, next, resultCount);
-      trackEvent("chat_sent", { parse_type: result.type });
-    } else {
-      logChatEvent(text, result.type, filters, resultCount);
-      trackEvent("chat_sent", { parse_type: result.type });
+      const response = await fetch("/api/search/parse", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          message: text,
+          currentFilters: filters,
+          resultCount,
+          history,
+        }),
+      });
+
+      if (!response.ok) {
+        const payload = (await response.json().catch(() => null)) as { error?: string } | null;
+        const errorText =
+          payload?.error ??
+          (response.status === 429
+            ? "Too many requests — please wait a moment."
+            : "I couldn't process that — try again or use the filter chips.");
+
+        setMessages((prev) => [
+          ...prev,
+          {
+            id: `assistant-${Date.now()}`,
+            role: "assistant",
+            text: errorText,
+          },
+        ]);
+        logChatEvent({
+          rawText: text,
+          clearAll: false,
+          hadPatch: false,
+          filters,
+          resultCount,
+          error: true,
+        });
+        trackEvent("chat_sent", { had_unexpressible: false, error: true });
+        return;
+      }
+
+      const result = (await response.json()) as LlmParseResponse;
+      const assistantMessage: ChatMessage = {
+        id: `assistant-${Date.now()}`,
+        role: "assistant",
+        text: result.assistantMessage,
+      };
+
+      setMessages((prev) => [...prev, assistantMessage]);
+
+      let nextFilters = filters;
+      if (result.clearAll) {
+        nextFilters = { ...DEFAULT_SEARCH_FILTERS };
+        onApplyFilters(nextFilters);
+      } else if (Object.keys(result.filterPatch).length > 0) {
+        nextFilters = mergeFilterPatch(filters, result.filterPatch);
+        onApplyFilters(nextFilters);
+      }
+
+      const hadPatch = result.clearAll || Object.keys(result.filterPatch).length > 0;
+      logChatEvent({
+        rawText: text,
+        clearAll: result.clearAll,
+        hadPatch,
+        filters: nextFilters,
+        resultCount,
+        applied: result.applied,
+        unexpressible: result.unexpressible,
+      });
+      trackEvent("chat_sent", {
+        had_unexpressible: result.unexpressible.length > 0,
+        clear_all: result.clearAll,
+        had_patch: hadPatch,
+      });
+    } catch {
+      setMessages((prev) => [
+        ...prev,
+        {
+          id: `assistant-${Date.now()}`,
+          role: "assistant",
+          text: "I couldn't process that — try again or use the filter chips.",
+        },
+      ]);
+      logChatEvent({
+        rawText: text,
+        clearAll: false,
+        hadPatch: false,
+        filters,
+        resultCount,
+        error: true,
+      });
+      trackEvent("chat_sent", { had_unexpressible: false, error: true });
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -183,7 +255,7 @@ export function SearchChat({
               className="border-t border-[var(--color-border)] p-3"
               onSubmit={(e) => {
                 e.preventDefault();
-                send();
+                void send();
               }}
             >
               <label htmlFor="search-chat-input" className="sr-only">
@@ -195,13 +267,15 @@ export function SearchChat({
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   placeholder='e.g. "in California only"'
-                  className="min-w-0 flex-1 rounded-[var(--radius-md)] border border-[var(--color-border)] px-3 py-2 text-sm"
+                  disabled={isLoading}
+                  className="min-w-0 flex-1 rounded-[var(--radius-md)] border border-[var(--color-border)] px-3 py-2 text-sm disabled:opacity-60"
                 />
                 <button
                   type="submit"
-                  className={`${btnPrimary} shrink-0 px-3 py-2`}
+                  disabled={isLoading}
+                  className={`${btnPrimary} shrink-0 px-3 py-2 disabled:opacity-60`}
                 >
-                  Send
+                  {isLoading ? "Thinking…" : "Send"}
                 </button>
               </div>
             </form>

@@ -6,8 +6,12 @@ const MAX_EVENTS = 200;
 export interface ChatAnalyticsEvent {
   timestamp: string;
   rawText: string;
-  parseType: string;
+  clearAll: boolean;
+  hadPatch: boolean;
   resultCount: number;
+  error?: boolean;
+  applied?: string;
+  unexpressible?: string;
   filterSummary: {
     grades: number[];
     categoryCount: number;
@@ -25,25 +29,33 @@ function summarizeFilters(filters: SearchFilters) {
   };
 }
 
-export function logChatEvent(
-  rawText: string,
-  parseType: string,
-  filters: SearchFilters,
-  resultCount: number,
-): void {
+export function logChatEvent(event: {
+  rawText: string;
+  clearAll: boolean;
+  hadPatch: boolean;
+  filters: SearchFilters;
+  resultCount: number;
+  applied?: string;
+  unexpressible?: string;
+  error?: boolean;
+}): void {
   if (typeof window === "undefined") return;
 
-  const event: ChatAnalyticsEvent = {
+  const record: ChatAnalyticsEvent = {
     timestamp: new Date().toISOString(),
-    rawText: rawText.slice(0, 500),
-    parseType,
-    resultCount,
-    filterSummary: summarizeFilters(filters),
+    rawText: event.rawText.slice(0, 500),
+    clearAll: event.clearAll,
+    hadPatch: event.hadPatch,
+    resultCount: event.resultCount,
+    error: event.error,
+    applied: event.applied?.slice(0, 200),
+    unexpressible: event.unexpressible?.slice(0, 200),
+    filterSummary: summarizeFilters(event.filters),
   };
 
   try {
     const existing = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "[]") as ChatAnalyticsEvent[];
-    const next = [...existing, event].slice(-MAX_EVENTS);
+    const next = [...existing, record].slice(-MAX_EVENTS);
     localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
   } catch {
     // Ignore storage failures in private browsing or quota errors.

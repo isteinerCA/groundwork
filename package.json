@@ -11,14 +11,16 @@
     "prebuild": "python3 scripts/generate_seed.py",
     "import:programs": "tsx scripts/import-programs.ts",
     "verify:data": "tsx scripts/verify-normalization.ts",
-    "verify:chat": "tsx scripts/verify-chat-parser.ts"
+    "verify:chat": "tsx scripts/verify-llm-parse-schema.ts"
   },
   "dependencies": {
     "next": "^15.5.0",
     "next-auth": "^5.0.0-beta.25",
+    "openai": "^4.104.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "stripe": "^17.7.0"
+    "stripe": "^17.7.0",
+    "zod": "^3.24.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.0",

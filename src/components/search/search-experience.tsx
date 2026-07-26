@@ -334,7 +334,6 @@ export function SearchExperience({
               <SearchChat
                 embedded
                 inPanel
-                programs={programs}
                 filters={filters}
                 resultCount={results.length}
                 onApplyFilters={applyFilters}
