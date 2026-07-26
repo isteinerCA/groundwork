@@ -49,7 +49,7 @@ const formatCases: [string, string[]][] = [
   ["Day", ["commuter"]],
   ["Residential", ["residential"]],
   ["Residential/Commuter", ["residential", "commuter"]],
-  ["Residential/Commuter/Online", ["both", "commuter", "online", "residential"]],
+  ["Residential/Commuter/Online", ["commuter", "online", "residential"]],
 ];
 
 for (const [raw, expected] of formatCases) {

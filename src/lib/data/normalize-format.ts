@@ -33,10 +33,6 @@ export function normalizeFormat(raw: string): FormatNormalization {
     formatTags.add("residential");
   }
 
-  if (hasOnline && (hasResidential || hasCommuter || hasDay)) {
-    formatTags.add("both");
-  }
-
   return {
     formatDisplay,
     formatTags: [...formatTags],
@@ -48,8 +44,5 @@ export function formatMatchesFilter(
   selected: ProgramFormatId[],
 ): boolean {
   if (selected.length === 0) return true;
-  return selected.some((f) => {
-    if (f === "both") return formatTags.includes("both") || formatTags.length > 1;
-    return formatTags.includes(f);
-  });
+  return selected.some((f) => formatTags.includes(f));
 }
