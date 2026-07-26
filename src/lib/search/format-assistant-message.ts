@@ -26,7 +26,7 @@ export function formatAssistantMessage(
   programs: Program[],
 ): string {
   const hadPatch = result.clearAll || Object.keys(result.filterPatch).length > 0;
-  let text = result.assistantMessage.trim();
+  const text = result.assistantMessage.trim();
 
   if (!hadPatch || nextFilters.gradesCompleted.length === 0) {
     return text;
