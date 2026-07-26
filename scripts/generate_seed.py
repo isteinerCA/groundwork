@@ -168,6 +168,10 @@ def normalize_grade(raw: str) -> dict:
                 "stateRestriction": state,
             }
         grade_ordinals = [int(m.group(1)) for m in re.finditer(r"(\d+)(?:st|nd|rd|th)", lower)]
+        if not grade_ordinals:
+            grade_range = re.search(r"rising[^0-9]*(\d+)\s*[–-]\s*(\d+)", lower)
+            if grade_range:
+                grade_ordinals = [int(grade_range.group(1)), int(grade_range.group(2))]
         if grade_ordinals:
             completed = [max(5, n - 1) for n in grade_ordinals]
             return {
