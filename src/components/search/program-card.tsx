@@ -7,13 +7,39 @@ import { SaveGateModal } from "@/components/auth/save-gate-modal";
 import { btnOutline } from "@/components/ui/button-styles";
 import { isEarlyBirdPricingShown } from "@/lib/constants/pricing";
 import { ADMISSION_TYPE_BY_ID } from "@/lib/constants/admission-types";
-import { PROGRAM_CATEGORIES, type ProgramCategoryId } from "@/lib/constants/categories";
+import {
+  categoryIdFromCsvValue,
+  PROGRAM_CATEGORIES,
+  type ProgramCategoryId,
+} from "@/lib/constants/categories";
+import { categoryLabelForId } from "@/lib/data/matches-category";
 import { formatShortlistMembershipLabel } from "@/lib/workspace/shortlist-membership";
 import { useWorkspace } from "@/components/workspace/workspace-provider";
 import type { Program } from "@/lib/types/program";
 
+const categoryBadgeClass =
+  "rounded-full bg-[var(--color-parchment-dark)] px-2.5 py-0.5 text-xs font-medium text-[var(--color-navy)]";
+
 function categoryLabel(id: ProgramCategoryId): string {
   return PROGRAM_CATEGORIES.find((c) => c.id === id)?.label ?? id;
+}
+
+function getSecondaryTagLabels(program: Program): string[] {
+  const labels: string[] = [];
+  const seen = new Set<string>([categoryLabel(program.category)]);
+
+  for (const tag of program.secondaryTags) {
+    const categoryId = categoryIdFromCsvValue(tag);
+    if (categoryId === program.category) continue;
+
+    const label = categoryId ? categoryLabelForId(categoryId) : tag;
+    if (seen.has(label)) continue;
+
+    seen.add(label);
+    labels.push(label);
+  }
+
+  return labels;
 }
 
 export function ProgramCard({
@@ -78,9 +104,12 @@ export function ProgramCard({
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="rounded-full bg-[var(--color-parchment-dark)] px-2.5 py-0.5 text-xs font-medium text-[var(--color-navy)]">
-              {categoryLabel(program.category)}
-            </span>
+            <span className={categoryBadgeClass}>{categoryLabel(program.category)}</span>
+            {getSecondaryTagLabels(program).map((label) => (
+              <span key={label} className={categoryBadgeClass}>
+                {label}
+              </span>
+            ))}
             <span
               className="rounded-full px-2.5 py-0.5 text-xs font-medium"
               style={{
