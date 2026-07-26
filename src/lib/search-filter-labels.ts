@@ -105,8 +105,10 @@ export function getActiveFilterItems(filters: SearchFilters): ActiveFilterItem[]
       label = `${min}–${max} weeks`;
     } else if (min != null) {
       label = `${min}+ weeks`;
-    } else {
+    } else if (max != null) {
       label = `Up to ${max} weeks`;
+    } else {
+      label = "Any duration";
     }
     items.push({
       key: "duration-weeks",

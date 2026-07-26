@@ -31,7 +31,6 @@ const priceIds = PRICE_FILTERS.map((p) => p.id) as [
   (typeof PRICE_FILTERS)[number]["id"],
   ...(typeof PRICE_FILTERS)[number]["id"][],
 ];
-const gradeValues = [...GRADE_CHIPS] as [number, ...number[]];
 
 export const filterPatchSchema = z
   .object({

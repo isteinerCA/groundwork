@@ -14,7 +14,7 @@ import {
 import { resolveRegionQuery } from "../src/lib/data/us-regions";
 import { parseMultiStateLocations } from "../src/lib/data/matches-location";
 import { readFileSync } from "node:fs";
-import type { Program } from "../src/lib/types/program";
+import type { Program, SearchFilters } from "../src/lib/types/program";
 
 let failed = 0;
 
@@ -176,10 +176,10 @@ if (failed === 0) {
   const data = JSON.parse(readFileSync("data/seed/programs.json", "utf-8")) as {
     programs: Program[];
   };
-  const eastCoastFilters = {
+  const eastCoastFilters: SearchFilters = {
     ...DEFAULT_SEARCH_FILTERS,
     gradesCompleted: [10],
-    includeRegions: ["east-coast"] as const,
+    includeRegions: ["east-coast"],
   };
   const eastCoastResults = filterPrograms(data.programs, eastCoastFilters);
   assert(eastCoastResults.length > 0, "east coast filter returns results");
@@ -193,10 +193,10 @@ if (failed === 0) {
   const data = JSON.parse(readFileSync("data/seed/programs.json", "utf-8")) as {
     programs: Program[];
   };
-  const commuterFilters = {
+  const commuterFilters: SearchFilters = {
     ...DEFAULT_SEARCH_FILTERS,
     gradesCompleted: [10],
-    formats: ["commuter" as const],
+    formats: ["commuter"],
   };
   const commuterResults = filterPrograms(data.programs, commuterFilters);
   assert(commuterResults.length > 0, "commuter filter returns results");

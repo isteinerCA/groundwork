@@ -1,7 +1,4 @@
-import {
-  parseMultiStateLocations,
-  resolveLocationQuery,
-} from "@/lib/data/matches-location";
+import { resolveLocationQuery } from "@/lib/data/matches-location";
 import { resolveRegionQuery } from "@/lib/data/us-regions";
 import type { SearchFilters } from "@/lib/types/program";
 
