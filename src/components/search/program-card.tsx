@@ -7,14 +7,13 @@ import { SaveGateModal } from "@/components/auth/save-gate-modal";
 import { btnOutline } from "@/components/ui/button-styles";
 import { isEarlyBirdPricingShown } from "@/lib/constants/pricing";
 import { ADMISSION_TYPE_BY_ID } from "@/lib/constants/admission-types";
-import { PROGRAM_CATEGORIES, type ProgramCategoryId } from "@/lib/constants/categories";
+import {
+  categoryLabelForId,
+  getProgramCategoryIds,
+} from "@/lib/data/matches-category";
 import { formatShortlistMembershipLabel } from "@/lib/workspace/shortlist-membership";
 import { useWorkspace } from "@/components/workspace/workspace-provider";
 import type { Program } from "@/lib/types/program";
-
-function categoryLabel(id: ProgramCategoryId): string {
-  return PROGRAM_CATEGORIES.find((c) => c.id === id)?.label ?? id;
-}
 
 export function ProgramCard({
   program,
@@ -78,9 +77,14 @@ export function ProgramCard({
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="rounded-full bg-[var(--color-parchment-dark)] px-2.5 py-0.5 text-xs font-medium text-[var(--color-navy)]">
-              {categoryLabel(program.category)}
-            </span>
+            {getProgramCategoryIds(program).map((categoryId) => (
+              <span
+                key={categoryId}
+                className="rounded-full bg-[var(--color-parchment-dark)] px-2.5 py-0.5 text-xs font-medium text-[var(--color-navy)]"
+              >
+                {categoryLabelForId(categoryId)}
+              </span>
+            ))}
             <span
               className="rounded-full px-2.5 py-0.5 text-xs font-medium"
               style={{

@@ -188,6 +188,21 @@ if (failed === 0) {
   assert(hasNy, "east coast includes NY programs");
   assert(!hasCa, "east coast excludes CA programs");
 
+  const adirondack = data.programs.find((p) => p.name === "Adirondack Camp");
+  if (adirondack) {
+    const wildernessFilters: SearchFilters = {
+      ...DEFAULT_SEARCH_FILTERS,
+      gradesCompleted: [10],
+      categories: ["outdoor-wilderness"],
+      includeRegions: ["east-coast"],
+    };
+    const wildernessResults = filterPrograms(data.programs, wildernessFilters);
+    assert(
+      wildernessResults.some((p) => p.name === "Adirondack Camp"),
+      "Adirondack matches wilderness via Outdoor/Wilderness secondary tag",
+    );
+  }
+
   const apogee = data.programs.find((p) => p.name === "Apogee Adventures");
   if (apogee) {
     const apogeeEastCoast = filterPrograms(data.programs, {
