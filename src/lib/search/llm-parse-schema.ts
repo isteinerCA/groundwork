@@ -390,7 +390,7 @@ export function parseLlmResponse(
 ): LlmParseResponse {
   const parsed = llmParseResponseSchema.parse(raw);
   let filterPatch = sanitizeFilterPatch(parsed.filterPatch);
-  let unexpressible = parsed.unexpressible.trim();
+  const unexpressible = parsed.unexpressible.trim();
   if (message) {
     filterPatch = correctNegatedMonthPatch(message, filterPatch);
     filterPatch = restrictPatchForSimpleQuery(message, filterPatch);
