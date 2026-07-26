@@ -227,15 +227,63 @@ export function sanitizeFilterPatch(
   return sanitized;
 }
 
+const SIMPLE_QUERY_FILTER_KEYWORDS =
+  /\b(only|under|over|above|below|fund|funded|credit|residential|commuter|online|both|week|weeks|application|applications|selective|competitive|category|categories|stem|math|science|humanities|arts|deposit|free|price|cost|dollar|\$\d|east coast|west coast|midwest|northeast|south|california|texas|exclude|not in|outside|clear|reset|start over|college|pre-college|format|duration|rolling|first come|highly|us only|domestic|international|gender|pool|single.?sex)\b/i;
+
+/** True when the message is a bare institution/program/place name without explicit filter intent. */
+export function isSimpleInstitutionOrNameQuery(message: string): boolean {
+  const trimmed = message.trim();
+  if (!trimmed || trimmed.includes("?")) return false;
+  if (SIMPLE_QUERY_FILTER_KEYWORDS.test(trimmed)) return false;
+  if (trimmed.split(/\s+/).length > 5) return false;
+  return true;
+}
+
+const LOCATION_PATCH_KEYS = [
+  "dataQuery",
+  "excludeLocation",
+  "includeRegions",
+  "includeLocations",
+] as const;
+
+/** Strip inferred chip filters when the user only named a school or program. */
+export function restrictPatchForSimpleQuery(
+  message: string,
+  patch: Partial<SearchFilters>,
+): Partial<SearchFilters> {
+  if (!isSimpleInstitutionOrNameQuery(message)) return patch;
+
+  const restricted: Partial<SearchFilters> = {};
+  for (const key of LOCATION_PATCH_KEYS) {
+    if (patch[key] !== undefined) {
+      (restricted as Record<string, unknown>)[key] = patch[key];
+    }
+  }
+
+  if (
+    !restricted.dataQuery &&
+    !(restricted.includeLocations?.length ?? 0) &&
+    !(restricted.includeRegions?.length ?? 0)
+  ) {
+    restricted.dataQuery = message.trim().toLowerCase();
+  }
+
+  return restricted;
+}
+
 /** Parse and sanitize the full LLM response. Throws ZodError on invalid shape. */
-export function parseLlmResponse(raw: unknown): LlmParseResponse {
+export function parseLlmResponse(raw: unknown, message?: string): LlmParseResponse {
   const parsed = llmParseResponseSchema.parse(raw);
+  let filterPatch = sanitizeFilterPatch(parsed.filterPatch);
+  if (message) {
+    filterPatch = restrictPatchForSimpleQuery(message, filterPatch);
+  }
   return {
     ...parsed,
     applied: parsed.applied.trim(),
     unexpressible: parsed.unexpressible.trim(),
     assistantMessage: parsed.assistantMessage.trim(),
-    filterPatch: sanitizeFilterPatch(parsed.filterPatch),
+    filterPatch,
   };
 }
 

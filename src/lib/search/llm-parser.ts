@@ -104,13 +104,21 @@ Set clearAll: true when the user wants to reset all filters ("start over", "clea
 - Anything not in our program data
 
 ## dataQuery usage
-Use dataQuery for POSITIVE matches only: include a US state/city, program name searches, gotcha/flag keywords. Prefer structured filters when possible (categories, price, format, etc.).
+Use dataQuery for POSITIVE matches only: include a US state/city, program names, gotcha/flag keywords. Prefer structured filters when possible (categories, price, format, etc.).
 
 Use excludeLocation for negated location requests — never encode "not in X" as dataQuery.
 
 Use includeRegions for multi-state regional requests (east coast, west coast, etc.) — never put "east coast" in dataQuery.
 
 Use includeLocations for explicit multi-state OR requests (NY or MA, California and Texas) — never put "ny or ma" in dataQuery.
+
+## Institution / program name search (critical)
+When the user names a school, university, or program with NO other filter criteria (e.g. "stanford", "harvard", "MIT", "COSMOS", "telluride"):
+- Set ONLY dataQuery to that name (lowercase). Do NOT add categories, admissionTypes, formats, durationBuckets, collegeCreditOnly, priceFilter, maxPrice, minPrice, usOnly, or excludeUnknownPrice unless the user explicitly asked for them in the same message.
+- Do NOT infer "pre-college", "application", "residential", or duration from the institution name alone.
+- Keep gradesCompleted unchanged unless the user mentions a grade in the same message.
+- applied: e.g. "Searching for Stanford programs"
+- assistantMessage: confirm the name search; suggest using filter chips to narrow further if needed.
 
 ## Questions
 If the user asks a question without requesting filter changes, leave filterPatch empty (or only fields they explicitly asked to change) and answer in assistantMessage.
@@ -181,7 +189,7 @@ export async function parseSearchMessageWithLlm(
 
   try {
     const raw = JSON.parse(content) as unknown;
-    return parseLlmResponse(raw);
+    return parseLlmResponse(raw, request.message);
   } catch {
     throw new LlmParserValidationError("Failed to parse LLM JSON");
   }

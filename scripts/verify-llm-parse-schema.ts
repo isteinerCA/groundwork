@@ -8,7 +8,9 @@ import { mergeFilterPatch } from "../src/lib/search/merge-filter-patch";
 import {
   filterPatchSchema,
   llmParseResponseSchema,
+  isSimpleInstitutionOrNameQuery,
   parseLlmResponse,
+  restrictPatchForSimpleQuery,
   sanitizeFilterPatch,
 } from "../src/lib/search/llm-parse-schema";
 import { resolveRegionQuery } from "../src/lib/data/us-regions";
@@ -157,6 +159,41 @@ assert(fmtPatch.formats?.[0] === "commuter", "commuter format valid in schema");
 // admission type in schema
 const admPatch = filterPatchSchema.parse({ admissionTypes: ["first_come"] });
 assert(admPatch.admissionTypes?.[0] === "first_come", "first_come admission valid in schema");
+
+assert(isSimpleInstitutionOrNameQuery("stanford"), "stanford is simple name query");
+assert(!isSimpleInstitutionOrNameQuery("fully funded only"), "fully funded is not simple query");
+
+const stanfordRestricted = restrictPatchForSimpleQuery("stanford", {
+  dataQuery: "stanford",
+  categories: ["college-credit-pre-college"],
+  admissionTypes: ["application"],
+  formats: ["residential"],
+  durationBuckets: ["two_to_four_weeks"],
+  collegeCreditOnly: true,
+});
+assert(stanfordRestricted.dataQuery === "stanford", "simple query keeps dataQuery only");
+assert(stanfordRestricted.categories === undefined, "simple query strips categories");
+assert(stanfordRestricted.admissionTypes === undefined, "simple query strips admission");
+assert(stanfordRestricted.formats === undefined, "simple query strips formats");
+
+const stanfordParsed = parseLlmResponse(
+  {
+    clearAll: false,
+    filterPatch: {
+      dataQuery: "stanford",
+      categories: ["college-credit-pre-college"],
+      formats: ["residential"],
+    },
+    applied: "bad",
+    unexpressible: "",
+    assistantMessage: "bad",
+  },
+  "stanford",
+);
+assert(
+  stanfordParsed.filterPatch.categories === undefined,
+  "parseLlmResponse strips inferred filters for stanford",
+);
 
 if (failed === 0) {
   const data = JSON.parse(readFileSync("data/seed/programs.json", "utf-8")) as {
