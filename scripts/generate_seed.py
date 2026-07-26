@@ -158,6 +158,31 @@ def normalize_grade(raw: str) -> dict:
         pass
     if "rising senior" in lower:
         return {"gradeDisplay": display, "gradeCompletedMin": 11, "gradeCompletedMax": 11, "gradeSource": "grade", "stateRestriction": state}
+    if "rising" in lower:
+        if re.search(r"jr\s*/?\s*sr", lower) and re.search(r"\(\d+\s+by\s+(?:jun|july)", lower, re.I):
+            return {
+                "gradeDisplay": display,
+                "gradeCompletedMin": 10,
+                "gradeCompletedMax": 11,
+                "gradeSource": "mixed",
+                "stateRestriction": state,
+            }
+        grade_ordinals = [int(m.group(1)) for m in re.finditer(r"(\d+)(?:st|nd|rd|th)", lower)]
+        if grade_ordinals:
+            completed = [max(5, n - 1) for n in grade_ordinals]
+            return {
+                "gradeDisplay": display,
+                "gradeCompletedMin": min(completed),
+                "gradeCompletedMax": max(completed),
+                "gradeSource": "grade" if len(completed) == 1 else "mixed",
+                "stateRestriction": state,
+            }
+        if "junior" in lower:
+            return {"gradeDisplay": display, "gradeCompletedMin": 10, "gradeCompletedMax": 10, "gradeSource": "grade", "stateRestriction": state}
+        if "senior" in lower:
+            return {"gradeDisplay": display, "gradeCompletedMin": 11, "gradeCompletedMax": 11, "gradeSource": "grade", "stateRestriction": state}
+        if "soph" in lower:
+            return {"gradeDisplay": display, "gradeCompletedMin": 9, "gradeCompletedMax": 9, "gradeSource": "grade", "stateRestriction": state}
     if "high school" in lower:
         return {"gradeDisplay": display, "gradeCompletedMin": 8, "gradeCompletedMax": 12, "gradeSource": "mixed", "stateRestriction": state}
     return {"gradeDisplay": display, "gradeCompletedMin": 6, "gradeCompletedMax": 12, "gradeSource": "mixed", "stateRestriction": state}
