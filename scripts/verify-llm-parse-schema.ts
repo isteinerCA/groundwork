@@ -130,9 +130,9 @@ assert(resolveRegionQuery("east coast only") === "east-coast", "resolveRegionQue
 
 // multi-state OR from dataQuery promotion
 const nyMaPatch = sanitizeFilterPatch({ dataQuery: "NY or MA only" });
+const nyMaLocations = nyMaPatch.includeLocations ?? [];
 assert(
-  nyMaPatch.includeLocations?.includes("new york") &&
-    nyMaPatch.includeLocations?.includes("massachusetts"),
+  nyMaLocations.includes("new york") && nyMaLocations.includes("massachusetts"),
   "promotes NY or MA to includeLocations",
 );
 assert(nyMaPatch.dataQuery === "", "clears dataQuery after multi-state promotion");
