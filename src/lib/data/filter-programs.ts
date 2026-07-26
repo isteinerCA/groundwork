@@ -86,11 +86,11 @@ export function matchesProgram(program: Program, filters: SearchFilters): boolea
     return false;
   }
 
-  if (!programMatchesMonthFilter(program, filters.includeMonths)) {
+  if (!programMatchesMonthFilter(program, filters.includeMonths ?? [])) {
     return false;
   }
 
-  if (!programMatchesExcludeMonthFilter(program, filters.excludeMonths)) {
+  if (!programMatchesExcludeMonthFilter(program, filters.excludeMonths ?? [])) {
     return false;
   }
 
