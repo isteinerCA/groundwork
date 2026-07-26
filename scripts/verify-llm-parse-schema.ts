@@ -16,7 +16,10 @@ import {
   correctNegatedMonthPatch,
   filterPatchSchema,
   llmParseResponseSchema,
+  isSimpleInstitutionOrNameQuery,
+  isAdditiveFilterRequest,
   parseLlmResponse,
+  restrictPatchForSimpleQuery,
   sanitizeFilterPatch,
 } from "../src/lib/search/llm-parse-schema";
 import { stripNoOpFilterPatch } from "../src/lib/search/filter-patch-delta";
@@ -57,7 +60,11 @@ const validResponse = {
 };
 const parsed = parseLlmResponse(validResponse);
 assert(parsed.filterPatch.gradesCompleted?.[0] === 11, "parseLlmResponse grade");
-assert(parsed.filterPatch.dataQuery === "california", "parseLlmResponse dataQuery");
+assert(
+  parsed.filterPatch.includeLocations?.includes("california") ||
+    parsed.filterPatch.dataQuery === "california",
+  "parseLlmResponse california location",
+);
 
 // Reject invalid category
 try {
@@ -360,6 +367,215 @@ assert(fmtPatch.formats?.[0] === "commuter", "commuter format valid in schema");
 // admission type in schema
 const admPatch = filterPatchSchema.parse({ admissionTypes: ["first_come"] });
 assert(admPatch.admissionTypes?.[0] === "first_come", "first_come admission valid in schema");
+
+assert(isSimpleInstitutionOrNameQuery("stanford"), "stanford is simple name query");
+assert(!isSimpleInstitutionOrNameQuery("fully funded only"), "fully funded is not simple query");
+
+const stanfordRestricted = restrictPatchForSimpleQuery("stanford", {
+  dataQuery: "stanford",
+  categories: ["college-credit-pre-college"],
+  admissionTypes: ["application"],
+  formats: ["residential"],
+  durationBuckets: ["two_to_four_weeks"],
+  collegeCreditOnly: true,
+});
+assert(stanfordRestricted.dataQuery === "stanford", "simple query keeps dataQuery only");
+assert(stanfordRestricted.categories === undefined, "simple query strips categories");
+assert(stanfordRestricted.admissionTypes === undefined, "simple query strips admission");
+assert(stanfordRestricted.formats === undefined, "simple query strips formats");
+
+const stanfordParsed = parseLlmResponse(
+  {
+    clearAll: false,
+    filterPatch: {
+      dataQuery: "stanford",
+      categories: ["college-credit-pre-college"],
+      formats: ["residential"],
+    },
+    applied: "bad",
+    unexpressible: "",
+    assistantMessage: "bad",
+  },
+  "stanford",
+);
+assert(
+  stanfordParsed.filterPatch.categories === undefined,
+  "parseLlmResponse strips inferred filters for stanford",
+);
+
+assert(!isSimpleInstitutionOrNameQuery("add tech camps"), "add tech camps is not simple name query");
+assert(!isSimpleInstitutionOrNameQuery("add tech"), "add tech is not simple name query");
+assert(isAdditiveFilterRequest("add tech camps"), "add tech camps is additive request");
+
+const addTechRestricted = restrictPatchForSimpleQuery("add tech camps", {
+  categories: ["marine-science", "artificial-intelligence"],
+  dataQuery: "",
+});
+assert(
+  addTechRestricted.categories?.includes("artificial-intelligence") === true,
+  "add tech camps keeps category patch",
+);
+assert(addTechRestricted.dataQuery !== "add tech camps", "add tech camps does not become dataQuery");
+
+const addTechDataQueryPromoted = sanitizeFilterPatch({ dataQuery: "add tech camps" });
+assert(
+  addTechDataQueryPromoted.categories?.includes("artificial-intelligence") === true,
+  "promotes add tech camps dataQuery to Tech & AI category",
+);
+assert(addTechDataQueryPromoted.dataQuery === "", "clears dataQuery after category promotion");
+
+const marinePlusTechFilters: SearchFilters = {
+  ...DEFAULT_SEARCH_FILTERS,
+  gradesCompleted: [10],
+  categories: ["marine-science"],
+};
+const addTechMerged = mergeFilterPatch(
+  marinePlusTechFilters,
+  { categories: ["artificial-intelligence"] },
+  "add tech camps",
+);
+assert(
+  addTechMerged.categories.includes("marine-science") &&
+    addTechMerged.categories.includes("artificial-intelligence"),
+  "additive merge unions marine-science with Tech & AI",
+);
+assert(addTechMerged.dataQuery === "", "additive category merge does not set dataQuery");
+
+const dataForAssistant = JSON.parse(readFileSync("data/seed/programs.json", "utf-8")) as {
+  programs: Program[];
+};
+
+const addTechParsed = parseLlmResponse(
+  {
+    clearAll: false,
+    filterPatch: {
+      categories: ["marine-science", "artificial-intelligence"],
+    },
+    applied: "Added Tech & AI category",
+    unexpressible: "",
+    assistantMessage: "I've added tech camps to your search criteria.",
+  },
+  "add tech camps",
+);
+const addTechNext = mergeFilterPatch(
+  marinePlusTechFilters,
+  addTechParsed.filterPatch,
+  "add tech camps",
+);
+const addTechMessage = formatAssistantMessage(
+  addTechParsed,
+  marinePlusTechFilters,
+  addTechNext,
+  dataForAssistant.programs,
+);
+assert(
+  addTechMessage.includes("Tech & AI"),
+  "add tech camps message mentions Tech & AI category",
+);
+assert(
+  !addTechMessage.includes("add tech camps") && !addTechMessage.includes("Add Tech Camps"),
+  "add tech camps message does not describe dataQuery text",
+);
+assert(
+  !addTechMessage.includes("I've added tech camps"),
+  "add tech camps message ignores LLM assistantMessage prose",
+);
+const addTechCount = filterPrograms(dataForAssistant.programs, addTechNext).length;
+assert(addTechCount > 0, "marine + tech categories return results for grade 10");
+assert(
+  addTechMessage.includes(`${addTechCount} program`),
+  "add tech camps message includes accurate result count",
+);
+
+const alsoStemParsed = parseLlmResponse(
+  {
+    clearAll: false,
+    filterPatch: { categories: ["stem-engineering"] },
+    applied: "",
+    unexpressible: "",
+    assistantMessage: "bad",
+  },
+  "also include STEM",
+);
+const alsoStemMerged = mergeFilterPatch(
+  marinePlusTechFilters,
+  alsoStemParsed.filterPatch,
+  "also include STEM",
+);
+assert(
+  alsoStemMerged.categories.includes("marine-science") &&
+    alsoStemMerged.categories.includes("stem-engineering"),
+  "also include STEM unions with existing categories",
+);
+
+const cosmoFilters: SearchFilters = {
+  ...DEFAULT_SEARCH_FILTERS,
+  gradesCompleted: [10],
+  dataQuery: "cosmo",
+};
+const cosmoResult = parseLlmResponse(
+  {
+    clearAll: false,
+    filterPatch: { dataQuery: "cosmo" },
+    applied: "cosmo",
+    unexpressible: "",
+    assistantMessage:
+      "I've searched for programs related to 'cosmo' and included those that offer college credit for students who have completed 10th grade.",
+  },
+  "cosmo",
+);
+const cosmoMessage = formatAssistantMessage(
+  cosmoResult,
+  { ...DEFAULT_SEARCH_FILTERS, gradesCompleted: [10] },
+  cosmoFilters,
+  dataForAssistant.programs,
+);
+assert(
+  cosmoMessage.includes('matching "Cosmo"'),
+  "cosmo message describes dataQuery only",
+);
+assert(
+  !cosmoMessage.toLowerCase().includes("college credit"),
+  "cosmo message does not mention college credit",
+);
+const cosmoCount = filterPrograms(dataForAssistant.programs, cosmoFilters).length;
+assert(
+  cosmoMessage.includes(`${cosmoCount} program`),
+  "cosmo message includes accurate result count",
+);
+
+const multiFilterMessage = formatAssistantMessage(
+  {
+    clearAll: false,
+    filterPatch: {
+      categories: ["stem-engineering"],
+      fullyFundedOnly: true,
+    },
+    applied: "",
+    unexpressible: "",
+    assistantMessage: "Wrong LLM prose about college credit.",
+  },
+  {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [10],
+  },
+  {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [10],
+    categories: ["stem-engineering"],
+    fullyFundedOnly: true,
+  },
+  dataForAssistant.programs,
+);
+assert(
+  multiFilterMessage.includes("Science & STEM") &&
+    multiFilterMessage.includes("fully funded only"),
+  "multi-filter message lists applied patch fields",
+);
+assert(
+  !multiFilterMessage.includes("Wrong LLM prose"),
+  "multi-filter message ignores LLM assistantMessage",
+);
 
 if (failed === 0) {
   const data = JSON.parse(readFileSync("data/seed/programs.json", "utf-8")) as {

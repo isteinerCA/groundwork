@@ -5,8 +5,11 @@
 import { normalizeAdmissionType } from "../src/lib/data/normalize-admission";
 import { normalizeFormat } from "../src/lib/data/normalize-format";
 import { normalizeGrade, gradeMatchesFilter } from "../src/lib/data/normalize-grade";
+import { matchesDataQuery } from "../src/lib/data/matches-data-query";
+import { resolveLocationQuery } from "../src/lib/data/matches-location";
 import { parsePrice } from "../src/lib/data/parse-price";
 import { matchesPriceFilter } from "../src/lib/data/matches-price-filter";
+import type { Program } from "../src/lib/types/program";
 
 const admissionCases: [string, string][] = [
   ["First-come", "first_come"],
@@ -76,6 +79,86 @@ if (
 const risingRange = normalizeGrade("Rising 10-12");
 if (risingRange.gradeCompletedMin !== 9 || risingRange.gradeCompletedMax !== 11) {
   console.error("FAIL: Rising 10-12 should map to completed grades 9-11");
+  failed++;
+}
+
+const stubProgram = (overrides: Partial<Program> & Pick<Program, "name" | "locationDisplay">): Program =>
+  ({
+    id: "stub",
+    slug: "stub",
+    category: "stem-engineering",
+    secondaryTags: [],
+    gradeDisplay: "9-12",
+    gradeCompletedMin: 9,
+    gradeCompletedMax: 12,
+    admissionType: "application",
+    admissionDisplay: "Application",
+    formatDisplay: "Residential",
+    formatTags: ["residential"],
+    durationBucket: "two_to_four_weeks",
+    lengthDisplay: "4 weeks",
+    datesDisplay: "",
+    isInternational: false,
+    hasCollegeCredit: false,
+    creditDisplay: "No",
+    priceDisplay: "$0",
+    priceMin: 0,
+    priceMax: 0,
+    priceUnknown: false,
+    fullyFunded: false,
+    financialAidAvailable: false,
+    websiteUrl: "https://example.com",
+    flags: [],
+    dataVerifiedAt: "2026-01-01",
+    ...overrides,
+  }) as Program;
+
+const cosmos = stubProgram({
+  name: "COSMOS UC Davis",
+  locationDisplay: "UC Davis, CA",
+  stateRestriction: "CA",
+});
+
+const stanford = stubProgram({
+  name: "Stanford AI4ALL",
+  locationDisplay: "Stanford CA",
+});
+
+if (resolveLocationQuery("stanford") !== undefined) {
+  console.error('FAIL: "stanford" should not resolve to a state');
+  failed++;
+}
+
+if (resolveLocationQuery("california") !== "california") {
+  console.error('FAIL: "california" should still resolve to california');
+  failed++;
+}
+
+if (matchesDataQuery(cosmos, "stanford")) {
+  console.error("FAIL: COSMOS should not match dataQuery stanford");
+  failed++;
+}
+
+if (!matchesDataQuery(stanford, "stanford")) {
+  console.error("FAIL: Stanford program should match dataQuery stanford");
+  failed++;
+}
+
+const mathPathAge = normalizeGrade("Ages 11-14");
+if (mathPathAge.gradeCompletedMax !== 8) {
+  console.error(
+    `FAIL: Ages 11-14 should map to max grade 8, got ${mathPathAge.gradeCompletedMax}`,
+  );
+  failed++;
+}
+
+const mathPathGrade = {
+  gradeCompletedMin: mathPathAge.gradeCompletedMin,
+  gradeCompletedMax: mathPathAge.gradeCompletedMax,
+  gradeSource: mathPathAge.gradeSource,
+};
+if (gradeMatchesFilter(mathPathGrade, [12])) {
+  console.error("FAIL: Ages 11-14 program should not match completed grade 12");
   failed++;
 }
 

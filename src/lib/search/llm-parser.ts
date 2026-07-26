@@ -58,8 +58,9 @@ Return a partial filterPatch with ONLY fields that should change. Omit unchanged
   NEVER use gradesCompleted for "participants older than X", "teen only", "no kids under 12", "minimum age 13+", or similar — see "Participant age floor" below.
 - categories: string[] — OR logic. Valid IDs:
 ${categories}
-  When ADDING or EXPANDING categories ("expand to marine science", "also include STEM"), return the full combined list (current + new).
+  When ADDING or EXPANDING categories ("expand to marine science", "add tech camps", "also include STEM"), return the full combined list (current + new). Map informal names: "tech"/"tech camps"/"coding"/"AI" → artificial-intelligence; "STEM"/"science" → stem-engineering.
   When the user says "only X" (without "or"), return ONLY those categories (replace list).
+  NEVER use dataQuery for category additions — always use categories.
 - admissionTypes: string[] — valid IDs (OR logic — programs matching ANY selected type):
 ${admission}
   Selecting types INCLUDES only those programs. There is no exclude-admission filter — use positive selection (e.g. first_come only) instead of trying to exclude application programs.
@@ -146,7 +147,7 @@ When the user message is ONLY a program name, abbreviation, or institution keywo
 Only add structured filters when the user explicitly requests them in the same message (e.g. "UCLA residential", "COSMOS in California").
 
 ## dataQuery usage
-Use dataQuery for POSITIVE matches only: include a US state/city, program name searches, gotcha/flag keywords. Prefer structured filters when possible (categories, price, format, etc.).
+Use dataQuery for POSITIVE matches only: include a US state/city, program names, gotcha/flag keywords. Prefer structured filters when possible (categories, price, format, etc.).
 
 Use excludeLocation for negated location requests — never encode "not in X" as dataQuery.
 
@@ -157,6 +158,11 @@ Use includeLocations for explicit multi-state OR requests (NY or MA, California 
 Use includeMonths for positive month requests ("in June", "July only", "June and July") — never put month names in dataQuery.
 
 Use excludeMonths for negated month requests ("not in August", "exclude July") — never put negated months in includeMonths or dataQuery. We match programs whose overall date range overlaps the month; specific session start dates may vary — mention that in assistantMessage when relevant.
+
+When the user names a school, university, or program with NO other filter criteria (e.g. "stanford", "harvard", "MIT", "COSMOS", "telluride"):
+- Set ONLY dataQuery to that name (lowercase). Do NOT add categories, admissionTypes, formats, durationBuckets, collegeCreditOnly, priceFilter, maxPrice, minPrice, usOnly, or excludeUnknownPrice unless the user explicitly asked for them in the same message.
+- Do NOT infer "pre-college", "application", "residential", or duration from the institution name alone.
+- Keep gradesCompleted unchanged unless the user mentions a grade in the same message.
 
 ## Questions
 If the user asks a question without requesting filter changes, leave filterPatch empty (or only fields they explicitly asked to change) and answer in assistantMessage.

@@ -11,7 +11,9 @@ import { parseMonthList, isNegatedMonthQuery, type MonthNumber } from "@/lib/con
 import { parseMultiStateLocations, resolveLocationQuery } from "@/lib/data/matches-location";
 import { resolveRegionQuery, US_REGION_IDS } from "@/lib/data/us-regions";
 import { stripNoOpFilterPatch } from "@/lib/search/filter-patch-delta";
+import { isAdditiveFilterRequest } from "@/lib/search/filter-request-intent";
 import { DEFAULT_SEARCH_FILTERS, type SearchFilters } from "@/lib/types/program";
+import type { ProgramCategoryId } from "@/lib/constants/categories";
 
 const categoryIds = PROGRAM_CATEGORIES.map((c) => c.id) as [
   (typeof PROGRAM_CATEGORIES)[number]["id"],
@@ -143,6 +145,30 @@ function clampMonths(months: number[]): MonthNumber[] {
   return [...new Set(months.filter((m) => valid.has(m)))] as MonthNumber[];
 }
 
+const CATEGORY_PHRASES: Record<string, ProgramCategoryId[]> = {
+  tech: ["artificial-intelligence"],
+  "tech camps": ["artificial-intelligence"],
+  "tech camp": ["artificial-intelligence"],
+  coding: ["artificial-intelligence"],
+  ai: ["artificial-intelligence"],
+  "tech & ai": ["artificial-intelligence"],
+  stem: ["stem-engineering"],
+  "marine science": ["marine-science"],
+  math: ["mathematics"],
+  humanities: ["writing-humanities"],
+  arts: ["arts"],
+  wilderness: ["outdoor-wilderness"],
+  "pre-med": ["biomedical"],
+};
+
+function categoryIdsFromCategoryPhrase(query: string): ProgramCategoryId[] | undefined {
+  const normalized = query
+    .trim()
+    .toLowerCase()
+    .replace(/^(add|also include|include|plus)\s+/, "");
+  return CATEGORY_PHRASES[normalized];
+}
+
 /** Normalize and validate a filter patch from the LLM before applying. */
 export function sanitizeFilterPatch(
   patch: z.infer<typeof filterPatchSchema>,
@@ -256,6 +282,14 @@ export function sanitizeFilterPatch(
           const existing = sanitized.includeLocations ?? patch.includeLocations ?? [];
           sanitized.includeLocations = [...new Set([...existing, ...statesFromQuery])];
           sanitized.dataQuery = "";
+        } else {
+          const fromCategoryPhrase = categoryIdsFromCategoryPhrase(sanitized.dataQuery);
+          if (fromCategoryPhrase) {
+            sanitized.categories = [
+              ...new Set([...(sanitized.categories ?? []), ...fromCategoryPhrase]),
+            ];
+            sanitized.dataQuery = "";
+          }
         }
       }
     }
@@ -298,6 +332,53 @@ export function correctNegatedMonthPatch(
   return next;
 }
 
+const SIMPLE_QUERY_FILTER_KEYWORDS =
+  /\b(only|under|over|above|below|fund|funded|credit|residential|commuter|online|both|week|weeks|application|applications|selective|competitive|category|categories|stem|math|science|humanities|arts|deposit|free|price|cost|dollar|\$\d|east coast|west coast|midwest|northeast|south|california|texas|exclude|not in|outside|clear|reset|start over|college|pre-college|format|duration|rolling|first come|highly|us only|domestic|international|gender|pool|single.?sex|tech|camp|camps|coding|robotics|marine|wilderness|pre-med|biomedical|humanities|writing|leadership|gifted|language|global|traditional)\b/i;
+
+export { isAdditiveFilterRequest, isReplaceOnlyCategoryRequest } from "@/lib/search/filter-request-intent";
+
+/** True when the message is a bare institution/program/place name without explicit filter intent. */
+export function isSimpleInstitutionOrNameQuery(message: string): boolean {
+  const trimmed = message.trim();
+  if (!trimmed || trimmed.includes("?")) return false;
+  if (isAdditiveFilterRequest(trimmed)) return false;
+  if (SIMPLE_QUERY_FILTER_KEYWORDS.test(trimmed)) return false;
+  if (trimmed.split(/\s+/).length > 5) return false;
+  return true;
+}
+
+const LOCATION_PATCH_KEYS = [
+  "dataQuery",
+  "excludeLocation",
+  "includeRegions",
+  "includeLocations",
+] as const;
+
+/** Strip inferred chip filters when the user only named a school or program. */
+export function restrictPatchForSimpleQuery(
+  message: string,
+  patch: Partial<SearchFilters>,
+): Partial<SearchFilters> {
+  if (!isSimpleInstitutionOrNameQuery(message)) return patch;
+
+  const restricted: Partial<SearchFilters> = {};
+  for (const key of LOCATION_PATCH_KEYS) {
+    if (patch[key] !== undefined) {
+      (restricted as Record<string, unknown>)[key] = patch[key];
+    }
+  }
+
+  if (
+    !restricted.dataQuery &&
+    !(restricted.includeLocations?.length ?? 0) &&
+    !(restricted.includeRegions?.length ?? 0)
+  ) {
+    restricted.dataQuery = message.trim().toLowerCase();
+  }
+
+  return restricted;
+}
+
 /** Parse and sanitize the full LLM response. Throws ZodError on invalid shape. */
 export function parseLlmResponse(
   raw: unknown,
@@ -306,8 +387,10 @@ export function parseLlmResponse(
 ): LlmParseResponse {
   const parsed = llmParseResponseSchema.parse(raw);
   let filterPatch = sanitizeFilterPatch(parsed.filterPatch);
+  let unexpressible = parsed.unexpressible.trim();
   if (message) {
     filterPatch = correctNegatedMonthPatch(message, filterPatch);
+    filterPatch = restrictPatchForSimpleQuery(message, filterPatch);
   }
   if (currentFilters) {
     filterPatch = stripNoOpFilterPatch(currentFilters, filterPatch);
@@ -315,7 +398,7 @@ export function parseLlmResponse(
   return {
     ...parsed,
     applied: parsed.applied.trim(),
-    unexpressible: parsed.unexpressible.trim(),
+    unexpressible,
     assistantMessage: parsed.assistantMessage.trim(),
     filterPatch,
   };

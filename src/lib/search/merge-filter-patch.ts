@@ -1,5 +1,9 @@
 import { resolveLocationQuery } from "@/lib/data/matches-location";
 import { resolveRegionQuery } from "@/lib/data/us-regions";
+import {
+  isAdditiveFilterRequest,
+  isReplaceOnlyCategoryRequest,
+} from "@/lib/search/filter-request-intent";
 import type { SearchFilters } from "@/lib/types/program";
 
 function resolvedLocationKey(value: string): string | undefined {
@@ -116,12 +120,27 @@ function unionExpandableLocations(
 export function mergeFilterPatch(
   current: SearchFilters,
   patch: Partial<SearchFilters>,
-  options?: MergeFilterPatchOptions,
+  optionsOrMessage?: MergeFilterPatchOptions | string,
 ): SearchFilters {
-  const expandFilters = options?.expandFilters ?? options?.unionLocations ?? false;
+  const message = typeof optionsOrMessage === "string" ? optionsOrMessage : undefined;
+  const options =
+    typeof optionsOrMessage === "object" && optionsOrMessage !== null
+      ? optionsOrMessage
+      : undefined;
+  const expandFilters =
+    options?.expandFilters ??
+    options?.unionLocations ??
+    (message ? isExpandIntent(message) : false);
   const next: SearchFilters = { ...current, ...patch };
 
-  if (expandFilters) {
+  if (
+    patch.categories !== undefined &&
+    message &&
+    isAdditiveFilterRequest(message) &&
+    !isReplaceOnlyCategoryRequest(message)
+  ) {
+    next.categories = [...new Set([...current.categories, ...patch.categories])];
+  } else if (expandFilters) {
     unionExpandableArrays(current, patch, next);
     unionExpandableLocations(current, patch, next);
   }

@@ -6,7 +6,7 @@ import { logChatEvent } from "@/lib/chat-analytics";
 import { trackEvent } from "@/lib/analytics";
 import { formatAssistantMessage } from "@/lib/search/format-assistant-message";
 import { getOpeningHint } from "@/lib/search/opening-hint";
-import { isExpandIntent, mergeFilterPatch } from "@/lib/search/merge-filter-patch";
+import { mergeFilterPatch } from "@/lib/search/merge-filter-patch";
 import type { LlmParseResponse } from "@/lib/search/llm-parse-schema";
 import { DEFAULT_SEARCH_FILTERS, type Program, type SearchFilters } from "@/lib/types/program";
 
@@ -152,9 +152,7 @@ export function SearchChat({
         nextFilters = { ...DEFAULT_SEARCH_FILTERS };
         onApplyFilters(nextFilters);
       } else if (Object.keys(result.filterPatch).length > 0) {
-        nextFilters = mergeFilterPatch(filters, result.filterPatch, {
-          expandFilters: isExpandIntent(text),
-        });
+        nextFilters = mergeFilterPatch(filters, result.filterPatch, text);
         onApplyFilters(nextFilters);
       }
 
