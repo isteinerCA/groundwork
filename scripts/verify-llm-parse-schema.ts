@@ -447,10 +447,6 @@ assert(
 );
 assert(addTechMerged.dataQuery === "", "additive category merge does not set dataQuery");
 
-const dataForAssistant = JSON.parse(readFileSync("data/seed/programs.json", "utf-8")) as {
-  programs: Program[];
-};
-
 const addTechParsed = parseLlmResponse(
   {
     clearAll: false,
@@ -794,6 +790,28 @@ if (failed === 0) {
   if (cosmos) {
     assert(matchesDataQuery(cosmos, "cosmo"), "cosmo matches COSMOS program");
     assert(matchesDataQuery(cosmos, "cosmis"), "cosmis typo matches COSMOS program");
+  }
+
+  const berkeley = data.programs.find((p) => p.slug === "uc-berkeley-pre-college");
+  if (berkeley) {
+    assert(!matchesDataQuery(berkeley, "stanford"), "stanford query excludes Berkeley Pre-College");
+    assert(
+      data.programs.some((p) => p.name.includes("Stanford") && matchesDataQuery(p, "stanford")),
+      "stanford query still matches Stanford programs",
+    );
+  }
+
+  const princeton = data.programs.find((p) => p.slug === "princeton-summer-journalism-program");
+  if (princeton) {
+    assert(princeton.gradeCompletedMax === 10, "HS Juniors maps to completed grade 10 max");
+    const grade12 = filterPrograms(data.programs, {
+      ...DEFAULT_SEARCH_FILTERS,
+      gradesCompleted: [12],
+    });
+    assert(
+      !grade12.some((p) => p.id === princeton.id),
+      "Princeton journalism program excluded for completed grade 12",
+    );
   }
 }
 

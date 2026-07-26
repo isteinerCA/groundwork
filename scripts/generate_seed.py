@@ -517,6 +517,35 @@ def normalize_grade(raw: str) -> dict:
                 "stateRestriction": state,
             }
 
+    if re.search(r"\b(?:hs|high school)\s+sophomores?\b", lower) or re.search(
+        r"\b(?:hs|high school)\s+soph\b", lower
+    ):
+        return {
+            "gradeDisplay": display,
+            "gradeCompletedMin": 9,
+            "gradeCompletedMax": 9,
+            "gradeSource": "grade",
+            "stateRestriction": state,
+        }
+
+    if re.search(r"\b(?:hs|high school)\s+juniors?\b", lower) or lower in {"juniors", "junior"}:
+        return {
+            "gradeDisplay": display,
+            "gradeCompletedMin": 10,
+            "gradeCompletedMax": 10,
+            "gradeSource": "grade",
+            "stateRestriction": state,
+        }
+
+    if re.search(r"\b(?:hs|high school)\s+seniors?\b", lower) or lower in {"seniors", "senior"}:
+        return {
+            "gradeDisplay": display,
+            "gradeCompletedMin": 11,
+            "gradeCompletedMax": 11,
+            "gradeSource": "grade",
+            "stateRestriction": state,
+        }
+
     if "high school" in lower or "hs " in lower:
         return {
             "gradeDisplay": display,

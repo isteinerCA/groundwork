@@ -4336,9 +4336,9 @@
         "Leadership/Gifted"
       ],
       "gradeDisplay": "HS Juniors",
-      "gradeCompletedMin": 8,
-      "gradeCompletedMax": 12,
-      "gradeSource": "mixed",
+      "gradeCompletedMin": 10,
+      "gradeCompletedMax": 10,
+      "gradeSource": "grade",
       "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly competitive (socioeconomic criteria)",

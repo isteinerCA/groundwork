@@ -234,6 +234,36 @@ export function normalizeGrade(raw: string): GradeResult {
     }
   }
 
+  if (/\b(?:hs|high school)\s+sophomores?\b/.test(lower) || /\b(?:hs|high school)\s+soph\b/.test(lower)) {
+    return {
+      gradeDisplay,
+      gradeCompletedMin: 9,
+      gradeCompletedMax: 9,
+      gradeSource: "grade",
+      stateRestriction,
+    };
+  }
+
+  if (/\b(?:hs|high school)\s+juniors?\b/.test(lower) || lower === "juniors" || lower === "junior") {
+    return {
+      gradeDisplay,
+      gradeCompletedMin: 10,
+      gradeCompletedMax: 10,
+      gradeSource: "grade",
+      stateRestriction,
+    };
+  }
+
+  if (/\b(?:hs|high school)\s+seniors?\b/.test(lower) || lower === "seniors" || lower === "senior") {
+    return {
+      gradeDisplay,
+      gradeCompletedMin: 11,
+      gradeCompletedMax: 11,
+      gradeSource: "grade",
+      stateRestriction,
+    };
+  }
+
   if (lower.includes("high school") || lower.includes("hs ")) {
     return {
       gradeDisplay,
