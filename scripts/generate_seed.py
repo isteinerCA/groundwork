@@ -320,42 +320,224 @@ def parse_dates_display(raw: str) -> dict:
     }
 
 
+AGE_TO_GRADE = [(11, 5), (12, 6), (13, 7), (14, 8), (15, 9), (16, 10), (17, 11), (18, 12), (19, 12)]
+
+
+def _age_range_to_grades(min_age: int, max_age: int) -> tuple[int, int]:
+    mins = [g for age, g in AGE_TO_GRADE if age >= min_age]
+    maxs = [g for age, g in AGE_TO_GRADE if age <= max_age]
+    return min(mins + [5]), max(maxs + [12])
+
+
+def _parse_grade_number(token: str) -> int | None:
+    t = token.lower()
+    ord_match = re.search(r"(\d+)(?:st|nd|rd|th)?", t)
+    if ord_match:
+        return int(ord_match.group(1))
+    named = {
+        "freshman": 9,
+        "sophomore": 10,
+        "junior": 11,
+        "senior": 12,
+        "soph": 10,
+        "jr": 11,
+        "sr": 12,
+    }
+    for key, grade in named.items():
+        if key in t:
+            return grade
+    return None
+
+
+def _rising_grade(completed: int) -> int:
+    return max(5, completed)
+
+
+def _current_grade(completed: int) -> int:
+    return min(12, completed + 1)
+
+
 def normalize_grade(raw: str) -> dict:
+    """Port of src/lib/data/normalize-grade.ts for seed generation."""
     display = raw.strip()
     lower = display.lower()
+
     state = None
+    state_match = re.search(r"\b([a-z]{2})\s+(?:residents?|high school|only)\b", lower)
+    if state_match:
+        state = state_match.group(1).upper()
     if "ca high school" in lower or "california residents" in lower:
         state = "CA"
-    m = re.search(r"ages?\s*(\d+)\s*[–-]\s*(\d+)", lower)
-    if m:
-        a, b = int(m.group(1)), int(m.group(2))
+
+    ages = re.search(r"ages?\s*(\d+)\s*[–-]\s*(\d+)", lower, re.I)
+    if ages:
+        min_g, max_g = _age_range_to_grades(int(ages.group(1)), int(ages.group(2)))
         return {
             "gradeDisplay": display,
-            "gradeCompletedMin": max(5, a - 6),
-            "gradeCompletedMax": min(12, b - 6),
+            "gradeCompletedMin": min_g,
+            "gradeCompletedMax": max_g,
             "gradeSource": "age",
             "stateRestriction": state,
         }
-    m = re.search(r"(?:completing )?grades?\s*(\d+)\s*[–-]\s*(\d+)", lower)
-    if m:
+
+    grade_range = re.search(r"grades?\s*(\d+)\s*[–-]\s*(\d+)", lower, re.I)
+    if grade_range:
         return {
             "gradeDisplay": display,
-            "gradeCompletedMin": int(m.group(1)),
-            "gradeCompletedMax": int(m.group(2)),
+            "gradeCompletedMin": int(grade_range.group(1)),
+            "gradeCompletedMax": int(grade_range.group(2)),
             "gradeSource": "grade",
             "stateRestriction": state,
         }
+
+    if "completing grades" in lower:
+        completing = re.search(r"completing grades?\s*(\d+)\s*[–-]\s*(\d+)", lower, re.I)
+        if completing:
+            return {
+                "gradeDisplay": display,
+                "gradeCompletedMin": int(completing.group(1)),
+                "gradeCompletedMax": int(completing.group(2)),
+                "gradeSource": "grade",
+                "stateRestriction": state,
+            }
+
+    if "rising" in lower and re.search(r"jr\s*/?\s*sr", lower):
+        age_match = re.search(r"\((\d+)\s+by\s+(?:jun|july)", lower, re.I)
+        if age_match:
+            return {
+                "gradeDisplay": display,
+                "gradeCompletedMin": 10,
+                "gradeCompletedMax": 11,
+                "gradeSource": "mixed",
+                "stateRestriction": state,
+            }
+
+    if "rising" in lower:
+        nums = [int(m.group(1)) for m in re.finditer(r"(\d+)(?:st|nd|rd|th)?", lower)]
+        if len(nums) >= 2:
+            completed = [_rising_grade(n - 1) for n in nums]
+            return {
+                "gradeDisplay": display,
+                "gradeCompletedMin": min(completed),
+                "gradeCompletedMax": max(completed),
+                "gradeSource": "mixed",
+                "stateRestriction": state,
+            }
+        g = _parse_grade_number(lower.replace("rising", ""))
+        if g:
+            completed = _rising_grade(g - 1)
+            return {
+                "gradeDisplay": display,
+                "gradeCompletedMin": completed,
+                "gradeCompletedMax": completed,
+                "gradeSource": "grade",
+                "stateRestriction": state,
+            }
+        if "junior" in lower:
+            return {
+                "gradeDisplay": display,
+                "gradeCompletedMin": 10,
+                "gradeCompletedMax": 10,
+                "gradeSource": "grade",
+                "stateRestriction": state,
+            }
+        if "senior" in lower:
+            return {
+                "gradeDisplay": display,
+                "gradeCompletedMin": 11,
+                "gradeCompletedMax": 11,
+                "gradeSource": "grade",
+                "stateRestriction": state,
+            }
+        if "soph" in lower:
+            return {
+                "gradeDisplay": display,
+                "gradeCompletedMin": 9,
+                "gradeCompletedMax": 9,
+                "gradeSource": "grade",
+                "stateRestriction": state,
+            }
+
     if "current junior" in lower:
-        return {"gradeDisplay": display, "gradeCompletedMin": 11, "gradeCompletedMax": 11, "gradeSource": "grade", "stateRestriction": state}
-    if "rising junior" in lower or re.search(r"rising.*junior", lower):
-        return {"gradeDisplay": display, "gradeCompletedMin": 10, "gradeCompletedMax": 10, "gradeSource": "grade", "stateRestriction": state}
-    if "current junior" in lower:
-        pass
-    if "rising senior" in lower:
-        return {"gradeDisplay": display, "gradeCompletedMin": 11, "gradeCompletedMax": 11, "gradeSource": "grade", "stateRestriction": state}
-    if "high school" in lower:
-        return {"gradeDisplay": display, "gradeCompletedMin": 8, "gradeCompletedMax": 12, "gradeSource": "mixed", "stateRestriction": state}
-    return {"gradeDisplay": display, "gradeCompletedMin": 6, "gradeCompletedMax": 12, "gradeSource": "mixed", "stateRestriction": state}
+        return {
+            "gradeDisplay": display,
+            "gradeCompletedMin": 11,
+            "gradeCompletedMax": 11,
+            "gradeSource": "grade",
+            "stateRestriction": state,
+        }
+
+    if "current sophomore" in lower:
+        return {
+            "gradeDisplay": display,
+            "gradeCompletedMin": 10,
+            "gradeCompletedMax": 10,
+            "gradeSource": "grade",
+            "stateRestriction": state,
+        }
+
+    if "entering" in lower or "completed" in lower:
+        span = re.search(r"(\d+)(?:st|nd|rd|th)?\s*[–-]\s*(\d+)", lower)
+        if span:
+            a, b = int(span.group(1)), int(span.group(2))
+            min_g = _rising_grade(a - 1) if "entering" in lower else a
+            max_g = _rising_grade(b - 1) if "entering" in lower else b
+            return {
+                "gradeDisplay": display,
+                "gradeCompletedMin": min(min_g, max_g),
+                "gradeCompletedMax": max(min_g, max_g),
+                "gradeSource": "grade",
+                "stateRestriction": state,
+            }
+        single = _parse_grade_number(lower)
+        if single:
+            completed = _rising_grade(single - 1) if "entering" in lower else single
+            return {
+                "gradeDisplay": display,
+                "gradeCompletedMin": completed,
+                "gradeCompletedMax": completed,
+                "gradeSource": "grade",
+                "stateRestriction": state,
+            }
+
+    if "high school" in lower or "hs " in lower:
+        return {
+            "gradeDisplay": display,
+            "gradeCompletedMin": 8,
+            "gradeCompletedMax": 12,
+            "gradeSource": "mixed",
+            "stateRestriction": state,
+        }
+
+    if "middle" in lower or "grades 6" in lower:
+        return {
+            "gradeDisplay": display,
+            "gradeCompletedMin": 6,
+            "gradeCompletedMax": 8,
+            "gradeSource": "grade",
+            "stateRestriction": state,
+        }
+
+    single_grade = _parse_grade_number(lower)
+    if single_grade:
+        completed = (
+            _current_grade(single_grade) - 1 if "current" in lower else single_grade
+        )
+        return {
+            "gradeDisplay": display,
+            "gradeCompletedMin": completed,
+            "gradeCompletedMax": completed,
+            "gradeSource": "grade",
+            "stateRestriction": state,
+        }
+
+    return {
+        "gradeDisplay": display,
+        "gradeCompletedMin": 6,
+        "gradeCompletedMax": 12,
+        "gradeSource": "mixed",
+        "stateRestriction": state,
+    }
 
 
 def detect_international(location: str) -> bool:

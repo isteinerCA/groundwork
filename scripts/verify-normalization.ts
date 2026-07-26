@@ -4,6 +4,7 @@
  */
 import { normalizeAdmissionType } from "../src/lib/data/normalize-admission";
 import { normalizeFormat } from "../src/lib/data/normalize-format";
+import { normalizeGrade, gradeMatchesFilter } from "../src/lib/data/normalize-grade";
 import { parsePrice } from "../src/lib/data/parse-price";
 import { matchesPriceFilter } from "../src/lib/data/matches-price-filter";
 
@@ -60,6 +61,22 @@ for (const [raw, expected] of formatCases) {
     console.error(`FAIL format: "${raw}" → [${sorted.join(", ")}], expected [${expectedSorted.join(", ")}]`);
     failed++;
   }
+}
+
+const risingTenth = normalizeGrade("Rising 10th grade");
+if (
+  risingTenth.gradeCompletedMin !== 9 ||
+  risingTenth.gradeCompletedMax !== 9 ||
+  gradeMatchesFilter(risingTenth, [12])
+) {
+  console.error("FAIL: Rising 10th grade should map to completed 9 and not match grade 12");
+  failed++;
+}
+
+const risingRange = normalizeGrade("Rising 10-12");
+if (risingRange.gradeCompletedMin !== 9 || risingRange.gradeCompletedMax !== 11) {
+  console.error("FAIL: Rising 10-12 should map to completed grades 9-11");
+  failed++;
 }
 
 if (failed === 0) {
