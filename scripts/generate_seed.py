@@ -324,9 +324,10 @@ AGE_TO_GRADE = [(11, 5), (12, 6), (13, 7), (14, 8), (15, 9), (16, 10), (17, 11),
 
 
 def _age_range_to_grades(min_age: int, max_age: int) -> tuple[int, int]:
-    mins = [g for age, g in AGE_TO_GRADE if age >= min_age]
-    maxs = [g for age, g in AGE_TO_GRADE if age <= max_age]
-    return min(mins + [5]), max(maxs + [12])
+    grades_in_range = [g for age, g in AGE_TO_GRADE if min_age <= age <= max_age]
+    if not grades_in_range:
+        return max(5, min_age - 6), min(12, max_age - 6)
+    return min(grades_in_range), max(grades_in_range)
 
 
 def _parse_grade_number(token: str) -> int | None:
