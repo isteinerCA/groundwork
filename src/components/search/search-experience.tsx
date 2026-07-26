@@ -263,27 +263,32 @@ export function SearchExperience({
                 ))}
               </FilterGroup>
 
-              <FilterGroup title="Pricing" singleRow>
-                {PRICE_FILTER_OPTIONS.map((p) => (
+              <div>
+                <h3 className="mb-2 text-sm font-medium text-[var(--color-text-muted)]">
+                  Pricing
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {PRICE_FILTER_OPTIONS.map((p) => (
+                    <Chip
+                      key={p.id}
+                      label={p.label}
+                      selected={filters.priceFilter === p.id}
+                      onClick={() =>
+                        update({
+                          priceFilter: filters.priceFilter === p.id ? "any" : p.id,
+                        })
+                      }
+                    />
+                  ))}
+                </div>
+                <div className="mt-2 flex flex-wrap gap-2">
                   <Chip
-                    key={p.id}
-                    compact
-                    label={p.label}
-                    selected={filters.priceFilter === p.id}
-                    onClick={() =>
-                      update({
-                        priceFilter: filters.priceFilter === p.id ? "any" : p.id,
-                      })
-                    }
+                    label="Fully funded only"
+                    selected={filters.fullyFundedOnly}
+                    onClick={() => update({ fullyFundedOnly: !filters.fullyFundedOnly })}
                   />
-                ))}
-                <Chip
-                  compact
-                  label="Fully funded only"
-                  selected={filters.fullyFundedOnly}
-                  onClick={() => update({ fullyFundedOnly: !filters.fullyFundedOnly })}
-                />
-              </FilterGroup>
+                </div>
+              </div>
 
               <FilterGroup title="More">
                 <Chip
@@ -415,24 +420,14 @@ export function SearchExperience({
 function FilterGroup({
   title,
   children,
-  singleRow,
 }: {
   title: string;
   children: ReactNode;
-  singleRow?: boolean;
 }) {
   return (
     <div>
       <h3 className="mb-2 text-sm font-medium text-[var(--color-text-muted)]">{title}</h3>
-      <div
-        className={
-          singleRow
-            ? "flex flex-nowrap gap-1.5 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-            : "flex flex-wrap gap-2"
-        }
-      >
-        {children}
-      </div>
+      <div className="flex flex-wrap gap-2">{children}</div>
     </div>
   );
 }
