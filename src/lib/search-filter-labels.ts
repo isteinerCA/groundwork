@@ -6,6 +6,7 @@ import {
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
 import { formatDataQueryLabel } from "@/lib/search/format-data-query-label";
+import { getRegionLabel } from "@/lib/data/us-regions";
 import type { SearchFilters } from "@/lib/types/program";
 
 export interface ActiveFilterItem {
@@ -78,6 +79,44 @@ export function getActiveFilterItems(filters: SearchFilters): ActiveFilterItem[]
     });
   }
 
+  if (filters.maxPrice != null) {
+    items.push({
+      key: "max-price",
+      label: `Under $${filters.maxPrice.toLocaleString()}`,
+      remove: { maxPrice: null },
+    });
+  }
+
+  if (filters.minPrice != null) {
+    items.push({
+      key: "min-price",
+      label: `$${filters.minPrice.toLocaleString()}+`,
+      remove: { minPrice: null },
+    });
+  }
+
+  if (filters.minDurationWeeks != null || filters.maxDurationWeeks != null) {
+    const min = filters.minDurationWeeks;
+    const max = filters.maxDurationWeeks;
+    let label: string;
+    if (min != null && max != null && min === max) {
+      label = `${min} week${min === 1 ? "" : "s"}`;
+    } else if (min != null && max != null) {
+      label = `${min}–${max} weeks`;
+    } else if (min != null) {
+      label = `${min}+ weeks`;
+    } else if (max != null) {
+      label = `Up to ${max} weeks`;
+    } else {
+      label = "Any duration";
+    }
+    items.push({
+      key: "duration-weeks",
+      label,
+      remove: { minDurationWeeks: null, maxDurationWeeks: null },
+    });
+  }
+
   if (filters.collegeCreditOnly) {
     items.push({
       key: "credit",
@@ -123,6 +162,26 @@ export function getActiveFilterItems(filters: SearchFilters): ActiveFilterItem[]
       key: "exclude-location",
       label: `Exclude ${formatDataQueryLabel(filters.excludeLocation)}`,
       remove: { excludeLocation: "" },
+    });
+  }
+
+  for (const regionId of filters.includeRegions) {
+    items.push({
+      key: `region-${regionId}`,
+      label: getRegionLabel(regionId),
+      remove: {
+        includeRegions: filters.includeRegions.filter((id) => id !== regionId),
+      },
+    });
+  }
+
+  for (const location of filters.includeLocations) {
+    items.push({
+      key: `loc-${location}`,
+      label: formatDataQueryLabel(location),
+      remove: {
+        includeLocations: filters.includeLocations.filter((loc) => loc !== location),
+      },
     });
   }
 

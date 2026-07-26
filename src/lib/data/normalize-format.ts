@@ -2,7 +2,7 @@ import type { ProgramFormatId } from "@/lib/constants/filters";
 
 export interface FormatNormalization {
   formatDisplay: string;
-  /** Which PRD filter chips this program matches */
+  /** Which filter chips this program matches */
   formatTags: ProgramFormatId[];
 }
 
@@ -29,7 +29,7 @@ export function normalizeFormat(raw: string): FormatNormalization {
     formatTags.add("commuter");
   }
 
-  if (formatTags.size === 0) {
+  if (formatTags.size === 0 || lower === "varies") {
     formatTags.add("residential");
   }
 

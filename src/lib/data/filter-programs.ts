@@ -1,8 +1,10 @@
 import type { AdmissionTypeId } from "@/lib/constants/admission-types";
 import { programMatchesCategory } from "@/lib/data/matches-category";
 import { matchesDataQuery } from "@/lib/data/matches-data-query";
-import { matchesLocationQuery } from "@/lib/data/matches-location";
-import { matchesPriceFilter } from "@/lib/data/matches-price-filter";
+import { matchesDurationWeeksFilter } from "@/lib/data/matches-duration-filter";
+import { matchesLocationQuery, programMatchesAnyLocation } from "@/lib/data/matches-location";
+import { programMatchesAnyRegion } from "@/lib/data/us-regions";
+import { matchesNumericPriceFilter, matchesPriceFilter } from "@/lib/data/matches-price-filter";
 import { formatMatchesFilter } from "@/lib/data/normalize-format";
 import { gradeMatchesFilter } from "@/lib/data/normalize-grade";
 import type { Program, SearchFilters } from "@/lib/types/program";
@@ -53,10 +55,45 @@ export function matchesProgram(program: Program, filters: SearchFilters): boolea
     return false;
   }
 
+  if (
+    !matchesNumericPriceFilter(
+      program,
+      filters.minPrice,
+      filters.maxPrice,
+      filters.excludeUnknownPrice,
+    )
+  ) {
+    return false;
+  }
+
   if (filters.usOnly && program.isInternational) return false;
 
   const excludeLocation = filters.excludeLocation.trim();
   if (excludeLocation && matchesLocationQuery(program, excludeLocation)) return false;
+
+  if (
+    filters.includeRegions.length > 0 &&
+    !programMatchesAnyRegion(program, filters.includeRegions)
+  ) {
+    return false;
+  }
+
+  if (
+    filters.includeLocations.length > 0 &&
+    !programMatchesAnyLocation(program, filters.includeLocations)
+  ) {
+    return false;
+  }
+
+  if (
+    !matchesDurationWeeksFilter(
+      program,
+      filters.minDurationWeeks,
+      filters.maxDurationWeeks,
+    )
+  ) {
+    return false;
+  }
 
   if (!matchesDataQuery(program, filters.dataQuery)) return false;
 

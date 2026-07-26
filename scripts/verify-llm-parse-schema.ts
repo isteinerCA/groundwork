@@ -3,6 +3,7 @@
  * Run: npm run verify:chat
  */
 import { DEFAULT_SEARCH_FILTERS } from "../src/lib/types/program";
+import { filterPrograms } from "../src/lib/data/filter-programs";
 import { mergeFilterPatch } from "../src/lib/search/merge-filter-patch";
 import {
   filterPatchSchema,
@@ -10,6 +11,10 @@ import {
   parseLlmResponse,
   sanitizeFilterPatch,
 } from "../src/lib/search/llm-parse-schema";
+import { resolveRegionQuery } from "../src/lib/data/us-regions";
+import { parseMultiStateLocations } from "../src/lib/data/matches-location";
+import { readFileSync } from "node:fs";
+import type { Program, SearchFilters } from "../src/lib/types/program";
 
 let failed = 0;
 
@@ -113,6 +118,158 @@ const mergedExclude = mergeFilterPatch(
 );
 assert(mergedExclude.dataQuery === "", "merge clears dataQuery when excluding same location");
 assert(mergedExclude.excludeLocation === "california", "merge keeps excludeLocation");
+
+// east coast region from dataQuery promotion
+const eastCoastPatch = sanitizeFilterPatch({ dataQuery: "east coast only" });
+assert(
+  eastCoastPatch.includeRegions?.[0] === "east-coast",
+  "promotes east coast dataQuery to includeRegions",
+);
+assert(eastCoastPatch.dataQuery === "", "clears dataQuery after region promotion");
+assert(resolveRegionQuery("east coast only") === "east-coast", "resolveRegionQuery east coast");
+
+// multi-state OR from dataQuery promotion
+const nyMaPatch = sanitizeFilterPatch({ dataQuery: "NY or MA only" });
+const nyMaLocations = nyMaPatch.includeLocations ?? [];
+assert(
+  nyMaLocations.includes("new york") && nyMaLocations.includes("massachusetts"),
+  "promotes NY or MA to includeLocations",
+);
+assert(nyMaPatch.dataQuery === "", "clears dataQuery after multi-state promotion");
+assert(
+  parseMultiStateLocations("new york or massachusetts").length === 2,
+  "parseMultiStateLocations NY or MA",
+);
+
+// numeric price cap
+const pricePatch = sanitizeFilterPatch({ maxPrice: 3000, priceFilter: "under_2k" });
+assert(pricePatch.maxPrice === 3000, "sanitizeFilterPatch maxPrice");
+assert(pricePatch.priceFilter === "under_2k", "keeps explicit priceFilter when set");
+
+// duration weeks
+const durPatch = sanitizeFilterPatch({ minDurationWeeks: 3, maxDurationWeeks: 3 });
+assert(durPatch.minDurationWeeks === 3 && durPatch.maxDurationWeeks === 3, "duration weeks patch");
+
+// commuter format in schema
+const fmtPatch = filterPatchSchema.parse({ formats: ["commuter"] });
+assert(fmtPatch.formats?.[0] === "commuter", "commuter format valid in schema");
+
+// admission type in schema
+const admPatch = filterPatchSchema.parse({ admissionTypes: ["first_come"] });
+assert(admPatch.admissionTypes?.[0] === "first_come", "first_come admission valid in schema");
+
+if (failed === 0) {
+  const data = JSON.parse(readFileSync("data/seed/programs.json", "utf-8")) as {
+    programs: Program[];
+  };
+  const nyMaFilters = {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [10],
+    includeLocations: ["new york", "massachusetts"],
+  };
+  const nyMaResults = filterPrograms(data.programs, nyMaFilters);
+  assert(nyMaResults.length > 0, "NY or MA filter returns results");
+  const hasNy = nyMaResults.some((p) => /,\s*NY\b/i.test(p.locationDisplay));
+  const hasMa = nyMaResults.some((p) => /,\s*MA\b/i.test(p.locationDisplay));
+  const hasPa = nyMaResults.some((p) => /,\s*PA\b/i.test(p.locationDisplay));
+  assert(hasNy || hasMa, "NY or MA includes NY or MA programs");
+  assert(!hasPa, "NY or MA excludes PA programs");
+}
+
+if (failed === 0) {
+  const data = JSON.parse(readFileSync("data/seed/programs.json", "utf-8")) as {
+    programs: Program[];
+  };
+  const eastCoastFilters: SearchFilters = {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [10],
+    includeRegions: ["east-coast"],
+  };
+  const eastCoastResults = filterPrograms(data.programs, eastCoastFilters);
+  assert(eastCoastResults.length > 0, "east coast filter returns results");
+  const hasNy = eastCoastResults.some((p) => /,\s*NY\b/i.test(p.locationDisplay));
+  const hasCa = eastCoastResults.some((p) => /,\s*CA\b/i.test(p.locationDisplay));
+  assert(hasNy, "east coast includes NY programs");
+  assert(!hasCa, "east coast excludes CA programs");
+
+  const adirondack = data.programs.find((p) => p.name === "Adirondack Camp");
+  if (adirondack) {
+    const wildernessFilters: SearchFilters = {
+      ...DEFAULT_SEARCH_FILTERS,
+      gradesCompleted: [10],
+      categories: ["outdoor-wilderness"],
+      includeRegions: ["east-coast"],
+    };
+    const wildernessResults = filterPrograms(data.programs, wildernessFilters);
+    assert(
+      wildernessResults.some((p) => p.name === "Adirondack Camp"),
+      "Adirondack matches wilderness via Outdoor/Wilderness secondary tag",
+    );
+  }
+
+  const apogee = data.programs.find((p) => p.name === "Apogee Adventures");
+  if (apogee) {
+    const apogeeEastCoast = filterPrograms(data.programs, {
+      ...DEFAULT_SEARCH_FILTERS,
+      gradesCompleted: [10],
+      categories: ["outdoor-wilderness"],
+      includeRegions: ["east-coast"],
+    });
+    assert(
+      apogeeEastCoast.some((p) => p.name === "Apogee Adventures"),
+      "east coast matches New England in location text (Apogee)",
+    );
+  }
+}
+
+if (failed === 0) {
+  const data = JSON.parse(readFileSync("data/seed/programs.json", "utf-8")) as {
+    programs: Program[];
+  };
+  const commuterFilters: SearchFilters = {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [10],
+    formats: ["commuter"],
+  };
+  const commuterResults = filterPrograms(data.programs, commuterFilters);
+  assert(commuterResults.length > 0, "commuter filter returns results");
+  assert(
+    commuterResults.every((p) => p.formatTags.includes("commuter")),
+    "commuter filter only commuter-tagged programs",
+  );
+
+  const priceCapFilters = {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [10],
+    maxPrice: 2000,
+  };
+  const priceResults = filterPrograms(data.programs, priceCapFilters);
+  assert(priceResults.length > 0, "maxPrice filter returns results");
+  const overCap = priceResults.filter(
+    (p) =>
+      !p.priceUnknown &&
+      !p.fullyFunded &&
+      (p.priceMin ?? p.priceMax ?? 0) > 2000 &&
+      (p.priceMax ?? p.priceMin ?? 0) > 2000,
+  );
+  assert(overCap.length === 0, "maxPrice excludes programs above cap");
+
+  const threeWeekFilters = {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [10],
+    minDurationWeeks: 3,
+    maxDurationWeeks: 3,
+  };
+  const threeWeekResults = filterPrograms(data.programs, threeWeekFilters);
+  assert(threeWeekResults.length > 0, "3-week duration filter returns results");
+  const badLength = threeWeekResults.filter(
+    (p) =>
+      p.lengthMinDays != null &&
+      p.lengthMaxDays != null &&
+      (p.lengthMaxDays < 21 || p.lengthMinDays > 21),
+  );
+  assert(badLength.length === 0, "3-week filter uses lengthMinDays/MaxDays overlap");
+}
 
 if (failed === 0) {
   console.log("All LLM parse schema checks passed.");

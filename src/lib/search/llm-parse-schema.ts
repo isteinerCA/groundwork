@@ -8,7 +8,8 @@ import {
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
 import { DEFAULT_SEARCH_FILTERS, type SearchFilters } from "@/lib/types/program";
-import { resolveLocationQuery } from "@/lib/data/matches-location";
+import { parseMultiStateLocations, resolveLocationQuery } from "@/lib/data/matches-location";
+import { resolveRegionQuery, US_REGION_IDS } from "@/lib/data/us-regions";
 
 const categoryIds = PROGRAM_CATEGORIES.map((c) => c.id) as [
   (typeof PROGRAM_CATEGORIES)[number]["id"],
@@ -30,7 +31,6 @@ const priceIds = PRICE_FILTERS.map((p) => p.id) as [
   (typeof PRICE_FILTERS)[number]["id"],
   ...(typeof PRICE_FILTERS)[number]["id"][],
 ];
-const gradeValues = [...GRADE_CHIPS] as [number, ...number[]];
 
 export const filterPatchSchema = z
   .object({
@@ -42,10 +42,16 @@ export const filterPatchSchema = z
     collegeCreditOnly: z.boolean().optional(),
     fullyFundedOnly: z.boolean().optional(),
     priceFilter: z.enum(priceIds).optional(),
+    maxPrice: z.number().int().min(0).nullable().optional(),
+    minPrice: z.number().int().min(0).nullable().optional(),
     usOnly: z.boolean().optional(),
     excludeUnknownPrice: z.boolean().optional(),
     dataQuery: z.string().optional(),
     excludeLocation: z.string().optional(),
+    includeRegions: z.array(z.enum(US_REGION_IDS)).optional(),
+    includeLocations: z.array(z.string()).optional(),
+    minDurationWeeks: z.number().min(0).nullable().optional(),
+    maxDurationWeeks: z.number().min(0).nullable().optional(),
   })
   .strict();
 
@@ -58,10 +64,16 @@ export const searchFiltersSchema = z.object({
   collegeCreditOnly: z.boolean(),
   fullyFundedOnly: z.boolean(),
   priceFilter: z.enum(priceIds),
+  maxPrice: z.number().int().min(0).nullable(),
+  minPrice: z.number().int().min(0).nullable(),
   usOnly: z.boolean(),
   excludeUnknownPrice: z.boolean(),
   dataQuery: z.string(),
   excludeLocation: z.string(),
+  includeRegions: z.array(z.enum(US_REGION_IDS)),
+  includeLocations: z.array(z.string()),
+  minDurationWeeks: z.number().min(0).nullable(),
+  maxDurationWeeks: z.number().min(0).nullable(),
 });
 
 export const llmParseResponseSchema = z.object({
@@ -103,6 +115,13 @@ function sanitizeExcludeLocation(value: string): string {
   return resolveLocationQuery(trimmed) ?? trimmed.toLowerCase();
 }
 
+function sanitizeIncludeLocations(values: string[]): string[] {
+  const resolved = values
+    .map((value) => resolveLocationQuery(value) ?? value.trim().toLowerCase())
+    .filter(Boolean);
+  return [...new Set(resolved)];
+}
+
 function resolvedLocationKey(value: string): string | undefined {
   const trimmed = value.trim();
   if (!trimmed) return undefined;
@@ -139,6 +158,12 @@ export function sanitizeFilterPatch(
   if (patch.priceFilter !== undefined) {
     sanitized.priceFilter = patch.priceFilter;
   }
+  if (patch.maxPrice !== undefined) {
+    sanitized.maxPrice = patch.maxPrice;
+  }
+  if (patch.minPrice !== undefined) {
+    sanitized.minPrice = patch.minPrice;
+  }
   if (patch.usOnly !== undefined) {
     sanitized.usOnly = patch.usOnly;
   }
@@ -150,6 +175,40 @@ export function sanitizeFilterPatch(
   }
   if (patch.excludeLocation !== undefined) {
     sanitized.excludeLocation = sanitizeExcludeLocation(patch.excludeLocation);
+  }
+  if (patch.includeRegions !== undefined) {
+    sanitized.includeRegions = [...new Set(patch.includeRegions)];
+  }
+  if (patch.includeLocations !== undefined) {
+    sanitized.includeLocations = sanitizeIncludeLocations(patch.includeLocations);
+  }
+  if (patch.minDurationWeeks !== undefined) {
+    sanitized.minDurationWeeks = patch.minDurationWeeks;
+  }
+  if (patch.maxDurationWeeks !== undefined) {
+    sanitized.maxDurationWeeks = patch.maxDurationWeeks;
+  }
+
+  // Prefer exact numeric price over coarse bucket when LLM sets maxPrice/minPrice.
+  if (sanitized.maxPrice != null || sanitized.minPrice != null) {
+    sanitized.priceFilter = sanitized.priceFilter ?? "any";
+  }
+
+  // Promote regional phrases mistakenly placed in dataQuery.
+  if (sanitized.dataQuery !== undefined) {
+    const regionFromQuery = resolveRegionQuery(sanitized.dataQuery);
+    if (regionFromQuery) {
+      const existing = sanitized.includeRegions ?? patch.includeRegions ?? [];
+      sanitized.includeRegions = [...new Set([...existing, regionFromQuery])];
+      sanitized.dataQuery = "";
+    } else {
+      const statesFromQuery = parseMultiStateLocations(sanitized.dataQuery);
+      if (statesFromQuery.length > 0) {
+        const existing = sanitized.includeLocations ?? patch.includeLocations ?? [];
+        sanitized.includeLocations = [...new Set([...existing, ...statesFromQuery])];
+        sanitized.dataQuery = "";
+      }
+    }
   }
 
   // Location include vs exclude are mutually exclusive for the same place.

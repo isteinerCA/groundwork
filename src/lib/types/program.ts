@@ -44,6 +44,9 @@ export interface Program {
   formatTags: ProgramFormatId[];
   durationBucket: DurationBucketId;
   lengthDisplay: string;
+  /** Parsed from CSV Length column (days). Null when unknown/varies. */
+  lengthMinDays: number | null;
+  lengthMaxDays: number | null;
   datesDisplay: string;
   locationDisplay: string;
   isInternational: boolean;
@@ -73,9 +76,16 @@ export interface SearchFilters {
   admissionTypes: AdmissionTypeId[];
   formats: ProgramFormatId[];
   durationBuckets: DurationBucketId[];
+  /** Exact week bounds parsed from user query (uses program lengthMinDays/MaxDays). */
+  minDurationWeeks: number | null;
+  maxDurationWeeks: number | null;
   collegeCreditOnly: boolean;
   fullyFundedOnly: boolean;
   priceFilter: import("@/lib/constants/filters").PriceFilterId;
+  /** Exact max total price from parsed program data (overrides bucket when set). */
+  maxPrice: number | null;
+  /** Exact min total price from parsed program data. */
+  minPrice: number | null;
   usOnly: boolean;
   /**
    * When false (default), programs with priceUnknown still appear under active
@@ -86,6 +96,10 @@ export interface SearchFilters {
   dataQuery: string;
   /** Canonical state/location name to exclude (e.g. "california" for "not in California"). */
   excludeLocation: string;
+  /** US region IDs to include (OR logic), e.g. ["east-coast"] for "east coast only". */
+  includeRegions: import("@/lib/data/us-regions").UsRegionId[];
+  /** Canonical state names to include with OR logic, e.g. ["new york", "massachusetts"]. */
+  includeLocations: string[];
 }
 
 export const DEFAULT_SEARCH_FILTERS: SearchFilters = {
@@ -97,10 +111,16 @@ export const DEFAULT_SEARCH_FILTERS: SearchFilters = {
   collegeCreditOnly: false,
   fullyFundedOnly: false,
   priceFilter: "any",
+  maxPrice: null,
+  minPrice: null,
   usOnly: false,
   excludeUnknownPrice: false,
   dataQuery: "",
   excludeLocation: "",
+  includeRegions: [],
+  includeLocations: [],
+  minDurationWeeks: null,
+  maxDurationWeeks: null,
 };
 
 /** Expected columns in the program CSV */

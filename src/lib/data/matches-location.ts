@@ -242,6 +242,39 @@ export function matchesLocationQuery(program: Program, query: string): boolean {
   return locationText.includes(needle);
 }
 
+/** Parse multi-state phrases like "NY or MA" into canonical state names. */
+export function parseMultiStateLocations(input: string): string[] {
+  const normalized = input
+    .trim()
+    .toLowerCase()
+    .replace(/\s+only$/, "")
+    .replace(/\s+programs?$/, "")
+    .trim();
+  if (!normalized) return [];
+
+  const hasSeparator = /\s+or\s+|\s*,\s*|\s+and\s+/i.test(normalized);
+  if (!hasSeparator) {
+    const single = resolveLocationQuery(normalized);
+    return single ? [single] : [];
+  }
+
+  const parts = normalized
+    .split(/\s+or\s+|\s*,\s*|\s+and\s+/i)
+    .map((part) => part.trim())
+    .filter(Boolean);
+
+  const states = parts
+    .map((part) => resolveLocationQuery(part))
+    .filter((state): state is string => Boolean(state));
+
+  return [...new Set(states)];
+}
+
+export function programMatchesAnyLocation(program: Program, locations: string[]): boolean {
+  if (locations.length === 0) return true;
+  return locations.some((location) => matchesLocationQuery(program, location));
+}
+
 export function getStateAbbrev(stateName: string): string | undefined {
   return US_STATES.find((state) => state.name === stateName)?.abbr;
 }

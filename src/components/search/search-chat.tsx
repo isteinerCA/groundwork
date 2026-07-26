@@ -4,10 +4,11 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { btnPrimary } from "@/components/ui/button-styles";
 import { logChatEvent } from "@/lib/chat-analytics";
 import { trackEvent } from "@/lib/analytics";
+import { formatAssistantMessage } from "@/lib/search/format-assistant-message";
 import { getOpeningHint } from "@/lib/search/opening-hint";
 import { mergeFilterPatch } from "@/lib/search/merge-filter-patch";
 import type { LlmParseResponse } from "@/lib/search/llm-parse-schema";
-import { DEFAULT_SEARCH_FILTERS, type SearchFilters } from "@/lib/types/program";
+import { DEFAULT_SEARCH_FILTERS, type Program, type SearchFilters } from "@/lib/types/program";
 
 interface ChatMessage {
   id: string;
@@ -18,12 +19,14 @@ interface ChatMessage {
 export function SearchChat({
   filters,
   resultCount,
+  programs,
   onApplyFilters,
   embedded = false,
   inPanel = false,
 }: {
   filters: SearchFilters;
   resultCount: number;
+  programs: Program[];
   onApplyFilters: (next: SearchFilters) => void;
   embedded?: boolean;
   inPanel?: boolean;
@@ -50,13 +53,19 @@ export function SearchChat({
         admissionTypes: filters.admissionTypes,
         formats: filters.formats,
         durationBuckets: filters.durationBuckets,
+        minDurationWeeks: filters.minDurationWeeks,
+        maxDurationWeeks: filters.maxDurationWeeks,
         priceFilter: filters.priceFilter,
+        maxPrice: filters.maxPrice,
+        minPrice: filters.minPrice,
         collegeCreditOnly: filters.collegeCreditOnly,
         fullyFundedOnly: filters.fullyFundedOnly,
         usOnly: filters.usOnly,
         excludeUnknownPrice: filters.excludeUnknownPrice,
         dataQuery: filters.dataQuery,
         excludeLocation: filters.excludeLocation,
+        includeRegions: filters.includeRegions,
+        includeLocations: filters.includeLocations,
         resultCount,
       }),
     [filters, resultCount],
@@ -135,13 +144,6 @@ export function SearchChat({
       }
 
       const result = (await response.json()) as LlmParseResponse;
-      const assistantMessage: ChatMessage = {
-        id: `assistant-${Date.now()}`,
-        role: "assistant",
-        text: result.assistantMessage,
-      };
-
-      setMessages((prev) => [...prev, assistantMessage]);
 
       let nextFilters = filters;
       if (result.clearAll) {
@@ -151,6 +153,14 @@ export function SearchChat({
         nextFilters = mergeFilterPatch(filters, result.filterPatch);
         onApplyFilters(nextFilters);
       }
+
+      const assistantMessage: ChatMessage = {
+        id: `assistant-${Date.now()}`,
+        role: "assistant",
+        text: formatAssistantMessage(result, nextFilters, programs),
+      };
+
+      setMessages((prev) => [...prev, assistantMessage]);
 
       const hadPatch = result.clearAll || Object.keys(result.filterPatch).length > 0;
       logChatEvent({

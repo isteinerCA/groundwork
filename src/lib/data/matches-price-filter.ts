@@ -47,3 +47,29 @@ export function matchesPriceFilter(
   // Range overlap: [min, max] intersects [filterMin, filterMax]
   return min <= filterMax && max >= filterMin;
 }
+
+/** Numeric price cap/floor using parsed priceMin/priceMax from the program table. */
+export function matchesNumericPriceFilter(
+  price: Pick<ParsedPrice, "priceMin" | "priceMax" | "priceUnknown" | "fullyFunded">,
+  minPrice: number | null,
+  maxPrice: number | null,
+  excludeUnknownPrice: boolean,
+): boolean {
+  if (minPrice == null && maxPrice == null) return true;
+
+  if (price.priceUnknown) {
+    return !excludeUnknownPrice;
+  }
+
+  if (price.fullyFunded && (maxPrice == null || maxPrice >= 0)) {
+    return minPrice == null || minPrice <= 0;
+  }
+
+  const programMin = price.priceMin ?? price.priceMax ?? 0;
+  const programMax = price.priceMax ?? price.priceMin ?? programMin;
+
+  const filterMin = minPrice ?? 0;
+  const filterMax = maxPrice ?? Number.POSITIVE_INFINITY;
+
+  return programMin <= filterMax && programMax >= filterMin;
+}

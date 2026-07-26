@@ -1,5 +1,6 @@
 import type { Program } from "@/lib/types/program";
 import { matchesLocationQuery, resolveLocationQuery } from "@/lib/data/matches-location";
+import { programMatchesAnyRegion, resolveRegionQuery } from "@/lib/data/us-regions";
 
 /** Build searchable text from all CSV-backed program fields and gotcha flags. */
 export function programSearchText(program: Program): string {
@@ -31,6 +32,11 @@ export function programSearchText(program: Program): string {
 export function matchesDataQuery(program: Program, query: string): boolean {
   const trimmed = query.trim();
   if (!trimmed) return true;
+
+  const resolvedRegion = resolveRegionQuery(trimmed);
+  if (resolvedRegion) {
+    return programMatchesAnyRegion(program, [resolvedRegion]);
+  }
 
   const resolvedLocation = resolveLocationQuery(trimmed);
   if (resolvedLocation) {
