@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-07-24",
+  "verifiedAt": "2026-07-26",
   "count": 143,
   "programs": [
     {
@@ -30,19 +30,18 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$5,518 + $46 application fee (need-based aid available)",
-      "priceMin": 46,
-      "priceMax": 5518,
+      "priceMin": 46.0,
+      "priceMax": 5518.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://cosmos.ucdavis.edu/",
-      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "cosmos-ca-residency",
           "type": "residency",
           "title": "California residents only",
-          "body": "COSMOS accepts students completing grades 8–12 who are enrolled in a California high school. Out-of-state students are not eligible.",
+          "body": "COSMOS accepts students completing grades 8\u201312 who are enrolled in a California high school. Out-of-state students are not eligible.",
           "sourceCitation": "COSMOS statewide eligibility requirements (UC COSMOS)",
           "sourceDate": "2026-01-01",
           "severity": "warning"
@@ -51,12 +50,13 @@
           "id": "cosmos-deposit",
           "type": "deposit",
           "title": "$200 deposit non-refundable",
-          "body": "A $200 deposit is required to hold a spot and is non-refundable — including for students who receive full financial aid.",
+          "body": "A $200 deposit is required to hold a spot and is non-refundable \u2014 including for students who receive full financial aid.",
           "sourceCitation": "COSMOS program fee and deposit policy",
           "sourceDate": "2026-01-01",
           "severity": "warning"
         }
-      ]
+      ],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-2",
@@ -86,19 +86,18 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$5,518 + $46 application fee (need-based aid available)",
-      "priceMin": 46,
-      "priceMax": 5518,
+      "priceMin": 46.0,
+      "priceMax": 5518.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.cosmos.uci.edu/",
-      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "cosmos-ca-residency",
           "type": "residency",
           "title": "California residents only",
-          "body": "COSMOS accepts students completing grades 8–12 who are enrolled in a California high school. Out-of-state students are not eligible.",
+          "body": "COSMOS accepts students completing grades 8\u201312 who are enrolled in a California high school. Out-of-state students are not eligible.",
           "sourceCitation": "COSMOS statewide eligibility requirements (UC COSMOS)",
           "sourceDate": "2026-01-01",
           "severity": "warning"
@@ -107,12 +106,13 @@
           "id": "cosmos-deposit",
           "type": "deposit",
           "title": "$200 deposit non-refundable",
-          "body": "A $200 deposit is required to hold a spot and is non-refundable — including for students who receive full financial aid.",
+          "body": "A $200 deposit is required to hold a spot and is non-refundable \u2014 including for students who receive full financial aid.",
           "sourceCitation": "COSMOS program fee and deposit policy",
           "sourceDate": "2026-01-01",
           "severity": "warning"
         }
-      ]
+      ],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-3",
@@ -142,19 +142,18 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$5,518 + $46 application fee (need-based aid available)",
-      "priceMin": 46,
-      "priceMax": 5518,
+      "priceMin": 46.0,
+      "priceMax": 5518.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://cosmos.ucla.edu/",
-      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "cosmos-ca-residency",
           "type": "residency",
           "title": "California residents only",
-          "body": "COSMOS accepts students completing grades 8–12 who are enrolled in a California high school. Out-of-state students are not eligible.",
+          "body": "COSMOS accepts students completing grades 8\u201312 who are enrolled in a California high school. Out-of-state students are not eligible.",
           "sourceCitation": "COSMOS statewide eligibility requirements (UC COSMOS)",
           "sourceDate": "2026-01-01",
           "severity": "warning"
@@ -163,12 +162,13 @@
           "id": "cosmos-deposit",
           "type": "deposit",
           "title": "$200 deposit non-refundable",
-          "body": "A $200 deposit is required to hold a spot and is non-refundable — including for students who receive full financial aid.",
+          "body": "A $200 deposit is required to hold a spot and is non-refundable \u2014 including for students who receive full financial aid.",
           "sourceCitation": "COSMOS program fee and deposit policy",
           "sourceDate": "2026-01-01",
           "severity": "warning"
         }
-      ]
+      ],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-4",
@@ -198,19 +198,18 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$5,518 + $46 application fee (need-based aid available)",
-      "priceMin": 46,
-      "priceMax": 5518,
+      "priceMin": 46.0,
+      "priceMax": 5518.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://cosmos.ucmerced.edu/",
-      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "cosmos-ca-residency",
           "type": "residency",
           "title": "California residents only",
-          "body": "COSMOS accepts students completing grades 8–12 who are enrolled in a California high school. Out-of-state students are not eligible.",
+          "body": "COSMOS accepts students completing grades 8\u201312 who are enrolled in a California high school. Out-of-state students are not eligible.",
           "sourceCitation": "COSMOS statewide eligibility requirements (UC COSMOS)",
           "sourceDate": "2026-01-01",
           "severity": "warning"
@@ -219,12 +218,13 @@
           "id": "cosmos-deposit",
           "type": "deposit",
           "title": "$200 deposit non-refundable",
-          "body": "A $200 deposit is required to hold a spot and is non-refundable — including for students who receive full financial aid.",
+          "body": "A $200 deposit is required to hold a spot and is non-refundable \u2014 including for students who receive full financial aid.",
           "sourceCitation": "COSMOS program fee and deposit policy",
           "sourceDate": "2026-01-01",
           "severity": "warning"
         }
-      ]
+      ],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-5",
@@ -254,19 +254,18 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$5,518 + $46 application fee (need-based aid available)",
-      "priceMin": 46,
-      "priceMax": 5518,
+      "priceMin": 46.0,
+      "priceMax": 5518.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://cosmos.ucsc.edu/",
-      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "cosmos-ca-residency",
           "type": "residency",
           "title": "California residents only",
-          "body": "COSMOS accepts students completing grades 8–12 who are enrolled in a California high school. Out-of-state students are not eligible.",
+          "body": "COSMOS accepts students completing grades 8\u201312 who are enrolled in a California high school. Out-of-state students are not eligible.",
           "sourceCitation": "COSMOS statewide eligibility requirements (UC COSMOS)",
           "sourceDate": "2026-01-01",
           "severity": "warning"
@@ -275,12 +274,13 @@
           "id": "cosmos-deposit",
           "type": "deposit",
           "title": "$200 deposit non-refundable",
-          "body": "A $200 deposit is required to hold a spot and is non-refundable — including for students who receive full financial aid.",
+          "body": "A $200 deposit is required to hold a spot and is non-refundable \u2014 including for students who receive full financial aid.",
           "sourceCitation": "COSMOS program fee and deposit policy",
           "sourceDate": "2026-01-01",
           "severity": "warning"
         }
-      ]
+      ],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-6",
@@ -310,19 +310,18 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$5,518 + $46 application fee (need-based aid available)",
-      "priceMin": 46,
-      "priceMax": 5518,
+      "priceMin": 46.0,
+      "priceMax": 5518.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://jacobsschool.ucsd.edu/cosmos/",
-      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "cosmos-ca-residency",
           "type": "residency",
           "title": "California residents only",
-          "body": "COSMOS accepts students completing grades 8–12 who are enrolled in a California high school. Out-of-state students are not eligible.",
+          "body": "COSMOS accepts students completing grades 8\u201312 who are enrolled in a California high school. Out-of-state students are not eligible.",
           "sourceCitation": "COSMOS statewide eligibility requirements (UC COSMOS)",
           "sourceDate": "2026-01-01",
           "severity": "warning"
@@ -331,12 +330,13 @@
           "id": "cosmos-deposit",
           "type": "deposit",
           "title": "$200 deposit non-refundable",
-          "body": "A $200 deposit is required to hold a spot and is non-refundable — including for students who receive full financial aid.",
+          "body": "A $200 deposit is required to hold a spot and is non-refundable \u2014 including for students who receive full financial aid.",
           "sourceCitation": "COSMOS program fee and deposit policy",
           "sourceDate": "2026-01-01",
           "severity": "warning"
         }
-      ]
+      ],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-7",
@@ -348,9 +348,10 @@
       ],
       "trackDetail": "Residential Session",
       "gradeDisplay": "Rising 10th grade",
-      "gradeCompletedMin": 9,
-      "gradeCompletedMax": 9,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly competitive",
       "formatDisplay": "Residential",
@@ -371,8 +372,8 @@
       "fullyFunded": true,
       "financialAidAvailable": true,
       "websiteUrl": "https://ai4all.spcs.stanford.edu/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-8",
@@ -384,9 +385,10 @@
       ],
       "trackDetail": "Online Session",
       "gradeDisplay": "Rising 10th grade",
-      "gradeCompletedMin": 9,
-      "gradeCompletedMax": 9,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly competitive",
       "formatDisplay": "Online",
@@ -407,8 +409,8 @@
       "fullyFunded": true,
       "financialAidAvailable": true,
       "websiteUrl": "https://ai4all.spcs.stanford.edu/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-9",
@@ -420,6 +422,7 @@
       "gradeCompletedMin": 9,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling",
       "formatDisplay": "Online",
@@ -434,14 +437,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "~$1100",
-      "priceMin": 1100,
-      "priceMax": 1100,
+      "priceMin": 1100.0,
+      "priceMax": 1100.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.inspiritai.com/liveonline",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-10",
@@ -453,9 +456,10 @@
       ],
       "trackDetail": "Biotech/CS/Robotics/Nanotech/Graphics",
       "gradeDisplay": "Entering 10-12",
-      "gradeCompletedMin": 9,
-      "gradeCompletedMax": 11,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective (deadline Feb 28)",
       "formatDisplay": "Residential",
@@ -470,14 +474,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (college credit)",
       "priceDisplay": "$9250",
-      "priceMin": 9250,
-      "priceMax": 9250,
+      "priceMin": 9250.0,
+      "priceMax": 9250.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://esap.seas.upenn.edu/about/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-11",
@@ -492,6 +496,7 @@
       "gradeCompletedMin": 11,
       "gradeCompletedMax": 11,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly competitive",
       "formatDisplay": "Residential",
@@ -512,8 +517,8 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://web.mit.edu/wtp/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-12",
@@ -526,6 +531,7 @@
       "gradeCompletedMin": 8,
       "gradeCompletedMax": 11,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Selective (~20-30% acceptance)",
       "formatDisplay": "Online",
@@ -540,14 +546,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$3080-$3200",
-      "priceMin": 3080,
-      "priceMax": 3200,
+      "priceMin": 3080.0,
+      "priceMax": 3200.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summerinstitutes.spcs.stanford.edu/courses/2026/artificial-intelligence",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-13",
@@ -558,9 +564,10 @@
         "STEM/Engineering"
       ],
       "gradeDisplay": "HS through early workforce",
-      "gradeCompletedMin": 8,
+      "gradeCompletedMin": 6,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling (register by May 1)",
       "formatDisplay": "Residential",
@@ -575,14 +582,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No (Certificate of Achievement)",
       "priceDisplay": "$8500 incl. lodging/meals",
-      "priceMin": 8500,
-      "priceMax": 8500,
+      "priceMin": 8500.0,
+      "priceMax": 8500.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://engineering.jhu.edu/education/engineering-summer-ai-institute/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-14",
@@ -594,9 +601,10 @@
       ],
       "trackDetail": "AI Scholars",
       "gradeDisplay": "Rising HS seniors (11th at application)",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 10,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly selective, fully funded",
       "formatDisplay": "Residential",
@@ -617,8 +625,8 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-15",
@@ -630,9 +638,10 @@
       ],
       "trackDetail": "CS Scholars",
       "gradeDisplay": "Rising juniors (10th-11th at application)",
-      "gradeCompletedMin": 9,
+      "gradeCompletedMin": 10,
       "gradeCompletedMax": 10,
-      "gradeSource": "mixed",
+      "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Fully funded, selective",
       "formatDisplay": "Residential",
@@ -653,8 +662,8 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-16",
@@ -664,13 +673,15 @@
       "secondaryTags": [],
       "trackDetail": "Architecture",
       "gradeDisplay": "Rising Jr/Sr (16 by Jun 20)",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "four_plus_weeks",
@@ -681,14 +692,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes",
       "priceDisplay": "Residential $10744; Commuter $8253",
-      "priceMin": 8253,
-      "priceMax": 10744,
+      "priceMin": 8253.0,
+      "priceMax": 10744.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-17",
@@ -700,13 +711,15 @@
       ],
       "trackDetail": "Computational Biology",
       "gradeDisplay": "Rising Jr/Sr (16 by Jun 20)",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "two_to_four_weeks",
@@ -717,14 +730,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes",
       "priceDisplay": "Residential $10750; Commuter $8041",
-      "priceMin": 8041,
-      "priceMax": 10750,
+      "priceMin": 8041.0,
+      "priceMax": 10750.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-18",
@@ -734,13 +747,15 @@
       "secondaryTags": [],
       "trackDetail": "Art",
       "gradeDisplay": "Rising Jr/Sr (16 by Jun 20)",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "four_plus_weeks",
@@ -751,14 +766,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes",
       "priceDisplay": "6-wk Res $12204/Commuter $9039; 3-wk Res $7945/Commuter $6184",
-      "priceMin": 3,
-      "priceMax": 12204,
+      "priceMin": 3.0,
+      "priceMax": 12204.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-19",
@@ -768,13 +783,15 @@
       "secondaryTags": [],
       "trackDetail": "Design",
       "gradeDisplay": "Rising Jr/Sr (16 by Jun 20)",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "four_plus_weeks",
@@ -785,14 +802,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes",
       "priceDisplay": "Residential $12204; Commuter $8862",
-      "priceMin": 8862,
-      "priceMax": 12204,
+      "priceMin": 8862.0,
+      "priceMax": 12204.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-20",
@@ -802,13 +819,15 @@
       "secondaryTags": [],
       "trackDetail": "Drama",
       "gradeDisplay": "Rising Jr/Sr (16 by Jun 20)",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "four_plus_weeks",
@@ -819,14 +838,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes",
       "priceDisplay": "Residential $12303; Commuter $8974",
-      "priceMin": 8974,
-      "priceMax": 12303,
+      "priceMin": 8974.0,
+      "priceMax": 12303.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-21",
@@ -840,6 +859,7 @@
       "gradeCompletedMin": 11,
       "gradeCompletedMax": 11,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly competitive (4% acceptance)",
       "formatDisplay": "Residential",
@@ -860,7 +880,6 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cee.org/programs/research-science-institute",
-      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "rsi-selectivity",
@@ -889,7 +908,8 @@
           "sourceDate": "2026-01-01",
           "severity": "info"
         }
-      ]
+      ],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-22",
@@ -903,6 +923,7 @@
       "gradeCompletedMin": 11,
       "gradeCompletedMax": 11,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly selective (deadline Feb 1)",
       "formatDisplay": "Residential",
@@ -923,8 +944,8 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://mites.mit.edu/discover-mites/mites-summer/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-23",
@@ -936,6 +957,7 @@
       "gradeCompletedMin": 11,
       "gradeCompletedMax": 11,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly selective (deadline Feb)",
       "formatDisplay": "Residential",
@@ -950,14 +972,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "Up to $11800 (sliding scale)",
-      "priceMin": 11800,
-      "priceMax": 11800,
+      "priceMin": 11800.0,
+      "priceMax": 11800.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summerscience.org/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-24",
@@ -970,11 +992,12 @@
       "gradeCompletedMin": 9,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Commuter",
       "formatTags": [
-        "residential"
+        "commuter"
       ],
       "durationBucket": "two_to_four_weeks",
       "lengthDisplay": "1-2 weeks",
@@ -984,14 +1007,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "~$950",
-      "priceMin": 950,
-      "priceMax": 950,
+      "priceMin": 950.0,
+      "priceMax": 950.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://lawrencehallofscience.org/teen-internship-programs/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-25",
@@ -1005,6 +1028,7 @@
       "gradeCompletedMin": 6,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential",
@@ -1019,14 +1043,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$1500-$2500",
-      "priceMin": 1500,
-      "priceMax": 2500,
+      "priceMin": 1500.0,
+      "priceMax": 2500.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.education.purdue.edu/geri/youth-programs/summer-residential/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-26",
@@ -1035,14 +1059,15 @@
       "category": "stem-engineering",
       "secondaryTags": [],
       "gradeDisplay": "Rising 10-12 & recent grads",
-      "gradeCompletedMin": 9,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective",
       "formatDisplay": "Commuter",
       "formatTags": [
-        "residential"
+        "commuter"
       ],
       "durationBucket": "two_to_four_weeks",
       "lengthDisplay": "3 weeks/session",
@@ -1058,8 +1083,8 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://outreach.engineering.columbia.edu/shape/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-27",
@@ -1068,9 +1093,10 @@
       "category": "stem-engineering",
       "secondaryTags": [],
       "gradeDisplay": "Rising 10-12",
-      "gradeCompletedMin": 9,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective, rolling",
       "formatDisplay": "Residential",
@@ -1085,14 +1111,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$4495 per session",
-      "priceMin": 4495,
-      "priceMax": 4495,
+      "priceMin": 4495.0,
+      "priceMax": 4495.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.wpi.edu/academics/pre-collegiate/summer-programs/frontiers",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-28",
@@ -1103,16 +1129,18 @@
         "Biomedical"
       ],
       "gradeDisplay": "HS students with A/B in math & science",
-      "gradeCompletedMin": 8,
+      "gradeCompletedMin": 6,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective",
       "formatDisplay": "Residential/Commuter/Online",
       "formatTags": [
+        "both",
+        "commuter",
         "online",
-        "residential",
-        "both"
+        "residential"
       ],
       "durationBucket": "two_to_four_weeks",
       "lengthDisplay": "~4 weeks",
@@ -1122,14 +1150,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (3 JHU credits)",
       "priceDisplay": "Tuition $3800 + residential fees $5850-$6100",
-      "priceMin": 3800,
-      "priceMax": 6100,
+      "priceMin": 3800.0,
+      "priceMax": 6100.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://ei.jhu.edu/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-29",
@@ -1139,14 +1167,15 @@
       "secondaryTags": [],
       "trackDetail": "3-week course",
       "gradeDisplay": "Completed 9th-11th grade",
-      "gradeCompletedMin": 9,
-      "gradeCompletedMax": 11,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective",
       "formatDisplay": "Commuter",
       "formatTags": [
-        "residential"
+        "commuter"
       ],
       "durationBucket": "two_to_four_weeks",
       "lengthDisplay": "3 weeks",
@@ -1156,14 +1185,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$3150",
-      "priceMin": 3150,
-      "priceMax": 3150,
+      "priceMin": 3150.0,
+      "priceMax": 3150.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://cooper.edu/engineering/stem/summer",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-30",
@@ -1173,14 +1202,15 @@
       "secondaryTags": [],
       "trackDetail": "6-week course",
       "gradeDisplay": "Completed 9th-11th grade",
-      "gradeCompletedMin": 9,
-      "gradeCompletedMax": 11,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective",
       "formatDisplay": "Commuter",
       "formatTags": [
-        "residential"
+        "commuter"
       ],
       "durationBucket": "four_plus_weeks",
       "lengthDisplay": "6 weeks",
@@ -1190,14 +1220,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$5150",
-      "priceMin": 5150,
-      "priceMax": 5150,
+      "priceMin": 5150.0,
+      "priceMax": 5150.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://cooper.edu/engineering/stem/summer",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-31",
@@ -1208,9 +1238,10 @@
         "Biomedical"
       ],
       "gradeDisplay": "Rising Jr/Sr (16+ by start)",
-      "gradeCompletedMin": 15,
-      "gradeCompletedMax": 15,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly selective (~40 students)",
       "formatDisplay": "Residential",
@@ -1225,14 +1256,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (5 units Group Study credit)",
       "priceDisplay": "~$6500 (need-based reductions up to 90%)",
-      "priceMin": 90,
-      "priceMax": 6500,
+      "priceMin": 90.0,
+      "priceMax": 6500.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://education.ucdavis.edu/young-scholars-program",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-32",
@@ -1244,16 +1275,18 @@
       ],
       "trackDetail": "General courses",
       "gradeDisplay": "Rising 9-12",
-      "gradeCompletedMin": 8,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Rolling/selective",
       "formatDisplay": "Residential/Commuter/Online",
       "formatTags": [
+        "both",
+        "commuter",
         "online",
-        "residential",
-        "both"
+        "residential"
       ],
       "durationBucket": "four_plus_weeks",
       "lengthDisplay": "1-6 weeks",
@@ -1263,14 +1296,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "Course Performance Report (not formal credit)",
       "priceDisplay": "$3748 (1-wk res) to $10858 (5-wk hybrid res); online from $3364",
-      "priceMin": 1,
-      "priceMax": 10858,
+      "priceMin": 1.0,
+      "priceMax": 10858.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.brown.edu/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-33",
@@ -1279,13 +1312,15 @@
       "category": "college-credit-pre-college",
       "secondaryTags": [],
       "gradeDisplay": "Rising 9-12 (some 6-11)",
-      "gradeCompletedMin": 5,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Rolling/selective",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "two_to_four_weeks",
@@ -1296,14 +1331,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No (non-credit enrichment)",
       "priceDisplay": "Residential ~$4700-4900; Commuter ~$3200; Online ~$795-2100",
-      "priceMin": 795,
-      "priceMax": 4900,
+      "priceMin": 795.0,
+      "priceMax": 4900.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://learnmore.duke.edu/precollege/all-programs",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-34",
@@ -1317,6 +1352,7 @@
       "gradeCompletedMin": 9,
       "gradeCompletedMax": 11,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential",
@@ -1331,14 +1367,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "~$3720",
-      "priceMin": 3720,
-      "priceMax": 3720,
+      "priceMin": 3720.0,
+      "priceMax": 3720.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://learnmore.duke.edu/precollege/duke-university-marine-lab",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-35",
@@ -1350,7 +1386,8 @@
       "gradeCompletedMin": 9,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
-      "admissionType": "application",
+      "stateRestriction": null,
+      "admissionType": "first_come",
       "admissionDisplay": "Rolling application",
       "formatDisplay": "Varies",
       "formatTags": [
@@ -1370,7 +1407,6 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://immersion.summer.wfu.edu/",
-      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "wake-forest-deposit",
@@ -1381,7 +1417,8 @@
           "sourceDate": "2026-01-01",
           "severity": "warning"
         }
-      ]
+      ],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-36",
@@ -1396,10 +1433,12 @@
       "gradeCompletedMin": 10,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "four_plus_weeks",
@@ -1410,14 +1449,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (Georgetown credit)",
       "priceDisplay": "Avg tuition $7113 + housing $2542 + fees $780",
-      "priceMin": 780,
-      "priceMax": 7113,
+      "priceMin": 780.0,
+      "priceMax": 7113.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.georgetown.edu/pre-college-programs/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-37",
@@ -1432,6 +1471,7 @@
       "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Moderate selectivity",
       "formatDisplay": "Residential",
@@ -1446,14 +1486,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "Varies",
       "priceDisplay": "$4500-$5500 incl. flights",
-      "priceMin": 4500,
-      "priceMax": 5500,
+      "priceMin": 4500.0,
+      "priceMax": 5500.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.georgetown.edu/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-38",
@@ -1463,9 +1503,10 @@
       "secondaryTags": [],
       "trackDetail": "Tufts College Experience",
       "gradeDisplay": "Rising 10-12",
-      "gradeCompletedMin": 9,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application (opens Dec 1)",
       "formatDisplay": "Residential",
@@ -1486,8 +1527,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://universitycollege.tufts.edu/pre-college/browse/tufts-college-experience",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-39",
@@ -1500,6 +1541,7 @@
       "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling",
       "formatDisplay": "Varies",
@@ -1520,8 +1562,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://universitycollege.tufts.edu/pre-college/academics/summer-hallmark-courses",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-40",
@@ -1531,9 +1573,10 @@
       "secondaryTags": [],
       "trackDetail": "High School Honors Program",
       "gradeDisplay": "High school (rising Jr/Sr typical)",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 10,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective (May deadline)",
       "formatDisplay": "Residential",
@@ -1554,8 +1597,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bu.edu/summer/high-school-programs/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-41",
@@ -1568,6 +1611,7 @@
       "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling",
       "formatDisplay": "Residential",
@@ -1588,8 +1632,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bu.edu/summer/high-school-programs/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-42",
@@ -1602,6 +1646,7 @@
       "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling",
       "formatDisplay": "Residential",
@@ -1622,8 +1667,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bu.edu/summer/high-school-programs/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-43",
@@ -1636,6 +1681,7 @@
       "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling",
       "formatDisplay": "Residential",
@@ -1650,14 +1696,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (3 credits)",
       "priceDisplay": "$3700",
-      "priceMin": 3700,
-      "priceMax": 3700,
+      "priceMin": 3700.0,
+      "priceMax": 3700.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.marist.edu/admission/summer-pre-college",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-44",
@@ -1670,6 +1716,7 @@
       "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling",
       "formatDisplay": "Residential",
@@ -1684,14 +1731,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (6 credits)",
       "priceDisplay": "$6660",
-      "priceMin": 6660,
-      "priceMax": 6660,
+      "priceMin": 6660.0,
+      "priceMax": 6660.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.marist.edu/admission/summer-pre-college",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-45",
@@ -1705,13 +1752,15 @@
       "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
-      "durationBucket": "two_to_four_weeks",
+      "durationBucket": "under_2_weeks",
       "lengthDisplay": "4+ weeks",
       "datesDisplay": "Jun 26 - Jul 24",
       "locationDisplay": "Santa Barbara, CA",
@@ -1719,14 +1768,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (4 university credits)",
       "priceDisplay": "Residential ~$8774-11250; Commuter ~$2775",
-      "priceMin": 2775,
-      "priceMax": 11250,
+      "priceMin": 2775.0,
+      "priceMax": 11250.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.summer.ucsb.edu/programs/pre-college",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-46",
@@ -1736,13 +1785,15 @@
       "secondaryTags": [],
       "trackDetail": "Juniper Institute for Young Writers",
       "gradeDisplay": "Rising 10-12",
-      "gradeCompletedMin": 9,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application (deadline Mar 16)",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "two_to_four_weeks",
@@ -1753,14 +1804,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "Residential $5200; Commuter $2330",
-      "priceMin": 2330,
-      "priceMax": 5200,
+      "priceMin": 2330.0,
+      "priceMax": 5200.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.umass.edu/juniper-young-writers/programs/summer-umass",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-47",
@@ -1770,9 +1821,10 @@
       "secondaryTags": [],
       "trackDetail": "General academic intensives",
       "gradeDisplay": "Rising 10-12",
-      "gradeCompletedMin": 9,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling",
       "formatDisplay": "Varies",
@@ -1793,8 +1845,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.umass.edu/uww/pre-college/programs",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-48",
@@ -1807,13 +1859,14 @@
       "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling, open enrollment",
       "formatDisplay": "Online",
       "formatTags": [
         "online"
       ],
-      "durationBucket": "two_to_four_weeks",
+      "durationBucket": "under_2_weeks",
       "lengthDisplay": "Self-paced",
       "datesDisplay": "Available anytime",
       "locationDisplay": "Online",
@@ -1827,8 +1880,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://case.precollegeprograms.org/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-49",
@@ -1839,9 +1892,10 @@
         "Leadership/Gifted"
       ],
       "gradeDisplay": "Rising Jr/Sr (16+ by Jun 20; not 19 by Jul 31)",
-      "gradeCompletedMin": 15,
-      "gradeCompletedMax": 30,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective (priority Jan 7; regular Feb 11)",
       "formatDisplay": "Residential",
@@ -1856,14 +1910,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No (non-credit)",
       "priceDisplay": "$6100 + $75 application fee",
-      "priceMin": 75,
-      "priceMax": 6100,
+      "priceMin": 75.0,
+      "priceMax": 6100.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.harvard.edu/high-school-programs/pre-college-program/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-50",
@@ -1875,16 +1929,17 @@
       ],
       "trackDetail": "4-week or 7-week",
       "gradeDisplay": "Rising Jr/Sr",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 10,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application (transcripts, counselor)",
       "formatDisplay": "Residential/Online",
       "formatTags": [
+        "both",
         "online",
-        "residential",
-        "both"
+        "residential"
       ],
       "durationBucket": "four_plus_weeks",
       "lengthDisplay": "4 or 7 weeks",
@@ -1894,13 +1949,12 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (4 or 8 college credits)",
       "priceDisplay": "4-Wk Res $9100; 7-Wk Res $15735; Online $4180-$8160",
-      "priceMin": 4,
-      "priceMax": 15735,
+      "priceMin": 4.0,
+      "priceMax": 15735.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.harvard.edu/high-school-programs/secondary-school-program/",
-      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "harvard-ssp-sevp",
@@ -1914,13 +1968,14 @@
         {
           "id": "harvard-ssp-crime",
           "type": "safety",
-          "title": "55% campus crime rate increase (2022–2023)",
+          "title": "55% campus crime rate increase (2022\u20132023)",
           "body": "Harvard reported a 55% increase in campus crime between 2022 and 2023. Review the university's Annual Security Report when evaluating a residential summer enrollment.",
           "sourceCitation": "Harvard University Annual Security Report (Clery Act)",
           "sourceDate": "2024-01-01",
           "severity": "warning"
         }
-      ]
+      ],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-51",
@@ -1929,9 +1984,10 @@
       "category": "college-credit-pre-college",
       "secondaryTags": [],
       "gradeDisplay": "Entering 11-12",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 11,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential",
@@ -1946,14 +2002,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (college credit)",
       "priceDisplay": "~$11000-$15000",
-      "priceMin": 11000,
-      "priceMax": 15000,
+      "priceMin": 11000.0,
+      "priceMax": 15000.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://hs.sas.upenn.edu/summer-programs/pre-college-program",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-52",
@@ -1962,16 +2018,17 @@
       "category": "college-credit-pre-college",
       "secondaryTags": [],
       "gradeDisplay": "Entering 11-12",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 11,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective application",
       "formatDisplay": "Residential/Online",
       "formatTags": [
+        "both",
         "online",
-        "residential",
-        "both"
+        "residential"
       ],
       "durationBucket": "four_plus_weeks",
       "lengthDisplay": "3-6 weeks",
@@ -1981,14 +2038,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (UChicago credit)",
       "priceDisplay": "~$4500-$12000",
-      "priceMin": 4500,
-      "priceMax": 12000,
+      "priceMin": 4500.0,
+      "priceMax": 12000.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.uchicago.edu/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-53",
@@ -1997,13 +2054,15 @@
       "category": "college-credit-pre-college",
       "secondaryTags": [],
       "gradeDisplay": "Entering 11-12",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 11,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "four_plus_weeks",
@@ -2014,14 +2073,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (NYU credit)",
       "priceDisplay": "~$700-$16000 (charged by credit)",
-      "priceMin": 700,
-      "priceMax": 16000,
+      "priceMin": 700.0,
+      "priceMax": 16000.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.nyu.edu/admissions/high-school-and-middle-school-programs/high-school-programs/nyu-precollege/explore-precollege.html",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-54",
@@ -2030,13 +2089,15 @@
       "category": "college-credit-pre-college",
       "secondaryTags": [],
       "gradeDisplay": "Entering 11-12",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 11,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "four_plus_weeks",
@@ -2053,8 +2114,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.berkeley.edu/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-55",
@@ -2066,6 +2127,7 @@
       "gradeCompletedMin": 9,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective application",
       "formatDisplay": "Residential",
@@ -2080,14 +2142,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes",
       "priceDisplay": "~$10000",
-      "priceMin": 10000,
-      "priceMax": 10000,
+      "priceMin": 10000.0,
+      "priceMax": 10000.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.usc.edu/summer-programs/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-56",
@@ -2101,13 +2163,14 @@
       "gradeCompletedMin": 9,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Application, rolling",
       "formatDisplay": "Residential/Online",
       "formatTags": [
+        "both",
         "online",
-        "residential",
-        "both"
+        "residential"
       ],
       "durationBucket": "two_to_four_weeks",
       "lengthDisplay": "1-4 weeks",
@@ -2123,8 +2186,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://admissions.rochester.edu/pre-college/programs/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-57",
@@ -2133,9 +2196,10 @@
       "category": "college-credit-pre-college",
       "secondaryTags": [],
       "gradeDisplay": "Entering 11-12",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 11,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential",
@@ -2150,14 +2214,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (Barnard credit)",
       "priceDisplay": "~$9500",
-      "priceMin": 9500,
-      "priceMax": 9500,
+      "priceMin": 9500.0,
+      "priceMax": 9500.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.barnard.edu/prebaccalaureate",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-58",
@@ -2167,9 +2231,10 @@
       "secondaryTags": [],
       "trackDetail": "Residential",
       "gradeDisplay": "Rising Jr/Sr (ages 15-17)",
-      "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 11,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective application (deadline Jun 1, US residents)",
       "formatDisplay": "Residential",
@@ -2184,14 +2249,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No (non-credit)",
       "priceDisplay": "$2375/wk; 2-wk $4250; 3-wk $6125; 4-wk $8000 (multi-week discounts applied)",
-      "priceMin": 2,
-      "priceMax": 8000,
+      "priceMin": 2.0,
+      "priceMax": 8000.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/index.php",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-59",
@@ -2201,14 +2266,15 @@
       "secondaryTags": [],
       "trackDetail": "Commuter - Extended Day",
       "gradeDisplay": "Rising Jr/Sr (ages 15-17)",
-      "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 11,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective application (deadline Jun 1, US residents)",
       "formatDisplay": "Commuter",
       "formatTags": [
-        "residential"
+        "commuter"
       ],
       "durationBucket": "two_to_four_weeks",
       "lengthDisplay": "1-4 weeks (course-dependent)",
@@ -2218,14 +2284,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No (non-credit)",
       "priceDisplay": "$1250/week (incl. breakfast/lunch/dinner + college readiness programming)",
-      "priceMin": 1250,
-      "priceMax": 1250,
+      "priceMin": 1250.0,
+      "priceMax": 1250.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/commuter-experience.php",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-60",
@@ -2235,14 +2301,15 @@
       "secondaryTags": [],
       "trackDetail": "Commuter - Core Day",
       "gradeDisplay": "Rising Jr/Sr (ages 15-17)",
-      "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 11,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective application (deadline Jun 1, US residents)",
       "formatDisplay": "Commuter",
       "formatTags": [
-        "residential"
+        "commuter"
       ],
       "durationBucket": "two_to_four_weeks",
       "lengthDisplay": "1-4 weeks (course-dependent)",
@@ -2252,14 +2319,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No (non-credit)",
       "priceDisplay": "$1000/week (incl. breakfast/lunch)",
-      "priceMin": 1000,
-      "priceMax": 1000,
+      "priceMin": 1000.0,
+      "priceMax": 1000.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/commuter-experience.php",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-61",
@@ -2271,13 +2338,15 @@
       ],
       "trackDetail": "Biotechnology & Cancer Biology courses",
       "gradeDisplay": "Rising Jr/Sr (ages 15-17)",
-      "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 11,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective application",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "two_to_four_weeks",
@@ -2294,8 +2363,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/biotechnology.php",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-62",
@@ -2307,13 +2376,15 @@
       ],
       "trackDetail": "Robotics Engineering & Robotics with AI",
       "gradeDisplay": "Rising Jr/Sr (ages 15-17)",
-      "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 11,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective application",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "two_to_four_weeks",
@@ -2330,8 +2401,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/robotics-engineering.php",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-63",
@@ -2341,13 +2412,15 @@
       "secondaryTags": [],
       "trackDetail": "Health Professions, Dental Sciences, How Medicines Are Really Made",
       "gradeDisplay": "Rising Jr/Sr (ages 15-17)",
-      "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 11,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective application",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "two_to_four_weeks",
@@ -2364,8 +2437,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/health-professions.php",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-64",
@@ -2375,13 +2448,15 @@
       "secondaryTags": [],
       "trackDetail": "Creative Problem Solving for Math Competitions, Exploring Mathematics",
       "gradeDisplay": "Rising Jr/Sr (ages 15-17)",
-      "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 11,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective application",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "two_to_four_weeks",
@@ -2398,8 +2473,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/creative-problem-solving-for-competitions.php",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-65",
@@ -2409,13 +2484,15 @@
       "secondaryTags": [],
       "trackDetail": "Personal Branding Lab, Science Communication, Pre-Law",
       "gradeDisplay": "Rising Jr/Sr (ages 15-17)",
-      "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 11,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective application",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "two_to_four_weeks",
@@ -2432,8 +2509,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/pre-law.php",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-66",
@@ -2443,13 +2520,15 @@
       "secondaryTags": [],
       "trackDetail": "Environmental Science in the Worm Lab, Protecting Our Planet, Sustainability in Action",
       "gradeDisplay": "Rising Jr/Sr (ages 15-17)",
-      "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 11,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective application",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "two_to_four_weeks",
@@ -2466,8 +2545,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/environmental-science-in-the-worm-lab.php",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-67",
@@ -2479,9 +2558,10 @@
       ],
       "trackDetail": "Field / Ecology",
       "gradeDisplay": "Ages 14-18",
-      "gradeCompletedMin": 5,
+      "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential",
@@ -2496,14 +2576,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "Field $7400; Ecology $4900",
-      "priceMin": 4900,
-      "priceMax": 7400,
+      "priceMin": 4900.0,
+      "priceMax": 7400.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://salishseasciences.org/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-68",
@@ -2515,9 +2595,10 @@
       ],
       "trackDetail": "Oceanography / Shark Biology",
       "gradeDisplay": "Rising 11-12",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential",
@@ -2532,14 +2613,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (3 college credits)",
       "priceDisplay": "~$1100 in-state; ~$3300 out-of-state",
-      "priceMin": 1100,
-      "priceMax": 3300,
+      "priceMin": 1100.0,
+      "priceMax": 3300.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/southampton/somas_info.php",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-69",
@@ -2551,6 +2632,7 @@
       "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential",
@@ -2571,8 +2653,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://cpe.ucdavis.edu/course/uc-davis-pre-college-program-coastal-marine-science",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-70",
@@ -2586,6 +2668,7 @@
       "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential",
@@ -2600,14 +2683,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (some HS/college credit)",
       "priceDisplay": "~$5000-$6500",
-      "priceMin": 5000,
-      "priceMax": 6500,
+      "priceMin": 5000.0,
+      "priceMax": 6500.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://sea.edu/programs/finder/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-71",
@@ -2619,6 +2702,7 @@
       "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential",
@@ -2633,14 +2717,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "~$1800-$2500",
-      "priceMin": 1800,
-      "priceMax": 2500,
+      "priceMin": 1800.0,
+      "priceMax": 2500.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://seaturtlecamp.com/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-72",
@@ -2651,9 +2735,10 @@
         "Cultural Exchange"
       ],
       "gradeDisplay": "Rising Soph/Jr/Sr",
-      "gradeCompletedMin": 9,
-      "gradeCompletedMax": 9,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly competitive",
       "formatDisplay": "Residential",
@@ -2668,14 +2753,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes",
       "priceDisplay": "~$15000 (scholarships available)",
-      "priceMin": 15000,
-      "priceMax": 15000,
+      "priceMin": 15000.0,
+      "priceMax": 15000.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://islandschool.org/high-school-semester-summer-term/summer-program/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-73",
@@ -2687,13 +2772,14 @@
       ],
       "gradeDisplay": "Ages 8-16",
       "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMax": 10,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "First-come",
       "formatDisplay": "Day",
       "formatTags": [
-        "residential"
+        "commuter"
       ],
       "durationBucket": "under_2_weeks",
       "lengthDisplay": "1 week",
@@ -2703,14 +2789,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "~$850",
-      "priceMin": 850,
-      "priceMax": 850,
+      "priceMin": 850.0,
+      "priceMax": 850.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sunsetbaywharf.com/home",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-74",
@@ -2724,6 +2810,7 @@
       "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "First-come",
       "formatDisplay": "Residential",
@@ -2738,14 +2825,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "~$450",
-      "priceMin": 450,
-      "priceMax": 450,
+      "priceMin": 450.0,
+      "priceMax": 450.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.field-studies-council.org/courses-and-experiences/static-courses/marine-science-camp/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-75",
@@ -2756,9 +2843,10 @@
         "Outdoor/Wilderness"
       ],
       "gradeDisplay": "Ages 15-18",
-      "gradeCompletedMin": 5,
+      "gradeCompletedMin": 9,
       "gradeCompletedMax": 12,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential",
@@ -2773,14 +2861,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "~$4000-$5500",
-      "priceMin": 4000,
-      "priceMax": 5500,
+      "priceMin": 4000.0,
+      "priceMax": 5500.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://earthwatch.org/teen-expeditions",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-76",
@@ -2794,6 +2882,7 @@
       "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential",
@@ -2814,8 +2903,8 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://copperriver.org/programs/watershed-education/copper-river-stewardship-program/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-77",
@@ -2829,6 +2918,7 @@
       "gradeCompletedMin": 5,
       "gradeCompletedMax": 12,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential (liveaboard)",
@@ -2843,14 +2933,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (HS credit available)",
       "priceDisplay": "$6970-$7970",
-      "priceMin": 6970,
-      "priceMax": 7970,
+      "priceMin": 6970.0,
+      "priceMax": 7970.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.actionquest.com",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-78",
@@ -2860,9 +2950,10 @@
       "secondaryTags": [],
       "trackDetail": "Residential Marine Science Class",
       "gradeDisplay": "Rising 9-12",
-      "gradeCompletedMin": 8,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application (opens Jan 5)",
       "formatDisplay": "Residential",
@@ -2877,14 +2968,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$3000",
-      "priceMin": 3000,
-      "priceMax": 3000,
+      "priceMin": 3000.0,
+      "priceMax": 3000.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.disl.edu/dhp/summer-camps/marine-science-class/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-79",
@@ -2894,14 +2985,15 @@
       "secondaryTags": [],
       "trackDetail": "Coastal Fisheries Camp",
       "gradeDisplay": "Rising 10-12",
-      "gradeCompletedMin": 9,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Day",
       "formatTags": [
-        "residential"
+        "commuter"
       ],
       "durationBucket": "under_2_weeks",
       "lengthDisplay": "5 days",
@@ -2911,14 +3003,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$950",
-      "priceMin": 950,
-      "priceMax": 950,
+      "priceMin": 950.0,
+      "priceMax": 950.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.disl.edu/dhp/summer-camps/coastal-fisheries/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-80",
@@ -2930,8 +3022,9 @@
       ],
       "gradeDisplay": "Middle school - college age",
       "gradeCompletedMin": 6,
-      "gradeCompletedMax": 8,
-      "gradeSource": "grade",
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential (liveaboard)",
@@ -2946,14 +3039,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No (optional ASA sailing certification)",
       "priceDisplay": "$7290",
-      "priceMin": 7290,
-      "priceMax": 7290,
+      "priceMin": 7290.0,
+      "priceMax": 7290.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.seatrekbvi.com/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-81",
@@ -2966,6 +3059,7 @@
       "gradeCompletedMin": 6,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "First-come",
       "formatDisplay": "Residential",
@@ -2980,14 +3074,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "Varies by session (~$1850/wk adult reference)",
-      "priceMin": 1850,
-      "priceMax": 1850,
+      "priceMin": 1850.0,
+      "priceMax": 1850.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://whalecamp.com/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-82",
@@ -2997,9 +3091,10 @@
       "secondaryTags": [],
       "trackDetail": "Advanced Marine Science (w/ college credit)",
       "gradeDisplay": "Rising 10-12 (ages 15-18)",
-      "gradeCompletedMin": 5,
+      "gradeCompletedMin": 9,
       "gradeCompletedMax": 12,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application + teacher recommendation",
       "formatDisplay": "Residential",
@@ -3014,14 +3109,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (4 credits via U. Maine; extra fee)",
       "priceDisplay": "$3300+ (credit fee additional ~$600)",
-      "priceMin": 600,
-      "priceMax": 3300,
+      "priceMin": 600.0,
+      "priceMax": 3300.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://acadiainstitute.com/advanced-marine-science-camp-program/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-83",
@@ -3036,6 +3131,7 @@
       "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential",
@@ -3056,8 +3152,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.dcie.miami.edu/summer-programs/academies/credit/index.html",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-84",
@@ -3069,13 +3165,14 @@
       ],
       "gradeDisplay": "Ages 10-17",
       "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMax": 11,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "First-come",
       "formatDisplay": "Day",
       "formatTags": [
-        "residential"
+        "commuter"
       ],
       "durationBucket": "two_to_four_weeks",
       "lengthDisplay": "1-2 weeks",
@@ -3091,8 +3188,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.spinnakersailing.com/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-85",
@@ -3107,13 +3204,14 @@
       "gradeCompletedMin": 5,
       "gradeCompletedMax": 12,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling",
       "formatDisplay": "Residential/Online",
       "formatTags": [
+        "both",
         "online",
-        "residential",
-        "both"
+        "residential"
       ],
       "durationBucket": "two_to_four_weeks",
       "lengthDisplay": "2 weeks",
@@ -3123,14 +3221,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "In-person $1590-1790; Online $570",
-      "priceMin": 570,
-      "priceMax": 1790,
+      "priceMin": 570.0,
+      "priceMax": 1790.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.rosettainstitute.org/biomedical-summer-camps/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-86",
@@ -3139,9 +3237,10 @@
       "category": "biomedical",
       "secondaryTags": [],
       "gradeDisplay": "Entering 11-12",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 11,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective (deadline Feb 26)",
       "formatDisplay": "Residential",
@@ -3156,14 +3255,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$11255",
-      "priceMin": 11255,
-      "priceMax": 11255,
+      "priceMin": 11255.0,
+      "priceMax": 11255.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.boldsummers.com/summer-programs/penn-medicine-summer-program/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-87",
@@ -3173,13 +3272,14 @@
       "secondaryTags": [],
       "gradeDisplay": "Ages 11-13",
       "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMax": 7,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling waitlist",
       "formatDisplay": "Day",
       "formatTags": [
-        "residential"
+        "commuter"
       ],
       "durationBucket": "under_2_weeks",
       "lengthDisplay": "5 days",
@@ -3189,14 +3289,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$530",
-      "priceMin": 530,
-      "priceMax": 530,
+      "priceMin": 530.0,
+      "priceMax": 530.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.georgiacenter.uga.edu/youth/summer-academy/mini-medical-school-b",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-88",
@@ -3210,11 +3310,12 @@
       "gradeCompletedMin": 4,
       "gradeCompletedMax": 8,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective",
       "formatDisplay": "Day",
       "formatTags": [
-        "residential"
+        "commuter"
       ],
       "durationBucket": "two_to_four_weeks",
       "lengthDisplay": "4 weeks",
@@ -3224,14 +3325,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$850",
-      "priceMin": 850,
-      "priceMax": 850,
+      "priceMin": 850.0,
+      "priceMax": 850.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.msm.edu/Prospective_Students/admissions/PipelinePrograms/BenCarson.php",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-89",
@@ -3242,9 +3343,10 @@
         "Leadership/Gifted"
       ],
       "gradeDisplay": "Rising 9-12",
-      "gradeCompletedMin": 8,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential",
@@ -3259,14 +3361,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "~$2200",
-      "priceMin": 2200,
-      "priceMax": 2200,
+      "priceMin": 2200.0,
+      "priceMax": 2200.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bostonleadershipinstitute.com/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-90",
@@ -3275,9 +3377,10 @@
       "category": "biomedical",
       "secondaryTags": [],
       "gradeDisplay": "Entering 10-12 or recent grad",
-      "gradeCompletedMin": 9,
-      "gradeCompletedMax": 11,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling (Feb 23-May 18 window)",
       "formatDisplay": "Online",
@@ -3292,14 +3395,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$2200",
-      "priceMin": 2200,
-      "priceMax": 2200,
+      "priceMin": 2200.0,
+      "priceMax": 2200.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://hiprc.org/training/high-school/insight-hs/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-91",
@@ -3311,9 +3414,10 @@
       ],
       "trackDetail": "Entomology component",
       "gradeDisplay": "Rising Jr/Sr",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 10,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential",
@@ -3328,14 +3432,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$500 (incl. $50 application fee)",
-      "priceMin": 50,
-      "priceMax": 500,
+      "priceMin": 50.0,
+      "priceMax": 500.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://entomology.ca.uky.edu/content/entomology-leadership-program",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-92",
@@ -3344,9 +3448,10 @@
       "category": "mathematics",
       "secondaryTags": [],
       "gradeDisplay": "Ages 12-18",
-      "gradeCompletedMin": 5,
+      "gradeCompletedMin": 6,
       "gradeCompletedMax": 12,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective admission test",
       "formatDisplay": "Online",
@@ -3361,14 +3466,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$1275 (early) to $1575 (late)",
-      "priceMin": 1275,
-      "priceMax": 1575,
+      "priceMin": 1275.0,
+      "priceMax": 1575.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.awesomemath.org/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-93",
@@ -3378,8 +3483,9 @@
       "secondaryTags": [],
       "gradeDisplay": "Ages 11-14",
       "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMax": 8,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly selective (admission test)",
       "formatDisplay": "Residential",
@@ -3394,14 +3500,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$6600",
-      "priceMin": 6600,
-      "priceMax": 6600,
+      "priceMin": 6600.0,
+      "priceMax": 6600.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "http://www.mathpath.org/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-94",
@@ -3410,9 +3516,10 @@
       "category": "mathematics",
       "secondaryTags": [],
       "gradeDisplay": "Ages 14-18",
-      "gradeCompletedMin": 5,
+      "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly competitive (apps close March)",
       "formatDisplay": "Residential",
@@ -3427,14 +3534,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "Up to $8000",
-      "priceMin": 8000,
-      "priceMax": 8000,
+      "priceMin": 8000.0,
+      "priceMax": 8000.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://promys.org/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-95",
@@ -3443,9 +3550,10 @@
       "category": "mathematics",
       "secondaryTags": [],
       "gradeDisplay": "Ages 13-18",
-      "gradeCompletedMin": 5,
+      "gradeCompletedMin": 7,
       "gradeCompletedMax": 12,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly selective (admission quiz)",
       "formatDisplay": "Residential",
@@ -3460,14 +3568,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$7500",
-      "priceMin": 7500,
-      "priceMax": 7500,
+      "priceMin": 7500.0,
+      "priceMax": 7500.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.mathcamp.org/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-96",
@@ -3476,16 +3584,17 @@
       "category": "mathematics",
       "secondaryTags": [],
       "gradeDisplay": "Rising 11-12",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly selective",
       "formatDisplay": "Residential/Online",
       "formatTags": [
+        "both",
         "online",
-        "residential",
-        "both"
+        "residential"
       ],
       "durationBucket": "two_to_four_weeks",
       "lengthDisplay": "3-4 weeks",
@@ -3495,14 +3604,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "Residential $8250; Online $3550",
-      "priceMin": 3550,
-      "priceMax": 8250,
+      "priceMin": 3550.0,
+      "priceMax": 8250.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://sumac.spcs.stanford.edu/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-97",
@@ -3514,6 +3623,7 @@
       "gradeCompletedMin": 1,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling, open enrollment",
       "formatDisplay": "Online",
@@ -3528,14 +3638,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "Varies; 50% off if registered by 4/30",
-      "priceMin": 4,
-      "priceMax": 50,
+      "priceMin": 4.0,
+      "priceMax": 50.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.imacs.org/program/summer/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-98",
@@ -3549,10 +3659,12 @@
       "gradeCompletedMin": 5,
       "gradeCompletedMax": 12,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Rolling/selective",
       "formatDisplay": "Residential/Day",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "two_to_four_weeks",
@@ -3563,14 +3675,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "Day $2899-3899; Residential $7485-8485",
-      "priceMin": 2899,
-      "priceMax": 8485,
+      "priceMin": 2899.0,
+      "priceMax": 8485.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cybermath.org/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-99",
@@ -3585,13 +3697,14 @@
       "gradeCompletedMin": 4,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling, diagnostic placement",
       "formatDisplay": "Residential/Online",
       "formatTags": [
+        "both",
         "online",
-        "residential",
-        "both"
+        "residential"
       ],
       "durationBucket": "two_to_four_weeks",
       "lengthDisplay": "3 weeks/camp period",
@@ -3601,14 +3714,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$1150 (5-day online) to $3550 (15-day in-person)",
-      "priceMin": 5,
-      "priceMax": 3550,
+      "priceMin": 5.0,
+      "priceMax": 3550.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://alphastar.academy/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-100",
@@ -3617,9 +3730,10 @@
       "category": "writing-humanities",
       "secondaryTags": [],
       "gradeDisplay": "Current 10-12",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 10,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly competitive (deadline Feb 1)",
       "formatDisplay": "Residential",
@@ -3634,14 +3748,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$2500 (+ $10 reading fee)",
-      "priceMin": 10,
-      "priceMax": 2500,
+      "priceMin": 10.0,
+      "priceMax": 2500.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://iyws.program.uiowa.edu/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-101",
@@ -3650,9 +3764,10 @@
       "category": "writing-humanities",
       "secondaryTags": [],
       "gradeDisplay": "Rising 11-12",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly selective (deadline Feb 2)",
       "formatDisplay": "Residential",
@@ -3667,14 +3782,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$8250-$8575",
-      "priceMin": 8250,
-      "priceMax": 8575,
+      "priceMin": 8250.0,
+      "priceMax": 8575.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summerhumanities.stanford.edu/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-102",
@@ -3683,9 +3798,10 @@
       "category": "writing-humanities",
       "secondaryTags": [],
       "gradeDisplay": "Ages 16-18",
-      "gradeCompletedMin": 5,
+      "gradeCompletedMin": 10,
       "gradeCompletedMax": 12,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly selective (deadline Mar 1)",
       "formatDisplay": "Residential",
@@ -3700,14 +3816,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$2575",
-      "priceMin": 2575,
-      "priceMax": 2575,
+      "priceMin": 2575.0,
+      "priceMax": 2575.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://kenyonreview.org/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-103",
@@ -3718,16 +3834,17 @@
         "Leadership/Gifted"
       ],
       "gradeDisplay": "HS Juniors",
-      "gradeCompletedMin": 8,
+      "gradeCompletedMin": 6,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly competitive (socioeconomic criteria)",
       "formatDisplay": "Residential/Online",
       "formatTags": [
+        "both",
         "online",
-        "residential",
-        "both"
+        "residential"
       ],
       "durationBucket": "under_2_weeks",
       "lengthDisplay": "10 days",
@@ -3743,8 +3860,8 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://psjp.princeton.edu/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-104",
@@ -3755,9 +3872,10 @@
         "Leadership/Gifted"
       ],
       "gradeDisplay": "Rising Jr/Sr",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 10,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly selective (deadline Jan 21)",
       "formatDisplay": "Residential",
@@ -3778,8 +3896,8 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.tellurideassociation.org/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-105",
@@ -3790,9 +3908,10 @@
         "STEM/Engineering"
       ],
       "gradeDisplay": "Entering 9-12",
-      "gradeCompletedMin": 8,
-      "gradeCompletedMax": 11,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Competitive (teacher rec, 3.0+ GPA)",
       "formatDisplay": "Online",
@@ -3807,14 +3926,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$550/week (plus $25 deposit)",
-      "priceMin": 25,
-      "priceMax": 550,
+      "priceMin": 25.0,
+      "priceMax": 550.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://linguistics.osu.edu/undergrad/sliys",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-106",
@@ -3824,8 +3943,9 @@
       "secondaryTags": [],
       "gradeDisplay": "Grades 1-9 (ages 7-15)",
       "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMax": 9,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "First-come (inquire early)",
       "formatDisplay": "Residential",
@@ -3840,14 +3960,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$17800",
-      "priceMin": 17800,
-      "priceMax": 17800,
+      "priceMin": 17800.0,
+      "priceMax": 17800.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.camplaurel.com/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-107",
@@ -3861,6 +3981,7 @@
       "gradeCompletedMin": 3,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Competitive audition",
       "formatDisplay": "Residential",
@@ -3875,13 +3996,12 @@
       "hasCollegeCredit": false,
       "creditDisplay": "Some (online certs)",
       "priceDisplay": "$2050-$10350",
-      "priceMin": 2050,
-      "priceMax": 10350,
+      "priceMin": 2050.0,
+      "priceMax": 10350.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.interlochen.org/",
-      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "interlochen-safety-history",
@@ -3892,7 +4012,8 @@
           "sourceDate": "2024-01-01",
           "severity": "warning"
         }
-      ]
+      ],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-108",
@@ -3906,6 +4027,7 @@
       "gradeCompletedMin": 4,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential",
@@ -3920,14 +4042,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "Starts at ~$4045",
-      "priceMin": 4045,
-      "priceMax": 4045,
+      "priceMin": 4045.0,
+      "priceMax": 4045.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://explo.org/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-109",
@@ -3937,8 +4059,9 @@
       "secondaryTags": [],
       "gradeDisplay": "Ages 7-15",
       "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMax": 9,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "First-come",
       "formatDisplay": "Residential",
@@ -3953,14 +4076,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "Starts at $2945",
-      "priceMin": 2945,
-      "priceMax": 2945,
+      "priceMin": 2945.0,
+      "priceMax": 2945.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://bccymca.org/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-110",
@@ -3972,8 +4095,9 @@
       ],
       "gradeDisplay": "Ages 7-17",
       "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMax": 11,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "First-come",
       "formatDisplay": "Residential",
@@ -3988,14 +4112,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "Starts at $4850",
-      "priceMin": 4850,
-      "priceMax": 4850,
+      "priceMin": 4850.0,
+      "priceMax": 4850.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.adirondackcamp.com/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-111",
@@ -4006,9 +4130,10 @@
         "Leadership/Gifted"
       ],
       "gradeDisplay": "Ages 12-17",
-      "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 11,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "First-come",
       "formatDisplay": "Residential (Expedition/Overnight)",
@@ -4023,14 +4148,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (0.5-1.5 HS credits or college credit)",
       "priceDisplay": "$5350-$8490",
-      "priceMin": 5350,
-      "priceMax": 8490,
+      "priceMin": 5350.0,
+      "priceMax": 8490.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.nols.edu/teen-expeditions/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-112",
@@ -4041,9 +4166,10 @@
         "Leadership/Gifted"
       ],
       "gradeDisplay": "Ages 12-18",
-      "gradeCompletedMin": 5,
+      "gradeCompletedMin": 6,
       "gradeCompletedMax": 12,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "First-come",
       "formatDisplay": "Residential (Expedition/Overnight)",
@@ -4058,24 +4184,24 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (college credit via WCU or HS credit)",
       "priceDisplay": "$2900-$7540",
-      "priceMin": 2900,
-      "priceMax": 7540,
+      "priceMin": 2900.0,
+      "priceMax": 7540.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.outwardbound.org/",
-      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "outward-bound-solo",
           "type": "physical",
           "title": "Mandatory solo wilderness camping",
-          "body": "Outward Bound courses require a solo wilderness camping period, typically 24–72 hours, as a core part of the curriculum.",
+          "body": "Outward Bound courses require a solo wilderness camping period, typically 24\u201372 hours, as a core part of the curriculum.",
           "sourceCitation": "Outward Bound USA course structure and participant requirements",
           "sourceDate": "2026-01-01",
           "severity": "warning"
         }
-      ]
+      ],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-113",
@@ -4086,9 +4212,10 @@
         "Cultural Exchange"
       ],
       "gradeDisplay": "Grades 6-12 (ages 13-17)",
-      "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 11,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Collaborative application",
       "formatDisplay": "Residential (Expedition/Overnight)",
@@ -4103,24 +4230,24 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$5695-$8695",
-      "priceMin": 5695,
-      "priceMax": 8695,
+      "priceMin": 5695.0,
+      "priceMax": 8695.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://overlandsummers.com/",
-      "dataVerifiedAt": "2026-07-24",
       "flags": [
         {
           "id": "overland-staff-pay",
           "type": "turnover",
           "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
+          "body": "Overland Summers staff typically earn $2,000\u20133,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
           "sourceCitation": "Seasonal outdoor education compensation reporting",
           "sourceDate": "2025-01-01",
           "severity": "info"
         }
-      ]
+      ],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-114",
@@ -4132,6 +4259,7 @@
       "gradeCompletedMin": 5,
       "gradeCompletedMax": 12,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "First-come",
       "formatDisplay": "Residential (Expedition/Overnight)",
@@ -4146,14 +4274,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$1675-$2085",
-      "priceMin": 1675,
-      "priceMax": 2085,
+      "priceMin": 1675.0,
+      "priceMax": 2085.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://lastingadventures.com/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-115",
@@ -4168,6 +4296,7 @@
       "gradeCompletedMin": 7,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective application",
       "formatDisplay": "Residential (Expedition/Overnight)",
@@ -4182,14 +4311,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$4000-$8000",
-      "priceMin": 4000,
-      "priceMax": 8000,
+      "priceMin": 4000.0,
+      "priceMax": 8000.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.apogeeadventures.com/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-116",
@@ -4200,10 +4329,11 @@
         "Cultural Exchange"
       ],
       "gradeDisplay": "Grades 7-12 (ages 13-18)",
-      "gradeCompletedMin": 5,
+      "gradeCompletedMin": 7,
       "gradeCompletedMax": 12,
       "gradeSource": "age",
-      "admissionType": "application",
+      "stateRestriction": null,
+      "admissionType": "first_come",
       "admissionDisplay": "Rolling application",
       "formatDisplay": "Residential (Expedition/Overnight)",
       "formatTags": [
@@ -4217,14 +4347,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$4488-$5388",
-      "priceMin": 4488,
-      "priceMax": 5388,
+      "priceMin": 4488.0,
+      "priceMax": 5388.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://boldearth.com/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-117",
@@ -4238,6 +4368,7 @@
       "gradeCompletedMin": 6,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential (Expedition/Overnight)",
@@ -4252,14 +4383,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$5695-$10895",
-      "priceMin": 5695,
-      "priceMax": 10895,
+      "priceMin": 5695.0,
+      "priceMax": 10895.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://moondanceadventures.com/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-118",
@@ -4271,6 +4402,7 @@
       "gradeCompletedMin": 5,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "First-come",
       "formatDisplay": "Residential (Expedition/Overnight)",
@@ -4285,14 +4417,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$4995-$8995",
-      "priceMin": 4995,
-      "priceMax": 8995,
+      "priceMin": 4995.0,
+      "priceMax": 8995.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.wildernessadventures.com/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-119",
@@ -4303,9 +4435,10 @@
         "Leadership/Gifted"
       ],
       "gradeDisplay": "Sophomores & Juniors",
-      "gradeCompletedMin": 10,
-      "gradeCompletedMax": 10,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly competitive (apps close Jan)",
       "formatDisplay": "Residential",
@@ -4320,14 +4453,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$7000",
-      "priceMin": 7000,
-      "priceMax": 7000,
+      "priceMin": 7000.0,
+      "priceMax": 7000.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://globalscholars.yale.edu/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-120",
@@ -4338,9 +4471,10 @@
         "Outdoor/Wilderness"
       ],
       "gradeDisplay": "Ages 13-19",
-      "gradeCompletedMin": 5,
+      "gradeCompletedMin": 7,
       "gradeCompletedMax": 12,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application (priority Dec 10)",
       "formatDisplay": "Residential (Homestay)",
@@ -4355,14 +4489,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (via WCU partner)",
       "priceDisplay": "$4575-$6475 (+ airfare)",
-      "priceMin": 4575,
-      "priceMax": 6475,
+      "priceMin": 4575.0,
+      "priceMax": 6475.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://amigosinternational.org/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-121",
@@ -4371,9 +4505,10 @@
       "category": "cultural-exchange",
       "secondaryTags": [],
       "gradeDisplay": "Ages 14-18",
-      "gradeCompletedMin": 5,
+      "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential (Homestay)",
@@ -4388,14 +4523,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No (HS credits available)",
       "priceDisplay": "$5000-$7500",
-      "priceMin": 5000,
-      "priceMax": 7500,
+      "priceMin": 5000.0,
+      "priceMax": 7500.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.ciee.org/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-122",
@@ -4404,9 +4539,10 @@
       "category": "cultural-exchange",
       "secondaryTags": [],
       "gradeDisplay": "Ages 15-18",
-      "gradeCompletedMin": 5,
+      "gradeCompletedMin": 9,
       "gradeCompletedMax": 12,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential (Homestay)",
@@ -4421,14 +4557,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$6000-$9000",
-      "priceMin": 6000,
-      "priceMax": 9000,
+      "priceMin": 6000.0,
+      "priceMax": 9000.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://afs.org/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-123",
@@ -4442,13 +4578,14 @@
       "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly competitive",
       "formatDisplay": "Residential (Homestay)",
       "formatTags": [
         "residential"
       ],
-      "durationBucket": "two_to_four_weeks",
+      "durationBucket": "under_2_weeks",
       "lengthDisplay": "Academic year/summer",
       "datesDisplay": "Aug - Jun",
       "locationDisplay": "Global (SE Asia, Africa)",
@@ -4462,8 +4599,8 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://yes-abroad.org/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-124",
@@ -4472,9 +4609,10 @@
       "category": "cultural-exchange",
       "secondaryTags": [],
       "gradeDisplay": "Ages 15-19",
-      "gradeCompletedMin": 5,
+      "gradeCompletedMin": 9,
       "gradeCompletedMax": 12,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "highly_competitive",
       "admissionDisplay": "Highly selective application",
       "formatDisplay": "Residential (Homestay)",
@@ -4489,14 +4627,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "Free (sponsored)",
-      "priceMin": 0,
-      "priceMax": 0,
-      "priceUnknown": false,
-      "fullyFunded": true,
+      "priceMin": null,
+      "priceMax": null,
+      "priceUnknown": true,
+      "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.rotary.org/en/our-programs/youth-exchanges",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-125",
@@ -4510,6 +4648,7 @@
       "gradeCompletedMin": 9,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential (Travel)",
@@ -4524,14 +4663,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (1 world language credit)",
       "priceDisplay": "$6500-$9000",
-      "priceMin": 6500,
-      "priceMax": 9000,
+      "priceMin": 6500.0,
+      "priceMax": 9000.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.goputney.com/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-126",
@@ -4545,6 +4684,7 @@
       "gradeCompletedMin": 9,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application",
       "formatDisplay": "Residential (Travel)",
@@ -4559,14 +4699,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$5000-$8000",
-      "priceMin": 5000,
-      "priceMax": 8000,
+      "priceMin": 5000.0,
+      "priceMax": 8000.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://arccprograms.com/summer-overview/summer-programs-high-school/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-127",
@@ -4577,12 +4717,14 @@
       "trackDetail": "Day/Half-Day/Full/Homestay",
       "gradeDisplay": "Ages 10-17 (homestay 14-17)",
       "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMax": 11,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "First-come/rolling",
       "formatDisplay": "Day/Homestay (varies)",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "two_to_four_weeks",
@@ -4593,14 +4735,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "From ~3700 RMB/wk to $4545+",
-      "priceMin": 3700,
-      "priceMax": 4545,
+      "priceMin": 3700.0,
+      "priceMax": 4545.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.thatsmandarin.com/chinese-summer-camp/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-128",
@@ -4613,11 +4755,12 @@
       "gradeCompletedMin": 6,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling",
       "formatDisplay": "Day",
       "formatTags": [
-        "residential"
+        "commuter"
       ],
       "durationBucket": "two_to_four_weeks",
       "lengthDisplay": "2-4 weeks",
@@ -4627,14 +4770,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "6800-12800 RMB (Academic); 10800 RMB (Adventure)",
-      "priceMin": 6800,
-      "priceMax": 12800,
+      "priceMin": 6800.0,
+      "priceMax": 12800.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://goeastmandarin.com/kids-chinese-camp/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-129",
@@ -4643,9 +4786,10 @@
       "category": "cultural-exchange",
       "secondaryTags": [],
       "gradeDisplay": "Ages 12-17",
-      "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 11,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling",
       "formatDisplay": "Residential",
@@ -4660,14 +4804,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "From $1492/week (~$213/day)",
-      "priceMin": 213,
-      "priceMax": 1492,
+      "priceMin": 213.0,
+      "priceMax": 1492.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://keatschinese.com/chinese-language-courses/summer-camp-in-china/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-130",
@@ -4679,6 +4823,7 @@
       "gradeCompletedMin": 6,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling",
       "formatDisplay": "Varies",
@@ -4693,14 +4838,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "~$193/day",
-      "priceMin": 193,
-      "priceMax": 193,
+      "priceMin": 193.0,
+      "priceMax": 193.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.chinainternshipplacements.com/study-abroad-china/chinese-summer-camp-teens/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-131",
@@ -4712,13 +4857,14 @@
       "gradeCompletedMin": 6,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling",
       "formatDisplay": "Varies",
       "formatTags": [
         "residential"
       ],
-      "durationBucket": "two_to_four_weeks",
+      "durationBucket": "under_2_weeks",
       "lengthDisplay": "Varies",
       "datesDisplay": "Summer 2026",
       "locationDisplay": "China",
@@ -4732,8 +4878,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://ltl-school.com/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-132",
@@ -4745,6 +4891,7 @@
       "gradeCompletedMin": 7,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Application (academic eligibility)",
       "formatDisplay": "Residential",
@@ -4759,14 +4906,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$1800-$3500",
-      "priceMin": 1800,
-      "priceMax": 3500,
+      "priceMin": 1800.0,
+      "priceMax": 3500.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://pty.vanderbilt.edu/for-students/vsa/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-133",
@@ -4778,6 +4925,7 @@
       "gradeCompletedMin": 6,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective application",
       "formatDisplay": "Residential",
@@ -4792,14 +4940,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (some HS credit)",
       "priceDisplay": "1-Wk Res $1830; 3-Wk Res $5430",
-      "priceMin": 1,
-      "priceMax": 5430,
+      "priceMin": 1.0,
+      "priceMax": 5430.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.ctd.northwestern.edu/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-134",
@@ -4812,6 +4960,7 @@
       "gradeCompletedMin": 9,
       "gradeCompletedMax": 11,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective",
       "formatDisplay": "Residential",
@@ -4826,14 +4975,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$8299-$11899",
-      "priceMin": 8299,
-      "priceMax": 11899,
+      "priceMin": 8299.0,
+      "priceMax": 11899.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://globalyouth.wharton.upenn.edu/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-135",
@@ -4846,13 +4995,14 @@
       "gradeCompletedMin": 9,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective",
       "formatDisplay": "Online",
       "formatTags": [
         "online"
       ],
-      "durationBucket": "two_to_four_weeks",
+      "durationBucket": "under_2_weeks",
       "lengthDisplay": "Varies",
       "datesDisplay": "Summer 2026 sessions",
       "locationDisplay": "Online",
@@ -4860,14 +5010,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$2000-$4800",
-      "priceMin": 2000,
-      "priceMax": 4800,
+      "priceMin": 2000.0,
+      "priceMax": 4800.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://globalyouth.wharton.upenn.edu/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-136",
@@ -4880,13 +5030,15 @@
       "gradeCompletedMin": 2,
       "gradeCompletedMax": 12,
       "gradeSource": "grade",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective (talent-search scores)",
       "formatDisplay": "Residential/Day/Online",
       "formatTags": [
+        "both",
+        "commuter",
         "online",
-        "residential",
-        "both"
+        "residential"
       ],
       "durationBucket": "two_to_four_weeks",
       "lengthDisplay": "3 weeks/session",
@@ -4896,14 +5048,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "Roughly $800-2000+ (day/online); residential higher",
-      "priceMin": 800,
-      "priceMax": 2000,
+      "priceMin": 800.0,
+      "priceMax": 2000.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://cty.jhu.edu/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-137",
@@ -4914,9 +5066,10 @@
         "Cultural Exchange"
       ],
       "gradeDisplay": "Ages 15-17",
-      "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 11,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective (priority Feb 15)",
       "formatDisplay": "Residential",
@@ -4931,14 +5084,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$7000 all-inclusive",
-      "priceMin": 7000,
-      "priceMax": 7000,
+      "priceMin": 7000.0,
+      "priceMax": 7000.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://global.lehigh.edu/iacocca-institute/high-school",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-138",
@@ -4947,9 +5100,10 @@
       "category": "leadership-gifted",
       "secondaryTags": [],
       "gradeDisplay": "Ages 15-17",
-      "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 11,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Rolling/selective",
       "formatDisplay": "Residential",
@@ -4964,14 +5118,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "$1950, incl. housing & meals",
-      "priceMin": 1950,
-      "priceMax": 1950,
+      "priceMin": 1950.0,
+      "priceMax": 1950.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://global.lehigh.edu/programs/iacocca-global-future-leaders-lab-silicon-valley",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-139",
@@ -4985,10 +5139,12 @@
       "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "First-come",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "two_to_four_weeks",
@@ -4999,14 +5155,14 @@
       "hasCollegeCredit": false,
       "creditDisplay": "No",
       "priceDisplay": "Commuter $3298; Residential $5698-$6298",
-      "priceMin": 3298,
-      "priceMax": 6298,
+      "priceMin": 3298.0,
+      "priceMax": 6298.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summerspringboard.com/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-140",
@@ -5019,6 +5175,7 @@
       "gradeCompletedMin": 8,
       "gradeCompletedMax": 12,
       "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "first_come",
       "admissionDisplay": "Rolling",
       "formatDisplay": "Residential",
@@ -5039,8 +5196,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.envisionexperience.com/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-141",
@@ -5052,13 +5209,15 @@
       ],
       "trackDetail": "3-week session",
       "gradeDisplay": "Rising Jr/Sr (some soph.)",
-      "gradeCompletedMin": 9,
-      "gradeCompletedMax": 9,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "two_to_four_weeks",
@@ -5069,14 +5228,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (Cornell credit)",
       "priceDisplay": "Commuter ~$5987-7927; Residential ~$9274-11214",
-      "priceMin": 5987,
-      "priceMax": 11214,
+      "priceMin": 5987.0,
+      "priceMax": 11214.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://sce.cornell.edu/precollege/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-142",
@@ -5088,13 +5247,15 @@
       ],
       "trackDetail": "6-week session",
       "gradeDisplay": "Rising Jr/Sr (some soph.)",
-      "gradeCompletedMin": 9,
-      "gradeCompletedMax": 9,
-      "gradeSource": "grade",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 12,
+      "gradeSource": "mixed",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective",
       "formatDisplay": "Residential/Commuter",
       "formatTags": [
+        "commuter",
         "residential"
       ],
       "durationBucket": "four_plus_weeks",
@@ -5105,14 +5266,14 @@
       "hasCollegeCredit": true,
       "creditDisplay": "Yes (Cornell credit)",
       "priceDisplay": "Commuter ~$11807-15687; Residential ~$18402-22282",
-      "priceMin": 11807,
-      "priceMax": 22282,
+      "priceMin": 11807.0,
+      "priceMax": 22282.0,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://sce.cornell.edu/precollege/",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     },
     {
       "id": "prog-143",
@@ -5123,9 +5284,10 @@
         "College-Credit Pre-College"
       ],
       "gradeDisplay": "Ages 16-17",
-      "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
+      "gradeCompletedMin": 10,
+      "gradeCompletedMax": 11,
       "gradeSource": "age",
+      "stateRestriction": null,
       "admissionType": "application",
       "admissionDisplay": "Selective, residential",
       "formatDisplay": "Residential",
@@ -5146,8 +5308,8 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://changemaker.berkeley.edu/pre-college",
-      "dataVerifiedAt": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "dataVerifiedAt": "2026-07-26"
     }
   ]
 }

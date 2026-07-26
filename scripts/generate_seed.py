@@ -81,11 +81,13 @@ def normalize_format(raw: str) -> dict:
     has_day = "day" in lower and not has_comm
     if has_online:
         tags.add("online")
-    if has_res or has_comm or has_day or lower == "varies":
+    if has_res or lower == "varies":
         tags.add("residential")
+    if has_comm or has_day:
+        tags.add("commuter")
     if not tags:
         tags.add("residential")
-    if has_online and (has_res or has_comm):
+    if has_online and (has_res or has_comm or has_day):
         tags.add("both")
     return {"formatDisplay": display, "formatTags": sorted(tags)}
 
