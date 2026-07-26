@@ -30,15 +30,9 @@ function getIncomingLocationIncludes(patch: Partial<SearchFilters>): string[] {
   return [...new Set(incoming)];
 }
 
-/** OR-logic array fields that can be expanded (union) rather than replaced. */
-const EXPANDABLE_ARRAY_KEYS = [
-  "gradesCompleted",
-  "categories",
-  "admissionTypes",
-  "formats",
-  "durationBuckets",
-  "includeRegions",
-] as const satisfies readonly (keyof SearchFilters)[];
+function unionUnique<T>(current: T[], patch: T[]): T[] {
+  return [...new Set([...current, ...patch])];
+}
 
 /** Detect when the user wants to add criteria rather than replace them. */
 export function isExpandIntent(message: string): boolean {
@@ -69,16 +63,23 @@ function unionExpandableArrays(
   patch: Partial<SearchFilters>,
   next: SearchFilters,
 ): void {
-  for (const key of EXPANDABLE_ARRAY_KEYS) {
-    const patchVal = patch[key];
-    if (patchVal === undefined || !Array.isArray(patchVal) || patchVal.length === 0) {
-      continue;
-    }
-    const currentVal = current[key];
-    if (!Array.isArray(currentVal) || currentVal.length === 0) {
-      continue;
-    }
-    next[key] = [...new Set([...currentVal, ...patchVal])] as SearchFilters[typeof key];
+  if (patch.gradesCompleted?.length && current.gradesCompleted.length) {
+    next.gradesCompleted = unionUnique(current.gradesCompleted, patch.gradesCompleted);
+  }
+  if (patch.categories?.length && current.categories.length) {
+    next.categories = unionUnique(current.categories, patch.categories);
+  }
+  if (patch.admissionTypes?.length && current.admissionTypes.length) {
+    next.admissionTypes = unionUnique(current.admissionTypes, patch.admissionTypes);
+  }
+  if (patch.formats?.length && current.formats.length) {
+    next.formats = unionUnique(current.formats, patch.formats);
+  }
+  if (patch.durationBuckets?.length && current.durationBuckets.length) {
+    next.durationBuckets = unionUnique(current.durationBuckets, patch.durationBuckets);
+  }
+  if (patch.includeRegions?.length && current.includeRegions.length) {
+    next.includeRegions = unionUnique(current.includeRegions, patch.includeRegions);
   }
 }
 
