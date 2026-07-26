@@ -196,5 +196,15 @@ export function getActiveFilterItems(filters: SearchFilters): ActiveFilterItem[]
     });
   }
 
+  for (const month of filters.excludeMonths) {
+    items.push({
+      key: `exclude-month-${month}`,
+      label: `Exclude ${getMonthLabel(month)}`,
+      remove: {
+        excludeMonths: filters.excludeMonths.filter((m) => m !== month),
+      },
+    });
+  }
+
   return items;
 }

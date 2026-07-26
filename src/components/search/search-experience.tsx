@@ -144,7 +144,9 @@ export function SearchExperience({
     filters.dataQuery.trim().length > 0 ||
     filters.excludeLocation.trim().length > 0 ||
     filters.includeRegions.length > 0 ||
-    filters.includeLocations.length > 0;
+    filters.includeLocations.length > 0 ||
+    filters.includeMonths.length > 0 ||
+    filters.excludeMonths.length > 0;
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6">

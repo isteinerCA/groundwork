@@ -67,6 +67,7 @@ export function SearchChat({
         includeRegions: filters.includeRegions,
         includeLocations: filters.includeLocations,
         includeMonths: filters.includeMonths,
+        excludeMonths: filters.excludeMonths,
         resultCount,
       }),
     [filters, resultCount],

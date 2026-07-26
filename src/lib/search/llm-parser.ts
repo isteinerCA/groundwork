@@ -13,6 +13,7 @@ import {
   constrainProgramNameSearchResponse,
 } from "@/lib/search/program-name-query";
 import {
+  correctNegatedMonthPatch,
   llmParseResponseSchema,
   parseLlmResponse,
   type LlmParseResponse,
@@ -85,6 +86,12 @@ ${regions}
   Use for "east coast only", "west coast", "midwest", "northeast", "the south". Clear with empty array [] when removed. NEVER put regional phrases in dataQuery.
 - includeLocations: string[] — include programs in specific US states (OR logic). Use canonical lowercase state names (e.g. "new york", "massachusetts", "california"). Use for multi-state requests: "NY or MA", "New York or Massachusetts only", "California or Texas". Clear with empty array [] when removed. NEVER put multi-state lists in dataQuery.
 - includeMonths: number[] — include programs whose date range overlaps these calendar months (OR logic). Use month numbers: ${months}. Examples: "in June" → [6], "June or July" → [6, 7], "programs only in June" → [6]. Matches programs that run during the month (not necessarily start in it). Clear with empty array [] when removed. NEVER put month names in dataQuery.
+- excludeMonths: number[] — exclude programs whose date range overlaps these calendar months. Examples: "not in August" → [8], "exclude July", "outside June", "avoid August programs" → [8]. Clear with empty array [] when removed. NEVER put negated months in includeMonths or dataQuery.
+
+## Month rules (critical)
+- "in June", "June only", "during July" → includeMonths (NOT excludeMonths)
+- "not in August", "exclude August", "outside July", "no June programs" → excludeMonths (NOT includeMonths)
+- Do NOT set includeMonths when the user negates a month
 
 ## Expanding vs replacing filters (critical)
 - **Expand / add** keeps existing compatible filters and adds new ones (OR logic). Examples: "expand to CA and WA", "expand to marine science", "expand to online programs", "also include July".
@@ -148,7 +155,9 @@ Use includeRegions for multi-state regional requests (east coast, west coast, et
 
 Use includeLocations for explicit multi-state OR requests (NY or MA, California and Texas) — never put "ny or ma" in dataQuery.
 
-Use includeMonths for month/date-window requests ("in June", "July only", "June and July") — never put month names in dataQuery. We match programs whose overall date range overlaps the month; specific session start dates may vary — mention that in assistantMessage when relevant.
+Use includeMonths for positive month requests ("in June", "July only", "June and July") — never put month names in dataQuery.
+
+Use excludeMonths for negated month requests ("not in August", "exclude July") — never put negated months in includeMonths or dataQuery. We match programs whose overall date range overlaps the month; specific session start dates may vary — mention that in assistantMessage when relevant.
 
 ## Questions
 If the user asks a question without requesting filter changes, leave filterPatch empty (or only fields they explicitly asked to change) and answer in assistantMessage.
@@ -220,7 +229,11 @@ export async function parseSearchMessageWithLlm(
   try {
     const raw = JSON.parse(content) as unknown;
     const parsed = parseLlmResponse(raw);
-    return constrainProgramNameSearchResponse(request.message, parsed);
+    const monthCorrected = correctNegatedMonthPatch(request.message, parsed.filterPatch);
+    return constrainProgramNameSearchResponse(request.message, {
+      ...parsed,
+      filterPatch: monthCorrected,
+    });
   } catch {
     throw new LlmParserValidationError("Failed to parse LLM JSON");
   }

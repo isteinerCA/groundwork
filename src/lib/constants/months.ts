@@ -6,7 +6,7 @@ export const MONTHS = [
   { number: 5, label: "May", aliases: ["may"] },
   { number: 6, label: "June", aliases: ["jun", "june"] },
   { number: 7, label: "July", aliases: ["jul", "july"] },
-  { number: 8, label: "August", aliases: ["aug", "august"] },
+  { number: 8, label: "August", aliases: ["aug", "august", "augsut", "agust"] },
   { number: 9, label: "September", aliases: ["sep", "sept", "september"] },
   { number: 10, label: "October", aliases: ["oct", "october"] },
   { number: 11, label: "November", aliases: ["nov", "november"] },
@@ -52,4 +52,9 @@ export function parseMonthList(input: string): MonthNumber[] {
     }
   }
   return [...found].sort((a, b) => a - b);
+}
+
+/** True for "not in August", "exclude July", "outside June", etc. */
+export function isNegatedMonthQuery(input: string): boolean {
+  return /\b(not in|exclude|outside|without|avoid|no)\b/i.test(input.trim());
 }

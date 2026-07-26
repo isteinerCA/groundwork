@@ -108,6 +108,8 @@ export interface SearchFilters {
   includeLocations: string[];
   /** Calendar months (1–12) the program must overlap (OR logic), e.g. [6] for June. */
   includeMonths: MonthNumber[];
+  /** Calendar months (1–12) to exclude — programs overlapping these months are hidden. */
+  excludeMonths: MonthNumber[];
 }
 
 export const DEFAULT_SEARCH_FILTERS: SearchFilters = {
@@ -128,6 +130,7 @@ export const DEFAULT_SEARCH_FILTERS: SearchFilters = {
   includeRegions: [],
   includeLocations: [],
   includeMonths: [],
+  excludeMonths: [],
   minDurationWeeks: null,
   maxDurationWeeks: null,
 };

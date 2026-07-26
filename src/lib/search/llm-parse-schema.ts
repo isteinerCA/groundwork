@@ -7,7 +7,7 @@ import {
   PRICE_FILTERS,
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
-import { parseMonthList, type MonthNumber } from "@/lib/constants/months";
+import { parseMonthList, isNegatedMonthQuery, type MonthNumber } from "@/lib/constants/months";
 import { parseMultiStateLocations, resolveLocationQuery } from "@/lib/data/matches-location";
 import { resolveRegionQuery, US_REGION_IDS } from "@/lib/data/us-regions";
 import { DEFAULT_SEARCH_FILTERS, type SearchFilters } from "@/lib/types/program";
@@ -54,6 +54,7 @@ export const filterPatchSchema = z
     includeRegions: z.array(z.enum(US_REGION_IDS)).optional(),
     includeLocations: z.array(z.string()).optional(),
     includeMonths: z.array(monthNumberSchema).optional(),
+    excludeMonths: z.array(monthNumberSchema).optional(),
     minDurationWeeks: z.number().min(0).nullable().optional(),
     maxDurationWeeks: z.number().min(0).nullable().optional(),
   })
@@ -77,6 +78,7 @@ export const searchFiltersSchema = z.object({
   includeRegions: z.array(z.enum(US_REGION_IDS)),
   includeLocations: z.array(z.string()),
   includeMonths: z.array(monthNumberSchema),
+  excludeMonths: z.array(monthNumberSchema),
   minDurationWeeks: z.number().min(0).nullable(),
   maxDurationWeeks: z.number().min(0).nullable(),
 });
@@ -197,6 +199,9 @@ export function sanitizeFilterPatch(
   if (patch.includeMonths !== undefined) {
     sanitized.includeMonths = clampMonths(patch.includeMonths).sort((a, b) => a - b);
   }
+  if (patch.excludeMonths !== undefined) {
+    sanitized.excludeMonths = clampMonths(patch.excludeMonths).sort((a, b) => a - b);
+  }
   if (patch.minDurationWeeks !== undefined) {
     sanitized.minDurationWeeks = patch.minDurationWeeks;
   }
@@ -228,12 +233,21 @@ export function sanitizeFilterPatch(
         .trim();
       if (
         monthsFromQuery.length > 0 &&
-        (!strippedForMonths || monthFillerPattern.test(strippedForMonths))
+        (isNegatedMonthQuery(sanitized.dataQuery) ||
+          !strippedForMonths ||
+          monthFillerPattern.test(strippedForMonths))
       ) {
-        const existing = sanitized.includeMonths ?? patch.includeMonths ?? [];
-        sanitized.includeMonths = clampMonths([...existing, ...monthsFromQuery]).sort(
-          (a, b) => a - b,
-        );
+        if (isNegatedMonthQuery(sanitized.dataQuery)) {
+          const existing = sanitized.excludeMonths ?? patch.excludeMonths ?? [];
+          sanitized.excludeMonths = clampMonths([...existing, ...monthsFromQuery]).sort(
+            (a, b) => a - b,
+          );
+        } else {
+          const existing = sanitized.includeMonths ?? patch.includeMonths ?? [];
+          sanitized.includeMonths = clampMonths([...existing, ...monthsFromQuery]).sort(
+            (a, b) => a - b,
+          );
+        }
         sanitized.dataQuery = "";
       } else {
         const statesFromQuery = parseMultiStateLocations(sanitized.dataQuery);
@@ -259,7 +273,28 @@ export function sanitizeFilterPatch(
     sanitized.dataQuery = "";
   }
 
+  // Same month cannot be both included and excluded.
+  if (sanitized.includeMonths?.length && sanitized.excludeMonths?.length) {
+    const excludeSet = new Set(sanitized.excludeMonths);
+    sanitized.includeMonths = sanitized.includeMonths.filter((m) => !excludeSet.has(m));
+  }
+
   return sanitized;
+}
+
+/** If LLM wrongly used includeMonths for a negated month query, flip to excludeMonths. */
+export function correctNegatedMonthPatch(
+  message: string,
+  patch: Partial<SearchFilters>,
+): Partial<SearchFilters> {
+  if (!isNegatedMonthQuery(message)) return patch;
+
+  const next = { ...patch };
+  if (next.includeMonths?.length && !next.excludeMonths?.length) {
+    next.excludeMonths = next.includeMonths;
+    delete next.includeMonths;
+  }
+  return next;
 }
 
 /** Parse and sanitize the full LLM response. Throws ZodError on invalid shape. */

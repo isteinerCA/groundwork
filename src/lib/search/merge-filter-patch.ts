@@ -86,6 +86,17 @@ function unionExpandableArrays(
       (a, b) => a - b,
     );
   }
+  if (patch.excludeMonths?.length && current.excludeMonths.length) {
+    next.excludeMonths = unionUnique(current.excludeMonths, patch.excludeMonths).sort(
+      (a, b) => a - b,
+    );
+  }
+}
+
+function reconcileMonthIncludesAndExcludes(next: SearchFilters): void {
+  if (next.excludeMonths.length === 0) return;
+  const excludeSet = new Set(next.excludeMonths);
+  next.includeMonths = next.includeMonths.filter((month) => !excludeSet.has(month));
 }
 
 function unionExpandableLocations(
@@ -114,6 +125,8 @@ export function mergeFilterPatch(
     unionExpandableArrays(current, patch, next);
     unionExpandableLocations(current, patch, next);
   }
+
+  reconcileMonthIncludesAndExcludes(next);
 
   const includeKey = resolvedLocationKey(next.dataQuery);
   const excludeKey = resolvedLocationKey(next.excludeLocation);

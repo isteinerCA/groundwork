@@ -4,7 +4,7 @@ import { matchesDataQuery } from "@/lib/data/matches-data-query";
 import { matchesDurationWeeksFilter } from "@/lib/data/matches-duration-filter";
 import { matchesLocationQuery, programMatchesAnyLocation } from "@/lib/data/matches-location";
 import { programMatchesAnyRegion } from "@/lib/data/us-regions";
-import { programMatchesMonthFilter } from "@/lib/data/matches-month-filter";
+import { programMatchesExcludeMonthFilter, programMatchesMonthFilter } from "@/lib/data/matches-month-filter";
 import { matchesNumericPriceFilter, matchesPriceFilter } from "@/lib/data/matches-price-filter";
 import { formatMatchesFilter } from "@/lib/data/normalize-format";
 import { gradeMatchesFilter } from "@/lib/data/normalize-grade";
@@ -87,6 +87,10 @@ export function matchesProgram(program: Program, filters: SearchFilters): boolea
   }
 
   if (!programMatchesMonthFilter(program, filters.includeMonths)) {
+    return false;
+  }
+
+  if (!programMatchesExcludeMonthFilter(program, filters.excludeMonths)) {
     return false;
   }
 

@@ -21,6 +21,11 @@ function resultCountSentence(count: number): string {
 }
 
 function monthFilterNote(filters: SearchFilters, programs: Program[]): string | null {
+  if (filters.excludeMonths.length > 0) {
+    const monthLabels = filters.excludeMonths.map((month) => getMonthLabel(month)).join(" or ");
+    return `Excluded programs that run during ${monthLabels}. Check each program's site for specific session dates.`;
+  }
+
   if (filters.includeMonths.length === 0) return null;
 
   const monthLabels = filters.includeMonths.map((month) => getMonthLabel(month)).join(" or ");

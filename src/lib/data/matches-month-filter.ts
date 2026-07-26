@@ -33,3 +33,11 @@ export function programMatchesMonthFilter(
   if (months.length === 0) return true;
   return months.some((month) => programOverlapsMonth(program, month));
 }
+
+export function programMatchesExcludeMonthFilter(
+  program: Program,
+  excludeMonths: MonthNumber[],
+): boolean {
+  if (excludeMonths.length === 0) return true;
+  return !excludeMonths.some((month) => programOverlapsMonth(program, month));
+}
