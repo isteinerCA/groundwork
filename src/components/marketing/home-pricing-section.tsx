@@ -19,7 +19,7 @@ function CheckItem({ children }: { children: React.ReactNode }) {
 /** Homepage pricing always shows early-bird strikethrough ($49 → Free) at launch. */
 export function HomePricingSection() {
   return (
-    <section id="pricing" className="scroll-mt-20 bg-[var(--color-surface)] px-4 py-20 sm:px-6">
+    <section id="pricing" className="scroll-mt-20 px-4 py-20 sm:px-6">
       <div className="mx-auto max-w-5xl text-center">
         <SectionEyebrow>Pricing</SectionEyebrow>
         <h2 className="mt-3 text-3xl md:text-4xl">
