@@ -10,6 +10,9 @@ import {
 } from "@/lib/constants/filters";
 import { US_REGIONS } from "@/lib/data/us-regions";
 import {
+  constrainProgramNameSearchResponse,
+} from "@/lib/search/program-name-query";
+import {
   llmParseResponseSchema,
   parseLlmResponse,
   type LlmParseResponse,
@@ -126,6 +129,16 @@ Set clearAll: true when the user wants to reset all filters ("start over", "clea
 - Programs where price or length could not be parsed from our data ("Contact program", "Varies")
 - Anything not in our program data
 
+## Program / institution name search (critical)
+When the user message is ONLY a program name, abbreviation, or institution keyword — examples: "UCLA", "COSMO", "COSMOS", "stony brook", "Rosetta", "Telluride" — treat it as a **name search only**:
+- filterPatch: { dataQuery: "<lowercase query>" } and NOTHING else
+- Do NOT infer or set categories, formats, admissionTypes, durationBuckets, includeMonths, usOnly, or other structured filters
+- Do NOT guess program attributes from the name
+- applied: brief note that you searched for the name
+- assistantMessage: confirm you searched program names/descriptions for that term
+
+Only add structured filters when the user explicitly requests them in the same message (e.g. "UCLA residential", "COSMOS in California").
+
 ## dataQuery usage
 Use dataQuery for POSITIVE matches only: include a US state/city, program name searches, gotcha/flag keywords. Prefer structured filters when possible (categories, price, format, etc.).
 
@@ -206,7 +219,8 @@ export async function parseSearchMessageWithLlm(
 
   try {
     const raw = JSON.parse(content) as unknown;
-    return parseLlmResponse(raw);
+    const parsed = parseLlmResponse(raw);
+    return constrainProgramNameSearchResponse(request.message, parsed);
   } catch {
     throw new LlmParserValidationError("Failed to parse LLM JSON");
   }

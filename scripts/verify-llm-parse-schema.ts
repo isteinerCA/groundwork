@@ -8,6 +8,11 @@ import { matchesDataQuery } from "../src/lib/data/matches-data-query";
 import { termMatchesInText } from "../src/lib/data/fuzzy-text-match";
 import { mergeFilterPatch, isExpandIntent } from "../src/lib/search/merge-filter-patch";
 import {
+  constrainFilterPatchForProgramNameQuery,
+  constrainProgramNameSearchResponse,
+  isLikelyProgramNameQuery,
+} from "../src/lib/search/program-name-query";
+import {
   filterPatchSchema,
   llmParseResponseSchema,
   parseLlmResponse,
@@ -192,6 +197,39 @@ assert(!isExpandIntent("online only"), "detects format replace intent");
 assert(termMatchesInText("stonybrook", "Stony Brook Pre-College Summer"), "stonybrook matches Stony Brook");
 assert(termMatchesInText("cosmo", "COSMOS UC Davis"), "cosmo prefix matches COSMOS");
 assert(termMatchesInText("cosmis", "COSMOS UC Davis"), "cosmis typo matches COSMOS");
+
+assert(isLikelyProgramNameQuery("UCLA"), "UCLA is program name query");
+assert(isLikelyProgramNameQuery("COSMO"), "COSMO is program name query");
+assert(!isLikelyProgramNameQuery("wilderness camps"), "wilderness camps is not name-only");
+assert(!isLikelyProgramNameQuery("in California only"), "location filter is not name-only");
+const overfitPatch = constrainFilterPatchForProgramNameQuery("UCLA", {
+  dataQuery: "ucla",
+  categories: ["college-credit-pre-college"],
+  formats: ["residential"],
+  admissionTypes: ["application"],
+  durationBuckets: ["two_to_four_weeks"],
+  usOnly: true,
+});
+assert(
+  Object.keys(overfitPatch).length === 1 && overfitPatch.dataQuery === "ucla",
+  "name query strips inferred structured filters",
+);
+const constrainedResponse = constrainProgramNameSearchResponse("COSMO", {
+  clearAll: false,
+  filterPatch: {
+    dataQuery: "cosmo",
+    categories: ["cultural-exchange"],
+    formats: ["online"],
+  },
+  applied: "Added cultural exchange",
+  unexpressible: "",
+  assistantMessage: "Added many filters",
+});
+assert(
+  constrainedResponse.filterPatch.categories === undefined &&
+    constrainedResponse.filterPatch.dataQuery === "cosmo",
+  "name query response keeps dataQuery only",
+);
 
 // month filter from dataQuery promotion
 const junePatch = sanitizeFilterPatch({ dataQuery: "programs only in June" });
