@@ -5,7 +5,12 @@ import {
   LlmParserValidationError,
   parseSearchMessageWithLlm,
 } from "@/lib/search/llm-parser";
-import { parseRequestSchema } from "@/lib/search/llm-parse-schema";
+import { parseRequestSchema, type ParseRequest } from "@/lib/search/llm-parse-schema";
+import {
+  buildProgramNameParseResponse,
+  isLikelyProgramNameQuery,
+} from "@/lib/search/program-name-query";
+import { stripNoOpFilterPatch } from "@/lib/search/filter-patch-delta";
 import { isSearchParseRateLimited } from "@/lib/search/rate-limit";
 
 export async function POST(request: Request) {
@@ -30,12 +35,20 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid request." }, { status: 400 });
   }
 
+  const request = parsed.data as ParseRequest;
+
+  if (isLikelyProgramNameQuery(request.message)) {
+    const result = buildProgramNameParseResponse(request.message);
+    result.filterPatch = stripNoOpFilterPatch(request.currentFilters, result.filterPatch);
+    return NextResponse.json(result);
+  }
+
   try {
-    const result = await parseSearchMessageWithLlm(parsed.data);
+    const result = await parseSearchMessageWithLlm(request);
 
     if (process.env.NODE_ENV === "development") {
       console.debug("[search/parse]", {
-        messageLength: parsed.data.message.length,
+        messageLength: request.message.length,
         clearAll: result.clearAll,
         patchKeys: Object.keys(result.filterPatch),
         latencyMs: "logged",

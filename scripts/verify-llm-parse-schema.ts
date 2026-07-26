@@ -8,6 +8,7 @@ import { matchesDataQuery } from "../src/lib/data/matches-data-query";
 import { termMatchesInText } from "../src/lib/data/fuzzy-text-match";
 import { mergeFilterPatch, isExpandIntent } from "../src/lib/search/merge-filter-patch";
 import {
+  buildProgramNameParseResponse,
   constrainFilterPatchForProgramNameQuery,
   constrainProgramNameSearchResponse,
   isLikelyProgramNameQuery,
@@ -209,7 +210,12 @@ assert(termMatchesInText("cosmo", "COSMOS UC Davis"), "cosmo prefix matches COSM
 assert(termMatchesInText("cosmis", "COSMOS UC Davis"), "cosmis typo matches COSMOS");
 
 assert(isLikelyProgramNameQuery("UCLA"), "UCLA is program name query");
+assert(isLikelyProgramNameQuery("stanford"), "stanford is program name query");
 assert(isLikelyProgramNameQuery("COSMO"), "COSMO is program name query");
+assert(
+  buildProgramNameParseResponse("stanford").filterPatch.dataQuery === "stanford",
+  "buildProgramNameParseResponse sets dataQuery",
+);
 assert(!isLikelyProgramNameQuery("wilderness camps"), "wilderness camps is not name-only");
 assert(!isLikelyProgramNameQuery("in California only"), "location filter is not name-only");
 const overfitPatch = constrainFilterPatchForProgramNameQuery("UCLA", {
