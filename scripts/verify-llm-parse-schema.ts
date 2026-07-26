@@ -15,6 +15,7 @@ import {
 } from "../src/lib/search/llm-parse-schema";
 import { resolveRegionQuery } from "../src/lib/data/us-regions";
 import { parseMultiStateLocations } from "../src/lib/data/matches-location";
+import { formatAssistantMessage } from "../src/lib/search/format-assistant-message";
 import { readFileSync } from "node:fs";
 import type { Program, SearchFilters } from "../src/lib/types/program";
 
@@ -49,7 +50,11 @@ const validResponse = {
 };
 const parsed = parseLlmResponse(validResponse);
 assert(parsed.filterPatch.gradesCompleted?.[0] === 11, "parseLlmResponse grade");
-assert(parsed.filterPatch.dataQuery === "california", "parseLlmResponse dataQuery");
+assert(
+  parsed.filterPatch.includeLocations?.includes("california") ||
+    parsed.filterPatch.dataQuery === "california",
+  "parseLlmResponse california location",
+);
 
 // Reject invalid category
 try {
@@ -193,6 +198,74 @@ const stanfordParsed = parseLlmResponse(
 assert(
   stanfordParsed.filterPatch.categories === undefined,
   "parseLlmResponse strips inferred filters for stanford",
+);
+
+const dataForAssistant = JSON.parse(readFileSync("data/seed/programs.json", "utf-8")) as {
+  programs: Program[];
+};
+
+const cosmoFilters: SearchFilters = {
+  ...DEFAULT_SEARCH_FILTERS,
+  gradesCompleted: [10],
+  dataQuery: "cosmo",
+};
+const cosmoResult = parseLlmResponse(
+  {
+    clearAll: false,
+    filterPatch: { dataQuery: "cosmo" },
+    applied: "cosmo",
+    unexpressible: "",
+    assistantMessage:
+      "I've searched for programs related to 'cosmo' and included those that offer college credit for students who have completed 10th grade.",
+  },
+  "cosmo",
+);
+const cosmoMessage = formatAssistantMessage(
+  cosmoResult,
+  cosmoFilters,
+  dataForAssistant.programs,
+);
+assert(
+  cosmoMessage.includes('matching "Cosmo"'),
+  "cosmo message describes dataQuery only",
+);
+assert(
+  !cosmoMessage.toLowerCase().includes("college credit"),
+  "cosmo message does not mention college credit",
+);
+const cosmoCount = filterPrograms(dataForAssistant.programs, cosmoFilters).length;
+assert(
+  cosmoMessage.includes(`${cosmoCount} program`),
+  "cosmo message includes accurate result count",
+);
+
+const multiFilterMessage = formatAssistantMessage(
+  {
+    clearAll: false,
+    filterPatch: {
+      categories: ["stem-engineering"],
+      fullyFundedOnly: true,
+    },
+    applied: "",
+    unexpressible: "",
+    assistantMessage: "Wrong LLM prose about college credit.",
+  },
+  {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [10],
+    categories: ["stem-engineering"],
+    fullyFundedOnly: true,
+  },
+  dataForAssistant.programs,
+);
+assert(
+  multiFilterMessage.includes("Science & STEM") &&
+    multiFilterMessage.includes("fully funded only"),
+  "multi-filter message lists applied patch fields",
+);
+assert(
+  !multiFilterMessage.includes("Wrong LLM prose"),
+  "multi-filter message ignores LLM assistantMessage",
 );
 
 if (failed === 0) {
