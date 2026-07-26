@@ -7,7 +7,7 @@ import {
   PRICE_FILTERS,
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
-import { MONTH_NUMBERS, parseMonthList } from "@/lib/constants/months";
+import { parseMonthList, type MonthNumber } from "@/lib/constants/months";
 import { parseMultiStateLocations, resolveLocationQuery } from "@/lib/data/matches-location";
 import { resolveRegionQuery, US_REGION_IDS } from "@/lib/data/us-regions";
 import { DEFAULT_SEARCH_FILTERS, type SearchFilters } from "@/lib/types/program";
@@ -33,6 +33,8 @@ const priceIds = PRICE_FILTERS.map((p) => p.id) as [
   ...(typeof PRICE_FILTERS)[number]["id"][],
 ];
 
+const monthNumberSchema = z.number().int().min(1).max(12);
+
 export const filterPatchSchema = z
   .object({
     gradesCompleted: z.array(z.number().int()).optional(),
@@ -51,7 +53,7 @@ export const filterPatchSchema = z
     excludeLocation: z.string().optional(),
     includeRegions: z.array(z.enum(US_REGION_IDS)).optional(),
     includeLocations: z.array(z.string()).optional(),
-    includeMonths: z.array(z.enum(MONTH_NUMBERS)).optional(),
+    includeMonths: z.array(monthNumberSchema).optional(),
     minDurationWeeks: z.number().min(0).nullable().optional(),
     maxDurationWeeks: z.number().min(0).nullable().optional(),
   })
@@ -74,7 +76,7 @@ export const searchFiltersSchema = z.object({
   excludeLocation: z.string(),
   includeRegions: z.array(z.enum(US_REGION_IDS)),
   includeLocations: z.array(z.string()),
-  includeMonths: z.array(z.enum(MONTH_NUMBERS)),
+  includeMonths: z.array(monthNumberSchema),
   minDurationWeeks: z.number().min(0).nullable(),
   maxDurationWeeks: z.number().min(0).nullable(),
 });
@@ -87,7 +89,9 @@ export const llmParseResponseSchema = z.object({
   assistantMessage: z.string().max(1000),
 });
 
-export type LlmParseResponse = z.infer<typeof llmParseResponseSchema>;
+export type LlmParseResponse = Omit<z.infer<typeof llmParseResponseSchema>, "filterPatch"> & {
+  filterPatch: Partial<SearchFilters>;
+};
 
 export const chatHistoryMessageSchema = z.object({
   role: z.enum(["user", "assistant"]),
@@ -129,6 +133,11 @@ function resolvedLocationKey(value: string): string | undefined {
   const trimmed = value.trim();
   if (!trimmed) return undefined;
   return resolveLocationQuery(trimmed) ?? trimmed.toLowerCase();
+}
+
+function clampMonths(months: number[]): MonthNumber[] {
+  const valid = new Set<number>([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
+  return [...new Set(months.filter((m) => valid.has(m)))] as MonthNumber[];
 }
 
 /** Normalize and validate a filter patch from the LLM before applying. */
@@ -186,7 +195,7 @@ export function sanitizeFilterPatch(
     sanitized.includeLocations = sanitizeIncludeLocations(patch.includeLocations);
   }
   if (patch.includeMonths !== undefined) {
-    sanitized.includeMonths = [...new Set(patch.includeMonths)].sort((a, b) => a - b);
+    sanitized.includeMonths = clampMonths(patch.includeMonths).sort((a, b) => a - b);
   }
   if (patch.minDurationWeeks !== undefined) {
     sanitized.minDurationWeeks = patch.minDurationWeeks;
