@@ -9,6 +9,7 @@ import {
   filterPatchSchema,
   llmParseResponseSchema,
   isSimpleInstitutionOrNameQuery,
+  isAdditiveFilterRequest,
   parseLlmResponse,
   restrictPatchForSimpleQuery,
   sanitizeFilterPatch,
@@ -200,9 +201,109 @@ assert(
   "parseLlmResponse strips inferred filters for stanford",
 );
 
+assert(!isSimpleInstitutionOrNameQuery("add tech camps"), "add tech camps is not simple name query");
+assert(!isSimpleInstitutionOrNameQuery("add tech"), "add tech is not simple name query");
+assert(isAdditiveFilterRequest("add tech camps"), "add tech camps is additive request");
+
+const addTechRestricted = restrictPatchForSimpleQuery("add tech camps", {
+  categories: ["marine-science", "artificial-intelligence"],
+  dataQuery: "",
+});
+assert(
+  addTechRestricted.categories?.includes("artificial-intelligence") === true,
+  "add tech camps keeps category patch",
+);
+assert(addTechRestricted.dataQuery !== "add tech camps", "add tech camps does not become dataQuery");
+
+const addTechDataQueryPromoted = sanitizeFilterPatch({ dataQuery: "add tech camps" });
+assert(
+  addTechDataQueryPromoted.categories?.includes("artificial-intelligence") === true,
+  "promotes add tech camps dataQuery to Tech & AI category",
+);
+assert(addTechDataQueryPromoted.dataQuery === "", "clears dataQuery after category promotion");
+
+const marinePlusTechFilters: SearchFilters = {
+  ...DEFAULT_SEARCH_FILTERS,
+  gradesCompleted: [10],
+  categories: ["marine-science"],
+};
+const addTechMerged = mergeFilterPatch(
+  marinePlusTechFilters,
+  { categories: ["artificial-intelligence"] },
+  "add tech camps",
+);
+assert(
+  addTechMerged.categories.includes("marine-science") &&
+    addTechMerged.categories.includes("artificial-intelligence"),
+  "additive merge unions marine-science with Tech & AI",
+);
+assert(addTechMerged.dataQuery === "", "additive category merge does not set dataQuery");
+
 const dataForAssistant = JSON.parse(readFileSync("data/seed/programs.json", "utf-8")) as {
   programs: Program[];
 };
+
+const addTechParsed = parseLlmResponse(
+  {
+    clearAll: false,
+    filterPatch: {
+      categories: ["marine-science", "artificial-intelligence"],
+    },
+    applied: "Added Tech & AI category",
+    unexpressible: "",
+    assistantMessage: "I've added tech camps to your search criteria.",
+  },
+  "add tech camps",
+);
+const addTechNext = mergeFilterPatch(
+  marinePlusTechFilters,
+  addTechParsed.filterPatch,
+  "add tech camps",
+);
+const addTechMessage = formatAssistantMessage(
+  addTechParsed,
+  addTechNext,
+  dataForAssistant.programs,
+);
+assert(
+  addTechMessage.includes("Tech & AI"),
+  "add tech camps message mentions Tech & AI category",
+);
+assert(
+  !addTechMessage.includes("add tech camps") && !addTechMessage.includes("Add Tech Camps"),
+  "add tech camps message does not describe dataQuery text",
+);
+assert(
+  !addTechMessage.includes("I've added tech camps"),
+  "add tech camps message ignores LLM assistantMessage prose",
+);
+const addTechCount = filterPrograms(dataForAssistant.programs, addTechNext).length;
+assert(addTechCount > 0, "marine + tech categories return results for grade 10");
+assert(
+  addTechMessage.includes(`${addTechCount} program`),
+  "add tech camps message includes accurate result count",
+);
+
+const alsoStemParsed = parseLlmResponse(
+  {
+    clearAll: false,
+    filterPatch: { categories: ["stem-engineering"] },
+    applied: "",
+    unexpressible: "",
+    assistantMessage: "bad",
+  },
+  "also include STEM",
+);
+const alsoStemMerged = mergeFilterPatch(
+  marinePlusTechFilters,
+  alsoStemParsed.filterPatch,
+  "also include STEM",
+);
+assert(
+  alsoStemMerged.categories.includes("marine-science") &&
+    alsoStemMerged.categories.includes("stem-engineering"),
+  "also include STEM unions with existing categories",
+);
 
 const cosmoFilters: SearchFilters = {
   ...DEFAULT_SEARCH_FILTERS,

@@ -41,8 +41,9 @@ Return a partial filterPatch with ONLY fields that should change. Omit unchanged
   NEVER use gradesCompleted for "participants older than X", "teen only", "no kids under 12", "minimum age 13+", or similar — see "Participant age floor" below.
 - categories: string[] — OR logic. Valid IDs:
 ${categories}
-  When ADDING categories, return the full combined list (current + new).
+  When ADDING categories ("add tech", "add tech camps", "also include STEM"), return the full combined list (current + new). Map informal names: "tech"/"tech camps"/"coding"/"AI" → artificial-intelligence; "STEM"/"science" → stem-engineering.
   When the user says "only X" (without "or"), return ONLY those categories (replace list).
+  NEVER use dataQuery for category additions — always use categories.
 - admissionTypes: string[] — valid IDs (OR logic — programs matching ANY selected type):
 ${admission}
   Selecting types INCLUDES only those programs. There is no exclude-admission filter — use positive selection (e.g. first_come only) instead of trying to exclude application programs.

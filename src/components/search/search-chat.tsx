@@ -150,7 +150,7 @@ export function SearchChat({
         nextFilters = { ...DEFAULT_SEARCH_FILTERS };
         onApplyFilters(nextFilters);
       } else if (Object.keys(result.filterPatch).length > 0) {
-        nextFilters = mergeFilterPatch(filters, result.filterPatch);
+        nextFilters = mergeFilterPatch(filters, result.filterPatch, text);
         onApplyFilters(nextFilters);
       }
 

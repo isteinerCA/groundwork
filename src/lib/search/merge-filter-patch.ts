@@ -1,5 +1,9 @@
 import { resolveLocationQuery } from "@/lib/data/matches-location";
 import { resolveRegionQuery } from "@/lib/data/us-regions";
+import {
+  isAdditiveFilterRequest,
+  isReplaceOnlyCategoryRequest,
+} from "@/lib/search/filter-request-intent";
 import type { SearchFilters } from "@/lib/types/program";
 
 function resolvedLocationKey(value: string): string | undefined {
@@ -11,8 +15,18 @@ function resolvedLocationKey(value: string): string | undefined {
 export function mergeFilterPatch(
   current: SearchFilters,
   patch: Partial<SearchFilters>,
+  message?: string,
 ): SearchFilters {
   const next: SearchFilters = { ...current, ...patch };
+
+  if (
+    patch.categories !== undefined &&
+    message &&
+    isAdditiveFilterRequest(message) &&
+    !isReplaceOnlyCategoryRequest(message)
+  ) {
+    next.categories = [...new Set([...current.categories, ...patch.categories])];
+  }
 
   const includeKey = resolvedLocationKey(next.dataQuery);
   const excludeKey = resolvedLocationKey(next.excludeLocation);
