@@ -15,6 +15,7 @@ import {
   formatPriceDisplay,
   isPriceDisplayMuted,
 } from "@/lib/data/format-price-display";
+import { formatShortlistMembershipLabel } from "@/lib/workspace/shortlist-membership";
 import { useWorkspace } from "@/components/workspace/workspace-provider";
 import type { Program } from "@/lib/types/program";
 
