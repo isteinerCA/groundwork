@@ -19,6 +19,8 @@ import {
   parseLlmResponse,
   sanitizeFilterPatch,
 } from "../src/lib/search/llm-parse-schema";
+import { stripNoOpFilterPatch } from "../src/lib/search/filter-patch-delta";
+import { formatAssistantMessage } from "../src/lib/search/format-assistant-message";
 import { resolveRegionQuery } from "../src/lib/data/us-regions";
 import { parseMultiStateLocations } from "../src/lib/data/matches-location";
 import { readFileSync } from "node:fs";
@@ -253,6 +255,71 @@ const flippedPatch = correctNegatedMonthPatch("not in August", {
 assert(
   flippedPatch.excludeMonths?.includes(8) && flippedPatch.includeMonths === undefined,
   "correctNegatedMonthPatch flips includeMonths to excludeMonths",
+);
+
+const eastCoastMarineTechFilters: SearchFilters = {
+  ...DEFAULT_SEARCH_FILTERS,
+  gradesCompleted: [9],
+  includeRegions: ["east-coast"],
+  categories: ["marine-science", "artificial-intelligence"],
+};
+
+const augustEchoPatch = {
+  dataQuery: "",
+  excludeLocation: "",
+  includeRegions: ["east-coast"],
+  categories: ["marine-science", "artificial-intelligence"],
+  gradesCompleted: [9],
+};
+
+assert(
+  Object.keys(stripNoOpFilterPatch(eastCoastMarineTechFilters, augustEchoPatch)).length === 0,
+  "echoed unchanged patch fields are stripped",
+);
+
+const notInAugustParsed = parseLlmResponse(
+  {
+    clearAll: false,
+    filterPatch: {
+      ...augustEchoPatch,
+      excludeMonths: [8],
+    },
+    applied: "bad",
+    unexpressible: "",
+    assistantMessage:
+      "Showing programs with text search cleared, with location exclusion cleared, in East Coast, in Marine Science or Tech & AI, grade: 9th grade.",
+  },
+  "not in August",
+  eastCoastMarineTechFilters,
+);
+assert(
+  notInAugustParsed.filterPatch.excludeMonths?.includes(8) &&
+    !notInAugustParsed.filterPatch.includeRegions,
+  "not in August keeps only excludeMonths after stripping echoed fields",
+);
+
+const notInAugustNext = mergeFilterPatch(eastCoastMarineTechFilters, notInAugustParsed.filterPatch);
+const dataForAssistant = JSON.parse(readFileSync("data/seed/programs.json", "utf-8")) as {
+  programs: Program[];
+};
+const notInAugustMessage = formatAssistantMessage(
+  notInAugustParsed,
+  eastCoastMarineTechFilters,
+  notInAugustNext,
+  dataForAssistant.programs,
+);
+assert(
+  notInAugustMessage.includes("excluding August"),
+  "not in August message mentions excluding August",
+);
+assert(
+  !notInAugustMessage.includes("East Coast") &&
+    !notInAugustMessage.includes("text search cleared"),
+  "not in August message does not restate unchanged filters",
+);
+assert(
+  !notInAugustMessage.includes("Showing programs with text search cleared"),
+  "not in August message ignores LLM assistantMessage prose",
 );
 
 // east coast region from dataQuery promotion

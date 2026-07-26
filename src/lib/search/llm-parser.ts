@@ -13,7 +13,6 @@ import {
   constrainProgramNameSearchResponse,
 } from "@/lib/search/program-name-query";
 import {
-  correctNegatedMonthPatch,
   llmParseResponseSchema,
   parseLlmResponse,
   type LlmParseResponse,
@@ -228,12 +227,8 @@ export async function parseSearchMessageWithLlm(
 
   try {
     const raw = JSON.parse(content) as unknown;
-    const parsed = parseLlmResponse(raw);
-    const monthCorrected = correctNegatedMonthPatch(request.message, parsed.filterPatch);
-    return constrainProgramNameSearchResponse(request.message, {
-      ...parsed,
-      filterPatch: monthCorrected,
-    });
+    const parsed = parseLlmResponse(raw, request.message, request.currentFilters);
+    return constrainProgramNameSearchResponse(request.message, parsed);
   } catch {
     throw new LlmParserValidationError("Failed to parse LLM JSON");
   }

@@ -10,6 +10,7 @@ import {
 import { parseMonthList, isNegatedMonthQuery, type MonthNumber } from "@/lib/constants/months";
 import { parseMultiStateLocations, resolveLocationQuery } from "@/lib/data/matches-location";
 import { resolveRegionQuery, US_REGION_IDS } from "@/lib/data/us-regions";
+import { stripNoOpFilterPatch } from "@/lib/search/filter-patch-delta";
 import { DEFAULT_SEARCH_FILTERS, type SearchFilters } from "@/lib/types/program";
 
 const categoryIds = PROGRAM_CATEGORIES.map((c) => c.id) as [
@@ -298,14 +299,25 @@ export function correctNegatedMonthPatch(
 }
 
 /** Parse and sanitize the full LLM response. Throws ZodError on invalid shape. */
-export function parseLlmResponse(raw: unknown): LlmParseResponse {
+export function parseLlmResponse(
+  raw: unknown,
+  message?: string,
+  currentFilters?: SearchFilters,
+): LlmParseResponse {
   const parsed = llmParseResponseSchema.parse(raw);
+  let filterPatch = sanitizeFilterPatch(parsed.filterPatch);
+  if (message) {
+    filterPatch = correctNegatedMonthPatch(message, filterPatch);
+  }
+  if (currentFilters) {
+    filterPatch = stripNoOpFilterPatch(currentFilters, filterPatch);
+  }
   return {
     ...parsed,
     applied: parsed.applied.trim(),
     unexpressible: parsed.unexpressible.trim(),
     assistantMessage: parsed.assistantMessage.trim(),
-    filterPatch: sanitizeFilterPatch(parsed.filterPatch),
+    filterPatch,
   };
 }
 
