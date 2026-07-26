@@ -104,6 +104,16 @@ export function normalizeGrade(raw: string): GradeResult {
     }
   }
 
+  if (lower.includes("rising") && /soph\s*\/?\s*jr\s*\/?\s*sr/.test(lower)) {
+    return {
+      gradeDisplay,
+      gradeCompletedMin: 9,
+      gradeCompletedMax: 11,
+      gradeSource: "mixed",
+      stateRestriction,
+    };
+  }
+
   if (lower.includes("rising") && /jr\s*\/?\s*sr/.test(lower)) {
     const ageMatch = lower.match(/\((\d+)\s+by\s+(?:jun|july)/i);
     if (ageMatch) {
@@ -115,6 +125,13 @@ export function normalizeGrade(raw: string): GradeResult {
         stateRestriction,
       };
     }
+    return {
+      gradeDisplay,
+      gradeCompletedMin: 10,
+      gradeCompletedMax: 11,
+      gradeSource: "mixed",
+      stateRestriction,
+    };
   }
 
   if (lower.includes("rising")) {
@@ -265,10 +282,12 @@ export function gradeMatchesFilter(
   gradesCompleted: number[],
 ): boolean {
   if (gradesCompleted.length === 0) return false;
-  const tolerance = program.gradeSource === "age" ? 1 : 0;
+  // Age mappings can be fuzzy on the young end, but never extend the upper bound —
+  // e.g. ages 15–17 (max completed 11) must not match a student who finished 12th grade.
+  const minTolerance = program.gradeSource === "age" ? 1 : 0;
   return gradesCompleted.some(
     (g) =>
-      g >= program.gradeCompletedMin - tolerance &&
-      g <= program.gradeCompletedMax + tolerance,
+      g >= program.gradeCompletedMin - minTolerance &&
+      g <= program.gradeCompletedMax,
   );
 }
