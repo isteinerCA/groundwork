@@ -36,7 +36,9 @@ function buildSystemPrompt(): string {
 ## Filter schema
 Return a partial filterPatch with ONLY fields that should change. Omit unchanged fields.
 
-- gradesCompleted: number[] — grades the child JUST COMPLETED (not rising grade). Valid: ${grades}. "Rising 10th" means grade completed 9.
+- gradesCompleted: number[] — grades YOUR CHILD just completed (not rising grade). Valid: ${grades}. "Rising 10th" means grade completed 9.
+  This finds programs your child is eligible for. It does NOT exclude programs that also admit younger children.
+  NEVER use gradesCompleted for "participants older than X", "teen only", "no kids under 12", "minimum age 13+", or similar — see "Participant age floor" below.
 - categories: string[] — OR logic. Valid IDs:
 ${categories}
   When ADDING categories, return the full combined list (current + new).
@@ -81,6 +83,7 @@ Set clearAll: true when the user wants to reset all filters ("start over", "clea
 - Do NOT state result counts in assistantMessage — the app computes the exact count after filters are applied.
 
 ## Cannot filter (put in unexpressible)
+- **Participant age floor** — excluding programs that admit younger kids ("older than 12", "teen only", "13+", "no elementary", "participants must be at least…"). We cannot filter by minimum participant age; many programs list wide age ranges (e.g. ages 7–17). Do NOT change gradesCompleted to simulate this. Leave filterPatch empty (or unchanged for grades). In assistantMessage, explain the limitation and tell the user to check the **Grades** line on each program card for the full age range.
 - Gender or single-sex programs
 - Zip code / radius search
 - Specific acceptance rates or competitiveness beyond admission type
@@ -99,7 +102,14 @@ Use includeRegions for multi-state regional requests (east coast, west coast, et
 Use includeLocations for explicit multi-state OR requests (NY or MA, California and Texas) — never put "ny or ma" in dataQuery.
 
 ## Questions
-If the user asks a question without requesting filter changes, leave filterPatch empty (or only fields they explicitly asked to change) and answer in assistantMessage.`;
+If the user asks a question without requesting filter changes, leave filterPatch empty (or only fields they explicitly asked to change) and answer in assistantMessage.
+
+## Participant age floor (critical)
+When the user wants to exclude programs that allow younger participants — NOT when they are simply stating their own child's age — respond with:
+- filterPatch: {} (do not modify gradesCompleted or other filters unless they also asked for something else)
+- applied: "" 
+- unexpressible: brief note that minimum-participant-age filtering is unsupported
+- assistantMessage: "I can't filter out programs that also admit younger kids — our grade filter only finds programs your child could attend, not the youngest age a program allows. Check the **Grades** line on each program card for the full age range."`;
 }
 
 function buildUserPayload(request: ParseRequest): string {

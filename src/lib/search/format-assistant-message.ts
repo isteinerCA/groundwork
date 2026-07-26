@@ -27,14 +27,20 @@ export function formatAssistantMessage(
 ): string {
   const hadPatch = result.clearAll || Object.keys(result.filterPatch).length > 0;
   const text = result.assistantMessage.trim();
+  const limitation = result.unexpressible.trim();
 
-  if (!hadPatch || nextFilters.gradesCompleted.length === 0) {
-    return text;
+  if (!hadPatch) {
+    return text || limitation;
+  }
+
+  if (nextFilters.gradesCompleted.length === 0) {
+    return text || limitation;
   }
 
   const nextCount = filterPrograms(programs, nextFilters).length;
   const withoutGuess = stripGuessedCounts(text);
   const countSentence = resultCountSentence(nextCount);
+  const main = withoutGuess ? `${withoutGuess} ${countSentence}` : countSentence;
 
-  return withoutGuess ? `${withoutGuess} ${countSentence}` : countSentence;
+  return limitation ? `${main} ${limitation}`.trim() : main;
 }
