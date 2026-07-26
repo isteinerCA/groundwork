@@ -36,7 +36,9 @@ const priceIds = PRICE_FILTERS.map((p) => p.id) as [
   ...(typeof PRICE_FILTERS)[number]["id"][],
 ];
 
-const monthNumberSchema = z.number().int().min(1).max(12);
+const monthNumberSchema = z.custom<MonthNumber>(
+  (val) => typeof val === "number" && Number.isInteger(val) && val >= 1 && val <= 12,
+);
 
 export const filterPatchSchema = z
   .object({
@@ -105,7 +107,14 @@ export const chatHistoryMessageSchema = z.object({
 
 export const parseRequestSchema = z.object({
   message: z.string().trim().min(1).max(500),
-  currentFilters: searchFiltersSchema,
+  currentFilters: z.preprocess((val) => {
+    const merged = { ...DEFAULT_SEARCH_FILTERS, ...(val as Partial<SearchFilters>) };
+    return {
+      ...merged,
+      includeMonths: clampMonths(merged.includeMonths ?? []),
+      excludeMonths: clampMonths(merged.excludeMonths ?? []),
+    };
+  }, searchFiltersSchema),
   resultCount: z.number().int().min(0),
   history: z.array(chatHistoryMessageSchema).max(12).optional(),
 });
