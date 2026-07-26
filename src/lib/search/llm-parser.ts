@@ -78,6 +78,7 @@ Set clearAll: true when the user wants to reset all filters ("start over", "clea
 - applied: concise summary of filter changes you made (empty string if none)
 - unexpressible: constraints the user asked for that CANNOT be mapped to filters (empty string if none). Be honest about limitations.
 - assistantMessage: friendly reply shown in chat. Mention what you applied and what you could not filter. Keep under 3 sentences.
+- Do NOT state result counts in assistantMessage — the app computes the exact count after filters are applied.
 
 ## Cannot filter (put in unexpressible)
 - Gender or single-sex programs

@@ -343,6 +343,7 @@ export function SearchExperience({
                 inPanel
                 filters={filters}
                 resultCount={results.length}
+                programs={programs}
                 onApplyFilters={applyFilters}
               />
 
