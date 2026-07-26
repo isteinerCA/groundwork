@@ -35,7 +35,7 @@ const GALLERY_IMAGES = [
 
 export function ProgramGallerySection() {
   return (
-    <section className="border-y border-[var(--color-border)] bg-[var(--color-parchment-dark)] px-4 py-16 sm:px-6 sm:py-20">
+    <section className="px-4 py-16 sm:px-6 sm:py-20">
       <div className="mx-auto max-w-6xl text-center">
         <SectionEyebrow>Summer pathways</SectionEyebrow>
         <h2 className="mt-3 text-3xl md:text-4xl">

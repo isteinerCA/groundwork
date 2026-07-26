@@ -1191,7 +1191,6 @@
       "admissionDisplay": "Selective",
       "formatDisplay": "Residential/Commuter/Online",
       "formatTags": [
-        "both",
         "commuter",
         "online",
         "residential"
@@ -1345,7 +1344,6 @@
       "admissionDisplay": "Rolling/selective",
       "formatDisplay": "Residential/Commuter/Online",
       "formatTags": [
-        "both",
         "commuter",
         "online",
         "residential"
@@ -2035,7 +2033,6 @@
       "admissionDisplay": "Application (transcripts, counselor)",
       "formatDisplay": "Residential/Online",
       "formatTags": [
-        "both",
         "online",
         "residential"
       ],
@@ -2128,7 +2125,6 @@
       "admissionDisplay": "Selective application",
       "formatDisplay": "Residential/Online",
       "formatTags": [
-        "both",
         "online",
         "residential"
       ],
@@ -2278,7 +2274,6 @@
       "admissionDisplay": "Application, rolling",
       "formatDisplay": "Residential/Online",
       "formatTags": [
-        "both",
         "online",
         "residential"
       ],
@@ -3377,7 +3372,6 @@
       "admissionDisplay": "Rolling",
       "formatDisplay": "Residential/Online",
       "formatTags": [
-        "both",
         "online",
         "residential"
       ],
@@ -3782,7 +3776,6 @@
       "admissionDisplay": "Highly selective",
       "formatDisplay": "Residential/Online",
       "formatTags": [
-        "both",
         "online",
         "residential"
       ],
@@ -3898,7 +3891,6 @@
       "admissionDisplay": "Rolling, diagnostic placement",
       "formatDisplay": "Residential/Online",
       "formatTags": [
-        "both",
         "online",
         "residential"
       ],
@@ -4046,7 +4038,6 @@
       "admissionDisplay": "Highly competitive (socioeconomic criteria)",
       "formatDisplay": "Residential/Online",
       "formatTags": [
-        "both",
         "online",
         "residential"
       ],
@@ -5305,7 +5296,6 @@
       "admissionDisplay": "Selective (talent-search scores)",
       "formatDisplay": "Residential/Day/Online",
       "formatTags": [
-        "both",
         "commuter",
         "online",
         "residential"

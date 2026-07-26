@@ -18,10 +18,7 @@ import {
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
 import { filterPrograms, sortPrograms, type SortOption } from "@/lib/data/filter-programs";
-import {
-  formatProgramCountLabel,
-  getPreviewPrograms,
-} from "@/lib/programs/preview-programs";
+import { formatProgramCountLabel } from "@/lib/programs/preview-programs";
 import { summarizeSearchFilters, trackEvent } from "@/lib/analytics";
 import { loadLastSearchFilters, saveLastSearchFilters } from "@/lib/search/last-filters";
 import type { Program, SearchFilters } from "@/lib/types/program";
@@ -70,8 +67,6 @@ export function SearchExperience({
   }));
   const [sort, setSort] = useState<SortOption>("selectivity");
   const [restoredLastSearch, setRestoredLastSearch] = useState(false);
-
-  const previewPrograms = useMemo(() => getPreviewPrograms(programs, 2), [programs]);
 
   useEffect(() => {
     if (restoredLastSearch) return;
@@ -406,7 +401,7 @@ export function SearchExperience({
               </div>
             </div>
           ) : (
-            <SearchPreviewPanel programs={previewPrograms} />
+            <SearchPreviewPanel />
           )}
         </div>
       </div>

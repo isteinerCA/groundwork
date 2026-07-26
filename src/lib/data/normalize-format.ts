@@ -22,15 +22,15 @@ export function normalizeFormat(raw: string): FormatNormalization {
   const formatTags = new Set<ProgramFormatId>();
 
   if (hasOnline) formatTags.add("online");
-  if (hasResidential) formatTags.add("residential");
-  if (hasCommuter || hasDay) formatTags.add("commuter");
+  if (hasResidential || lower === "varies") {
+    formatTags.add("residential");
+  }
+  if (hasCommuter || hasDay) {
+    formatTags.add("commuter");
+  }
 
   if (formatTags.size === 0 || lower === "varies") {
     formatTags.add("residential");
-  }
-
-  if (hasOnline && (hasResidential || hasCommuter)) {
-    formatTags.add("both");
   }
 
   return {
@@ -44,8 +44,5 @@ export function formatMatchesFilter(
   selected: ProgramFormatId[],
 ): boolean {
   if (selected.length === 0) return true;
-  return selected.some((f) => {
-    if (f === "both") return formatTags.includes("both") || formatTags.length > 1;
-    return formatTags.includes(f);
-  });
+  return selected.some((f) => formatTags.includes(f));
 }

@@ -1,8 +1,7 @@
 export const PROGRAM_FORMATS = [
   { id: "residential", label: "Residential" },
-  { id: "commuter", label: "Commuter / Day" },
+  { id: "commuter", label: "Commuter" },
   { id: "online", label: "Online" },
-  { id: "both", label: "Both" },
 ] as const;
 
 export type ProgramFormatId = (typeof PROGRAM_FORMATS)[number]["id"];

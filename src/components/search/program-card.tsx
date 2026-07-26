@@ -15,6 +15,9 @@ import { formatShortlistMembershipLabel } from "@/lib/workspace/shortlist-member
 import { useWorkspace } from "@/components/workspace/workspace-provider";
 import type { Program } from "@/lib/types/program";
 
+const categoryBadgeClass =
+  "rounded-full bg-[var(--color-parchment-dark)] px-2.5 py-0.5 text-xs font-medium text-[var(--color-navy)]";
+
 export function ProgramCard({
   program,
   preview = false,
@@ -78,10 +81,7 @@ export function ProgramCard({
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
             {getProgramCategoryIds(program).map((categoryId) => (
-              <span
-                key={categoryId}
-                className="rounded-full bg-[var(--color-parchment-dark)] px-2.5 py-0.5 text-xs font-medium text-[var(--color-navy)]"
-              >
+              <span key={categoryId} className={categoryBadgeClass}>
                 {categoryLabelForId(categoryId)}
               </span>
             ))}

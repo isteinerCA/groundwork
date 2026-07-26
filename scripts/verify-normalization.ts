@@ -3,6 +3,7 @@
  * Run: npx tsx scripts/verify-normalization.ts
  */
 import { normalizeAdmissionType } from "../src/lib/data/normalize-admission";
+import { normalizeFormat } from "../src/lib/data/normalize-format";
 import { parsePrice } from "../src/lib/data/parse-price";
 import { matchesPriceFilter } from "../src/lib/data/matches-price-filter";
 
@@ -41,6 +42,24 @@ const free = parsePrice("Free");
 if (!free.fullyFunded || free.priceMin !== 0) {
   console.error("FAIL: Free price parsing");
   failed++;
+}
+
+const formatCases: [string, string[]][] = [
+  ["Commuter", ["commuter"]],
+  ["Day", ["commuter"]],
+  ["Residential", ["residential"]],
+  ["Residential/Commuter", ["residential", "commuter"]],
+  ["Residential/Commuter/Online", ["commuter", "online", "residential"]],
+];
+
+for (const [raw, expected] of formatCases) {
+  const { formatTags } = normalizeFormat(raw);
+  const sorted = [...formatTags].sort();
+  const expectedSorted = [...expected].sort();
+  if (sorted.join(",") !== expectedSorted.join(",")) {
+    console.error(`FAIL format: "${raw}" → [${sorted.join(", ")}], expected [${expectedSorted.join(", ")}]`);
+    failed++;
+  }
 }
 
 if (failed === 0) {
