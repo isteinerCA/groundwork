@@ -30,6 +30,20 @@ function buildSystemPrompt(): string {
   const regions = US_REGIONS.map(
     (r) => `- ${r.id}: ${r.label} (${r.states.slice(0, 4).join(", ")}…)`,
   ).join("\n");
+  const months = [
+    "1=January",
+    "2=February",
+    "3=March",
+    "4=April",
+    "5=May",
+    "6=June",
+    "7=July",
+    "8=August",
+    "9=September",
+    "10=October",
+    "11=November",
+    "12=December",
+  ].join(", ");
 
   return `You are Groundwork's search assistant. You translate parent messages into structured summer-program search filters.
 
@@ -67,10 +81,11 @@ ${prices}
 ${regions}
   Use for "east coast only", "west coast", "midwest", "northeast", "the south". Clear with empty array [] when removed. NEVER put regional phrases in dataQuery.
 - includeLocations: string[] — include programs in specific US states (OR logic). Use canonical lowercase state names (e.g. "new york", "massachusetts", "california"). Use for multi-state requests: "NY or MA", "New York or Massachusetts only", "California or Texas". Clear with empty array [] when removed. NEVER put multi-state lists in dataQuery.
+- includeMonths: number[] — include programs whose date range overlaps these calendar months (OR logic). Use month numbers: ${months}. Examples: "in June" → [6], "June or July" → [6, 7], "programs only in June" → [6]. Matches programs that run during the month (not necessarily start in it). Clear with empty array [] when removed. NEVER put month names in dataQuery.
 
 ## Expanding vs replacing filters (critical)
-- **Expand / add** keeps existing compatible filters and adds new ones (OR logic). Examples: "expand to CA and WA", "expand to marine science", "expand to online programs", "also include commuter".
-- For OR-array fields (categories, formats, admissionTypes, durationBuckets, includeRegions, includeLocations): on expand, return the **full combined list** — values from currentFilters plus newly requested values.
+- **Expand / add** keeps existing compatible filters and adds new ones (OR logic). Examples: "expand to CA and WA", "expand to marine science", "expand to online programs", "also include July".
+- For OR-array fields (categories, formats, admissionTypes, durationBuckets, includeRegions, includeLocations, includeMonths): on expand, return the **full combined list** — values from currentFilters plus newly requested values.
 - For locations specifically: when currentFilters has dataQuery or includeLocations and the user expands, include those existing states in includeLocations alongside new states. Clear dataQuery and includeRegions when moving to includeLocations.
 - **Replace / narrow** ("California only", "only marine science", "online only", "switch to Texas"): return ONLY the new value(s). Do not carry over previous filters unless the user asked to keep them.
 
@@ -107,7 +122,7 @@ Set clearAll: true when the user wants to reset all filters ("start over", "clea
 - Zip code / radius search
 - Specific acceptance rates or competitiveness beyond admission type
 - Real-time availability or seat counts
-- Exact dates/months (June, July) — no date filter yet
+- Specific session start dates within a multi-session program (we match overall date range overlap only)
 - Programs where price or length could not be parsed from our data ("Contact program", "Varies")
 - Anything not in our program data
 
@@ -119,6 +134,8 @@ Use excludeLocation for negated location requests — never encode "not in X" as
 Use includeRegions for multi-state regional requests (east coast, west coast, etc.) — never put "east coast" in dataQuery.
 
 Use includeLocations for explicit multi-state OR requests (NY or MA, California and Texas) — never put "ny or ma" in dataQuery.
+
+Use includeMonths for month/date-window requests ("in June", "July only", "June and July") — never put month names in dataQuery. We match programs whose overall date range overlaps the month; specific session start dates may vary — mention that in assistantMessage when relevant.
 
 ## Questions
 If the user asks a question without requesting filter changes, leave filterPatch empty (or only fields they explicitly asked to change) and answer in assistantMessage.

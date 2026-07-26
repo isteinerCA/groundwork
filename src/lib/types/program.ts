@@ -1,4 +1,4 @@
-import type { AdmissionTypeId } from "@/lib/constants/admission-types";
+import type { MonthNumber } from "@/lib/constants/months";
 import type { ProgramCategoryId } from "@/lib/constants/categories";
 import type {
   DurationBucketId,
@@ -48,6 +48,11 @@ export interface Program {
   lengthMinDays: number | null;
   lengthMaxDays: number | null;
   datesDisplay: string;
+  /** Parsed inclusive start/end from datesDisplay (ISO YYYY-MM-DD). Null when unknown. */
+  dateStart: string | null;
+  dateEnd: string | null;
+  /** How confidently dateStart/dateEnd represent the offering window. */
+  datesParseQuality: "exact" | "approximate" | "unknown";
   locationDisplay: string;
   isInternational: boolean;
   stateRestriction?: string;
@@ -100,6 +105,8 @@ export interface SearchFilters {
   includeRegions: import("@/lib/data/us-regions").UsRegionId[];
   /** Canonical state names to include with OR logic, e.g. ["new york", "massachusetts"]. */
   includeLocations: string[];
+  /** Calendar months (1–12) the program must overlap (OR logic), e.g. [6] for June. */
+  includeMonths: MonthNumber[];
 }
 
 export const DEFAULT_SEARCH_FILTERS: SearchFilters = {
@@ -119,6 +126,7 @@ export const DEFAULT_SEARCH_FILTERS: SearchFilters = {
   excludeLocation: "",
   includeRegions: [],
   includeLocations: [],
+  includeMonths: [],
   minDurationWeeks: null,
   maxDurationWeeks: null,
 };

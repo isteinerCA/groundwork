@@ -81,6 +81,11 @@ function unionExpandableArrays(
   if (patch.includeRegions?.length && current.includeRegions.length) {
     next.includeRegions = unionUnique(current.includeRegions, patch.includeRegions);
   }
+  if (patch.includeMonths?.length && current.includeMonths.length) {
+    next.includeMonths = unionUnique(current.includeMonths, patch.includeMonths).sort(
+      (a, b) => a - b,
+    );
+  }
 }
 
 function unionExpandableLocations(

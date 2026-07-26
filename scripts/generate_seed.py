@@ -5,6 +5,7 @@ from __future__ import annotations
 import csv
 import json
 import re
+from calendar import monthrange
 from datetime import date
 from pathlib import Path
 
@@ -125,6 +126,200 @@ def normalize_duration(raw: str) -> dict:
     return {"durationBucket": bucket, "lengthDisplay": display, **length}
 
 
+MONTH_BY_TOKEN = {
+    "jan": 1,
+    "january": 1,
+    "feb": 2,
+    "february": 2,
+    "mar": 3,
+    "march": 3,
+    "apr": 4,
+    "april": 4,
+    "may": 5,
+    "jun": 6,
+    "june": 6,
+    "jul": 7,
+    "july": 7,
+    "aug": 8,
+    "august": 8,
+    "sep": 9,
+    "sept": 9,
+    "september": 9,
+    "oct": 10,
+    "october": 10,
+    "nov": 11,
+    "november": 11,
+    "dec": 12,
+    "december": 12,
+}
+
+SUMMER_YEAR = 2026
+
+
+def _month_num(token: str) -> int | None:
+    cleaned = token.strip().lower().rstrip(".")
+    if cleaned in MONTH_BY_TOKEN:
+        return MONTH_BY_TOKEN[cleaned]
+    for key, value in MONTH_BY_TOKEN.items():
+        if cleaned.startswith(key):
+            return value
+    return None
+
+
+def _default_day(modifier: str | None, position: str) -> int:
+    if not modifier:
+        return 1 if position == "start" else 28
+    lower = modifier.lower()
+    if "early" in lower:
+        return 1 if position == "start" else 10
+    if "mid" in lower:
+        return 10 if position == "start" else 20
+    if "late" in lower:
+        return 15 if position == "start" else 28
+    return 1 if position == "start" else 28
+
+
+def _make_date(year: int, month: int, day: int) -> date:
+    last = monthrange(year, month)[1]
+    return date(year, month, min(max(day, 1), last))
+
+
+def _month_last_day(year: int, month: int) -> date:
+    return date(year, month, monthrange(year, month)[1])
+
+
+def parse_dates_display(raw: str) -> dict:
+    display = raw.strip()
+    if not display:
+        return {"dateStart": None, "dateEnd": None, "datesParseQuality": "unknown"}
+
+    lower = display.lower()
+    if any(term in lower for term in ("available anytime", "self-paced", "year-round")):
+        return {"dateStart": None, "dateEnd": None, "datesParseQuality": "unknown"}
+
+    if re.search(r"\bsummer\b", lower) and not re.search(
+        r"\b(jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)\b", lower
+    ):
+        return {
+            "dateStart": f"{SUMMER_YEAR}-06-01",
+            "dateEnd": f"{SUMMER_YEAR}-08-31",
+            "datesParseQuality": "approximate",
+        }
+
+    collected: list[date] = []
+    has_exact_day = False
+
+    # Same-month numeric range: Jun 15-26
+    for match in re.finditer(
+        r"(?P<mod>early|mid|late)?\s*(?P<m1>[A-Za-z]+)\.?\s*(?P<d1>\d{1,2})\s*[-–—]\s*(?P<d2>\d{1,2})",
+        display,
+        re.I,
+    ):
+        month = _month_num(match.group("m1"))
+        if not month:
+            continue
+        start_day = int(match.group("d1"))
+        end_day = int(match.group("d2"))
+        collected.extend(
+            [
+                _make_date(SUMMER_YEAR, month, start_day),
+                _make_date(SUMMER_YEAR, month, end_day),
+            ]
+        )
+        has_exact_day = True
+
+    # Cross-month range: Jul 5 - Aug 1, Jun 28-Jul 24
+    for match in re.finditer(
+        r"(?P<mod1>early|mid|late)?\s*(?P<m1>[A-Za-z]+)\.?\s*(?P<d1>\d{1,2})?\s*[-–—]\s*(?P<mod2>early|mid|late)?\s*(?P<m2>[A-Za-z]+)\.?\s*(?P<d2>\d{1,2})?",
+        display,
+        re.I,
+    ):
+        month1 = _month_num(match.group("m1"))
+        month2 = _month_num(match.group("m2"))
+        if not month1 or not month2:
+            continue
+        if month1 == month2 and match.group("d1") and match.group("d2") and not match.group("d2"):
+            continue
+        day1 = (
+            int(match.group("d1"))
+            if match.group("d1")
+            else _default_day(match.group("mod1"), "start")
+        )
+        day2 = (
+            int(match.group("d2"))
+            if match.group("d2")
+            else _default_day(match.group("mod2"), "end")
+        )
+        if month1 == month2 and match.group("d1") and match.group("d2"):
+            continue  # handled by same-month rule above
+        collected.extend(
+            [
+                _make_date(SUMMER_YEAR, month1, day1),
+                _make_date(SUMMER_YEAR, month2, day2),
+            ]
+        )
+        if match.group("d1") and match.group("d2"):
+            has_exact_day = True
+
+    # Month-only spans: Jun - Aug, Jun & Jul
+    for match in re.finditer(
+        r"(?P<mod1>early|mid|late)?\s*(?P<m1>[A-Za-z]+)\.?\s*(?:[-–—&]|and)\s*(?P<mod2>early|mid|late)?\s*(?P<m2>[A-Za-z]+)\.?",
+        display,
+        re.I,
+    ):
+        month1 = _month_num(match.group("m1"))
+        month2 = _month_num(match.group("m2"))
+        if not month1 or not month2:
+            continue
+        start_day = _default_day(match.group("mod1"), "start")
+        end_day = _default_day(match.group("mod2"), "end")
+        collected.extend(
+            [
+                _make_date(SUMMER_YEAR, month1, start_day),
+                _make_date(SUMMER_YEAR, month2, end_day),
+            ]
+        )
+
+    # Single month with optional modifier: Mid-July, Early June
+    for match in re.finditer(
+        r"(?P<mod>early|mid|late)\s*(?P<m1>[A-Za-z]+)\.?|(?P<m2>[A-Za-z]+)\.?\s*(?P=mod)",
+        display,
+        re.I,
+    ):
+        month_token = match.group("m1") or match.group("m2")
+        month = _month_num(month_token or "")
+        if not month:
+            continue
+        modifier = match.group("mod")
+        collected.extend(
+            [
+                _make_date(SUMMER_YEAR, month, _default_day(modifier, "start")),
+                _make_date(SUMMER_YEAR, month, _default_day(modifier, "end")),
+            ]
+        )
+
+    # Standalone month tokens when no ranges matched yet
+    if not collected:
+        for match in re.finditer(r"\b([A-Za-z]{3,9})\.?\b", display):
+            month = _month_num(match.group(1))
+            if month:
+                collected.extend(
+                    [_make_date(SUMMER_YEAR, month, 1), _month_last_day(SUMMER_YEAR, month)]
+                )
+
+    if not collected:
+        return {"dateStart": None, "dateEnd": None, "datesParseQuality": "unknown"}
+
+    start = min(collected)
+    end = max(collected)
+    quality = "exact" if has_exact_day else "approximate"
+    return {
+        "dateStart": start.isoformat(),
+        "dateEnd": end.isoformat(),
+        "datesParseQuality": quality,
+    }
+
+
 def normalize_grade(raw: str) -> dict:
     display = raw.strip()
     lower = display.lower()
@@ -205,6 +400,7 @@ def main():
             price = parse_price(row["Price"])
             fmt = normalize_format(row.get("Format", ""))
             dur = normalize_duration(row.get("Length", ""))
+            dates = parse_dates_display(row.get("Dates 2026") or "")
             grades = normalize_grade(row["Grades"])
             csv_flags = []
             if row.get("Flags", "").strip():
@@ -226,6 +422,7 @@ def main():
                 **fmt,
                 **dur,
                 "datesDisplay": (row.get("Dates 2026") or "").strip(),
+                **dates,
                 "locationDisplay": row["Location"].strip(),
                 "isInternational": detect_international(row["Location"]),
                 "hasCollegeCredit": bool(re.match(r"^yes", row.get("Credit", ""), re.I)),

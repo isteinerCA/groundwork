@@ -7,9 +7,10 @@ import {
   PRICE_FILTERS,
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
-import { DEFAULT_SEARCH_FILTERS, type SearchFilters } from "@/lib/types/program";
+import { MONTH_NUMBERS, parseMonthList } from "@/lib/constants/months";
 import { parseMultiStateLocations, resolveLocationQuery } from "@/lib/data/matches-location";
 import { resolveRegionQuery, US_REGION_IDS } from "@/lib/data/us-regions";
+import { DEFAULT_SEARCH_FILTERS, type SearchFilters } from "@/lib/types/program";
 
 const categoryIds = PROGRAM_CATEGORIES.map((c) => c.id) as [
   (typeof PROGRAM_CATEGORIES)[number]["id"],
@@ -50,6 +51,7 @@ export const filterPatchSchema = z
     excludeLocation: z.string().optional(),
     includeRegions: z.array(z.enum(US_REGION_IDS)).optional(),
     includeLocations: z.array(z.string()).optional(),
+    includeMonths: z.array(z.enum(MONTH_NUMBERS)).optional(),
     minDurationWeeks: z.number().min(0).nullable().optional(),
     maxDurationWeeks: z.number().min(0).nullable().optional(),
   })
@@ -72,6 +74,7 @@ export const searchFiltersSchema = z.object({
   excludeLocation: z.string(),
   includeRegions: z.array(z.enum(US_REGION_IDS)),
   includeLocations: z.array(z.string()),
+  includeMonths: z.array(z.enum(MONTH_NUMBERS)),
   minDurationWeeks: z.number().min(0).nullable(),
   maxDurationWeeks: z.number().min(0).nullable(),
 });
@@ -182,6 +185,9 @@ export function sanitizeFilterPatch(
   if (patch.includeLocations !== undefined) {
     sanitized.includeLocations = sanitizeIncludeLocations(patch.includeLocations);
   }
+  if (patch.includeMonths !== undefined) {
+    sanitized.includeMonths = [...new Set(patch.includeMonths)].sort((a, b) => a - b);
+  }
   if (patch.minDurationWeeks !== undefined) {
     sanitized.minDurationWeeks = patch.minDurationWeeks;
   }
@@ -202,11 +208,31 @@ export function sanitizeFilterPatch(
       sanitized.includeRegions = [...new Set([...existing, regionFromQuery])];
       sanitized.dataQuery = "";
     } else {
-      const statesFromQuery = parseMultiStateLocations(sanitized.dataQuery);
-      if (statesFromQuery.length > 0) {
-        const existing = sanitized.includeLocations ?? patch.includeLocations ?? [];
-        sanitized.includeLocations = [...new Set([...existing, ...statesFromQuery])];
+      const monthsFromQuery = parseMonthList(sanitized.dataQuery);
+      const monthFillerPattern =
+        /^(?:in|during|for|programs?|program|only|summer|session|sessions|that|run|runs|starting|\s|&|and|\/)+$/i;
+      const strippedForMonths = sanitized.dataQuery
+        .replace(
+          /\b(january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sep|sept|oct|nov|dec)\b/gi,
+          "",
+        )
+        .trim();
+      if (
+        monthsFromQuery.length > 0 &&
+        (!strippedForMonths || monthFillerPattern.test(strippedForMonths))
+      ) {
+        const existing = sanitized.includeMonths ?? patch.includeMonths ?? [];
+        sanitized.includeMonths = [...new Set([...existing, ...monthsFromQuery])].sort(
+          (a, b) => a - b,
+        );
         sanitized.dataQuery = "";
+      } else {
+        const statesFromQuery = parseMultiStateLocations(sanitized.dataQuery);
+        if (statesFromQuery.length > 0) {
+          const existing = sanitized.includeLocations ?? patch.includeLocations ?? [];
+          sanitized.includeLocations = [...new Set([...existing, ...statesFromQuery])];
+          sanitized.dataQuery = "";
+        }
       }
     }
   }

@@ -5,6 +5,7 @@ import {
   PRICE_FILTERS,
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
+import { getMonthLabel } from "@/lib/constants/months";
 import { formatDataQueryLabel } from "@/lib/search/format-data-query-label";
 import { getRegionLabel } from "@/lib/data/us-regions";
 import type { SearchFilters } from "@/lib/types/program";
@@ -181,6 +182,16 @@ export function getActiveFilterItems(filters: SearchFilters): ActiveFilterItem[]
       label: formatDataQueryLabel(location),
       remove: {
         includeLocations: filters.includeLocations.filter((loc) => loc !== location),
+      },
+    });
+  }
+
+  for (const month of filters.includeMonths) {
+    items.push({
+      key: `month-${month}`,
+      label: `Runs in ${getMonthLabel(month)}`,
+      remove: {
+        includeMonths: filters.includeMonths.filter((m) => m !== month),
       },
     });
   }

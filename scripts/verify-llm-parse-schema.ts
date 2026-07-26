@@ -187,6 +187,13 @@ assert(isExpandIntent("expand to online programs"), "detects expand for formats"
 assert(!isExpandIntent("only CA and WA"), "detects replace-only intent");
 assert(!isExpandIntent("online only"), "detects format replace intent");
 
+// month filter from dataQuery promotion
+const junePatch = sanitizeFilterPatch({ dataQuery: "programs only in June" });
+assert(
+  junePatch.includeMonths?.includes(6) && junePatch.dataQuery === "",
+  "promotes June dataQuery to includeMonths",
+);
+
 // east coast region from dataQuery promotion
 const eastCoastPatch = sanitizeFilterPatch({ dataQuery: "east coast only" });
 assert(
@@ -337,6 +344,38 @@ if (failed === 0) {
       (p.lengthMaxDays < 21 || p.lengthMinDays > 21),
   );
   assert(badLength.length === 0, "3-week filter uses lengthMinDays/MaxDays overlap");
+}
+
+if (failed === 0) {
+  const data = JSON.parse(readFileSync("data/seed/programs.json", "utf-8")) as {
+    programs: Program[];
+  };
+  const juneFilters: SearchFilters = {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [10],
+    includeMonths: [6],
+  };
+  const juneResults = filterPrograms(data.programs, juneFilters);
+  assert(juneResults.length > 0, "June month filter returns results");
+  assert(
+    juneResults.some((p) => p.name.includes("Rosetta Institute")),
+    "Rosetta matches June overlap filter",
+  );
+  const julyOnlyFilters: SearchFilters = {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [10],
+    includeMonths: [7],
+  };
+  const cosmosJuly = filterPrograms(data.programs, julyOnlyFilters).some(
+    (p) => p.name === "COSMOS UC Davis",
+  );
+  assert(cosmosJuly, "COSMOS Jul 5 - Aug 1 matches July filter");
+  const cosmosNotJune = !filterPrograms(data.programs, {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [10],
+    includeMonths: [6],
+  }).some((p) => p.name === "COSMOS UC Davis");
+  assert(cosmosNotJune, "COSMOS Jul-only program excluded from June-only filter");
 }
 
 if (failed === 0) {

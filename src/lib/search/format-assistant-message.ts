@@ -1,4 +1,5 @@
 import { filterPrograms } from "@/lib/data/filter-programs";
+import { getMonthLabel } from "@/lib/constants/months";
 import type { LlmParseResponse } from "@/lib/search/llm-parse-schema";
 import type { Program, SearchFilters } from "@/lib/types/program";
 
@@ -17,6 +18,22 @@ function resultCountSentence(count: number): string {
     return "No programs match — try broadening your filters.";
   }
   return `${count} program${count === 1 ? "" : "s"} match your filters.`;
+}
+
+function monthFilterNote(filters: SearchFilters, programs: Program[]): string | null {
+  if (filters.includeMonths.length === 0) return null;
+
+  const monthLabels = filters.includeMonths.map((month) => getMonthLabel(month)).join(" or ");
+  const matching = filterPrograms(programs, filters);
+  const approximateCount = matching.filter(
+    (program) => program.datesParseQuality === "approximate",
+  ).length;
+
+  if (approximateCount === 0) {
+    return `These programs run during ${monthLabels}. Check each program's site for specific session dates.`;
+  }
+
+  return `These programs run during ${monthLabels} based on our date ranges — some use approximate summer windows. Check each program's site for which sessions start in ${monthLabels}.`;
 }
 
 /** Build chat text with an accurate post-filter result count. */
@@ -40,6 +57,8 @@ export function formatAssistantMessage(
   const nextCount = filterPrograms(programs, nextFilters).length;
   const withoutGuess = stripGuessedCounts(text);
   const countSentence = resultCountSentence(nextCount);
+  const monthNote = monthFilterNote(nextFilters, programs);
 
-  return withoutGuess ? `${withoutGuess} ${countSentence}` : countSentence;
+  const parts = [withoutGuess, countSentence, monthNote].filter(Boolean);
+  return parts.join(" ");
 }
