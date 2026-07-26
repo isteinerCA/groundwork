@@ -52,6 +52,20 @@ def normalize_admission(raw: str) -> tuple[str, str]:
     return "application", t
 
 
+def _strip_ancillary_fees(raw: str) -> str:
+    s = raw
+    s = re.sub(
+        r"(?:\+\s*)?\$\s*[\d,]+(?:\.\d+)?\s*(?:non[- ]?refundable\s+)?application fees?",
+        "",
+        s,
+        flags=re.I,
+    )
+    s = re.sub(r"application fees?\s*(?:[:.]?\s*)?\$\s*[\d,]+(?:\.\d+)?", "", s, flags=re.I)
+    s = re.sub(r"\(\+\s*\$\s*[\d,]+(?:\.\d+)?\s*reading fees?\)", "", s, flags=re.I)
+    s = re.sub(r"(?:\+\s*)?\$\s*[\d,]+(?:\.\d+)?\s*reading fees?", "", s, flags=re.I)
+    return s
+
+
 def parse_price(raw: str) -> dict:
     t = raw.strip()
     if not t:
@@ -60,7 +74,7 @@ def parse_price(raw: str) -> dict:
         return {"priceDisplay": t, "priceMin": None, "priceMax": None, "priceUnknown": True, "fullyFunded": False}
     if re.search(r"^free$|fully funded|free \(fully funded\)|free/subsidized|\$0\b", t, re.I):
         return {"priceDisplay": t, "priceMin": 0, "priceMax": 0, "priceUnknown": False, "fullyFunded": True}
-    nums = [float(x.replace(",", "")) for x in re.findall(r"\d[\d,]*(?:\.\d+)?", t)]
+    nums = [float(x.replace(",", "")) for x in re.findall(r"\d[\d,]*(?:\.\d+)?", _strip_ancillary_fees(t))]
     if not nums:
         return {"priceDisplay": t, "priceMin": None, "priceMax": None, "priceUnknown": True, "fullyFunded": False}
     return {

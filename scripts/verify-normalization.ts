@@ -48,6 +48,24 @@ if (!free.fullyFunded || free.priceMin !== 0) {
   failed++;
 }
 
+const cosmosPrice = parsePrice("$5,518 + $46 application fee (need-based aid available)");
+if (cosmosPrice.priceMin !== 5518 || cosmosPrice.priceMax !== 5518) {
+  console.error(
+    `FAIL: COSMOS price should ignore application fee, got min=${cosmosPrice.priceMin} max=${cosmosPrice.priceMax}`,
+  );
+  failed++;
+}
+const cosmosProgram = {
+  priceMin: cosmosPrice.priceMin,
+  priceMax: cosmosPrice.priceMax,
+  priceUnknown: cosmosPrice.priceUnknown,
+  fullyFunded: cosmosPrice.fullyFunded,
+};
+if (matchesPriceFilter(cosmosProgram, "under_2k", true)) {
+  console.error("FAIL: COSMOS should not match under $2k after application fee is excluded");
+  failed++;
+}
+
 const formatCases: [string, string[]][] = [
   ["Commuter", ["commuter"]],
   ["Day", ["commuter"]],
