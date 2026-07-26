@@ -5,14 +5,12 @@ import type { PriceFilterId } from "@/lib/constants/filters";
 /**
  * Price filter behavior for programs with unknown pricing ("Contact program").
  *
- * Default (excludeUnknownPrice = false):
- *   Unknown-price programs PASS all price filters so users don't miss
- *   important programs (Harvard, BU, etc.) when filtering by budget.
- *   Cards show "Contact program" / "Price not listed" prominently.
+ * excludeUnknownPrice = true:
+ *   Unknown-price programs are always excluded.
  *
- * Strict mode (excludeUnknownPrice = true):
- *   Unknown-price programs are excluded whenever a specific price filter
- *   is active (not "any").
+ * excludeUnknownPrice = false (default):
+ *   Unknown-price programs pass bucket/numeric filters so users don't miss
+ *   important programs (Harvard, BU, etc.) when filtering by budget.
  *
  * Overlap rule when price is known:
  *   Program passes if [priceMin, priceMax] overlaps the filter range.
@@ -23,12 +21,12 @@ export function matchesPriceFilter(
   priceFilter: PriceFilterId,
   excludeUnknownPrice: boolean,
 ): boolean {
-  if (priceFilter === "any") {
-    return true;
-  }
-
   if (price.priceUnknown) {
     return !excludeUnknownPrice;
+  }
+
+  if (priceFilter === "any") {
+    return true;
   }
 
   const spec = PRICE_FILTERS.find((p) => p.id === priceFilter);
@@ -55,11 +53,11 @@ export function matchesNumericPriceFilter(
   maxPrice: number | null,
   excludeUnknownPrice: boolean,
 ): boolean {
-  if (minPrice == null && maxPrice == null) return true;
-
   if (price.priceUnknown) {
     return !excludeUnknownPrice;
   }
+
+  if (minPrice == null && maxPrice == null) return true;
 
   if (price.fullyFunded && (maxPrice == null || maxPrice >= 0)) {
     return minPrice == null || minPrice <= 0;

@@ -379,6 +379,37 @@ if (failed === 0) {
 }
 
 if (failed === 0) {
+  const data = JSON.parse(readFileSync("data/seed/programs.json", "utf-8")) as {
+    programs: Program[];
+  };
+  const stonyBrook = data.programs.find((p) =>
+    p.name.includes("Stony Brook Pre-College") &&
+    p.trackDetail?.includes("Personal Branding"),
+  );
+  assert(stonyBrook?.priceUnknown, "Stony Brook course row has unknown price");
+  if (stonyBrook) {
+    const withUnlistedHidden = filterPrograms(data.programs, {
+      ...DEFAULT_SEARCH_FILTERS,
+      gradesCompleted: [10],
+      excludeUnknownPrice: true,
+    });
+    assert(
+      !withUnlistedHidden.some((p) => p.id === stonyBrook.id),
+      "hide unlisted prices excludes Stony Brook course rows",
+    );
+    const withUnlistedShown = filterPrograms(data.programs, {
+      ...DEFAULT_SEARCH_FILTERS,
+      gradesCompleted: [10],
+      excludeUnknownPrice: false,
+    });
+    assert(
+      withUnlistedShown.some((p) => p.id === stonyBrook.id),
+      "Stony Brook included when hide unlisted prices is off",
+    );
+  }
+}
+
+if (failed === 0) {
   console.log("All LLM parse schema checks passed.");
 } else {
   process.exit(1);

@@ -28,8 +28,7 @@ export const PRICE_FILTER_OPTIONS = PRICE_FILTERS.filter((p) => p.id !== "any");
 export type PriceFilterId = (typeof PRICE_FILTERS)[number]["id"];
 
 /**
- * When true, programs with unknown price ("Contact program") are excluded
- * whenever any specific price filter is active. Default: false (include them).
+ * When true, programs with unknown/unlisted price are excluded from results.
  */
 export const DEFAULT_EXCLUDE_UNKNOWN_PRICE = false;
 
