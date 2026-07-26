@@ -253,7 +253,7 @@ export function WorkspaceSection() {
   return (
     <section
       id="workspace"
-      className="scroll-mt-20 border-y border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-20 sm:px-6"
+      className="scroll-mt-20 border-y border-[var(--color-border)] bg-[var(--color-parchment-dark)] px-4 py-20 sm:px-6"
     >
       <div className="mx-auto max-w-6xl">
         <SectionEyebrow>Decision workspace</SectionEyebrow>
