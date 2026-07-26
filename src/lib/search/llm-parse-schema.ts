@@ -105,7 +105,10 @@ export const chatHistoryMessageSchema = z.object({
 
 export const parseRequestSchema = z.object({
   message: z.string().trim().min(1).max(500),
-  currentFilters: searchFiltersSchema,
+  currentFilters: z.preprocess(
+    (val) => ({ ...DEFAULT_SEARCH_FILTERS, ...(val as Partial<SearchFilters>) }),
+    searchFiltersSchema,
+  ),
   resultCount: z.number().int().min(0),
   history: z.array(chatHistoryMessageSchema).max(12).optional(),
 });

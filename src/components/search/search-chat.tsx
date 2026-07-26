@@ -111,7 +111,7 @@ export function SearchChat({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           message: text,
-          currentFilters: filters,
+          currentFilters: { ...DEFAULT_SEARCH_FILTERS, ...filters },
           resultCount,
           history,
         }),
