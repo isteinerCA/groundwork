@@ -261,7 +261,7 @@ export function SearchExperience({
                 ))}
               </FilterGroup>
 
-              <FilterGroup title="Max price" singleRow>
+              <FilterGroup title="Pricing" singleRow>
                 {PRICE_FILTER_OPTIONS.map((p) => (
                   <Chip
                     key={p.id}
@@ -275,6 +275,12 @@ export function SearchExperience({
                     }
                   />
                 ))}
+                <Chip
+                  compact
+                  label="Fully funded only"
+                  selected={filters.fullyFundedOnly}
+                  onClick={() => update({ fullyFundedOnly: !filters.fullyFundedOnly })}
+                />
               </FilterGroup>
 
               <FilterGroup title="More">
@@ -282,11 +288,6 @@ export function SearchExperience({
                   label="College credit only"
                   selected={filters.collegeCreditOnly}
                   onClick={() => update({ collegeCreditOnly: !filters.collegeCreditOnly })}
-                />
-                <Chip
-                  label="Fully funded only"
-                  selected={filters.fullyFundedOnly}
-                  onClick={() => update({ fullyFundedOnly: !filters.fullyFundedOnly })}
                 />
                 <Chip
                   label="US only"

@@ -15,7 +15,7 @@ const US_STATES: UsState[] = [
   {
     name: "california",
     abbr: "CA",
-    aliases: ["cali", "los angeles", "san francisco", "berkeley", "stanford", "san diego"],
+    aliases: ["cali", "los angeles", "san francisco", "san diego"],
     misspellings: ["californa", "califronia", "califorina"],
   },
   { name: "colorado", abbr: "CO", aliases: ["denver", "boulder"], misspellings: [] },

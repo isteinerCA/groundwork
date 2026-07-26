@@ -18,9 +18,15 @@ const AGE_TO_GRADE: [number, number][] = [
 ];
 
 function ageRangeToGrades(minAge: number, maxAge: number): [number, number] {
-  const mins = AGE_TO_GRADE.filter(([age]) => age >= minAge).map(([, g]) => g);
-  const maxs = AGE_TO_GRADE.filter(([age]) => age <= maxAge).map(([, g]) => g);
-  return [Math.min(...mins, 5), Math.max(...maxs, 12)];
+  const gradesInRange = AGE_TO_GRADE.filter(
+    ([age]) => age >= minAge && age <= maxAge,
+  ).map(([, grade]) => grade);
+
+  if (gradesInRange.length === 0) {
+    return [Math.max(5, minAge - 6), Math.min(12, maxAge - 6)];
+  }
+
+  return [Math.min(...gradesInRange), Math.max(...gradesInRange)];
 }
 
 function parseGradeNumber(token: string): number | null {
