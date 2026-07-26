@@ -162,6 +162,21 @@ if (gradeMatchesFilter(mathPathGrade, [12])) {
   failed++;
 }
 
+const risingJrSrAge = normalizeGrade("Rising Jr/Sr (ages 15-17)");
+const risingJrSrGrade = {
+  gradeCompletedMin: risingJrSrAge.gradeCompletedMin,
+  gradeCompletedMax: risingJrSrAge.gradeCompletedMax,
+  gradeSource: risingJrSrAge.gradeSource,
+};
+if (gradeMatchesFilter(risingJrSrGrade, [12])) {
+  console.error("FAIL: Rising Jr/Sr (ages 15-17) should not match completed grade 12");
+  failed++;
+}
+if (!gradeMatchesFilter(risingJrSrGrade, [11])) {
+  console.error("FAIL: Rising Jr/Sr (ages 15-17) should match completed grade 11");
+  failed++;
+}
+
 if (failed === 0) {
   console.log("All normalization checks passed.");
 } else {

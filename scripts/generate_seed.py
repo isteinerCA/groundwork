@@ -402,6 +402,15 @@ def normalize_grade(raw: str) -> dict:
                 "stateRestriction": state,
             }
 
+    if "rising" in lower and re.search(r"soph\s*/?\s*jr\s*/?\s*sr", lower):
+        return {
+            "gradeDisplay": display,
+            "gradeCompletedMin": 9,
+            "gradeCompletedMax": 11,
+            "gradeSource": "mixed",
+            "stateRestriction": state,
+        }
+
     if "rising" in lower and re.search(r"jr\s*/?\s*sr", lower):
         age_match = re.search(r"\((\d+)\s+by\s+(?:jun|july)", lower, re.I)
         if age_match:
@@ -412,6 +421,13 @@ def normalize_grade(raw: str) -> dict:
                 "gradeSource": "mixed",
                 "stateRestriction": state,
             }
+        return {
+            "gradeDisplay": display,
+            "gradeCompletedMin": 10,
+            "gradeCompletedMax": 11,
+            "gradeSource": "mixed",
+            "stateRestriction": state,
+        }
 
     if "rising" in lower:
         nums = [int(m.group(1)) for m in re.finditer(r"(\d+)(?:st|nd|rd|th)?", lower)]
