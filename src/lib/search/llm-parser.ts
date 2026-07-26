@@ -43,8 +43,9 @@ Return a partial filterPatch with ONLY fields that should change. Omit unchanged
 ${categories}
   When ADDING categories, return the full combined list (current + new).
   When the user says "only X" (without "or"), return ONLY those categories (replace list).
-- admissionTypes: string[] — valid IDs:
+- admissionTypes: string[] — valid IDs (OR logic — programs matching ANY selected type):
 ${admission}
+  Selecting types INCLUDES only those programs. There is no exclude-admission filter — use positive selection (e.g. first_come only) instead of trying to exclude application programs.
 - formats: string[] — valid IDs:
 ${formats}
   "commuter" = day/commuter programs (no overnight). "residential" = overnight/on-campus. Programs can have both tags.
@@ -72,6 +73,13 @@ ${regions}
 - "not in California", "exclude California", "outside CA" → excludeLocation: "california", dataQuery: "", includeRegions: [], includeLocations: []
 - dataQuery and excludeLocation must NOT target the same location
 - Do NOT set usOnly unless the user explicitly asks for US-only or domestic programs
+
+## Admission type rules (critical)
+- "no application", "no application required", "no application needed", "without an application", "no apps", "first come first served", "first-come", "rolling enrollment", "open enrollment" → admissionTypes: ["first_come"]
+- "highly selective", "very competitive", "hard to get into", "most competitive" → admissionTypes: ["highly_competitive"]
+- "application required", "needs an application" (when not meaning highly selective) → admissionTypes: ["application"]
+- "easy to get into" / "low selectivity" → admissionTypes: ["first_come", "application"] unless they clearly mean no application at all
+- Do NOT put "no application" or "no applications" in unexpressible — these map to first_come. Never say admission filtering is unsupported for these requests.
 
 ## Category + region
 Region filters match program location only — they do not override category filters. A NY camp in Traditional Camps will not appear when Wilderness & Adventure is selected, even if it is on the east coast. If results drop to zero after adding a region, mention that active category filters still apply.

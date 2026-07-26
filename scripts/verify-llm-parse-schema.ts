@@ -154,6 +154,10 @@ assert(durPatch.minDurationWeeks === 3 && durPatch.maxDurationWeeks === 3, "dura
 const fmtPatch = filterPatchSchema.parse({ formats: ["commuter"] });
 assert(fmtPatch.formats?.[0] === "commuter", "commuter format valid in schema");
 
+// admission type in schema
+const admPatch = filterPatchSchema.parse({ admissionTypes: ["first_come"] });
+assert(admPatch.admissionTypes?.[0] === "first_come", "first_come admission valid in schema");
+
 if (failed === 0) {
   const data = JSON.parse(readFileSync("data/seed/programs.json", "utf-8")) as {
     programs: Program[];

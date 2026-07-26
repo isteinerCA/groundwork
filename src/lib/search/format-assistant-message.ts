@@ -40,7 +40,6 @@ export function formatAssistantMessage(
   const nextCount = filterPrograms(programs, nextFilters).length;
   const withoutGuess = stripGuessedCounts(text);
   const countSentence = resultCountSentence(nextCount);
-  const main = withoutGuess ? `${withoutGuess} ${countSentence}` : countSentence;
 
-  return limitation ? `${main} ${limitation}`.trim() : main;
+  return withoutGuess ? `${withoutGuess} ${countSentence}` : countSentence;
 }
