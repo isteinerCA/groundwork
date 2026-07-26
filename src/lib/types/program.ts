@@ -1,3 +1,4 @@
+import type { AdmissionTypeId } from "@/lib/constants/admission-types";
 import type { MonthNumber } from "@/lib/constants/months";
 import type { ProgramCategoryId } from "@/lib/constants/categories";
 import type {
