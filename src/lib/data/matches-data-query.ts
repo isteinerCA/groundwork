@@ -1,4 +1,5 @@
 import type { Program } from "@/lib/types/program";
+import { termMatchesInText } from "@/lib/data/fuzzy-text-match";
 import { matchesLocationQuery, resolveLocationQuery } from "@/lib/data/matches-location";
 import { programMatchesAnyRegion, resolveRegionQuery } from "@/lib/data/us-regions";
 
@@ -49,7 +50,7 @@ export function matchesDataQuery(program: Program, query: string): boolean {
 
   const haystack = programSearchText(program);
   const terms = trimmed.toLowerCase().split(/\s+/).filter(Boolean);
-  return terms.every((term) => haystack.includes(term));
+  return terms.every((term) => termMatchesInText(term, haystack));
 }
 
 export function countDataQueryMatches(programs: Program[], query: string): number {

@@ -4,6 +4,8 @@
  */
 import { DEFAULT_SEARCH_FILTERS } from "../src/lib/types/program";
 import { filterPrograms } from "../src/lib/data/filter-programs";
+import { matchesDataQuery } from "../src/lib/data/matches-data-query";
+import { termMatchesInText } from "../src/lib/data/fuzzy-text-match";
 import { mergeFilterPatch, isExpandIntent } from "../src/lib/search/merge-filter-patch";
 import {
   filterPatchSchema,
@@ -186,6 +188,10 @@ assert(isExpandIntent("expand to marine science"), "detects expand for categorie
 assert(isExpandIntent("expand to online programs"), "detects expand for formats");
 assert(!isExpandIntent("only CA and WA"), "detects replace-only intent");
 assert(!isExpandIntent("online only"), "detects format replace intent");
+
+assert(termMatchesInText("stonybrook", "Stony Brook Pre-College Summer"), "stonybrook matches Stony Brook");
+assert(termMatchesInText("cosmo", "COSMOS UC Davis"), "cosmo prefix matches COSMOS");
+assert(termMatchesInText("cosmis", "COSMOS UC Davis"), "cosmis typo matches COSMOS");
 
 // month filter from dataQuery promotion
 const junePatch = sanitizeFilterPatch({ dataQuery: "programs only in June" });
@@ -406,6 +412,22 @@ if (failed === 0) {
       withUnlistedShown.some((p) => p.id === stonyBrook.id),
       "Stony Brook included when hide unlisted prices is off",
     );
+  }
+
+  const fuzzyFilters: SearchFilters = {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [10],
+    dataQuery: "stonybrook",
+  };
+  const fuzzyResults = filterPrograms(data.programs, fuzzyFilters);
+  assert(
+    fuzzyResults.some((p) => p.name.includes("Stony Brook Pre-College")),
+    "stonybrook dataQuery finds Stony Brook programs",
+  );
+  const cosmos = data.programs.find((p) => p.name === "COSMOS UC Davis");
+  if (cosmos) {
+    assert(matchesDataQuery(cosmos, "cosmo"), "cosmo matches COSMOS program");
+    assert(matchesDataQuery(cosmos, "cosmis"), "cosmis typo matches COSMOS program");
   }
 }
 
