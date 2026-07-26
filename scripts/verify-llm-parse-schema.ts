@@ -17,6 +17,10 @@ import {
 import { resolveRegionQuery } from "../src/lib/data/us-regions";
 import { parseMultiStateLocations } from "../src/lib/data/matches-location";
 import { formatAssistantMessage } from "../src/lib/search/format-assistant-message";
+import {
+  isMonthOrDateFilterRequest,
+  stripNoOpFilterPatch,
+} from "../src/lib/search/filter-patch-delta";
 import { readFileSync } from "node:fs";
 import type { Program, SearchFilters } from "../src/lib/types/program";
 
@@ -262,6 +266,7 @@ const addTechNext = mergeFilterPatch(
 );
 const addTechMessage = formatAssistantMessage(
   addTechParsed,
+  marinePlusTechFilters,
   addTechNext,
   dataForAssistant.programs,
 );
@@ -323,6 +328,7 @@ const cosmoResult = parseLlmResponse(
 );
 const cosmoMessage = formatAssistantMessage(
   cosmoResult,
+  { ...DEFAULT_SEARCH_FILTERS, gradesCompleted: [10] },
   cosmoFilters,
   dataForAssistant.programs,
 );
@@ -354,6 +360,10 @@ const multiFilterMessage = formatAssistantMessage(
   {
     ...DEFAULT_SEARCH_FILTERS,
     gradesCompleted: [10],
+  },
+  {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [10],
     categories: ["stem-engineering"],
     fullyFundedOnly: true,
   },
@@ -367,6 +377,73 @@ assert(
 assert(
   !multiFilterMessage.includes("Wrong LLM prose"),
   "multi-filter message ignores LLM assistantMessage",
+);
+
+assert(isMonthOrDateFilterRequest("not in August"), "not in August is month filter request");
+
+const eastCoastMarineTechFilters: SearchFilters = {
+  ...DEFAULT_SEARCH_FILTERS,
+  gradesCompleted: [9],
+  includeRegions: ["east-coast"],
+  categories: ["marine-science", "artificial-intelligence"],
+};
+
+const augustEchoPatch = {
+  dataQuery: "",
+  excludeLocation: "",
+  includeRegions: ["east-coast"],
+  categories: ["marine-science", "artificial-intelligence"],
+  gradesCompleted: [9],
+};
+
+assert(
+  Object.keys(stripNoOpFilterPatch(eastCoastMarineTechFilters, augustEchoPatch)).length === 0,
+  "echoed unchanged patch fields are stripped",
+);
+
+const notInAugustParsed = parseLlmResponse(
+  {
+    clearAll: false,
+    filterPatch: augustEchoPatch,
+    applied: "bad",
+    unexpressible: "",
+    assistantMessage:
+      "Showing programs with text search cleared, with location exclusion cleared, in East Coast...",
+  },
+  "not in August",
+  eastCoastMarineTechFilters,
+);
+assert(
+  Object.keys(notInAugustParsed.filterPatch).length === 0,
+  "not in August clears bogus echoed patch",
+);
+assert(
+  notInAugustParsed.unexpressible.includes("month"),
+  "not in August sets month unexpressible note",
+);
+
+const notInAugustMessage = formatAssistantMessage(
+  notInAugustParsed,
+  eastCoastMarineTechFilters,
+  eastCoastMarineTechFilters,
+  dataForAssistant.programs,
+);
+assert(
+  notInAugustMessage.includes("month"),
+  "not in August message explains month limitation",
+);
+assert(
+  !notInAugustMessage.includes("East Coast") &&
+    !notInAugustMessage.includes("text search cleared"),
+  "not in August message does not restate unchanged filters",
+);
+const notInAugustCount = filterPrograms(
+  dataForAssistant.programs,
+  eastCoastMarineTechFilters,
+).length;
+assert(
+  notInAugustMessage.includes(`${notInAugustCount} program`),
+  "not in August message includes accurate unchanged result count",
 );
 
 if (failed === 0) {

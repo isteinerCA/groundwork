@@ -7,6 +7,7 @@ import {
 } from "@/lib/constants/filters";
 import { filterPrograms } from "@/lib/data/filter-programs";
 import { getRegionLabel } from "@/lib/data/us-regions";
+import { stripNoOpFilterPatch } from "@/lib/search/filter-patch-delta";
 import type { LlmParseResponse } from "@/lib/search/llm-parse-schema";
 import { formatDataQueryLabel } from "@/lib/search/format-data-query-label";
 import type { Program, SearchFilters } from "@/lib/types/program";
@@ -18,24 +19,16 @@ function resultCountSentence(count: number): string {
   return `${count} program${count === 1 ? "" : "s"} match your filters.`;
 }
 
-/** Describe only filters present in the patch — never infer chips that were not applied. */
+/** Describe only meaningful filter changes in the patch. */
 function describeFilterPatch(patch: Partial<SearchFilters>): string {
   const parts: string[] = [];
 
-  if (patch.dataQuery !== undefined) {
-    if (patch.dataQuery.trim()) {
-      parts.push(`matching "${formatDataQueryLabel(patch.dataQuery)}"`);
-    } else {
-      parts.push("with text search cleared");
-    }
+  if (patch.dataQuery !== undefined && patch.dataQuery.trim()) {
+    parts.push(`matching "${formatDataQueryLabel(patch.dataQuery)}"`);
   }
 
-  if (patch.excludeLocation !== undefined) {
-    if (patch.excludeLocation.trim()) {
-      parts.push(`excluding ${formatDataQueryLabel(patch.excludeLocation)}`);
-    } else {
-      parts.push("with location exclusion cleared");
-    }
+  if (patch.excludeLocation !== undefined && patch.excludeLocation.trim()) {
+    parts.push(`excluding ${formatDataQueryLabel(patch.excludeLocation)}`);
   }
 
   if (patch.includeRegions?.length) {
@@ -131,13 +124,15 @@ function describeFilterPatch(patch: Partial<SearchFilters>): string {
   return `Showing programs ${parts.join(", ")}.`;
 }
 
-/** Build chat text from applied filters and an accurate post-filter result count. */
+/** Build chat text from applied filter changes and an accurate post-filter result count. */
 export function formatAssistantMessage(
   result: LlmParseResponse,
+  previousFilters: SearchFilters,
   nextFilters: SearchFilters,
   programs: Program[],
 ): string {
   const limitation = result.unexpressible.trim();
+  const effectivePatch = stripNoOpFilterPatch(previousFilters, result.filterPatch);
 
   if (result.clearAll) {
     const countSentence =
@@ -147,22 +142,28 @@ export function formatAssistantMessage(
     return `Cleared all filters.${countSentence}${limitation ? ` ${limitation}` : ""}`.trim();
   }
 
-  const hadPatch = Object.keys(result.filterPatch).length > 0;
+  const hadPatch = Object.keys(effectivePatch).length > 0;
 
   if (!hadPatch) {
+    if (limitation) {
+      const countSentence =
+        nextFilters.gradesCompleted.length > 0
+          ? ` ${resultCountSentence(filterPrograms(programs, nextFilters).length)}`
+          : "";
+      return `${limitation}${countSentence}`.trim();
+    }
     const text = result.assistantMessage.trim();
     return [text, limitation].filter(Boolean).join(" ");
   }
 
   if (nextFilters.gradesCompleted.length === 0) {
     return (
-      describeFilterPatch(result.filterPatch) +
-      (limitation ? ` ${limitation}` : "")
+      describeFilterPatch(effectivePatch) + (limitation ? ` ${limitation}` : "")
     ).trim();
   }
 
   const nextCount = filterPrograms(programs, nextFilters).length;
-  const described = describeFilterPatch(result.filterPatch);
+  const described = describeFilterPatch(effectivePatch);
   const countSentence = resultCountSentence(nextCount);
 
   return [described, limitation, countSentence].filter(Boolean).join(" ");

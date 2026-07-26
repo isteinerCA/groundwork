@@ -190,7 +190,7 @@ export async function parseSearchMessageWithLlm(
 
   try {
     const raw = JSON.parse(content) as unknown;
-    return parseLlmResponse(raw, request.message);
+    return parseLlmResponse(raw, request.message, request.currentFilters);
   } catch {
     throw new LlmParserValidationError("Failed to parse LLM JSON");
   }

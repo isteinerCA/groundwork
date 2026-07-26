@@ -157,7 +157,7 @@ export function SearchChat({
       const assistantMessage: ChatMessage = {
         id: `assistant-${Date.now()}`,
         role: "assistant",
-        text: formatAssistantMessage(result, nextFilters, programs),
+        text: formatAssistantMessage(result, filters, nextFilters, programs),
       };
 
       setMessages((prev) => [...prev, assistantMessage]);

@@ -10,6 +10,10 @@ import {
 import { DEFAULT_SEARCH_FILTERS, type SearchFilters } from "@/lib/types/program";
 import { parseMultiStateLocations, resolveLocationQuery } from "@/lib/data/matches-location";
 import { resolveRegionQuery, US_REGION_IDS } from "@/lib/data/us-regions";
+import {
+  applyUnsupportedConstraintGuards,
+  stripNoOpFilterPatch,
+} from "@/lib/search/filter-patch-delta";
 import { isAdditiveFilterRequest } from "@/lib/search/filter-request-intent";
 import type { ProgramCategoryId } from "@/lib/constants/categories";
 
@@ -309,16 +313,29 @@ export function restrictPatchForSimpleQuery(
 }
 
 /** Parse and sanitize the full LLM response. Throws ZodError on invalid shape. */
-export function parseLlmResponse(raw: unknown, message?: string): LlmParseResponse {
+export function parseLlmResponse(
+  raw: unknown,
+  message?: string,
+  currentFilters?: SearchFilters,
+): LlmParseResponse {
   const parsed = llmParseResponseSchema.parse(raw);
   let filterPatch = sanitizeFilterPatch(parsed.filterPatch);
   if (message) {
     filterPatch = restrictPatchForSimpleQuery(message, filterPatch);
   }
+  if (currentFilters) {
+    filterPatch = stripNoOpFilterPatch(currentFilters, filterPatch);
+  }
+  let unexpressible = parsed.unexpressible.trim();
+  if (message) {
+    const guarded = applyUnsupportedConstraintGuards(message, filterPatch, unexpressible);
+    filterPatch = guarded.filterPatch;
+    unexpressible = guarded.unexpressible;
+  }
   return {
     ...parsed,
     applied: parsed.applied.trim(),
-    unexpressible: parsed.unexpressible.trim(),
+    unexpressible,
     assistantMessage: parsed.assistantMessage.trim(),
     filterPatch,
   };
