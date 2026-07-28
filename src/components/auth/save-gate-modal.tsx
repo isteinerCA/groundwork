@@ -32,13 +32,31 @@ export function SaveGateModal({
             <p className="mt-2 text-sm text-[var(--color-text-muted)]">
               Create an account to save programs and access your workspace.
             </p>
-            <SignUpButton mode="modal" forceRedirectUrl="/workspace">
-              <button type="button" className={`${btnPrimary} mt-6 w-full`}>
+            <SignUpButton
+              forceRedirectUrl="/workspace"
+              fallbackRedirectUrl="/workspace"
+              signInForceRedirectUrl="/workspace"
+              signInFallbackRedirectUrl="/workspace"
+            >
+              <button
+                type="button"
+                onClick={onClose}
+                className={`${btnPrimary} mt-6 w-full`}
+              >
                 Sign up to save
               </button>
             </SignUpButton>
-            <SignInButton mode="modal" forceRedirectUrl="/workspace">
-              <button type="button" className={`${btnSecondary} mt-3 w-full`}>
+            <SignInButton
+              forceRedirectUrl="/workspace"
+              fallbackRedirectUrl="/workspace"
+              signUpForceRedirectUrl="/workspace"
+              signUpFallbackRedirectUrl="/workspace"
+            >
+              <button
+                type="button"
+                onClick={onClose}
+                className={`${btnSecondary} mt-3 w-full`}
+              >
                 Already have an account? Sign in
               </button>
             </SignInButton>

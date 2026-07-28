@@ -1,6 +1,7 @@
 import {ClerkProvider} from "@clerk/nextjs";
 import type { Metadata } from "next";
 import { Lora, Source_Sans_3 } from "next/font/google";
+import { PostAuthRedirect } from "@/components/auth/post-auth-redirect";
 import { AppProviders } from "@/components/workspace/app-providers";
 import { PlausibleAnalytics } from "@/components/analytics/plausible-analytics";
 import "./globals.css";
@@ -31,7 +32,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${lora.variable} ${sourceSans.variable}`}>
       <body className="min-h-screen antialiased">
-        <ClerkProvider>
+        <ClerkProvider
+          signInFallbackRedirectUrl="/workspace"
+          signUpFallbackRedirectUrl="/workspace"
+          signInForceRedirectUrl="/workspace"
+          signUpForceRedirectUrl="/workspace"
+        >
+          <PostAuthRedirect />
           <PlausibleAnalytics />
           <AppProviders>{children}</AppProviders>
         </ClerkProvider>
