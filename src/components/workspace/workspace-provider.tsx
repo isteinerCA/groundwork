@@ -9,6 +9,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { useAuth } from "@clerk/nextjs";
 import type { Shortlist, ShortlistItem, WorkspaceState } from "@/lib/types/workspace";
 import { trackEvent } from "@/lib/analytics";
 import {
@@ -53,8 +54,11 @@ interface WorkspaceContextValue {
 const WorkspaceContext = createContext<WorkspaceContextValue | null>(null);
 
 export function WorkspaceProvider({ children }: { children: ReactNode }) {
+  const { isSignedIn, isLoaded } = useAuth();
   const [state, setState] = useState<WorkspaceState>(() => DEFAULT_FALLBACK);
   const [hydrated, setHydrated] = useState(false);
+
+  const canWrite = Boolean(isSignedIn);
 
   useEffect(() => {
     setState(loadWorkspace());
@@ -69,17 +73,23 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
     setState(updater);
   }, []);
 
+  const guardWrite = useCallback((): boolean => {
+    if (!isLoaded) return false;
+    return canWrite;
+  }, [canWrite, isLoaded]);
+
   const value = useMemo<WorkspaceContextValue>(() => {
     const activeShortlist = getActiveShortlist(state);
     return {
       state,
       activeShortlist,
       hydrated,
-      canWrite: true,
+      canWrite,
       isSaved: (programId) => isProgramSaved(state, programId),
       isSavedInActive: (programId) => isProgramSavedInActiveShortlist(state, programId),
       getShortlistsForProgram: (programId) => getShortlistsContainingProgram(state, programId),
       toggleSave: (programId) => {
+        if (!guardWrite()) return false;
         persist((prev) => {
           const wasSaved = isProgramSavedInActiveShortlist(prev, programId);
           trackEvent(wasSaved ? "program_unsaved" : "program_saved");
@@ -88,6 +98,7 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
         return true;
       },
       savePrograms: (programIds) => {
+        if (!guardWrite()) return false;
         const unique = [...new Set(programIds)];
         persist((prev) => {
           const before = unique.filter((id) =>
@@ -102,18 +113,22 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
         return true;
       },
       updateItem: (programId, patch) => {
+        if (!guardWrite()) return false;
         persist((prev) => updateShortlistItem(prev, programId, patch));
         return true;
       },
       removeItem: (programId) => {
+        if (!guardWrite()) return false;
         persist((prev) => removeFromShortlist(prev, programId));
         return true;
       },
       addShortlist: (name) => {
+        if (!guardWrite()) return false;
         persist((prev) => createShortlist(prev, name));
         return true;
       },
       startNewShortlist: (archiveName) => {
+        if (!guardWrite()) return false;
         persist((prev) => {
           const active = getActiveShortlist(prev);
           if (active.items.length === 0) return prev;
@@ -123,13 +138,14 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
         return true;
       },
       renameShortlist: (shortlistId, name) => {
+        if (!guardWrite()) return false;
         persist((prev) => renameShortlist(prev, shortlistId, name));
         return true;
       },
       setDisplayName: (name) => persist((prev) => ({ ...prev, displayName: name })),
       acknowledgePrivacy: () => persist((prev) => acknowledgeNotesPrivacy(prev)),
     };
-  }, [state, hydrated, persist]);
+  }, [state, hydrated, canWrite, guardWrite, persist]);
 
   return <WorkspaceContext.Provider value={value}>{children}</WorkspaceContext.Provider>;
 }

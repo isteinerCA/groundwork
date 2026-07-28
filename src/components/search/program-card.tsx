@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { useAuth } from "@clerk/nextjs";
 import { useState } from "react";
+import { SaveGateModal } from "@/components/auth/save-gate-modal";
 import { btnOutline } from "@/components/ui/button-styles";
 import { ADMISSION_TYPE_BY_ID } from "@/lib/constants/admission-types";
 import {
@@ -32,14 +34,20 @@ export function ProgramCard({
   emphasizeTrack?: boolean;
 }) {
   const admission = ADMISSION_TYPE_BY_ID[program.admissionType];
+  const { isSignedIn } = useAuth();
   const { isSavedInActive, getShortlistsForProgram, activeShortlist, toggleSave, hydrated } =
     useWorkspace();
+  const [gateOpen, setGateOpen] = useState(false);
   const [showSavedBanner, setShowSavedBanner] = useState(false);
   const savedInActive = hydrated && isSavedInActive(program.id);
   const memberLists = hydrated ? getShortlistsForProgram(program.id) : [];
   const membershipLabel = formatShortlistMembershipLabel(memberLists, activeShortlist.id);
 
   const handleSaveClick = () => {
+    if (!isSignedIn) {
+      setGateOpen(true);
+      return;
+    }
     const wasSaved = savedInActive;
     const ok = toggleSave(program.id);
     if (ok && !wasSaved) setShowSavedBanner(true);
@@ -47,7 +55,15 @@ export function ProgramCard({
   };
 
   return (
-    <article
+    <>
+      {!preview && (
+        <SaveGateModal
+          open={gateOpen}
+          mode="signin"
+          onClose={() => setGateOpen(false)}
+        />
+      )}
+      <article
         className={`rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)] ${
           compact ? "p-3.5" : "p-5"
         } ${preview ? "opacity-95" : ""}`}
@@ -216,5 +232,6 @@ export function ProgramCard({
         </div>
       )}
     </article>
+    </>
   );
 }

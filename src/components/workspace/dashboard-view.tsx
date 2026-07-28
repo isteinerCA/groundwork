@@ -25,7 +25,8 @@ function categoryLabel(id: string): string {
 }
 
 export function DashboardView({ programs }: { programs: Program[] }) {
-  const { state, activeShortlist, updateItem, removeItem, acknowledgePrivacy } = useWorkspace();
+  const { state, activeShortlist, updateItem, removeItem, acknowledgePrivacy, canWrite } =
+    useWorkspace();
   const [viewMode, setViewMode] = useState<"table" | "board">("table");
   const [shareMessage, setShareMessage] = useState<string | null>(null);
   const [removeTarget, setRemoveTarget] = useState<{ id: string; name: string } | null>(null);
@@ -107,6 +108,16 @@ export function DashboardView({ programs }: { programs: Program[] }) {
         <Suspense fallback={null}>
           <CheckoutSuccessHandler />
         </Suspense>
+
+        {!canWrite && (
+          <p className="mb-6 rounded-[var(--radius-md)] border border-[var(--color-amber)]/40 bg-[var(--color-amber-soft)]/50 px-4 py-3 text-sm text-[var(--color-navy)]">
+            Sign up to save and edit your shortlist.{" "}
+            <Link href="/sign-up" className="font-medium text-[var(--color-navy-light)]">
+              Create an account
+            </Link>{" "}
+            or heart a program on search to get started.
+          </p>
+        )}
 
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div>
