@@ -5,7 +5,7 @@ Freemium web app for discovering and tracking elite summer programs (grades 6–
 ## Stack
 
 - **Next.js 15** (App Router) + TypeScript + Tailwind CSS v4
-- **NextAuth** (Google) + **Stripe** seasonal pass ($49)
+- **Stripe** seasonal pass ($49) — auth removed; Clerk planned
 - **Vercel** for hosting (custom domain optional later)
 
 ## Getting started
@@ -19,22 +19,23 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-### Auth & early bird (launch mode)
+### Workspace (no auth required)
 
-Copy `.env.example` → `.env.local`:
+Workspace features (save, notes, compare, export) work immediately via **localStorage** on this device. No sign-in required until Clerk is added.
+
+Optional early bird / Stripe env vars:
 
 ```bash
 EARLY_BIRD_FREE=true
 NEXT_PUBLIC_EARLY_BIRD=true
-AUTH_SECRET=<openssl rand -base64 32>
-AUTH_URL=http://localhost:3000
-GOOGLE_CLIENT_ID=...
-GOOGLE_CLIENT_SECRET=...
+NEXT_PUBLIC_STRIPE_CHECKOUT_ENABLED=true
+STRIPE_SECRET_KEY=...
+STRIPE_PRICE_ID=...
 ```
 
-**Early bird:** workspace is **free** for sign-in users; UI shows regular price **$49/season** with a limited-time free offer. Stripe stays off until you set `NEXT_PUBLIC_STRIPE_CHECKOUT_ENABLED=true`.
+**Early bird:** workspace is free; UI may show regular price **$49/season** with a limited-time free offer.
 
-Save flow: **Sign in with Google** → free early bird pass → save programs.
+Save flow: **Tap ♡ on search results** → open workspace.
 
 ## Data model (Sprint 1)
 

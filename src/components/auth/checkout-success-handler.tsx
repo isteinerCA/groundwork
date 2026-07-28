@@ -1,21 +1,18 @@
 "use client";
 
-import { useSession } from "next-auth/react";
 import { trackEvent } from "@/lib/analytics";
 import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 
 export function CheckoutSuccessHandler() {
   const params = useSearchParams();
-  const { update } = useSession();
   const checkout = params.get("checkout");
 
   useEffect(() => {
     if (checkout === "success") {
       trackEvent("payment_completed");
-      void update();
     }
-  }, [checkout, update]);
+  }, [checkout]);
 
   if (checkout !== "success") return null;
 

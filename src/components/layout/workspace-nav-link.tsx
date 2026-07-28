@@ -1,12 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useSession } from "next-auth/react";
 import { useWorkspace } from "@/components/workspace/workspace-provider";
 
-/** Show workspace nav when the user has saved programs or is signed in. */
+/** Show workspace nav when the user has saved programs. */
 export function WorkspaceNavLink() {
-  const { data: session } = useSession();
   const { hydrated, state } = useWorkspace();
 
   if (!hydrated) return null;
@@ -16,7 +14,7 @@ export function WorkspaceNavLink() {
     0,
   );
 
-  if (!session?.user && savedCount === 0) return null;
+  if (savedCount === 0) return null;
 
   return (
     <Link

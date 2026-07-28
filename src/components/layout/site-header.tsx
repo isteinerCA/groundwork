@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { UserMenu } from "@/components/auth/user-menu";
 import { GroundworkLogo } from "@/components/layout/groundwork-logo";
 import { WorkspaceNavLink } from "@/components/layout/workspace-nav-link";
 import { ButtonLink } from "@/components/ui/button-link";
@@ -29,7 +28,6 @@ export function SiteHeader({ logoPriority = false }: { logoPriority?: boolean })
         </nav>
 
         <div className="flex items-center gap-3 sm:gap-4">
-          <UserMenu />
           <WorkspaceNavLink />
           <ButtonLink href="/search" className="px-4 py-2 text-sm">
             Start your shortlist

@@ -2,15 +2,9 @@
 
 import Link from "next/link";
 import { Suspense, useMemo, useState } from "react";
-import { useSession } from "next-auth/react";
 import { btnPrimary } from "@/components/ui/button-styles";
 import { CheckoutSuccessHandler } from "@/components/auth/checkout-success-handler";
-import { EarlyBirdBanner } from "@/components/marketing/pricing-faq";
 import { DashboardShell } from "@/components/workspace/dashboard-shell";
-import {
-  formatSeasonPassPrice,
-  isEarlyBirdPricingShown,
-} from "@/lib/constants/pricing";
 import { StatusBadge, StatusSelect } from "@/components/workspace/status-badge";
 import { useWorkspace } from "@/components/workspace/workspace-provider";
 import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
@@ -31,9 +25,7 @@ function categoryLabel(id: string): string {
 }
 
 export function DashboardView({ programs }: { programs: Program[] }) {
-  const { data: session } = useSession();
-  const { state, activeShortlist, updateItem, removeItem, acknowledgePrivacy, canWrite } =
-    useWorkspace();
+  const { state, activeShortlist, updateItem, removeItem, acknowledgePrivacy } = useWorkspace();
   const [viewMode, setViewMode] = useState<"table" | "board">("table");
   const [shareMessage, setShareMessage] = useState<string | null>(null);
   const [removeTarget, setRemoveTarget] = useState<{ id: string; name: string } | null>(null);
@@ -115,20 +107,6 @@ export function DashboardView({ programs }: { programs: Program[] }) {
         <Suspense fallback={null}>
           <CheckoutSuccessHandler />
         </Suspense>
-
-        {!canWrite && session?.user && !isEarlyBirdPricingShown() && (
-          <p className="mb-6 rounded-[var(--radius-md)] border border-[var(--color-amber)]/40 bg-[var(--color-amber-soft)]/50 px-4 py-3 text-sm text-[var(--color-navy)]">
-            View-only mode —{" "}
-            <Link href="/pricing" className="font-medium text-[var(--color-navy-light)]">
-              get a season pass ({formatSeasonPassPrice()})
-            </Link>{" "}
-            to save and edit your shortlist.
-          </p>
-        )}
-
-        {!canWrite && session?.user && isEarlyBirdPricingShown() && (
-          <EarlyBirdBanner className="mb-6" />
-        )}
 
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div>

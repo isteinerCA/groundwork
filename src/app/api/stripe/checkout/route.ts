@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
-import { auth } from "@/auth";
 import { isEarlyBirdFreeEnabled, isStripeCheckoutEnabled } from "@/lib/constants/pricing";
 
 function getStripe(): Stripe | null {
@@ -10,16 +9,10 @@ function getStripe(): Stripe | null {
 }
 
 export async function POST() {
-  const session = await auth();
-  if (!session?.user?.email) {
-    return NextResponse.json({ error: "Sign in required." }, { status: 401 });
-  }
-
   if (isEarlyBirdFreeEnabled() && !isStripeCheckoutEnabled()) {
     return NextResponse.json(
       {
-        error:
-          "Early bird is active — sign in with Google for free workspace access. No payment required.",
+        error: "Early bird is active — workspace access is free. No payment required.",
       },
       { status: 400 },
     );
@@ -39,11 +32,9 @@ export async function POST() {
   try {
     const checkout = await stripe.checkout.sessions.create({
       mode: "payment",
-      customer_email: session.user.email,
       line_items: [{ price: priceId, quantity: 1 }],
       success_url: `${appUrl}/workspace?checkout=success`,
       cancel_url: `${appUrl}/pricing?checkout=cancelled`,
-      metadata: { userEmail: session.user.email },
     });
 
     return NextResponse.json({ url: checkout.url });

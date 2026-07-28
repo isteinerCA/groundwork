@@ -30,7 +30,7 @@ This plan sequences work from **data foundation → search MVP → workspace →
 |---|---|---|
 | Frontend | Next.js 15 (App Router) + TypeScript + Tailwind | Responsive web MVP; Vercel deployment |
 | Database | Supabase (Postgres) | Auth-adjacent, RLS, editable program data |
-| Auth | NextAuth.js + Google OAuth | Sole MVP auth method per PRD |
+| Auth | Removed (Clerk planned) | Was NextAuth + Google OAuth |
 | Payments | Stripe Checkout + webhooks | $49 seasonal pass; no card storage |
 | Analytics | Plausible | Privacy-first; no Google Analytics |
 | Email | Resend or Postmark | Contact form routing, account emails |
@@ -304,7 +304,7 @@ Implement phrase → filter mappings; pass all PRD §14.2 scenarios:
 ## 6. Phase 4 — Auth, Payments & Shortlist Workspace (Paid Tier)
 
 ### Step 4.1 — Authentication
-- [ ] NextAuth Google OAuth as sole sign-in (PRD §12.2)
+- [ ] Clerk auth (replacing removed NextAuth) as sole sign-in (PRD §12.2)
 - [ ] Session tokens; 30-day inactivity expiry
 - [ ] Auth triggered on first "Save" click (PRD §7.8, QA §14.3)
 

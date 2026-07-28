@@ -1,11 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useSession } from "next-auth/react";
 import { useState } from "react";
-import { SaveGateModal } from "@/components/auth/save-gate-modal";
 import { btnOutline } from "@/components/ui/button-styles";
-import { isEarlyBirdPricingShown } from "@/lib/constants/pricing";
 import { ADMISSION_TYPE_BY_ID } from "@/lib/constants/admission-types";
 import {
   categoryLabelForId,
@@ -35,32 +32,14 @@ export function ProgramCard({
   emphasizeTrack?: boolean;
 }) {
   const admission = ADMISSION_TYPE_BY_ID[program.admissionType];
-  const { data: session, update } = useSession();
   const { isSavedInActive, getShortlistsForProgram, activeShortlist, toggleSave, hydrated } =
     useWorkspace();
-  const [gateMode, setGateMode] = useState<"signin" | "pay" | null>(null);
   const [showSavedBanner, setShowSavedBanner] = useState(false);
   const savedInActive = hydrated && isSavedInActive(program.id);
   const memberLists = hydrated ? getShortlistsForProgram(program.id) : [];
   const membershipLabel = formatShortlistMembershipLabel(memberLists, activeShortlist.id);
 
-  const handleSaveClick = async () => {
-    if (!session?.user) {
-      setGateMode("signin");
-      return;
-    }
-    if (!session.user.seasonPassActive) {
-      if (isEarlyBirdPricingShown()) {
-        const refreshed = await update();
-        if (refreshed?.user?.seasonPassActive) {
-          const ok = toggleSave(program.id);
-          if (ok && !savedInActive) setShowSavedBanner(true);
-        }
-        return;
-      }
-      setGateMode("pay");
-      return;
-    }
+  const handleSaveClick = () => {
     const wasSaved = savedInActive;
     const ok = toggleSave(program.id);
     if (ok && !wasSaved) setShowSavedBanner(true);
@@ -68,15 +47,7 @@ export function ProgramCard({
   };
 
   return (
-    <>
-      {!preview && (
-        <SaveGateModal
-          open={gateMode !== null}
-          mode={gateMode ?? "signin"}
-          onClose={() => setGateMode(null)}
-        />
-      )}
-      <article
+    <article
         className={`rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)] ${
           compact ? "p-3.5" : "p-5"
         } ${preview ? "opacity-95" : ""}`}
@@ -245,6 +216,5 @@ export function ProgramCard({
         </div>
       )}
     </article>
-    </>
   );
 }

@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { signIn, useSession } from "next-auth/react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { btnPrimary } from "@/components/ui/button-styles";
 import { PricingFaq, PriceDisplay } from "@/components/marketing/pricing-faq";
 import { SiteFooter } from "@/components/layout/site-footer";
@@ -14,19 +13,11 @@ import {
 } from "@/lib/constants/pricing";
 
 export default function PricingPage() {
-  const { data: session, status, update } = useSession();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const earlyBird = isEarlyBirdPricingShown();
   const stripeEnabled = isStripeCheckoutEnabled();
-  const hasPass = session?.user?.seasonPassActive;
-
-  useEffect(() => {
-    if (earlyBird && session?.user && !hasPass) {
-      void update();
-    }
-  }, [earlyBird, session?.user, hasPass, update]);
 
   const startCheckout = async () => {
     setError(null);
@@ -79,60 +70,25 @@ export default function PricingPage() {
             <li>• No auto-renewal — renew next summer if you want</li>
           </ul>
 
-          {status === "loading" ? (
-            <p className="mt-8 text-sm text-[var(--color-text-muted)]">Loading…</p>
-          ) : hasPass ? (
-            <div className="mt-8">
-              <p className="rounded-[var(--radius-md)] bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
-                {earlyBird ? "Early bird access is active" : "Your season pass is active"}
-                {session?.user?.seasonPassExpires
-                  ? ` through ${session.user.seasonPassExpires}`
-                  : ""}
-                .
-              </p>
-              <Link
-                href="/workspace"
-                className={`${btnPrimary} mt-4`}
-              >
-                Open workspace
-              </Link>
-            </div>
-          ) : !session ? (
-            <button
-              type="button"
-              onClick={() => signIn("google", { callbackUrl: "/pricing" })}
-              className={`${btnPrimary} mt-8 w-full`}
-            >
-              {earlyBird
-                ? "Sign in with Google — free early bird access"
-                : "Sign in with Google to continue"}
-            </button>
-          ) : earlyBird ? (
-            <div className="mt-8 space-y-3">
-              <p className="text-sm text-[var(--color-text-muted)]">
-                Signed in as {session.user?.email}. Activating your free pass…
-              </p>
-              <button
-                type="button"
-                onClick={() => void update()}
-                className="w-full rounded-[var(--radius-md)] border border-[var(--color-border)] px-6 py-3 text-sm"
-              >
-                Refresh access
-              </button>
-            </div>
-          ) : stripeEnabled ? (
+          <Link href="/workspace" className={`${btnPrimary} mt-8 inline-flex w-full justify-center`}>
+            Open workspace
+          </Link>
+
+          {stripeEnabled && (
             <button
               type="button"
               onClick={startCheckout}
               disabled={loading}
-              className={`${btnPrimary} mt-8 w-full disabled:opacity-60`}
+              className={`${btnPrimary} mt-4 w-full disabled:opacity-60`}
             >
               {loading
                 ? "Redirecting to checkout…"
                 : `Get season pass — ${formatSeasonPassPrice()}`}
             </button>
-          ) : (
-            <p className="mt-8 text-sm text-[var(--color-text-muted)]">
+          )}
+
+          {!stripeEnabled && !earlyBird && (
+            <p className="mt-4 text-sm text-[var(--color-text-muted)]">
               Payment is not open yet. Contact us if you need access.
             </p>
           )}
