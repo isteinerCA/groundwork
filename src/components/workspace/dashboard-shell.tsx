@@ -119,7 +119,7 @@ export function DashboardShell({
                 <span aria-hidden className="w-4 text-center opacity-70">
                   +
                 </span>
-                Start new shortlist
+                Save & start new
               </button>
             </div>
           </div>

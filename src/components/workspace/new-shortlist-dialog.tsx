@@ -37,18 +37,18 @@ export function NewShortlistDialog({
         className="w-full max-w-md rounded-[var(--radius-lg)] bg-[var(--color-surface)] p-6 shadow-xl"
       >
         <h2 id="new-shortlist-title" className="text-xl text-[var(--color-navy)]">
-          Start a new shortlist
+          Save current shortlist
         </h2>
 
         {hasItems ? (
           <>
             <p className="mt-3 rounded-[var(--radius-md)] border border-[var(--color-amber)]/40 bg-[var(--color-amber-soft)]/60 px-4 py-3 text-sm text-[var(--color-navy)]">
-              Your current list ({activeShortlist.items.length} program
-              {activeShortlist.items.length === 1 ? "" : "s"}) will be saved as{" "}
-              <strong>{archiveName}</strong>. You can rename it below.
+              We&apos;ll keep your current list ({activeShortlist.items.length} program
+              {activeShortlist.items.length === 1 ? "" : "s"}) under the name below, then open a
+              blank shortlist for new picks.
             </p>
             <label className="mt-4 block text-sm font-medium text-[var(--color-navy)]">
-              Saved list name
+              Name for this saved list
               <input
                 type="text"
                 value={archiveName}
@@ -59,7 +59,7 @@ export function NewShortlistDialog({
           </>
         ) : (
           <p className="mt-3 text-sm text-[var(--color-text-muted)]">
-            Your current shortlist is empty — we&apos;ll start a fresh list for you.
+            Your current shortlist is empty — nothing to save yet.
           </p>
         )}
 
@@ -74,7 +74,7 @@ export function NewShortlistDialog({
               }}
               className={`${btnPrimary} disabled:opacity-50`}
             >
-              Start new list
+              Save & start new
             </button>
           )}
           <button
