@@ -211,17 +211,17 @@ export function DashboardView({ programs }: { programs: Program[] }) {
               </div>
             ) : viewMode === "table" ? (
               <div className="overflow-x-auto">
-                <table className="w-full min-w-[960px] table-fixed text-left text-sm">
+                <table className="w-full min-w-[1100px] table-fixed text-left text-sm">
                   <colgroup>
-                    <col className="w-[18%]" />
+                    <col className="w-[15%]" />
+                    <col className="w-[8%]" />
                     <col className="w-[10%]" />
-                    <col className="w-[12%]" />
-                    <col className="w-[10%]" />
-                    <col className="w-[12%]" />
-                    <col className="w-[12%]" />
-                    <col className="w-[10%]" />
-                    <col className="w-[16%]" />
-                    <col className="w-[10%]" />
+                    <col className="w-[9%]" />
+                    <col className="w-[8%]" />
+                    <col className="w-[11%]" />
+                    <col className="w-[9%]" />
+                    <col className="w-[24%]" />
+                    <col className="w-[6%]" />
                   </colgroup>
                   <thead className="border-b border-[var(--color-border)] text-xs text-[var(--color-text-muted)]">
                     <tr>
@@ -292,7 +292,7 @@ export function DashboardView({ programs }: { programs: Program[] }) {
                             }
                             placeholder="Add a note…"
                             rows={3}
-                            className="min-h-[4.5rem] w-full resize-y rounded border border-[var(--color-border)] px-2 py-1.5 text-xs leading-relaxed"
+                            className="min-h-[4.5rem] w-full resize-y rounded border border-[var(--color-border)] px-2.5 py-2 text-sm leading-relaxed"
                           />
                         </td>
                         <td className="px-3 py-4 align-top">
@@ -303,7 +303,7 @@ export function DashboardView({ programs }: { programs: Program[] }) {
                             }
                             className="rounded border border-red-200 px-2 py-1 text-xs font-medium text-red-700 hover:bg-red-50"
                           >
-                            Remove program
+                            Remove
                           </button>
                         </td>
                       </tr>
