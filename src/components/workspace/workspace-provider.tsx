@@ -29,6 +29,7 @@ import {
   renameShortlist,
   saveProgramsToShortlist,
   saveWorkspace,
+  setActiveShortlist,
   toggleSaveProgram,
   updateShortlistItem,
 } from "@/lib/workspace/storage";
@@ -49,6 +50,7 @@ interface WorkspaceContextValue {
   addShortlist: (name: string) => boolean;
   startNewShortlist: (archiveName: string) => boolean;
   renameShortlist: (shortlistId: string, name: string) => boolean;
+  setActiveShortlist: (shortlistId: string) => boolean;
   setDisplayName: (name: string) => void;
   acknowledgePrivacy: () => void;
   hydrated: boolean;
@@ -162,6 +164,10 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
       renameShortlist: (shortlistId, name) => {
         if (!guardWrite()) return false;
         persist((prev) => renameShortlist(prev, shortlistId, name));
+        return true;
+      },
+      setActiveShortlist: (shortlistId) => {
+        persist((prev) => setActiveShortlist(prev, shortlistId));
         return true;
       },
       setDisplayName: (name) => persist((prev) => ({ ...prev, displayName: name })),

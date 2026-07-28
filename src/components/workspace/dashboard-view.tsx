@@ -24,8 +24,15 @@ function categoryLabel(id: string): string {
 }
 
 export function DashboardView({ programs }: { programs: Program[] }) {
-  const { state, activeShortlist, updateItem, removeItem, acknowledgePrivacy, canWrite } =
-    useWorkspace();
+  const {
+    state,
+    activeShortlist,
+    updateItem,
+    removeItem,
+    acknowledgePrivacy,
+    canWrite,
+    setActiveShortlist,
+  } = useWorkspace();
   const [viewMode, setViewMode] = useState<"table" | "board">("table");
   const [shareMessage, setShareMessage] = useState<string | null>(null);
   const [removeTarget, setRemoveTarget] = useState<{ id: string; name: string } | null>(null);
@@ -118,14 +125,34 @@ export function DashboardView({ programs }: { programs: Program[] }) {
         )}
 
         <div className="flex flex-wrap items-start justify-between gap-4">
-          <div>
+          <div className="min-w-0">
             <h1 className="flex items-center gap-2 text-3xl">
               {greeting}, {state.displayName}
               <span aria-hidden>☀️</span>
             </h1>
-            <p className="mt-1 text-[var(--color-text-muted)]">
-              {activeShortlist.name} · {rows.length} program{rows.length === 1 ? "" : "s"}
-            </p>
+            <div className="mt-2 flex flex-wrap items-center gap-2">
+              {state.shortlists.length > 1 ? (
+                <label className="flex items-center gap-2 text-sm text-[var(--color-text-muted)]">
+                  <span className="sr-only">Active shortlist</span>
+                  <select
+                    value={state.activeShortlistId}
+                    onChange={(e) => setActiveShortlist(e.target.value)}
+                    className="max-w-full rounded border border-[var(--color-border)] bg-[var(--color-surface)] px-2.5 py-1.5 font-medium text-[var(--color-navy)]"
+                  >
+                    {state.shortlists.map((list) => (
+                      <option key={list.id} value={list.id}>
+                        {list.name} ({list.items.length})
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              ) : (
+                <p className="text-[var(--color-text-muted)]">
+                  {activeShortlist.name} · {rows.length} program
+                  {rows.length === 1 ? "" : "s"}
+                </p>
+              )}
+            </div>
           </div>
           <Link
             href="/search"

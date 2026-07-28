@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import { GroundworkLogo } from "@/components/layout/groundwork-logo";
 import { ValueBanner } from "@/components/marketing/value-banner";
 import { NewShortlistDialog } from "@/components/workspace/new-shortlist-dialog";
+import { useWorkspace } from "@/components/workspace/workspace-provider";
 
 const NAV = [
   { href: "/workspace", label: "My shortlist", icon: "♡" },
@@ -24,7 +25,15 @@ export function DashboardShell({
   showBanner?: boolean;
 }) {
   const pathname = usePathname();
+  const router = useRouter();
+  const { state, setActiveShortlist } = useWorkspace();
   const [newListOpen, setNewListOpen] = useState(false);
+
+  const shortlists = [...state.shortlists].sort((a, b) => {
+    if (a.id === state.activeShortlistId) return -1;
+    if (b.id === state.activeShortlistId) return 1;
+    return b.createdAt.localeCompare(a.createdAt);
+  });
 
   return (
     <div className="min-h-screen bg-[var(--color-parchment)]">
@@ -55,6 +64,38 @@ export function DashboardShell({
               );
             })}
           </nav>
+
+          <div className="mt-8">
+            <p className="px-3 text-xs font-semibold tracking-wide text-[var(--color-text-muted)] uppercase">
+              Your shortlists
+            </p>
+            <div className="mt-2 space-y-1">
+              {shortlists.map((list) => {
+                const isActive = list.id === state.activeShortlistId;
+                return (
+                  <button
+                    key={list.id}
+                    type="button"
+                    onClick={() => {
+                      setActiveShortlist(list.id);
+                      if (pathname !== "/workspace") router.push("/workspace");
+                    }}
+                    className={cn(
+                      "flex w-full items-start justify-between gap-2 rounded-[var(--radius-md)] px-3 py-2 text-left text-sm",
+                      isActive
+                        ? "bg-[var(--color-parchment-dark)] font-medium text-[var(--color-navy)]"
+                        : "text-[var(--color-text-muted)] hover:bg-[var(--color-parchment)] hover:text-[var(--color-navy)]",
+                    )}
+                  >
+                    <span className="min-w-0 truncate">{list.name}</span>
+                    <span className="shrink-0 text-xs tabular-nums opacity-70">
+                      {list.items.length}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
 
           <div className="mt-8">
             <p className="px-3 text-xs font-semibold tracking-wide text-[var(--color-text-muted)] uppercase">

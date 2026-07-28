@@ -201,6 +201,14 @@ export function renameShortlist(
   };
 }
 
+export function setActiveShortlist(
+  state: WorkspaceState,
+  shortlistId: string,
+): WorkspaceState {
+  if (!state.shortlists.some((s) => s.id === shortlistId)) return state;
+  return { ...state, activeShortlistId: shortlistId };
+}
+
 export function acknowledgeNotesPrivacy(state: WorkspaceState): WorkspaceState {
   return { ...state, notesPrivacyAcknowledged: true };
 }
