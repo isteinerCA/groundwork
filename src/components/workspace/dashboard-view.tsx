@@ -15,7 +15,6 @@ import { buildShareUrl } from "@/lib/workspace/share";
 import { trackEvent } from "@/lib/analytics";
 import {
   computeWorkspaceStats,
-  getRecentNotes,
   getUpcomingDeadlines,
   greetingForHour,
 } from "@/lib/workspace/stats";
@@ -38,7 +37,6 @@ export function DashboardView({ programs }: { programs: Program[] }) {
 
   const stats = computeWorkspaceStats(state);
   const deadlines = getUpcomingDeadlines(activeShortlist.items, programsById);
-  const recentNotes = getRecentNotes(activeShortlist.items, programsById);
   const hour = typeof window !== "undefined" ? new Date().getHours() : 10;
   const greeting = greetingForHour(hour);
 
@@ -170,7 +168,7 @@ export function DashboardView({ programs }: { programs: Program[] }) {
           ))}
         </div>
 
-        <div className="mt-8 grid gap-6 xl:grid-cols-[minmax(0,1fr)_280px]">
+        <div className="mt-8">
           <section className="rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]">
             <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--color-border)] px-5 py-4">
               <h2 className="text-xl">My Programs</h2>
@@ -213,7 +211,18 @@ export function DashboardView({ programs }: { programs: Program[] }) {
               </div>
             ) : viewMode === "table" ? (
               <div className="overflow-x-auto">
-                <table className="w-full min-w-[720px] text-left text-sm">
+                <table className="w-full min-w-[960px] table-fixed text-left text-sm">
+                  <colgroup>
+                    <col className="w-[18%]" />
+                    <col className="w-[10%]" />
+                    <col className="w-[12%]" />
+                    <col className="w-[10%]" />
+                    <col className="w-[12%]" />
+                    <col className="w-[12%]" />
+                    <col className="w-[10%]" />
+                    <col className="w-[16%]" />
+                    <col className="w-[10%]" />
+                  </colgroup>
                   <thead className="border-b border-[var(--color-border)] text-xs text-[var(--color-text-muted)]">
                     <tr>
                       <th className="px-5 py-3 font-medium">Program</th>
@@ -233,22 +242,22 @@ export function DashboardView({ programs }: { programs: Program[] }) {
                         key={item.programId}
                         className="border-b border-[var(--color-border)] last:border-0"
                       >
-                        <td className="px-5 py-4">
+                        <td className="px-5 py-4 align-top">
                           <p className="font-medium text-[var(--color-navy)]">{program!.name}</p>
                         </td>
-                        <td className="px-3 py-4">
+                        <td className="px-3 py-4 align-top">
                           <span className="rounded-full bg-[var(--color-parchment-dark)] px-2 py-0.5 text-xs">
                             {categoryLabel(program!.category)}
                           </span>
                         </td>
-                        <td className="px-3 py-4 text-[var(--color-text-muted)]">
+                        <td className="px-3 py-4 align-top text-[var(--color-text-muted)]">
                           {program!.locationDisplay}
                         </td>
-                        <td className="px-3 py-4 text-[var(--color-text-muted)]">
+                        <td className="px-3 py-4 align-top text-[var(--color-text-muted)]">
                           {program!.datesDisplay || "—"}
                         </td>
-                        <td className="px-3 py-4">{formatPriceDisplay(program!)}</td>
-                        <td className="px-3 py-4">
+                        <td className="px-3 py-4 align-top">{formatPriceDisplay(program!)}</td>
+                        <td className="px-3 py-4 align-top">
                           <StatusSelect
                             value={item.status}
                             onChange={(status) => {
@@ -257,7 +266,7 @@ export function DashboardView({ programs }: { programs: Program[] }) {
                             }}
                           />
                         </td>
-                        <td className="px-3 py-4">
+                        <td className="px-3 py-4 align-top">
                           <input
                             type="date"
                             value={item.deadline ?? ""}
@@ -267,10 +276,10 @@ export function DashboardView({ programs }: { programs: Program[] }) {
                               })
                             }
                             aria-label={`Deadline for ${program!.name}`}
-                            className="block w-full max-w-[140px] rounded border border-[var(--color-border)] px-2 py-1 text-xs"
+                            className="block w-full rounded border border-[var(--color-border)] px-2 py-1 text-xs"
                           />
                         </td>
-                        <td className="px-3 py-4">
+                        <td className="px-3 py-4 align-top">
                           <textarea
                             value={item.notes}
                             onFocus={() => {
@@ -282,11 +291,11 @@ export function DashboardView({ programs }: { programs: Program[] }) {
                               updateItem(item.programId, { notes: e.target.value })
                             }
                             placeholder="Add a note…"
-                            rows={2}
-                            className="w-full max-w-[180px] rounded border border-[var(--color-border)] px-2 py-1 text-xs"
+                            rows={3}
+                            className="min-h-[4.5rem] w-full resize-y rounded border border-[var(--color-border)] px-2 py-1.5 text-xs leading-relaxed"
                           />
                         </td>
-                        <td className="px-3 py-4">
+                        <td className="px-3 py-4 align-top">
                           <button
                             type="button"
                             onClick={() =>
@@ -303,7 +312,7 @@ export function DashboardView({ programs }: { programs: Program[] }) {
                 </table>
               </div>
             ) : (
-              <div className="grid gap-4 p-5 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-4 p-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {(["researching", "deadline_noted", "applied", "accepted"] as const).map(
                   (column) => (
                     <div key={column} className="rounded-[var(--radius-md)] bg-[var(--color-parchment)] p-3">
@@ -337,67 +346,6 @@ export function DashboardView({ programs }: { programs: Program[] }) {
               </p>
             )}
           </section>
-
-          <aside className="space-y-6">
-            <div className="rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[var(--shadow-card)]">
-              <h3 className="text-base text-[var(--color-navy)]">Upcoming deadlines</h3>
-              {deadlines.length === 0 ? (
-                <p className="mt-3 text-sm text-[var(--color-text-muted)]">
-                  Set deadlines on saved programs to track them here.
-                </p>
-              ) : (
-                <ul className="mt-4 space-y-3">
-                  {deadlines.map((entry) => (
-                    <li key={entry.programId} className="flex gap-3 text-sm">
-                      <div className="shrink-0 rounded bg-[var(--color-parchment-dark)] px-2 py-1 text-center text-xs font-semibold text-[var(--color-navy)]">
-                        {new Date(entry.deadline).toLocaleDateString("en-US", {
-                          month: "short",
-                          day: "numeric",
-                        }).toUpperCase()}
-                      </div>
-                      <div>
-                        <p className="font-medium text-[var(--color-navy)]">{entry.programName}</p>
-                        <p className="text-xs text-[var(--color-text-muted)]">
-                          Due in {entry.daysUntil} day{entry.daysUntil === 1 ? "" : "s"}
-                        </p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-
-            <div className="rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[var(--shadow-card)]">
-              <h3 className="text-base text-[var(--color-navy)]">Recent notes</h3>
-              {recentNotes.length === 0 ? (
-                <p className="mt-3 text-sm text-[var(--color-text-muted)]">
-                  Notes you add on saved programs appear here.
-                </p>
-              ) : (
-                <ul className="mt-4 space-y-3">
-                  {recentNotes.map((note) => (
-                    <li key={note.programId} className="text-sm">
-                      <p className="font-medium text-[var(--color-navy)]">{note.programName}</p>
-                      <p className="text-[var(--color-text-muted)]">{note.preview}…</p>
-                    </li>
-                  ))}
-                </ul>
-              )}
-              <Link
-                href="/notes"
-                className="mt-4 inline-block text-xs font-medium text-[var(--color-navy-light)]"
-              >
-                View all notes →
-              </Link>
-            </div>
-
-            {!state.notesPrivacyAcknowledged && (
-              <p className="rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-amber-soft)]/40 p-3 text-xs text-[var(--color-text-muted)]">
-                Notes are stored locally in your browser for now. Sign-in and encryption arrive in a
-                later sprint.
-              </p>
-            )}
-          </aside>
         </div>
       </div>
     </DashboardShell>

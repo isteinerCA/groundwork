@@ -6,6 +6,7 @@ import { useMemo, useState } from "react";
 import { SaveGateModal } from "@/components/auth/save-gate-modal";
 import { useWorkspace } from "@/components/workspace/workspace-provider";
 import { btnOutline, btnPrimary } from "@/components/ui/button-styles";
+import { queuePendingSaves } from "@/lib/workspace/pending-saves";
 import type { Program } from "@/lib/types/program";
 
 export function SearchShortlistCta({
@@ -34,6 +35,7 @@ export function SearchShortlistCta({
     if (unsavedPrograms.length === 0) return;
 
     if (!isSignedIn) {
+      queuePendingSaves(unsavedPrograms.map((p) => p.id));
       setGateOpen(true);
       return;
     }

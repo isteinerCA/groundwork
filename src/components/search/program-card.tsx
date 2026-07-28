@@ -15,6 +15,7 @@ import {
   isPriceDisplayMuted,
 } from "@/lib/data/format-price-display";
 import { formatShortlistMembershipLabel } from "@/lib/workspace/shortlist-membership";
+import { queuePendingSaves } from "@/lib/workspace/pending-saves";
 import { useWorkspace } from "@/components/workspace/workspace-provider";
 import type { Program } from "@/lib/types/program";
 
@@ -45,6 +46,7 @@ export function ProgramCard({
 
   const handleSaveClick = () => {
     if (!isSignedIn) {
+      queuePendingSaves([program.id]);
       setGateOpen(true);
       return;
     }

@@ -13,6 +13,10 @@ import { useAuth } from "@clerk/nextjs";
 import type { Shortlist, ShortlistItem, WorkspaceState } from "@/lib/types/workspace";
 import { trackEvent } from "@/lib/analytics";
 import {
+  clearPendingSaves,
+  readPendingSaves,
+} from "@/lib/workspace/pending-saves";
+import {
   acknowledgeNotesPrivacy,
   archiveActiveAndStartNew,
   createShortlist,
@@ -68,6 +72,24 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (hydrated) saveWorkspace(state);
   }, [state, hydrated]);
+
+  // Apply hearts queued while signed out (e.g. save-gate → sign up).
+  useEffect(() => {
+    if (!hydrated || !isLoaded || !isSignedIn) return;
+    const pending = readPendingSaves();
+    if (pending.length === 0) return;
+    clearPendingSaves();
+    setState((prev) => {
+      const next = saveProgramsToShortlist(prev, pending);
+      const added = pending.filter(
+        (id) =>
+          !isProgramSavedInActiveShortlist(prev, id) &&
+          isProgramSavedInActiveShortlist(next, id),
+      ).length;
+      if (added > 0) trackEvent("programs_bulk_saved", { count: added, source: "pending_auth" });
+      return next;
+    });
+  }, [hydrated, isLoaded, isSignedIn]);
 
   const persist = useCallback((updater: (prev: WorkspaceState) => WorkspaceState) => {
     setState(updater);
