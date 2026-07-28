@@ -14,6 +14,7 @@
     "verify:chat": "tsx scripts/verify-llm-parse-schema.ts"
   },
   "dependencies": {
+    "@clerk/nextjs": "^7.6.2",
     "next": "^15.5.0",
     "openai": "^4.104.0",
     "react": "^19.1.0",

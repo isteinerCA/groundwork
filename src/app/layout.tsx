@@ -1,3 +1,4 @@
+import {ClerkProvider} from "@clerk/nextjs";
 import type { Metadata } from "next";
 import { Lora, Source_Sans_3 } from "next/font/google";
 import { AppProviders } from "@/components/workspace/app-providers";
@@ -30,8 +31,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${lora.variable} ${sourceSans.variable}`}>
       <body className="min-h-screen antialiased">
-        <PlausibleAnalytics />
-        <AppProviders>{children}</AppProviders>
+        <ClerkProvider>
+          <PlausibleAnalytics />
+          <AppProviders>{children}</AppProviders>
+        </ClerkProvider>
       </body>
     </html>
   );

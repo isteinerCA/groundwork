@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Show, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
 import { GroundworkLogo } from "@/components/layout/groundwork-logo";
 import { WorkspaceNavLink } from "@/components/layout/workspace-nav-link";
 import { ButtonLink } from "@/components/ui/button-link";
@@ -29,6 +30,24 @@ export function SiteHeader({ logoPriority = false }: { logoPriority?: boolean })
 
         <div className="flex items-center gap-3 sm:gap-4">
           <WorkspaceNavLink />
+          <Show when="signed-out">
+            <SignInButton mode="modal">
+              <button
+                type="button"
+                className="btn btn-ghost px-3 py-2 text-sm font-medium"
+              >
+                Sign in
+              </button>
+            </SignInButton>
+            <SignUpButton mode="modal">
+              <button type="button" className="btn btn-secondary px-3 py-2 text-sm">
+                Sign up
+              </button>
+            </SignUpButton>
+          </Show>
+          <Show when="signed-in">
+            <UserButton />
+          </Show>
           <ButtonLink href="/search" className="px-4 py-2 text-sm">
             Start your shortlist
           </ButtonLink>
