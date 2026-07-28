@@ -31,7 +31,7 @@ export function SiteHeader({ logoPriority = false }: { logoPriority?: boolean })
         <div className="flex items-center gap-3 sm:gap-4">
           <WorkspaceNavLink />
           <Show when="signed-out">
-            <SignInButton mode="modal">
+            <SignInButton mode="modal" forceRedirectUrl="/workspace">
               <button
                 type="button"
                 className="btn btn-ghost px-3 py-2 text-sm font-medium"
@@ -39,7 +39,7 @@ export function SiteHeader({ logoPriority = false }: { logoPriority?: boolean })
                 Sign in
               </button>
             </SignInButton>
-            <SignUpButton mode="modal">
+            <SignUpButton mode="modal" forceRedirectUrl="/workspace">
               <button type="button" className="btn btn-secondary px-3 py-2 text-sm">
                 Sign up
               </button>
