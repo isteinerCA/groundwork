@@ -18,7 +18,7 @@ export const RESOURCE_CATEGORIES = [
   {
     id: "planning" as const,
     label: "Planning",
-    description: "Practical guidance on timing and structuring the summer.",
+    description: "Practical guidance on structuring the summer and timing of decisions.",
   },
   {
     id: "choosing-a-program" as const,
