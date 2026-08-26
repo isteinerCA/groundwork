@@ -19,7 +19,7 @@ export default function ResourcesPage() {
           from our own experience navigating the process.
         </p>
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-3 lg:gap-8">
+        <div className="mt-12 grid gap-6 lg:grid-cols-3 lg:items-stretch lg:gap-8">
           {RESOURCE_CATEGORIES.map((category) => {
             const articles = getArticlesByCategory(category.id);
 
@@ -27,16 +27,16 @@ export default function ResourcesPage() {
               <section
                 key={category.id}
                 id={category.id}
-                className="rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 shadow-[var(--shadow-card)]"
+                className="flex flex-col overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]"
               >
-                <div className="border-b border-[var(--color-border)] pb-4">
+                <div className="min-h-[10.5rem] border-b border-[var(--color-border)] bg-[var(--color-sage-soft)] px-6 py-5">
                   <h2 className="text-2xl leading-snug md:text-[1.75rem]">{category.label}</h2>
                   <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-muted)]">
                     {category.description}
                   </p>
                 </div>
 
-                <ul className="mt-5 space-y-3">
+                <ul className="space-y-3 px-6 py-5">
                   {articles.map((article) => (
                     <li key={article.slug}>
                       <Link
