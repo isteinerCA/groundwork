@@ -13,21 +13,28 @@ export default function ResourcesPage() {
       <SiteHeader />
       <main className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:py-16">
         <SectionEyebrow>Resources</SectionEyebrow>
-        <h1 className="mt-2 max-w-3xl text-3xl leading-snug md:text-4xl">
+        <h1 className="sr-only">Resources</h1>
+        <p className="mt-2 max-w-3xl text-lg leading-relaxed text-[var(--color-text-muted)]">
           Practical advice on planning, choosing, and making the most of summer programs, drawn
           from our own experience navigating the process.
-        </h1>
+        </p>
 
-        <div className="mt-14 grid gap-10 lg:grid-cols-3 lg:gap-8">
+        <div className="mt-12 grid gap-6 lg:grid-cols-3 lg:gap-8">
           {RESOURCE_CATEGORIES.map((category) => {
             const articles = getArticlesByCategory(category.id);
 
             return (
-              <section key={category.id} id={category.id}>
-                <h2 className="text-xl md:text-2xl">{category.label}</h2>
-                <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-muted)]">
-                  {category.description}
-                </p>
+              <section
+                key={category.id}
+                id={category.id}
+                className="rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 shadow-[var(--shadow-card)]"
+              >
+                <div className="border-b border-[var(--color-border)] pb-4">
+                  <h2 className="text-2xl leading-snug md:text-[1.75rem]">{category.label}</h2>
+                  <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-muted)]">
+                    {category.description}
+                  </p>
+                </div>
 
                 <ul className="mt-5 space-y-3">
                   {articles.map((article) => (

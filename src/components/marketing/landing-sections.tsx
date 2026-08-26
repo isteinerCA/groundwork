@@ -16,19 +16,12 @@ export function LandingHero() {
       <div className="flex flex-col gap-5">
         <SectionEyebrow>For families with students in grades 6–12</SectionEyebrow>
         <h1 className="text-4xl leading-[1.12] font-normal md:text-5xl lg:text-[3.25rem]">
-          The summer that{" "}
-          <em className="font-serif italic text-[var(--color-sage)]">changes everything</em> starts
-          here.
+          A better way to find summer programs.
         </h1>
         <p className="text-lg font-medium leading-relaxed text-[var(--color-navy)]">
-          Compare {MARKETING_PROGRAM_COUNT_LABEL} curated summer programs by grade, budget, and
-          selectivity — with sourced gotchas on every card — and build a shortlist in about 90
-          seconds, free.
-        </p>
-        <p className="leading-relaxed text-[var(--color-text-muted)]">
-          Built for parents researching middle and high school summer programs — not elementary
-          camps or gap-year adults. Plus the fine print: acceptance floors, deposit policies, and
-          safety records, so you can apply with confidence.
+          Explore {MARKETING_PROGRAM_COUNT_LABEL} curated programs for middle and high school
+          students, compare the details that matter, and build a personalized shortlist in about 90
+          seconds. Free.
         </p>
         <div className="flex flex-wrap gap-3 pt-1">
           <ButtonLink href="/search">Start your shortlist</ButtonLink>

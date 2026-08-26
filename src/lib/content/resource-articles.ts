@@ -31,6 +31,10 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
         type: "paragraph",
         text: "There is no universal application calendar. Some programs operate on fixed deadlines, while others accept students on a rolling basis until sessions fill.",
       },
+      {
+        type: "paragraph",
+        text: "Don't wait until every summer plan is finalized before researching. Creating a shortlist early gives you more options and doesn't commit you to applying.",
+      },
     ],
   },
   {
@@ -444,8 +448,8 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
         text: "A particularly valuable program leaves students capable of continuing independently: building another project, taking a more advanced course, joining a research project, or applying their skills elsewhere.",
       },
       {
-        type: "tip",
-        text: 'Evaluate an AI program based on what students will know and be able to build afterward, not how many times "AI" appears on the program page.',
+        type: "paragraph",
+        text: 'In short, focus your evaluation of an AI program based on what students will know and be able to build afterward, not how many times "AI" appears on the program page.',
       },
     ],
   },
