@@ -37,8 +37,37 @@ export { RESOURCE_ARTICLES } from "@/lib/content/resource-articles";
 
 import { RESOURCE_ARTICLES } from "@/lib/content/resource-articles";
 
+const ARTICLE_ORDER: Record<ResourceCategoryId, readonly string[]> = {
+  planning: [
+    "when-should-you-start-applying",
+    "what-should-a-9th-grader-do",
+    "what-should-a-10th-grader-do",
+    "what-should-an-11th-grader-do",
+  ],
+  "choosing-a-program": [
+    "research-vs-pre-college-vs-enrichment",
+    "online-or-in-person",
+    "summer-program-vs-internship",
+    "are-expensive-pre-college-programs-worth-it",
+    "what-does-selective-mean",
+    "do-summer-programs-help-college-admissions",
+    "how-to-evaluate-an-ai-summer-program",
+    "how-much-do-summer-programs-cost",
+  ],
+  "what-weve-learned": [
+    "what-does-college-experience-really-look-like",
+    "what-makes-a-great-summer-program",
+    "when-summer-plans-dont-go-as-planned",
+  ],
+};
+
 export function getArticlesByCategory(categoryId: ResourceCategoryId) {
-  return RESOURCE_ARTICLES.filter((article) => article.categoryId === categoryId);
+  const articles = RESOURCE_ARTICLES.filter((article) => article.categoryId === categoryId);
+  const order = ARTICLE_ORDER[categoryId];
+
+  return [...articles].sort(
+    (a, b) => order.indexOf(a.slug) - order.indexOf(b.slug),
+  );
 }
 
 export function getArticleBySlug(slug: string): ResourceArticle | undefined {
