@@ -31,10 +31,6 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
         type: "paragraph",
         text: "There is no universal application calendar. Some programs operate on fixed deadlines, while others accept students on a rolling basis until sessions fill.",
       },
-      {
-        type: "tip",
-        text: "Don't wait until every summer plan is finalized before researching. Creating a shortlist early gives you more options—and doesn't commit you to applying.",
-      },
     ],
   },
   {

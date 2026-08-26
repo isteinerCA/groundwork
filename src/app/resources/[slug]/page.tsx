@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { ArticleContent } from "@/components/resources/article-content";
+import { ArticleCta } from "@/components/resources/article-cta";
 import { SectionEyebrow } from "@/components/ui/button-link";
 import {
   getArticleBySlug,
@@ -52,6 +53,7 @@ export default async function ResourceArticlePage({ params }: PageProps) {
 
         <div className="mt-8">
           <ArticleContent blocks={article.blocks} />
+          <ArticleCta />
         </div>
 
         <Link
