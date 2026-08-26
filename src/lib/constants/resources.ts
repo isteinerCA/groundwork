@@ -28,8 +28,7 @@ export const RESOURCE_CATEGORIES = [
   {
     id: "what-weve-learned" as const,
     label: "What We've Learned",
-    description:
-      "The things we wish we'd known, and what we've learned from navigating summer programs firsthand.",
+    description: "Lessons we've learned from navigating summer programs firsthand.",
   },
 ] as const;
 
