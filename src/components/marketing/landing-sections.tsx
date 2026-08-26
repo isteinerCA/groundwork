@@ -15,15 +15,15 @@ export function LandingHero() {
     <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-20">
       <div className="flex flex-col gap-5">
         <SectionEyebrow>For families with students in grades 6–12</SectionEyebrow>
-        <h1 className="text-3xl leading-[1.15] font-normal md:text-4xl">
-          A{" "}
-          <em className="font-serif italic text-[var(--color-sage)]">better</em> way to find summer
-          programs.
+        <h1 className="text-4xl leading-[1.12] font-normal md:text-5xl lg:text-[3.25rem]">
+          The summer that{" "}
+          <em className="font-serif italic text-[var(--color-sage)]">changes everything</em> starts
+          here.
         </h1>
         <p className="text-lg font-medium leading-relaxed text-[var(--color-navy)]">
-          Explore {MARKETING_PROGRAM_COUNT_LABEL} curated programs for middle and high school
-          students, compare the details that matter, and build a personalized shortlist in about 90
-          seconds.{" "}
+          Find the right summer program among {MARKETING_PROGRAM_COUNT_LABEL} curated options for
+          middle and high school students. Compare what matters and build a personalized shortlist
+          in about 90 seconds.{" "}
           <strong className="font-semibold text-[var(--color-sage)]">Free.</strong>
         </p>
         <div className="flex flex-wrap gap-3 pt-1">

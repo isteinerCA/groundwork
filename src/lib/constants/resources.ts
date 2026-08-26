@@ -17,7 +17,7 @@ export type ResourceArticle = {
 export const RESOURCE_CATEGORIES = [
   {
     id: "planning" as const,
-    label: "Planning",
+    label: "Planning your summer",
     description: "Practical guidance on structuring the summer and timing of decisions.",
   },
   {
