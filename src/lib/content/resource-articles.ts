@@ -229,7 +229,7 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
   },
   {
     slug: "summer-program-vs-internship",
-    categoryId: "choosing-a-program",
+    categoryId: "planning",
     title: "Summer Program vs. Internship: Which Makes More Sense?",
     excerpt:
       "Neither is inherently better. They serve different purposes—and the best question isn't which looks better on paper.",
@@ -337,7 +337,7 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
   },
   {
     slug: "do-summer-programs-help-college-admissions",
-    categoryId: "choosing-a-program",
+    categoryId: "planning",
     title: "Do Summer Programs Help With College Admissions?",
     excerpt:
       "Potentially, but probably not in the way many families assume. The more useful question is what the student did with the experience.",
@@ -455,7 +455,7 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
   },
   {
     slug: "research-vs-pre-college-vs-enrichment",
-    categoryId: "choosing-a-program",
+    categoryId: "planning",
     title: "Research vs. Pre-College vs. Enrichment Programs: What's the Difference?",
     excerpt:
       "Summer-program terminology can be confusing because these categories often overlap.",

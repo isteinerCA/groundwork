@@ -39,18 +39,18 @@ import { RESOURCE_ARTICLES } from "@/lib/content/resource-articles";
 
 const ARTICLE_ORDER: Record<ResourceCategoryId, readonly string[]> = {
   planning: [
+    "research-vs-pre-college-vs-enrichment",
+    "summer-program-vs-internship",
+    "do-summer-programs-help-college-admissions",
     "when-should-you-start-applying",
     "what-should-a-9th-grader-do",
     "what-should-a-10th-grader-do",
     "what-should-an-11th-grader-do",
   ],
   "choosing-a-program": [
-    "research-vs-pre-college-vs-enrichment",
     "online-or-in-person",
-    "summer-program-vs-internship",
     "are-expensive-pre-college-programs-worth-it",
     "what-does-selective-mean",
-    "do-summer-programs-help-college-admissions",
     "how-to-evaluate-an-ai-summer-program",
     "how-much-do-summer-programs-cost",
   ],
