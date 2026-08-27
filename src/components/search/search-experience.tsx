@@ -6,6 +6,7 @@ import { ActiveFilterBar } from "@/components/search/active-filter-bar";
 import { CollapsibleFilterGroup } from "@/components/search/collapsible-filter-group";
 import {
   FilterResultsCounter,
+  REFINE_FILTERS_ANCHOR_ID,
   RESULTS_ANCHOR_ID,
 } from "@/components/search/filter-results-counter";
 import { SearchChat } from "@/components/search/search-chat";
@@ -193,7 +194,9 @@ export function SearchExperience({
             </div>
             {filters.gradesCompleted.length === 0 && (
               <p className="mt-3 rounded-[var(--radius-md)] border border-dashed border-[var(--color-border)] bg-[var(--color-parchment)] px-3 py-2 text-sm text-[var(--color-text-muted)]">
-                Select a grade — programs for your shortlist appear on the right.
+                Select a grade — programs for your shortlist appear{" "}
+                <span className="lg:hidden">below.</span>
+                <span className="hidden lg:inline">on the right.</span>
               </p>
             )}
 
@@ -202,7 +205,7 @@ export function SearchExperience({
               hasGrade={filters.gradesCompleted.length > 0}
             />
 
-            <div className="mt-4">
+            <div id={REFINE_FILTERS_ANCHOR_ID} className="mt-4 scroll-mt-24">
               <CollapsibleFilterGroup
                 title="Category"
                 activeCount={filters.categories.length}
