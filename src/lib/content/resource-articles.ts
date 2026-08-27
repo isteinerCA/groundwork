@@ -408,7 +408,7 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
       { type: "subheading", text: "What will students learn?" },
       {
         type: "paragraph",
-        text: "Look for a concrete curriculum. Does the program cover how AI works—for example, machine learning, neural networks, computer vision, natural-language processing, robotics, data science, generative AI—or does it primarily teach how to use existing AI tools?",
+        text: "Look for a concrete curriculum. Does the program cover how AI works (for example, machine learning, neural networks, computer vision, natural-language processing, robotics, data science, generative AI) or does it primarily teach how to use existing AI tools?",
       },
       {
         type: "paragraph",
