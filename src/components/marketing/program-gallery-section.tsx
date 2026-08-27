@@ -27,23 +27,19 @@ const GALLERY_IMAGES = [
     src: "/images/gallery/writing-humanities.jpg",
     alt: "Students reading and discussing together",
   },
-  {
-    src: "/images/gallery/pre-med-lab.jpg",
-    alt: "Students working in a science laboratory",
-  },
 ] as const;
 
 export function ProgramGallerySection() {
   return (
     <section className="px-4 py-16 sm:px-6 sm:py-20">
-      <div className="mx-auto max-w-6xl text-center">
+      <div className="mx-auto max-w-6xl text-left md:text-center">
         <SectionEyebrow>Summer pathways</SectionEyebrow>
         <h2 className="mt-3 text-3xl md:text-4xl">
           Find the right program{" "}
           <span className="font-serif italic text-[var(--color-sage)]">for you</span> this summer
         </h2>
 
-        <div className="mt-10 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-7">
+        <div className="mt-10 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6">
           {GALLERY_IMAGES.map((image) => (
             <Link
               key={image.src}

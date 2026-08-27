@@ -80,7 +80,7 @@ export function ProblemHowItWorksSection() {
   return (
     <section className="border-y border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-20 sm:px-6">
       <div className="mx-auto max-w-6xl">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto max-w-3xl text-left md:text-center">
           <SectionEyebrow>The problem</SectionEyebrow>
           <h2 className="mt-3 text-3xl md:text-4xl">
             A stack of brochures and websites. No way to compare them.
@@ -121,7 +121,7 @@ export function ProblemHowItWorksSection() {
               Start your shortlist
             </ButtonLink>
           </div>
-          <div className="relative aspect-[16/10] overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-parchment)]">
+          <div className="relative hidden aspect-[16/10] overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-parchment)] lg:block">
             <Image
               src="/images/search-story.png"
               alt="Illustration of scattered program cards organized into a filterable search list"
@@ -139,7 +139,7 @@ export function ProblemHowItWorksSection() {
 export function CategoriesSection() {
   return (
     <section id="categories" className="scroll-mt-20 px-4 py-20 sm:px-6">
-      <div className="mx-auto max-w-6xl text-center">
+      <div className="mx-auto max-w-6xl text-left md:text-center">
         <SectionEyebrow>Twelve pathways</SectionEyebrow>
         <h2 className="mt-3 text-3xl md:text-4xl">Explore program categories.</h2>
         <p className="mt-2 text-lg text-[var(--color-text-muted)]">
@@ -182,7 +182,7 @@ export function FinePrintSection() {
       className="scroll-mt-20 border-y border-[var(--color-border)] bg-[var(--color-parchment-dark)] px-4 py-20 sm:px-6"
     >
       <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
-        <div className="relative order-2 aspect-[4/3] overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] shadow-[var(--shadow-card)] lg:order-1">
+        <div className="relative order-2 hidden aspect-[4/3] overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] shadow-[var(--shadow-card)] lg:order-1 lg:block">
           <Image
             src="/images/hidden-details.png"
             alt="Program card showing hidden details like acceptance rate, deposit policy, and visa information"
@@ -288,7 +288,7 @@ export function WorkspaceSection() {
 export function AdminSection() {
   return (
     <section className="bg-[var(--color-navy)] px-4 py-20 text-white sm:px-6">
-      <div className="mx-auto max-w-3xl text-center">
+      <div className="mx-auto max-w-3xl text-left md:text-center">
         <SectionEyebrow className="text-[var(--color-amber-soft)]">For camp administrators</SectionEyebrow>
         <h2 className="mt-3 text-3xl text-white md:text-4xl">
           Make sure your program is represented accurately.
@@ -297,7 +297,7 @@ export function AdminSection() {
           Add a new program or update an existing listing so families can find accurate
           information about dates, costs, admission, and aid.
         </p>
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
+        <div className="mt-8 flex flex-wrap justify-start gap-3 md:justify-center">
           <ButtonLink href="/contact" variant="primary-on-dark">
             Add or update program
           </ButtonLink>

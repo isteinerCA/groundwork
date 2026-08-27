@@ -20,12 +20,12 @@ function CheckItem({ children }: { children: React.ReactNode }) {
 export function HomePricingSection() {
   return (
     <section id="pricing" className="scroll-mt-20 px-4 py-20 sm:px-6">
-      <div className="mx-auto max-w-5xl text-center">
+      <div className="mx-auto max-w-5xl text-left md:text-center">
         <SectionEyebrow>Pricing</SectionEyebrow>
         <h2 className="mt-3 text-3xl md:text-4xl">
           Search free. Pay only when you&apos;re ready to commit.
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-[var(--color-text-muted)]">
+        <p className="mt-4 max-w-2xl text-[var(--color-text-muted)] md:mx-auto">
           No subscriptions. No sponsored placements. No lead-gen. Ever.
         </p>
 
@@ -82,7 +82,7 @@ export function HomePricingSection() {
         <p className="mt-8 text-sm text-[var(--color-text-muted)]">
           One season pass covers unlimited shortlists for your family through June 30.
         </p>
-        <div className="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+        <div className="mt-4 flex flex-wrap justify-start gap-x-6 gap-y-2 text-sm md:justify-center">
           <Link
             href="/pricing#faq"
             className="font-semibold text-[var(--color-navy)] no-underline hover:text-[var(--color-navy-light)]"
