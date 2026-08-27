@@ -86,10 +86,10 @@ export function ProblemHowItWorksSection() {
             A stack of brochures and websites. No way to compare them.
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-[var(--color-text)]">
-            A fully-funded MIT program accepting 80 students globally sits in the same
-            undifferentiated Google results as a $17,800 sleepaway camp with open enrollment.
-            Parents and students open dozens of program websites — each formatted differently —
-            just to extract the basic facts.
+            A fully subsidized MIT program that accepts 80 students globally appears in the same
+            undifferentiated Google search results as a $17,800 sleepaway camp with open enrollment.
+            To compare them, parents and students open dozens of program websites—each formatted
+            differently—just to find dates, costs, and eligibility.
           </p>
           <p className="mt-4 text-lg font-semibold text-[var(--color-navy)]">
             Groundwork replaces that.
