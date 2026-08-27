@@ -1,8 +1,13 @@
 "use client";
 
-import { useEffect, useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { ActiveFilterBar } from "@/components/search/active-filter-bar";
+import { CollapsibleFilterGroup } from "@/components/search/collapsible-filter-group";
+import {
+  FilterResultsCounter,
+  RESULTS_ANCHOR_ID,
+} from "@/components/search/filter-results-counter";
 import { SearchChat } from "@/components/search/search-chat";
 import { SearchShortlistCta } from "@/components/search/search-shortlist-cta";
 import { Chip } from "@/components/ui/chip";
@@ -192,8 +197,16 @@ export function SearchExperience({
               </p>
             )}
 
-            <div className="mt-6 space-y-5">
-              <FilterGroup title="Category">
+            <FilterResultsCounter
+              count={results.length}
+              hasGrade={filters.gradesCompleted.length > 0}
+            />
+
+            <div className="mt-4">
+              <CollapsibleFilterGroup
+                title="Category"
+                activeCount={filters.categories.length}
+              >
                 {PROGRAM_CATEGORIES.map((cat) => (
                   <Chip
                     key={cat.id}
@@ -204,11 +217,12 @@ export function SearchExperience({
                     }
                   />
                 ))}
-              </FilterGroup>
+              </CollapsibleFilterGroup>
 
-              <div>
-                <h3 className="mb-2 flex items-center text-sm font-medium text-[var(--color-text-muted)]">
-                  Admission type
+              <CollapsibleFilterGroup
+                title="Admission type"
+                activeCount={filters.admissionTypes.length}
+                headerExtra={
                   <InfoTooltip label="Admission type definitions">
                     <strong className="text-[var(--color-navy)]">First-Come / Rolling:</strong>{" "}
                     register before the program fills.
@@ -223,23 +237,22 @@ export function SearchExperience({
                     </strong>{" "}
                     high competition — polish the application and plan backups.
                   </InfoTooltip>
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {ADMISSION_TYPES.map((a) => (
-                    <Chip
-                      key={a.id}
-                      label={a.label}
-                      selected={filters.admissionTypes.includes(a.id)}
-                      variant={a.chipColor as "green" | "amber" | "red"}
-                      onClick={() =>
-                        update({ admissionTypes: toggle(filters.admissionTypes, a.id) })
-                      }
-                    />
-                  ))}
-                </div>
-              </div>
+                }
+              >
+                {ADMISSION_TYPES.map((a) => (
+                  <Chip
+                    key={a.id}
+                    label={a.label}
+                    selected={filters.admissionTypes.includes(a.id)}
+                    variant={a.chipColor as "green" | "amber" | "red"}
+                    onClick={() =>
+                      update({ admissionTypes: toggle(filters.admissionTypes, a.id) })
+                    }
+                  />
+                ))}
+              </CollapsibleFilterGroup>
 
-              <FilterGroup title="Format">
+              <CollapsibleFilterGroup title="Format" activeCount={filters.formats.length}>
                 {PROGRAM_FORMATS.map((f) => (
                   <Chip
                     key={f.id}
@@ -248,9 +261,16 @@ export function SearchExperience({
                     onClick={() => update({ formats: toggle(filters.formats, f.id) })}
                   />
                 ))}
-              </FilterGroup>
+              </CollapsibleFilterGroup>
 
-              <FilterGroup title="Duration">
+              <CollapsibleFilterGroup
+                title="Duration"
+                activeCount={
+                  filters.durationBuckets.length +
+                  (filters.minDurationWeeks != null ? 1 : 0) +
+                  (filters.maxDurationWeeks != null ? 1 : 0)
+                }
+              >
                 {DURATION_BUCKETS.map((d) => (
                   <Chip
                     key={d.id}
@@ -261,36 +281,44 @@ export function SearchExperience({
                     }
                   />
                 ))}
-              </FilterGroup>
+              </CollapsibleFilterGroup>
 
-              <div>
-                <h3 className="mb-2 text-sm font-medium text-[var(--color-text-muted)]">
-                  Pricing
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {PRICE_FILTER_OPTIONS.map((p) => (
-                    <Chip
-                      key={p.id}
-                      label={p.label}
-                      selected={filters.priceFilter === p.id}
-                      onClick={() =>
-                        update({
-                          priceFilter: filters.priceFilter === p.id ? "any" : p.id,
-                        })
-                      }
-                    />
-                  ))}
-                </div>
-                <div className="mt-2 flex flex-wrap gap-2">
+              <CollapsibleFilterGroup
+                title="Pricing"
+                activeCount={
+                  (filters.priceFilter !== "any" ? 1 : 0) +
+                  (filters.fullyFundedOnly ? 1 : 0) +
+                  (filters.minPrice != null ? 1 : 0) +
+                  (filters.maxPrice != null ? 1 : 0)
+                }
+              >
+                {PRICE_FILTER_OPTIONS.map((p) => (
                   <Chip
-                    label="Fully funded only"
-                    selected={filters.fullyFundedOnly}
-                    onClick={() => update({ fullyFundedOnly: !filters.fullyFundedOnly })}
+                    key={p.id}
+                    label={p.label}
+                    selected={filters.priceFilter === p.id}
+                    onClick={() =>
+                      update({
+                        priceFilter: filters.priceFilter === p.id ? "any" : p.id,
+                      })
+                    }
                   />
-                </div>
-              </div>
+                ))}
+                <Chip
+                  label="Fully funded only"
+                  selected={filters.fullyFundedOnly}
+                  onClick={() => update({ fullyFundedOnly: !filters.fullyFundedOnly })}
+                />
+              </CollapsibleFilterGroup>
 
-              <FilterGroup title="More">
+              <CollapsibleFilterGroup
+                title="More"
+                activeCount={
+                  (filters.collegeCreditOnly ? 1 : 0) +
+                  (filters.usOnly ? 1 : 0) +
+                  (filters.excludeUnknownPrice ? 1 : 0)
+                }
+              >
                 <Chip
                   label="College credit only"
                   selected={filters.collegeCreditOnly}
@@ -308,7 +336,7 @@ export function SearchExperience({
                     update({ excludeUnknownPrice: !filters.excludeUnknownPrice })
                   }
                 />
-              </FilterGroup>
+              </CollapsibleFilterGroup>
             </div>
 
             {hasActiveFilters && (
@@ -327,7 +355,10 @@ export function SearchExperience({
 
         <div className="min-w-0">
           {filters.gradesCompleted.length > 0 ? (
-            <div className="overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]">
+            <div
+              id={RESULTS_ANCHOR_ID}
+              className="scroll-mt-24 overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]"
+            >
               {results.length > 0 && (
                 <div className="border-b border-[var(--color-border)] px-4 pt-4">
                   <SearchShortlistCta programs={results} />
@@ -413,21 +444,6 @@ export function SearchExperience({
           )}
         </div>
       </div>
-    </div>
-  );
-}
-
-function FilterGroup({
-  title,
-  children,
-}: {
-  title: string;
-  children: ReactNode;
-}) {
-  return (
-    <div>
-      <h3 className="mb-2 text-sm font-medium text-[var(--color-text-muted)]">{title}</h3>
-      <div className="flex flex-wrap gap-2">{children}</div>
     </div>
   );
 }
