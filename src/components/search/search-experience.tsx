@@ -358,10 +358,7 @@ export function SearchExperience({
 
         <div className="min-w-0">
           {filters.gradesCompleted.length > 0 ? (
-            <div
-              id={RESULTS_ANCHOR_ID}
-              className="scroll-mt-24 overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]"
-            >
+            <div className="overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]">
               {results.length > 0 && (
                 <div className="border-b border-[var(--color-border)] px-4 pt-4">
                   <SearchShortlistCta programs={results} />
@@ -384,36 +381,40 @@ export function SearchExperience({
                 onApplyFilters={applyFilters}
               />
 
-              {results.length > 0 && (
-                <div className="border-b border-[var(--color-border)] bg-[var(--color-parchment)]/40 px-4 py-3">
-                  <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-                    <p className="text-sm font-semibold text-[var(--color-navy)]">
-                      {results.length} program{results.length === 1 ? "" : "s"} to compare
+              <div id={RESULTS_ANCHOR_ID} className="scroll-mt-24">
+                {results.length > 0 && (
+                  <div className="border-t-2 border-[var(--color-sage)] bg-[var(--color-sage-soft)] px-4 py-4 max-lg:shadow-[inset_0_1px_0_rgb(255_255_255_/_60%)] lg:border-t lg:border-[var(--color-border)] lg:bg-[var(--color-parchment)]/40 lg:py-3">
+                    <p className="text-xs font-semibold tracking-wide text-[var(--color-sage)] uppercase lg:hidden">
+                      Step 2 · Compare programs
                     </p>
-                    <label className="flex items-center gap-2 text-sm text-[var(--color-text-muted)]">
-                      Sort by
-                      <select
-                        value={sort}
-                        onChange={(e) => setSort(e.target.value as SortOption)}
-                        className="rounded border border-[var(--color-border)] bg-white px-2 py-1 text-sm"
-                      >
-                        <option value="selectivity">Selectivity</option>
-                        <option value="price">Price</option>
-                        <option value="duration">Duration</option>
-                        <option value="name">Name</option>
-                      </select>
-                    </label>
-                    <div className="ml-auto">
-                      <SearchShortlistCta programs={results} compact />
+                    <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-2 lg:mt-0">
+                      <p className="text-lg font-semibold text-[var(--color-navy)] lg:text-sm">
+                        {results.length} program{results.length === 1 ? "" : "s"} to compare
+                      </p>
+                      <label className="flex items-center gap-2 text-sm text-[var(--color-text-muted)]">
+                        Sort by
+                        <select
+                          value={sort}
+                          onChange={(e) => setSort(e.target.value as SortOption)}
+                          className="rounded border border-[var(--color-border)] bg-white px-2 py-1 text-sm"
+                        >
+                          <option value="selectivity">Selectivity</option>
+                          <option value="price">Price</option>
+                          <option value="duration">Duration</option>
+                          <option value="name">Name</option>
+                        </select>
+                      </label>
+                      <div className="ml-auto">
+                        <SearchShortlistCta programs={results} compact />
+                      </div>
                     </div>
+                    <p className="mt-2 text-xs text-[var(--color-text-muted)]">
+                      Heart <span aria-hidden>♡</span> programs to add them to your shortlist.
+                    </p>
                   </div>
-                  <p className="mt-2 text-xs text-[var(--color-text-muted)]">
-                    Heart <span aria-hidden>♡</span> programs to add them to your shortlist.
-                  </p>
-                </div>
-              )}
+                )}
 
-              <div className="space-y-4 p-4">
+                <div className="space-y-4 bg-[var(--color-parchment)]/30 p-4 max-lg:border-t border-[var(--color-border)] lg:bg-transparent lg:p-4">
                 {results.length === 0 && (
                   <div className="rounded-[var(--radius-md)] border border-dashed border-[var(--color-border)] bg-[var(--color-parchment)]/50 p-8 text-center">
                     <p className="text-lg text-[var(--color-navy)]">
@@ -440,6 +441,7 @@ export function SearchExperience({
                     emphasizeTrack={duplicateResultNames.has(program.name)}
                   />
                 ))}
+                </div>
               </div>
             </div>
           ) : (

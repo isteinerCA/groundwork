@@ -27,6 +27,23 @@ function ChevronIcon({ open }: { open: boolean }) {
   );
 }
 
+function FilterGroupTitle({
+  title,
+  activeCount,
+}: {
+  title: string;
+  activeCount: number;
+}) {
+  return (
+    <>
+      {title}
+      {activeCount > 0 && (
+        <span className="ml-1.5 font-semibold text-[var(--color-navy)]">· {activeCount}</span>
+      )}
+    </>
+  );
+}
+
 export function CollapsibleFilterGroup({
   title,
   activeCount,
@@ -43,7 +60,14 @@ export function CollapsibleFilterGroup({
 
   return (
     <div className="border-t border-[var(--color-border)] pt-4">
-      <div className="flex items-center gap-1">
+      <div className="hidden items-center gap-1 lg:flex">
+        <h3 className="flex min-w-0 flex-1 items-center text-sm font-medium text-[var(--color-text-muted)]">
+          <FilterGroupTitle title={title} activeCount={activeCount} />
+        </h3>
+        {headerExtra}
+      </div>
+
+      <div className="flex items-center gap-1 lg:hidden">
         <button
           type="button"
           className="flex min-w-0 flex-1 items-center gap-2 rounded-[var(--radius-sm)] py-0.5 text-left hover:text-[var(--color-navy)]"
@@ -55,15 +79,15 @@ export function CollapsibleFilterGroup({
         >
           <ChevronIcon open={isOpen} />
           <span className="text-sm font-medium text-[var(--color-text-muted)]">
-            {title}
-            {activeCount > 0 && (
-              <span className="ml-1.5 font-semibold text-[var(--color-navy)]">· {activeCount}</span>
-            )}
+            <FilterGroupTitle title={title} activeCount={activeCount} />
           </span>
         </button>
         {headerExtra}
       </div>
-      {isOpen && <div className="mt-2 flex flex-wrap gap-2">{children}</div>}
+
+      <div className={cn("mt-2 flex flex-wrap gap-2", !isOpen && "hidden lg:flex")}>
+        {children}
+      </div>
     </div>
   );
 }
