@@ -18,11 +18,13 @@ import { SearchPreviewPanel } from "@/components/search/search-preview-panel";
 import { ADMISSION_TYPES } from "@/lib/constants/admission-types";
 import { PROGRAM_CATEGORIES, type ProgramCategoryId } from "@/lib/constants/categories";
 import {
+  AVAILABILITY_MONTHS,
   DURATION_BUCKETS,
   GRADE_CHIPS,
   PRICE_FILTER_OPTIONS,
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
+import type { MonthNumber } from "@/lib/constants/months";
 import { filterPrograms, sortPrograms, type SortOption } from "@/lib/data/filter-programs";
 import { formatProgramCountLabel } from "@/lib/programs/preview-programs";
 import { summarizeSearchFilters, trackEvent } from "@/lib/analytics";
@@ -36,6 +38,15 @@ function toggle<T>(list: T[], value: T): T[] {
 
 function mergeFilters(current: SearchFilters, patch: Partial<SearchFilters>): SearchFilters {
   return { ...current, ...patch };
+}
+
+function toggleAvailabilityMonth(
+  months: MonthNumber[],
+  month: MonthNumber,
+): MonthNumber[] {
+  return months.includes(month)
+    ? months.filter((value) => value !== month)
+    : [...months, month].sort((a, b) => a - b);
 }
 
 function hasUrlSeed(
@@ -262,6 +273,40 @@ export function SearchExperience({
                     label={f.label}
                     selected={filters.formats.includes(f.id)}
                     onClick={() => update({ formats: toggle(filters.formats, f.id) })}
+                  />
+                ))}
+              </CollapsibleFilterGroup>
+
+              <CollapsibleFilterGroup
+                title="Availability in"
+                activeCount={filters.includeMonths.length}
+                headerExtra={
+                  <InfoTooltip label="Session date filtering">
+                    Filter by when programs run. <strong className="text-[var(--color-navy)]">Anytime</strong>{" "}
+                    shows all programs. Select one or more months to narrow results — we match
+                    programs whose session dates overlap those months.
+                  </InfoTooltip>
+                }
+              >
+                <Chip
+                  label="Anytime"
+                  selected={filters.includeMonths.length === 0}
+                  onClick={() => update({ includeMonths: [], excludeMonths: [] })}
+                />
+                {AVAILABILITY_MONTHS.map((month) => (
+                  <Chip
+                    key={month.number}
+                    label={month.label}
+                    selected={filters.includeMonths.includes(month.number)}
+                    onClick={() =>
+                      update({
+                        includeMonths: toggleAvailabilityMonth(
+                          filters.includeMonths,
+                          month.number,
+                        ),
+                        excludeMonths: [],
+                      })
+                    }
                   />
                 ))}
               </CollapsibleFilterGroup>

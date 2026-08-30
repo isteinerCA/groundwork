@@ -32,6 +32,13 @@ export type PriceFilterId = (typeof PRICE_FILTERS)[number]["id"];
  */
 export const DEFAULT_EXCLUDE_UNKNOWN_PRICE = false;
 
+/** Summer session months for the availability filter (multi-select OR). */
+export const AVAILABILITY_MONTHS = [
+  { number: 6, label: "June" },
+  { number: 7, label: "July" },
+  { number: 8, label: "August" },
+] as const;
+
 export const GRADE_CHIPS = [6, 7, 8, 9, 10, 11, 12] as const;
 
 export type GradeCompleted = (typeof GRADE_CHIPS)[number];

@@ -189,7 +189,7 @@ export function getActiveFilterItems(filters: SearchFilters): ActiveFilterItem[]
   for (const month of filters.includeMonths) {
     items.push({
       key: `month-${month}`,
-      label: `Runs in ${getMonthLabel(month)}`,
+      label: `Available in ${getMonthLabel(month)}`,
       remove: {
         includeMonths: filters.includeMonths.filter((m) => m !== month),
       },
