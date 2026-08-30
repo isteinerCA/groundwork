@@ -2,6 +2,8 @@
 
 Last updated: Sprint 1 (July 2026)
 
+> **2027 refresh:** See [DATA-2027.md](./DATA-2027.md) for the planned schema (structured dates, Program Group ID, one row per offering). Current inventory: [PROGRAM-CATALOG.md](./PROGRAM-CATALOG.md).
+
 ## Final CSV columns (expected)
 
 | Column | Notes |
