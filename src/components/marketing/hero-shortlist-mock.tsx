@@ -32,6 +32,12 @@ export function HeroShortlistMock() {
             <MockChip label="Day" />
             <MockChip label="Online" />
           </FilterRow>
+          <FilterRow label="Availability in">
+            <MockChip label="Anytime" />
+            <MockChip label="June" />
+            <MockChip label="July" selected />
+            <MockChip label="Aug" />
+          </FilterRow>
           <FilterRow label="Admission">
             <MockChip label="Selective" selected variant="red" />
             <MockChip label="Application" variant="amber" />
@@ -55,7 +61,7 @@ export function HeroShortlistMock() {
             admissionLabel="Selective"
             admissionTone="red"
             name="COSMOS UC Davis"
-            meta="4 weeks · CA residents"
+            meta="Jul 5 – Aug 1 · CA residents"
             showHiddenDetails
           />
           <MockProgramCard

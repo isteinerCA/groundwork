@@ -24,7 +24,7 @@ export function InfoTooltip({ label, children }: { label: string; children: Reac
         <span
           id={tooltipId}
           role="tooltip"
-          className="absolute bottom-full left-1/2 z-20 mb-2 w-56 -translate-x-1/2 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-white px-3 py-2 text-xs leading-relaxed text-[var(--color-text)] shadow-[var(--shadow-card)]"
+          className="absolute bottom-full left-0 z-20 mb-2 w-56 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-white px-3 py-2 text-xs leading-relaxed text-[var(--color-text)] shadow-[var(--shadow-card)]"
         >
           {children}
         </span>
