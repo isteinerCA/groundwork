@@ -22,8 +22,8 @@ export function LandingHero() {
         </h1>
         <p className="text-lg font-medium leading-relaxed text-[var(--color-navy)]">
           Find the right summer program among {MARKETING_PROGRAM_COUNT_LABEL} curated options for
-          middle and high school students. Compare what matters and build a personalized shortlist
-          in about 90 seconds.{" "}
+          middle and high school students. Narrow them by interest, grade, dates, budget and more.
+          Build a personalized shortlist in about 90 seconds.{" "}
           <strong className="font-semibold text-[var(--color-sage)]">Free.</strong>
         </p>
         <div className="flex flex-wrap gap-3 pt-1">

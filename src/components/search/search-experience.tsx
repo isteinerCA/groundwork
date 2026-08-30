@@ -281,10 +281,9 @@ export function SearchExperience({
                 title="Availability in"
                 activeCount={filters.includeMonths.length}
                 headerExtra={
-                  <InfoTooltip label="Session date filtering">
-                    Filter by when programs run. <strong className="text-[var(--color-navy)]">Anytime</strong>{" "}
-                    shows all programs. Select one or more months to narrow results — we match
-                    programs whose session dates overlap those months.
+                  <InfoTooltip label="Availability in">
+                    Select the months that work for you. Need to fit a specific date range? Our
+                    search assistant can help.
                   </InfoTooltip>
                 }
               >
