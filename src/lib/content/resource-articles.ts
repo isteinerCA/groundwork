@@ -403,12 +403,12 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
       },
       {
         type: "paragraph",
-        text: "Before choosing one, look beyond the title and examine what students will actually do.",
+        text: "Before choosing one, look beyond the title and examine what students will actually do. A strong AI summer program should match the student's technical level, provide a clear understanding of the concepts behind the tools, and give students opportunities to apply what they learn. The right program will depend on whether the student wants to understand AI, learn to build with it, explore a particular application, or some combination of the three.",
       },
       { type: "subheading", text: "What will students learn?" },
       {
         type: "paragraph",
-        text: "Look for a concrete curriculum. Does the program cover how AI works (for example, machine learning, neural networks, computer vision, natural-language processing, robotics, data science, generative AI) or does it primarily teach how to use existing AI tools?",
+        text: "Look for a concrete curriculum. Does the program cover how AI works—for example, machine learning, neural networks, computer vision, natural-language processing, robotics, data science, generative AI—or does it primarily teach how to use existing AI tools?",
       },
       {
         type: "paragraph",
@@ -448,8 +448,8 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
         text: "A particularly valuable program leaves students capable of continuing independently: building another project, taking a more advanced course, joining a research project, or applying their skills elsewhere.",
       },
       {
-        type: "paragraph",
-        text: 'In short, focus your evaluation of an AI program based on what students will know and be able to build afterward, not how many times "AI" appears on the program page.',
+        type: "tip",
+        text: 'Evaluate an AI program based on what students will know and be able to build afterward, not how many times "AI" appears on the program page.',
       },
     ],
   },
@@ -1162,6 +1162,10 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
       {
         type: "paragraph",
         text: "But what happens when the plan changes? Maybe a student doesn't get into a first-choice program. A course gets canceled. Or the experience simply turns out to be different from what everyone expected.",
+      },
+      {
+        type: "paragraph",
+        text: "When summer plans change, the best response is often to focus less on recreating the original plan and more on what other opportunities the change might create. A canceled course, rejection, or unexpected experience can give students a chance to explore something different, and sometimes discover an interest they wouldn't have pursued otherwise.",
       },
       {
         type: "paragraph",
