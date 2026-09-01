@@ -811,6 +811,344 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
     ],
   },
   {
+    slug: "how-to-tell-if-a-summer-program-is-a-good-fit",
+    categoryId: "choosing-a-program",
+    title: "How to Tell if a Summer Program Is a Good Fit for Your Student",
+    excerpt:
+      "Subject, university name, and price don't tell you what it will actually feel like to attend. Here's what to look for beyond the brochure.",
+    blocks: [
+      {
+        type: "paragraph",
+        text: "When researching summer programs, it's easy to focus on the subject, university name, location and price. But those things don't necessarily tell you what it will actually feel like to attend the program.",
+      },
+      {
+        type: "paragraph",
+        text: "Two programs covering the same subject can offer very different experiences. One might follow a highly structured curriculum with activities planned throughout the day. Another might give students an open-ended project and considerable freedom over how they spend their time.",
+      },
+      {
+        type: "paragraph",
+        text: "Neither is inherently better. The question is which environment is a better fit for your student.",
+      },
+      {
+        type: "paragraph",
+        text: "A good fit depends on more than the subject or reputation of a program. The academic structure, expected skill level, amount of independence, daily schedule, instructors and opportunities to connect with other students can all shape whether a student enjoys and benefits from the experience.",
+      },
+      {
+        type: "paragraph",
+        text: "Unfortunately, these differences aren't always obvious from program websites. Before committing, here are some questions we've found useful to investigate or ask the program directly.",
+      },
+      { type: "subheading", text: "How structured is the academic work?" },
+      {
+        type: "paragraph",
+        text: "Is the curriculum built around step-by-step assignments, or are students expected to develop and manage their own projects?",
+      },
+      {
+        type: "paragraph",
+        text: "Structured programs can work particularly well for students who benefit from clear direction. Students who prefer more autonomy may appreciate the freedom to choose what they work on and figure out how to solve problems themselves.",
+      },
+      { type: "subheading", text: "What does a typical day actually look like?" },
+      {
+        type: "paragraph",
+        text: "Can you share a sample daily schedule from a previous session?",
+      },
+      {
+        type: "paragraph",
+        text: "A sample schedule can tell you considerably more than a program description. Look at how much time students spend in class, working independently, participating in organized activities and simply having free time.",
+      },
+      { type: "subheading", text: "How much downtime do students have?" },
+      {
+        type: "paragraph",
+        text: "How much of the day is structured versus unstructured?",
+      },
+      {
+        type: "paragraph",
+        text: "Some students enjoy moving from one organized activity to another. Others need time to recharge, digest what they've learned or simply hang out with other students without a formal agenda.",
+      },
+      { type: "subheading", text: "How independent are students outside class?" },
+      {
+        type: "paragraph",
+        text: "Can students decide how to spend their free time, or are they generally expected to stay with a counselor or organized group?",
+      },
+      {
+        type: "paragraph",
+        text: "Some students appreciate having support and activities available throughout the day. Others, particularly older students or those who have attended residential programs before, may value having more freedom to manage their own time.",
+      },
+      { type: "subheading", text: "How does the program accommodate different skill levels?" },
+      {
+        type: "paragraph",
+        text: "What happens when students arrive with very different levels of experience?",
+      },
+      {
+        type: "paragraph",
+        text: "This is particularly important for subjects such as coding, AI, mathematics or lab science. A course can quickly become frustrating if a student is significantly ahead of or behind the assumed starting point.",
+      },
+      { type: "subheading", text: "Who will actually teach and supervise the students?" },
+      {
+        type: "paragraph",
+        text: "Who interacts directly with students day-to-day, and what experience or training do they have?",
+      },
+      {
+        type: "paragraph",
+        text: "Program materials may highlight university faculty, but that doesn't necessarily mean professors provide most of the instruction. Graduate students, undergraduate teaching assistants and counselors may play significant roles. That's not necessarily a negative; the important thing is understanding who students will actually be learning from and interacting with before they arrive.",
+      },
+      { type: "subheading", text: "How does the program help students connect?" },
+      {
+        type: "paragraph",
+        text: "How are students who arrive knowing no one encouraged to meet other participants?",
+      },
+      {
+        type: "paragraph",
+        text: "For many students, the people they meet become one of the highlights of the summer. Group projects, shared meals, residential arrangements and organized activities can all make it easier for students to form connections.",
+      },
+      { type: "subheading", text: "The question behind all the questions" },
+      {
+        type: "paragraph",
+        text: "You probably don't need to ask a program every question on this list. Often a sample schedule, residential handbook, FAQ or conversation with program staff will answer several at once.",
+      },
+      {
+        type: "paragraph",
+        text: "The goal isn't to find a program with the most independence, the most faculty involvement or the most packed schedule. It's to understand what daily life will actually look like and decide whether that environment is one in which your student is likely to thrive.",
+      },
+      {
+        type: "paragraph",
+        text: "A program can look perfect on paper and still be the wrong fit. Looking beyond the brochure can help you figure out whether the program that sounds right on paper will actually feel right once your student gets there.",
+      },
+    ],
+  },
+  {
+    slug: "fitting-programs-into-family-calendars-and-budgets",
+    categoryId: "what-weve-learned",
+    title: "Fitting Programs Into Family Calendars & Budgets",
+    excerpt:
+      "A workable summer plan starts with fixed dates and budget, then fits programs around those constraints—not the other way around.",
+    blocks: [
+      {
+        type: "paragraph",
+        text: "Finding a great program is only part of summer planning. It also has to fit into the reality of family vacations, school calendars, siblings' schedules, transportation, budgets and ideally some actual downtime.",
+      },
+      {
+        type: "paragraph",
+        text: "Families we've talked to often face the same challenge: how do you give students opportunities to do something meaningful without turning the entire summer into an exhausting logistical puzzle?",
+      },
+      {
+        type: "paragraph",
+        text: "A workable summer plan starts with the family's fixed dates and overall budget, then fits programs around those constraints rather than the other way around. Comparing the full cost of each option and leaving enough downtime can help keep a meaningful summer from becoming an exhausting one.",
+      },
+      { type: "subheading", text: "Start with the real cost" },
+      {
+        type: "paragraph",
+        text: "Look beyond tuition.",
+      },
+      {
+        type: "paragraph",
+        text: "Application fees, travel costs, room and board, meals, required insurance, lab or equipment fees and spending money can materially change the cost of a program. These aren't always prominent on the main program page, although they're usually available somewhere in the program details.",
+      },
+      {
+        type: "paragraph",
+        text: "Compare cost per week, not just total cost.",
+      },
+      {
+        type: "paragraph",
+        text: "A two-week program may cost less overall than a six-week program while being considerably more expensive on a weekly basis. Looking at both numbers makes comparisons more meaningful.",
+      },
+      {
+        type: "paragraph",
+        text: "Don't assume price equals quality.",
+      },
+      {
+        type: "paragraph",
+        text: "Some highly competitive research and service opportunities are free or even provide stipends, while some university pre-college programs charge substantial tuition. Online programs can also provide strong academic experiences while eliminating travel and room-and-board costs.",
+      },
+      { type: "subheading", text: "Build the calendar around what's fixed" },
+      {
+        type: "paragraph",
+        text: "Put the non-negotiables in first.",
+      },
+      {
+        type: "paragraph",
+        text: "Start with school end and start dates, family trips, sports commitments and anything else that can't move. Then look at which programs fit into the remaining windows. Groundwork lets you search by month, or use the search assistant to find programs that fit specific dates.",
+      },
+      {
+        type: "paragraph",
+        text: "Think carefully before stacking intensive programs.",
+      },
+      {
+        type: "paragraph",
+        text: "A few days of downtime between programs can make travel easier and give students a chance to decompress. But sometimes the programs a student most wants simply don't line up that neatly.",
+      },
+      {
+        type: "paragraph",
+        text: "One summer, our daughter chose two priority programs that ran back-to-back, with only a flight between them. We worried that it would be exhausting, and it certainly made the logistics more stressful. But she understood the tradeoff, wanted to do both, and ultimately was glad she hadn't given either one up.",
+      },
+      {
+        type: "paragraph",
+        text: "There's no universal rule here. The important question is whether the student understands what the schedule will require and thinks the opportunity is worth the intensity.",
+      },
+      {
+        type: "paragraph",
+        text: "Coordinate sibling logistics early.",
+      },
+      {
+        type: "paragraph",
+        text: "With multiple children attending programs in different locations, transportation can quickly become complicated. For residential programs, check whether they provide airport or train-station pickup. That small detail can make the difference between a student traveling independently and a parent needing to accompany them all the way to campus.",
+      },
+      { type: "subheading", text: "Leave room for summer" },
+      {
+        type: "paragraph",
+        text: "It's easy for summer planning to become an optimization exercise: fit in the best program, then another activity, then the family trip, then perhaps a job or volunteer commitment.",
+      },
+      {
+        type: "paragraph",
+        text: "But an open week isn't necessarily a wasted week.",
+      },
+      {
+        type: "paragraph",
+        text: "When you've mapped out the opportunities, look at the calendar one more time from the student's perspective. Is the student excited by the schedule or exhausted just looking at it? Is there enough room to rest, see friends and do nothing in particular? Sometimes unstructured time also gives students a chance to reflect on what they've just learned and decide whether they want to explore it further.",
+      },
+      {
+        type: "paragraph",
+        text: "The best summer plan isn't necessarily the one that fits the most in. It's the one that fits the opportunities that matter while still working for the student and the family around them.",
+      },
+    ],
+  },
+  {
+    slug: "supporting-student-independence-without-over-managing",
+    categoryId: "what-weve-learned",
+    title: "Supporting Student Independence Without Over-Managing",
+    excerpt:
+      "Summer planning can be an opportunity for students to practice managing responsibilities themselves—if parents know when to step back.",
+    blocks: [
+      {
+        type: "paragraph",
+        text: "Parents inevitably play a role in summer planning. There are budgets to consider, transportation to arrange, forms to complete and deadlines not to miss.",
+      },
+      {
+        type: "paragraph",
+        text: "But summer programs, and the planning that leads to them, can also be an opportunity for students to practice managing some of those responsibilities themselves.",
+      },
+      {
+        type: "paragraph",
+        text: "After many rounds of summer planning with our own children, we've gradually learned to step back at different points in the process, even when doing so isn't always easy.",
+      },
+      { type: "subheading", text: "Let the student build the first shortlist" },
+      {
+        type: "paragraph",
+        text: "Once students have a sense of what's available, ask them to identify the programs they're most interested in and explain why. Parents can then help assess cost, logistics and feasibility.",
+      },
+      {
+        type: "paragraph",
+        text: "Groundwork can help students create that first shortlist based on their interests, grade, dates and other preferences.",
+      },
+      { type: "subheading", text: "Hand over the application process" },
+      {
+        type: "paragraph",
+        text: "Encourage students to draft their own essays, communicate directly with program admissions offices and keep track of deadlines.",
+      },
+      {
+        type: "paragraph",
+        text: "That doesn't mean parents can't help. Reviewing an essay, suggesting whom to contact with a question or helping create an application calendar can all be useful. But the student should increasingly own the process.",
+      },
+      {
+        type: "paragraph",
+        text: "Applying then becomes part of the learning experience rather than simply another task managed by a parent.",
+      },
+      { type: "subheading", text: "Agree on communication expectations before they leave" },
+      {
+        type: "paragraph",
+        text: "For residential programs, talk beforehand about how often you'll communicate. That might mean a quick daily text for one family and a weekend phone call for another.",
+      },
+      {
+        type: "paragraph",
+        text: "We've found that the old expression \"no news is good news\" often applies. A student who is busy with classes, activities and new friends may not consider calling home a priority—and that's usually a positive sign.",
+      },
+      {
+        type: "paragraph",
+        text: "If you do want a regular call, look at the program schedule and identify a time when the student won't have to choose between talking to you and participating in an activity.",
+      },
+      { type: "subheading", text: "Let students handle manageable problems themselves" },
+      {
+        type: "paragraph",
+        text: "Roommate disagreements, difficult coursework, schedule confusion and other minor challenges can come up. When appropriate, encourage students to speak with counselors, instructors or program staff themselves before stepping in on their behalf.",
+      },
+      {
+        type: "paragraph",
+        text: "Knowing that a parent is available if needed provides a safety net. But figuring out whom to approach and how to solve a problem can become an important part of the experience.",
+      },
+      {
+        type: "paragraph",
+        text: "And don't assume a frustrated phone call means the program is going badly.",
+      },
+      {
+        type: "paragraph",
+        text: "We've had our children call us from programs sounding deeply frustrated about something that had happened. We listened, helped them think through possible solutions and then let them handle the situation themselves.",
+      },
+      {
+        type: "paragraph",
+        text: "Naturally, we worried. Hearing how upset they sounded made us wonder whether the problem was ruining the entire experience.",
+      },
+      {
+        type: "paragraph",
+        text: "And yet, they came home feeling very positive about the program overall.",
+      },
+      {
+        type: "paragraph",
+        text: "We've since heard similar stories from other parents. Sometimes students call home because home is the safe place to vent. The phone call captures their frustration at one particular moment, not necessarily their assessment of the experience as a whole.",
+      },
+      {
+        type: "paragraph",
+        text: "When they're able to resolve the problem themselves, the issue that sounded enormous on the phone may become a relatively minor part of what they remember.",
+      },
+      { type: "subheading", text: "Being available without taking over" },
+      {
+        type: "paragraph",
+        text: "Giving students independence doesn't mean ignoring genuine problems or assuming they should handle everything themselves. There are obviously situations involving health, safety or serious concerns where parents should intervene.",
+      },
+      {
+        type: "paragraph",
+        text: "For the smaller challenges, though, we've learned that our role is often simply to listen, help them think through what they might do next, and give them the chance to do it.",
+      },
+      {
+        type: "paragraph",
+        text: "Summer programs can teach far more than the subject listed in the course description. Navigating a new place, meeting unfamiliar people, managing a schedule and solving the occasional problem without a parent immediately stepping in are part of the learning too.",
+      },
+    ],
+  },
+  {
+    slug: "how-can-a-student-build-momentum-after-the-program-ends",
+    categoryId: "planning",
+    title: "How Can a Student Build Momentum After the Program Ends?",
+    excerpt:
+      "Sometimes the most valuable part of a summer program is what happens after it ends.",
+    blocks: [
+      {
+        type: "paragraph",
+        text: "Sometimes the most valuable part of a summer program is what happens after it ends. A program may introduce a subject a student wants to explore further, spark an idea for a project, or simply leave them curious to learn more. Students can build on that interest through independent projects, continued learning, school or community activities, and connections they made during the program.",
+      },
+      {
+        type: "list",
+        items: [
+          "Keep a project going: If a program included a research topic, coding project, experiment or writing assignment that genuinely interested the student, consider what the next version could look like. For example, a student who learned machine learning basics can apply those tools to analyze a local dataset or solve a problem in their own community.",
+          "Bring an interest back to school or the community: A student might introduce a new activity to an existing club, share what they learned with classmates, volunteer somewhere related to the subject or, if there's genuine interest, start something new.",
+          "Stay connected with people you met: If a student connected particularly well with an instructor, counselor or classmate, there's no reason that relationship has to end with the program. They might share a later project, ask a genuine follow-up question or collaborate with a friend they met over the summer.",
+          "Keep learning without another formal program: Use the foundational knowledge built over the summer to tackle advanced, freely available coursework online (such as OpenCourseWare, open-source programming repositories, or library databases) or to prepare for independent national competitions.",
+          "Give it some time. Not every program needs an immediate follow-up project. Sometimes students need time to decide whether an interest was something they enjoyed for a few weeks or something they genuinely want to pursue further. That's useful information too.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The goal isn't to turn every summer program into the first step of a multi-year project. Sometimes a program simply gives a student a great summer and a better understanding of what interests them. But when something does click, it's worth asking one simple question: What would you like to do with this next?",
+      },
+      {
+        type: "paragraph",
+        text: "The answer might be another course. Or it might be a project, a book, a new club activity, a conversation with someone they met or simply more time exploring the subject independently.",
+      },
+      {
+        type: "paragraph",
+        text: "The program doesn't have to be the accomplishment. Sometimes its greatest value is giving the student an idea of where they want to go next.",
+      },
+    ],
+  },
+  {
     slug: "when-summer-plans-dont-go-as-planned",
     categoryId: "what-weve-learned",
     title: "When Summer Plans Don't Go as Planned: The Value of an Unexpected Detour",

@@ -41,12 +41,14 @@ const ARTICLE_ORDER: Record<ResourceCategoryId, readonly string[]> = {
     "research-vs-pre-college-vs-enrichment",
     "summer-program-vs-internship",
     "do-summer-programs-help-college-admissions",
+    "how-can-a-student-build-momentum-after-the-program-ends",
     "when-should-you-start-applying",
     "what-should-a-9th-grader-do",
     "what-should-a-10th-grader-do",
     "what-should-an-11th-grader-do",
   ],
   "choosing-a-program": [
+    "how-to-tell-if-a-summer-program-is-a-good-fit",
     "online-or-in-person",
     "are-expensive-pre-college-programs-worth-it",
     "what-does-selective-mean",
@@ -56,6 +58,8 @@ const ARTICLE_ORDER: Record<ResourceCategoryId, readonly string[]> = {
   "what-weve-learned": [
     "what-does-college-experience-really-look-like",
     "what-makes-a-great-summer-program",
+    "fitting-programs-into-family-calendars-and-budgets",
+    "supporting-student-independence-without-over-managing",
     "when-summer-plans-dont-go-as-planned",
   ],
 };
