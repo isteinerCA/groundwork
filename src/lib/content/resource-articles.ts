@@ -1219,10 +1219,10 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
       },
       {
         type: "paragraph",
-        text: "We've had other versions of this happen with our children. Sometimes a program confirms an existing interest. Sometimes students discover that a subject isn't as compelling as they expected. Sometimes a program gets canceled and forces an unexpected redirection, as we describe in When Summer Plans Don't Go as Planned: The Value of an Unexpected Detour. And occasionally, something at the edge of the program points them in a direction they hadn't considered at all.",
+        text: "We've had other versions of this happen with our children. Sometimes a program confirms an existing interest. Sometimes students discover that a subject isn't as compelling as they expected. Sometimes a program gets canceled and forces an unexpected redirection. And occasionally, something at the edge of the program points them in a direction they hadn't considered at all.",
         links: [
           {
-            text: "When Summer Plans Don't Go as Planned: The Value of an Unexpected Detour",
+            text: "program gets canceled and forces an unexpected redirection",
             slug: "when-summer-plans-dont-go-as-planned",
           },
         ],
