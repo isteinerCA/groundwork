@@ -1,4 +1,43 @@
+import Link from "next/link";
 import type { ArticleBlock } from "@/lib/constants/resources";
+
+function renderParagraphText(text: string, links?: { text: string; slug: string }[]) {
+  if (!links?.length) {
+    return text;
+  }
+
+  const parts: React.ReactNode[] = [];
+  let remaining = text;
+
+  for (const link of links) {
+    const index = remaining.indexOf(link.text);
+    if (index === -1) {
+      continue;
+    }
+
+    if (index > 0) {
+      parts.push(remaining.slice(0, index));
+    }
+
+    parts.push(
+      <Link
+        key={`${link.slug}-${index}`}
+        href={`/resources/${link.slug}`}
+        className="font-medium text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
+      >
+        {link.text}
+      </Link>,
+    );
+
+    remaining = remaining.slice(index + link.text.length);
+  }
+
+  if (remaining) {
+    parts.push(remaining);
+  }
+
+  return parts.length === 1 && typeof parts[0] === "string" ? parts[0] : parts;
+}
 
 export function ArticleContent({ blocks }: { blocks: ArticleBlock[] }) {
   return (
@@ -6,7 +45,9 @@ export function ArticleContent({ blocks }: { blocks: ArticleBlock[] }) {
       {blocks.map((block, index) => {
         switch (block.type) {
           case "paragraph":
-            return <p key={index}>{block.text}</p>;
+            return (
+              <p key={index}>{renderParagraphText(block.text, block.links)}</p>
+            );
           case "subheading":
             return (
               <h2 key={index} className="pt-2 text-xl font-normal">

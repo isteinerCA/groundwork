@@ -29,7 +29,7 @@ export default function ResourcesPage() {
                 id={category.id}
                 className="flex flex-col overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-sage)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]"
               >
-                <div className="border-b border-[var(--color-sage)] bg-[var(--color-sage-soft)] px-6 py-4 sm:py-5">
+                <div className="min-h-[10.5rem] border-b border-[var(--color-sage)] bg-[var(--color-sage-soft)] px-6 py-4 sm:py-5">
                   <h2 className="text-2xl leading-snug md:text-[1.75rem]">{category.label}</h2>
                   <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-muted)]">
                     {category.description}

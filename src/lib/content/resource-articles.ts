@@ -1116,7 +1116,7 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
   {
     slug: "how-can-a-student-build-momentum-after-the-program-ends",
     categoryId: "planning",
-    title: "How Can a Student Build Momentum After the Program Ends?",
+    title: "What Comes After a Great Summer Program?",
     excerpt:
       "Sometimes the most valuable part of a summer program is what happens after it ends.",
     blocks: [
@@ -1191,6 +1191,57 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
       {
         type: "paragraph",
         text: "Plan carefully, but leave a little room for the unexpected. Sometimes the detour becomes the most memorable part of the summer.",
+      },
+    ],
+  },
+  {
+    slug: "when-a-summer-program-changes-the-question",
+    categoryId: "what-weve-learned",
+    title: "When a Summer Program Changes the Question",
+    excerpt:
+      "Sometimes the most valuable discovery isn't the subject a student expected to study—it's a new question they encounter along the way.",
+    blocks: [
+      {
+        type: "paragraph",
+        text: "Students often choose summer programs because they want to explore an existing interest more deeply. But sometimes the most valuable discovery isn't the subject they expected to study. It's a question they encounter along the way.",
+      },
+      {
+        type: "paragraph",
+        text: "One of our children attended a computational linguistics program expecting to learn more about how language and technology intersect. That was the reason she chose it.",
+      },
+      {
+        type: "paragraph",
+        text: "But one relatively small part of the program ended up capturing her attention the most: a discussion about how AI may be changing human-to-human communication and interaction.",
+      },
+      {
+        type: "paragraph",
+        text: "It wasn't what she had gone there expecting to explore. Yet it was what she continued talking about afterward, and it opened up an entirely different set of questions she wanted to understand better.",
+      },
+      {
+        type: "paragraph",
+        text: "We've had other versions of this happen with our children. Sometimes a program confirms an existing interest. Sometimes students discover that a subject isn't as compelling as they expected. Sometimes a program gets canceled and forces an unexpected redirection, as we describe in When Summer Plans Don't Go as Planned: The Value of an Unexpected Detour. And occasionally, something at the edge of the program points them in a direction they hadn't considered at all.",
+        links: [
+          {
+            text: "When Summer Plans Don't Go as Planned: The Value of an Unexpected Detour",
+            slug: "when-summer-plans-dont-go-as-planned",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "That's one reason we don't think the value of a summer program should be measured only by its name or what students accomplish while they're there. A program can also help them figure out what questions they want to ask next.",
+      },
+      {
+        type: "paragraph",
+        text: "After a program, rather than immediately asking \"What's the next step?\", we've found another question can be more revealing:",
+      },
+      {
+        type: "paragraph",
+        text: "\"What are you still thinking about?\"",
+      },
+      {
+        type: "paragraph",
+        text: "The answer may reinforce the path the student was already on, or point somewhere completely unexpected. High school is a time for exploring interests, and that exploration doesn't need to follow a straight line. Sometimes one of the most valuable outcomes of a summer program is coming home with a different question than the one you started with.",
       },
     ],
   },

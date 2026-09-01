@@ -1,7 +1,7 @@
 export type ResourceCategoryId = "planning" | "choosing-a-program" | "what-weve-learned";
 
 export type ArticleBlock =
-  | { type: "paragraph"; text: string }
+  | { type: "paragraph"; text: string; links?: { text: string; slug: string }[] }
   | { type: "list"; items: string[] }
   | { type: "subheading"; text: string }
   | { type: "tip"; text: string };
@@ -61,6 +61,7 @@ const ARTICLE_ORDER: Record<ResourceCategoryId, readonly string[]> = {
     "fitting-programs-into-family-calendars-and-budgets",
     "supporting-student-independence-without-over-managing",
     "when-summer-plans-dont-go-as-planned",
+    "when-a-summer-program-changes-the-question",
   ],
 };
 
