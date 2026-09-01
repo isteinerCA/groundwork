@@ -23,7 +23,7 @@ function renderParagraphText(text: string, links?: { text: string; slug: string 
       <Link
         key={`${link.slug}-${index}`}
         href={`/resources/${link.slug}`}
-        className="font-medium text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
+        className="font-medium text-[var(--color-navy)] underline decoration-[var(--color-sage)] underline-offset-[0.2em] hover:decoration-[var(--color-navy)]"
       >
         {link.text}
       </Link>,
