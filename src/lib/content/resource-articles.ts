@@ -1253,7 +1253,7 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
       "Based on 147 offerings across 122 programs in Groundwork's 2026 catalog — what the data showed, and a few things that genuinely surprised us.",
     blocks: [
       {
-        type: "paragraph",
+        type: "footnote",
         text: "Based on 147 offerings across 122 programs researched for Groundwork's 2026 catalog. Data verified through August 24, 2026.",
       },
       {
@@ -1275,10 +1275,20 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
       { type: "subheading", text: "By the numbers" },
       {
         type: "list",
+        tone: "default",
         items: [
-          "147 program offerings, spanning 122 distinct programs, across 12 categories",
-          "Roughly 1 in 12 offerings in our catalog are free or fully funded, including highly selective programs such as MIT's RSI and MITES, both of CMU's Scholars tracks, MIT's Women's Technology Program, Stanford AI4ALL, Telluride's TASS, and a few others. If you've assumed serious summer programs always come with a serious price tag, this was one of the more encouraging things we found.",
-          "California shows up a lot in our catalog. Roughly 1 in 5 offerings are California-based, largely thanks to the COSMOS system's six UC campuses and a cluster of Stanford, Berkeley, and USC programs. Some of that reflects the concentration of programs at institutions such as the UC campuses and Stanford, and some may reflect our own research coverage. Expanding geographic coverage is one of our priorities for the 2027 catalog.",
+          {
+            lead: "147 program offerings, spanning 122 distinct programs, across 12 categories",
+            text: "",
+          },
+          {
+            lead: "Roughly 1 in 12 offerings in our catalog are free or fully funded",
+            text: ", including highly selective programs such as MIT's RSI and MITES, both of CMU's Scholars tracks, MIT's Women's Technology Program, Stanford AI4ALL, Telluride's TASS, and a few others. If you've assumed serious summer programs always come with a serious price tag, this was one of the more encouraging things we found.",
+          },
+          {
+            lead: "California shows up a lot in our catalog.",
+            text: " Roughly 1 in 5 offerings are California-based, largely thanks to the COSMOS system's six UC campuses and a cluster of Stanford, Berkeley, and USC programs. Some of that reflects the concentration of programs at institutions such as the UC campuses and Stanford, and some may reflect our own research coverage. Expanding geographic coverage is one of our priorities for the 2027 catalog.",
+          },
         ],
       },
       {

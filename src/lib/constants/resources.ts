@@ -4,11 +4,19 @@ export type ResourceCategoryId =
   | "what-weve-learned"
   | "also-from-groundwork";
 
+export type ArticleListItem = string | { lead: string; text: string };
+
 export type ArticleBlock =
   | { type: "paragraph"; text: string; links?: { text: string; slug: string }[] }
-  | { type: "list"; items: string[]; links?: { text: string; slug: string }[] }
+  | {
+      type: "list";
+      items: ArticleListItem[];
+      links?: { text: string; slug: string }[];
+      tone?: "default" | "muted";
+    }
   | { type: "subheading"; text: string }
-  | { type: "tip"; text: string };
+  | { type: "tip"; text: string }
+  | { type: "footnote"; text: string };
 
 export type ResourceArticle = {
   slug: string;

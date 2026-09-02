@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { ArticleBlock } from "@/lib/constants/resources";
+import type { ArticleBlock, ArticleListItem } from "@/lib/constants/resources";
 
 function renderParagraphText(text: string, links?: { text: string; slug: string }[]) {
   if (!links?.length) {
@@ -39,6 +39,23 @@ function renderParagraphText(text: string, links?: { text: string; slug: string 
   return parts.length === 1 && typeof parts[0] === "string" ? parts[0] : parts;
 }
 
+function renderListItem(item: ArticleListItem, links?: { text: string; slug: string }[]) {
+  if (typeof item === "string") {
+    return renderParagraphText(item, links);
+  }
+
+  return (
+    <>
+      <strong className="font-semibold text-[var(--color-navy)]">{item.lead}</strong>
+      {renderParagraphText(item.text, links)}
+    </>
+  );
+}
+
+function listItemKey(item: ArticleListItem) {
+  return typeof item === "string" ? item : `${item.lead}${item.text}`;
+}
+
 export function ArticleContent({ blocks }: { blocks: ArticleBlock[] }) {
   return (
     <div className="space-y-5 text-base leading-relaxed text-[var(--color-text)]">
@@ -58,12 +75,25 @@ export function ArticleContent({ blocks }: { blocks: ArticleBlock[] }) {
             return (
               <ul
                 key={index}
-                className="list-disc space-y-2 pl-5 text-[var(--color-text-muted)]"
+                className={
+                  block.tone === "default"
+                    ? "list-disc space-y-2 pl-5 text-[var(--color-text)]"
+                    : "list-disc space-y-2 pl-5 text-[var(--color-text-muted)]"
+                }
               >
                 {block.items.map((item) => (
-                  <li key={item}>{renderParagraphText(item, block.links)}</li>
+                  <li key={listItemKey(item)}>{renderListItem(item, block.links)}</li>
                 ))}
               </ul>
+            );
+          case "footnote":
+            return (
+              <p
+                key={index}
+                className="-mt-1 text-sm italic leading-relaxed text-[var(--color-text-muted)]"
+              >
+                {block.text}
+              </p>
             );
           case "tip":
             return (
