@@ -35,6 +35,7 @@ export const RESOURCE_CATEGORIES = [
 export { RESOURCE_ARTICLES } from "@/lib/content/resource-articles";
 
 import { RESOURCE_ARTICLES } from "@/lib/content/resource-articles";
+import { RESOURCE_ARTICLE_RECOMMENDATIONS } from "@/lib/content/resource-article-recommendations";
 
 const ARTICLE_ORDER: Record<ResourceCategoryId, readonly string[]> = {
   planning: [
@@ -80,4 +81,19 @@ export function getArticleBySlug(slug: string): ResourceArticle | undefined {
 
 export function getCategoryById(id: ResourceCategoryId) {
   return RESOURCE_CATEGORIES.find((category) => category.id === id);
+}
+
+export function getRelatedArticles(slug: string) {
+  const relatedSlugs = RESOURCE_ARTICLE_RECOMMENDATIONS[slug] ?? [];
+
+  return relatedSlugs.flatMap((relatedSlug) => {
+    const article = getArticleBySlug(relatedSlug);
+    const category = article ? getCategoryById(article.categoryId) : undefined;
+
+    if (!article || !category) {
+      return [];
+    }
+
+    return [{ ...article, categoryLabel: category.label }];
+  });
 }

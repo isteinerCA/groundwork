@@ -4,10 +4,12 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { ArticleContent } from "@/components/resources/article-content";
 import { ArticleCta } from "@/components/resources/article-cta";
+import { RelatedArticles } from "@/components/resources/related-articles";
 import { SectionEyebrow } from "@/components/ui/button-link";
 import {
   getArticleBySlug,
   getCategoryById,
+  getRelatedArticles,
   RESOURCE_ARTICLES,
 } from "@/lib/constants/resources";
 
@@ -34,6 +36,8 @@ export default async function ResourceArticlePage({ params }: PageProps) {
   const category = getCategoryById(article.categoryId);
   if (!category) notFound();
 
+  const relatedArticles = getRelatedArticles(slug);
+
   return (
     <>
       <SiteHeader />
@@ -54,6 +58,7 @@ export default async function ResourceArticlePage({ params }: PageProps) {
         <div className="mt-8">
           <ArticleContent blocks={article.blocks} />
           <ArticleCta />
+          <RelatedArticles articles={relatedArticles} />
         </div>
 
         <Link
