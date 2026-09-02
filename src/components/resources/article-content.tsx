@@ -61,7 +61,7 @@ export function ArticleContent({ blocks }: { blocks: ArticleBlock[] }) {
                 className="list-disc space-y-2 pl-5 text-[var(--color-text-muted)]"
               >
                 {block.items.map((item) => (
-                  <li key={item}>{item}</li>
+                  <li key={item}>{renderParagraphText(item, block.links)}</li>
                 ))}
               </ul>
             );

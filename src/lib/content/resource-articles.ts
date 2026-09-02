@@ -1245,4 +1245,123 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
       },
     ],
   },
+  {
+    slug: "summer-programs-by-the-numbers",
+    categoryId: "also-from-groundwork",
+    title: "Summer Programs by the Numbers: What We Learned From Groundwork's 2026 Catalog",
+    excerpt:
+      "Based on 147 offerings across 122 programs in Groundwork's 2026 catalog — what the data showed, and a few things that genuinely surprised us.",
+    blocks: [
+      {
+        type: "paragraph",
+        text: "Based on 147 offerings across 122 programs researched for Groundwork's 2026 catalog. Data verified through August 24, 2026.",
+      },
+      {
+        type: "paragraph",
+        text: "When we set out to build Groundwork, we weren't trying to create a \"best of\" list. We wanted a place where we, as parents, could see what's out there and compare programs more easily.",
+      },
+      {
+        type: "paragraph",
+        text: "After researching 147 offerings across 122 programs for our 2026 catalog, we wanted to step back and see what the data showed.",
+      },
+      {
+        type: "paragraph",
+        text: "This isn't about which program is \"best\", just what the numbers show, and a few things that genuinely surprised us.",
+      },
+      {
+        type: "paragraph",
+        text: "Consider this our first annual check-in. We're planning to do this every year, and we're already building a more precise and extensive version of this dataset for 2027.",
+      },
+      { type: "subheading", text: "By the numbers" },
+      {
+        type: "list",
+        items: [
+          "147 program offerings, spanning 122 distinct programs, across 12 categories",
+          "Roughly 1 in 12 offerings in our catalog are free or fully funded, including highly selective programs such as MIT's RSI and MITES, both of CMU's Scholars tracks, MIT's Women's Technology Program, Stanford AI4ALL, Telluride's TASS, and a few others. If you've assumed serious summer programs always come with a serious price tag, this was one of the more encouraging things we found.",
+          "California shows up a lot in our catalog. Roughly 1 in 5 offerings are California-based, largely thanks to the COSMOS system's six UC campuses and a cluster of Stanford, Berkeley, and USC programs. Some of that reflects the concentration of programs at institutions such as the UC campuses and Stanford, and some may reflect our own research coverage. Expanding geographic coverage is one of our priorities for the 2027 catalog.",
+        ],
+      },
+      {
+        type: "subheading",
+        text: "Range Spotlight: same category, wildly different commitments",
+      },
+      {
+        type: "paragraph",
+        text: "One of the more interesting things about looking at this much data side by side is seeing just how widely programs covering similar subjects can vary. A category label tells you surprisingly little about the actual commitment. Within the same subject area, programs in our catalog can vary dramatically in length, cost and format. A few examples:",
+      },
+      {
+        type: "paragraph",
+        text: "STEM/Engineering has the widest spread in the whole catalog — from a 1-week option (part of Brown's Summer@Brown lineup) all the way to 6-week flagship research programs like MIT's RSI, MITES, and UC Davis's Young Scholars Program. Notably, Brown's own program alone spans nearly that entire range depending on which course a student picks.",
+      },
+      {
+        type: "paragraph",
+        text: "Outdoor/Wilderness programs range from a 4-day taste (Lasting Adventures' shortest trip) to a full 35-day expedition (Wilderness Adventures) — nearly a 9x difference in commitment level under one category.",
+      },
+      {
+        type: "paragraph",
+        text: "Marine Science swings from a 5-day intro course (Field Studies Council, in Wales) to a 6-week immersive semester-style program (The Island School, in the Bahamas).",
+      },
+      {
+        type: "paragraph",
+        text: "Programs in our Leadership/Gifted category range from completely free (Telluride's TASS) to nearly $12,000 (Wharton's on-campus program), a good illustration of just how little a category label tells you about price.",
+      },
+      { type: "subheading", text: "New & Notable" },
+      {
+        type: "paragraph",
+        text: "One notable 2026 addition was COSMOS UC Merced. 2026 is its first year. It joins five long-established COSMOS campuses (UC Davis, Irvine, UCLA, San Diego, Santa Cruz) with its own new set of subject clusters. With no previous cohorts to look back on, there is less historical information available about its selectivity and student experience than at the established COSMOS campuses.",
+      },
+      {
+        type: "paragraph",
+        text: "These differences are also why it helps to look beyond the program title or subject area. We explore some of the factors that can matter in choosing a program here:",
+      },
+      {
+        type: "list",
+        items: [
+          "How to Tell if a Summer Program Is a Good Fit for Your Student",
+          "How Much Do High-School Summer Programs Cost?",
+          'What Does the "College Experience" at a Pre-College Program Really Look Like?',
+        ],
+        links: [
+          {
+            text: "How to Tell if a Summer Program Is a Good Fit for Your Student",
+            slug: "how-to-tell-if-a-summer-program-is-a-good-fit",
+          },
+          {
+            text: "How Much Do High-School Summer Programs Cost?",
+            slug: "how-much-do-summer-programs-cost",
+          },
+          {
+            text: 'What Does the "College Experience" at a Pre-College Program Really Look Like?',
+            slug: "what-does-college-experience-really-look-like",
+          },
+        ],
+      },
+      { type: "subheading", text: "A few caveats about the data" },
+      {
+        type: "paragraph",
+        text: "We want to be upfront about how this data was built, because we think that matters as much as the data itself:",
+      },
+      {
+        type: "list",
+        items: [
+          "These numbers come from our own research, not an exhaustive market survey. We didn't catalog every summer program in the country — we researched the ones that came up as we worked through this project, plus programs parents in our community pointed us toward.",
+          "The figures in this article were calculated from Groundwork's 2026 catalog and checked specifically for this analysis. We're rebuilding the catalog in a more structured format for 2027, which will allow us to analyze many more attributes and update these statistics more easily.",
+          "Programs marked \"Contact program\" for pricing were excluded from any price-based stats above — so figures like our free-program count reflect only programs with fully confirmed, public pricing.",
+        ],
+      },
+      { type: "subheading", text: "What we took away" },
+      {
+        type: "paragraph",
+        text: "The biggest takeaway wasn't that one type of program is better than another. It was how little a program's category or price tells you about the actual experience. Programs covering similar subjects can differ dramatically in length, cost, structure and level of commitment.",
+      },
+      {
+        type: "paragraph",
+        text: "That's part of what led us to build Groundwork in the first place: to make it easier to compare programs based on the criteria that matter to each student and family. Rather than treating a university or provider as a single listing, we're building the new catalog around the individual programs and courses students can actually choose, with session-level dates and other details wherever possible.",
+      },
+      {
+        type: "paragraph",
+        text: "The goal is simple: make differences that are buried across dozens of program websites easier to see and compare.",
+      },
+    ],
+  },
 ];

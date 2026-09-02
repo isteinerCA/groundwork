@@ -4,7 +4,7 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { SectionEyebrow } from "@/components/ui/button-link";
 import {
   getArticlesByCategory,
-  RESOURCE_CATEGORIES,
+  MAIN_RESOURCE_CATEGORIES,
 } from "@/lib/constants/resources";
 
 export default function ResourcesPage() {
@@ -20,7 +20,7 @@ export default function ResourcesPage() {
         </p>
 
         <div className="mt-14 grid gap-6 lg:grid-cols-3 lg:items-start lg:gap-8">
-          {RESOURCE_CATEGORIES.map((category) => {
+          {MAIN_RESOURCE_CATEGORIES.map((category) => {
             const articles = getArticlesByCategory(category.id);
 
             return (
@@ -52,6 +52,17 @@ export default function ResourcesPage() {
             );
           })}
         </div>
+
+        <p className="mt-10 border-t border-[var(--color-border)] pt-8 text-base leading-relaxed text-[var(--color-text-muted)]">
+          Also from Groundwork: See what we learned from analyzing our 2026 catalog in{" "}
+          <Link
+            href="/resources/summer-programs-by-the-numbers"
+            className="font-medium text-[var(--color-navy)] underline decoration-[var(--color-sage)] underline-offset-[0.2em] hover:decoration-[var(--color-navy)]"
+          >
+            Summer Programs by the Numbers
+          </Link>
+          .
+        </p>
       </main>
       <SiteFooter />
     </>

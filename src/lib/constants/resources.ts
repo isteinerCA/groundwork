@@ -1,8 +1,12 @@
-export type ResourceCategoryId = "planning" | "choosing-a-program" | "what-weve-learned";
+export type ResourceCategoryId =
+  | "planning"
+  | "choosing-a-program"
+  | "what-weve-learned"
+  | "also-from-groundwork";
 
 export type ArticleBlock =
   | { type: "paragraph"; text: string; links?: { text: string; slug: string }[] }
-  | { type: "list"; items: string[] }
+  | { type: "list"; items: string[]; links?: { text: string; slug: string }[] }
   | { type: "subheading"; text: string }
   | { type: "tip"; text: string };
 
@@ -30,7 +34,16 @@ export const RESOURCE_CATEGORIES = [
     label: "What We've Learned",
     description: "Lessons we've learned from navigating summer programs firsthand.",
   },
+  {
+    id: "also-from-groundwork" as const,
+    label: "Also from Groundwork",
+    description: "Insights drawn from Groundwork's program research and catalog data.",
+  },
 ] as const;
+
+export const MAIN_RESOURCE_CATEGORIES = RESOURCE_CATEGORIES.filter(
+  (category) => category.id !== "also-from-groundwork",
+);
 
 export { RESOURCE_ARTICLES } from "@/lib/content/resource-articles";
 
@@ -64,6 +77,7 @@ const ARTICLE_ORDER: Record<ResourceCategoryId, readonly string[]> = {
     "when-summer-plans-dont-go-as-planned",
     "when-a-summer-program-changes-the-question",
   ],
+  "also-from-groundwork": ["summer-programs-by-the-numbers"],
 };
 
 export function getArticlesByCategory(categoryId: ResourceCategoryId) {
