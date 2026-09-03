@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { ArticleContent } from "@/components/resources/article-content";
 import { ArticleCta } from "@/components/resources/article-cta";
+import { ArticleJsonLd } from "@/components/resources/article-json-ld";
 import { RelatedArticles } from "@/components/resources/related-articles";
 import { SectionEyebrow } from "@/components/ui/button-link";
 import {
@@ -12,6 +13,7 @@ import {
   getRelatedArticles,
   RESOURCE_ARTICLES,
 } from "@/lib/constants/resources";
+import { buildResourceArticleMetadata } from "@/lib/seo/resource-article-metadata";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -25,7 +27,7 @@ export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
   const article = getArticleBySlug(slug);
   if (!article) return { title: "Article not found" };
-  return { title: `${article.title} · Resources · Groundwork` };
+  return buildResourceArticleMetadata(article);
 }
 
 export default async function ResourceArticlePage({ params }: PageProps) {
@@ -40,6 +42,7 @@ export default async function ResourceArticlePage({ params }: PageProps) {
 
   return (
     <>
+      <ArticleJsonLd article={article} />
       <SiteHeader />
       <main className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
         <nav className="text-sm text-[var(--color-text-muted)]">

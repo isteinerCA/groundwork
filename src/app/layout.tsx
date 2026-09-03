@@ -4,6 +4,7 @@ import { Lora, Source_Sans_3 } from "next/font/google";
 import { PostAuthRedirect } from "@/components/auth/post-auth-redirect";
 import { AppProviders } from "@/components/workspace/app-providers";
 import { PlausibleAnalytics } from "@/components/analytics/plausible-analytics";
+import { getSiteUrl } from "@/lib/constants/site-url";
 import "./globals.css";
 
 const lora = Lora({
@@ -19,6 +20,7 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(getSiteUrl()),
   title: "Groundwork — Summer Programs Explorer",
   description:
     "Filter elite summer programs by grade, interest, format, and budget — with the fine print included.",
