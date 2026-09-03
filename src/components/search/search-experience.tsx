@@ -28,6 +28,12 @@ import type { MonthNumber } from "@/lib/constants/months";
 import { filterPrograms, sortPrograms, type SortOption } from "@/lib/data/filter-programs";
 import { formatProgramCountLabel } from "@/lib/programs/preview-programs";
 import { summarizeSearchFilters, trackEvent } from "@/lib/analytics";
+import {
+  applyLockedFilters,
+  clearFiltersKeepingLocked,
+  isCategoryLocked,
+  isGradeLocked,
+} from "@/lib/search/apply-locked-filters";
 import { loadLastSearchFilters, saveLastSearchFilters } from "@/lib/search/last-filters";
 import type { Program, SearchFilters } from "@/lib/types/program";
 import { DEFAULT_SEARCH_FILTERS } from "@/lib/types/program";
@@ -63,12 +69,20 @@ export function SearchExperience({
   initialCategory,
   initialFullyFunded,
   initialFormat,
+  lockedFilters,
+  pageTitle = "Build your shortlist",
+  pageDescription,
+  backLink,
 }: {
   programs: Program[];
   dataVerifiedAt: string | null;
   initialCategory?: ProgramCategoryId;
   initialFullyFunded?: boolean;
   initialFormat?: import("@/lib/constants/filters").ProgramFormatId;
+  lockedFilters?: Partial<SearchFilters>;
+  pageTitle?: string;
+  pageDescription?: string;
+  backLink?: { href: string; label: string };
 }) {
   const validCategory =
     initialCategory &&
@@ -76,25 +90,30 @@ export function SearchExperience({
       ? initialCategory
       : undefined;
 
-  const [filters, setFilters] = useState<SearchFilters>(() => ({
-    ...DEFAULT_SEARCH_FILTERS,
-    categories: validCategory ? [validCategory] : [],
-    fullyFundedOnly: initialFullyFunded ?? false,
-    formats: initialFormat ? [initialFormat] : [],
-  }));
+  const [filters, setFilters] = useState<SearchFilters>(() =>
+    applyLockedFilters(
+      {
+        ...DEFAULT_SEARCH_FILTERS,
+        categories: validCategory ? [validCategory] : [],
+        fullyFundedOnly: initialFullyFunded ?? false,
+        formats: initialFormat ? [initialFormat] : [],
+      },
+      lockedFilters,
+    ),
+  );
   const [sort, setSort] = useState<SortOption>("selectivity");
   const [restoredLastSearch, setRestoredLastSearch] = useState(false);
 
   useEffect(() => {
     if (restoredLastSearch) return;
-    if (hasUrlSeed(validCategory, initialFullyFunded, initialFormat)) {
+    if (lockedFilters || hasUrlSeed(validCategory, initialFullyFunded, initialFormat)) {
       setRestoredLastSearch(true);
       return;
     }
     const last = loadLastSearchFilters();
-    if (last) setFilters({ ...DEFAULT_SEARCH_FILTERS, ...last });
+    if (last) setFilters(applyLockedFilters({ ...DEFAULT_SEARCH_FILTERS, ...last }, lockedFilters));
     setRestoredLastSearch(true);
-  }, [restoredLastSearch, validCategory, initialFullyFunded, initialFormat]);
+  }, [restoredLastSearch, validCategory, initialFullyFunded, initialFormat, lockedFilters]);
 
   const results = useMemo(() => {
     if (filters.gradesCompleted.length === 0) return [];
@@ -121,16 +140,17 @@ export function SearchExperience({
   };
 
   const applyFilters = (next: SearchFilters) => {
+    const merged = applyLockedFilters(next, lockedFilters);
     const hadGrade = filters.gradesCompleted.length > 0;
-    setFilters(next);
-    if (next.gradesCompleted.length > 0) {
-      saveLastSearchFilters(next);
+    setFilters(merged);
+    if (merged.gradesCompleted.length > 0) {
+      saveLastSearchFilters(merged);
       const resultTotal =
-        next.gradesCompleted.length > 0
-          ? sortPrograms(filterPrograms(programs, next), sort).length
+        merged.gradesCompleted.length > 0
+          ? sortPrograms(filterPrograms(programs, merged), sort).length
           : 0;
-      if (!hadGrade && next.gradesCompleted.length > 0) {
-        runSearch(next, resultTotal);
+      if (!hadGrade && merged.gradesCompleted.length > 0) {
+        runSearch(merged, resultTotal);
       }
     }
   };
@@ -140,7 +160,7 @@ export function SearchExperience({
   };
 
   const clearAll = () => {
-    applyFilters(DEFAULT_SEARCH_FILTERS);
+    applyFilters(clearFiltersKeepingLocked(lockedFilters));
   };
 
   const hasActiveFilters =
@@ -169,13 +189,17 @@ export function SearchExperience({
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6">
       <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
         <div>
-          <Link href="/" className="text-sm text-[var(--color-text-muted)] no-underline">
-            ← Groundwork
+          <Link
+            href={backLink?.href ?? "/"}
+            className="text-sm text-[var(--color-text-muted)] no-underline"
+          >
+            ← {backLink?.label ?? "Groundwork"}
           </Link>
-          <h1 className="mt-2 text-3xl">Build your shortlist</h1>
+          <h1 className="mt-2 text-3xl">{pageTitle}</h1>
           <p className="mt-2 max-w-xl text-[var(--color-text-muted)]">
-            Filter {formatProgramCountLabel()} by grade and interests, then heart programs to
-            save. Last verified {dataVerifiedAt ?? "—"}.
+            {pageDescription ??
+              `Filter ${formatProgramCountLabel()} by grade and interests, then heart programs to save.`}{" "}
+            Last verified {dataVerifiedAt ?? "—"}.
           </p>
         </div>
       </div>
@@ -197,6 +221,7 @@ export function SearchExperience({
                   compact
                   label={`${grade}th`}
                   selected={filters.gradesCompleted.includes(grade)}
+                  disabled={isGradeLocked(grade, lockedFilters)}
                   onClick={() =>
                     update({ gradesCompleted: toggle(filters.gradesCompleted, grade) })
                   }
@@ -226,6 +251,7 @@ export function SearchExperience({
                     key={cat.id}
                     label={cat.label}
                     selected={filters.categories.includes(cat.id)}
+                    disabled={isCategoryLocked(cat.id, lockedFilters)}
                     onClick={() =>
                       update({ categories: toggle(filters.categories, cat.id) })
                     }
@@ -412,6 +438,7 @@ export function SearchExperience({
               <ActiveFilterBar
                 embedded
                 filters={filters}
+                lockedFilters={lockedFilters}
                 onRemove={update}
                 onClearAll={clearAll}
               />
