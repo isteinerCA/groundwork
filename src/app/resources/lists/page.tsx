@@ -31,28 +31,24 @@ export default function PredefinedListsPage() {
           student.
         </p>
 
-        <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {PREDEFINED_LISTS.map((list) => (
-            <li
-              key={list.slug}
-              className="rounded-[var(--radius-lg)] border border-[var(--color-sage)] bg-[var(--color-surface)] p-5 shadow-[var(--shadow-card)]"
-            >
-              <Link
-                href={`/resources/lists/${list.slug}`}
-                className="text-base font-medium text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
-              >
-                {list.exploreLabel} for high schoolers
-              </Link>
-              <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-muted)]">
-                {list.description}
-              </p>
-            </li>
-          ))}
-        </ul>
+        <section className="mt-10 overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-sage)] bg-[var(--color-surface)] shadow-[var(--shadow-card)] sm:mt-12">
+          <ul className="columns-1 gap-x-8 px-5 py-4 sm:columns-2 sm:px-6 sm:py-5 lg:columns-3">
+            {PREDEFINED_LISTS.map((list) => (
+              <li key={list.slug} className="mb-2 break-inside-avoid">
+                <Link
+                  href={`/resources/lists/${list.slug}`}
+                  className="text-base leading-snug text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
+                >
+                  {list.titleLabel} for high schoolers
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
 
         <Link
           href="/resources"
-          className="mt-12 inline-block text-sm font-medium text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
+          className="mt-10 inline-block text-sm font-medium text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)] sm:mt-12"
         >
           ← Back to all resources
         </Link>

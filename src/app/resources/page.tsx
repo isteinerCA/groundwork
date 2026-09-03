@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
+import { ResourceSectionHeader } from "@/components/resources/resource-section-header";
 import { SectionEyebrow } from "@/components/ui/button-link";
 import { PREDEFINED_LISTS } from "@/lib/constants/predefined-lists";
 import {
@@ -30,14 +31,12 @@ export default function ResourcesPage() {
                 id={category.id}
                 className="flex flex-col overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-sage)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]"
               >
-                <div className="min-h-[10.5rem] border-b border-[var(--color-sage)] bg-[var(--color-sage-soft)] px-6 py-4 sm:py-5">
-                  <h2 className="text-2xl leading-snug md:text-[1.75rem]">{category.label}</h2>
-                  <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-muted)]">
-                    {category.description}
-                  </p>
-                </div>
+                <ResourceSectionHeader
+                  title={category.label}
+                  description={category.description}
+                />
 
-                <ul className="space-y-3 px-6 py-5">
+                <ul className="space-y-2.5 px-5 py-4 sm:space-y-3 sm:px-6 sm:py-5">
                   {articles.map((article) => (
                     <li key={article.slug}>
                       <Link
@@ -55,15 +54,12 @@ export default function ResourcesPage() {
         </div>
 
         <section className="mt-14 overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-sage)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]">
-          <div className="border-b border-[var(--color-sage)] bg-[var(--color-sage-soft)] px-6 py-5">
-            <h2 className="text-2xl leading-snug md:text-[1.75rem]">Popular ways to explore</h2>
-            <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-muted)]">
-              Start with one of these ready-made searches, then adjust the filters to fit your
-              student.
-            </p>
-          </div>
+          <ResourceSectionHeader
+            title="Popular ways to explore"
+            description="Start with one of these ready-made searches, then adjust the filters to fit your student."
+          />
 
-          <div className="px-6 py-5">
+          <div className="px-5 py-4 sm:px-6 sm:py-5">
             <ul className="columns-1 gap-x-8 sm:columns-2 lg:columns-3">
               {PREDEFINED_LISTS.map((list) => (
                 <li key={list.slug} className="mb-2 break-inside-avoid">
@@ -71,7 +67,7 @@ export default function ResourcesPage() {
                     href={`/resources/lists/${list.slug}`}
                     className="text-base leading-snug text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
                   >
-                    {list.exploreLabel} for high schoolers
+                    {list.titleLabel} for high schoolers
                   </Link>
                 </li>
               ))}
