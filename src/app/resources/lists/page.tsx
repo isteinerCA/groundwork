@@ -5,9 +5,9 @@ import { SectionEyebrow } from "@/components/ui/button-link";
 import { PREDEFINED_LISTS } from "@/lib/constants/predefined-lists";
 
 export const metadata = {
-  title: "Pre-defined lists · Resources · Groundwork",
+  title: "Popular ways to explore · Resources · Groundwork",
   description:
-    "Curated starting points for high schoolers exploring summer programs — one list per category.",
+    "Start with one of these ready-made searches, then adjust the filters to fit your student.",
 };
 
 export default function PredefinedListsPage() {
@@ -25,10 +25,10 @@ export default function PredefinedListsPage() {
         </nav>
 
         <SectionEyebrow className="mt-6">Pre-defined lists</SectionEyebrow>
-        <h1 className="mt-2 text-3xl md:text-4xl">Start exploring faster</h1>
+        <h1 className="mt-2 text-3xl md:text-4xl">Popular ways to explore</h1>
         <p className="mt-3 max-w-2xl text-lg leading-relaxed text-[var(--color-text-muted)]">
-          Ready-made lists for high schoolers — each focused on one category with grades 9th–12th
-          already selected. Browse live results, heart programs, and build your shortlist.
+          Start with one of these ready-made searches, then adjust the filters to fit your
+          student.
         </p>
 
         <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -41,7 +41,7 @@ export default function PredefinedListsPage() {
                 href={`/resources/lists/${list.slug}`}
                 className="text-base font-medium text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
               >
-                {list.exploreLabel}
+                {list.exploreLabel} for high schoolers
               </Link>
               <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-muted)]">
                 {list.description}

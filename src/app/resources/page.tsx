@@ -56,10 +56,10 @@ export default function ResourcesPage() {
 
         <section className="mt-14 overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-sage)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]">
           <div className="border-b border-[var(--color-sage)] bg-[var(--color-sage-soft)] px-6 py-5">
-            <h2 className="text-2xl leading-snug md:text-[1.75rem]">Pre-defined lists</h2>
+            <h2 className="text-2xl leading-snug md:text-[1.75rem]">Popular ways to explore</h2>
             <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-muted)]">
-              Ready-made lists for high schoolers — each focused on one category with grades
-              9th–12th already selected.
+              Start with one of these ready-made searches, then adjust the filters to fit your
+              student.
             </p>
           </div>
 
@@ -71,7 +71,7 @@ export default function ResourcesPage() {
                     href={`/resources/lists/${list.slug}`}
                     className="text-base leading-snug text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
                   >
-                    {list.exploreLabel}
+                    {list.exploreLabel} for high schoolers
                   </Link>
                 </li>
               ))}
@@ -81,7 +81,7 @@ export default function ResourcesPage() {
               href="/resources/lists"
               className="mt-6 inline-block text-sm font-medium text-[var(--color-navy)] underline decoration-[var(--color-sage)] underline-offset-[0.2em] hover:decoration-[var(--color-navy)]"
             >
-              View all pre-defined lists
+              View all ready-made searches
             </Link>
           </div>
         </section>

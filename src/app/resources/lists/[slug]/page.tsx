@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: PageProps) {
   if (!list) return { title: "List not found" };
 
   return {
-    title: `${list.exploreLabel} · Pre-defined lists · Groundwork`,
+    title: `${list.titleLabel} for high schoolers · Pre-defined lists · Groundwork`,
     description: list.description,
   };
 }
@@ -49,7 +49,7 @@ export default async function PredefinedListPage({ params }: PageProps) {
           href="/resources/lists"
           className="text-sm font-medium text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
         >
-          ← All pre-defined lists
+          ← View all ready-made searches
         </Link>
       </div>
       <SiteFooter />

@@ -197,9 +197,14 @@ export function SearchExperience({
           </Link>
           <h1 className="mt-2 text-3xl">{pageTitle}</h1>
           <p className="mt-2 max-w-xl text-[var(--color-text-muted)]">
-            {pageDescription ??
-              `Filter ${formatProgramCountLabel()} by grade and interests, then heart programs to save.`}{" "}
-            Last verified {dataVerifiedAt ?? "—"}.
+            {pageDescription ? (
+              pageDescription
+            ) : (
+              <>
+                Filter {formatProgramCountLabel()} by grade and interests, then heart programs to
+                save. Last verified {dataVerifiedAt ?? "—"}.
+              </>
+            )}
           </p>
         </div>
       </div>
