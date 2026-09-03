@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
+import { PredefinedListLinks } from "@/components/resources/predefined-list-links";
 import { SectionEyebrow } from "@/components/ui/button-link";
-import { PREDEFINED_LISTS } from "@/lib/constants/predefined-lists";
+import { getListsByGradeBand } from "@/lib/constants/predefined-lists";
 
 export const metadata = {
   title: "Popular ways to explore · Resources · Groundwork",
@@ -11,6 +12,9 @@ export const metadata = {
 };
 
 export default function PredefinedListsPage() {
+  const highSchoolLists = getListsByGradeBand("high-school");
+  const middleSchoolLists = getListsByGradeBand("middle-school");
+
   return (
     <>
       <SiteHeader />
@@ -31,19 +35,9 @@ export default function PredefinedListsPage() {
           student.
         </p>
 
-        <section className="mt-10 overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-sage)] bg-[var(--color-surface)] shadow-[var(--shadow-card)] sm:mt-12">
-          <ul className="columns-1 gap-x-8 px-5 py-4 sm:columns-2 sm:px-6 sm:py-5 lg:columns-3">
-            {PREDEFINED_LISTS.map((list) => (
-              <li key={list.slug} className="mb-2 break-inside-avoid">
-                <Link
-                  href={`/resources/lists/${list.slug}`}
-                  className="text-base leading-snug text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
-                >
-                  {list.titleLabel} for high schoolers
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <section className="mt-10 space-y-6 overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-sage)] bg-[var(--color-surface)] px-5 py-4 shadow-[var(--shadow-card)] sm:mt-12 sm:px-6 sm:py-5">
+          <PredefinedListLinks lists={highSchoolLists} title="High schoolers" />
+          <PredefinedListLinks lists={middleSchoolLists} title="Middle schoolers" />
         </section>
 
         <Link

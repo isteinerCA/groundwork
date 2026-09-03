@@ -1,15 +1,19 @@
 import Link from "next/link";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
+import { PredefinedListLinks } from "@/components/resources/predefined-list-links";
 import { ResourceSectionHeader } from "@/components/resources/resource-section-header";
 import { SectionEyebrow } from "@/components/ui/button-link";
-import { PREDEFINED_LISTS } from "@/lib/constants/predefined-lists";
+import { getListsByGradeBand } from "@/lib/constants/predefined-lists";
 import {
   getArticlesByCategory,
   MAIN_RESOURCE_CATEGORIES,
 } from "@/lib/constants/resources";
 
 export default function ResourcesPage() {
+  const highSchoolLists = getListsByGradeBand("high-school");
+  const middleSchoolLists = getListsByGradeBand("middle-school");
+
   return (
     <>
       <SiteHeader />
@@ -59,19 +63,9 @@ export default function ResourcesPage() {
             description="Start with one of these ready-made searches, then adjust the filters to fit your student."
           />
 
-          <div className="px-5 py-4 sm:px-6 sm:py-5">
-            <ul className="columns-1 gap-x-8 sm:columns-2 lg:columns-3">
-              {PREDEFINED_LISTS.map((list) => (
-                <li key={list.slug} className="mb-2 break-inside-avoid">
-                  <Link
-                    href={`/resources/lists/${list.slug}`}
-                    className="text-base leading-snug text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
-                  >
-                    {list.titleLabel} for high schoolers
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          <div className="space-y-6 px-5 py-4 sm:px-6 sm:py-5">
+            <PredefinedListLinks lists={highSchoolLists} title="High schoolers" />
+            <PredefinedListLinks lists={middleSchoolLists} title="Middle schoolers" />
 
             <Link
               href="/resources/lists"

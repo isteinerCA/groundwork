@@ -18,7 +18,7 @@ export function PredefinedListExperience({
       programs={programs}
       dataVerifiedAt={dataVerifiedAt}
       lockedFilters={list.lockedFilters}
-      pageTitle={`Start exploring ${list.titleLabel} for high schoolers`}
+      pageTitle={`Start exploring ${list.titleLabel} for ${list.audienceLabel}`}
       pageDescription={list.description}
       backLink={{ href: "/resources/lists", label: "Pre-defined lists" }}
     />
