@@ -31,7 +31,7 @@ export function ContactForm({ initialProgramName = "" }: ContactFormProps) {
   const [websiteUrl, setWebsiteUrl] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState<string | null>(null);
-  const [success, setSuccess] = useState<{ referenceId: string } | null>(null);
+  const [success, setSuccess] = useState(false);
   const [submitting, setSubmitting] = useState(false);
 
   const showProgramFields = inquiryRequiresProgramFields(inquiryType);
@@ -69,7 +69,6 @@ export function ContactForm({ initialProgramName = "" }: ContactFormProps) {
       const data = (await response.json()) as {
         ok?: boolean;
         error?: string;
-        referenceId?: string;
         sla?: string;
       };
 
@@ -78,9 +77,7 @@ export function ContactForm({ initialProgramName = "" }: ContactFormProps) {
         return;
       }
 
-      setSuccess({
-        referenceId: data.referenceId ?? "",
-      });
+      setSuccess(true);
       trackEvent("contact_form_submitted", { inquiry_type: inquiryType });
     } catch {
       setError("Network error. Please check your connection and try again.");
@@ -93,11 +90,6 @@ export function ContactForm({ initialProgramName = "" }: ContactFormProps) {
     return (
       <div className="mt-8 rounded-[var(--radius-lg)] border border-emerald-200 bg-emerald-50 p-6">
         <h2 className="text-lg text-emerald-900">Thank you — we received your message.</h2>
-        {success.referenceId && (
-          <p className="mt-2 text-sm text-emerald-800">
-            Reference: <span className="font-mono">{success.referenceId}</span>
-          </p>
-        )}
       </div>
     );
   }
