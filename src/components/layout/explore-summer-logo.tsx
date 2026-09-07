@@ -22,7 +22,7 @@ export function ExploreSummerLogo({
         width={963}
         height={200}
         priority={priority}
-        className={cn("h-7 w-auto sm:h-8", imageClassName)}
+        className={cn("h-7 w-auto sm:h-9", imageClassName)}
       />
       {subtitle ? (
         <span className="mt-1 text-[10px] tracking-wide text-[var(--color-text-muted)] uppercase">

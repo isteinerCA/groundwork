@@ -41,7 +41,7 @@ export function DashboardShell({
       <NewShortlistDialog open={newListOpen} onClose={() => setNewListOpen(false)} />
       <div className="mx-auto flex max-w-[1400px]">
         <aside className="hidden w-56 shrink-0 border-r border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-6 lg:block">
-          <ExploreSummerLogo subtitle={SITE_TAGLINE} imageClassName="h-8" />
+          <ExploreSummerLogo subtitle={SITE_TAGLINE} imageClassName="h-9" />
 
           <nav className="mt-8 space-y-1">
             {NAV.map((item) => {
