@@ -1,9 +1,14 @@
 import Script from "next/script";
 
 export function GoogleAnalytics() {
+  const fromEnv = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+  // Ignore the old client-account ID if it is still set on Vercel.
   const measurementId =
-    process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ||
-    (process.env.NODE_ENV === "production" ? "G-Q6DYHCBE2Z" : undefined);
+    fromEnv && fromEnv !== "G-Q6DYHCBE2Z"
+      ? fromEnv
+      : process.env.NODE_ENV === "production"
+        ? "G-QSRXLLVJEL"
+        : undefined;
   if (!measurementId) return null;
 
   return (
