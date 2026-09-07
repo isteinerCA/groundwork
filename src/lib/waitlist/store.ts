@@ -30,8 +30,21 @@ function resendHeaders(apiKey: string): HeadersInit {
   };
 }
 
-async function addContactToSegment(email: string, segmentId: string, apiKey: string): Promise<boolean> {
-  const createResponse = await fetch("https://api.resend.com/contacts", {
+async function readResendError(response: Response): Promise<string> {
+  try {
+    const body = (await response.json()) as { message?: string; name?: string };
+    return body.message ?? body.name ?? response.statusText;
+  } catch {
+    return response.statusText;
+  }
+}
+
+async function addContactToSegment(
+  email: string,
+  segmentId: string,
+  apiKey: string,
+): Promise<{ ok: true } | { ok: false; reason: "restricted_key" | "resend_failed"; detail: string }> {
+  const createWithSegment = await fetch("https://api.resend.com/contacts", {
     method: "POST",
     headers: resendHeaders(apiKey),
     body: JSON.stringify({
@@ -41,7 +54,25 @@ async function addContactToSegment(email: string, segmentId: string, apiKey: str
     }),
   });
 
-  if (createResponse.ok) return true;
+  if (createWithSegment.ok) return { ok: true };
+
+  let detail = await readResendError(createWithSegment);
+  if (detail.includes("restricted to only send emails")) {
+    return { ok: false, reason: "restricted_key", detail };
+  }
+
+  const createContact = await fetch("https://api.resend.com/contacts", {
+    method: "POST",
+    headers: resendHeaders(apiKey),
+    body: JSON.stringify({ email, unsubscribed: false }),
+  });
+
+  if (!createContact.ok) {
+    detail = await readResendError(createContact);
+    if (detail.includes("restricted to only send emails")) {
+      return { ok: false, reason: "restricted_key", detail };
+    }
+  }
 
   const addResponse = await fetch(
     `https://api.resend.com/contacts/${encodeURIComponent(email)}/segments/${segmentId}`,
@@ -51,7 +82,15 @@ async function addContactToSegment(email: string, segmentId: string, apiKey: str
     },
   );
 
-  return addResponse.ok;
+  if (addResponse.ok) return { ok: true };
+
+  detail = await readResendError(addResponse);
+  if (detail.includes("restricted to only send emails")) {
+    return { ok: false, reason: "restricted_key", detail };
+  }
+
+  console.error("Resend waitlist segment error:", detail);
+  return { ok: false, reason: "resend_failed", detail };
 }
 
 async function sendConfirmationEmail(email: string, apiKey: string, from: string): Promise<boolean> {
@@ -82,13 +121,13 @@ async function sendConfirmationEmail(email: string, apiKey: string, from: string
 
 export type WaitlistResult =
   | { ok: true }
-  | { ok: false; reason: "not_configured" | "resend_failed" };
+  | { ok: false; reason: "not_configured" | "restricted_key" | "resend_failed" };
 
 export async function subscribeToWaitlist(signup: WaitlistSignup): Promise<WaitlistResult> {
   await persistDevSignup(signup);
 
   const apiKey = process.env.RESEND_API_KEY;
-  const segmentId = process.env.RESEND_WAITLIST_SEGMENT_ID;
+  const segmentId = process.env.RESEND_WAITLIST_SEGMENT_ID?.trim();
   const from =
     process.env.CONTACT_EMAIL_FROM ?? `${SITE_NAME} <hello@explore-summer.com>`;
 
@@ -100,8 +139,13 @@ export async function subscribeToWaitlist(signup: WaitlistSignup): Promise<Waitl
   }
 
   const added = await addContactToSegment(signup.email, segmentId, apiKey);
-  if (!added) {
-    return { ok: false, reason: "resend_failed" };
+  if (!added.ok) {
+    if (added.reason === "restricted_key") {
+      console.error(
+        "Resend API key cannot manage contacts. Create a Full Access key in Resend and update RESEND_API_KEY.",
+      );
+    }
+    return { ok: false, reason: added.reason };
   }
 
   await sendConfirmationEmail(signup.email, apiKey, from);

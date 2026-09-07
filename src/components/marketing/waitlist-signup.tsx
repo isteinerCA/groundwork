@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, type FormEvent } from "react";
 import { btnPrimary } from "@/components/ui/button-styles";
 import { trackEvent } from "@/lib/analytics";
@@ -49,8 +50,14 @@ export function WaitlistSignup({ source, className = "" }: WaitlistSignupProps) 
       <div
         className={`rounded-[var(--radius-lg)] border border-emerald-200 bg-emerald-50 px-5 py-4 ${className}`}
       >
-        <p className="font-medium text-emerald-900">
-          Thank you for signing up. We will let you know when the 2027 list is available.
+        <p className="font-medium text-emerald-900">You&apos;re on the list.</p>
+        <p className="mt-2 text-sm text-emerald-800">
+          We&apos;ll let you know when our 2027 summer program listings are ready. In the meantime,
+          you can{" "}
+          <Link href="/search" className="font-medium text-emerald-900 underline">
+            explore our current listings
+          </Link>{" "}
+          to get a sense of the options available.
         </p>
       </div>
     );
@@ -61,8 +68,8 @@ export function WaitlistSignup({ source, className = "" }: WaitlistSignupProps) 
       className={`rounded-[var(--radius-lg)] border border-[var(--color-sage)_35%] bg-[var(--color-sage-soft)] px-5 py-4 ${className}`}
     >
       <p className="text-sm text-[var(--color-navy)]">
-        Explore Summer is currently updating for 2027 programs. Sign up to be the first one to know
-        when the 2027 list is ready.
+        We&apos;re updating our summer program listings for 2027. Sign up to be notified when the
+        2027 programs are ready to explore.
       </p>
       <form onSubmit={handleSubmit} className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center">
         <label className="sr-only" htmlFor={`waitlist-email-${source}`}>
