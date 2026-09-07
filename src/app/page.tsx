@@ -10,6 +10,7 @@ import {
   ProblemHowItWorksSection,
   WorkspaceSection,
 } from "@/components/marketing/landing-sections";
+import { WaitlistSignup } from "@/components/marketing/waitlist-signup";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,9 @@ export default function HomePage() {
       <SiteHeader logoPriority />
       <main>
         <LandingHero />
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <WaitlistSignup source="home" className="mb-4" />
+        </div>
         <ProblemHowItWorksSection />
         <CategoriesSection />
         <FinePrintSection />

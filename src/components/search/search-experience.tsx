@@ -15,6 +15,7 @@ import { Chip } from "@/components/ui/chip";
 import { InfoTooltip } from "@/components/ui/info-tooltip";
 import { ProgramCard } from "@/components/search/program-card";
 import { SearchPreviewPanel } from "@/components/search/search-preview-panel";
+import { WaitlistSignup } from "@/components/marketing/waitlist-signup";
 import { ADMISSION_TYPES } from "@/lib/constants/admission-types";
 import { SITE_NAME } from "@/lib/constants/brand";
 import { PROGRAM_CATEGORIES, type ProgramCategoryId } from "@/lib/constants/categories";
@@ -209,6 +210,8 @@ export function SearchExperience({
           </p>
         </div>
       </div>
+
+      <WaitlistSignup source="search" className="mb-8" />
 
       {/* Filters left; results + search assistant right (assistant sits below active filters). */}
       <div className="grid gap-6 lg:grid-cols-[minmax(300px,380px)_minmax(0,1fr)] lg:items-start">

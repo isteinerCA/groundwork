@@ -10,6 +10,7 @@ export type AnalyticsEvent =
   | "programs_bulk_saved"
   | "program_unsaved"
   | "contact_form_submitted"
+  | "waitlist_signup"
   | "status_changed"
   | "flag_clicked"
   | "payment_completed";
