@@ -111,6 +111,10 @@ async function sendConfirmationEmail(email: string, apiKey: string): Promise<boo
     }),
   });
 
+  if (!response.ok) {
+    console.error("Waitlist confirmation email failed:", await readResendError(response));
+  }
+
   return response.ok;
 }
 
@@ -125,6 +129,10 @@ export async function subscribeToWaitlist(signup: WaitlistSignup): Promise<Waitl
   const segmentId = process.env.RESEND_WAITLIST_SEGMENT_ID?.trim();
 
   if (!apiKey || !segmentId) {
+    if (process.env.NODE_ENV === "development" && apiKey) {
+      await sendConfirmationEmail(signup.email, apiKey);
+      return { ok: true };
+    }
     if (process.env.NODE_ENV === "development") {
       return { ok: true };
     }
@@ -141,6 +149,9 @@ export async function subscribeToWaitlist(signup: WaitlistSignup): Promise<Waitl
     return { ok: false, reason: added.reason };
   }
 
-  await sendConfirmationEmail(signup.email, apiKey);
+  const emailed = await sendConfirmationEmail(signup.email, apiKey);
+  if (!emailed) {
+    console.error("Waitlist signup saved contact but confirmation email was not sent:", signup.email);
+  }
   return { ok: true };
 }

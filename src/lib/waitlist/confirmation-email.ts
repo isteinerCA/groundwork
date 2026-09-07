@@ -1,8 +1,8 @@
 import { SITE_NAME, SITE_PRODUCTION_URL } from "@/lib/constants/brand";
-import { absoluteUrl } from "@/lib/constants/site-url";
 import { WAITLIST_SEASON_YEAR } from "@/lib/waitlist/constants";
 
 const SEARCH_URL = `${SITE_PRODUCTION_URL}/search`;
+const LOGO_URL = `${SITE_PRODUCTION_URL}/images/explore-summer-logo.png`;
 
 export function waitlistConfirmationSubject(): string {
   return `You're on the list — ${SITE_NAME} ${WAITLIST_SEASON_YEAR} updates`;
@@ -21,8 +21,6 @@ export function waitlistConfirmationText(): string {
 }
 
 export function waitlistConfirmationHtml(): string {
-  const logoUrl = absoluteUrl("/images/explore-summer-logo.png");
-
   return `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -37,7 +35,7 @@ export function waitlistConfirmationHtml(): string {
           <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:560px;background-color:#ffffff;border:1px solid #e5e0d8;border-radius:12px;">
             <tr>
               <td style="padding:32px 32px 24px;text-align:center;border-bottom:1px solid #e5e0d8;">
-                <img src="${logoUrl}" alt="${SITE_NAME}" width="240" style="display:block;margin:0 auto;max-width:240px;height:auto;border:0;" />
+                <img src="${LOGO_URL}" alt="${SITE_NAME}" width="240" style="display:block;margin:0 auto;max-width:240px;height:auto;border:0;" />
               </td>
             </tr>
             <tr>
