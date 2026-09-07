@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Lora, Source_Sans_3 } from "next/font/google";
 import { PostAuthRedirect } from "@/components/auth/post-auth-redirect";
 import { AppProviders } from "@/components/workspace/app-providers";
+import { GoogleAnalytics } from "@/components/analytics/google-analytics";
 import { PlausibleAnalytics } from "@/components/analytics/plausible-analytics";
 import { SITE_NAME, SITE_TAGLINE } from "@/lib/constants/brand";
 import { getSiteUrl } from "@/lib/constants/site-url";
@@ -46,6 +47,7 @@ export default function RootLayout({
         >
           <PostAuthRedirect />
           <PlausibleAnalytics />
+          <GoogleAnalytics />
           <AppProviders>{children}</AppProviders>
         </ClerkProvider>
       </body>

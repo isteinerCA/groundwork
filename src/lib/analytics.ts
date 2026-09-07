@@ -1,6 +1,7 @@
 /**
- * Plausible custom events (PRD §11). No PII in props.
- * Falls back to localStorage queue when Plausible is not configured.
+ * Custom events (PRD §11). No PII in props.
+ * Sends to Plausible and/or Google Analytics when configured.
+ * Falls back to a localStorage queue when neither script is loaded.
  */
 
 export type AnalyticsEvent =
@@ -20,6 +21,7 @@ type EventProps = Record<string, string | number | boolean>;
 declare global {
   interface Window {
     plausible?: (event: string, options?: { props?: EventProps }) => void;
+    gtag?: (...args: unknown[]) => void;
   }
 }
 
@@ -42,9 +44,16 @@ function persistFallback(event: AnalyticsEvent, props?: EventProps): void {
 export function trackEvent(event: AnalyticsEvent, props?: EventProps): void {
   if (typeof window === "undefined") return;
 
-  if (typeof window.plausible === "function") {
+  const sentToPlausible = typeof window.plausible === "function";
+  const sentToGtag = typeof window.gtag === "function";
+
+  if (sentToPlausible) {
     window.plausible(event, props ? { props } : undefined);
-  } else if (process.env.NODE_ENV === "development") {
+  }
+  if (sentToGtag) {
+    window.gtag("event", event, props);
+  }
+  if (!sentToPlausible && !sentToGtag && process.env.NODE_ENV === "development") {
     console.debug("[analytics]", event, props);
   }
 
