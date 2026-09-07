@@ -44,16 +44,17 @@ function persistFallback(event: AnalyticsEvent, props?: EventProps): void {
 export function trackEvent(event: AnalyticsEvent, props?: EventProps): void {
   if (typeof window === "undefined") return;
 
-  const sentToPlausible = typeof window.plausible === "function";
-  const sentToGtag = typeof window.gtag === "function";
-
-  if (sentToPlausible) {
+  if (typeof window.plausible === "function") {
     window.plausible(event, props ? { props } : undefined);
   }
-  if (sentToGtag) {
+  if (typeof window.gtag === "function") {
     window.gtag("event", event, props);
   }
-  if (!sentToPlausible && !sentToGtag && process.env.NODE_ENV === "development") {
+  if (
+    typeof window.plausible !== "function" &&
+    typeof window.gtag !== "function" &&
+    process.env.NODE_ENV === "development"
+  ) {
     console.debug("[analytics]", event, props);
   }
 
