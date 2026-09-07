@@ -5,7 +5,7 @@ export function ArticleCta() {
   return (
     <aside className="mt-10 rounded-[var(--radius-lg)] border border-[var(--color-sage)] bg-[var(--color-sage-soft)] px-5 py-4">
       <p className="text-[var(--color-text)]">
-        We built Groundwork to make summer program research easier. Compare{" "}
+        We built Explore Summer to make summer program research easier. Compare{" "}
         {MARKETING_PROGRAM_COUNT_LABEL} curated programs by grade, interests, budget, and other
         criteria, and build your shortlist in about 90 seconds. It&apos;s free to use.
       </p>

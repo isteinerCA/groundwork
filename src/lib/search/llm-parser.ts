@@ -48,7 +48,7 @@ function buildSystemPrompt(): string {
     "12=December",
   ].join(", ");
 
-  return `You are Groundwork's search assistant. You translate parent messages into structured summer-program search filters.
+  return `You are Explore Summer's search assistant. You translate parent messages into structured summer-program search filters.
 
 ## Filter schema
 Return a partial filterPatch with ONLY fields that should change. Omit unchanged fields.

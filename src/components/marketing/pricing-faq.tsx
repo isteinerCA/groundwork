@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     q: "Why is it free right now?",
-    a: `We're in an early bird period while we refine Groundwork with real families. Regular price is ${formatSeasonPassPrice()} per season; early bird access is free for a limited time with the same features.`,
+    a: `We're in an early bird period while we refine Explore Summer with real families. Regular price is ${formatSeasonPassPrice()} per season; early bird access is free for a limited time with the same features.`,
   },
   {
     q: `Will it really be ${formatSeasonPassPrice()} later?`,

@@ -4,7 +4,8 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useState, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
-import { GroundworkLogo } from "@/components/layout/groundwork-logo";
+import { ExploreSummerLogo } from "@/components/layout/explore-summer-logo";
+import { SITE_TAGLINE } from "@/lib/constants/brand";
 import { ValueBanner } from "@/components/marketing/value-banner";
 import { NewShortlistDialog } from "@/components/workspace/new-shortlist-dialog";
 import { useWorkspace } from "@/components/workspace/workspace-provider";
@@ -40,7 +41,7 @@ export function DashboardShell({
       <NewShortlistDialog open={newListOpen} onClose={() => setNewListOpen(false)} />
       <div className="mx-auto flex max-w-[1400px]">
         <aside className="hidden w-56 shrink-0 border-r border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-6 lg:block">
-          <GroundworkLogo subtitle="Summer Programs Explorer" imageClassName="h-8" />
+          <ExploreSummerLogo subtitle={SITE_TAGLINE} imageClassName="h-8" />
 
           <nav className="mt-8 space-y-1">
             {NAV.map((item) => {

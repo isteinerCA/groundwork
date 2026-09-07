@@ -1,6 +1,6 @@
-# Groundwork — Technical Execution Plan
+# Explore Summer — Technical Execution Plan
 
-**Product:** Summer Programs Explorer (Groundwork)  
+**Product:** Summer Programs Explorer (Explore Summer)  
 **PRD:** v1.2 (July 2026)  
 **Source data:** `/Users/isabellesteiner/Downloads/Summer programs 2026 - Sheet1.csv` (138 program rows)  
 **Status:** Sprint 1 complete — scaffold + data model (July 2026)
@@ -16,7 +16,7 @@
 
 ## 0. Executive Summary
 
-Groundwork is a freemium web app that helps families filter ~140 elite summer programs in under 90 seconds, surface curated "gotcha" flags, and (with a $49 seasonal pass) manage shortlists through application season.
+Explore Summer is a freemium web app that helps families filter ~140 elite summer programs in under 90 seconds, surface curated "gotcha" flags, and (with a $49 seasonal pass) manage shortlists through application season.
 
 This plan sequences work from **data foundation → search MVP → workspace → monetization → launch hardening**, aligned to PRD sections 4–14 and the attached design assets.
 
@@ -435,7 +435,7 @@ Per PRD §12:
 - [ ] Vercel production + preview environments
 - [ ] Supabase production project with backups
 - [ ] Stripe live mode keys (after test mode QA)
-- [ ] Domain + DNS (e.g. `groundwork.app` or TBD)
+- [ ] Domain + DNS (`explore-summer.com` via AWS Route 53 → Vercel)
 - [ ] `dataVerifiedAt` displayed site-wide; calendar reminder for annual September refresh
 - [ ] Runbook: CSV re-import, flag review, deploy steps
 - [ ] Estimated MVP ops cost: $180–280/month (PRD §13.4)

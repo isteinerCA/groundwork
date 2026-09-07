@@ -92,7 +92,7 @@ export function ProblemHowItWorksSection() {
             differently—just to find dates, costs, and eligibility.
           </p>
           <p className="mt-4 text-lg font-semibold text-[var(--color-navy)]">
-            Groundwork replaces that.
+            Explore Summer replaces that.
           </p>
         </div>
 

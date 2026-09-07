@@ -16,6 +16,7 @@ import { InfoTooltip } from "@/components/ui/info-tooltip";
 import { ProgramCard } from "@/components/search/program-card";
 import { SearchPreviewPanel } from "@/components/search/search-preview-panel";
 import { ADMISSION_TYPES } from "@/lib/constants/admission-types";
+import { SITE_NAME } from "@/lib/constants/brand";
 import { PROGRAM_CATEGORIES, type ProgramCategoryId } from "@/lib/constants/categories";
 import {
   AVAILABILITY_MONTHS,
@@ -193,7 +194,7 @@ export function SearchExperience({
             href={backLink?.href ?? "/"}
             className="text-sm text-[var(--color-text-muted)] no-underline"
           >
-            ← {backLink?.label ?? "Groundwork"}
+            ← {backLink?.label ?? SITE_NAME}
           </Link>
           <h1 className="mt-2 text-3xl">{pageTitle}</h1>
           <p className="mt-2 max-w-xl text-[var(--color-text-muted)]">

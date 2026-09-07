@@ -6,7 +6,7 @@ import { SectionEyebrow } from "@/components/ui/button-link";
 import { getListsByGradeBand } from "@/lib/constants/predefined-lists";
 
 export const metadata = {
-  title: "Popular ways to explore · Resources · Groundwork",
+  title: "Popular ways to explore · Resources · Explore Summer",
   description:
     "Start with one of these ready-made searches, then adjust the filters to fit your student.",
 };

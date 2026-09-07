@@ -44,8 +44,8 @@ export const RESOURCE_CATEGORIES = [
   },
   {
     id: "also-from-groundwork" as const,
-    label: "Also from Groundwork",
-    description: "Insights drawn from Groundwork's program research and catalog data.",
+    label: "Also from Explore Summer",
+    description: "Insights drawn from Explore Summer's program research and catalog data.",
   },
 ] as const;
 

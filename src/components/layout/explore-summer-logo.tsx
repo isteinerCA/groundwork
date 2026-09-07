@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import { SITE_NAME } from "@/lib/constants/brand";
 import { cn } from "@/lib/utils";
 
-export function GroundworkLogo({
+export function ExploreSummerLogo({
   className,
   imageClassName,
   subtitle,
@@ -16,10 +17,10 @@ export function GroundworkLogo({
   return (
     <Link href="/" className={cn("inline-flex flex-col no-underline", className)}>
       <Image
-        src="/images/groundwork-logo.png"
-        alt="Groundwork"
-        width={178}
-        height={34}
+        src="/images/explore-summer-logo.png"
+        alt={SITE_NAME}
+        width={963}
+        height={200}
         priority={priority}
         className={cn("h-7 w-auto sm:h-8", imageClassName)}
       />

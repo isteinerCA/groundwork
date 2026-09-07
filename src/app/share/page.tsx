@@ -43,7 +43,7 @@ function ShareContent() {
       </p>
       <h1 className="mt-2 text-3xl">{payload.name}</h1>
       <p className="mt-2 text-sm text-[var(--color-text-muted)]">
-        Shared view — editing requires your own Groundwork workspace.
+        Shared view — editing requires your own Explore Summer workspace.
       </p>
 
       <ul className="mt-8 space-y-4">

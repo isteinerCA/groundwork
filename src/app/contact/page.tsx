@@ -17,7 +17,7 @@ function ContactPageContent() {
       <main className="mx-auto max-w-2xl px-4 py-12 sm:px-6">
         <h1 className="text-3xl">Contact us / Report an issue</h1>
         <p className="mt-3 text-[var(--color-text-muted)]">
-          Have questions about Groundwork? Spot outdated info, disagree with a flag, or want a
+          Have questions about Explore Summer? Spot outdated info, disagree with a flag, or want a
           program added? Send us the details and we&apos;ll be happy to follow up with you.
         </p>
         <ContactForm initialProgramName={initialProgram} />

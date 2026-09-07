@@ -1,3 +1,4 @@
+import { SITE_NAME } from "@/lib/constants/brand";
 import { absoluteUrl } from "@/lib/constants/site-url";
 import type { ResourceArticle } from "@/lib/constants/resources";
 import { getCategoryById } from "@/lib/constants/resources";
@@ -18,11 +19,11 @@ export function buildResourceArticleJsonLd(article: ResourceArticle) {
     },
     author: {
       "@type": "Organization",
-      name: "Groundwork",
+      name: SITE_NAME,
     },
     publisher: {
       "@type": "Organization",
-      name: "Groundwork",
+      name: SITE_NAME,
     },
     ...(category && { articleSection: category.label }),
   };

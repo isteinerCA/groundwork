@@ -1,5 +1,6 @@
 import { appendFile, mkdir } from "node:fs/promises";
 import path from "node:path";
+import { SITE_NAME } from "@/lib/constants/brand";
 import type { ContactFormPayload } from "@/lib/contact/types";
 import { INQUIRY_TYPES } from "@/lib/contact/types";
 
@@ -26,7 +27,7 @@ export async function persistSubmission(
 export async function sendContactEmail(submission: StoredSubmission): Promise<boolean> {
   const apiKey = process.env.RESEND_API_KEY;
   const to = process.env.CONTACT_EMAIL_TO;
-  const from = process.env.CONTACT_EMAIL_FROM ?? "Groundwork <onboarding@resend.dev>";
+  const from = process.env.CONTACT_EMAIL_FROM ?? `${SITE_NAME} <onboarding@resend.dev>`;
 
   if (!apiKey || !to) return false;
 
@@ -59,7 +60,7 @@ export async function sendContactEmail(submission: StoredSubmission): Promise<bo
       from,
       to: [to],
       reply_to: submission.email,
-      subject: `[Groundwork] ${typeLabel}: ${subjectSuffix}`,
+      subject: `[${SITE_NAME}] ${typeLabel}: ${subjectSuffix}`,
       text: body,
     }),
   });

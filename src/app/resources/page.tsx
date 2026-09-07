@@ -77,7 +77,7 @@ export default function ResourcesPage() {
         </section>
 
         <p className="mt-10 border-t border-[var(--color-border)] pt-8 text-base leading-relaxed text-[var(--color-text-muted)]">
-          Also from Groundwork: See what we learned from analyzing our 2026 catalog in{" "}
+          Also from Explore Summer: See what we learned from analyzing our 2026 catalog in{" "}
           <Link
             href="/resources/summer-programs-by-the-numbers"
             className="font-medium text-[var(--color-navy)] underline decoration-[var(--color-sage)] underline-offset-[0.2em] hover:decoration-[var(--color-navy)]"

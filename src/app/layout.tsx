@@ -4,6 +4,7 @@ import { Lora, Source_Sans_3 } from "next/font/google";
 import { PostAuthRedirect } from "@/components/auth/post-auth-redirect";
 import { AppProviders } from "@/components/workspace/app-providers";
 import { PlausibleAnalytics } from "@/components/analytics/plausible-analytics";
+import { SITE_NAME, SITE_TAGLINE } from "@/lib/constants/brand";
 import { getSiteUrl } from "@/lib/constants/site-url";
 import "./globals.css";
 
@@ -21,9 +22,12 @@ const sourceSans = Source_Sans_3({
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
-  title: "Groundwork — Summer Programs Explorer",
+  title: `${SITE_NAME} — ${SITE_TAGLINE}`,
   description:
     "Filter elite summer programs by grade, interest, format, and budget — with the fine print included.",
+  openGraph: {
+    siteName: SITE_NAME,
+  },
 };
 
 export default function RootLayout({

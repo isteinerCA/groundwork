@@ -102,7 +102,7 @@ export function ArticleContent({ blocks }: { blocks: ArticleBlock[] }) {
                 className="rounded-[var(--radius-lg)] border border-[var(--color-sage)] bg-[var(--color-sage-soft)] px-5 py-4"
               >
                 <p className="text-sm font-semibold tracking-wide text-[var(--color-navy)] uppercase">
-                  Groundwork tip
+                  Explore Summer tip
                 </p>
                 <p className="mt-2 text-[var(--color-text)]">{block.text}</p>
               </aside>

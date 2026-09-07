@@ -1,12 +1,12 @@
-# Groundwork — Summer Programs Explorer
+# Explore Summer — Summer Programs Explorer
 
 Freemium web app for discovering and tracking elite summer programs (grades 6–12).
 
 ## Stack
 
 - **Next.js 15** (App Router) + TypeScript + Tailwind CSS v4
-- **Stripe** seasonal pass ($49) — auth removed; Clerk planned
-- **Vercel** for hosting (custom domain optional later)
+- **Stripe** seasonal pass ($49) — auth via Clerk
+- **Vercel** for hosting — production domain `explore-summer.com` (DNS in AWS Route 53)
 
 ## Getting started
 
@@ -87,7 +87,19 @@ data/
 
 1. Push repo to GitHub
 2. Import project in [Vercel](https://vercel.com)
-3. Deploy — no env vars required for Sprint 1
+3. Set `NEXT_PUBLIC_APP_URL=https://explore-summer.com` (and the rest of `.env.example`)
+4. Add the custom domain in Vercel, then point AWS Route 53 at Vercel (see below)
+
+### Point explore-summer.com at the site
+
+The app stays on Vercel. The domain being in AWS only means DNS lives in Route 53.
+
+1. In Vercel: Project → Settings → Domains → add `explore-summer.com` and `www.explore-summer.com`.
+2. In AWS Route 53, in the `explore-summer.com` hosted zone, add the exact records from the Vercel domain card (do not guess the IP — newer projects get a project-specific address). Typical shape:
+   - Apex `A` record, name left **blank** (Route 53 does not use `@`) → the IPv4 Vercel shows, often `76.76.21.21`
+   - `www` `CNAME` → the CNAME target Vercel shows (for example `cname.vercel-dns.com`)
+3. Keep Route 53 as the nameservers at the registrar. Do not switch the domain to Vercel nameservers unless you want to move DNS off AWS.
+4. After DNS propagates, set the same production URL in Clerk (allowed origins / redirect URLs), Stripe (webhook endpoint), Plausible (site domain), and Resend if you send mail from `@explore-summer.com`.
 
 ## Roadmap
 

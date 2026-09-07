@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SITE_NAME, SITE_TAGLINE } from "@/lib/constants/brand";
 import { SITE_NAV_LINKS } from "@/lib/constants/site-nav";
 
 export function SiteFooter() {
@@ -17,7 +18,7 @@ export function SiteFooter() {
           ))}
         </nav>
         <p className="mt-6 border-t border-[var(--color-border)] pt-6 text-xs text-[var(--color-text-muted)]">
-          © {new Date().getFullYear()} Groundwork · Summer Programs Explorer
+          © {new Date().getFullYear()} {SITE_NAME} · {SITE_TAGLINE}
         </p>
       </div>
     </footer>

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useId, useState } from "react";
 import { Show, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
-import { GroundworkLogo } from "@/components/layout/groundwork-logo";
+import { ExploreSummerLogo } from "@/components/layout/explore-summer-logo";
 import { MobileNavMenuButton, MobileNavPanel } from "@/components/layout/mobile-nav-menu";
 import { WorkspaceNavLink } from "@/components/layout/workspace-nav-link";
 import { ButtonLink } from "@/components/ui/button-link";
@@ -20,7 +20,7 @@ export function SiteHeader({ logoPriority = false }: { logoPriority?: boolean })
     <header className="sticky top-0 z-40 border-b border-[var(--color-border)] bg-[var(--color-parchment)]/95 backdrop-blur-sm">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex items-center justify-between gap-4 py-3">
-          <GroundworkLogo priority={logoPriority} className="shrink-0" />
+          <ExploreSummerLogo priority={logoPriority} className="shrink-0" />
 
           <nav className="hidden items-center gap-5 text-sm lg:flex">
             {SITE_NAV_LINKS.map((item) => (

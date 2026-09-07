@@ -17,7 +17,7 @@ export default function AboutPage() {
     <>
       <SiteHeader />
       <main className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
-        <h1 className="text-3xl md:text-4xl">About Groundwork</h1>
+        <h1 className="text-3xl md:text-4xl">About Explore Summer</h1>
         {verifiedAt && (
           <p className="mt-3 text-sm font-medium text-[var(--color-amber)]">
             Program data last verified: {verifiedAt}
@@ -26,24 +26,24 @@ export default function AboutPage() {
 
         <div className="mt-8 space-y-5 text-base leading-relaxed text-[var(--color-text)]">
           <p>
-            Groundwork started the way most useful things do, out of our own frustration. As
+            Explore Summer started the way most useful things do, out of our own frustration. As
             parents, we spent hours every year cross-referencing dates, costs, eligibility and
             application deadlines across dozens of scattered program websites. Even after going
             through this overwhelming process, we often felt that we didn&apos;t have the full
             picture. We built the tool we wished had existed.
           </p>
           <p>
-            Groundwork is for families with kids in grades 6–12 who are seriously comparing summer
+            Explore Summer is for families with kids in grades 6–12 who are seriously comparing summer
             options, whether that&apos;s a fully-funded STEM research program, a marine biology
             field course, or a college-credit intensive. It&apos;s built for the comparison stage
             of the process, not just browsing for ideas.
           </p>
           <p>
-            Every program on Groundwork is curated and researched by us, not submitted or paid for
+            Every program on Explore Summer is curated and researched by us, not submitted or paid for
             by program providers. We give you the ability to filter over 140 programs based on your
             own criteria and needs, creating a shortlist that works for you in as little as 90
             seconds. We flag our sources, note when pricing or details couldn&apos;t be confirmed,
-            and tell you when something needs a second look before you apply. Groundwork is never
+            and tell you when something needs a second look before you apply. Explore Summer is never
             sponsored, and no program can pay to be listed, ranked, or featured. That said, a few
             honest caveats:
           </p>

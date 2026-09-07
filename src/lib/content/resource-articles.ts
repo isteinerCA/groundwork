@@ -20,8 +20,8 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
       {
         type: "list",
         items: [
-          "September–October: Start exploring. Talk about interests, possible goals for the summer, preferred locations, and whether residential programs are an option. Explore Groundwork to get a head start on identifying options.",
-          "November–December: Build a shortlist with Groundwork. Check application requirements, dates, costs, financial aid, and deadlines. Some applications may require essays, recommendations, transcripts, or test scores.",
+          "September–October: Start exploring. Talk about interests, possible goals for the summer, preferred locations, and whether residential programs are an option. Use Explore Summer to get a head start on identifying options.",
+          "November–December: Build a shortlist with Explore Summer. Check application requirements, dates, costs, financial aid, and deadlines. Some applications may require essays, recommendations, transcripts, or test scores.",
           "January–February: Peak application season for many selective programs. Submit applications and keep track of decision dates.",
           "March–April: Many enrichment and pre-college programs still have availability, although popular sessions may begin filling up. If you're making last-minute plans, focus on programs that still have availability or use rolling enrollment.",
           "May and later: Options still exist, particularly local programs, camps, online programs, and programs with rolling enrollment. Choices will simply be more limited.",
@@ -966,7 +966,7 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
       },
       {
         type: "paragraph",
-        text: "Start with school end and start dates, family trips, sports commitments and anything else that can't move. Then look at which programs fit into the remaining windows. Groundwork lets you search by month, or use the search assistant to find programs that fit specific dates.",
+        text: "Start with school end and start dates, family trips, sports commitments and anything else that can't move. Then look at which programs fit into the remaining windows. Explore Summer lets you search by month, or use the search assistant to find programs that fit specific dates.",
       },
       {
         type: "paragraph",
@@ -1037,7 +1037,7 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
       },
       {
         type: "paragraph",
-        text: "Groundwork can help students create that first shortlist based on their interests, grade, dates and other preferences.",
+        text: "Explore Summer can help students create that first shortlist based on their interests, grade, dates and other preferences.",
       },
       { type: "subheading", text: "Hand over the application process" },
       {
@@ -1248,17 +1248,17 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
   {
     slug: "summer-programs-by-the-numbers",
     categoryId: "also-from-groundwork",
-    title: "Summer Programs by the Numbers: What We Learned From Groundwork's 2026 Catalog",
+    title: "Summer Programs by the Numbers: What We Learned From Explore Summer's 2026 Catalog",
     excerpt:
-      "Based on 147 offerings across 122 programs in Groundwork's 2026 catalog — what the data showed, and a few things that genuinely surprised us.",
+      "Based on 147 offerings across 122 programs in Explore Summer's 2026 catalog — what the data showed, and a few things that genuinely surprised us.",
     blocks: [
       {
         type: "footnote",
-        text: "Based on 147 offerings across 122 programs researched for Groundwork's 2026 catalog. Data verified through August 24, 2026.",
+        text: "Based on 147 offerings across 122 programs researched for Explore Summer's 2026 catalog. Data verified through August 24, 2026.",
       },
       {
         type: "paragraph",
-        text: "When we set out to build Groundwork, we weren't trying to create a \"best of\" list. We wanted a place where we, as parents, could see what's out there and compare programs more easily.",
+        text: "When we set out to build Explore Summer, we weren't trying to create a \"best of\" list. We wanted a place where we, as parents, could see what's out there and compare programs more easily.",
       },
       {
         type: "paragraph",
@@ -1355,7 +1355,7 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
         type: "list",
         items: [
           "These numbers come from our own research, not an exhaustive market survey. We didn't catalog every summer program in the country — we researched the ones that came up as we worked through this project, plus programs parents in our community pointed us toward.",
-          "The figures in this article were calculated from Groundwork's 2026 catalog and checked specifically for this analysis. We're rebuilding the catalog in a more structured format for 2027, which will allow us to analyze many more attributes and update these statistics more easily.",
+          "The figures in this article were calculated from Explore Summer's 2026 catalog and checked specifically for this analysis. We're rebuilding the catalog in a more structured format for 2027, which will allow us to analyze many more attributes and update these statistics more easily.",
           "Programs marked \"Contact program\" for pricing were excluded from any price-based stats above — so figures like our free-program count reflect only programs with fully confirmed, public pricing.",
         ],
       },
@@ -1366,7 +1366,7 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
       },
       {
         type: "paragraph",
-        text: "That's part of what led us to build Groundwork in the first place: to make it easier to compare programs based on the criteria that matter to each student and family. Rather than treating a university or provider as a single listing, we're building the new catalog around the individual programs and courses students can actually choose, with session-level dates and other details wherever possible.",
+        text: "That's part of what led us to build Explore Summer in the first place: to make it easier to compare programs based on the criteria that matter to each student and family. Rather than treating a university or provider as a single listing, we're building the new catalog around the individual programs and courses students can actually choose, with session-level dates and other details wherever possible.",
       },
       {
         type: "paragraph",

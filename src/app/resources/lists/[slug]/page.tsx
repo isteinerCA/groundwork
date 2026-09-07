@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: PageProps) {
   if (!list) return { title: "List not found" };
 
   return {
-    title: `${list.titleLabel} for ${list.audienceLabel} · Pre-defined lists · Groundwork`,
+    title: `${list.titleLabel} for ${list.audienceLabel} · Pre-defined lists · Explore Summer`,
     description: list.description,
   };
 }
