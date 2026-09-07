@@ -1,7 +1,12 @@
 import { appendFile, mkdir } from "node:fs/promises";
 import path from "node:path";
-import { SITE_NAME, SITE_PRODUCTION_URL } from "@/lib/constants/brand";
-import { WAITLIST_SEASON_YEAR, type WaitlistSource } from "@/lib/waitlist/constants";
+import { getEmailFromAddress } from "@/lib/email/from-address";
+import {
+  waitlistConfirmationHtml,
+  waitlistConfirmationSubject,
+  waitlistConfirmationText,
+} from "@/lib/waitlist/confirmation-email";
+import { type WaitlistSource } from "@/lib/waitlist/constants";
 
 export interface WaitlistSignup {
   id: string;
@@ -93,26 +98,16 @@ async function addContactToSegment(
   return { ok: false, reason: "resend_failed", detail };
 }
 
-async function sendConfirmationEmail(email: string, apiKey: string, from: string): Promise<boolean> {
-  const siteUrl = process.env.NEXT_PUBLIC_APP_URL ?? SITE_PRODUCTION_URL;
-
+async function sendConfirmationEmail(email: string, apiKey: string): Promise<boolean> {
   const response = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: resendHeaders(apiKey),
     body: JSON.stringify({
-      from,
+      from: getEmailFromAddress(),
       to: [email],
-      subject: `You're on the list — ${SITE_NAME} ${WAITLIST_SEASON_YEAR} updates`,
-      text: [
-        `Thanks for signing up for ${SITE_NAME} ${WAITLIST_SEASON_YEAR} program updates.`,
-        "",
-        `We're verifying dates, costs, and details for summer ${WAITLIST_SEASON_YEAR} programs now.`,
-        "We'll send one email when the catalog is ready to search — no newsletters or spam.",
-        "",
-        `Explore what's live today: ${siteUrl}/search`,
-        "",
-        `— ${SITE_NAME}`,
-      ].join("\n"),
+      subject: waitlistConfirmationSubject(),
+      html: waitlistConfirmationHtml(),
+      text: waitlistConfirmationText(),
     }),
   });
 
@@ -128,8 +123,6 @@ export async function subscribeToWaitlist(signup: WaitlistSignup): Promise<Waitl
 
   const apiKey = process.env.RESEND_API_KEY;
   const segmentId = process.env.RESEND_WAITLIST_SEGMENT_ID?.trim();
-  const from =
-    process.env.CONTACT_EMAIL_FROM ?? `${SITE_NAME} <hello@explore-summer.com>`;
 
   if (!apiKey || !segmentId) {
     if (process.env.NODE_ENV === "development") {
@@ -148,6 +141,6 @@ export async function subscribeToWaitlist(signup: WaitlistSignup): Promise<Waitl
     return { ok: false, reason: added.reason };
   }
 
-  await sendConfirmationEmail(signup.email, apiKey, from);
+  await sendConfirmationEmail(signup.email, apiKey);
   return { ok: true };
 }
