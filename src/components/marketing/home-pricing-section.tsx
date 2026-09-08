@@ -64,7 +64,7 @@ export function HomePricingSection() {
               Regular price {formatSeasonPassPrice()}/season — free during early bird.
             </p>
             <p className="mt-1 text-sm text-[var(--color-text-muted)]">
-              Search first — sign in with Google when you&apos;re ready to save.
+              Search first — create an account when you&apos;re ready to save.
             </p>
             <ul className="mt-6 flex-1 space-y-3">
               <CheckItem>Everything in Browse</CheckItem>

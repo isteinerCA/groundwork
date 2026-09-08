@@ -24,7 +24,7 @@ const faqs = [
   {
     q: "Do I need a credit card today?",
     a: isEarlyBirdPricingShown()
-      ? "No. Sign in with Google to unlock the workspace during early bird. Payment setup is coming later; we'll notify users before early bird ends."
+      ? "No. Create an account to unlock the workspace during early bird. Payment setup is coming later; we'll notify users before early bird ends."
       : `Yes. Checkout is handled securely through Stripe for the ${formatSeasonPassPrice()} one-time season pass.`,
   },
   {
