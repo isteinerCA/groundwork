@@ -3,11 +3,14 @@ import { notFound } from "next/navigation";
 import { PredefinedListExperience } from "@/components/search/predefined-list-experience";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
+import { PredefinedListJsonLd } from "@/components/resources/predefined-list-json-ld";
 import {
   getPredefinedListBySlug,
   PREDEFINED_LISTS,
 } from "@/lib/constants/predefined-lists";
+import { getProgramsForPredefinedList } from "@/lib/data/predefined-list-programs";
 import { getDataVerifiedAt, getPrograms } from "@/lib/programs";
+import { buildPredefinedListMetadata } from "@/lib/seo/predefined-list-metadata";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -22,10 +25,7 @@ export async function generateMetadata({ params }: PageProps) {
   const list = getPredefinedListBySlug(slug);
   if (!list) return { title: "List not found" };
 
-  return {
-    title: `${list.titleLabel} for ${list.audienceLabel} · Pre-defined lists · Explore Summer`,
-    description: list.description,
-  };
+  return buildPredefinedListMetadata(list);
 }
 
 export default async function PredefinedListPage({ params }: PageProps) {
@@ -35,9 +35,11 @@ export default async function PredefinedListPage({ params }: PageProps) {
 
   const programs = getPrograms();
   const dataVerifiedAt = getDataVerifiedAt();
+  const listPrograms = getProgramsForPredefinedList(programs, list);
 
   return (
     <>
+      <PredefinedListJsonLd list={list} listPrograms={listPrograms} />
       <SiteHeader />
       <PredefinedListExperience
         programs={programs}
