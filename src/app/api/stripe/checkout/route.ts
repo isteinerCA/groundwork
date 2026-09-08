@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
+import { getSiteUrl } from "@/lib/constants/site-url";
 import { isEarlyBirdFreeEnabled, isStripeCheckoutEnabled } from "@/lib/constants/pricing";
 
 function getStripe(): Stripe | null {
@@ -20,7 +21,7 @@ export async function POST() {
 
   const stripe = getStripe();
   const priceId = process.env.STRIPE_PRICE_ID;
-  const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000";
+  const appUrl = getSiteUrl();
 
   if (!stripe || !priceId) {
     return NextResponse.json(
