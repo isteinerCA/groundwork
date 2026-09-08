@@ -1,4 +1,4 @@
-import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
+import { PROGRAM_CATEGORIES, type ProgramCategoryId } from "@/lib/constants/categories";
 import { filterPrograms } from "@/lib/data/filter-programs";
 import { getPrograms } from "@/lib/programs";
 import type { SearchFilters } from "@/lib/types/program";
@@ -96,4 +96,23 @@ export function getPredefinedListBySlug(slug: string): PredefinedList | undefine
 
 export function getListsByGradeBand(gradeBand: GradeBand): PredefinedList[] {
   return PREDEFINED_LISTS.filter((list) => list.gradeBand === gradeBand);
+}
+
+export function getPredefinedListForCategory(
+  categoryId: ProgramCategoryId,
+  gradeBand: GradeBand,
+): PredefinedList | undefined {
+  return PREDEFINED_LISTS.find(
+    (list) =>
+      list.gradeBand === gradeBand && list.lockedFilters.categories?.[0] === categoryId,
+  );
+}
+
+/** List page when one exists; otherwise the category search fallback. */
+export function getCategoryExploreHref(
+  categoryId: ProgramCategoryId,
+  gradeBand: GradeBand,
+): string {
+  const list = getPredefinedListForCategory(categoryId, gradeBand);
+  return list ? `/resources/lists/${list.slug}` : `/search?category=${categoryId}`;
 }

@@ -3,8 +3,9 @@ import Link from "next/link";
 import { HeroShortlistMock } from "@/components/marketing/hero-shortlist-mock";
 import { ButtonLink, SectionEyebrow } from "@/components/ui/button-link";
 import { btnOutlineOnDark } from "@/components/ui/button-styles";
-import { CategoryIcon } from "@/components/icons/category-icons";
+import { HomeCategoryTiles } from "@/components/marketing/home-category-tiles";
 import { HOME_CATEGORY_ORDER, PROGRAM_CATEGORIES } from "@/lib/constants/categories";
+import { getCategoryExploreHref } from "@/lib/constants/predefined-lists";
 import {
   formatProgramCatalogLabel,
   MARKETING_PROGRAM_COUNT_LABEL,
@@ -145,28 +146,18 @@ export function CategoriesSection() {
         <p className="mt-2 text-lg text-[var(--color-text-muted)]">
           Twelve pathways. Countless opportunities.
         </p>
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {HOME_CATEGORY_ORDER.map((categoryId) => {
+        <HomeCategoryTiles
+          tiles={HOME_CATEGORY_ORDER.map((categoryId) => {
             const cat = PROGRAM_CATEGORIES.find((c) => c.id === categoryId)!;
-            return (
-            <Link
-              key={cat.id}
-              href={`/search?category=${cat.id}`}
-              className="flex items-start gap-4 rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-4 text-left no-underline shadow-sm transition hover:border-[var(--color-navy)] hover:shadow-[var(--shadow-card)]"
-            >
-              <CategoryIcon categoryId={cat.id} className="h-11 w-11 shrink-0" />
-              <div className="min-w-0">
-                <h3 className="text-base font-semibold text-[var(--color-navy)]">
-                  {cat.label}
-                </h3>
-                <p className="mt-1 text-sm leading-snug text-[var(--color-text-muted)]">
-                  {cat.description}
-                </p>
-              </div>
-            </Link>
-            );
+            return {
+              id: cat.id,
+              label: cat.label,
+              description: cat.description,
+              highSchoolHref: getCategoryExploreHref(cat.id, "high-school"),
+              middleSchoolHref: getCategoryExploreHref(cat.id, "middle-school"),
+            };
           })}
-        </div>
+        />
         <ButtonLink href="/search" variant="secondary" className="mt-10">
           Start your shortlist
         </ButtonLink>

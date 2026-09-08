@@ -32,7 +32,8 @@ export default function AboutPage() {
           </p>
           <p>
             Every program on Explore Summer was identified and researched by us, not submitted or paid for
-            by program providers. We give you the ability to filter over 140 programs based on your
+            by program providers. We take the information from publicly available sources: official
+            websites, handbooks, FAQs, parent portals, etc. We give you the ability to filter over 140 programs based on your
             own criteria and needs, creating a shortlist that works for you in as little as 90
             seconds. We flag our sources, note when pricing or details couldn&apos;t be confirmed,
             and tell you when something needs a second look before you apply. Explore Summer is never
