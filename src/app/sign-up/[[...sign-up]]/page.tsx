@@ -3,7 +3,15 @@ import { SignUp } from "@clerk/nextjs";
 export default function SignUpPage() {
   return (
     <div className="flex min-h-screen items-center justify-center">
-      <SignUp forceRedirectUrl="/workspace" fallbackRedirectUrl="/workspace" />
+      <SignUp
+        forceRedirectUrl="/workspace"
+        fallbackRedirectUrl="/workspace"
+        appearance={{
+          elements: {
+            headerSubtitle: { display: "none" },
+          },
+        }}
+      />
     </div>
   );
 }

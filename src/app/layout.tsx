@@ -49,6 +49,7 @@ export default function RootLayout({
             signUp: {
               start: {
                 title: `Create your ${SITE_NAME} account`,
+                subtitle: "",
               },
             },
           }}
