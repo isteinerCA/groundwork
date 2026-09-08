@@ -2,28 +2,26 @@ import Link from "next/link";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { PredefinedListLinks } from "@/components/resources/predefined-list-links";
+import { BreadcrumbJsonLd } from "@/components/resources/breadcrumb-json-ld";
+import { Breadcrumbs } from "@/components/resources/breadcrumbs";
 import { SectionEyebrow } from "@/components/ui/button-link";
 import { getListsByGradeBand } from "@/lib/constants/predefined-lists";
 import { resourcesListsIndexMetadata } from "@/lib/seo/resources-pages-metadata";
+import { getListsIndexBreadcrumbs } from "@/lib/seo/resource-breadcrumbs";
 
 export const metadata = resourcesListsIndexMetadata;
 
 export default function PredefinedListsPage() {
   const highSchoolLists = getListsByGradeBand("high-school");
   const middleSchoolLists = getListsByGradeBand("middle-school");
+  const breadcrumbs = getListsIndexBreadcrumbs();
 
   return (
     <>
+      <BreadcrumbJsonLd items={breadcrumbs} />
       <SiteHeader />
       <main className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:py-16">
-        <nav className="text-sm text-[var(--color-text-muted)]">
-          <Link
-            href="/resources"
-            className="font-medium no-underline hover:text-[var(--color-navy)]"
-          >
-            Resources
-          </Link>
-        </nav>
+        <Breadcrumbs items={breadcrumbs} />
 
         <SectionEyebrow className="mt-6">Pre-defined lists</SectionEyebrow>
         <h1 className="mt-2 text-3xl md:text-4xl">Popular ways to explore</h1>

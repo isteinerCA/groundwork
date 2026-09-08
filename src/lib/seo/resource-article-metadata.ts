@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SITE_NAME } from "@/lib/constants/brand";
 import { absoluteUrl } from "@/lib/constants/site-url";
+import { OPEN_GRAPH_IMAGE, TWITTER_CARD_METADATA } from "@/lib/seo/og-image";
 import type { ResourceArticle } from "@/lib/constants/resources";
 import { getCategoryById } from "@/lib/constants/resources";
 
@@ -21,10 +22,11 @@ export function buildResourceArticleMetadata(article: ResourceArticle): Metadata
       url,
       type: "article",
       siteName: SITE_NAME,
+      images: [OPEN_GRAPH_IMAGE],
       ...(category && { section: category.label }),
     },
     twitter: {
-      card: "summary",
+      ...TWITTER_CARD_METADATA,
       title: article.title,
       description: article.excerpt,
     },

@@ -3,6 +3,7 @@ import { SITE_NAME } from "@/lib/constants/brand";
 import type { PredefinedList } from "@/lib/constants/predefined-lists";
 import { absoluteUrl } from "@/lib/constants/site-url";
 import { predefinedListPageTitle } from "@/lib/data/predefined-list-programs";
+import { OPEN_GRAPH_IMAGE, TWITTER_CARD_METADATA } from "@/lib/seo/og-image";
 
 export function buildPredefinedListMetadata(list: PredefinedList): Metadata {
   const pageTitle = predefinedListPageTitle(list);
@@ -21,9 +22,10 @@ export function buildPredefinedListMetadata(list: PredefinedList): Metadata {
       url,
       type: "website",
       siteName: SITE_NAME,
+      images: [OPEN_GRAPH_IMAGE],
     },
     twitter: {
-      card: "summary",
+      ...TWITTER_CARD_METADATA,
       title: pageTitle,
       description: list.description,
     },

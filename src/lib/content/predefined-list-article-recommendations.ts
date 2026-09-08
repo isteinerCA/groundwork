@@ -27,17 +27,17 @@ export const PREDEFINED_LIST_ARTICLE_RECOMMENDATIONS: Partial<
   "marine-science": [
     "how-to-tell-if-a-summer-program-is-a-good-fit",
     "how-much-do-summer-programs-cost",
-    "summer-programs-by-the-numbers",
+    "when-should-you-start-applying",
   ],
   "outdoor-wilderness": [
     "how-to-tell-if-a-summer-program-is-a-good-fit",
     "what-makes-a-great-summer-program",
-    "summer-programs-by-the-numbers",
+    "how-much-do-summer-programs-cost",
   ],
   "stem-engineering": [
     "how-to-tell-if-a-summer-program-is-a-good-fit",
     "what-does-selective-mean",
-    "summer-programs-by-the-numbers",
+    "how-much-do-summer-programs-cost",
   ],
   "traditional-camp": [
     "what-should-a-9th-grader-do",

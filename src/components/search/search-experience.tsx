@@ -16,6 +16,7 @@ import { InfoTooltip } from "@/components/ui/info-tooltip";
 import { ProgramCard } from "@/components/search/program-card";
 import { SearchPreviewPanel } from "@/components/search/search-preview-panel";
 import { WaitlistSignup } from "@/components/marketing/waitlist-signup";
+import { Breadcrumbs } from "@/components/resources/breadcrumbs";
 import { ADMISSION_TYPES } from "@/lib/constants/admission-types";
 import { SITE_NAME } from "@/lib/constants/brand";
 import { PROGRAM_CATEGORIES, type ProgramCategoryId } from "@/lib/constants/categories";
@@ -38,6 +39,7 @@ import {
 } from "@/lib/search/apply-locked-filters";
 import { loadLastSearchFilters, saveLastSearchFilters } from "@/lib/search/last-filters";
 import { programListAnchorId } from "@/lib/data/predefined-list-programs";
+import type { BreadcrumbItem } from "@/lib/seo/breadcrumb-json-ld";
 import type { Program, SearchFilters } from "@/lib/types/program";
 import { DEFAULT_SEARCH_FILTERS } from "@/lib/types/program";
 
@@ -76,6 +78,7 @@ export function SearchExperience({
   pageTitle = "Build your shortlist",
   pageDescription,
   backLink,
+  breadcrumbs,
 }: {
   programs: Program[];
   dataVerifiedAt: string | null;
@@ -86,6 +89,7 @@ export function SearchExperience({
   pageTitle?: string;
   pageDescription?: string;
   backLink?: { href: string; label: string };
+  breadcrumbs?: BreadcrumbItem[];
 }) {
   const validCategory =
     initialCategory &&
@@ -192,12 +196,16 @@ export function SearchExperience({
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6">
       <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
         <div>
-          <Link
-            href={backLink?.href ?? "/"}
-            className="text-sm text-[var(--color-text-muted)] no-underline"
-          >
-            ← {backLink?.label ?? SITE_NAME}
-          </Link>
+          {breadcrumbs ? (
+            <Breadcrumbs items={breadcrumbs} />
+          ) : (
+            <Link
+              href={backLink?.href ?? "/"}
+              className="text-sm text-[var(--color-text-muted)] no-underline"
+            >
+              ← {backLink?.label ?? SITE_NAME}
+            </Link>
+          )}
           <h1 className="mt-2 text-3xl">{pageTitle}</h1>
           <p className="mt-2 max-w-xl text-[var(--color-text-muted)]">
             {pageDescription ? (

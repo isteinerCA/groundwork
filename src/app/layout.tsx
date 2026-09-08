@@ -5,7 +5,9 @@ import { PostAuthRedirect } from "@/components/auth/post-auth-redirect";
 import { AppProviders } from "@/components/workspace/app-providers";
 import { GoogleAnalytics } from "@/components/analytics/google-analytics";
 import { PlausibleAnalytics } from "@/components/analytics/plausible-analytics";
+import { WebsiteJsonLd } from "@/components/seo/website-json-ld";
 import { SITE_NAME, SITE_TAGLINE } from "@/lib/constants/brand";
+import { OPEN_GRAPH_IMAGE, TWITTER_CARD_METADATA } from "@/lib/seo/og-image";
 import { getSiteUrl } from "@/lib/constants/site-url";
 import "./globals.css";
 
@@ -28,7 +30,9 @@ export const metadata: Metadata = {
     "Filter elite summer programs by grade, interest, format, and budget — with the fine print included.",
   openGraph: {
     siteName: SITE_NAME,
+    images: [OPEN_GRAPH_IMAGE],
   },
+  twitter: TWITTER_CARD_METADATA,
 };
 
 export default function RootLayout({
@@ -39,6 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${lora.variable} ${sourceSans.variable}`}>
       <body className="min-h-screen antialiased">
+        <WebsiteJsonLd />
         <ClerkProvider
           localization={{
             signIn: {

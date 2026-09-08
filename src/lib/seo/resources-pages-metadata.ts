@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SITE_NAME } from "@/lib/constants/brand";
 import { absoluteUrl } from "@/lib/constants/site-url";
+import { OPEN_GRAPH_IMAGE, TWITTER_CARD_METADATA } from "@/lib/seo/og-image";
 
 const RESOURCES_DESCRIPTION =
   "Practical advice on planning, choosing, and making the most of summer programs, drawn from our own experience navigating the process.";
@@ -34,9 +35,10 @@ function pageMetadata({
       url,
       type: "website",
       siteName: SITE_NAME,
+      images: [OPEN_GRAPH_IMAGE],
     },
     twitter: {
-      card: "summary",
+      ...TWITTER_CARD_METADATA,
       title: pageTitle,
       description,
     },

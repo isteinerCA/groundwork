@@ -5,6 +5,8 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { ArticleContent } from "@/components/resources/article-content";
 import { ArticleCta } from "@/components/resources/article-cta";
 import { ArticleJsonLd } from "@/components/resources/article-json-ld";
+import { BreadcrumbJsonLd } from "@/components/resources/breadcrumb-json-ld";
+import { Breadcrumbs } from "@/components/resources/breadcrumbs";
 import { RelatedArticles } from "@/components/resources/related-articles";
 import { SectionEyebrow } from "@/components/ui/button-link";
 import {
@@ -14,6 +16,7 @@ import {
   RESOURCE_ARTICLES,
 } from "@/lib/constants/resources";
 import { buildResourceArticleMetadata } from "@/lib/seo/resource-article-metadata";
+import { getArticleBreadcrumbs } from "@/lib/seo/resource-breadcrumbs";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -39,21 +42,15 @@ export default async function ResourceArticlePage({ params }: PageProps) {
   if (!category) notFound();
 
   const relatedArticles = getRelatedArticles(slug);
+  const breadcrumbs = getArticleBreadcrumbs(article);
 
   return (
     <>
       <ArticleJsonLd article={article} />
+      <BreadcrumbJsonLd items={breadcrumbs} />
       <SiteHeader />
       <main className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
-        <nav className="text-sm text-[var(--color-text-muted)]">
-          <Link href="/resources" className="font-medium no-underline hover:text-[var(--color-navy)]">
-            Resources
-          </Link>
-          <span className="mx-2" aria-hidden>
-            /
-          </span>
-          <span>{category.label}</span>
-        </nav>
+        <Breadcrumbs items={breadcrumbs} />
 
         <SectionEyebrow className="mt-6">{category.label}</SectionEyebrow>
         <h1 className="mt-2 text-3xl md:text-4xl">{article.title}</h1>

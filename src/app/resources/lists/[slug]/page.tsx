@@ -4,6 +4,7 @@ import { PredefinedListExperience } from "@/components/search/predefined-list-ex
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { PredefinedListJsonLd } from "@/components/resources/predefined-list-json-ld";
+import { BreadcrumbJsonLd } from "@/components/resources/breadcrumb-json-ld";
 import { RelatedArticles } from "@/components/resources/related-articles";
 import {
   getPredefinedListBySlug,
@@ -13,6 +14,7 @@ import { getRelatedArticlesForList } from "@/lib/constants/resources";
 import { getProgramsForPredefinedList } from "@/lib/data/predefined-list-programs";
 import { getDataVerifiedAt, getPrograms } from "@/lib/programs";
 import { buildPredefinedListMetadata } from "@/lib/seo/predefined-list-metadata";
+import { getPredefinedListBreadcrumbs } from "@/lib/seo/resource-breadcrumbs";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -39,15 +41,18 @@ export default async function PredefinedListPage({ params }: PageProps) {
   const dataVerifiedAt = getDataVerifiedAt();
   const listPrograms = getProgramsForPredefinedList(programs, list);
   const relatedArticles = getRelatedArticlesForList(slug);
+  const breadcrumbs = getPredefinedListBreadcrumbs(list);
 
   return (
     <>
       <PredefinedListJsonLd list={list} listPrograms={listPrograms} />
+      <BreadcrumbJsonLd items={breadcrumbs} />
       <SiteHeader />
       <PredefinedListExperience
         programs={programs}
         dataVerifiedAt={dataVerifiedAt}
         list={list}
+        breadcrumbs={breadcrumbs}
       />
       <div className="mx-auto max-w-7xl px-4 pb-12 sm:px-6">
         <div className="mx-auto max-w-3xl">
