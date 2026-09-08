@@ -12,7 +12,7 @@ import {
 } from "@/lib/constants/predefined-lists";
 import { getRelatedArticlesForList } from "@/lib/constants/resources";
 import { getProgramsForPredefinedList } from "@/lib/data/predefined-list-programs";
-import { getDataVerifiedAt, getPrograms } from "@/lib/programs";
+import { getPrograms } from "@/lib/programs";
 import { buildPredefinedListMetadata } from "@/lib/seo/predefined-list-metadata";
 import { getPredefinedListBreadcrumbs } from "@/lib/seo/resource-breadcrumbs";
 
@@ -38,7 +38,6 @@ export default async function PredefinedListPage({ params }: PageProps) {
   if (!list) notFound();
 
   const programs = getPrograms();
-  const dataVerifiedAt = getDataVerifiedAt();
   const listPrograms = getProgramsForPredefinedList(programs, list);
   const relatedArticles = getRelatedArticlesForList(slug);
   const breadcrumbs = getPredefinedListBreadcrumbs(list);
@@ -50,7 +49,6 @@ export default async function PredefinedListPage({ params }: PageProps) {
       <SiteHeader />
       <PredefinedListExperience
         programs={programs}
-        dataVerifiedAt={dataVerifiedAt}
         list={list}
         breadcrumbs={breadcrumbs}
       />

@@ -70,7 +70,6 @@ function hasUrlSeed(
 
 export function SearchExperience({
   programs,
-  dataVerifiedAt,
   initialCategory,
   initialFullyFunded,
   initialFormat,
@@ -81,7 +80,6 @@ export function SearchExperience({
   breadcrumbs,
 }: {
   programs: Program[];
-  dataVerifiedAt: string | null;
   initialCategory?: ProgramCategoryId;
   initialFullyFunded?: boolean;
   initialFormat?: import("@/lib/constants/filters").ProgramFormatId;
@@ -213,7 +211,7 @@ export function SearchExperience({
             ) : (
               <>
                 Filter {formatProgramCountLabel()} by grade and interests, then heart programs to
-                save. Last verified {dataVerifiedAt ?? "—"}.
+                save. Current list represents 2026 programs.
               </>
             )}
           </p>

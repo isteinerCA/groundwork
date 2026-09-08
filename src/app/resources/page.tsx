@@ -39,7 +39,6 @@ export default function ResourcesPage() {
                 <ResourceSectionHeader
                   title={category.label}
                   description={category.description}
-                  align="bottom"
                 />
 
                 <ul className="space-y-2.5 px-5 pb-4 pt-3 sm:space-y-3 sm:px-6 sm:pb-5 sm:pt-3.5">

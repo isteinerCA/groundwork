@@ -46,16 +46,18 @@ export default function PricingPage() {
         </p>
         <h1 className="mt-2 text-4xl">Unlock your shortlist workspace</h1>
         <p className="mt-4 text-lg text-[var(--color-text-muted)]">
-          Search is free forever. Saving programs, tracking deadlines, comparing side by side,
-          and sharing your shortlist with family uses the season pass
+          Search is free forever.
+        </p>
+        <p className="mt-3 text-lg text-[var(--color-text-muted)]">
+          Saving programs, tracking deadlines, comparing side by side, and sharing your
+          shortlist with family uses the season pass
           {earlyBird ? (
             <>
-              {" "}
-              — <strong>free during early bird</strong>, {formatSeasonPassPrice()} per season
+              : <strong>free during early bird</strong>, {formatSeasonPassPrice()} per season
               afterward.
             </>
           ) : (
-            <> — {formatSeasonPassPrice()} one-time per season.</>
+            <>: {formatSeasonPassPrice()} one-time per season.</>
           )}
         </p>
 
@@ -63,7 +65,7 @@ export default function PricingPage() {
           <PriceDisplay large />
 
           <ul className="mt-6 space-y-2 text-sm text-[var(--color-text-muted)]">
-            <li>• Unlimited named shortlists through June 30</li>
+            <li>• Unlimited shortlists through June 30</li>
             <li>• Status pipeline, deadlines, and notes</li>
             <li>• Compare up to 4 programs side by side</li>
             <li>• CSV export and read-only share links</li>

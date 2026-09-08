@@ -61,7 +61,7 @@ export function HomePricingSection() {
               <span className="text-sm text-[var(--color-text-muted)]">/ season</span>
             </div>
             <p className="mt-2 text-sm font-medium text-[var(--color-navy)]">
-              Regular price {formatSeasonPassPrice()}/season — free during early bird.
+              Regular price {formatSeasonPassPrice()}/season — free for entire season during early bird.
             </p>
             <p className="mt-1 text-sm text-[var(--color-text-muted)]">
               Search first — create an account when you&apos;re ready to save.

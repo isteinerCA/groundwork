@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
-import { getDataVerifiedAt } from "@/lib/programs";
 
 const CAVEATS = [
   "This isn't a complete list. There are hundreds of summer programs out there, and new ones launch every year. We've focused on programs we came across in our own research, not an exhaustive catalog.",
@@ -11,18 +10,11 @@ const CAVEATS = [
 ] as const;
 
 export default function AboutPage() {
-  const verifiedAt = getDataVerifiedAt();
-
   return (
     <>
       <SiteHeader />
       <main className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
         <h1 className="text-3xl md:text-4xl">About Explore Summer</h1>
-        {verifiedAt && (
-          <p className="mt-3 text-sm font-medium text-[var(--color-amber)]">
-            Program data last verified: {verifiedAt}
-          </p>
-        )}
 
         <div className="mt-8 space-y-5 text-base leading-relaxed text-[var(--color-text)]">
           <p>
@@ -39,7 +31,7 @@ export default function AboutPage() {
             of the process, not just browsing for ideas.
           </p>
           <p>
-            Every program on Explore Summer is curated and researched by us, not submitted or paid for
+            Every program on Explore Summer was identified and researched by us, not submitted or paid for
             by program providers. We give you the ability to filter over 140 programs based on your
             own criteria and needs, creating a shortlist that works for you in as little as 90
             seconds. We flag our sources, note when pricing or details couldn&apos;t be confirmed,

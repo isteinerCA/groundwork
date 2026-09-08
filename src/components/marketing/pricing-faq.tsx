@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     q: "Why is it free right now?",
-    a: `We're in an early bird period while we refine Explore Summer with real families. Regular price is ${formatSeasonPassPrice()} per season; early bird access is free for a limited time, giving you access to the same features through June 30 for free.`,
+    a: `We're in an early bird period while we refine Explore Summer with real families. Regular price is ${formatSeasonPassPrice()} per season; early bird access is free for a limited time, letting you use the same workspace features through June 30 for free.`,
   },
   {
     q: `Will it really be ${formatSeasonPassPrice()} later?`,
@@ -98,7 +98,7 @@ export function PriceDisplay({ large = false }: { large?: boolean }) {
           </span>
         </div>
         <p className="mt-2 text-sm font-medium text-[var(--color-navy)]">
-          Regular price {formatSeasonPassPrice()}/season — free during early bird.
+          Regular price {formatSeasonPassPrice()}/season — free for entire season during early bird.
         </p>
       </div>
     );
