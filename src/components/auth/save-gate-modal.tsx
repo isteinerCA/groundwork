@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { SignInButton, SignUpButton } from "@clerk/nextjs";
 import { btnPrimary, btnSecondary } from "@/components/ui/button-styles";
 import { formatSeasonPassPrice } from "@/lib/constants/pricing";
 
@@ -32,34 +31,12 @@ export function SaveGateModal({
             <p className="mt-2 text-sm text-[var(--color-text-muted)]">
               Create an account to save programs and access your workspace.
             </p>
-            <SignUpButton
-              forceRedirectUrl="/workspace"
-              fallbackRedirectUrl="/workspace"
-              signInForceRedirectUrl="/workspace"
-              signInFallbackRedirectUrl="/workspace"
-            >
-              <button
-                type="button"
-                onClick={onClose}
-                className={`${btnPrimary} mt-6 w-full`}
-              >
-                Sign up to save
-              </button>
-            </SignUpButton>
-            <SignInButton
-              forceRedirectUrl="/workspace"
-              fallbackRedirectUrl="/workspace"
-              signUpForceRedirectUrl="/workspace"
-              signUpFallbackRedirectUrl="/workspace"
-            >
-              <button
-                type="button"
-                onClick={onClose}
-                className={`${btnSecondary} mt-3 w-full`}
-              >
-                Already have an account? Sign in
-              </button>
-            </SignInButton>
+            <Link href="/sign-up" className={`${btnPrimary} mt-6 w-full`} onClick={onClose}>
+              Sign up to save
+            </Link>
+            <Link href="/sign-in" className={`${btnSecondary} mt-3 w-full`} onClick={onClose}>
+              Already have an account? Sign in
+            </Link>
           </>
         ) : (
           <>

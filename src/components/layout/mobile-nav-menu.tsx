@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, type ReactNode } from "react";
 import { SITE_NAV_LINKS } from "@/lib/constants/site-nav";
 import { cn } from "@/lib/utils";
 
@@ -60,10 +60,12 @@ export function MobileNavPanel({
   open,
   panelId,
   onClose,
+  children,
 }: {
   open: boolean;
   panelId: string;
   onClose: () => void;
+  children?: ReactNode;
 }) {
   useEffect(() => {
     if (!open) return;
@@ -84,6 +86,7 @@ export function MobileNavPanel({
         !open && "hidden",
       )}
     >
+      {children}
       <ul className="flex flex-col gap-1">
         {SITE_NAV_LINKS.map((item) => (
           <li key={item.href}>
