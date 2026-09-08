@@ -26,11 +26,14 @@ export function ProgramCard({
   program,
   preview = false,
   compact = false,
+  anchorId,
   emphasizeTrack = false,
 }: {
   program: Program;
   preview?: boolean;
   compact?: boolean;
+  /** Stable in-page anchor for predefined list pages and structured data. */
+  anchorId?: string;
   /** When multiple cards share the same program name, lead with the track/session. */
   emphasizeTrack?: boolean;
 }) {
@@ -66,6 +69,7 @@ export function ProgramCard({
         />
       )}
       <article
+        id={anchorId}
         className={`rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)] ${
           compact ? "p-3.5" : "p-5"
         } ${preview ? "opacity-95" : ""}`}

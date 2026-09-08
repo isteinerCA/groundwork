@@ -1,6 +1,10 @@
 import type { PredefinedList } from "@/lib/constants/predefined-lists";
+import {
+  predefinedListPageTitle,
+  programListItemUrl,
+  programListLabel,
+} from "@/lib/data/predefined-list-programs";
 import { absoluteUrl } from "@/lib/constants/site-url";
-import { predefinedListPageTitle, programListLabel } from "@/lib/data/predefined-list-programs";
 import type { Program } from "@/lib/types/program";
 
 export function buildPredefinedListJsonLd(list: PredefinedList, listPrograms: Program[]) {
@@ -16,8 +20,11 @@ export function buildPredefinedListJsonLd(list: PredefinedList, listPrograms: Pr
     itemListElement: listPrograms.map((program, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      name: programListLabel(program),
-      ...(program.websiteUrl ? { url: program.websiteUrl } : {}),
+      item: {
+        "@type": "Thing",
+        name: programListLabel(program),
+        url: programListItemUrl(list, program),
+      },
     })),
   };
 }

@@ -37,6 +37,7 @@ import {
   isGradeLocked,
 } from "@/lib/search/apply-locked-filters";
 import { loadLastSearchFilters, saveLastSearchFilters } from "@/lib/search/last-filters";
+import { programListAnchorId } from "@/lib/data/predefined-list-programs";
 import type { Program, SearchFilters } from "@/lib/types/program";
 import { DEFAULT_SEARCH_FILTERS } from "@/lib/types/program";
 
@@ -518,6 +519,7 @@ export function SearchExperience({
                   <ProgramCard
                     key={program.id}
                     program={program}
+                    anchorId={lockedFilters ? programListAnchorId(program) : undefined}
                     emphasizeTrack={duplicateResultNames.has(program.name)}
                   />
                 ))}
