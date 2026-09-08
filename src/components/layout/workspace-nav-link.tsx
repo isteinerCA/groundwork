@@ -5,9 +5,9 @@ import { useWorkspace } from "@/components/workspace/workspace-provider";
 
 /** Show workspace nav when the user has saved programs. */
 export function WorkspaceNavLink() {
-  const { hydrated, state } = useWorkspace();
+  const { hydrated, state, canWrite } = useWorkspace();
 
-  if (!hydrated) return null;
+  if (!hydrated || !canWrite) return null;
 
   const savedCount = state.shortlists.reduce(
     (total, list) => total + list.items.length,

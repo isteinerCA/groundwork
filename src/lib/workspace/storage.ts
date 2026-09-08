@@ -3,30 +3,50 @@ import { DEFAULT_WORKSPACE } from "@/lib/types/workspace";
 
 const STORAGE_KEY = "groundwork_workspace_v1";
 
-function newId(): string {
-  return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 9)}`;
+function scopedStorageKey(userId: string): string {
+  return `${STORAGE_KEY}:${userId}`;
 }
 
-export function loadWorkspace(): WorkspaceState {
+function parseWorkspace(raw: string | null): WorkspaceState | null {
+  if (!raw) return null;
+  try {
+    const parsed = JSON.parse(raw) as WorkspaceState;
+    if (!parsed.shortlists?.length) return null;
+    return parsed;
+  } catch {
+    return null;
+  }
+}
+
+/** Load the signed-in user's workspace. Migrates the pre-auth localStorage key once. */
+export function loadWorkspace(userId: string): WorkspaceState {
   if (typeof window === "undefined") return DEFAULT_WORKSPACE;
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return DEFAULT_WORKSPACE;
-    const parsed = JSON.parse(raw) as WorkspaceState;
-    if (!parsed.shortlists?.length) return DEFAULT_WORKSPACE;
-    return parsed;
+    const scoped = parseWorkspace(localStorage.getItem(scopedStorageKey(userId)));
+    if (scoped) return scoped;
+
+    const legacy = parseWorkspace(localStorage.getItem(STORAGE_KEY));
+    if (!legacy) return DEFAULT_WORKSPACE;
+
+    localStorage.setItem(scopedStorageKey(userId), JSON.stringify(legacy));
+    localStorage.removeItem(STORAGE_KEY);
+    return legacy;
   } catch {
     return DEFAULT_WORKSPACE;
   }
 }
 
-export function saveWorkspace(state: WorkspaceState): void {
+export function saveWorkspace(userId: string, state: WorkspaceState): void {
   if (typeof window === "undefined") return;
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    localStorage.setItem(scopedStorageKey(userId), JSON.stringify(state));
   } catch {
     // Quota or private mode — ignore.
   }
+}
+
+function newId(): string {
+  return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 9)}`;
 }
 
 export function getActiveShortlist(state: WorkspaceState): Shortlist {

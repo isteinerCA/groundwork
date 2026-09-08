@@ -11,6 +11,7 @@ import {
 } from "react";
 import { useAuth } from "@clerk/nextjs";
 import type { Shortlist, ShortlistItem, WorkspaceState } from "@/lib/types/workspace";
+import { DEFAULT_WORKSPACE } from "@/lib/types/workspace";
 import { trackEvent } from "@/lib/analytics";
 import {
   clearPendingSaves,
@@ -60,24 +61,34 @@ interface WorkspaceContextValue {
 const WorkspaceContext = createContext<WorkspaceContextValue | null>(null);
 
 export function WorkspaceProvider({ children }: { children: ReactNode }) {
-  const { isSignedIn, isLoaded } = useAuth();
-  const [state, setState] = useState<WorkspaceState>(() => DEFAULT_FALLBACK);
+  const { isSignedIn, isLoaded, userId } = useAuth();
+  const [state, setState] = useState<WorkspaceState>(DEFAULT_WORKSPACE);
   const [hydrated, setHydrated] = useState(false);
+  const [ownerId, setOwnerId] = useState<string | null>(null);
 
-  const canWrite = Boolean(isSignedIn);
+  const canWrite = Boolean(isSignedIn && userId);
 
   useEffect(() => {
-    setState(loadWorkspace());
+    if (!isLoaded) return;
+    if (!isSignedIn || !userId) {
+      setState(DEFAULT_WORKSPACE);
+      setOwnerId(null);
+      setHydrated(true);
+      return;
+    }
+    setState(loadWorkspace(userId));
+    setOwnerId(userId);
     setHydrated(true);
-  }, []);
+  }, [isLoaded, isSignedIn, userId]);
 
   useEffect(() => {
-    if (hydrated) saveWorkspace(state);
-  }, [state, hydrated]);
+    if (!hydrated || !ownerId || ownerId !== userId) return;
+    saveWorkspace(userId, state);
+  }, [state, hydrated, ownerId, userId]);
 
   // Apply hearts queued while signed out (e.g. save-gate → sign up).
   useEffect(() => {
-    if (!hydrated || !isLoaded || !isSignedIn) return;
+    if (!hydrated || !isLoaded || !isSignedIn || !userId) return;
     const pending = readPendingSaves();
     if (pending.length === 0) return;
     clearPendingSaves();
@@ -91,7 +102,7 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
       if (added > 0) trackEvent("programs_bulk_saved", { count: added, source: "pending_auth" });
       return next;
     });
-  }, [hydrated, isLoaded, isSignedIn]);
+  }, [hydrated, isLoaded, isSignedIn, userId]);
 
   const persist = useCallback((updater: (prev: WorkspaceState) => WorkspaceState) => {
     setState(updater);
@@ -167,18 +178,23 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
         return true;
       },
       setActiveShortlist: (shortlistId) => {
+        if (!guardWrite()) return false;
         persist((prev) => setActiveShortlist(prev, shortlistId));
         return true;
       },
-      setDisplayName: (name) => persist((prev) => ({ ...prev, displayName: name })),
-      acknowledgePrivacy: () => persist((prev) => acknowledgeNotesPrivacy(prev)),
+      setDisplayName: (name) => {
+        if (!guardWrite()) return;
+        persist((prev) => ({ ...prev, displayName: name }));
+      },
+      acknowledgePrivacy: () => {
+        if (!guardWrite()) return;
+        persist((prev) => acknowledgeNotesPrivacy(prev));
+      },
     };
   }, [state, hydrated, canWrite, guardWrite, persist]);
 
   return <WorkspaceContext.Provider value={value}>{children}</WorkspaceContext.Provider>;
 }
-
-const DEFAULT_FALLBACK = loadWorkspace();
 
 export function useWorkspace(): WorkspaceContextValue {
   const ctx = useContext(WorkspaceContext);
