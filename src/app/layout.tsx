@@ -40,6 +40,18 @@ export default function RootLayout({
     <html lang="en" className={`${lora.variable} ${sourceSans.variable}`}>
       <body className="min-h-screen antialiased">
         <ClerkProvider
+          localization={{
+            signIn: {
+              start: {
+                title: `Sign in to ${SITE_NAME}`,
+              },
+            },
+            signUp: {
+              start: {
+                title: `Create your ${SITE_NAME} account`,
+              },
+            },
+          }}
           signInFallbackRedirectUrl="/workspace"
           signUpFallbackRedirectUrl="/workspace"
           signInForceRedirectUrl="/workspace"
