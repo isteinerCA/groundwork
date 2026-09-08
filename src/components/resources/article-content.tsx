@@ -1,7 +1,18 @@
 import Link from "next/link";
-import type { ArticleBlock, ArticleListItem } from "@/lib/constants/resources";
+import type {
+  ArticleBlock,
+  ArticleInlineLink,
+  ArticleListItem,
+} from "@/lib/constants/resources";
 
-function renderParagraphText(text: string, links?: { text: string; slug: string }[]) {
+function inlineLinkHref(link: ArticleInlineLink): string {
+  if ("href" in link) {
+    return link.href;
+  }
+  return `/resources/${link.slug}`;
+}
+
+function renderParagraphText(text: string, links?: ArticleInlineLink[]) {
   if (!links?.length) {
     return text;
   }
@@ -21,8 +32,8 @@ function renderParagraphText(text: string, links?: { text: string; slug: string 
 
     parts.push(
       <Link
-        key={`${link.slug}-${index}`}
-        href={`/resources/${link.slug}`}
+        key={`${link.text}-${index}`}
+        href={inlineLinkHref(link)}
         className="font-medium text-[var(--color-navy)] underline decoration-[var(--color-sage)] underline-offset-[0.2em] hover:decoration-[var(--color-navy)]"
       >
         {link.text}
@@ -39,7 +50,7 @@ function renderParagraphText(text: string, links?: { text: string; slug: string 
   return parts.length === 1 && typeof parts[0] === "string" ? parts[0] : parts;
 }
 
-function renderListItem(item: ArticleListItem, links?: { text: string; slug: string }[]) {
+function renderListItem(item: ArticleListItem, links?: ArticleInlineLink[]) {
   if (typeof item === "string") {
     return renderParagraphText(item, links);
   }

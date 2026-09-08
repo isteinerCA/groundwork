@@ -26,6 +26,10 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
           "March–April: Many enrichment and pre-college programs still have availability, although popular sessions may begin filling up. If you're making last-minute plans, focus on programs that still have availability or use rolling enrollment.",
           "May and later: Options still exist, particularly local programs, camps, online programs, and programs with rolling enrollment. Choices will simply be more limited.",
         ],
+        links: [
+          { text: "Use Explore Summer", href: "/search" },
+          { text: "Explore Summer", href: "/search" },
+        ],
       },
       {
         type: "paragraph",
@@ -967,6 +971,7 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
       {
         type: "paragraph",
         text: "Start with school end and start dates, family trips, sports commitments and anything else that can't move. Then look at which programs fit into the remaining windows. Explore Summer lets you search by month, or use the search assistant to find programs that fit specific dates.",
+        links: [{ text: "Explore Summer", href: "/search" }],
       },
       {
         type: "paragraph",
@@ -1302,18 +1307,42 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
       {
         type: "paragraph",
         text: "STEM/Engineering has the widest spread in the whole catalog — from a 1-week option (part of Brown's Summer@Brown lineup) all the way to 6-week flagship research programs like MIT's RSI, MITES, and UC Davis's Young Scholars Program. Notably, Brown's own program alone spans nearly that entire range depending on which course a student picks.",
+        links: [
+          {
+            text: "STEM/Engineering",
+            href: "/resources/lists/stem-engineering-programs",
+          },
+        ],
       },
       {
         type: "paragraph",
         text: "Outdoor/Wilderness programs range from a 4-day taste (Lasting Adventures' shortest trip) to a full 35-day expedition (Wilderness Adventures) — nearly a 9x difference in commitment level under one category.",
+        links: [
+          {
+            text: "Outdoor/Wilderness",
+            href: "/resources/lists/outdoor-wilderness-programs",
+          },
+        ],
       },
       {
         type: "paragraph",
         text: "Marine Science swings from a 5-day intro course (Field Studies Council, in Wales) to a 6-week immersive semester-style program (The Island School, in the Bahamas).",
+        links: [
+          {
+            text: "Marine Science",
+            href: "/resources/lists/marine-science-programs",
+          },
+        ],
       },
       {
         type: "paragraph",
         text: "Programs in our Leadership/Gifted category range from completely free (Telluride's TASS) to nearly $12,000 (Wharton's on-campus program), a good illustration of just how little a category label tells you about price.",
+        links: [
+          {
+            text: "Leadership/Gifted",
+            href: "/resources/lists/leadership-gifted-programs",
+          },
+        ],
       },
       { type: "subheading", text: "New & Notable" },
       {
@@ -1371,6 +1400,11 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
       {
         type: "paragraph",
         text: "The goal is simple: make differences that are buried across dozens of program websites easier to see and compare.",
+      },
+      {
+        type: "paragraph",
+        text: "You can also browse programs by category in our curated lists.",
+        links: [{ text: "curated lists", href: "/resources/lists" }],
       },
     ],
   },

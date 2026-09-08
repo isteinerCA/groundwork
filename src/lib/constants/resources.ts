@@ -6,12 +6,17 @@ export type ResourceCategoryId =
 
 export type ArticleListItem = string | { lead: string; text: string };
 
+/** Inline link — article slug or site path (e.g. `/search`, `/resources/lists/...`). */
+export type ArticleInlineLink =
+  | { text: string; slug: string }
+  | { text: string; href: string };
+
 export type ArticleBlock =
-  | { type: "paragraph"; text: string; links?: { text: string; slug: string }[] }
+  | { type: "paragraph"; text: string; links?: ArticleInlineLink[] }
   | {
       type: "list";
       items: ArticleListItem[];
-      links?: { text: string; slug: string }[];
+      links?: ArticleInlineLink[];
       tone?: "default" | "muted";
     }
   | { type: "subheading"; text: string }
@@ -57,6 +62,7 @@ export { RESOURCE_ARTICLES } from "@/lib/content/resource-articles";
 
 import { RESOURCE_ARTICLES } from "@/lib/content/resource-articles";
 import { RESOURCE_ARTICLE_RECOMMENDATIONS } from "@/lib/content/resource-article-recommendations";
+import { getListArticleRecommendations } from "@/lib/content/predefined-list-article-recommendations";
 
 const ARTICLE_ORDER: Record<ResourceCategoryId, readonly string[]> = {
   planning: [
@@ -107,6 +113,21 @@ export function getCategoryById(id: ResourceCategoryId) {
 
 export function getRelatedArticles(slug: string) {
   const relatedSlugs = RESOURCE_ARTICLE_RECOMMENDATIONS[slug] ?? [];
+
+  return relatedSlugs.flatMap((relatedSlug) => {
+    const article = getArticleBySlug(relatedSlug);
+    const category = article ? getCategoryById(article.categoryId) : undefined;
+
+    if (!article || !category) {
+      return [];
+    }
+
+    return [{ ...article, categoryLabel: category.label }];
+  });
+}
+
+export function getRelatedArticlesForList(listSlug: string) {
+  const relatedSlugs = getListArticleRecommendations(listSlug);
 
   return relatedSlugs.flatMap((relatedSlug) => {
     const article = getArticleBySlug(relatedSlug);

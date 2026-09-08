@@ -4,10 +4,12 @@ import { PredefinedListExperience } from "@/components/search/predefined-list-ex
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { PredefinedListJsonLd } from "@/components/resources/predefined-list-json-ld";
+import { RelatedArticles } from "@/components/resources/related-articles";
 import {
   getPredefinedListBySlug,
   PREDEFINED_LISTS,
 } from "@/lib/constants/predefined-lists";
+import { getRelatedArticlesForList } from "@/lib/constants/resources";
 import { getProgramsForPredefinedList } from "@/lib/data/predefined-list-programs";
 import { getDataVerifiedAt, getPrograms } from "@/lib/programs";
 import { buildPredefinedListMetadata } from "@/lib/seo/predefined-list-metadata";
@@ -36,6 +38,7 @@ export default async function PredefinedListPage({ params }: PageProps) {
   const programs = getPrograms();
   const dataVerifiedAt = getDataVerifiedAt();
   const listPrograms = getProgramsForPredefinedList(programs, list);
+  const relatedArticles = getRelatedArticlesForList(slug);
 
   return (
     <>
@@ -47,9 +50,12 @@ export default async function PredefinedListPage({ params }: PageProps) {
         list={list}
       />
       <div className="mx-auto max-w-7xl px-4 pb-12 sm:px-6">
+        <div className="mx-auto max-w-3xl">
+          <RelatedArticles articles={relatedArticles} />
+        </div>
         <Link
           href="/resources/lists"
-          className="text-sm font-medium text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
+          className="mt-8 inline-block text-sm font-medium text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
         >
           ← View all ready-made searches
         </Link>
