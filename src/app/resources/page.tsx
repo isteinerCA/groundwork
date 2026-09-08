@@ -9,6 +9,9 @@ import {
   getArticlesByCategory,
   MAIN_RESOURCE_CATEGORIES,
 } from "@/lib/constants/resources";
+import { resourcesPageMetadata } from "@/lib/seo/resources-pages-metadata";
+
+export const metadata = resourcesPageMetadata;
 
 export default function ResourcesPage() {
   const highSchoolLists = getListsByGradeBand("high-school");

@@ -4,12 +4,9 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { PredefinedListLinks } from "@/components/resources/predefined-list-links";
 import { SectionEyebrow } from "@/components/ui/button-link";
 import { getListsByGradeBand } from "@/lib/constants/predefined-lists";
+import { resourcesListsIndexMetadata } from "@/lib/seo/resources-pages-metadata";
 
-export const metadata = {
-  title: "Popular ways to explore · Resources · Explore Summer",
-  description:
-    "Start with one of these ready-made searches, then adjust the filters to fit your student.",
-};
+export const metadata = resourcesListsIndexMetadata;
 
 export default function PredefinedListsPage() {
   const highSchoolLists = getListsByGradeBand("high-school");
