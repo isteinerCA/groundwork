@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     q: "Why is it free right now?",
-    a: `We're in an early bird period while we refine Explore Summer with real families. Regular price is ${formatSeasonPassPrice()} per season; early bird access is free for a limited time with the same features.`,
+    a: `We're in an early bird period while we refine Explore Summer with real families. Regular price is ${formatSeasonPassPrice()} per season; early bird access is free for a limited time, giving you access to the same features through June 30 for free.`,
   },
   {
     q: `Will it really be ${formatSeasonPassPrice()} later?`,
@@ -19,13 +19,11 @@ const faqs = [
   },
   {
     q: "Is search still free?",
-    a: "Always. Browsing, filtering, and reading program details — including hidden gotcha flags — never requires a pass.",
+    a: "Always. Browsing, filtering, and reading program details, including hidden details, never requires a pass.",
   },
   {
     q: "Do I need a credit card today?",
-    a: isEarlyBirdPricingShown()
-      ? "No. Create an account to unlock the workspace during early bird. Payment setup is coming later; we'll notify users before early bird ends."
-      : `Yes. Checkout is handled securely through Stripe for the ${formatSeasonPassPrice()} one-time season pass.`,
+    a: "You don't need a credit card during the early bird pricing. Payment setup is coming later and will require credit card. It will not impact early bird customers for this academic year.",
   },
   {
     q: "When does my pass expire?",
@@ -38,7 +36,7 @@ export function PricingFaq() {
     <section id="faq" className="mt-16 border-t border-[var(--color-border)] pt-12">
       <h2 className="text-2xl">Frequently asked questions</h2>
       {isEarlyBirdPricingShown() && (
-        <p className="mt-2 text-sm text-[var(--color-amber)]">{EARLY_BIRD_LABEL}</p>
+        <p className="mt-2 text-sm font-medium tracking-wide text-emerald-700 uppercase">{EARLY_BIRD_LABEL}</p>
       )}
       <dl className="mt-8 space-y-6">
         {faqs.map((item) => (
@@ -51,7 +49,7 @@ export function PricingFaq() {
         ))}
       </dl>
       <p className="mt-8 text-sm text-[var(--color-text-muted)]">
-        Something wrong with a listing?{" "}
+        Still have questions, or something wrong with a listing?{" "}
         <a href="/contact" className="font-medium text-[var(--color-navy)] no-underline hover:text-[var(--color-navy-light)]">
           Contact us / report an issue
         </a>
@@ -83,24 +81,24 @@ export function PriceDisplay({ large = false }: { large?: boolean }) {
   if (earlyBird) {
     return (
       <div>
-        <p className="text-sm font-medium text-[var(--color-amber)]">{EARLY_BIRD_LABEL}</p>
-        <div className={`mt-2 flex flex-wrap items-baseline gap-3 ${large ? "" : "text-2xl"}`}>
+        <p className="text-sm font-medium tracking-wide text-emerald-700 uppercase">
+          {EARLY_BIRD_LABEL}
+        </p>
+        <div className="mt-2 flex flex-wrap items-baseline gap-3">
           <span
-            className={`text-[var(--color-text-muted)] line-through ${large ? "text-2xl" : "text-lg"}`}
+            className={`text-[var(--color-text-muted)] line-through decoration-2 ${large ? "text-2xl" : "text-lg"}`}
           >
             {formatSeasonPassPrice()}
           </span>
-          <span className={`font-normal text-[var(--color-navy)] ${large ? "text-5xl" : "text-3xl"}`}>
+          <span className={`font-normal text-emerald-700 ${large ? "text-5xl" : "text-4xl"}`}>
             Free
-            <span className={`text-[var(--color-text-muted)] ${large ? "text-lg" : "text-base"}`}>
-              {" "}
-              / season
-            </span>
+          </span>
+          <span className={`text-[var(--color-text-muted)] ${large ? "text-lg" : "text-sm"}`}>
+            / season
           </span>
         </div>
-        <p className="mt-2 text-sm text-[var(--color-text-muted)]">
-          Regular price {formatSeasonPassPrice()} when early bird ends. No credit card required
-          today.
+        <p className="mt-2 text-sm font-medium text-[var(--color-navy)]">
+          Regular price {formatSeasonPassPrice()}/season — free during early bird.
         </p>
       </div>
     );

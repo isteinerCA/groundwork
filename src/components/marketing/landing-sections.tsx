@@ -62,12 +62,12 @@ const STEPS = [
   {
     num: "01",
     title: "Filter by what actually matters",
-    body: "Grade just completed, category, format, duration, and budget. Multi-select chips — not a wall of dropdowns.",
+    body: "Grade just completed, category, format, timing, and budget. Select criteria that work for you.",
   },
   {
     num: "02",
     title: "Refine with a plain-English assistant",
-    body: "'Only fully funded' or 'in California only' updates your filters in real time. The assistant and chips stay in sync.",
+    body: "'Only fully funded' or 'in California only' updates your filters in real time. The assistant and filters work together to refine your search.",
   },
   {
     num: "03",
@@ -229,7 +229,7 @@ export function FinePrintSection() {
 const WORKSPACE_FEATURES = [
   {
     title: "Deadline tracking",
-    desc: "Never miss a September opening again.",
+    desc: "Keep track of key dates and requirements.",
   },
   {
     title: "Notes per program",
@@ -258,8 +258,8 @@ export function WorkspaceSection() {
         </h2>
         <p className="mt-4 max-w-3xl text-lg text-[var(--color-text-muted)]">
           Track status from Researching through Accepted. Enter deadlines, jot notes, and
-          compare programs side by side. Missing a September window is the primary failure
-          mode for summer programs — this is the workspace built to prevent it.
+          compare programs side by side. We help you stay on track so that you don&apos;t
+          miss the deadlines for the programs you found and vetted.
         </p>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {WORKSPACE_FEATURES.map((item) => (

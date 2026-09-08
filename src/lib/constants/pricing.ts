@@ -14,10 +14,12 @@ export function isEarlyBirdFreeEnabled(): boolean {
 
 /**
  * Client: show early bird pricing UX (strikethrough $49, free now).
- * Must match EARLY_BIRD_FREE on the server.
+ * Always on at launch so /pricing matches the homepage. Flip back to the
+ * env check when paid checkout goes live:
+ * `return process.env.NEXT_PUBLIC_EARLY_BIRD === "true";`
  */
 export function isEarlyBirdPricingShown(): boolean {
-  return process.env.NEXT_PUBLIC_EARLY_BIRD === "true";
+  return true;
 }
 
 /** Stripe checkout button — off until keys are configured and this flag is set. */
