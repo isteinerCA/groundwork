@@ -162,6 +162,37 @@ if (!matchesDataQuery(stanford, "stanford")) {
   failed++;
 }
 
+const marist = stubProgram({
+  name: "Marist Pre-College",
+  locationDisplay: "Poughkeepsie, NY",
+  gradeDisplay: "High school",
+});
+
+if (!matchesDataQuery(marist, "marist")) {
+  console.error("FAIL: Marist Pre-College should match dataQuery marist");
+  failed++;
+}
+
+if (matchesDataQuery(marist, "marist university")) {
+  console.error("FAIL: strict match should require university in program text");
+  failed++;
+}
+
+if (!matchesDataQuery(marist, "marist university", { relaxInstitutionSuffixes: true })) {
+  console.error("FAIL: relaxed match should ignore trailing university");
+  failed++;
+}
+
+if (matchesDataQuery(marist, "stanford university", { relaxInstitutionSuffixes: true })) {
+  console.error("FAIL: relaxed Marist match should still require marist");
+  failed++;
+}
+
+if (!matchesDataQuery(stanford, "stanford university", { relaxInstitutionSuffixes: true })) {
+  console.error("FAIL: Stanford program should match stanford university when relaxed");
+  failed++;
+}
+
 const mathPathAge = normalizeGrade("Ages 11-14");
 if (mathPathAge.gradeCompletedMax !== 8) {
   console.error(

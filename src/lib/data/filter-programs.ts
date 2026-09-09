@@ -11,10 +11,19 @@ import { gradeMatchesFilter } from "@/lib/data/normalize-grade";
 import type { Program, SearchFilters } from "@/lib/types/program";
 
 export function filterPrograms(programs: Program[], filters: SearchFilters): Program[] {
-  return programs.filter((program) => matchesProgram(program, filters));
+  const matched = programs.filter((program) => matchesProgram(program, filters));
+  if (matched.length > 0 || !filters.dataQuery.trim()) return matched;
+
+  return programs.filter((program) =>
+    matchesProgram(program, filters, { relaxInstitutionSuffixes: true }),
+  );
 }
 
-export function matchesProgram(program: Program, filters: SearchFilters): boolean {
+export function matchesProgram(
+  program: Program,
+  filters: SearchFilters,
+  options?: { relaxInstitutionSuffixes?: boolean },
+): boolean {
   if (filters.gradesCompleted.length === 0) return false;
 
   if (!gradeMatchesFilter(program, filters.gradesCompleted)) return false;
@@ -104,7 +113,7 @@ export function matchesProgram(program: Program, filters: SearchFilters): boolea
     return false;
   }
 
-  if (!matchesDataQuery(program, filters.dataQuery)) return false;
+  if (!matchesDataQuery(program, filters.dataQuery, options)) return false;
 
   return true;
 }

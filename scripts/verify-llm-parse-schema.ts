@@ -801,6 +801,54 @@ if (failed === 0) {
     );
   }
 
+  const marist = data.programs.find((p) => p.name === "Marist Pre-College");
+  if (marist) {
+    assert(matchesDataQuery(marist, "marist"), "marist matches Marist Pre-College");
+    assert(
+      !matchesDataQuery(marist, "marist university"),
+      "strict marist university does not match Marist Pre-College text",
+    );
+    assert(
+      matchesDataQuery(marist, "marist university", { relaxInstitutionSuffixes: true }),
+      "relaxed marist university matches Marist Pre-College",
+    );
+    const maristUniversityResults = filterPrograms(data.programs, {
+      ...DEFAULT_SEARCH_FILTERS,
+      gradesCompleted: [10],
+      dataQuery: "marist university",
+    });
+    assert(
+      maristUniversityResults.some((p) => p.name === "Marist Pre-College"),
+      "filterPrograms falls back so marist university finds Marist Pre-College",
+    );
+    const stanfordUniversityResults = filterPrograms(data.programs, {
+      ...DEFAULT_SEARCH_FILTERS,
+      gradesCompleted: [10],
+      dataQuery: "stanford university",
+    });
+    assert(
+      stanfordUniversityResults.some((p) => p.name.includes("Stanford")),
+      "stanford university finds Stanford programs",
+    );
+    assert(
+      !stanfordUniversityResults.some((p) => p.name === "Marist Pre-College"),
+      "stanford university does not include Marist",
+    );
+    const bostonUniversityResults = filterPrograms(data.programs, {
+      ...DEFAULT_SEARCH_FILTERS,
+      gradesCompleted: [10],
+      dataQuery: "boston university",
+    });
+    assert(
+      bostonUniversityResults.some((p) => p.name === "Boston University Summer"),
+      "boston university still prefers programs that include university",
+    );
+    assert(
+      !bostonUniversityResults.some((p) => p.name === "Marist Pre-College"),
+      "boston university does not fall back to unrelated name matches",
+    );
+  }
+
   const princeton = data.programs.find((p) => p.slug === "princeton-summer-journalism-program");
   if (princeton) {
     assert(princeton.gradeCompletedMax === 10, "HS Juniors maps to completed grade 10 max");

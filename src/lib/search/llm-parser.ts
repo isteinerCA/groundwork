@@ -137,7 +137,7 @@ Set clearAll: true when the user wants to reset all filters ("start over", "clea
 - Anything not in our program data
 
 ## Program / institution name search (critical)
-When the user message is ONLY a program name, abbreviation, or institution keyword — examples: "UCLA", "COSMO", "COSMOS", "stony brook", "Rosetta", "Telluride" — treat it as a **name search only**:
+When the user message is ONLY a program name, abbreviation, or institution keyword — examples: "UCLA", "COSMO", "COSMOS", "stony brook", "Rosetta", "Telluride", "Marist University" — treat it as a **name search only**:
 - filterPatch: { dataQuery: "<lowercase query>" } and NOTHING else
 - Do NOT infer or set categories, formats, admissionTypes, durationBuckets, includeMonths, usOnly, or other structured filters
 - Do NOT guess program attributes from the name
@@ -159,8 +159,8 @@ Use includeMonths for positive month requests ("in June", "July only", "June and
 
 Use excludeMonths for negated month requests ("not in August", "exclude July") — never put negated months in includeMonths or dataQuery. We match programs whose overall date range overlaps the month; specific session start dates may vary — mention that in assistantMessage when relevant.
 
-When the user names a school, university, or program with NO other filter criteria (e.g. "stanford", "harvard", "MIT", "COSMOS", "telluride"):
-- Set ONLY dataQuery to that name (lowercase). Do NOT add categories, admissionTypes, formats, durationBuckets, collegeCreditOnly, priceFilter, maxPrice, minPrice, usOnly, or excludeUnknownPrice unless the user explicitly asked for them in the same message.
+When the user names a school, university, or program with NO other filter criteria (e.g. "stanford", "harvard", "MIT", "COSMOS", "telluride", "Marist University", "Stanford University"):
+- Set ONLY dataQuery to that name (lowercase), keeping generic suffixes like "university" or "college". Do NOT strip them and do NOT add categories, admissionTypes, formats, durationBuckets, collegeCreditOnly, priceFilter, maxPrice, minPrice, usOnly, or excludeUnknownPrice unless the user explicitly asked for them in the same message.
 - Do NOT infer "pre-college", "application", "residential", or duration from the institution name alone.
 - Keep gradesCompleted unchanged unless the user mentions a grade in the same message.
 
