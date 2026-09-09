@@ -176,29 +176,29 @@ export function FinePrintSection() {
         <div className="relative order-2 hidden aspect-[4/3] overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] shadow-[var(--shadow-card)] lg:order-1 lg:block">
           <Image
             src="/images/hidden-details.png"
-            alt="Program card showing hidden details like acceptance rate, deposit policy, and visa information"
+            alt="Program card viewed through a magnifying glass, revealing day-to-day details like curfew, independent meals, and who checks in"
             fill
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </div>
         <div className="order-1 lg:order-2">
-          <SectionEyebrow>The fine print</SectionEyebrow>
+          <SectionEyebrow>The inside scoop</SectionEyebrow>
           <h2 className="mt-3 text-3xl md:text-4xl">
             What the program websites don&apos;t tell you.
           </h2>
           <p className="mt-4 text-[var(--color-text)]">
-            Acceptance floors. Non-refundable deposits. Residency restrictions. Safety
-            records. Visa certification. We surface the material context on each program
-            card — sourced and dated — so you know what you&apos;re signing up for before
-            you apply.
+            A campus photo and a promise of the &ldquo;college experience&rdquo; rarely explain
+            the days. We read handbooks and FAQs for how independently students actually live
+            — curfews, check-ins, meals, and who is on duty — and add that to the card when
+            we have researched it.
           </p>
           <ul className="mt-6 space-y-3 text-sm text-[var(--color-text)]">
             {[
-              "Acceptance rate & practical selectivity floors",
-              "Deposit policies (including non-refundable for aid recipients)",
-              "Safety, controversy, and historical concerns — with sources",
-              "Residency and visa restrictions",
+              "How much of the day is scheduled versus free",
+              "Whether students get themselves to class and meals",
+              "Campus rules: leaving campus, check-ins, and curfew",
+              "Who supervises, and how closely",
             ].map((item) => (
               <li key={item} className="flex gap-2">
                 <span className="font-bold text-[var(--color-amber)]" aria-hidden>
@@ -208,6 +208,10 @@ export function FinePrintSection() {
               </li>
             ))}
           </ul>
+          <p className="mt-4 text-sm text-[var(--color-text-muted)]">
+            If we also find a material catch — a residency limit, a non-refundable deposit —
+            we flag that separately, with the source.
+          </p>
           <ButtonLink href="/search" className="mt-8">
             Start your shortlist
           </ButtonLink>
