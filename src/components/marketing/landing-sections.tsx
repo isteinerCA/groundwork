@@ -185,7 +185,7 @@ export function FinePrintSection() {
         <div className="order-1 lg:order-2">
           <SectionEyebrow>The inside scoop</SectionEyebrow>
           <h2 className="mt-3 text-3xl md:text-4xl">
-            What the program websites don&apos;t tell you.
+            What&apos;s buried in the fine print.
           </h2>
           <p className="mt-4 text-[var(--color-text)]">
             A campus photo and a promise of the &ldquo;college experience&rdquo; rarely explain
