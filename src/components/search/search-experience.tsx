@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { ActiveFilterBar } from "@/components/search/active-filter-bar";
 import { CollapsibleFilterGroup } from "@/components/search/collapsible-filter-group";
@@ -108,6 +108,12 @@ export function SearchExperience({
   );
   const [sort, setSort] = useState<SortOption>("selectivity");
   const [restoredLastSearch, setRestoredLastSearch] = useState(false);
+  const pendingSearchRef = useRef<{
+    filters: SearchFilters;
+    resultTotal: number;
+    source: "filters" | "chat";
+  } | null>(null);
+  const searchTrackTimerRef = useRef<number>(0);
 
   useEffect(() => {
     if (restoredLastSearch) return;
@@ -135,28 +141,42 @@ export function SearchExperience({
     );
   }, [results]);
 
-  const runSearch = (nextFilters: SearchFilters, resultTotal: number) => {
-    if (nextFilters.gradesCompleted.length === 0) return;
-    saveLastSearchFilters(nextFilters);
+  const flushSearchTrack = () => {
+    const pending = pendingSearchRef.current;
+    if (!pending) return;
+    pendingSearchRef.current = null;
     trackEvent("search_run", {
-      ...summarizeSearchFilters(nextFilters),
-      result_count: resultTotal,
+      ...summarizeSearchFilters(pending.filters),
+      result_count: pending.resultTotal,
+      source: pending.source,
     });
   };
 
-  const applyFilters = (next: SearchFilters) => {
+  const scheduleSearchTrack = (
+    nextFilters: SearchFilters,
+    resultTotal: number,
+    source: "filters" | "chat",
+  ) => {
+    if (nextFilters.gradesCompleted.length === 0) return;
+    pendingSearchRef.current = { filters: nextFilters, resultTotal, source };
+    window.clearTimeout(searchTrackTimerRef.current);
+    searchTrackTimerRef.current = window.setTimeout(flushSearchTrack, 700);
+  };
+
+  useEffect(() => {
+    return () => {
+      window.clearTimeout(searchTrackTimerRef.current);
+      flushSearchTrack();
+    };
+  }, []);
+
+  const applyFilters = (next: SearchFilters, source: "filters" | "chat" = "filters") => {
     const merged = applyLockedFilters(next, lockedFilters);
-    const hadGrade = filters.gradesCompleted.length > 0;
     setFilters(merged);
     if (merged.gradesCompleted.length > 0) {
       saveLastSearchFilters(merged);
-      const resultTotal =
-        merged.gradesCompleted.length > 0
-          ? sortPrograms(filterPrograms(programs, merged), sort).length
-          : 0;
-      if (!hadGrade && merged.gradesCompleted.length > 0) {
-        runSearch(merged, resultTotal);
-      }
+      const resultTotal = sortPrograms(filterPrograms(programs, merged), sort).length;
+      scheduleSearchTrack(merged, resultTotal, source);
     }
   };
 
@@ -465,7 +485,7 @@ export function SearchExperience({
                 filters={filters}
                 resultCount={results.length}
                 programs={programs}
-                onApplyFilters={applyFilters}
+                onApplyFilters={(next) => applyFilters(next, "chat")}
               />
 
               <div id={RESULTS_ANCHOR_ID} className="scroll-mt-24">

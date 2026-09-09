@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { btnPrimary } from "@/components/ui/button-styles";
 import { logChatEvent } from "@/lib/chat-analytics";
-import { trackEvent } from "@/lib/analytics";
+import { chatQueryPreview, gaString, trackEvent } from "@/lib/analytics";
 import { formatAssistantMessage } from "@/lib/search/format-assistant-message";
 import { getOpeningHint } from "@/lib/search/opening-hint";
 import { mergeFilterPatch } from "@/lib/search/merge-filter-patch";
@@ -141,7 +141,11 @@ export function SearchChat({
           resultCount,
           error: true,
         });
-        trackEvent("chat_sent", { had_unexpressible: false, error: true });
+        trackEvent(
+          "chat_sent",
+          { had_unexpressible: false, error: true, result_count: resultCount },
+          { ga: { query_preview: chatQueryPreview(text) } },
+        );
         return;
       }
 
@@ -174,11 +178,17 @@ export function SearchChat({
         applied: result.applied,
         unexpressible: result.unexpressible,
       });
-      trackEvent("chat_sent", {
-        had_unexpressible: result.unexpressible.length > 0,
-        clear_all: result.clearAll,
-        had_patch: hadPatch,
-      });
+      trackEvent(
+        "chat_sent",
+        {
+          had_unexpressible: result.unexpressible.length > 0,
+          clear_all: result.clearAll,
+          had_patch: hadPatch,
+          result_count: resultCount,
+          patch_keys: gaString(Object.keys(result.filterPatch).join(",")),
+        },
+        { ga: { query_preview: chatQueryPreview(text) } },
+      );
     } catch {
       setMessages((prev) => [
         ...prev,
@@ -196,7 +206,11 @@ export function SearchChat({
         resultCount,
         error: true,
       });
-      trackEvent("chat_sent", { had_unexpressible: false, error: true });
+      trackEvent(
+        "chat_sent",
+        { had_unexpressible: false, error: true, result_count: resultCount },
+        { ga: { query_preview: chatQueryPreview(text) } },
+      );
     } finally {
       setIsLoading(false);
     }

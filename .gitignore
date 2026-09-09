@@ -36,8 +36,9 @@ yarn-error.log*
 .env
 .env*.local
 
-# contact form dev logs
+# contact form + chat analytics dev logs
 /data/submissions/*.jsonl
+/data/chat-logs/*.jsonl
 
 # auth dev stores (use Supabase in production)
 /data/entitlements.json

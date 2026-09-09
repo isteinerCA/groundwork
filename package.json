@@ -11,7 +11,8 @@
     "prebuild": "python3 scripts/generate_seed.py",
     "import:programs": "tsx scripts/import-programs.ts",
     "verify:data": "tsx scripts/verify-normalization.ts",
-    "verify:chat": "tsx scripts/verify-llm-parse-schema.ts"
+    "verify:chat": "tsx scripts/verify-llm-parse-schema.ts",
+    "verify:analytics": "tsx scripts/verify-analytics.ts"
   },
   "dependencies": {
     "@clerk/nextjs": "^7.6.2",

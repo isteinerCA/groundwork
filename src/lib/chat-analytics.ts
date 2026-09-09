@@ -1,3 +1,5 @@
+import { summarizeSearchFilters } from "@/lib/analytics";
+import { redactPii } from "@/lib/search/redact-pii";
 import type { SearchFilters } from "@/lib/types/program";
 
 const STORAGE_KEY = "groundwork_chat_events";
@@ -12,21 +14,7 @@ export interface ChatAnalyticsEvent {
   error?: boolean;
   applied?: string;
   unexpressible?: string;
-  filterSummary: {
-    grades: number[];
-    categoryCount: number;
-    fullyFundedOnly: boolean;
-    priceFilter: string;
-  };
-}
-
-function summarizeFilters(filters: SearchFilters) {
-  return {
-    grades: filters.gradesCompleted,
-    categoryCount: filters.categories.length,
-    fullyFundedOnly: filters.fullyFundedOnly,
-    priceFilter: filters.priceFilter,
-  };
+  filterSummary: ReturnType<typeof summarizeSearchFilters>;
 }
 
 export function logChatEvent(event: {
@@ -43,14 +31,14 @@ export function logChatEvent(event: {
 
   const record: ChatAnalyticsEvent = {
     timestamp: new Date().toISOString(),
-    rawText: event.rawText.slice(0, 500),
+    rawText: redactPii(event.rawText).slice(0, 500),
     clearAll: event.clearAll,
     hadPatch: event.hadPatch,
     resultCount: event.resultCount,
     error: event.error,
     applied: event.applied?.slice(0, 200),
     unexpressible: event.unexpressible?.slice(0, 200),
-    filterSummary: summarizeFilters(event.filters),
+    filterSummary: summarizeSearchFilters(event.filters),
   };
 
   try {
