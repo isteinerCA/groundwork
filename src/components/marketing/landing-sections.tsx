@@ -188,10 +188,10 @@ export function FinePrintSection() {
             What&apos;s buried in the fine print.
           </h2>
           <p className="mt-4 text-[var(--color-text)]">
-            A campus photo and a promise of the &ldquo;college experience&rdquo; rarely explain
-            the days. We read handbooks and FAQs for how independently students actually live
-            — curfews, check-ins, meals, and who is on duty — and add that to the card when
-            we have researched it.
+            A campus photo and a promise of the &ldquo;college experience&rdquo; don&apos;t give
+            much insight into the day to day of the program. We read handbooks and FAQs to
+            understand what daily life is like — curfews, check-ins, meals, and who is on
+            duty — and add that to the card when we have researched it.
           </p>
           <ul className="mt-6 space-y-3 text-sm text-[var(--color-text)]">
             {[
