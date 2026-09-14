@@ -9,6 +9,7 @@ import { StatusBadge, StatusSelect } from "@/components/workspace/status-badge";
 import { useWorkspace } from "@/components/workspace/workspace-provider";
 import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
 import { formatPriceDisplay } from "@/lib/data/format-price-display";
+import { formatDatesDisplay } from "@/lib/data/format-season-display";
 import type { Program } from "@/lib/types/program";
 import { exportShortlistCsv } from "@/lib/workspace/export-csv";
 import { buildShareUrl } from "@/lib/workspace/share";
@@ -281,7 +282,7 @@ export function DashboardView({ programs }: { programs: Program[] }) {
                           {program!.locationDisplay}
                         </td>
                         <td className="px-3 py-4 align-top text-[var(--color-text-muted)]">
-                          {program!.datesDisplay || "—"}
+                          {formatDatesDisplay(program!)}
                         </td>
                         <td className="px-3 py-4 align-top">{formatPriceDisplay(program!)}</td>
                         <td className="px-3 py-4 align-top">

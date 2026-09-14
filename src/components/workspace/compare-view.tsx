@@ -7,6 +7,7 @@ import { useWorkspace } from "@/components/workspace/workspace-provider";
 import { ADMISSION_TYPE_BY_ID } from "@/lib/constants/admission-types";
 import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
 import { formatPriceDisplay } from "@/lib/data/format-price-display";
+import { formatDatesDisplay } from "@/lib/data/format-season-display";
 import type { Program } from "@/lib/types/program";
 
 const MAX_COMPARE = 4;
@@ -109,7 +110,7 @@ export function CompareView({ programs }: { programs: Program[] }) {
                       ["Admission", (p: Program) => ADMISSION_TYPE_BY_ID[p.admissionType].label],
                       ["Format", (p: Program) => p.formatDisplay],
                       ["Location", (p: Program) => p.locationDisplay],
-                      ["Dates", (p: Program) => p.datesDisplay || "—"],
+                      ["Dates", (p: Program) => formatDatesDisplay(p)],
                       ["Length", (p: Program) => p.lengthDisplay],
                       ["Cost", (p: Program) => formatPriceDisplay(p)],
                       ["College credit", (p: Program) => (p.hasCollegeCredit ? "Yes" : "No")],

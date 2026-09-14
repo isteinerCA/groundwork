@@ -27,8 +27,7 @@ export const SEASON_VERIFIED_BADGE = "Updated for 2027";
 
 export const SEASON_PENDING_BADGE = "Pending 2027 refresh";
 
-export const SEASON_PENDING_DATES_HINT =
-  "Dates may reflect a prior season — verify on the program site.";
+export const SEASON_PENDING_DATES_DISPLAY = `Not confirmed for ${TARGET_SEASON_YEAR}`;
 
 export function isPublishedReviewStatus(value: string): value is PublishedReviewStatus {
   return (PUBLISHED_REVIEW_STATUSES as readonly string[]).includes(value);

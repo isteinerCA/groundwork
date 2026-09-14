@@ -7,7 +7,6 @@ import { SaveGateModal } from "@/components/auth/save-gate-modal";
 import { btnOutline } from "@/components/ui/button-styles";
 import { ADMISSION_TYPE_BY_ID } from "@/lib/constants/admission-types";
 import { DAY_TO_DAY_SOURCE_LABELS } from "@/lib/constants/day-to-day";
-import { SEASON_PENDING_DATES_HINT } from "@/lib/constants/season-review";
 import { isValidDayToDay } from "@/lib/data/day-to-day";
 import {
   categoryLabelForId,
@@ -17,7 +16,7 @@ import {
   formatPriceDisplay,
   isPriceDisplayMuted,
 } from "@/lib/data/format-price-display";
-import { isDatesDisplayMuted } from "@/lib/data/format-season-display";
+import { formatDatesDisplay, isPendingDatesDisplay } from "@/lib/data/format-season-display";
 import { SeasonReviewBadge } from "@/components/search/season-review-badge";
 import { formatShortlistMembershipLabel } from "@/lib/workspace/shortlist-membership";
 import { queuePendingSaves } from "@/lib/workspace/pending-saves";
@@ -186,10 +185,11 @@ export function ProgramCard({
         <div>
           <dt className="text-[var(--color-text-muted)]">Dates</dt>
           <dd
-            className={isDatesDisplayMuted(program) ? "italic text-[var(--color-text-muted)]" : ""}
-            title={isDatesDisplayMuted(program) ? SEASON_PENDING_DATES_HINT : undefined}
+            className={
+              isPendingDatesDisplay(program) ? "italic text-[var(--color-text-muted)]" : ""
+            }
           >
-            {program.datesDisplay || "See program site"}
+            {formatDatesDisplay(program)}
           </dd>
         </div>
         <div>
