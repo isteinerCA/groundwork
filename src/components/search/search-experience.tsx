@@ -28,7 +28,13 @@ import {
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
 import type { MonthNumber } from "@/lib/constants/months";
+import {
+  INCLUDE_PENDING_SEASON_REFRESH_LABEL,
+  INCLUDE_PENDING_SEASON_REFRESH_TOOLTIP,
+  TARGET_SEASON_YEAR,
+} from "@/lib/constants/season-review";
 import { filterPrograms, sortPrograms, type SortOption } from "@/lib/data/filter-programs";
+import { summarizeSeasonCoverage } from "@/lib/data/normalize-season-review";
 import { formatProgramCountLabel } from "@/lib/programs/preview-programs";
 import { summarizeSearchFilters, trackEvent } from "@/lib/analytics";
 import {
@@ -131,6 +137,8 @@ export function SearchExperience({
     return sortPrograms(filterPrograms(programs, filters), sort);
   }, [programs, filters, sort]);
 
+  const seasonCoverage = useMemo(() => summarizeSeasonCoverage(results), [results]);
+
   const duplicateResultNames = useMemo(() => {
     const counts = new Map<string, number>();
     for (const program of results) {
@@ -208,7 +216,8 @@ export function SearchExperience({
     filters.includeRegions.length > 0 ||
     filters.includeLocations.length > 0 ||
     filters.includeMonths.length > 0 ||
-    filters.excludeMonths.length > 0;
+    filters.excludeMonths.length > 0 ||
+    !filters.includePendingSeasonRefresh;
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6">
@@ -341,12 +350,20 @@ export function SearchExperience({
 
               <CollapsibleFilterGroup
                 title="Availability in"
-                activeCount={filters.includeMonths.length}
+                activeCount={
+                  filters.includeMonths.length +
+                  (!filters.includePendingSeasonRefresh ? 1 : 0)
+                }
                 headerExtra={
-                  <InfoTooltip label="Availability in">
-                    Select the months that work for you. Need to fit a specific date range? Our
-                    search assistant can help.
-                  </InfoTooltip>
+                  <>
+                    <InfoTooltip label="Availability in">
+                      Select the months that work for you. Need to fit a specific date range? Our
+                      search assistant can help.
+                    </InfoTooltip>
+                    <InfoTooltip label="2027 season coverage">
+                      {INCLUDE_PENDING_SEASON_REFRESH_TOOLTIP}
+                    </InfoTooltip>
+                  </>
                 }
               >
                 <Chip
@@ -370,6 +387,15 @@ export function SearchExperience({
                     }
                   />
                 ))}
+                <Chip
+                  label={INCLUDE_PENDING_SEASON_REFRESH_LABEL}
+                  selected={filters.includePendingSeasonRefresh}
+                  onClick={() =>
+                    update({
+                      includePendingSeasonRefresh: !filters.includePendingSeasonRefresh,
+                    })
+                  }
+                />
               </CollapsibleFilterGroup>
 
               <CollapsibleFilterGroup
@@ -517,6 +543,13 @@ export function SearchExperience({
                     </div>
                     <p className="mt-2 text-xs text-[var(--color-text-muted)]">
                       Heart <span aria-hidden>♡</span> programs to add them to your shortlist.
+                      {seasonCoverage.pending > 0 && (
+                        <>
+                          {" "}
+                          · {seasonCoverage.verified} updated for {TARGET_SEASON_YEAR} ·{" "}
+                          {seasonCoverage.pending} pending
+                        </>
+                      )}
                     </p>
                   </div>
                 )}

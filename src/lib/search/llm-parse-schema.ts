@@ -89,6 +89,7 @@ export const searchFiltersSchema = z.object({
   excludeMonths: z.array(monthNumberSchema),
   minDurationWeeks: z.number().min(0).nullable(),
   maxDurationWeeks: z.number().min(0).nullable(),
+  includePendingSeasonRefresh: z.boolean(),
 });
 
 export const llmParseResponseSchema = z.object({

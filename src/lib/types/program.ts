@@ -1,6 +1,9 @@
 import type { AdmissionTypeId } from "@/lib/constants/admission-types";
 import type { MonthNumber } from "@/lib/constants/months";
 import type { ProgramCategoryId } from "@/lib/constants/categories";
+import type { DayToDaySourceType } from "@/lib/constants/day-to-day";
+import type { PublishedReviewStatus } from "@/lib/constants/season-review";
+import { INCLUDE_PENDING_SEASON_REFRESH_DEFAULT } from "@/lib/constants/season-review";
 import type {
   DurationBucketId,
   FlagSeverity,
@@ -18,6 +21,17 @@ export interface ProgramFlag {
   severity: FlagSeverity;
 }
 
+/** Curated prose about daily structure and independence — merged from day-to-day.json at import. */
+export interface ProgramDayToDay {
+  /** Required whenever this object is attached to a program. Includes not_found explanations. */
+  notes: string;
+  /** Required whenever this object is attached — drives tile rendering and source attribution. */
+  sourceType: DayToDaySourceType;
+  verifiedAt: string;
+  /** Handbook title, FAQ page, or URL — expected for official_policy and program_faq. */
+  sourceCitation?: string;
+}
+
 /**
  * Canonical program record after CSV import + normalization.
  * Field names align with the reworked CSV schema.
@@ -27,6 +41,8 @@ export interface Program {
   slug: string;
   name: string;
   institution?: string;
+  /** 2027 CSV — used for day-to-day and flag rule matching. */
+  programGroupId?: string;
   category: ProgramCategoryId;
   secondaryTags: string[];
   trackDetail?: string;
@@ -72,6 +88,13 @@ export interface Program {
 
   websiteUrl: string;
   flags: ProgramFlag[];
+  /** Present when curated day-to-day notes exist for this program/group. */
+  dayToDay?: ProgramDayToDay;
+
+  /** Summer season this row describes (e.g. 2027). */
+  seasonYear: number;
+  /** Editorial freshness for target-season data. */
+  reviewStatus: PublishedReviewStatus;
 
   dataVerifiedAt: string;
 }
@@ -98,6 +121,11 @@ export interface SearchFilters {
    * price filters. Set true to hide them when filtering by price.
    */
   excludeUnknownPrice: boolean;
+  /**
+   * When true (default), include programs whose target-season details are not yet
+   * verified (`provisional` / `awaiting_source`). When false, only `verified` rows.
+   */
+  includePendingSeasonRefresh: boolean;
   /** Free-text search across location, gotchas, descriptions, and other CSV fields. */
   dataQuery: string;
   /** Canonical state/location name to exclude (e.g. "california" for "not in California"). */
@@ -125,6 +153,7 @@ export const DEFAULT_SEARCH_FILTERS: SearchFilters = {
   minPrice: null,
   usOnly: false,
   excludeUnknownPrice: false,
+  includePendingSeasonRefresh: INCLUDE_PENDING_SEASON_REFRESH_DEFAULT,
   dataQuery: "",
   excludeLocation: "",
   includeRegions: [],
@@ -138,6 +167,8 @@ export const DEFAULT_SEARCH_FILTERS: SearchFilters = {
 /** Expected columns in the program CSV */
 export interface ProgramCsvRow {
   "Program Name": string;
+  "Program Group ID"?: string;
+  "Offering Label"?: string;
   "Primary Category": string;
   "Secondary Tags"?: string;
   "Track/Session"?: string;
@@ -152,4 +183,8 @@ export interface ProgramCsvRow {
   URL: string;
   /** Optional JSON array of ProgramFlag objects */
   Flags?: string;
+  "Season Year"?: string;
+  "Review Status"?: string;
+  "Dates Display"?: string;
+  "Dates 2027"?: string;
 }

@@ -6,6 +6,9 @@ import { useState } from "react";
 import { SaveGateModal } from "@/components/auth/save-gate-modal";
 import { btnOutline } from "@/components/ui/button-styles";
 import { ADMISSION_TYPE_BY_ID } from "@/lib/constants/admission-types";
+import { DAY_TO_DAY_SOURCE_LABELS } from "@/lib/constants/day-to-day";
+import { SEASON_PENDING_DATES_HINT } from "@/lib/constants/season-review";
+import { isValidDayToDay } from "@/lib/data/day-to-day";
 import {
   categoryLabelForId,
   getProgramCategoryIds,
@@ -14,6 +17,8 @@ import {
   formatPriceDisplay,
   isPriceDisplayMuted,
 } from "@/lib/data/format-price-display";
+import { isDatesDisplayMuted } from "@/lib/data/format-season-display";
+import { SeasonReviewBadge } from "@/components/search/season-review-badge";
 import { formatShortlistMembershipLabel } from "@/lib/workspace/shortlist-membership";
 import { queuePendingSaves } from "@/lib/workspace/pending-saves";
 import { useWorkspace } from "@/components/workspace/workspace-provider";
@@ -106,6 +111,7 @@ export function ProgramCard({
                 Fully Funded
               </span>
             )}
+            <SeasonReviewBadge program={program} />
             {!preview && memberLists.length > 0 && (
               <Link
                 href="/workspace"
@@ -179,7 +185,12 @@ export function ProgramCard({
         </div>
         <div>
           <dt className="text-[var(--color-text-muted)]">Dates</dt>
-          <dd>{program.datesDisplay || "See program site"}</dd>
+          <dd
+            className={isDatesDisplayMuted(program) ? "italic text-[var(--color-text-muted)]" : ""}
+            title={isDatesDisplayMuted(program) ? SEASON_PENDING_DATES_HINT : undefined}
+          >
+            {program.datesDisplay || "See program site"}
+          </dd>
         </div>
         <div>
           <dt className="text-[var(--color-text-muted)]">Length</dt>
@@ -192,6 +203,28 @@ export function ProgramCard({
           </dd>
         </div>
       </dl>
+
+      {isValidDayToDay(program.dayToDay) && (
+        <div className="mt-4 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-parchment-dark)]/30 p-4">
+          <p className="text-xs font-semibold tracking-wide text-[var(--color-navy)] uppercase">
+            Day-to-day
+          </p>
+          <p className="mt-2 text-sm text-[var(--color-navy)]">{program.dayToDay.notes}</p>
+          <p className="mt-2 text-xs text-[var(--color-text-muted)]">
+            Source: {DAY_TO_DAY_SOURCE_LABELS[program.dayToDay.sourceType]}
+            {program.dayToDay.sourceCitation ? ` — ${program.dayToDay.sourceCitation}` : ""}
+            {program.dayToDay.verifiedAt ? ` · Verified ${program.dayToDay.verifiedAt}` : ""}
+          </p>
+          <p className="mt-2 text-xs">
+            <Link
+              href="/resources/what-does-college-experience-really-look-like"
+              className="text-[var(--color-navy-light)] no-underline hover:underline"
+            >
+              Questions we use to research day-to-day experience →
+            </Link>
+          </p>
+        </div>
+      )}
 
       {program.flags.length > 0 && (
         <div className="mt-4 rounded-[var(--radius-md)] border border-[var(--color-amber)]/30 bg-[var(--color-amber-soft)]/40 p-4">

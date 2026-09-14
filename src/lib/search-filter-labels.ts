@@ -6,6 +6,7 @@ import {
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
 import { getMonthLabel } from "@/lib/constants/months";
+import { TARGET_SEASON_YEAR } from "@/lib/constants/season-review";
 import { formatDataQueryLabel } from "@/lib/search/format-data-query-label";
 import { getRegionLabel } from "@/lib/data/us-regions";
 import type { SearchFilters } from "@/lib/types/program";
@@ -203,6 +204,14 @@ export function getActiveFilterItems(filters: SearchFilters): ActiveFilterItem[]
       remove: {
         excludeMonths: filters.excludeMonths.filter((m) => m !== month),
       },
+    });
+  }
+
+  if (!filters.includePendingSeasonRefresh) {
+    items.push({
+      key: "season-verified-only",
+      label: `${TARGET_SEASON_YEAR} verified only`,
+      remove: { includePendingSeasonRefresh: true },
     });
   }
 

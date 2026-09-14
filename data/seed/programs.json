@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-08-27",
+  "verifiedAt": "2026-09-14",
   "count": 147,
   "programs": [
     {
@@ -30,6 +30,8 @@
       "dateStart": "2026-07-05",
       "dateEnd": "2026-08-01",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "UC Davis, CA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -61,7 +63,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-2",
@@ -91,6 +93,8 @@
       "dateStart": "2026-07-01",
       "dateEnd": "2026-07-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "UC Irvine, CA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -122,7 +126,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-3",
@@ -152,6 +156,8 @@
       "dateStart": "2026-07-05",
       "dateEnd": "2026-08-01",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "UCLA, Los Angeles, CA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -183,7 +189,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-4",
@@ -213,6 +219,8 @@
       "dateStart": "2026-07-05",
       "dateEnd": "2026-08-01",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "UC Merced, CA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -244,7 +252,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-5",
@@ -274,6 +282,8 @@
       "dateStart": "2026-07-05",
       "dateEnd": "2026-08-01",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "UC Santa Cruz, CA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -305,7 +315,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-6",
@@ -335,6 +345,8 @@
       "dateStart": "2026-07-01",
       "dateEnd": "2026-07-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "UC San Diego, CA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -366,7 +378,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-7",
@@ -396,6 +408,8 @@
       "dateStart": "2026-07-19",
       "dateEnd": "2026-07-31",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Stanford CA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -408,7 +422,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://ai4all.spcs.stanford.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-8",
@@ -438,6 +452,8 @@
       "dateStart": "2026-06-15",
       "dateEnd": "2026-06-26",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Online",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -450,7 +466,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://ai4all.spcs.stanford.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-9",
@@ -477,6 +493,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Online",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -489,7 +507,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.inspiritai.com/liveonline",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-10",
@@ -519,6 +537,8 @@
       "dateStart": "2026-07-12",
       "dateEnd": "2026-07-31",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Philadelphia, PA",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -531,7 +551,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://esap.seas.upenn.edu/about/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-11",
@@ -561,6 +581,8 @@
       "dateStart": "2026-06-15",
       "dateEnd": "2026-07-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Cambridge, MA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -573,7 +595,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://web.mit.edu/wtp/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-12",
@@ -601,6 +623,8 @@
       "dateStart": "2026-06-15",
       "dateEnd": "2026-07-17",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Online (live)",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -613,7 +637,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://summerinstitutes.spcs.stanford.edu/courses/2026/artificial-intelligence",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-13",
@@ -642,6 +666,8 @@
       "dateStart": "2026-07-20",
       "dateEnd": "2026-08-01",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Baltimore, MD",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -654,7 +680,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://engineering.jhu.edu/education/engineering-summer-ai-institute/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-14",
@@ -684,6 +710,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Pittsburgh, PA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -696,7 +724,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-15",
@@ -726,6 +754,8 @@
       "dateStart": "2026-06-20",
       "dateEnd": "2026-08-01",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Pittsburgh, PA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -738,7 +768,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-16",
@@ -767,6 +797,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Pittsburgh, PA",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -779,7 +811,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-17",
@@ -810,6 +842,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Pittsburgh, PA",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -822,7 +856,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-18",
@@ -851,6 +885,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Pittsburgh, PA",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -863,7 +899,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-19",
@@ -892,6 +928,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Pittsburgh, PA",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -904,7 +942,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-20",
@@ -933,6 +971,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Pittsburgh, PA",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -945,7 +985,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-21",
@@ -974,6 +1014,8 @@
       "dateStart": "2026-06-28",
       "dateEnd": "2026-08-08",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Cambridge, MA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -1014,7 +1056,7 @@
           "severity": "info"
         }
       ],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-22",
@@ -1043,6 +1085,8 @@
       "dateStart": "2026-06-15",
       "dateEnd": "2026-08-10",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Cambridge, MA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -1055,7 +1099,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://mites.mit.edu/discover-mites/mites-summer/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-23",
@@ -1082,6 +1126,8 @@
       "dateStart": "2026-07-15",
       "dateEnd": "2026-07-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "16 US university campuses",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -1094,7 +1140,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://summerscience.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-24",
@@ -1122,6 +1168,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "UC Berkeley, CA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -1134,7 +1182,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://lawrencehallofscience.org/teen-internship-programs/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-25",
@@ -1163,6 +1211,8 @@
       "dateStart": "2026-07-01",
       "dateEnd": "2026-07-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "West Lafayette, IN",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -1175,7 +1225,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.education.purdue.edu/geri/youth-programs/summer-residential/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-26",
@@ -1202,6 +1252,8 @@
       "dateStart": "2026-07-06",
       "dateEnd": "2026-08-14",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "New York, NY",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -1214,7 +1266,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://outreach.engineering.columbia.edu/shape/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-27",
@@ -1241,6 +1293,8 @@
       "dateStart": "2026-07-05",
       "dateEnd": "2026-07-31",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Worcester, MA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -1253,7 +1307,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.wpi.edu/academics/pre-collegiate/summer-programs/frontiers",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-28",
@@ -1284,6 +1338,8 @@
       "dateStart": "2026-07-01",
       "dateEnd": "2026-07-26",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Baltimore, MD / Hood College / Online",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -1296,7 +1352,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://ei.jhu.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-29",
@@ -1324,6 +1380,8 @@
       "dateStart": "2026-07-06",
       "dateEnd": "2026-08-13",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "New York, NY",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -1336,7 +1394,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://cooper.edu/engineering/stem/summer",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-30",
@@ -1364,6 +1422,8 @@
       "dateStart": "2026-07-06",
       "dateEnd": "2026-08-13",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "New York, NY",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -1376,7 +1436,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://cooper.edu/engineering/stem/summer",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-31",
@@ -1405,6 +1465,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Davis, CA",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -1417,7 +1479,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://education.ucdavis.edu/young-scholars-program",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-32",
@@ -1449,6 +1511,8 @@
       "dateStart": "2026-06-15",
       "dateEnd": "2026-07-25",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Providence, RI",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -1461,7 +1525,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.brown.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-33",
@@ -1489,6 +1553,8 @@
       "dateStart": "2026-06-13",
       "dateEnd": "2026-07-24",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Durham, NC",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -1501,7 +1567,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://learnmore.duke.edu/precollege/all-programs",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-34",
@@ -1530,6 +1596,8 @@
       "dateStart": "2026-06-15",
       "dateEnd": "2026-06-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Beaufort, NC",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -1542,7 +1610,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://learnmore.duke.edu/precollege/duke-university-marine-lab",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-35",
@@ -1569,6 +1637,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Winston-Salem, NC",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -1591,7 +1661,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-36",
@@ -1622,6 +1692,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-07",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Washington, DC",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -1634,7 +1706,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.georgetown.edu/pre-college-programs/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-37",
@@ -1664,6 +1736,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Rotating global cities",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -1676,7 +1750,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.georgetown.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-38",
@@ -1704,6 +1778,8 @@
       "dateStart": "2026-07-05",
       "dateEnd": "2026-08-14",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Medford, MA",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -1716,7 +1792,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://universitycollege.tufts.edu/pre-college/browse/tufts-college-experience",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-39",
@@ -1744,6 +1820,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Medford, MA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -1756,7 +1834,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://universitycollege.tufts.edu/pre-college/academics/summer-hallmark-courses",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-40",
@@ -1784,6 +1862,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Boston, MA",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -1796,7 +1876,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bu.edu/summer/high-school-programs/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-41",
@@ -1824,6 +1904,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Boston, MA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -1836,7 +1918,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bu.edu/summer/high-school-programs/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-42",
@@ -1864,6 +1946,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Boston, MA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -1876,7 +1960,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bu.edu/summer/high-school-programs/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-43",
@@ -1904,6 +1988,8 @@
       "dateStart": "2026-06-28",
       "dateEnd": "2026-07-25",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Poughkeepsie, NY",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -1916,7 +2002,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.marist.edu/admission/summer-pre-college",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-44",
@@ -1944,6 +2030,8 @@
       "dateStart": "2026-06-28",
       "dateEnd": "2026-07-25",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Poughkeepsie, NY",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -1956,7 +2044,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.marist.edu/admission/summer-pre-college",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-45",
@@ -1986,6 +2074,8 @@
       "dateStart": "2026-06-26",
       "dateEnd": "2026-07-24",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Santa Barbara, CA",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -1998,7 +2088,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.summer.ucsb.edu/programs/pre-college",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-46",
@@ -2027,6 +2117,8 @@
       "dateStart": "2026-07-12",
       "dateEnd": "2026-08-08",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Amherst, MA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -2039,7 +2131,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.umass.edu/juniper-young-writers/programs/summer-umass",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-47",
@@ -2067,6 +2159,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Amherst, MA",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -2079,7 +2173,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.umass.edu/uww/pre-college/programs",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-48",
@@ -2107,6 +2201,8 @@
       "dateStart": null,
       "dateEnd": null,
       "datesParseQuality": "unknown",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Online",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -2119,7 +2215,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://case.precollegeprograms.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-49",
@@ -2148,6 +2244,8 @@
       "dateStart": "2026-06-21",
       "dateEnd": "2026-07-31",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Cambridge, MA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -2160,7 +2258,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.harvard.edu/high-school-programs/pre-college-program/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-50",
@@ -2191,6 +2289,8 @@
       "dateStart": "2026-06-20",
       "dateEnd": "2026-08-08",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Cambridge, MA & Online",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -2222,7 +2322,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-51",
@@ -2249,6 +2349,8 @@
       "dateStart": "2026-06-30",
       "dateEnd": "2026-08-08",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Philadelphia, PA",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -2261,7 +2363,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://hs.sas.upenn.edu/summer-programs/pre-college-program",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-52",
@@ -2289,6 +2391,8 @@
       "dateStart": "2026-06-15",
       "dateEnd": "2026-07-23",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Chicago, IL & Online",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -2301,7 +2405,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.uchicago.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-53",
@@ -2329,6 +2433,8 @@
       "dateStart": "2026-07-01",
       "dateEnd": "2026-08-20",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "New York, NY",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -2341,7 +2447,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.nyu.edu/admissions/high-school-and-middle-school-programs/high-school-programs/nyu-precollege/explore-precollege.html",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-54",
@@ -2369,6 +2475,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Berkeley, CA",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -2381,7 +2489,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.berkeley.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-55",
@@ -2408,6 +2516,8 @@
       "dateStart": "2026-06-14",
       "dateEnd": "2026-07-12",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Los Angeles, CA",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -2420,7 +2530,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.usc.edu/summer-programs/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-56",
@@ -2450,6 +2560,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Rochester, NY & Online",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -2462,7 +2574,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://admissions.rochester.edu/pre-college/programs/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-57",
@@ -2489,6 +2601,8 @@
       "dateStart": "2026-06-15",
       "dateEnd": "2026-07-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "New York, NY",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -2501,7 +2615,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.barnard.edu/prebaccalaureate",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-58",
@@ -2529,6 +2643,8 @@
       "dateStart": "2026-06-28",
       "dateEnd": "2026-07-24",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Stony Brook, NY",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -2541,7 +2657,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/index.php",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-59",
@@ -2569,6 +2685,8 @@
       "dateStart": "2026-06-28",
       "dateEnd": "2026-07-24",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Stony Brook, NY",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -2581,7 +2699,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/commuter-experience.php",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-60",
@@ -2609,6 +2727,8 @@
       "dateStart": "2026-06-28",
       "dateEnd": "2026-07-24",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Stony Brook, NY",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -2621,7 +2741,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/commuter-experience.php",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-61",
@@ -2652,6 +2772,8 @@
       "dateStart": "2026-06-28",
       "dateEnd": "2026-07-24",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Stony Brook, NY",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -2664,7 +2786,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/biotechnology.php",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-62",
@@ -2695,6 +2817,8 @@
       "dateStart": "2026-06-28",
       "dateEnd": "2026-07-24",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Stony Brook, NY",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -2707,7 +2831,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/robotics-engineering.php",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-63",
@@ -2736,6 +2860,8 @@
       "dateStart": "2026-06-28",
       "dateEnd": "2026-07-24",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Stony Brook, NY",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -2748,7 +2874,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/health-professions.php",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-64",
@@ -2777,6 +2903,8 @@
       "dateStart": "2026-06-28",
       "dateEnd": "2026-07-24",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Stony Brook, NY",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -2789,7 +2917,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/creative-problem-solving-for-competitions.php",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-65",
@@ -2818,6 +2946,8 @@
       "dateStart": "2026-06-28",
       "dateEnd": "2026-07-24",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Stony Brook, NY",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -2830,7 +2960,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/pre-law.php",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-66",
@@ -2859,6 +2989,8 @@
       "dateStart": "2026-06-28",
       "dateEnd": "2026-07-24",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Stony Brook, NY",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -2871,7 +3003,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/environmental-science-in-the-worm-lab.php",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-67",
@@ -2901,6 +3033,8 @@
       "dateStart": "2026-06-21",
       "dateEnd": "2026-08-01",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Friday Harbor, WA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -2913,7 +3047,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://salishseasciences.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-68",
@@ -2943,6 +3077,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-07-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Southampton, NY",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -2955,7 +3091,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/southampton/somas_info.php",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-69",
@@ -2982,6 +3118,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Bodega Bay, CA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -2994,7 +3132,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://cpe.ucdavis.edu/course/uc-davis-pre-college-program-coastal-marine-science",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-70",
@@ -3023,6 +3161,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Woods Hole, MA & at sea",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -3035,7 +3175,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://sea.edu/programs/finder/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-71",
@@ -3062,6 +3202,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Topsail Island, NC",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -3074,7 +3216,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://seaturtlecamp.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-72",
@@ -3103,6 +3245,8 @@
       "dateStart": "2026-06-22",
       "dateEnd": "2026-08-03",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Eleuthera, Bahamas",
       "isInternational": true,
       "hasCollegeCredit": true,
@@ -3115,7 +3259,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://islandschool.org/high-school-semester-summer-term/summer-program/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-73",
@@ -3144,6 +3288,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Ballard, Seattle, WA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -3156,7 +3302,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sunsetbaywharf.com/home",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-74",
@@ -3185,6 +3331,8 @@
       "dateStart": "2026-08-15",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Pembrokeshire, Wales, UK",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -3197,7 +3345,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.field-studies-council.org/courses-and-experiences/static-courses/marine-science-camp/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-75",
@@ -3226,6 +3374,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Global (Costa Rica, US, etc.)",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -3238,7 +3388,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://earthwatch.org/teen-expeditions",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-76",
@@ -3267,6 +3417,8 @@
       "dateStart": "2026-07-01",
       "dateEnd": "2026-07-10",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Copper River Basin, AK",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -3279,7 +3431,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://copperriver.org/programs/watershed-education/copper-river-stewardship-program/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-77",
@@ -3308,6 +3460,8 @@
       "dateStart": "2026-06-15",
       "dateEnd": "2026-07-27",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "British Virgin Islands",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -3320,7 +3474,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.actionquest.com",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-78",
@@ -3348,6 +3502,8 @@
       "dateStart": "2026-06-22",
       "dateEnd": "2026-07-18",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Dauphin Island, AL",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -3360,7 +3516,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.disl.edu/dhp/summer-camps/marine-science-class/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-79",
@@ -3388,6 +3544,8 @@
       "dateStart": "2026-05-24",
       "dateEnd": "2026-05-28",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Dauphin Island, AL",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -3400,7 +3558,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.disl.edu/dhp/summer-camps/coastal-fisheries/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-80",
@@ -3429,6 +3587,8 @@
       "dateStart": "2026-06-16",
       "dateEnd": "2026-07-06",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "British Virgin Islands",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -3441,7 +3601,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.seatrekbvi.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-81",
@@ -3469,6 +3629,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Grand Manan, Bay of Fundy, Canada",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -3481,7 +3643,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://whalecamp.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-82",
@@ -3509,6 +3671,8 @@
       "dateStart": "2026-07-12",
       "dateEnd": "2026-08-07",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Seal Harbor, Mount Desert Island, ME",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -3521,7 +3685,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://acadiainstitute.com/advanced-marine-science-camp-program/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-83",
@@ -3551,6 +3715,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Coral Gables, FL & Key Largo",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -3563,7 +3729,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.dcie.miami.edu/summer-programs/academies/credit/index.html",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-84",
@@ -3592,6 +3758,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Redwood City, CA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -3604,7 +3772,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.spinnakersailing.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-85",
@@ -3635,6 +3803,8 @@
       "dateStart": "2026-05-31",
       "dateEnd": "2026-08-15",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "UC Berkeley, UCSD, Columbia University",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -3647,7 +3817,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.rosettainstitute.org/biomedical-summer-camps/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-86",
@@ -3674,6 +3844,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-07-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Philadelphia, PA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -3686,7 +3858,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.boldsummers.com/summer-programs/penn-medicine-summer-program/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-87",
@@ -3713,6 +3885,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-06-05",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Athens, GA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -3725,7 +3899,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.georgiacenter.uga.edu/youth/summer-academy/mini-medical-school-b",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-88",
@@ -3754,6 +3928,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-06-26",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Atlanta, GA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -3766,7 +3942,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.msm.edu/Prospective_Students/admissions/PipelinePrograms/BenCarson.php",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-89",
@@ -3795,6 +3971,8 @@
       "dateStart": "2026-06-15",
       "dateEnd": "2026-07-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Boston, MA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -3807,7 +3985,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bostonleadershipinstitute.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-90",
@@ -3834,6 +4012,8 @@
       "dateStart": "2026-07-06",
       "dateEnd": "2026-07-31",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Online (virtual for 2026)",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -3846,7 +4026,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://hiprc.org/training/high-school/insight-hs/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-91",
@@ -3876,6 +4056,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-06-10",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Robinson Forest, Clayhole, KY",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -3888,7 +4070,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://entomology.ca.uky.edu/content/entomology-leadership-program",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-92",
@@ -3915,6 +4097,8 @@
       "dateStart": "2026-06-08",
       "dateEnd": "2026-07-17",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Online",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -3927,7 +4111,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.awesomemath.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-93",
@@ -3954,6 +4138,8 @@
       "dateStart": "2026-06-28",
       "dateEnd": "2026-07-26",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Portland, OR",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -3966,7 +4152,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "http://www.mathpath.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-94",
@@ -3993,6 +4179,8 @@
       "dateStart": "2026-06-15",
       "dateEnd": "2026-08-10",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Boston, MA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -4005,7 +4193,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://promys.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-95",
@@ -4032,6 +4220,8 @@
       "dateStart": "2026-07-01",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Rotating US campuses",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -4044,7 +4234,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.mathcamp.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-96",
@@ -4072,6 +4262,8 @@
       "dateStart": "2026-06-21",
       "dateEnd": "2026-07-17",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Stanford, CA & Online",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -4084,7 +4276,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://sumac.spcs.stanford.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-97",
@@ -4111,6 +4303,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Online",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -4123,7 +4317,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.imacs.org/program/summer/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-98",
@@ -4153,6 +4347,8 @@
       "dateStart": "2026-07-20",
       "dateEnd": "2026-07-31",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Harvard/Stanford/Oxford",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -4165,7 +4361,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cybermath.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-99",
@@ -4196,6 +4392,8 @@
       "dateStart": "2026-06-08",
       "dateEnd": "2026-08-07",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "In-person (CA) & online live",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -4208,7 +4406,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://alphastar.academy/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-100",
@@ -4235,6 +4433,8 @@
       "dateStart": "2026-06-14",
       "dateEnd": "2026-07-25",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Iowa City, IA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -4247,7 +4447,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://iyws.program.uiowa.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-101",
@@ -4274,6 +4474,8 @@
       "dateStart": "2026-06-21",
       "dateEnd": "2026-07-31",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Stanford, CA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -4286,7 +4488,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://summerhumanities.stanford.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-102",
@@ -4313,6 +4515,8 @@
       "dateStart": "2026-06-21",
       "dateEnd": "2026-07-25",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Gambier, OH",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -4325,7 +4529,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://kenyonreview.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-103",
@@ -4355,6 +4559,8 @@
       "dateStart": "2026-06-15",
       "dateEnd": "2026-08-10",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Princeton, NJ",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -4367,7 +4573,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://psjp.princeton.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-104",
@@ -4396,6 +4602,8 @@
       "dateStart": "2026-07-18",
       "dateEnd": "2026-07-29",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Rotating university campuses",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -4408,7 +4616,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.tellurideassociation.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-105",
@@ -4437,6 +4645,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-07-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Online",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -4449,7 +4659,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://linguistics.osu.edu/undergrad/sliys",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-106",
@@ -4476,6 +4686,8 @@
       "dateStart": "2026-06-27",
       "dateEnd": "2026-08-12",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Belgrade Lakes, ME",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -4488,7 +4700,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.camplaurel.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-107",
@@ -4517,6 +4729,8 @@
       "dateStart": "2026-06-28",
       "dateEnd": "2026-08-09",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Traverse City, MI",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -4539,7 +4753,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-108",
@@ -4568,6 +4782,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Wheaton College, MA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -4580,7 +4796,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://explo.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-109",
@@ -4607,6 +4823,8 @@
       "dateStart": "2026-06-15",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Berkshires, MA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -4619,7 +4837,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://bccymca.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-110",
@@ -4648,6 +4866,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Lake George, NY",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -4660,7 +4880,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.adirondackcamp.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-111",
@@ -4689,6 +4909,8 @@
       "dateStart": "2026-07-09",
       "dateEnd": "2026-08-07",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Wind River Range WY; Alaska; Idaho",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -4701,7 +4923,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.nols.edu/teen-expeditions/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-112",
@@ -4730,6 +4952,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "CO Rockies, MN Boundary Waters, CA Sierra",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -4752,7 +4976,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-113",
@@ -4781,6 +5005,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "US Rockies, Pacific NW, European Alps",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -4803,7 +5029,7 @@
           "severity": "info"
         }
       ],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-114",
@@ -4830,6 +5056,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Yosemite, Olympic, Joshua Tree NP",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -4842,7 +5070,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://lastingadventures.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-115",
@@ -4872,6 +5100,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "New England, California, Europe, Caribbean",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -4884,7 +5114,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.apogeeadventures.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-116",
@@ -4913,6 +5143,8 @@
       "dateStart": "2026-06-30",
       "dateEnd": "2026-08-06",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "West US, Hawaii, Costa Rica, Alps",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -4925,7 +5157,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://boldearth.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-117",
@@ -4954,6 +5186,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-07-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Rockies, Chamonix, Pacific NW, Fiji",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -4966,7 +5200,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://moondanceadventures.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-118",
@@ -4993,6 +5227,8 @@
       "dateStart": "2026-06-13",
       "dateEnd": "2026-07-26",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Alaska, Grand Teton, European Alps",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -5005,7 +5241,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.wildernessadventures.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-119",
@@ -5034,6 +5270,8 @@
       "dateStart": "2026-06-21",
       "dateEnd": "2026-07-31",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "New Haven, CT",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -5046,7 +5284,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://globalscholars.yale.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-120",
@@ -5075,6 +5313,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-20",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Panama, Costa Rica, Paraguay",
       "isInternational": true,
       "hasCollegeCredit": true,
@@ -5087,7 +5327,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://amigosinternational.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-121",
@@ -5114,6 +5354,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-07-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Global (40+ cities)",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -5126,7 +5368,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.ciee.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-122",
@@ -5153,6 +5395,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Global (40+ countries)",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -5165,7 +5409,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://afs.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-123",
@@ -5194,6 +5438,8 @@
       "dateStart": "2026-06-28",
       "dateEnd": "2026-08-01",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Global (SE Asia, Africa)",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -5206,7 +5452,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://yes-abroad.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-124",
@@ -5233,6 +5479,8 @@
       "dateStart": null,
       "dateEnd": null,
       "datesParseQuality": "unknown",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Global",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -5245,7 +5493,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.rotary.org/en/our-programs/youth-exchanges",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-125",
@@ -5274,6 +5522,8 @@
       "dateStart": "2026-06-15",
       "dateEnd": "2026-07-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Global & US college sites",
       "isInternational": true,
       "hasCollegeCredit": true,
@@ -5286,7 +5536,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.goputney.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-126",
@@ -5315,6 +5565,8 @@
       "dateStart": "2026-08-01",
       "dateEnd": "2026-08-10",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Global (Costa Rica, Fiji, Peru, etc.)",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -5327,7 +5579,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://arccprograms.com/summer-overview/summer-programs-high-school/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-127",
@@ -5356,6 +5608,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Shanghai, Beijing, other China cities",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -5368,7 +5622,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.thatsmandarin.com/chinese-summer-camp/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-128",
@@ -5396,6 +5650,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Shanghai, China",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -5408,7 +5664,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://goeastmandarin.com/kids-chinese-camp/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-129",
@@ -5435,6 +5691,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Kunming, Beijing, or Chengdu, China",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -5447,7 +5705,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://keatschinese.com/chinese-language-courses/summer-camp-in-china/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-130",
@@ -5474,6 +5732,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "China (various cities)",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -5486,7 +5746,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.chinainternshipplacements.com/study-abroad-china/chinese-summer-camp-teens/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-131",
@@ -5513,6 +5773,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "China",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -5525,7 +5787,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://ltl-school.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-132",
@@ -5552,6 +5814,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-07-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Nashville, TN",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -5564,7 +5828,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://pty.vanderbilt.edu/for-students/vsa/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-133",
@@ -5591,6 +5855,8 @@
       "dateStart": "2026-06-28",
       "dateEnd": "2026-08-07",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Evanston, IL",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -5603,7 +5869,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.ctd.northwestern.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-134",
@@ -5631,6 +5897,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Philadelphia, PA (Wharton/UPenn)",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -5643,7 +5911,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://globalyouth.wharton.upenn.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-135",
@@ -5671,6 +5939,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Online",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -5683,7 +5953,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://globalyouth.wharton.upenn.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-136",
@@ -5713,6 +5983,8 @@
       "dateStart": "2026-06-22",
       "dateEnd": "2026-08-01",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Multiple university campuses incl. JHU + online",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -5725,7 +5997,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://cty.jhu.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-137",
@@ -5754,6 +6026,8 @@
       "dateStart": "2026-07-05",
       "dateEnd": "2026-07-25",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Bethlehem, PA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -5766,7 +6040,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://global.lehigh.edu/iacocca-institute/high-school",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-138",
@@ -5793,6 +6067,8 @@
       "dateStart": "2026-06-21",
       "dateEnd": "2026-06-24",
       "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "San Francisco & Silicon Valley, CA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -5805,7 +6081,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://global.lehigh.edu/programs/iacocca-global-future-leaders-lab-silicon-valley",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-139",
@@ -5835,6 +6111,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "UC Berkeley, Yale, Georgetown, Columbia/Barnard, UCLA, UCSB, UCSD, MIT, Duke, Cal Poly, Georgia Tech, U Michigan, U Washington, Oxford",
       "isInternational": true,
       "hasCollegeCredit": false,
@@ -5847,7 +6125,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://summerspringboard.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-140",
@@ -5875,6 +6153,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Various college campuses",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -5887,7 +6167,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.envisionexperience.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-141",
@@ -5918,6 +6198,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Ithaca, NY",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -5930,7 +6212,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://sce.cornell.edu/precollege/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-142",
@@ -5961,6 +6243,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Ithaca, NY",
       "isInternational": false,
       "hasCollegeCredit": true,
@@ -5973,7 +6257,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://sce.cornell.edu/precollege/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-143",
@@ -6002,6 +6286,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-31",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Berkeley, CA",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -6014,7 +6300,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://changemaker.berkeley.edu/pre-college",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-144",
@@ -6045,6 +6331,8 @@
       "dateStart": "2026-07-01",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Stanford, UC Berkeley, UCLA, Caltech, Yale, Georgetown, MIT, Tufts + Online",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -6057,7 +6345,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.educationunlimited.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-145",
@@ -6088,6 +6376,8 @@
       "dateStart": "2026-07-01",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Stanford, UC Berkeley, UCLA + other campuses",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -6100,7 +6390,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.educationunlimited.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-146",
@@ -6129,6 +6419,8 @@
       "dateStart": "2026-07-01",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Stanford, UC Berkeley, UCLA + East Coast campuses",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -6141,7 +6433,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.educationunlimited.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     },
     {
       "id": "prog-147",
@@ -6171,6 +6463,8 @@
       "dateStart": "2026-06-01",
       "dateEnd": "2026-08-28",
       "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Berkeley/East Bay, CA (UC Berkeley, VC Nest, Nueva School, UCSF)",
       "isInternational": false,
       "hasCollegeCredit": false,
@@ -6183,7 +6477,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.creativedelegates.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-08-27"
+      "dataVerifiedAt": "2026-09-14"
     }
   ]
 }

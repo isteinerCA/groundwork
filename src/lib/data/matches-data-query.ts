@@ -1,5 +1,6 @@
 import type { Program } from "@/lib/types/program";
 import { termMatchesInText } from "@/lib/data/fuzzy-text-match";
+import { dayToDaySearchText } from "@/lib/data/day-to-day";
 import { matchesLocationQuery, resolveLocationQuery } from "@/lib/data/matches-location";
 import { programMatchesAnyRegion, resolveRegionQuery } from "@/lib/data/us-regions";
 
@@ -35,6 +36,8 @@ export function programSearchText(program: Program): string {
     .map((flag) => `${flag.title} ${flag.body} ${flag.type}`)
     .join(" ");
 
+  const dayToDayText = dayToDaySearchText(program.dayToDay);
+
   return [
     program.name,
     program.institution,
@@ -50,6 +53,7 @@ export function programSearchText(program: Program): string {
     program.datesDisplay,
     ...program.secondaryTags,
     flagText,
+    dayToDayText,
   ]
     .filter(Boolean)
     .join(" ")

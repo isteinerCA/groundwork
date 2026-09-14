@@ -12,12 +12,28 @@ import { normalizeAdmissionType } from "../src/lib/data/normalize-admission";
 import { normalizeDuration } from "../src/lib/data/normalize-duration";
 import { normalizeFormat } from "../src/lib/data/normalize-format";
 import { normalizeGrade } from "../src/lib/data/normalize-grade";
+import { parseReviewStatus, parseSeasonYear } from "../src/lib/data/normalize-season-review";
 import { parsePrice } from "../src/lib/data/parse-price";
-import type { Program, ProgramCsvRow, ProgramFlag } from "../src/lib/types/program";
+import { isDayToDaySourceType } from "../src/lib/constants/day-to-day";
+import { isValidDayToDay } from "../src/lib/data/day-to-day";
+import type { Program, ProgramCsvRow, ProgramFlag, ProgramDayToDay } from "../src/lib/types/program";
+
+interface CuratedMatch {
+  nameIncludes?: string;
+  slugIncludes?: string;
+  programGroupId?: string;
+  /** When set, rule applies only to this offering label (2027 Offering Label / 2026 Track/Session). */
+  offeringLabel?: string;
+}
 
 interface FlagRule {
-  match: { nameIncludes?: string; slugIncludes?: string };
+  match: CuratedMatch;
   flags: ProgramFlag[];
+}
+
+interface DayToDayRule {
+  match: CuratedMatch;
+  dayToDay: ProgramDayToDay;
 }
 
 function parseCsv(content: string): ProgramCsvRow[] {
@@ -83,25 +99,79 @@ function loadFlagRules(): FlagRule[] {
   return JSON.parse(readFileSync(path, "utf-8")) as FlagRule[];
 }
 
+function loadDayToDayRules(): DayToDayRule[] {
+  const path = resolve(process.cwd(), "data/seed/day-to-day.json");
+  if (!existsSync(path)) return [];
+  return JSON.parse(readFileSync(path, "utf-8")) as DayToDayRule[];
+}
+
+function curatedRuleMatches(
+  match: CuratedMatch,
+  program: Pick<Program, "name" | "slug" | "programGroupId" | "trackDetail">,
+): boolean {
+  if (match.programGroupId) {
+    if (program.programGroupId !== match.programGroupId) return false;
+  } else {
+    const nameHit = match.nameIncludes ? program.name.includes(match.nameIncludes) : false;
+    const slugHit = match.slugIncludes ? program.slug.includes(match.slugIncludes) : false;
+    if (!nameHit && !slugHit) return false;
+  }
+
+  if (match.offeringLabel) {
+    const label = program.trackDetail?.trim() ?? "";
+    if (label !== match.offeringLabel) return false;
+  }
+
+  return true;
+}
+
 function mergeFlags(
-  program: Pick<Program, "name" | "slug">,
+  program: Pick<Program, "name" | "slug" | "programGroupId" | "trackDetail">,
   csvFlags: ProgramFlag[],
   rules: FlagRule[],
 ): ProgramFlag[] {
   const byId = new Map<string, ProgramFlag>();
   for (const rule of rules) {
-    const nameHit = rule.match.nameIncludes
-      ? program.name.includes(rule.match.nameIncludes)
-      : false;
-    const slugHit = rule.match.slugIncludes
-      ? program.slug.includes(rule.match.slugIncludes)
-      : false;
-    if (nameHit || slugHit) {
+    if (curatedRuleMatches(rule.match, program)) {
       for (const flag of rule.flags) byId.set(flag.id, flag);
     }
   }
   for (const flag of csvFlags) byId.set(flag.id, flag);
   return [...byId.values()];
+}
+
+function mergeDayToDay(
+  program: Pick<Program, "name" | "slug" | "programGroupId" | "trackDetail">,
+  rules: DayToDayRule[],
+): ProgramDayToDay | undefined {
+  const matches = rules.filter((rule) => curatedRuleMatches(rule.match, program));
+
+  const offeringOverride = matches.find(
+    (rule) => rule.match.offeringLabel && isValidDayToDay(rule.dayToDay),
+  );
+  if (offeringOverride) return offeringOverride.dayToDay;
+
+  const groupDefault = matches.find(
+    (rule) => !rule.match.offeringLabel && isValidDayToDay(rule.dayToDay),
+  );
+  return groupDefault?.dayToDay;
+}
+
+function validateDayToDayRules(rules: DayToDayRule[]): void {
+  for (const [index, rule] of rules.entries()) {
+    const { dayToDay } = rule;
+    const notes = dayToDay.notes?.trim();
+    if (notes && !isDayToDaySourceType(dayToDay.sourceType)) {
+      console.warn(
+        `day-to-day.json rule ${index + 1}: notes present but sourceType missing or invalid — skipped at merge`,
+      );
+    }
+    if (dayToDay.sourceType && !notes) {
+      console.warn(
+        `day-to-day.json rule ${index + 1}: sourceType set but notes empty — skipped at merge`,
+      );
+    }
+  }
 }
 
 function detectInternational(location: string): boolean {
@@ -119,6 +189,7 @@ function rowToProgram(
   index: number,
   verifiedAt: string,
   flagRules: FlagRule[],
+  dayToDayRules: DayToDayRule[],
 ): Program | null {
   const category = categoryIdFromCsvValue(row["Primary Category"]);
   if (!category) {
@@ -126,7 +197,14 @@ function rowToProgram(
     return null;
   }
 
-  const track = row["Track/Session"]?.trim();
+  const reviewStatus = parseReviewStatus(row["Review Status"]);
+  if (reviewStatus === "needs_review") {
+    return null;
+  }
+
+  const track = row["Track/Session"]?.trim() || row["Offering Label"]?.trim();
+  const programGroupId =
+    row["Program Group ID"]?.trim() || row["Program Group Id"]?.trim() || undefined;
   const slug = slugify(row["Program Name"], track);
   const { admissionType, admissionDisplay } = normalizeAdmissionType(row["Admission Type"]);
   const price = parsePrice(row.Price);
@@ -138,6 +216,7 @@ function rowToProgram(
     id: `prog-${index + 1}`,
     slug,
     name: row["Program Name"].trim(),
+    ...(programGroupId ? { programGroupId } : {}),
     category,
     secondaryTags: (row["Secondary Tags"] ?? "")
       .split(/[,;]/)
@@ -150,7 +229,13 @@ function rowToProgram(
     formatDisplay: format.formatDisplay,
     formatTags: format.formatTags,
     ...duration,
-    datesDisplay: row["Dates 2026"]?.trim() ?? "",
+    datesDisplay:
+      row["Dates Display"]?.trim() ||
+      row["Dates 2027"]?.trim() ||
+      row["Dates 2026"]?.trim() ||
+      "",
+    seasonYear: parseSeasonYear(row["Season Year"]),
+    reviewStatus,
     locationDisplay: row.Location?.trim() ?? "",
     isInternational: detectInternational(row.Location ?? ""),
     hasCollegeCredit: /^yes/i.test(row.Credit),
@@ -161,13 +246,18 @@ function rowToProgram(
     dataVerifiedAt: verifiedAt,
   };
 
-  const flags = mergeFlags(
-    { name: programBase.name, slug },
-    parseFlags(row.Flags),
-    flagRules,
-  );
+  const mergeContext = {
+    name: programBase.name,
+    slug,
+    programGroupId: programBase.programGroupId,
+    trackDetail: programBase.trackDetail,
+  };
 
-  return { ...programBase, flags };
+  const flags = mergeFlags(mergeContext, parseFlags(row.Flags), flagRules);
+
+  const dayToDay = mergeDayToDay(mergeContext, dayToDayRules);
+
+  return { ...programBase, flags, ...(dayToDay ? { dayToDay } : {}) };
 }
 
 function main() {
@@ -182,10 +272,12 @@ function main() {
   }
 
   const flagRules = loadFlagRules();
+  const dayToDayRules = loadDayToDayRules();
+  validateDayToDayRules(dayToDayRules);
   const content = readFileSync(inputPath, "utf-8");
   const rows = parseCsv(content);
   const programs = rows
-    .map((row, i) => rowToProgram(row, i, verifiedAt, flagRules))
+    .map((row, i) => rowToProgram(row, i, verifiedAt, flagRules, dayToDayRules))
     .filter((p): p is Program => p !== null);
 
   mkdirSync(dirname(outputPath), { recursive: true });

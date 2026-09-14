@@ -127,6 +127,8 @@ const stubProgram = (overrides: Partial<Program> & Pick<Program, "name" | "locat
     financialAidAvailable: false,
     websiteUrl: "https://example.com",
     flags: [],
+    seasonYear: 2026,
+    reviewStatus: "provisional",
     dataVerifiedAt: "2026-01-01",
     ...overrides,
   }) as Program;

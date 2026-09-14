@@ -2,7 +2,7 @@
 
 Last updated: Sprint 1 (July 2026)
 
-> **2027 refresh:** See [DATA-2027.md](./DATA-2027.md) for the planned schema (structured dates, Program Group ID, one row per offering). Current inventory: [PROGRAM-CATALOG.md](./PROGRAM-CATALOG.md).
+> **2027 refresh:** See [DATA-2027.md](./DATA-2027.md) for the planned schema (structured dates, Program Group ID, one row per offering). Current inventory: [PROGRAM-CATALOG.md](./PROGRAM-CATALOG.md). **2028+ editorial workflow:** [DATA-REFRESH-TRIAGE.md](./DATA-REFRESH-TRIAGE.md).
 
 ## Final CSV columns (expected)
 
@@ -112,6 +112,14 @@ Each flag object:
 Flag types: `safety`, `deposit`, `selectivity`, `residency`, `physical`, `turnover`, `other`
 
 All flags must include `sourceCitation` (PRD §7.3).
+
+## Day-to-day experience (curated layer)
+
+Qualitative prose about daily structure and independence — **not** in the CSV. Maintained in `data/seed/day-to-day.json`, merged at import alongside flags.
+
+**Coverage states:** researched + published (`official_policy` / `program_faq`), researched + nothing published (`not_found` with explanatory notes), or not yet researched (no JSON rule → no tile section). Unresearched ≠ `not_found`.
+
+See [DATA-2027.md — Day-to-day experience](./DATA-2027.md#day-to-day-experience-curated-layer) for schema, rendering rules, and `offeringLabel` override pattern.
 
 ## Open items (finalize with CSV)
 

@@ -12,7 +12,32 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CSV_PATH = ROOT / "data/source/summer-programs.csv"
 FLAGS_PATH = ROOT / "data/seed/flags.json"
+DAY_TO_DAY_PATH = ROOT / "data/seed/day-to-day.json"
 OUT_PATH = ROOT / "data/seed/programs.json"
+
+PUBLISHED_REVIEW_STATUSES = {"verified", "provisional", "awaiting_source"}
+DEFAULT_REVIEW_STATUS = "provisional"
+LEGACY_CATALOG_SEASON_YEAR = 2026
+
+
+def parse_review_status(raw: str | None) -> str:
+    normalized = re.sub(r"\s+", "_", (raw or "").strip().lower())
+    if normalized == "needs_review":
+        return "needs_review"
+    if normalized in PUBLISHED_REVIEW_STATUSES:
+        return normalized
+    return DEFAULT_REVIEW_STATUS
+
+
+def parse_season_year(raw: str | None) -> int:
+    try:
+        year = int((raw or "").strip())
+        if 2000 <= year <= 2100:
+            return year
+    except ValueError:
+        pass
+    return LEGACY_CATALOG_SEASON_YEAR
+
 
 CATEGORIES = {
     "Artificial Intelligence": "artificial-intelligence",
@@ -613,11 +638,66 @@ def load_flag_rules():
     return json.loads(FLAGS_PATH.read_text())
 
 
-def merge_flags(name: str, slug: str, csv_flags: list, rules: list) -> list:
+def load_day_to_day_rules():
+    if not DAY_TO_DAY_PATH.exists():
+        return []
+    return json.loads(DAY_TO_DAY_PATH.read_text())
+
+
+DAY_TO_DAY_SOURCE_TYPES = {
+    "official_policy",
+    "program_faq",
+    "third_party_synthesis",
+    "not_found",
+}
+
+
+def is_valid_day_to_day(day_to_day: dict | None) -> bool:
+    if not day_to_day:
+        return False
+    notes = (day_to_day.get("notes") or "").strip()
+    source_type = day_to_day.get("sourceType")
+    if not notes:
+        return False
+    return source_type in DAY_TO_DAY_SOURCE_TYPES
+
+
+def curated_rule_matches(match: dict, program: dict) -> bool:
+    group_id = match.get("programGroupId")
+    if group_id:
+        if program.get("programGroupId") != group_id:
+            return False
+    else:
+        name = program.get("name", "")
+        slug = program.get("slug", "")
+        inc = match.get("nameIncludes", "")
+        slug_inc = match.get("slugIncludes", "")
+        if not ((inc and inc in name) or (slug_inc and slug_inc in slug)):
+            return False
+
+    offering_label = match.get("offeringLabel")
+    if offering_label:
+        label = (program.get("trackDetail") or "").strip()
+        if label != offering_label:
+            return False
+    return True
+
+
+def merge_day_to_day(program: dict, rules: list) -> dict | None:
+    matches = [rule for rule in rules if curated_rule_matches(rule.get("match", {}), program)]
+    for rule in matches:
+        if rule.get("match", {}).get("offeringLabel") and is_valid_day_to_day(rule.get("dayToDay")):
+            return rule["dayToDay"]
+    for rule in matches:
+        if not rule.get("match", {}).get("offeringLabel") and is_valid_day_to_day(rule.get("dayToDay")):
+            return rule["dayToDay"]
+    return None
+
+
+def merge_flags(program: dict, csv_flags: list, rules: list) -> list:
     by_id = {}
     for rule in rules:
-        inc = rule.get("match", {}).get("nameIncludes", "")
-        if inc and inc in name:
+        if curated_rule_matches(rule.get("match", {}), program):
             for f in rule.get("flags", []):
                 by_id[f["id"]] = f
     for f in csv_flags:
@@ -628,6 +708,7 @@ def merge_flags(name: str, slug: str, csv_flags: list, rules: list) -> list:
 def main():
     verified = date.today().isoformat()
     rules = load_flag_rules()
+    day_to_day_rules = load_day_to_day_rules()
     programs = []
 
     with CSV_PATH.open(newline="", encoding="utf-8-sig") as f:
@@ -636,13 +717,20 @@ def main():
             if not cat:
                 print(f"Skip unknown category: {row['Primary Category']}")
                 continue
-            track = (row.get("Track/Session") or "").strip()
+            review_status = parse_review_status(row.get("Review Status"))
+            if review_status == "needs_review":
+                continue
+            track = (row.get("Track/Session") or row.get("Offering Label") or "").strip()
+            program_group_id = (row.get("Program Group ID") or row.get("Program Group Id") or "").strip()
             slug = slugify(row["Program Name"], track)
             admission_type, admission_display = normalize_admission(row["Admission Type"])
             price = parse_price(row["Price"])
             fmt = normalize_format(row.get("Format", ""))
             dur = normalize_duration(row.get("Length", ""))
-            dates = parse_dates_display(row.get("Dates 2026") or "")
+            dates_display = (
+                row.get("Dates Display") or row.get("Dates 2027") or row.get("Dates 2026") or ""
+            ).strip()
+            dates = parse_dates_display(dates_display)
             grades = normalize_grade(row["Grades"])
             csv_flags = []
             if row.get("Flags", "").strip():
@@ -650,11 +738,21 @@ def main():
                     csv_flags = json.loads(row["Flags"])
                 except json.JSONDecodeError:
                     pass
-            flags = merge_flags(row["Program Name"], slug, csv_flags, rules)
-            programs.append({
+            flags = merge_flags(
+                {
+                    "name": row["Program Name"].strip(),
+                    "slug": slug,
+                    **({"programGroupId": program_group_id} if program_group_id else {}),
+                    **({"trackDetail": track} if track else {}),
+                },
+                csv_flags,
+                rules,
+            )
+            program = {
                 "id": f"prog-{i+1}",
                 "slug": slug,
                 "name": row["Program Name"].strip(),
+                **({"programGroupId": program_group_id} if program_group_id else {}),
                 "category": cat,
                 "secondaryTags": [t.strip() for t in re.split(r"[,;]", row.get("Secondary Tags", "")) if t.strip()],
                 **({"trackDetail": track} if track else {}),
@@ -663,8 +761,10 @@ def main():
                 "admissionDisplay": admission_display,
                 **fmt,
                 **dur,
-                "datesDisplay": (row.get("Dates 2026") or "").strip(),
+                "datesDisplay": dates_display,
                 **dates,
+                "seasonYear": parse_season_year(row.get("Season Year")),
+                "reviewStatus": review_status,
                 "locationDisplay": row["Location"].strip(),
                 "isInternational": detect_international(row["Location"]),
                 "hasCollegeCredit": bool(re.match(r"^yes", row.get("Credit", ""), re.I)),
@@ -674,7 +774,11 @@ def main():
                 "websiteUrl": row["URL"].strip(),
                 "flags": flags,
                 "dataVerifiedAt": verified,
-            })
+            }
+            day_to_day = merge_day_to_day(program, day_to_day_rules)
+            if day_to_day:
+                program["dayToDay"] = day_to_day
+            programs.append(program)
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps({"verifiedAt": verified, "count": len(programs), "programs": programs}, indent=2))
