@@ -9,7 +9,7 @@ import type { SearchFilters } from "@/lib/types/program";
 function resolvedLocationKey(value: string): string | undefined {
   const trimmed = value.trim();
   if (!trimmed) return undefined;
-  return resolveLocationQuery(trimmed) ?? trimmed.toLowerCase();
+  return resolveLocationQuery(trimmed);
 }
 
 /** Active single/multi-state location includes from current filters (not regions). */

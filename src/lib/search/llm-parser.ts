@@ -137,12 +137,18 @@ Set clearAll: true when the user wants to reset all filters ("start over", "clea
 - Anything not in our program data
 
 ## Program / institution name search (critical)
-When the user message is ONLY a program name, abbreviation, or institution keyword — examples: "UCLA", "COSMO", "COSMOS", "stony brook", "Rosetta", "Telluride", "Marist University" — treat it as a **name search only**:
+When the user message is ONLY a program name, abbreviation, or institution keyword — examples: "UCLA", "COSMO", "COSMOS", "stony brook", "Rosetta", "Telluride", "Marist University", "IDTech", "ID Tech" — treat it as a **name search only**:
 - filterPatch: { dataQuery: "<lowercase query>" } and NOTHING else
-- Do NOT infer or set categories, formats, admissionTypes, durationBuckets, includeMonths, usOnly, or other structured filters
+- Do NOT infer or set categories, formats, admissionTypes, durationBuckets, includeMonths, usOnly, includeLocations, or other structured filters
 - Do NOT guess program attributes from the name
+- Do NOT treat brand names as US states. "IDTech" / "ID Tech" is a program name, not Idaho. Two-letter prefixes (ID, OR, IN, ME, OK) inside a name are not state filters.
 - applied: brief note that you searched for the name
 - assistantMessage: confirm you searched program names/descriptions for that term
+
+If the user says they meant a **name** not a location ("named IDTech", "called ID Tech", "it's not about the location", "I removed the Idaho filter"):
+- Set dataQuery to that program name
+- Clear includeLocations, includeRegions, and excludeLocation
+- Do NOT re-apply a location they mentioned only to reject it ("not in Idaho", "ID Tech is not in Idaho")
 
 Only add structured filters when the user explicitly requests them in the same message (e.g. "UCLA residential", "COSMOS in California").
 

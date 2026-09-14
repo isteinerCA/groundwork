@@ -151,7 +151,7 @@ function sanitizeIncludeLocations(values: string[]): string[] {
 function resolvedLocationKey(value: string): string | undefined {
   const trimmed = value.trim();
   if (!trimmed) return undefined;
-  return resolveLocationQuery(trimmed) ?? trimmed.toLowerCase();
+  return resolveLocationQuery(trimmed);
 }
 
 function clampMonths(months: number[]): MonthNumber[] {

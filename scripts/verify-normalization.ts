@@ -152,6 +152,31 @@ if (resolveLocationQuery("california") !== "california") {
   failed++;
 }
 
+if (resolveLocationQuery("IDTech") !== undefined) {
+  console.error('FAIL: "IDTech" should not resolve to a state');
+  failed++;
+}
+
+if (resolveLocationQuery("ID Tech") !== undefined) {
+  console.error('FAIL: "ID Tech" should not resolve to Idaho');
+  failed++;
+}
+
+if (resolveLocationQuery("id") !== "idaho") {
+  console.error('FAIL: standalone "id" should still resolve to idaho');
+  failed++;
+}
+
+if (resolveLocationQuery("in ID") !== "idaho") {
+  console.error('FAIL: "in ID" should resolve to idaho');
+  failed++;
+}
+
+if (resolveLocationQuery("Cambridge, MA") !== "massachusetts") {
+  console.error('FAIL: "Cambridge, MA" should resolve to massachusetts');
+  failed++;
+}
+
 if (matchesDataQuery(cosmos, "stanford")) {
   console.error("FAIL: COSMOS should not match dataQuery stanford");
   failed++;

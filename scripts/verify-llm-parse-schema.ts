@@ -8,9 +8,11 @@ import { matchesDataQuery } from "../src/lib/data/matches-data-query";
 import { termMatchesInText } from "../src/lib/data/fuzzy-text-match";
 import { mergeFilterPatch, isExpandIntent } from "../src/lib/search/merge-filter-patch";
 import {
+  buildNameSearchOverride,
   buildProgramNameParseResponse,
   constrainFilterPatchForProgramNameQuery,
   constrainProgramNameSearchResponse,
+  extractProgramNameSearch,
   isLikelyProgramNameQuery,
 } from "../src/lib/search/program-name-query";
 import {
@@ -218,6 +220,50 @@ assert(
 );
 assert(!isLikelyProgramNameQuery("wilderness camps"), "wilderness camps is not name-only");
 assert(!isLikelyProgramNameQuery("in California only"), "location filter is not name-only");
+assert(isLikelyProgramNameQuery("ID Tech"), "ID Tech is a program name, not Idaho");
+assert(isLikelyProgramNameQuery("IDTech"), "IDTech is a program name");
+assert(
+  extractProgramNameSearch("is there a program named IDTech in the list") === "IDTech",
+  "extracts named IDTech",
+);
+assert(
+  extractProgramNameSearch(
+    "can you confirm there is no program called ID Tech on this list",
+  ) === "ID Tech",
+  "extracts called ID Tech",
+);
+const namedOverride = buildNameSearchOverride(
+  "It's not about the location; it's about the name of the program",
+  { ...DEFAULT_SEARCH_FILTERS, includeLocations: ["idaho"] },
+  [{ role: "user", text: "IDTech" }],
+);
+assert(
+  namedOverride?.filterPatch.dataQuery === "idtech" &&
+    namedOverride.filterPatch.includeLocations?.length === 0,
+  "name clarification clears Idaho and searches idtech",
+);
+const rejectedIdaho = buildNameSearchOverride(
+  "I removed the Idaho filter since ID Tech is not in Idaho. can you confirm there is no program called ID Tech on this list (for any location)",
+  { ...DEFAULT_SEARCH_FILTERS, includeLocations: ["idaho"] },
+);
+assert(
+  rejectedIdaho?.filterPatch.dataQuery === "idtech" &&
+    rejectedIdaho.filterPatch.includeLocations?.length === 0,
+  "rejecting Idaho keeps a name search",
+);
+const keepCalifornia = buildNameSearchOverride(
+  "is there a program named IDTech in California",
+  DEFAULT_SEARCH_FILTERS,
+);
+assert(keepCalifornia === undefined, "named + real location still goes to the parser");
+const idtechMerged = mergeFilterPatch(
+  { ...DEFAULT_SEARCH_FILTERS, dataQuery: "idtech" },
+  { includeLocations: ["idaho"] },
+);
+assert(
+  idtechMerged.dataQuery === "idtech",
+  "applying Idaho must not wipe a program-name dataQuery",
+);
 const overfitPatch = constrainFilterPatchForProgramNameQuery("UCLA", {
   dataQuery: "ucla",
   categories: ["college-credit-pre-college"],

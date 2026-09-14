@@ -8,6 +8,7 @@ import {
 } from "@/lib/search/llm-parser";
 import { parseRequestSchema, type LlmParseResponse, type ParseRequest } from "@/lib/search/llm-parse-schema";
 import {
+  buildNameSearchOverride,
   buildProgramNameParseResponse,
   isLikelyProgramNameQuery,
 } from "@/lib/search/program-name-query";
@@ -65,6 +66,20 @@ export async function POST(req: Request) {
     result.filterPatch = stripNoOpFilterPatch(parseRequest.currentFilters, result.filterPatch);
     await logFromParse(parseRequest, result);
     return NextResponse.json(result);
+  }
+
+  const nameOverride = buildNameSearchOverride(
+    parseRequest.message,
+    parseRequest.currentFilters,
+    parseRequest.history,
+  );
+  if (nameOverride) {
+    nameOverride.filterPatch = stripNoOpFilterPatch(
+      parseRequest.currentFilters,
+      nameOverride.filterPatch,
+    );
+    await logFromParse(parseRequest, nameOverride);
+    return NextResponse.json(nameOverride);
   }
 
   try {

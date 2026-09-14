@@ -160,16 +160,46 @@ function resolveState(query: string): UsState | null {
   return STATE_BY_NAME[trimmed] ?? null;
 }
 
-/** Resolve free-text location input to a canonical state name for filtering. */
+const LOCATION_PREPOSITIONS = new Set(["in", "at", "near"]);
+
+/**
+ * Resolve free-text location input to a canonical state name.
+ * Two-letter abbreviations match only as a standalone query ("ID", "in ID")
+ * or a trailing qualifier ("Cambridge, MA") — not as the first token of a
+ * brand name like "ID Tech".
+ */
 export function resolveLocationQuery(input: string): string | undefined {
-  const trimmed = input.trim().toLowerCase();
+  const trimmed = input.trim().toLowerCase().replace(/\s+only$/, "").trim();
   if (!trimmed) return undefined;
 
-  const whole = findStateByToken(trimmed.replace(/\s+only$/, "").trim());
+  const whole = findStateByToken(trimmed);
   if (whole) return whole.name;
 
+  const commaParts = trimmed.split(",").map((part) => part.trim()).filter(Boolean);
+  if (commaParts.length >= 2) {
+    const trailing = findStateByToken(commaParts[commaParts.length - 1] ?? "");
+    if (trailing) return trailing.name;
+  }
+
   const tokens = trimmed.split(/[\s,]+/).filter(Boolean);
-  for (const token of tokens) {
+  const contentTokens = tokens.filter(
+    (token) => !LOCATION_STOP_WORDS.has(token) && token !== "only",
+  );
+
+  if (contentTokens.length === 1) {
+    const state = findStateByToken(contentTokens[0] ?? "");
+    if (state) return state.name;
+  }
+
+  for (let i = 0; i < tokens.length - 1; i++) {
+    if (LOCATION_PREPOSITIONS.has(tokens[i] ?? "") && (tokens[i + 1]?.length ?? 0) === 2) {
+      const state = findStateByToken(tokens[i + 1] ?? "");
+      if (state) return state.name;
+    }
+  }
+
+  for (const token of contentTokens) {
+    if (token.length === 2) continue;
     const state = findStateByToken(token);
     if (state) return state.name;
   }
