@@ -1,6 +1,6 @@
 {
-  "verifiedAt": "2026-09-14",
-  "count": 150,
+  "verifiedAt": "2026-09-15",
+  "count": 167,
   "programs": [
     {
       "id": "prog-1",
@@ -63,7 +63,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-2",
@@ -126,7 +126,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-3",
@@ -189,7 +189,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-4",
@@ -252,7 +252,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-5",
@@ -315,7 +315,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-6",
@@ -378,7 +378,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-7",
@@ -422,7 +422,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://ai4all.spcs.stanford.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-8",
@@ -466,7 +466,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://ai4all.spcs.stanford.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-9",
@@ -507,7 +507,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.inspiritai.com/liveonline",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-10",
@@ -551,7 +551,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://esap.seas.upenn.edu/about/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-11",
@@ -595,7 +595,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://web.mit.edu/wtp/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-12",
@@ -637,7 +637,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://summerinstitutes.spcs.stanford.edu/courses/2026/artificial-intelligence",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-13",
@@ -680,7 +680,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://engineering.jhu.edu/education/engineering-summer-ai-institute/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-14",
@@ -724,7 +724,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-15",
@@ -768,7 +768,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-16",
@@ -811,7 +811,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-17",
@@ -856,7 +856,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-18",
@@ -899,7 +899,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-19",
@@ -942,7 +942,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-20",
@@ -985,7 +985,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-21",
@@ -1056,7 +1056,7 @@
           "severity": "info"
         }
       ],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-22",
@@ -1099,7 +1099,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://mites.mit.edu/discover-mites/mites-summer/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-23",
@@ -1140,7 +1140,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://summerscience.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-24",
@@ -1182,7 +1182,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://lawrencehallofscience.org/teen-internship-programs/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-25",
@@ -1225,7 +1225,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.education.purdue.edu/geri/youth-programs/summer-residential/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-26",
@@ -1266,7 +1266,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://outreach.engineering.columbia.edu/shape/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-27",
@@ -1307,7 +1307,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.wpi.edu/academics/pre-collegiate/summer-programs/frontiers",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-28",
@@ -1352,7 +1352,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://ei.jhu.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-29",
@@ -1394,7 +1394,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://cooper.edu/engineering/stem/summer",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-30",
@@ -1436,7 +1436,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://cooper.edu/engineering/stem/summer",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-31",
@@ -1479,7 +1479,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://education.ucdavis.edu/young-scholars-program",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-32",
@@ -1525,7 +1525,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.brown.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-33",
@@ -1567,7 +1567,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://learnmore.duke.edu/precollege/all-programs",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-34",
@@ -1610,7 +1610,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://learnmore.duke.edu/precollege/duke-university-marine-lab",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-35",
@@ -1661,7 +1661,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-36",
@@ -1706,7 +1706,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.georgetown.edu/pre-college-programs/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-37",
@@ -1750,7 +1750,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.georgetown.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-38",
@@ -1792,7 +1792,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://universitycollege.tufts.edu/pre-college/browse/tufts-college-experience",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-39",
@@ -1834,7 +1834,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://universitycollege.tufts.edu/pre-college/academics/summer-hallmark-courses",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-40",
@@ -1876,7 +1876,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bu.edu/summer/high-school-programs/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-41",
@@ -1918,7 +1918,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bu.edu/summer/high-school-programs/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-42",
@@ -1960,7 +1960,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bu.edu/summer/high-school-programs/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-43",
@@ -2002,7 +2002,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.marist.edu/admission/summer-pre-college",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-44",
@@ -2044,7 +2044,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.marist.edu/admission/summer-pre-college",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-45",
@@ -2088,7 +2088,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.summer.ucsb.edu/programs/pre-college",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-46",
@@ -2131,7 +2131,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.umass.edu/juniper-young-writers/programs/summer-umass",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-47",
@@ -2173,7 +2173,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.umass.edu/uww/pre-college/programs",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-48",
@@ -2215,7 +2215,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://case.precollegeprograms.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-49",
@@ -2258,7 +2258,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.harvard.edu/high-school-programs/pre-college-program/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-50",
@@ -2322,7 +2322,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-51",
@@ -2363,7 +2363,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://hs.sas.upenn.edu/summer-programs/pre-college-program",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-52",
@@ -2405,7 +2405,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.uchicago.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-53",
@@ -2447,7 +2447,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.nyu.edu/admissions/high-school-and-middle-school-programs/high-school-programs/nyu-precollege/explore-precollege.html",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-54",
@@ -2489,7 +2489,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.berkeley.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-55",
@@ -2530,7 +2530,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.usc.edu/summer-programs/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-56",
@@ -2574,7 +2574,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://admissions.rochester.edu/pre-college/programs/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-57",
@@ -2615,7 +2615,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.barnard.edu/prebaccalaureate",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-58",
@@ -2657,7 +2657,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/index.php",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-59",
@@ -2699,7 +2699,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/commuter-experience.php",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-60",
@@ -2741,7 +2741,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/commuter-experience.php",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-61",
@@ -2786,7 +2786,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/biotechnology.php",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-62",
@@ -2831,7 +2831,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/robotics-engineering.php",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-63",
@@ -2874,7 +2874,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/health-professions.php",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-64",
@@ -2917,7 +2917,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/creative-problem-solving-for-competitions.php",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-65",
@@ -2960,7 +2960,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/pre-law.php",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-66",
@@ -3003,7 +3003,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/environmental-science-in-the-worm-lab.php",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-67",
@@ -3047,7 +3047,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://salishseasciences.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-68",
@@ -3091,7 +3091,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/southampton/somas_info.php",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-69",
@@ -3132,7 +3132,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://cpe.ucdavis.edu/course/uc-davis-pre-college-program-coastal-marine-science",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-70",
@@ -3175,7 +3175,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://sea.edu/programs/finder/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-71",
@@ -3216,7 +3216,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://seaturtlecamp.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-72",
@@ -3259,7 +3259,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://islandschool.org/high-school-semester-summer-term/summer-program/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-73",
@@ -3302,7 +3302,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sunsetbaywharf.com/home",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-74",
@@ -3345,7 +3345,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.field-studies-council.org/courses-and-experiences/static-courses/marine-science-camp/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-75",
@@ -3388,7 +3388,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://earthwatch.org/teen-expeditions",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-76",
@@ -3431,7 +3431,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://copperriver.org/programs/watershed-education/copper-river-stewardship-program/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-77",
@@ -3474,7 +3474,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.actionquest.com",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-78",
@@ -3516,7 +3516,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.disl.edu/dhp/summer-camps/marine-science-class/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-79",
@@ -3558,7 +3558,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.disl.edu/dhp/summer-camps/coastal-fisheries/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-80",
@@ -3601,7 +3601,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.seatrekbvi.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-81",
@@ -3643,7 +3643,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://whalecamp.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-82",
@@ -3685,7 +3685,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://acadiainstitute.com/advanced-marine-science-camp-program/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-83",
@@ -3729,7 +3729,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.dcie.miami.edu/summer-programs/academies/credit/index.html",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-84",
@@ -3772,7 +3772,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.spinnakersailing.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-85",
@@ -3817,7 +3817,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.rosettainstitute.org/biomedical-summer-camps/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-86",
@@ -3858,7 +3858,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.boldsummers.com/summer-programs/penn-medicine-summer-program/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-87",
@@ -3899,7 +3899,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.georgiacenter.uga.edu/youth/summer-academy/mini-medical-school-b",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-88",
@@ -3942,7 +3942,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.msm.edu/Prospective_Students/admissions/PipelinePrograms/BenCarson.php",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-89",
@@ -3985,7 +3985,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bostonleadershipinstitute.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-90",
@@ -4026,7 +4026,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://hiprc.org/training/high-school/insight-hs/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-91",
@@ -4070,7 +4070,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://entomology.ca.uky.edu/content/entomology-leadership-program",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-92",
@@ -4111,7 +4111,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.awesomemath.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-93",
@@ -4152,7 +4152,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "http://www.mathpath.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-94",
@@ -4193,7 +4193,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://promys.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-95",
@@ -4234,7 +4234,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.mathcamp.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-96",
@@ -4276,7 +4276,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://sumac.spcs.stanford.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-97",
@@ -4317,7 +4317,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.imacs.org/program/summer/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-98",
@@ -4361,7 +4361,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cybermath.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-99",
@@ -4406,7 +4406,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://alphastar.academy/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-100",
@@ -4447,7 +4447,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://iyws.program.uiowa.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-101",
@@ -4488,7 +4488,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://summerhumanities.stanford.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-102",
@@ -4529,7 +4529,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://kenyonreview.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-103",
@@ -4573,7 +4573,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://psjp.princeton.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-104",
@@ -4616,7 +4616,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.tellurideassociation.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-105",
@@ -4659,7 +4659,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://linguistics.osu.edu/undergrad/sliys",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-106",
@@ -4700,7 +4700,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.camplaurel.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-107",
@@ -4753,7 +4753,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-108",
@@ -4796,7 +4796,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://explo.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-109",
@@ -4837,7 +4837,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://bccymca.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-110",
@@ -4880,7 +4880,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.adirondackcamp.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-111",
@@ -4923,7 +4923,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.nols.edu/teen-expeditions/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-112",
@@ -4976,7 +4976,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-113",
@@ -5029,7 +5029,7 @@
           "severity": "info"
         }
       ],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-114",
@@ -5073,7 +5073,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.apogeeadventures.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-115",
@@ -5116,7 +5116,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://boldearth.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-116",
@@ -5159,7 +5159,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://moondanceadventures.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-117",
@@ -5200,7 +5200,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.wildernessadventures.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-118",
@@ -5243,7 +5243,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://globalscholars.yale.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-119",
@@ -5286,7 +5286,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://amigosinternational.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-120",
@@ -5327,7 +5327,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.ciee.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-121",
@@ -5368,7 +5368,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://afs.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-122",
@@ -5411,7 +5411,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://yes-abroad.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-123",
@@ -5452,7 +5452,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.rotary.org/en/our-programs/youth-exchanges",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-124",
@@ -5495,7 +5495,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.goputney.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-125",
@@ -5538,7 +5538,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://arccprograms.com/summer-overview/summer-programs-high-school/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-126",
@@ -5581,7 +5581,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.thatsmandarin.com/chinese-summer-camp/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-127",
@@ -5623,7 +5623,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://goeastmandarin.com/kids-chinese-camp/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-128",
@@ -5664,7 +5664,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://keatschinese.com/chinese-language-courses/summer-camp-in-china/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-129",
@@ -5705,7 +5705,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.chinainternshipplacements.com/study-abroad-china/chinese-summer-camp-teens/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-130",
@@ -5746,7 +5746,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://ltl-school.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-131",
@@ -5787,7 +5787,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://pty.vanderbilt.edu/for-students/vsa/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-132",
@@ -5828,7 +5828,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.ctd.northwestern.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-133",
@@ -5870,7 +5870,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://globalyouth.wharton.upenn.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-134",
@@ -5912,7 +5912,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://globalyouth.wharton.upenn.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-135",
@@ -5956,7 +5956,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://cty.jhu.edu/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-136",
@@ -5999,7 +5999,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://global.lehigh.edu/iacocca-institute/high-school",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-137",
@@ -6040,7 +6040,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://global.lehigh.edu/programs/iacocca-global-future-leaders-lab-silicon-valley",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-138",
@@ -6084,7 +6084,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://summerspringboard.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-139",
@@ -6126,7 +6126,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.envisionexperience.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-140",
@@ -6171,7 +6171,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://sce.cornell.edu/precollege/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-141",
@@ -6216,7 +6216,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://sce.cornell.edu/precollege/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-142",
@@ -6259,7 +6259,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://changemaker.berkeley.edu/pre-college",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-143",
@@ -6304,7 +6304,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.educationunlimited.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-144",
@@ -6349,7 +6349,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.educationunlimited.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-145",
@@ -6392,7 +6392,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.educationunlimited.com/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-146",
@@ -6436,7 +6436,7 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.creativedelegates.org/",
       "flags": [],
-      "dataVerifiedAt": "2026-09-14"
+      "dataVerifiedAt": "2026-09-15"
     },
     {
       "id": "prog-147",
@@ -6492,7 +6492,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-09-14",
+      "dataVerifiedAt": "2026-09-15",
       "dayToDay": {
         "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities and a campfire, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip \u2014 guides send a nightly satellite check-in to the office, not to parents, consistent with the program's \"no news is good news\" approach. Parents receive a recap email with photos and a daily journal about 1\u20132 weeks after the trip ends.",
         "sourceType": "official_policy",
@@ -6554,7 +6554,7 @@
           "severity": "warning"
         }
       ],
-      "dataVerifiedAt": "2026-09-14",
+      "dataVerifiedAt": "2026-09-15",
       "dayToDay": {
         "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities and a campfire, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip \u2014 guides send a nightly satellite check-in to the office, not to parents, consistent with the program's \"no news is good news\" approach. Parents receive a recap email with photos and a daily journal about 1\u20132 weeks after the trip ends.",
         "sourceType": "official_policy",
@@ -6624,7 +6624,7 @@
           "severity": "info"
         }
       ],
-      "dataVerifiedAt": "2026-09-14",
+      "dataVerifiedAt": "2026-09-15",
       "dayToDay": {
         "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities and a campfire, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip \u2014 guides send a nightly satellite check-in to the office, not to parents, consistent with the program's \"no news is good news\" approach. Parents receive a recap email with photos and a daily journal about 1\u20132 weeks after the trip ends.",
         "sourceType": "official_policy",
@@ -6694,11 +6694,1121 @@
           "severity": "info"
         }
       ],
-      "dataVerifiedAt": "2026-09-14",
+      "dataVerifiedAt": "2026-09-15",
       "dayToDay": {
         "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities and a campfire, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip \u2014 guides send a nightly satellite check-in to the office, not to parents, consistent with the program's \"no news is good news\" approach. Parents receive a recap email with photos and a daily journal about 1\u20132 weeks after the trip ends.",
         "sourceType": "official_policy",
         "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ pages (identical language across 6-Day Young Adventurer's, 6-Day High Country, and 10-Day Mammoth pages)",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-151",
+      "slug": "lasting-adventures-13-day-high-country-adventure",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-yosemite",
+      "description": "Extended 13-day Yosemite high country backpacking trip for teens.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Traditional Camp"
+      ],
+      "trackDetail": "13-Day High Country Adventure",
+      "gradeDisplay": "Ages 14-18",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 12,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "13 days",
+      "lengthMinDays": 13,
+      "lengthMaxDays": 13,
+      "datesDisplay": "4 weekly departures, Jun 6 - Aug 6 2027 (see site for exact dates)",
+      "dateStart": "2027-06-06",
+      "dateEnd": "2027-08-06",
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Yosemite National Park, CA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$3890",
+      "priceMin": 3890.0,
+      "priceMax": 3890.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/13-day-high-country-adventure/",
+      "flags": [
+        {
+          "id": "lasting-adventures-yosemite-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ",
+          "severity": "warning"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities and a campfire, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip \u2014 guides send a nightly satellite check-in to the office, not to parents, consistent with the program's \"no news is good news\" approach. Parents receive a recap email with photos and a daily journal about 1\u20132 weeks after the trip ends.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ pages (identical language across 6-Day Young Adventurer's, 6-Day High Country, and 10-Day Mammoth pages)",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-152",
+      "slug": "lasting-adventures-6-day-young-women-s-program-jun-20-25-departure",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-yosemite",
+      "description": "All-female 6-day backpacking trip in the Yosemite high country.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Traditional Camp"
+      ],
+      "trackDetail": "6-Day Young Women's Program - Jun 20-25 Departure",
+      "gradeDisplay": "Ages 13-18, 7th-9th and 10th-12th graders",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 11,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "6 days",
+      "lengthMinDays": 6,
+      "lengthMaxDays": 6,
+      "datesDisplay": "Jun 20\u201325, 2027",
+      "dateStart": "2027-06-20",
+      "dateEnd": "2027-06-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Yosemite National Park, CA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$1990",
+      "priceMin": 1990.0,
+      "priceMax": 1990.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/yosemite-13-day-young-womens-program/",
+      "flags": [
+        {
+          "id": "lasting-adventures-yosemite-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ",
+          "severity": "warning"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities and a campfire, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip \u2014 guides send a nightly satellite check-in to the office, not to parents, consistent with the program's \"no news is good news\" approach. Parents receive a recap email with photos and a daily journal about 1\u20132 weeks after the trip ends.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ pages (identical language across 6-Day Young Adventurer's, 6-Day High Country, and 10-Day Mammoth pages)",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-153",
+      "slug": "lasting-adventures-6-day-young-women-s-program-aug-1-6-departure",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-yosemite",
+      "description": "All-female 6-day backpacking trip in the Yosemite high country.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Traditional Camp"
+      ],
+      "trackDetail": "6-Day Young Women's Program - Aug 1-6 Departure",
+      "gradeDisplay": "Ages 13-18, 7th-9th and 10th-12th graders",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 11,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "6 days",
+      "lengthMinDays": 6,
+      "lengthMaxDays": 6,
+      "datesDisplay": "Aug 1\u20136, 2027",
+      "dateStart": "2027-08-01",
+      "dateEnd": "2027-08-06",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Yosemite National Park, CA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$1990",
+      "priceMin": 1990.0,
+      "priceMax": 1990.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/yosemite-13-day-young-womens-program/",
+      "flags": [
+        {
+          "id": "lasting-adventures-yosemite-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ",
+          "severity": "warning"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities and a campfire, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip \u2014 guides send a nightly satellite check-in to the office, not to parents, consistent with the program's \"no news is good news\" approach. Parents receive a recap email with photos and a daily journal about 1\u20132 weeks after the trip ends.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ pages (identical language across 6-Day Young Adventurer's, 6-Day High Country, and 10-Day Mammoth pages)",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-154",
+      "slug": "lasting-adventures-13-day-young-women-s-program",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-yosemite",
+      "description": "All-female 13-day backpacking trip in the Yosemite high country.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Traditional Camp"
+      ],
+      "trackDetail": "13-Day Young Women's Program",
+      "gradeDisplay": "Ages 13-18, 7th-9th and 10th-12th graders",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 11,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "13 days",
+      "lengthMinDays": 13,
+      "lengthMaxDays": 13,
+      "datesDisplay": "Jul 4\u201316, 2027",
+      "dateStart": "2027-07-04",
+      "dateEnd": "2027-07-16",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Yosemite National Park, CA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$3890",
+      "priceMin": 3890.0,
+      "priceMax": 3890.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/yosemite-13-day-young-womens-program/",
+      "flags": [
+        {
+          "id": "lasting-adventures-yosemite-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ",
+          "severity": "warning"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities and a campfire, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip \u2014 guides send a nightly satellite check-in to the office, not to parents, consistent with the program's \"no news is good news\" approach. Parents receive a recap email with photos and a daily journal about 1\u20132 weeks after the trip ends.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ pages (identical language across 6-Day Young Adventurer's, 6-Day High Country, and 10-Day Mammoth pages)",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-155",
+      "slug": "lasting-adventures-20-day-teen-leadership-expedition-jun-13-jul-2-departure",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-yosemite",
+      "description": "Advanced 20-day leadership expedition combining backpacking, whitewater rafting, and Wilderness First Aid/Leave No Trace certification.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Leadership/Gifted"
+      ],
+      "trackDetail": "20-Day Teen Leadership Expedition - Jun 13-Jul 2 Departure",
+      "gradeDisplay": "Ages 14-18, incl. recent HS grads not yet in college",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 12,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "20 days",
+      "lengthMinDays": 20,
+      "lengthMaxDays": 20,
+      "datesDisplay": "Jun 13 \u2013 Jul 2, 2027",
+      "dateStart": "2027-06-13",
+      "dateEnd": "2027-07-02",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Yosemite National Park, CA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$6585",
+      "priceMin": 6585.0,
+      "priceMax": 6585.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/junior-guide-leadership-expedition/",
+      "flags": [
+        {
+          "id": "lasting-adventures-yosemite-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ",
+          "severity": "warning"
+        },
+        {
+          "id": "lasting-adventures-yosemite-leadership-min-enrollment",
+          "type": "other",
+          "title": "Trip may be restructured if enrollment is low",
+          "body": "Terms & Conditions require a minimum of 6 participants for the 20-day leadership expedition. If enrollment falls short, Lasting Adventures may restructure the session into consecutive 13-day and 6-day trips instead.",
+          "sourceCitation": "Lasting Adventures Terms & Conditions",
+          "severity": "warning"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities and a campfire, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip \u2014 guides send a nightly satellite check-in to the office, not to parents, consistent with the program's \"no news is good news\" approach. Parents receive a recap email with photos and a daily journal about 1\u20132 weeks after the trip ends.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ pages (identical language across 6-Day Young Adventurer's, 6-Day High Country, and 10-Day Mammoth pages)",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-156",
+      "slug": "lasting-adventures-20-day-teen-leadership-expedition-jul-11-30-departure",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-yosemite",
+      "description": "Advanced 20-day leadership expedition combining backpacking, whitewater rafting, and Wilderness First Aid/Leave No Trace certification.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Leadership/Gifted"
+      ],
+      "trackDetail": "20-Day Teen Leadership Expedition - Jul 11-30 Departure",
+      "gradeDisplay": "Ages 14-18, incl. recent HS grads not yet in college",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 12,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "20 days",
+      "lengthMinDays": 20,
+      "lengthMaxDays": 20,
+      "datesDisplay": "Jul 11\u201330, 2027",
+      "dateStart": "2027-07-11",
+      "dateEnd": "2027-07-30",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Yosemite National Park, CA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$6585",
+      "priceMin": 6585.0,
+      "priceMax": 6585.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/junior-guide-leadership-expedition/",
+      "flags": [
+        {
+          "id": "lasting-adventures-yosemite-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ",
+          "severity": "warning"
+        },
+        {
+          "id": "lasting-adventures-yosemite-leadership-min-enrollment",
+          "type": "other",
+          "title": "Trip may be restructured if enrollment is low",
+          "body": "Terms & Conditions require a minimum of 6 participants for the 20-day leadership expedition. If enrollment falls short, Lasting Adventures may restructure the session into consecutive 13-day and 6-day trips instead.",
+          "sourceCitation": "Lasting Adventures Terms & Conditions",
+          "severity": "warning"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities and a campfire, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip \u2014 guides send a nightly satellite check-in to the office, not to parents, consistent with the program's \"no news is good news\" approach. Parents receive a recap email with photos and a daily journal about 1\u20132 weeks after the trip ends.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ pages (identical language across 6-Day Young Adventurer's, 6-Day High Country, and 10-Day Mammoth pages)",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-157",
+      "slug": "lasting-adventures-6-day-backpacking-adventure-for-teens",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-olympic",
+      "description": "6-day guided backpacking trip in Olympic National Park for teens, choice of coastal or mountain route.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Traditional Camp"
+      ],
+      "trackDetail": "6-Day Backpacking Adventure for Teens",
+      "gradeDisplay": "Ages 13-18, 7th-9th and 10th-12th graders",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 11,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "6 days",
+      "lengthMinDays": 6,
+      "lengthMaxDays": 6,
+      "datesDisplay": "9 weekly departures, Jun 20 - Aug 20 2027; coastal or mountain route choice within trip",
+      "dateStart": "2027-06-20",
+      "dateEnd": "2027-08-20",
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Olympic National Park, WA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$1990",
+      "priceMin": 1990.0,
+      "priceMax": 1990.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/olympic-national-park-outdoor-summer-camps/backpacking-adventure-for-teens/",
+      "flags": [
+        {
+          "id": "lasting-adventures-olympic-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Olympic National Park summer camp FAQ",
+          "severity": "warning"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip - guides send a nightly satellite check-in to the office, not to parents. Parents receive a recap email with photos and a daily journal about 1-2 weeks after the trip ends.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Olympic summer camp FAQ pages (identical language across all Olympic offering pages)",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-158",
+      "slug": "lasting-adventures-6-day-young-adventurer-s-program",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-olympic",
+      "description": "Introductory 6-day wilderness backpacking camp in Olympic National Park for ages 11-13.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Traditional Camp"
+      ],
+      "trackDetail": "6-Day Young Adventurer's Program",
+      "gradeDisplay": "Ages 11-13",
+      "gradeCompletedMin": 5,
+      "gradeCompletedMax": 7,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "6 days",
+      "lengthMinDays": 6,
+      "lengthMaxDays": 6,
+      "datesDisplay": "9 weekly departures, Jun 20 - Aug 20 2027; coastal or mountain route choice within trip",
+      "dateStart": "2027-06-20",
+      "dateEnd": "2027-08-20",
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Olympic National Park, WA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$1990",
+      "priceMin": 1990.0,
+      "priceMax": 1990.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/olympic-national-park-outdoor-summer-camps/olympic-6-day-young-adventurers-program/",
+      "flags": [
+        {
+          "id": "lasting-adventures-olympic-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Olympic National Park summer camp FAQ",
+          "severity": "warning"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip - guides send a nightly satellite check-in to the office, not to parents. Parents receive a recap email with photos and a daily journal about 1-2 weeks after the trip ends.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Olympic summer camp FAQ pages (identical language across all Olympic offering pages)",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-159",
+      "slug": "lasting-adventures-10-day-hoh-rainforest-to-the-blue-glacier-jun-29-jul-8-departure",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-olympic",
+      "description": "10-day backpacking trip through Hoh Rainforest to the Blue Glacier for experienced teen backpackers.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Traditional Camp"
+      ],
+      "trackDetail": "10-Day Hoh Rainforest to the Blue Glacier - Jun 29-Jul 8 Departure",
+      "gradeDisplay": "Ages 14-18, experienced backpackers or past LA participants preferred",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 12,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "10 days",
+      "lengthMinDays": 10,
+      "lengthMaxDays": 10,
+      "datesDisplay": "Jun 29 \u2013 Jul 8, 2027",
+      "dateStart": "2027-06-29",
+      "dateEnd": "2027-07-08",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Olympic National Park, WA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2990",
+      "priceMin": 2990.0,
+      "priceMax": 2990.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/olympic-national-park-outdoor-summer-camps/pacific-northwest-summer-camp-backpacking-adventure-for-teens/",
+      "flags": [
+        {
+          "id": "lasting-adventures-olympic-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Olympic National Park summer camp FAQ",
+          "severity": "warning"
+        },
+        {
+          "id": "lasting-adventures-olympic-hoh-experience-prereq",
+          "type": "selectivity",
+          "title": "\"First-come\" admission still expects prior backpacking experience",
+          "body": "The 10-Day Hoh Rainforest to Blue Glacier trip is First-Come with no formal application, but the program site states it's designed for experienced backpackers or past Lasting Adventures participants.",
+          "sourceCitation": "Lasting Adventures 10-Day Hoh Rainforest to the Blue Glacier program page",
+          "severity": "info"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip - guides send a nightly satellite check-in to the office, not to parents. Parents receive a recap email with photos and a daily journal about 1-2 weeks after the trip ends.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Olympic summer camp FAQ pages (identical language across all Olympic offering pages)",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-160",
+      "slug": "lasting-adventures-10-day-hoh-rainforest-to-the-blue-glacier-jul-13-22-departure",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-olympic",
+      "description": "10-day backpacking trip through Hoh Rainforest to the Blue Glacier for experienced teen backpackers.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Traditional Camp"
+      ],
+      "trackDetail": "10-Day Hoh Rainforest to the Blue Glacier - Jul 13-22 Departure",
+      "gradeDisplay": "Ages 14-18, experienced backpackers or past LA participants preferred",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 12,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "10 days",
+      "lengthMinDays": 10,
+      "lengthMaxDays": 10,
+      "datesDisplay": "Jul 13\u201322, 2027",
+      "dateStart": "2027-07-13",
+      "dateEnd": "2027-07-22",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Olympic National Park, WA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2990",
+      "priceMin": 2990.0,
+      "priceMax": 2990.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/olympic-national-park-outdoor-summer-camps/pacific-northwest-summer-camp-backpacking-adventure-for-teens/",
+      "flags": [
+        {
+          "id": "lasting-adventures-olympic-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Olympic National Park summer camp FAQ",
+          "severity": "warning"
+        },
+        {
+          "id": "lasting-adventures-olympic-hoh-experience-prereq",
+          "type": "selectivity",
+          "title": "\"First-come\" admission still expects prior backpacking experience",
+          "body": "The 10-Day Hoh Rainforest to Blue Glacier trip is First-Come with no formal application, but the program site states it's designed for experienced backpackers or past Lasting Adventures participants.",
+          "sourceCitation": "Lasting Adventures 10-Day Hoh Rainforest to the Blue Glacier program page",
+          "severity": "info"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip - guides send a nightly satellite check-in to the office, not to parents. Parents receive a recap email with photos and a daily journal about 1-2 weeks after the trip ends.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Olympic summer camp FAQ pages (identical language across all Olympic offering pages)",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-161",
+      "slug": "lasting-adventures-10-day-hoh-rainforest-to-the-blue-glacier-aug-10-19-departure",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-olympic",
+      "description": "10-day backpacking trip through Hoh Rainforest to the Blue Glacier for experienced teen backpackers.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Traditional Camp"
+      ],
+      "trackDetail": "10-Day Hoh Rainforest to the Blue Glacier - Aug 10-19 Departure",
+      "gradeDisplay": "Ages 14-18, experienced backpackers or past LA participants preferred",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 12,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "10 days",
+      "lengthMinDays": 10,
+      "lengthMaxDays": 10,
+      "datesDisplay": "Aug 10\u201319, 2027",
+      "dateStart": "2027-08-10",
+      "dateEnd": "2027-08-19",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Olympic National Park, WA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2990",
+      "priceMin": 2990.0,
+      "priceMax": 2990.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/olympic-national-park-outdoor-summer-camps/pacific-northwest-summer-camp-backpacking-adventure-for-teens/",
+      "flags": [
+        {
+          "id": "lasting-adventures-olympic-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Olympic National Park summer camp FAQ",
+          "severity": "warning"
+        },
+        {
+          "id": "lasting-adventures-olympic-hoh-experience-prereq",
+          "type": "selectivity",
+          "title": "\"First-come\" admission still expects prior backpacking experience",
+          "body": "The 10-Day Hoh Rainforest to Blue Glacier trip is First-Come with no formal application, but the program site states it's designed for experienced backpackers or past Lasting Adventures participants.",
+          "sourceCitation": "Lasting Adventures 10-Day Hoh Rainforest to the Blue Glacier program page",
+          "severity": "info"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip - guides send a nightly satellite check-in to the office, not to parents. Parents receive a recap email with photos and a daily journal about 1-2 weeks after the trip ends.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Olympic summer camp FAQ pages (identical language across all Olympic offering pages)",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-162",
+      "slug": "lasting-adventures-13-day-backpacking-adventure-for-teens",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-olympic",
+      "description": "13-day guided backpacking trip combining coastal and old-growth forest routes in Olympic National Park.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Traditional Camp"
+      ],
+      "trackDetail": "13-Day Backpacking Adventure for Teens",
+      "gradeDisplay": "Ages 14-18",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 12,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "13 days",
+      "lengthMinDays": 13,
+      "lengthMaxDays": 13,
+      "datesDisplay": "4 weekly departures, Jun 20 - Aug 13 2027 (see site for exact dates)",
+      "dateStart": "2027-06-20",
+      "dateEnd": "2027-08-13",
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Olympic National Park, WA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$3890",
+      "priceMin": 3890.0,
+      "priceMax": 3890.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/olympic-national-park-outdoor-summer-camps/13-day-olympic-backpacking-adventure-for-teens/",
+      "flags": [
+        {
+          "id": "lasting-adventures-olympic-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Olympic National Park summer camp FAQ",
+          "severity": "warning"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip - guides send a nightly satellite check-in to the office, not to parents. Parents receive a recap email with photos and a daily journal about 1-2 weeks after the trip ends.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Olympic summer camp FAQ pages (identical language across all Olympic offering pages)",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-163",
+      "slug": "lasting-adventures-6-day-young-women-s-program-jun-27-jul-2-departure",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-olympic",
+      "description": "All-female 6-day backpacking trip in Olympic National Park.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Traditional Camp"
+      ],
+      "trackDetail": "6-Day Young Women's Program - Jun 27-Jul 2 Departure",
+      "gradeDisplay": "Ages 13-18, 7th-9th and 10th-12th graders",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 11,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "6 days",
+      "lengthMinDays": 6,
+      "lengthMaxDays": 6,
+      "datesDisplay": "Jun 27 \u2013 Jul 2, 2027",
+      "dateStart": "2027-06-27",
+      "dateEnd": "2027-07-02",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Olympic National Park, WA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$1990",
+      "priceMin": 1990.0,
+      "priceMax": 1990.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/olympic-national-park-outdoor-summer-camps/olympic-6-day-young-womens-program/",
+      "flags": [
+        {
+          "id": "lasting-adventures-olympic-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Olympic National Park summer camp FAQ",
+          "severity": "warning"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip - guides send a nightly satellite check-in to the office, not to parents. Parents receive a recap email with photos and a daily journal about 1-2 weeks after the trip ends.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Olympic summer camp FAQ pages (identical language across all Olympic offering pages)",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-164",
+      "slug": "lasting-adventures-6-day-young-women-s-program-jul-18-23-departure",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-olympic",
+      "description": "All-female 6-day backpacking trip in Olympic National Park.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Traditional Camp"
+      ],
+      "trackDetail": "6-Day Young Women's Program - Jul 18-23 Departure",
+      "gradeDisplay": "Ages 13-18, 7th-9th and 10th-12th graders",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 11,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "6 days",
+      "lengthMinDays": 6,
+      "lengthMaxDays": 6,
+      "datesDisplay": "Jul 18\u201323, 2027",
+      "dateStart": "2027-07-18",
+      "dateEnd": "2027-07-23",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Olympic National Park, WA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$1990",
+      "priceMin": 1990.0,
+      "priceMax": 1990.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/olympic-national-park-outdoor-summer-camps/olympic-6-day-young-womens-program/",
+      "flags": [
+        {
+          "id": "lasting-adventures-olympic-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Olympic National Park summer camp FAQ",
+          "severity": "warning"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip - guides send a nightly satellite check-in to the office, not to parents. Parents receive a recap email with photos and a daily journal about 1-2 weeks after the trip ends.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Olympic summer camp FAQ pages (identical language across all Olympic offering pages)",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-165",
+      "slug": "lasting-adventures-13-day-young-women-s-program",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-olympic",
+      "description": "All-female 13-day backpacking trip in Olympic National Park.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Traditional Camp"
+      ],
+      "trackDetail": "13-Day Young Women's Program",
+      "gradeDisplay": "Ages 13-18, 7th-9th and 10th-12th graders",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 11,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "13 days",
+      "lengthMinDays": 13,
+      "lengthMaxDays": 13,
+      "datesDisplay": "Jul 25 \u2013 Aug 6, 2027",
+      "dateStart": "2027-07-25",
+      "dateEnd": "2027-08-06",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Olympic National Park, WA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$3890",
+      "priceMin": 3890.0,
+      "priceMax": 3890.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/olympic-national-park-outdoor-summer-camps/olympic-6-day-young-womens-program/",
+      "flags": [
+        {
+          "id": "lasting-adventures-olympic-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Olympic National Park summer camp FAQ",
+          "severity": "warning"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip - guides send a nightly satellite check-in to the office, not to parents. Parents receive a recap email with photos and a daily journal about 1-2 weeks after the trip ends.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Olympic summer camp FAQ pages (identical language across all Olympic offering pages)",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-166",
+      "slug": "lasting-adventures-10-day-sequoia-high-country-adventure-jun-22-jul-1-departure",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-sequoia",
+      "description": "10-day backcountry backpacking trip in Sequoia National Park for teens.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Traditional Camp"
+      ],
+      "trackDetail": "10-Day Sequoia High Country Adventure - Jun 22-Jul 1 Departure",
+      "gradeDisplay": "Ages 14-18",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 12,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "10 days",
+      "lengthMinDays": 10,
+      "lengthMaxDays": 10,
+      "datesDisplay": "Jun 22 \u2013 Jul 1, 2027",
+      "dateStart": "2027-06-22",
+      "dateEnd": "2027-07-01",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Sequoia National Park, CA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2990",
+      "priceMin": 2990.0,
+      "priceMax": 2990.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/sequoia-national-park-outdoor-summer-camps/10-day-sequoia-high-country-adventure/",
+      "flags": [
+        {
+          "id": "lasting-adventures-sequoia-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Sequoia National Park summer camp FAQ",
+          "severity": "warning"
+        },
+        {
+          "id": "lasting-adventures-sequoia-experience-prereq",
+          "type": "selectivity",
+          "title": "\"First-come\" admission still expects prior backpacking experience",
+          "body": "The 10-Day Sequoia High Country trip is First-Come with no formal application, but page copy (elsewhere on the site) describes it as designed for experienced backpackers or past Lasting Adventures participants.",
+          "sourceCitation": "Lasting Adventures 10-Day Sequoia High Country Adventure program page",
+          "severity": "info"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip - guides send a nightly satellite check-in to the office, not to parents. Parents receive a recap email with photos and a daily journal about 1-2 weeks after the trip ends. This trip includes a round-trip shuttle from Fresno/Yosemite International Airport.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Sequoia summer camp FAQ page",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-167",
+      "slug": "lasting-adventures-10-day-sequoia-high-country-adventure-jul-20-29-departure",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-sequoia",
+      "description": "10-day backcountry backpacking trip in Sequoia National Park for teens.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Traditional Camp"
+      ],
+      "trackDetail": "10-Day Sequoia High Country Adventure - Jul 20-29 Departure",
+      "gradeDisplay": "Ages 14-18",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 12,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "10 days",
+      "lengthMinDays": 10,
+      "lengthMaxDays": 10,
+      "datesDisplay": "Jul 20\u201329, 2027",
+      "dateStart": "2027-07-20",
+      "dateEnd": "2027-07-29",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Sequoia National Park, CA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2990",
+      "priceMin": 2990.0,
+      "priceMax": 2990.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/sequoia-national-park-outdoor-summer-camps/10-day-sequoia-high-country-adventure/",
+      "flags": [
+        {
+          "id": "lasting-adventures-sequoia-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Sequoia National Park summer camp FAQ",
+          "severity": "warning"
+        },
+        {
+          "id": "lasting-adventures-sequoia-experience-prereq",
+          "type": "selectivity",
+          "title": "\"First-come\" admission still expects prior backpacking experience",
+          "body": "The 10-Day Sequoia High Country trip is First-Come with no formal application, but page copy (elsewhere on the site) describes it as designed for experienced backpackers or past Lasting Adventures participants.",
+          "sourceCitation": "Lasting Adventures 10-Day Sequoia High Country Adventure program page",
+          "severity": "info"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip - guides send a nightly satellite check-in to the office, not to parents. Parents receive a recap email with photos and a daily journal about 1-2 weeks after the trip ends. This trip includes a round-trip shuttle from Fresno/Yosemite International Airport.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Sequoia summer camp FAQ page",
         "verifiedAt": "2026-09-14"
       }
     }

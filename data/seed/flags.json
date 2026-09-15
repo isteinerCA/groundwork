@@ -134,6 +134,88 @@
     ]
   },
   {
+    "match": { "programGroupId": "lasting-adventures-olympic" },
+    "flags": [
+      {
+        "id": "lasting-adventures-olympic-no-parent-contact",
+        "type": "safety",
+        "title": "No parent contact during the trip",
+        "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+        "sourceCitation": "Lasting Adventures Olympic National Park summer camp FAQ",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "lasting-adventures-olympic",
+      "offeringLabel": "10-Day Hoh Rainforest to the Blue Glacier - Jun 29-Jul 8 Departure"
+    },
+    "flags": [
+      {
+        "id": "lasting-adventures-olympic-hoh-experience-prereq",
+        "type": "selectivity",
+        "title": "\"First-come\" admission still expects prior backpacking experience",
+        "body": "The 10-Day Hoh Rainforest to Blue Glacier trip is First-Come with no formal application, but the program site states it's designed for experienced backpackers or past Lasting Adventures participants.",
+        "sourceCitation": "Lasting Adventures 10-Day Hoh Rainforest to the Blue Glacier program page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "lasting-adventures-olympic",
+      "offeringLabel": "10-Day Hoh Rainforest to the Blue Glacier - Jul 13-22 Departure"
+    },
+    "flags": [
+      {
+        "id": "lasting-adventures-olympic-hoh-experience-prereq",
+        "type": "selectivity",
+        "title": "\"First-come\" admission still expects prior backpacking experience",
+        "body": "The 10-Day Hoh Rainforest to Blue Glacier trip is First-Come with no formal application, but the program site states it's designed for experienced backpackers or past Lasting Adventures participants.",
+        "sourceCitation": "Lasting Adventures 10-Day Hoh Rainforest to the Blue Glacier program page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "lasting-adventures-olympic",
+      "offeringLabel": "10-Day Hoh Rainforest to the Blue Glacier - Aug 10-19 Departure"
+    },
+    "flags": [
+      {
+        "id": "lasting-adventures-olympic-hoh-experience-prereq",
+        "type": "selectivity",
+        "title": "\"First-come\" admission still expects prior backpacking experience",
+        "body": "The 10-Day Hoh Rainforest to Blue Glacier trip is First-Come with no formal application, but the program site states it's designed for experienced backpackers or past Lasting Adventures participants.",
+        "sourceCitation": "Lasting Adventures 10-Day Hoh Rainforest to the Blue Glacier program page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": { "programGroupId": "lasting-adventures-sequoia" },
+    "flags": [
+      {
+        "id": "lasting-adventures-sequoia-no-parent-contact",
+        "type": "safety",
+        "title": "No parent contact during the trip",
+        "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+        "sourceCitation": "Lasting Adventures Sequoia National Park summer camp FAQ",
+        "severity": "warning"
+      },
+      {
+        "id": "lasting-adventures-sequoia-experience-prereq",
+        "type": "selectivity",
+        "title": "\"First-come\" admission still expects prior backpacking experience",
+        "body": "The 10-Day Sequoia High Country trip is First-Come with no formal application, but page copy (elsewhere on the site) describes it as designed for experienced backpackers or past Lasting Adventures participants.",
+        "sourceCitation": "Lasting Adventures 10-Day Sequoia High Country Adventure program page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
     "match": { "programGroupId": "lasting-adventures-yosemite" },
     "flags": [
       {
@@ -175,6 +257,38 @@
         "body": "The 10-Day Mammoth to Yosemite trip is First-Come with no formal application, but the program site states it's designed for experienced backpackers or past Lasting Adventures participants — a first-timer could book it without realizing they may be underprepared.",
         "sourceCitation": "Lasting Adventures 10-Day Mammoth to Yosemite Teen Adventure program page",
         "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "lasting-adventures-yosemite",
+      "offeringLabel": "20-Day Teen Leadership Expedition - Jun 13-Jul 2 Departure"
+    },
+    "flags": [
+      {
+        "id": "lasting-adventures-yosemite-leadership-min-enrollment",
+        "type": "other",
+        "title": "Trip may be restructured if enrollment is low",
+        "body": "Terms & Conditions require a minimum of 6 participants for the 20-day leadership expedition. If enrollment falls short, Lasting Adventures may restructure the session into consecutive 13-day and 6-day trips instead.",
+        "sourceCitation": "Lasting Adventures Terms & Conditions",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "lasting-adventures-yosemite",
+      "offeringLabel": "20-Day Teen Leadership Expedition - Jul 11-30 Departure"
+    },
+    "flags": [
+      {
+        "id": "lasting-adventures-yosemite-leadership-min-enrollment",
+        "type": "other",
+        "title": "Trip may be restructured if enrollment is low",
+        "body": "Terms & Conditions require a minimum of 6 participants for the 20-day leadership expedition. If enrollment falls short, Lasting Adventures may restructure the session into consecutive 13-day and 6-day trips instead.",
+        "sourceCitation": "Lasting Adventures Terms & Conditions",
+        "severity": "warning"
       }
     ]
   }
