@@ -282,10 +282,28 @@ if (gradeMatchesFilter(princetonGrade, [12])) {
 const ageGrades = parseGradesFromCsv({
   "Grades Display": "Ages 13-18 (grouped 13-15 & 15-18)",
   "Grade Completed Min": "7",
-  "Grade Completed Max": "11",
+  "Grade Completed Max": "12",
 });
 if (ageGrades.gradeSource !== "age" || ageGrades.gradeCompletedMin !== 7) {
   console.error("FAIL: 2027 grade columns should honor explicit min/max with age display");
+  failed++;
+}
+if (gradeMatchesFilter(ageGrades, [6])) {
+  console.error("FAIL: Ages 13-18 (grades 7-12) should not match completed grade 6");
+  failed++;
+}
+if (!gradeMatchesFilter(ageGrades, [7])) {
+  console.error("FAIL: Ages 13-18 (grades 7-12) should match completed grade 7");
+  failed++;
+}
+
+const youngAdventurersGrades = parseGradesFromCsv({
+  "Grades Display": "Ages 11-13 (completed grades 5-7, per program site)",
+  "Grade Completed Min": "5",
+  "Grade Completed Max": "7",
+});
+if (!gradeMatchesFilter(youngAdventurersGrades, [6])) {
+  console.error("FAIL: Ages 11-13 (grades 5-7) should match completed grade 6");
   failed++;
 }
 if (gradeEligibilityLabel(ageGrades) !== "Ages") {
