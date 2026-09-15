@@ -372,5 +372,18 @@
         "severity": "info"
       }
     ]
+  },
+  {
+    "match": { "programGroupId": "socapa-nyc" },
+    "flags": [
+      {
+        "id": "socapa-nyc-meals-not-included",
+        "type": "other",
+        "title": "Meals are not included in the Manhattan residential fee",
+        "body": "Unlike SOCAPA's Los Angeles and Vermont campuses, where room & board includes three daily meals Mon-Fri, Manhattan residential students must purchase their own meals for the entire session (with brief counselor guidance the first three days only). Families should budget separately for food.",
+        "sourceCitation": "SOCAPA Tuition & Costs page",
+        "severity": "warning"
+      }
+    ]
   }
 ]
