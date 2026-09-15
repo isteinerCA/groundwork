@@ -164,27 +164,60 @@ export const DEFAULT_SEARCH_FILTERS: SearchFilters = {
   maxDurationWeeks: null,
 };
 
-/** Expected columns in the program CSV */
-export interface ProgramCsvRow {
+/** Expected columns in the program CSV (2027 names with legacy 2026 fallbacks at import). */
+export interface ProgramCsvRow extends Record<string, string | undefined> {
   "Program Name": string;
+  "Primary Category": string;
   "Program Group ID"?: string;
   "Offering Label"?: string;
-  "Primary Category": string;
+  Institution?: string;
   "Secondary Tags"?: string;
   "Track/Session"?: string;
-  Format: string;
-  Grades: string;
-  "Admission Type": string;
-  Length: string;
+  Format?: string;
+  /** 2027 */
+  "Grades Display"?: string;
+  /** 2026 legacy */
+  Grades?: string;
+  "Grade Completed Min"?: string;
+  "Grade Completed Max"?: string;
+  "Admission Type"?: string;
+  /** 2027 */
+  "Length Display"?: string;
+  /** 2026 legacy */
+  Length?: string;
+  "Length Min Days"?: string;
+  "Length Max Days"?: string;
+  "Date Start"?: string;
+  "Date End"?: string;
+  "Dates Display"?: string;
+  "Dates Parse Quality"?: string;
   "Dates 2026"?: string;
-  Location: string;
-  Credit: string;
-  Price: string;
-  URL: string;
+  "Dates 2027"?: string;
+  /** 2027 */
+  "Location Display"?: string;
+  /** 2026 legacy */
+  Location?: string;
+  State?: string;
+  Country?: string;
+  /** 2027 */
+  "Credit Display"?: string;
+  "Has College Credit"?: string;
+  /** 2026 legacy */
+  Credit?: string;
+  /** 2027 */
+  "Price Display"?: string;
+  "Price Min"?: string;
+  "Price Max"?: string;
+  "Fully Funded"?: string;
+  "Financial Aid Available"?: string;
+  /** 2026 legacy */
+  Price?: string;
+  URL?: string;
+  Description?: string;
   /** Optional JSON array of ProgramFlag objects */
   Flags?: string;
   "Season Year"?: string;
   "Review Status"?: string;
-  "Dates Display"?: string;
-  "Dates 2027"?: string;
+  "Review Notes"?: string;
+  "Data Verified At"?: string;
 }

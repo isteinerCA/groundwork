@@ -9,11 +9,17 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { categoryIdFromCsvValue } from "../src/lib/constants/categories";
 import { normalizeAdmissionType } from "../src/lib/data/normalize-admission";
-import { normalizeDuration } from "../src/lib/data/normalize-duration";
 import { normalizeFormat } from "../src/lib/data/normalize-format";
-import { normalizeGrade } from "../src/lib/data/normalize-grade";
+import {
+  csvCell,
+  detectInternationalFromCsv,
+  parseCreditFromCsv,
+  parseDatesFromCsv,
+  parseDurationFromCsv,
+  parseGradesFromCsv,
+  parsePriceFromCsv,
+} from "../src/lib/data/parse-csv-program-fields";
 import { parseReviewStatus, parseSeasonYear } from "../src/lib/data/normalize-season-review";
-import { parsePrice } from "../src/lib/data/parse-price";
 import { isDayToDaySourceType } from "../src/lib/constants/day-to-day";
 import { isValidDayToDay } from "../src/lib/data/day-to-day";
 import type { Program, ProgramCsvRow, ProgramFlag, ProgramDayToDay } from "../src/lib/types/program";
@@ -174,16 +180,6 @@ function validateDayToDayRules(rules: DayToDayRule[]): void {
   }
 }
 
-function detectInternational(location: string): boolean {
-  const loc = location.trim();
-  if (/,\s*[A-Z]{2}\b/.test(loc) && !/,\s*UK\b/i.test(loc)) {
-    if (/,\s*(CA|NY|MA|PA|TX|FL|IL|WA|OR|NC|GA|VA|MD|OH|MI|IN|TN|AZ|CO|UT|NM|HI|AK|AL|SC|LA|MO|WI|MN|IA|KS|NE|OK|KY|CT|RI|NH|VT|ME|DE|NJ|WV|ID|MT|WY|ND|SD|NV|AR|MS|DC)\b/.test(loc)) {
-      return false;
-    }
-  }
-  return /global|china|bahamas|wales|uk|bvi|canada|eleuthera|paraguay|panama|costa rica|peru|fiji|alps|chamonix|europe|japan|india|africa|international/i.test(loc);
-}
-
 function rowToProgram(
   row: ProgramCsvRow,
   index: number,
@@ -202,47 +198,55 @@ function rowToProgram(
     return null;
   }
 
-  const track = row["Track/Session"]?.trim() || row["Offering Label"]?.trim();
-  const programGroupId =
-    row["Program Group ID"]?.trim() || row["Program Group Id"]?.trim() || undefined;
+  const track = csvCell(row, "Track/Session", "Offering Label") || undefined;
+  const programGroupId = csvCell(row, "Program Group ID", "Program Group Id") || undefined;
+  const institution = csvCell(row, "Institution") || undefined;
+  const description = csvCell(row, "Description") || undefined;
   const slug = slugify(row["Program Name"], track);
-  const { admissionType, admissionDisplay } = normalizeAdmissionType(row["Admission Type"]);
-  const price = parsePrice(row.Price);
-  const grades = normalizeGrade(row.Grades);
-  const format = normalizeFormat(row.Format ?? "");
-  const duration = normalizeDuration(row.Length ?? "");
+  const seasonYear = parseSeasonYear(row["Season Year"]);
+  const { admissionType, admissionDisplay } = normalizeAdmissionType(
+    csvCell(row, "Admission Type"),
+  );
+  const price = parsePriceFromCsv(row);
+  const grades = parseGradesFromCsv(row);
+  const format = normalizeFormat(csvCell(row, "Format"));
+  const duration = parseDurationFromCsv(row);
+  const dates = parseDatesFromCsv(row, seasonYear);
+  const credit = parseCreditFromCsv(row);
+  const locationDisplay = csvCell(row, "Location Display", "Location");
 
   const programBase = {
     id: `prog-${index + 1}`,
     slug,
     name: row["Program Name"].trim(),
+    ...(institution ? { institution } : {}),
     ...(programGroupId ? { programGroupId } : {}),
+    ...(description ? { description } : {}),
     category,
-    secondaryTags: (row["Secondary Tags"] ?? "")
+    secondaryTags: csvCell(row, "Secondary Tags")
       .split(/[,;]/)
       .map((t) => t.trim())
       .filter(Boolean),
-    trackDetail: track || undefined,
+    trackDetail: track,
     ...grades,
     admissionType,
     admissionDisplay,
     formatDisplay: format.formatDisplay,
     formatTags: format.formatTags,
     ...duration,
-    datesDisplay:
-      row["Dates Display"]?.trim() ||
-      row["Dates 2027"]?.trim() ||
-      row["Dates 2026"]?.trim() ||
-      "",
-    seasonYear: parseSeasonYear(row["Season Year"]),
+    ...dates,
+    seasonYear,
     reviewStatus,
-    locationDisplay: row.Location?.trim() ?? "",
-    isInternational: detectInternational(row.Location ?? ""),
-    hasCollegeCredit: /^yes/i.test(row.Credit),
-    creditDisplay: row.Credit?.trim() ?? "",
-    ...price,
-    financialAidAvailable: /aid|scholar|need-based|subsid/i.test(row.Price),
-    websiteUrl: row.URL?.trim() ?? "",
+    locationDisplay,
+    isInternational: detectInternationalFromCsv(row, locationDisplay),
+    ...credit,
+    priceDisplay: price.priceDisplay,
+    priceMin: price.priceMin,
+    priceMax: price.priceMax,
+    priceUnknown: price.priceUnknown,
+    fullyFunded: price.fullyFunded,
+    financialAidAvailable: price.financialAidAvailable,
+    websiteUrl: csvCell(row, "URL"),
     dataVerifiedAt: verifiedAt,
   };
 

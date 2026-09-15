@@ -7,6 +7,7 @@ import { useWorkspace } from "@/components/workspace/workspace-provider";
 import { ADMISSION_TYPE_BY_ID } from "@/lib/constants/admission-types";
 import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
 import { formatPriceDisplay } from "@/lib/data/format-price-display";
+import { gradeSearchMatchHint } from "@/lib/data/format-grade-display";
 import { formatDatesDisplay } from "@/lib/data/format-season-display";
 import type { Program } from "@/lib/types/program";
 
@@ -106,7 +107,13 @@ export function CompareView({ programs }: { programs: Program[] }) {
                   <tbody>
                     {[
                       ["Category", (p: Program) => categoryLabel(p.category)],
-                      ["Grades", (p: Program) => p.gradeDisplay],
+                      [
+                        "Grades",
+                        (p: Program) => {
+                          const hint = gradeSearchMatchHint(p);
+                          return hint ? `${p.gradeDisplay} (${hint})` : p.gradeDisplay;
+                        },
+                      ],
                       ["Admission", (p: Program) => ADMISSION_TYPE_BY_ID[p.admissionType].label],
                       ["Format", (p: Program) => p.formatDisplay],
                       ["Location", (p: Program) => p.locationDisplay],

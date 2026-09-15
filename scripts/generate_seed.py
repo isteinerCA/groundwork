@@ -39,6 +39,169 @@ def parse_season_year(raw: str | None) -> int:
     return LEGACY_CATALOG_SEASON_YEAR
 
 
+def csv_cell(row: dict, *keys: str) -> str:
+    for key in keys:
+        value = (row.get(key) or "").strip()
+        if value:
+            return value
+    return ""
+
+
+def parse_yes_no(raw: str) -> bool:
+    return raw.strip().lower() == "yes"
+
+
+def parse_optional_int(raw: str) -> int | None:
+    if not raw.strip():
+        return None
+    try:
+        return int(raw.strip())
+    except ValueError:
+        return None
+
+
+def parse_optional_number(raw: str) -> float | None:
+    if not raw.strip():
+        return None
+    try:
+        return float(raw.replace(",", "").strip())
+    except ValueError:
+        return None
+
+
+def parse_iso_date(raw: str) -> str | None:
+    value = raw.strip()
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+        return None
+    try:
+        date.fromisoformat(value)
+    except ValueError:
+        return None
+    return value
+
+
+def format_iso_date_range(start: str, end: str) -> str:
+    start_date = date.fromisoformat(start)
+    end_date = date.fromisoformat(end)
+    month_names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    if start_date.year == end_date.year and start_date.month == end_date.month:
+        if start_date.day == end_date.day:
+            return f"{month_names[start_date.month - 1]} {start_date.day}, {start_date.year}"
+        return f"{month_names[start_date.month - 1]} {start_date.day}–{end_date.day}, {start_date.year}"
+    return (
+        f"{month_names[start_date.month - 1]} {start_date.day} – "
+        f"{month_names[end_date.month - 1]} {end_date.day}, {start_date.year}"
+    )
+
+
+def parse_dates_parse_quality(raw: str) -> str | None:
+    value = raw.strip().lower()
+    if value in {"exact", "approximate", "unknown"}:
+        return value
+    return None
+
+
+def parse_dates_from_csv(row: dict, season_year: int) -> dict:
+    date_start = parse_iso_date(csv_cell(row, "Date Start"))
+    date_end = parse_iso_date(csv_cell(row, "Date End"))
+    quality_override = parse_dates_parse_quality(csv_cell(row, "Dates Parse Quality"))
+    dates_display = csv_cell(row, "Dates Display", "Dates 2027", "Dates 2026")
+
+    if date_start and date_end:
+        if not dates_display:
+            dates_display = format_iso_date_range(date_start, date_end)
+        return {
+            "datesDisplay": dates_display,
+            "dateStart": date_start,
+            "dateEnd": date_end,
+            "datesParseQuality": quality_override or "exact",
+        }
+
+    parsed = parse_dates_display(dates_display, season_year)
+    if not dates_display and parsed.get("dateStart") and parsed.get("dateEnd"):
+        dates_display = format_iso_date_range(parsed["dateStart"], parsed["dateEnd"])
+    return {
+        "datesDisplay": dates_display,
+        **parsed,
+        "datesParseQuality": quality_override or parsed.get("datesParseQuality", "unknown"),
+    }
+
+
+def parse_grades_from_csv(row: dict) -> dict:
+    display = csv_cell(row, "Grades Display", "Grades")
+    min_override = parse_optional_int(csv_cell(row, "Grade Completed Min"))
+    max_override = parse_optional_int(csv_cell(row, "Grade Completed Max"))
+    parsed = normalize_grade(display or "Grades 6-12")
+
+    if (
+        min_override is not None
+        and max_override is not None
+        and 1 <= min_override <= 12
+        and 1 <= max_override <= 12
+        and min_override <= max_override
+    ):
+        parsed["gradeDisplay"] = display or f"Grades {min_override}–{max_override}"
+        parsed["gradeCompletedMin"] = min_override
+        parsed["gradeCompletedMax"] = max_override
+    return parsed
+
+
+def parse_duration_from_csv(row: dict) -> dict:
+    duration = normalize_duration(csv_cell(row, "Length Display", "Length") or "Unknown")
+    min_override = parse_optional_int(csv_cell(row, "Length Min Days"))
+    max_override = parse_optional_int(csv_cell(row, "Length Max Days"))
+    if min_override is not None:
+        duration["lengthMinDays"] = min_override
+    if max_override is not None:
+        duration["lengthMaxDays"] = max_override
+    if duration.get("lengthMinDays") is not None and duration.get("lengthMaxDays") is None:
+        duration["lengthMaxDays"] = duration["lengthMinDays"]
+    if duration.get("lengthMaxDays") is not None and duration.get("lengthMinDays") is None:
+        duration["lengthMinDays"] = duration["lengthMaxDays"]
+    return duration
+
+
+def parse_price_from_csv(row: dict) -> dict:
+    price_display = csv_cell(row, "Price Display", "Price")
+    parsed = parse_price(price_display)
+    min_override = parse_optional_number(csv_cell(row, "Price Min"))
+    max_override = parse_optional_number(csv_cell(row, "Price Max"))
+    fully_funded_raw = csv_cell(row, "Fully Funded")
+    financial_aid_raw = csv_cell(row, "Financial Aid Available")
+
+    if min_override is not None:
+        parsed["priceMin"] = min_override
+    if max_override is not None:
+        parsed["priceMax"] = max_override
+    if fully_funded_raw:
+        parsed["fullyFunded"] = parse_yes_no(fully_funded_raw)
+    if min_override is not None or max_override is not None:
+        parsed["priceUnknown"] = False
+
+    financial_aid = (
+        parse_yes_no(financial_aid_raw)
+        if financial_aid_raw
+        else bool(re.search(r"aid|scholar|need-based|subsid", price_display, re.I))
+    )
+    return {**parsed, "financialAidAvailable": financial_aid}
+
+
+def parse_credit_from_csv(row: dict) -> dict:
+    credit_display = csv_cell(row, "Credit Display", "Credit")
+    has_credit_raw = csv_cell(row, "Has College Credit")
+    has_college_credit = (
+        parse_yes_no(has_credit_raw) if has_credit_raw else bool(re.match(r"^yes", credit_display, re.I))
+    )
+    return {"creditDisplay": credit_display, "hasCollegeCredit": has_college_credit}
+
+
+def detect_international_from_csv(row: dict, location_display: str) -> bool:
+    country = csv_cell(row, "Country").lower()
+    if country and country not in {"us", "usa", "united states"}:
+        return True
+    return detect_international(location_display)
+
+
 CATEGORIES = {
     "Artificial Intelligence": "artificial-intelligence",
     "STEM/Engineering": "stem-engineering",
@@ -192,9 +355,6 @@ MONTH_BY_TOKEN = {
     "december": 12,
 }
 
-SUMMER_YEAR = 2026
-
-
 def _month_num(token: str) -> int | None:
     cleaned = token.strip().lower().rstrip(".")
     if cleaned in MONTH_BY_TOKEN:
@@ -227,7 +387,7 @@ def _month_last_day(year: int, month: int) -> date:
     return date(year, month, monthrange(year, month)[1])
 
 
-def parse_dates_display(raw: str) -> dict:
+def parse_dates_display(raw: str, season_year: int = LEGACY_CATALOG_SEASON_YEAR) -> dict:
     display = raw.strip()
     if not display:
         return {"dateStart": None, "dateEnd": None, "datesParseQuality": "unknown"}
@@ -240,8 +400,8 @@ def parse_dates_display(raw: str) -> dict:
         r"\b(jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)\b", lower
     ):
         return {
-            "dateStart": f"{SUMMER_YEAR}-06-01",
-            "dateEnd": f"{SUMMER_YEAR}-08-31",
+            "dateStart": f"{season_year}-06-01",
+            "dateEnd": f"{season_year}-08-31",
             "datesParseQuality": "approximate",
         }
 
@@ -261,8 +421,8 @@ def parse_dates_display(raw: str) -> dict:
         end_day = int(match.group("d2"))
         collected.extend(
             [
-                _make_date(SUMMER_YEAR, month, start_day),
-                _make_date(SUMMER_YEAR, month, end_day),
+                _make_date(season_year, month, start_day),
+                _make_date(season_year, month, end_day),
             ]
         )
         has_exact_day = True
@@ -293,8 +453,8 @@ def parse_dates_display(raw: str) -> dict:
             continue  # handled by same-month rule above
         collected.extend(
             [
-                _make_date(SUMMER_YEAR, month1, day1),
-                _make_date(SUMMER_YEAR, month2, day2),
+                _make_date(season_year, month1, day1),
+                _make_date(season_year, month2, day2),
             ]
         )
         if match.group("d1") and match.group("d2"):
@@ -314,8 +474,8 @@ def parse_dates_display(raw: str) -> dict:
         end_day = _default_day(match.group("mod2"), "end")
         collected.extend(
             [
-                _make_date(SUMMER_YEAR, month1, start_day),
-                _make_date(SUMMER_YEAR, month2, end_day),
+                _make_date(season_year, month1, start_day),
+                _make_date(season_year, month2, end_day),
             ]
         )
 
@@ -332,8 +492,8 @@ def parse_dates_display(raw: str) -> dict:
         modifier = match.group("mod")
         collected.extend(
             [
-                _make_date(SUMMER_YEAR, month, _default_day(modifier, "start")),
-                _make_date(SUMMER_YEAR, month, _default_day(modifier, "end")),
+                _make_date(season_year, month, _default_day(modifier, "start")),
+                _make_date(season_year, month, _default_day(modifier, "end")),
             ]
         )
 
@@ -343,7 +503,7 @@ def parse_dates_display(raw: str) -> dict:
             month = _month_num(match.group(1))
             if month:
                 collected.extend(
-                    [_make_date(SUMMER_YEAR, month, 1), _month_last_day(SUMMER_YEAR, month)]
+                    [_make_date(season_year, month, 1), _month_last_day(season_year, month)]
                 )
 
     if not collected:
@@ -720,18 +880,20 @@ def main():
             review_status = parse_review_status(row.get("Review Status"))
             if review_status == "needs_review":
                 continue
-            track = (row.get("Track/Session") or row.get("Offering Label") or "").strip()
-            program_group_id = (row.get("Program Group ID") or row.get("Program Group Id") or "").strip()
+            track = csv_cell(row, "Track/Session", "Offering Label")
+            program_group_id = csv_cell(row, "Program Group ID", "Program Group Id")
+            institution = csv_cell(row, "Institution")
+            description = csv_cell(row, "Description")
+            season_year = parse_season_year(row.get("Season Year"))
             slug = slugify(row["Program Name"], track)
-            admission_type, admission_display = normalize_admission(row["Admission Type"])
-            price = parse_price(row["Price"])
-            fmt = normalize_format(row.get("Format", ""))
-            dur = normalize_duration(row.get("Length", ""))
-            dates_display = (
-                row.get("Dates Display") or row.get("Dates 2027") or row.get("Dates 2026") or ""
-            ).strip()
-            dates = parse_dates_display(dates_display)
-            grades = normalize_grade(row["Grades"])
+            admission_type, admission_display = normalize_admission(csv_cell(row, "Admission Type"))
+            price = parse_price_from_csv(row)
+            fmt = normalize_format(csv_cell(row, "Format"))
+            dur = parse_duration_from_csv(row)
+            dates = parse_dates_from_csv(row, season_year)
+            grades = parse_grades_from_csv(row)
+            credit = parse_credit_from_csv(row)
+            location_display = csv_cell(row, "Location Display", "Location")
             csv_flags = []
             if row.get("Flags", "").strip():
                 try:
@@ -752,7 +914,9 @@ def main():
                 "id": f"prog-{i+1}",
                 "slug": slug,
                 "name": row["Program Name"].strip(),
+                **({"institution": institution} if institution else {}),
                 **({"programGroupId": program_group_id} if program_group_id else {}),
+                **({"description": description} if description else {}),
                 "category": cat,
                 "secondaryTags": [t.strip() for t in re.split(r"[,;]", row.get("Secondary Tags", "")) if t.strip()],
                 **({"trackDetail": track} if track else {}),
@@ -761,17 +925,14 @@ def main():
                 "admissionDisplay": admission_display,
                 **fmt,
                 **dur,
-                "datesDisplay": dates_display,
                 **dates,
-                "seasonYear": parse_season_year(row.get("Season Year")),
+                "seasonYear": season_year,
                 "reviewStatus": review_status,
-                "locationDisplay": row["Location"].strip(),
-                "isInternational": detect_international(row["Location"]),
-                "hasCollegeCredit": bool(re.match(r"^yes", row.get("Credit", ""), re.I)),
-                "creditDisplay": row.get("Credit", "").strip(),
+                "locationDisplay": location_display,
+                "isInternational": detect_international_from_csv(row, location_display),
+                **credit,
                 **price,
-                "financialAidAvailable": bool(re.search(r"aid|scholar|need-based|subsid", row["Price"], re.I)),
-                "websiteUrl": row["URL"].strip(),
+                "websiteUrl": csv_cell(row, "URL"),
                 "flags": flags,
                 "dataVerifiedAt": verified,
             }

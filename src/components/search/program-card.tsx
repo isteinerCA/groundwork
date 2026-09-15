@@ -16,6 +16,10 @@ import {
   formatPriceDisplay,
   isPriceDisplayMuted,
 } from "@/lib/data/format-price-display";
+import {
+  gradeEligibilityLabel,
+  gradeSearchMatchHint,
+} from "@/lib/data/format-grade-display";
 import { formatDatesDisplay, isPendingDatesDisplay } from "@/lib/data/format-season-display";
 import { SeasonReviewBadge } from "@/components/search/season-review-badge";
 import { formatShortlistMembershipLabel } from "@/lib/workspace/shortlist-membership";
@@ -50,6 +54,7 @@ export function ProgramCard({
   const savedInActive = hydrated && isSavedInActive(program.id);
   const memberLists = hydrated ? getShortlistsForProgram(program.id) : [];
   const membershipLabel = formatShortlistMembershipLabel(memberLists, activeShortlist.id);
+  const gradeHint = gradeSearchMatchHint(program);
 
   const handleSaveClick = () => {
     if (!isSignedIn) {
@@ -171,8 +176,13 @@ export function ProgramCard({
 
       <dl className="mt-4 grid gap-2 text-sm sm:grid-cols-2">
         <div>
-          <dt className="text-[var(--color-text-muted)]">Grades</dt>
-          <dd>{program.gradeDisplay}</dd>
+          <dt className="text-[var(--color-text-muted)]">{gradeEligibilityLabel(program)}</dt>
+          <dd>
+            {program.gradeDisplay}
+            {gradeHint && (
+              <span className="mt-0.5 block text-xs text-[var(--color-text-muted)]">{gradeHint}</span>
+            )}
+          </dd>
         </div>
         <div>
           <dt className="text-[var(--color-text-muted)]">Format</dt>

@@ -7,6 +7,15 @@ import { normalizeFormat } from "../src/lib/data/normalize-format";
 import { normalizeGrade, gradeMatchesFilter } from "../src/lib/data/normalize-grade";
 import { matchesDataQuery } from "../src/lib/data/matches-data-query";
 import { resolveLocationQuery } from "../src/lib/data/matches-location";
+import {
+  gradeEligibilityLabel,
+  gradeSearchMatchHint,
+} from "../src/lib/data/format-grade-display";
+import {
+  parseDatesFromCsv,
+  parseGradesFromCsv,
+  parsePriceFromCsv,
+} from "../src/lib/data/parse-csv-program-fields";
 import { parsePrice } from "../src/lib/data/parse-price";
 import { matchesPriceFilter } from "../src/lib/data/matches-price-filter";
 import type { Program } from "../src/lib/types/program";
@@ -267,6 +276,50 @@ const princetonGrade = {
 };
 if (gradeMatchesFilter(princetonGrade, [12])) {
   console.error("FAIL: HS Juniors program should not match completed grade 12");
+  failed++;
+}
+
+const ageGrades = parseGradesFromCsv({
+  "Grades Display": "Ages 13-18 (grouped 13-15 & 15-18)",
+  "Grade Completed Min": "7",
+  "Grade Completed Max": "11",
+});
+if (ageGrades.gradeSource !== "age" || ageGrades.gradeCompletedMin !== 7) {
+  console.error("FAIL: 2027 grade columns should honor explicit min/max with age display");
+  failed++;
+}
+if (gradeEligibilityLabel(ageGrades) !== "Ages") {
+  console.error("FAIL: age-based programs should use Ages label");
+  failed++;
+}
+if (!gradeSearchMatchHint(ageGrades)?.includes("7")) {
+  console.error("FAIL: age programs should show grade search hint");
+  failed++;
+}
+
+const isoDates = parseDatesFromCsv(
+  {
+    "Date Start": "2027-06-06",
+    "Date End": "2027-08-13",
+    "Dates Display": "10 weekly departures, Sun-Fri, Jun 6 - Aug 13 2027",
+    "Dates Parse Quality": "approximate",
+  },
+  2027,
+);
+if (isoDates.dateStart !== "2027-06-06" || isoDates.datesParseQuality !== "approximate") {
+  console.error("FAIL: 2027 ISO date columns should import directly");
+  failed++;
+}
+
+const structuredPrice = parsePriceFromCsv({
+  "Price Display": "$1990",
+  "Price Min": "1990",
+  "Price Max": "1990",
+  "Fully Funded": "No",
+  "Financial Aid Available": "No",
+});
+if (structuredPrice.priceMin !== 1990 || structuredPrice.priceUnknown) {
+  console.error("FAIL: 2027 structured price columns");
   failed++;
 }
 
