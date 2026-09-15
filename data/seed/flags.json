@@ -330,5 +330,26 @@
         "severity": "info"
       }
     ]
+  },
+  {
+    "match": { "programGroupId": "mtsi-wharton-penn" },
+    "flags": [
+      {
+        "id": "mtsi-mandatory-full-attendance",
+        "type": "other",
+        "title": "No partial attendance or early departure permitted",
+        "body": "Students must attend from the first day to the last day of the three-week program with no exceptions - the program explicitly states this is required because college credit is awarded for the full session. Families with a conflicting commitment (e.g., another camp, a family trip) cannot plan around a partial stay.",
+        "sourceCitation": "M&TSI FAQs page",
+        "severity": "warning"
+      },
+      {
+        "id": "mtsi-fee-exclusions",
+        "type": "other",
+        "title": "The $12,000 fee doesn't cover the following:",
+        "body": "Not included in the program fee: the $100 non-refundable application fee, travel to/from Philadelphia, Pottruck Gym access, off-campus meals (including all Saturdays, when no meals are provided at all), medical expenses, laundry, and personal spending money.",
+        "sourceCitation": "M&TSI program page, fee breakdown",
+        "severity": "info"
+      }
+    ]
   }
 ]

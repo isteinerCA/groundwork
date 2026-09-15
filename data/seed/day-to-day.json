@@ -70,5 +70,14 @@
       "sourceCitation": "Mathworks JSMCH program page (txst.edu/mathworks)",
       "verifiedAt": "2026-09-15"
     }
+  },
+  {
+    "match": { "programGroupId": "mtsi-wharton-penn" },
+    "dayToDay": {
+      "notes": "Students live in Penn dormitories with a meal plan in the undergraduate dining halls, described by the program as including 'student supervision.' The schedule is described as extremely rigorous and non-stop given that a full college credit is earned in just three weeks. Meals are provided twice daily Monday-Friday and twice on Sunday, but there are no provided meals at all on Saturdays, which are reserved for excursions and off-campus activities - students should budget for that. Full attendance is mandatory from the first day to the last; the program does not permit partial attendance or early departure under any circumstances, since credit is tied to completing the full three weeks.",
+      "sourceType": "official_policy",
+      "sourceCitation": "M&TSI program page and FAQs (fisher.wharton.upenn.edu)",
+      "verifiedAt": "2026-09-15"
+    }
   }
 ]

@@ -1,6 +1,6 @@
 {
   "verifiedAt": "2026-09-15",
-  "count": 179,
+  "count": 180,
   "programs": [
     {
       "id": "prog-1",
@@ -8465,6 +8465,76 @@
         "notes": "This is a day program with no overnight component - parents drop off and pick up daily, and San Marcos CISD provides bus transportation, but only for students enrolled in that local school district (families outside the district must arrange their own transportation, as Mathworks itself doesn't provide any). Breakfast, lunch, and a snack are provided during the school day. Students are on campus only during camp hours and go home each evening.",
         "sourceType": "official_policy",
         "sourceCitation": "Mathworks JSMCH program page (txst.edu/mathworks)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-180",
+      "slug": "management-technology-summer-institute-m-tsi-general",
+      "name": "Management & Technology Summer Institute (M&TSI)",
+      "institution": "University of Pennsylvania",
+      "programGroupId": "mtsi-wharton-penn",
+      "description": "Highly selective 3-week residential program at Wharton and Penn Engineering combining business and technology coursework, culminating in a student-built tech venture prototype; earns 1 Penn college credit.",
+      "category": "college-credit-pre-college",
+      "secondaryTags": [
+        "STEM/Engineering"
+      ],
+      "trackDetail": "General",
+      "gradeDisplay": "Rising seniors (some rising juniors admitted per third-party sources)",
+      "gradeCompletedMin": 10,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "stateRestriction": null,
+      "admissionType": "highly_competitive",
+      "admissionDisplay": "Highly Competitive",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 19,
+      "lengthMaxDays": 19,
+      "datesDisplay": "Jul 12\u201330, 2027",
+      "dateStart": "2027-07-12",
+      "dateEnd": "2027-07-30",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Philadelphia, PA",
+      "isInternational": false,
+      "creditDisplay": "Yes (1 Penn credit unit)",
+      "hasCollegeCredit": true,
+      "priceDisplay": "$12000",
+      "priceMin": 12000.0,
+      "priceMax": 12000.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://fisher.wharton.upenn.edu/management-technology-summer-institute/",
+      "flags": [
+        {
+          "id": "mtsi-mandatory-full-attendance",
+          "type": "other",
+          "title": "No partial attendance or early departure permitted",
+          "body": "Students must attend from the first day to the last day of the three-week program with no exceptions - the program explicitly states this is required because college credit is awarded for the full session. Families with a conflicting commitment (e.g., another camp, a family trip) cannot plan around a partial stay.",
+          "sourceCitation": "M&TSI FAQs page",
+          "severity": "warning"
+        },
+        {
+          "id": "mtsi-fee-exclusions",
+          "type": "other",
+          "title": "The $12,000 fee doesn't cover the following:",
+          "body": "Not included in the program fee: the $100 non-refundable application fee, travel to/from Philadelphia, Pottruck Gym access, off-campus meals (including all Saturdays, when no meals are provided at all), medical expenses, laundry, and personal spending money.",
+          "sourceCitation": "M&TSI program page, fee breakdown",
+          "severity": "info"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "Students live in Penn dormitories with a meal plan in the undergraduate dining halls, described by the program as including 'student supervision.' The schedule is described as extremely rigorous and non-stop given that a full college credit is earned in just three weeks. Meals are provided twice daily Monday-Friday and twice on Sunday, but there are no provided meals at all on Saturdays, which are reserved for excursions and off-campus activities - students should budget for that. Full attendance is mandatory from the first day to the last; the program does not permit partial attendance or early departure under any circumstances, since credit is tied to completing the full three weeks.",
+        "sourceType": "official_policy",
+        "sourceCitation": "M&TSI program page and FAQs (fisher.wharton.upenn.edu)",
         "verifiedAt": "2026-09-15"
       }
     }
