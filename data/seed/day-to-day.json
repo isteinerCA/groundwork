@@ -94,7 +94,16 @@
     "dayToDay": {
       "notes": "Day students attend roughly 9:45am-4pm; residential students live in NYU-area dormitory housing with lounges, computer rooms, and laundry facilities, with staff living in residence. Uniquely among SOCAPA's campuses, meals are NOT included in the Manhattan residential fee - students are responsible for purchasing their own food. For the first three days, counselors guide students to nearby restaurants and delis in Greenwich Village/East Village; after that, students sign out and explore food options in self-organized small groups (never alone, per policy). Every weekday evening (Monday-Friday) a planned activity is scheduled - a campus barbecue, a dinner out in the city, a pool visit, a theater or musical performance, or a film screening. Saturday afternoons not spent shooting/rehearsing are reserved for a group excursion (past examples include Coney Island, Broadway shows, and various museums), and at least once per session SOCAPA brings in an industry professional (actors, writers, directors) to lead a master class open to all students regardless of track. Unlike other SOCAPA campuses, there is no unaccompanied-minor airport pickup/drop-off service offered at all at the NYC campus.",
       "sourceType": "official_policy",
-      "sourceCitation": "SOCAPA NYC campus page, SOCAPA Tuition & Costs page, and SOCAPA Core Acting program page (socapa.org)",
+      "sourceCitation": "SOCAPA NYC campus page and SOCAPA Tuition & Costs page (socapa.org)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "socapa-los-angeles" },
+    "dayToDay": {
+      "notes": "Residential students live in Occidental College dorms with double/triple occupancy, and meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session.",
+      "sourceType": "official_policy",
+      "sourceCitation": "SOCAPA LA campus page and SOCAPA Tuition & Costs page (socapa.org)",
       "verifiedAt": "2026-09-15"
     }
   }

@@ -234,6 +234,57 @@ if (!matchesDataQuery(stanford, "stanford university", { relaxInstitutionSuffixe
   failed++;
 }
 
+const filmWithSharedDayToDay = stubProgram({
+  name: "SOCAPA - New York City",
+  locationDisplay: "New York, NY",
+  trackDetail: "Film/Screenwriting - Session 1 (Day)",
+  description: "Two-week screenwriting and filmmaking intensive; day format.",
+  dayToDay: {
+    notes:
+      "Evening trips include Broadway shows and Coney Island; master class with actors and directors.",
+    sourceType: "official_policy",
+    sourceCitation: "SOCAPA NYC campus page (socapa.org)",
+    verifiedAt: "2026-09-15",
+  },
+});
+
+if (matchesDataQuery(filmWithSharedDayToDay, "broadway")) {
+  console.error("FAIL: film offering should not match query via shared day-to-day notes");
+  failed++;
+}
+
+if (matchesDataQuery(filmWithSharedDayToDay, "acting program")) {
+  console.error("FAIL: film offering should not match acting query via shared day-to-day notes");
+  failed++;
+}
+
+const actingOffering = stubProgram({
+  name: "SOCAPA - New York City",
+  locationDisplay: "New York, NY",
+  trackDetail: "Core Acting - Session 1 2WK (Day)",
+  description: "Two-week acting intensive; day format.",
+});
+
+if (!matchesDataQuery(actingOffering, "acting program")) {
+  console.error('FAIL: acting offering should match dataQuery "acting program"');
+  failed++;
+}
+
+const photoCrossTrackMention = stubProgram({
+  name: "SOCAPA - New York City",
+  locationDisplay: "New York, NY",
+  trackDetail: "Core Photography (Digital) - Session 1 3WK (Residential)",
+  description:
+    "Three-week digital photography intensive including a movie-poster collaboration with filmmaking/acting students.",
+});
+
+if (matchesDataQuery(photoCrossTrackMention, "acting program")) {
+  console.error(
+    "FAIL: photography offering should not match acting query via cross-track description mention",
+  );
+  failed++;
+}
+
 const mathPathAge = normalizeGrade("Ages 11-14");
 if (mathPathAge.gradeCompletedMax !== 8) {
   console.error(

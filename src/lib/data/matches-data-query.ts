@@ -1,6 +1,5 @@
 import type { Program } from "@/lib/types/program";
 import { termMatchesInText } from "@/lib/data/fuzzy-text-match";
-import { dayToDaySearchText } from "@/lib/data/day-to-day";
 import { matchesLocationQuery, resolveLocationQuery } from "@/lib/data/matches-location";
 import { programMatchesAnyRegion, resolveRegionQuery } from "@/lib/data/us-regions";
 
@@ -21,6 +20,41 @@ const OPTIONAL_INSTITUTION_TERMS = new Set([
   "at",
 ]);
 
+/** Generic words parents append that are not distinctive program content. */
+const DATA_QUERY_STOPWORDS = new Set([
+  "program",
+  "programs",
+  "camp",
+  "camps",
+  "course",
+  "courses",
+  "class",
+  "classes",
+  "summer",
+  "school",
+  "schools",
+  "intensive",
+  "intensives",
+  "academy",
+  "academies",
+]);
+
+function distinctiveDataQueryTerms(query: string): string[] {
+  return query
+    .toLowerCase()
+    .split(/\s+/)
+    .filter(Boolean)
+    .filter((term) => !DATA_QUERY_STOPWORDS.has(term));
+}
+
+/** Identity fields for discipline-style queries (track name, not cross-track prose). */
+function programIdentitySearchText(program: Program): string {
+  return [program.name, program.institution, program.trackDetail]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
 export interface DataQueryMatchOptions {
   /**
    * When true, unmatched institution suffixes are ignored if the distinctive
@@ -30,13 +64,11 @@ export interface DataQueryMatchOptions {
   relaxInstitutionSuffixes?: boolean;
 }
 
-/** Build searchable text from all CSV-backed program fields and gotcha flags. */
+/** Build searchable text from CSV-backed fields and gotcha flags (not day-to-day notes). */
 export function programSearchText(program: Program): string {
   const flagText = program.flags
     .map((flag) => `${flag.title} ${flag.body} ${flag.type}`)
     .join(" ");
-
-  const dayToDayText = dayToDaySearchText(program.dayToDay);
 
   return [
     program.name,
@@ -53,7 +85,6 @@ export function programSearchText(program: Program): string {
     program.datesDisplay,
     ...program.secondaryTags,
     flagText,
-    dayToDayText,
   ]
     .filter(Boolean)
     .join(" ")
@@ -83,7 +114,18 @@ export function matchesDataQuery(
   }
 
   const haystack = programSearchText(program);
-  const terms = trimmed.toLowerCase().split(/\s+/).filter(Boolean);
+  const terms = distinctiveDataQueryTerms(trimmed);
+  if (terms.length === 0) return true;
+
+  const identityHaystack = programIdentitySearchText(program);
+  if (
+    terms.length === 1 &&
+    program.trackDetail?.trim() &&
+    !termMatchesInText(terms[0], identityHaystack)
+  ) {
+    return false;
+  }
+
   if (terms.every((term) => termMatchesInText(term, haystack))) return true;
   if (!options?.relaxInstitutionSuffixes) return false;
 
