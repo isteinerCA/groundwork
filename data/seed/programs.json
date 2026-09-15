@@ -1,6 +1,6 @@
 {
   "verifiedAt": "2026-09-15",
-  "count": 269,
+  "count": 281,
   "programs": [
     {
       "id": "prog-1",
@@ -13419,6 +13419,816 @@
         "notes": "The first three weeks follow the standard UCLA pre-college schedule: suite-style housing at Delta Terrace, morning and afternoon courses, breakfast and dinner included (lunch paid separately), evening activities, and LA excursions. The program then continues with a 6-day Hawaii extension to Maui and Oahu, including snorkeling, a traditional luau, and travel by private coach between islands. Internal flights from Los Angeles to Hawaii and between islands cost an additional $850 beyond tuition; airfare to Los Angeles at the start and home from Oahu at the end are also not included. There is no commuter option for this itinerary.",
         "sourceType": "official_policy",
         "sourceCitation": "Westcoast Connection UCLA plus Hawaii Extension program page (westcoastconnection.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-270",
+      "slug": "westcoast-connection-pre-college-enrichment-barcelona-14-day-residential",
+      "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
+      "institution": "Westcoast Connection Travel Camp Inc.",
+      "programGroupId": "westcoast-connection-barcelona",
+      "description": "Two-week pre-college enrichment program in Barcelona; residential format.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "14-Day Residential",
+      "gradeDisplay": "Completing grades 9-12",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "14 days",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jul 1–14, 2027",
+      "dateStart": "2027-07-01",
+      "dateEnd": "2027-07-14",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Barcelona, Spain",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$6,499 (early enrollment; airfare not included)",
+      "priceMin": 6499,
+      "priceMax": 6499,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/barcelona-14-days/",
+      "dataVerifiedAt": "2026-09-15",
+      "flags": [
+        {
+          "id": "westcoast-barcelona-lunch-not-included",
+          "type": "pricing",
+          "title": "Lunch is not included in tuition",
+          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and handled independently by students each day.",
+          "sourceCitation": "Westcoast Connection Barcelona 21-day program page, 'What's Included' section",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in two-person suites at the Kadora Sarria Barcelona Residence, each with a private bathroom, air conditioning, and Wi-Fi; the residence has 24-hour security. A typical day: 8am wake-up, 8:30 breakfast, 10:30 morning course, 1pm lunch (unstructured - students choose where to eat in small groups), 3pm group afternoon excursion/highlight, 5:30pm 'Student's Choice' free time (sports, pool, fitness club, or city exploring), 8pm dinner (some nights at the residence, some nights out as a group or in smaller groups at local restaurants), and evening activities until 10pm. Breakfast and dinner are included in tuition; lunch is not.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Westcoast Connection Barcelona 21-day program page (westcoastconnection.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-271",
+      "slug": "westcoast-connection-pre-college-enrichment-barcelona-21-day-residential",
+      "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
+      "institution": "Westcoast Connection Travel Camp Inc.",
+      "programGroupId": "westcoast-connection-barcelona",
+      "description": "Three-week pre-college enrichment program in Barcelona; residential format.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "21-Day Residential",
+      "gradeDisplay": "Completing grades 9-12",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "21 days",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "Jul 1–21, 2027",
+      "dateStart": "2027-07-01",
+      "dateEnd": "2027-07-21",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Barcelona, Spain",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$8,599 (early enrollment; airfare not included)",
+      "priceMin": 8599,
+      "priceMax": 8599,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/barcelona-21-days/",
+      "dataVerifiedAt": "2026-09-15",
+      "flags": [
+        {
+          "id": "westcoast-barcelona-lunch-not-included",
+          "type": "pricing",
+          "title": "Lunch is not included in tuition",
+          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and handled independently by students each day.",
+          "sourceCitation": "Westcoast Connection Barcelona 21-day program page, 'What's Included' section",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in two-person suites at the Kadora Sarria Barcelona Residence, each with a private bathroom, air conditioning, and Wi-Fi; the residence has 24-hour security. A typical day: 8am wake-up, 8:30 breakfast, 10:30 morning course, 1pm lunch (unstructured - students choose where to eat in small groups), 3pm group afternoon excursion/highlight, 5:30pm 'Student's Choice' free time (sports, pool, fitness club, or city exploring), 8pm dinner (some nights at the residence, some nights out as a group or in smaller groups at local restaurants), and evening activities until 10pm. Breakfast and dinner are included in tuition; lunch is not.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Westcoast Connection Barcelona 21-day program page (westcoastconnection.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-272",
+      "slug": "westcoast-connection-pre-college-enrichment-barcelona-27-day-residential-plus-amalfi-coast-rome",
+      "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
+      "institution": "Westcoast Connection Travel Camp Inc.",
+      "programGroupId": "westcoast-connection-barcelona",
+      "description": "Extended pre-college enrichment program combining 3 weeks in Barcelona with a grand finale week touring the Amalfi Coast and Rome; residential format. Replaces a prior '28-day Costa Blanca/Granada/Madrid' itinerary.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "27-Day Residential (plus Amalfi Coast & Rome)",
+      "gradeDisplay": "Completing grades 9-12",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "27 days",
+      "lengthMinDays": 27,
+      "lengthMaxDays": 27,
+      "datesDisplay": "Jul 1–27, 2027",
+      "dateStart": "2027-07-01",
+      "dateEnd": "2027-07-27",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Barcelona, Spain + Sorrento/Capri/Positano + Rome, Italy",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$10,599 (early enrollment; airfare not included, $245 internal Spain-Italy flight not included)",
+      "priceMin": 10599,
+      "priceMax": 10599,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/barcelona-amalfi-rome-27-days/",
+      "dataVerifiedAt": "2026-09-15",
+      "flags": [
+        {
+          "id": "westcoast-barcelona-lunch-not-included",
+          "type": "pricing",
+          "title": "Lunch is not included in tuition",
+          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and handled independently by students each day.",
+          "sourceCitation": "Westcoast Connection Barcelona 21-day program page, 'What's Included' section",
+          "severity": "info"
+        },
+        {
+          "id": "westcoast-barcelona-italy-internal-flight",
+          "type": "pricing",
+          "title": "$245 internal Spain–Italy flight not included in tuition",
+          "body": "Beyond airfare to Barcelona and home from Rome, the program charges an additional $245 for the internal flight from Spain to Italy.",
+          "sourceCitation": "Westcoast Connection Barcelona plus Amalfi Coast & Rome program page",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "The first three weeks follow the standard Barcelona pre-college schedule at the Kadora Sarria residence: morning course, unstructured lunch, afternoon highlights, and included breakfast and dinner. The program then continues with a grand finale week touring the Amalfi Coast (Sorrento, Capri, Positano) and Rome before returning home from Rome. An additional $245 internal flight from Spain to Italy is required beyond tuition; airfare to Barcelona at the start and home from Rome at the end are also not included.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Westcoast Connection Barcelona plus Amalfi Coast & Rome program page (westcoastconnection.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-273",
+      "slug": "westcoast-connection-pre-college-enrichment-barcelona-30-day-residential-plus-greek-islands",
+      "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
+      "institution": "Westcoast Connection Travel Camp Inc.",
+      "programGroupId": "westcoast-connection-barcelona",
+      "description": "Extended pre-college enrichment program combining 3 weeks in Barcelona with a 9-day grand finale in the Greek Islands (Athens, Naxos, Santorini) including scuba/snorkeling; residential format.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "30-Day Residential (plus Greek Islands)",
+      "gradeDisplay": "Completing grades 9-12",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "four_plus_weeks",
+      "lengthDisplay": "30 days",
+      "lengthMinDays": 30,
+      "lengthMaxDays": 30,
+      "datesDisplay": "Jul 1–30, 2027",
+      "dateStart": "2027-07-01",
+      "dateEnd": "2027-07-30",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Barcelona, Spain + Athens/Naxos/Santorini, Greece",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$12,099 (early enrollment; airfare not included, $495 internal Spain-Greece flight not included)",
+      "priceMin": 12099,
+      "priceMax": 12099,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/barcelona-greece-30-days/",
+      "dataVerifiedAt": "2026-09-15",
+      "flags": [
+        {
+          "id": "westcoast-barcelona-lunch-not-included",
+          "type": "pricing",
+          "title": "Lunch is not included in tuition",
+          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and handled independently by students each day.",
+          "sourceCitation": "Westcoast Connection Barcelona 21-day program page, 'What's Included' section",
+          "severity": "info"
+        },
+        {
+          "id": "westcoast-barcelona-greece-internal-flight",
+          "type": "pricing",
+          "title": "$495 internal Spain–Greece flight not included in tuition",
+          "body": "Beyond airfare to Barcelona and home from Athens, the program charges an additional $495 for the internal flight from Spain to Greece.",
+          "sourceCitation": "Westcoast Connection Barcelona plus Greek Islands program page",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "The first three weeks follow the standard Barcelona pre-college schedule at the Kadora Sarria residence: morning course, unstructured lunch, afternoon highlights, and included breakfast and dinner. The program then continues with a 9-day grand finale in Greece (Athens, Naxos, and Santorini), including scuba and snorkeling opportunities. An additional $495 internal flight from Spain to Greece is required beyond tuition; airfare to Barcelona at the start and home from Athens at the end are also not included.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Westcoast Connection Barcelona plus Greek Islands program page (westcoastconnection.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-274",
+      "slug": "westcoast-connection-pre-college-enrichment-florence-14-day-residential",
+      "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
+      "institution": "Westcoast Connection Travel Camp Inc.",
+      "programGroupId": "westcoast-connection-florence",
+      "description": "Two-week pre-college enrichment program in Florence; residential format, single-occupancy rooms at The Social Hub Belfiore.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "14-Day Residential",
+      "gradeDisplay": "Completing grades 9-12",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "14 days",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jul 1–14, 2027",
+      "dateStart": "2027-07-01",
+      "dateEnd": "2027-07-14",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Florence, Italy",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$6,999 (early enrollment; airfare not included)",
+      "priceMin": 6999,
+      "priceMax": 6999,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/florence-14-days/",
+      "dataVerifiedAt": "2026-09-15",
+      "flags": [
+        {
+          "id": "westcoast-florence-lunch-not-included",
+          "type": "pricing",
+          "title": "Lunch is not included in tuition",
+          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and handled independently by students each day.",
+          "sourceCitation": "Westcoast Connection Florence program pages, 'What's Included' section",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in single-occupancy rooms at The Social Hub Belfiore Florence Residence, each with air conditioning, Wi-Fi, a private bathroom, and a personal workstation; the residence has 24-hour security, laundry, a gym, and a rooftop pool. A typical day: 8:30am wake-up, 9am breakfast, 10:30am morning course, 1pm lunch (unstructured - students choose where to eat in small groups at local cafés and restaurants), 3pm group afternoon highlight, 5:30pm 'Student's Choice' free time (sports, gym, staff-planned activity, or city exploration), 8:30pm dinner (some nights at the residence, some nights out as a group or in smaller groups at local restaurants), and evening activities until roughly 10:15pm. Breakfast and dinner are included in tuition; lunch is not.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Westcoast Connection Florence 14-day and 21-day program pages (westcoastconnection.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-275",
+      "slug": "westcoast-connection-pre-college-enrichment-florence-21-day-residential",
+      "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
+      "institution": "Westcoast Connection Travel Camp Inc.",
+      "programGroupId": "westcoast-connection-florence",
+      "description": "Three-week pre-college enrichment program in Florence, includes a weekend trip to Venice; residential format.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "21-Day Residential",
+      "gradeDisplay": "Completing grades 9-12",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "21 days",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "Jul 1–21, 2027",
+      "dateStart": "2027-07-01",
+      "dateEnd": "2027-07-21",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Florence, Italy",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$9,199 (early enrollment; airfare not included)",
+      "priceMin": 9199,
+      "priceMax": 9199,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/florence-21-days/",
+      "dataVerifiedAt": "2026-09-15",
+      "flags": [
+        {
+          "id": "westcoast-florence-lunch-not-included",
+          "type": "pricing",
+          "title": "Lunch is not included in tuition",
+          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and handled independently by students each day.",
+          "sourceCitation": "Westcoast Connection Florence program pages, 'What's Included' section",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in single-occupancy rooms at The Social Hub Belfiore Florence Residence, each with air conditioning, Wi-Fi, a private bathroom, and a personal workstation; the residence has 24-hour security, laundry, a gym, and a rooftop pool. A typical day: 8:30am wake-up, 9am breakfast, 10:30am morning course, 1pm lunch (unstructured - students choose where to eat in small groups at local cafés and restaurants), 3pm group afternoon highlight, 5:30pm 'Student's Choice' free time (sports, gym, staff-planned activity, or city exploration), 8:30pm dinner (some nights at the residence, some nights out as a group or in smaller groups at local restaurants), and evening activities until roughly 10:15pm. Breakfast and dinner are included in tuition; lunch is not.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Westcoast Connection Florence 14-day and 21-day program pages (westcoastconnection.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-276",
+      "slug": "westcoast-connection-pre-college-enrichment-florence-27-day-residential-plus-amalfi-coast-rome",
+      "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
+      "institution": "Westcoast Connection Travel Camp Inc.",
+      "programGroupId": "westcoast-connection-florence",
+      "description": "Extended pre-college enrichment program combining 3 weeks in Florence (including a Venice weekend) with a grand finale week touring the Amalfi Coast and Rome; residential format.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "27-Day Residential (plus Amalfi Coast & Rome)",
+      "gradeDisplay": "Completing grades 9-12",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "27 days",
+      "lengthMinDays": 27,
+      "lengthMaxDays": 27,
+      "datesDisplay": "Jul 1–27, 2027",
+      "dateStart": "2027-07-01",
+      "dateEnd": "2027-07-27",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Florence, Italy + Sorrento/Capri/Positano + Rome, Italy",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$11,199 (early enrollment; airfare not included)",
+      "priceMin": 11199,
+      "priceMax": 11199,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/florence-27-days/",
+      "dataVerifiedAt": "2026-09-15",
+      "flags": [
+        {
+          "id": "westcoast-florence-lunch-not-included",
+          "type": "pricing",
+          "title": "Lunch is not included in tuition",
+          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and handled independently by students each day.",
+          "sourceCitation": "Westcoast Connection Florence program pages, 'What's Included' section",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "The first three weeks follow the standard Florence pre-college schedule at The Social Hub Belfiore (including a Venice weekend getaway), then the program continues with a grand finale week touring the Amalfi Coast (Sorrento, Capri, Positano) and Rome before returning home from Rome. Airfare to Florence at the start and home from Rome at the end are not included in tuition.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Westcoast Connection Florence plus Amalfi Coast & Rome program page (westcoastconnection.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-277",
+      "slug": "westcoast-connection-pre-college-enrichment-florence-30-day-residential-plus-greek-islands",
+      "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
+      "institution": "Westcoast Connection Travel Camp Inc.",
+      "programGroupId": "westcoast-connection-florence",
+      "description": "Extended pre-college enrichment program combining 3 weeks in Florence with a grand finale in the Greek Islands; residential format.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "30-Day Residential (plus Greek Islands)",
+      "gradeDisplay": "Completing grades 9-12",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "four_plus_weeks",
+      "lengthDisplay": "30 days",
+      "lengthMinDays": 30,
+      "lengthMaxDays": 30,
+      "datesDisplay": "Jul 1–30, 2027",
+      "dateStart": "2027-07-01",
+      "dateEnd": "2027-07-30",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Florence, Italy + Athens/Naxos/Santorini, Greece",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$12,699 (early enrollment; airfare not included, $345 internal Italy-Greece flight not included)",
+      "priceMin": 12699,
+      "priceMax": 12699,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/florence-greece-30-days/",
+      "dataVerifiedAt": "2026-09-15",
+      "flags": [
+        {
+          "id": "westcoast-florence-lunch-not-included",
+          "type": "pricing",
+          "title": "Lunch is not included in tuition",
+          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and handled independently by students each day.",
+          "sourceCitation": "Westcoast Connection Florence program pages, 'What's Included' section",
+          "severity": "info"
+        },
+        {
+          "id": "westcoast-florence-greece-internal-flight",
+          "type": "pricing",
+          "title": "$345 internal Italy–Greece flight not included in tuition",
+          "body": "Beyond airfare to Florence and home from Athens, the program charges an additional $345 for the internal flight from Italy to Greece.",
+          "sourceCitation": "Westcoast Connection Florence plus Greek Islands program page",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "The first three weeks follow the standard Florence pre-college schedule at The Social Hub Belfiore (including a Venice weekend getaway), then the program continues with a 9-day grand finale in the Greek Islands (Athens, Naxos, and Santorini), including scuba and snorkeling opportunities. An additional $345 internal flight from Italy to Greece is required beyond tuition; airfare to Florence at the start and home from Athens at the end are also not included.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Westcoast Connection Florence plus Greek Islands program page (westcoastconnection.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-278",
+      "slug": "westcoast-connection-pre-college-enrichment-montreal-14-day-residential",
+      "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
+      "institution": "Westcoast Connection Travel Camp Inc.",
+      "programGroupId": "westcoast-connection-montreal",
+      "description": "Two-week pre-college enrichment program on the McGill University campus; residential format.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "14-Day Residential",
+      "gradeDisplay": "Completing grades 9-12",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "14 days",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jul 5–18, 2027",
+      "dateStart": "2027-07-05",
+      "dateEnd": "2027-07-18",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Montreal, QC (McGill University campus)",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$5,699 (early enrollment; airfare not included)",
+      "priceMin": 5699,
+      "priceMax": 5699,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/montreal-mcgill-14-days/",
+      "dataVerifiedAt": "2026-09-15",
+      "flags": [
+        {
+          "id": "westcoast-montreal-lunch-not-included",
+          "type": "pricing",
+          "title": "Lunch is not included in tuition",
+          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and handled independently by students each day.",
+          "sourceCitation": "Westcoast Connection Montreal McGill program pages, 'What's Included' section",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Residential students live at Residence La Citadelle in downtown Montreal, a short walk from McGill's campus, in rooms with individual twin beds, air conditioning, private bathrooms, Wi-Fi, and personal work desks; the residence has laundry and group common areas. A typical day: 8am wake-up, 8:30 breakfast, 10am morning course, 12pm lunch (unstructured - students choose where to eat in small groups at local cafés and restaurants), 2pm afternoon course, 4pm 'Student's Choice' free time (sports, McGill's fitness center, exploring, or free time), 7pm dinner, and evening activities until 9pm. Breakfast and dinner are included in tuition; lunch is not. Commuter (day) students attend roughly 10am-4:30pm on class days only across non-consecutive weeks, are not housed overnight, have no meals included, get limited access to McGill recreational facilities, may join course field trips, and may optionally attend college-admissions workshops.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Westcoast Connection Montreal McGill 14-day and 21-day program pages (westcoastconnection.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-279",
+      "slug": "westcoast-connection-pre-college-enrichment-montreal-14-day-commuter",
+      "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
+      "institution": "Westcoast Connection Travel Camp Inc.",
+      "programGroupId": "westcoast-connection-montreal",
+      "description": "Day-student option for the 14-day McGill program; attends class days only",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "14-Day Commuter",
+      "gradeDisplay": "Completing grades 9-12",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Commuter",
+      "formatTags": [
+        "commuter"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 non-consecutive weeks (class days only)",
+      "lengthMinDays": null,
+      "lengthMaxDays": null,
+      "datesDisplay": "Two class weeks: Jul 6-9, Jul 13-16, 2027",
+      "dateStart": "2027-07-06",
+      "dateEnd": "2027-07-16",
+      "datesParseQuality": "approximate",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Montreal, QC (McGill University campus)",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$1,699 (early enrollment)",
+      "priceMin": 1699,
+      "priceMax": 1699,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/montreal-mcgill-14-days/",
+      "dataVerifiedAt": "2026-09-15",
+      "flags": [
+        {
+          "id": "westcoast-montreal-lunch-not-included",
+          "type": "pricing",
+          "title": "Lunch is not included in tuition",
+          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and handled independently by students each day.",
+          "sourceCitation": "Westcoast Connection Montreal McGill program pages, 'What's Included' section",
+          "severity": "info"
+        },
+        {
+          "id": "wcc-montreal-commuter-distinct-schedule-14",
+          "type": "other",
+          "title": "Commuter is a distinct schedule, not residential in day format",
+          "body": "The commuter option covers class days only across two non-consecutive weeks — not the full 14-day residential session with overnight and weekend programming.",
+          "sourceCitation": "Westcoast Connection Montreal McGill Pre-College Commuter Option section (14-day page)",
+          "sourceDate": "2026-09-15",
+          "severity": "warning"
+        },
+        {
+          "id": "wcc-montreal-commuter-meals-not-included",
+          "type": "other",
+          "title": "No meals included for commuter students",
+          "body": "Commuter tuition does not include any meals. Students should plan for breakfast, lunch, and dinner on class days.",
+          "sourceCitation": "Westcoast Connection Montreal McGill Pre-College Commuter Option section",
+          "sourceDate": "2026-09-15",
+          "severity": "warning"
+        },
+        {
+          "id": "wcc-montreal-commuter-limited-facilities",
+          "type": "other",
+          "title": "Limited recreational facility access",
+          "body": "Commuter students have limited access to McGill's recreational facilities compared to residential participants.",
+          "sourceCitation": "Westcoast Connection Montreal McGill Pre-College Commuter Option section",
+          "sourceDate": "2026-09-15",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Residential students live at Residence La Citadelle in downtown Montreal, a short walk from McGill's campus, in rooms with individual twin beds, air conditioning, private bathrooms, Wi-Fi, and personal work desks; the residence has laundry and group common areas. A typical day: 8am wake-up, 8:30 breakfast, 10am morning course, 12pm lunch (unstructured - students choose where to eat in small groups at local cafés and restaurants), 2pm afternoon course, 4pm 'Student's Choice' free time (sports, McGill's fitness center, exploring, or free time), 7pm dinner, and evening activities until 9pm. Breakfast and dinner are included in tuition; lunch is not. Commuter (day) students attend roughly 10am-4:30pm on class days only across non-consecutive weeks, are not housed overnight, have no meals included, get limited access to McGill recreational facilities, may join course field trips, and may optionally attend college-admissions workshops.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Westcoast Connection Montreal McGill 14-day and 21-day program pages (westcoastconnection.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-280",
+      "slug": "westcoast-connection-pre-college-enrichment-montreal-21-day-residential",
+      "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
+      "institution": "Westcoast Connection Travel Camp Inc.",
+      "programGroupId": "westcoast-connection-montreal",
+      "description": "Three-week pre-college enrichment program on the McGill University campus; residential format.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "21-Day Residential",
+      "gradeDisplay": "Completing grades 9-12",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "21 days",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "Jul 5–25, 2027",
+      "dateStart": "2027-07-05",
+      "dateEnd": "2027-07-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Montreal, QC (McGill University campus)",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$6,999 (early enrollment; airfare not included)",
+      "priceMin": 6999,
+      "priceMax": 6999,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/montreal-mcgill-21-days/",
+      "dataVerifiedAt": "2026-09-15",
+      "flags": [
+        {
+          "id": "westcoast-montreal-lunch-not-included",
+          "type": "pricing",
+          "title": "Lunch is not included in tuition",
+          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and handled independently by students each day.",
+          "sourceCitation": "Westcoast Connection Montreal McGill program pages, 'What's Included' section",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Residential students live at Residence La Citadelle in downtown Montreal, a short walk from McGill's campus, in rooms with individual twin beds, air conditioning, private bathrooms, Wi-Fi, and personal work desks; the residence has laundry and group common areas. A typical day: 8am wake-up, 8:30 breakfast, 10am morning course, 12pm lunch (unstructured - students choose where to eat in small groups at local cafés and restaurants), 2pm afternoon course, 4pm 'Student's Choice' free time (sports, McGill's fitness center, exploring, or free time), 7pm dinner, and evening activities until 9pm. Breakfast and dinner are included in tuition; lunch is not. Commuter (day) students attend roughly 10am-4:30pm on class days only across non-consecutive weeks, are not housed overnight, have no meals included, get limited access to McGill recreational facilities, may join course field trips, and may optionally attend college-admissions workshops.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Westcoast Connection Montreal McGill 14-day and 21-day program pages (westcoastconnection.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-281",
+      "slug": "westcoast-connection-pre-college-enrichment-montreal-21-day-commuter",
+      "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
+      "institution": "Westcoast Connection Travel Camp Inc.",
+      "programGroupId": "westcoast-connection-montreal",
+      "description": "Day-student option for the 21-day McGill program; attends class days only.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "21-Day Commuter",
+      "gradeDisplay": "Completing grades 9-12",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Commuter",
+      "formatTags": [
+        "commuter"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 non-consecutive weeks (class days only)",
+      "lengthMinDays": null,
+      "lengthMaxDays": null,
+      "datesDisplay": "Three class weeks: Jul 6-9, Jul 13-16, Jul 20-23, 2027",
+      "dateStart": "2027-07-06",
+      "dateEnd": "2027-07-23",
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Montreal, QC (McGill University campus)",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2,299 (early enrollment)",
+      "priceMin": 2299,
+      "priceMax": 2299,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/montreal-mcgill-21-days/",
+      "dataVerifiedAt": "2026-09-15",
+      "flags": [
+        {
+          "id": "westcoast-montreal-lunch-not-included",
+          "type": "pricing",
+          "title": "Lunch is not included in tuition",
+          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and handled independently by students each day.",
+          "sourceCitation": "Westcoast Connection Montreal McGill program pages, 'What's Included' section",
+          "severity": "info"
+        },
+        {
+          "id": "wcc-montreal-commuter-distinct-schedule",
+          "type": "other",
+          "title": "Commuter is a distinct schedule, not residential in day format",
+          "body": "The commuter option covers class days only across three non-consecutive weeks — not the full 21-day residential session with overnight and weekend programming.",
+          "sourceCitation": "Westcoast Connection Montreal McGill Pre-College Commuter Option section",
+          "sourceDate": "2026-09-15",
+          "severity": "warning"
+        },
+        {
+          "id": "wcc-montreal-commuter-meals-not-included",
+          "type": "other",
+          "title": "No meals included for commuter students",
+          "body": "Commuter tuition does not include any meals. Students should plan for breakfast, lunch, and dinner on class days.",
+          "sourceCitation": "Westcoast Connection Montreal McGill Pre-College Commuter Option section",
+          "sourceDate": "2026-09-15",
+          "severity": "warning"
+        },
+        {
+          "id": "wcc-montreal-commuter-limited-facilities",
+          "type": "other",
+          "title": "Limited recreational facility access",
+          "body": "Commuter students have limited access to McGill's recreational facilities compared to residential participants.",
+          "sourceCitation": "Westcoast Connection Montreal McGill Pre-College Commuter Option section",
+          "sourceDate": "2026-09-15",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Residential students live at Residence La Citadelle in downtown Montreal, a short walk from McGill's campus, in rooms with individual twin beds, air conditioning, private bathrooms, Wi-Fi, and personal work desks; the residence has laundry and group common areas. A typical day: 8am wake-up, 8:30 breakfast, 10am morning course, 12pm lunch (unstructured - students choose where to eat in small groups at local cafés and restaurants), 2pm afternoon course, 4pm 'Student's Choice' free time (sports, McGill's fitness center, exploring, or free time), 7pm dinner, and evening activities until 9pm. Breakfast and dinner are included in tuition; lunch is not. Commuter (day) students attend roughly 10am-4:30pm on class days only across non-consecutive weeks, are not housed overnight, have no meals included, get limited access to McGill recreational facilities, may join course field trips, and may optionally attend college-admissions workshops.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Westcoast Connection Montreal McGill 14-day and 21-day program pages (westcoastconnection.com)",
         "verifiedAt": "2026-09-15"
       }
     }

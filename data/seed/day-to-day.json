@@ -136,5 +136,80 @@
       "sourceCitation": "Westcoast Connection UCLA plus Hawaii Extension program page (westcoastconnection.com)",
       "verifiedAt": "2026-09-15"
     }
+  },
+  {
+    "match": { "programGroupId": "westcoast-connection-barcelona" },
+    "dayToDay": {
+      "notes": "Students live in two-person suites at the Kadora Sarria Barcelona Residence, each with a private bathroom, air conditioning, and Wi-Fi; the residence has 24-hour security. A typical day: 8am wake-up, 8:30 breakfast, 10:30 morning course, 1pm lunch (unstructured - students choose where to eat in small groups), 3pm group afternoon excursion/highlight, 5:30pm 'Student's Choice' free time (sports, pool, fitness club, or city exploring), 8pm dinner (some nights at the residence, some nights out as a group or in smaller groups at local restaurants), and evening activities until 10pm. Breakfast and dinner are included in tuition; lunch is not.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Westcoast Connection Barcelona 21-day program page (westcoastconnection.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "westcoast-connection-barcelona",
+      "offeringLabel": "27-Day Residential (plus Amalfi Coast & Rome)"
+    },
+    "dayToDay": {
+      "notes": "The first three weeks follow the standard Barcelona pre-college schedule at the Kadora Sarria residence: morning course, unstructured lunch, afternoon highlights, and included breakfast and dinner. The program then continues with a grand finale week touring the Amalfi Coast (Sorrento, Capri, Positano) and Rome before returning home from Rome. An additional $245 internal flight from Spain to Italy is required beyond tuition; airfare to Barcelona at the start and home from Rome at the end are also not included.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Westcoast Connection Barcelona plus Amalfi Coast & Rome program page (westcoastconnection.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "westcoast-connection-barcelona",
+      "offeringLabel": "30-Day Residential (plus Greek Islands)"
+    },
+    "dayToDay": {
+      "notes": "The first three weeks follow the standard Barcelona pre-college schedule at the Kadora Sarria residence: morning course, unstructured lunch, afternoon highlights, and included breakfast and dinner. The program then continues with a 9-day grand finale in Greece (Athens, Naxos, and Santorini), including scuba and snorkeling opportunities. An additional $495 internal flight from Spain to Greece is required beyond tuition; airfare to Barcelona at the start and home from Athens at the end are also not included.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Westcoast Connection Barcelona plus Greek Islands program page (westcoastconnection.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "westcoast-connection-florence" },
+    "dayToDay": {
+      "notes": "Students live in single-occupancy rooms at The Social Hub Belfiore Florence Residence, each with air conditioning, Wi-Fi, a private bathroom, and a personal workstation; the residence has 24-hour security, laundry, a gym, and a rooftop pool. A typical day: 8:30am wake-up, 9am breakfast, 10:30am morning course, 1pm lunch (unstructured - students choose where to eat in small groups at local cafés and restaurants), 3pm group afternoon highlight, 5:30pm 'Student's Choice' free time (sports, gym, staff-planned activity, or city exploration), 8:30pm dinner (some nights at the residence, some nights out as a group or in smaller groups at local restaurants), and evening activities until roughly 10:15pm. Breakfast and dinner are included in tuition; lunch is not.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Westcoast Connection Florence 14-day and 21-day program pages (westcoastconnection.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "westcoast-connection-florence",
+      "offeringLabel": "27-Day Residential (plus Amalfi Coast & Rome)"
+    },
+    "dayToDay": {
+      "notes": "The first three weeks follow the standard Florence pre-college schedule at The Social Hub Belfiore (including a Venice weekend getaway), then the program continues with a grand finale week touring the Amalfi Coast (Sorrento, Capri, Positano) and Rome before returning home from Rome. Airfare to Florence at the start and home from Rome at the end are not included in tuition.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Westcoast Connection Florence plus Amalfi Coast & Rome program page (westcoastconnection.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "westcoast-connection-florence",
+      "offeringLabel": "30-Day Residential (plus Greek Islands)"
+    },
+    "dayToDay": {
+      "notes": "The first three weeks follow the standard Florence pre-college schedule at The Social Hub Belfiore (including a Venice weekend getaway), then the program continues with a 9-day grand finale in the Greek Islands (Athens, Naxos, and Santorini), including scuba and snorkeling opportunities. An additional $345 internal flight from Italy to Greece is required beyond tuition; airfare to Florence at the start and home from Athens at the end are also not included.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Westcoast Connection Florence plus Greek Islands program page (westcoastconnection.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "westcoast-connection-montreal" },
+    "dayToDay": {
+      "notes": "Residential students live at Residence La Citadelle, McGill University, in individual twin-bed rooms with private bathrooms, air conditioning, housekeeping service, and a personal work desk. A typical day: 8am wake-up, 8:30 breakfast, 10am morning course (or start of a full-day track option), lunch break (unstructured - students choose where to eat in small groups), 2pm afternoon course, then free time ('Student's Choice') until 7pm dinner, followed by evening activities until around 9pm. Breakfast and dinner are included in tuition; lunch is not and is handled independently by students. Commuter (day) students attend roughly 10am-4/4:30pm on class days only, are not housed overnight, have no meals included, get limited access to McGill's recreational facilities, and may optionally join the college-admissions workshops.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Westcoast Connection Montreal 14-day and 21-day program pages (westcoastconnection.com)",
+      "verifiedAt": "2026-09-15"
+    }
   }
 ]

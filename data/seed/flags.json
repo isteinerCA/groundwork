@@ -516,5 +516,162 @@
         "severity": "info"
       }
     ]
+  },
+  {
+    "match": { "programGroupId": "westcoast-connection-barcelona" },
+    "flags": [
+      {
+        "id": "westcoast-barcelona-lunch-not-included",
+        "type": "pricing",
+        "title": "Lunch is not included in tuition",
+        "body": "Breakfast and dinner are included, but lunch is explicitly excluded and handled independently by students each day.",
+        "sourceCitation": "Westcoast Connection Barcelona 21-day program page, 'What's Included' section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "westcoast-connection-barcelona",
+      "offeringLabel": "27-Day Residential (plus Amalfi Coast & Rome)"
+    },
+    "flags": [
+      {
+        "id": "westcoast-barcelona-italy-internal-flight",
+        "type": "pricing",
+        "title": "$245 internal Spain–Italy flight not included in tuition",
+        "body": "Beyond airfare to Barcelona and home from Rome, the program charges an additional $245 for the internal flight from Spain to Italy.",
+        "sourceCitation": "Westcoast Connection Barcelona plus Amalfi Coast & Rome program page",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "westcoast-connection-barcelona",
+      "offeringLabel": "30-Day Residential (plus Greek Islands)"
+    },
+    "flags": [
+      {
+        "id": "westcoast-barcelona-greece-internal-flight",
+        "type": "pricing",
+        "title": "$495 internal Spain–Greece flight not included in tuition",
+        "body": "Beyond airfare to Barcelona and home from Athens, the program charges an additional $495 for the internal flight from Spain to Greece.",
+        "sourceCitation": "Westcoast Connection Barcelona plus Greek Islands program page",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": { "programGroupId": "westcoast-connection-florence" },
+    "flags": [
+      {
+        "id": "westcoast-florence-lunch-not-included",
+        "type": "pricing",
+        "title": "Lunch is not included in tuition",
+        "body": "Breakfast and dinner are included, but lunch is explicitly excluded and handled independently by students each day.",
+        "sourceCitation": "Westcoast Connection Florence program pages, 'What's Included' section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "westcoast-connection-florence",
+      "offeringLabel": "30-Day Residential (plus Greek Islands)"
+    },
+    "flags": [
+      {
+        "id": "westcoast-florence-greece-internal-flight",
+        "type": "pricing",
+        "title": "$345 internal Italy–Greece flight not included in tuition",
+        "body": "Beyond airfare to Florence and home from Athens, the program charges an additional $345 for the internal flight from Italy to Greece.",
+        "sourceCitation": "Westcoast Connection Florence plus Greek Islands program page",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": { "programGroupId": "westcoast-connection-montreal" },
+    "flags": [
+      {
+        "id": "westcoast-montreal-lunch-not-included",
+        "type": "pricing",
+        "title": "Lunch is not included in tuition",
+        "body": "Breakfast and dinner are included, but lunch is explicitly excluded and paid for independently by students each day, consistent with every other Westcoast Connection Pre-College Enrichment location.",
+        "sourceCitation": "Westcoast Connection Montreal 14-day and 21-day program pages, 'What's Included' section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "westcoast-connection-montreal",
+      "offeringLabel": "21-Day Commuter"
+    },
+    "flags": [
+      {
+        "id": "wcc-montreal-commuter-distinct-schedule",
+        "type": "other",
+        "title": "Commuter is a distinct schedule, not residential in day format",
+        "body": "The commuter option covers class days only across three non-consecutive weeks — not the full 21-day residential session with overnight and weekend programming.",
+        "sourceCitation": "Westcoast Connection Montreal McGill Pre-College Commuter Option section",
+        "sourceDate": "2026-09-15",
+        "severity": "warning"
+      },
+      {
+        "id": "wcc-montreal-commuter-meals-not-included",
+        "type": "other",
+        "title": "No meals included for commuter students",
+        "body": "Commuter tuition does not include any meals. Students should plan for breakfast, lunch, and dinner on class days.",
+        "sourceCitation": "Westcoast Connection Montreal McGill Pre-College Commuter Option section",
+        "sourceDate": "2026-09-15",
+        "severity": "warning"
+      },
+      {
+        "id": "wcc-montreal-commuter-limited-facilities",
+        "type": "other",
+        "title": "Limited recreational facility access",
+        "body": "Commuter students have limited access to McGill's recreational facilities compared to residential participants.",
+        "sourceCitation": "Westcoast Connection Montreal McGill Pre-College Commuter Option section",
+        "sourceDate": "2026-09-15",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "westcoast-connection-montreal",
+      "offeringLabel": "14-Day Commuter"
+    },
+    "flags": [
+      {
+        "id": "wcc-montreal-commuter-distinct-schedule-14",
+        "type": "other",
+        "title": "Commuter is a distinct schedule, not residential in day format",
+        "body": "The commuter option covers class days only across two non-consecutive weeks — not the full 14-day residential session with overnight and weekend programming.",
+        "sourceCitation": "Westcoast Connection Montreal McGill Pre-College Commuter Option section (14-day page)",
+        "sourceDate": "2026-09-15",
+        "severity": "warning"
+      },
+      {
+        "id": "wcc-montreal-commuter-meals-not-included",
+        "type": "other",
+        "title": "No meals included for commuter students",
+        "body": "Commuter tuition does not include any meals. Students should plan for breakfast, lunch, and dinner on class days.",
+        "sourceCitation": "Westcoast Connection Montreal McGill Pre-College Commuter Option section",
+        "sourceDate": "2026-09-15",
+        "severity": "warning"
+      },
+      {
+        "id": "wcc-montreal-commuter-limited-facilities",
+        "type": "other",
+        "title": "Limited recreational facility access",
+        "body": "Commuter students have limited access to McGill's recreational facilities compared to residential participants.",
+        "sourceCitation": "Westcoast Connection Montreal McGill Pre-College Commuter Option section",
+        "sourceDate": "2026-09-15",
+        "severity": "info"
+      }
+    ]
   }
 ]
