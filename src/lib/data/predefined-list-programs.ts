@@ -30,6 +30,6 @@ export function getProgramsForPredefinedList(
       ...DEFAULT_SEARCH_FILTERS,
       ...list.lockedFilters,
     }),
-    "selectivity",
+    "duration",
   );
 }

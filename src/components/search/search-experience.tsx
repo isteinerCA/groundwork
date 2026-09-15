@@ -112,7 +112,7 @@ export function SearchExperience({
       lockedFilters,
     ),
   );
-  const [sort, setSort] = useState<SortOption>("selectivity");
+  const [sort, setSort] = useState<SortOption>("duration");
   const [restoredLastSearch, setRestoredLastSearch] = useState(false);
   const pendingSearchRef = useRef<{
     filters: SearchFilters;
@@ -531,9 +531,9 @@ export function SearchExperience({
                           onChange={(e) => setSort(e.target.value as SortOption)}
                           className="rounded border border-[var(--color-border)] bg-white px-2 py-1 text-sm"
                         >
-                          <option value="selectivity">Selectivity</option>
-                          <option value="price">Price</option>
                           <option value="duration">Duration</option>
+                          <option value="price">Price</option>
+                          <option value="selectivity">Selectivity</option>
                           <option value="name">Name</option>
                         </select>
                       </label>

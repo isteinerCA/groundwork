@@ -147,8 +147,11 @@ function compareProgramsBySort(a: Program, b: Program, sort: SortOption): number
     }
     case "selectivity":
       return ADMISSION_ORDER[a.admissionType] - ADMISSION_ORDER[b.admissionType];
-    case "duration":
-      return a.lengthDisplay.localeCompare(b.lengthDisplay);
+    case "duration": {
+      const aDays = a.lengthMinDays ?? Number.POSITIVE_INFINITY;
+      const bDays = b.lengthMinDays ?? Number.POSITIVE_INFINITY;
+      return aDays - bDays;
+    }
     default:
       return 0;
   }

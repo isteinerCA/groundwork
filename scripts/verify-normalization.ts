@@ -362,6 +362,26 @@ if (sortedBySelectivity[0]?.id !== verifiedProgram.id) {
   failed++;
 }
 
+const shortProgram = stubProgram({
+  name: "Short Camp",
+  locationDisplay: "Boston, MA",
+  lengthMinDays: 6,
+  lengthMaxDays: 6,
+  lengthDisplay: "6 days",
+});
+const longProgram = stubProgram({
+  name: "Long Camp",
+  locationDisplay: "Boston, MA",
+  lengthMinDays: 28,
+  lengthMaxDays: 28,
+  lengthDisplay: "4 weeks",
+});
+const sortedByDuration = sortPrograms([longProgram, shortProgram], "duration");
+if (sortedByDuration[0]?.id !== shortProgram.id) {
+  console.error("FAIL: duration sort should order by lengthMinDays shortest first");
+  failed++;
+}
+
 if (failed === 0) {
   console.log("All normalization checks passed.");
 } else {
