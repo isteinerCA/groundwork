@@ -1,6 +1,6 @@
 {
   "verifiedAt": "2026-09-15",
-  "count": 268,
+  "count": 269,
   "programs": [
     {
       "id": "prog-1",
@@ -6300,8 +6300,8 @@
     },
     {
       "id": "prog-147",
-      "slug": "lasting-adventures-6-day-young-adventurer-s-program",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-yosemite-6-day-young-adventurer-s-program",
+      "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-yosemite",
       "description": "Introductory 6-day wilderness backpacking camp in Yosemite for ages 11-13.",
@@ -6361,8 +6361,8 @@
     },
     {
       "id": "prog-148",
-      "slug": "lasting-adventures-6-day-high-country-adventure",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-yosemite-6-day-high-country-adventure",
+      "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-yosemite",
       "description": "Flagship 6-day guided backpacking trip in the Yosemite high country for teens.",
@@ -6422,8 +6422,8 @@
     },
     {
       "id": "prog-149",
-      "slug": "lasting-adventures-10-day-mammoth-to-yosemite-jul-6-15",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-yosemite-10-day-mammoth-to-yosemite-jul-6-15",
+      "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-yosemite",
       "description": "Strenuous 10-day point-to-point backpacking trip from Mammoth Lakes into Yosemite; July departure.",
@@ -6491,8 +6491,8 @@
     },
     {
       "id": "prog-150",
-      "slug": "lasting-adventures-10-day-mammoth-to-yosemite-aug-3-12",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-yosemite-10-day-mammoth-to-yosemite-aug-3-12",
+      "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-yosemite",
       "description": "Strenuous 10-day point-to-point backpacking trip from Mammoth Lakes into Yosemite; August departure.",
@@ -6560,8 +6560,8 @@
     },
     {
       "id": "prog-151",
-      "slug": "lasting-adventures-13-day-high-country-adventure",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-yosemite-13-day-high-country-adventure",
+      "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-yosemite",
       "description": "Extended 13-day Yosemite high country backpacking trip for teens.",
@@ -6621,8 +6621,8 @@
     },
     {
       "id": "prog-152",
-      "slug": "lasting-adventures-6-day-young-women-s-program-jun-20-25-departure",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-yosemite-6-day-young-women-s-program-jun-20-25-departure",
+      "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-yosemite",
       "description": "All-female 6-day backpacking trip in the Yosemite high country.",
@@ -6682,8 +6682,8 @@
     },
     {
       "id": "prog-153",
-      "slug": "lasting-adventures-6-day-young-women-s-program-aug-1-6-departure",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-yosemite-6-day-young-women-s-program-aug-1-6-departure",
+      "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-yosemite",
       "description": "All-female 6-day backpacking trip in the Yosemite high country.",
@@ -6743,8 +6743,8 @@
     },
     {
       "id": "prog-154",
-      "slug": "lasting-adventures-13-day-young-women-s-program",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-yosemite-13-day-young-women-s-program",
+      "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-yosemite",
       "description": "All-female 13-day backpacking trip in the Yosemite high country.",
@@ -6804,8 +6804,8 @@
     },
     {
       "id": "prog-155",
-      "slug": "lasting-adventures-20-day-teen-leadership-expedition-jun-13-jul-2-departure",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-yosemite-20-day-teen-leadership-expedition-jun-13-jul-2-departure",
+      "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-yosemite",
       "description": "Advanced 20-day leadership expedition combining backpacking, whitewater rafting, and Wilderness First Aid/Leave No Trace certification.",
@@ -6873,8 +6873,8 @@
     },
     {
       "id": "prog-156",
-      "slug": "lasting-adventures-20-day-teen-leadership-expedition-jul-11-30-departure",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-yosemite-20-day-teen-leadership-expedition-jul-11-30-departure",
+      "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-yosemite",
       "description": "Advanced 20-day leadership expedition combining backpacking, whitewater rafting, and Wilderness First Aid/Leave No Trace certification.",
@@ -6942,8 +6942,8 @@
     },
     {
       "id": "prog-157",
-      "slug": "lasting-adventures-6-day-backpacking-adventure-for-teens",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-olympic-6-day-backpacking-adventure-for-teens",
+      "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-olympic",
       "description": "6-day guided backpacking trip in Olympic National Park for teens, choice of coastal or mountain route.",
@@ -7003,8 +7003,8 @@
     },
     {
       "id": "prog-158",
-      "slug": "lasting-adventures-6-day-young-adventurer-s-program",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-olympic-6-day-young-adventurer-s-program",
+      "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-olympic",
       "description": "Introductory 6-day wilderness backpacking camp in Olympic National Park for ages 11-13.",
@@ -7064,8 +7064,8 @@
     },
     {
       "id": "prog-159",
-      "slug": "lasting-adventures-10-day-hoh-rainforest-to-the-blue-glacier-jun-29-jul-8-departure",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-olympic-10-day-hoh-rainforest-to-the-blue-glacier-jun-29-jul-8-departure",
+      "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-olympic",
       "description": "10-day backpacking trip through Hoh Rainforest to the Blue Glacier for experienced teen backpackers.",
@@ -7133,8 +7133,8 @@
     },
     {
       "id": "prog-160",
-      "slug": "lasting-adventures-10-day-hoh-rainforest-to-the-blue-glacier-jul-13-22-departure",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-olympic-10-day-hoh-rainforest-to-the-blue-glacier-jul-13-22-departure",
+      "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-olympic",
       "description": "10-day backpacking trip through Hoh Rainforest to the Blue Glacier for experienced teen backpackers.",
@@ -7202,8 +7202,8 @@
     },
     {
       "id": "prog-161",
-      "slug": "lasting-adventures-10-day-hoh-rainforest-to-the-blue-glacier-aug-10-19-departure",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-olympic-10-day-hoh-rainforest-to-the-blue-glacier-aug-10-19-departure",
+      "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-olympic",
       "description": "10-day backpacking trip through Hoh Rainforest to the Blue Glacier for experienced teen backpackers.",
@@ -7271,8 +7271,8 @@
     },
     {
       "id": "prog-162",
-      "slug": "lasting-adventures-13-day-backpacking-adventure-for-teens",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-olympic-13-day-backpacking-adventure-for-teens",
+      "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-olympic",
       "description": "13-day guided backpacking trip combining coastal and old-growth forest routes in Olympic National Park.",
@@ -7332,8 +7332,8 @@
     },
     {
       "id": "prog-163",
-      "slug": "lasting-adventures-6-day-young-women-s-program-jun-27-jul-2-departure",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-olympic-6-day-young-women-s-program-jun-27-jul-2-departure",
+      "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-olympic",
       "description": "All-female 6-day backpacking trip in Olympic National Park.",
@@ -7393,8 +7393,8 @@
     },
     {
       "id": "prog-164",
-      "slug": "lasting-adventures-6-day-young-women-s-program-jul-18-23-departure",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-olympic-6-day-young-women-s-program-jul-18-23-departure",
+      "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-olympic",
       "description": "All-female 6-day backpacking trip in Olympic National Park.",
@@ -7454,8 +7454,8 @@
     },
     {
       "id": "prog-165",
-      "slug": "lasting-adventures-13-day-young-women-s-program",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-olympic-13-day-young-women-s-program",
+      "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-olympic",
       "description": "All-female 13-day backpacking trip in Olympic National Park.",
@@ -7515,8 +7515,8 @@
     },
     {
       "id": "prog-166",
-      "slug": "lasting-adventures-10-day-sequoia-high-country-adventure-jun-22-jul-1-departure",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-sequoia-10-day-sequoia-high-country-adventure-jun-22-jul-1-departure",
+      "name": "Lasting Adventures - Sequoia",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-sequoia",
       "description": "10-day backcountry backpacking trip in Sequoia National Park for teens.",
@@ -7584,8 +7584,8 @@
     },
     {
       "id": "prog-167",
-      "slug": "lasting-adventures-10-day-sequoia-high-country-adventure-jul-20-29-departure",
-      "name": "Lasting Adventures",
+      "slug": "lasting-adventures-sequoia-10-day-sequoia-high-country-adventure-jul-20-29-departure",
+      "name": "Lasting Adventures - Sequoia",
       "institution": "Lasting Adventures Inc.",
       "programGroupId": "lasting-adventures-sequoia",
       "description": "10-day backcountry backpacking trip in Sequoia National Park for teens.",
@@ -13017,15 +13017,15 @@
           "type": "pricing",
           "title": "Lunch is not included in tuition, despite meals being advertised as covered",
           "body": "Program pages list breakfast and dinner as included, but lunch is explicitly excluded and paid for independently by students each day - worth budgeting for separately.",
-          "sourceCitation": "Westcoast Connection UCLA 14-day and 21-day program pages, 'What's Included' section",
+          "sourceCitation": "Westcoast Connection UCLA program pages, 'What's Included' section",
           "severity": "info"
         },
         {
           "id": "westcoast-ucla-promo-pricing",
           "type": "pricing",
           "title": "Advertised price includes a limited-time discount",
-          "body": "The prices shown ($6,399 for 14 days, $8,599 for 21 days) reflect an active 'enroll early and save' promotion off list prices of $6,699 and $8,999 respectively. The discount is time-limited and not guaranteed to still apply later in the enrollment cycle.",
-          "sourceCitation": "Westcoast Connection UCLA program pages",
+          "body": "The prices shown ($6,399 for 14 days, $8,599 for 21 days, $11,499 for 27 days with Hawaii) reflect active 'enroll early and save' promotions off list prices of $6,699, $8,999, and $11,999 respectively. The discount is time-limited and not guaranteed to still apply later in the enrollment cycle.",
+          "sourceCitation": "Westcoast Connection UCLA program pages (14-, 21-, and 27-day)",
           "severity": "info"
         },
         {
@@ -13033,7 +13033,7 @@
           "type": "policy",
           "title": "Not a UCLA-run program despite the branding",
           "body": "The program page includes an explicit disclaimer: this is operated by Westcoast Connection, not UCLA. Students stay in UCLA housing and use UCLA facilities, and some instructors are UCLA Extension faculty, but 'responsibility for the program resides solely with Westcoast Connection.'",
-          "sourceCitation": "Westcoast Connection UCLA 14-day and 21-day program pages",
+          "sourceCitation": "Westcoast Connection UCLA 14-day, 21-day, and 27-day program pages",
           "severity": "info"
         }
       ],
@@ -13092,15 +13092,15 @@
           "type": "pricing",
           "title": "Lunch is not included in tuition, despite meals being advertised as covered",
           "body": "Program pages list breakfast and dinner as included, but lunch is explicitly excluded and paid for independently by students each day - worth budgeting for separately.",
-          "sourceCitation": "Westcoast Connection UCLA 14-day and 21-day program pages, 'What's Included' section",
+          "sourceCitation": "Westcoast Connection UCLA program pages, 'What's Included' section",
           "severity": "info"
         },
         {
           "id": "westcoast-ucla-promo-pricing",
           "type": "pricing",
           "title": "Advertised price includes a limited-time discount",
-          "body": "The prices shown ($6,399 for 14 days, $8,599 for 21 days) reflect an active 'enroll early and save' promotion off list prices of $6,699 and $8,999 respectively. The discount is time-limited and not guaranteed to still apply later in the enrollment cycle.",
-          "sourceCitation": "Westcoast Connection UCLA program pages",
+          "body": "The prices shown ($6,399 for 14 days, $8,599 for 21 days, $11,499 for 27 days with Hawaii) reflect active 'enroll early and save' promotions off list prices of $6,699, $8,999, and $11,999 respectively. The discount is time-limited and not guaranteed to still apply later in the enrollment cycle.",
+          "sourceCitation": "Westcoast Connection UCLA program pages (14-, 21-, and 27-day)",
           "severity": "info"
         },
         {
@@ -13108,7 +13108,7 @@
           "type": "policy",
           "title": "Not a UCLA-run program despite the branding",
           "body": "The program page includes an explicit disclaimer: this is operated by Westcoast Connection, not UCLA. Students stay in UCLA housing and use UCLA facilities, and some instructors are UCLA Extension faculty, but 'responsibility for the program resides solely with Westcoast Connection.'",
-          "sourceCitation": "Westcoast Connection UCLA 14-day and 21-day program pages",
+          "sourceCitation": "Westcoast Connection UCLA 14-day, 21-day, and 27-day program pages",
           "severity": "info"
         },
         {
@@ -13194,15 +13194,15 @@
           "type": "pricing",
           "title": "Lunch is not included in tuition, despite meals being advertised as covered",
           "body": "Program pages list breakfast and dinner as included, but lunch is explicitly excluded and paid for independently by students each day - worth budgeting for separately.",
-          "sourceCitation": "Westcoast Connection UCLA 14-day and 21-day program pages, 'What's Included' section",
+          "sourceCitation": "Westcoast Connection UCLA program pages, 'What's Included' section",
           "severity": "info"
         },
         {
           "id": "westcoast-ucla-promo-pricing",
           "type": "pricing",
           "title": "Advertised price includes a limited-time discount",
-          "body": "The prices shown ($6,399 for 14 days, $8,599 for 21 days) reflect an active 'enroll early and save' promotion off list prices of $6,699 and $8,999 respectively. The discount is time-limited and not guaranteed to still apply later in the enrollment cycle.",
-          "sourceCitation": "Westcoast Connection UCLA program pages",
+          "body": "The prices shown ($6,399 for 14 days, $8,599 for 21 days, $11,499 for 27 days with Hawaii) reflect active 'enroll early and save' promotions off list prices of $6,699, $8,999, and $11,999 respectively. The discount is time-limited and not guaranteed to still apply later in the enrollment cycle.",
+          "sourceCitation": "Westcoast Connection UCLA program pages (14-, 21-, and 27-day)",
           "severity": "info"
         },
         {
@@ -13210,7 +13210,7 @@
           "type": "policy",
           "title": "Not a UCLA-run program despite the branding",
           "body": "The program page includes an explicit disclaimer: this is operated by Westcoast Connection, not UCLA. Students stay in UCLA housing and use UCLA facilities, and some instructors are UCLA Extension faculty, but 'responsibility for the program resides solely with Westcoast Connection.'",
-          "sourceCitation": "Westcoast Connection UCLA 14-day and 21-day program pages",
+          "sourceCitation": "Westcoast Connection UCLA 14-day, 21-day, and 27-day program pages",
           "severity": "info"
         }
       ],
@@ -13269,15 +13269,15 @@
           "type": "pricing",
           "title": "Lunch is not included in tuition, despite meals being advertised as covered",
           "body": "Program pages list breakfast and dinner as included, but lunch is explicitly excluded and paid for independently by students each day - worth budgeting for separately.",
-          "sourceCitation": "Westcoast Connection UCLA 14-day and 21-day program pages, 'What's Included' section",
+          "sourceCitation": "Westcoast Connection UCLA program pages, 'What's Included' section",
           "severity": "info"
         },
         {
           "id": "westcoast-ucla-promo-pricing",
           "type": "pricing",
           "title": "Advertised price includes a limited-time discount",
-          "body": "The prices shown ($6,399 for 14 days, $8,599 for 21 days) reflect an active 'enroll early and save' promotion off list prices of $6,699 and $8,999 respectively. The discount is time-limited and not guaranteed to still apply later in the enrollment cycle.",
-          "sourceCitation": "Westcoast Connection UCLA program pages",
+          "body": "The prices shown ($6,399 for 14 days, $8,599 for 21 days, $11,499 for 27 days with Hawaii) reflect active 'enroll early and save' promotions off list prices of $6,699, $8,999, and $11,999 respectively. The discount is time-limited and not guaranteed to still apply later in the enrollment cycle.",
+          "sourceCitation": "Westcoast Connection UCLA program pages (14-, 21-, and 27-day)",
           "severity": "info"
         },
         {
@@ -13285,7 +13285,7 @@
           "type": "policy",
           "title": "Not a UCLA-run program despite the branding",
           "body": "The program page includes an explicit disclaimer: this is operated by Westcoast Connection, not UCLA. Students stay in UCLA housing and use UCLA facilities, and some instructors are UCLA Extension faculty, but 'responsibility for the program resides solely with Westcoast Connection.'",
-          "sourceCitation": "Westcoast Connection UCLA 14-day and 21-day program pages",
+          "sourceCitation": "Westcoast Connection UCLA 14-day, 21-day, and 27-day program pages",
           "severity": "info"
         },
         {
@@ -13320,6 +13320,105 @@
         "notes": "Residential students live in suite-style housing at Delta Terrace in Sunset Village, with their own bathroom, and staff (residence life coordinators among them) living in the same halls. A typical day: 8am wake-up, 8:30 breakfast, 9:30-11:30 morning course, 11:30 lunch (unstructured - students choose where to eat in small groups, on or off campus), 1:30-3:30 afternoon course, then free time until 6pm dinner, followed by organized evening activities. Breakfast and dinner are included in tuition; lunch is explicitly NOT included and is handled independently by students. Commuter (day) students attend roughly 9:30am-3:30/4pm on class days only, are not housed overnight, have no meals included, get limited access to UCLA recreational facilities, and may optionally join group field trips or the college-admissions workshops.",
         "sourceType": "official_policy",
         "sourceCitation": "Westcoast Connection UCLA 14-day and 21-day program pages (westcoastconnection.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-269",
+      "slug": "westcoast-connection-pre-college-enrichment-ucla-27-day-residential-plus-hawaii-extension",
+      "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
+      "institution": "Westcoast Connection Travel Camp Inc.",
+      "programGroupId": "westcoast-connection-ucla",
+      "description": "Extended pre-college enrichment program combining 3 weeks on the UCLA campus with a 6-day Hawaii extension (Maui and Oahu); residential format",
+      "category": "leadership-gifted",
+      "secondaryTags": [],
+      "trackDetail": "27-Day Residential (plus Hawaii Extension)",
+      "gradeDisplay": "Completing grades 9-12",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "27 days",
+      "lengthMinDays": 27,
+      "lengthMaxDays": 27,
+      "datesDisplay": "Jun 27 – Jul 23, 2027",
+      "dateStart": "2027-06-27",
+      "dateEnd": "2027-07-23",
+      "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Los Angeles, CA (UCLA campus) + Maui and Oahu, HI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$11,499 (early enrollment; airfare to LA/from Oahu and $850 internal Hawaii flights not included)",
+      "priceMin": 11499,
+      "priceMax": 11499,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/los-angeles-ucla-hawaii-27-days/",
+      "dataVerifiedAt": "2026-09-15",
+      "flags": [
+        {
+          "id": "westcoast-ucla-lunch-not-included",
+          "type": "pricing",
+          "title": "Lunch is not included in tuition, despite meals being advertised as covered",
+          "body": "Program pages list breakfast and dinner as included, but lunch is explicitly excluded and paid for independently by students each day - worth budgeting for separately.",
+          "sourceCitation": "Westcoast Connection UCLA program pages, 'What's Included' section",
+          "severity": "info"
+        },
+        {
+          "id": "westcoast-ucla-promo-pricing",
+          "type": "pricing",
+          "title": "Advertised price includes a limited-time discount",
+          "body": "The prices shown ($6,399 for 14 days, $8,599 for 21 days, $11,499 for 27 days with Hawaii) reflect active 'enroll early and save' promotions off list prices of $6,699, $8,999, and $11,999 respectively. The discount is time-limited and not guaranteed to still apply later in the enrollment cycle.",
+          "sourceCitation": "Westcoast Connection UCLA program pages (14-, 21-, and 27-day)",
+          "severity": "info"
+        },
+        {
+          "id": "westcoast-ucla-not-run-by-ucla",
+          "type": "policy",
+          "title": "Not a UCLA-run program despite the branding",
+          "body": "The program page includes an explicit disclaimer: this is operated by Westcoast Connection, not UCLA. Students stay in UCLA housing and use UCLA facilities, and some instructors are UCLA Extension faculty, but 'responsibility for the program resides solely with Westcoast Connection.'",
+          "sourceCitation": "Westcoast Connection UCLA 14-day, 21-day, and 27-day program pages",
+          "severity": "info"
+        },
+        {
+          "id": "westcoast-ucla-hawaii-internal-flights",
+          "type": "pricing",
+          "title": "$850 internal Hawaii flights not included in tuition",
+          "body": "Beyond airfare to Los Angeles and home from Oahu, the program charges an additional $850 for internal flights from Los Angeles to Hawaii and between the Hawaiian islands.",
+          "sourceCitation": "Westcoast Connection UCLA plus Hawaii Extension program page",
+          "severity": "warning"
+        },
+        {
+          "id": "westcoast-ucla-hawaii-airfare",
+          "type": "pricing",
+          "title": "Round-trip airfare to/from the program not included",
+          "body": "Tuition does not include flights to Los Angeles at the start or your return flight home from Oahu. Optional chaperoned group flights may be available from the New York area.",
+          "sourceCitation": "Westcoast Connection UCLA plus Hawaii Extension program page",
+          "severity": "info"
+        },
+        {
+          "id": "westcoast-ucla-hawaii-no-commuter",
+          "type": "policy",
+          "title": "No commuter option for the Hawaii extension",
+          "body": "This 27-day itinerary is residential only — there is no day-student or commuter enrollment for the combined UCLA and Hawaii program.",
+          "sourceCitation": "Westcoast Connection UCLA plus Hawaii Extension program page",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "The first three weeks follow the standard UCLA pre-college schedule: suite-style housing at Delta Terrace, morning and afternoon courses, breakfast and dinner included (lunch paid separately), evening activities, and LA excursions. The program then continues with a 6-day Hawaii extension to Maui and Oahu, including snorkeling, a traditional luau, and travel by private coach between islands. Internal flights from Los Angeles to Hawaii and between islands cost an additional $850 beyond tuition; airfare to Los Angeles at the start and home from Oahu at the end are also not included. There is no commuter option for this itinerary.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Westcoast Connection UCLA plus Hawaii Extension program page (westcoastconnection.com)",
         "verifiedAt": "2026-09-15"
       }
     }

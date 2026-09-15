@@ -124,5 +124,17 @@
       "sourceCitation": "Westcoast Connection UCLA 14-day and 21-day program pages (westcoastconnection.com)",
       "verifiedAt": "2026-09-15"
     }
+  },
+  {
+    "match": {
+      "programGroupId": "westcoast-connection-ucla",
+      "offeringLabel": "27-Day Residential (plus Hawaii Extension)"
+    },
+    "dayToDay": {
+      "notes": "The first three weeks follow the standard UCLA pre-college schedule: suite-style housing at Delta Terrace, morning and afternoon courses, breakfast and dinner included (lunch paid separately), evening activities, and LA excursions. The program then continues with a 6-day Hawaii extension to Maui and Oahu, including snorkeling, a traditional luau, and travel by private coach between islands. Internal flights from Los Angeles to Hawaii and between islands cost an additional $850 beyond tuition; airfare to Los Angeles at the start and home from Oahu at the end are also not included. There is no commuter option for this itinerary.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Westcoast Connection UCLA plus Hawaii Extension program page (westcoastconnection.com)",
+      "verifiedAt": "2026-09-15"
+    }
   }
 ]

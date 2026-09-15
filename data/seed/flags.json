@@ -394,15 +394,15 @@
         "type": "pricing",
         "title": "Lunch is not included in tuition, despite meals being advertised as covered",
         "body": "Program pages list breakfast and dinner as included, but lunch is explicitly excluded and paid for independently by students each day - worth budgeting for separately.",
-        "sourceCitation": "Westcoast Connection UCLA 14-day and 21-day program pages, 'What's Included' section",
+        "sourceCitation": "Westcoast Connection UCLA program pages, 'What's Included' section",
         "severity": "info"
       },
       {
         "id": "westcoast-ucla-promo-pricing",
         "type": "pricing",
         "title": "Advertised price includes a limited-time discount",
-        "body": "The prices shown ($6,399 for 14 days, $8,599 for 21 days) reflect an active 'enroll early and save' promotion off list prices of $6,699 and $8,999 respectively. The discount is time-limited and not guaranteed to still apply later in the enrollment cycle.",
-        "sourceCitation": "Westcoast Connection UCLA program pages",
+        "body": "The prices shown ($6,399 for 14 days, $8,599 for 21 days, $11,499 for 27 days with Hawaii) reflect active 'enroll early and save' promotions off list prices of $6,699, $8,999, and $11,999 respectively. The discount is time-limited and not guaranteed to still apply later in the enrollment cycle.",
+        "sourceCitation": "Westcoast Connection UCLA program pages (14-, 21-, and 27-day)",
         "severity": "info"
       },
       {
@@ -410,7 +410,39 @@
         "type": "policy",
         "title": "Not a UCLA-run program despite the branding",
         "body": "The program page includes an explicit disclaimer: this is operated by Westcoast Connection, not UCLA. Students stay in UCLA housing and use UCLA facilities, and some instructors are UCLA Extension faculty, but 'responsibility for the program resides solely with Westcoast Connection.'",
-        "sourceCitation": "Westcoast Connection UCLA 14-day and 21-day program pages",
+        "sourceCitation": "Westcoast Connection UCLA 14-day, 21-day, and 27-day program pages",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "westcoast-connection-ucla",
+      "offeringLabel": "27-Day Residential (plus Hawaii Extension)"
+    },
+    "flags": [
+      {
+        "id": "westcoast-ucla-hawaii-internal-flights",
+        "type": "pricing",
+        "title": "$850 internal Hawaii flights not included in tuition",
+        "body": "Beyond airfare to Los Angeles and home from Oahu, the program charges an additional $850 for internal flights from Los Angeles to Hawaii and between the Hawaiian islands.",
+        "sourceCitation": "Westcoast Connection UCLA plus Hawaii Extension program page",
+        "severity": "warning"
+      },
+      {
+        "id": "westcoast-ucla-hawaii-airfare",
+        "type": "pricing",
+        "title": "Round-trip airfare to/from the program not included",
+        "body": "Tuition does not include flights to Los Angeles at the start or your return flight home from Oahu. Optional chaperoned group flights may be available from the New York area.",
+        "sourceCitation": "Westcoast Connection UCLA plus Hawaii Extension program page",
+        "severity": "info"
+      },
+      {
+        "id": "westcoast-ucla-hawaii-no-commuter",
+        "type": "policy",
+        "title": "No commuter option for the Hawaii extension",
+        "body": "This 27-day itinerary is residential only — there is no day-student or commuter enrollment for the combined UCLA and Hawaii program.",
+        "sourceCitation": "Westcoast Connection UCLA plus Hawaii Extension program page",
         "severity": "info"
       }
     ]
