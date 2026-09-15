@@ -1,11 +1,9 @@
 import type { MonthNumber } from "@/lib/constants/months";
 import type { Program } from "@/lib/types/program";
 
-const SEARCH_YEAR = 2026;
-
-function monthBounds(month: MonthNumber): { start: Date; end: Date } {
-  const start = new Date(SEARCH_YEAR, month - 1, 1);
-  const end = new Date(SEARCH_YEAR, month, 0);
+function monthBounds(year: number, month: MonthNumber): { start: Date; end: Date } {
+  const start = new Date(year, month - 1, 1);
+  const end = new Date(year, month, 0);
   return { start, end };
 }
 
@@ -22,7 +20,8 @@ export function programOverlapsMonth(program: Program, month: MonthNumber): bool
   const rangeEnd = parseIsoDate(program.dateEnd);
   if (!rangeStart || !rangeEnd) return false;
 
-  const { start: monthStart, end: monthEnd } = monthBounds(month);
+  const year = program.seasonYear || rangeStart.getFullYear();
+  const { start: monthStart, end: monthEnd } = monthBounds(year, month);
   return rangeStart <= monthEnd && rangeEnd >= monthStart;
 }
 

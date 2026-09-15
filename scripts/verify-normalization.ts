@@ -17,6 +17,10 @@ import {
   parsePriceFromCsv,
 } from "../src/lib/data/parse-csv-program-fields";
 import { sortPrograms } from "../src/lib/data/filter-programs";
+import {
+  programMatchesMonthFilter,
+  programOverlapsMonth,
+} from "../src/lib/data/matches-month-filter";
 import { parsePrice } from "../src/lib/data/parse-price";
 import { matchesPriceFilter } from "../src/lib/data/matches-price-filter";
 import type { Program } from "../src/lib/types/program";
@@ -388,6 +392,33 @@ const longProgram = stubProgram({
 const sortedByDuration = sortPrograms([longProgram, shortProgram], "duration");
 if (sortedByDuration[0]?.id !== shortProgram.id) {
   console.error("FAIL: duration sort should order by lengthMinDays shortest first");
+  failed++;
+}
+
+const catalinaJulySession = stubProgram({
+  name: "Catalina Sea Camp",
+  locationDisplay: "Toyon Bay, Catalina Island, CA",
+  dateStart: "2027-07-05",
+  dateEnd: "2027-07-22",
+  seasonYear: 2027,
+});
+const catalinaJulyAugustSession = stubProgram({
+  name: "Catalina Sea Camp",
+  locationDisplay: "Toyon Bay, Catalina Island, CA",
+  dateStart: "2027-07-24",
+  dateEnd: "2027-08-10",
+  seasonYear: 2027,
+});
+if (!programOverlapsMonth(catalinaJulySession, 7)) {
+  console.error("FAIL: 2027 July session should overlap July filter");
+  failed++;
+}
+if (!programMatchesMonthFilter(catalinaJulyAugustSession, [7])) {
+  console.error("FAIL: 2027 session starting in July should match July filter");
+  failed++;
+}
+if (!programMatchesMonthFilter(catalinaJulyAugustSession, [8])) {
+  console.error("FAIL: 2027 session ending in August should match August filter");
   failed++;
 }
 
