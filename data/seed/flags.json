@@ -291,5 +291,18 @@
         "severity": "warning"
       }
     ]
+  },
+  {
+    "match": { "programGroupId": "mit-bwsi" },
+    "flags": [
+      {
+        "id": "mit-bwsi-online-prereq-completion-deadline",
+        "type": "other",
+        "title": "Enrolled students must complete online prerequisite coursework before the in-person/virtual session starts",
+        "body": "Being accepted isn't the end of the work: enrolled students must finish the graded online prerequisite course by a deadline in mid-to-late June (shown as June 18 on the 2027 program timeline) - missing this puts a student's summer spot at risk, per BWSI's own admissions messaging.",
+        "sourceCitation": "User-provided 2027 program timeline graphic",
+        "severity": "warning"
+      }
+    ]
   }
 ]

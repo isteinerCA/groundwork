@@ -1,6 +1,6 @@
 {
   "verifiedAt": "2026-09-15",
-  "count": 172,
+  "count": 174,
   "programs": [
     {
       "id": "prog-1",
@@ -8076,6 +8076,118 @@
         "sourceCitation": "Catalina Sea Camp 1-Week Programs page and Parent FAQs",
         "verifiedAt": "2026-09-14"
       }
+    },
+    {
+      "id": "prog-173",
+      "slug": "mit-beaver-works-summer-institute-bwsi-in-person-courses",
+      "name": "MIT Beaver Works Summer Institute (BWSI)",
+      "institution": "Massachusetts Institute of Technology",
+      "programGroupId": "mit-bwsi",
+      "description": "Selective 4-week hands-on STEM courses (autonomous systems, AI, quantum, cybersecurity, and more) at MIT for advanced high schoolers; in-person courses meet on campus with no housing provided.",
+      "category": "stem-engineering",
+      "secondaryTags": [
+        "Artificial Intelligence"
+      ],
+      "trackDetail": "In-Person Courses",
+      "gradeDisplay": "Current 10th-11th grade at application (completed grades 10-11)",
+      "gradeCompletedMin": 10,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "stateRestriction": null,
+      "admissionType": "highly_competitive",
+      "admissionDisplay": "Highly Competitive",
+      "formatDisplay": "Commuter",
+      "formatTags": [
+        "commuter"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "4 weeks",
+      "lengthMinDays": 26,
+      "lengthMaxDays": 27,
+      "datesDisplay": "Program begins after July 4th; Final Event July 31 & Aug 1, 2027",
+      "dateStart": "2027-07-05",
+      "dateEnd": "2027-07-31",
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Cambridge, MA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "Free (family income & assets <$200k); $3,000 (>$200,001)",
+      "priceMin": 0.0,
+      "priceMax": 3000.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://bwsi.mit.edu/apply-now/",
+      "flags": [
+        {
+          "id": "mit-bwsi-online-prereq-completion-deadline",
+          "type": "other",
+          "title": "Enrolled students must complete online prerequisite coursework before the in-person/virtual session starts",
+          "body": "Being accepted isn't the end of the work: enrolled students must finish the graded online prerequisite course by a deadline in mid-to-late June (shown as June 18 on the 2027 program timeline) - missing this puts a student's summer spot at risk, per BWSI's own admissions messaging.",
+          "sourceCitation": "User-provided 2027 program timeline graphic",
+          "severity": "warning"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15"
+    },
+    {
+      "id": "prog-174",
+      "slug": "mit-beaver-works-summer-institute-bwsi-virtual-courses",
+      "name": "MIT Beaver Works Summer Institute (BWSI)",
+      "institution": "Massachusetts Institute of Technology",
+      "programGroupId": "mit-bwsi",
+      "description": "Selective 4-week hands-on STEM courses (autonomous systems, AI, quantum, cybersecurity, and more) delivered virtually via Zoom; same admissions process and pricing as the in-person track.",
+      "category": "stem-engineering",
+      "secondaryTags": [
+        "Artificial Intelligence"
+      ],
+      "trackDetail": "Virtual Courses",
+      "gradeDisplay": "Current 10th-11th grade at application (completed grades 10-11)",
+      "gradeCompletedMin": 10,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "stateRestriction": null,
+      "admissionType": "highly_competitive",
+      "admissionDisplay": "Highly Competitive",
+      "formatDisplay": "Online",
+      "formatTags": [
+        "online"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "4 weeks",
+      "lengthMinDays": 26,
+      "lengthMaxDays": 27,
+      "datesDisplay": "Program begins after July 4th; Final Event July 31 & Aug 1, 2027",
+      "dateStart": "2027-07-05",
+      "dateEnd": "2027-07-31",
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Online",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "Free (family income & assets <$200k); $3,000 (>$200,001)",
+      "priceMin": 0.0,
+      "priceMax": 3000.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://bwsi.mit.edu/apply-now/",
+      "flags": [
+        {
+          "id": "mit-bwsi-online-prereq-completion-deadline",
+          "type": "other",
+          "title": "Enrolled students must complete online prerequisite coursework before the in-person/virtual session starts",
+          "body": "Being accepted isn't the end of the work: enrolled students must finish the graded online prerequisite course by a deadline in mid-to-late June (shown as June 18 on the 2027 program timeline) - missing this puts a student's summer spot at risk, per BWSI's own admissions messaging.",
+          "sourceCitation": "User-provided 2027 program timeline graphic",
+          "severity": "warning"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15"
     }
   ]
 }
