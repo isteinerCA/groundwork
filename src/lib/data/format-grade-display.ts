@@ -9,13 +9,38 @@ export function gradeEligibilityLabel(
   return "Grades";
 }
 
-/** Muted subline when age-based eligibility is mapped to grade filters. */
-export function gradeSearchMatchHint(
-  program: Pick<Program, "gradeSource" | "gradeCompletedMin" | "gradeCompletedMax">,
-): string | null {
-  if (program.gradeSource !== "age" && program.gradeSource !== "mixed") return null;
+function extractAgePhrase(gradeDisplay: string): string | null {
+  const match = gradeDisplay.match(/ages?\s*(\d+)\s*[–-]\s*(\d+)/i);
+  if (!match) return null;
+  return `Ages ${match[1]}-${match[2]}`;
+}
 
-  const { gradeCompletedMin: min, gradeCompletedMax: max } = program;
-  if (min === max) return `Search matches grade completed ${min}`;
-  return `Search matches grades completed ${min}–${max}`;
+function formatCompletedGradesForFilter(min: number, max: number): string {
+  if (min === max) return `grade ${min}`;
+  return `grades ${min}–${max}`;
+}
+
+/**
+ * Parent-facing eligibility line for program cards and compare view.
+ * Age-based rows: site ages first, then why the program matched grade filters.
+ */
+export function formatGradeEligibilityDisplay(
+  program: Pick<
+    Program,
+    "gradeSource" | "gradeDisplay" | "gradeCompletedMin" | "gradeCompletedMax"
+  >,
+): string {
+  if (program.gradeSource === "age" || program.gradeSource === "mixed") {
+    const agePhrase =
+      extractAgePhrase(program.gradeDisplay) ??
+      program.gradeDisplay.split(/[,(]/)[0]?.trim() ??
+      program.gradeDisplay;
+    const gradeMatch = formatCompletedGradesForFilter(
+      program.gradeCompletedMin,
+      program.gradeCompletedMax,
+    );
+    return `${agePhrase} per program site (matches completed ${gradeMatch} in search filters)`;
+  }
+
+  return program.gradeDisplay;
 }

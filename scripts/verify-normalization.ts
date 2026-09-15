@@ -8,8 +8,8 @@ import { normalizeGrade, gradeMatchesFilter } from "../src/lib/data/normalize-gr
 import { matchesDataQuery } from "../src/lib/data/matches-data-query";
 import { resolveLocationQuery } from "../src/lib/data/matches-location";
 import {
+  formatGradeEligibilityDisplay,
   gradeEligibilityLabel,
-  gradeSearchMatchHint,
 } from "../src/lib/data/format-grade-display";
 import {
   parseDatesFromCsv,
@@ -311,8 +311,17 @@ if (gradeEligibilityLabel(ageGrades) !== "Ages") {
   console.error("FAIL: age-based programs should use Ages label");
   failed++;
 }
-if (!gradeSearchMatchHint(ageGrades)?.includes("7")) {
-  console.error("FAIL: age programs should show grade search hint");
+const youngAdventurersDisplay = formatGradeEligibilityDisplay({
+  gradeSource: "age",
+  gradeDisplay: "Ages 11-13 (completed grades 5-7, per program site)",
+  gradeCompletedMin: 5,
+  gradeCompletedMax: 7,
+});
+if (
+  youngAdventurersDisplay !==
+  "Ages 11-13 per program site (matches completed grades 5–7 in search filters)"
+) {
+  console.error(`FAIL: age eligibility display format, got "${youngAdventurersDisplay}"`);
   failed++;
 }
 
