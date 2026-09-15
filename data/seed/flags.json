@@ -385,5 +385,104 @@
         "severity": "warning"
       }
     ]
+  },
+  {
+    "match": { "programGroupId": "westcoast-connection-ucla" },
+    "flags": [
+      {
+        "id": "westcoast-ucla-lunch-not-included",
+        "type": "pricing",
+        "title": "Lunch is not included in tuition, despite meals being advertised as covered",
+        "body": "Program pages list breakfast and dinner as included, but lunch is explicitly excluded and paid for independently by students each day - worth budgeting for separately.",
+        "sourceCitation": "Westcoast Connection UCLA 14-day and 21-day program pages, 'What's Included' section",
+        "severity": "info"
+      },
+      {
+        "id": "westcoast-ucla-promo-pricing",
+        "type": "pricing",
+        "title": "Advertised price includes a limited-time discount",
+        "body": "The prices shown ($6,399 for 14 days, $8,599 for 21 days) reflect an active 'enroll early and save' promotion off list prices of $6,699 and $8,999 respectively. The discount is time-limited and not guaranteed to still apply later in the enrollment cycle.",
+        "sourceCitation": "Westcoast Connection UCLA program pages",
+        "severity": "info"
+      },
+      {
+        "id": "westcoast-ucla-not-run-by-ucla",
+        "type": "policy",
+        "title": "Not a UCLA-run program despite the branding",
+        "body": "The program page includes an explicit disclaimer: this is operated by Westcoast Connection, not UCLA. Students stay in UCLA housing and use UCLA facilities, and some instructors are UCLA Extension faculty, but 'responsibility for the program resides solely with Westcoast Connection.'",
+        "sourceCitation": "Westcoast Connection UCLA 14-day and 21-day program pages",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "westcoast-connection-ucla",
+      "offeringLabel": "21-Day Commuter"
+    },
+    "flags": [
+      {
+        "id": "wcc-ucla-commuter-distinct-schedule",
+        "type": "other",
+        "title": "Commuter is a distinct schedule, not residential in day format",
+        "body": "The commuter option covers class days only across three non-consecutive weeks — not the full 21-day residential session with overnight and weekend programming.",
+        "sourceCitation": "Westcoast Connection UCLA Pre-College Commuter Option section",
+        "sourceDate": "2026-09-15",
+        "severity": "warning"
+      },
+      {
+        "id": "wcc-ucla-commuter-meals-not-included",
+        "type": "other",
+        "title": "No meals included for commuter students",
+        "body": "Commuter tuition does not include any meals. Students should plan for breakfast, lunch, and dinner on class days.",
+        "sourceCitation": "Westcoast Connection UCLA Pre-College Commuter Option section",
+        "sourceDate": "2026-09-15",
+        "severity": "warning"
+      },
+      {
+        "id": "wcc-ucla-commuter-limited-facilities",
+        "type": "other",
+        "title": "Limited recreational facility access",
+        "body": "Commuter students have limited access to UCLA's recreational facilities compared to residential participants.",
+        "sourceCitation": "Westcoast Connection UCLA Pre-College Commuter Option section",
+        "sourceDate": "2026-09-15",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "westcoast-connection-ucla",
+      "offeringLabel": "14-Day Commuter"
+    },
+    "flags": [
+      {
+        "id": "wcc-ucla-commuter-distinct-schedule-14",
+        "type": "other",
+        "title": "Commuter is a distinct schedule, not residential in day format",
+        "body": "The commuter option covers class days only across two non-consecutive weeks — not the full 14-day residential session with overnight and weekend programming.",
+        "sourceCitation": "Westcoast Connection UCLA Pre-College Commuter Option section (14-day page)",
+        "sourceDate": "2026-09-15",
+        "severity": "warning"
+      },
+      {
+        "id": "wcc-ucla-commuter-meals-not-included",
+        "type": "other",
+        "title": "No meals included for commuter students",
+        "body": "Commuter tuition does not include any meals. Students should plan for breakfast, lunch, and dinner on class days.",
+        "sourceCitation": "Westcoast Connection UCLA Pre-College Commuter Option section",
+        "sourceDate": "2026-09-15",
+        "severity": "warning"
+      },
+      {
+        "id": "wcc-ucla-commuter-limited-facilities",
+        "type": "other",
+        "title": "Limited recreational facility access",
+        "body": "Commuter students have limited access to UCLA's recreational facilities compared to residential participants.",
+        "sourceCitation": "Westcoast Connection UCLA Pre-College Commuter Option section",
+        "sourceDate": "2026-09-15",
+        "severity": "info"
+      }
+    ]
   }
 ]

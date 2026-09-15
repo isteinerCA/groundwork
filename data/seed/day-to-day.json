@@ -115,5 +115,14 @@
       "sourceCitation": "SOCAPA Tuition & Costs page and individual track pages (socapa.org)",
       "verifiedAt": "2026-09-15"
     }
+  },
+  {
+    "match": { "programGroupId": "westcoast-connection-ucla" },
+    "dayToDay": {
+      "notes": "Residential students live in suite-style housing at Delta Terrace in Sunset Village, with their own bathroom, and staff (residence life coordinators among them) living in the same halls. A typical day: 8am wake-up, 8:30 breakfast, 9:30-11:30 morning course, 11:30 lunch (unstructured - students choose where to eat in small groups, on or off campus), 1:30-3:30 afternoon course, then free time until 6pm dinner, followed by organized evening activities. Breakfast and dinner are included in tuition; lunch is explicitly NOT included and is handled independently by students. Commuter (day) students attend roughly 9:30am-3:30/4pm on class days only, are not housed overnight, have no meals included, get limited access to UCLA recreational facilities, and may optionally join group field trips or the college-admissions workshops.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Westcoast Connection UCLA 14-day and 21-day program pages (westcoastconnection.com)",
+      "verifiedAt": "2026-09-15"
+    }
   }
 ]
