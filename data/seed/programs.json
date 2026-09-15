@@ -1,6 +1,6 @@
 {
   "verifiedAt": "2026-09-15",
-  "count": 174,
+  "count": 175,
   "programs": [
     {
       "id": "prog-1",
@@ -8188,6 +8188,68 @@
         }
       ],
       "dataVerifiedAt": "2026-09-15"
+    },
+    {
+      "id": "prog-175",
+      "slug": "honors-summer-math-camp-hsmc-general",
+      "name": "Honors Summer Math Camp (HSMC)",
+      "institution": "Texas State University",
+      "programGroupId": "mathworks-hsmc",
+      "description": "Intensive six-week residential math camp at Texas State University; first-year students take a discovery-style number theory course, returning multi-summer students move into original research projects.",
+      "category": "mathematics",
+      "secondaryTags": [
+        "Leadership/Gifted"
+      ],
+      "trackDetail": "General",
+      "gradeDisplay": "Grades 9-11, first-year admission concentrated in current 9th-10th graders",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 10,
+      "gradeSource": "grade",
+      "stateRestriction": null,
+      "admissionType": "highly_competitive",
+      "admissionDisplay": "Highly Competitive",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "four_plus_weeks",
+      "lengthDisplay": "6 weeks",
+      "lengthMinDays": 42,
+      "lengthMaxDays": 42,
+      "datesDisplay": "Jun 20 \u2013 Jul 31, 2027",
+      "dateStart": "2027-06-20",
+      "dateEnd": "2027-07-31",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "San Marcos, TX",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$6600",
+      "priceMin": 6600.0,
+      "priceMax": 6600.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.txst.edu/mathworks/mathworks-camps/hsmc.html",
+      "flags": [
+        {
+          "id": "mathworks-hsmc-no-outside-commitments",
+          "type": "other",
+          "title": "No online courses or other programs allowed during camp",
+          "body": "Unlike most residential summer programs, HSMC explicitly prohibits campers from taking any online courses or participating in any other program - in person or virtual - for the full six weeks. Families should not plan for a student to double up on summer commitments.",
+          "sourceCitation": "Mathworks HSMC program page",
+          "severity": "info"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "This is a highly structured, academically intensive residential program: the daily schedule runs from 7am breakfast to 10pm, with classes and research in the morning, problem sessions or additional classes in the afternoon, and study groups in the evening. Campers are explicitly not permitted to take online courses or participate in any other program, in person or online, during the six weeks - an unusually strict exclusivity policy compared to most residential camps. Parent visits during camp are allowed but require prior approval through a request form, rather than being either fully open or fully prohibited.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Mathworks HSMC program page and Camps visit-request page (txst.edu/mathworks)",
+        "verifiedAt": "2026-09-15"
+      }
     }
   ]
 }

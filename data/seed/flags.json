@@ -304,5 +304,18 @@
         "severity": "warning"
       }
     ]
+  },
+  {
+    "match": { "programGroupId": "mathworks-hsmc" },
+    "flags": [
+      {
+        "id": "mathworks-hsmc-no-outside-commitments",
+        "type": "other",
+        "title": "No online courses or other programs allowed during camp",
+        "body": "Unlike most residential summer programs, HSMC explicitly prohibits campers from taking any online courses or participating in any other program - in person or virtual - for the full six weeks. Families should not plan for a student to double up on summer commitments.",
+        "sourceCitation": "Mathworks HSMC program page",
+        "severity": "info"
+      }
+    ]
   }
 ]

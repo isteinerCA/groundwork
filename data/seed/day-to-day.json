@@ -34,5 +34,14 @@
       "sourceCitation": "Catalina Sea Camp 1-Week Programs page and Parent FAQs",
       "verifiedAt": "2026-09-14"
     }
+  },
+  {
+    "match": { "programGroupId": "mathworks-hsmc" },
+    "dayToDay": {
+      "notes": "This is a highly structured, academically intensive residential program: the daily schedule runs from 7am breakfast to 10pm, with classes and research in the morning, problem sessions or additional classes in the afternoon, and study groups in the evening. Campers are explicitly not permitted to take online courses or participate in any other program, in person or online, during the six weeks - an unusually strict exclusivity policy compared to most residential camps. Parent visits during camp are allowed but require prior approval through a request form, rather than being either fully open or fully prohibited.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Mathworks HSMC program page and Camps visit-request page (txst.edu/mathworks)",
+      "verifiedAt": "2026-09-15"
+    }
   }
 ]
