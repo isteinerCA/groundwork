@@ -351,5 +351,26 @@
         "severity": "info"
       }
     ]
+  },
+  {
+    "match": { "programGroupId": "oxford-academia-yale" },
+    "flags": [
+      {
+        "id": "oxford-academia-yale-meal-plan-contradiction",
+        "type": "other",
+        "title": "Org's own pages disagree on whether tuition covers 3 meals a day",
+        "body": "The general Oxford Academia FAQ page states Yale tuition 'includes all accommodations and three meals each day,' but the Yale-specific program page states lunches are not included in tuition and are handled independently by students. Families should confirm directly which is accurate before budgeting.",
+        "sourceCitation": "Oxford Academia FAQ page vs. Yale program page (both oxfordacademia.com)",
+        "severity": "warning"
+      },
+      {
+        "id": "oxford-academia-yale-fee-exclusions",
+        "type": "other",
+        "title": "Tuition (once published) will exclude several real costs",
+        "body": "Per the general FAQ: the $200 non-refundable application fee, airfare/travel to the program, lunches, classroom/art supplies, laundry, communication home, health care, and personal expenses are all separate from tuition. Airport group transportation to campus (JFK or Bradley) costs $65 each way if used.",
+        "sourceCitation": "Oxford Academia FAQ page",
+        "severity": "info"
+      }
+    ]
   }
 ]

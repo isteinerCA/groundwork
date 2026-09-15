@@ -1,6 +1,6 @@
 {
   "verifiedAt": "2026-09-15",
-  "count": 180,
+  "count": 181,
   "programs": [
     {
       "id": "prog-1",
@@ -8535,6 +8535,74 @@
         "notes": "Students live in Penn dormitories with a meal plan in the undergraduate dining halls, described by the program as including 'student supervision.' The schedule is described as extremely rigorous and non-stop given that a full college credit is earned in just three weeks. Meals are provided twice daily Monday-Friday and twice on Sunday, but there are no provided meals at all on Saturdays, which are reserved for excursions and off-campus activities - students should budget for that. Full attendance is mandatory from the first day to the last; the program does not permit partial attendance or early departure under any circumstances, since credit is tied to completing the full three weeks.",
         "sourceType": "official_policy",
         "sourceCitation": "M&TSI program page and FAQs (fisher.wharton.upenn.edu)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-181",
+      "slug": "oxford-academia-at-yale-session-1",
+      "name": "Oxford Academia at Yale",
+      "institution": "Oxford Academia (Putney Student Travel)",
+      "programGroupId": "oxford-academia-yale",
+      "description": "Two-week residential Ivy League immersion program at Yale where students choose a major and minor seminar from subjects spanning business, law, medicine, AI, and the humanities.",
+      "category": "leadership-gifted",
+      "secondaryTags": [],
+      "trackDetail": "Session 1",
+      "gradeDisplay": "Completing grades 9-12 (motivated rising 9th graders also considered)",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "stateRestriction": null,
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "13 days",
+      "lengthMinDays": 13,
+      "lengthMaxDays": 13,
+      "datesDisplay": "Jul 3\u201315, 2027",
+      "dateStart": "2027-07-03",
+      "dateEnd": "2027-07-15",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "awaiting_source",
+      "locationDisplay": "New Haven, CT",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "Contact program \u2014 tuition not yet published on site",
+      "priceMin": null,
+      "priceMax": null,
+      "priceUnknown": true,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://oxfordacademia.com/programs/oxford-academia-at-yale/",
+      "flags": [
+        {
+          "id": "oxford-academia-yale-meal-plan-contradiction",
+          "type": "other",
+          "title": "Org's own pages disagree on whether tuition covers 3 meals a day",
+          "body": "The general Oxford Academia FAQ page states Yale tuition 'includes all accommodations and three meals each day,' but the Yale-specific program page states lunches are not included in tuition and are handled independently by students. Families should confirm directly which is accurate before budgeting.",
+          "sourceCitation": "Oxford Academia FAQ page vs. Yale program page (both oxfordacademia.com)",
+          "severity": "warning"
+        },
+        {
+          "id": "oxford-academia-yale-fee-exclusions",
+          "type": "other",
+          "title": "Tuition (once published) will exclude several real costs",
+          "body": "Per the general FAQ: the $200 non-refundable application fee, airfare/travel to the program, lunches, classroom/art supplies, laundry, communication home, health care, and personal expenses are all separate from tuition. Airport group transportation to campus (JFK or Bradley) costs $65 each way if used.",
+          "sourceCitation": "Oxford Academia FAQ page",
+          "severity": "info"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-15",
+      "dayToDay": {
+        "notes": "Students live in double suite-style dorm rooms with bathrooms on the hall, with faculty and residential staff (Deans, Student Deans, Junior Deans, and Health & Activity Coordinators) living in the same residence halls, focused specifically on student life and well-being. The academic day is structured: major seminar meets six days a week for three hours, minor seminar meets three days a week for two hours, with afternoons/evenings open for electives and extracurriculars, and evening programming (guest speakers, shows, or college-admissions Q&As) bringing all seminar groups together after dinner. Breakfasts and dinners are provided at the dorm cafeteria, but lunches are not included in tuition - students handle lunch independently in small peer groups, a mix of city restaurants and picnics. On weekends, students go on staff-led or seminar-group excursions, which may include a day trip to New York City.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Oxford Academia at Yale program page (oxfordacademia.com)",
         "verifiedAt": "2026-09-15"
       }
     }

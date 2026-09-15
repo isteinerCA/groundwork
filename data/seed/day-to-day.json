@@ -79,5 +79,14 @@
       "sourceCitation": "M&TSI program page and FAQs (fisher.wharton.upenn.edu)",
       "verifiedAt": "2026-09-15"
     }
+  },
+  {
+    "match": { "programGroupId": "oxford-academia-yale" },
+    "dayToDay": {
+      "notes": "Students live in double suite-style dorm rooms with bathrooms on the hall, with faculty and residential staff (Deans, Student Deans, Junior Deans, and Health & Activity Coordinators) living in the same residence halls, focused specifically on student life and well-being. The academic day is structured: major seminar meets six days a week for three hours, minor seminar meets three days a week for two hours, with afternoons/evenings open for electives and extracurriculars, and evening programming (guest speakers, shows, or college-admissions Q&As) bringing all seminar groups together after dinner. Breakfasts and dinners are provided at the dorm cafeteria, but lunches are not included in tuition - students handle lunch independently in small peer groups, a mix of city restaurants and picnics. On weekends, students go on staff-led or seminar-group excursions, which may include a day trip to New York City.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Oxford Academia at Yale program page (oxfordacademia.com)",
+      "verifiedAt": "2026-09-15"
+    }
   }
 ]
