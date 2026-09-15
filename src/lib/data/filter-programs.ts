@@ -5,7 +5,10 @@ import { matchesDurationWeeksFilter } from "@/lib/data/matches-duration-filter";
 import { matchesLocationQuery, programMatchesAnyLocation } from "@/lib/data/matches-location";
 import { programMatchesAnyRegion } from "@/lib/data/us-regions";
 import { programMatchesExcludeMonthFilter, programMatchesMonthFilter } from "@/lib/data/matches-month-filter";
-import { matchesSeasonReviewFilter } from "@/lib/data/normalize-season-review";
+import {
+  isVerifiedForTargetSeason,
+  matchesSeasonReviewFilter,
+} from "@/lib/data/normalize-season-review";
 import { matchesNumericPriceFilter, matchesPriceFilter } from "@/lib/data/matches-price-filter";
 import { formatMatchesFilter } from "@/lib/data/normalize-format";
 import { gradeMatchesFilter } from "@/lib/data/normalize-grade";
@@ -133,26 +136,33 @@ const ADMISSION_ORDER: Record<AdmissionTypeId, number> = {
   first_come: 2,
 };
 
-export function sortPrograms(programs: Program[], sort: SortOption): Program[] {
-  const sorted = [...programs];
-
-  sorted.sort((a, b) => {
-    switch (sort) {
-      case "name":
-        return a.name.localeCompare(b.name);
-      case "price": {
-        const aPrice = a.priceUnknown ? Number.POSITIVE_INFINITY : (a.priceMin ?? a.priceMax ?? 0);
-        const bPrice = b.priceUnknown ? Number.POSITIVE_INFINITY : (b.priceMin ?? b.priceMax ?? 0);
-        return aPrice - bPrice;
-      }
-      case "selectivity":
-        return ADMISSION_ORDER[a.admissionType] - ADMISSION_ORDER[b.admissionType];
-      case "duration":
-        return a.lengthDisplay.localeCompare(b.lengthDisplay);
-      default:
-        return 0;
+function compareProgramsBySort(a: Program, b: Program, sort: SortOption): number {
+  switch (sort) {
+    case "name":
+      return a.name.localeCompare(b.name);
+    case "price": {
+      const aPrice = a.priceUnknown ? Number.POSITIVE_INFINITY : (a.priceMin ?? a.priceMax ?? 0);
+      const bPrice = b.priceUnknown ? Number.POSITIVE_INFINITY : (b.priceMin ?? b.priceMax ?? 0);
+      return aPrice - bPrice;
     }
-  });
+    case "selectivity":
+      return ADMISSION_ORDER[a.admissionType] - ADMISSION_ORDER[b.admissionType];
+    case "duration":
+      return a.lengthDisplay.localeCompare(b.lengthDisplay);
+    default:
+      return 0;
+  }
+}
 
-  return sorted;
+/** Verified target-season rows sort above pending when primary sort ties. */
+function seasonReviewSortRank(program: Pick<Program, "reviewStatus" | "seasonYear">): number {
+  return isVerifiedForTargetSeason(program) ? 0 : 1;
+}
+
+export function sortPrograms(programs: Program[], sort: SortOption): Program[] {
+  return [...programs].sort((a, b) => {
+    const primary = compareProgramsBySort(a, b, sort);
+    if (primary !== 0) return primary;
+    return seasonReviewSortRank(a) - seasonReviewSortRank(b);
+  });
 }

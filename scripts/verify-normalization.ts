@@ -16,6 +16,7 @@ import {
   parseGradesFromCsv,
   parsePriceFromCsv,
 } from "../src/lib/data/parse-csv-program-fields";
+import { sortPrograms } from "../src/lib/data/filter-programs";
 import { parsePrice } from "../src/lib/data/parse-price";
 import { matchesPriceFilter } from "../src/lib/data/matches-price-filter";
 import type { Program } from "../src/lib/types/program";
@@ -338,6 +339,26 @@ const structuredPrice = parsePriceFromCsv({
 });
 if (structuredPrice.priceMin !== 1990 || structuredPrice.priceUnknown) {
   console.error("FAIL: 2027 structured price columns");
+  failed++;
+}
+
+const verifiedProgram = stubProgram({
+  name: "Alpha Camp",
+  locationDisplay: "Boston, MA",
+  admissionType: "first_come",
+  seasonYear: 2027,
+  reviewStatus: "verified",
+});
+const pendingProgram = stubProgram({
+  name: "Beta Camp",
+  locationDisplay: "Boston, MA",
+  admissionType: "first_come",
+  seasonYear: 2026,
+  reviewStatus: "provisional",
+});
+const sortedBySelectivity = sortPrograms([pendingProgram, verifiedProgram], "selectivity");
+if (sortedBySelectivity[0]?.id !== verifiedProgram.id) {
+  console.error("FAIL: verified 2027 programs should tiebreak above pending when selectivity matches");
   failed++;
 }
 
