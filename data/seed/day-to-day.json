@@ -43,5 +43,32 @@
       "sourceCitation": "Mathworks HSMC program page and Camps visit-request page (txst.edu/mathworks)",
       "verifiedAt": "2026-09-15"
     }
+  },
+  {
+    "match": { "programGroupId": "mathworks-jsmcr" },
+    "dayToDay": {
+      "notes": "Students live in a campus dormitory supervised by camp counselors at a ratio of 1 counselor to 4 students - closer supervision than the HSMC high schooler program. Days include daily math classes taught by university professors, study group sessions, and recreation time with free use of the university's Student Recreation Center (basketball, volleyball, racquetball, indoor track, pool). Fridays include a guest lecture from an academic or industry speaker followed by a picnic with games at a local park. As with HSMC, campers are not permitted to take online courses or participate in any other program during the two weeks.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Mathworks JSMCR program page and JSMCR Daily Schedule and Events page (txst.edu/mathworks)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "nyt-edu-summer-academy-nyc" },
+    "dayToDay": {
+      "notes": "Residential students live in a dorm-style facility in Manhattan, with roommates assigned by gender identity and age. Building security and residential staff are present in the residence hall 24/7, and Residential Directors live adjacent to the students they oversee. Both residential and day students participate in a structured set of evening and weekend activities beyond the academic day. Day students commute in for the academic portion and have the option to stay for dinner and evening/weekend programming, but go home (or to their own housing) at night rather than living on-site.",
+      "sourceType": "official_policy",
+      "sourceCitation": "NYT Edu 'Program Experience' and NYC Summer Academy pages",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "mathworks-jsmch" },
+    "dayToDay": {
+      "notes": "This is a day program with no overnight component - parents drop off and pick up daily, and San Marcos CISD provides bus transportation, but only for students enrolled in that local school district (families outside the district must arrange their own transportation, as Mathworks itself doesn't provide any). Breakfast, lunch, and a snack are provided during the school day. Students are on campus only during camp hours and go home each evening.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Mathworks JSMCH program page (txst.edu/mathworks)",
+      "verifiedAt": "2026-09-15"
+    }
   }
 ]

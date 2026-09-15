@@ -317,5 +317,18 @@
         "severity": "info"
       }
     ]
+  },
+  {
+    "match": { "programGroupId": "mathworks-jsmcr" },
+    "flags": [
+      {
+        "id": "mathworks-jsmcr-no-outside-commitments",
+        "type": "other",
+        "title": "No online courses or other programs allowed during camp",
+        "body": "Unlike most residential summer programs, JSMCR explicitly prohibits campers from taking any online courses or participating in any other program - in person or virtual - for the full two weeks. Families should not plan for a student to double up on summer commitments.",
+        "sourceCitation": "Mathworks JSMCR program page",
+        "severity": "info"
+      }
+    ]
   }
 ]
