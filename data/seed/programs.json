@@ -551,49 +551,6 @@
     },
     {
       "id": "prog-11",
-      "slug": "mit-women-s-technology-program-wtp-mechanical-engineering-cs",
-      "name": "MIT Women's Technology Program (WTP)",
-      "category": "artificial-intelligence",
-      "secondaryTags": [
-        "STEM/Engineering"
-      ],
-      "trackDetail": "Mechanical Engineering & CS",
-      "gradeDisplay": "Rising Seniors (girls only)",
-      "gradeCompletedMin": 11,
-      "gradeCompletedMax": 11,
-      "gradeSource": "grade",
-      "admissionType": "highly_competitive",
-      "admissionDisplay": "Highly competitive",
-      "formatDisplay": "Residential",
-      "formatTags": [
-        "residential"
-      ],
-      "durationBucket": "two_to_four_weeks",
-      "lengthDisplay": "4 weeks",
-      "lengthMinDays": 28,
-      "lengthMaxDays": 28,
-      "datesDisplay": "Late Jun - Late Jul",
-      "dateStart": "2026-06-01",
-      "dateEnd": "2026-07-28",
-      "datesParseQuality": "approximate",
-      "seasonYear": 2026,
-      "reviewStatus": "provisional",
-      "locationDisplay": "Cambridge, MA",
-      "isInternational": false,
-      "creditDisplay": "No",
-      "hasCollegeCredit": false,
-      "priceDisplay": "Free/substantial need-based aid",
-      "priceMin": null,
-      "priceMax": null,
-      "priceUnknown": true,
-      "fullyFunded": false,
-      "financialAidAvailable": true,
-      "websiteUrl": "https://web.mit.edu/wtp/",
-      "dataVerifiedAt": "2026-09-15",
-      "flags": []
-    },
-    {
-      "id": "prog-12",
       "slug": "stanford-pre-collegiate-summer-institutes-ai-course",
       "name": "Stanford Pre-Collegiate Summer Institutes",
       "category": "artificial-intelligence",
@@ -634,7 +591,7 @@
       "flags": []
     },
     {
-      "id": "prog-13",
+      "id": "prog-12",
       "slug": "jhu-engineering-summer-ai-institute",
       "name": "JHU Engineering Summer AI Institute",
       "category": "artificial-intelligence",
@@ -676,7 +633,7 @@
       "flags": []
     },
     {
-      "id": "prog-14",
+      "id": "prog-13",
       "slug": "cmu-pre-college-ai-scholars",
       "name": "CMU Pre-College",
       "category": "artificial-intelligence",
@@ -719,7 +676,7 @@
       "flags": []
     },
     {
-      "id": "prog-15",
+      "id": "prog-14",
       "slug": "cmu-pre-college-cs-scholars",
       "name": "CMU Pre-College",
       "category": "artificial-intelligence",
@@ -762,7 +719,7 @@
       "flags": []
     },
     {
-      "id": "prog-16",
+      "id": "prog-15",
       "slug": "cmu-pre-college-architecture",
       "name": "CMU Pre-College",
       "category": "stem-engineering",
@@ -804,7 +761,7 @@
       "flags": []
     },
     {
-      "id": "prog-17",
+      "id": "prog-16",
       "slug": "cmu-pre-college-computational-biology",
       "name": "CMU Pre-College",
       "category": "stem-engineering",
@@ -848,7 +805,7 @@
       "flags": []
     },
     {
-      "id": "prog-18",
+      "id": "prog-17",
       "slug": "cmu-pre-college-art",
       "name": "CMU Pre-College",
       "category": "arts",
@@ -890,7 +847,7 @@
       "flags": []
     },
     {
-      "id": "prog-19",
+      "id": "prog-18",
       "slug": "cmu-pre-college-design",
       "name": "CMU Pre-College",
       "category": "arts",
@@ -932,7 +889,7 @@
       "flags": []
     },
     {
-      "id": "prog-20",
+      "id": "prog-19",
       "slug": "cmu-pre-college-drama",
       "name": "CMU Pre-College",
       "category": "arts",
@@ -974,7 +931,7 @@
       "flags": []
     },
     {
-      "id": "prog-21",
+      "id": "prog-20",
       "slug": "mit-research-science-institute-rsi",
       "name": "MIT Research Science Institute (RSI)",
       "category": "stem-engineering",
@@ -1044,7 +1001,7 @@
       ]
     },
     {
-      "id": "prog-22",
+      "id": "prog-21",
       "slug": "mites-summer",
       "name": "MITES Summer",
       "category": "stem-engineering",
@@ -1086,7 +1043,7 @@
       "flags": []
     },
     {
-      "id": "prog-23",
+      "id": "prog-22",
       "slug": "summer-science-program-ssp",
       "name": "Summer Science Program (SSP)",
       "category": "stem-engineering",
@@ -1126,7 +1083,7 @@
       "flags": []
     },
     {
-      "id": "prog-24",
+      "id": "prog-23",
       "slug": "lawrence-hall-of-science-camps-teen-research-internship",
       "name": "Lawrence Hall of Science Camps",
       "category": "stem-engineering",
@@ -1167,7 +1124,7 @@
       "flags": []
     },
     {
-      "id": "prog-25",
+      "id": "prog-24",
       "slug": "purdue-geri-summer-residential",
       "name": "Purdue GERI Summer Residential",
       "category": "stem-engineering",
@@ -1209,7 +1166,7 @@
       "flags": []
     },
     {
-      "id": "prog-26",
+      "id": "prog-25",
       "slug": "columbia-shape",
       "name": "Columbia SHAPE",
       "category": "stem-engineering",
@@ -1249,7 +1206,7 @@
       "flags": []
     },
     {
-      "id": "prog-27",
+      "id": "prog-26",
       "slug": "wpi-frontiers",
       "name": "WPI Frontiers",
       "category": "stem-engineering",
@@ -1289,7 +1246,7 @@
       "flags": []
     },
     {
-      "id": "prog-28",
+      "id": "prog-27",
       "slug": "jhu-engineering-innovation-ei",
       "name": "JHU Engineering Innovation (EI)",
       "category": "stem-engineering",
@@ -1333,7 +1290,7 @@
       "flags": []
     },
     {
-      "id": "prog-29",
+      "id": "prog-28",
       "slug": "cooper-union-summer-stem-3-week-course",
       "name": "Cooper Union Summer STEM",
       "category": "stem-engineering",
@@ -1374,7 +1331,7 @@
       "flags": []
     },
     {
-      "id": "prog-30",
+      "id": "prog-29",
       "slug": "cooper-union-summer-stem-6-week-course",
       "name": "Cooper Union Summer STEM",
       "category": "stem-engineering",
@@ -1415,7 +1372,7 @@
       "flags": []
     },
     {
-      "id": "prog-31",
+      "id": "prog-30",
       "slug": "uc-davis-young-scholars-program",
       "name": "UC Davis Young Scholars Program",
       "category": "stem-engineering",
@@ -1457,7 +1414,7 @@
       "flags": []
     },
     {
-      "id": "prog-32",
+      "id": "prog-31",
       "slug": "brown-pre-college-summer-brown-general-courses",
       "name": "Brown Pre-College (Summer@Brown)",
       "category": "stem-engineering",
@@ -1502,7 +1459,7 @@
       "flags": []
     },
     {
-      "id": "prog-33",
+      "id": "prog-32",
       "slug": "duke-pre-college",
       "name": "Duke Pre-College",
       "category": "college-credit-pre-college",
@@ -1543,7 +1500,7 @@
       "flags": []
     },
     {
-      "id": "prog-34",
+      "id": "prog-33",
       "slug": "duke-marine-lab-pre-college",
       "name": "Duke Marine Lab Pre-College",
       "category": "marine-science",
@@ -1585,7 +1542,7 @@
       "flags": []
     },
     {
-      "id": "prog-35",
+      "id": "prog-34",
       "slug": "wake-forest-summer-immersion-program",
       "name": "Wake Forest Summer Immersion Program",
       "category": "college-credit-pre-college",
@@ -1635,7 +1592,7 @@
       ]
     },
     {
-      "id": "prog-36",
+      "id": "prog-35",
       "slug": "georgetown-summer-college-summer-college",
       "name": "Georgetown Summer College",
       "category": "college-credit-pre-college",
@@ -1679,7 +1636,7 @@
       "flags": []
     },
     {
-      "id": "prog-37",
+      "id": "prog-36",
       "slug": "georgetown-global-summer-london-madrid-beijing-tokyo-rotates",
       "name": "Georgetown Global Summer",
       "category": "cultural-exchange",
@@ -1722,7 +1679,7 @@
       "flags": []
     },
     {
-      "id": "prog-38",
+      "id": "prog-37",
       "slug": "tufts-pre-college-tufts-college-experience",
       "name": "Tufts Pre-College",
       "category": "college-credit-pre-college",
@@ -1763,7 +1720,7 @@
       "flags": []
     },
     {
-      "id": "prog-39",
+      "id": "prog-38",
       "slug": "tufts-pre-college-intensives-hallmark-courses",
       "name": "Tufts Pre-College",
       "category": "college-credit-pre-college",
@@ -1804,7 +1761,7 @@
       "flags": []
     },
     {
-      "id": "prog-40",
+      "id": "prog-39",
       "slug": "boston-university-summer-high-school-honors-program",
       "name": "Boston University Summer",
       "category": "college-credit-pre-college",
@@ -1845,7 +1802,7 @@
       "flags": []
     },
     {
-      "id": "prog-41",
+      "id": "prog-40",
       "slug": "boston-university-summer-academic-immersion",
       "name": "Boston University Summer",
       "category": "college-credit-pre-college",
@@ -1886,7 +1843,7 @@
       "flags": []
     },
     {
-      "id": "prog-42",
+      "id": "prog-41",
       "slug": "boston-university-summer-summer-challenge",
       "name": "Boston University Summer",
       "category": "college-credit-pre-college",
@@ -1927,7 +1884,7 @@
       "flags": []
     },
     {
-      "id": "prog-43",
+      "id": "prog-42",
       "slug": "marist-pre-college-3-credit-session",
       "name": "Marist Pre-College",
       "category": "college-credit-pre-college",
@@ -1968,7 +1925,7 @@
       "flags": []
     },
     {
-      "id": "prog-44",
+      "id": "prog-43",
       "slug": "marist-pre-college-6-credit-both-sessions",
       "name": "Marist Pre-College",
       "category": "college-credit-pre-college",
@@ -2009,7 +1966,7 @@
       "flags": []
     },
     {
-      "id": "prog-45",
+      "id": "prog-44",
       "slug": "ucsb-summer-research-academies",
       "name": "UCSB Summer Research Academies",
       "category": "college-credit-pre-college",
@@ -2052,7 +2009,7 @@
       "flags": []
     },
     {
-      "id": "prog-46",
+      "id": "prog-45",
       "slug": "umass-amherst-juniper-institute-for-young-writers",
       "name": "UMass Amherst",
       "category": "writing-humanities",
@@ -2094,7 +2051,7 @@
       "flags": []
     },
     {
-      "id": "prog-47",
+      "id": "prog-46",
       "slug": "umass-amherst-pre-college-general-academic-intensives",
       "name": "UMass Amherst Pre-College",
       "category": "college-credit-pre-college",
@@ -2135,7 +2092,7 @@
       "flags": []
     },
     {
-      "id": "prog-48",
+      "id": "prog-47",
       "slug": "case-western-reserve-pre-college-online-courses",
       "name": "Case Western Reserve Pre-College",
       "category": "college-credit-pre-college",
@@ -2176,7 +2133,7 @@
       "flags": []
     },
     {
-      "id": "prog-49",
+      "id": "prog-48",
       "slug": "harvard-pre-college-program",
       "name": "Harvard Pre-College Program",
       "category": "college-credit-pre-college",
@@ -2218,7 +2175,7 @@
       "flags": []
     },
     {
-      "id": "prog-50",
+      "id": "prog-49",
       "slug": "harvard-secondary-school-program-ssp-4-week-or-7-week",
       "name": "Harvard Secondary School Program (SSP)",
       "category": "college-credit-pre-college",
@@ -2281,7 +2238,7 @@
       ]
     },
     {
-      "id": "prog-51",
+      "id": "prog-50",
       "slug": "upenn-sas-pre-college-program",
       "name": "UPenn SAS Pre-College Program",
       "category": "college-credit-pre-college",
@@ -2321,7 +2278,7 @@
       "flags": []
     },
     {
-      "id": "prog-52",
+      "id": "prog-51",
       "slug": "uchicago-summer-session",
       "name": "UChicago Summer Session",
       "category": "college-credit-pre-college",
@@ -2362,7 +2319,7 @@
       "flags": []
     },
     {
-      "id": "prog-53",
+      "id": "prog-52",
       "slug": "nyu-precollege",
       "name": "NYU Precollege",
       "category": "college-credit-pre-college",
@@ -2403,7 +2360,7 @@
       "flags": []
     },
     {
-      "id": "prog-54",
+      "id": "prog-53",
       "slug": "uc-berkeley-pre-college",
       "name": "UC Berkeley Pre-College",
       "category": "college-credit-pre-college",
@@ -2444,7 +2401,7 @@
       "flags": []
     },
     {
-      "id": "prog-55",
+      "id": "prog-54",
       "slug": "usc-summer-programs",
       "name": "USC Summer Programs",
       "category": "college-credit-pre-college",
@@ -2484,7 +2441,7 @@
       "flags": []
     },
     {
-      "id": "prog-56",
+      "id": "prog-55",
       "slug": "university-of-rochester-pre-college",
       "name": "University of Rochester Pre-College",
       "category": "college-credit-pre-college",
@@ -2527,7 +2484,7 @@
       "flags": []
     },
     {
-      "id": "prog-57",
+      "id": "prog-56",
       "slug": "barnard-pre-university-program",
       "name": "Barnard Pre-University Program",
       "category": "college-credit-pre-college",
@@ -2567,7 +2524,7 @@
       "flags": []
     },
     {
-      "id": "prog-58",
+      "id": "prog-57",
       "slug": "stony-brook-pre-college-summer-residential",
       "name": "Stony Brook Pre-College Summer",
       "category": "college-credit-pre-college",
@@ -2608,7 +2565,7 @@
       "flags": []
     },
     {
-      "id": "prog-59",
+      "id": "prog-58",
       "slug": "stony-brook-pre-college-summer-commuter-extended-day",
       "name": "Stony Brook Pre-College Summer",
       "category": "college-credit-pre-college",
@@ -2649,7 +2606,7 @@
       "flags": []
     },
     {
-      "id": "prog-60",
+      "id": "prog-59",
       "slug": "stony-brook-pre-college-summer-commuter-core-day",
       "name": "Stony Brook Pre-College Summer",
       "category": "college-credit-pre-college",
@@ -2690,7 +2647,7 @@
       "flags": []
     },
     {
-      "id": "prog-61",
+      "id": "prog-60",
       "slug": "stony-brook-pre-college-summer-biotechnology-cancer-biology-courses",
       "name": "Stony Brook Pre-College Summer",
       "category": "stem-engineering",
@@ -2734,7 +2691,7 @@
       "flags": []
     },
     {
-      "id": "prog-62",
+      "id": "prog-61",
       "slug": "stony-brook-pre-college-summer-robotics-engineering-robotics-with-ai",
       "name": "Stony Brook Pre-College Summer",
       "category": "stem-engineering",
@@ -2778,7 +2735,7 @@
       "flags": []
     },
     {
-      "id": "prog-63",
+      "id": "prog-62",
       "slug": "stony-brook-pre-college-summer-health-professions-dental-sciences-how-medicines-are-really-made",
       "name": "Stony Brook Pre-College Summer",
       "category": "biomedical",
@@ -2820,7 +2777,7 @@
       "flags": []
     },
     {
-      "id": "prog-64",
+      "id": "prog-63",
       "slug": "stony-brook-pre-college-summer-creative-problem-solving-for-math-competitions-exploring-mathematics",
       "name": "Stony Brook Pre-College Summer",
       "category": "mathematics",
@@ -2862,7 +2819,7 @@
       "flags": []
     },
     {
-      "id": "prog-65",
+      "id": "prog-64",
       "slug": "stony-brook-pre-college-summer-personal-branding-lab-science-communication-pre-law",
       "name": "Stony Brook Pre-College Summer",
       "category": "writing-humanities",
@@ -2904,7 +2861,7 @@
       "flags": []
     },
     {
-      "id": "prog-66",
+      "id": "prog-65",
       "slug": "stony-brook-pre-college-summer-environmental-science-in-the-worm-lab-protecting-our-planet-sustainab",
       "name": "Stony Brook Pre-College Summer",
       "category": "marine-science",
@@ -2946,7 +2903,7 @@
       "flags": []
     },
     {
-      "id": "prog-67",
+      "id": "prog-66",
       "slug": "salish-sea-sciences-field-ecology",
       "name": "Salish Sea Sciences",
       "category": "marine-science",
@@ -2989,7 +2946,7 @@
       "flags": []
     },
     {
-      "id": "prog-68",
+      "id": "prog-67",
       "slug": "stony-brook-southampton-somas-oceanography-shark-biology",
       "name": "Stony Brook Southampton SoMAS",
       "category": "marine-science",
@@ -3032,7 +2989,7 @@
       "flags": []
     },
     {
-      "id": "prog-69",
+      "id": "prog-68",
       "slug": "uc-davis-coastal-marine-science",
       "name": "UC Davis Coastal Marine Science",
       "category": "marine-science",
@@ -3072,7 +3029,7 @@
       "flags": []
     },
     {
-      "id": "prog-70",
+      "id": "prog-69",
       "slug": "sea-education-association-sea",
       "name": "Sea Education Association (SEA)",
       "category": "marine-science",
@@ -3114,7 +3071,7 @@
       "flags": []
     },
     {
-      "id": "prog-71",
+      "id": "prog-70",
       "slug": "sea-turtle-camp",
       "name": "Sea Turtle Camp",
       "category": "marine-science",
@@ -3154,7 +3111,7 @@
       "flags": []
     },
     {
-      "id": "prog-72",
+      "id": "prog-71",
       "slug": "the-island-school",
       "name": "The Island School",
       "category": "marine-science",
@@ -3196,7 +3153,7 @@
       "flags": []
     },
     {
-      "id": "prog-73",
+      "id": "prog-72",
       "slug": "sunset-bay-beach-camp",
       "name": "Sunset Bay Beach Camp",
       "category": "marine-science",
@@ -3238,7 +3195,7 @@
       "flags": []
     },
     {
-      "id": "prog-74",
+      "id": "prog-73",
       "slug": "field-studies-council-marine-camp",
       "name": "Field Studies Council Marine Camp",
       "category": "marine-science",
@@ -3280,7 +3237,7 @@
       "flags": []
     },
     {
-      "id": "prog-75",
+      "id": "prog-74",
       "slug": "earthwatch-teen-expeditions",
       "name": "Earthwatch Teen Expeditions",
       "category": "marine-science",
@@ -3322,7 +3279,7 @@
       "flags": []
     },
     {
-      "id": "prog-76",
+      "id": "prog-75",
       "slug": "copper-river-stewardship-program",
       "name": "Copper River Stewardship Program",
       "category": "marine-science",
@@ -3364,7 +3321,7 @@
       "flags": []
     },
     {
-      "id": "prog-77",
+      "id": "prog-76",
       "slug": "actionquest-catamaran",
       "name": "ActionQuest Catamaran",
       "category": "marine-science",
@@ -3406,7 +3363,7 @@
       "flags": []
     },
     {
-      "id": "prog-78",
+      "id": "prog-77",
       "slug": "dauphin-island-sea-lab-residential-marine-science-class",
       "name": "Dauphin Island Sea Lab",
       "category": "marine-science",
@@ -3447,7 +3404,7 @@
       "flags": []
     },
     {
-      "id": "prog-79",
+      "id": "prog-78",
       "slug": "dauphin-island-sea-lab-coastal-fisheries-camp",
       "name": "Dauphin Island Sea Lab",
       "category": "marine-science",
@@ -3488,7 +3445,7 @@
       "flags": []
     },
     {
-      "id": "prog-80",
+      "id": "prog-79",
       "slug": "seatrek-bvi",
       "name": "SeaTrek BVI",
       "category": "marine-science",
@@ -3530,7 +3487,7 @@
       "flags": []
     },
     {
-      "id": "prog-81",
+      "id": "prog-80",
       "slug": "whale-camp-teen-program",
       "name": "Whale Camp",
       "category": "marine-science",
@@ -3571,7 +3528,7 @@
       "flags": []
     },
     {
-      "id": "prog-82",
+      "id": "prog-81",
       "slug": "acadia-institute-of-oceanography-advanced-marine-science-w-college-credit",
       "name": "Acadia Institute of Oceanography",
       "category": "marine-science",
@@ -3612,7 +3569,7 @@
       "flags": []
     },
     {
-      "id": "prog-83",
+      "id": "prog-82",
       "slug": "university-of-miami-marine-mammal-biology-conservation",
       "name": "University of Miami",
       "category": "marine-science",
@@ -3655,7 +3612,7 @@
       "flags": []
     },
     {
-      "id": "prog-84",
+      "id": "prog-83",
       "slug": "spinnaker-sailing-keelboat",
       "name": "Spinnaker Sailing Keelboat",
       "category": "outdoor-wilderness",
@@ -3697,7 +3654,7 @@
       "flags": []
     },
     {
-      "id": "prog-85",
+      "id": "prog-84",
       "slug": "rosetta-institute-biomedical-camps-oncology-molecular-medicine-bioinformatics",
       "name": "Rosetta Institute Biomedical Camps",
       "category": "biomedical",
@@ -3741,7 +3698,7 @@
       "flags": []
     },
     {
-      "id": "prog-86",
+      "id": "prog-85",
       "slug": "penn-medicine-summer-program",
       "name": "Penn Medicine Summer Program",
       "category": "biomedical",
@@ -3781,7 +3738,7 @@
       "flags": []
     },
     {
-      "id": "prog-87",
+      "id": "prog-86",
       "slug": "uga-mini-medical-school-academy",
       "name": "UGA Mini-Medical School Academy",
       "category": "biomedical",
@@ -3821,7 +3778,7 @@
       "flags": []
     },
     {
-      "id": "prog-88",
+      "id": "prog-87",
       "slug": "morehouse-school-of-medicine-camp",
       "name": "Morehouse School of Medicine Camp",
       "category": "biomedical",
@@ -3863,7 +3820,7 @@
       "flags": []
     },
     {
-      "id": "prog-89",
+      "id": "prog-88",
       "slug": "boston-leadership-institute-bli",
       "name": "Boston Leadership Institute (BLI)",
       "category": "biomedical",
@@ -3905,7 +3862,7 @@
       "flags": []
     },
     {
-      "id": "prog-90",
+      "id": "prog-89",
       "slug": "uw-insight-high-school-program",
       "name": "UW INSIGHT High School Program",
       "category": "biomedical",
@@ -3945,7 +3902,7 @@
       "flags": []
     },
     {
-      "id": "prog-91",
+      "id": "prog-90",
       "slug": "kentucky-forest-entomology-leadership-program-kfelp-entomology-component",
       "name": "Kentucky Forest & Entomology Leadership Program (KFELP)",
       "category": "biomedical",
@@ -3988,7 +3945,7 @@
       "flags": []
     },
     {
-      "id": "prog-92",
+      "id": "prog-91",
       "slug": "awesomemath-summer-program",
       "name": "AwesomeMath Summer Program",
       "category": "mathematics",
@@ -4028,7 +3985,7 @@
       "flags": []
     },
     {
-      "id": "prog-93",
+      "id": "prog-92",
       "slug": "mathpath",
       "name": "MathPath",
       "category": "mathematics",
@@ -4068,7 +4025,7 @@
       "flags": []
     },
     {
-      "id": "prog-94",
+      "id": "prog-93",
       "slug": "promys-boston-university",
       "name": "PROMYS Boston University",
       "category": "mathematics",
@@ -4108,7 +4065,7 @@
       "flags": []
     },
     {
-      "id": "prog-95",
+      "id": "prog-94",
       "slug": "canada-usa-mathcamp",
       "name": "Canada/USA Mathcamp",
       "category": "mathematics",
@@ -4148,7 +4105,7 @@
       "flags": []
     },
     {
-      "id": "prog-96",
+      "id": "prog-95",
       "slug": "stanford-math-camp-sumac",
       "name": "Stanford Math Camp (SUMaC)",
       "category": "mathematics",
@@ -4189,7 +4146,7 @@
       "flags": []
     },
     {
-      "id": "prog-97",
+      "id": "prog-96",
       "slug": "imacs-summer-sessions",
       "name": "IMACS Summer Sessions",
       "category": "mathematics",
@@ -4229,7 +4186,7 @@
       "flags": []
     },
     {
-      "id": "prog-98",
+      "id": "prog-97",
       "slug": "cybermath-academy-summer-math-ai-camp",
       "name": "CyberMath Academy Summer Math & AI Camp",
       "category": "mathematics",
@@ -4272,7 +4229,7 @@
       "flags": []
     },
     {
-      "id": "prog-99",
+      "id": "prog-98",
       "slug": "alphastar-academy-summer-camps-math-cs-ai-physics",
       "name": "AlphaStar Academy Summer Camps",
       "category": "mathematics",
@@ -4316,7 +4273,7 @@
       "flags": []
     },
     {
-      "id": "prog-100",
+      "id": "prog-99",
       "slug": "iowa-young-writers-studio",
       "name": "Iowa Young Writers' Studio",
       "category": "writing-humanities",
@@ -4356,7 +4313,7 @@
       "flags": []
     },
     {
-      "id": "prog-101",
+      "id": "prog-100",
       "slug": "stanford-summer-humanities-institute",
       "name": "Stanford Summer Humanities Institute",
       "category": "writing-humanities",
@@ -4396,7 +4353,7 @@
       "flags": []
     },
     {
-      "id": "prog-102",
+      "id": "prog-101",
       "slug": "kenyon-review-young-writers",
       "name": "Kenyon Review Young Writers",
       "category": "writing-humanities",
@@ -4436,7 +4393,7 @@
       "flags": []
     },
     {
-      "id": "prog-103",
+      "id": "prog-102",
       "slug": "princeton-summer-journalism-program",
       "name": "Princeton Summer Journalism Program",
       "category": "writing-humanities",
@@ -4479,7 +4436,7 @@
       "flags": []
     },
     {
-      "id": "prog-104",
+      "id": "prog-103",
       "slug": "telluride-association-summer-seminar-tass",
       "name": "Telluride Association Summer Seminar (TASS)",
       "category": "writing-humanities",
@@ -4521,7 +4478,7 @@
       "flags": []
     },
     {
-      "id": "prog-105",
+      "id": "prog-104",
       "slug": "summer-linguistic-institute-for-youth-scholars-sliys",
       "name": "Summer Linguistic Institute for Youth Scholars (SLIYS)",
       "category": "writing-humanities",
@@ -4563,7 +4520,7 @@
       "flags": []
     },
     {
-      "id": "prog-106",
+      "id": "prog-105",
       "slug": "camp-laurel-maine",
       "name": "Camp Laurel Maine",
       "category": "traditional-camp",
@@ -4603,7 +4560,7 @@
       "flags": []
     },
     {
-      "id": "prog-107",
+      "id": "prog-106",
       "slug": "interlochen-arts-camp",
       "name": "Interlochen Arts Camp",
       "category": "traditional-camp",
@@ -4655,7 +4612,7 @@
       ]
     },
     {
-      "id": "prog-108",
+      "id": "prog-107",
       "slug": "explo",
       "name": "EXPLO",
       "category": "traditional-camp",
@@ -4697,7 +4654,7 @@
       "flags": []
     },
     {
-      "id": "prog-109",
+      "id": "prog-108",
       "slug": "camp-becket-chimney-corners",
       "name": "Camp Becket & Chimney Corners",
       "category": "traditional-camp",
@@ -4737,7 +4694,7 @@
       "flags": []
     },
     {
-      "id": "prog-110",
+      "id": "prog-109",
       "slug": "adirondack-camp",
       "name": "Adirondack Camp",
       "category": "traditional-camp",
@@ -4779,7 +4736,7 @@
       "flags": []
     },
     {
-      "id": "prog-111",
+      "id": "prog-110",
       "slug": "nols-teen-expeditions",
       "name": "NOLS Teen Expeditions",
       "category": "outdoor-wilderness",
@@ -4821,7 +4778,7 @@
       "flags": []
     },
     {
-      "id": "prog-112",
+      "id": "prog-111",
       "slug": "outward-bound-high-school",
       "name": "Outward Bound High School",
       "category": "outdoor-wilderness",
@@ -4873,7 +4830,7 @@
       ]
     },
     {
-      "id": "prog-113",
+      "id": "prog-112",
       "slug": "overland-summers",
       "name": "Overland Summers",
       "category": "outdoor-wilderness",
@@ -4925,7 +4882,7 @@
       ]
     },
     {
-      "id": "prog-114",
+      "id": "prog-113",
       "slug": "apogee-adventures",
       "name": "Apogee Adventures",
       "category": "outdoor-wilderness",
@@ -4968,7 +4925,7 @@
       "flags": []
     },
     {
-      "id": "prog-115",
+      "id": "prog-114",
       "slug": "bold-earth-adventure-camp",
       "name": "Bold Earth Adventure Camp",
       "category": "outdoor-wilderness",
@@ -5010,7 +4967,7 @@
       "flags": []
     },
     {
-      "id": "prog-116",
+      "id": "prog-115",
       "slug": "moondance-adventures",
       "name": "Moondance Adventures",
       "category": "outdoor-wilderness",
@@ -5052,7 +5009,7 @@
       "flags": []
     },
     {
-      "id": "prog-117",
+      "id": "prog-116",
       "slug": "wilderness-adventures",
       "name": "Wilderness Adventures",
       "category": "outdoor-wilderness",
@@ -5092,7 +5049,7 @@
       "flags": []
     },
     {
-      "id": "prog-118",
+      "id": "prog-117",
       "slug": "yale-young-global-scholars-yygs",
       "name": "Yale Young Global Scholars (YYGS)",
       "category": "cultural-exchange",
@@ -5134,7 +5091,7 @@
       "flags": []
     },
     {
-      "id": "prog-119",
+      "id": "prog-118",
       "slug": "amigos-de-las-americas",
       "name": "AMIGOS de las Americas",
       "category": "cultural-exchange",
@@ -5176,7 +5133,7 @@
       "flags": []
     },
     {
-      "id": "prog-120",
+      "id": "prog-119",
       "slug": "ciee-high-school-abroad",
       "name": "CIEE High School Abroad",
       "category": "cultural-exchange",
@@ -5216,7 +5173,7 @@
       "flags": []
     },
     {
-      "id": "prog-121",
+      "id": "prog-120",
       "slug": "afs-intercultural-programs",
       "name": "AFS Intercultural Programs",
       "category": "cultural-exchange",
@@ -5256,7 +5213,7 @@
       "flags": []
     },
     {
-      "id": "prog-122",
+      "id": "prog-121",
       "slug": "yes-abroad",
       "name": "YES Abroad",
       "category": "cultural-exchange",
@@ -5298,7 +5255,7 @@
       "flags": []
     },
     {
-      "id": "prog-123",
+      "id": "prog-122",
       "slug": "rotary-youth-exchange",
       "name": "Rotary Youth Exchange",
       "category": "cultural-exchange",
@@ -5338,7 +5295,7 @@
       "flags": []
     },
     {
-      "id": "prog-124",
+      "id": "prog-123",
       "slug": "putney-student-travel",
       "name": "Putney Student Travel",
       "category": "cultural-exchange",
@@ -5380,7 +5337,7 @@
       "flags": []
     },
     {
-      "id": "prog-125",
+      "id": "prog-124",
       "slug": "arcc-programs",
       "name": "ARCC Programs",
       "category": "cultural-exchange",
@@ -5422,7 +5379,7 @@
       "flags": []
     },
     {
-      "id": "prog-126",
+      "id": "prog-125",
       "slug": "that-s-mandarin-chinese-summer-camp-day-half-day-full-homestay",
       "name": "That's Mandarin Chinese Summer Camp",
       "category": "cultural-exchange",
@@ -5464,7 +5421,7 @@
       "flags": []
     },
     {
-      "id": "prog-127",
+      "id": "prog-126",
       "slug": "goeast-mandarin-summer-camp-academic-chinese-booster-chinese-adventure",
       "name": "GoEast Mandarin Summer Camp",
       "category": "cultural-exchange",
@@ -5505,7 +5462,7 @@
       "flags": []
     },
     {
-      "id": "prog-128",
+      "id": "prog-127",
       "slug": "keats-school-mandarin-immersion-camp",
       "name": "Keats School Mandarin Immersion Camp",
       "category": "cultural-exchange",
@@ -5545,7 +5502,7 @@
       "flags": []
     },
     {
-      "id": "prog-129",
+      "id": "prog-128",
       "slug": "china-internship-placements-mandarin-camp",
       "name": "China Internship Placements Mandarin Camp",
       "category": "cultural-exchange",
@@ -5585,7 +5542,7 @@
       "flags": []
     },
     {
-      "id": "prog-130",
+      "id": "prog-129",
       "slug": "ltl-school",
       "name": "LTL School",
       "category": "cultural-exchange",
@@ -5625,7 +5582,7 @@
       "flags": []
     },
     {
-      "id": "prog-131",
+      "id": "prog-130",
       "slug": "vanderbilt-summer-academy-vsa",
       "name": "Vanderbilt Summer Academy (VSA)",
       "category": "leadership-gifted",
@@ -5665,7 +5622,7 @@
       "flags": []
     },
     {
-      "id": "prog-132",
+      "id": "prog-131",
       "slug": "northwestern-ctd-summer-camp",
       "name": "Northwestern CTD Summer Camp",
       "category": "leadership-gifted",
@@ -5705,7 +5662,7 @@
       "flags": []
     },
     {
-      "id": "prog-133",
+      "id": "prog-132",
       "slug": "wharton-global-youth-program-on-campus",
       "name": "Wharton Global Youth Program",
       "category": "leadership-gifted",
@@ -5746,7 +5703,7 @@
       "flags": []
     },
     {
-      "id": "prog-134",
+      "id": "prog-133",
       "slug": "wharton-global-youth-program-online",
       "name": "Wharton Global Youth Program",
       "category": "leadership-gifted",
@@ -5787,7 +5744,7 @@
       "flags": []
     },
     {
-      "id": "prog-135",
+      "id": "prog-134",
       "slug": "johns-hopkins-center-for-talented-youth-cty-residential-day",
       "name": "Johns Hopkins Center for Talented Youth (CTY)",
       "category": "leadership-gifted",
@@ -5830,7 +5787,7 @@
       "flags": []
     },
     {
-      "id": "prog-136",
+      "id": "prog-135",
       "slug": "iacocca-global-entrepreneurship-intensive-igei",
       "name": "Iacocca Global Entrepreneurship Intensive (IGEI)",
       "category": "leadership-gifted",
@@ -5872,7 +5829,7 @@
       "flags": []
     },
     {
-      "id": "prog-137",
+      "id": "prog-136",
       "slug": "iacocca-global-future-leaders-lab-silicon-valley",
       "name": "Iacocca Global Future Leaders Lab: Silicon Valley",
       "category": "leadership-gifted",
@@ -5912,7 +5869,7 @@
       "flags": []
     },
     {
-      "id": "prog-138",
+      "id": "prog-137",
       "slug": "summer-springboard",
       "name": "Summer Springboard",
       "category": "leadership-gifted",
@@ -5955,7 +5912,7 @@
       "flags": []
     },
     {
-      "id": "prog-139",
+      "id": "prog-138",
       "slug": "envision-by-worldstrides-nylf-tracks-medicine-law-engineering-business-national-security",
       "name": "Envision by WorldStrides (NYLF tracks)",
       "category": "leadership-gifted",
@@ -5996,7 +5953,7 @@
       "flags": []
     },
     {
-      "id": "prog-140",
+      "id": "prog-139",
       "slug": "cornell-summer-college-3-week-session",
       "name": "Cornell Summer College",
       "category": "leadership-gifted",
@@ -6040,7 +5997,7 @@
       "flags": []
     },
     {
-      "id": "prog-141",
+      "id": "prog-140",
       "slug": "cornell-summer-college-6-week-session",
       "name": "Cornell Summer College",
       "category": "leadership-gifted",
@@ -6084,7 +6041,7 @@
       "flags": []
     },
     {
-      "id": "prog-142",
+      "id": "prog-141",
       "slug": "berkeley-changemaker-pre-college",
       "name": "Berkeley Changemaker Pre-College",
       "category": "leadership-gifted",
@@ -6126,7 +6083,7 @@
       "flags": []
     },
     {
-      "id": "prog-143",
+      "id": "prog-142",
       "slug": "education-unlimited-astrophysics-9-12-engineering-9-12-quantum-mechanics-10-12-robotics-9-12-surgica",
       "name": "Education Unlimited",
       "category": "stem-engineering",
@@ -6170,7 +6127,7 @@
       "flags": []
     },
     {
-      "id": "prog-144",
+      "id": "prog-143",
       "slug": "education-unlimited-competitive-debate-public-forum-debate-public-speaking-institute-hs-mock-trial-h",
       "name": "Education Unlimited",
       "category": "leadership-gifted",
@@ -6214,7 +6171,7 @@
       "flags": []
     },
     {
-      "id": "prog-145",
+      "id": "prog-144",
       "slug": "education-unlimited-a-summer-high-school-a-summer-pre-college-college-admission-prep-camp-college-to",
       "name": "Education Unlimited",
       "category": "college-credit-pre-college",
@@ -6256,7 +6213,7 @@
       "flags": []
     },
     {
-      "id": "prog-146",
+      "id": "prog-145",
       "slug": "creative-delegates-league-of-creative-minds-diplomacy-negotiation-international-law-geopolitics-and-",
       "name": "Creative Delegates (League of Creative Minds)",
       "category": "leadership-gifted",
@@ -6299,7 +6256,7 @@
       "flags": []
     },
     {
-      "id": "prog-147",
+      "id": "prog-146",
       "slug": "lasting-adventures-yosemite-6-day-young-adventurer-s-program",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6360,7 +6317,7 @@
       }
     },
     {
-      "id": "prog-148",
+      "id": "prog-147",
       "slug": "lasting-adventures-yosemite-6-day-high-country-adventure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6421,7 +6378,7 @@
       }
     },
     {
-      "id": "prog-149",
+      "id": "prog-148",
       "slug": "lasting-adventures-yosemite-10-day-mammoth-to-yosemite-jul-6-15",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6490,7 +6447,7 @@
       }
     },
     {
-      "id": "prog-150",
+      "id": "prog-149",
       "slug": "lasting-adventures-yosemite-10-day-mammoth-to-yosemite-aug-3-12",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6559,7 +6516,7 @@
       }
     },
     {
-      "id": "prog-151",
+      "id": "prog-150",
       "slug": "lasting-adventures-yosemite-13-day-high-country-adventure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6620,7 +6577,7 @@
       }
     },
     {
-      "id": "prog-152",
+      "id": "prog-151",
       "slug": "lasting-adventures-yosemite-6-day-young-women-s-program-jun-20-25-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6681,7 +6638,7 @@
       }
     },
     {
-      "id": "prog-153",
+      "id": "prog-152",
       "slug": "lasting-adventures-yosemite-6-day-young-women-s-program-aug-1-6-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6742,7 +6699,7 @@
       }
     },
     {
-      "id": "prog-154",
+      "id": "prog-153",
       "slug": "lasting-adventures-yosemite-13-day-young-women-s-program",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6803,7 +6760,7 @@
       }
     },
     {
-      "id": "prog-155",
+      "id": "prog-154",
       "slug": "lasting-adventures-yosemite-20-day-teen-leadership-expedition-jun-13-jul-2-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6872,7 +6829,7 @@
       }
     },
     {
-      "id": "prog-156",
+      "id": "prog-155",
       "slug": "lasting-adventures-yosemite-20-day-teen-leadership-expedition-jul-11-30-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6941,7 +6898,7 @@
       }
     },
     {
-      "id": "prog-157",
+      "id": "prog-156",
       "slug": "lasting-adventures-olympic-6-day-backpacking-adventure-for-teens",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7002,7 +6959,7 @@
       }
     },
     {
-      "id": "prog-158",
+      "id": "prog-157",
       "slug": "lasting-adventures-olympic-6-day-young-adventurer-s-program",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7063,7 +7020,7 @@
       }
     },
     {
-      "id": "prog-159",
+      "id": "prog-158",
       "slug": "lasting-adventures-olympic-10-day-hoh-rainforest-to-the-blue-glacier-jun-29-jul-8-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7132,7 +7089,7 @@
       }
     },
     {
-      "id": "prog-160",
+      "id": "prog-159",
       "slug": "lasting-adventures-olympic-10-day-hoh-rainforest-to-the-blue-glacier-jul-13-22-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7201,7 +7158,7 @@
       }
     },
     {
-      "id": "prog-161",
+      "id": "prog-160",
       "slug": "lasting-adventures-olympic-10-day-hoh-rainforest-to-the-blue-glacier-aug-10-19-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7270,7 +7227,7 @@
       }
     },
     {
-      "id": "prog-162",
+      "id": "prog-161",
       "slug": "lasting-adventures-olympic-13-day-backpacking-adventure-for-teens",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7331,7 +7288,7 @@
       }
     },
     {
-      "id": "prog-163",
+      "id": "prog-162",
       "slug": "lasting-adventures-olympic-6-day-young-women-s-program-jun-27-jul-2-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7392,7 +7349,7 @@
       }
     },
     {
-      "id": "prog-164",
+      "id": "prog-163",
       "slug": "lasting-adventures-olympic-6-day-young-women-s-program-jul-18-23-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7453,7 +7410,7 @@
       }
     },
     {
-      "id": "prog-165",
+      "id": "prog-164",
       "slug": "lasting-adventures-olympic-13-day-young-women-s-program",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7514,7 +7471,7 @@
       }
     },
     {
-      "id": "prog-166",
+      "id": "prog-165",
       "slug": "lasting-adventures-sequoia-10-day-sequoia-high-country-adventure-jun-22-jul-1-departure",
       "name": "Lasting Adventures - Sequoia",
       "institution": "Lasting Adventures Inc.",
@@ -7583,7 +7540,7 @@
       }
     },
     {
-      "id": "prog-167",
+      "id": "prog-166",
       "slug": "lasting-adventures-sequoia-10-day-sequoia-high-country-adventure-jul-20-29-departure",
       "name": "Lasting Adventures - Sequoia",
       "institution": "Lasting Adventures Inc.",
@@ -7652,7 +7609,7 @@
       }
     },
     {
-      "id": "prog-168",
+      "id": "prog-167",
       "slug": "catalina-sea-camp-session-1-1-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -7704,7 +7661,7 @@
       }
     },
     {
-      "id": "prog-169",
+      "id": "prog-168",
       "slug": "catalina-sea-camp-session-2-1-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -7756,7 +7713,7 @@
       }
     },
     {
-      "id": "prog-170",
+      "id": "prog-169",
       "slug": "catalina-sea-camp-session-3-1-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -7808,7 +7765,7 @@
       }
     },
     {
-      "id": "prog-171",
+      "id": "prog-170",
       "slug": "catalina-sea-camp-session-4-2-5-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -7860,7 +7817,7 @@
       }
     },
     {
-      "id": "prog-172",
+      "id": "prog-171",
       "slug": "catalina-sea-camp-session-5-2-5-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -7912,7 +7869,7 @@
       }
     },
     {
-      "id": "prog-173",
+      "id": "prog-172",
       "slug": "mit-beaver-works-summer-institute-bwsi-in-person-courses",
       "name": "MIT Beaver Works Summer Institute (BWSI)",
       "institution": "Massachusetts Institute of Technology",
@@ -7967,7 +7924,7 @@
       ]
     },
     {
-      "id": "prog-174",
+      "id": "prog-173",
       "slug": "mit-beaver-works-summer-institute-bwsi-virtual-courses",
       "name": "MIT Beaver Works Summer Institute (BWSI)",
       "institution": "Massachusetts Institute of Technology",
@@ -8022,7 +7979,7 @@
       ]
     },
     {
-      "id": "prog-175",
+      "id": "prog-174",
       "slug": "honors-summer-math-camp-hsmc-general",
       "name": "Honors Summer Math Camp (HSMC)",
       "institution": "Texas State University",
@@ -8070,20 +8027,20 @@
           "id": "mathworks-hsmc-no-outside-commitments",
           "type": "other",
           "title": "No online courses or other programs allowed during camp",
-          "body": "Unlike most residential summer programs, HSMC explicitly prohibits campers from taking any online courses or participating in any other program - in person or virtual - for the full six weeks. Families should not plan for a student to double up on summer commitments.",
+          "body": "HSMC explicitly prohibits campers from taking any online courses or participating in any other program - in person or virtual - for the full six weeks. Families should not plan for a student to double up on summer commitments.",
           "sourceCitation": "Mathworks HSMC program page",
           "severity": "info"
         }
       ],
       "dayToDay": {
-        "notes": "This is a highly structured, academically intensive residential program: the daily schedule runs from 7am breakfast to 10pm, with classes and research in the morning, problem sessions or additional classes in the afternoon, and study groups in the evening. Campers are explicitly not permitted to take online courses or participate in any other program, in person or online, during the six weeks - an unusually strict exclusivity policy compared to most residential camps. Parent visits during camp are allowed but require prior approval through a request form, rather than being either fully open or fully prohibited.",
+        "notes": "This is a highly structured, academically intensive residential program: the daily schedule runs from 7am breakfast to 10pm, with classes and research in the morning, problem sessions or additional classes in the afternoon, and study groups in the evening. Campers are explicitly not permitted to take online courses or participate in any other program, in person or online, during the six weeks. Parent visits during camp are allowed but require prior approval through a request form, rather than being either fully open or fully prohibited.",
         "sourceType": "official_policy",
         "sourceCitation": "Mathworks HSMC program page and Camps visit-request page (txst.edu/mathworks)",
         "verifiedAt": "2026-09-15"
       }
     },
     {
-      "id": "prog-176",
+      "id": "prog-175",
       "slug": "junior-summer-math-camp-residential-jsmcr-general",
       "name": "Junior Summer Math Camp - Residential (JSMCR)",
       "institution": "Texas State University",
@@ -8144,7 +8101,7 @@
       }
     },
     {
-      "id": "prog-177",
+      "id": "prog-176",
       "slug": "nyc-summer-academy-day-student",
       "name": "NYC Summer Academy",
       "institution": "The School of The New York Times",
@@ -8194,7 +8151,7 @@
       }
     },
     {
-      "id": "prog-178",
+      "id": "prog-177",
       "slug": "nyc-summer-academy-residential",
       "name": "NYC Summer Academy",
       "institution": "The School of The New York Times",
@@ -8244,7 +8201,7 @@
       }
     },
     {
-      "id": "prog-179",
+      "id": "prog-178",
       "slug": "junior-summer-math-camp-half-day-jsmch-general",
       "name": "Junior Summer Math Camp - Half-Day (JSMCH)",
       "institution": "Texas State University",
@@ -8296,7 +8253,7 @@
       }
     },
     {
-      "id": "prog-180",
+      "id": "prog-179",
       "slug": "management-technology-summer-institute-m-tsi-general",
       "name": "Management & Technology Summer Institute (M&TSI)",
       "institution": "University of Pennsylvania",
@@ -8365,7 +8322,7 @@
       }
     },
     {
-      "id": "prog-181",
+      "id": "prog-180",
       "slug": "oxford-academia-at-yale-session-1",
       "name": "Oxford Academia at Yale",
       "institution": "Oxford Academia (Putney Student Travel)",
@@ -8432,7 +8389,7 @@
       }
     },
     {
-      "id": "prog-182",
+      "id": "prog-181",
       "slug": "socapa-new-york-city-film-screenwriting-session-1-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8493,7 +8450,7 @@
       }
     },
     {
-      "id": "prog-183",
+      "id": "prog-182",
       "slug": "socapa-new-york-city-film-screenwriting-session-1-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8554,7 +8511,7 @@
       }
     },
     {
-      "id": "prog-184",
+      "id": "prog-183",
       "slug": "socapa-new-york-city-film-screenwriting-session-2-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8615,7 +8572,7 @@
       }
     },
     {
-      "id": "prog-185",
+      "id": "prog-184",
       "slug": "socapa-new-york-city-film-screenwriting-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8676,7 +8633,7 @@
       }
     },
     {
-      "id": "prog-186",
+      "id": "prog-185",
       "slug": "socapa-new-york-city-film-screenwriting-3-week-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8737,7 +8694,7 @@
       }
     },
     {
-      "id": "prog-187",
+      "id": "prog-186",
       "slug": "socapa-new-york-city-core-filmmaking-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8796,7 +8753,7 @@
       }
     },
     {
-      "id": "prog-188",
+      "id": "prog-187",
       "slug": "socapa-new-york-city-core-filmmaking-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8855,7 +8812,7 @@
       }
     },
     {
-      "id": "prog-189",
+      "id": "prog-188",
       "slug": "socapa-new-york-city-core-filmmaking-session-1-3wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8914,7 +8871,7 @@
       }
     },
     {
-      "id": "prog-190",
+      "id": "prog-189",
       "slug": "socapa-new-york-city-core-filmmaking-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8973,7 +8930,7 @@
       }
     },
     {
-      "id": "prog-191",
+      "id": "prog-190",
       "slug": "socapa-new-york-city-core-filmmaking-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9032,7 +8989,7 @@
       }
     },
     {
-      "id": "prog-192",
+      "id": "prog-191",
       "slug": "socapa-new-york-city-core-filmmaking-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9091,7 +9048,7 @@
       }
     },
     {
-      "id": "prog-193",
+      "id": "prog-192",
       "slug": "socapa-new-york-city-core-filmmaking-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9150,7 +9107,7 @@
       }
     },
     {
-      "id": "prog-194",
+      "id": "prog-193",
       "slug": "socapa-new-york-city-core-acting-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9209,7 +9166,7 @@
       }
     },
     {
-      "id": "prog-195",
+      "id": "prog-194",
       "slug": "socapa-new-york-city-core-acting-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9268,7 +9225,7 @@
       }
     },
     {
-      "id": "prog-196",
+      "id": "prog-195",
       "slug": "socapa-new-york-city-core-acting-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9327,7 +9284,7 @@
       }
     },
     {
-      "id": "prog-197",
+      "id": "prog-196",
       "slug": "socapa-new-york-city-musical-theater-acting-for-film-session-1-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9386,7 +9343,7 @@
       }
     },
     {
-      "id": "prog-198",
+      "id": "prog-197",
       "slug": "socapa-new-york-city-core-acting-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9445,7 +9402,7 @@
       }
     },
     {
-      "id": "prog-199",
+      "id": "prog-198",
       "slug": "socapa-new-york-city-core-acting-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9504,7 +9461,7 @@
       }
     },
     {
-      "id": "prog-200",
+      "id": "prog-199",
       "slug": "socapa-new-york-city-core-acting-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9563,7 +9520,7 @@
       }
     },
     {
-      "id": "prog-201",
+      "id": "prog-200",
       "slug": "socapa-new-york-city-musical-theater-acting-for-film-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9622,7 +9579,7 @@
       }
     },
     {
-      "id": "prog-202",
+      "id": "prog-201",
       "slug": "socapa-new-york-city-core-photography-digital-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9681,7 +9638,7 @@
       }
     },
     {
-      "id": "prog-203",
+      "id": "prog-202",
       "slug": "socapa-new-york-city-core-photography-digital-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9740,7 +9697,7 @@
       }
     },
     {
-      "id": "prog-204",
+      "id": "prog-203",
       "slug": "socapa-new-york-city-core-photography-digital-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9799,7 +9756,7 @@
       }
     },
     {
-      "id": "prog-205",
+      "id": "prog-204",
       "slug": "socapa-new-york-city-core-photography-digital-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9858,7 +9815,7 @@
       }
     },
     {
-      "id": "prog-206",
+      "id": "prog-205",
       "slug": "socapa-new-york-city-core-photography-digital-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9917,7 +9874,7 @@
       }
     },
     {
-      "id": "prog-207",
+      "id": "prog-206",
       "slug": "socapa-new-york-city-core-photography-digital-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9976,7 +9933,7 @@
       }
     },
     {
-      "id": "prog-208",
+      "id": "prog-207",
       "slug": "socapa-new-york-city-advanced-photography-session-1-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10035,7 +9992,7 @@
       }
     },
     {
-      "id": "prog-209",
+      "id": "prog-208",
       "slug": "socapa-new-york-city-advanced-photography-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10094,7 +10051,7 @@
       }
     },
     {
-      "id": "prog-210",
+      "id": "prog-209",
       "slug": "socapa-new-york-city-fusion-dance-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10153,7 +10110,7 @@
       }
     },
     {
-      "id": "prog-211",
+      "id": "prog-210",
       "slug": "socapa-new-york-city-fusion-dance-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10212,7 +10169,7 @@
       }
     },
     {
-      "id": "prog-212",
+      "id": "prog-211",
       "slug": "socapa-new-york-city-fusion-dance-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10271,7 +10228,7 @@
       }
     },
     {
-      "id": "prog-213",
+      "id": "prog-212",
       "slug": "socapa-new-york-city-fusion-dance-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10330,7 +10287,7 @@
       }
     },
     {
-      "id": "prog-214",
+      "id": "prog-213",
       "slug": "socapa-new-york-city-fusion-dance-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10389,7 +10346,7 @@
       }
     },
     {
-      "id": "prog-215",
+      "id": "prog-214",
       "slug": "socapa-new-york-city-fusion-dance-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10448,7 +10405,7 @@
       }
     },
     {
-      "id": "prog-216",
+      "id": "prog-215",
       "slug": "socapa-new-york-city-dance-conservatory-session-1-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10507,7 +10464,7 @@
       }
     },
     {
-      "id": "prog-217",
+      "id": "prog-216",
       "slug": "socapa-new-york-city-dance-conservatory-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10566,7 +10523,7 @@
       }
     },
     {
-      "id": "prog-218",
+      "id": "prog-217",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10625,7 +10582,7 @@
       }
     },
     {
-      "id": "prog-219",
+      "id": "prog-218",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10684,7 +10641,7 @@
       }
     },
     {
-      "id": "prog-220",
+      "id": "prog-219",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10743,7 +10700,7 @@
       }
     },
     {
-      "id": "prog-221",
+      "id": "prog-220",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10802,7 +10759,7 @@
       }
     },
     {
-      "id": "prog-222",
+      "id": "prog-221",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10861,7 +10818,7 @@
       }
     },
     {
-      "id": "prog-223",
+      "id": "prog-222",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10920,7 +10877,7 @@
       }
     },
     {
-      "id": "prog-224",
+      "id": "prog-223",
       "slug": "socapa-los-angeles-core-filmmaking-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10970,7 +10927,7 @@
       }
     },
     {
-      "id": "prog-225",
+      "id": "prog-224",
       "slug": "socapa-los-angeles-core-filmmaking-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11020,7 +10977,7 @@
       }
     },
     {
-      "id": "prog-226",
+      "id": "prog-225",
       "slug": "socapa-los-angeles-core-filmmaking-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11070,7 +11027,7 @@
       }
     },
     {
-      "id": "prog-227",
+      "id": "prog-226",
       "slug": "socapa-los-angeles-advanced-filmmaking-session-2-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11120,7 +11077,7 @@
       }
     },
     {
-      "id": "prog-228",
+      "id": "prog-227",
       "slug": "socapa-los-angeles-screenwriting-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11170,7 +11127,7 @@
       }
     },
     {
-      "id": "prog-229",
+      "id": "prog-228",
       "slug": "socapa-los-angeles-screenwriting-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11220,7 +11177,7 @@
       }
     },
     {
-      "id": "prog-230",
+      "id": "prog-229",
       "slug": "socapa-los-angeles-screenwriting-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11270,7 +11227,7 @@
       }
     },
     {
-      "id": "prog-231",
+      "id": "prog-230",
       "slug": "socapa-los-angeles-core-acting-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11320,7 +11277,7 @@
       }
     },
     {
-      "id": "prog-232",
+      "id": "prog-231",
       "slug": "socapa-los-angeles-core-acting-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11370,7 +11327,7 @@
       }
     },
     {
-      "id": "prog-233",
+      "id": "prog-232",
       "slug": "socapa-los-angeles-core-acting-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11420,7 +11377,7 @@
       }
     },
     {
-      "id": "prog-234",
+      "id": "prog-233",
       "slug": "socapa-los-angeles-advanced-acting-session-2-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11470,7 +11427,7 @@
       }
     },
     {
-      "id": "prog-235",
+      "id": "prog-234",
       "slug": "socapa-los-angeles-core-photography-digital-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11520,7 +11477,7 @@
       }
     },
     {
-      "id": "prog-236",
+      "id": "prog-235",
       "slug": "socapa-los-angeles-core-photography-digital-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11570,7 +11527,7 @@
       }
     },
     {
-      "id": "prog-237",
+      "id": "prog-236",
       "slug": "socapa-los-angeles-core-photography-digital-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11620,7 +11577,7 @@
       }
     },
     {
-      "id": "prog-238",
+      "id": "prog-237",
       "slug": "socapa-los-angeles-core-music-singer-songwriter-house-band-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11670,7 +11627,7 @@
       }
     },
     {
-      "id": "prog-239",
+      "id": "prog-238",
       "slug": "socapa-los-angeles-core-music-singer-songwriter-house-band-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11720,7 +11677,7 @@
       }
     },
     {
-      "id": "prog-240",
+      "id": "prog-239",
       "slug": "socapa-los-angeles-core-music-singer-songwriter-house-band-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11770,7 +11727,7 @@
       }
     },
     {
-      "id": "prog-241",
+      "id": "prog-240",
       "slug": "socapa-vermont-core-filmmaking-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11820,7 +11777,7 @@
       }
     },
     {
-      "id": "prog-242",
+      "id": "prog-241",
       "slug": "socapa-vermont-core-filmmaking-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11870,7 +11827,7 @@
       }
     },
     {
-      "id": "prog-243",
+      "id": "prog-242",
       "slug": "socapa-vermont-core-filmmaking-session-2-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11920,7 +11877,7 @@
       }
     },
     {
-      "id": "prog-244",
+      "id": "prog-243",
       "slug": "socapa-vermont-core-filmmaking-session-2-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11970,7 +11927,7 @@
       }
     },
     {
-      "id": "prog-245",
+      "id": "prog-244",
       "slug": "socapa-vermont-advanced-filmmaking-session-1-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12020,7 +11977,7 @@
       }
     },
     {
-      "id": "prog-246",
+      "id": "prog-245",
       "slug": "socapa-vermont-advanced-filmmaking-session-2-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12070,7 +12027,7 @@
       }
     },
     {
-      "id": "prog-247",
+      "id": "prog-246",
       "slug": "socapa-vermont-screenwriting-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12120,7 +12077,7 @@
       }
     },
     {
-      "id": "prog-248",
+      "id": "prog-247",
       "slug": "socapa-vermont-screenwriting-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12170,7 +12127,7 @@
       }
     },
     {
-      "id": "prog-249",
+      "id": "prog-248",
       "slug": "socapa-vermont-core-acting-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12220,7 +12177,7 @@
       }
     },
     {
-      "id": "prog-250",
+      "id": "prog-249",
       "slug": "socapa-vermont-core-acting-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12270,7 +12227,7 @@
       }
     },
     {
-      "id": "prog-251",
+      "id": "prog-250",
       "slug": "socapa-vermont-core-acting-session-2-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12320,7 +12277,7 @@
       }
     },
     {
-      "id": "prog-252",
+      "id": "prog-251",
       "slug": "socapa-vermont-core-acting-session-2-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12370,7 +12327,7 @@
       }
     },
     {
-      "id": "prog-253",
+      "id": "prog-252",
       "slug": "socapa-vermont-advanced-acting-session-1-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12420,7 +12377,7 @@
       }
     },
     {
-      "id": "prog-254",
+      "id": "prog-253",
       "slug": "socapa-vermont-advanced-acting-session-2-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12470,7 +12427,7 @@
       }
     },
     {
-      "id": "prog-255",
+      "id": "prog-254",
       "slug": "socapa-vermont-core-photography-digital-or-darkroom-digital-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12520,7 +12477,7 @@
       }
     },
     {
-      "id": "prog-256",
+      "id": "prog-255",
       "slug": "socapa-vermont-core-photography-digital-or-darkroom-digital-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12570,7 +12527,7 @@
       }
     },
     {
-      "id": "prog-257",
+      "id": "prog-256",
       "slug": "socapa-vermont-core-photography-digital-or-darkroom-digital-session-2-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12620,7 +12577,7 @@
       }
     },
     {
-      "id": "prog-258",
+      "id": "prog-257",
       "slug": "socapa-vermont-advanced-photography-session-1-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12670,7 +12627,7 @@
       }
     },
     {
-      "id": "prog-259",
+      "id": "prog-258",
       "slug": "socapa-vermont-fusion-dance-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12720,7 +12677,7 @@
       }
     },
     {
-      "id": "prog-260",
+      "id": "prog-259",
       "slug": "socapa-vermont-fusion-dance-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12770,7 +12727,7 @@
       }
     },
     {
-      "id": "prog-261",
+      "id": "prog-260",
       "slug": "socapa-vermont-fusion-dance-session-2-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12820,7 +12777,7 @@
       }
     },
     {
-      "id": "prog-262",
+      "id": "prog-261",
       "slug": "socapa-vermont-fusion-dance-session-2-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12870,7 +12827,7 @@
       }
     },
     {
-      "id": "prog-263",
+      "id": "prog-262",
       "slug": "socapa-vermont-core-music-singer-songwriter-house-band-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12920,7 +12877,7 @@
       }
     },
     {
-      "id": "prog-264",
+      "id": "prog-263",
       "slug": "socapa-vermont-core-music-singer-songwriter-house-band-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12970,7 +12927,7 @@
       }
     },
     {
-      "id": "prog-265",
+      "id": "prog-264",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-21-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13045,7 +13002,7 @@
       }
     },
     {
-      "id": "prog-266",
+      "id": "prog-265",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-21-day-commuter",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13147,7 +13104,7 @@
       }
     },
     {
-      "id": "prog-267",
+      "id": "prog-266",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-14-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13222,7 +13179,7 @@
       }
     },
     {
-      "id": "prog-268",
+      "id": "prog-267",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-14-day-commuter",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13324,7 +13281,7 @@
       }
     },
     {
-      "id": "prog-269",
+      "id": "prog-268",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-27-day-residential-plus-hawaii-extension",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13423,7 +13380,7 @@
       }
     },
     {
-      "id": "prog-270",
+      "id": "prog-269",
       "slug": "westcoast-connection-pre-college-enrichment-barcelona-14-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13484,7 +13441,7 @@
       }
     },
     {
-      "id": "prog-271",
+      "id": "prog-270",
       "slug": "westcoast-connection-pre-college-enrichment-barcelona-21-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13545,7 +13502,7 @@
       }
     },
     {
-      "id": "prog-272",
+      "id": "prog-271",
       "slug": "westcoast-connection-pre-college-enrichment-barcelona-27-day-residential-plus-amalfi-coast-rome",
       "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13614,7 +13571,7 @@
       }
     },
     {
-      "id": "prog-273",
+      "id": "prog-272",
       "slug": "westcoast-connection-pre-college-enrichment-barcelona-30-day-residential-plus-greek-islands",
       "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13683,7 +13640,7 @@
       }
     },
     {
-      "id": "prog-274",
+      "id": "prog-273",
       "slug": "westcoast-connection-pre-college-enrichment-florence-14-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13744,7 +13701,7 @@
       }
     },
     {
-      "id": "prog-275",
+      "id": "prog-274",
       "slug": "westcoast-connection-pre-college-enrichment-florence-21-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13805,7 +13762,7 @@
       }
     },
     {
-      "id": "prog-276",
+      "id": "prog-275",
       "slug": "westcoast-connection-pre-college-enrichment-florence-27-day-residential-plus-amalfi-coast-rome",
       "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13866,7 +13823,7 @@
       }
     },
     {
-      "id": "prog-277",
+      "id": "prog-276",
       "slug": "westcoast-connection-pre-college-enrichment-florence-30-day-residential-plus-greek-islands",
       "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13935,7 +13892,7 @@
       }
     },
     {
-      "id": "prog-278",
+      "id": "prog-277",
       "slug": "westcoast-connection-pre-college-enrichment-montreal-14-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13983,20 +13940,20 @@
           "id": "westcoast-montreal-lunch-not-included",
           "type": "pricing",
           "title": "Lunch is not included in tuition",
-          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and handled independently by students each day.",
-          "sourceCitation": "Westcoast Connection Montreal McGill program pages, 'What's Included' section",
+          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and paid for independently by students each day, consistent with every other Westcoast Connection Pre-College Enrichment location.",
+          "sourceCitation": "Westcoast Connection Montreal 14-day and 21-day program pages, 'What's Included' section",
           "severity": "info"
         }
       ],
       "dayToDay": {
-        "notes": "Residential students live at Residence La Citadelle in downtown Montreal, a short walk from McGill's campus, in rooms with individual twin beds, air conditioning, private bathrooms, Wi-Fi, and personal work desks; the residence has laundry and group common areas. A typical day: 8am wake-up, 8:30 breakfast, 10am morning course, 12pm lunch (unstructured - students choose where to eat in small groups at local cafés and restaurants), 2pm afternoon course, 4pm 'Student's Choice' free time (sports, McGill's fitness center, exploring, or free time), 7pm dinner, and evening activities until 9pm. Breakfast and dinner are included in tuition; lunch is not. Commuter (day) students attend roughly 10am-4:30pm on class days only across non-consecutive weeks, are not housed overnight, have no meals included, get limited access to McGill recreational facilities, may join course field trips, and may optionally attend college-admissions workshops.",
+        "notes": "Residential students live at Residence La Citadelle, McGill University, in individual twin-bed rooms with private bathrooms, air conditioning, housekeeping service, and a personal work desk. A typical day: 8am wake-up, 8:30 breakfast, 10am morning course (or start of a full-day track option), lunch break (unstructured - students choose where to eat in small groups), 2pm afternoon course, then free time ('Student's Choice') until 7pm dinner, followed by evening activities until around 9pm. Breakfast and dinner are included in tuition; lunch is not and is handled independently by students. Commuter (day) students attend roughly 10am-4/4:30pm on class days only, are not housed overnight, have no meals included, get limited access to McGill's recreational facilities, and may optionally join the college-admissions workshops.",
         "sourceType": "official_policy",
-        "sourceCitation": "Westcoast Connection Montreal McGill 14-day and 21-day program pages (westcoastconnection.com)",
+        "sourceCitation": "Westcoast Connection Montreal 14-day and 21-day program pages (westcoastconnection.com)",
         "verifiedAt": "2026-09-15"
       }
     },
     {
-      "id": "prog-279",
+      "id": "prog-278",
       "slug": "westcoast-connection-pre-college-enrichment-montreal-14-day-commuter",
       "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -14044,8 +14001,8 @@
           "id": "westcoast-montreal-lunch-not-included",
           "type": "pricing",
           "title": "Lunch is not included in tuition",
-          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and handled independently by students each day.",
-          "sourceCitation": "Westcoast Connection Montreal McGill program pages, 'What's Included' section",
+          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and paid for independently by students each day, consistent with every other Westcoast Connection Pre-College Enrichment location.",
+          "sourceCitation": "Westcoast Connection Montreal 14-day and 21-day program pages, 'What's Included' section",
           "severity": "info"
         },
         {
@@ -14077,14 +14034,14 @@
         }
       ],
       "dayToDay": {
-        "notes": "Residential students live at Residence La Citadelle in downtown Montreal, a short walk from McGill's campus, in rooms with individual twin beds, air conditioning, private bathrooms, Wi-Fi, and personal work desks; the residence has laundry and group common areas. A typical day: 8am wake-up, 8:30 breakfast, 10am morning course, 12pm lunch (unstructured - students choose where to eat in small groups at local cafés and restaurants), 2pm afternoon course, 4pm 'Student's Choice' free time (sports, McGill's fitness center, exploring, or free time), 7pm dinner, and evening activities until 9pm. Breakfast and dinner are included in tuition; lunch is not. Commuter (day) students attend roughly 10am-4:30pm on class days only across non-consecutive weeks, are not housed overnight, have no meals included, get limited access to McGill recreational facilities, may join course field trips, and may optionally attend college-admissions workshops.",
+        "notes": "Residential students live at Residence La Citadelle, McGill University, in individual twin-bed rooms with private bathrooms, air conditioning, housekeeping service, and a personal work desk. A typical day: 8am wake-up, 8:30 breakfast, 10am morning course (or start of a full-day track option), lunch break (unstructured - students choose where to eat in small groups), 2pm afternoon course, then free time ('Student's Choice') until 7pm dinner, followed by evening activities until around 9pm. Breakfast and dinner are included in tuition; lunch is not and is handled independently by students. Commuter (day) students attend roughly 10am-4/4:30pm on class days only, are not housed overnight, have no meals included, get limited access to McGill's recreational facilities, and may optionally join the college-admissions workshops.",
         "sourceType": "official_policy",
-        "sourceCitation": "Westcoast Connection Montreal McGill 14-day and 21-day program pages (westcoastconnection.com)",
+        "sourceCitation": "Westcoast Connection Montreal 14-day and 21-day program pages (westcoastconnection.com)",
         "verifiedAt": "2026-09-15"
       }
     },
     {
-      "id": "prog-280",
+      "id": "prog-279",
       "slug": "westcoast-connection-pre-college-enrichment-montreal-21-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -14132,20 +14089,20 @@
           "id": "westcoast-montreal-lunch-not-included",
           "type": "pricing",
           "title": "Lunch is not included in tuition",
-          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and handled independently by students each day.",
-          "sourceCitation": "Westcoast Connection Montreal McGill program pages, 'What's Included' section",
+          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and paid for independently by students each day, consistent with every other Westcoast Connection Pre-College Enrichment location.",
+          "sourceCitation": "Westcoast Connection Montreal 14-day and 21-day program pages, 'What's Included' section",
           "severity": "info"
         }
       ],
       "dayToDay": {
-        "notes": "Residential students live at Residence La Citadelle in downtown Montreal, a short walk from McGill's campus, in rooms with individual twin beds, air conditioning, private bathrooms, Wi-Fi, and personal work desks; the residence has laundry and group common areas. A typical day: 8am wake-up, 8:30 breakfast, 10am morning course, 12pm lunch (unstructured - students choose where to eat in small groups at local cafés and restaurants), 2pm afternoon course, 4pm 'Student's Choice' free time (sports, McGill's fitness center, exploring, or free time), 7pm dinner, and evening activities until 9pm. Breakfast and dinner are included in tuition; lunch is not. Commuter (day) students attend roughly 10am-4:30pm on class days only across non-consecutive weeks, are not housed overnight, have no meals included, get limited access to McGill recreational facilities, may join course field trips, and may optionally attend college-admissions workshops.",
+        "notes": "Residential students live at Residence La Citadelle, McGill University, in individual twin-bed rooms with private bathrooms, air conditioning, housekeeping service, and a personal work desk. A typical day: 8am wake-up, 8:30 breakfast, 10am morning course (or start of a full-day track option), lunch break (unstructured - students choose where to eat in small groups), 2pm afternoon course, then free time ('Student's Choice') until 7pm dinner, followed by evening activities until around 9pm. Breakfast and dinner are included in tuition; lunch is not and is handled independently by students. Commuter (day) students attend roughly 10am-4/4:30pm on class days only, are not housed overnight, have no meals included, get limited access to McGill's recreational facilities, and may optionally join the college-admissions workshops.",
         "sourceType": "official_policy",
-        "sourceCitation": "Westcoast Connection Montreal McGill 14-day and 21-day program pages (westcoastconnection.com)",
+        "sourceCitation": "Westcoast Connection Montreal 14-day and 21-day program pages (westcoastconnection.com)",
         "verifiedAt": "2026-09-15"
       }
     },
     {
-      "id": "prog-281",
+      "id": "prog-280",
       "slug": "westcoast-connection-pre-college-enrichment-montreal-21-day-commuter",
       "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -14193,8 +14150,8 @@
           "id": "westcoast-montreal-lunch-not-included",
           "type": "pricing",
           "title": "Lunch is not included in tuition",
-          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and handled independently by students each day.",
-          "sourceCitation": "Westcoast Connection Montreal McGill program pages, 'What's Included' section",
+          "body": "Breakfast and dinner are included, but lunch is explicitly excluded and paid for independently by students each day, consistent with every other Westcoast Connection Pre-College Enrichment location.",
+          "sourceCitation": "Westcoast Connection Montreal 14-day and 21-day program pages, 'What's Included' section",
           "severity": "info"
         },
         {
@@ -14226,9 +14183,68 @@
         }
       ],
       "dayToDay": {
-        "notes": "Residential students live at Residence La Citadelle in downtown Montreal, a short walk from McGill's campus, in rooms with individual twin beds, air conditioning, private bathrooms, Wi-Fi, and personal work desks; the residence has laundry and group common areas. A typical day: 8am wake-up, 8:30 breakfast, 10am morning course, 12pm lunch (unstructured - students choose where to eat in small groups at local cafés and restaurants), 2pm afternoon course, 4pm 'Student's Choice' free time (sports, McGill's fitness center, exploring, or free time), 7pm dinner, and evening activities until 9pm. Breakfast and dinner are included in tuition; lunch is not. Commuter (day) students attend roughly 10am-4:30pm on class days only across non-consecutive weeks, are not housed overnight, have no meals included, get limited access to McGill recreational facilities, may join course field trips, and may optionally attend college-admissions workshops.",
+        "notes": "Residential students live at Residence La Citadelle, McGill University, in individual twin-bed rooms with private bathrooms, air conditioning, housekeeping service, and a personal work desk. A typical day: 8am wake-up, 8:30 breakfast, 10am morning course (or start of a full-day track option), lunch break (unstructured - students choose where to eat in small groups), 2pm afternoon course, then free time ('Student's Choice') until 7pm dinner, followed by evening activities until around 9pm. Breakfast and dinner are included in tuition; lunch is not and is handled independently by students. Commuter (day) students attend roughly 10am-4/4:30pm on class days only, are not housed overnight, have no meals included, get limited access to McGill's recreational facilities, and may optionally join the college-admissions workshops.",
         "sourceType": "official_policy",
-        "sourceCitation": "Westcoast Connection Montreal McGill 14-day and 21-day program pages (westcoastconnection.com)",
+        "sourceCitation": "Westcoast Connection Montreal 14-day and 21-day program pages (westcoastconnection.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-281",
+      "slug": "mit-women-s-technology-program-wtp-mechanical-engineering-wtp-me",
+      "name": "MIT Women's Technology Program (WTP)",
+      "institution": "Massachusetts Institute of Technology",
+      "programGroupId": "mit-wtp",
+      "description": "Highly selective four-week residential engineering program at MIT for young women and other underrepresented/underserved students in engineering; hands-on classes, labs, and team projects in mechanical engineering, taught by MIT graduate students with undergraduate assistants living in the dorm. No prior engineering background expected or desired.",
+      "category": "stem-engineering",
+      "secondaryTags": [],
+      "trackDetail": "Mechanical Engineering (WTP-ME)",
+      "gradeDisplay": "Current 11th graders only (not rising seniors generally - must be in 11th grade at time of application)",
+      "gradeCompletedMin": 11,
+      "gradeCompletedMax": 11,
+      "gradeSource": "mixed",
+      "admissionType": "highly_competitive",
+      "admissionDisplay": "Highly Competitive",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "4 weeks",
+      "lengthMinDays": 28,
+      "lengthMaxDays": 28,
+      "datesDisplay": "Jun 26 – Jul 24, 2027",
+      "dateStart": "2027-06-26",
+      "dateEnd": "2027-07-24",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Cambridge, MA (MIT campus)",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "Sliding scale by family income: free for family AGI ≤$120,000; $2,000 ($120-150K); $4,000 ($150-200K); $8,000 ($200-400K); $20,000 (≥$400K); further aid available if these amounts are a hardship",
+      "priceMin": 0,
+      "priceMax": 20000,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://wtp.mit.edu/",
+      "dataVerifiedAt": "2026-09-15",
+      "flags": [
+        {
+          "id": "mit-wtp-residency-nuance",
+          "type": "policy",
+          "title": "Eligibility depends on family home address, not school location",
+          "body": "A student's eligibility is based on where their family's permanent home address is (must be in the US year-round), not where they attend school. This means a student at a US boarding school with a family home abroad is ineligible, while a student at a boarding school abroad with a US family home is eligible.",
+          "sourceCitation": "MIT WTP FAQ page",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in an MIT dorm alongside the MIT undergraduate students who serve as teaching assistants. Daily required classes run Monday-Friday from approximately 9:30am-5pm, with occasional evening hours, plus some planned weekend academic field trips and social outings. The schedule includes classes, labs, homework, and unstructured social time with other WTP students. Students are expected to have no other significant time commitments during the four weeks. A laptop is expected for coursework; free loaners are available for students who need one.",
+        "sourceType": "official_policy",
+        "sourceCitation": "MIT WTP calendar and FAQ pages (wtp.mit.edu)",
         "verifiedAt": "2026-09-15"
       }
     }

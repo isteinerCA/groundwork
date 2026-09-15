@@ -293,6 +293,19 @@
     ]
   },
   {
+    "match": { "programGroupId": "mit-wtp" },
+    "flags": [
+      {
+        "id": "mit-wtp-residency-nuance",
+        "type": "policy",
+        "title": "Eligibility depends on family home address, not school location",
+        "body": "A student's eligibility is based on where their family's permanent home address is (must be in the US year-round), not where they attend school. This means a student at a US boarding school with a family home abroad is ineligible, while a student at a boarding school abroad with a US family home is eligible.",
+        "sourceCitation": "MIT WTP FAQ page",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
     "match": { "programGroupId": "mit-bwsi" },
     "flags": [
       {
@@ -312,7 +325,7 @@
         "id": "mathworks-hsmc-no-outside-commitments",
         "type": "other",
         "title": "No online courses or other programs allowed during camp",
-        "body": "Unlike most residential summer programs, HSMC explicitly prohibits campers from taking any online courses or participating in any other program - in person or virtual - for the full six weeks. Families should not plan for a student to double up on summer commitments.",
+        "body": "HSMC explicitly prohibits campers from taking any online courses or participating in any other program - in person or virtual - for the full six weeks. Families should not plan for a student to double up on summer commitments.",
         "sourceCitation": "Mathworks HSMC program page",
         "severity": "info"
       }

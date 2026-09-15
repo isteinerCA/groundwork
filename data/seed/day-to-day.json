@@ -36,9 +36,18 @@
     }
   },
   {
+    "match": { "programGroupId": "mit-wtp" },
+    "dayToDay": {
+      "notes": "Students live in an MIT dorm alongside the MIT undergraduate students who serve as teaching assistants. Daily required classes run Monday-Friday from approximately 9:30am-5pm, with occasional evening hours, plus some planned weekend academic field trips and social outings. The schedule includes classes, labs, homework, and unstructured social time with other WTP students. Students are expected to have no other significant time commitments during the four weeks. A laptop is expected for coursework; free loaners are available for students who need one.",
+      "sourceType": "official_policy",
+      "sourceCitation": "MIT WTP calendar and FAQ pages (wtp.mit.edu)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
     "match": { "programGroupId": "mathworks-hsmc" },
     "dayToDay": {
-      "notes": "This is a highly structured, academically intensive residential program: the daily schedule runs from 7am breakfast to 10pm, with classes and research in the morning, problem sessions or additional classes in the afternoon, and study groups in the evening. Campers are explicitly not permitted to take online courses or participate in any other program, in person or online, during the six weeks - an unusually strict exclusivity policy compared to most residential camps. Parent visits during camp are allowed but require prior approval through a request form, rather than being either fully open or fully prohibited.",
+      "notes": "This is a highly structured, academically intensive residential program: the daily schedule runs from 7am breakfast to 10pm, with classes and research in the morning, problem sessions or additional classes in the afternoon, and study groups in the evening. Campers are explicitly not permitted to take online courses or participate in any other program, in person or online, during the six weeks. Parent visits during camp are allowed but require prior approval through a request form, rather than being either fully open or fully prohibited.",
       "sourceType": "official_policy",
       "sourceCitation": "Mathworks HSMC program page and Camps visit-request page (txst.edu/mathworks)",
       "verifiedAt": "2026-09-15"
