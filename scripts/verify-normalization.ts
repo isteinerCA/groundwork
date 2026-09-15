@@ -18,6 +18,14 @@ import {
 } from "../src/lib/data/parse-csv-program-fields";
 import { sortPrograms } from "../src/lib/data/filter-programs";
 import {
+  buildSearchResultItems,
+  countSearchResultItems,
+  formatGroupPriceRange,
+  groupProgramsByTrack,
+  trackGroupLabel,
+  variantOfferingLabel,
+} from "../src/lib/data/group-search-results";
+import {
   programMatchesMonthFilter,
   programOverlapsMonth,
 } from "../src/lib/data/matches-month-filter";
@@ -470,6 +478,90 @@ if (!programMatchesMonthFilter(catalinaJulyAugustSession, [7])) {
 }
 if (!programMatchesMonthFilter(catalinaJulyAugustSession, [8])) {
   console.error("FAIL: 2027 session ending in August should match August filter");
+  failed++;
+}
+
+const socapaActingDay = stubProgram({
+  id: "socapa-acting-day",
+  name: "SOCAPA - New York City",
+  locationDisplay: "New York, NY",
+  programGroupId: "socapa-nyc",
+  trackDetail: "Core Acting - Session 1 2WK (Day)",
+  priceMin: 2500,
+  priceMax: 2500,
+  priceDisplay: "$2,500",
+});
+const socapaActingRes = stubProgram({
+  id: "socapa-acting-res",
+  name: "SOCAPA - New York City",
+  locationDisplay: "New York, NY",
+  programGroupId: "socapa-nyc",
+  trackDetail: "Core Acting - Session 1 2WK (Residential)",
+  priceMin: 4500,
+  priceMax: 4500,
+  priceDisplay: "$4,500",
+});
+const socapaFilm = stubProgram({
+  id: "socapa-film",
+  name: "SOCAPA - New York City",
+  locationDisplay: "New York, NY",
+  programGroupId: "socapa-nyc",
+  trackDetail: "Filmmaking - Session 1 2WK (Day)",
+  priceMin: 2500,
+  priceMax: 2500,
+  priceDisplay: "$2,500",
+});
+const loneProgram = stubProgram({
+  id: "lone-camp",
+  name: "Lone Camp",
+  locationDisplay: "Boston, MA",
+  programGroupId: "lone-camp",
+});
+
+const groupedItems = buildSearchResultItems([
+  socapaActingDay,
+  socapaActingRes,
+  socapaFilm,
+  loneProgram,
+]);
+if (groupedItems.length !== 2) {
+  console.error(`FAIL: expected 2 search result items (1 group + 1 single), got ${groupedItems.length}`);
+  failed++;
+}
+const socapaGroup = groupedItems.find((item) => item.kind === "group");
+if (!socapaGroup || socapaGroup.kind !== "group" || socapaGroup.programs.length !== 3) {
+  console.error("FAIL: SOCAPA NYC should collapse into one grouped item with 3 offerings");
+  failed++;
+}
+const singleItem = groupedItems.find((item) => item.kind === "single");
+if (!singleItem || singleItem.kind !== "single" || singleItem.program.id !== "lone-camp") {
+  console.error("FAIL: lone matching row in a group should render as a single card");
+  failed++;
+}
+if (countSearchResultItems([socapaActingDay, socapaActingRes, socapaFilm]) !== 1) {
+  console.error("FAIL: grouped result count should be 1 for three SOCAPA NYC matches");
+  failed++;
+}
+
+if (trackGroupLabel("Core Acting - Session 1 2WK (Day)") !== "Core Acting") {
+  console.error("FAIL: trackGroupLabel should strip session suffix");
+  failed++;
+}
+if (
+  variantOfferingLabel("Core Acting - Session 1 2WK (Day)", "Core Acting") !==
+  "Session 1 2WK (Day)"
+) {
+  console.error("FAIL: variantOfferingLabel should return session/format suffix");
+  failed++;
+}
+
+const trackGroups = groupProgramsByTrack([socapaActingDay, socapaActingRes, socapaFilm]);
+if (trackGroups.length !== 2) {
+  console.error(`FAIL: expected 2 track groups, got ${trackGroups.length}`);
+  failed++;
+}
+if (formatGroupPriceRange([socapaActingDay, socapaActingRes]) !== "$2,500–$4,500") {
+  console.error(`FAIL: group price range, got "${formatGroupPriceRange([socapaActingDay, socapaActingRes])}"`);
   failed++;
 }
 

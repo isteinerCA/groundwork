@@ -7,6 +7,7 @@ import {
 } from "@/lib/constants/filters";
 import { getMonthLabel } from "@/lib/constants/months";
 import { filterPrograms } from "@/lib/data/filter-programs";
+import { countSearchResultItems } from "@/lib/data/group-search-results";
 import { getRegionLabel } from "@/lib/data/us-regions";
 import { stripNoOpFilterPatch } from "@/lib/search/filter-patch-delta";
 import type { LlmParseResponse } from "@/lib/search/llm-parse-schema";
@@ -18,6 +19,10 @@ function resultCountSentence(count: number): string {
     return "No programs match — try broadening your filters.";
   }
   return `${count} program${count === 1 ? "" : "s"} match your filters.`;
+}
+
+function groupedFilterCount(programs: Program[], filters: SearchFilters): number {
+  return countSearchResultItems(filterPrograms(programs, filters));
 }
 
 function monthSessionNote(filters: SearchFilters, programs: Program[]): string | null {
@@ -167,7 +172,7 @@ export function formatAssistantMessage(
   if (result.clearAll) {
     const countSentence =
       nextFilters.gradesCompleted.length > 0
-        ? ` ${resultCountSentence(filterPrograms(programs, nextFilters).length)}`
+        ? ` ${resultCountSentence(groupedFilterCount(programs, nextFilters))}`
         : "";
     return `Cleared all filters.${countSentence}${limitation ? ` ${limitation}` : ""}`.trim();
   }
@@ -178,7 +183,7 @@ export function formatAssistantMessage(
     if (limitation) {
       const countSentence =
         nextFilters.gradesCompleted.length > 0
-          ? ` ${resultCountSentence(filterPrograms(programs, nextFilters).length)}`
+          ? ` ${resultCountSentence(groupedFilterCount(programs, nextFilters))}`
           : "";
       return `${limitation}${countSentence}`.trim();
     }
@@ -192,7 +197,7 @@ export function formatAssistantMessage(
     ).trim();
   }
 
-  const nextCount = filterPrograms(programs, nextFilters).length;
+  const nextCount = groupedFilterCount(programs, nextFilters);
   const described = describeFilterPatch(effectivePatch);
   const countSentence = resultCountSentence(nextCount);
   const monthNote = monthSessionNote(nextFilters, programs);

@@ -13,6 +13,7 @@ import { SearchChat } from "@/components/search/search-chat";
 import { SearchShortlistCta } from "@/components/search/search-shortlist-cta";
 import { Chip } from "@/components/ui/chip";
 import { InfoTooltip } from "@/components/ui/info-tooltip";
+import { GroupedProgramCard } from "@/components/search/grouped-program-card";
 import { ProgramCard } from "@/components/search/program-card";
 import { SearchPreviewPanel } from "@/components/search/search-preview-panel";
 import { WaitlistSignup } from "@/components/marketing/waitlist-signup";
@@ -34,6 +35,10 @@ import {
   TARGET_SEASON_YEAR,
 } from "@/lib/constants/season-review";
 import { filterPrograms, sortPrograms, type SortOption } from "@/lib/data/filter-programs";
+import {
+  buildSearchResultItems,
+  countSearchResultItems,
+} from "@/lib/data/group-search-results";
 import { summarizeSeasonCoverage } from "@/lib/data/normalize-season-review";
 import { formatProgramCountLabel } from "@/lib/programs/preview-programs";
 import { summarizeSearchFilters, trackEvent } from "@/lib/analytics";
@@ -137,17 +142,10 @@ export function SearchExperience({
     return sortPrograms(filterPrograms(programs, filters), sort);
   }, [programs, filters, sort]);
 
-  const seasonCoverage = useMemo(() => summarizeSeasonCoverage(results), [results]);
+  const resultItems = useMemo(() => buildSearchResultItems(results), [results]);
+  const resultGroupCount = useMemo(() => countSearchResultItems(results), [results]);
 
-  const duplicateResultNames = useMemo(() => {
-    const counts = new Map<string, number>();
-    for (const program of results) {
-      counts.set(program.name, (counts.get(program.name) ?? 0) + 1);
-    }
-    return new Set(
-      [...counts.entries()].filter(([, count]) => count > 1).map(([name]) => name),
-    );
-  }, [results]);
+  const seasonCoverage = useMemo(() => summarizeSeasonCoverage(results), [results]);
 
   const flushSearchTrack = () => {
     const pending = pendingSearchRef.current;
@@ -282,7 +280,7 @@ export function SearchExperience({
             )}
 
             <FilterResultsCounter
-              count={results.length}
+              count={resultGroupCount}
               hasGrade={filters.gradesCompleted.length > 0}
             />
 
@@ -509,7 +507,7 @@ export function SearchExperience({
                 embedded
                 inPanel
                 filters={filters}
-                resultCount={results.length}
+                resultCount={resultGroupCount}
                 programs={programs}
                 onApplyFilters={(next) => applyFilters(next, "chat")}
               />
@@ -522,7 +520,7 @@ export function SearchExperience({
                     </p>
                     <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-2 lg:mt-0">
                       <p className="text-lg font-semibold text-[var(--color-navy)] lg:text-base">
-                        {results.length} program{results.length === 1 ? "" : "s"} to compare
+                        {resultGroupCount} program{resultGroupCount === 1 ? "" : "s"} to compare
                       </p>
                       <label className="flex items-center gap-2 text-sm text-[var(--color-text-muted)]">
                         Sort by
@@ -574,14 +572,26 @@ export function SearchExperience({
                   </div>
                 )}
 
-                {results.map((program) => (
-                  <ProgramCard
-                    key={program.id}
-                    program={program}
-                    anchorId={lockedFilters ? programListAnchorId(program) : undefined}
-                    emphasizeTrack={duplicateResultNames.has(program.name)}
-                  />
-                ))}
+                {resultItems.map((item) =>
+                  item.kind === "group" ? (
+                    <GroupedProgramCard
+                      key={item.groupId}
+                      programs={item.programs}
+                      representative={item.representative}
+                      anchorId={
+                        lockedFilters ? programListAnchorId(item.representative) : undefined
+                      }
+                    />
+                  ) : (
+                    <ProgramCard
+                      key={item.program.id}
+                      program={item.program}
+                      anchorId={
+                        lockedFilters ? programListAnchorId(item.program) : undefined
+                      }
+                    />
+                  ),
+                )}
                 </div>
               </div>
             </div>
