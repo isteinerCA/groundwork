@@ -1,6 +1,6 @@
 {
   "verifiedAt": "2026-09-14",
-  "count": 147,
+  "count": 150,
   "programs": [
     {
       "id": "prog-1",
@@ -5033,47 +5033,6 @@
     },
     {
       "id": "prog-114",
-      "slug": "lasting-adventures",
-      "name": "Lasting Adventures",
-      "category": "outdoor-wilderness",
-      "secondaryTags": [],
-      "gradeDisplay": "Ages 11-18",
-      "gradeCompletedMin": 5,
-      "gradeCompletedMax": 12,
-      "gradeSource": "age",
-      "stateRestriction": null,
-      "admissionType": "first_come",
-      "admissionDisplay": "First-come",
-      "formatDisplay": "Residential (Expedition/Overnight)",
-      "formatTags": [
-        "residential"
-      ],
-      "durationBucket": "under_2_weeks",
-      "lengthDisplay": "4-20 days",
-      "lengthMinDays": 4,
-      "lengthMaxDays": 20,
-      "datesDisplay": "Multiple dates Jun - Aug",
-      "dateStart": "2026-06-01",
-      "dateEnd": "2026-08-28",
-      "datesParseQuality": "approximate",
-      "seasonYear": 2026,
-      "reviewStatus": "provisional",
-      "locationDisplay": "Yosemite, Olympic, Joshua Tree NP",
-      "isInternational": false,
-      "creditDisplay": "No",
-      "hasCollegeCredit": false,
-      "priceDisplay": "$1675-$2085",
-      "priceMin": 1675.0,
-      "priceMax": 2085.0,
-      "priceUnknown": false,
-      "fullyFunded": false,
-      "financialAidAvailable": false,
-      "websiteUrl": "https://lastingadventures.com/",
-      "flags": [],
-      "dataVerifiedAt": "2026-09-14"
-    },
-    {
-      "id": "prog-115",
       "slug": "apogee-adventures",
       "name": "Apogee Adventures",
       "category": "outdoor-wilderness",
@@ -5117,7 +5076,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-116",
+      "id": "prog-115",
       "slug": "bold-earth-adventure-camp",
       "name": "Bold Earth Adventure Camp",
       "category": "outdoor-wilderness",
@@ -5160,7 +5119,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-117",
+      "id": "prog-116",
       "slug": "moondance-adventures",
       "name": "Moondance Adventures",
       "category": "outdoor-wilderness",
@@ -5203,7 +5162,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-118",
+      "id": "prog-117",
       "slug": "wilderness-adventures",
       "name": "Wilderness Adventures",
       "category": "outdoor-wilderness",
@@ -5244,7 +5203,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-119",
+      "id": "prog-118",
       "slug": "yale-young-global-scholars-yygs",
       "name": "Yale Young Global Scholars (YYGS)",
       "category": "cultural-exchange",
@@ -5287,7 +5246,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-120",
+      "id": "prog-119",
       "slug": "amigos-de-las-americas",
       "name": "AMIGOS de las Americas",
       "category": "cultural-exchange",
@@ -5330,7 +5289,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-121",
+      "id": "prog-120",
       "slug": "ciee-high-school-abroad",
       "name": "CIEE High School Abroad",
       "category": "cultural-exchange",
@@ -5371,7 +5330,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-122",
+      "id": "prog-121",
       "slug": "afs-intercultural-programs",
       "name": "AFS Intercultural Programs",
       "category": "cultural-exchange",
@@ -5412,7 +5371,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-123",
+      "id": "prog-122",
       "slug": "yes-abroad",
       "name": "YES Abroad",
       "category": "cultural-exchange",
@@ -5455,7 +5414,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-124",
+      "id": "prog-123",
       "slug": "rotary-youth-exchange",
       "name": "Rotary Youth Exchange",
       "category": "cultural-exchange",
@@ -5496,7 +5455,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-125",
+      "id": "prog-124",
       "slug": "putney-student-travel",
       "name": "Putney Student Travel",
       "category": "cultural-exchange",
@@ -5539,7 +5498,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-126",
+      "id": "prog-125",
       "slug": "arcc-programs",
       "name": "ARCC Programs",
       "category": "cultural-exchange",
@@ -5582,7 +5541,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-127",
+      "id": "prog-126",
       "slug": "that-s-mandarin-chinese-summer-camp-day-half-day-full-homestay",
       "name": "That's Mandarin Chinese Summer Camp",
       "category": "cultural-exchange",
@@ -5625,7 +5584,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-128",
+      "id": "prog-127",
       "slug": "goeast-mandarin-summer-camp-academic-chinese-booster-chinese-adventure",
       "name": "GoEast Mandarin Summer Camp",
       "category": "cultural-exchange",
@@ -5667,7 +5626,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-129",
+      "id": "prog-128",
       "slug": "keats-school-mandarin-immersion-camp",
       "name": "Keats School Mandarin Immersion Camp",
       "category": "cultural-exchange",
@@ -5708,7 +5667,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-130",
+      "id": "prog-129",
       "slug": "china-internship-placements-mandarin-camp",
       "name": "China Internship Placements Mandarin Camp",
       "category": "cultural-exchange",
@@ -5749,7 +5708,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-131",
+      "id": "prog-130",
       "slug": "ltl-school",
       "name": "LTL School",
       "category": "cultural-exchange",
@@ -5790,7 +5749,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-132",
+      "id": "prog-131",
       "slug": "vanderbilt-summer-academy-vsa",
       "name": "Vanderbilt Summer Academy (VSA)",
       "category": "leadership-gifted",
@@ -5831,7 +5790,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-133",
+      "id": "prog-132",
       "slug": "northwestern-ctd-summer-camp",
       "name": "Northwestern CTD Summer Camp",
       "category": "leadership-gifted",
@@ -5872,7 +5831,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-134",
+      "id": "prog-133",
       "slug": "wharton-global-youth-program-on-campus",
       "name": "Wharton Global Youth Program",
       "category": "leadership-gifted",
@@ -5914,7 +5873,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-135",
+      "id": "prog-134",
       "slug": "wharton-global-youth-program-online",
       "name": "Wharton Global Youth Program",
       "category": "leadership-gifted",
@@ -5956,7 +5915,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-136",
+      "id": "prog-135",
       "slug": "johns-hopkins-center-for-talented-youth-cty-residential-day",
       "name": "Johns Hopkins Center for Talented Youth (CTY)",
       "category": "leadership-gifted",
@@ -6000,7 +5959,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-137",
+      "id": "prog-136",
       "slug": "iacocca-global-entrepreneurship-intensive-igei",
       "name": "Iacocca Global Entrepreneurship Intensive (IGEI)",
       "category": "leadership-gifted",
@@ -6043,7 +6002,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-138",
+      "id": "prog-137",
       "slug": "iacocca-global-future-leaders-lab-silicon-valley",
       "name": "Iacocca Global Future Leaders Lab: Silicon Valley",
       "category": "leadership-gifted",
@@ -6084,7 +6043,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-139",
+      "id": "prog-138",
       "slug": "summer-springboard",
       "name": "Summer Springboard",
       "category": "leadership-gifted",
@@ -6128,7 +6087,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-140",
+      "id": "prog-139",
       "slug": "envision-by-worldstrides-nylf-tracks-medicine-law-engineering-business-national-security",
       "name": "Envision by WorldStrides (NYLF tracks)",
       "category": "leadership-gifted",
@@ -6170,7 +6129,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-141",
+      "id": "prog-140",
       "slug": "cornell-summer-college-3-week-session",
       "name": "Cornell Summer College",
       "category": "leadership-gifted",
@@ -6215,7 +6174,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-142",
+      "id": "prog-141",
       "slug": "cornell-summer-college-6-week-session",
       "name": "Cornell Summer College",
       "category": "leadership-gifted",
@@ -6260,7 +6219,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-143",
+      "id": "prog-142",
       "slug": "berkeley-changemaker-pre-college",
       "name": "Berkeley Changemaker Pre-College",
       "category": "leadership-gifted",
@@ -6303,7 +6262,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-144",
+      "id": "prog-143",
       "slug": "education-unlimited-astrophysics-9-12-engineering-9-12-quantum-mechanics-10-12-robotics-9-12-surgica",
       "name": "Education Unlimited",
       "category": "stem-engineering",
@@ -6348,7 +6307,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-145",
+      "id": "prog-144",
       "slug": "education-unlimited-competitive-debate-public-forum-debate-public-speaking-institute-hs-mock-trial-h",
       "name": "Education Unlimited",
       "category": "leadership-gifted",
@@ -6393,7 +6352,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-146",
+      "id": "prog-145",
       "slug": "education-unlimited-a-summer-high-school-a-summer-pre-college-college-admission-prep-camp-college-to",
       "name": "Education Unlimited",
       "category": "college-credit-pre-college",
@@ -6436,7 +6395,7 @@
       "dataVerifiedAt": "2026-09-14"
     },
     {
-      "id": "prog-147",
+      "id": "prog-146",
       "slug": "creative-delegates-league-of-creative-minds-diplomacy-negotiation-international-law-geopolitics-and-",
       "name": "Creative Delegates (League of Creative Minds)",
       "category": "leadership-gifted",
@@ -6478,6 +6437,270 @@
       "websiteUrl": "https://www.creativedelegates.org/",
       "flags": [],
       "dataVerifiedAt": "2026-09-14"
+    },
+    {
+      "id": "prog-147",
+      "slug": "lasting-adventures-6-day-young-adventurer-s-program",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-yosemite",
+      "description": "Introductory 6-day wilderness backpacking camp in Yosemite for ages 11-13.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Traditional Camp"
+      ],
+      "trackDetail": "6-Day Young Adventurer's Program",
+      "gradeDisplay": "Ages 11-13 (completed grades 5-7, per program site)",
+      "gradeCompletedMin": 5,
+      "gradeCompletedMax": 7,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "6 days",
+      "lengthMinDays": 6,
+      "lengthMaxDays": 6,
+      "datesDisplay": "7 weekly departures, Jun 13 - Aug 13 2027 (see site for exact dates)",
+      "dateStart": "2027-06-13",
+      "dateEnd": "2027-08-13",
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Yosemite National Park, CA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$1990",
+      "priceMin": 1990.0,
+      "priceMax": 1990.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/yosemite-6-day-young-adventurers-program/",
+      "flags": [
+        {
+          "id": "lasting-adventures-yosemite-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ",
+          "severity": "warning"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-14",
+      "dayToDay": {
+        "notes": "Guided wilderness backpacking, not a campus program \u2014 \"curfew\" and \"leaving campus\" don't apply the usual way. Staff-to-camper ratio is at least 2 staff per 10 youth, and campers are with their group essentially the entire trip, sleeping outdoors at group campsites. Very little unstructured time: days involve hiking, a structured daily morning meeting, evening group activities/campfire, and shared meals. No phone service in the backcountry and no planned parent contact during the trip \u2014 guides send a nightly satellite check-in to the office (not to parents), consistent with the program's explicit \"no news is good news\" policy. Parents get a recap email with photos 1\u20132 weeks after the trip ends.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ pages (identical language across 6-Day Young Adventurer's, 6-Day High Country, and 10-Day Mammoth pages)",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-148",
+      "slug": "lasting-adventures-6-day-high-country-adventure",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-yosemite",
+      "description": "Flagship 6-day guided backpacking trip in the Yosemite high country for teens.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Traditional Camp"
+      ],
+      "trackDetail": "6-Day High Country Adventure",
+      "gradeDisplay": "Ages 13-18, grouped 13-15 & 15-18",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 12,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "6 days",
+      "lengthMinDays": 6,
+      "lengthMaxDays": 6,
+      "datesDisplay": "10 weekly departures, Jun 6 - Aug 13 2027 (see site for exact dates)",
+      "dateStart": "2027-06-06",
+      "dateEnd": "2027-08-13",
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Yosemite National Park, CA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$1990",
+      "priceMin": 1990.0,
+      "priceMax": 1990.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/6-day-yosemite-high-country-adventure/",
+      "flags": [
+        {
+          "id": "lasting-adventures-yosemite-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ",
+          "severity": "warning"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-14",
+      "dayToDay": {
+        "notes": "Guided wilderness backpacking, not a campus program \u2014 \"curfew\" and \"leaving campus\" don't apply the usual way. Staff-to-camper ratio is at least 2 staff per 10 youth, and campers are with their group essentially the entire trip, sleeping outdoors at group campsites. Very little unstructured time: days involve hiking, a structured daily morning meeting, evening group activities/campfire, and shared meals. No phone service in the backcountry and no planned parent contact during the trip \u2014 guides send a nightly satellite check-in to the office (not to parents), consistent with the program's explicit \"no news is good news\" policy. Parents get a recap email with photos 1\u20132 weeks after the trip ends.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ pages (identical language across 6-Day Young Adventurer's, 6-Day High Country, and 10-Day Mammoth pages)",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-149",
+      "slug": "lasting-adventures-10-day-mammoth-to-yosemite-jul-6-15",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-yosemite",
+      "description": "Strenuous 10-day point-to-point backpacking trip from Mammoth Lakes into Yosemite; July departure.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Traditional Camp"
+      ],
+      "trackDetail": "10-Day Mammoth to Yosemite \u2014 Jul 6-15",
+      "gradeDisplay": "Ages 14-18, experienced backpackers or past LA participants preferred",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 12,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "10 days",
+      "lengthMinDays": 10,
+      "lengthMaxDays": 10,
+      "datesDisplay": "Jul 6-15, 2027",
+      "dateStart": "2027-07-06",
+      "dateEnd": "2027-07-15",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Yosemite National Park / Inyo National Forest, CA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2990",
+      "priceMin": 2990.0,
+      "priceMax": 2990.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/10-day-yosemite-high-country-adventure/",
+      "flags": [
+        {
+          "id": "lasting-adventures-yosemite-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ",
+          "severity": "warning"
+        },
+        {
+          "id": "lasting-adventures-yosemite-mammoth-experience-prereq",
+          "type": "selectivity",
+          "title": "\"First-come\" admission still expects prior backpacking experience",
+          "body": "The 10-Day Mammoth to Yosemite trip is First-Come with no formal application, but the program site states it's designed for experienced backpackers or past Lasting Adventures participants \u2014 a first-timer could book it without realizing they may be underprepared.",
+          "sourceCitation": "Lasting Adventures 10-Day Mammoth to Yosemite Teen Adventure program page",
+          "severity": "info"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-14",
+      "dayToDay": {
+        "notes": "Guided wilderness backpacking, not a campus program \u2014 \"curfew\" and \"leaving campus\" don't apply the usual way. Staff-to-camper ratio is at least 2 staff per 10 youth, and campers are with their group essentially the entire trip, sleeping outdoors at group campsites. Very little unstructured time: days involve hiking, a structured daily morning meeting, evening group activities/campfire, and shared meals. No phone service in the backcountry and no planned parent contact during the trip \u2014 guides send a nightly satellite check-in to the office (not to parents), consistent with the program's explicit \"no news is good news\" policy. Parents get a recap email with photos 1\u20132 weeks after the trip ends.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ pages (identical language across 6-Day Young Adventurer's, 6-Day High Country, and 10-Day Mammoth pages)",
+        "verifiedAt": "2026-09-14"
+      }
+    },
+    {
+      "id": "prog-150",
+      "slug": "lasting-adventures-10-day-mammoth-to-yosemite-aug-3-12",
+      "name": "Lasting Adventures",
+      "institution": "Lasting Adventures Inc.",
+      "programGroupId": "lasting-adventures-yosemite",
+      "description": "Strenuous 10-day point-to-point backpacking trip from Mammoth Lakes into Yosemite; August departure.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Traditional Camp"
+      ],
+      "trackDetail": "10-Day Mammoth to Yosemite \u2014 Aug 3-12",
+      "gradeDisplay": "Ages 14-18, experienced backpackers or past LA participants preferred",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 12,
+      "gradeSource": "age",
+      "stateRestriction": null,
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "10 days",
+      "lengthMinDays": 10,
+      "lengthMaxDays": 10,
+      "datesDisplay": "Aug 3-12, 2027",
+      "dateStart": "2027-08-03",
+      "dateEnd": "2027-08-12",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Yosemite National Park / Inyo National Forest, CA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2990",
+      "priceMin": 2990.0,
+      "priceMax": 2990.0,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/10-day-yosemite-high-country-adventure/",
+      "flags": [
+        {
+          "id": "lasting-adventures-yosemite-no-parent-contact",
+          "type": "safety",
+          "title": "No parent contact during the trip",
+          "body": "Guides send a nightly satellite check-in to the office, not to families. Parents should expect zero direct communication with their child for the length of the trip barring an actual emergency.",
+          "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ",
+          "severity": "warning"
+        },
+        {
+          "id": "lasting-adventures-yosemite-mammoth-experience-prereq",
+          "type": "selectivity",
+          "title": "\"First-come\" admission still expects prior backpacking experience",
+          "body": "The 10-Day Mammoth to Yosemite trip is First-Come with no formal application, but the program site states it's designed for experienced backpackers or past Lasting Adventures participants \u2014 a first-timer could book it without realizing they may be underprepared.",
+          "sourceCitation": "Lasting Adventures 10-Day Mammoth to Yosemite Teen Adventure program page",
+          "severity": "info"
+        }
+      ],
+      "dataVerifiedAt": "2026-09-14",
+      "dayToDay": {
+        "notes": "Guided wilderness backpacking, not a campus program \u2014 \"curfew\" and \"leaving campus\" don't apply the usual way. Staff-to-camper ratio is at least 2 staff per 10 youth, and campers are with their group essentially the entire trip, sleeping outdoors at group campsites. Very little unstructured time: days involve hiking, a structured daily morning meeting, evening group activities/campfire, and shared meals. No phone service in the backcountry and no planned parent contact during the trip \u2014 guides send a nightly satellite check-in to the office (not to parents), consistent with the program's explicit \"no news is good news\" policy. Parents get a recap email with photos 1\u20132 weeks after the trip ends.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ pages (identical language across 6-Day Young Adventurer's, 6-Day High Country, and 10-Day Mammoth pages)",
+        "verifiedAt": "2026-09-14"
+      }
     }
   ]
 }

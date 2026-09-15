@@ -11,6 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CSV_PATH = ROOT / "data/source/summer-programs.csv"
+CSV_2027_PATH = ROOT / "data/source/summer-programs-2027.csv"
 FLAGS_PATH = ROOT / "data/seed/flags.json"
 DAY_TO_DAY_PATH = ROOT / "data/seed/day-to-day.json"
 OUT_PATH = ROOT / "data/seed/programs.json"
@@ -865,81 +866,133 @@ def merge_flags(program: dict, csv_flags: list, rules: list) -> list:
     return list(by_id.values())
 
 
+def load_superseded_from_refresh(refresh_path: Path) -> tuple[set[str], set[str]]:
+    """Program groups/names replaced by rows in the rolling 2027 refresh CSV."""
+    groups: set[str] = set()
+    names: set[str] = set()
+    if not refresh_path.exists():
+        return groups, names
+    with refresh_path.open(newline="", encoding="utf-8-sig") as f:
+        for row in csv.DictReader(f):
+            if parse_review_status(row.get("Review Status")) == "needs_review":
+                continue
+            group_id = csv_cell(row, "Program Group ID", "Program Group Id")
+            name = row.get("Program Name", "").strip()
+            if group_id:
+                groups.add(group_id)
+            if name:
+                names.add(name)
+    return groups, names
+
+
+def is_superseded_legacy_row(row: dict, superseded_groups: set[str], superseded_names: set[str]) -> bool:
+    group_id = csv_cell(row, "Program Group ID", "Program Group Id")
+    name = row.get("Program Name", "").strip()
+    if group_id and group_id in superseded_groups:
+        return True
+    return bool(name and name in superseded_names)
+
+
+def build_program_from_row(
+    row: dict,
+    program_id: str,
+    verified: str,
+    rules: list,
+    day_to_day_rules: list,
+) -> dict | None:
+    cat = CATEGORIES.get(row["Primary Category"].strip())
+    if not cat:
+        print(f"Skip unknown category: {row['Primary Category']}")
+        return None
+    review_status = parse_review_status(row.get("Review Status"))
+    if review_status == "needs_review":
+        return None
+    track = csv_cell(row, "Track/Session", "Offering Label")
+    program_group_id = csv_cell(row, "Program Group ID", "Program Group Id")
+    institution = csv_cell(row, "Institution")
+    description = csv_cell(row, "Description")
+    season_year = parse_season_year(row.get("Season Year"))
+    slug = slugify(row["Program Name"], track)
+    admission_type, admission_display = normalize_admission(csv_cell(row, "Admission Type"))
+    price = parse_price_from_csv(row)
+    fmt = normalize_format(csv_cell(row, "Format"))
+    dur = parse_duration_from_csv(row)
+    dates = parse_dates_from_csv(row, season_year)
+    grades = parse_grades_from_csv(row)
+    credit = parse_credit_from_csv(row)
+    location_display = csv_cell(row, "Location Display", "Location")
+    csv_flags = []
+    if row.get("Flags", "").strip():
+        try:
+            csv_flags = json.loads(row["Flags"])
+        except json.JSONDecodeError:
+            pass
+    flags = merge_flags(
+        {
+            "name": row["Program Name"].strip(),
+            "slug": slug,
+            **({"programGroupId": program_group_id} if program_group_id else {}),
+            **({"trackDetail": track} if track else {}),
+        },
+        csv_flags,
+        rules,
+    )
+    program = {
+        "id": program_id,
+        "slug": slug,
+        "name": row["Program Name"].strip(),
+        **({"institution": institution} if institution else {}),
+        **({"programGroupId": program_group_id} if program_group_id else {}),
+        **({"description": description} if description else {}),
+        "category": cat,
+        "secondaryTags": [t.strip() for t in re.split(r"[,;]", row.get("Secondary Tags", "")) if t.strip()],
+        **({"trackDetail": track} if track else {}),
+        **grades,
+        "admissionType": admission_type,
+        "admissionDisplay": admission_display,
+        **fmt,
+        **dur,
+        **dates,
+        "seasonYear": season_year,
+        "reviewStatus": review_status,
+        "locationDisplay": location_display,
+        "isInternational": detect_international_from_csv(row, location_display),
+        **credit,
+        **price,
+        "websiteUrl": csv_cell(row, "URL"),
+        "flags": flags,
+        "dataVerifiedAt": verified,
+    }
+    day_to_day = merge_day_to_day(program, day_to_day_rules)
+    if day_to_day:
+        program["dayToDay"] = day_to_day
+    return program
+
+
 def main():
     verified = date.today().isoformat()
     rules = load_flag_rules()
     day_to_day_rules = load_day_to_day_rules()
     programs = []
+    superseded_groups, superseded_names = load_superseded_from_refresh(CSV_2027_PATH)
+    next_id = 1
 
     with CSV_PATH.open(newline="", encoding="utf-8-sig") as f:
-        for i, row in enumerate(csv.DictReader(f)):
-            cat = CATEGORIES.get(row["Primary Category"].strip())
-            if not cat:
-                print(f"Skip unknown category: {row['Primary Category']}")
+        for row in csv.DictReader(f):
+            if is_superseded_legacy_row(row, superseded_groups, superseded_names):
                 continue
-            review_status = parse_review_status(row.get("Review Status"))
-            if review_status == "needs_review":
-                continue
-            track = csv_cell(row, "Track/Session", "Offering Label")
-            program_group_id = csv_cell(row, "Program Group ID", "Program Group Id")
-            institution = csv_cell(row, "Institution")
-            description = csv_cell(row, "Description")
-            season_year = parse_season_year(row.get("Season Year"))
-            slug = slugify(row["Program Name"], track)
-            admission_type, admission_display = normalize_admission(csv_cell(row, "Admission Type"))
-            price = parse_price_from_csv(row)
-            fmt = normalize_format(csv_cell(row, "Format"))
-            dur = parse_duration_from_csv(row)
-            dates = parse_dates_from_csv(row, season_year)
-            grades = parse_grades_from_csv(row)
-            credit = parse_credit_from_csv(row)
-            location_display = csv_cell(row, "Location Display", "Location")
-            csv_flags = []
-            if row.get("Flags", "").strip():
-                try:
-                    csv_flags = json.loads(row["Flags"])
-                except json.JSONDecodeError:
-                    pass
-            flags = merge_flags(
-                {
-                    "name": row["Program Name"].strip(),
-                    "slug": slug,
-                    **({"programGroupId": program_group_id} if program_group_id else {}),
-                    **({"trackDetail": track} if track else {}),
-                },
-                csv_flags,
-                rules,
-            )
-            program = {
-                "id": f"prog-{i+1}",
-                "slug": slug,
-                "name": row["Program Name"].strip(),
-                **({"institution": institution} if institution else {}),
-                **({"programGroupId": program_group_id} if program_group_id else {}),
-                **({"description": description} if description else {}),
-                "category": cat,
-                "secondaryTags": [t.strip() for t in re.split(r"[,;]", row.get("Secondary Tags", "")) if t.strip()],
-                **({"trackDetail": track} if track else {}),
-                **grades,
-                "admissionType": admission_type,
-                "admissionDisplay": admission_display,
-                **fmt,
-                **dur,
-                **dates,
-                "seasonYear": season_year,
-                "reviewStatus": review_status,
-                "locationDisplay": location_display,
-                "isInternational": detect_international_from_csv(row, location_display),
-                **credit,
-                **price,
-                "websiteUrl": csv_cell(row, "URL"),
-                "flags": flags,
-                "dataVerifiedAt": verified,
-            }
-            day_to_day = merge_day_to_day(program, day_to_day_rules)
-            if day_to_day:
-                program["dayToDay"] = day_to_day
-            programs.append(program)
+            program = build_program_from_row(row, f"prog-{next_id}", verified, rules, day_to_day_rules)
+            if program:
+                programs.append(program)
+                next_id += 1
+
+    if CSV_2027_PATH.exists():
+        with CSV_2027_PATH.open(newline="", encoding="utf-8-sig") as f:
+            for row in csv.DictReader(f):
+                program = build_program_from_row(row, f"prog-{next_id}", verified, rules, day_to_day_rules)
+                if program:
+                    programs.append(program)
+                    next_id += 1
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps({"verifiedAt": verified, "count": len(programs), "programs": programs}, indent=2))

@@ -264,22 +264,63 @@ function rowToProgram(
   return { ...programBase, flags, ...(dayToDay ? { dayToDay } : {}) };
 }
 
+const REFRESH_CSV_PATH = "data/source/summer-programs-2027.csv";
+
+function loadSupersededFromRefresh(refreshPath: string): { groups: Set<string>; names: Set<string> } {
+  const groups = new Set<string>();
+  const names = new Set<string>();
+  if (!existsSync(refreshPath)) return { groups, names };
+
+  for (const row of parseCsv(readFileSync(refreshPath, "utf-8"))) {
+    if (parseReviewStatus(row["Review Status"]) === "needs_review") continue;
+    const groupId = csvCell(row, "Program Group ID", "Program Group Id");
+    const name = row["Program Name"]?.trim();
+    if (groupId) groups.add(groupId);
+    if (name) names.add(name);
+  }
+  return { groups, names };
+}
+
+function isSupersededLegacyRow(
+  row: ProgramCsvRow,
+  supersededGroups: Set<string>,
+  supersededNames: Set<string>,
+): boolean {
+  const groupId = csvCell(row, "Program Group ID", "Program Group Id");
+  const name = row["Program Name"]?.trim();
+  if (groupId && supersededGroups.has(groupId)) return true;
+  return Boolean(name && supersededNames.has(name));
+}
+
 function main() {
-  const inputArg = process.argv[2] ?? "data/source/summer-programs.csv";
-  const inputPath = resolve(process.cwd(), inputArg);
+  const inputArg = process.argv[2];
+  const legacyPath = resolve(process.cwd(), inputArg ?? "data/source/summer-programs.csv");
+  const refreshPath = resolve(process.cwd(), REFRESH_CSV_PATH);
   const outputPath = resolve(process.cwd(), "data/seed/programs.json");
   const verifiedAt = new Date().toISOString().slice(0, 10);
 
-  if (!existsSync(inputPath)) {
-    console.error(`Input CSV not found: ${inputPath}`);
+  if (!existsSync(legacyPath)) {
+    console.error(`Input CSV not found: ${legacyPath}`);
     process.exit(1);
   }
 
   const flagRules = loadFlagRules();
   const dayToDayRules = loadDayToDayRules();
   validateDayToDayRules(dayToDayRules);
-  const content = readFileSync(inputPath, "utf-8");
-  const rows = parseCsv(content);
+
+  const mergeRefresh = !inputArg;
+  const superseded = mergeRefresh
+    ? loadSupersededFromRefresh(refreshPath)
+    : { groups: new Set<string>(), names: new Set<string>() };
+
+  let rows = parseCsv(readFileSync(legacyPath, "utf-8"));
+  if (mergeRefresh) {
+    rows = rows.filter((row) => !isSupersededLegacyRow(row, superseded.groups, superseded.names));
+    if (existsSync(refreshPath)) {
+      rows = rows.concat(parseCsv(readFileSync(refreshPath, "utf-8")));
+    }
+  }
+
   const programs = rows
     .map((row, i) => rowToProgram(row, i, verifiedAt, flagRules, dayToDayRules))
     .filter((p): p is Program => p !== null);
