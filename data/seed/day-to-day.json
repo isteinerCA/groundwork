@@ -181,9 +181,35 @@
       "programGroupId": "apogee-maine-coast-college-essay"
     },
     "dayToDay": {
-      "notes": "Days center on collaborative writing sessions with a professional writing instructor, working individually and in small groups to develop each student's college essay. Time is split between structured writing workshops and exploring Maine's coastline. Unlike Apogee's other trips, this program is not built around a physical Challenge Level rating - the core activity is writing, not backcountry travel.",
+      "notes": "Days center on collaborative writing sessions with a professional writing instructor, working individually and in small groups to develop each student's college essay. Time is split between structured writing workshops and exploring Maine's coastline.",
       "sourceType": "official_policy",
       "sourceCitation": "Apogee Adventures College Prep program page (apogeeadventures.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "boldearth-alaska",
+        "boldearth-alps",
+        "boldearth-bold-west",
+        "boldearth-california",
+        "boldearth-colorado-bold",
+        "boldearth-colorado-discovery",
+        "boldearth-costa-rica-active",
+        "boldearth-dolomites",
+        "boldearth-hawaii",
+        "boldearth-iceland",
+        "boldearth-kilimanjaro",
+        "boldearth-pacific-northwest",
+        "boldearth-portugal-madeira",
+        "boldearth-thailand"
+      ]
+    },
+    "dayToDay": {
+      "notes": "Bold Earth trips are explicitly phone-free/tech-free experiences, framed as a core program value rather than a default policy. Domestic trips camp in comfortable 4-person tents at campgrounds with running water and bathroom facilities; students shower 2-3 times per trip (not daily), though frequent swimming is part of most itineraries. All trip leaders are Wilderness First Responder and CPR certified. Students are met at the airport by trip leaders (including specific meet-at-the-gate service for unaccompanied minors, per airline regulation) and call home as soon as they've collected their luggage and joined the group. Regular family updates continue throughout the trip via blog posts and photos, even though students themselves are not in direct phone contact.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Bold Earth trip pages, FAQ, and general program pages (boldearth.com)",
       "verifiedAt": "2026-09-15"
     }
   },
