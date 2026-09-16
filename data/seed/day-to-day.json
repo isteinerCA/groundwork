@@ -45,6 +45,15 @@
     }
   },
   {
+    "match": { "programGroupId": "interlochen-intermediate" },
+    "dayToDay": {
+      "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, grouped with other Intermediate-age campers. Alongside daily rehearsals/coursework in their chosen program, students have time for traditional camp activities - swimming, field games, and archery. Every program at this division is either 3 or 6 weeks long (no 1-week Intensives exist below grade 9), so families are choosing between a shorter single-session commitment or the full-summer 6-week track from the outset, rather than layering a short intensive on top. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is available for any program at this division, since none of Intermediate's offerings are the aid-ineligible 1-week Intensive type. Admission is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Interlochen grades 6-8 program pages and tuition/financial aid page (interlochen.org)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
     "match": { "programGroupId": "wpi-ignite" },
     "dayToDay": {
       "notes": "Commuter day program on the WPI campus: instruction runs 9am-4pm Monday-Friday. Students choose one or more weekly sessions and a STEM course track for each week; weeks are offered on a rolling basis across the summer (four distinct weeks in 2027). Lunch is not included in tuition for commuter programs.",
