@@ -8,6 +8,7 @@ import {
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
 import { parseMonthList, isNegatedMonthQuery, MONTH_NUMBERS, type MonthNumber } from "@/lib/constants/months";
+import { TARGET_SEASON_YEAR } from "@/lib/constants/season-review";
 import { parseIsoDate } from "@/lib/data/parse-dates-display";
 import { parseMultiStateLocations, resolveLocationQuery } from "@/lib/data/matches-location";
 import { resolveRegionQuery, US_REGION_IDS } from "@/lib/data/us-regions";
@@ -262,6 +263,7 @@ export function sanitizeFilterPatch(
   if (patch.dateWindowEnd !== undefined) {
     sanitized.dateWindowEnd = sanitizeIsoDateOrNull(patch.dateWindowEnd);
   }
+  normalizeDateWindowSeasonYear(sanitized);
 
   reconcileDateWindowAndMonths(sanitized);
 
@@ -351,6 +353,21 @@ function sanitizeIsoDateOrNull(value: string | null): string | null {
   const trimmed = value.trim();
   if (!trimmed) return null;
   return parseIsoDate(trimmed);
+}
+
+/** Summer date windows without an explicit year should use the target season, not the LLM's guess. */
+function normalizeDateWindowSeasonYear(patch: Partial<SearchFilters>): void {
+  if (!patch.dateWindowStart || !patch.dateWindowEnd) return;
+
+  const target = TARGET_SEASON_YEAR;
+  const fixYear = (iso: string): string => {
+    const [year, month, day] = iso.split("-");
+    if (Number(year) === target) return iso;
+    return `${target}-${month}-${day}`;
+  };
+
+  patch.dateWindowStart = fixYear(patch.dateWindowStart);
+  patch.dateWindowEnd = fixYear(patch.dateWindowEnd);
 }
 
 function reconcileDateWindowAndMonths(patch: Partial<SearchFilters>): void {

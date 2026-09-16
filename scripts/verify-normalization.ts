@@ -8,7 +8,10 @@ import { normalizeGrade, gradeMatchesFilter } from "../src/lib/data/normalize-gr
 import { programContainedInDateWindow } from "../src/lib/data/matches-date-window-filter";
 import { matchesDataQuery } from "../src/lib/data/matches-data-query";
 import { parseDateWindowQuery } from "../src/lib/search/parse-date-window-query";
-import { promoteDateWindowFromMessage } from "../src/lib/search/llm-parse-schema";
+import {
+  promoteDateWindowFromMessage,
+  sanitizeFilterPatch,
+} from "../src/lib/search/llm-parse-schema";
 import { resolveLocationQuery } from "../src/lib/data/matches-location";
 import {
   formatGradeEligibilityDisplay,
@@ -23,6 +26,7 @@ import { sortPrograms } from "../src/lib/data/filter-programs";
 import {
   buildSearchResultItems,
   countSearchResultItems,
+  formatGroupDateRange,
   formatGroupPriceRange,
   groupProgramsByTrack,
   trackGroupLabel,
@@ -333,9 +337,44 @@ if (!julyWindow || julyWindow.dateWindowStart !== "2027-07-15" || julyWindow.dat
   failed++;
 }
 
+const julyBetween = parseDateWindowQuery("find programs that run between july 15 and 31");
+if (
+  !julyBetween ||
+  julyBetween.dateWindowStart !== "2027-07-15" ||
+  julyBetween.dateWindowEnd !== "2027-07-31"
+) {
+  console.error('FAIL: should parse "between july 15 and 31" date window for 2027');
+  failed++;
+}
+
 const promoted = promoteDateWindowFromMessage("programs from July 15-31", { includeMonths: [7] });
 if (promoted.includeMonths?.length || promoted.dateWindowStart !== "2027-07-15") {
   console.error("FAIL: date window promotion should replace includeMonths");
+  failed++;
+}
+
+const promotedBetween = promoteDateWindowFromMessage(
+  "find programs that run between july 15 and 31",
+  { dateWindowStart: "2023-07-15", dateWindowEnd: "2023-07-31", includeMonths: [7] },
+);
+if (
+  promotedBetween.dateWindowStart !== "2027-07-15" ||
+  promotedBetween.dateWindowEnd !== "2027-07-31" ||
+  promotedBetween.includeMonths?.length
+) {
+  console.error("FAIL: between-query promotion should override wrong-year LLM window");
+  failed++;
+}
+
+const wrongYearSanitized = sanitizeFilterPatch({
+  dateWindowStart: "2023-07-15",
+  dateWindowEnd: "2023-07-31",
+});
+if (
+  wrongYearSanitized.dateWindowStart !== "2027-07-15" ||
+  wrongYearSanitized.dateWindowEnd !== "2027-07-31"
+) {
+  console.error("FAIL: sanitizeFilterPatch should normalize date window year to target season");
   failed++;
 }
 
@@ -358,6 +397,25 @@ if (!programContainedInDateWindow(weekInside, "2027-07-15", "2027-07-31")) {
 }
 if (programContainedInDateWindow(seasonLong, "2027-07-15", "2027-07-31")) {
   console.error("FAIL: season-long program should not match contained July 15-31 window");
+  failed++;
+}
+
+const laDepartures = Array.from({ length: 5 }, (_, index) =>
+  stubProgram({
+    name: "Lasting Adventures Yosemite",
+    locationDisplay: "Yosemite, CA",
+    dateStart: `2027-07-${String(6 + index * 7).padStart(2, "0")}`,
+    dateEnd: `2027-07-${String(11 + index * 7).padStart(2, "0")}`,
+    datesDisplay: "Jul 6–11, 2027",
+    lengthDisplay: "6 days",
+    lengthMinDays: 6,
+    seasonYear: 2027,
+    reviewStatus: "verified",
+  }),
+);
+const laGroupDates = formatGroupDateRange(laDepartures);
+if (!laGroupDates.includes("5 sessions") || !laGroupDates.includes("6 days options")) {
+  console.error(`FAIL: grouped card should summarize multi-session dates, got "${laGroupDates}"`);
   failed++;
 }
 
@@ -586,6 +644,14 @@ const loneProgram = stubProgram({
   programGroupId: "lone-camp",
 });
 
+const interlochenHarp = stubProgram({
+  id: "interlochen-harp",
+  name: "Interlochen Arts Camp - High School",
+  locationDisplay: "Interlochen, MI",
+  programGroupId: "interlochen-high-school",
+  trackDetail: "Harp - 6-Week",
+});
+
 const groupedItems = buildSearchResultItems([
   socapaActingDay,
   socapaActingRes,
@@ -603,7 +669,18 @@ if (!socapaGroup || socapaGroup.kind !== "group" || socapaGroup.programs.length 
 }
 const singleItem = groupedItems.find((item) => item.kind === "single");
 if (!singleItem || singleItem.kind !== "single" || singleItem.program.id !== "lone-camp") {
-  console.error("FAIL: lone matching row in a group should render as a single card");
+  console.error("FAIL: standalone row without trackDetail should render as a single card");
+  failed++;
+}
+
+const loneTrackMatch = buildSearchResultItems([interlochenHarp]);
+if (
+  loneTrackMatch.length !== 1 ||
+  loneTrackMatch[0]?.kind !== "group" ||
+  loneTrackMatch[0].kind !== "group" ||
+  loneTrackMatch[0].programs.length !== 1
+) {
+  console.error("FAIL: one matching track at a grouped campus should use grouped card");
   failed++;
 }
 if (countSearchResultItems([socapaActingDay, socapaActingRes, socapaFilm]) !== 1) {

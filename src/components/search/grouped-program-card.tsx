@@ -64,7 +64,7 @@ export function GroupedProgramCard({
   representative: Program;
   anchorId?: string;
 }) {
-  const [variantsOpen, setVariantsOpen] = useState(false);
+  const [variantsOpen, setVariantsOpen] = useState(programs.length === 1);
   const { getShortlistsForProgram, activeShortlist, isSavedInActive, hydrated } =
     useWorkspace();
   const admission = ADMISSION_TYPE_BY_ID[representative.admissionType];

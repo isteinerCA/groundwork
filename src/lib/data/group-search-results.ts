@@ -38,9 +38,17 @@ export function variantOfferingLabel(
   return trackDetail;
 }
 
+function shouldRenderAsGroupedCard(programs: Program[]): boolean {
+  const groupId = programs[0]?.programGroupId?.trim();
+  if (!groupId) return false;
+  if (programs.length >= 2) return true;
+  // One matching track at a multi-offering campus (e.g. Interlochen "Harp - 6-Week").
+  return programs.some((program) => program.trackDetail?.trim());
+}
+
 /**
  * Collapse sorted filter results into display items.
- * One row in a group → single card; 2+ rows with programGroupId → grouped card.
+ * Multi-offering campuses use a grouped card; standalone rows stay on a single card.
  */
 export function buildSearchResultItems(sortedPrograms: Program[]): SearchResultItem[] {
   const buckets = new Map<string, Program[]>();
@@ -57,11 +65,10 @@ export function buildSearchResultItems(sortedPrograms: Program[]): SearchResultI
 
   return order.map((key) => {
     const programs = buckets.get(key)!;
-    const groupId = programs[0]?.programGroupId?.trim();
-    if (programs.length >= 2 && groupId) {
+    if (shouldRenderAsGroupedCard(programs)) {
       return {
         kind: "group" as const,
-        groupId,
+        groupId: programs[0]!.programGroupId!.trim(),
         programs,
         representative: programs[0],
       };
@@ -126,6 +133,29 @@ function formatIsoSpan(start: string, end: string): string {
   return `${startPart}–${endPart}, ${year}`;
 }
 
+function inclusiveDaySpan(start: string, end: string): number {
+  const startMs = parseIsoDate(start).getTime();
+  const endMs = parseIsoDate(end).getTime();
+  return Math.round((endMs - startMs) / 86_400_000) + 1;
+}
+
+function formatDurationOptionsSummary(programs: Program[]): string {
+  const seen = new Set<string>();
+  const labels: string[] = [];
+  for (const program of [...programs].sort(
+    (a, b) => (a.lengthMinDays ?? 0) - (b.lengthMinDays ?? 0),
+  )) {
+    const label = program.lengthDisplay?.trim();
+    if (!label || seen.has(label)) continue;
+    seen.add(label);
+    labels.push(label);
+  }
+  if (labels.length === 0) return "";
+  if (labels.length === 1) return `${labels[0]} options`;
+  if (labels.length === 2) return `${labels[0]} and ${labels[1]} options`;
+  return `${labels.slice(0, -1).join(", ")}, and ${labels.at(-1)} options`;
+}
+
 export function formatGroupDateRange(programs: Program[]): string {
   if (programs.some((p) => isPendingDatesDisplay(p))) {
     return formatDatesDisplay(programs[0]);
@@ -145,6 +175,21 @@ export function formatGroupDateRange(programs: Program[]): string {
     (p) => p.dateStart === rangeStart && p.dateEnd === rangeEnd,
   );
   if (singleSpan) return formatDatesDisplay(dated[0]);
+
+  const envelopeDays = inclusiveDaySpan(rangeStart, rangeEnd);
+  const longestSessionDays = Math.max(...dated.map((p) => p.lengthMinDays ?? 0));
+  const durationSummary = formatDurationOptionsSummary(dated);
+  const showSessionSummary =
+    dated.length >= 2 &&
+    (envelopeDays > longestSessionDays * 1.5 || dated.length >= 3);
+
+  if (showSessionSummary) {
+    const sessionLabel = dated.length === 1 ? "session" : "sessions";
+    const span = formatIsoSpan(rangeStart, rangeEnd);
+    return durationSummary
+      ? `${dated.length} ${sessionLabel} between ${span} (${durationSummary})`
+      : `${dated.length} ${sessionLabel} between ${span}`;
+  }
 
   return formatIsoSpan(rangeStart, rangeEnd);
 }
