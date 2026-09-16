@@ -293,6 +293,19 @@
     ]
   },
   {
+    "match": { "programGroupId": "wpi-high-achieving-hs" },
+    "flags": [
+      {
+        "id": "wpi-hahs-no-housing",
+        "type": "policy",
+        "title": "No on-campus housing, even for the in-person option",
+        "body": "Unlike WPI's Frontiers program, this program does not provide on-campus housing under any format - a family choosing the in-person option needs to arrange their own housing or have the student commute from home.",
+        "sourceCitation": "WPI High-Achieving High School Students program page",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
     "match": { "programGroupId": "mit-wtp" },
     "flags": [
       {

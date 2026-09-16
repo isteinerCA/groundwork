@@ -36,6 +36,42 @@
     }
   },
   {
+    "match": { "programGroupId": "wpi-ignite" },
+    "dayToDay": {
+      "notes": "Commuter day program on the WPI campus: instruction runs 9am-4pm Monday-Friday. Students choose one or more weekly sessions and a STEM course track for each week; weeks are offered on a rolling basis across the summer (four distinct weeks in 2027). Lunch is not included in tuition for commuter programs.",
+      "sourceType": "official_policy",
+      "sourceCitation": "WPI Ignite program page (wpi.edu)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "wpi-launch" },
+    "dayToDay": {
+      "notes": "Commuter day program on the WPI campus: instruction runs 9am-4pm Monday-Friday for one week. Students choose a single STEM course track (robotics, aerospace, forensics, video game design, etc.) taught by WPI faculty through hands-on labs, demos, and discussions.",
+      "sourceType": "official_policy",
+      "sourceCitation": "WPI Launch program page (wpi.edu)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "wpi-high-achieving-hs" },
+    "dayToDay": {
+      "notes": "Five-week session taking a real WPI undergraduate course for transferable college credit at 50% off standard summer tuition. Students may enroll in person on the Worcester campus, live online (synchronous), or on demand (asynchronous); WPI recommends one course per session. On-campus housing is not available — in-person students commute or arrange their own housing. Course materials average about $200 per course and are purchased separately.",
+      "sourceType": "official_policy",
+      "sourceCitation": "WPI High-Achieving High School Students program page (wpi.edu)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "wpi-frontiers" },
+    "dayToDay": {
+      "notes": "Students live on the WPI campus for the session, exploring a STEM major paired with a humanities or business minor, alongside peers from around the world. The program emphasizes building independence and leadership skills within a structured but immersive 'preview of college life' format, including field trips and organized workshops.",
+      "sourceType": "official_policy",
+      "sourceCitation": "WPI Frontiers overview page (wpi.edu)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
     "match": { "programGroupId": "mit-wtp" },
     "dayToDay": {
       "notes": "Students live in an MIT dorm alongside the MIT undergraduate students who serve as teaching assistants. Daily required classes run Monday-Friday from approximately 9:30am-5pm, with occasional evening hours, plus some planned weekend academic field trips and social outings. The schedule includes classes, labs, homework, and unstructured social time with other WTP students. Students are expected to have no other significant time commitments during the four weeks. A laptop is expected for coursework; free loaners are available for students who need one.",

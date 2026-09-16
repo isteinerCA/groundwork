@@ -1,6 +1,6 @@
 {
-  "verifiedAt": "2026-09-15",
-  "count": 281,
+  "verifiedAt": "2026-09-16",
+  "count": 285,
   "programs": [
     {
       "id": "prog-1",
@@ -43,7 +43,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://cosmos.ucdavis.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "cosmos-ca-residency",
@@ -106,7 +106,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.cosmos.uci.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "cosmos-ca-residency",
@@ -169,7 +169,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://cosmos.ucla.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "cosmos-ca-residency",
@@ -232,7 +232,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://cosmos.ucmerced.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "cosmos-ca-residency",
@@ -295,7 +295,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://cosmos.ucsc.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "cosmos-ca-residency",
@@ -358,7 +358,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://jacobsschool.ucsd.edu/cosmos/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "cosmos-ca-residency",
@@ -420,7 +420,7 @@
       "fullyFunded": true,
       "financialAidAvailable": true,
       "websiteUrl": "https://ai4all.spcs.stanford.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
@@ -463,7 +463,7 @@
       "fullyFunded": true,
       "financialAidAvailable": true,
       "websiteUrl": "https://ai4all.spcs.stanford.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
@@ -503,7 +503,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.inspiritai.com/liveonline",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
@@ -546,7 +546,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://esap.seas.upenn.edu/about/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
@@ -587,7 +587,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summerinstitutes.spcs.stanford.edu/courses/2026/artificial-intelligence",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
@@ -629,7 +629,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://engineering.jhu.edu/education/engineering-summer-ai-institute/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
@@ -672,7 +672,7 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
@@ -715,7 +715,7 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
@@ -757,7 +757,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
@@ -801,7 +801,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
@@ -843,7 +843,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
@@ -885,7 +885,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
@@ -927,7 +927,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cmu.edu/pre-college/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
@@ -969,7 +969,7 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cee.org/programs/research-science-institute",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "rsi-selectivity",
@@ -1039,7 +1039,7 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://mites.mit.edu/discover-mites/mites-summer/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
@@ -1079,7 +1079,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summerscience.org/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
@@ -1120,7 +1120,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://lawrencehallofscience.org/teen-internship-programs/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
@@ -1162,7 +1162,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.education.purdue.edu/geri/youth-programs/summer-residential/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
@@ -1202,51 +1202,11 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://outreach.engineering.columbia.edu/shape/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
       "id": "prog-26",
-      "slug": "wpi-frontiers",
-      "name": "WPI Frontiers",
-      "category": "stem-engineering",
-      "secondaryTags": [],
-      "gradeDisplay": "Rising 10-12",
-      "gradeCompletedMin": 9,
-      "gradeCompletedMax": 11,
-      "gradeSource": "mixed",
-      "admissionType": "application",
-      "admissionDisplay": "Selective, rolling",
-      "formatDisplay": "Residential",
-      "formatTags": [
-        "residential"
-      ],
-      "durationBucket": "two_to_four_weeks",
-      "lengthDisplay": "2 weeks/session",
-      "lengthMinDays": 14,
-      "lengthMaxDays": 14,
-      "datesDisplay": "Frontiers I: Jul 5-17; Frontiers II: Jul 19-31",
-      "dateStart": "2026-07-05",
-      "dateEnd": "2026-07-31",
-      "datesParseQuality": "exact",
-      "seasonYear": 2026,
-      "reviewStatus": "provisional",
-      "locationDisplay": "Worcester, MA",
-      "isInternational": false,
-      "creditDisplay": "No",
-      "hasCollegeCredit": false,
-      "priceDisplay": "$4495 per session",
-      "priceMin": 4495,
-      "priceMax": 4495,
-      "priceUnknown": false,
-      "fullyFunded": false,
-      "financialAidAvailable": false,
-      "websiteUrl": "https://www.wpi.edu/academics/pre-collegiate/summer-programs/frontiers",
-      "dataVerifiedAt": "2026-09-15",
-      "flags": []
-    },
-    {
-      "id": "prog-27",
       "slug": "jhu-engineering-innovation-ei",
       "name": "JHU Engineering Innovation (EI)",
       "category": "stem-engineering",
@@ -1286,11 +1246,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://ei.jhu.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-28",
+      "id": "prog-27",
       "slug": "cooper-union-summer-stem-3-week-course",
       "name": "Cooper Union Summer STEM",
       "category": "stem-engineering",
@@ -1327,11 +1287,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://cooper.edu/engineering/stem/summer",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-29",
+      "id": "prog-28",
       "slug": "cooper-union-summer-stem-6-week-course",
       "name": "Cooper Union Summer STEM",
       "category": "stem-engineering",
@@ -1368,11 +1328,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://cooper.edu/engineering/stem/summer",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-30",
+      "id": "prog-29",
       "slug": "uc-davis-young-scholars-program",
       "name": "UC Davis Young Scholars Program",
       "category": "stem-engineering",
@@ -1410,11 +1370,11 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://education.ucdavis.edu/young-scholars-program",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-31",
+      "id": "prog-30",
       "slug": "brown-pre-college-summer-brown-general-courses",
       "name": "Brown Pre-College (Summer@Brown)",
       "category": "stem-engineering",
@@ -1455,11 +1415,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.brown.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-32",
+      "id": "prog-31",
       "slug": "duke-pre-college",
       "name": "Duke Pre-College",
       "category": "college-credit-pre-college",
@@ -1496,11 +1456,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://learnmore.duke.edu/precollege/all-programs",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-33",
+      "id": "prog-32",
       "slug": "duke-marine-lab-pre-college",
       "name": "Duke Marine Lab Pre-College",
       "category": "marine-science",
@@ -1538,11 +1498,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://learnmore.duke.edu/precollege/duke-university-marine-lab",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-34",
+      "id": "prog-33",
       "slug": "wake-forest-summer-immersion-program",
       "name": "Wake Forest Summer Immersion Program",
       "category": "college-credit-pre-college",
@@ -1578,7 +1538,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://immersion.summer.wfu.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "wake-forest-deposit",
@@ -1592,7 +1552,7 @@
       ]
     },
     {
-      "id": "prog-35",
+      "id": "prog-34",
       "slug": "georgetown-summer-college-summer-college",
       "name": "Georgetown Summer College",
       "category": "college-credit-pre-college",
@@ -1632,11 +1592,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.georgetown.edu/pre-college-programs/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-36",
+      "id": "prog-35",
       "slug": "georgetown-global-summer-london-madrid-beijing-tokyo-rotates",
       "name": "Georgetown Global Summer",
       "category": "cultural-exchange",
@@ -1675,11 +1635,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.georgetown.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-37",
+      "id": "prog-36",
       "slug": "tufts-pre-college-tufts-college-experience",
       "name": "Tufts Pre-College",
       "category": "college-credit-pre-college",
@@ -1716,11 +1676,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://universitycollege.tufts.edu/pre-college/browse/tufts-college-experience",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-38",
+      "id": "prog-37",
       "slug": "tufts-pre-college-intensives-hallmark-courses",
       "name": "Tufts Pre-College",
       "category": "college-credit-pre-college",
@@ -1757,11 +1717,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://universitycollege.tufts.edu/pre-college/academics/summer-hallmark-courses",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-39",
+      "id": "prog-38",
       "slug": "boston-university-summer-high-school-honors-program",
       "name": "Boston University Summer",
       "category": "college-credit-pre-college",
@@ -1798,11 +1758,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bu.edu/summer/high-school-programs/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-40",
+      "id": "prog-39",
       "slug": "boston-university-summer-academic-immersion",
       "name": "Boston University Summer",
       "category": "college-credit-pre-college",
@@ -1839,11 +1799,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bu.edu/summer/high-school-programs/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-41",
+      "id": "prog-40",
       "slug": "boston-university-summer-summer-challenge",
       "name": "Boston University Summer",
       "category": "college-credit-pre-college",
@@ -1880,11 +1840,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bu.edu/summer/high-school-programs/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-42",
+      "id": "prog-41",
       "slug": "marist-pre-college-3-credit-session",
       "name": "Marist Pre-College",
       "category": "college-credit-pre-college",
@@ -1921,11 +1881,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.marist.edu/admission/summer-pre-college",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-43",
+      "id": "prog-42",
       "slug": "marist-pre-college-6-credit-both-sessions",
       "name": "Marist Pre-College",
       "category": "college-credit-pre-college",
@@ -1962,11 +1922,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.marist.edu/admission/summer-pre-college",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-44",
+      "id": "prog-43",
       "slug": "ucsb-summer-research-academies",
       "name": "UCSB Summer Research Academies",
       "category": "college-credit-pre-college",
@@ -2005,11 +1965,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.summer.ucsb.edu/programs/pre-college",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-45",
+      "id": "prog-44",
       "slug": "umass-amherst-juniper-institute-for-young-writers",
       "name": "UMass Amherst",
       "category": "writing-humanities",
@@ -2047,11 +2007,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.umass.edu/juniper-young-writers/programs/summer-umass",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-46",
+      "id": "prog-45",
       "slug": "umass-amherst-pre-college-general-academic-intensives",
       "name": "UMass Amherst Pre-College",
       "category": "college-credit-pre-college",
@@ -2088,11 +2048,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.umass.edu/uww/pre-college/programs",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-47",
+      "id": "prog-46",
       "slug": "case-western-reserve-pre-college-online-courses",
       "name": "Case Western Reserve Pre-College",
       "category": "college-credit-pre-college",
@@ -2129,11 +2089,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://case.precollegeprograms.org/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-48",
+      "id": "prog-47",
       "slug": "harvard-pre-college-program",
       "name": "Harvard Pre-College Program",
       "category": "college-credit-pre-college",
@@ -2171,11 +2131,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.harvard.edu/high-school-programs/pre-college-program/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-49",
+      "id": "prog-48",
       "slug": "harvard-secondary-school-program-ssp-4-week-or-7-week",
       "name": "Harvard Secondary School Program (SSP)",
       "category": "college-credit-pre-college",
@@ -2215,7 +2175,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.harvard.edu/high-school-programs/secondary-school-program/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "harvard-ssp-sevp",
@@ -2238,7 +2198,7 @@
       ]
     },
     {
-      "id": "prog-50",
+      "id": "prog-49",
       "slug": "upenn-sas-pre-college-program",
       "name": "UPenn SAS Pre-College Program",
       "category": "college-credit-pre-college",
@@ -2274,11 +2234,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://hs.sas.upenn.edu/summer-programs/pre-college-program",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-51",
+      "id": "prog-50",
       "slug": "uchicago-summer-session",
       "name": "UChicago Summer Session",
       "category": "college-credit-pre-college",
@@ -2315,11 +2275,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summer.uchicago.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-52",
+      "id": "prog-51",
       "slug": "nyu-precollege",
       "name": "NYU Precollege",
       "category": "college-credit-pre-college",
@@ -2356,11 +2316,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.nyu.edu/admissions/high-school-and-middle-school-programs/high-school-programs/nyu-precollege/explore-precollege.html",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-53",
+      "id": "prog-52",
       "slug": "uc-berkeley-pre-college",
       "name": "UC Berkeley Pre-College",
       "category": "college-credit-pre-college",
@@ -2397,11 +2357,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.berkeley.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-54",
+      "id": "prog-53",
       "slug": "usc-summer-programs",
       "name": "USC Summer Programs",
       "category": "college-credit-pre-college",
@@ -2437,11 +2397,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.usc.edu/summer-programs/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-55",
+      "id": "prog-54",
       "slug": "university-of-rochester-pre-college",
       "name": "University of Rochester Pre-College",
       "category": "college-credit-pre-college",
@@ -2480,11 +2440,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://admissions.rochester.edu/pre-college/programs/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-56",
+      "id": "prog-55",
       "slug": "barnard-pre-university-program",
       "name": "Barnard Pre-University Program",
       "category": "college-credit-pre-college",
@@ -2520,11 +2480,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.barnard.edu/prebaccalaureate",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-57",
+      "id": "prog-56",
       "slug": "stony-brook-pre-college-summer-residential",
       "name": "Stony Brook Pre-College Summer",
       "category": "college-credit-pre-college",
@@ -2561,11 +2521,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/index.php",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-58",
+      "id": "prog-57",
       "slug": "stony-brook-pre-college-summer-commuter-extended-day",
       "name": "Stony Brook Pre-College Summer",
       "category": "college-credit-pre-college",
@@ -2602,11 +2562,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/commuter-experience.php",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-59",
+      "id": "prog-58",
       "slug": "stony-brook-pre-college-summer-commuter-core-day",
       "name": "Stony Brook Pre-College Summer",
       "category": "college-credit-pre-college",
@@ -2643,11 +2603,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/commuter-experience.php",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-60",
+      "id": "prog-59",
       "slug": "stony-brook-pre-college-summer-biotechnology-cancer-biology-courses",
       "name": "Stony Brook Pre-College Summer",
       "category": "stem-engineering",
@@ -2687,11 +2647,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/biotechnology.php",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-61",
+      "id": "prog-60",
       "slug": "stony-brook-pre-college-summer-robotics-engineering-robotics-with-ai",
       "name": "Stony Brook Pre-College Summer",
       "category": "stem-engineering",
@@ -2731,11 +2691,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/robotics-engineering.php",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-62",
+      "id": "prog-61",
       "slug": "stony-brook-pre-college-summer-health-professions-dental-sciences-how-medicines-are-really-made",
       "name": "Stony Brook Pre-College Summer",
       "category": "biomedical",
@@ -2773,11 +2733,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/health-professions.php",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-63",
+      "id": "prog-62",
       "slug": "stony-brook-pre-college-summer-creative-problem-solving-for-math-competitions-exploring-mathematics",
       "name": "Stony Brook Pre-College Summer",
       "category": "mathematics",
@@ -2815,11 +2775,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/creative-problem-solving-for-competitions.php",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-64",
+      "id": "prog-63",
       "slug": "stony-brook-pre-college-summer-personal-branding-lab-science-communication-pre-law",
       "name": "Stony Brook Pre-College Summer",
       "category": "writing-humanities",
@@ -2857,11 +2817,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/pre-law.php",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-65",
+      "id": "prog-64",
       "slug": "stony-brook-pre-college-summer-environmental-science-in-the-worm-lab-protecting-our-planet-sustainab",
       "name": "Stony Brook Pre-College Summer",
       "category": "marine-science",
@@ -2899,11 +2859,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/precollege-summer/courses/environmental-science-in-the-worm-lab.php",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-66",
+      "id": "prog-65",
       "slug": "salish-sea-sciences-field-ecology",
       "name": "Salish Sea Sciences",
       "category": "marine-science",
@@ -2942,11 +2902,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://salishseasciences.org/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-67",
+      "id": "prog-66",
       "slug": "stony-brook-southampton-somas-oceanography-shark-biology",
       "name": "Stony Brook Southampton SoMAS",
       "category": "marine-science",
@@ -2985,11 +2945,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.stonybrook.edu/commcms/southampton/somas_info.php",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-68",
+      "id": "prog-67",
       "slug": "uc-davis-coastal-marine-science",
       "name": "UC Davis Coastal Marine Science",
       "category": "marine-science",
@@ -3025,11 +2985,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://cpe.ucdavis.edu/course/uc-davis-pre-college-program-coastal-marine-science",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-69",
+      "id": "prog-68",
       "slug": "sea-education-association-sea",
       "name": "Sea Education Association (SEA)",
       "category": "marine-science",
@@ -3067,11 +3027,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://sea.edu/programs/finder/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-70",
+      "id": "prog-69",
       "slug": "sea-turtle-camp",
       "name": "Sea Turtle Camp",
       "category": "marine-science",
@@ -3107,11 +3067,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://seaturtlecamp.com/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-71",
+      "id": "prog-70",
       "slug": "the-island-school",
       "name": "The Island School",
       "category": "marine-science",
@@ -3149,11 +3109,11 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://islandschool.org/high-school-semester-summer-term/summer-program/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-72",
+      "id": "prog-71",
       "slug": "sunset-bay-beach-camp",
       "name": "Sunset Bay Beach Camp",
       "category": "marine-science",
@@ -3191,11 +3151,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sunsetbaywharf.com/home",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-73",
+      "id": "prog-72",
       "slug": "field-studies-council-marine-camp",
       "name": "Field Studies Council Marine Camp",
       "category": "marine-science",
@@ -3233,11 +3193,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.field-studies-council.org/courses-and-experiences/static-courses/marine-science-camp/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-74",
+      "id": "prog-73",
       "slug": "earthwatch-teen-expeditions",
       "name": "Earthwatch Teen Expeditions",
       "category": "marine-science",
@@ -3275,11 +3235,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://earthwatch.org/teen-expeditions",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-75",
+      "id": "prog-74",
       "slug": "copper-river-stewardship-program",
       "name": "Copper River Stewardship Program",
       "category": "marine-science",
@@ -3317,11 +3277,11 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://copperriver.org/programs/watershed-education/copper-river-stewardship-program/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-76",
+      "id": "prog-75",
       "slug": "actionquest-catamaran",
       "name": "ActionQuest Catamaran",
       "category": "marine-science",
@@ -3359,11 +3319,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.actionquest.com",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-77",
+      "id": "prog-76",
       "slug": "dauphin-island-sea-lab-residential-marine-science-class",
       "name": "Dauphin Island Sea Lab",
       "category": "marine-science",
@@ -3400,11 +3360,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.disl.edu/dhp/summer-camps/marine-science-class/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-78",
+      "id": "prog-77",
       "slug": "dauphin-island-sea-lab-coastal-fisheries-camp",
       "name": "Dauphin Island Sea Lab",
       "category": "marine-science",
@@ -3441,11 +3401,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.disl.edu/dhp/summer-camps/coastal-fisheries/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-79",
+      "id": "prog-78",
       "slug": "seatrek-bvi",
       "name": "SeaTrek BVI",
       "category": "marine-science",
@@ -3483,11 +3443,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.seatrekbvi.com/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-80",
+      "id": "prog-79",
       "slug": "whale-camp-teen-program",
       "name": "Whale Camp",
       "category": "marine-science",
@@ -3524,11 +3484,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://whalecamp.com/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-81",
+      "id": "prog-80",
       "slug": "acadia-institute-of-oceanography-advanced-marine-science-w-college-credit",
       "name": "Acadia Institute of Oceanography",
       "category": "marine-science",
@@ -3565,11 +3525,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://acadiainstitute.com/advanced-marine-science-camp-program/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-82",
+      "id": "prog-81",
       "slug": "university-of-miami-marine-mammal-biology-conservation",
       "name": "University of Miami",
       "category": "marine-science",
@@ -3608,11 +3568,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.dcie.miami.edu/summer-programs/academies/credit/index.html",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-83",
+      "id": "prog-82",
       "slug": "spinnaker-sailing-keelboat",
       "name": "Spinnaker Sailing Keelboat",
       "category": "outdoor-wilderness",
@@ -3650,11 +3610,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.spinnakersailing.com/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-84",
+      "id": "prog-83",
       "slug": "rosetta-institute-biomedical-camps-oncology-molecular-medicine-bioinformatics",
       "name": "Rosetta Institute Biomedical Camps",
       "category": "biomedical",
@@ -3694,11 +3654,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.rosettainstitute.org/biomedical-summer-camps/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-85",
+      "id": "prog-84",
       "slug": "penn-medicine-summer-program",
       "name": "Penn Medicine Summer Program",
       "category": "biomedical",
@@ -3734,11 +3694,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.boldsummers.com/summer-programs/penn-medicine-summer-program/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-86",
+      "id": "prog-85",
       "slug": "uga-mini-medical-school-academy",
       "name": "UGA Mini-Medical School Academy",
       "category": "biomedical",
@@ -3774,11 +3734,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.georgiacenter.uga.edu/youth/summer-academy/mini-medical-school-b",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-87",
+      "id": "prog-86",
       "slug": "morehouse-school-of-medicine-camp",
       "name": "Morehouse School of Medicine Camp",
       "category": "biomedical",
@@ -3816,11 +3776,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.msm.edu/Prospective_Students/admissions/PipelinePrograms/BenCarson.php",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-88",
+      "id": "prog-87",
       "slug": "boston-leadership-institute-bli",
       "name": "Boston Leadership Institute (BLI)",
       "category": "biomedical",
@@ -3858,11 +3818,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.bostonleadershipinstitute.com/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-89",
+      "id": "prog-88",
       "slug": "uw-insight-high-school-program",
       "name": "UW INSIGHT High School Program",
       "category": "biomedical",
@@ -3898,11 +3858,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://hiprc.org/training/high-school/insight-hs/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-90",
+      "id": "prog-89",
       "slug": "kentucky-forest-entomology-leadership-program-kfelp-entomology-component",
       "name": "Kentucky Forest & Entomology Leadership Program (KFELP)",
       "category": "biomedical",
@@ -3941,11 +3901,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://entomology.ca.uky.edu/content/entomology-leadership-program",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-91",
+      "id": "prog-90",
       "slug": "awesomemath-summer-program",
       "name": "AwesomeMath Summer Program",
       "category": "mathematics",
@@ -3981,11 +3941,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.awesomemath.org/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-92",
+      "id": "prog-91",
       "slug": "mathpath",
       "name": "MathPath",
       "category": "mathematics",
@@ -4021,11 +3981,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "http://www.mathpath.org/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-93",
+      "id": "prog-92",
       "slug": "promys-boston-university",
       "name": "PROMYS Boston University",
       "category": "mathematics",
@@ -4061,11 +4021,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://promys.org/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-94",
+      "id": "prog-93",
       "slug": "canada-usa-mathcamp",
       "name": "Canada/USA Mathcamp",
       "category": "mathematics",
@@ -4101,11 +4061,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.mathcamp.org/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-95",
+      "id": "prog-94",
       "slug": "stanford-math-camp-sumac",
       "name": "Stanford Math Camp (SUMaC)",
       "category": "mathematics",
@@ -4142,11 +4102,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://sumac.spcs.stanford.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-96",
+      "id": "prog-95",
       "slug": "imacs-summer-sessions",
       "name": "IMACS Summer Sessions",
       "category": "mathematics",
@@ -4182,11 +4142,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.imacs.org/program/summer/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-97",
+      "id": "prog-96",
       "slug": "cybermath-academy-summer-math-ai-camp",
       "name": "CyberMath Academy Summer Math & AI Camp",
       "category": "mathematics",
@@ -4225,11 +4185,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.cybermath.org/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-98",
+      "id": "prog-97",
       "slug": "alphastar-academy-summer-camps-math-cs-ai-physics",
       "name": "AlphaStar Academy Summer Camps",
       "category": "mathematics",
@@ -4269,11 +4229,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://alphastar.academy/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-99",
+      "id": "prog-98",
       "slug": "iowa-young-writers-studio",
       "name": "Iowa Young Writers' Studio",
       "category": "writing-humanities",
@@ -4309,11 +4269,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://iyws.program.uiowa.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-100",
+      "id": "prog-99",
       "slug": "stanford-summer-humanities-institute",
       "name": "Stanford Summer Humanities Institute",
       "category": "writing-humanities",
@@ -4349,11 +4309,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summerhumanities.stanford.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-101",
+      "id": "prog-100",
       "slug": "kenyon-review-young-writers",
       "name": "Kenyon Review Young Writers",
       "category": "writing-humanities",
@@ -4389,11 +4349,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://kenyonreview.org/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-102",
+      "id": "prog-101",
       "slug": "princeton-summer-journalism-program",
       "name": "Princeton Summer Journalism Program",
       "category": "writing-humanities",
@@ -4432,11 +4392,11 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://psjp.princeton.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-103",
+      "id": "prog-102",
       "slug": "telluride-association-summer-seminar-tass",
       "name": "Telluride Association Summer Seminar (TASS)",
       "category": "writing-humanities",
@@ -4474,11 +4434,11 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.tellurideassociation.org/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-104",
+      "id": "prog-103",
       "slug": "summer-linguistic-institute-for-youth-scholars-sliys",
       "name": "Summer Linguistic Institute for Youth Scholars (SLIYS)",
       "category": "writing-humanities",
@@ -4516,11 +4476,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://linguistics.osu.edu/undergrad/sliys",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-105",
+      "id": "prog-104",
       "slug": "camp-laurel-maine",
       "name": "Camp Laurel Maine",
       "category": "traditional-camp",
@@ -4556,11 +4516,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.camplaurel.com/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-106",
+      "id": "prog-105",
       "slug": "interlochen-arts-camp",
       "name": "Interlochen Arts Camp",
       "category": "traditional-camp",
@@ -4598,7 +4558,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.interlochen.org/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "interlochen-safety-history",
@@ -4612,7 +4572,7 @@
       ]
     },
     {
-      "id": "prog-107",
+      "id": "prog-106",
       "slug": "explo",
       "name": "EXPLO",
       "category": "traditional-camp",
@@ -4650,11 +4610,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://explo.org/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-108",
+      "id": "prog-107",
       "slug": "camp-becket-chimney-corners",
       "name": "Camp Becket & Chimney Corners",
       "category": "traditional-camp",
@@ -4690,11 +4650,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://bccymca.org/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-109",
+      "id": "prog-108",
       "slug": "adirondack-camp",
       "name": "Adirondack Camp",
       "category": "traditional-camp",
@@ -4732,11 +4692,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.adirondackcamp.com/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-110",
+      "id": "prog-109",
       "slug": "nols-teen-expeditions",
       "name": "NOLS Teen Expeditions",
       "category": "outdoor-wilderness",
@@ -4774,11 +4734,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.nols.edu/teen-expeditions/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-111",
+      "id": "prog-110",
       "slug": "outward-bound-high-school",
       "name": "Outward Bound High School",
       "category": "outdoor-wilderness",
@@ -4816,7 +4776,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.outwardbound.org/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "outward-bound-solo",
@@ -4830,7 +4790,7 @@
       ]
     },
     {
-      "id": "prog-112",
+      "id": "prog-111",
       "slug": "overland-summers",
       "name": "Overland Summers",
       "category": "outdoor-wilderness",
@@ -4868,7 +4828,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://overlandsummers.com/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "overland-staff-pay",
@@ -4882,7 +4842,7 @@
       ]
     },
     {
-      "id": "prog-113",
+      "id": "prog-112",
       "slug": "apogee-adventures",
       "name": "Apogee Adventures",
       "category": "outdoor-wilderness",
@@ -4921,11 +4881,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.apogeeadventures.com/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-114",
+      "id": "prog-113",
       "slug": "bold-earth-adventure-camp",
       "name": "Bold Earth Adventure Camp",
       "category": "outdoor-wilderness",
@@ -4963,11 +4923,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://boldearth.com/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-115",
+      "id": "prog-114",
       "slug": "moondance-adventures",
       "name": "Moondance Adventures",
       "category": "outdoor-wilderness",
@@ -5005,11 +4965,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://moondanceadventures.com/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-116",
+      "id": "prog-115",
       "slug": "wilderness-adventures",
       "name": "Wilderness Adventures",
       "category": "outdoor-wilderness",
@@ -5045,11 +5005,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.wildernessadventures.com/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-117",
+      "id": "prog-116",
       "slug": "yale-young-global-scholars-yygs",
       "name": "Yale Young Global Scholars (YYGS)",
       "category": "cultural-exchange",
@@ -5087,11 +5047,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://globalscholars.yale.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-118",
+      "id": "prog-117",
       "slug": "amigos-de-las-americas",
       "name": "AMIGOS de las Americas",
       "category": "cultural-exchange",
@@ -5129,11 +5089,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://amigosinternational.org/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-119",
+      "id": "prog-118",
       "slug": "ciee-high-school-abroad",
       "name": "CIEE High School Abroad",
       "category": "cultural-exchange",
@@ -5169,11 +5129,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.ciee.org/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-120",
+      "id": "prog-119",
       "slug": "afs-intercultural-programs",
       "name": "AFS Intercultural Programs",
       "category": "cultural-exchange",
@@ -5209,11 +5169,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://afs.org/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-121",
+      "id": "prog-120",
       "slug": "yes-abroad",
       "name": "YES Abroad",
       "category": "cultural-exchange",
@@ -5251,11 +5211,11 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://yes-abroad.org/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-122",
+      "id": "prog-121",
       "slug": "rotary-youth-exchange",
       "name": "Rotary Youth Exchange",
       "category": "cultural-exchange",
@@ -5291,11 +5251,11 @@
       "fullyFunded": true,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.rotary.org/en/our-programs/youth-exchanges",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-123",
+      "id": "prog-122",
       "slug": "putney-student-travel",
       "name": "Putney Student Travel",
       "category": "cultural-exchange",
@@ -5333,11 +5293,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://precollege.goputney.com/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-124",
+      "id": "prog-123",
       "slug": "arcc-programs",
       "name": "ARCC Programs",
       "category": "cultural-exchange",
@@ -5375,11 +5335,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://arccprograms.com/summer-overview/summer-programs-high-school/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-125",
+      "id": "prog-124",
       "slug": "that-s-mandarin-chinese-summer-camp-day-half-day-full-homestay",
       "name": "That's Mandarin Chinese Summer Camp",
       "category": "cultural-exchange",
@@ -5417,11 +5377,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.thatsmandarin.com/chinese-summer-camp/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-126",
+      "id": "prog-125",
       "slug": "goeast-mandarin-summer-camp-academic-chinese-booster-chinese-adventure",
       "name": "GoEast Mandarin Summer Camp",
       "category": "cultural-exchange",
@@ -5458,11 +5418,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://goeastmandarin.com/kids-chinese-camp/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-127",
+      "id": "prog-126",
       "slug": "keats-school-mandarin-immersion-camp",
       "name": "Keats School Mandarin Immersion Camp",
       "category": "cultural-exchange",
@@ -5498,11 +5458,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://keatschinese.com/chinese-language-courses/summer-camp-in-china/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-128",
+      "id": "prog-127",
       "slug": "china-internship-placements-mandarin-camp",
       "name": "China Internship Placements Mandarin Camp",
       "category": "cultural-exchange",
@@ -5538,11 +5498,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.chinainternshipplacements.com/study-abroad-china/chinese-summer-camp-teens/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-129",
+      "id": "prog-128",
       "slug": "ltl-school",
       "name": "LTL School",
       "category": "cultural-exchange",
@@ -5578,11 +5538,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://ltl-school.com/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-130",
+      "id": "prog-129",
       "slug": "vanderbilt-summer-academy-vsa",
       "name": "Vanderbilt Summer Academy (VSA)",
       "category": "leadership-gifted",
@@ -5618,11 +5578,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://pty.vanderbilt.edu/for-students/vsa/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-131",
+      "id": "prog-130",
       "slug": "northwestern-ctd-summer-camp",
       "name": "Northwestern CTD Summer Camp",
       "category": "leadership-gifted",
@@ -5658,11 +5618,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.ctd.northwestern.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-132",
+      "id": "prog-131",
       "slug": "wharton-global-youth-program-on-campus",
       "name": "Wharton Global Youth Program",
       "category": "leadership-gifted",
@@ -5699,11 +5659,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://globalyouth.wharton.upenn.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-133",
+      "id": "prog-132",
       "slug": "wharton-global-youth-program-online",
       "name": "Wharton Global Youth Program",
       "category": "leadership-gifted",
@@ -5740,11 +5700,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://globalyouth.wharton.upenn.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-134",
+      "id": "prog-133",
       "slug": "johns-hopkins-center-for-talented-youth-cty-residential-day",
       "name": "Johns Hopkins Center for Talented Youth (CTY)",
       "category": "leadership-gifted",
@@ -5783,11 +5743,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://cty.jhu.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-135",
+      "id": "prog-134",
       "slug": "iacocca-global-entrepreneurship-intensive-igei",
       "name": "Iacocca Global Entrepreneurship Intensive (IGEI)",
       "category": "leadership-gifted",
@@ -5825,11 +5785,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://global.lehigh.edu/iacocca-institute/high-school",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-136",
+      "id": "prog-135",
       "slug": "iacocca-global-future-leaders-lab-silicon-valley",
       "name": "Iacocca Global Future Leaders Lab: Silicon Valley",
       "category": "leadership-gifted",
@@ -5865,11 +5825,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://global.lehigh.edu/programs/iacocca-global-future-leaders-lab-silicon-valley",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-137",
+      "id": "prog-136",
       "slug": "summer-springboard",
       "name": "Summer Springboard",
       "category": "leadership-gifted",
@@ -5908,11 +5868,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://summerspringboard.com/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-138",
+      "id": "prog-137",
       "slug": "envision-by-worldstrides-nylf-tracks-medicine-law-engineering-business-national-security",
       "name": "Envision by WorldStrides (NYLF tracks)",
       "category": "leadership-gifted",
@@ -5949,11 +5909,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.envisionexperience.com/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-139",
+      "id": "prog-138",
       "slug": "cornell-summer-college-3-week-session",
       "name": "Cornell Summer College",
       "category": "leadership-gifted",
@@ -5993,11 +5953,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://sce.cornell.edu/precollege/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-140",
+      "id": "prog-139",
       "slug": "cornell-summer-college-6-week-session",
       "name": "Cornell Summer College",
       "category": "leadership-gifted",
@@ -6037,11 +5997,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://sce.cornell.edu/precollege/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-141",
+      "id": "prog-140",
       "slug": "berkeley-changemaker-pre-college",
       "name": "Berkeley Changemaker Pre-College",
       "category": "leadership-gifted",
@@ -6079,11 +6039,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://changemaker.berkeley.edu/pre-college",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-142",
+      "id": "prog-141",
       "slug": "education-unlimited-astrophysics-9-12-engineering-9-12-quantum-mechanics-10-12-robotics-9-12-surgica",
       "name": "Education Unlimited",
       "category": "stem-engineering",
@@ -6123,11 +6083,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.educationunlimited.com/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-143",
+      "id": "prog-142",
       "slug": "education-unlimited-competitive-debate-public-forum-debate-public-speaking-institute-hs-mock-trial-h",
       "name": "Education Unlimited",
       "category": "leadership-gifted",
@@ -6167,11 +6127,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.educationunlimited.com/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-144",
+      "id": "prog-143",
       "slug": "education-unlimited-a-summer-high-school-a-summer-pre-college-college-admission-prep-camp-college-to",
       "name": "Education Unlimited",
       "category": "college-credit-pre-college",
@@ -6209,11 +6169,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.educationunlimited.com/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-145",
+      "id": "prog-144",
       "slug": "creative-delegates-league-of-creative-minds-diplomacy-negotiation-international-law-geopolitics-and-",
       "name": "Creative Delegates (League of Creative Minds)",
       "category": "leadership-gifted",
@@ -6252,11 +6212,11 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.creativedelegates.org/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": []
     },
     {
-      "id": "prog-146",
+      "id": "prog-145",
       "slug": "lasting-adventures-yosemite-6-day-young-adventurer-s-program",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6298,7 +6258,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/yosemite-6-day-young-adventurers-program/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-yosemite-no-parent-contact",
@@ -6317,7 +6277,7 @@
       }
     },
     {
-      "id": "prog-147",
+      "id": "prog-146",
       "slug": "lasting-adventures-yosemite-6-day-high-country-adventure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6359,7 +6319,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/6-day-yosemite-high-country-adventure/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-yosemite-no-parent-contact",
@@ -6378,7 +6338,7 @@
       }
     },
     {
-      "id": "prog-148",
+      "id": "prog-147",
       "slug": "lasting-adventures-yosemite-10-day-mammoth-to-yosemite-jul-6-15",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6420,7 +6380,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/10-day-yosemite-high-country-adventure/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-yosemite-no-parent-contact",
@@ -6447,7 +6407,7 @@
       }
     },
     {
-      "id": "prog-149",
+      "id": "prog-148",
       "slug": "lasting-adventures-yosemite-10-day-mammoth-to-yosemite-aug-3-12",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6489,7 +6449,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/10-day-yosemite-high-country-adventure/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-yosemite-no-parent-contact",
@@ -6516,7 +6476,7 @@
       }
     },
     {
-      "id": "prog-150",
+      "id": "prog-149",
       "slug": "lasting-adventures-yosemite-13-day-high-country-adventure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6558,7 +6518,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/13-day-high-country-adventure/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-yosemite-no-parent-contact",
@@ -6577,7 +6537,7 @@
       }
     },
     {
-      "id": "prog-151",
+      "id": "prog-150",
       "slug": "lasting-adventures-yosemite-6-day-young-women-s-program-jun-20-25-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6619,7 +6579,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/yosemite-13-day-young-womens-program/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-yosemite-no-parent-contact",
@@ -6638,7 +6598,7 @@
       }
     },
     {
-      "id": "prog-152",
+      "id": "prog-151",
       "slug": "lasting-adventures-yosemite-6-day-young-women-s-program-aug-1-6-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6680,7 +6640,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/yosemite-13-day-young-womens-program/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-yosemite-no-parent-contact",
@@ -6699,7 +6659,7 @@
       }
     },
     {
-      "id": "prog-153",
+      "id": "prog-152",
       "slug": "lasting-adventures-yosemite-13-day-young-women-s-program",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6741,7 +6701,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/yosemite-13-day-young-womens-program/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-yosemite-no-parent-contact",
@@ -6760,7 +6720,7 @@
       }
     },
     {
-      "id": "prog-154",
+      "id": "prog-153",
       "slug": "lasting-adventures-yosemite-20-day-teen-leadership-expedition-jun-13-jul-2-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6802,7 +6762,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/junior-guide-leadership-expedition/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-yosemite-no-parent-contact",
@@ -6829,7 +6789,7 @@
       }
     },
     {
-      "id": "prog-155",
+      "id": "prog-154",
       "slug": "lasting-adventures-yosemite-20-day-teen-leadership-expedition-jul-11-30-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6871,7 +6831,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/yosemite-national-park-outdoor-summer-camps/junior-guide-leadership-expedition/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-yosemite-no-parent-contact",
@@ -6898,7 +6858,7 @@
       }
     },
     {
-      "id": "prog-156",
+      "id": "prog-155",
       "slug": "lasting-adventures-olympic-6-day-backpacking-adventure-for-teens",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -6940,7 +6900,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/olympic-national-park-outdoor-summer-camps/backpacking-adventure-for-teens/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-olympic-no-parent-contact",
@@ -6959,7 +6919,7 @@
       }
     },
     {
-      "id": "prog-157",
+      "id": "prog-156",
       "slug": "lasting-adventures-olympic-6-day-young-adventurer-s-program",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7001,7 +6961,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/olympic-national-park-outdoor-summer-camps/olympic-6-day-young-adventurers-program/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-olympic-no-parent-contact",
@@ -7020,7 +6980,7 @@
       }
     },
     {
-      "id": "prog-158",
+      "id": "prog-157",
       "slug": "lasting-adventures-olympic-10-day-hoh-rainforest-to-the-blue-glacier-jun-29-jul-8-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7062,7 +7022,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/olympic-national-park-outdoor-summer-camps/pacific-northwest-summer-camp-backpacking-adventure-for-teens/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-olympic-no-parent-contact",
@@ -7089,7 +7049,7 @@
       }
     },
     {
-      "id": "prog-159",
+      "id": "prog-158",
       "slug": "lasting-adventures-olympic-10-day-hoh-rainforest-to-the-blue-glacier-jul-13-22-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7131,7 +7091,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/olympic-national-park-outdoor-summer-camps/pacific-northwest-summer-camp-backpacking-adventure-for-teens/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-olympic-no-parent-contact",
@@ -7158,7 +7118,7 @@
       }
     },
     {
-      "id": "prog-160",
+      "id": "prog-159",
       "slug": "lasting-adventures-olympic-10-day-hoh-rainforest-to-the-blue-glacier-aug-10-19-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7200,7 +7160,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/olympic-national-park-outdoor-summer-camps/pacific-northwest-summer-camp-backpacking-adventure-for-teens/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-olympic-no-parent-contact",
@@ -7227,7 +7187,7 @@
       }
     },
     {
-      "id": "prog-161",
+      "id": "prog-160",
       "slug": "lasting-adventures-olympic-13-day-backpacking-adventure-for-teens",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7269,7 +7229,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/olympic-national-park-outdoor-summer-camps/13-day-olympic-backpacking-adventure-for-teens/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-olympic-no-parent-contact",
@@ -7288,7 +7248,7 @@
       }
     },
     {
-      "id": "prog-162",
+      "id": "prog-161",
       "slug": "lasting-adventures-olympic-6-day-young-women-s-program-jun-27-jul-2-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7330,7 +7290,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/olympic-national-park-outdoor-summer-camps/olympic-6-day-young-womens-program/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-olympic-no-parent-contact",
@@ -7349,7 +7309,7 @@
       }
     },
     {
-      "id": "prog-163",
+      "id": "prog-162",
       "slug": "lasting-adventures-olympic-6-day-young-women-s-program-jul-18-23-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7391,7 +7351,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/olympic-national-park-outdoor-summer-camps/olympic-6-day-young-womens-program/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-olympic-no-parent-contact",
@@ -7410,7 +7370,7 @@
       }
     },
     {
-      "id": "prog-164",
+      "id": "prog-163",
       "slug": "lasting-adventures-olympic-13-day-young-women-s-program",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7452,7 +7412,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/olympic-national-park-outdoor-summer-camps/olympic-6-day-young-womens-program/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-olympic-no-parent-contact",
@@ -7471,7 +7431,7 @@
       }
     },
     {
-      "id": "prog-165",
+      "id": "prog-164",
       "slug": "lasting-adventures-sequoia-10-day-sequoia-high-country-adventure-jun-22-jul-1-departure",
       "name": "Lasting Adventures - Sequoia",
       "institution": "Lasting Adventures Inc.",
@@ -7513,7 +7473,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/sequoia-national-park-outdoor-summer-camps/10-day-sequoia-high-country-adventure/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-sequoia-no-parent-contact",
@@ -7540,7 +7500,7 @@
       }
     },
     {
-      "id": "prog-166",
+      "id": "prog-165",
       "slug": "lasting-adventures-sequoia-10-day-sequoia-high-country-adventure-jul-20-29-departure",
       "name": "Lasting Adventures - Sequoia",
       "institution": "Lasting Adventures Inc.",
@@ -7582,7 +7542,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://lastingadventures.com/sequoia-national-park-outdoor-summer-camps/10-day-sequoia-high-country-adventure/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "lasting-adventures-sequoia-no-parent-contact",
@@ -7609,7 +7569,7 @@
       }
     },
     {
-      "id": "prog-167",
+      "id": "prog-166",
       "slug": "catalina-sea-camp-session-1-1-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -7651,7 +7611,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://catalinaseacamp.org/dates-rates/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "This is an island-based residential camp with structured cabin groups of about 8-10 campers per counselor; certified dive staff supervise at closer ratios (1 instructor per 4 campers for scuba certification, 1 per 8 for snorkeling). There is no phone contact between parents and campers at all during a session - the camp states this is an intentional independence policy, not just a logistics limitation. The only outbound communication is one-way: parents get 5 free email credits per camper per week (more purchasable), and campers can write letters, but there's no video call or phone option. In-session visits or tours from parents are not permitted. A registered nurse is on-site for the full summer.",
@@ -7661,7 +7621,7 @@
       }
     },
     {
-      "id": "prog-168",
+      "id": "prog-167",
       "slug": "catalina-sea-camp-session-2-1-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -7703,7 +7663,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://catalinaseacamp.org/dates-rates/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "This is an island-based residential camp with structured cabin groups of about 8-10 campers per counselor; certified dive staff supervise at closer ratios (1 instructor per 4 campers for scuba certification, 1 per 8 for snorkeling). There is no phone contact between parents and campers at all during a session - the camp states this is an intentional independence policy, not just a logistics limitation. The only outbound communication is one-way: parents get 5 free email credits per camper per week (more purchasable), and campers can write letters, but there's no video call or phone option. In-session visits or tours from parents are not permitted. A registered nurse is on-site for the full summer.",
@@ -7713,7 +7673,7 @@
       }
     },
     {
-      "id": "prog-169",
+      "id": "prog-168",
       "slug": "catalina-sea-camp-session-3-1-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -7755,7 +7715,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://catalinaseacamp.org/dates-rates/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "This is an island-based residential camp with structured cabin groups of about 8-10 campers per counselor; certified dive staff supervise at closer ratios (1 instructor per 4 campers for scuba certification, 1 per 8 for snorkeling). There is no phone contact between parents and campers at all during a session - the camp states this is an intentional independence policy, not just a logistics limitation. The only outbound communication is one-way: parents get 5 free email credits per camper per week (more purchasable), and campers can write letters, but there's no video call or phone option. In-session visits or tours from parents are not permitted. A registered nurse is on-site for the full summer.",
@@ -7765,7 +7725,7 @@
       }
     },
     {
-      "id": "prog-170",
+      "id": "prog-169",
       "slug": "catalina-sea-camp-session-4-2-5-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -7807,7 +7767,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://catalinaseacamp.org/dates-rates/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "This is an island-based residential camp with structured cabin groups of about 8-10 campers per counselor; certified dive staff supervise at closer ratios (1 instructor per 4 campers for scuba certification, 1 per 8 for snorkeling). There is no phone contact between parents and campers at all during a session - the camp states this is an intentional independence policy, not just a logistics limitation. The only outbound communication is one-way: parents get 5 free email credits per camper per week (more purchasable), and campers can write letters, but there's no video call or phone option. In-session visits or tours from parents are not permitted. A registered nurse is on-site for the full summer.",
@@ -7817,7 +7777,7 @@
       }
     },
     {
-      "id": "prog-171",
+      "id": "prog-170",
       "slug": "catalina-sea-camp-session-5-2-5-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -7859,7 +7819,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://catalinaseacamp.org/dates-rates/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "This is an island-based residential camp with structured cabin groups of about 8-10 campers per counselor; certified dive staff supervise at closer ratios (1 instructor per 4 campers for scuba certification, 1 per 8 for snorkeling). There is no phone contact between parents and campers at all during a session - the camp states this is an intentional independence policy, not just a logistics limitation. The only outbound communication is one-way: parents get 5 free email credits per camper per week (more purchasable), and campers can write letters, but there's no video call or phone option. In-session visits or tours from parents are not permitted. A registered nurse is on-site for the full summer.",
@@ -7869,7 +7829,7 @@
       }
     },
     {
-      "id": "prog-172",
+      "id": "prog-171",
       "slug": "mit-beaver-works-summer-institute-bwsi-in-person-courses",
       "name": "MIT Beaver Works Summer Institute (BWSI)",
       "institution": "Massachusetts Institute of Technology",
@@ -7911,7 +7871,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://bwsi.mit.edu/apply-now/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "mit-bwsi-online-prereq-completion-deadline",
@@ -7924,7 +7884,7 @@
       ]
     },
     {
-      "id": "prog-173",
+      "id": "prog-172",
       "slug": "mit-beaver-works-summer-institute-bwsi-virtual-courses",
       "name": "MIT Beaver Works Summer Institute (BWSI)",
       "institution": "Massachusetts Institute of Technology",
@@ -7966,7 +7926,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://bwsi.mit.edu/apply-now/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "mit-bwsi-online-prereq-completion-deadline",
@@ -7979,7 +7939,7 @@
       ]
     },
     {
-      "id": "prog-174",
+      "id": "prog-173",
       "slug": "honors-summer-math-camp-hsmc-general",
       "name": "Honors Summer Math Camp (HSMC)",
       "institution": "Texas State University",
@@ -8021,7 +7981,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.txst.edu/mathworks/mathworks-camps/hsmc.html",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "mathworks-hsmc-no-outside-commitments",
@@ -8040,7 +8000,7 @@
       }
     },
     {
-      "id": "prog-175",
+      "id": "prog-174",
       "slug": "junior-summer-math-camp-residential-jsmcr-general",
       "name": "Junior Summer Math Camp - Residential (JSMCR)",
       "institution": "Texas State University",
@@ -8082,7 +8042,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.txst.edu/mathworks/mathworks-camps/junior-summer-math-camp-residential-jsmcr.html",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "mathworks-jsmcr-no-outside-commitments",
@@ -8101,7 +8061,7 @@
       }
     },
     {
-      "id": "prog-176",
+      "id": "prog-175",
       "slug": "nyc-summer-academy-day-student",
       "name": "NYC Summer Academy",
       "institution": "The School of The New York Times",
@@ -8141,7 +8101,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://nytedu.com/pre-college/summer-academy/nyc/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in a dorm-style facility in Manhattan, with roommates assigned by gender identity and age. Building security and residential staff are present in the residence hall 24/7, and Residential Directors live adjacent to the students they oversee. Both residential and day students participate in a structured set of evening and weekend activities beyond the academic day. Day students commute in for the academic portion and have the option to stay for dinner and evening/weekend programming, but go home (or to their own housing) at night rather than living on-site.",
@@ -8151,7 +8111,7 @@
       }
     },
     {
-      "id": "prog-177",
+      "id": "prog-176",
       "slug": "nyc-summer-academy-residential",
       "name": "NYC Summer Academy",
       "institution": "The School of The New York Times",
@@ -8191,7 +8151,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://nytedu.com/pre-college/summer-academy/nyc/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in a dorm-style facility in Manhattan, with roommates assigned by gender identity and age. Building security and residential staff are present in the residence hall 24/7, and Residential Directors live adjacent to the students they oversee. Both residential and day students participate in a structured set of evening and weekend activities beyond the academic day. Day students commute in for the academic portion and have the option to stay for dinner and evening/weekend programming, but go home (or to their own housing) at night rather than living on-site.",
@@ -8201,7 +8161,7 @@
       }
     },
     {
-      "id": "prog-178",
+      "id": "prog-177",
       "slug": "junior-summer-math-camp-half-day-jsmch-general",
       "name": "Junior Summer Math Camp - Half-Day (JSMCH)",
       "institution": "Texas State University",
@@ -8243,7 +8203,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.txst.edu/mathworks/mathworks-camps/junior-summer-math-camp-half-day.html",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "This is a day program with no overnight component - parents drop off and pick up daily, and San Marcos CISD provides bus transportation, but only for students enrolled in that local school district (families outside the district must arrange their own transportation, as Mathworks itself doesn't provide any). Breakfast, lunch, and a snack are provided during the school day. Students are on campus only during camp hours and go home each evening.",
@@ -8253,7 +8213,7 @@
       }
     },
     {
-      "id": "prog-179",
+      "id": "prog-178",
       "slug": "management-technology-summer-institute-m-tsi-general",
       "name": "Management & Technology Summer Institute (M&TSI)",
       "institution": "University of Pennsylvania",
@@ -8295,7 +8255,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://fisher.wharton.upenn.edu/management-technology-summer-institute/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "mtsi-mandatory-full-attendance",
@@ -8322,7 +8282,7 @@
       }
     },
     {
-      "id": "prog-180",
+      "id": "prog-179",
       "slug": "oxford-academia-at-yale-session-1",
       "name": "Oxford Academia at Yale",
       "institution": "Oxford Academia (Putney Student Travel)",
@@ -8362,7 +8322,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://oxfordacademia.com/programs/oxford-academia-at-yale/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "oxford-academia-yale-meal-plan-contradiction",
@@ -8389,7 +8349,7 @@
       }
     },
     {
-      "id": "prog-181",
+      "id": "prog-180",
       "slug": "socapa-new-york-city-film-screenwriting-session-1-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8431,7 +8391,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/screenwriting",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -8450,7 +8410,7 @@
       }
     },
     {
-      "id": "prog-182",
+      "id": "prog-181",
       "slug": "socapa-new-york-city-film-screenwriting-session-1-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8492,7 +8452,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/screenwriting",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -8511,7 +8471,7 @@
       }
     },
     {
-      "id": "prog-183",
+      "id": "prog-182",
       "slug": "socapa-new-york-city-film-screenwriting-session-2-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8553,7 +8513,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/screenwriting",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -8572,7 +8532,7 @@
       }
     },
     {
-      "id": "prog-184",
+      "id": "prog-183",
       "slug": "socapa-new-york-city-film-screenwriting-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8614,7 +8574,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/screenwriting",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -8633,7 +8593,7 @@
       }
     },
     {
-      "id": "prog-185",
+      "id": "prog-184",
       "slug": "socapa-new-york-city-film-screenwriting-3-week-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8675,7 +8635,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/screenwriting",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -8694,7 +8654,7 @@
       }
     },
     {
-      "id": "prog-186",
+      "id": "prog-185",
       "slug": "socapa-new-york-city-core-filmmaking-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8734,7 +8694,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/filmmaking-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -8753,7 +8713,7 @@
       }
     },
     {
-      "id": "prog-187",
+      "id": "prog-186",
       "slug": "socapa-new-york-city-core-filmmaking-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8793,7 +8753,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/filmmaking-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -8812,7 +8772,7 @@
       }
     },
     {
-      "id": "prog-188",
+      "id": "prog-187",
       "slug": "socapa-new-york-city-core-filmmaking-session-1-3wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8852,7 +8812,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/filmmaking-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -8871,7 +8831,7 @@
       }
     },
     {
-      "id": "prog-189",
+      "id": "prog-188",
       "slug": "socapa-new-york-city-core-filmmaking-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8911,7 +8871,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/filmmaking-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -8930,7 +8890,7 @@
       }
     },
     {
-      "id": "prog-190",
+      "id": "prog-189",
       "slug": "socapa-new-york-city-core-filmmaking-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8970,7 +8930,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/filmmaking-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -8989,7 +8949,7 @@
       }
     },
     {
-      "id": "prog-191",
+      "id": "prog-190",
       "slug": "socapa-new-york-city-core-filmmaking-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9029,7 +8989,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/filmmaking-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -9048,7 +9008,7 @@
       }
     },
     {
-      "id": "prog-192",
+      "id": "prog-191",
       "slug": "socapa-new-york-city-core-filmmaking-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9088,7 +9048,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/filmmaking-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -9107,7 +9067,7 @@
       }
     },
     {
-      "id": "prog-193",
+      "id": "prog-192",
       "slug": "socapa-new-york-city-core-acting-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9147,7 +9107,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/acting-camps/acting-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -9166,7 +9126,7 @@
       }
     },
     {
-      "id": "prog-194",
+      "id": "prog-193",
       "slug": "socapa-new-york-city-core-acting-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9206,7 +9166,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/acting-camps/acting-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -9225,7 +9185,7 @@
       }
     },
     {
-      "id": "prog-195",
+      "id": "prog-194",
       "slug": "socapa-new-york-city-core-acting-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9265,7 +9225,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/acting-camps/acting-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -9284,7 +9244,7 @@
       }
     },
     {
-      "id": "prog-196",
+      "id": "prog-195",
       "slug": "socapa-new-york-city-musical-theater-acting-for-film-session-1-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9324,7 +9284,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/acting-camps/acting-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -9343,7 +9303,7 @@
       }
     },
     {
-      "id": "prog-197",
+      "id": "prog-196",
       "slug": "socapa-new-york-city-core-acting-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9383,7 +9343,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/acting-camps/acting-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -9402,7 +9362,7 @@
       }
     },
     {
-      "id": "prog-198",
+      "id": "prog-197",
       "slug": "socapa-new-york-city-core-acting-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9442,7 +9402,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/acting-camps/acting-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -9461,7 +9421,7 @@
       }
     },
     {
-      "id": "prog-199",
+      "id": "prog-198",
       "slug": "socapa-new-york-city-core-acting-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9501,7 +9461,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/acting-camps/acting-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -9520,7 +9480,7 @@
       }
     },
     {
-      "id": "prog-200",
+      "id": "prog-199",
       "slug": "socapa-new-york-city-musical-theater-acting-for-film-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9560,7 +9520,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/acting-camps/acting-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -9579,7 +9539,7 @@
       }
     },
     {
-      "id": "prog-201",
+      "id": "prog-200",
       "slug": "socapa-new-york-city-core-photography-digital-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9619,7 +9579,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/photo-camps/photo-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -9638,7 +9598,7 @@
       }
     },
     {
-      "id": "prog-202",
+      "id": "prog-201",
       "slug": "socapa-new-york-city-core-photography-digital-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9678,7 +9638,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/photo-camps/photo-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -9697,7 +9657,7 @@
       }
     },
     {
-      "id": "prog-203",
+      "id": "prog-202",
       "slug": "socapa-new-york-city-core-photography-digital-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9737,7 +9697,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/photo-camps/photo-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -9756,7 +9716,7 @@
       }
     },
     {
-      "id": "prog-204",
+      "id": "prog-203",
       "slug": "socapa-new-york-city-core-photography-digital-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9796,7 +9756,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/photo-camps/photo-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -9815,7 +9775,7 @@
       }
     },
     {
-      "id": "prog-205",
+      "id": "prog-204",
       "slug": "socapa-new-york-city-core-photography-digital-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9855,7 +9815,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/photo-camps/photo-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -9874,7 +9834,7 @@
       }
     },
     {
-      "id": "prog-206",
+      "id": "prog-205",
       "slug": "socapa-new-york-city-core-photography-digital-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9914,7 +9874,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/photo-camps/photo-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -9933,7 +9893,7 @@
       }
     },
     {
-      "id": "prog-207",
+      "id": "prog-206",
       "slug": "socapa-new-york-city-advanced-photography-session-1-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9973,7 +9933,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/photo-camps/photo-advanced",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -9992,7 +9952,7 @@
       }
     },
     {
-      "id": "prog-208",
+      "id": "prog-207",
       "slug": "socapa-new-york-city-advanced-photography-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10032,7 +9992,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/photo-camps/photo-advanced",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -10051,7 +10011,7 @@
       }
     },
     {
-      "id": "prog-209",
+      "id": "prog-208",
       "slug": "socapa-new-york-city-fusion-dance-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10091,7 +10051,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/dance-camps/dance-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -10110,7 +10070,7 @@
       }
     },
     {
-      "id": "prog-210",
+      "id": "prog-209",
       "slug": "socapa-new-york-city-fusion-dance-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10150,7 +10110,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/dance-camps/dance-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -10169,7 +10129,7 @@
       }
     },
     {
-      "id": "prog-211",
+      "id": "prog-210",
       "slug": "socapa-new-york-city-fusion-dance-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10209,7 +10169,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/dance-camps/dance-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -10228,7 +10188,7 @@
       }
     },
     {
-      "id": "prog-212",
+      "id": "prog-211",
       "slug": "socapa-new-york-city-fusion-dance-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10268,7 +10228,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/dance-camps/dance-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -10287,7 +10247,7 @@
       }
     },
     {
-      "id": "prog-213",
+      "id": "prog-212",
       "slug": "socapa-new-york-city-fusion-dance-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10327,7 +10287,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/dance-camps/dance-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -10346,7 +10306,7 @@
       }
     },
     {
-      "id": "prog-214",
+      "id": "prog-213",
       "slug": "socapa-new-york-city-fusion-dance-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10386,7 +10346,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/dance-camps/dance-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -10405,7 +10365,7 @@
       }
     },
     {
-      "id": "prog-215",
+      "id": "prog-214",
       "slug": "socapa-new-york-city-dance-conservatory-session-1-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10445,7 +10405,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/dance-camps/dance-conservatory",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -10464,7 +10424,7 @@
       }
     },
     {
-      "id": "prog-216",
+      "id": "prog-215",
       "slug": "socapa-new-york-city-dance-conservatory-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10504,7 +10464,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/dance-camps/dance-conservatory",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -10523,7 +10483,7 @@
       }
     },
     {
-      "id": "prog-217",
+      "id": "prog-216",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10563,7 +10523,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/music-camps/music-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -10582,7 +10542,7 @@
       }
     },
     {
-      "id": "prog-218",
+      "id": "prog-217",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10622,7 +10582,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/music-camps/music-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -10641,7 +10601,7 @@
       }
     },
     {
-      "id": "prog-219",
+      "id": "prog-218",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10681,7 +10641,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/music-camps/music-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -10700,7 +10660,7 @@
       }
     },
     {
-      "id": "prog-220",
+      "id": "prog-219",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10740,7 +10700,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/music-camps/music-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -10759,7 +10719,7 @@
       }
     },
     {
-      "id": "prog-221",
+      "id": "prog-220",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10799,7 +10759,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/music-camps/music-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -10818,7 +10778,7 @@
       }
     },
     {
-      "id": "prog-222",
+      "id": "prog-221",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10858,7 +10818,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/music-camps/music-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "socapa-nyc-meals-not-included",
@@ -10877,7 +10837,7 @@
       }
     },
     {
-      "id": "prog-223",
+      "id": "prog-222",
       "slug": "socapa-los-angeles-core-filmmaking-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10917,7 +10877,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/filmmaking-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Occidental College dorms with double/triple occupancy, and meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session.",
@@ -10927,7 +10887,7 @@
       }
     },
     {
-      "id": "prog-224",
+      "id": "prog-223",
       "slug": "socapa-los-angeles-core-filmmaking-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10967,7 +10927,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/filmmaking-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Occidental College dorms with double/triple occupancy, and meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session.",
@@ -10977,7 +10937,7 @@
       }
     },
     {
-      "id": "prog-225",
+      "id": "prog-224",
       "slug": "socapa-los-angeles-core-filmmaking-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11017,7 +10977,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/filmmaking-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Occidental College dorms with double/triple occupancy, and meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session.",
@@ -11027,7 +10987,7 @@
       }
     },
     {
-      "id": "prog-226",
+      "id": "prog-225",
       "slug": "socapa-los-angeles-advanced-filmmaking-session-2-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11067,7 +11027,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/filmmaking-advanced",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Occidental College dorms with double/triple occupancy, and meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session.",
@@ -11077,7 +11037,7 @@
       }
     },
     {
-      "id": "prog-227",
+      "id": "prog-226",
       "slug": "socapa-los-angeles-screenwriting-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11117,7 +11077,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/screenwriting",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Occidental College dorms with double/triple occupancy, and meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session.",
@@ -11127,7 +11087,7 @@
       }
     },
     {
-      "id": "prog-228",
+      "id": "prog-227",
       "slug": "socapa-los-angeles-screenwriting-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11167,7 +11127,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/screenwriting",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Occidental College dorms with double/triple occupancy, and meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session.",
@@ -11177,7 +11137,7 @@
       }
     },
     {
-      "id": "prog-229",
+      "id": "prog-228",
       "slug": "socapa-los-angeles-screenwriting-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11217,7 +11177,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/screenwriting",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Occidental College dorms with double/triple occupancy, and meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session.",
@@ -11227,7 +11187,7 @@
       }
     },
     {
-      "id": "prog-230",
+      "id": "prog-229",
       "slug": "socapa-los-angeles-core-acting-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11267,7 +11227,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/acting-camps/acting-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Occidental College dorms with double/triple occupancy, and meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session.",
@@ -11277,7 +11237,7 @@
       }
     },
     {
-      "id": "prog-231",
+      "id": "prog-230",
       "slug": "socapa-los-angeles-core-acting-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11317,7 +11277,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/acting-camps/acting-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Occidental College dorms with double/triple occupancy, and meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session.",
@@ -11327,7 +11287,7 @@
       }
     },
     {
-      "id": "prog-232",
+      "id": "prog-231",
       "slug": "socapa-los-angeles-core-acting-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11367,7 +11327,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/acting-camps/acting-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Occidental College dorms with double/triple occupancy, and meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session.",
@@ -11377,7 +11337,7 @@
       }
     },
     {
-      "id": "prog-233",
+      "id": "prog-232",
       "slug": "socapa-los-angeles-advanced-acting-session-2-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11417,7 +11377,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/acting-camps/acting-advanced",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Occidental College dorms with double/triple occupancy, and meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session.",
@@ -11427,7 +11387,7 @@
       }
     },
     {
-      "id": "prog-234",
+      "id": "prog-233",
       "slug": "socapa-los-angeles-core-photography-digital-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11467,7 +11427,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/photo-camps/photo-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Occidental College dorms with double/triple occupancy, and meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session.",
@@ -11477,7 +11437,7 @@
       }
     },
     {
-      "id": "prog-235",
+      "id": "prog-234",
       "slug": "socapa-los-angeles-core-photography-digital-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11517,7 +11477,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/photo-camps/photo-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Occidental College dorms with double/triple occupancy, and meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session.",
@@ -11527,7 +11487,7 @@
       }
     },
     {
-      "id": "prog-236",
+      "id": "prog-235",
       "slug": "socapa-los-angeles-core-photography-digital-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11567,7 +11527,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/photo-camps/photo-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Occidental College dorms with double/triple occupancy, and meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session.",
@@ -11577,7 +11537,7 @@
       }
     },
     {
-      "id": "prog-237",
+      "id": "prog-236",
       "slug": "socapa-los-angeles-core-music-singer-songwriter-house-band-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11617,7 +11577,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/music-camps/music-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Occidental College dorms with double/triple occupancy, and meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session.",
@@ -11627,7 +11587,7 @@
       }
     },
     {
-      "id": "prog-238",
+      "id": "prog-237",
       "slug": "socapa-los-angeles-core-music-singer-songwriter-house-band-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11667,7 +11627,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/music-camps/music-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Occidental College dorms with double/triple occupancy, and meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session.",
@@ -11677,7 +11637,7 @@
       }
     },
     {
-      "id": "prog-239",
+      "id": "prog-238",
       "slug": "socapa-los-angeles-core-music-singer-songwriter-house-band-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11717,7 +11677,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/music-camps/music-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Occidental College dorms with double/triple occupancy, and meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session.",
@@ -11727,7 +11687,7 @@
       }
     },
     {
-      "id": "prog-240",
+      "id": "prog-239",
       "slug": "socapa-vermont-core-filmmaking-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11767,7 +11727,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/filmmaking-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -11777,7 +11737,7 @@
       }
     },
     {
-      "id": "prog-241",
+      "id": "prog-240",
       "slug": "socapa-vermont-core-filmmaking-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11817,7 +11777,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/filmmaking-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -11827,7 +11787,7 @@
       }
     },
     {
-      "id": "prog-242",
+      "id": "prog-241",
       "slug": "socapa-vermont-core-filmmaking-session-2-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11867,7 +11827,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/filmmaking-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -11877,7 +11837,7 @@
       }
     },
     {
-      "id": "prog-243",
+      "id": "prog-242",
       "slug": "socapa-vermont-core-filmmaking-session-2-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11917,7 +11877,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/filmmaking-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -11927,7 +11887,7 @@
       }
     },
     {
-      "id": "prog-244",
+      "id": "prog-243",
       "slug": "socapa-vermont-advanced-filmmaking-session-1-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11967,7 +11927,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/filmmaking-advanced",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -11977,7 +11937,7 @@
       }
     },
     {
-      "id": "prog-245",
+      "id": "prog-244",
       "slug": "socapa-vermont-advanced-filmmaking-session-2-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12017,7 +11977,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/filmmaking-advanced",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -12027,7 +11987,7 @@
       }
     },
     {
-      "id": "prog-246",
+      "id": "prog-245",
       "slug": "socapa-vermont-screenwriting-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12067,7 +12027,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/screenwriting",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -12077,7 +12037,7 @@
       }
     },
     {
-      "id": "prog-247",
+      "id": "prog-246",
       "slug": "socapa-vermont-screenwriting-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12117,7 +12077,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/film-camps/screenwriting",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -12127,7 +12087,7 @@
       }
     },
     {
-      "id": "prog-248",
+      "id": "prog-247",
       "slug": "socapa-vermont-core-acting-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12167,7 +12127,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/acting-camps/acting-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -12177,7 +12137,7 @@
       }
     },
     {
-      "id": "prog-249",
+      "id": "prog-248",
       "slug": "socapa-vermont-core-acting-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12217,7 +12177,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/acting-camps/acting-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -12227,7 +12187,7 @@
       }
     },
     {
-      "id": "prog-250",
+      "id": "prog-249",
       "slug": "socapa-vermont-core-acting-session-2-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12267,7 +12227,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/acting-camps/acting-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -12277,7 +12237,7 @@
       }
     },
     {
-      "id": "prog-251",
+      "id": "prog-250",
       "slug": "socapa-vermont-core-acting-session-2-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12317,7 +12277,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/acting-camps/acting-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -12327,7 +12287,7 @@
       }
     },
     {
-      "id": "prog-252",
+      "id": "prog-251",
       "slug": "socapa-vermont-advanced-acting-session-1-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12367,7 +12327,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/acting-camps/acting-advanced",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -12377,7 +12337,7 @@
       }
     },
     {
-      "id": "prog-253",
+      "id": "prog-252",
       "slug": "socapa-vermont-advanced-acting-session-2-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12417,7 +12377,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/acting-camps/acting-advanced",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -12427,7 +12387,7 @@
       }
     },
     {
-      "id": "prog-254",
+      "id": "prog-253",
       "slug": "socapa-vermont-core-photography-digital-or-darkroom-digital-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12467,7 +12427,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/photo-camps/photo-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -12477,7 +12437,7 @@
       }
     },
     {
-      "id": "prog-255",
+      "id": "prog-254",
       "slug": "socapa-vermont-core-photography-digital-or-darkroom-digital-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12517,7 +12477,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/photo-camps/photo-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -12527,7 +12487,7 @@
       }
     },
     {
-      "id": "prog-256",
+      "id": "prog-255",
       "slug": "socapa-vermont-core-photography-digital-or-darkroom-digital-session-2-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12567,7 +12527,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/photo-camps/photo-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -12577,7 +12537,7 @@
       }
     },
     {
-      "id": "prog-257",
+      "id": "prog-256",
       "slug": "socapa-vermont-advanced-photography-session-1-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12617,7 +12577,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/photo-camps/photo-advanced",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -12627,7 +12587,7 @@
       }
     },
     {
-      "id": "prog-258",
+      "id": "prog-257",
       "slug": "socapa-vermont-fusion-dance-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12667,7 +12627,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/dance-camps/dance-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -12677,7 +12637,7 @@
       }
     },
     {
-      "id": "prog-259",
+      "id": "prog-258",
       "slug": "socapa-vermont-fusion-dance-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12717,7 +12677,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/dance-camps/dance-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -12727,7 +12687,7 @@
       }
     },
     {
-      "id": "prog-260",
+      "id": "prog-259",
       "slug": "socapa-vermont-fusion-dance-session-2-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12767,7 +12727,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/dance-camps/dance-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -12777,7 +12737,7 @@
       }
     },
     {
-      "id": "prog-261",
+      "id": "prog-260",
       "slug": "socapa-vermont-fusion-dance-session-2-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12817,7 +12777,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/dance-camps/dance-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -12827,7 +12787,7 @@
       }
     },
     {
-      "id": "prog-262",
+      "id": "prog-261",
       "slug": "socapa-vermont-core-music-singer-songwriter-house-band-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12867,7 +12827,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/music-camps/music-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -12877,7 +12837,7 @@
       }
     },
     {
-      "id": "prog-263",
+      "id": "prog-262",
       "slug": "socapa-vermont-core-music-singer-songwriter-house-band-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12917,7 +12877,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.socapa.org/teen-camps/music-camps/music-core",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [],
       "dayToDay": {
         "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
@@ -12927,7 +12887,7 @@
       }
     },
     {
-      "id": "prog-264",
+      "id": "prog-263",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-21-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -12967,7 +12927,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/los-angeles-ucla-21-days/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "westcoast-ucla-lunch-not-included",
@@ -13002,7 +12962,7 @@
       }
     },
     {
-      "id": "prog-265",
+      "id": "prog-264",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-21-day-commuter",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13042,7 +13002,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/los-angeles-ucla-21-days/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "westcoast-ucla-lunch-not-included",
@@ -13104,7 +13064,7 @@
       }
     },
     {
-      "id": "prog-266",
+      "id": "prog-265",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-14-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13144,7 +13104,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/los-angeles-ucla-14-days/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "westcoast-ucla-lunch-not-included",
@@ -13179,7 +13139,7 @@
       }
     },
     {
-      "id": "prog-267",
+      "id": "prog-266",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-14-day-commuter",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13219,7 +13179,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/los-angeles-ucla-14-days/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "westcoast-ucla-lunch-not-included",
@@ -13281,7 +13241,7 @@
       }
     },
     {
-      "id": "prog-268",
+      "id": "prog-267",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-27-day-residential-plus-hawaii-extension",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13321,7 +13281,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/los-angeles-ucla-hawaii-27-days/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "westcoast-ucla-lunch-not-included",
@@ -13380,7 +13340,7 @@
       }
     },
     {
-      "id": "prog-269",
+      "id": "prog-268",
       "slug": "westcoast-connection-pre-college-enrichment-barcelona-14-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13422,7 +13382,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/barcelona-14-days/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "westcoast-barcelona-lunch-not-included",
@@ -13441,7 +13401,7 @@
       }
     },
     {
-      "id": "prog-270",
+      "id": "prog-269",
       "slug": "westcoast-connection-pre-college-enrichment-barcelona-21-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13483,7 +13443,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/barcelona-21-days/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "westcoast-barcelona-lunch-not-included",
@@ -13502,7 +13462,7 @@
       }
     },
     {
-      "id": "prog-271",
+      "id": "prog-270",
       "slug": "westcoast-connection-pre-college-enrichment-barcelona-27-day-residential-plus-amalfi-coast-rome",
       "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13544,7 +13504,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/barcelona-amalfi-rome-27-days/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "westcoast-barcelona-lunch-not-included",
@@ -13571,7 +13531,7 @@
       }
     },
     {
-      "id": "prog-272",
+      "id": "prog-271",
       "slug": "westcoast-connection-pre-college-enrichment-barcelona-30-day-residential-plus-greek-islands",
       "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13613,7 +13573,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/barcelona-greece-30-days/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "westcoast-barcelona-lunch-not-included",
@@ -13640,7 +13600,7 @@
       }
     },
     {
-      "id": "prog-273",
+      "id": "prog-272",
       "slug": "westcoast-connection-pre-college-enrichment-florence-14-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13682,7 +13642,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/florence-14-days/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "westcoast-florence-lunch-not-included",
@@ -13701,7 +13661,7 @@
       }
     },
     {
-      "id": "prog-274",
+      "id": "prog-273",
       "slug": "westcoast-connection-pre-college-enrichment-florence-21-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13743,7 +13703,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/florence-21-days/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "westcoast-florence-lunch-not-included",
@@ -13762,7 +13722,7 @@
       }
     },
     {
-      "id": "prog-275",
+      "id": "prog-274",
       "slug": "westcoast-connection-pre-college-enrichment-florence-27-day-residential-plus-amalfi-coast-rome",
       "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13804,7 +13764,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/florence-27-days/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "westcoast-florence-lunch-not-included",
@@ -13823,7 +13783,7 @@
       }
     },
     {
-      "id": "prog-276",
+      "id": "prog-275",
       "slug": "westcoast-connection-pre-college-enrichment-florence-30-day-residential-plus-greek-islands",
       "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13865,7 +13825,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/florence-greece-30-days/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "westcoast-florence-lunch-not-included",
@@ -13892,7 +13852,7 @@
       }
     },
     {
-      "id": "prog-277",
+      "id": "prog-276",
       "slug": "westcoast-connection-pre-college-enrichment-montreal-14-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13934,7 +13894,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/montreal-mcgill-14-days/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "westcoast-montreal-lunch-not-included",
@@ -13953,7 +13913,7 @@
       }
     },
     {
-      "id": "prog-278",
+      "id": "prog-277",
       "slug": "westcoast-connection-pre-college-enrichment-montreal-14-day-commuter",
       "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13995,7 +13955,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/montreal-mcgill-14-days/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "westcoast-montreal-lunch-not-included",
@@ -14041,7 +14001,7 @@
       }
     },
     {
-      "id": "prog-279",
+      "id": "prog-278",
       "slug": "westcoast-connection-pre-college-enrichment-montreal-21-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -14083,7 +14043,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/montreal-mcgill-21-days/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "westcoast-montreal-lunch-not-included",
@@ -14102,7 +14062,7 @@
       }
     },
     {
-      "id": "prog-280",
+      "id": "prog-279",
       "slug": "westcoast-connection-pre-college-enrichment-montreal-21-day-commuter",
       "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -14144,7 +14104,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.westcoastconnection.com/programs/learn/pre-college-enrichment/montreal-mcgill-21-days/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "westcoast-montreal-lunch-not-included",
@@ -14190,7 +14150,7 @@
       }
     },
     {
-      "id": "prog-281",
+      "id": "prog-280",
       "slug": "mit-women-s-technology-program-wtp-mechanical-engineering-wtp-me",
       "name": "MIT Women's Technology Program (WTP)",
       "institution": "Massachusetts Institute of Technology",
@@ -14230,7 +14190,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://wtp.mit.edu/",
-      "dataVerifiedAt": "2026-09-15",
+      "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
           "id": "mit-wtp-residency-nuance",
@@ -14245,6 +14205,265 @@
         "notes": "Students live in an MIT dorm alongside the MIT undergraduate students who serve as teaching assistants. Daily required classes run Monday-Friday from approximately 9:30am-5pm, with occasional evening hours, plus some planned weekend academic field trips and social outings. The schedule includes classes, labs, homework, and unstructured social time with other WTP students. Students are expected to have no other significant time commitments during the four weeks. A laptop is expected for coursework; free loaners are available for students who need one.",
         "sourceType": "official_policy",
         "sourceCitation": "MIT WTP calendar and FAQ pages (wtp.mit.edu)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-281",
+      "slug": "wpi-ignite-general",
+      "name": "WPI Ignite",
+      "institution": "Worcester Polytechnic Institute",
+      "programGroupId": "wpi-ignite",
+      "description": "Week-long day program for middle schoolers exploring STEM topics (engineering",
+      "category": "stem-engineering",
+      "secondaryTags": [],
+      "trackDetail": "General",
+      "gradeDisplay": "Rising 6th-8th graders",
+      "gradeCompletedMin": 5,
+      "gradeCompletedMax": 7,
+      "gradeSource": "mixed",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Commuter",
+      "formatTags": [
+        "commuter"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "1 week",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Four weekly sessions: Jul 6-9, Jul 12-16, Jul 19-23, Jul 26-30, 2027",
+      "dateStart": "2027-07-06",
+      "dateEnd": "2027-07-30",
+      "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Worcester, MA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$695 per week",
+      "priceMin": 695,
+      "priceMax": 695,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.wpi.edu/academics/pre-collegiate/summer-programs/ignite",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [],
+      "dayToDay": {
+        "notes": "Commuter day program on the WPI campus: instruction runs 9am-4pm Monday-Friday. Students choose one or more weekly sessions and a STEM course track for each week; weeks are offered on a rolling basis across the summer (four distinct weeks in 2027). Lunch is not included in tuition for commuter programs.",
+        "sourceType": "official_policy",
+        "sourceCitation": "WPI Ignite program page (wpi.edu)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-282",
+      "slug": "wpi-launch-general",
+      "name": "WPI Launch",
+      "institution": "Worcester Polytechnic Institute",
+      "programGroupId": "wpi-launch",
+      "description": "One-week day program for high schoolers applying technology and research tools to real-world STEM challenges (robotics",
+      "category": "stem-engineering",
+      "secondaryTags": [],
+      "trackDetail": "General",
+      "gradeDisplay": "Rising 9th-11th graders",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 10,
+      "gradeSource": "mixed",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Commuter",
+      "formatTags": [
+        "commuter"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "1 week",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Jun 28 – Jul 2, 2027",
+      "dateStart": "2027-06-28",
+      "dateEnd": "2027-07-02",
+      "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Worcester, MA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$795",
+      "priceMin": 795,
+      "priceMax": 795,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.wpi.edu/academics/pre-collegiate/summer-programs/launch",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [],
+      "dayToDay": {
+        "notes": "Commuter day program on the WPI campus: instruction runs 9am-4pm Monday-Friday for one week. Students choose a single STEM course track (robotics, aerospace, forensics, video game design, etc.) taught by WPI faculty through hands-on labs, demos, and discussions.",
+        "sourceType": "official_policy",
+        "sourceCitation": "WPI Launch program page (wpi.edu)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-283",
+      "slug": "wpi-frontiers-frontiers-i",
+      "name": "WPI Frontiers",
+      "institution": "Worcester Polytechnic Institute",
+      "programGroupId": "wpi-frontiers",
+      "description": "Residential immersion program mirroring college life at WPI; students explore a STEM major alongside a humanities or business minor",
+      "category": "stem-engineering",
+      "secondaryTags": [],
+      "trackDetail": "Frontiers I",
+      "gradeDisplay": "Rising 10th-12th graders",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 11,
+      "gradeSource": "mixed",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "12 days",
+      "lengthMinDays": 12,
+      "lengthMaxDays": 12,
+      "datesDisplay": "Jul 5–16, 2027",
+      "dateStart": "2027-07-05",
+      "dateEnd": "2027-07-16",
+      "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Worcester, MA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,995 (includes tuition, housing, meals, field trips, workshops, activities)",
+      "priceMin": 4995,
+      "priceMax": 4995,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.wpi.edu/academics/pre-collegiate/summer-programs/frontiers",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [],
+      "dayToDay": {
+        "notes": "Students live on the WPI campus for the session, exploring a STEM major paired with a humanities or business minor, alongside peers from around the world. The program emphasizes building independence and leadership skills within a structured but immersive 'preview of college life' format, including field trips and organized workshops.",
+        "sourceType": "official_policy",
+        "sourceCitation": "WPI Frontiers overview page (wpi.edu)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-284",
+      "slug": "wpi-frontiers-frontiers-ii",
+      "name": "WPI Frontiers",
+      "institution": "Worcester Polytechnic Institute",
+      "programGroupId": "wpi-frontiers",
+      "description": "Residential immersion program mirroring college life at WPI; second session",
+      "category": "stem-engineering",
+      "secondaryTags": [],
+      "trackDetail": "Frontiers II",
+      "gradeDisplay": "Rising 10th-12th graders",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 11,
+      "gradeSource": "mixed",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "13 days",
+      "lengthMinDays": 13,
+      "lengthMaxDays": 13,
+      "datesDisplay": "Jul 18–30, 2027",
+      "dateStart": "2027-07-18",
+      "dateEnd": "2027-07-30",
+      "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Worcester, MA",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,995 (includes tuition, housing, meals, field trips, workshops, activities)",
+      "priceMin": 4995,
+      "priceMax": 4995,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.wpi.edu/academics/pre-collegiate/summer-programs/frontiers",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [],
+      "dayToDay": {
+        "notes": "Students live on the WPI campus for the session, exploring a STEM major paired with a humanities or business minor, alongside peers from around the world. The program emphasizes building independence and leadership skills within a structured but immersive 'preview of college life' format, including field trips and organized workshops.",
+        "sourceType": "official_policy",
+        "sourceCitation": "WPI Frontiers overview page (wpi.edu)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-285",
+      "slug": "wpi-high-achieving-high-school-students-general",
+      "name": "WPI High-Achieving High School Students",
+      "institution": "Worcester Polytechnic Institute",
+      "programGroupId": "wpi-high-achieving-hs",
+      "description": "Five-week program letting high schoolers take an actual WPI undergraduate course for real, transferable college credit at a 50% tuition discount; over 100 courses to choose from (recommended: one course per session); available in-person, live online, or on-demand.",
+      "category": "college-credit-pre-college",
+      "secondaryTags": [],
+      "trackDetail": "General",
+      "gradeDisplay": "Rising 11th-12th graders",
+      "gradeCompletedMin": 10,
+      "gradeCompletedMax": 11,
+      "gradeSource": "mixed",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Commuter",
+      "formatTags": [
+        "commuter"
+      ],
+      "durationBucket": "four_plus_weeks",
+      "lengthDisplay": "5 weeks",
+      "lengthMinDays": 35,
+      "lengthMaxDays": 35,
+      "datesDisplay": "2027 dates not yet published on the official program page",
+      "dateStart": null,
+      "dateEnd": null,
+      "datesParseQuality": "unknown",
+      "seasonYear": 2027,
+      "reviewStatus": "awaiting_source",
+      "locationDisplay": "Worcester, MA (in-person option) or online",
+      "isInternational": false,
+      "creditDisplay": "Yes (WPI college credit, transferable)",
+      "hasCollegeCredit": true,
+      "priceDisplay": "Contact program — 50% off standard WPI per-course summer tuition; exact dollar amount not yet published",
+      "priceMin": null,
+      "priceMax": null,
+      "priceUnknown": true,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.wpi.edu/academics/undergraduate/summer-courses/high-achieving-high-school-students",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "wpi-hahs-no-housing",
+          "type": "policy",
+          "title": "No on-campus housing, even for the in-person option",
+          "body": "Unlike WPI's Frontiers program, this program does not provide on-campus housing under any format - a family choosing the in-person option needs to arrange their own housing or have the student commute from home.",
+          "sourceCitation": "WPI High-Achieving High School Students program page",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Five-week session taking a real WPI undergraduate course for transferable college credit at 50% off standard summer tuition. Students may enroll in person on the Worcester campus, live online (synchronous), or on demand (asynchronous); WPI recommends one course per session. On-campus housing is not available — in-person students commute or arrange their own housing. Course materials average about $200 per course and are purchased separately.",
+        "sourceType": "official_policy",
+        "sourceCitation": "WPI High-Achieving High School Students program page (wpi.edu)",
         "verifiedAt": "2026-09-15"
       }
     }
