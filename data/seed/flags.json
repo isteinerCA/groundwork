@@ -464,6 +464,14 @@
         "body": "This program is not open to first-time Broadreach applicants regardless of grade, age, or certification level - it exclusively serves alumni of prior Broadreach programs.",
         "sourceCitation": "Broadreach Belize Alumni-Only Advanced Scuba program page",
         "severity": "warning"
+      },
+      {
+        "id": "broadreach-belize-format-inferred",
+        "type": "policy",
+        "title": "Liveaboard vs. land-based format not explicitly confirmed",
+        "body": "Unlike every other Broadreach program, this one's source page didn't explicitly state 'liveaboard' or 'land-based' in the captured content. Placed in the land-based day-to-day group based on its rainforest/reef description, but worth confirming directly.",
+        "sourceCitation": "Broadreach Belize Alumni-Only Advanced Scuba program page",
+        "severity": "info"
       }
     ]
   },
@@ -476,6 +484,44 @@
         "title": "Minimum age 15 required, independent of grade",
         "body": "This program requires students to be at least 15 years old at the time of the program, which could exclude a young student in an otherwise-eligible grade.",
         "sourceCitation": "Broadreach Fiji Shark Studies program page",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "broadreach-ms-bonaire-coral-divers",
+        "broadreach-ms-21day-advanced-scuba",
+        "broadreach-ms-12day-advanced-scuba"
+      ]
+    },
+    "flags": [
+      {
+        "id": "broadreach-ms-cert-prerequisite",
+        "type": "policy",
+        "title": "Requires an existing PADI Open Water certification to enroll",
+        "body": "This program requires students to already hold PADI Open Water certification (or equivalent) before enrolling - not a beginner-friendly option despite the middle-school framing.",
+        "sourceCitation": "Broadreach middle school program pages",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "broadreach-ms-7day-scuba-sailing",
+        "broadreach-ms-12day-scuba-sailing-discoveries",
+        "broadreach-ms-intro-marine-biology"
+      ]
+    },
+    "flags": [
+      {
+        "id": "broadreach-ms-age-gate",
+        "type": "policy",
+        "title": "Hard age requirement (12 by program start), not a grade-based cutoff",
+        "body": "This program requires students to be 12 years old by the program's start date, regardless of grade - a 6th grader who hasn't yet turned 12 would not be eligible even though 6th grade is otherwise within the org's middle-school band.",
+        "sourceCitation": "Broadreach middle school program pages",
         "severity": "warning"
       }
     ]

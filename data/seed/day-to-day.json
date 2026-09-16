@@ -156,17 +156,29 @@
         "broadreach-12day-sailing-island-hopping",
         "broadreach-12day-scuba-sailing-exploration",
         "broadreach-caribbean-marine-bio-voyage",
+        "broadreach-17day-scuba-sailing-voyage",
+        "broadreach-21day-advanced-scuba",
+        "broadreach-17day-padi-jr-divemaster",
+        "broadreach-12day-advanced-scuba",
+        "broadreach-24day-sailing-voyage"
+      ]
+    },
+    "dayToDay": {
+      "notes": "Students live aboard a sailing vessel for the entire program, sharing cabins with a small crew of peers and instructors. Days are structured around the boat's itinerary - sailing between islands, scuba instruction and dives, and shore stops for excursions - with instructors present around the clock in the shared living space. There is no fixed land base; the boat itself is the accommodation throughout.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Broadreach High School program pages, each explicitly labeled a 'liveaboard adventure' (gobroadreach.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": [
         "broadreach-curacao-marine-bio",
         "broadreach-fiji-shark-studies",
         "broadreach-yucatan-ocean-conservation",
         "broadreach-costa-rica-sea-turtle",
-        "broadreach-17day-scuba-sailing-voyage",
-        "broadreach-21day-advanced-scuba",
-        "broadreach-17day-padi-jr-divemaster",
         "broadreach-malawi-wildlife-conservation",
         "broadreach-amazon-galapagos-eco",
-        "broadreach-12day-advanced-scuba",
-        "broadreach-24day-sailing-voyage",
         "broadreach-bonaire-rescue-diver",
         "broadreach-costa-rica-veterinary",
         "broadreach-bahamas-veterinary-wildlife",
@@ -175,9 +187,42 @@
       ]
     },
     "dayToDay": {
-      "notes": "Liveaboard programs (most Caribbean scuba/sailing trips) have students living aboard a sailing vessel for the duration, sharing cabins with a small crew of peers and instructors, with port stops for shore excursions. Land-based programs (Curacao, Fiji, Yucatan, Costa Rica, Malawi, Ecuador, Bahamas, Azores) are based out of a research station, dive lodge, or similar fixed facility. Days are built around the program's core activity (diving, sailing instruction, research fieldwork, or clinical/animal-care work), with instructors and staff present throughout. Round-trip airfare to the destination is the family's responsibility in every case; some programs also require a separate internal flight during the trip itself.",
+      "notes": "Students are based out of a fixed facility for the program's duration - a research station, dive lodge, or similar - rather than living aboard a boat. Days are built around the program's core activity (fieldwork, clinical/animal-care work, or shore-based diving), with day trips or excursions from that home base as part of the itinerary.",
       "sourceType": "official_policy",
-      "sourceCitation": "Broadreach general FAQ and For Students pages (gobroadreach.com, broadreachfoundation.org)",
+      "sourceCitation": "Broadreach High School program pages, each explicitly labeled a 'land-based adventure' (gobroadreach.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "broadreach-ms-7day-scuba-sailing",
+        "broadreach-ms-12day-snorkeling-sailing",
+        "broadreach-ms-12day-scuba-sailing-discoveries",
+        "broadreach-ms-intro-marine-biology",
+        "broadreach-ms-17day-scuba-sailing-voyage",
+        "broadreach-ms-21day-advanced-scuba",
+        "broadreach-ms-12day-advanced-scuba"
+      ]
+    },
+    "dayToDay": {
+      "notes": "Students live aboard a sailing vessel or catamaran for the entire program, sharing space with a small crew of peers and instructors experienced in working with this younger age group. Days are structured around the boat's itinerary - sailing between islands, scuba/snorkel instruction, and shore stops - with instructors present around the clock. There is no fixed land base; the boat itself is the accommodation throughout.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Broadreach Middle School program pages, each explicitly labeled a 'liveaboard adventure' (gobroadreach.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "broadreach-ms-bonaire-coral-divers",
+        "broadreach-ms-bahamas-wildlife-explorer"
+      ]
+    },
+    "dayToDay": {
+      "notes": "Students are based out of a fixed facility for the program's duration rather than living aboard a boat, with instructors experienced in working with this younger age group. Days are built around the program's core activity (diving instruction or wildlife engagement), with excursions from that home base as part of the itinerary.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Broadreach Middle School program pages, each explicitly labeled a 'land-based adventure/program' (gobroadreach.com)",
       "verifiedAt": "2026-09-15"
     }
   },
