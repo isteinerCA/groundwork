@@ -1,6 +1,6 @@
 {
   "verifiedAt": "2026-09-16",
-  "count": 436,
+  "count": 442,
   "programs": [
     {
       "id": "prog-1",
@@ -22293,14 +22293,14 @@
     },
     {
       "id": "prog-407",
-      "slug": "explo-middle-school-2-week-session-1-overnight",
+      "slug": "explo-middle-school-explo-360-session-1-overnight",
       "name": "EXPLO Middle School",
       "institution": "Exploration School Inc. (EXPLO)",
       "programGroupId": "explo-middle-school",
-      "description": "Two-week residential enrichment program at Wellesley College for middle schoolers; students choose EXPLO 360 (broad menu of 50+ classes) or a Focus Program (Medical Rotations +$400, Veterinary Science +$400).",
+      "description": "Broad custom-curriculum track: students choose 2 workshops and 2 electives from 50+ options. Dates confirmed directly via EXPLO's 2027 registration form.",
       "category": "leadership-gifted",
       "secondaryTags": [],
-      "trackDetail": "2-Week Session 1 (Overnight)",
+      "trackDetail": "EXPLO 360 - Session 1 (Overnight)",
       "gradeDisplay": "Rising grades 7-9 (ages 12-14)",
       "gradeCompletedMin": 6,
       "gradeCompletedMax": 8,
@@ -22325,7 +22325,7 @@
       "isInternational": false,
       "creditDisplay": "No",
       "hasCollegeCredit": false,
-      "priceDisplay": "$6,295 (2026 figure; 2027 tuition not yet published) + $150 damage deposit + $350 trips/sundries",
+      "priceDisplay": "$6,295 (2026 reference figure; 2027 price not yet published)",
       "priceMin": 6295,
       "priceMax": 6295,
       "priceUnknown": false,
@@ -22335,10 +22335,26 @@
       "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
+          "id": "explo-ms-focus-grade-restriction",
+          "type": "policy",
+          "title": "Focus Programs (Veterinary Science, Medical Rotations) exclude rising 7th graders",
+          "body": "Unlike EXPLO 360, which is open to the full rising 7-9 grade band, both Focus Programs are restricted to rising 8th and 9th graders only. A rising 7th grader can only enroll in EXPLO 360.",
+          "sourceCitation": "EXPLO 2027 registration form",
+          "severity": "warning"
+        },
+        {
+          "id": "explo-ms-double-session-not-separate-product",
+          "type": "policy",
+          "title": "\"4 weeks\" is not a distinct product - it's enrolling in both sessions",
+          "body": "The registration form only lists 2-week Session 1 and Session 2 options; a family wanting the full 4 weeks selects Session 1, completes payment, then is prompted to separately select Session 2. A Double Session Discount applies ($500 overnight/$300 day per the 2026 schedule) but there is no single bundled '4-week' product.",
+          "sourceCitation": "EXPLO 2027 registration form instructions",
+          "severity": "info"
+        },
+        {
           "id": "explo-ms-unaccompanied-minor-fee",
           "type": "pricing",
           "title": "Extra fee for unaccompanied-minor airport service, and a caution against flying that way",
-          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way (on top of the standard $100/$200 airport transport fee) if a family does use EXPLO's transportation for an unaccompanied minor.",
+          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way if a family does use EXPLO's transportation for an unaccompanied minor.",
           "sourceCitation": "EXPLO Tuition + Financial Aid page",
           "severity": "info"
         }
@@ -22352,14 +22368,14 @@
     },
     {
       "id": "prog-408",
-      "slug": "explo-middle-school-2-week-session-1-day",
+      "slug": "explo-middle-school-explo-360-session-1-day",
       "name": "EXPLO Middle School",
       "institution": "Exploration School Inc. (EXPLO)",
       "programGroupId": "explo-middle-school",
-      "description": "Two-week day-student option for the same Wellesley program.",
+      "description": "Broad custom-curriculum track",
       "category": "leadership-gifted",
       "secondaryTags": [],
-      "trackDetail": "2-Week Session 1 (Day)",
+      "trackDetail": "EXPLO 360 - Session 1 (Day)",
       "gradeDisplay": "Rising grades 7-9 (ages 12-14)",
       "gradeCompletedMin": 6,
       "gradeCompletedMax": 8,
@@ -22372,19 +22388,19 @@
       ],
       "durationBucket": "two_to_four_weeks",
       "lengthDisplay": "2 weeks",
-      "lengthMinDays": 12,
-      "lengthMaxDays": 12,
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
       "datesDisplay": "Jun 28 – Jul 9, 2027",
       "dateStart": "2027-06-28",
       "dateEnd": "2027-07-09",
       "datesParseQuality": "exact",
-      "seasonYear": 2027,
-      "reviewStatus": "verified",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Wellesley, MA (Wellesley College)",
       "isInternational": false,
       "creditDisplay": "No",
       "hasCollegeCredit": false,
-      "priceDisplay": "$4,045 (2026 figure; 2027 tuition not yet published) + $150 damage deposit + $150 sundries",
+      "priceDisplay": "$4,045 (2026 reference figure; 2027 price not yet published)",
       "priceMin": 4045,
       "priceMax": 4045,
       "priceUnknown": false,
@@ -22394,10 +22410,26 @@
       "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
+          "id": "explo-ms-focus-grade-restriction",
+          "type": "policy",
+          "title": "Focus Programs (Veterinary Science, Medical Rotations) exclude rising 7th graders",
+          "body": "Unlike EXPLO 360, which is open to the full rising 7-9 grade band, both Focus Programs are restricted to rising 8th and 9th graders only. A rising 7th grader can only enroll in EXPLO 360.",
+          "sourceCitation": "EXPLO 2027 registration form",
+          "severity": "warning"
+        },
+        {
+          "id": "explo-ms-double-session-not-separate-product",
+          "type": "policy",
+          "title": "\"4 weeks\" is not a distinct product - it's enrolling in both sessions",
+          "body": "The registration form only lists 2-week Session 1 and Session 2 options; a family wanting the full 4 weeks selects Session 1, completes payment, then is prompted to separately select Session 2. A Double Session Discount applies ($500 overnight/$300 day per the 2026 schedule) but there is no single bundled '4-week' product.",
+          "sourceCitation": "EXPLO 2027 registration form instructions",
+          "severity": "info"
+        },
+        {
           "id": "explo-ms-unaccompanied-minor-fee",
           "type": "pricing",
           "title": "Extra fee for unaccompanied-minor airport service, and a caution against flying that way",
-          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way (on top of the standard $100/$200 airport transport fee) if a family does use EXPLO's transportation for an unaccompanied minor.",
+          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way if a family does use EXPLO's transportation for an unaccompanied minor.",
           "sourceCitation": "EXPLO Tuition + Financial Aid page",
           "severity": "info"
         }
@@ -22411,14 +22443,14 @@
     },
     {
       "id": "prog-409",
-      "slug": "explo-middle-school-2-week-session-2-overnight",
+      "slug": "explo-middle-school-explo-360-session-2-overnight",
       "name": "EXPLO Middle School",
       "institution": "Exploration School Inc. (EXPLO)",
       "programGroupId": "explo-middle-school",
-      "description": "Second 2-week residential session option.",
+      "description": "Broad custom-curriculum track; second session.",
       "category": "leadership-gifted",
       "secondaryTags": [],
-      "trackDetail": "2-Week Session 2 (Overnight)",
+      "trackDetail": "EXPLO 360 - Session 2 (Overnight)",
       "gradeDisplay": "Rising grades 7-9 (ages 12-14)",
       "gradeCompletedMin": 6,
       "gradeCompletedMax": 8,
@@ -22443,7 +22475,7 @@
       "isInternational": false,
       "creditDisplay": "No",
       "hasCollegeCredit": false,
-      "priceDisplay": "$6,295 (2026 figure; 2027 tuition not yet published) + $150 damage deposit + $350 trips/sundries",
+      "priceDisplay": "$6,295 (2026 reference figure; 2027 price not yet published)",
       "priceMin": 6295,
       "priceMax": 6295,
       "priceUnknown": false,
@@ -22453,10 +22485,26 @@
       "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
+          "id": "explo-ms-focus-grade-restriction",
+          "type": "policy",
+          "title": "Focus Programs (Veterinary Science, Medical Rotations) exclude rising 7th graders",
+          "body": "Unlike EXPLO 360, which is open to the full rising 7-9 grade band, both Focus Programs are restricted to rising 8th and 9th graders only. A rising 7th grader can only enroll in EXPLO 360.",
+          "sourceCitation": "EXPLO 2027 registration form",
+          "severity": "warning"
+        },
+        {
+          "id": "explo-ms-double-session-not-separate-product",
+          "type": "policy",
+          "title": "\"4 weeks\" is not a distinct product - it's enrolling in both sessions",
+          "body": "The registration form only lists 2-week Session 1 and Session 2 options; a family wanting the full 4 weeks selects Session 1, completes payment, then is prompted to separately select Session 2. A Double Session Discount applies ($500 overnight/$300 day per the 2026 schedule) but there is no single bundled '4-week' product.",
+          "sourceCitation": "EXPLO 2027 registration form instructions",
+          "severity": "info"
+        },
+        {
           "id": "explo-ms-unaccompanied-minor-fee",
           "type": "pricing",
           "title": "Extra fee for unaccompanied-minor airport service, and a caution against flying that way",
-          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way (on top of the standard $100/$200 airport transport fee) if a family does use EXPLO's transportation for an unaccompanied minor.",
+          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way if a family does use EXPLO's transportation for an unaccompanied minor.",
           "sourceCitation": "EXPLO Tuition + Financial Aid page",
           "severity": "info"
         }
@@ -22470,14 +22518,14 @@
     },
     {
       "id": "prog-410",
-      "slug": "explo-middle-school-2-week-session-2-day",
+      "slug": "explo-middle-school-explo-360-session-2-day",
       "name": "EXPLO Middle School",
       "institution": "Exploration School Inc. (EXPLO)",
       "programGroupId": "explo-middle-school",
-      "description": "Second 2-week day session option.",
+      "description": "Broad custom-curriculum track",
       "category": "leadership-gifted",
       "secondaryTags": [],
-      "trackDetail": "2-Week Session 2 (Day)",
+      "trackDetail": "EXPLO 360 - Session 2 (Day)",
       "gradeDisplay": "Rising grades 7-9 (ages 12-14)",
       "gradeCompletedMin": 6,
       "gradeCompletedMax": 8,
@@ -22490,19 +22538,19 @@
       ],
       "durationBucket": "two_to_four_weeks",
       "lengthDisplay": "2 weeks",
-      "lengthMinDays": 12,
-      "lengthMaxDays": 12,
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
       "datesDisplay": "Jul 12–23, 2027",
       "dateStart": "2027-07-12",
       "dateEnd": "2027-07-23",
       "datesParseQuality": "exact",
-      "seasonYear": 2027,
-      "reviewStatus": "verified",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Wellesley, MA (Wellesley College)",
       "isInternational": false,
       "creditDisplay": "No",
       "hasCollegeCredit": false,
-      "priceDisplay": "$4,045 (2026 figure; 2027 tuition not yet published) + $150 damage deposit + $150 sundries",
+      "priceDisplay": "$4,045 (2026 reference figure; 2027 price not yet published)",
       "priceMin": 4045,
       "priceMax": 4045,
       "priceUnknown": false,
@@ -22512,10 +22560,26 @@
       "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
+          "id": "explo-ms-focus-grade-restriction",
+          "type": "policy",
+          "title": "Focus Programs (Veterinary Science, Medical Rotations) exclude rising 7th graders",
+          "body": "Unlike EXPLO 360, which is open to the full rising 7-9 grade band, both Focus Programs are restricted to rising 8th and 9th graders only. A rising 7th grader can only enroll in EXPLO 360.",
+          "sourceCitation": "EXPLO 2027 registration form",
+          "severity": "warning"
+        },
+        {
+          "id": "explo-ms-double-session-not-separate-product",
+          "type": "policy",
+          "title": "\"4 weeks\" is not a distinct product - it's enrolling in both sessions",
+          "body": "The registration form only lists 2-week Session 1 and Session 2 options; a family wanting the full 4 weeks selects Session 1, completes payment, then is prompted to separately select Session 2. A Double Session Discount applies ($500 overnight/$300 day per the 2026 schedule) but there is no single bundled '4-week' product.",
+          "sourceCitation": "EXPLO 2027 registration form instructions",
+          "severity": "info"
+        },
+        {
           "id": "explo-ms-unaccompanied-minor-fee",
           "type": "pricing",
           "title": "Extra fee for unaccompanied-minor airport service, and a caution against flying that way",
-          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way (on top of the standard $100/$200 airport transport fee) if a family does use EXPLO's transportation for an unaccompanied minor.",
+          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way if a family does use EXPLO's transportation for an unaccompanied minor.",
           "sourceCitation": "EXPLO Tuition + Financial Aid page",
           "severity": "info"
         }
@@ -22529,18 +22593,18 @@
     },
     {
       "id": "prog-411",
-      "slug": "explo-middle-school-4-week-overnight",
+      "slug": "explo-middle-school-veterinary-science-focus-session-1-overnight",
       "name": "EXPLO Middle School",
       "institution": "Exploration School Inc. (EXPLO)",
       "programGroupId": "explo-middle-school",
-      "description": "Full four-week residential program combining both 2-week sessions back-to-back.",
-      "category": "leadership-gifted",
+      "description": "Specialized intensive track in veterinary science, restricted to rising 8th and 9th graders only - NOT available to rising 7th graders (who may only choose EXPLO 360).",
+      "category": "biomedical",
       "secondaryTags": [],
-      "trackDetail": "4-Week (Overnight)",
-      "gradeDisplay": "Rising grades 7-9 (ages 12-14)",
-      "gradeCompletedMin": 6,
+      "trackDetail": "Veterinary Science Focus - Session 1 (Overnight)",
+      "gradeDisplay": "Rising grades 8-9 only (NOT open to rising 7th graders)",
+      "gradeCompletedMin": 7,
       "gradeCompletedMax": 8,
-      "gradeSource": "age",
+      "gradeSource": "grade",
       "admissionType": "first_come",
       "admissionDisplay": "First-Come",
       "formatDisplay": "Residential",
@@ -22548,12 +22612,12 @@
         "residential"
       ],
       "durationBucket": "two_to_four_weeks",
-      "lengthDisplay": "4 weeks",
-      "lengthMinDays": 28,
-      "lengthMaxDays": 28,
-      "datesDisplay": "Jun 27 – Jul 24, 2027",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jun 27 – Jul 10, 2027",
       "dateStart": "2027-06-27",
-      "dateEnd": "2027-07-24",
+      "dateEnd": "2027-07-10",
       "datesParseQuality": "exact",
       "seasonYear": 2027,
       "reviewStatus": "verified",
@@ -22561,9 +22625,9 @@
       "isInternational": false,
       "creditDisplay": "No",
       "hasCollegeCredit": false,
-      "priceDisplay": "$12,090 (2026 figure; 2027 tuition not yet published) + $150 damage deposit + $350 trips/sundries per session",
-      "priceMin": 12090,
-      "priceMax": 12090,
+      "priceDisplay": "$6,695 (2026 reference: $6,295 base + $400 Veterinary Science supplement; 2027 not yet published)",
+      "priceMin": 6695,
+      "priceMax": 6695,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": true,
@@ -22571,10 +22635,26 @@
       "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
+          "id": "explo-ms-focus-grade-restriction",
+          "type": "policy",
+          "title": "Focus Programs (Veterinary Science, Medical Rotations) exclude rising 7th graders",
+          "body": "Unlike EXPLO 360, which is open to the full rising 7-9 grade band, both Focus Programs are restricted to rising 8th and 9th graders only. A rising 7th grader can only enroll in EXPLO 360.",
+          "sourceCitation": "EXPLO 2027 registration form",
+          "severity": "warning"
+        },
+        {
+          "id": "explo-ms-double-session-not-separate-product",
+          "type": "policy",
+          "title": "\"4 weeks\" is not a distinct product - it's enrolling in both sessions",
+          "body": "The registration form only lists 2-week Session 1 and Session 2 options; a family wanting the full 4 weeks selects Session 1, completes payment, then is prompted to separately select Session 2. A Double Session Discount applies ($500 overnight/$300 day per the 2026 schedule) but there is no single bundled '4-week' product.",
+          "sourceCitation": "EXPLO 2027 registration form instructions",
+          "severity": "info"
+        },
+        {
           "id": "explo-ms-unaccompanied-minor-fee",
           "type": "pricing",
           "title": "Extra fee for unaccompanied-minor airport service, and a caution against flying that way",
-          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way (on top of the standard $100/$200 airport transport fee) if a family does use EXPLO's transportation for an unaccompanied minor.",
+          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way if a family does use EXPLO's transportation for an unaccompanied minor.",
           "sourceCitation": "EXPLO Tuition + Financial Aid page",
           "severity": "info"
         }
@@ -22588,18 +22668,18 @@
     },
     {
       "id": "prog-412",
-      "slug": "explo-middle-school-4-week-day",
+      "slug": "explo-middle-school-veterinary-science-focus-session-1-day",
       "name": "EXPLO Middle School",
       "institution": "Exploration School Inc. (EXPLO)",
       "programGroupId": "explo-middle-school",
-      "description": "Full four-week day-student program combining both 2-week sessions back-to-back.",
-      "category": "leadership-gifted",
+      "description": "Veterinary Science Focus",
+      "category": "biomedical",
       "secondaryTags": [],
-      "trackDetail": "4-Week (Day)",
-      "gradeDisplay": "Rising grades 7-9 (ages 12-14)",
-      "gradeCompletedMin": 6,
+      "trackDetail": "Veterinary Science Focus - Session 1 (Day)",
+      "gradeDisplay": "Rising grades 8-9 only (NOT open to rising 7th graders)",
+      "gradeCompletedMin": 7,
       "gradeCompletedMax": 8,
-      "gradeSource": "age",
+      "gradeSource": "grade",
       "admissionType": "first_come",
       "admissionDisplay": "First-Come",
       "formatDisplay": "Commuter",
@@ -22607,22 +22687,22 @@
         "commuter"
       ],
       "durationBucket": "two_to_four_weeks",
-      "lengthDisplay": "4 weeks",
-      "lengthMinDays": 26,
-      "lengthMaxDays": 26,
-      "datesDisplay": "Jun 28 – Jul 23, 2027",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jun 28 – Jul 9, 2027",
       "dateStart": "2027-06-28",
-      "dateEnd": "2027-07-23",
+      "dateEnd": "2027-07-09",
       "datesParseQuality": "exact",
-      "seasonYear": 2027,
-      "reviewStatus": "verified",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
       "locationDisplay": "Wellesley, MA (Wellesley College)",
       "isInternational": false,
       "creditDisplay": "No",
       "hasCollegeCredit": false,
-      "priceDisplay": "$7,790 (2026 figure; 2027 tuition not yet published) + $150 damage deposit + $150 sundries per session",
-      "priceMin": 7790,
-      "priceMax": 7790,
+      "priceDisplay": "$4,445 (2026 reference: $4,045 base + $400 supplement)",
+      "priceMin": 4445,
+      "priceMax": 4445,
       "priceUnknown": false,
       "fullyFunded": false,
       "financialAidAvailable": true,
@@ -22630,10 +22710,26 @@
       "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
+          "id": "explo-ms-focus-grade-restriction",
+          "type": "policy",
+          "title": "Focus Programs (Veterinary Science, Medical Rotations) exclude rising 7th graders",
+          "body": "Unlike EXPLO 360, which is open to the full rising 7-9 grade band, both Focus Programs are restricted to rising 8th and 9th graders only. A rising 7th grader can only enroll in EXPLO 360.",
+          "sourceCitation": "EXPLO 2027 registration form",
+          "severity": "warning"
+        },
+        {
+          "id": "explo-ms-double-session-not-separate-product",
+          "type": "policy",
+          "title": "\"4 weeks\" is not a distinct product - it's enrolling in both sessions",
+          "body": "The registration form only lists 2-week Session 1 and Session 2 options; a family wanting the full 4 weeks selects Session 1, completes payment, then is prompted to separately select Session 2. A Double Session Discount applies ($500 overnight/$300 day per the 2026 schedule) but there is no single bundled '4-week' product.",
+          "sourceCitation": "EXPLO 2027 registration form instructions",
+          "severity": "info"
+        },
+        {
           "id": "explo-ms-unaccompanied-minor-fee",
           "type": "pricing",
           "title": "Extra fee for unaccompanied-minor airport service, and a caution against flying that way",
-          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way (on top of the standard $100/$200 airport transport fee) if a family does use EXPLO's transportation for an unaccompanied minor.",
+          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way if a family does use EXPLO's transportation for an unaccompanied minor.",
           "sourceCitation": "EXPLO Tuition + Financial Aid page",
           "severity": "info"
         }
@@ -22647,6 +22743,456 @@
     },
     {
       "id": "prog-413",
+      "slug": "explo-middle-school-veterinary-science-focus-session-2-overnight",
+      "name": "EXPLO Middle School",
+      "institution": "Exploration School Inc. (EXPLO)",
+      "programGroupId": "explo-middle-school",
+      "description": "Veterinary Science Focus; second session; grades 8-9 only.",
+      "category": "biomedical",
+      "secondaryTags": [],
+      "trackDetail": "Veterinary Science Focus - Session 2 (Overnight)",
+      "gradeDisplay": "Rising grades 8-9 only (NOT open to rising 7th graders)",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jul 11–24, 2027",
+      "dateStart": "2027-07-11",
+      "dateEnd": "2027-07-24",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Wellesley, MA (Wellesley College)",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$6,695 (2026 reference)",
+      "priceMin": 6695,
+      "priceMax": 6695,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://explo.org/",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "explo-ms-focus-grade-restriction",
+          "type": "policy",
+          "title": "Focus Programs (Veterinary Science, Medical Rotations) exclude rising 7th graders",
+          "body": "Unlike EXPLO 360, which is open to the full rising 7-9 grade band, both Focus Programs are restricted to rising 8th and 9th graders only. A rising 7th grader can only enroll in EXPLO 360.",
+          "sourceCitation": "EXPLO 2027 registration form",
+          "severity": "warning"
+        },
+        {
+          "id": "explo-ms-double-session-not-separate-product",
+          "type": "policy",
+          "title": "\"4 weeks\" is not a distinct product - it's enrolling in both sessions",
+          "body": "The registration form only lists 2-week Session 1 and Session 2 options; a family wanting the full 4 weeks selects Session 1, completes payment, then is prompted to separately select Session 2. A Double Session Discount applies ($500 overnight/$300 day per the 2026 schedule) but there is no single bundled '4-week' product.",
+          "sourceCitation": "EXPLO 2027 registration form instructions",
+          "severity": "info"
+        },
+        {
+          "id": "explo-ms-unaccompanied-minor-fee",
+          "type": "pricing",
+          "title": "Extra fee for unaccompanied-minor airport service, and a caution against flying that way",
+          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way if a family does use EXPLO's transportation for an unaccompanied minor.",
+          "sourceCitation": "EXPLO Tuition + Financial Aid page",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "EXPLO is explicitly an 'unplugged' program - device use is restricted as a stated program value, not merely a default policy. Residential students live in Wellesley College dorms with roommates, supported by Resident Advisors around the clock; a general staff-to-student ratio of 1:7 is advertised. Weekends are student-choice: options include whale watching, Red Sox games, museum visits, and other off-campus trips, with a 24/7 health center on site. Day students follow the same academic day as residential students but go home at night; if a day student stays for evening programming, a $38 dinner + evening event fee is charged to their account. International students live alongside domestic students in the same dorms and dining halls.",
+        "sourceType": "official_policy",
+        "sourceCitation": "EXPLO program details and tuition/FAQ pages (explo.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-414",
+      "slug": "explo-middle-school-veterinary-science-focus-session-2-day",
+      "name": "EXPLO Middle School",
+      "institution": "Exploration School Inc. (EXPLO)",
+      "programGroupId": "explo-middle-school",
+      "description": "Veterinary Science Focus",
+      "category": "biomedical",
+      "secondaryTags": [],
+      "trackDetail": "Veterinary Science Focus - Session 2 (Day)",
+      "gradeDisplay": "Rising grades 8-9 only (NOT open to rising 7th graders)",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Commuter",
+      "formatTags": [
+        "commuter"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jul 12–23, 2027",
+      "dateStart": "2027-07-12",
+      "dateEnd": "2027-07-23",
+      "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Wellesley, MA (Wellesley College)",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,445 (2026 reference)",
+      "priceMin": 4445,
+      "priceMax": 4445,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://explo.org/",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "explo-ms-focus-grade-restriction",
+          "type": "policy",
+          "title": "Focus Programs (Veterinary Science, Medical Rotations) exclude rising 7th graders",
+          "body": "Unlike EXPLO 360, which is open to the full rising 7-9 grade band, both Focus Programs are restricted to rising 8th and 9th graders only. A rising 7th grader can only enroll in EXPLO 360.",
+          "sourceCitation": "EXPLO 2027 registration form",
+          "severity": "warning"
+        },
+        {
+          "id": "explo-ms-double-session-not-separate-product",
+          "type": "policy",
+          "title": "\"4 weeks\" is not a distinct product - it's enrolling in both sessions",
+          "body": "The registration form only lists 2-week Session 1 and Session 2 options; a family wanting the full 4 weeks selects Session 1, completes payment, then is prompted to separately select Session 2. A Double Session Discount applies ($500 overnight/$300 day per the 2026 schedule) but there is no single bundled '4-week' product.",
+          "sourceCitation": "EXPLO 2027 registration form instructions",
+          "severity": "info"
+        },
+        {
+          "id": "explo-ms-unaccompanied-minor-fee",
+          "type": "pricing",
+          "title": "Extra fee for unaccompanied-minor airport service, and a caution against flying that way",
+          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way if a family does use EXPLO's transportation for an unaccompanied minor.",
+          "sourceCitation": "EXPLO Tuition + Financial Aid page",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "EXPLO is explicitly an 'unplugged' program - device use is restricted as a stated program value, not merely a default policy. Residential students live in Wellesley College dorms with roommates, supported by Resident Advisors around the clock; a general staff-to-student ratio of 1:7 is advertised. Weekends are student-choice: options include whale watching, Red Sox games, museum visits, and other off-campus trips, with a 24/7 health center on site. Day students follow the same academic day as residential students but go home at night; if a day student stays for evening programming, a $38 dinner + evening event fee is charged to their account. International students live alongside domestic students in the same dorms and dining halls.",
+        "sourceType": "official_policy",
+        "sourceCitation": "EXPLO program details and tuition/FAQ pages (explo.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-415",
+      "slug": "explo-middle-school-medical-rotations-focus-session-1-overnight",
+      "name": "EXPLO Middle School",
+      "institution": "Exploration School Inc. (EXPLO)",
+      "programGroupId": "explo-middle-school",
+      "description": "Specialized intensive track shadowing medical fields, restricted to rising 8th and 9th graders only.",
+      "category": "biomedical",
+      "secondaryTags": [],
+      "trackDetail": "Medical Rotations Focus - Session 1 (Overnight)",
+      "gradeDisplay": "Rising grades 8-9 only (NOT open to rising 7th graders)",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jun 27 – Jul 10, 2027",
+      "dateStart": "2027-06-27",
+      "dateEnd": "2027-07-10",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Wellesley, MA (Wellesley College)",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$6,695 (2026 reference: $6,295 base + $400 Medical Rotations supplement)",
+      "priceMin": 6695,
+      "priceMax": 6695,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://explo.org/",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "explo-ms-focus-grade-restriction",
+          "type": "policy",
+          "title": "Focus Programs (Veterinary Science, Medical Rotations) exclude rising 7th graders",
+          "body": "Unlike EXPLO 360, which is open to the full rising 7-9 grade band, both Focus Programs are restricted to rising 8th and 9th graders only. A rising 7th grader can only enroll in EXPLO 360.",
+          "sourceCitation": "EXPLO 2027 registration form",
+          "severity": "warning"
+        },
+        {
+          "id": "explo-ms-double-session-not-separate-product",
+          "type": "policy",
+          "title": "\"4 weeks\" is not a distinct product - it's enrolling in both sessions",
+          "body": "The registration form only lists 2-week Session 1 and Session 2 options; a family wanting the full 4 weeks selects Session 1, completes payment, then is prompted to separately select Session 2. A Double Session Discount applies ($500 overnight/$300 day per the 2026 schedule) but there is no single bundled '4-week' product.",
+          "sourceCitation": "EXPLO 2027 registration form instructions",
+          "severity": "info"
+        },
+        {
+          "id": "explo-ms-unaccompanied-minor-fee",
+          "type": "pricing",
+          "title": "Extra fee for unaccompanied-minor airport service, and a caution against flying that way",
+          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way if a family does use EXPLO's transportation for an unaccompanied minor.",
+          "sourceCitation": "EXPLO Tuition + Financial Aid page",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "EXPLO is explicitly an 'unplugged' program - device use is restricted as a stated program value, not merely a default policy. Residential students live in Wellesley College dorms with roommates, supported by Resident Advisors around the clock; a general staff-to-student ratio of 1:7 is advertised. Weekends are student-choice: options include whale watching, Red Sox games, museum visits, and other off-campus trips, with a 24/7 health center on site. Day students follow the same academic day as residential students but go home at night; if a day student stays for evening programming, a $38 dinner + evening event fee is charged to their account. International students live alongside domestic students in the same dorms and dining halls.",
+        "sourceType": "official_policy",
+        "sourceCitation": "EXPLO program details and tuition/FAQ pages (explo.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-416",
+      "slug": "explo-middle-school-medical-rotations-focus-session-1-day",
+      "name": "EXPLO Middle School",
+      "institution": "Exploration School Inc. (EXPLO)",
+      "programGroupId": "explo-middle-school",
+      "description": "Medical Rotations Focus",
+      "category": "biomedical",
+      "secondaryTags": [],
+      "trackDetail": "Medical Rotations Focus - Session 1 (Day)",
+      "gradeDisplay": "Rising grades 8-9 only (NOT open to rising 7th graders)",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Commuter",
+      "formatTags": [
+        "commuter"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jun 28 – Jul 9, 2027",
+      "dateStart": "2027-06-28",
+      "dateEnd": "2027-07-09",
+      "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Wellesley, MA (Wellesley College)",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,445 (2026 reference)",
+      "priceMin": 4445,
+      "priceMax": 4445,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://explo.org/",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "explo-ms-focus-grade-restriction",
+          "type": "policy",
+          "title": "Focus Programs (Veterinary Science, Medical Rotations) exclude rising 7th graders",
+          "body": "Unlike EXPLO 360, which is open to the full rising 7-9 grade band, both Focus Programs are restricted to rising 8th and 9th graders only. A rising 7th grader can only enroll in EXPLO 360.",
+          "sourceCitation": "EXPLO 2027 registration form",
+          "severity": "warning"
+        },
+        {
+          "id": "explo-ms-double-session-not-separate-product",
+          "type": "policy",
+          "title": "\"4 weeks\" is not a distinct product - it's enrolling in both sessions",
+          "body": "The registration form only lists 2-week Session 1 and Session 2 options; a family wanting the full 4 weeks selects Session 1, completes payment, then is prompted to separately select Session 2. A Double Session Discount applies ($500 overnight/$300 day per the 2026 schedule) but there is no single bundled '4-week' product.",
+          "sourceCitation": "EXPLO 2027 registration form instructions",
+          "severity": "info"
+        },
+        {
+          "id": "explo-ms-unaccompanied-minor-fee",
+          "type": "pricing",
+          "title": "Extra fee for unaccompanied-minor airport service, and a caution against flying that way",
+          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way if a family does use EXPLO's transportation for an unaccompanied minor.",
+          "sourceCitation": "EXPLO Tuition + Financial Aid page",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "EXPLO is explicitly an 'unplugged' program - device use is restricted as a stated program value, not merely a default policy. Residential students live in Wellesley College dorms with roommates, supported by Resident Advisors around the clock; a general staff-to-student ratio of 1:7 is advertised. Weekends are student-choice: options include whale watching, Red Sox games, museum visits, and other off-campus trips, with a 24/7 health center on site. Day students follow the same academic day as residential students but go home at night; if a day student stays for evening programming, a $38 dinner + evening event fee is charged to their account. International students live alongside domestic students in the same dorms and dining halls.",
+        "sourceType": "official_policy",
+        "sourceCitation": "EXPLO program details and tuition/FAQ pages (explo.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-417",
+      "slug": "explo-middle-school-medical-rotations-focus-session-2-overnight",
+      "name": "EXPLO Middle School",
+      "institution": "Exploration School Inc. (EXPLO)",
+      "programGroupId": "explo-middle-school",
+      "description": "Medical Rotations Focus; second session; grades 8-9 only.",
+      "category": "biomedical",
+      "secondaryTags": [],
+      "trackDetail": "Medical Rotations Focus - Session 2 (Overnight)",
+      "gradeDisplay": "Rising grades 8-9 only (NOT open to rising 7th graders)",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jul 11–24, 2027",
+      "dateStart": "2027-07-11",
+      "dateEnd": "2027-07-24",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Wellesley, MA (Wellesley College)",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$6,695 (2026 reference)",
+      "priceMin": 6695,
+      "priceMax": 6695,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://explo.org/",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "explo-ms-focus-grade-restriction",
+          "type": "policy",
+          "title": "Focus Programs (Veterinary Science, Medical Rotations) exclude rising 7th graders",
+          "body": "Unlike EXPLO 360, which is open to the full rising 7-9 grade band, both Focus Programs are restricted to rising 8th and 9th graders only. A rising 7th grader can only enroll in EXPLO 360.",
+          "sourceCitation": "EXPLO 2027 registration form",
+          "severity": "warning"
+        },
+        {
+          "id": "explo-ms-double-session-not-separate-product",
+          "type": "policy",
+          "title": "\"4 weeks\" is not a distinct product - it's enrolling in both sessions",
+          "body": "The registration form only lists 2-week Session 1 and Session 2 options; a family wanting the full 4 weeks selects Session 1, completes payment, then is prompted to separately select Session 2. A Double Session Discount applies ($500 overnight/$300 day per the 2026 schedule) but there is no single bundled '4-week' product.",
+          "sourceCitation": "EXPLO 2027 registration form instructions",
+          "severity": "info"
+        },
+        {
+          "id": "explo-ms-unaccompanied-minor-fee",
+          "type": "pricing",
+          "title": "Extra fee for unaccompanied-minor airport service, and a caution against flying that way",
+          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way if a family does use EXPLO's transportation for an unaccompanied minor.",
+          "sourceCitation": "EXPLO Tuition + Financial Aid page",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "EXPLO is explicitly an 'unplugged' program - device use is restricted as a stated program value, not merely a default policy. Residential students live in Wellesley College dorms with roommates, supported by Resident Advisors around the clock; a general staff-to-student ratio of 1:7 is advertised. Weekends are student-choice: options include whale watching, Red Sox games, museum visits, and other off-campus trips, with a 24/7 health center on site. Day students follow the same academic day as residential students but go home at night; if a day student stays for evening programming, a $38 dinner + evening event fee is charged to their account. International students live alongside domestic students in the same dorms and dining halls.",
+        "sourceType": "official_policy",
+        "sourceCitation": "EXPLO program details and tuition/FAQ pages (explo.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-418",
+      "slug": "explo-middle-school-medical-rotations-focus-session-2-day",
+      "name": "EXPLO Middle School",
+      "institution": "Exploration School Inc. (EXPLO)",
+      "programGroupId": "explo-middle-school",
+      "description": "Medical Rotations Focus",
+      "category": "biomedical",
+      "secondaryTags": [],
+      "trackDetail": "Medical Rotations Focus - Session 2 (Day)",
+      "gradeDisplay": "Rising grades 8-9 only (NOT open to rising 7th graders)",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Commuter",
+      "formatTags": [
+        "commuter"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jul 12–23, 2027",
+      "dateStart": "2027-07-12",
+      "dateEnd": "2027-07-23",
+      "datesParseQuality": "exact",
+      "seasonYear": 2026,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Wellesley, MA (Wellesley College)",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,445 (2026 reference)",
+      "priceMin": 4445,
+      "priceMax": 4445,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://explo.org/",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "explo-ms-focus-grade-restriction",
+          "type": "policy",
+          "title": "Focus Programs (Veterinary Science, Medical Rotations) exclude rising 7th graders",
+          "body": "Unlike EXPLO 360, which is open to the full rising 7-9 grade band, both Focus Programs are restricted to rising 8th and 9th graders only. A rising 7th grader can only enroll in EXPLO 360.",
+          "sourceCitation": "EXPLO 2027 registration form",
+          "severity": "warning"
+        },
+        {
+          "id": "explo-ms-double-session-not-separate-product",
+          "type": "policy",
+          "title": "\"4 weeks\" is not a distinct product - it's enrolling in both sessions",
+          "body": "The registration form only lists 2-week Session 1 and Session 2 options; a family wanting the full 4 weeks selects Session 1, completes payment, then is prompted to separately select Session 2. A Double Session Discount applies ($500 overnight/$300 day per the 2026 schedule) but there is no single bundled '4-week' product.",
+          "sourceCitation": "EXPLO 2027 registration form instructions",
+          "severity": "info"
+        },
+        {
+          "id": "explo-ms-unaccompanied-minor-fee",
+          "type": "pricing",
+          "title": "Extra fee for unaccompanied-minor airport service, and a caution against flying that way",
+          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way if a family does use EXPLO's transportation for an unaccompanied minor.",
+          "sourceCitation": "EXPLO Tuition + Financial Aid page",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "EXPLO is explicitly an 'unplugged' program - device use is restricted as a stated program value, not merely a default policy. Residential students live in Wellesley College dorms with roommates, supported by Resident Advisors around the clock; a general staff-to-student ratio of 1:7 is advertised. Weekends are student-choice: options include whale watching, Red Sox games, museum visits, and other off-campus trips, with a 24/7 health center on site. Day students follow the same academic day as residential students but go home at night; if a day student stays for evening programming, a $38 dinner + evening event fee is charged to their account. International students live alongside domestic students in the same dorms and dining halls.",
+        "sourceType": "official_policy",
+        "sourceCitation": "EXPLO program details and tuition/FAQ pages (explo.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-419",
       "slug": "amigos-de-las-americas-montanas-y-mar-middle-school-session-1",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -22707,7 +23253,7 @@
       }
     },
     {
-      "id": "prog-414",
+      "id": "prog-420",
       "slug": "amigos-de-las-americas-montanas-y-mar-middle-school-session-2",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -22768,7 +23314,7 @@
       }
     },
     {
-      "id": "prog-415",
+      "id": "prog-421",
       "slug": "amigos-de-las-americas-montanas-y-mar-middle-school-session-3",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -22829,7 +23375,7 @@
       }
     },
     {
-      "id": "prog-416",
+      "id": "prog-422",
       "slug": "amigos-de-las-americas-la-brunca-explore-session-1",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -22890,7 +23436,7 @@
       }
     },
     {
-      "id": "prog-417",
+      "id": "prog-423",
       "slug": "amigos-de-las-americas-la-brunca-explore-session-2",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -22951,7 +23497,7 @@
       }
     },
     {
-      "id": "prog-418",
+      "id": "prog-424",
       "slug": "amigos-de-las-americas-olas-y-cerros-explore-session-1",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -23012,7 +23558,7 @@
       }
     },
     {
-      "id": "prog-419",
+      "id": "prog-425",
       "slug": "amigos-de-las-americas-olas-y-cerros-explore-session-2",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -23073,7 +23619,7 @@
       }
     },
     {
-      "id": "prog-420",
+      "id": "prog-426",
       "slug": "amigos-de-las-americas-perez-zeledon-immerse-session-1",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -23134,7 +23680,7 @@
       }
     },
     {
-      "id": "prog-421",
+      "id": "prog-427",
       "slug": "amigos-de-las-americas-perez-zeledon-immerse-session-2",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -23195,7 +23741,7 @@
       }
     },
     {
-      "id": "prog-422",
+      "id": "prog-428",
       "slug": "amigos-de-las-americas-ritmos-y-raices-explore-session-1",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -23245,7 +23791,7 @@
       }
     },
     {
-      "id": "prog-423",
+      "id": "prog-429",
       "slug": "amigos-de-las-americas-ritmos-y-raices-explore-session-2",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -23295,7 +23841,7 @@
       }
     },
     {
-      "id": "prog-424",
+      "id": "prog-430",
       "slug": "amigos-de-las-americas-barahona-immerse-session-1",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -23345,7 +23891,7 @@
       }
     },
     {
-      "id": "prog-425",
+      "id": "prog-431",
       "slug": "amigos-de-las-americas-barahona-immerse-session-2",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -23395,7 +23941,7 @@
       }
     },
     {
-      "id": "prog-426",
+      "id": "prog-432",
       "slug": "amigos-de-las-americas-el-valle-explore-session-1",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -23456,7 +24002,7 @@
       }
     },
     {
-      "id": "prog-427",
+      "id": "prog-433",
       "slug": "amigos-de-las-americas-el-valle-explore-session-2",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -23517,7 +24063,7 @@
       }
     },
     {
-      "id": "prog-428",
+      "id": "prog-434",
       "slug": "amigos-de-las-americas-el-pacifico-discover-session-1",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -23578,7 +24124,7 @@
       }
     },
     {
-      "id": "prog-429",
+      "id": "prog-435",
       "slug": "amigos-de-las-americas-el-pacifico-discover-session-2",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -23639,7 +24185,7 @@
       }
     },
     {
-      "id": "prog-430",
+      "id": "prog-436",
       "slug": "amigos-de-las-americas-el-pacifico-discover-session-3",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -23700,7 +24246,7 @@
       }
     },
     {
-      "id": "prog-431",
+      "id": "prog-437",
       "slug": "amigos-de-las-americas-tierras-altas-discover-session-1",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -23761,7 +24307,7 @@
       }
     },
     {
-      "id": "prog-432",
+      "id": "prog-438",
       "slug": "amigos-de-las-americas-tierras-altas-discover-session-2",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -23822,7 +24368,7 @@
       }
     },
     {
-      "id": "prog-433",
+      "id": "prog-439",
       "slug": "amigos-de-las-americas-tierras-altas-discover-session-3",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -23883,7 +24429,7 @@
       }
     },
     {
-      "id": "prog-434",
+      "id": "prog-440",
       "slug": "amigos-de-las-americas-ruta-del-mate-explore-session-1",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -23933,7 +24479,7 @@
       }
     },
     {
-      "id": "prog-435",
+      "id": "prog-441",
       "slug": "amigos-de-las-americas-ruta-del-mate-explore-session-2",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
@@ -23983,7 +24529,7 @@
       }
     },
     {
-      "id": "prog-436",
+      "id": "prog-442",
       "slug": "amigos-de-las-americas-tierra-guarani-immerse",
       "name": "AMIGOS de las Americas",
       "institution": "Amigos de las Americas",
