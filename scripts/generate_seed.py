@@ -823,17 +823,36 @@ def is_valid_day_to_day(day_to_day: dict | None) -> bool:
     return source_type in DAY_TO_DAY_SOURCE_TYPES
 
 
+def _match_program_group_id(rule_group_id, program_group_id: str | None) -> bool:
+    if not rule_group_id:
+        return True
+    if not program_group_id:
+        return False
+    if isinstance(rule_group_id, list):
+        return program_group_id in rule_group_id
+    return program_group_id == rule_group_id
+
+
 def curated_rule_matches(match: dict, program: dict) -> bool:
     group_id = match.get("programGroupId")
-    if group_id:
-        if program.get("programGroupId") != group_id:
+    if not _match_program_group_id(group_id, program.get("programGroupId")):
+        return False
+
+    if not group_id:
+        name = program.get("name", "")
+        slug = program.get("slug", "")
+        inc = match.get("nameIncludes", "")
+        slug_inc = match.get("slugIncludes", "")
+        if not ((inc and inc in name) or (slug_inc and slug_inc in slug)):
             return False
     else:
         name = program.get("name", "")
         slug = program.get("slug", "")
         inc = match.get("nameIncludes", "")
         slug_inc = match.get("slugIncludes", "")
-        if not ((inc and inc in name) or (slug_inc and slug_inc in slug)):
+        if inc and inc not in name:
+            return False
+        if slug_inc and slug_inc not in slug:
             return False
 
     offering_label = match.get("offeringLabel")

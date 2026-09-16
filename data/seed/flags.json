@@ -335,6 +335,19 @@
     ]
   },
   {
+    "match": { "programGroupId": "explo-middle-school", "slugIncludes": "medical-rotations" },
+    "flags": [
+      {
+        "id": "explo-ms-pre-med-focus",
+        "type": "other",
+        "title": "Pre-med / health careers focus track",
+        "body": "Medical Rotations is EXPLO Middle School's pre-med oriented Focus Program: a fixed curriculum shadowing medical fields rather than the custom EXPLO 360 workshop menu. Rising 8th and 9th graders only.",
+        "sourceCitation": "EXPLO 2027 registration form (explo.org)",
+        "severity": "info"
+      }
+    ]
+  },
+  {
     "match": { "programGroupId": "amigos-costa-rica" },
     "flags": [
       {
@@ -357,6 +370,65 @@
         "body": "Unlike Costa Rica, Dominican Republic, and Paraguay, Panama does not offer an Immerse-tier program - its longest option (El Valle) is 3 weeks, not 4-6.",
         "sourceCitation": "AMIGOS Programs page",
         "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "moondance-colorado-trail",
+        "moondance-albania-montenegro-greece",
+        "moondance-australia",
+        "moondance-belize",
+        "moondance-big-wild",
+        "moondance-big-wild-backpacking",
+        "moondance-british-columbia",
+        "moondance-california",
+        "moondance-canadian-rockies",
+        "moondance-canyonlands",
+        "moondance-chamonix",
+        "moondance-croatia",
+        "moondance-ecuador-galapagos",
+        "moondance-fiji",
+        "moondance-hawaiian-islands",
+        "moondance-iceland",
+        "moondance-italian-dolomites",
+        "moondance-japan",
+        "moondance-kilimanjaro",
+        "moondance-madeira",
+        "moondance-maui",
+        "moondance-mystery-trip",
+        "moondance-northern-lights",
+        "moondance-pacific-northwest",
+        "moondance-slovenia",
+        "moondance-south-africa-mozambique",
+        "moondance-spain-morocco",
+        "moondance-tanzania-zanzibar",
+        "moondance-thailand",
+        "moondance-yosemite"
+      ]
+    },
+    "flags": [
+      {
+        "id": "moondance-no-parent-contact",
+        "type": "policy",
+        "title": "No routine parent contact during the trip",
+        "body": "Consistent with the 'unplugged' program philosophy, families should not expect regular calls, texts, or updates from their student during the trip itself.",
+        "sourceCitation": "Moondance Adventures general FAQ pages",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": { "programGroupId": "moondance-mystery-trip" },
+    "flags": [
+      {
+        "id": "moondance-mystery-price-footnote",
+        "type": "pricing",
+        "title": "Price has an unresolved footnote",
+        "body": "The $10,995 price on the source page carries a double-asterisk linking to explanatory text that wasn't captured in this research pass - worth confirming directly before treating the figure as final.",
+        "sourceCitation": "Moondance Adventures Mystery Trip page",
+        "severity": "warning"
       }
     ]
   },

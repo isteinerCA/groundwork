@@ -28,9 +28,16 @@ import type { Program, ProgramCsvRow, ProgramFlag, ProgramDayToDay } from "../sr
 interface CuratedMatch {
   nameIncludes?: string;
   slugIncludes?: string;
-  programGroupId?: string;
+  programGroupId?: string | string[];
   /** When set, rule applies only to this offering label (2027 Offering Label / 2026 Track/Session). */
   offeringLabel?: string;
+}
+
+function matchProgramGroupId(ruleGroupId: string | string[] | undefined, programGroupId?: string): boolean {
+  if (!ruleGroupId) return true;
+  if (!programGroupId) return false;
+  if (Array.isArray(ruleGroupId)) return ruleGroupId.includes(programGroupId);
+  return programGroupId === ruleGroupId;
 }
 
 interface FlagRule {
@@ -116,12 +123,17 @@ function curatedRuleMatches(
   match: CuratedMatch,
   program: Pick<Program, "name" | "slug" | "programGroupId" | "trackDetail">,
 ): boolean {
-  if (match.programGroupId) {
-    if (program.programGroupId !== match.programGroupId) return false;
-  } else {
+  if (!matchProgramGroupId(match.programGroupId, program.programGroupId)) {
+    return false;
+  }
+
+  if (!match.programGroupId) {
     const nameHit = match.nameIncludes ? program.name.includes(match.nameIncludes) : false;
     const slugHit = match.slugIncludes ? program.slug.includes(match.slugIncludes) : false;
     if (!nameHit && !slugHit) return false;
+  } else {
+    if (match.nameIncludes && !program.name.includes(match.nameIncludes)) return false;
+    if (match.slugIncludes && !program.slug.includes(match.slugIncludes)) return false;
   }
 
   if (match.offeringLabel) {

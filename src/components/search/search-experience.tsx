@@ -40,7 +40,7 @@ import {
   countSearchResultItems,
 } from "@/lib/data/group-search-results";
 import { summarizeSeasonCoverage } from "@/lib/data/normalize-season-review";
-import { formatProgramCountLabel } from "@/lib/programs/preview-programs";
+import { formatOfferingCountLabel } from "@/lib/programs/preview-programs";
 import { summarizeSearchFilters, trackEvent } from "@/lib/analytics";
 import {
   applyLockedFilters,
@@ -238,7 +238,7 @@ export function SearchExperience({
               pageDescription
             ) : (
               <>
-                Filter {formatProgramCountLabel()} by grade and interests, then heart programs to
+                Explore {formatOfferingCountLabel()} by grade and interests, then heart programs to
                 save. Current list represents 2026 programs.
               </>
             )}

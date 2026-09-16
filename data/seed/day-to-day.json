@@ -47,7 +47,7 @@
   {
     "match": { "programGroupId": "interlochen-intermediate" },
     "dayToDay": {
-      "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, grouped with other Intermediate-age campers. Alongside daily rehearsals/coursework in their chosen program, students have time for traditional camp activities - swimming, field games, and archery. Every program at this division is either 3 or 6 weeks long (no 1-week Intensives exist below grade 9), so families are choosing between a shorter single-session commitment or the full-summer 6-week track from the outset, rather than layering a short intensive on top. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is available for any program at this division, since none of Intermediate's offerings are the aid-ineligible 1-week Intensive type. Admission is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+      "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, grouped with other Intermediate-age campers. Alongside daily rehearsals/coursework in their chosen program, students have time for traditional camp activities - swimming, field games, and archery. Every program at this division runs 3 or 6 weeks and is eligible for need-based financial aid; programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships. Admission is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
       "sourceType": "official_policy",
       "sourceCitation": "Interlochen grades 6-8 program pages and tuition/financial aid page (interlochen.org)",
       "verifiedAt": "2026-09-15"
@@ -95,6 +95,57 @@
       "notes": "Paraguay only offers Explore and Immerse tiers (no Discover, no Middle School) - the most independence-focused country in the org's lineup. Tierra Guarani (6 weeks) is the single longest program AMIGOS offers anywhere, including Spanish AND Guarani-language practice alongside homestay life.",
       "sourceType": "official_policy",
       "sourceCitation": "AMIGOS Programs page (amigosinternational.org)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "moondance-colorado-trail" },
+    "dayToDay": {
+      "notes": "Students travel as a single group of 12 with 3 adult leaders throughout the trip, camping in the backcountry (San Juan National Forest) for the backpacking segment and along the riverbank during the 2-day whitewater rafting section, with no fixed base camp. Group meets and disbands in Denver, CO. As with all Moondance trips, the program is explicitly 'unplugged' - phones and social media use are restricted as a stated program value - and there is no routine parent contact during the trip itself.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Moondance Adventures Colorado Trail trip page and general FAQ pages (moondanceadventures.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "moondance-colorado-trail",
+        "moondance-albania-montenegro-greece",
+        "moondance-australia",
+        "moondance-belize",
+        "moondance-big-wild",
+        "moondance-big-wild-backpacking",
+        "moondance-british-columbia",
+        "moondance-california",
+        "moondance-canadian-rockies",
+        "moondance-canyonlands",
+        "moondance-chamonix",
+        "moondance-croatia",
+        "moondance-ecuador-galapagos",
+        "moondance-fiji",
+        "moondance-hawaiian-islands",
+        "moondance-iceland",
+        "moondance-italian-dolomites",
+        "moondance-japan",
+        "moondance-kilimanjaro",
+        "moondance-madeira",
+        "moondance-maui",
+        "moondance-mystery-trip",
+        "moondance-northern-lights",
+        "moondance-pacific-northwest",
+        "moondance-slovenia",
+        "moondance-south-africa-mozambique",
+        "moondance-spain-morocco",
+        "moondance-tanzania-zanzibar",
+        "moondance-thailand",
+        "moondance-yosemite"
+      ]
+    },
+    "dayToDay": {
+      "notes": "Students travel as a single small group (typically around 12 students with 3 adult leaders) for the entire trip, camping or staying in group accommodations rather than with host families, with no fixed home base for most of the itinerary. The program is explicitly 'unplugged' - phone and social media use is restricted as a stated program value, not just a default policy - and there is no routine parent contact during the trip. Groups meet at a designated point at the start of the trip and disband at the same or a nearby point at the end.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Moondance Adventures general FAQ and About/Why Moondance pages (moondanceadventures.com)",
       "verifiedAt": "2026-09-15"
     }
   },
@@ -218,7 +269,7 @@
   {
     "match": { "programGroupId": "socapa-vermont" },
     "dayToDay": {
-      "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT is consistently the least expensive SOCAPA campus across every track. VT also uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography), not available at NYC or LA.",
+      "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography).",
       "sourceType": "official_policy",
       "sourceCitation": "SOCAPA Tuition & Costs page and individual track pages (socapa.org)",
       "verifiedAt": "2026-09-15"
