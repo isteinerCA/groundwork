@@ -65,7 +65,7 @@
   {
     "match": { "programGroupId": "amigos-costa-rica" },
     "dayToDay": {
-      "notes": "Discover-tier programs (2 weeks) are staff-led group experiences with daily supervision, no host-family placement, and no Spanish requirement - the lowest-independence entry point. Explore-tier (3-3.5 weeks) and Immerse-tier (4-6 weeks) programs place students individually with a host family, with growing independence and responsibility as program length increases; Spanish proficiency requirements grow accordingly. Across every tier, AMIGOS maintains a 24/7 on-call safety and mental-wellness support system reachable regardless of location. Flights, travel insurance, and gear are explicitly NOT included in the program fee at any tier and must be arranged separately.",
+      "notes": "Discover-tier programs (2 weeks) are staff-led group experiences with daily supervision, no host-family placement, and no Spanish requirement - the lowest-independence entry point. Explore-tier (3-3.5 weeks) and Immerse-tier (4 weeks) programs place students individually with a host family, with growing independence and responsibility as program length increases; Spanish proficiency requirements grow accordingly. A 24/7 on-call safety and mental-wellness support system is reachable regardless of location. Flights, travel insurance, and gear are not included in the program fee and must be arranged separately.",
       "sourceType": "official_policy",
       "sourceCitation": "AMIGOS Programs and Costs & Access pages (amigosinternational.org)",
       "verifiedAt": "2026-09-15"
@@ -83,7 +83,7 @@
   {
     "match": { "programGroupId": "amigos-panama" },
     "dayToDay": {
-      "notes": "Panama offers only Discover and Explore tiers, not Immerse - so even Panama's longest offering (El Valle, 3 weeks) is shorter than the org's overall maximum (6 weeks, only in Paraguay). Discover-tier programs here are staff-led with no host family and no Spanish requirement.",
+      "notes": "Discover-tier programs here are staff-led group experiences with no host family placement and no Spanish requirement. Explore-tier places students individually with a host family, with independence and Spanish expectations growing accordingly. A 24/7 on-call safety and mental-wellness support system applies. Flights and travel insurance are not included in the program fee.",
       "sourceType": "official_policy",
       "sourceCitation": "AMIGOS Programs page (amigosinternational.org)",
       "verifiedAt": "2026-09-15"
