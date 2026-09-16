@@ -1,6 +1,6 @@
 {
   "verifiedAt": "2026-09-16",
-  "count": 347,
+  "count": 367,
   "programs": [
     {
       "id": "prog-1",
@@ -18406,6 +18406,1406 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.interlochen.org/music/camp-programs/high-school",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-348",
+      "slug": "interlochen-arts-camp-high-school-dance-6-week-combined-ballet-contemporary",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "Six-week dance program combining classical ballet and contemporary technique training, in the new 26,000 sq ft Dance Center.",
+      "category": "arts",
+      "secondaryTags": [
+        "Dance"
+      ],
+      "trackDetail": "Dance - 6-Week (combined Ballet & Contemporary)",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "four_plus_weeks",
+      "lengthDisplay": "6 weeks",
+      "lengthMinDays": 42,
+      "lengthMaxDays": 42,
+      "datesDisplay": "Jun 27 – Aug 8, 2027",
+      "dateStart": "2027-06-27",
+      "dateEnd": "2027-08-08",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$10,500",
+      "priceMin": 10500,
+      "priceMax": 10500,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.interlochen.org/dance/camp-programs",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-349",
+      "slug": "interlochen-arts-camp-high-school-classical-ballet-3-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "Three-week classical ballet-focused program culminating in a fully produced performance.",
+      "category": "arts",
+      "secondaryTags": [
+        "Dance"
+      ],
+      "trackDetail": "Classical Ballet - 3-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "3-week session; specific session slot not confirmed",
+      "dateStart": null,
+      "dateEnd": null,
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$7,550",
+      "priceMin": 7550,
+      "priceMax": 7550,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.interlochen.org/dance/camp-programs/high-school/contemporary-dance",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-350",
+      "slug": "interlochen-arts-camp-high-school-classical-ballet-intensive-1-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "One-week intensive in classical ballet technique, precision, and conditioning.",
+      "category": "arts",
+      "secondaryTags": [
+        "Dance"
+      ],
+      "trackDetail": "Classical Ballet Intensive - 1-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "1 week",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Jun 19–25, 2027",
+      "dateStart": "2027-06-19",
+      "dateEnd": "2027-06-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2,125 (not eligible for financial aid)",
+      "priceMin": 2125,
+      "priceMax": 2125,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.interlochen.org/dance/camp-programs",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-351",
+      "slug": "interlochen-arts-camp-high-school-contemporary-dance-3-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "Three-week contemporary dance-focused program culminating in a fully produced performance.",
+      "category": "arts",
+      "secondaryTags": [
+        "Dance"
+      ],
+      "trackDetail": "Contemporary Dance - 3-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "3-week session; specific session slot not confirmed",
+      "dateStart": null,
+      "dateEnd": null,
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$7,550",
+      "priceMin": 7550,
+      "priceMax": 7550,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.interlochen.org/dance/camp-programs/high-school/contemporary-dance",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-352",
+      "slug": "interlochen-arts-camp-high-school-contemporary-dance-intensive-1-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "One-week intensive in contemporary dance technique and improvisation.",
+      "category": "arts",
+      "secondaryTags": [
+        "Dance"
+      ],
+      "trackDetail": "Contemporary Dance Intensive - 1-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "1 week",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Jun 19–25, 2027",
+      "dateStart": "2027-06-19",
+      "dateEnd": "2027-06-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2,125 (not eligible for financial aid)",
+      "priceMin": 2125,
+      "priceMax": 2125,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.interlochen.org/dance/camp-programs/contemporary-dance-intensive",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-353",
+      "slug": "interlochen-arts-camp-high-school-hip-hop-intensive-1-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "One-week intensive covering breaking, locking, and popping styles of hip-hop dance.",
+      "category": "arts",
+      "secondaryTags": [
+        "Dance"
+      ],
+      "trackDetail": "Hip-Hop Intensive - 1-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "1 week",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Jun 19–25, 2027",
+      "dateStart": "2027-06-19",
+      "dateEnd": "2027-06-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2,125 (not eligible for financial aid)",
+      "priceMin": 2125,
+      "priceMax": 2125,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.interlochen.org/dance/camp-programs/hip-hop-intensive",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-354",
+      "slug": "interlochen-arts-camp-high-school-visual-arts-3-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "Introductory three-week program for students new to formal art study, exploring media beyond drawing/painting including 3D and digital art, in the 36,000 sq ft Dow Center for Visual Arts.",
+      "category": "arts",
+      "secondaryTags": [
+        "Visual Arts"
+      ],
+      "trackDetail": "Visual Arts - 3-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "3-week session; specific session slot not confirmed",
+      "dateStart": null,
+      "dateEnd": null,
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$7,550",
+      "priceMin": 7550,
+      "priceMax": 7550,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.interlochen.org/visual-arts/camp-programs/high-school/visual-arts",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-355",
+      "slug": "interlochen-arts-camp-high-school-advanced-drawing-3-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "Three-week advanced drawing program for students with prior formal art study.",
+      "category": "arts",
+      "secondaryTags": [
+        "Visual Arts"
+      ],
+      "trackDetail": "Advanced Drawing - 3-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "3-week session; specific session slot not confirmed",
+      "dateStart": null,
+      "dateEnd": null,
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$7,550",
+      "priceMin": 7550,
+      "priceMax": 7550,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.interlochen.org/visual-arts/camp-programs/high-school/portfolio-requirements",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-356",
+      "slug": "interlochen-arts-camp-high-school-advanced-painting-3-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "Three-week advanced painting program for students with prior formal art study.",
+      "category": "arts",
+      "secondaryTags": [
+        "Visual Arts"
+      ],
+      "trackDetail": "Advanced Painting - 3-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "3-week session; specific session slot not confirmed",
+      "dateStart": null,
+      "dateEnd": null,
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$7,550",
+      "priceMin": 7550,
+      "priceMax": 7550,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.interlochen.org/visual-arts/camp-programs/high-school/portfolio-requirements",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-357",
+      "slug": "interlochen-arts-camp-high-school-fashion-3-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "Three-week fashion design program.",
+      "category": "arts",
+      "secondaryTags": [
+        "Visual Arts"
+      ],
+      "trackDetail": "Fashion - 3-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "3-week session; specific session slot not confirmed",
+      "dateStart": null,
+      "dateEnd": null,
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$7,550",
+      "priceMin": 7550,
+      "priceMax": 7550,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.interlochen.org/visual-arts/camp-programs/high-school/portfolio-requirements",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-358",
+      "slug": "interlochen-arts-camp-high-school-drawing-painting-intensive-1-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "One-week intensive covering drawing and painting fundamentals.",
+      "category": "arts",
+      "secondaryTags": [
+        "Visual Arts"
+      ],
+      "trackDetail": "Drawing & Painting Intensive - 1-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "1 week",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Jun 19–25, 2027",
+      "dateStart": "2027-06-19",
+      "dateEnd": "2027-06-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2,125 (not eligible for financial aid)",
+      "priceMin": 2125,
+      "priceMax": 2125,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.interlochen.org/visual-arts/camp-programs/drawing-painting-intensive",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-359",
+      "slug": "interlochen-arts-camp-high-school-comics-graphic-narratives-intensive-1-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "One-week intensive on comics and graphic-narrative storytelling; open to students from visual arts, graphic narrative, or creative writing backgrounds.",
+      "category": "arts",
+      "secondaryTags": [
+        "Visual Arts"
+      ],
+      "trackDetail": "Comics & Graphic Narratives Intensive - 1-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "1 week",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Jun 19–25, 2027",
+      "dateStart": "2027-06-19",
+      "dateEnd": "2027-06-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2,125 (not eligible for financial aid)",
+      "priceMin": 2125,
+      "priceMax": 2125,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.interlochen.org/visual-arts/camp-programs/comics-graphic-narratives-intensive",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-360",
+      "slug": "interlochen-arts-camp-high-school-preparing-a-portfolio-for-college-intensive-1-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "One-week intensive helping students build a college-application-ready visual arts portfolio.",
+      "category": "arts",
+      "secondaryTags": [
+        "Visual Arts"
+      ],
+      "trackDetail": "Preparing a Portfolio for College Intensive - 1-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "1 week",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Jun 19–25, 2027",
+      "dateStart": "2027-06-19",
+      "dateEnd": "2027-06-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2,125 (not eligible for financial aid)",
+      "priceMin": 2125,
+      "priceMax": 2125,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.interlochen.org/visual-arts/camp-programs/high-school/visual-arts",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-361",
+      "slug": "interlochen-arts-camp-high-school-animation-3-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "Three-week collaborative animation program in the DeRoy Center for Film Studies, working with music, theatre, and other students in a studio-like setting to create short films.",
+      "category": "arts",
+      "secondaryTags": [
+        "Film & New Media"
+      ],
+      "trackDetail": "Animation - 3-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "3-week session; specific session slot not confirmed",
+      "dateStart": null,
+      "dateEnd": null,
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$7,550",
+      "priceMin": 7550,
+      "priceMax": 7550,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.interlochen.org/film-new-media/camp-programs/high-school/animation",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-362",
+      "slug": "interlochen-arts-camp-high-school-filmmaking-3-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "Three-week filmmaking program covering the full cinematic process from screenwriting through location production and editing to a final screening.",
+      "category": "arts",
+      "secondaryTags": [
+        "Film & New Media"
+      ],
+      "trackDetail": "Filmmaking - 3-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "3-week session; specific session slot not confirmed",
+      "dateStart": null,
+      "dateEnd": null,
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$7,550",
+      "priceMin": 7550,
+      "priceMax": 7550,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.interlochen.org/film-new-media/camp-programs/high-school/filmmaking",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-363",
+      "slug": "interlochen-arts-camp-high-school-screen-scoring-intensive-1-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "One-week intensive in composing and scoring music for film and media.",
+      "category": "arts",
+      "secondaryTags": [
+        "Film & New Media"
+      ],
+      "trackDetail": "Screen Scoring Intensive - 1-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "1 week",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Jun 19–25, 2027",
+      "dateStart": "2027-06-19",
+      "dateEnd": "2027-06-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2,125 (not eligible for financial aid)",
+      "priceMin": 2125,
+      "priceMax": 2125,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.interlochen.org/film-new-media/camp-programs/screen-scoring-intensive",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-364",
+      "slug": "interlochen-arts-camp-high-school-screenwriting-intensive-1-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "One-week intensive developing a complete short script, culminating in a staged reading.",
+      "category": "arts",
+      "secondaryTags": [
+        "Film & New Media"
+      ],
+      "trackDetail": "Screenwriting Intensive - 1-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "1 week",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Jun 19–25, 2027",
+      "dateStart": "2027-06-19",
+      "dateEnd": "2027-06-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2,125 (not eligible for financial aid)",
+      "priceMin": 2125,
+      "priceMax": 2125,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.interlochen.org/film-new-media/camp-programs/screenwriting-intensive",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-365",
+      "slug": "interlochen-arts-camp-high-school-creative-writing-3-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "Three-week general creative writing program with broad exposure across genres (fiction, poetry, creative nonfiction, playwriting), based at The Writing House.",
+      "category": "arts",
+      "secondaryTags": [
+        "Writing/Humanities"
+      ],
+      "trackDetail": "Creative Writing - 3-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "3-week session; specific session slot not confirmed",
+      "dateStart": null,
+      "dateEnd": null,
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$7,550",
+      "priceMin": 7550,
+      "priceMax": 7550,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.interlochen.org/creative-writing/camp-programs/high-school",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-366",
+      "slug": "interlochen-arts-camp-high-school-novel-writing-intensive-1-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "One-week intensive for students actively working on a novel manuscript, with one-on-one instructor consultation.",
+      "category": "arts",
+      "secondaryTags": [
+        "Writing/Humanities"
+      ],
+      "trackDetail": "Novel Writing Intensive - 1-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "1 week",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Jun 19–25, 2027",
+      "dateStart": "2027-06-19",
+      "dateEnd": "2027-06-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2,125 (not eligible for financial aid)",
+      "priceMin": 2125,
+      "priceMax": 2125,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.interlochen.org/creative-writing/camp-programs/novel-writing-intensive",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-367",
+      "slug": "interlochen-arts-camp-high-school-spoken-word-performance-poetry-intensive-1-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "One-week intensive in spoken word and performance poetry.",
+      "category": "arts",
+      "secondaryTags": [
+        "Writing/Humanities"
+      ],
+      "trackDetail": "Spoken Word/Performance Poetry Intensive - 1-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "1 week",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Jun 19–25, 2027",
+      "dateStart": "2027-06-19",
+      "dateEnd": "2027-06-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2,125 (not eligible for financial aid)",
+      "priceMin": 2125,
+      "priceMax": 2125,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.interlochen.org/creative-writing/camp-programs",
       "dataVerifiedAt": "2026-09-16",
       "flags": [
         {
