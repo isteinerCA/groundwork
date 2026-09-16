@@ -152,6 +152,34 @@
   {
     "match": {
       "programGroupId": [
+        "apogee-alaska-mountains-coast",
+        "apogee-alps-explorer",
+        "apogee-colorados-rocky-mountains",
+        "apogee-dolomites-explorer",
+        "apogee-iceland-mountains-coast",
+        "apogee-maine-coast-junior",
+        "apogee-maines-downeast-explorer",
+        "apogee-new-england-mountains-coast",
+        "apogee-northwest-mountains-coast",
+        "apogee-pyrenees-mountains-coast",
+        "apogee-slovenian-mountains-croatian-coast",
+        "apogee-europe-coast-to-coast",
+        "apogee-vermont-to-montreal",
+        "apogee-caribbean-service-puerto-rico",
+        "apogee-caribbean-service-virgin-islands",
+        "apogee-maine-coast-college-essay"
+      ]
+    },
+    "dayToDay": {
+      "notes": "Students travel in small, mixed-gender groups led by trip leaders, camping or staying in group accommodations for the trip's duration rather than a fixed home base for most itineraries. Trips are rated on a 10-point Challenge Level scale specific to each program, so families can gauge physical difficulty before enrolling. Groups meet at a designated point (often an airport) to start the trip and disband at a similar point at the end.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Apogee Adventures trip pages and FAQ (apogeeadventures.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": [
         "broadreach-7day-scuba-sailing",
         "broadreach-12day-sailing-island-hopping",
         "broadreach-12day-scuba-sailing-exploration",

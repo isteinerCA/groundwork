@@ -435,6 +435,38 @@
   {
     "match": {
       "programGroupId": [
+        "apogee-alaska-mountains-coast",
+        "apogee-alps-explorer",
+        "apogee-colorados-rocky-mountains",
+        "apogee-dolomites-explorer",
+        "apogee-iceland-mountains-coast",
+        "apogee-maine-coast-junior",
+        "apogee-maines-downeast-explorer",
+        "apogee-new-england-mountains-coast",
+        "apogee-northwest-mountains-coast",
+        "apogee-pyrenees-mountains-coast",
+        "apogee-slovenian-mountains-croatian-coast",
+        "apogee-europe-coast-to-coast",
+        "apogee-vermont-to-montreal",
+        "apogee-caribbean-service-puerto-rico",
+        "apogee-caribbean-service-virgin-islands",
+        "apogee-maine-coast-college-essay"
+      ]
+    },
+    "flags": [
+      {
+        "id": "apogee-early-bird-discount",
+        "type": "pricing",
+        "title": "Prices reflect a limited-time early enrollment discount",
+        "body": "The org's site banner advertises a $300 early bird discount through 9/20 (2026) for 2027 enrollment - the prices captured may not reflect the later standard rate.",
+        "sourceCitation": "Apogee Adventures site banner",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": [
         "broadreach-fiji-shark-studies",
         "broadreach-yucatan-ocean-conservation",
         "broadreach-21day-advanced-scuba",
