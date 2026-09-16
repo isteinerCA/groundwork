@@ -1,6 +1,6 @@
 {
   "verifiedAt": "2026-09-16",
-  "count": 285,
+  "count": 296,
   "programs": [
     {
       "id": "prog-1",
@@ -4521,58 +4521,6 @@
     },
     {
       "id": "prog-105",
-      "slug": "interlochen-arts-camp",
-      "name": "Interlochen Arts Camp",
-      "category": "traditional-camp",
-      "secondaryTags": [
-        "Arts"
-      ],
-      "gradeDisplay": "Grades 3-12",
-      "gradeCompletedMin": 3,
-      "gradeCompletedMax": 12,
-      "gradeSource": "grade",
-      "admissionType": "highly_competitive",
-      "admissionDisplay": "Competitive audition",
-      "formatDisplay": "Residential",
-      "formatTags": [
-        "residential"
-      ],
-      "durationBucket": "under_2_weeks",
-      "lengthDisplay": "1-6 weeks",
-      "lengthMinDays": 7,
-      "lengthMaxDays": 42,
-      "datesDisplay": "Jun 28 - Aug 9",
-      "dateStart": "2026-06-28",
-      "dateEnd": "2026-08-09",
-      "datesParseQuality": "exact",
-      "seasonYear": 2026,
-      "reviewStatus": "provisional",
-      "locationDisplay": "Traverse City, MI",
-      "isInternational": false,
-      "creditDisplay": "Some (online certs)",
-      "hasCollegeCredit": false,
-      "priceDisplay": "$2050-$10350",
-      "priceMin": 2050,
-      "priceMax": 10350,
-      "priceUnknown": false,
-      "fullyFunded": false,
-      "financialAidAvailable": false,
-      "websiteUrl": "https://www.interlochen.org/",
-      "dataVerifiedAt": "2026-09-16",
-      "flags": [
-        {
-          "id": "interlochen-safety-history",
-          "type": "safety",
-          "title": "Historical abuse allegations and donor history",
-          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
-          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
-          "sourceDate": "2024-01-01",
-          "severity": "warning"
-        }
-      ]
-    },
-    {
-      "id": "prog-106",
       "slug": "explo",
       "name": "EXPLO",
       "category": "traditional-camp",
@@ -4614,7 +4562,7 @@
       "flags": []
     },
     {
-      "id": "prog-107",
+      "id": "prog-106",
       "slug": "camp-becket-chimney-corners",
       "name": "Camp Becket & Chimney Corners",
       "category": "traditional-camp",
@@ -4654,7 +4602,7 @@
       "flags": []
     },
     {
-      "id": "prog-108",
+      "id": "prog-107",
       "slug": "adirondack-camp",
       "name": "Adirondack Camp",
       "category": "traditional-camp",
@@ -4696,7 +4644,7 @@
       "flags": []
     },
     {
-      "id": "prog-109",
+      "id": "prog-108",
       "slug": "nols-teen-expeditions",
       "name": "NOLS Teen Expeditions",
       "category": "outdoor-wilderness",
@@ -4738,7 +4686,7 @@
       "flags": []
     },
     {
-      "id": "prog-110",
+      "id": "prog-109",
       "slug": "outward-bound-high-school",
       "name": "Outward Bound High School",
       "category": "outdoor-wilderness",
@@ -4790,7 +4738,7 @@
       ]
     },
     {
-      "id": "prog-111",
+      "id": "prog-110",
       "slug": "overland-summers",
       "name": "Overland Summers",
       "category": "outdoor-wilderness",
@@ -4842,7 +4790,7 @@
       ]
     },
     {
-      "id": "prog-112",
+      "id": "prog-111",
       "slug": "apogee-adventures",
       "name": "Apogee Adventures",
       "category": "outdoor-wilderness",
@@ -4885,7 +4833,7 @@
       "flags": []
     },
     {
-      "id": "prog-113",
+      "id": "prog-112",
       "slug": "bold-earth-adventure-camp",
       "name": "Bold Earth Adventure Camp",
       "category": "outdoor-wilderness",
@@ -4927,7 +4875,7 @@
       "flags": []
     },
     {
-      "id": "prog-114",
+      "id": "prog-113",
       "slug": "moondance-adventures",
       "name": "Moondance Adventures",
       "category": "outdoor-wilderness",
@@ -4969,7 +4917,7 @@
       "flags": []
     },
     {
-      "id": "prog-115",
+      "id": "prog-114",
       "slug": "wilderness-adventures",
       "name": "Wilderness Adventures",
       "category": "outdoor-wilderness",
@@ -5009,7 +4957,7 @@
       "flags": []
     },
     {
-      "id": "prog-116",
+      "id": "prog-115",
       "slug": "yale-young-global-scholars-yygs",
       "name": "Yale Young Global Scholars (YYGS)",
       "category": "cultural-exchange",
@@ -5051,7 +4999,7 @@
       "flags": []
     },
     {
-      "id": "prog-117",
+      "id": "prog-116",
       "slug": "amigos-de-las-americas",
       "name": "AMIGOS de las Americas",
       "category": "cultural-exchange",
@@ -5093,7 +5041,7 @@
       "flags": []
     },
     {
-      "id": "prog-118",
+      "id": "prog-117",
       "slug": "ciee-high-school-abroad",
       "name": "CIEE High School Abroad",
       "category": "cultural-exchange",
@@ -5133,7 +5081,7 @@
       "flags": []
     },
     {
-      "id": "prog-119",
+      "id": "prog-118",
       "slug": "afs-intercultural-programs",
       "name": "AFS Intercultural Programs",
       "category": "cultural-exchange",
@@ -5173,7 +5121,7 @@
       "flags": []
     },
     {
-      "id": "prog-120",
+      "id": "prog-119",
       "slug": "yes-abroad",
       "name": "YES Abroad",
       "category": "cultural-exchange",
@@ -5215,7 +5163,7 @@
       "flags": []
     },
     {
-      "id": "prog-121",
+      "id": "prog-120",
       "slug": "rotary-youth-exchange",
       "name": "Rotary Youth Exchange",
       "category": "cultural-exchange",
@@ -5255,7 +5203,7 @@
       "flags": []
     },
     {
-      "id": "prog-122",
+      "id": "prog-121",
       "slug": "putney-student-travel",
       "name": "Putney Student Travel",
       "category": "cultural-exchange",
@@ -5297,7 +5245,7 @@
       "flags": []
     },
     {
-      "id": "prog-123",
+      "id": "prog-122",
       "slug": "arcc-programs",
       "name": "ARCC Programs",
       "category": "cultural-exchange",
@@ -5339,7 +5287,7 @@
       "flags": []
     },
     {
-      "id": "prog-124",
+      "id": "prog-123",
       "slug": "that-s-mandarin-chinese-summer-camp-day-half-day-full-homestay",
       "name": "That's Mandarin Chinese Summer Camp",
       "category": "cultural-exchange",
@@ -5381,7 +5329,7 @@
       "flags": []
     },
     {
-      "id": "prog-125",
+      "id": "prog-124",
       "slug": "goeast-mandarin-summer-camp-academic-chinese-booster-chinese-adventure",
       "name": "GoEast Mandarin Summer Camp",
       "category": "cultural-exchange",
@@ -5422,7 +5370,7 @@
       "flags": []
     },
     {
-      "id": "prog-126",
+      "id": "prog-125",
       "slug": "keats-school-mandarin-immersion-camp",
       "name": "Keats School Mandarin Immersion Camp",
       "category": "cultural-exchange",
@@ -5462,7 +5410,7 @@
       "flags": []
     },
     {
-      "id": "prog-127",
+      "id": "prog-126",
       "slug": "china-internship-placements-mandarin-camp",
       "name": "China Internship Placements Mandarin Camp",
       "category": "cultural-exchange",
@@ -5502,7 +5450,7 @@
       "flags": []
     },
     {
-      "id": "prog-128",
+      "id": "prog-127",
       "slug": "ltl-school",
       "name": "LTL School",
       "category": "cultural-exchange",
@@ -5542,7 +5490,7 @@
       "flags": []
     },
     {
-      "id": "prog-129",
+      "id": "prog-128",
       "slug": "vanderbilt-summer-academy-vsa",
       "name": "Vanderbilt Summer Academy (VSA)",
       "category": "leadership-gifted",
@@ -5582,7 +5530,7 @@
       "flags": []
     },
     {
-      "id": "prog-130",
+      "id": "prog-129",
       "slug": "northwestern-ctd-summer-camp",
       "name": "Northwestern CTD Summer Camp",
       "category": "leadership-gifted",
@@ -5622,7 +5570,7 @@
       "flags": []
     },
     {
-      "id": "prog-131",
+      "id": "prog-130",
       "slug": "wharton-global-youth-program-on-campus",
       "name": "Wharton Global Youth Program",
       "category": "leadership-gifted",
@@ -5663,7 +5611,7 @@
       "flags": []
     },
     {
-      "id": "prog-132",
+      "id": "prog-131",
       "slug": "wharton-global-youth-program-online",
       "name": "Wharton Global Youth Program",
       "category": "leadership-gifted",
@@ -5704,7 +5652,7 @@
       "flags": []
     },
     {
-      "id": "prog-133",
+      "id": "prog-132",
       "slug": "johns-hopkins-center-for-talented-youth-cty-residential-day",
       "name": "Johns Hopkins Center for Talented Youth (CTY)",
       "category": "leadership-gifted",
@@ -5747,7 +5695,7 @@
       "flags": []
     },
     {
-      "id": "prog-134",
+      "id": "prog-133",
       "slug": "iacocca-global-entrepreneurship-intensive-igei",
       "name": "Iacocca Global Entrepreneurship Intensive (IGEI)",
       "category": "leadership-gifted",
@@ -5789,7 +5737,7 @@
       "flags": []
     },
     {
-      "id": "prog-135",
+      "id": "prog-134",
       "slug": "iacocca-global-future-leaders-lab-silicon-valley",
       "name": "Iacocca Global Future Leaders Lab: Silicon Valley",
       "category": "leadership-gifted",
@@ -5829,7 +5777,7 @@
       "flags": []
     },
     {
-      "id": "prog-136",
+      "id": "prog-135",
       "slug": "summer-springboard",
       "name": "Summer Springboard",
       "category": "leadership-gifted",
@@ -5872,7 +5820,7 @@
       "flags": []
     },
     {
-      "id": "prog-137",
+      "id": "prog-136",
       "slug": "envision-by-worldstrides-nylf-tracks-medicine-law-engineering-business-national-security",
       "name": "Envision by WorldStrides (NYLF tracks)",
       "category": "leadership-gifted",
@@ -5913,7 +5861,7 @@
       "flags": []
     },
     {
-      "id": "prog-138",
+      "id": "prog-137",
       "slug": "cornell-summer-college-3-week-session",
       "name": "Cornell Summer College",
       "category": "leadership-gifted",
@@ -5957,7 +5905,7 @@
       "flags": []
     },
     {
-      "id": "prog-139",
+      "id": "prog-138",
       "slug": "cornell-summer-college-6-week-session",
       "name": "Cornell Summer College",
       "category": "leadership-gifted",
@@ -6001,7 +5949,7 @@
       "flags": []
     },
     {
-      "id": "prog-140",
+      "id": "prog-139",
       "slug": "berkeley-changemaker-pre-college",
       "name": "Berkeley Changemaker Pre-College",
       "category": "leadership-gifted",
@@ -6043,7 +5991,7 @@
       "flags": []
     },
     {
-      "id": "prog-141",
+      "id": "prog-140",
       "slug": "education-unlimited-astrophysics-9-12-engineering-9-12-quantum-mechanics-10-12-robotics-9-12-surgica",
       "name": "Education Unlimited",
       "category": "stem-engineering",
@@ -6087,7 +6035,7 @@
       "flags": []
     },
     {
-      "id": "prog-142",
+      "id": "prog-141",
       "slug": "education-unlimited-competitive-debate-public-forum-debate-public-speaking-institute-hs-mock-trial-h",
       "name": "Education Unlimited",
       "category": "leadership-gifted",
@@ -6131,7 +6079,7 @@
       "flags": []
     },
     {
-      "id": "prog-143",
+      "id": "prog-142",
       "slug": "education-unlimited-a-summer-high-school-a-summer-pre-college-college-admission-prep-camp-college-to",
       "name": "Education Unlimited",
       "category": "college-credit-pre-college",
@@ -6173,7 +6121,7 @@
       "flags": []
     },
     {
-      "id": "prog-144",
+      "id": "prog-143",
       "slug": "creative-delegates-league-of-creative-minds-diplomacy-negotiation-international-law-geopolitics-and-",
       "name": "Creative Delegates (League of Creative Minds)",
       "category": "leadership-gifted",
@@ -6216,7 +6164,7 @@
       "flags": []
     },
     {
-      "id": "prog-145",
+      "id": "prog-144",
       "slug": "lasting-adventures-yosemite-6-day-young-adventurer-s-program",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6277,7 +6225,7 @@
       }
     },
     {
-      "id": "prog-146",
+      "id": "prog-145",
       "slug": "lasting-adventures-yosemite-6-day-high-country-adventure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6338,7 +6286,7 @@
       }
     },
     {
-      "id": "prog-147",
+      "id": "prog-146",
       "slug": "lasting-adventures-yosemite-10-day-mammoth-to-yosemite-jul-6-15",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6407,7 +6355,7 @@
       }
     },
     {
-      "id": "prog-148",
+      "id": "prog-147",
       "slug": "lasting-adventures-yosemite-10-day-mammoth-to-yosemite-aug-3-12",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6476,7 +6424,7 @@
       }
     },
     {
-      "id": "prog-149",
+      "id": "prog-148",
       "slug": "lasting-adventures-yosemite-13-day-high-country-adventure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6537,7 +6485,7 @@
       }
     },
     {
-      "id": "prog-150",
+      "id": "prog-149",
       "slug": "lasting-adventures-yosemite-6-day-young-women-s-program-jun-20-25-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6598,7 +6546,7 @@
       }
     },
     {
-      "id": "prog-151",
+      "id": "prog-150",
       "slug": "lasting-adventures-yosemite-6-day-young-women-s-program-aug-1-6-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6659,7 +6607,7 @@
       }
     },
     {
-      "id": "prog-152",
+      "id": "prog-151",
       "slug": "lasting-adventures-yosemite-13-day-young-women-s-program",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6720,7 +6668,7 @@
       }
     },
     {
-      "id": "prog-153",
+      "id": "prog-152",
       "slug": "lasting-adventures-yosemite-20-day-teen-leadership-expedition-jun-13-jul-2-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6789,7 +6737,7 @@
       }
     },
     {
-      "id": "prog-154",
+      "id": "prog-153",
       "slug": "lasting-adventures-yosemite-20-day-teen-leadership-expedition-jul-11-30-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6858,7 +6806,7 @@
       }
     },
     {
-      "id": "prog-155",
+      "id": "prog-154",
       "slug": "lasting-adventures-olympic-6-day-backpacking-adventure-for-teens",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -6919,7 +6867,7 @@
       }
     },
     {
-      "id": "prog-156",
+      "id": "prog-155",
       "slug": "lasting-adventures-olympic-6-day-young-adventurer-s-program",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -6980,7 +6928,7 @@
       }
     },
     {
-      "id": "prog-157",
+      "id": "prog-156",
       "slug": "lasting-adventures-olympic-10-day-hoh-rainforest-to-the-blue-glacier-jun-29-jul-8-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7049,7 +6997,7 @@
       }
     },
     {
-      "id": "prog-158",
+      "id": "prog-157",
       "slug": "lasting-adventures-olympic-10-day-hoh-rainforest-to-the-blue-glacier-jul-13-22-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7118,7 +7066,7 @@
       }
     },
     {
-      "id": "prog-159",
+      "id": "prog-158",
       "slug": "lasting-adventures-olympic-10-day-hoh-rainforest-to-the-blue-glacier-aug-10-19-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7187,7 +7135,7 @@
       }
     },
     {
-      "id": "prog-160",
+      "id": "prog-159",
       "slug": "lasting-adventures-olympic-13-day-backpacking-adventure-for-teens",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7248,7 +7196,7 @@
       }
     },
     {
-      "id": "prog-161",
+      "id": "prog-160",
       "slug": "lasting-adventures-olympic-6-day-young-women-s-program-jun-27-jul-2-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7309,7 +7257,7 @@
       }
     },
     {
-      "id": "prog-162",
+      "id": "prog-161",
       "slug": "lasting-adventures-olympic-6-day-young-women-s-program-jul-18-23-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7370,7 +7318,7 @@
       }
     },
     {
-      "id": "prog-163",
+      "id": "prog-162",
       "slug": "lasting-adventures-olympic-13-day-young-women-s-program",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7431,7 +7379,7 @@
       }
     },
     {
-      "id": "prog-164",
+      "id": "prog-163",
       "slug": "lasting-adventures-sequoia-10-day-sequoia-high-country-adventure-jun-22-jul-1-departure",
       "name": "Lasting Adventures - Sequoia",
       "institution": "Lasting Adventures Inc.",
@@ -7500,7 +7448,7 @@
       }
     },
     {
-      "id": "prog-165",
+      "id": "prog-164",
       "slug": "lasting-adventures-sequoia-10-day-sequoia-high-country-adventure-jul-20-29-departure",
       "name": "Lasting Adventures - Sequoia",
       "institution": "Lasting Adventures Inc.",
@@ -7569,7 +7517,7 @@
       }
     },
     {
-      "id": "prog-166",
+      "id": "prog-165",
       "slug": "catalina-sea-camp-session-1-1-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -7621,7 +7569,7 @@
       }
     },
     {
-      "id": "prog-167",
+      "id": "prog-166",
       "slug": "catalina-sea-camp-session-2-1-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -7673,7 +7621,7 @@
       }
     },
     {
-      "id": "prog-168",
+      "id": "prog-167",
       "slug": "catalina-sea-camp-session-3-1-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -7725,7 +7673,7 @@
       }
     },
     {
-      "id": "prog-169",
+      "id": "prog-168",
       "slug": "catalina-sea-camp-session-4-2-5-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -7777,7 +7725,7 @@
       }
     },
     {
-      "id": "prog-170",
+      "id": "prog-169",
       "slug": "catalina-sea-camp-session-5-2-5-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -7829,7 +7777,7 @@
       }
     },
     {
-      "id": "prog-171",
+      "id": "prog-170",
       "slug": "mit-beaver-works-summer-institute-bwsi-in-person-courses",
       "name": "MIT Beaver Works Summer Institute (BWSI)",
       "institution": "Massachusetts Institute of Technology",
@@ -7884,7 +7832,7 @@
       ]
     },
     {
-      "id": "prog-172",
+      "id": "prog-171",
       "slug": "mit-beaver-works-summer-institute-bwsi-virtual-courses",
       "name": "MIT Beaver Works Summer Institute (BWSI)",
       "institution": "Massachusetts Institute of Technology",
@@ -7939,7 +7887,7 @@
       ]
     },
     {
-      "id": "prog-173",
+      "id": "prog-172",
       "slug": "honors-summer-math-camp-hsmc-general",
       "name": "Honors Summer Math Camp (HSMC)",
       "institution": "Texas State University",
@@ -8000,7 +7948,7 @@
       }
     },
     {
-      "id": "prog-174",
+      "id": "prog-173",
       "slug": "junior-summer-math-camp-residential-jsmcr-general",
       "name": "Junior Summer Math Camp - Residential (JSMCR)",
       "institution": "Texas State University",
@@ -8061,7 +8009,7 @@
       }
     },
     {
-      "id": "prog-175",
+      "id": "prog-174",
       "slug": "nyc-summer-academy-day-student",
       "name": "NYC Summer Academy",
       "institution": "The School of The New York Times",
@@ -8111,7 +8059,7 @@
       }
     },
     {
-      "id": "prog-176",
+      "id": "prog-175",
       "slug": "nyc-summer-academy-residential",
       "name": "NYC Summer Academy",
       "institution": "The School of The New York Times",
@@ -8161,7 +8109,7 @@
       }
     },
     {
-      "id": "prog-177",
+      "id": "prog-176",
       "slug": "junior-summer-math-camp-half-day-jsmch-general",
       "name": "Junior Summer Math Camp - Half-Day (JSMCH)",
       "institution": "Texas State University",
@@ -8213,7 +8161,7 @@
       }
     },
     {
-      "id": "prog-178",
+      "id": "prog-177",
       "slug": "management-technology-summer-institute-m-tsi-general",
       "name": "Management & Technology Summer Institute (M&TSI)",
       "institution": "University of Pennsylvania",
@@ -8282,7 +8230,7 @@
       }
     },
     {
-      "id": "prog-179",
+      "id": "prog-178",
       "slug": "oxford-academia-at-yale-session-1",
       "name": "Oxford Academia at Yale",
       "institution": "Oxford Academia (Putney Student Travel)",
@@ -8349,7 +8297,7 @@
       }
     },
     {
-      "id": "prog-180",
+      "id": "prog-179",
       "slug": "socapa-new-york-city-film-screenwriting-session-1-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8410,7 +8358,7 @@
       }
     },
     {
-      "id": "prog-181",
+      "id": "prog-180",
       "slug": "socapa-new-york-city-film-screenwriting-session-1-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8471,7 +8419,7 @@
       }
     },
     {
-      "id": "prog-182",
+      "id": "prog-181",
       "slug": "socapa-new-york-city-film-screenwriting-session-2-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8532,7 +8480,7 @@
       }
     },
     {
-      "id": "prog-183",
+      "id": "prog-182",
       "slug": "socapa-new-york-city-film-screenwriting-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8593,7 +8541,7 @@
       }
     },
     {
-      "id": "prog-184",
+      "id": "prog-183",
       "slug": "socapa-new-york-city-film-screenwriting-3-week-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8654,7 +8602,7 @@
       }
     },
     {
-      "id": "prog-185",
+      "id": "prog-184",
       "slug": "socapa-new-york-city-core-filmmaking-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8713,7 +8661,7 @@
       }
     },
     {
-      "id": "prog-186",
+      "id": "prog-185",
       "slug": "socapa-new-york-city-core-filmmaking-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8772,7 +8720,7 @@
       }
     },
     {
-      "id": "prog-187",
+      "id": "prog-186",
       "slug": "socapa-new-york-city-core-filmmaking-session-1-3wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8831,7 +8779,7 @@
       }
     },
     {
-      "id": "prog-188",
+      "id": "prog-187",
       "slug": "socapa-new-york-city-core-filmmaking-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8890,7 +8838,7 @@
       }
     },
     {
-      "id": "prog-189",
+      "id": "prog-188",
       "slug": "socapa-new-york-city-core-filmmaking-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -8949,7 +8897,7 @@
       }
     },
     {
-      "id": "prog-190",
+      "id": "prog-189",
       "slug": "socapa-new-york-city-core-filmmaking-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9008,7 +8956,7 @@
       }
     },
     {
-      "id": "prog-191",
+      "id": "prog-190",
       "slug": "socapa-new-york-city-core-filmmaking-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9067,7 +9015,7 @@
       }
     },
     {
-      "id": "prog-192",
+      "id": "prog-191",
       "slug": "socapa-new-york-city-core-acting-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9126,7 +9074,7 @@
       }
     },
     {
-      "id": "prog-193",
+      "id": "prog-192",
       "slug": "socapa-new-york-city-core-acting-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9185,7 +9133,7 @@
       }
     },
     {
-      "id": "prog-194",
+      "id": "prog-193",
       "slug": "socapa-new-york-city-core-acting-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9244,7 +9192,7 @@
       }
     },
     {
-      "id": "prog-195",
+      "id": "prog-194",
       "slug": "socapa-new-york-city-musical-theater-acting-for-film-session-1-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9303,7 +9251,7 @@
       }
     },
     {
-      "id": "prog-196",
+      "id": "prog-195",
       "slug": "socapa-new-york-city-core-acting-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9362,7 +9310,7 @@
       }
     },
     {
-      "id": "prog-197",
+      "id": "prog-196",
       "slug": "socapa-new-york-city-core-acting-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9421,7 +9369,7 @@
       }
     },
     {
-      "id": "prog-198",
+      "id": "prog-197",
       "slug": "socapa-new-york-city-core-acting-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9480,7 +9428,7 @@
       }
     },
     {
-      "id": "prog-199",
+      "id": "prog-198",
       "slug": "socapa-new-york-city-musical-theater-acting-for-film-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9539,7 +9487,7 @@
       }
     },
     {
-      "id": "prog-200",
+      "id": "prog-199",
       "slug": "socapa-new-york-city-core-photography-digital-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9598,7 +9546,7 @@
       }
     },
     {
-      "id": "prog-201",
+      "id": "prog-200",
       "slug": "socapa-new-york-city-core-photography-digital-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9657,7 +9605,7 @@
       }
     },
     {
-      "id": "prog-202",
+      "id": "prog-201",
       "slug": "socapa-new-york-city-core-photography-digital-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9716,7 +9664,7 @@
       }
     },
     {
-      "id": "prog-203",
+      "id": "prog-202",
       "slug": "socapa-new-york-city-core-photography-digital-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9775,7 +9723,7 @@
       }
     },
     {
-      "id": "prog-204",
+      "id": "prog-203",
       "slug": "socapa-new-york-city-core-photography-digital-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9834,7 +9782,7 @@
       }
     },
     {
-      "id": "prog-205",
+      "id": "prog-204",
       "slug": "socapa-new-york-city-core-photography-digital-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9893,7 +9841,7 @@
       }
     },
     {
-      "id": "prog-206",
+      "id": "prog-205",
       "slug": "socapa-new-york-city-advanced-photography-session-1-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -9952,7 +9900,7 @@
       }
     },
     {
-      "id": "prog-207",
+      "id": "prog-206",
       "slug": "socapa-new-york-city-advanced-photography-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10011,7 +9959,7 @@
       }
     },
     {
-      "id": "prog-208",
+      "id": "prog-207",
       "slug": "socapa-new-york-city-fusion-dance-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10070,7 +10018,7 @@
       }
     },
     {
-      "id": "prog-209",
+      "id": "prog-208",
       "slug": "socapa-new-york-city-fusion-dance-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10129,7 +10077,7 @@
       }
     },
     {
-      "id": "prog-210",
+      "id": "prog-209",
       "slug": "socapa-new-york-city-fusion-dance-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10188,7 +10136,7 @@
       }
     },
     {
-      "id": "prog-211",
+      "id": "prog-210",
       "slug": "socapa-new-york-city-fusion-dance-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10247,7 +10195,7 @@
       }
     },
     {
-      "id": "prog-212",
+      "id": "prog-211",
       "slug": "socapa-new-york-city-fusion-dance-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10306,7 +10254,7 @@
       }
     },
     {
-      "id": "prog-213",
+      "id": "prog-212",
       "slug": "socapa-new-york-city-fusion-dance-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10365,7 +10313,7 @@
       }
     },
     {
-      "id": "prog-214",
+      "id": "prog-213",
       "slug": "socapa-new-york-city-dance-conservatory-session-1-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10424,7 +10372,7 @@
       }
     },
     {
-      "id": "prog-215",
+      "id": "prog-214",
       "slug": "socapa-new-york-city-dance-conservatory-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10483,7 +10431,7 @@
       }
     },
     {
-      "id": "prog-216",
+      "id": "prog-215",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10542,7 +10490,7 @@
       }
     },
     {
-      "id": "prog-217",
+      "id": "prog-216",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10601,7 +10549,7 @@
       }
     },
     {
-      "id": "prog-218",
+      "id": "prog-217",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10660,7 +10608,7 @@
       }
     },
     {
-      "id": "prog-219",
+      "id": "prog-218",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10719,7 +10667,7 @@
       }
     },
     {
-      "id": "prog-220",
+      "id": "prog-219",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10778,7 +10726,7 @@
       }
     },
     {
-      "id": "prog-221",
+      "id": "prog-220",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10837,7 +10785,7 @@
       }
     },
     {
-      "id": "prog-222",
+      "id": "prog-221",
       "slug": "socapa-los-angeles-core-filmmaking-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10887,7 +10835,7 @@
       }
     },
     {
-      "id": "prog-223",
+      "id": "prog-222",
       "slug": "socapa-los-angeles-core-filmmaking-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10937,7 +10885,7 @@
       }
     },
     {
-      "id": "prog-224",
+      "id": "prog-223",
       "slug": "socapa-los-angeles-core-filmmaking-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10987,7 +10935,7 @@
       }
     },
     {
-      "id": "prog-225",
+      "id": "prog-224",
       "slug": "socapa-los-angeles-advanced-filmmaking-session-2-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11037,7 +10985,7 @@
       }
     },
     {
-      "id": "prog-226",
+      "id": "prog-225",
       "slug": "socapa-los-angeles-screenwriting-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11087,7 +11035,7 @@
       }
     },
     {
-      "id": "prog-227",
+      "id": "prog-226",
       "slug": "socapa-los-angeles-screenwriting-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11137,7 +11085,7 @@
       }
     },
     {
-      "id": "prog-228",
+      "id": "prog-227",
       "slug": "socapa-los-angeles-screenwriting-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11187,7 +11135,7 @@
       }
     },
     {
-      "id": "prog-229",
+      "id": "prog-228",
       "slug": "socapa-los-angeles-core-acting-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11237,7 +11185,7 @@
       }
     },
     {
-      "id": "prog-230",
+      "id": "prog-229",
       "slug": "socapa-los-angeles-core-acting-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11287,7 +11235,7 @@
       }
     },
     {
-      "id": "prog-231",
+      "id": "prog-230",
       "slug": "socapa-los-angeles-core-acting-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11337,7 +11285,7 @@
       }
     },
     {
-      "id": "prog-232",
+      "id": "prog-231",
       "slug": "socapa-los-angeles-advanced-acting-session-2-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11387,7 +11335,7 @@
       }
     },
     {
-      "id": "prog-233",
+      "id": "prog-232",
       "slug": "socapa-los-angeles-core-photography-digital-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11437,7 +11385,7 @@
       }
     },
     {
-      "id": "prog-234",
+      "id": "prog-233",
       "slug": "socapa-los-angeles-core-photography-digital-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11487,7 +11435,7 @@
       }
     },
     {
-      "id": "prog-235",
+      "id": "prog-234",
       "slug": "socapa-los-angeles-core-photography-digital-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11537,7 +11485,7 @@
       }
     },
     {
-      "id": "prog-236",
+      "id": "prog-235",
       "slug": "socapa-los-angeles-core-music-singer-songwriter-house-band-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11587,7 +11535,7 @@
       }
     },
     {
-      "id": "prog-237",
+      "id": "prog-236",
       "slug": "socapa-los-angeles-core-music-singer-songwriter-house-band-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11637,7 +11585,7 @@
       }
     },
     {
-      "id": "prog-238",
+      "id": "prog-237",
       "slug": "socapa-los-angeles-core-music-singer-songwriter-house-band-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11687,7 +11635,7 @@
       }
     },
     {
-      "id": "prog-239",
+      "id": "prog-238",
       "slug": "socapa-vermont-core-filmmaking-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11737,7 +11685,7 @@
       }
     },
     {
-      "id": "prog-240",
+      "id": "prog-239",
       "slug": "socapa-vermont-core-filmmaking-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11787,7 +11735,7 @@
       }
     },
     {
-      "id": "prog-241",
+      "id": "prog-240",
       "slug": "socapa-vermont-core-filmmaking-session-2-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11837,7 +11785,7 @@
       }
     },
     {
-      "id": "prog-242",
+      "id": "prog-241",
       "slug": "socapa-vermont-core-filmmaking-session-2-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11887,7 +11835,7 @@
       }
     },
     {
-      "id": "prog-243",
+      "id": "prog-242",
       "slug": "socapa-vermont-advanced-filmmaking-session-1-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11937,7 +11885,7 @@
       }
     },
     {
-      "id": "prog-244",
+      "id": "prog-243",
       "slug": "socapa-vermont-advanced-filmmaking-session-2-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11987,7 +11935,7 @@
       }
     },
     {
-      "id": "prog-245",
+      "id": "prog-244",
       "slug": "socapa-vermont-screenwriting-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12037,7 +11985,7 @@
       }
     },
     {
-      "id": "prog-246",
+      "id": "prog-245",
       "slug": "socapa-vermont-screenwriting-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12087,7 +12035,7 @@
       }
     },
     {
-      "id": "prog-247",
+      "id": "prog-246",
       "slug": "socapa-vermont-core-acting-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12137,7 +12085,7 @@
       }
     },
     {
-      "id": "prog-248",
+      "id": "prog-247",
       "slug": "socapa-vermont-core-acting-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12187,7 +12135,7 @@
       }
     },
     {
-      "id": "prog-249",
+      "id": "prog-248",
       "slug": "socapa-vermont-core-acting-session-2-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12237,7 +12185,7 @@
       }
     },
     {
-      "id": "prog-250",
+      "id": "prog-249",
       "slug": "socapa-vermont-core-acting-session-2-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12287,7 +12235,7 @@
       }
     },
     {
-      "id": "prog-251",
+      "id": "prog-250",
       "slug": "socapa-vermont-advanced-acting-session-1-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12337,7 +12285,7 @@
       }
     },
     {
-      "id": "prog-252",
+      "id": "prog-251",
       "slug": "socapa-vermont-advanced-acting-session-2-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12387,7 +12335,7 @@
       }
     },
     {
-      "id": "prog-253",
+      "id": "prog-252",
       "slug": "socapa-vermont-core-photography-digital-or-darkroom-digital-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12437,7 +12385,7 @@
       }
     },
     {
-      "id": "prog-254",
+      "id": "prog-253",
       "slug": "socapa-vermont-core-photography-digital-or-darkroom-digital-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12487,7 +12435,7 @@
       }
     },
     {
-      "id": "prog-255",
+      "id": "prog-254",
       "slug": "socapa-vermont-core-photography-digital-or-darkroom-digital-session-2-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12537,7 +12485,7 @@
       }
     },
     {
-      "id": "prog-256",
+      "id": "prog-255",
       "slug": "socapa-vermont-advanced-photography-session-1-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12587,7 +12535,7 @@
       }
     },
     {
-      "id": "prog-257",
+      "id": "prog-256",
       "slug": "socapa-vermont-fusion-dance-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12637,7 +12585,7 @@
       }
     },
     {
-      "id": "prog-258",
+      "id": "prog-257",
       "slug": "socapa-vermont-fusion-dance-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12687,7 +12635,7 @@
       }
     },
     {
-      "id": "prog-259",
+      "id": "prog-258",
       "slug": "socapa-vermont-fusion-dance-session-2-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12737,7 +12685,7 @@
       }
     },
     {
-      "id": "prog-260",
+      "id": "prog-259",
       "slug": "socapa-vermont-fusion-dance-session-2-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12787,7 +12735,7 @@
       }
     },
     {
-      "id": "prog-261",
+      "id": "prog-260",
       "slug": "socapa-vermont-core-music-singer-songwriter-house-band-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12837,7 +12785,7 @@
       }
     },
     {
-      "id": "prog-262",
+      "id": "prog-261",
       "slug": "socapa-vermont-core-music-singer-songwriter-house-band-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12887,7 +12835,7 @@
       }
     },
     {
-      "id": "prog-263",
+      "id": "prog-262",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-21-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -12962,7 +12910,7 @@
       }
     },
     {
-      "id": "prog-264",
+      "id": "prog-263",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-21-day-commuter",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13064,7 +13012,7 @@
       }
     },
     {
-      "id": "prog-265",
+      "id": "prog-264",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-14-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13139,7 +13087,7 @@
       }
     },
     {
-      "id": "prog-266",
+      "id": "prog-265",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-14-day-commuter",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13241,7 +13189,7 @@
       }
     },
     {
-      "id": "prog-267",
+      "id": "prog-266",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-27-day-residential-plus-hawaii-extension",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13340,7 +13288,7 @@
       }
     },
     {
-      "id": "prog-268",
+      "id": "prog-267",
       "slug": "westcoast-connection-pre-college-enrichment-barcelona-14-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13401,7 +13349,7 @@
       }
     },
     {
-      "id": "prog-269",
+      "id": "prog-268",
       "slug": "westcoast-connection-pre-college-enrichment-barcelona-21-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13462,7 +13410,7 @@
       }
     },
     {
-      "id": "prog-270",
+      "id": "prog-269",
       "slug": "westcoast-connection-pre-college-enrichment-barcelona-27-day-residential-plus-amalfi-coast-rome",
       "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13531,7 +13479,7 @@
       }
     },
     {
-      "id": "prog-271",
+      "id": "prog-270",
       "slug": "westcoast-connection-pre-college-enrichment-barcelona-30-day-residential-plus-greek-islands",
       "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13600,7 +13548,7 @@
       }
     },
     {
-      "id": "prog-272",
+      "id": "prog-271",
       "slug": "westcoast-connection-pre-college-enrichment-florence-14-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13661,7 +13609,7 @@
       }
     },
     {
-      "id": "prog-273",
+      "id": "prog-272",
       "slug": "westcoast-connection-pre-college-enrichment-florence-21-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13722,7 +13670,7 @@
       }
     },
     {
-      "id": "prog-274",
+      "id": "prog-273",
       "slug": "westcoast-connection-pre-college-enrichment-florence-27-day-residential-plus-amalfi-coast-rome",
       "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13783,7 +13731,7 @@
       }
     },
     {
-      "id": "prog-275",
+      "id": "prog-274",
       "slug": "westcoast-connection-pre-college-enrichment-florence-30-day-residential-plus-greek-islands",
       "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13852,7 +13800,7 @@
       }
     },
     {
-      "id": "prog-276",
+      "id": "prog-275",
       "slug": "westcoast-connection-pre-college-enrichment-montreal-14-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -13913,7 +13861,7 @@
       }
     },
     {
-      "id": "prog-277",
+      "id": "prog-276",
       "slug": "westcoast-connection-pre-college-enrichment-montreal-14-day-commuter",
       "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -14001,7 +13949,7 @@
       }
     },
     {
-      "id": "prog-278",
+      "id": "prog-277",
       "slug": "westcoast-connection-pre-college-enrichment-montreal-21-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -14062,7 +14010,7 @@
       }
     },
     {
-      "id": "prog-279",
+      "id": "prog-278",
       "slug": "westcoast-connection-pre-college-enrichment-montreal-21-day-commuter",
       "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -14150,7 +14098,7 @@
       }
     },
     {
-      "id": "prog-280",
+      "id": "prog-279",
       "slug": "mit-women-s-technology-program-wtp-mechanical-engineering-wtp-me",
       "name": "MIT Women's Technology Program (WTP)",
       "institution": "Massachusetts Institute of Technology",
@@ -14209,7 +14157,7 @@
       }
     },
     {
-      "id": "prog-281",
+      "id": "prog-280",
       "slug": "wpi-ignite-general",
       "name": "WPI Ignite",
       "institution": "Worcester Polytechnic Institute",
@@ -14259,7 +14207,7 @@
       }
     },
     {
-      "id": "prog-282",
+      "id": "prog-281",
       "slug": "wpi-launch-general",
       "name": "WPI Launch",
       "institution": "Worcester Polytechnic Institute",
@@ -14309,7 +14257,7 @@
       }
     },
     {
-      "id": "prog-283",
+      "id": "prog-282",
       "slug": "wpi-frontiers-frontiers-i",
       "name": "WPI Frontiers",
       "institution": "Worcester Polytechnic Institute",
@@ -14359,7 +14307,7 @@
       }
     },
     {
-      "id": "prog-284",
+      "id": "prog-283",
       "slug": "wpi-frontiers-frontiers-ii",
       "name": "WPI Frontiers",
       "institution": "Worcester Polytechnic Institute",
@@ -14409,7 +14357,7 @@
       }
     },
     {
-      "id": "prog-285",
+      "id": "prog-284",
       "slug": "wpi-high-achieving-high-school-students-general",
       "name": "WPI High-Achieving High School Students",
       "institution": "Worcester Polytechnic Institute",
@@ -14464,6 +14412,846 @@
         "notes": "Five-week session taking a real WPI undergraduate course for transferable college credit at 50% off standard summer tuition. Students may enroll in person on the Worcester campus, live online (synchronous), or on demand (asynchronous); WPI recommends one course per session. On-campus housing is not available — in-person students commute or arrange their own housing. Course materials average about $200 per course and are purchased separately.",
         "sourceType": "official_policy",
         "sourceCitation": "WPI High-Achieving High School Students program page (wpi.edu)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-285",
+      "slug": "interlochen-arts-camp-high-school-acting-3-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "Three-week acting program exploring dramatic presentation on stage and screen with expert actor/theatre mentors.",
+      "category": "arts",
+      "secondaryTags": [
+        "Theatre"
+      ],
+      "trackDetail": "Acting - 3-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "One of two 3-week sessions (Jun 27-Jul 17 or Jul 18-Aug 8); specific session assignment not confirmed",
+      "dateStart": "2027-06-27",
+      "dateEnd": "2027-08-08",
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$7,550",
+      "priceMin": 7550,
+      "priceMax": 7550,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.interlochen.org/theatre/camp-programs/high-school/acting",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-286",
+      "slug": "interlochen-arts-camp-high-school-acting-company-production-6-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "Six-week pre-professional repertory acting program culminating in a fully staged play with complete technical and design support.",
+      "category": "arts",
+      "secondaryTags": [
+        "Theatre"
+      ],
+      "trackDetail": "Acting Company Production - 6-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "four_plus_weeks",
+      "lengthDisplay": "6 weeks",
+      "lengthMinDays": 42,
+      "lengthMaxDays": 42,
+      "datesDisplay": "Jun 27 – Aug 8, 2027",
+      "dateStart": "2027-06-27",
+      "dateEnd": "2027-08-08",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$10,500",
+      "priceMin": 10500,
+      "priceMax": 10500,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.interlochen.org/theatre/camp-programs/high-school/acting-company-production",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-287",
+      "slug": "interlochen-arts-camp-high-school-acting-audition-intensive-1-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "One-week intensive focused on acting audition technique.",
+      "category": "arts",
+      "secondaryTags": [
+        "Theatre"
+      ],
+      "trackDetail": "Acting Audition Intensive - 1-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "1 week",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Jun 19–25, 2027",
+      "dateStart": "2027-06-19",
+      "dateEnd": "2027-06-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2,125 (not eligible for financial aid)",
+      "priceMin": 2125,
+      "priceMax": 2125,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.interlochen.org/theatre/camp-programs/attend-high-school-acting-summer-camp-interlochen",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-288",
+      "slug": "interlochen-arts-camp-high-school-musical-theatre-showcase-3-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "Three-week musical theatre program covering advanced singing, acting, and dance technique, culminating in a showcase performance.",
+      "category": "arts",
+      "secondaryTags": [
+        "Theatre"
+      ],
+      "trackDetail": "Musical Theatre Showcase - 3-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "One of two 3-week sessions; specific session assignment not confirmed",
+      "dateStart": null,
+      "dateEnd": null,
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$7,550",
+      "priceMin": 7550,
+      "priceMax": 7550,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.interlochen.org/theatre/camp-programs/high-school/musical-theatre",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-289",
+      "slug": "interlochen-arts-camp-high-school-musical-theatre-production-6-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "Six-week full-scale musical theatre production program from auditions through a complete staged run.",
+      "category": "arts",
+      "secondaryTags": [
+        "Theatre"
+      ],
+      "trackDetail": "Musical Theatre Production - 6-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "four_plus_weeks",
+      "lengthDisplay": "6 weeks",
+      "lengthMinDays": 42,
+      "lengthMaxDays": 42,
+      "datesDisplay": "Jun 27 – Aug 8, 2027",
+      "dateStart": "2027-06-27",
+      "dateEnd": "2027-08-08",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$10,500",
+      "priceMin": 10500,
+      "priceMax": 10500,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.interlochen.org/theatre/camp-programs/high-school/musical-theatre-production",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-290",
+      "slug": "interlochen-arts-camp-high-school-musical-theatre-audition-intensive-1-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "One-week intensive focused on musical theatre audition technique.",
+      "category": "arts",
+      "secondaryTags": [
+        "Theatre"
+      ],
+      "trackDetail": "Musical Theatre Audition Intensive - 1-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "1 week",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Jun 19–25, 2027",
+      "dateStart": "2027-06-19",
+      "dateEnd": "2027-06-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2,125 (not eligible for financial aid)",
+      "priceMin": 2125,
+      "priceMax": 2125,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.interlochen.org/theatre/camp-programs/attend-high-school-acting-summer-camp-interlochen",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-291",
+      "slug": "interlochen-arts-camp-high-school-musical-theatre-techniques-intensive-1-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "One-week intensive covering core musical theatre performance techniques.",
+      "category": "arts",
+      "secondaryTags": [
+        "Theatre"
+      ],
+      "trackDetail": "Musical Theatre Techniques Intensive - 1-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "1 week",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Jun 19–25, 2027",
+      "dateStart": "2027-06-19",
+      "dateEnd": "2027-06-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2,125 (not eligible for financial aid)",
+      "priceMin": 2125,
+      "priceMax": 2125,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.interlochen.org/theatre/camp-programs/attend-high-school-acting-summer-camp-interlochen",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-292",
+      "slug": "interlochen-arts-camp-high-school-songwriting-for-musical-theatre-intensive-1-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "One-week intensive on songwriting for the musical theatre form.",
+      "category": "arts",
+      "secondaryTags": [
+        "Theatre"
+      ],
+      "trackDetail": "Songwriting for Musical Theatre Intensive - 1-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "1 week",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Jun 19–25, 2027",
+      "dateStart": "2027-06-19",
+      "dateEnd": "2027-06-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2,125 (not eligible for financial aid)",
+      "priceMin": 2125,
+      "priceMax": 2125,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.interlochen.org/theatre/camp-programs/attend-high-school-acting-summer-camp-interlochen",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-293",
+      "slug": "interlochen-arts-camp-high-school-theatre-design-production-3-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "Three-week design-focused program in lighting, costume, and set design, culminating in a final presentation.",
+      "category": "arts",
+      "secondaryTags": [
+        "Theatre"
+      ],
+      "trackDetail": "Theatre Design & Production - 3-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "Jun 27 – Jul 17, 2027",
+      "dateStart": "2027-06-27",
+      "dateEnd": "2027-07-17",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$7,550",
+      "priceMin": 7550,
+      "priceMax": 7550,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.interlochen.org/theatre/camp-programs/high-school/theatre-design-production",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-294",
+      "slug": "interlochen-arts-camp-high-school-technical-theatre-6-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "Six-week deep technical theatre program covering the full range of behind-the-scenes production disciplines, supporting Interlochen's mainstage productions.",
+      "category": "arts",
+      "secondaryTags": [
+        "Theatre"
+      ],
+      "trackDetail": "Technical Theatre - 6-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "four_plus_weeks",
+      "lengthDisplay": "6 weeks",
+      "lengthMinDays": 42,
+      "lengthMaxDays": 42,
+      "datesDisplay": "Jun 27 – Aug 8, 2027",
+      "dateStart": "2027-06-27",
+      "dateEnd": "2027-08-08",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$10,500",
+      "priceMin": 10500,
+      "priceMax": 10500,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.interlochen.org/theatre/camp-programs/high-school/technical-theatre",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-295",
+      "slug": "interlochen-arts-camp-high-school-costume-design-intensive-1-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "One-week intensive focused on costume design.",
+      "category": "arts",
+      "secondaryTags": [
+        "Theatre"
+      ],
+      "trackDetail": "Costume Design Intensive - 1-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "1 week",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Jun 19–25, 2027",
+      "dateStart": "2027-06-19",
+      "dateEnd": "2027-06-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2,125 (not eligible for financial aid)",
+      "priceMin": 2125,
+      "priceMax": 2125,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.interlochen.org/theatre/camp-programs/high-school/technical-theatre",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-296",
+      "slug": "interlochen-arts-camp-high-school-stage-management-intensive-1-week",
+      "name": "Interlochen Arts Camp - High School",
+      "institution": "Interlochen Center for the Arts",
+      "programGroupId": "interlochen-high-school",
+      "description": "One-week intensive focused on stage management.",
+      "category": "arts",
+      "secondaryTags": [
+        "Theatre"
+      ],
+      "trackDetail": "Stage Management Intensive - 1-Week",
+      "gradeDisplay": "Grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "application",
+      "admissionDisplay": "Application",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "1 week",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Jun 19–25, 2027",
+      "dateStart": "2027-06-19",
+      "dateEnd": "2027-06-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Interlochen, MI",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2,125 (not eligible for financial aid)",
+      "priceMin": 2125,
+      "priceMax": 2125,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.interlochen.org/theatre/camp-programs/attend-high-school-acting-summer-camp-interlochen",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "interlochen-safety-history",
+          "type": "safety",
+          "title": "Historical abuse allegations and donor history",
+          "body": "Interlochen has faced historical abuse allegations, underwent an external investigation, and received donations from Jeffrey Epstein from 1990 to 2003. Review recent safety reporting and institutional responses before enrolling.",
+          "sourceCitation": "Public reporting, external investigation findings, and institutional disclosures",
+          "sourceDate": "2024-01-01",
+          "severity": "warning"
+        },
+        {
+          "id": "interlochen-hs-one-week-intensive-no-aid",
+          "type": "pricing",
+          "title": "One-week Intensives are not eligible for financial aid",
+          "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+          "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+          "severity": "warning"
+        }
+      ],
+      "dayToDay": {
+        "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
         "verifiedAt": "2026-09-15"
       }
     }

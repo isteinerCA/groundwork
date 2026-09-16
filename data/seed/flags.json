@@ -293,6 +293,19 @@
     ]
   },
   {
+    "match": { "programGroupId": "interlochen-high-school" },
+    "flags": [
+      {
+        "id": "interlochen-hs-one-week-intensive-no-aid",
+        "type": "pricing",
+        "title": "One-week Intensives are not eligible for financial aid",
+        "body": "Interlochen's one-week High School Intensive programs are excluded from the camp's financial aid program, even though longer sessions may qualify.",
+        "sourceCitation": "Interlochen High School theatre intake and org-wide Intensive policy",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
     "match": { "programGroupId": "wpi-high-achieving-hs" },
     "flags": [
       {

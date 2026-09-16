@@ -36,6 +36,15 @@
     }
   },
   {
+    "match": { "programGroupId": "interlochen-high-school" },
+    "dayToDay": {
+      "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Interlochen Arts Camp tuition/financial aid page and general camp materials (interlochen.org)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
     "match": { "programGroupId": "wpi-ignite" },
     "dayToDay": {
       "notes": "Commuter day program on the WPI campus: instruction runs 9am-4pm Monday-Friday. Students choose one or more weekly sessions and a STEM course track for each week; weeks are offered on a rolling basis across the summer (four distinct weeks in 2027). Lunch is not included in tuition for commuter programs.",
