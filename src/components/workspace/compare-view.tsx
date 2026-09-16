@@ -8,6 +8,7 @@ import { ADMISSION_TYPE_BY_ID } from "@/lib/constants/admission-types";
 import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
 import { formatPriceDisplay } from "@/lib/data/format-price-display";
 import { formatGradeEligibilityDisplay } from "@/lib/data/format-grade-display";
+import { isValidDayToDay } from "@/lib/data/day-to-day";
 import { formatDatesDisplay } from "@/lib/data/format-season-display";
 import type { Program } from "@/lib/types/program";
 
@@ -25,6 +26,8 @@ export function CompareView({ programs }: { programs: Program[] }) {
   const savedPrograms = activeShortlist.items
     .map((item) => programsById.get(item.programId))
     .filter(Boolean) as Program[];
+
+  const atMax = selected.length >= MAX_COMPARE;
 
   const toggle = (id: string) => {
     setSelected((prev) => {
@@ -48,7 +51,7 @@ export function CompareView({ programs }: { programs: Program[] }) {
           <div>
             <h1 className="text-3xl">Compare programs</h1>
             <p className="mt-1 text-[var(--color-text-muted)]">
-              Select up to {MAX_COMPARE} saved programs for a side-by-side view.
+              Check up to {MAX_COMPARE} saved programs below for a side-by-side view.
             </p>
           </div>
           <button
@@ -69,22 +72,88 @@ export function CompareView({ programs }: { programs: Program[] }) {
           </div>
         ) : (
           <>
-            <div className="mt-6 flex flex-wrap gap-2 print:hidden">
-              {savedPrograms.map((program) => (
-                <button
-                  key={program.id}
-                  type="button"
-                  onClick={() => toggle(program.id)}
-                  className={`rounded-full border px-3 py-1.5 text-sm ${
-                    selected.includes(program.id)
-                      ? "border-[var(--color-navy)] bg-[var(--color-navy)] text-white"
-                      : "border-[var(--color-border)] bg-white"
-                  }`}
-                >
-                  {program.name}
-                </button>
-              ))}
-            </div>
+            <section
+              className="mt-6 rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)] print:hidden"
+              aria-labelledby="compare-picker-heading"
+            >
+              <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--color-border)] px-4 py-3">
+                <div>
+                  <h2
+                    id="compare-picker-heading"
+                    className="text-base font-semibold text-[var(--color-navy)]"
+                  >
+                    Choose programs to compare
+                  </h2>
+                  <p className="mt-0.5 text-xs text-[var(--color-text-muted)]">
+                    Pick at least 2 · {selected.length} of {MAX_COMPARE} selected
+                  </p>
+                </div>
+                {selected.length > 0 && (
+                  <button
+                    type="button"
+                    onClick={() => setSelected([])}
+                    className="text-xs font-medium text-[var(--color-navy-light)] hover:underline"
+                  >
+                    Clear selection
+                  </button>
+                )}
+              </div>
+
+              <ul className="max-h-72 divide-y divide-[var(--color-border)] overflow-y-auto">
+                {savedPrograms.map((program) => {
+                  const isSelected = selected.includes(program.id);
+                  const isDisabled = !isSelected && atMax;
+                  const inputId = `compare-${program.id}`;
+
+                  return (
+                    <li key={program.id}>
+                      <label
+                        htmlFor={inputId}
+                        className={`flex cursor-pointer items-start gap-3 px-4 py-3 transition ${
+                          isSelected
+                            ? "bg-[var(--color-navy)]/5"
+                            : isDisabled
+                              ? "cursor-not-allowed bg-[var(--color-parchment)]/40 opacity-60"
+                              : "hover:bg-[var(--color-parchment-dark)]/25"
+                        }`}
+                      >
+                        <input
+                          id={inputId}
+                          type="checkbox"
+                          checked={isSelected}
+                          disabled={isDisabled}
+                          onChange={() => toggle(program.id)}
+                          className="mt-1 h-4 w-4 shrink-0 accent-[var(--color-navy)]"
+                        />
+                        <span className="min-w-0 flex-1">
+                          <span className="block text-sm font-medium text-[var(--color-navy)]">
+                            {program.name}
+                          </span>
+                          {program.trackDetail?.trim() && (
+                            <span className="mt-0.5 block text-xs text-[var(--color-text-muted)]">
+                              {program.trackDetail}
+                            </span>
+                          )}
+                          <span className="mt-1 block text-xs text-[var(--color-text-muted)]">
+                            {program.locationDisplay}
+                            {" · "}
+                            {formatDatesDisplay(program)}
+                            {" · "}
+                            {formatPriceDisplay(program)}
+                          </span>
+                        </span>
+                      </label>
+                    </li>
+                  );
+                })}
+              </ul>
+
+              {atMax && (
+                <p className="border-t border-[var(--color-border)] px-4 py-2 text-xs text-[var(--color-text-muted)]">
+                  Maximum {MAX_COMPARE} programs — uncheck one to add another.
+                </p>
+              )}
+            </section>
 
             {compared.length >= 2 ? (
               <div className="mt-8 overflow-x-auto">
@@ -99,7 +168,12 @@ export function CompareView({ programs }: { programs: Program[] }) {
                           key={p.id}
                           className="border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-3 text-left font-medium text-[var(--color-navy)]"
                         >
-                          {p.name}
+                          <span className="block">{p.name}</span>
+                          {p.trackDetail?.trim() && (
+                            <span className="mt-1 block text-xs font-normal text-[var(--color-text-muted)]">
+                              {p.trackDetail}
+                            </span>
+                          )}
                         </th>
                       ))}
                     </tr>
@@ -116,6 +190,11 @@ export function CompareView({ programs }: { programs: Program[] }) {
                       ["Cost", (p: Program) => formatPriceDisplay(p)],
                       ["College credit", (p: Program) => (p.hasCollegeCredit ? "Yes" : "No")],
                       [
+                        "Day-to-day",
+                        (p: Program) =>
+                          isValidDayToDay(p.dayToDay) ? p.dayToDay.notes : "None listed",
+                      ],
+                      [
                         "Hidden details",
                         (p: Program) =>
                           p.flags.length > 0
@@ -130,7 +209,7 @@ export function CompareView({ programs }: { programs: Program[] }) {
                         {compared.map((p) => (
                           <td
                             key={p.id}
-                            className="border border-[var(--color-border)] bg-white px-4 py-3 align-top"
+                            className="border border-[var(--color-border)] bg-white px-4 py-3 align-top text-[var(--color-navy)] leading-relaxed"
                           >
                             {(getter as (p: Program) => string)(p)}
                           </td>
@@ -141,9 +220,13 @@ export function CompareView({ programs }: { programs: Program[] }) {
                 </table>
               </div>
             ) : (
-              <p className="mt-8 text-[var(--color-text-muted)]">
-                Select at least 2 programs above to compare.
-              </p>
+              <div className="mt-8 rounded-[var(--radius-md)] border border-dashed border-[var(--color-border)] bg-[var(--color-parchment)]/40 px-5 py-8 text-center print:hidden">
+                <p className="text-sm text-[var(--color-text-muted)]">
+                  {selected.length === 0
+                    ? "Check at least 2 programs above to see the comparison table."
+                    : "Check one more program to start comparing."}
+                </p>
+              </div>
             )}
           </>
         )}
