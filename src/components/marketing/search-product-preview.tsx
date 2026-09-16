@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { ProgramCard } from "@/components/search/program-card";
 import { btnPrimary } from "@/components/ui/button-styles";
-import { MARKETING_PROGRAM_COUNT_LABEL } from "@/lib/programs/preview-programs";
+import { MARKETING_OFFERING_COUNT_LABEL } from "@/lib/programs/preview-programs";
 import type { Program } from "@/lib/types/program";
 
 export function SearchProductPreview({
@@ -22,7 +22,7 @@ export function SearchProductPreview({
         <div className="flex flex-wrap items-center justify-between gap-2">
           <p className="text-sm font-semibold text-[var(--color-navy)]">Search programs</p>
           <span className="rounded-full bg-white px-2.5 py-0.5 text-xs text-[var(--color-text-muted)] ring-1 ring-[var(--color-border)]">
-            {MARKETING_PROGRAM_COUNT_LABEL} in catalog
+            {MARKETING_OFFERING_COUNT_LABEL} in catalog
           </span>
         </div>
         <p className="mt-2 text-xs text-[var(--color-text-muted)]">

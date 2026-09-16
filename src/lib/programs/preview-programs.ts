@@ -1,4 +1,13 @@
+import {
+  MARKETING_OFFERING_COUNT_LABEL,
+  MARKETING_PROGRAM_COUNT_LABEL,
+} from "@/lib/programs/catalog-counts";
 import type { Program } from "@/lib/types/program";
+
+export {
+  MARKETING_OFFERING_COUNT_LABEL,
+  MARKETING_PROGRAM_COUNT_LABEL,
+} from "@/lib/programs/catalog-counts";
 
 /** Pick diverse, representative programs for marketing / empty-state previews. */
 export function getPreviewPrograms(programs: Program[], limit = 3): Program[] {
@@ -45,9 +54,6 @@ export function getPreviewPrograms(programs: Program[], limit = 3): Program[] {
   return picked;
 }
 
-/** Marketing-facing catalog size (rounded, stable across imports). */
-export const MARKETING_PROGRAM_COUNT_LABEL = "140+";
-
 export function formatProgramCatalogLabel(): string {
   return `${MARKETING_PROGRAM_COUNT_LABEL} curated programs`;
 }
@@ -55,4 +61,8 @@ export function formatProgramCatalogLabel(): string {
 /** User-facing count for search headers and metadata (never the raw import total). */
 export function formatProgramCountLabel(): string {
   return `${MARKETING_PROGRAM_COUNT_LABEL} programs`;
+}
+
+export function formatOfferingCountLabel(): string {
+  return `${MARKETING_OFFERING_COUNT_LABEL} options`;
 }

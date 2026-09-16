@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
+import { MARKETING_PROGRAM_COUNT_LABEL } from "@/lib/programs/preview-programs";
 
 const CAVEATS = [
   "This isn't a complete list. There are hundreds of summer programs out there, and new ones launch every year. We've focused on programs we came across in our own research, not an exhaustive catalog.",
@@ -33,7 +34,8 @@ export default function AboutPage() {
           <p>
             Every program on Explore Summer was identified and researched by us, not submitted or paid for
             by program providers. We take the information from publicly available sources: official
-            websites, handbooks, FAQs, parent portals, etc. We give you the ability to filter over 140 programs based on your
+            websites, handbooks, FAQs, parent portals, etc. We give you the ability to filter over{" "}
+            {MARKETING_PROGRAM_COUNT_LABEL} programs based on your
             own criteria and needs, creating a shortlist that works for you in as little as 90
             seconds. We flag our sources, note when pricing or details couldn&apos;t be confirmed,
             and tell you when something needs a second look before you apply. Explore Summer is never

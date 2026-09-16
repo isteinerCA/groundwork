@@ -8,7 +8,7 @@ import { HOME_CATEGORY_ORDER, PROGRAM_CATEGORIES } from "@/lib/constants/categor
 import { getCategoryExploreHref } from "@/lib/constants/predefined-lists";
 import {
   formatProgramCatalogLabel,
-  MARKETING_PROGRAM_COUNT_LABEL,
+  MARKETING_OFFERING_COUNT_LABEL,
 } from "@/lib/programs/preview-programs";
 
 export function LandingHero() {
@@ -22,7 +22,7 @@ export function LandingHero() {
           here.
         </h1>
         <p className="text-lg font-medium leading-relaxed text-[var(--color-navy)]">
-          Find the right summer program among {MARKETING_PROGRAM_COUNT_LABEL} curated options for
+          Find the right summer program among {MARKETING_OFFERING_COUNT_LABEL} curated options for
           middle and high school students. Narrow them by interest, grade, dates, budget and more.
           Build a personalized shortlist in about 90 seconds.{" "}
           <strong className="font-semibold text-[var(--color-sage)]">Free.</strong>

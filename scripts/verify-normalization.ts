@@ -36,6 +36,13 @@ import {
   programMatchesMonthFilter,
   programOverlapsMonth,
 } from "../src/lib/data/matches-month-filter";
+import { roundMarketingCount } from "../src/lib/programs/marketing-count-label";
+import {
+  catalogOfferingCount,
+  catalogProgramFamilyCount,
+  MARKETING_OFFERING_COUNT_LABEL,
+  MARKETING_PROGRAM_COUNT_LABEL,
+} from "../src/lib/programs/catalog-counts";
 import { formatCompareLength } from "../src/lib/data/format-compare-length";
 import { inclusiveDaySpanFromIso } from "../src/lib/data/parse-dates-display";
 import { parsePrice } from "../src/lib/data/parse-price";
@@ -709,6 +716,31 @@ if (trackGroups.length !== 2) {
 }
 if (formatGroupPriceRange([socapaActingDay, socapaActingRes]) !== "$2,500–$4,500") {
   console.error(`FAIL: group price range, got "${formatGroupPriceRange([socapaActingDay, socapaActingRes])}"`);
+  failed++;
+}
+
+if (roundMarketingCount(168) !== "160+") {
+  console.error("FAIL: roundMarketingCount under 200 should floor to nearest 10");
+  failed++;
+}
+if (roundMarketingCount(413) !== "400+") {
+  console.error("FAIL: roundMarketingCount at 200+ should floor to nearest 50");
+  failed++;
+}
+if (roundMarketingCount(199) !== "190+") {
+  console.error("FAIL: roundMarketingCount 199 should be 190+");
+  failed++;
+}
+if (roundMarketingCount(200) !== "200+") {
+  console.error("FAIL: roundMarketingCount 200 should be 200+");
+  failed++;
+}
+if (MARKETING_OFFERING_COUNT_LABEL !== roundMarketingCount(catalogOfferingCount)) {
+  console.error("FAIL: offering marketing label should match rounded catalog count");
+  failed++;
+}
+if (MARKETING_PROGRAM_COUNT_LABEL !== roundMarketingCount(catalogProgramFamilyCount)) {
+  console.error("FAIL: program marketing label should match rounded family count");
   failed++;
 }
 
