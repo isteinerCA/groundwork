@@ -5,7 +5,10 @@
 import { normalizeAdmissionType } from "../src/lib/data/normalize-admission";
 import { normalizeFormat } from "../src/lib/data/normalize-format";
 import { normalizeGrade, gradeMatchesFilter } from "../src/lib/data/normalize-grade";
+import { programContainedInDateWindow } from "../src/lib/data/matches-date-window-filter";
 import { matchesDataQuery } from "../src/lib/data/matches-data-query";
+import { parseDateWindowQuery } from "../src/lib/search/parse-date-window-query";
+import { promoteDateWindowFromMessage } from "../src/lib/search/llm-parse-schema";
 import { resolveLocationQuery } from "../src/lib/data/matches-location";
 import {
   formatGradeEligibilityDisplay,
@@ -290,6 +293,71 @@ if (matchesDataQuery(photoCrossTrackMention, "acting program")) {
   console.error(
     "FAIL: photography offering should not match acting query via cross-track description mention",
   );
+  failed++;
+}
+
+const catalogIntensives = stubProgram({
+  name: "Interlochen Arts Camp - High School",
+  locationDisplay: "Interlochen, MI",
+  trackDetail: "Instrumental & Vocal Intensives - 1-Week",
+  catalogOffering: true,
+  description:
+    "One-week intensive; offerings include violin, viola, cello, and piano among 20+ instrument tracks.",
+});
+
+if (!matchesDataQuery(catalogIntensives, "violin program")) {
+  console.error('FAIL: catalog offering should match "violin program" via description');
+  failed++;
+}
+
+if (!matchesDataQuery(catalogIntensives, "cello")) {
+  console.error('FAIL: catalog offering should match single-term "cello" via description');
+  failed++;
+}
+
+const nonCatalogWithInstrumentMention = stubProgram({
+  name: "Example Camp",
+  locationDisplay: "Boston, MA",
+  trackDetail: "General Photography",
+  description: "Includes a field trip to hear violin students at a partner school.",
+});
+
+if (matchesDataQuery(nonCatalogWithInstrumentMention, "violin")) {
+  console.error("FAIL: non-catalog row should not match violin via incidental description mention");
+  failed++;
+}
+
+const julyWindow = parseDateWindowQuery("include only programs that run from July 15-31");
+if (!julyWindow || julyWindow.dateWindowStart !== "2027-07-15" || julyWindow.dateWindowEnd !== "2027-07-31") {
+  console.error("FAIL: should parse July 15-31 date window for 2027");
+  failed++;
+}
+
+const promoted = promoteDateWindowFromMessage("programs from July 15-31", { includeMonths: [7] });
+if (promoted.includeMonths?.length || promoted.dateWindowStart !== "2027-07-15") {
+  console.error("FAIL: date window promotion should replace includeMonths");
+  failed++;
+}
+
+const weekInside = stubProgram({
+  name: "One Week Camp",
+  locationDisplay: "Boston, MA",
+  dateStart: "2027-07-20",
+  dateEnd: "2027-07-26",
+  lengthMinDays: 7,
+});
+const seasonLong = stubProgram({
+  name: "Season Camp",
+  locationDisplay: "Yosemite, CA",
+  dateStart: "2027-06-06",
+  dateEnd: "2027-08-13",
+});
+if (!programContainedInDateWindow(weekInside, "2027-07-15", "2027-07-31")) {
+  console.error("FAIL: one-week program inside July 15-31 should match contained window");
+  failed++;
+}
+if (programContainedInDateWindow(seasonLong, "2027-07-15", "2027-07-31")) {
+  console.error("FAIL: season-long program should not match contained July 15-31 window");
   failed++;
 }
 

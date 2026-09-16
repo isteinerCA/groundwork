@@ -85,13 +85,15 @@ ${prices}
 ${regions}
   Use for "east coast only", "west coast", "midwest", "northeast", "the south". Clear with empty array [] when removed. NEVER put regional phrases in dataQuery.
 - includeLocations: string[] — include programs in specific US states (OR logic). Use canonical lowercase state names (e.g. "new york", "massachusetts", "california"). Use for multi-state requests: "NY or MA", "New York or Massachusetts only", "California or Texas". Clear with empty array [] when removed. NEVER put multi-state lists in dataQuery.
-- includeMonths: number[] — include programs whose date range overlaps these calendar months (OR logic). Use month numbers: ${months}. Examples: "in June" → [6], "June or July" → [6, 7], "programs only in June" → [6]. Matches programs that run during the month (not necessarily start in it). Clear with empty array [] when removed. NEVER put month names in dataQuery.
+- includeMonths: number[] — include programs whose date range overlaps these calendar months (OR logic). Use month numbers: ${months}. Examples: "in June" → [6], "June or July" → [6, 7], "programs only in June" → [6]. Matches programs that run during the month (not necessarily start in it). Clear with empty array [] when removed. NEVER put month names in dataQuery. Do NOT use for specific day ranges like "July 15-31" — use dateWindowStart/dateWindowEnd instead.
 - excludeMonths: number[] — exclude programs whose date range overlaps these calendar months. Examples: "not in August" → [8], "exclude July", "outside June", "avoid August programs" → [8]. Clear with empty array [] when removed. NEVER put negated months in includeMonths or dataQuery.
+- dateWindowStart / dateWindowEnd: ISO date strings (\`YYYY-MM-DD\`) or null — when both are set, include only programs whose **entire** date range fits inside the window (contained mode). Examples: "July 15-31", "from Jul 15 through Jul 31", "fit between June 20 and July 10" → dateWindowStart/dateWindowEnd with includeMonths cleared. A one-week program starting July 20 qualifies; a program running June–August does not. Null both to clear.
 
 ## Month rules (critical)
 - "in June", "June only", "during July" → includeMonths (NOT excludeMonths)
 - "not in August", "exclude August", "outside July", "no June programs" → excludeMonths (NOT includeMonths)
 - Do NOT set includeMonths when the user negates a month
+- Specific day ranges ("July 15-31", "between Jun 20 and Jul 10") → dateWindowStart + dateWindowEnd; clear includeMonths/excludeMonths. Do NOT downgrade to whole-month includeMonths.
 
 ## Expanding vs replacing filters (critical)
 - **Expand / add** keeps existing compatible filters and adds new ones (OR logic). Examples: "expand to CA and WA", "expand to marine science", "expand to online programs", "also include July".
@@ -132,7 +134,7 @@ Set clearAll: true when the user wants to reset all filters ("start over", "clea
 - Zip code / radius search
 - Specific acceptance rates or competitiveness beyond admission type
 - Real-time availability or seat counts
-- Specific session start dates within a multi-session program (we match overall date range overlap only)
+- Picking one departure week inside a grouped card when that departure is not its own row (we filter on each row's stored dates only)
 - Programs where price or length could not be parsed from our data ("Contact program", "Varies")
 - Anything not in our program data
 
@@ -162,6 +164,8 @@ Use includeRegions for multi-state regional requests (east coast, west coast, et
 Use includeLocations for explicit multi-state OR requests (NY or MA, California and Texas) — never put "ny or ma" in dataQuery.
 
 Use includeMonths for positive month requests ("in June", "July only", "June and July") — never put month names in dataQuery.
+
+Use dateWindowStart/dateWindowEnd for specific calendar windows ("July 15-31", "fit these dates") — programs must fit **entirely** within the window. In assistantMessage, say you found programs that fit within those dates (shorter programs count too).
 
 Use excludeMonths for negated month requests ("not in August", "exclude July") — never put negated months in includeMonths or dataQuery. We match programs whose overall date range overlaps the month; specific session start dates may vary — mention that in assistantMessage when relevant.
 

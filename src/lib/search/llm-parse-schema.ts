@@ -8,10 +8,12 @@ import {
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
 import { parseMonthList, isNegatedMonthQuery, MONTH_NUMBERS, type MonthNumber } from "@/lib/constants/months";
+import { parseIsoDate } from "@/lib/data/parse-dates-display";
 import { parseMultiStateLocations, resolveLocationQuery } from "@/lib/data/matches-location";
 import { resolveRegionQuery, US_REGION_IDS } from "@/lib/data/us-regions";
 import { stripNoOpFilterPatch } from "@/lib/search/filter-patch-delta";
 import { isAdditiveFilterRequest } from "@/lib/search/filter-request-intent";
+import { parseDateWindowQuery } from "@/lib/search/parse-date-window-query";
 import { DEFAULT_SEARCH_FILTERS, type SearchFilters } from "@/lib/types/program";
 import type { ProgramCategoryId } from "@/lib/constants/categories";
 
@@ -65,6 +67,8 @@ export const filterPatchSchema = z
     excludeMonths: z.array(monthNumberSchema).optional(),
     minDurationWeeks: z.number().min(0).nullable().optional(),
     maxDurationWeeks: z.number().min(0).nullable().optional(),
+    dateWindowStart: z.string().nullable().optional(),
+    dateWindowEnd: z.string().nullable().optional(),
   })
   .strict();
 
@@ -89,6 +93,8 @@ export const searchFiltersSchema = z.object({
   excludeMonths: z.array(monthNumberSchema),
   minDurationWeeks: z.number().min(0).nullable(),
   maxDurationWeeks: z.number().min(0).nullable(),
+  dateWindowStart: z.string().nullable(),
+  dateWindowEnd: z.string().nullable(),
   includePendingSeasonRefresh: z.boolean(),
 });
 
@@ -250,6 +256,14 @@ export function sanitizeFilterPatch(
   if (patch.maxDurationWeeks !== undefined) {
     sanitized.maxDurationWeeks = patch.maxDurationWeeks;
   }
+  if (patch.dateWindowStart !== undefined) {
+    sanitized.dateWindowStart = sanitizeIsoDateOrNull(patch.dateWindowStart);
+  }
+  if (patch.dateWindowEnd !== undefined) {
+    sanitized.dateWindowEnd = sanitizeIsoDateOrNull(patch.dateWindowEnd);
+  }
+
+  reconcileDateWindowAndMonths(sanitized);
 
   // Prefer exact numeric price over coarse bucket when LLM sets maxPrice/minPrice.
   if (sanitized.maxPrice != null || sanitized.minPrice != null) {
@@ -332,6 +346,37 @@ export function sanitizeFilterPatch(
   return sanitized;
 }
 
+function sanitizeIsoDateOrNull(value: string | null): string | null {
+  if (value == null) return null;
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+  return parseIsoDate(trimmed);
+}
+
+function reconcileDateWindowAndMonths(patch: Partial<SearchFilters>): void {
+  const hasWindow = Boolean(patch.dateWindowStart && patch.dateWindowEnd);
+  if (!hasWindow) return;
+  patch.includeMonths = [];
+  patch.excludeMonths = [];
+}
+
+/** Promote specific date ranges from the user message when the LLM only set months. */
+export function promoteDateWindowFromMessage(
+  message: string,
+  patch: Partial<SearchFilters>,
+): Partial<SearchFilters> {
+  const parsed = parseDateWindowQuery(message);
+  if (!parsed) return patch;
+
+  return {
+    ...patch,
+    dateWindowStart: parsed.dateWindowStart,
+    dateWindowEnd: parsed.dateWindowEnd,
+    includeMonths: [],
+    excludeMonths: [],
+  };
+}
+
 /** If LLM wrongly used includeMonths for a negated month query, flip to excludeMonths. */
 export function correctNegatedMonthPatch(
   message: string,
@@ -405,6 +450,7 @@ export function parseLlmResponse(
   const unexpressible = parsed.unexpressible.trim();
   if (message) {
     filterPatch = correctNegatedMonthPatch(message, filterPatch);
+    filterPatch = promoteDateWindowFromMessage(message, filterPatch);
     filterPatch = restrictPatchForSimpleQuery(message, filterPatch);
   }
   if (currentFilters) {

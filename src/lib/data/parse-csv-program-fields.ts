@@ -25,6 +25,10 @@ export function parseYesNo(raw: string): boolean {
   return /^yes$/i.test(raw.trim());
 }
 
+export function parseCatalogOfferingFromCsv(row: CsvRow): boolean {
+  return parseYesNo(csvCell(row, "Catalog Offering"));
+}
+
 function parseOptionalInt(raw: string): number | null {
   if (!raw.trim()) return null;
   const parsed = Number.parseInt(raw.trim(), 10);

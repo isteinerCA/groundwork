@@ -118,9 +118,13 @@ export function matchesDataQuery(
   if (terms.length === 0) return true;
 
   const identityHaystack = programIdentitySearchText(program);
+  // Single-term discipline queries must hit name/institution/offering label so cross-track
+  // description mentions (e.g. photography collaborating with acting) do not false-match.
+  // Catalog offerings opt out: description lists chooser options (instruments, etc.) intentionally.
   if (
     terms.length === 1 &&
     program.trackDetail?.trim() &&
+    !program.catalogOffering &&
     !termMatchesInText(terms[0], identityHaystack)
   ) {
     return false;

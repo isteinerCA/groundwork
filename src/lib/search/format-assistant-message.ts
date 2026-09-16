@@ -7,6 +7,7 @@ import {
 } from "@/lib/constants/filters";
 import { getMonthLabel } from "@/lib/constants/months";
 import { filterPrograms } from "@/lib/data/filter-programs";
+import { formatDateWindowFilterLabel } from "@/lib/data/matches-date-window-filter";
 import { countSearchResultItems } from "@/lib/data/group-search-results";
 import { getRegionLabel } from "@/lib/data/us-regions";
 import { stripNoOpFilterPatch } from "@/lib/search/filter-patch-delta";
@@ -25,7 +26,24 @@ function groupedFilterCount(programs: Program[], filters: SearchFilters): number
   return countSearchResultItems(filterPrograms(programs, filters));
 }
 
+function dateWindowSessionNote(filters: SearchFilters, programs: Program[]): string | null {
+  if (!filters.dateWindowStart || !filters.dateWindowEnd) return null;
+
+  const matching = filterPrograms(programs, filters);
+  const approximateCount = matching.filter(
+    (program) => program.datesParseQuality === "approximate",
+  ).length;
+  if (approximateCount > 0) {
+    return "Some matching programs still have approximate dates — confirm exact departure weeks on each site.";
+  }
+  return null;
+}
+
 function monthSessionNote(filters: SearchFilters, programs: Program[]): string | null {
+  if (filters.dateWindowStart && filters.dateWindowEnd) {
+    return dateWindowSessionNote(filters, programs);
+  }
+
   if (filters.excludeMonths.length === 0 && filters.includeMonths.length === 0) {
     return null;
   }
@@ -92,6 +110,12 @@ function describeFilterPatch(patch: Partial<SearchFilters>): string {
       (id) => DURATION_BUCKETS.find((d) => d.id === id)?.label ?? id,
     );
     parts.push(`duration: ${labels.join(" or ")}`);
+  }
+
+  if (patch.dateWindowStart && patch.dateWindowEnd) {
+    parts.push(
+      `that fit entirely within ${formatDateWindowFilterLabel(patch.dateWindowStart, patch.dateWindowEnd).replace(/^Fits /, "")}`,
+    );
   }
 
   if (patch.includeMonths?.length) {

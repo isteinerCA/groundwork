@@ -47,6 +47,11 @@ export interface Program {
   secondaryTags: string[];
   trackDetail?: string;
   description?: string;
+  /**
+   * When true, free-text search may match single terms in description (not just identity
+   * fields). Use for consolidated catalog rows where parents pick one option from a list.
+   */
+  catalogOffering?: boolean;
 
   /** Grade completed range (PRD §4.4 — normalized at import) */
   gradeCompletedMin: number;
@@ -138,6 +143,9 @@ export interface SearchFilters {
   includeMonths: MonthNumber[];
   /** Calendar months (1–12) to exclude — programs overlapping these months are hidden. */
   excludeMonths: MonthNumber[];
+  /** When both set, program must run entirely within this inclusive ISO date window. */
+  dateWindowStart: string | null;
+  dateWindowEnd: string | null;
 }
 
 export const DEFAULT_SEARCH_FILTERS: SearchFilters = {
@@ -162,6 +170,8 @@ export const DEFAULT_SEARCH_FILTERS: SearchFilters = {
   excludeMonths: [],
   minDurationWeeks: null,
   maxDurationWeeks: null,
+  dateWindowStart: null,
+  dateWindowEnd: null,
 };
 
 /** Expected columns in the program CSV (2027 names with legacy 2026 fallbacks at import). */
@@ -220,4 +230,6 @@ export interface ProgramCsvRow extends Record<string, string | undefined> {
   "Review Status"?: string;
   "Review Notes"?: string;
   "Data Verified At"?: string;
+  /** Yes when description lists chooser options (consolidated catalog row). */
+  "Catalog Offering"?: string;
 }

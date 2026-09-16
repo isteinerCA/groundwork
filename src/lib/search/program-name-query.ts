@@ -1,6 +1,7 @@
 import { parseMonthList } from "@/lib/constants/months";
 import { resolveLocationQuery } from "@/lib/data/matches-location";
 import { resolveRegionQuery } from "@/lib/data/us-regions";
+import { isDateWindowQuery } from "@/lib/search/parse-date-window-query";
 import type { LlmParseResponse } from "@/lib/search/llm-parse-schema";
 import type { SearchFilters } from "@/lib/types/program";
 
@@ -27,6 +28,7 @@ export function isLikelyProgramNameQuery(message: string): boolean {
   if (resolveLocationQuery(trimmed)) return false;
   if (resolveRegionQuery(trimmed)) return false;
   if (parseMonthList(trimmed).length > 0) return false;
+  if (isDateWindowQuery(trimmed)) return false;
 
   return true;
 }

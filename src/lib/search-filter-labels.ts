@@ -6,6 +6,7 @@ import {
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
 import { getMonthLabel } from "@/lib/constants/months";
+import { formatDateWindowFilterLabel } from "@/lib/data/matches-date-window-filter";
 import { TARGET_SEASON_YEAR } from "@/lib/constants/season-review";
 import { formatDataQueryLabel } from "@/lib/search/format-data-query-label";
 import { getRegionLabel } from "@/lib/data/us-regions";
@@ -184,6 +185,14 @@ export function getActiveFilterItems(filters: SearchFilters): ActiveFilterItem[]
       remove: {
         includeLocations: filters.includeLocations.filter((loc) => loc !== location),
       },
+    });
+  }
+
+  if (filters.dateWindowStart && filters.dateWindowEnd) {
+    items.push({
+      key: "date-window",
+      label: formatDateWindowFilterLabel(filters.dateWindowStart, filters.dateWindowEnd),
+      remove: { dateWindowStart: null, dateWindowEnd: null },
     });
   }
 

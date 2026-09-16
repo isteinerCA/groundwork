@@ -46,6 +46,9 @@ export function isFilterItemLocked(
   if (item.key === "duration-weeks") {
     return lockedFilters.minDurationWeeks != null || lockedFilters.maxDurationWeeks != null;
   }
+  if (item.key === "date-window") {
+    return Boolean(lockedFilters.dateWindowStart && lockedFilters.dateWindowEnd);
+  }
   if (item.key === "credit" && lockedFilters.collegeCreditOnly) return true;
   if (item.key === "funded" && lockedFilters.fullyFundedOnly) return true;
   if (item.key === "us" && lockedFilters.usOnly) return true;

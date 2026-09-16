@@ -214,6 +214,7 @@ export function SearchExperience({
     filters.includeRegions.length > 0 ||
     filters.includeLocations.length > 0 ||
     filters.includeMonths.length > 0 ||
+    (filters.dateWindowStart != null && filters.dateWindowEnd != null) ||
     filters.excludeMonths.length > 0 ||
     !filters.includePendingSeasonRefresh;
 
@@ -355,8 +356,8 @@ export function SearchExperience({
                 headerExtra={
                   <>
                     <InfoTooltip label="Availability in">
-                      Select the months that work for you. Need to fit a specific date range? Our
-                      search assistant can help.
+                      Select the months that work for you. For a specific window (e.g. July 15–31),
+                      ask the search assistant — it finds programs that fit entirely within your dates.
                     </InfoTooltip>
                     <InfoTooltip label="2027 season coverage">
                       {INCLUDE_PENDING_SEASON_REFRESH_TOOLTIP}

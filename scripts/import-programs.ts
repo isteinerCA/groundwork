@@ -16,6 +16,7 @@ import {
   parseCreditFromCsv,
   parseDatesFromCsv,
   parseDurationFromCsv,
+  parseCatalogOfferingFromCsv,
   parseGradesFromCsv,
   parsePriceFromCsv,
 } from "../src/lib/data/parse-csv-program-fields";
@@ -214,6 +215,7 @@ function rowToProgram(
   const dates = parseDatesFromCsv(row, seasonYear);
   const credit = parseCreditFromCsv(row);
   const locationDisplay = csvCell(row, "Location Display", "Location");
+  const catalogOffering = parseCatalogOfferingFromCsv(row);
 
   const programBase = {
     id: `prog-${index + 1}`,
@@ -222,6 +224,7 @@ function rowToProgram(
     ...(institution ? { institution } : {}),
     ...(programGroupId ? { programGroupId } : {}),
     ...(description ? { description } : {}),
+    ...(catalogOffering ? { catalogOffering: true } : {}),
     category,
     secondaryTags: csvCell(row, "Secondary Tags")
       .split(/[,;]/)

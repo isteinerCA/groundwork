@@ -4,6 +4,7 @@ import { matchesDataQuery } from "@/lib/data/matches-data-query";
 import { matchesDurationWeeksFilter } from "@/lib/data/matches-duration-filter";
 import { matchesLocationQuery, programMatchesAnyLocation } from "@/lib/data/matches-location";
 import { programMatchesAnyRegion } from "@/lib/data/us-regions";
+import { programMatchesDateWindowFilter } from "@/lib/data/matches-date-window-filter";
 import { programMatchesExcludeMonthFilter, programMatchesMonthFilter } from "@/lib/data/matches-month-filter";
 import {
   isVerifiedForTargetSeason,
@@ -104,6 +105,16 @@ export function matchesProgram(
   }
 
   if (!programMatchesExcludeMonthFilter(program, filters.excludeMonths ?? [])) {
+    return false;
+  }
+
+  if (
+    !programMatchesDateWindowFilter(
+      program,
+      filters.dateWindowStart,
+      filters.dateWindowEnd,
+    )
+  ) {
     return false;
   }
 

@@ -68,6 +68,8 @@ export function SearchChat({
         includeLocations: filters.includeLocations,
         includeMonths: filters.includeMonths,
         excludeMonths: filters.excludeMonths,
+        dateWindowStart: filters.dateWindowStart,
+        dateWindowEnd: filters.dateWindowEnd,
         resultCount,
       }),
     [filters, resultCount],
