@@ -433,6 +433,54 @@
     ]
   },
   {
+    "match": {
+      "programGroupId": [
+        "broadreach-fiji-shark-studies",
+        "broadreach-yucatan-ocean-conservation",
+        "broadreach-21day-advanced-scuba",
+        "broadreach-17day-padi-jr-divemaster",
+        "broadreach-12day-advanced-scuba",
+        "broadreach-bonaire-rescue-diver"
+      ]
+    },
+    "flags": [
+      {
+        "id": "broadreach-cert-prerequisite",
+        "type": "policy",
+        "title": "Requires an existing PADI certification to enroll",
+        "body": "This program requires students to already hold a specific PADI certification level (Open Water, Rescue Diver, etc.) before enrolling - it is not a beginner-friendly option despite being open enrollment otherwise.",
+        "sourceCitation": "Broadreach program pages",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": { "programGroupId": "broadreach-belize-alumni-scuba" },
+    "flags": [
+      {
+        "id": "broadreach-alumni-only",
+        "type": "policy",
+        "title": "Restricted to returning Broadreach students only",
+        "body": "This program is not open to first-time Broadreach applicants regardless of grade, age, or certification level - it exclusively serves alumni of prior Broadreach programs.",
+        "sourceCitation": "Broadreach Belize Alumni-Only Advanced Scuba program page",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": { "programGroupId": "broadreach-fiji-shark-studies" },
+    "flags": [
+      {
+        "id": "broadreach-fiji-min-age",
+        "type": "policy",
+        "title": "Minimum age 15 required, independent of grade",
+        "body": "This program requires students to be at least 15 years old at the time of the program, which could exclude a young student in an otherwise-eligible grade.",
+        "sourceCitation": "Broadreach Fiji Shark Studies program page",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
     "match": { "programGroupId": "wpi-high-achieving-hs" },
     "flags": [
       {

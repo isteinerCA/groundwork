@@ -150,6 +150,38 @@
     }
   },
   {
+    "match": {
+      "programGroupId": [
+        "broadreach-7day-scuba-sailing",
+        "broadreach-12day-sailing-island-hopping",
+        "broadreach-12day-scuba-sailing-exploration",
+        "broadreach-caribbean-marine-bio-voyage",
+        "broadreach-curacao-marine-bio",
+        "broadreach-fiji-shark-studies",
+        "broadreach-yucatan-ocean-conservation",
+        "broadreach-costa-rica-sea-turtle",
+        "broadreach-17day-scuba-sailing-voyage",
+        "broadreach-21day-advanced-scuba",
+        "broadreach-17day-padi-jr-divemaster",
+        "broadreach-malawi-wildlife-conservation",
+        "broadreach-amazon-galapagos-eco",
+        "broadreach-12day-advanced-scuba",
+        "broadreach-24day-sailing-voyage",
+        "broadreach-bonaire-rescue-diver",
+        "broadreach-costa-rica-veterinary",
+        "broadreach-bahamas-veterinary-wildlife",
+        "broadreach-azores-marine-mammal",
+        "broadreach-belize-alumni-scuba"
+      ]
+    },
+    "dayToDay": {
+      "notes": "Liveaboard programs (most Caribbean scuba/sailing trips) have students living aboard a sailing vessel for the duration, sharing cabins with a small crew of peers and instructors, with port stops for shore excursions. Land-based programs (Curacao, Fiji, Yucatan, Costa Rica, Malawi, Ecuador, Bahamas, Azores) are based out of a research station, dive lodge, or similar fixed facility. Days are built around the program's core activity (diving, sailing instruction, research fieldwork, or clinical/animal-care work), with instructors and staff present throughout. Round-trip airfare to the destination is the family's responsibility in every case; some programs also require a separate internal flight during the trip itself.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Broadreach general FAQ and For Students pages (gobroadreach.com, broadreachfoundation.org)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
     "match": { "programGroupId": "wpi-ignite" },
     "dayToDay": {
       "notes": "Commuter day program on the WPI campus: instruction runs 9am-4pm Monday-Friday. Students choose one or more weekly sessions and a STEM course track for each week; weeks are offered on a rolling basis across the summer (four distinct weeks in 2027). Lunch is not included in tuition for commuter programs.",
