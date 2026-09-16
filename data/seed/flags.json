@@ -306,6 +306,19 @@
     ]
   },
   {
+    "match": { "programGroupId": "explo-middle-school" },
+    "flags": [
+      {
+        "id": "explo-ms-unaccompanied-minor-fee",
+        "type": "pricing",
+        "title": "Extra fee for unaccompanied-minor airport service, and a caution against flying that way",
+        "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way (on top of the standard $100/$200 airport transport fee) if a family does use EXPLO's transportation for an unaccompanied minor.",
+        "sourceCitation": "EXPLO Tuition + Financial Aid page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
     "match": { "programGroupId": "wpi-high-achieving-hs" },
     "flags": [
       {

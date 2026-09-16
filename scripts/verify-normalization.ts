@@ -36,6 +36,8 @@ import {
   programMatchesMonthFilter,
   programOverlapsMonth,
 } from "../src/lib/data/matches-month-filter";
+import { formatCompareLength } from "../src/lib/data/format-compare-length";
+import { inclusiveDaySpanFromIso } from "../src/lib/data/parse-dates-display";
 import { parsePrice } from "../src/lib/data/parse-price";
 import { matchesPriceFilter } from "../src/lib/data/matches-price-filter";
 import type { Program } from "../src/lib/types/program";
@@ -707,6 +709,35 @@ if (trackGroups.length !== 2) {
 }
 if (formatGroupPriceRange([socapaActingDay, socapaActingRes]) !== "$2,500–$4,500") {
   console.error(`FAIL: group price range, got "${formatGroupPriceRange([socapaActingDay, socapaActingRes])}"`);
+  failed++;
+}
+
+if (inclusiveDaySpanFromIso("2027-07-11", "2027-07-24") !== 14) {
+  console.error("FAIL: inclusiveDaySpanFromIso Jul 11–24 should be 14 days");
+  failed++;
+}
+if (
+  formatCompareLength({
+    dateStart: "2027-07-11",
+    dateEnd: "2027-07-24",
+    lengthDisplay: "2 weeks",
+    lengthMinDays: 14,
+    lengthMaxDays: 14,
+  }) !== "14 days"
+) {
+  console.error("FAIL: formatCompareLength should prefer calendar days from dates");
+  failed++;
+}
+if (
+  formatCompareLength({
+    dateStart: null,
+    dateEnd: null,
+    lengthDisplay: "2 weeks",
+    lengthMinDays: 14,
+    lengthMaxDays: 14,
+  }) !== "14 days"
+) {
+  console.error("FAIL: formatCompareLength should fall back to lengthMinDays without dates");
   failed++;
 }
 

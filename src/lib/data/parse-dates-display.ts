@@ -65,6 +65,13 @@ export function parseIsoDate(raw: string): string | null {
   return Number.isNaN(parsed.getTime()) ? null : trimmed;
 }
 
+/** Inclusive calendar days between two ISO dates (start and end both count). */
+export function inclusiveDaySpanFromIso(start: string, end: string): number {
+  const startDate = new Date(`${start}T12:00:00`);
+  const endDate = new Date(`${end}T12:00:00`);
+  return Math.round((endDate.getTime() - startDate.getTime()) / 86_400_000) + 1;
+}
+
 export function formatIsoDateRange(start: string, end: string): string {
   const s = new Date(`${start}T12:00:00`);
   const e = new Date(`${end}T12:00:00`);

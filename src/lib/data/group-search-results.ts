@@ -4,6 +4,7 @@ import {
   formatDatesDisplay,
   isPendingDatesDisplay,
 } from "@/lib/data/format-season-display";
+import { inclusiveDaySpanFromIso } from "@/lib/data/parse-dates-display";
 import type { Program } from "@/lib/types/program";
 
 export type SearchResultItem =
@@ -133,12 +134,6 @@ function formatIsoSpan(start: string, end: string): string {
   return `${startPart}–${endPart}, ${year}`;
 }
 
-function inclusiveDaySpan(start: string, end: string): number {
-  const startMs = parseIsoDate(start).getTime();
-  const endMs = parseIsoDate(end).getTime();
-  return Math.round((endMs - startMs) / 86_400_000) + 1;
-}
-
 function formatDurationOptionsSummary(programs: Program[]): string {
   const seen = new Set<string>();
   const labels: string[] = [];
@@ -176,7 +171,7 @@ export function formatGroupDateRange(programs: Program[]): string {
   );
   if (singleSpan) return formatDatesDisplay(dated[0]);
 
-  const envelopeDays = inclusiveDaySpan(rangeStart, rangeEnd);
+  const envelopeDays = inclusiveDaySpanFromIso(rangeStart, rangeEnd);
   const longestSessionDays = Math.max(...dated.map((p) => p.lengthMinDays ?? 0));
   const durationSummary = formatDurationOptionsSummary(dated);
   const showSessionSummary =

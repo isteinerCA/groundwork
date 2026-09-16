@@ -9,6 +9,7 @@ import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
 import { formatPriceDisplay } from "@/lib/data/format-price-display";
 import { formatGradeEligibilityDisplay } from "@/lib/data/format-grade-display";
 import { isValidDayToDay } from "@/lib/data/day-to-day";
+import { formatCompareLength } from "@/lib/data/format-compare-length";
 import { formatDatesDisplay } from "@/lib/data/format-season-display";
 import type { Program } from "@/lib/types/program";
 
@@ -186,7 +187,7 @@ export function CompareView({ programs }: { programs: Program[] }) {
                       ["Format", (p: Program) => p.formatDisplay],
                       ["Location", (p: Program) => p.locationDisplay],
                       ["Dates", (p: Program) => formatDatesDisplay(p)],
-                      ["Length", (p: Program) => p.lengthDisplay],
+                      ["Length", (p: Program) => formatCompareLength(p)],
                       ["Cost", (p: Program) => formatPriceDisplay(p)],
                       ["College credit", (p: Program) => (p.hasCollegeCredit ? "Yes" : "No")],
                       [

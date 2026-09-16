@@ -54,6 +54,15 @@
     }
   },
   {
+    "match": { "programGroupId": "explo-middle-school" },
+    "dayToDay": {
+      "notes": "EXPLO is explicitly an 'unplugged' program - device use is restricted as a stated program value, not merely a default policy. Residential students live in Wellesley College dorms with roommates, supported by Resident Advisors around the clock; a general staff-to-student ratio of 1:7 is advertised. Weekends are student-choice: options include whale watching, Red Sox games, museum visits, and other off-campus trips, with a 24/7 health center on site. Day students follow the same academic day as residential students but go home at night; if a day student stays for evening programming, a $38 dinner + evening event fee is charged to their account. International students live alongside domestic students in the same dorms and dining halls.",
+      "sourceType": "official_policy",
+      "sourceCitation": "EXPLO program details and tuition/FAQ pages (explo.org)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
     "match": { "programGroupId": "wpi-ignite" },
     "dayToDay": {
       "notes": "Commuter day program on the WPI campus: instruction runs 9am-4pm Monday-Friday. Students choose one or more weekly sessions and a STEM course track for each week; weeks are offered on a rolling basis across the summer (four distinct weeks in 2027). Lunch is not included in tuition for commuter programs.",

@@ -1,6 +1,6 @@
 {
   "verifiedAt": "2026-09-16",
-  "count": 408,
+  "count": 413,
   "programs": [
     {
       "id": "prog-1",
@@ -4521,48 +4521,6 @@
     },
     {
       "id": "prog-105",
-      "slug": "explo",
-      "name": "EXPLO",
-      "category": "traditional-camp",
-      "secondaryTags": [
-        "STEM/Engineering"
-      ],
-      "gradeDisplay": "Grades 4-12",
-      "gradeCompletedMin": 4,
-      "gradeCompletedMax": 12,
-      "gradeSource": "grade",
-      "admissionType": "application",
-      "admissionDisplay": "Application",
-      "formatDisplay": "Residential",
-      "formatTags": [
-        "residential"
-      ],
-      "durationBucket": "two_to_four_weeks",
-      "lengthDisplay": "2 or 4 weeks",
-      "lengthMinDays": 28,
-      "lengthMaxDays": 28,
-      "datesDisplay": "Multiple sessions Jun - Aug",
-      "dateStart": "2026-06-01",
-      "dateEnd": "2026-08-28",
-      "datesParseQuality": "approximate",
-      "seasonYear": 2026,
-      "reviewStatus": "provisional",
-      "locationDisplay": "Wheaton College, MA",
-      "isInternational": false,
-      "creditDisplay": "No",
-      "hasCollegeCredit": false,
-      "priceDisplay": "Starts at ~$4045",
-      "priceMin": 4045,
-      "priceMax": 4045,
-      "priceUnknown": false,
-      "fullyFunded": false,
-      "financialAidAvailable": false,
-      "websiteUrl": "https://explo.org/",
-      "dataVerifiedAt": "2026-09-16",
-      "flags": []
-    },
-    {
-      "id": "prog-106",
       "slug": "camp-becket-chimney-corners",
       "name": "Camp Becket & Chimney Corners",
       "category": "traditional-camp",
@@ -4602,7 +4560,7 @@
       "flags": []
     },
     {
-      "id": "prog-107",
+      "id": "prog-106",
       "slug": "adirondack-camp",
       "name": "Adirondack Camp",
       "category": "traditional-camp",
@@ -4644,7 +4602,7 @@
       "flags": []
     },
     {
-      "id": "prog-108",
+      "id": "prog-107",
       "slug": "nols-teen-expeditions",
       "name": "NOLS Teen Expeditions",
       "category": "outdoor-wilderness",
@@ -4686,7 +4644,7 @@
       "flags": []
     },
     {
-      "id": "prog-109",
+      "id": "prog-108",
       "slug": "outward-bound-high-school",
       "name": "Outward Bound High School",
       "category": "outdoor-wilderness",
@@ -4738,7 +4696,7 @@
       ]
     },
     {
-      "id": "prog-110",
+      "id": "prog-109",
       "slug": "overland-summers",
       "name": "Overland Summers",
       "category": "outdoor-wilderness",
@@ -4790,7 +4748,7 @@
       ]
     },
     {
-      "id": "prog-111",
+      "id": "prog-110",
       "slug": "apogee-adventures",
       "name": "Apogee Adventures",
       "category": "outdoor-wilderness",
@@ -4833,7 +4791,7 @@
       "flags": []
     },
     {
-      "id": "prog-112",
+      "id": "prog-111",
       "slug": "bold-earth-adventure-camp",
       "name": "Bold Earth Adventure Camp",
       "category": "outdoor-wilderness",
@@ -4875,7 +4833,7 @@
       "flags": []
     },
     {
-      "id": "prog-113",
+      "id": "prog-112",
       "slug": "moondance-adventures",
       "name": "Moondance Adventures",
       "category": "outdoor-wilderness",
@@ -4917,7 +4875,7 @@
       "flags": []
     },
     {
-      "id": "prog-114",
+      "id": "prog-113",
       "slug": "wilderness-adventures",
       "name": "Wilderness Adventures",
       "category": "outdoor-wilderness",
@@ -4957,7 +4915,7 @@
       "flags": []
     },
     {
-      "id": "prog-115",
+      "id": "prog-114",
       "slug": "yale-young-global-scholars-yygs",
       "name": "Yale Young Global Scholars (YYGS)",
       "category": "cultural-exchange",
@@ -4999,7 +4957,7 @@
       "flags": []
     },
     {
-      "id": "prog-116",
+      "id": "prog-115",
       "slug": "amigos-de-las-americas",
       "name": "AMIGOS de las Americas",
       "category": "cultural-exchange",
@@ -5041,7 +4999,7 @@
       "flags": []
     },
     {
-      "id": "prog-117",
+      "id": "prog-116",
       "slug": "ciee-high-school-abroad",
       "name": "CIEE High School Abroad",
       "category": "cultural-exchange",
@@ -5081,7 +5039,7 @@
       "flags": []
     },
     {
-      "id": "prog-118",
+      "id": "prog-117",
       "slug": "afs-intercultural-programs",
       "name": "AFS Intercultural Programs",
       "category": "cultural-exchange",
@@ -5121,7 +5079,7 @@
       "flags": []
     },
     {
-      "id": "prog-119",
+      "id": "prog-118",
       "slug": "yes-abroad",
       "name": "YES Abroad",
       "category": "cultural-exchange",
@@ -5163,7 +5121,7 @@
       "flags": []
     },
     {
-      "id": "prog-120",
+      "id": "prog-119",
       "slug": "rotary-youth-exchange",
       "name": "Rotary Youth Exchange",
       "category": "cultural-exchange",
@@ -5203,7 +5161,7 @@
       "flags": []
     },
     {
-      "id": "prog-121",
+      "id": "prog-120",
       "slug": "putney-student-travel",
       "name": "Putney Student Travel",
       "category": "cultural-exchange",
@@ -5245,7 +5203,7 @@
       "flags": []
     },
     {
-      "id": "prog-122",
+      "id": "prog-121",
       "slug": "arcc-programs",
       "name": "ARCC Programs",
       "category": "cultural-exchange",
@@ -5287,7 +5245,7 @@
       "flags": []
     },
     {
-      "id": "prog-123",
+      "id": "prog-122",
       "slug": "that-s-mandarin-chinese-summer-camp-day-half-day-full-homestay",
       "name": "That's Mandarin Chinese Summer Camp",
       "category": "cultural-exchange",
@@ -5329,7 +5287,7 @@
       "flags": []
     },
     {
-      "id": "prog-124",
+      "id": "prog-123",
       "slug": "goeast-mandarin-summer-camp-academic-chinese-booster-chinese-adventure",
       "name": "GoEast Mandarin Summer Camp",
       "category": "cultural-exchange",
@@ -5370,7 +5328,7 @@
       "flags": []
     },
     {
-      "id": "prog-125",
+      "id": "prog-124",
       "slug": "keats-school-mandarin-immersion-camp",
       "name": "Keats School Mandarin Immersion Camp",
       "category": "cultural-exchange",
@@ -5410,7 +5368,7 @@
       "flags": []
     },
     {
-      "id": "prog-126",
+      "id": "prog-125",
       "slug": "china-internship-placements-mandarin-camp",
       "name": "China Internship Placements Mandarin Camp",
       "category": "cultural-exchange",
@@ -5450,7 +5408,7 @@
       "flags": []
     },
     {
-      "id": "prog-127",
+      "id": "prog-126",
       "slug": "ltl-school",
       "name": "LTL School",
       "category": "cultural-exchange",
@@ -5490,7 +5448,7 @@
       "flags": []
     },
     {
-      "id": "prog-128",
+      "id": "prog-127",
       "slug": "vanderbilt-summer-academy-vsa",
       "name": "Vanderbilt Summer Academy (VSA)",
       "category": "leadership-gifted",
@@ -5530,7 +5488,7 @@
       "flags": []
     },
     {
-      "id": "prog-129",
+      "id": "prog-128",
       "slug": "northwestern-ctd-summer-camp",
       "name": "Northwestern CTD Summer Camp",
       "category": "leadership-gifted",
@@ -5570,7 +5528,7 @@
       "flags": []
     },
     {
-      "id": "prog-130",
+      "id": "prog-129",
       "slug": "wharton-global-youth-program-on-campus",
       "name": "Wharton Global Youth Program",
       "category": "leadership-gifted",
@@ -5611,7 +5569,7 @@
       "flags": []
     },
     {
-      "id": "prog-131",
+      "id": "prog-130",
       "slug": "wharton-global-youth-program-online",
       "name": "Wharton Global Youth Program",
       "category": "leadership-gifted",
@@ -5652,7 +5610,7 @@
       "flags": []
     },
     {
-      "id": "prog-132",
+      "id": "prog-131",
       "slug": "johns-hopkins-center-for-talented-youth-cty-residential-day",
       "name": "Johns Hopkins Center for Talented Youth (CTY)",
       "category": "leadership-gifted",
@@ -5695,7 +5653,7 @@
       "flags": []
     },
     {
-      "id": "prog-133",
+      "id": "prog-132",
       "slug": "iacocca-global-entrepreneurship-intensive-igei",
       "name": "Iacocca Global Entrepreneurship Intensive (IGEI)",
       "category": "leadership-gifted",
@@ -5737,7 +5695,7 @@
       "flags": []
     },
     {
-      "id": "prog-134",
+      "id": "prog-133",
       "slug": "iacocca-global-future-leaders-lab-silicon-valley",
       "name": "Iacocca Global Future Leaders Lab: Silicon Valley",
       "category": "leadership-gifted",
@@ -5777,7 +5735,7 @@
       "flags": []
     },
     {
-      "id": "prog-135",
+      "id": "prog-134",
       "slug": "summer-springboard",
       "name": "Summer Springboard",
       "category": "leadership-gifted",
@@ -5820,7 +5778,7 @@
       "flags": []
     },
     {
-      "id": "prog-136",
+      "id": "prog-135",
       "slug": "envision-by-worldstrides-nylf-tracks-medicine-law-engineering-business-national-security",
       "name": "Envision by WorldStrides (NYLF tracks)",
       "category": "leadership-gifted",
@@ -5861,7 +5819,7 @@
       "flags": []
     },
     {
-      "id": "prog-137",
+      "id": "prog-136",
       "slug": "cornell-summer-college-3-week-session",
       "name": "Cornell Summer College",
       "category": "leadership-gifted",
@@ -5905,7 +5863,7 @@
       "flags": []
     },
     {
-      "id": "prog-138",
+      "id": "prog-137",
       "slug": "cornell-summer-college-6-week-session",
       "name": "Cornell Summer College",
       "category": "leadership-gifted",
@@ -5949,7 +5907,7 @@
       "flags": []
     },
     {
-      "id": "prog-139",
+      "id": "prog-138",
       "slug": "berkeley-changemaker-pre-college",
       "name": "Berkeley Changemaker Pre-College",
       "category": "leadership-gifted",
@@ -5991,7 +5949,7 @@
       "flags": []
     },
     {
-      "id": "prog-140",
+      "id": "prog-139",
       "slug": "education-unlimited-astrophysics-9-12-engineering-9-12-quantum-mechanics-10-12-robotics-9-12-surgica",
       "name": "Education Unlimited",
       "category": "stem-engineering",
@@ -6035,7 +5993,7 @@
       "flags": []
     },
     {
-      "id": "prog-141",
+      "id": "prog-140",
       "slug": "education-unlimited-competitive-debate-public-forum-debate-public-speaking-institute-hs-mock-trial-h",
       "name": "Education Unlimited",
       "category": "leadership-gifted",
@@ -6079,7 +6037,7 @@
       "flags": []
     },
     {
-      "id": "prog-142",
+      "id": "prog-141",
       "slug": "education-unlimited-a-summer-high-school-a-summer-pre-college-college-admission-prep-camp-college-to",
       "name": "Education Unlimited",
       "category": "college-credit-pre-college",
@@ -6121,7 +6079,7 @@
       "flags": []
     },
     {
-      "id": "prog-143",
+      "id": "prog-142",
       "slug": "creative-delegates-league-of-creative-minds-diplomacy-negotiation-international-law-geopolitics-and-",
       "name": "Creative Delegates (League of Creative Minds)",
       "category": "leadership-gifted",
@@ -6164,7 +6122,7 @@
       "flags": []
     },
     {
-      "id": "prog-144",
+      "id": "prog-143",
       "slug": "lasting-adventures-yosemite-6-day-young-adventurer-s-program-jun-13-18-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6225,7 +6183,7 @@
       }
     },
     {
-      "id": "prog-145",
+      "id": "prog-144",
       "slug": "lasting-adventures-yosemite-6-day-young-adventurer-s-program-jun-20-25-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6286,7 +6244,7 @@
       }
     },
     {
-      "id": "prog-146",
+      "id": "prog-145",
       "slug": "lasting-adventures-yosemite-6-day-young-adventurer-s-program-jun-27-jul-2-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6347,7 +6305,7 @@
       }
     },
     {
-      "id": "prog-147",
+      "id": "prog-146",
       "slug": "lasting-adventures-yosemite-6-day-young-adventurer-s-program-jul-4-9-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6408,7 +6366,7 @@
       }
     },
     {
-      "id": "prog-148",
+      "id": "prog-147",
       "slug": "lasting-adventures-yosemite-6-day-young-adventurer-s-program-jul-11-16-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6469,7 +6427,7 @@
       }
     },
     {
-      "id": "prog-149",
+      "id": "prog-148",
       "slug": "lasting-adventures-yosemite-6-day-young-adventurer-s-program-jul-18-23-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6530,7 +6488,7 @@
       }
     },
     {
-      "id": "prog-150",
+      "id": "prog-149",
       "slug": "lasting-adventures-yosemite-6-day-young-adventurer-s-program-jul-25-30-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6591,7 +6549,7 @@
       }
     },
     {
-      "id": "prog-151",
+      "id": "prog-150",
       "slug": "lasting-adventures-yosemite-6-day-high-country-adventure-jun-6-11-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6652,7 +6610,7 @@
       }
     },
     {
-      "id": "prog-152",
+      "id": "prog-151",
       "slug": "lasting-adventures-yosemite-6-day-high-country-adventure-jun-13-18-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6713,7 +6671,7 @@
       }
     },
     {
-      "id": "prog-153",
+      "id": "prog-152",
       "slug": "lasting-adventures-yosemite-6-day-high-country-adventure-jun-20-25-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6774,7 +6732,7 @@
       }
     },
     {
-      "id": "prog-154",
+      "id": "prog-153",
       "slug": "lasting-adventures-yosemite-6-day-high-country-adventure-jun-27-jul-2-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6835,7 +6793,7 @@
       }
     },
     {
-      "id": "prog-155",
+      "id": "prog-154",
       "slug": "lasting-adventures-yosemite-6-day-high-country-adventure-jul-4-9-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6896,7 +6854,7 @@
       }
     },
     {
-      "id": "prog-156",
+      "id": "prog-155",
       "slug": "lasting-adventures-yosemite-6-day-high-country-adventure-jul-11-16-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -6957,7 +6915,7 @@
       }
     },
     {
-      "id": "prog-157",
+      "id": "prog-156",
       "slug": "lasting-adventures-yosemite-6-day-high-country-adventure-jul-18-23-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -7018,7 +6976,7 @@
       }
     },
     {
-      "id": "prog-158",
+      "id": "prog-157",
       "slug": "lasting-adventures-yosemite-6-day-high-country-adventure-jul-25-30-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -7079,7 +7037,7 @@
       }
     },
     {
-      "id": "prog-159",
+      "id": "prog-158",
       "slug": "lasting-adventures-yosemite-6-day-high-country-adventure-aug-1-6-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -7140,7 +7098,7 @@
       }
     },
     {
-      "id": "prog-160",
+      "id": "prog-159",
       "slug": "lasting-adventures-yosemite-6-day-high-country-adventure-aug-8-13-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -7201,7 +7159,7 @@
       }
     },
     {
-      "id": "prog-161",
+      "id": "prog-160",
       "slug": "lasting-adventures-yosemite-10-day-mammoth-to-yosemite-jul-6-15",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -7270,7 +7228,7 @@
       }
     },
     {
-      "id": "prog-162",
+      "id": "prog-161",
       "slug": "lasting-adventures-yosemite-10-day-mammoth-to-yosemite-aug-3-12",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -7339,7 +7297,7 @@
       }
     },
     {
-      "id": "prog-163",
+      "id": "prog-162",
       "slug": "lasting-adventures-yosemite-13-day-high-country-adventure-jun-6-18-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -7400,7 +7358,7 @@
       }
     },
     {
-      "id": "prog-164",
+      "id": "prog-163",
       "slug": "lasting-adventures-yosemite-13-day-high-country-adventure-jun-20-jul-2-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -7461,7 +7419,7 @@
       }
     },
     {
-      "id": "prog-165",
+      "id": "prog-164",
       "slug": "lasting-adventures-yosemite-13-day-high-country-adventure-jul-4-16-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -7522,7 +7480,7 @@
       }
     },
     {
-      "id": "prog-166",
+      "id": "prog-165",
       "slug": "lasting-adventures-yosemite-13-day-high-country-adventure-jul-18-30-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -7583,7 +7541,7 @@
       }
     },
     {
-      "id": "prog-167",
+      "id": "prog-166",
       "slug": "lasting-adventures-yosemite-6-day-young-women-s-program-jun-20-25-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -7644,7 +7602,7 @@
       }
     },
     {
-      "id": "prog-168",
+      "id": "prog-167",
       "slug": "lasting-adventures-yosemite-6-day-young-women-s-program-aug-1-6-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -7705,7 +7663,7 @@
       }
     },
     {
-      "id": "prog-169",
+      "id": "prog-168",
       "slug": "lasting-adventures-yosemite-13-day-young-women-s-program",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -7766,7 +7724,7 @@
       }
     },
     {
-      "id": "prog-170",
+      "id": "prog-169",
       "slug": "lasting-adventures-yosemite-20-day-teen-leadership-expedition-jun-13-jul-2-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -7835,7 +7793,7 @@
       }
     },
     {
-      "id": "prog-171",
+      "id": "prog-170",
       "slug": "lasting-adventures-yosemite-20-day-teen-leadership-expedition-jul-11-30-departure",
       "name": "Lasting Adventures - Yosemite",
       "institution": "Lasting Adventures Inc.",
@@ -7904,7 +7862,7 @@
       }
     },
     {
-      "id": "prog-172",
+      "id": "prog-171",
       "slug": "lasting-adventures-olympic-6-day-backpacking-adventure-for-teens-jun-20-25-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -7965,7 +7923,7 @@
       }
     },
     {
-      "id": "prog-173",
+      "id": "prog-172",
       "slug": "lasting-adventures-olympic-6-day-backpacking-adventure-for-teens-jun-27-jul-2-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -8026,7 +7984,7 @@
       }
     },
     {
-      "id": "prog-174",
+      "id": "prog-173",
       "slug": "lasting-adventures-olympic-6-day-backpacking-adventure-for-teens-jul-4-9-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -8087,7 +8045,7 @@
       }
     },
     {
-      "id": "prog-175",
+      "id": "prog-174",
       "slug": "lasting-adventures-olympic-6-day-backpacking-adventure-for-teens-jul-11-16-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -8148,7 +8106,7 @@
       }
     },
     {
-      "id": "prog-176",
+      "id": "prog-175",
       "slug": "lasting-adventures-olympic-6-day-backpacking-adventure-for-teens-jul-18-23-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -8209,7 +8167,7 @@
       }
     },
     {
-      "id": "prog-177",
+      "id": "prog-176",
       "slug": "lasting-adventures-olympic-6-day-backpacking-adventure-for-teens-jul-25-30-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -8270,7 +8228,7 @@
       }
     },
     {
-      "id": "prog-178",
+      "id": "prog-177",
       "slug": "lasting-adventures-olympic-6-day-backpacking-adventure-for-teens-aug-1-6-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -8331,7 +8289,7 @@
       }
     },
     {
-      "id": "prog-179",
+      "id": "prog-178",
       "slug": "lasting-adventures-olympic-6-day-backpacking-adventure-for-teens-aug-8-13-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -8392,7 +8350,7 @@
       }
     },
     {
-      "id": "prog-180",
+      "id": "prog-179",
       "slug": "lasting-adventures-olympic-6-day-backpacking-adventure-for-teens-aug-15-20-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -8453,7 +8411,7 @@
       }
     },
     {
-      "id": "prog-181",
+      "id": "prog-180",
       "slug": "lasting-adventures-olympic-6-day-young-adventurer-s-program-jun-20-25-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -8514,7 +8472,7 @@
       }
     },
     {
-      "id": "prog-182",
+      "id": "prog-181",
       "slug": "lasting-adventures-olympic-6-day-young-adventurer-s-program-jun-27-jul-2-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -8575,7 +8533,7 @@
       }
     },
     {
-      "id": "prog-183",
+      "id": "prog-182",
       "slug": "lasting-adventures-olympic-6-day-young-adventurer-s-program-jul-4-9-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -8636,7 +8594,7 @@
       }
     },
     {
-      "id": "prog-184",
+      "id": "prog-183",
       "slug": "lasting-adventures-olympic-6-day-young-adventurer-s-program-jul-11-16-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -8697,7 +8655,7 @@
       }
     },
     {
-      "id": "prog-185",
+      "id": "prog-184",
       "slug": "lasting-adventures-olympic-6-day-young-adventurer-s-program-jul-18-23-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -8758,7 +8716,7 @@
       }
     },
     {
-      "id": "prog-186",
+      "id": "prog-185",
       "slug": "lasting-adventures-olympic-6-day-young-adventurer-s-program-jul-25-30-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -8819,7 +8777,7 @@
       }
     },
     {
-      "id": "prog-187",
+      "id": "prog-186",
       "slug": "lasting-adventures-olympic-6-day-young-adventurer-s-program-aug-1-6-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -8880,7 +8838,7 @@
       }
     },
     {
-      "id": "prog-188",
+      "id": "prog-187",
       "slug": "lasting-adventures-olympic-6-day-young-adventurer-s-program-aug-8-13-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -8941,7 +8899,7 @@
       }
     },
     {
-      "id": "prog-189",
+      "id": "prog-188",
       "slug": "lasting-adventures-olympic-6-day-young-adventurer-s-program-aug-15-20-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -9002,7 +8960,7 @@
       }
     },
     {
-      "id": "prog-190",
+      "id": "prog-189",
       "slug": "lasting-adventures-olympic-10-day-hoh-rainforest-to-the-blue-glacier-jun-29-jul-8-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -9071,7 +9029,7 @@
       }
     },
     {
-      "id": "prog-191",
+      "id": "prog-190",
       "slug": "lasting-adventures-olympic-10-day-hoh-rainforest-to-the-blue-glacier-jul-13-22-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -9140,7 +9098,7 @@
       }
     },
     {
-      "id": "prog-192",
+      "id": "prog-191",
       "slug": "lasting-adventures-olympic-10-day-hoh-rainforest-to-the-blue-glacier-aug-10-19-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -9209,7 +9167,7 @@
       }
     },
     {
-      "id": "prog-193",
+      "id": "prog-192",
       "slug": "lasting-adventures-olympic-13-day-backpacking-adventure-for-teens-jun-20-jul-2-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -9270,7 +9228,7 @@
       }
     },
     {
-      "id": "prog-194",
+      "id": "prog-193",
       "slug": "lasting-adventures-olympic-13-day-backpacking-adventure-for-teens-jul-4-16-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -9331,7 +9289,7 @@
       }
     },
     {
-      "id": "prog-195",
+      "id": "prog-194",
       "slug": "lasting-adventures-olympic-13-day-backpacking-adventure-for-teens-jul-18-30-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -9392,7 +9350,7 @@
       }
     },
     {
-      "id": "prog-196",
+      "id": "prog-195",
       "slug": "lasting-adventures-olympic-13-day-backpacking-adventure-for-teens-aug-1-13-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -9453,7 +9411,7 @@
       }
     },
     {
-      "id": "prog-197",
+      "id": "prog-196",
       "slug": "lasting-adventures-olympic-6-day-young-women-s-program-jun-27-jul-2-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -9514,7 +9472,7 @@
       }
     },
     {
-      "id": "prog-198",
+      "id": "prog-197",
       "slug": "lasting-adventures-olympic-6-day-young-women-s-program-jul-18-23-departure",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -9575,7 +9533,7 @@
       }
     },
     {
-      "id": "prog-199",
+      "id": "prog-198",
       "slug": "lasting-adventures-olympic-13-day-young-women-s-program",
       "name": "Lasting Adventures - Olympic",
       "institution": "Lasting Adventures Inc.",
@@ -9636,7 +9594,7 @@
       }
     },
     {
-      "id": "prog-200",
+      "id": "prog-199",
       "slug": "lasting-adventures-sequoia-10-day-sequoia-high-country-adventure-jun-22-jul-1-departure",
       "name": "Lasting Adventures - Sequoia",
       "institution": "Lasting Adventures Inc.",
@@ -9705,7 +9663,7 @@
       }
     },
     {
-      "id": "prog-201",
+      "id": "prog-200",
       "slug": "lasting-adventures-sequoia-10-day-sequoia-high-country-adventure-jul-20-29-departure",
       "name": "Lasting Adventures - Sequoia",
       "institution": "Lasting Adventures Inc.",
@@ -9774,7 +9732,7 @@
       }
     },
     {
-      "id": "prog-202",
+      "id": "prog-201",
       "slug": "catalina-sea-camp-session-1-1-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -9826,7 +9784,7 @@
       }
     },
     {
-      "id": "prog-203",
+      "id": "prog-202",
       "slug": "catalina-sea-camp-session-2-1-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -9878,7 +9836,7 @@
       }
     },
     {
-      "id": "prog-204",
+      "id": "prog-203",
       "slug": "catalina-sea-camp-session-3-1-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -9930,7 +9888,7 @@
       }
     },
     {
-      "id": "prog-205",
+      "id": "prog-204",
       "slug": "catalina-sea-camp-session-4-2-5-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -9982,7 +9940,7 @@
       }
     },
     {
-      "id": "prog-206",
+      "id": "prog-205",
       "slug": "catalina-sea-camp-session-5-2-5-week",
       "name": "Catalina Sea Camp",
       "institution": "Guided Discoveries Inc.",
@@ -10034,7 +9992,7 @@
       }
     },
     {
-      "id": "prog-207",
+      "id": "prog-206",
       "slug": "mit-beaver-works-summer-institute-bwsi-in-person-courses",
       "name": "MIT Beaver Works Summer Institute (BWSI)",
       "institution": "Massachusetts Institute of Technology",
@@ -10089,7 +10047,7 @@
       ]
     },
     {
-      "id": "prog-208",
+      "id": "prog-207",
       "slug": "mit-beaver-works-summer-institute-bwsi-virtual-courses",
       "name": "MIT Beaver Works Summer Institute (BWSI)",
       "institution": "Massachusetts Institute of Technology",
@@ -10144,7 +10102,7 @@
       ]
     },
     {
-      "id": "prog-209",
+      "id": "prog-208",
       "slug": "honors-summer-math-camp-hsmc-general",
       "name": "Honors Summer Math Camp (HSMC)",
       "institution": "Texas State University",
@@ -10205,7 +10163,7 @@
       }
     },
     {
-      "id": "prog-210",
+      "id": "prog-209",
       "slug": "junior-summer-math-camp-residential-jsmcr-general",
       "name": "Junior Summer Math Camp - Residential (JSMCR)",
       "institution": "Texas State University",
@@ -10266,7 +10224,7 @@
       }
     },
     {
-      "id": "prog-211",
+      "id": "prog-210",
       "slug": "nyc-summer-academy-day-student",
       "name": "NYC Summer Academy",
       "institution": "The School of The New York Times",
@@ -10316,7 +10274,7 @@
       }
     },
     {
-      "id": "prog-212",
+      "id": "prog-211",
       "slug": "nyc-summer-academy-residential",
       "name": "NYC Summer Academy",
       "institution": "The School of The New York Times",
@@ -10366,7 +10324,7 @@
       }
     },
     {
-      "id": "prog-213",
+      "id": "prog-212",
       "slug": "junior-summer-math-camp-half-day-jsmch-general",
       "name": "Junior Summer Math Camp - Half-Day (JSMCH)",
       "institution": "Texas State University",
@@ -10418,7 +10376,7 @@
       }
     },
     {
-      "id": "prog-214",
+      "id": "prog-213",
       "slug": "management-technology-summer-institute-m-tsi-general",
       "name": "Management & Technology Summer Institute (M&TSI)",
       "institution": "University of Pennsylvania",
@@ -10487,7 +10445,7 @@
       }
     },
     {
-      "id": "prog-215",
+      "id": "prog-214",
       "slug": "oxford-academia-at-yale-session-1",
       "name": "Oxford Academia at Yale",
       "institution": "Oxford Academia (Putney Student Travel)",
@@ -10554,7 +10512,7 @@
       }
     },
     {
-      "id": "prog-216",
+      "id": "prog-215",
       "slug": "socapa-new-york-city-film-screenwriting-session-1-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10615,7 +10573,7 @@
       }
     },
     {
-      "id": "prog-217",
+      "id": "prog-216",
       "slug": "socapa-new-york-city-film-screenwriting-session-1-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10676,7 +10634,7 @@
       }
     },
     {
-      "id": "prog-218",
+      "id": "prog-217",
       "slug": "socapa-new-york-city-film-screenwriting-session-2-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10737,7 +10695,7 @@
       }
     },
     {
-      "id": "prog-219",
+      "id": "prog-218",
       "slug": "socapa-new-york-city-film-screenwriting-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10798,7 +10756,7 @@
       }
     },
     {
-      "id": "prog-220",
+      "id": "prog-219",
       "slug": "socapa-new-york-city-film-screenwriting-3-week-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10859,7 +10817,7 @@
       }
     },
     {
-      "id": "prog-221",
+      "id": "prog-220",
       "slug": "socapa-new-york-city-core-filmmaking-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10918,7 +10876,7 @@
       }
     },
     {
-      "id": "prog-222",
+      "id": "prog-221",
       "slug": "socapa-new-york-city-core-filmmaking-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -10977,7 +10935,7 @@
       }
     },
     {
-      "id": "prog-223",
+      "id": "prog-222",
       "slug": "socapa-new-york-city-core-filmmaking-session-1-3wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11036,7 +10994,7 @@
       }
     },
     {
-      "id": "prog-224",
+      "id": "prog-223",
       "slug": "socapa-new-york-city-core-filmmaking-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11095,7 +11053,7 @@
       }
     },
     {
-      "id": "prog-225",
+      "id": "prog-224",
       "slug": "socapa-new-york-city-core-filmmaking-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11154,7 +11112,7 @@
       }
     },
     {
-      "id": "prog-226",
+      "id": "prog-225",
       "slug": "socapa-new-york-city-core-filmmaking-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11213,7 +11171,7 @@
       }
     },
     {
-      "id": "prog-227",
+      "id": "prog-226",
       "slug": "socapa-new-york-city-core-filmmaking-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11272,7 +11230,7 @@
       }
     },
     {
-      "id": "prog-228",
+      "id": "prog-227",
       "slug": "socapa-new-york-city-core-acting-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11331,7 +11289,7 @@
       }
     },
     {
-      "id": "prog-229",
+      "id": "prog-228",
       "slug": "socapa-new-york-city-core-acting-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11390,7 +11348,7 @@
       }
     },
     {
-      "id": "prog-230",
+      "id": "prog-229",
       "slug": "socapa-new-york-city-core-acting-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11449,7 +11407,7 @@
       }
     },
     {
-      "id": "prog-231",
+      "id": "prog-230",
       "slug": "socapa-new-york-city-musical-theater-acting-for-film-session-1-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11508,7 +11466,7 @@
       }
     },
     {
-      "id": "prog-232",
+      "id": "prog-231",
       "slug": "socapa-new-york-city-core-acting-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11567,7 +11525,7 @@
       }
     },
     {
-      "id": "prog-233",
+      "id": "prog-232",
       "slug": "socapa-new-york-city-core-acting-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11626,7 +11584,7 @@
       }
     },
     {
-      "id": "prog-234",
+      "id": "prog-233",
       "slug": "socapa-new-york-city-core-acting-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11685,7 +11643,7 @@
       }
     },
     {
-      "id": "prog-235",
+      "id": "prog-234",
       "slug": "socapa-new-york-city-musical-theater-acting-for-film-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11744,7 +11702,7 @@
       }
     },
     {
-      "id": "prog-236",
+      "id": "prog-235",
       "slug": "socapa-new-york-city-core-photography-digital-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11803,7 +11761,7 @@
       }
     },
     {
-      "id": "prog-237",
+      "id": "prog-236",
       "slug": "socapa-new-york-city-core-photography-digital-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11862,7 +11820,7 @@
       }
     },
     {
-      "id": "prog-238",
+      "id": "prog-237",
       "slug": "socapa-new-york-city-core-photography-digital-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11921,7 +11879,7 @@
       }
     },
     {
-      "id": "prog-239",
+      "id": "prog-238",
       "slug": "socapa-new-york-city-core-photography-digital-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -11980,7 +11938,7 @@
       }
     },
     {
-      "id": "prog-240",
+      "id": "prog-239",
       "slug": "socapa-new-york-city-core-photography-digital-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12039,7 +11997,7 @@
       }
     },
     {
-      "id": "prog-241",
+      "id": "prog-240",
       "slug": "socapa-new-york-city-core-photography-digital-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12098,7 +12056,7 @@
       }
     },
     {
-      "id": "prog-242",
+      "id": "prog-241",
       "slug": "socapa-new-york-city-advanced-photography-session-1-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12157,7 +12115,7 @@
       }
     },
     {
-      "id": "prog-243",
+      "id": "prog-242",
       "slug": "socapa-new-york-city-advanced-photography-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12216,7 +12174,7 @@
       }
     },
     {
-      "id": "prog-244",
+      "id": "prog-243",
       "slug": "socapa-new-york-city-fusion-dance-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12275,7 +12233,7 @@
       }
     },
     {
-      "id": "prog-245",
+      "id": "prog-244",
       "slug": "socapa-new-york-city-fusion-dance-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12334,7 +12292,7 @@
       }
     },
     {
-      "id": "prog-246",
+      "id": "prog-245",
       "slug": "socapa-new-york-city-fusion-dance-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12393,7 +12351,7 @@
       }
     },
     {
-      "id": "prog-247",
+      "id": "prog-246",
       "slug": "socapa-new-york-city-fusion-dance-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12452,7 +12410,7 @@
       }
     },
     {
-      "id": "prog-248",
+      "id": "prog-247",
       "slug": "socapa-new-york-city-fusion-dance-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12511,7 +12469,7 @@
       }
     },
     {
-      "id": "prog-249",
+      "id": "prog-248",
       "slug": "socapa-new-york-city-fusion-dance-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12570,7 +12528,7 @@
       }
     },
     {
-      "id": "prog-250",
+      "id": "prog-249",
       "slug": "socapa-new-york-city-dance-conservatory-session-1-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12629,7 +12587,7 @@
       }
     },
     {
-      "id": "prog-251",
+      "id": "prog-250",
       "slug": "socapa-new-york-city-dance-conservatory-session-2-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12688,7 +12646,7 @@
       }
     },
     {
-      "id": "prog-252",
+      "id": "prog-251",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-1-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12747,7 +12705,7 @@
       }
     },
     {
-      "id": "prog-253",
+      "id": "prog-252",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-1-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12806,7 +12764,7 @@
       }
     },
     {
-      "id": "prog-254",
+      "id": "prog-253",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-1-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12865,7 +12823,7 @@
       }
     },
     {
-      "id": "prog-255",
+      "id": "prog-254",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-2-2wk-day",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12924,7 +12882,7 @@
       }
     },
     {
-      "id": "prog-256",
+      "id": "prog-255",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-2-2wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -12983,7 +12941,7 @@
       }
     },
     {
-      "id": "prog-257",
+      "id": "prog-256",
       "slug": "socapa-new-york-city-core-music-singer-songwriter-house-band-session-2-3wk-residential",
       "name": "SOCAPA - New York City",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13042,7 +13000,7 @@
       }
     },
     {
-      "id": "prog-258",
+      "id": "prog-257",
       "slug": "socapa-los-angeles-core-filmmaking-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13092,7 +13050,7 @@
       }
     },
     {
-      "id": "prog-259",
+      "id": "prog-258",
       "slug": "socapa-los-angeles-core-filmmaking-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13142,7 +13100,7 @@
       }
     },
     {
-      "id": "prog-260",
+      "id": "prog-259",
       "slug": "socapa-los-angeles-core-filmmaking-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13192,7 +13150,7 @@
       }
     },
     {
-      "id": "prog-261",
+      "id": "prog-260",
       "slug": "socapa-los-angeles-advanced-filmmaking-session-2-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13242,7 +13200,7 @@
       }
     },
     {
-      "id": "prog-262",
+      "id": "prog-261",
       "slug": "socapa-los-angeles-screenwriting-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13292,7 +13250,7 @@
       }
     },
     {
-      "id": "prog-263",
+      "id": "prog-262",
       "slug": "socapa-los-angeles-screenwriting-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13342,7 +13300,7 @@
       }
     },
     {
-      "id": "prog-264",
+      "id": "prog-263",
       "slug": "socapa-los-angeles-screenwriting-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13392,7 +13350,7 @@
       }
     },
     {
-      "id": "prog-265",
+      "id": "prog-264",
       "slug": "socapa-los-angeles-core-acting-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13442,7 +13400,7 @@
       }
     },
     {
-      "id": "prog-266",
+      "id": "prog-265",
       "slug": "socapa-los-angeles-core-acting-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13492,7 +13450,7 @@
       }
     },
     {
-      "id": "prog-267",
+      "id": "prog-266",
       "slug": "socapa-los-angeles-core-acting-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13542,7 +13500,7 @@
       }
     },
     {
-      "id": "prog-268",
+      "id": "prog-267",
       "slug": "socapa-los-angeles-advanced-acting-session-2-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13592,7 +13550,7 @@
       }
     },
     {
-      "id": "prog-269",
+      "id": "prog-268",
       "slug": "socapa-los-angeles-core-photography-digital-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13642,7 +13600,7 @@
       }
     },
     {
-      "id": "prog-270",
+      "id": "prog-269",
       "slug": "socapa-los-angeles-core-photography-digital-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13692,7 +13650,7 @@
       }
     },
     {
-      "id": "prog-271",
+      "id": "prog-270",
       "slug": "socapa-los-angeles-core-photography-digital-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13742,7 +13700,7 @@
       }
     },
     {
-      "id": "prog-272",
+      "id": "prog-271",
       "slug": "socapa-los-angeles-core-music-singer-songwriter-house-band-session-1-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13792,7 +13750,7 @@
       }
     },
     {
-      "id": "prog-273",
+      "id": "prog-272",
       "slug": "socapa-los-angeles-core-music-singer-songwriter-house-band-session-2-3wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13842,7 +13800,7 @@
       }
     },
     {
-      "id": "prog-274",
+      "id": "prog-273",
       "slug": "socapa-los-angeles-core-music-singer-songwriter-house-band-session-3-2wk-residential",
       "name": "SOCAPA - Los Angeles",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13892,7 +13850,7 @@
       }
     },
     {
-      "id": "prog-275",
+      "id": "prog-274",
       "slug": "socapa-vermont-core-filmmaking-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13942,7 +13900,7 @@
       }
     },
     {
-      "id": "prog-276",
+      "id": "prog-275",
       "slug": "socapa-vermont-core-filmmaking-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -13992,7 +13950,7 @@
       }
     },
     {
-      "id": "prog-277",
+      "id": "prog-276",
       "slug": "socapa-vermont-core-filmmaking-session-2-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14042,7 +14000,7 @@
       }
     },
     {
-      "id": "prog-278",
+      "id": "prog-277",
       "slug": "socapa-vermont-core-filmmaking-session-2-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14092,7 +14050,7 @@
       }
     },
     {
-      "id": "prog-279",
+      "id": "prog-278",
       "slug": "socapa-vermont-advanced-filmmaking-session-1-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14142,7 +14100,7 @@
       }
     },
     {
-      "id": "prog-280",
+      "id": "prog-279",
       "slug": "socapa-vermont-advanced-filmmaking-session-2-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14192,7 +14150,7 @@
       }
     },
     {
-      "id": "prog-281",
+      "id": "prog-280",
       "slug": "socapa-vermont-screenwriting-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14242,7 +14200,7 @@
       }
     },
     {
-      "id": "prog-282",
+      "id": "prog-281",
       "slug": "socapa-vermont-screenwriting-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14292,7 +14250,7 @@
       }
     },
     {
-      "id": "prog-283",
+      "id": "prog-282",
       "slug": "socapa-vermont-core-acting-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14342,7 +14300,7 @@
       }
     },
     {
-      "id": "prog-284",
+      "id": "prog-283",
       "slug": "socapa-vermont-core-acting-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14392,7 +14350,7 @@
       }
     },
     {
-      "id": "prog-285",
+      "id": "prog-284",
       "slug": "socapa-vermont-core-acting-session-2-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14442,7 +14400,7 @@
       }
     },
     {
-      "id": "prog-286",
+      "id": "prog-285",
       "slug": "socapa-vermont-core-acting-session-2-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14492,7 +14450,7 @@
       }
     },
     {
-      "id": "prog-287",
+      "id": "prog-286",
       "slug": "socapa-vermont-advanced-acting-session-1-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14542,7 +14500,7 @@
       }
     },
     {
-      "id": "prog-288",
+      "id": "prog-287",
       "slug": "socapa-vermont-advanced-acting-session-2-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14592,7 +14550,7 @@
       }
     },
     {
-      "id": "prog-289",
+      "id": "prog-288",
       "slug": "socapa-vermont-core-photography-digital-or-darkroom-digital-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14642,7 +14600,7 @@
       }
     },
     {
-      "id": "prog-290",
+      "id": "prog-289",
       "slug": "socapa-vermont-core-photography-digital-or-darkroom-digital-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14692,7 +14650,7 @@
       }
     },
     {
-      "id": "prog-291",
+      "id": "prog-290",
       "slug": "socapa-vermont-core-photography-digital-or-darkroom-digital-session-2-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14742,7 +14700,7 @@
       }
     },
     {
-      "id": "prog-292",
+      "id": "prog-291",
       "slug": "socapa-vermont-advanced-photography-session-1-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14792,7 +14750,7 @@
       }
     },
     {
-      "id": "prog-293",
+      "id": "prog-292",
       "slug": "socapa-vermont-fusion-dance-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14842,7 +14800,7 @@
       }
     },
     {
-      "id": "prog-294",
+      "id": "prog-293",
       "slug": "socapa-vermont-fusion-dance-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14892,7 +14850,7 @@
       }
     },
     {
-      "id": "prog-295",
+      "id": "prog-294",
       "slug": "socapa-vermont-fusion-dance-session-2-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14942,7 +14900,7 @@
       }
     },
     {
-      "id": "prog-296",
+      "id": "prog-295",
       "slug": "socapa-vermont-fusion-dance-session-2-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -14992,7 +14950,7 @@
       }
     },
     {
-      "id": "prog-297",
+      "id": "prog-296",
       "slug": "socapa-vermont-core-music-singer-songwriter-house-band-session-1-2wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -15042,7 +15000,7 @@
       }
     },
     {
-      "id": "prog-298",
+      "id": "prog-297",
       "slug": "socapa-vermont-core-music-singer-songwriter-house-band-session-1-3wk-residential",
       "name": "SOCAPA - Vermont",
       "institution": "School of Creative and Performing Arts (SOCAPA)",
@@ -15092,7 +15050,7 @@
       }
     },
     {
-      "id": "prog-299",
+      "id": "prog-298",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-21-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -15167,7 +15125,7 @@
       }
     },
     {
-      "id": "prog-300",
+      "id": "prog-299",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-21-day-commuter",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -15269,7 +15227,7 @@
       }
     },
     {
-      "id": "prog-301",
+      "id": "prog-300",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-14-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -15344,7 +15302,7 @@
       }
     },
     {
-      "id": "prog-302",
+      "id": "prog-301",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-14-day-commuter",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -15446,7 +15404,7 @@
       }
     },
     {
-      "id": "prog-303",
+      "id": "prog-302",
       "slug": "westcoast-connection-pre-college-enrichment-ucla-27-day-residential-plus-hawaii-extension",
       "name": "Westcoast Connection - Pre-College Enrichment (UCLA)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -15545,7 +15503,7 @@
       }
     },
     {
-      "id": "prog-304",
+      "id": "prog-303",
       "slug": "westcoast-connection-pre-college-enrichment-barcelona-14-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -15606,7 +15564,7 @@
       }
     },
     {
-      "id": "prog-305",
+      "id": "prog-304",
       "slug": "westcoast-connection-pre-college-enrichment-barcelona-21-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -15667,7 +15625,7 @@
       }
     },
     {
-      "id": "prog-306",
+      "id": "prog-305",
       "slug": "westcoast-connection-pre-college-enrichment-barcelona-27-day-residential-plus-amalfi-coast-rome",
       "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -15736,7 +15694,7 @@
       }
     },
     {
-      "id": "prog-307",
+      "id": "prog-306",
       "slug": "westcoast-connection-pre-college-enrichment-barcelona-30-day-residential-plus-greek-islands",
       "name": "Westcoast Connection - Pre-College Enrichment (Barcelona)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -15805,7 +15763,7 @@
       }
     },
     {
-      "id": "prog-308",
+      "id": "prog-307",
       "slug": "westcoast-connection-pre-college-enrichment-florence-14-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -15866,7 +15824,7 @@
       }
     },
     {
-      "id": "prog-309",
+      "id": "prog-308",
       "slug": "westcoast-connection-pre-college-enrichment-florence-21-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -15927,7 +15885,7 @@
       }
     },
     {
-      "id": "prog-310",
+      "id": "prog-309",
       "slug": "westcoast-connection-pre-college-enrichment-florence-27-day-residential-plus-amalfi-coast-rome",
       "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -15988,7 +15946,7 @@
       }
     },
     {
-      "id": "prog-311",
+      "id": "prog-310",
       "slug": "westcoast-connection-pre-college-enrichment-florence-30-day-residential-plus-greek-islands",
       "name": "Westcoast Connection - Pre-College Enrichment (Florence)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -16057,7 +16015,7 @@
       }
     },
     {
-      "id": "prog-312",
+      "id": "prog-311",
       "slug": "westcoast-connection-pre-college-enrichment-montreal-14-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -16118,7 +16076,7 @@
       }
     },
     {
-      "id": "prog-313",
+      "id": "prog-312",
       "slug": "westcoast-connection-pre-college-enrichment-montreal-14-day-commuter",
       "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -16206,7 +16164,7 @@
       }
     },
     {
-      "id": "prog-314",
+      "id": "prog-313",
       "slug": "westcoast-connection-pre-college-enrichment-montreal-21-day-residential",
       "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -16267,7 +16225,7 @@
       }
     },
     {
-      "id": "prog-315",
+      "id": "prog-314",
       "slug": "westcoast-connection-pre-college-enrichment-montreal-21-day-commuter",
       "name": "Westcoast Connection - Pre-College Enrichment (Montreal)",
       "institution": "Westcoast Connection Travel Camp Inc.",
@@ -16355,7 +16313,7 @@
       }
     },
     {
-      "id": "prog-316",
+      "id": "prog-315",
       "slug": "mit-women-s-technology-program-wtp-mechanical-engineering-wtp-me",
       "name": "MIT Women's Technology Program (WTP)",
       "institution": "Massachusetts Institute of Technology",
@@ -16414,7 +16372,7 @@
       }
     },
     {
-      "id": "prog-317",
+      "id": "prog-316",
       "slug": "wpi-ignite-week-1-jul-6-9",
       "name": "WPI Ignite",
       "institution": "Worcester Polytechnic Institute",
@@ -16464,7 +16422,7 @@
       }
     },
     {
-      "id": "prog-318",
+      "id": "prog-317",
       "slug": "wpi-ignite-week-2-jul-12-16",
       "name": "WPI Ignite",
       "institution": "Worcester Polytechnic Institute",
@@ -16514,7 +16472,7 @@
       }
     },
     {
-      "id": "prog-319",
+      "id": "prog-318",
       "slug": "wpi-ignite-week-3-jul-19-23",
       "name": "WPI Ignite",
       "institution": "Worcester Polytechnic Institute",
@@ -16564,7 +16522,7 @@
       }
     },
     {
-      "id": "prog-320",
+      "id": "prog-319",
       "slug": "wpi-ignite-week-4-jul-26-30",
       "name": "WPI Ignite",
       "institution": "Worcester Polytechnic Institute",
@@ -16614,7 +16572,7 @@
       }
     },
     {
-      "id": "prog-321",
+      "id": "prog-320",
       "slug": "wpi-launch-general",
       "name": "WPI Launch",
       "institution": "Worcester Polytechnic Institute",
@@ -16664,7 +16622,7 @@
       }
     },
     {
-      "id": "prog-322",
+      "id": "prog-321",
       "slug": "wpi-frontiers-frontiers-i",
       "name": "WPI Frontiers",
       "institution": "Worcester Polytechnic Institute",
@@ -16714,7 +16672,7 @@
       }
     },
     {
-      "id": "prog-323",
+      "id": "prog-322",
       "slug": "wpi-frontiers-frontiers-ii",
       "name": "WPI Frontiers",
       "institution": "Worcester Polytechnic Institute",
@@ -16764,7 +16722,7 @@
       }
     },
     {
-      "id": "prog-324",
+      "id": "prog-323",
       "slug": "wpi-high-achieving-high-school-students-general",
       "name": "WPI High-Achieving High School Students",
       "institution": "Worcester Polytechnic Institute",
@@ -16823,7 +16781,7 @@
       }
     },
     {
-      "id": "prog-325",
+      "id": "prog-324",
       "slug": "interlochen-arts-camp-high-school-acting-3-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -16893,7 +16851,7 @@
       }
     },
     {
-      "id": "prog-326",
+      "id": "prog-325",
       "slug": "interlochen-arts-camp-high-school-acting-company-production-6-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -16963,7 +16921,7 @@
       }
     },
     {
-      "id": "prog-327",
+      "id": "prog-326",
       "slug": "interlochen-arts-camp-high-school-acting-audition-intensive-1-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -17033,7 +16991,7 @@
       }
     },
     {
-      "id": "prog-328",
+      "id": "prog-327",
       "slug": "interlochen-arts-camp-high-school-musical-theatre-showcase-3-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -17103,7 +17061,7 @@
       }
     },
     {
-      "id": "prog-329",
+      "id": "prog-328",
       "slug": "interlochen-arts-camp-high-school-musical-theatre-production-6-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -17173,7 +17131,7 @@
       }
     },
     {
-      "id": "prog-330",
+      "id": "prog-329",
       "slug": "interlochen-arts-camp-high-school-musical-theatre-audition-intensive-1-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -17243,7 +17201,7 @@
       }
     },
     {
-      "id": "prog-331",
+      "id": "prog-330",
       "slug": "interlochen-arts-camp-high-school-musical-theatre-techniques-intensive-1-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -17313,7 +17271,7 @@
       }
     },
     {
-      "id": "prog-332",
+      "id": "prog-331",
       "slug": "interlochen-arts-camp-high-school-songwriting-for-musical-theatre-intensive-1-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -17383,7 +17341,7 @@
       }
     },
     {
-      "id": "prog-333",
+      "id": "prog-332",
       "slug": "interlochen-arts-camp-high-school-theatre-design-production-3-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -17453,7 +17411,7 @@
       }
     },
     {
-      "id": "prog-334",
+      "id": "prog-333",
       "slug": "interlochen-arts-camp-high-school-technical-theatre-6-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -17523,7 +17481,7 @@
       }
     },
     {
-      "id": "prog-335",
+      "id": "prog-334",
       "slug": "interlochen-arts-camp-high-school-costume-design-intensive-1-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -17593,7 +17551,7 @@
       }
     },
     {
-      "id": "prog-336",
+      "id": "prog-335",
       "slug": "interlochen-arts-camp-high-school-stage-management-intensive-1-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -17663,7 +17621,7 @@
       }
     },
     {
-      "id": "prog-337",
+      "id": "prog-336",
       "slug": "interlochen-arts-camp-high-school-harp-6-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -17733,7 +17691,7 @@
       }
     },
     {
-      "id": "prog-338",
+      "id": "prog-337",
       "slug": "interlochen-arts-camp-high-school-jazz-performance-improvisation-3-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -17803,7 +17761,7 @@
       }
     },
     {
-      "id": "prog-339",
+      "id": "prog-338",
       "slug": "interlochen-arts-camp-high-school-music-composition-6-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -17873,7 +17831,7 @@
       }
     },
     {
-      "id": "prog-340",
+      "id": "prog-339",
       "slug": "interlochen-arts-camp-high-school-music-production-engineering-3-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -17943,7 +17901,7 @@
       }
     },
     {
-      "id": "prog-341",
+      "id": "prog-340",
       "slug": "interlochen-arts-camp-high-school-orchestra-wind-ensemble-program-6-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -18013,7 +17971,7 @@
       }
     },
     {
-      "id": "prog-342",
+      "id": "prog-341",
       "slug": "interlochen-arts-camp-high-school-organ-3-week-session-1",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -18083,7 +18041,7 @@
       }
     },
     {
-      "id": "prog-343",
+      "id": "prog-342",
       "slug": "interlochen-arts-camp-high-school-organ-3-week-session-2",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -18153,7 +18111,7 @@
       }
     },
     {
-      "id": "prog-344",
+      "id": "prog-343",
       "slug": "interlochen-arts-camp-high-school-piano-3-week-session-1",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -18223,7 +18181,7 @@
       }
     },
     {
-      "id": "prog-345",
+      "id": "prog-344",
       "slug": "interlochen-arts-camp-high-school-piano-3-week-session-2",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -18293,7 +18251,7 @@
       }
     },
     {
-      "id": "prog-346",
+      "id": "prog-345",
       "slug": "interlochen-arts-camp-high-school-popular-music-performance-3-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -18363,7 +18321,7 @@
       }
     },
     {
-      "id": "prog-347",
+      "id": "prog-346",
       "slug": "interlochen-arts-camp-high-school-instrumental-vocal-intensives-1-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -18434,7 +18392,7 @@
       }
     },
     {
-      "id": "prog-348",
+      "id": "prog-347",
       "slug": "interlochen-arts-camp-high-school-dance-6-week-combined-ballet-contemporary",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -18504,7 +18462,7 @@
       }
     },
     {
-      "id": "prog-349",
+      "id": "prog-348",
       "slug": "interlochen-arts-camp-high-school-classical-ballet-3-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -18574,7 +18532,7 @@
       }
     },
     {
-      "id": "prog-350",
+      "id": "prog-349",
       "slug": "interlochen-arts-camp-high-school-classical-ballet-intensive-1-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -18644,7 +18602,7 @@
       }
     },
     {
-      "id": "prog-351",
+      "id": "prog-350",
       "slug": "interlochen-arts-camp-high-school-contemporary-dance-3-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -18714,7 +18672,7 @@
       }
     },
     {
-      "id": "prog-352",
+      "id": "prog-351",
       "slug": "interlochen-arts-camp-high-school-contemporary-dance-intensive-1-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -18784,7 +18742,7 @@
       }
     },
     {
-      "id": "prog-353",
+      "id": "prog-352",
       "slug": "interlochen-arts-camp-high-school-hip-hop-intensive-1-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -18854,7 +18812,7 @@
       }
     },
     {
-      "id": "prog-354",
+      "id": "prog-353",
       "slug": "interlochen-arts-camp-high-school-visual-arts-3-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -18924,7 +18882,7 @@
       }
     },
     {
-      "id": "prog-355",
+      "id": "prog-354",
       "slug": "interlochen-arts-camp-high-school-advanced-drawing-3-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -18994,7 +18952,7 @@
       }
     },
     {
-      "id": "prog-356",
+      "id": "prog-355",
       "slug": "interlochen-arts-camp-high-school-advanced-painting-3-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -19064,7 +19022,7 @@
       }
     },
     {
-      "id": "prog-357",
+      "id": "prog-356",
       "slug": "interlochen-arts-camp-high-school-fashion-3-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -19134,7 +19092,7 @@
       }
     },
     {
-      "id": "prog-358",
+      "id": "prog-357",
       "slug": "interlochen-arts-camp-high-school-drawing-painting-intensive-1-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -19204,7 +19162,7 @@
       }
     },
     {
-      "id": "prog-359",
+      "id": "prog-358",
       "slug": "interlochen-arts-camp-high-school-comics-graphic-narratives-intensive-1-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -19274,7 +19232,7 @@
       }
     },
     {
-      "id": "prog-360",
+      "id": "prog-359",
       "slug": "interlochen-arts-camp-high-school-preparing-a-portfolio-for-college-intensive-1-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -19344,7 +19302,7 @@
       }
     },
     {
-      "id": "prog-361",
+      "id": "prog-360",
       "slug": "interlochen-arts-camp-high-school-animation-3-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -19414,7 +19372,7 @@
       }
     },
     {
-      "id": "prog-362",
+      "id": "prog-361",
       "slug": "interlochen-arts-camp-high-school-filmmaking-3-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -19484,7 +19442,7 @@
       }
     },
     {
-      "id": "prog-363",
+      "id": "prog-362",
       "slug": "interlochen-arts-camp-high-school-screen-scoring-intensive-1-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -19554,7 +19512,7 @@
       }
     },
     {
-      "id": "prog-364",
+      "id": "prog-363",
       "slug": "interlochen-arts-camp-high-school-screenwriting-intensive-1-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -19624,7 +19582,7 @@
       }
     },
     {
-      "id": "prog-365",
+      "id": "prog-364",
       "slug": "interlochen-arts-camp-high-school-creative-writing-3-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -19694,7 +19652,7 @@
       }
     },
     {
-      "id": "prog-366",
+      "id": "prog-365",
       "slug": "interlochen-arts-camp-high-school-novel-writing-intensive-1-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -19764,7 +19722,7 @@
       }
     },
     {
-      "id": "prog-367",
+      "id": "prog-366",
       "slug": "interlochen-arts-camp-high-school-spoken-word-performance-poetry-intensive-1-week",
       "name": "Interlochen Arts Camp - High School",
       "institution": "Interlochen Center for the Arts",
@@ -19834,7 +19792,7 @@
       }
     },
     {
-      "id": "prog-368",
+      "id": "prog-367",
       "slug": "interlochen-arts-camp-intermediate-acting-3-week",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -19896,7 +19854,7 @@
       }
     },
     {
-      "id": "prog-369",
+      "id": "prog-368",
       "slug": "interlochen-arts-camp-intermediate-acting-company-production-6-week",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -19958,7 +19916,7 @@
       }
     },
     {
-      "id": "prog-370",
+      "id": "prog-369",
       "slug": "interlochen-arts-camp-intermediate-musical-theatre-showcase-3-week",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -20020,7 +19978,7 @@
       }
     },
     {
-      "id": "prog-371",
+      "id": "prog-370",
       "slug": "interlochen-arts-camp-intermediate-musical-theatre-production-6-week",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -20082,7 +20040,7 @@
       }
     },
     {
-      "id": "prog-372",
+      "id": "prog-371",
       "slug": "interlochen-arts-camp-intermediate-theatre-design-production-3-week",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -20144,7 +20102,7 @@
       }
     },
     {
-      "id": "prog-373",
+      "id": "prog-372",
       "slug": "interlochen-arts-camp-intermediate-theatre-design-production-6-week",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -20206,7 +20164,7 @@
       }
     },
     {
-      "id": "prog-374",
+      "id": "prog-373",
       "slug": "interlochen-arts-camp-intermediate-advanced-strings-6-week",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -20268,7 +20226,7 @@
       }
     },
     {
-      "id": "prog-375",
+      "id": "prog-374",
       "slug": "interlochen-arts-camp-intermediate-guitar-3-week-session-1",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -20330,7 +20288,7 @@
       }
     },
     {
-      "id": "prog-376",
+      "id": "prog-375",
       "slug": "interlochen-arts-camp-intermediate-guitar-3-week-session-2",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -20392,7 +20350,7 @@
       }
     },
     {
-      "id": "prog-377",
+      "id": "prog-376",
       "slug": "interlochen-arts-camp-intermediate-harp-3-week-session-1",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -20454,7 +20412,7 @@
       }
     },
     {
-      "id": "prog-378",
+      "id": "prog-377",
       "slug": "interlochen-arts-camp-intermediate-harp-3-week-session-2",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -20516,7 +20474,7 @@
       }
     },
     {
-      "id": "prog-379",
+      "id": "prog-378",
       "slug": "interlochen-arts-camp-intermediate-jazz-performance-improvisation-3-week",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -20578,7 +20536,7 @@
       }
     },
     {
-      "id": "prog-380",
+      "id": "prog-379",
       "slug": "interlochen-arts-camp-intermediate-music-production-engineering-3-week",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -20640,7 +20598,7 @@
       }
     },
     {
-      "id": "prog-381",
+      "id": "prog-380",
       "slug": "interlochen-arts-camp-intermediate-orchestra-wind-ensemble-3-week-session-1",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -20702,7 +20660,7 @@
       }
     },
     {
-      "id": "prog-382",
+      "id": "prog-381",
       "slug": "interlochen-arts-camp-intermediate-orchestra-wind-ensemble-3-week-session-2",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -20764,7 +20722,7 @@
       }
     },
     {
-      "id": "prog-383",
+      "id": "prog-382",
       "slug": "interlochen-arts-camp-intermediate-organ-3-week-session-1",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -20826,7 +20784,7 @@
       }
     },
     {
-      "id": "prog-384",
+      "id": "prog-383",
       "slug": "interlochen-arts-camp-intermediate-organ-3-week-session-2",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -20888,7 +20846,7 @@
       }
     },
     {
-      "id": "prog-385",
+      "id": "prog-384",
       "slug": "interlochen-arts-camp-intermediate-piano-3-week-session-1",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -20950,7 +20908,7 @@
       }
     },
     {
-      "id": "prog-386",
+      "id": "prog-385",
       "slug": "interlochen-arts-camp-intermediate-piano-3-week-session-2",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -21012,7 +20970,7 @@
       }
     },
     {
-      "id": "prog-387",
+      "id": "prog-386",
       "slug": "interlochen-arts-camp-intermediate-popular-music-performance-3-week",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -21074,7 +21032,7 @@
       }
     },
     {
-      "id": "prog-388",
+      "id": "prog-387",
       "slug": "interlochen-arts-camp-intermediate-singer-songwriter-3-week",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -21136,7 +21094,7 @@
       }
     },
     {
-      "id": "prog-389",
+      "id": "prog-388",
       "slug": "interlochen-arts-camp-intermediate-classical-voice-3-week-session-1",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -21198,7 +21156,7 @@
       }
     },
     {
-      "id": "prog-390",
+      "id": "prog-389",
       "slug": "interlochen-arts-camp-intermediate-classical-voice-3-week-session-2",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -21260,7 +21218,7 @@
       }
     },
     {
-      "id": "prog-391",
+      "id": "prog-390",
       "slug": "interlochen-arts-camp-intermediate-classical-ballet-3-week-session-1",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -21322,7 +21280,7 @@
       }
     },
     {
-      "id": "prog-392",
+      "id": "prog-391",
       "slug": "interlochen-arts-camp-intermediate-classical-ballet-3-week-session-2",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -21384,7 +21342,7 @@
       }
     },
     {
-      "id": "prog-393",
+      "id": "prog-392",
       "slug": "interlochen-arts-camp-intermediate-contemporary-dance-3-week-session-1",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -21446,7 +21404,7 @@
       }
     },
     {
-      "id": "prog-394",
+      "id": "prog-393",
       "slug": "interlochen-arts-camp-intermediate-contemporary-dance-3-week-session-2",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -21508,7 +21466,7 @@
       }
     },
     {
-      "id": "prog-395",
+      "id": "prog-394",
       "slug": "interlochen-arts-camp-intermediate-visual-arts-3-week-session-1",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -21570,7 +21528,7 @@
       }
     },
     {
-      "id": "prog-396",
+      "id": "prog-395",
       "slug": "interlochen-arts-camp-intermediate-visual-arts-3-week-session-2",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -21632,7 +21590,7 @@
       }
     },
     {
-      "id": "prog-397",
+      "id": "prog-396",
       "slug": "interlochen-arts-camp-intermediate-advanced-drawing-painting-3-week-session-1",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -21694,7 +21652,7 @@
       }
     },
     {
-      "id": "prog-398",
+      "id": "prog-397",
       "slug": "interlochen-arts-camp-intermediate-advanced-drawing-painting-3-week-session-2",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -21756,7 +21714,7 @@
       }
     },
     {
-      "id": "prog-399",
+      "id": "prog-398",
       "slug": "interlochen-arts-camp-intermediate-fashion-3-week-session-1",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -21818,7 +21776,7 @@
       }
     },
     {
-      "id": "prog-400",
+      "id": "prog-399",
       "slug": "interlochen-arts-camp-intermediate-fashion-3-week-session-2",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -21880,7 +21838,7 @@
       }
     },
     {
-      "id": "prog-401",
+      "id": "prog-400",
       "slug": "interlochen-arts-camp-intermediate-filmmaking-3-week-session-1",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -21942,7 +21900,7 @@
       }
     },
     {
-      "id": "prog-402",
+      "id": "prog-401",
       "slug": "interlochen-arts-camp-intermediate-filmmaking-3-week-session-2",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -22004,7 +21962,7 @@
       }
     },
     {
-      "id": "prog-403",
+      "id": "prog-402",
       "slug": "interlochen-arts-camp-intermediate-animation-3-week-session-1",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -22066,7 +22024,7 @@
       }
     },
     {
-      "id": "prog-404",
+      "id": "prog-403",
       "slug": "interlochen-arts-camp-intermediate-animation-3-week-session-2",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -22128,7 +22086,7 @@
       }
     },
     {
-      "id": "prog-405",
+      "id": "prog-404",
       "slug": "interlochen-arts-camp-intermediate-creative-writing-3-week-session-1",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -22190,7 +22148,7 @@
       }
     },
     {
-      "id": "prog-406",
+      "id": "prog-405",
       "slug": "interlochen-arts-camp-intermediate-creative-writing-3-week-session-2",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -22252,7 +22210,7 @@
       }
     },
     {
-      "id": "prog-407",
+      "id": "prog-406",
       "slug": "interlochen-arts-camp-intermediate-arts-exploration-3-week-session-1",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -22314,7 +22272,7 @@
       }
     },
     {
-      "id": "prog-408",
+      "id": "prog-407",
       "slug": "interlochen-arts-camp-intermediate-arts-exploration-3-week-session-2",
       "name": "Interlochen Arts Camp - Intermediate",
       "institution": "Interlochen Center for the Arts",
@@ -22372,6 +22330,360 @@
         "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, grouped with other Intermediate-age campers. Alongside daily rehearsals/coursework in their chosen program, students have time for traditional camp activities - swimming, field games, and archery. Every program at this division is either 3 or 6 weeks long (no 1-week Intensives exist below grade 9), so families are choosing between a shorter single-session commitment or the full-summer 6-week track from the outset, rather than layering a short intensive on top. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is available for any program at this division, since none of Intermediate's offerings are the aid-ineligible 1-week Intensive type. Admission is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
         "sourceType": "official_policy",
         "sourceCitation": "Interlochen grades 6-8 program pages and tuition/financial aid page (interlochen.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-408",
+      "slug": "explo-middle-school-2-week-session-1-overnight",
+      "name": "EXPLO Middle School",
+      "institution": "Exploration School Inc. (EXPLO)",
+      "programGroupId": "explo-middle-school",
+      "description": "Two-week residential enrichment program at Wellesley College for middle schoolers; students choose EXPLO 360 (broad menu of 50+ classes) or a Focus Program (Medical Rotations +$400, Veterinary Science +$400).",
+      "category": "leadership-gifted",
+      "secondaryTags": [],
+      "trackDetail": "2-Week Session 1 (Overnight)",
+      "gradeDisplay": "Rising grades 7-9 (ages 12-14)",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 8,
+      "gradeSource": "age",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jun 28 – Jul 11, 2026",
+      "dateStart": "2026-06-28",
+      "dateEnd": "2026-07-11",
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Wellesley, MA (Wellesley College)",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$6,295 (2026 figure; 2027 not yet published) + $150 damage deposit + $350 trips/sundries",
+      "priceMin": 6295,
+      "priceMax": 6295,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://explo.org/",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "explo-ms-unaccompanied-minor-fee",
+          "type": "pricing",
+          "title": "Extra fee for unaccompanied-minor airport service, and a caution against flying that way",
+          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way (on top of the standard $100/$200 airport transport fee) if a family does use EXPLO's transportation for an unaccompanied minor.",
+          "sourceCitation": "EXPLO Tuition + Financial Aid page",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "EXPLO is explicitly an 'unplugged' program - device use is restricted as a stated program value, not merely a default policy. Residential students live in Wellesley College dorms with roommates, supported by Resident Advisors around the clock; a general staff-to-student ratio of 1:7 is advertised. Weekends are student-choice: options include whale watching, Red Sox games, museum visits, and other off-campus trips, with a 24/7 health center on site. Day students follow the same academic day as residential students but go home at night; if a day student stays for evening programming, a $38 dinner + evening event fee is charged to their account. International students live alongside domestic students in the same dorms and dining halls.",
+        "sourceType": "official_policy",
+        "sourceCitation": "EXPLO program details and tuition/FAQ pages (explo.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-409",
+      "slug": "explo-middle-school-2-week-session-1-day",
+      "name": "EXPLO Middle School",
+      "institution": "Exploration School Inc. (EXPLO)",
+      "programGroupId": "explo-middle-school",
+      "description": "Two-week day-student option for the same Wellesley program.",
+      "category": "leadership-gifted",
+      "secondaryTags": [],
+      "trackDetail": "2-Week Session 1 (Day)",
+      "gradeDisplay": "Rising grades 7-9 (ages 12-14)",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 8,
+      "gradeSource": "age",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Commuter",
+      "formatTags": [
+        "commuter"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jun 29 – Jul 10, 2026",
+      "dateStart": "2026-06-29",
+      "dateEnd": "2026-07-10",
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Wellesley, MA (Wellesley College)",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,045 (2026 figure) + $150 damage deposit + $150 sundries",
+      "priceMin": 4045,
+      "priceMax": 4045,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://explo.org/",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "explo-ms-unaccompanied-minor-fee",
+          "type": "pricing",
+          "title": "Extra fee for unaccompanied-minor airport service, and a caution against flying that way",
+          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way (on top of the standard $100/$200 airport transport fee) if a family does use EXPLO's transportation for an unaccompanied minor.",
+          "sourceCitation": "EXPLO Tuition + Financial Aid page",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "EXPLO is explicitly an 'unplugged' program - device use is restricted as a stated program value, not merely a default policy. Residential students live in Wellesley College dorms with roommates, supported by Resident Advisors around the clock; a general staff-to-student ratio of 1:7 is advertised. Weekends are student-choice: options include whale watching, Red Sox games, museum visits, and other off-campus trips, with a 24/7 health center on site. Day students follow the same academic day as residential students but go home at night; if a day student stays for evening programming, a $38 dinner + evening event fee is charged to their account. International students live alongside domestic students in the same dorms and dining halls.",
+        "sourceType": "official_policy",
+        "sourceCitation": "EXPLO program details and tuition/FAQ pages (explo.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-410",
+      "slug": "explo-middle-school-2-week-session-2-overnight",
+      "name": "EXPLO Middle School",
+      "institution": "Exploration School Inc. (EXPLO)",
+      "programGroupId": "explo-middle-school",
+      "description": "Second 2-week residential session option.",
+      "category": "leadership-gifted",
+      "secondaryTags": [],
+      "trackDetail": "2-Week Session 2 (Overnight)",
+      "gradeDisplay": "Rising grades 7-9 (ages 12-14)",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 8,
+      "gradeSource": "age",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jul 12–25, 2026",
+      "dateStart": "2026-07-12",
+      "dateEnd": "2026-07-25",
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Wellesley, MA (Wellesley College)",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$6,295 (2026 figure) + $150 damage deposit + $350 trips/sundries",
+      "priceMin": 6295,
+      "priceMax": 6295,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://explo.org/",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "explo-ms-unaccompanied-minor-fee",
+          "type": "pricing",
+          "title": "Extra fee for unaccompanied-minor airport service, and a caution against flying that way",
+          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way (on top of the standard $100/$200 airport transport fee) if a family does use EXPLO's transportation for an unaccompanied minor.",
+          "sourceCitation": "EXPLO Tuition + Financial Aid page",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "EXPLO is explicitly an 'unplugged' program - device use is restricted as a stated program value, not merely a default policy. Residential students live in Wellesley College dorms with roommates, supported by Resident Advisors around the clock; a general staff-to-student ratio of 1:7 is advertised. Weekends are student-choice: options include whale watching, Red Sox games, museum visits, and other off-campus trips, with a 24/7 health center on site. Day students follow the same academic day as residential students but go home at night; if a day student stays for evening programming, a $38 dinner + evening event fee is charged to their account. International students live alongside domestic students in the same dorms and dining halls.",
+        "sourceType": "official_policy",
+        "sourceCitation": "EXPLO program details and tuition/FAQ pages (explo.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-411",
+      "slug": "explo-middle-school-2-week-session-2-day",
+      "name": "EXPLO Middle School",
+      "institution": "Exploration School Inc. (EXPLO)",
+      "programGroupId": "explo-middle-school",
+      "description": "Second 2-week day session option.",
+      "category": "leadership-gifted",
+      "secondaryTags": [],
+      "trackDetail": "2-Week Session 2 (Day)",
+      "gradeDisplay": "Rising grades 7-9 (ages 12-14)",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 8,
+      "gradeSource": "age",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Commuter",
+      "formatTags": [
+        "commuter"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jul 13–24, 2026",
+      "dateStart": "2026-07-13",
+      "dateEnd": "2026-07-24",
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Wellesley, MA (Wellesley College)",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,045 (2026 figure) + $150 damage deposit + $150 sundries",
+      "priceMin": 4045,
+      "priceMax": 4045,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://explo.org/",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "explo-ms-unaccompanied-minor-fee",
+          "type": "pricing",
+          "title": "Extra fee for unaccompanied-minor airport service, and a caution against flying that way",
+          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way (on top of the standard $100/$200 airport transport fee) if a family does use EXPLO's transportation for an unaccompanied minor.",
+          "sourceCitation": "EXPLO Tuition + Financial Aid page",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "EXPLO is explicitly an 'unplugged' program - device use is restricted as a stated program value, not merely a default policy. Residential students live in Wellesley College dorms with roommates, supported by Resident Advisors around the clock; a general staff-to-student ratio of 1:7 is advertised. Weekends are student-choice: options include whale watching, Red Sox games, museum visits, and other off-campus trips, with a 24/7 health center on site. Day students follow the same academic day as residential students but go home at night; if a day student stays for evening programming, a $38 dinner + evening event fee is charged to their account. International students live alongside domestic students in the same dorms and dining halls.",
+        "sourceType": "official_policy",
+        "sourceCitation": "EXPLO program details and tuition/FAQ pages (explo.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-412",
+      "slug": "explo-middle-school-4-week-overnight",
+      "name": "EXPLO Middle School",
+      "institution": "Exploration School Inc. (EXPLO)",
+      "programGroupId": "explo-middle-school",
+      "description": "Full four-week residential program combining both 2-week sessions back-to-back.",
+      "category": "leadership-gifted",
+      "secondaryTags": [],
+      "trackDetail": "4-Week (Overnight)",
+      "gradeDisplay": "Rising grades 7-9 (ages 12-14)",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 8,
+      "gradeSource": "age",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "4 weeks",
+      "lengthMinDays": 28,
+      "lengthMaxDays": 28,
+      "datesDisplay": "Jun 28 – Jul 25, 2026",
+      "dateStart": "2026-06-28",
+      "dateEnd": "2026-07-25",
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Wellesley, MA (Wellesley College)",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$12,090 (2026 figure) + $150 damage deposit + $350 trips/sundries per session",
+      "priceMin": 12090,
+      "priceMax": 12090,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://explo.org/",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "explo-ms-unaccompanied-minor-fee",
+          "type": "pricing",
+          "title": "Extra fee for unaccompanied-minor airport service, and a caution against flying that way",
+          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way (on top of the standard $100/$200 airport transport fee) if a family does use EXPLO's transportation for an unaccompanied minor.",
+          "sourceCitation": "EXPLO Tuition + Financial Aid page",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "EXPLO is explicitly an 'unplugged' program - device use is restricted as a stated program value, not merely a default policy. Residential students live in Wellesley College dorms with roommates, supported by Resident Advisors around the clock; a general staff-to-student ratio of 1:7 is advertised. Weekends are student-choice: options include whale watching, Red Sox games, museum visits, and other off-campus trips, with a 24/7 health center on site. Day students follow the same academic day as residential students but go home at night; if a day student stays for evening programming, a $38 dinner + evening event fee is charged to their account. International students live alongside domestic students in the same dorms and dining halls.",
+        "sourceType": "official_policy",
+        "sourceCitation": "EXPLO program details and tuition/FAQ pages (explo.org)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-413",
+      "slug": "explo-middle-school-4-week-day",
+      "name": "EXPLO Middle School",
+      "institution": "Exploration School Inc. (EXPLO)",
+      "programGroupId": "explo-middle-school",
+      "description": "Full four-week day-student program combining both 2-week sessions back-to-back.",
+      "category": "leadership-gifted",
+      "secondaryTags": [],
+      "trackDetail": "4-Week (Day)",
+      "gradeDisplay": "Rising grades 7-9 (ages 12-14)",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 8,
+      "gradeSource": "age",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Commuter",
+      "formatTags": [
+        "commuter"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "4 weeks",
+      "lengthMinDays": 28,
+      "lengthMaxDays": 28,
+      "datesDisplay": "Jun 29 – Jul 24, 2026",
+      "dateStart": "2026-06-29",
+      "dateEnd": "2026-07-24",
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Wellesley, MA (Wellesley College)",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$7,790 (2026 figure) + $150 damage deposit + $150 sundries per session",
+      "priceMin": 7790,
+      "priceMax": 7790,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://explo.org/",
+      "dataVerifiedAt": "2026-09-16",
+      "flags": [
+        {
+          "id": "explo-ms-unaccompanied-minor-fee",
+          "type": "pricing",
+          "title": "Extra fee for unaccompanied-minor airport service, and a caution against flying that way",
+          "body": "EXPLO explicitly recommends students NOT fly as unaccompanied minors unless required by the airline, and charges an extra $150 each way (on top of the standard $100/$200 airport transport fee) if a family does use EXPLO's transportation for an unaccompanied minor.",
+          "sourceCitation": "EXPLO Tuition + Financial Aid page",
+          "severity": "info"
+        }
+      ],
+      "dayToDay": {
+        "notes": "EXPLO is explicitly an 'unplugged' program - device use is restricted as a stated program value, not merely a default policy. Residential students live in Wellesley College dorms with roommates, supported by Resident Advisors around the clock; a general staff-to-student ratio of 1:7 is advertised. Weekends are student-choice: options include whale watching, Red Sox games, museum visits, and other off-campus trips, with a 24/7 health center on site. Day students follow the same academic day as residential students but go home at night; if a day student stays for evening programming, a $38 dinner + evening event fee is charged to their account. International students live alongside domestic students in the same dorms and dining halls.",
+        "sourceType": "official_policy",
+        "sourceCitation": "EXPLO program details and tuition/FAQ pages (explo.org)",
         "verifiedAt": "2026-09-15"
       }
     }
