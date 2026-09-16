@@ -319,6 +319,32 @@
     ]
   },
   {
+    "match": { "programGroupId": "amigos-costa-rica" },
+    "flags": [
+      {
+        "id": "amigos-cr-dual-pricing",
+        "type": "pricing",
+        "title": "Local Chapter vs National Chapter pricing - a real structural choice, not a discount code",
+        "body": "Prices vary by several hundred to over $1,000 depending on whether a family joins through a Local Chapter (community group fundraising) or applies individually as a National Chapter member. Montanas y Mar has no Local Chapter option at all.",
+        "sourceCitation": "AMIGOS Costs & Access page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": { "programGroupId": "amigos-panama" },
+    "flags": [
+      {
+        "id": "amigos-panama-no-immerse",
+        "type": "policy",
+        "title": "No Immerse (longest/deepest) tier offered in Panama",
+        "body": "Unlike Costa Rica, Dominican Republic, and Paraguay, Panama does not offer an Immerse-tier program - its longest option (El Valle) is 3 weeks, not 4-6.",
+        "sourceCitation": "AMIGOS Programs page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
     "match": { "programGroupId": "wpi-high-achieving-hs" },
     "flags": [
       {

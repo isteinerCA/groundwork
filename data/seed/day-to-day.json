@@ -63,6 +63,42 @@
     }
   },
   {
+    "match": { "programGroupId": "amigos-costa-rica" },
+    "dayToDay": {
+      "notes": "Discover-tier programs (2 weeks) are staff-led group experiences with daily supervision, no host-family placement, and no Spanish requirement - the lowest-independence entry point. Explore-tier (3-3.5 weeks) and Immerse-tier (4-6 weeks) programs place students individually with a host family, with growing independence and responsibility as program length increases; Spanish proficiency requirements grow accordingly. Across every tier, AMIGOS maintains a 24/7 on-call safety and mental-wellness support system reachable regardless of location. Flights, travel insurance, and gear are explicitly NOT included in the program fee at any tier and must be arranged separately.",
+      "sourceType": "official_policy",
+      "sourceCitation": "AMIGOS Programs and Costs & Access pages (amigosinternational.org)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "amigos-dominican-republic" },
+    "dayToDay": {
+      "notes": "Same organization-wide tier structure as other AMIGOS countries: Explore and Immerse programs here place students with host families; independence and Spanish expectations increase with program length. 24/7 safety support applies regardless of country. Flights and travel insurance are not included in the fee.",
+      "sourceType": "official_policy",
+      "sourceCitation": "AMIGOS Programs and Costs & Access pages (amigosinternational.org)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "amigos-panama" },
+    "dayToDay": {
+      "notes": "Panama offers only Discover and Explore tiers, not Immerse - so even Panama's longest offering (El Valle, 3 weeks) is shorter than the org's overall maximum (6 weeks, only in Paraguay). Discover-tier programs here are staff-led with no host family and no Spanish requirement.",
+      "sourceType": "official_policy",
+      "sourceCitation": "AMIGOS Programs page (amigosinternational.org)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "amigos-paraguay" },
+    "dayToDay": {
+      "notes": "Paraguay only offers Explore and Immerse tiers (no Discover, no Middle School) - the most independence-focused country in the org's lineup. Tierra Guarani (6 weeks) is the single longest program AMIGOS offers anywhere, including Spanish AND Guarani-language practice alongside homestay life.",
+      "sourceType": "official_policy",
+      "sourceCitation": "AMIGOS Programs page (amigosinternational.org)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
     "match": { "programGroupId": "wpi-ignite" },
     "dayToDay": {
       "notes": "Commuter day program on the WPI campus: instruction runs 9am-4pm Monday-Friday. Students choose one or more weekly sessions and a STEM course track for each week; weeks are offered on a rolling basis across the summer (four distinct weeks in 2027). Lunch is not included in tuition for commuter programs.",
