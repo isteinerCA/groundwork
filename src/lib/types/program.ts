@@ -127,6 +127,8 @@ export interface SearchFilters {
   /** Exact min total price from parsed program data. */
   minPrice: number | null;
   usOnly: boolean;
+  /** When true, exclude US programs (international destinations only). Mutually exclusive with usOnly. */
+  internationalOnly: boolean;
   /**
    * When false (default), programs with priceUnknown still appear under active
    * price filters. Set true to hide them when filtering by price.
@@ -168,6 +170,7 @@ export const DEFAULT_SEARCH_FILTERS: SearchFilters = {
   maxPrice: null,
   minPrice: null,
   usOnly: false,
+  internationalOnly: false,
   excludeUnknownPrice: false,
   includePendingSeasonRefresh: INCLUDE_PENDING_SEASON_REFRESH_DEFAULT,
   dataQuery: "",

@@ -10,8 +10,10 @@ export function buildPredefinedListMetadata(list: PredefinedList): Metadata {
   const url = absoluteUrl(`/resources/lists/${list.slug}`);
   const documentTitle =
     list.kind === "global-adventure"
-      ? `${list.titleLabel} · Explore Global & Adventure · ${SITE_NAME}`
-      : `${list.titleLabel} for ${list.audienceLabel} · Pre-defined lists · ${SITE_NAME}`;
+      ? `${list.titleLabel} · Explore Global & Adventure Teen Programs · ${SITE_NAME}`
+      : list.kind === "domestic-interest"
+        ? `${list.titleLabel} · Explore US Teen Programs · ${SITE_NAME}`
+        : `${list.titleLabel} for ${list.audienceLabel} · Pre-defined lists · ${SITE_NAME}`;
 
   return {
     title: documentTitle,

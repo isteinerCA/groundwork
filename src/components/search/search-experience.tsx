@@ -62,7 +62,10 @@ function toggle<T>(list: T[], value: T): T[] {
 }
 
 function mergeFilters(current: SearchFilters, patch: Partial<SearchFilters>): SearchFilters {
-  return { ...current, ...patch };
+  const next = { ...current, ...patch };
+  if (patch.usOnly === true) next.internationalOnly = false;
+  if (patch.internationalOnly === true) next.usOnly = false;
+  return next;
 }
 
 function toggleAvailabilityMonth(
@@ -211,6 +214,7 @@ export function SearchExperience({
     filters.maxPrice != null ||
     filters.minPrice != null ||
     filters.usOnly ||
+    filters.internationalOnly ||
     filters.excludeUnknownPrice ||
     filters.dataQuery.trim().length > 0 ||
     filters.excludeLocation.trim().length > 0 ||
@@ -453,6 +457,7 @@ export function SearchExperience({
                 activeCount={
                   (filters.collegeCreditOnly ? 1 : 0) +
                   (filters.usOnly ? 1 : 0) +
+                  (filters.internationalOnly ? 1 : 0) +
                   (filters.excludeUnknownPrice ? 1 : 0)
                 }
               >
@@ -464,7 +469,19 @@ export function SearchExperience({
                 <Chip
                   label="US only"
                   selected={filters.usOnly}
-                  onClick={() => update({ usOnly: !filters.usOnly })}
+                  onClick={() =>
+                    update({ usOnly: filters.usOnly ? false : true, internationalOnly: false })
+                  }
+                />
+                <Chip
+                  label="International only"
+                  selected={filters.internationalOnly}
+                  onClick={() =>
+                    update({
+                      internationalOnly: filters.internationalOnly ? false : true,
+                      usOnly: false,
+                    })
+                  }
                 />
                 <Chip
                   label="Hide unlisted prices"

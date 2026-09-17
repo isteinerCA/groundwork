@@ -83,6 +83,7 @@ export function matchesProgram(
   }
 
   if (filters.usOnly && program.isInternational) return false;
+  if (filters.internationalOnly && !program.isInternational) return false;
 
   const excludeLocation = filters.excludeLocation.trim();
   if (excludeLocation && matchesLocationQuery(program, excludeLocation)) return false;

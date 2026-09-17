@@ -5,7 +5,7 @@ import type { Program } from "@/lib/types/program";
 import { DEFAULT_SEARCH_FILTERS } from "@/lib/types/program";
 
 export function predefinedListPageTitle(list: PredefinedList): string {
-  if (list.kind === "global-adventure") {
+  if (list.kind === "global-adventure" || list.kind === "domestic-interest") {
     return `Start exploring ${list.titleLabel}`;
   }
   return `Start exploring ${list.titleLabel} for ${list.audienceLabel}`;

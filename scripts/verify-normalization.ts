@@ -266,6 +266,66 @@ if (!matchesDataQuery(stanford, "stanford university", { relaxInstitutionSuffixe
   failed++;
 }
 
+const costaRicaProgram = stubProgram({
+  name: "AMIGOS de las Americas",
+  locationDisplay: "Costa Rica",
+  trackDetail: "La Brunca (Explore) - Session 1",
+});
+
+const panamaProgramWithCostaRicaFlag = stubProgram({
+  name: "AMIGOS de las Americas",
+  locationDisplay: "Panama",
+  trackDetail: "El Valle (Explore) - Session 1",
+  flags: [
+    {
+      id: "flag-1",
+      type: "selectivity",
+      title: "No Immerse tier offered in Panama",
+      body: "Unlike Costa Rica, Dominican Republic, and Paraguay, Panama does not offer an Immerse-tier program.",
+      sourceCitation: "AMIGOS Programs page",
+      severity: "info",
+    },
+  ],
+});
+
+if (!matchesDataQuery(costaRicaProgram, "costa rica")) {
+  console.error('FAIL: Costa Rica program should match dataQuery "costa rica"');
+  failed++;
+}
+
+if (matchesDataQuery(panamaProgramWithCostaRicaFlag, "costa rica")) {
+  console.error(
+    'FAIL: Panama program should not match dataQuery "costa rica" via incidental flag mention',
+  );
+  failed++;
+}
+
+const yosemiteBackpacking = stubProgram({
+  name: "Lasting Adventures - Yosemite",
+  locationDisplay: "Yosemite National Park, CA",
+  trackDetail: "6-Day Young Adventurer's Program - Jun 13-18 Departure",
+  description: "Introductory 6-day wilderness backpacking camp in Yosemite for ages 11-13.",
+});
+
+const alpsTrekking = stubProgram({
+  name: "Overland - Pyrenees Expedition",
+  locationDisplay: "Pyrenees",
+  trackDetail: "Departure 1",
+  description: "Extended Pyrenees trekking trip.",
+});
+
+if (!matchesDataQuery(yosemiteBackpacking, "backpacking")) {
+  console.error(
+    'FAIL: backpacking should match description on schedule-style track labels',
+  );
+  failed++;
+}
+
+if (!matchesDataQuery(alpsTrekking, "backpacking")) {
+  console.error('FAIL: backpacking should match trekking/mountain travel descriptions');
+  failed++;
+}
+
 const filmWithSharedDayToDay = stubProgram({
   name: "SOCAPA - New York City",
   locationDisplay: "New York, NY",
@@ -859,6 +919,7 @@ const genderFilterResults = filterPrograms(
     maxPrice: null,
     minPrice: null,
     usOnly: false,
+    internationalOnly: false,
     excludeUnknownPrice: false,
     includePendingSeasonRefresh: true,
     dataQuery: "",

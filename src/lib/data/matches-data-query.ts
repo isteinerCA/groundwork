@@ -55,6 +55,35 @@ function programIdentitySearchText(program: Program): string {
     .toLowerCase();
 }
 
+/** Schedule-oriented offering labels (dates/departures) vs discipline names (Photography, Acting). */
+function hasGenericTrackDetail(trackDetail: string): boolean {
+  const track = trackDetail.trim();
+  if (!track) return true;
+  if (/^departure\s+\d+$/i.test(track)) return true;
+  if (/^session(\s+(i+|ii+|\d+))?(\s*\(|$)/i.test(track)) return true;
+  if (/\bdeparture\b/i.test(track)) return true;
+  if (/^\d+-[\d]*\s*day\b/i.test(track)) return true;
+  return false;
+}
+
+/** Synonym groups for common activity searches on adventure/travel programs. */
+const ACTIVITY_QUERY_GROUPS: Record<string, readonly string[]> = {
+  backpacking: ["backpacking", "hiking", "trekking", "mountain travel", "mountain trek"],
+};
+
+function expandedActivityTerms(query: string): readonly string[] | null {
+  return ACTIVITY_QUERY_GROUPS[query.trim().toLowerCase()] ?? null;
+}
+
+function singleTermMatchesOffering(program: Program, term: string): boolean {
+  if (termMatchesInText(term, programIdentitySearchText(program))) return true;
+
+  if (!hasGenericTrackDetail(program.trackDetail?.trim() ?? "")) return false;
+
+  const description = program.description?.trim().toLowerCase() ?? "";
+  return Boolean(description && termMatchesInText(term, description));
+}
+
 export interface DataQueryMatchOptions {
   /**
    * When true, unmatched institution suffixes are ignored if the distinctive
@@ -65,6 +94,36 @@ export interface DataQueryMatchOptions {
 }
 
 /** Build searchable text from CSV-backed fields and gotcha flags (not day-to-day notes). */
+function programPrimarySearchText(program: Program): string {
+  return [
+    program.locationDisplay,
+    program.name,
+    program.institution,
+    program.trackDetail,
+    program.description,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
+function programFlagSearchText(program: Program): string {
+  return program.flags
+    .map((flag) => `${flag.title} ${flag.body}`)
+    .join(" ")
+    .toLowerCase();
+}
+
+function queryMatchesOnlyInFlags(program: Program, terms: string[]): boolean {
+  const flagText = programFlagSearchText(program);
+  const primaryText = programPrimarySearchText(program);
+
+  const matchesFlags = terms.every((term) => termMatchesInText(term, flagText));
+  if (!matchesFlags) return false;
+
+  return !terms.every((term) => termMatchesInText(term, primaryText));
+}
+
 export function programSearchText(program: Program): string {
   const flagText = program.flags
     .map((flag) => `${flag.title} ${flag.body} ${flag.type}`)
@@ -113,9 +172,21 @@ export function matchesDataQuery(
     return true;
   }
 
-  const haystack = programSearchText(program);
   const terms = distinctiveDataQueryTerms(trimmed);
   if (terms.length === 0) return true;
+
+  // Multi-word place queries must not match incidental mentions in gotcha flags
+  // (e.g. Panama programs comparing themselves to Costa Rica).
+  if (terms.length >= 2 && queryMatchesOnlyInFlags(program, terms)) {
+    return false;
+  }
+
+  const activityTerms = terms.length === 1 ? expandedActivityTerms(trimmed) : null;
+  if (activityTerms) {
+    return activityTerms.some((term) => singleTermMatchesOffering(program, term));
+  }
+
+  const haystack = programSearchText(program);
 
   const identityHaystack = programIdentitySearchText(program);
   // Single-term discipline queries must hit name/institution/offering label so cross-track
@@ -125,7 +196,7 @@ export function matchesDataQuery(
     terms.length === 1 &&
     program.trackDetail?.trim() &&
     !program.catalogOffering &&
-    !termMatchesInText(terms[0], identityHaystack)
+    !singleTermMatchesOffering(program, terms[0])
   ) {
     return false;
   }

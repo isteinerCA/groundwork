@@ -32,8 +32,22 @@ export function getPredefinedListBreadcrumbs(list: PredefinedList): BreadcrumbIt
     return [
       { label: "Resources", href: "/resources" },
       {
-        label: "Explore Global & Adventure Programs",
+        label: "Explore Global & Adventure Teen Programs",
         href: "/resources#global-adventure",
+      },
+      {
+        label: predefinedListPageTitle(list),
+        href: `/resources/lists/${list.slug}`,
+      },
+    ];
+  }
+
+  if (list.kind === "domestic-interest") {
+    return [
+      { label: "Resources", href: "/resources" },
+      {
+        label: "Explore US Teen Programs",
+        href: "/resources#domestic-interest",
       },
       {
         label: predefinedListPageTitle(list),

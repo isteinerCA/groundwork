@@ -145,6 +145,14 @@ export function getActiveFilterItems(filters: SearchFilters): ActiveFilterItem[]
     });
   }
 
+  if (filters.internationalOnly) {
+    items.push({
+      key: "international",
+      label: "International only",
+      remove: { internationalOnly: false },
+    });
+  }
+
   if (filters.excludeUnknownPrice) {
     items.push({
       key: "unknown-price",

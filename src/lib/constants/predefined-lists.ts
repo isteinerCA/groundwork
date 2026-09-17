@@ -1,5 +1,10 @@
 import { PROGRAM_CATEGORIES, type ProgramCategoryId } from "@/lib/constants/categories";
 import {
+  DOMESTIC_INTEREST_LIST_DEFS,
+  type DomesticInterestGroupId,
+  type DomesticInterestListDef,
+} from "@/lib/constants/domestic-interest-lists";
+import {
   GLOBAL_ADVENTURE_LIST_DEFS,
   type GlobalAdventureGroupId,
   type GlobalAdventureListDef,
@@ -12,7 +17,7 @@ import { DEFAULT_SEARCH_FILTERS } from "@/lib/types/program";
 
 export type GradeBand = "high-school" | "middle-school" | "all-grades";
 
-export type PredefinedListKind = "category-grade" | "global-adventure";
+export type PredefinedListKind = "category-grade" | "global-adventure" | "domestic-interest";
 
 export type PredefinedList = {
   slug: string;
@@ -29,6 +34,7 @@ export type PredefinedList = {
   description: string;
   lockedFilters: Partial<SearchFilters>;
   globalAdventureGroup?: GlobalAdventureGroupId;
+  domesticInterestGroup?: DomesticInterestGroupId;
 };
 
 const MIDDLE_SCHOOL_GRADES = [6, 7, 8] as const;
@@ -113,10 +119,36 @@ function buildGlobalAdventureList(def: GlobalAdventureListDef): PredefinedList {
     linkLabel: def.linkLabel,
     titleLabel,
     audienceLabel: "students in grades 6–12",
-    description: `${titleLabel} for students in grades 6–12. Select more filters below to refine your search.`,
+    description: `International ${titleLabel.toLowerCase()} outside the US for students in grades 6–12. Select more filters below to refine your search.`,
     lockedFilters: {
       gradesCompleted: [...GRADE_CHIPS],
       dataQuery: def.dataQuery,
+      internationalOnly: true,
+    },
+  };
+}
+
+function buildDomesticInterestList(def: DomesticInterestListDef): PredefinedList {
+  const titleLabel = def.titleLabel ?? `${def.linkLabel} programs`;
+  const description =
+    def.group === "where"
+      ? `${titleLabel} in the United States for students in grades 6–12. Select more filters below to refine your search.`
+      : `US ${titleLabel.toLowerCase()} for students in grades 6–12. Select more filters below to refine your search.`;
+
+  return {
+    slug: def.slug,
+    kind: "domestic-interest",
+    gradeBand: "all-grades",
+    domesticInterestGroup: def.group,
+    exploreLabel: def.linkLabel,
+    linkLabel: def.linkLabel,
+    titleLabel,
+    audienceLabel: "students in grades 6–12",
+    description,
+    lockedFilters: {
+      gradesCompleted: [...GRADE_CHIPS],
+      dataQuery: def.dataQuery,
+      usOnly: true,
     },
   };
 }
@@ -130,9 +162,13 @@ const CATEGORY_GRADE_LISTS: PredefinedList[] = PROGRAM_CATEGORIES.flatMap((categ
 export const GLOBAL_ADVENTURE_LISTS: PredefinedList[] =
   GLOBAL_ADVENTURE_LIST_DEFS.map(buildGlobalAdventureList);
 
+export const DOMESTIC_INTEREST_LISTS: PredefinedList[] =
+  DOMESTIC_INTEREST_LIST_DEFS.map(buildDomesticInterestList);
+
 export const PREDEFINED_LISTS: PredefinedList[] = [
   ...CATEGORY_GRADE_LISTS,
   ...GLOBAL_ADVENTURE_LISTS,
+  ...DOMESTIC_INTEREST_LISTS,
 ];
 
 export function getPredefinedListBySlug(slug: string): PredefinedList | undefined {
@@ -151,6 +187,16 @@ export function getGlobalAdventureListsByGroup(
   groupId: GlobalAdventureGroupId,
 ): PredefinedList[] {
   return GLOBAL_ADVENTURE_LISTS.filter((list) => list.globalAdventureGroup === groupId);
+}
+
+export function getDomesticInterestLists(): PredefinedList[] {
+  return DOMESTIC_INTEREST_LISTS;
+}
+
+export function getDomesticInterestListsByGroup(
+  groupId: DomesticInterestGroupId,
+): PredefinedList[] {
+  return DOMESTIC_INTEREST_LISTS.filter((list) => list.domesticInterestGroup === groupId);
 }
 
 export function getPredefinedListForCategory(

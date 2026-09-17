@@ -52,6 +52,7 @@ export function isFilterItemLocked(
   if (item.key === "credit" && lockedFilters.collegeCreditOnly) return true;
   if (item.key === "funded" && lockedFilters.fullyFundedOnly) return true;
   if (item.key === "us" && lockedFilters.usOnly) return true;
+  if (item.key === "international" && lockedFilters.internationalOnly) return true;
   if (item.key === "unknown-price" && lockedFilters.excludeUnknownPrice) return true;
   if (item.key === "data-query" && lockedFilters.dataQuery?.trim()) return true;
   if (item.key === "exclude-location" && lockedFilters.excludeLocation?.trim()) return true;

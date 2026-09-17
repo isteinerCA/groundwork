@@ -1,4 +1,4 @@
-export type GlobalAdventureGroupId = "where" | "what" | "dream-bigger";
+export type GlobalAdventureGroupId = "where" | "what";
 
 export type GlobalAdventureGroup = {
   id: GlobalAdventureGroupId;
@@ -16,7 +16,6 @@ export type GlobalAdventureListDef = {
 export const GLOBAL_ADVENTURE_GROUPS: GlobalAdventureGroup[] = [
   { id: "where", title: "Where do you want to go?" },
   { id: "what", title: "What do you want to do?" },
-  { id: "dream-bigger", title: "Dream bigger" },
 ];
 
 export const GLOBAL_ADVENTURE_LIST_DEFS: GlobalAdventureListDef[] = [
@@ -39,6 +38,20 @@ export const GLOBAL_ADVENTURE_LIST_DEFS: GlobalAdventureListDef[] = [
   { slug: "africa-programs", linkLabel: "Africa", dataQuery: "africa", group: "where" },
   { slug: "spain-programs", linkLabel: "Spain", dataQuery: "spain", group: "where" },
   { slug: "italy-programs", linkLabel: "Italy", dataQuery: "italy", group: "where" },
+  {
+    slug: "south-korea-programs",
+    linkLabel: "South Korea",
+    dataQuery: "south korea",
+    group: "where",
+  },
+  { slug: "ireland-programs", linkLabel: "Ireland", dataQuery: "ireland", group: "where" },
+  { slug: "iceland-programs", linkLabel: "Iceland", dataQuery: "iceland", group: "where" },
+  {
+    slug: "caribbean-programs",
+    linkLabel: "Caribbean",
+    dataQuery: "caribbean",
+    group: "where",
+  },
   {
     slug: "sea-turtle-programs",
     linkLabel: "Sea turtles",
@@ -75,8 +88,28 @@ export const GLOBAL_ADVENTURE_LIST_DEFS: GlobalAdventureListDef[] = [
     slug: "kilimanjaro-programs",
     linkLabel: "Kilimanjaro",
     dataQuery: "kilimanjaro",
-    group: "dream-bigger",
+    group: "what",
   },
-  { slug: "safari-programs", linkLabel: "Safari", dataQuery: "safari", group: "dream-bigger" },
-  { slug: "sailing-programs", linkLabel: "Sailing", dataQuery: "sailing", group: "dream-bigger" },
+  { slug: "safari-programs", linkLabel: "Safari", dataQuery: "safari", group: "what" },
+  { slug: "sailing-programs", linkLabel: "Sailing", dataQuery: "sailing", group: "what" },
+  { slug: "fashion-programs", linkLabel: "Fashion", dataQuery: "fashion", group: "what" },
+  {
+    slug: "photography-programs",
+    linkLabel: "Photography",
+    dataQuery: "photography",
+    group: "what",
+  },
+  {
+    slug: "architecture-programs",
+    linkLabel: "Architecture",
+    dataQuery: "architecture",
+    group: "what",
+  },
+  {
+    slug: "veterinary-studies-programs",
+    linkLabel: "Veterinary studies",
+    dataQuery: "veterinary",
+    group: "what",
+    titleLabel: "Veterinary studies programs",
+  },
 ];
