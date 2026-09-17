@@ -708,11 +708,29 @@
     }
   },
   {
+    "match": { "programGroupId": "summerdiscovery-ucla-middle-school" },
+    "dayToDay": {
+      "notes": "Residential Middle School students have dedicated floors exclusively for Summer Discovery in Centennial Hall, fully air-conditioned, near basketball/tennis courts and open fields. Commuter students specifically at the Middle School level are NOT permitted to attend evening or off-campus activities/excursions - a real restriction distinct from the High School commuter policy, which does allow broader participation.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Summer Discovery UCLA campus page and third-party summer program aggregator (summerapply.com), cross-referenced against confirmed current pricing",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
     "match": { "programGroupId": "summerdiscovery-ucla" },
     "dayToDay": {
       "notes": "At UCLA, High School students have an exclusive residence hall not shared with any other program (Hedrick Summit), fully air-conditioned. Tuition includes academic instruction, housing, 2 meals/day (lunch and dinner), and extracurricular activities/excursions every afternoon, evening, and weekend, plus use of athletic/recreation facilities. International students pay an additional registration fee ($379 residential / $239 commuter) covering medical insurance and airport transfers. A completion certificate and letter of recognition are issued per course/academy taken.",
       "sourceType": "official_policy",
       "sourceCitation": "Summer Discovery UCLA campus page (summerdiscovery.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "summerdiscovery-yale-university-middle-school" },
+    "dayToDay": {
+      "notes": "Runs alongside Yale's High School Institute for the Gifted program on the same campus during the same 3-week window (Jul 3-23), though with separate staff, classes, and age-appropriate structure per Summer Discovery's general policy of keeping Middle School and High School operationally distinct. Tuition includes 2-3 meals per day, 7 days per week, plus extracurricular activities and excursions every afternoon, evening, and weekend, and use of athletic/recreation facilities.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Summer Discovery Yale University campus page (High School-level confirmation); Middle-School-specific policy details not independently confirmed for this campus.",
       "verifiedAt": "2026-09-15"
     }
   },
@@ -749,6 +767,24 @@
       "notes": "Structured as one-week course modules with a two-week minimum enrollment; nearly the entire course roster (Individual Courses and Academies alike) repeats identically across all three 2-week sessions, so a family's choice of session mainly comes down to timing rather than course availability. Students can combine two consecutive 2-week sessions into a 4-week stay at a discount versus booking them separately.",
       "sourceType": "official_policy",
       "sourceCitation": "Summer Discovery University of Michigan campus and course listing pages (summerdiscovery.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "summerdiscovery-bryn-mawr-college-middle-school" },
+    "dayToDay": {
+      "notes": "Bryn Mawr's campus is noted for its architecture, often compared to Hogwarts. This is a commuter-only campus (no residential option). Included in the day: supervised outdoor playtime with games/sports (weather permitting), lunch daily at the Dining Commons, and mid-class outdoor breaks in the courtyard. The best airport for families flying in is Philadelphia International (PHL).",
+      "sourceType": "official_policy",
+      "sourceCitation": "Summer Discovery Bryn Mawr College campus page (summerdiscovery.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "summerdiscovery-georgetown-university-middle-school" },
+    "dayToDay": {
+      "notes": "Runs with separate staff, schedule, and activities from Georgetown's High School program, consistent with Summer Discovery's general policy of keeping Middle School and High School operationally distinct even on the same campus.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Summer Discovery general Middle School program pages (summerdiscovery.com)",
       "verifiedAt": "2026-09-15"
     }
   },

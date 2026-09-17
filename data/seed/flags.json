@@ -106,7 +106,7 @@
     ]
   },
   {
-    "match": { "nameIncludes": "Overland Summers" },
+    "match": { "nameIncludes": "Overland -" },
     "flags": [
       {
         "id": "overland-staff-pay",
@@ -166,6 +166,19 @@
         "body": "The org states these trips 'require dedication to learning a language' - students are expected to speak the target language roughly 2 hours/day outside of formal class time, not just attend casual language exposure activities.",
         "sourceCitation": "Overland Summers Language & Hiking trip pages",
         "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": { "programGroupId": "summerdiscovery-ucla-middle-school" },
+    "flags": [
+      {
+        "id": "summerdiscovery-ucla-ms-commuter-restriction",
+        "type": "policy",
+        "title": "Middle School commuters cannot attend evening or off-campus activities",
+        "body": "Unlike the High School commuter track, Middle School commuter students at UCLA are explicitly excluded from evening programming and off-campus excursions - a meaningful day-to-day difference for families considering the commuter option specifically for a middle schooler.",
+        "sourceCitation": "summerapply.com Middle School Enrichment Programs at UCLA listing (secondary source, not the primary Summer Discovery site directly)",
+        "severity": "warning"
       }
     ]
   },
