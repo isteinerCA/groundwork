@@ -27,6 +27,24 @@
     }
   },
   {
+    "match": { "programGroupId": "bccymca-camp-becket" },
+    "dayToDay": {
+      "notes": "Rustic, traditional overnight camp centered on cabin-group living, with cabin community and staff role models framed as the core of the program. Tiered pricing lets families self-select an affordable tuition level without affecting the camper's experience - the tier chosen is kept confidential.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Camp Becket program pages and BCCYMCA Dates & Rates page (bccymca.org)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "bccymca-chimney-corners" },
+    "dayToDay": {
+      "notes": "Rustic, traditional overnight camp for girls and gender non-binary campers who prefer female housing, centered on cabin-group living. Same tiered, confidential pricing model as Camp Becket.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Chimney Corners program pages and BCCYMCA Dates & Rates page (bccymca.org)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
     "match": { "programGroupId": "catalina-sea-camp" },
     "dayToDay": {
       "notes": "This is an island-based residential camp with structured cabin groups of about 8-10 campers per counselor; certified dive staff supervise at closer ratios (1 instructor per 4 campers for scuba certification, 1 per 8 for snorkeling). There is no phone contact between parents and campers at all during a session - the camp states this is an intentional independence policy, not just a logistics limitation. The only outbound communication is one-way: parents get 5 free email credits per camper per week (more purchasable), and campers can write letters, but there's no video call or phone option. In-session visits or tours from parents are not permitted. A registered nurse is on-site for the full summer.",
