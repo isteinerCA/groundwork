@@ -1018,6 +1018,42 @@
     }
   },
   {
+    "match": {
+      "programGroupId": [
+        "tft-usa-ms-aloha-hawaii",
+        "tft-usa-ms-hawaii-california",
+        "tft-usa-ms-hello-california",
+        "tft-usa-ms-national-park-adventure",
+        "tft-usa-ms-national-park-california",
+        "tft-usa-ms-florida-keys-service-adventure"
+      ]
+    },
+    "dayToDay": {
+      "notes": "As with TFT's other Middle School itineraries, pacing is more relaxed than the equivalent grades 9-10 versions, designed to ease younger, often first-time-abroad travelers into group travel. As with all TFT programs, specific accommodation names are not published in advance for safety reasons.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens United States destination page and general Middle School program framing (travelforteens.com/unitedstates)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "tft-europe-ms-bonjour-paris-cheerio-london",
+        "tft-europe-ms-ciao-italy",
+        "tft-europe-ms-greece-italy",
+        "tft-europe-ms-spain-portugal",
+        "tft-europe-ms-rome-amalfi-coast-explorer",
+        "tft-europe-ms-greece-island-hopping"
+      ]
+    },
+    "dayToDay": {
+      "notes": "TFT's Middle School Europe itineraries are consistently described as relaxed-pace versions of the equivalent high school trips - fewer overnight-city transitions, slower daily rhythm, and designed to ease first-time-abroad travelers into group travel. As with all TFT programs, specific accommodation names are not published in advance for safety reasons.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Europe country destination pages (France, Italy, Greece, Spain, Portugal)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
     "match": { "programGroupId": "tft-alaska-adventure-service" },
     "dayToDay": {
       "notes": "Accommodation is a mix of modern hotels and comfortable, unique family-run lodging, all vetted and supervised by trip leaders present 24/7. As with all TFT programs, specific accommodation names are not published in advance for safety reasons. Alaska activities include sea kayaking, hiking near glaciers, whitewater rafting, and a sled-cart ride with husky puppies.",
