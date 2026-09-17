@@ -33,10 +33,10 @@ export function FilterResultsCounter({
         </p>
         <button
           type="button"
-          onClick={scrollToRefineFilters}
+          onClick={scrollToFineTune}
           className="btn btn-secondary mt-2.5 w-full px-3 py-2 text-sm lg:hidden"
         >
-          Refine filters
+          Step 2 · Fine-tune
         </button>
       </div>
     );
@@ -57,10 +57,10 @@ export function FilterResultsCounter({
         </button>
         <button
           type="button"
-          onClick={scrollToRefineFilters}
+          onClick={scrollToFineTune}
           className="btn btn-secondary px-3 py-2 text-sm"
         >
-          Refine filters
+          Step 2 · Fine-tune
         </button>
       </div>
     </div>

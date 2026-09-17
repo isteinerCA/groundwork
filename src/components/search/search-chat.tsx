@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { btnPrimary } from "@/components/ui/button-styles";
 import { logChatEvent } from "@/lib/chat-analytics";
 import { chatQueryPreview, gaString, trackEvent } from "@/lib/analytics";
@@ -15,6 +15,9 @@ interface ChatMessage {
   role: "assistant" | "user";
   text: string;
 }
+
+const INPUT_PLACEHOLDER =
+  'e.g. "in California only", "under $6000", or "Costa Rica Service"';
 
 export function SearchChat({
   filters,
@@ -34,59 +37,10 @@ export function SearchChat({
   const [collapsed, setCollapsed] = useState(false);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [messages, setMessages] = useState<ChatMessage[]>(() => [
-    {
-      id: "welcome",
-      role: "assistant",
-      text: 'Try plain English like "in California only", "under $6000", or "Costa Rica Service".',
-    },
-  ]);
+  const [messages, setMessages] = useState<ChatMessage[]>([]);
   const listRef = useRef<HTMLDivElement>(null);
 
   const openingHint = getOpeningHint({ filters, resultCount });
-
-  const refreshKey = useMemo(
-    () =>
-      JSON.stringify({
-        grades: filters.gradesCompleted,
-        categories: filters.categories,
-        admissionTypes: filters.admissionTypes,
-        formats: filters.formats,
-        durationBuckets: filters.durationBuckets,
-        minDurationWeeks: filters.minDurationWeeks,
-        maxDurationWeeks: filters.maxDurationWeeks,
-        priceFilter: filters.priceFilter,
-        maxPrice: filters.maxPrice,
-        minPrice: filters.minPrice,
-        collegeCreditOnly: filters.collegeCreditOnly,
-        fullyFundedOnly: filters.fullyFundedOnly,
-        usOnly: filters.usOnly,
-        excludeUnknownPrice: filters.excludeUnknownPrice,
-        dataQuery: filters.dataQuery,
-        excludeLocation: filters.excludeLocation,
-        includeRegions: filters.includeRegions,
-        includeLocations: filters.includeLocations,
-        includeMonths: filters.includeMonths,
-        excludeMonths: filters.excludeMonths,
-        dateWindowStart: filters.dateWindowStart,
-        dateWindowEnd: filters.dateWindowEnd,
-        resultCount,
-      }),
-    [filters, resultCount],
-  );
-
-  const [hintPulse, setHintPulse] = useState(false);
-  const hasUserMessages = messages.some((message) => message.role === "user");
-  const visibleMessages = messages.filter(
-    (message) => message.id !== "welcome" || !hasUserMessages,
-  );
-
-  useEffect(() => {
-    if (filters.gradesCompleted.length === 0) return;
-    setHintPulse(true);
-    const timer = window.setTimeout(() => setHintPulse(false), 2600);
-    return () => window.clearTimeout(timer);
-  }, [refreshKey, filters.gradesCompleted.length]);
 
   useEffect(() => {
     listRef.current?.scrollTo({ top: listRef.current.scrollHeight, behavior: "smooth" });
@@ -108,7 +62,6 @@ export function SearchChat({
 
     try {
       const history = [...messages, userMessage]
-        .filter((m) => m.id !== "welcome")
         .slice(-6)
         .map((m) => ({ role: m.role, text: m.text }));
 
@@ -231,26 +184,12 @@ export function SearchChat({
             : "overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]"
         }
       >
-        <div
-          className={`flex items-center justify-between px-4 py-3 ${
-            inPanel
-              ? "border-b border-[var(--color-border)] bg-[var(--color-sage-soft)]/35"
-              : "border-b border-[var(--color-border)] bg-[var(--color-parchment-dark)]/40"
-          }`}
-        >
+        <div className="flex items-center justify-between border-b border-[var(--color-border)] bg-white px-4 py-3">
           <div className="min-w-0 flex-1">
             <p className="text-xs font-semibold tracking-wide text-[var(--color-navy)] uppercase">
               Search assistant
             </p>
-            <p
-              className={`mt-1 rounded-[var(--radius-sm)] border border-transparent px-1 py-0.5 text-sm transition-colors ${
-                hintPulse
-                  ? "assistant-hint-pulse border-[var(--color-sage)] font-medium text-[var(--color-navy)]"
-                  : "text-[var(--color-text-muted)]"
-              }`}
-            >
-              {openingHint}
-            </p>
+            <p className="mt-1 text-sm text-[var(--color-text-muted)]">{openingHint}</p>
           </div>
           <button
             type="button"
@@ -264,28 +203,30 @@ export function SearchChat({
 
         {!collapsed && (
           <>
-            <div
-              ref={listRef}
-              className={`space-y-3 overflow-y-auto px-4 py-3 text-sm ${
-                embedded ? "max-h-48 lg:max-h-56" : "max-h-64 lg:max-h-[420px]"
-              }`}
-            >
-              {visibleMessages.map((message) => (
-                <div
-                  key={message.id}
-                  className={
-                    message.role === "user"
-                      ? "ml-6 rounded-[var(--radius-md)] bg-[var(--color-navy)] px-3 py-2 text-white"
-                      : "mr-4 rounded-[var(--radius-md)] bg-[var(--color-parchment-dark)] px-3 py-2 text-[var(--color-text)]"
-                  }
-                >
-                  {message.text}
-                </div>
-              ))}
-            </div>
+            {messages.length > 0 && (
+              <div
+                ref={listRef}
+                className={`space-y-3 overflow-y-auto border-b border-[var(--color-border)] px-4 py-3 text-sm ${
+                  embedded ? "max-h-48 lg:max-h-56" : "max-h-64 lg:max-h-[420px]"
+                }`}
+              >
+                {messages.map((message) => (
+                  <div
+                    key={message.id}
+                    className={
+                      message.role === "user"
+                        ? "ml-6 rounded-[var(--radius-md)] bg-[var(--color-navy)] px-3 py-2 text-white"
+                        : "mr-4 rounded-[var(--radius-md)] bg-[var(--color-parchment-dark)] px-3 py-2 text-[var(--color-text)]"
+                    }
+                  >
+                    {message.text}
+                  </div>
+                ))}
+              </div>
+            )}
 
             <form
-              className="border-t border-[var(--color-border)] p-3"
+              className="p-3"
               onSubmit={(e) => {
                 e.preventDefault();
                 void send();
@@ -299,7 +240,7 @@ export function SearchChat({
                   id="search-chat-input"
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
-                  placeholder='e.g. "in California only"'
+                  placeholder={INPUT_PLACEHOLDER}
                   disabled={isLoading}
                   className="min-w-0 flex-1 rounded-[var(--radius-md)] border border-[var(--color-border)] px-3 py-2 text-sm disabled:opacity-60"
                 />

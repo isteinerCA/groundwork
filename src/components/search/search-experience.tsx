@@ -560,17 +560,17 @@ export function SearchExperience({
                       </p>
                     )}
                     {resultGroupCount >= MANY_SEARCH_RESULTS_THRESHOLD && (
-                      <div className="mt-3 rounded-[var(--radius-md)] border border-[var(--color-amber)]/50 bg-white/70 px-3 py-2.5 lg:hidden">
+                      <div className="mt-3 rounded-[var(--radius-md)] border border-[var(--color-amber)] bg-[var(--color-parchment)] px-3 py-2.5 max-lg:block lg:hidden">
                         <p className="text-sm text-[var(--color-navy)]">
-                          {resultGroupCount} programs is a lot to scan — use Step 2 to narrow by
-                          location, theme, or specific dates.
+                          {resultGroupCount} programs is a lot to scan — narrow with Step 2 (plain
+                          English or active filters).
                         </p>
                         <button
                           type="button"
                           onClick={scrollToFineTune}
                           className="btn btn-secondary mt-2 w-full px-3 py-2 text-sm"
                         >
-                          Go to Step 2 · Fine-tune
+                          Back to Step 2 · Fine-tune
                         </button>
                       </div>
                     )}

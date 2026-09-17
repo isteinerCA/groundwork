@@ -1315,5 +1315,23 @@
       "sourceCitation": "CIEE Wildlife Conservation (Sydney) program page",
       "verifiedAt": "2026-09-15"
     }
+  },
+  {
+    "match": { "programGroupId": "ciee-botswana-gaborone-wildlife-conservation" },
+    "dayToDay": {
+      "notes": "Homestay-based at Mokolodi Nature Reserve on the outskirts of Gaborone, described by CIEE as a 'living lab.' Hands-on habitat-care work included (e.g., cleaning vulture ponds, tortoise enclosures) alongside sanctuary staff. Camping is part of the Okavango Delta excursion.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Wildlife Conservation (Gaborone) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-botswana-gaborone-leadership-service-public-health" },
+    "dayToDay": {
+      "notes": "Homestay-based; host families share home-cooked meals (e.g., seswaa, bogobe). Students conduct health assessments and help implement a health fair in a rural Botswana community, working alongside local community-based organizations. Includes a meeting with local high school students to discuss teen health challenges in the region, and an excursion to the Okavango Delta.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Leadership & Service in Public Health (Gaborone) program page",
+      "verifiedAt": "2026-09-15"
+    }
   }
 ]

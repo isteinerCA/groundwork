@@ -1000,5 +1000,18 @@
         "severity": "warning"
       }
     ]
+  },
+  {
+    "match": { "programGroupId": "ciee-belgium-brussels-diplomacy-government" },
+    "flags": [
+      {
+        "id": "ciee-belgium-correction",
+        "type": "policy",
+        "title": "Correction: Belgium does have a CIEE High School Summer Abroad program",
+        "body": "An earlier pass concluded Belgium had no standalone summer program, based on blog posts describing Brussels only as an excursion destination. That was incorrect - Diplomacy & Government (Brussels) is a genuine, newly-launched 2027 program. The excursion-themed blog posts were describing trips FROM the related Amsterdam/Tallinn programs, which coincidentally visit Brussels as part of their own itineraries.",
+        "sourceCitation": "CIEE Diplomacy & Government (Brussels) program page",
+        "severity": "info"
+      }
+    ]
   }
 ]
