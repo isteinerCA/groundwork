@@ -980,5 +980,18 @@
         "severity": "info"
       }
     ]
+  },
+  {
+    "match": { "programGroupId": "arcc-australia-fiji" },
+    "flags": [
+      {
+        "id": "arcc-aus-fiji-age-range-unconfirmed",
+        "type": "policy",
+        "title": "Age range sourced from third party, not directly confirmed",
+        "body": "A recent comparison source states this program is open to ages 13-18, a notably wider range than ARCC's typical '9th-12th current grade' pattern. This wasn't independently confirmed via a direct ARCC page fetch and is worth verifying before treating as final.",
+        "sourceCitation": "Third-party comparison site (rusticpathways.com)",
+        "severity": "info"
+      }
+    ]
   }
 ]
