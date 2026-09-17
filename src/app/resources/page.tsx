@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
+import { GlobalAdventureProgramsSection } from "@/components/resources/global-adventure-programs-section";
 import { PredefinedListLinks } from "@/components/resources/predefined-list-links";
 import { ResourceSectionHeader } from "@/components/resources/resource-section-header";
 import { getListsByGradeBand } from "@/lib/constants/predefined-lists";
@@ -57,6 +58,8 @@ export default function ResourcesPage() {
             );
           })}
         </div>
+
+        <GlobalAdventureProgramsSection />
 
         <section className="mt-14 overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-sage)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]">
           <ResourceSectionHeader

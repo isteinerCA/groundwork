@@ -28,6 +28,20 @@ export function getListsIndexBreadcrumbs(): BreadcrumbItem[] {
 }
 
 export function getPredefinedListBreadcrumbs(list: PredefinedList): BreadcrumbItem[] {
+  if (list.kind === "global-adventure") {
+    return [
+      { label: "Resources", href: "/resources" },
+      {
+        label: "Explore Global & Adventure Programs",
+        href: "/resources#global-adventure",
+      },
+      {
+        label: predefinedListPageTitle(list),
+        href: `/resources/lists/${list.slug}`,
+      },
+    ];
+  }
+
   return [
     { label: "Resources", href: "/resources" },
     { label: "Pre-defined lists", href: "/resources/lists" },

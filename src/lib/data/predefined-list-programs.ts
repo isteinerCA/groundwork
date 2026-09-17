@@ -5,7 +5,14 @@ import type { Program } from "@/lib/types/program";
 import { DEFAULT_SEARCH_FILTERS } from "@/lib/types/program";
 
 export function predefinedListPageTitle(list: PredefinedList): string {
+  if (list.kind === "global-adventure") {
+    return `Start exploring ${list.titleLabel}`;
+  }
   return `Start exploring ${list.titleLabel} for ${list.audienceLabel}`;
+}
+
+export function predefinedListLinkLabel(list: PredefinedList): string {
+  return list.linkLabel;
 }
 
 export function programListLabel(program: Program): string {

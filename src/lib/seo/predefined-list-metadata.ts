@@ -8,7 +8,10 @@ import { OPEN_GRAPH_IMAGE, TWITTER_CARD_METADATA } from "@/lib/seo/og-image";
 export function buildPredefinedListMetadata(list: PredefinedList): Metadata {
   const pageTitle = predefinedListPageTitle(list);
   const url = absoluteUrl(`/resources/lists/${list.slug}`);
-  const documentTitle = `${list.titleLabel} for ${list.audienceLabel} · Pre-defined lists · ${SITE_NAME}`;
+  const documentTitle =
+    list.kind === "global-adventure"
+      ? `${list.titleLabel} · Explore Global & Adventure · ${SITE_NAME}`
+      : `${list.titleLabel} for ${list.audienceLabel} · Pre-defined lists · ${SITE_NAME}`;
 
   return {
     title: documentTitle,

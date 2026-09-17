@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { PredefinedList } from "@/lib/constants/predefined-lists";
+import { predefinedListLinkLabel } from "@/lib/data/predefined-list-programs";
 
 export function PredefinedListLinks({
   lists,
@@ -20,7 +21,7 @@ export function PredefinedListLinks({
               href={`/resources/lists/${list.slug}`}
               className="text-base leading-snug text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
             >
-              {list.titleLabel} for {list.audienceLabel}
+              {predefinedListLinkLabel(list)}
             </Link>
           </li>
         ))}
