@@ -106,77 +106,13 @@
     ]
   },
   {
-    "match": { "nameIncludes": "Overland -" },
-    "flags": [
-      {
-        "id": "overland-staff-pay",
-        "type": "turnover",
-        "title": "Low seasonal staff pay",
-        "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-        "sourceCitation": "Seasonal outdoor education compensation reporting",
-        "sourceDate": "2025-01-01",
-        "severity": "info"
-      }
-    ]
-  },
-  {
-    "match": { "programGroupId": "overland-norway-expedition" },
-    "flags": [
-      {
-        "id": "overland-norway-expedition-mandatory-training",
-        "type": "policy",
-        "title": "Requires a mandatory 4-week pre-trip training program",
-        "body": "Unlike most other Overland trips, this one requires students to complete a formal 4-week training program before departure - a genuine prerequisite, not just general fitness prep.",
-        "sourceCitation": "Overland Summers Norway Expedition page",
-        "severity": "warning"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": [
-        "overland-environmental-stewardship-montana",
-        "overland-environmental-stewardship-alaska",
-        "overland-environmental-stewardship-new-england"
-      ]
-    },
-    "flags": [
-      {
-        "id": "overland-stewardship-attitude-requirement",
-        "type": "policy",
-        "title": "Requires a positive attitude toward physical work",
-        "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
-        "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
-        "severity": "info"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": [
-        "overland-language-hiking-spain",
-        "overland-language-hiking-france"
-      ]
-    },
-    "flags": [
-      {
-        "id": "overland-language-commitment-requirement",
-        "type": "policy",
-        "title": "Requires genuine dedication to language learning",
-        "body": "The org states these trips 'require dedication to learning a language' - students are expected to speak the target language roughly 2 hours/day outside of formal class time, not just attend casual language exposure activities.",
-        "sourceCitation": "Overland Summers Language & Hiking trip pages",
-        "severity": "info"
-      }
-    ]
-  },
-  {
     "match": { "programGroupId": "summerdiscovery-ucla-middle-school" },
     "flags": [
       {
         "id": "summerdiscovery-ucla-ms-commuter-restriction",
         "type": "policy",
         "title": "Middle School commuters cannot attend evening or off-campus activities",
-        "body": "Unlike the High School commuter track, Middle School commuter students at UCLA are explicitly excluded from evening programming and off-campus excursions - a meaningful day-to-day difference for families considering the commuter option specifically for a middle schooler.",
+        "body": "Unlike the High School commuter track, Middle School commuter students at UCLA are explicitly excluded from evening programming and off-campus excursions.",
         "sourceCitation": "summerapply.com Middle School Enrichment Programs at UCLA listing (secondary source, not the primary Summer Discovery site directly)",
         "severity": "warning"
       }

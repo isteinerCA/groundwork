@@ -1,6 +1,6 @@
 {
   "verifiedAt": "2026-09-17",
-  "count": 987,
+  "count": 1016,
   "programs": [
     {
       "id": "prog-1",
@@ -32115,8 +32115,10 @@
       "institution": "Broadreach Inc.",
       "programGroupId": "broadreach-amazon-galapagos-eco",
       "description": "Field-station based expedition observing rare species across the Andes, Amazon, and Galapagos; 2 natural science college credits available.",
-      "category": "marine-science",
-      "secondaryTags": [],
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Marine Science"
+      ],
       "trackDetail": "Departure 1",
       "gradeDisplay": "Completing grades 9-12",
       "gradeCompletedMin": 9,
@@ -32166,8 +32168,10 @@
       "institution": "Broadreach Inc.",
       "programGroupId": "broadreach-amazon-galapagos-eco",
       "description": "Second departure.",
-      "category": "marine-science",
-      "secondaryTags": [],
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Marine Science"
+      ],
       "trackDetail": "Departure 2",
       "gradeDisplay": "Completing grades 9-12",
       "gradeCompletedMin": 9,
@@ -41783,7 +41787,7 @@
       "institution": "Adventures Cross-Country (ARCC)",
       "programGroupId": "arcc-ecuador-galapagos",
       "description": "Wildlife rescue center work, Amazon reforestation, and Galapagos snorkeling with sea lions and marine iguanas. Only one departure offered.",
-      "category": "marine-science",
+      "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Animals of the Amazon",
       "gradeDisplay": "Current grades 9-12",
@@ -41976,7 +41980,7 @@
           "id": "summerdiscovery-ucla-ms-commuter-restriction",
           "type": "policy",
           "title": "Middle School commuters cannot attend evening or off-campus activities",
-          "body": "Unlike the High School commuter track, Middle School commuter students at UCLA are explicitly excluded from evening programming and off-campus excursions - a meaningful day-to-day difference for families considering the commuter option specifically for a middle schooler.",
+          "body": "Unlike the High School commuter track, Middle School commuter students at UCLA are explicitly excluded from evening programming and off-campus excursions.",
           "sourceCitation": "summerapply.com Middle School Enrichment Programs at UCLA listing (secondary source, not the primary Summer Discovery site directly)",
           "severity": "warning"
         }
@@ -42035,7 +42039,7 @@
           "id": "summerdiscovery-ucla-ms-commuter-restriction",
           "type": "policy",
           "title": "Middle School commuters cannot attend evening or off-campus activities",
-          "body": "Unlike the High School commuter track, Middle School commuter students at UCLA are explicitly excluded from evening programming and off-campus excursions - a meaningful day-to-day difference for families considering the commuter option specifically for a middle schooler.",
+          "body": "Unlike the High School commuter track, Middle School commuter students at UCLA are explicitly excluded from evening programming and off-campus excursions.",
           "sourceCitation": "summerapply.com Middle School Enrichment Programs at UCLA listing (secondary source, not the primary Summer Discovery site directly)",
           "severity": "warning"
         }
@@ -50687,17 +50691,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/alaska-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -50748,17 +50742,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/alaska-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -50809,17 +50793,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/dolomite-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -50870,17 +50844,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/dolomite-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -50931,17 +50895,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/dolomite-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -50992,17 +50946,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/alpine-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -51053,17 +50997,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/alpine-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -51114,17 +51048,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/alpine-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -51175,17 +51099,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/iceland-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -51236,17 +51150,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/iceland-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -51297,17 +51201,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/iceland-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -51358,17 +51252,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/maine-coast-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -51419,17 +51303,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/maine-coast-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -51480,17 +51354,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/maine-coast-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -51541,17 +51405,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/mountains-sea-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -51602,17 +51456,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/mountains-sea-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -51663,17 +51507,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/mountains-sea-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -51724,17 +51558,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/new-england-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -51785,17 +51609,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/new-england-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -51846,17 +51660,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/new-england-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -51907,17 +51711,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/northwest-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -51968,17 +51762,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/northwest-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -52029,17 +51813,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/northwest-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -52090,17 +51864,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/norway-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -52151,17 +51915,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/norway-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -52212,17 +51966,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/rocky-mountain-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -52273,17 +52017,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/rocky-mountain-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -52334,17 +52068,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/rocky-mountain-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -52395,17 +52119,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/sierra-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -52456,17 +52170,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/sierra-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -52517,17 +52221,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/sierra-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -52578,17 +52272,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/yellowstone-teton-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -52639,17 +52323,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/yellowstone-teton-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -52700,17 +52374,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/explorer/yellowstone-teton-explorer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -52761,17 +52425,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/alaska-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -52822,17 +52476,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/alaska-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -52883,17 +52527,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/sierra-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -52944,17 +52578,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/sierra-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -53005,17 +52629,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/sierra-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -53066,17 +52680,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/iceland-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -53127,17 +52731,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/iceland-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -53188,17 +52782,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/iceland-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -53249,17 +52833,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/appalachian-trail-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -53310,17 +52884,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/appalachian-trail-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -53371,17 +52935,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/appalachian-trail-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -53432,17 +52986,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/northwest-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -53493,17 +53037,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/northwest-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -53554,17 +53088,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/northwest-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -53615,17 +53139,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/eastern-alps-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -53676,17 +53190,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/eastern-alps-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -53737,25 +53241,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/norway-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        },
-        {
-          "id": "overland-norway-expedition-mandatory-training",
-          "type": "policy",
-          "title": "Requires a mandatory 4-week pre-trip training program",
-          "body": "Unlike most other Overland trips, this one requires students to complete a formal 4-week training program before departure - a genuine prerequisite, not just general fitness prep.",
-          "sourceCitation": "Overland Summers Norway Expedition page",
-          "severity": "warning"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -53806,25 +53292,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/norway-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        },
-        {
-          "id": "overland-norway-expedition-mandatory-training",
-          "type": "policy",
-          "title": "Requires a mandatory 4-week pre-trip training program",
-          "body": "Unlike most other Overland trips, this one requires students to complete a formal 4-week training program before departure - a genuine prerequisite, not just general fitness prep.",
-          "sourceCitation": "Overland Summers Norway Expedition page",
-          "severity": "warning"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -53875,25 +53343,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/norway-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        },
-        {
-          "id": "overland-norway-expedition-mandatory-training",
-          "type": "policy",
-          "title": "Requires a mandatory 4-week pre-trip training program",
-          "body": "Unlike most other Overland trips, this one requires students to complete a formal 4-week training program before departure - a genuine prerequisite, not just general fitness prep.",
-          "sourceCitation": "Overland Summers Norway Expedition page",
-          "severity": "warning"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -53944,17 +53394,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/pyrenees-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -54005,17 +53445,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/pyrenees-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -54066,17 +53496,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/rocky-mountain-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -54127,17 +53547,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/rocky-mountain-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -54188,17 +53598,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/expedition/rocky-mountain-expedition/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -54249,17 +53649,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/challenge/alpine-challenge/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -54310,17 +53700,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/challenge/alpine-challenge/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -54371,17 +53751,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/challenge/kilimanjaro-challenge/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -54432,17 +53802,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/challenge/kilimanjaro-challenge/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -54493,17 +53853,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/challenge/teton-challenge/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -54554,17 +53904,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/challenge/teton-challenge/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -54617,25 +53957,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/language-hiking-spain/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        },
-        {
-          "id": "overland-language-commitment-requirement",
-          "type": "policy",
-          "title": "Requires genuine dedication to language learning",
-          "body": "The org states these trips 'require dedication to learning a language' - students are expected to speak the target language roughly 2 hours/day outside of formal class time, not just attend casual language exposure activities.",
-          "sourceCitation": "Overland Summers Language & Hiking trip pages",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -54688,25 +54010,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/language-hiking-spain/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        },
-        {
-          "id": "overland-language-commitment-requirement",
-          "type": "policy",
-          "title": "Requires genuine dedication to language learning",
-          "body": "The org states these trips 'require dedication to learning a language' - students are expected to speak the target language roughly 2 hours/day outside of formal class time, not just attend casual language exposure activities.",
-          "sourceCitation": "Overland Summers Language & Hiking trip pages",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -54759,25 +54063,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/language-hiking-france/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        },
-        {
-          "id": "overland-language-commitment-requirement",
-          "type": "policy",
-          "title": "Requires genuine dedication to language learning",
-          "body": "The org states these trips 'require dedication to learning a language' - students are expected to speak the target language roughly 2 hours/day outside of formal class time, not just attend casual language exposure activities.",
-          "sourceCitation": "Overland Summers Language & Hiking trip pages",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -54830,25 +54116,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/language-hiking-france/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        },
-        {
-          "id": "overland-language-commitment-requirement",
-          "type": "policy",
-          "title": "Requires genuine dedication to language learning",
-          "body": "The org states these trips 'require dedication to learning a language' - students are expected to speak the target language roughly 2 hours/day outside of formal class time, not just attend casual language exposure activities.",
-          "sourceCitation": "Overland Summers Language & Hiking trip pages",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -54899,25 +54167,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/environmental-stewardship-montana/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        },
-        {
-          "id": "overland-stewardship-attitude-requirement",
-          "type": "policy",
-          "title": "Requires a positive attitude toward physical work",
-          "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
-          "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -54968,25 +54218,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/environmental-stewardship-montana/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        },
-        {
-          "id": "overland-stewardship-attitude-requirement",
-          "type": "policy",
-          "title": "Requires a positive attitude toward physical work",
-          "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
-          "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -55037,25 +54269,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/environmental-stewardship-montana/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        },
-        {
-          "id": "overland-stewardship-attitude-requirement",
-          "type": "policy",
-          "title": "Requires a positive attitude toward physical work",
-          "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
-          "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -55106,25 +54320,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/environmental-stewardship-alaska/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        },
-        {
-          "id": "overland-stewardship-attitude-requirement",
-          "type": "policy",
-          "title": "Requires a positive attitude toward physical work",
-          "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
-          "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -55175,25 +54371,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/environmental-stewardship-alaska/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        },
-        {
-          "id": "overland-stewardship-attitude-requirement",
-          "type": "policy",
-          "title": "Requires a positive attitude toward physical work",
-          "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
-          "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -55244,25 +54422,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/environmental-stewardship-alaska/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        },
-        {
-          "id": "overland-stewardship-attitude-requirement",
-          "type": "policy",
-          "title": "Requires a positive attitude toward physical work",
-          "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
-          "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -55313,25 +54473,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/environmental-stewardship-new-england/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        },
-        {
-          "id": "overland-stewardship-attitude-requirement",
-          "type": "policy",
-          "title": "Requires a positive attitude toward physical work",
-          "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
-          "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -55382,25 +54524,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/environmental-stewardship-new-england/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        },
-        {
-          "id": "overland-stewardship-attitude-requirement",
-          "type": "policy",
-          "title": "Requires a positive attitude toward physical work",
-          "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
-          "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -55451,25 +54575,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/environmental-stewardship-new-england/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [
-        {
-          "id": "overland-staff-pay",
-          "type": "turnover",
-          "title": "Low seasonal staff pay",
-          "body": "Overland Summers staff typically earn $2,000–3,000 per summer. This compensation level may contribute to high staff turnover relative to longer-tenured outdoor programs.",
-          "sourceCitation": "Seasonal outdoor education compensation reporting",
-          "sourceDate": "2025-01-01",
-          "severity": "info"
-        },
-        {
-          "id": "overland-stewardship-attitude-requirement",
-          "type": "policy",
-          "title": "Requires a positive attitude toward physical work",
-          "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
-          "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
@@ -55477,6 +54583,1501 @@
         "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
         "verifiedAt": "2026-09-15"
       }
+    },
+    {
+      "id": "prog-988",
+      "slug": "tft-costa-rica-animal-rescue-service-11-days-departure",
+      "name": "TFT - Costa Rica Animal Rescue Service (11 Days)",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-costa-rica-animal-rescue-11-days",
+      "description": "Community service at an animal rescue/rehabilitation center, plus adventure activities.",
+      "category": "biomedical",
+      "secondaryTags": [
+        "Community Development"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "11 days",
+      "lengthMinDays": 11,
+      "lengthMaxDays": 11,
+      "datesDisplay": "Jun 30 – Jul 10, 2027",
+      "dateStart": "2027-06-30",
+      "dateEnd": "2027-07-10",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Costa Rica",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,395 list / $4,195 with promotional discount",
+      "priceMin": 4195,
+      "priceMax": 4395,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/costa-rica-animal-rescue-service-11-days/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "TFT does not publish specific accommodation names for safety reasons (families get this after registering, via a secure parent portal) - generally small, centrally located, family-run hotels rather than large chain hotels. Tuition includes ground transportation, accommodation, chaperones/guides, program activities, taxes/tips, and all meals; airfare, visas, and personal expenses are not included, though an optional group flight is typically offered. Over 75% of TFT travelers come independently (not with a friend), which the org frames as encouraging new friendships. Dietary restrictions (vegetarian, vegan, gluten-free, etc.) are fully accommodated.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Costa Rica Service program page and general Costa Rica destination page (travelforteens.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-989",
+      "slug": "tft-costa-rica-animal-rescue-service-21-days-departure",
+      "name": "TFT - Costa Rica Animal Rescue Service (21 Days)",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-costa-rica-animal-rescue-21-days",
+      "description": "Extended 21-day version of the same animal rescue service program.",
+      "category": "biomedical",
+      "secondaryTags": [
+        "Community Development"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "21 days",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "Jun 30 – Jul 20, 2027",
+      "dateStart": "2027-06-30",
+      "dateEnd": "2027-07-20",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Costa Rica",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$7,895 list / $7,105 with promotional discount",
+      "priceMin": 7105,
+      "priceMax": 7895,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/costa-rica-animal-rescue-service/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "TFT does not publish specific accommodation names for safety reasons (families get this after registering, via a secure parent portal) - generally small, centrally located, family-run hotels rather than large chain hotels. Tuition includes ground transportation, accommodation, chaperones/guides, program activities, taxes/tips, and all meals; airfare, visas, and personal expenses are not included, though an optional group flight is typically offered. Over 75% of TFT travelers come independently (not with a friend), which the org frames as encouraging new friendships. Dietary restrictions (vegetarian, vegan, gluten-free, etc.) are fully accommodated.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Costa Rica Service program page and general Costa Rica destination page (travelforteens.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-990",
+      "slug": "tft-costa-rica-healthcare-education-medical-outreach-departure",
+      "name": "TFT - Costa Rica Healthcare Education & Medical Outreach",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-costa-rica-healthcare-education",
+      "description": "Healthcare education and medical outreach community service program.",
+      "category": "biomedical",
+      "secondaryTags": [
+        "Community Development"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "11 days",
+      "lengthMinDays": 11,
+      "lengthMaxDays": 11,
+      "datesDisplay": "Jul 11–21, 2027",
+      "dateStart": "2027-07-11",
+      "dateEnd": "2027-07-21",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Costa Rica",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,955 list / $4,459 with promotional discount",
+      "priceMin": 4459,
+      "priceMax": 4955,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/costa-rica-healthcare-education-medical-outreach/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "TFT does not publish specific accommodation names for safety reasons (families get this after registering, via a secure parent portal) - generally small, centrally located, family-run hotels rather than large chain hotels. Tuition includes ground transportation, accommodation, chaperones/guides, program activities, taxes/tips, and all meals; airfare, visas, and personal expenses are not included, though an optional group flight is typically offered. Over 75% of TFT travelers come independently (not with a friend), which the org frames as encouraging new friendships. Dietary restrictions (vegetarian, vegan, gluten-free, etc.) are fully accommodated.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Costa Rica Service program page and general Costa Rica destination page (travelforteens.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-991",
+      "slug": "tft-costa-rica-surf-service-departure",
+      "name": "TFT - Costa Rica Surf & Service",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-costa-rica-surf-service",
+      "description": "Surfing combined with community service.",
+      "category": "leadership-gifted",
+      "secondaryTags": [],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "11 days",
+      "lengthMinDays": 11,
+      "lengthMaxDays": 11,
+      "datesDisplay": "Jun 30 – Jul 10, 2027",
+      "dateStart": "2027-06-30",
+      "dateEnd": "2027-07-10",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Costa Rica",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,595 list / $4,135 with promotional discount",
+      "priceMin": 4135,
+      "priceMax": 4595,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/costa-rica-surf-service/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "TFT does not publish specific accommodation names for safety reasons (families get this after registering, via a secure parent portal) - generally small, centrally located, family-run hotels rather than large chain hotels. Tuition includes ground transportation, accommodation, chaperones/guides, program activities, taxes/tips, and all meals; airfare, visas, and personal expenses are not included, though an optional group flight is typically offered. Over 75% of TFT travelers come independently (not with a friend), which the org frames as encouraging new friendships. Dietary restrictions (vegetarian, vegan, gluten-free, etc.) are fully accommodated.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Costa Rica Service program page and general Costa Rica destination page (travelforteens.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-992",
+      "slug": "tft-costa-rica-spanish-language-immersion-service-11-days-departure",
+      "name": "TFT - Costa Rica: Spanish Language Immersion & Service (11 Days)",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-costa-rica-spanish-language-immersion-11-days",
+      "description": "Spanish language immersion combined with community service.",
+      "category": "cultural-exchange",
+      "secondaryTags": [
+        "Community Development"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "11 days",
+      "lengthMinDays": 11,
+      "lengthMaxDays": 11,
+      "datesDisplay": "Jul 11–21, 2027",
+      "dateStart": "2027-07-11",
+      "dateEnd": "2027-07-21",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Costa Rica",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,595 list / $4,135 with promotional discount",
+      "priceMin": 4135,
+      "priceMax": 4595,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/costa-rica-spanish-language-immersion-11-days/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "TFT does not publish specific accommodation names for safety reasons (families get this after registering, via a secure parent portal) - generally small, centrally located, family-run hotels rather than large chain hotels. Tuition includes ground transportation, accommodation, chaperones/guides, program activities, taxes/tips, and all meals; airfare, visas, and personal expenses are not included, though an optional group flight is typically offered. Over 75% of TFT travelers come independently (not with a friend), which the org frames as encouraging new friendships. Dietary restrictions (vegetarian, vegan, gluten-free, etc.) are fully accommodated.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Costa Rica Service program page and general Costa Rica destination page (travelforteens.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-993",
+      "slug": "tft-costa-rica-service-departure",
+      "name": "TFT - Costa Rica Service",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-costa-rica-service",
+      "description": "The org's shortest Costa Rica program - community service (up to 15 hours) plus whale watching, surfing, and hot springs. Optional group flight Miami (MIA) to San Jose (SJO).",
+      "category": "leadership-gifted",
+      "secondaryTags": [],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "7 days",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Jul 22–28, 2027",
+      "dateStart": "2027-07-22",
+      "dateEnd": "2027-07-28",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Costa Rica",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$2,795 list / $2,515 with promotional discount",
+      "priceMin": 2515,
+      "priceMax": 2795,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/costa-rica-service/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "TFT does not publish specific accommodation names for safety reasons (families get this after registering, via a secure parent portal) - generally small, centrally located, family-run hotels rather than large chain hotels. Tuition includes ground transportation, accommodation, chaperones/guides, program activities, taxes/tips, and all meals; airfare, visas, and personal expenses are not included, though an optional group flight is typically offered. Over 75% of TFT travelers come independently (not with a friend), which the org frames as encouraging new friendships. Dietary restrictions (vegetarian, vegan, gluten-free, etc.) are fully accommodated.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Costa Rica Service program page and general Costa Rica destination page (travelforteens.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-994",
+      "slug": "tft-ecuador-the-gal-pagos-service-departure",
+      "name": "TFT - Ecuador & the Galápagos Service",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-ecuador-galapagos-service",
+      "description": "Visits mainland Ecuador (Quito, the equator at Mitad del Mundo) and the Galápagos Islands, with community service at a sustainable farm. Optional group flight Miami (MIA) to Quito (UIO).",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Community Development"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "11 days",
+      "lengthMinDays": 11,
+      "lengthMaxDays": 11,
+      "datesDisplay": "Jul 11–21, 2027",
+      "dateStart": "2027-07-11",
+      "dateEnd": "2027-07-21",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Quito, Mindo, and the Galápagos Islands (Santa Cruz and San Cristóbal)",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$5,295 list / $4,765 with promotional discount, plus a mandatory $700 intra-trip flight",
+      "priceMin": 4765,
+      "priceMax": 5295,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/ecuador-and-the-galapagos/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Accommodation includes hotels, lodges, and a more rustic jungle lodge. Community service takes place at a sustainable farm on the Galápagos Islands (recycling, cooking in a traditional mud oven). As with all TFT programs, specific accommodation names are not published in advance for safety reasons - families get this via a secure parent portal after registering.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Ecuador & the Galápagos Service program page",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-995",
+      "slug": "tft-belize-scuba-service-departure",
+      "name": "TFT - Belize Scuba & Service",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-belize-scuba-service",
+      "description": "Marine conservation and optional PADI Open Water scuba certification on a private island; students not already certified earn their PADI during the trip (certification/eLearning fees additional). Intra-trip flight from Belize City to Placencia is required.",
+      "category": "marine-science",
+      "secondaryTags": [
+        "Animal & Wildlife Conservation"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "7 days",
+      "lengthMinDays": 7,
+      "lengthMaxDays": 7,
+      "datesDisplay": "Jul 11–17, 2027",
+      "dateStart": "2027-07-11",
+      "dateEnd": "2027-07-17",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Placencia and a private island, Belize",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$3,695 list / $3,325 with promotional discount, plus $350 intra-trip flight",
+      "priceMin": 3325,
+      "priceMax": 3695,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/belize-scuba-service/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Students stay on a private island accessible via a short flight into Placencia followed by a boat crossing. Daily structure centers on the marine conservation organization's own programming - PADI certification progress for beginners, or direct volunteer diving work for already-certified students - plus expert-led talks on topics like invasive lionfish control and ocean plastic pollution.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Belize Scuba & Service program page",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-996",
+      "slug": "tft-peru-service-departure",
+      "name": "TFT - Peru Service",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-peru-service",
+      "description": "Community service (construction, farming, English teaching) in Urubamba and a homestay in the village of Misminay, plus Machu Picchu and Sacred Valley sightseeing. Optional group flight Miami (MIA) to Cusco (CUZ).",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "11 days",
+      "lengthMinDays": 11,
+      "lengthMaxDays": 11,
+      "datesDisplay": "Jun 30 – Jul 10, 2027",
+      "dateStart": "2027-06-30",
+      "dateEnd": "2027-07-10",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Cusco, Ollantaytambo, Urubamba, Misminay, Machu Picchu",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,595 list / $4,135 with promotional discount",
+      "priceMin": 4135,
+      "priceMax": 4595,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/peru-service/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Accommodation is a mix of 3-star hotels and a homestay in the village of Misminay, where students sleep in a private room attached to a local family's home, with shared restrooms and communal meals in the village center. One evening involves helping the host community prepare a traditional pachamanca meal cooked in the earth.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Peru Service program page",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-997",
+      "slug": "tft-peru-ecuador-the-gal-pagos-service-departure",
+      "name": "TFT - Peru, Ecuador, & the Galápagos Service",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-peru-ecuador-galapagos-service",
+      "description": "Extended combination trip letting students do the Peru Service itinerary and continue directly into the Ecuador & the Galápagos Service itinerary in one continuous 22-day program, rather than booking each country separately.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Animal & Wildlife Conservation"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "22 days",
+      "lengthMinDays": 22,
+      "lengthMaxDays": 22,
+      "datesDisplay": "Jun 30 – Jul 21, 2027",
+      "dateStart": "2027-06-30",
+      "dateEnd": "2027-07-21",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Peru (Sacred Valley, Machu Picchu, Cusco), Ecuador (Quito), and the Galápagos Islands",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$9,795 list / $8,815 with promotional discount",
+      "priceMin": 8815,
+      "priceMax": 9795,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/peru-ecuador-galapagos-adventure-service/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Combines the day-to-day structure of both standalone programs in sequence: the Peru Service homestay/community-service segment first, followed directly by the Ecuador & the Galápagos Service segment (farm, hotels, and lodge accommodation) - see each standalone program's notes for details on its respective portion.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Peru, Ecuador & the Galápagos Service program page",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-998",
+      "slug": "tft-australia-and-new-zealand-service-departure",
+      "name": "TFT - Australia and New Zealand Service",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-australia-new-zealand-service",
+      "description": "Two-country combination trip through Australia and New Zealand blending community service, cultural immersion, and adventure activities.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "20 days",
+      "lengthMinDays": 20,
+      "lengthMaxDays": 20,
+      "datesDisplay": "Jun 30 – Jul 19, 2027",
+      "dateStart": "2027-06-30",
+      "dateEnd": "2027-07-19",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Australia and New Zealand",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$8,295 list / $7,465 with promotional discount",
+      "priceMin": 7465,
+      "priceMax": 8295,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/australia-new-zealand-service/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Highlights across the Oceania programs include diving/snorkeling the Great Barrier Reef, sailing through the Whitsunday Islands, hiking/spotting wildlife in the Australian Outback, and (on the Fiji leg specifically) a traditional kava ceremony and community engagement in a coastal village. As with all TFT programs, specific accommodation names are not published in advance for safety reasons.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Oceania destination page and general program marketing",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-999",
+      "slug": "tft-australia-new-zealand-fiji-service-departure",
+      "name": "TFT - Australia, New Zealand & Fiji Service",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-australia-new-zealand-fiji-service",
+      "description": "The org's most extensive combination trip, adding Fiji onto the Australia and New Zealand itinerary. TFT's own marketing calls this the 'ultimate Oceania experience.' No standalone Fiji-only program exists in TFT's catalog - Fiji only appears as part of this combo.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "four_plus_weeks",
+      "lengthDisplay": "30 days",
+      "lengthMinDays": 30,
+      "lengthMaxDays": 30,
+      "datesDisplay": "Jun 30 – Jul 29, 2027",
+      "dateStart": "2027-06-30",
+      "dateEnd": "2027-07-29",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Australia, New Zealand, and Fiji",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$11,795 list / $10,615 with promotional discount",
+      "priceMin": 10615,
+      "priceMax": 11795,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/australia-new-zealand-and-fiji-service/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Highlights across the Oceania programs include diving/snorkeling the Great Barrier Reef, sailing through the Whitsunday Islands, hiking/spotting wildlife in the Australian Outback, and (on the Fiji leg specifically) a traditional kava ceremony and community engagement in a coastal village. As with all TFT programs, specific accommodation names are not published in advance for safety reasons.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Oceania destination page and general program marketing",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-1000",
+      "slug": "tft-tanzania-service-safari-departure",
+      "name": "TFT - Tanzania Service & Safari",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-tanzania-service-safari",
+      "description": "Community service (likely at a school, per org-wide testimonials referencing SEGA school) combined with safari game drives, per TFT's general Tanzania marketing.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Animal & Wildlife Conservation"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "17 days",
+      "lengthMinDays": 17,
+      "lengthMaxDays": 17,
+      "datesDisplay": "Jul 16 – Aug 1, 2027",
+      "dateStart": "2027-07-16",
+      "dateEnd": "2027-08-01",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Tanzania",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$6,595 list / $5,935 with promotional discount",
+      "priceMin": 5935,
+      "priceMax": 6595,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/tanzania-service-and-safari/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "General TFT Africa policy: accommodation names are not published in advance for safety reasons - families access this via a secure parent portal after registering. Vaccinations are the family's responsibility to arrange via their own doctor; TFT provides general guidance but does not mandate specific vaccines.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Africa destination page (general policy, not Tanzania-specific)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-1001",
+      "slug": "tft-ultimate-south-africa-service-safari-departure",
+      "name": "TFT - Ultimate South Africa Service & Safari",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-south-africa-ultimate-service-safari",
+      "description": "Playground construction service project at a village school in Chintsa, plus a Kruger National Park safari, whale watching, Cape Town sightseeing (Table Mountain, Robben Island), and cultural immersion with the Xhosa people. Group size 13-24 students, staff ratio approximately 1:7.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Animal & Wildlife Conservation"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "21 days",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "Jul 2–22, 2027",
+      "dateStart": "2027-07-02",
+      "dateEnd": "2027-07-22",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Johannesburg, Kruger National Park, Chintsa (Wild Coast), Addo Elephant Park, Plettenberg Bay, Cape Town",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$6,995 + mandatory $400 intra-trip flights",
+      "priceMin": 6995,
+      "priceMax": 6995,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/ultimate-south-africa-service-adventure-safari/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Accommodation varies significantly by stop: a modern hotel in Johannesburg's Sandton area, en-suite dormitory rooms (max 4 students/room) in Kruger and Plettenberg Bay, clifftop lodging overlooking the Wild Coast in Chintsa, beach-bungalow-style cabins near Addo National Park, and a modern boutique hotel in Cape Town. Packing note: students must bring their own work gloves and clothes/closed-toe shoes that can get paint on them for the service portion; TFT supplies all tools/materials on-site. US citizens receive a free 90-day tourist visa on arrival.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Ultimate South Africa Service & Safari program page",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-1002",
+      "slug": "tft-japan-adventure-discovery-departure",
+      "name": "TFT - Japan Adventure & Discovery",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-japan-adventure-discovery",
+      "description": "The org's longer/more extensive Japan program.",
+      "category": "cultural-exchange",
+      "secondaryTags": [],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "17 days",
+      "lengthMinDays": 17,
+      "lengthMaxDays": 17,
+      "datesDisplay": "Jun 30 – Jul 16, 2027",
+      "dateStart": "2027-06-30",
+      "dateEnd": "2027-07-16",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Japan",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$8,195 list / $7,375 with promotional discount",
+      "priceMin": 7375,
+      "priceMax": 8195,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/japan-discovery/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "As with all TFT programs, specific accommodation names are not published in advance for safety reasons - families access this via a secure parent portal after registering. Program lengths across Asia range from 10 to 26 days, with single-country trips typically 10-17 days and multi-country combination trips extending up to nearly four weeks.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Asia destination page (travelforteens.com/asia)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-1003",
+      "slug": "tft-japan-adventure-departure",
+      "name": "TFT - Japan Adventure",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-japan-adventure",
+      "description": "The org's shorter Japan program - genuinely distinct product/URL from Japan Adventure & Discovery, not a length variant of the same listing.",
+      "category": "cultural-exchange",
+      "secondaryTags": [],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "10 days",
+      "lengthMinDays": 10,
+      "lengthMaxDays": 10,
+      "datesDisplay": "Jul 16–25, 2027",
+      "dateStart": "2027-07-16",
+      "dateEnd": "2027-07-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Japan",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,895 list / $4,405 with promotional discount",
+      "priceMin": 4405,
+      "priceMax": 4895,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/japan-discovery-2/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "As with all TFT programs, specific accommodation names are not published in advance for safety reasons - families access this via a secure parent portal after registering. Program lengths across Asia range from 10 to 26 days, with single-country trips typically 10-17 days and multi-country combination trips extending up to nearly four weeks.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Asia destination page (travelforteens.com/asia)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-1004",
+      "slug": "tft-bali-healthcare-education-medical-outreach-departure",
+      "name": "TFT - Bali: Healthcare Education & Medical Outreach",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-bali-healthcare-medical-outreach",
+      "description": "Healthcare education and medical outreach service program in Bali.",
+      "category": "biomedical",
+      "secondaryTags": [
+        "Community Development"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "17 days",
+      "lengthMinDays": 17,
+      "lengthMaxDays": 17,
+      "datesDisplay": "Jun 30 – Jul 16, 2027",
+      "dateStart": "2027-06-30",
+      "dateEnd": "2027-07-16",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Bali, Indonesia",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$6,595 list / $5,935 with promotional discount",
+      "priceMin": 5935,
+      "priceMax": 6595,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/bali-health-care-service/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "As with all TFT programs, specific accommodation names are not published in advance for safety reasons - families access this via a secure parent portal after registering. Program lengths across Asia range from 10 to 26 days, with single-country trips typically 10-17 days and multi-country combination trips extending up to nearly four weeks.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Asia destination page (travelforteens.com/asia)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-1005",
+      "slug": "tft-bali-service-adventure-departure",
+      "name": "TFT - Bali Service & Adventure",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-bali-service-adventure",
+      "description": "General service and adventure program in Bali, distinct from the Healthcare-focused program.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "13 days",
+      "lengthMinDays": 13,
+      "lengthMaxDays": 13,
+      "datesDisplay": "Jul 16–28, 2027",
+      "dateStart": "2027-07-16",
+      "dateEnd": "2027-07-28",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Bali, Indonesia",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,695 list / $4,225 with promotional discount",
+      "priceMin": 4225,
+      "priceMax": 4695,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/bali-service-and-adventure/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "As with all TFT programs, specific accommodation names are not published in advance for safety reasons - families access this via a secure parent portal after registering. Program lengths across Asia range from 10 to 26 days, with single-country trips typically 10-17 days and multi-country combination trips extending up to nearly four weeks.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Asia destination page (travelforteens.com/asia)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-1006",
+      "slug": "tft-south-korea-discovery-departure",
+      "name": "TFT - South Korea Discovery",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-south-korea-discovery-service",
+      "description": "Community service and cultural exploration in South Korea; a customer testimonial mentions an overnight temple stay with monks at Golgulsa Temple.",
+      "category": "cultural-exchange",
+      "secondaryTags": [],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "10 days",
+      "lengthMinDays": 10,
+      "lengthMaxDays": 10,
+      "datesDisplay": "Jul 7–16, 2027",
+      "dateStart": "2027-07-07",
+      "dateEnd": "2027-07-16",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "South Korea",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,895 list / $4,405 with promotional discount",
+      "priceMin": 4405,
+      "priceMax": 4895,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/south-korea-discovery-and-service/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "As with all TFT programs, specific accommodation names are not published in advance for safety reasons - families access this via a secure parent portal after registering. Program lengths across Asia range from 10 to 26 days, with single-country trips typically 10-17 days and multi-country combination trips extending up to nearly four weeks.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Asia destination page (travelforteens.com/asia)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-1007",
+      "slug": "tft-thailand-service-the-islands-departure",
+      "name": "TFT - Thailand Service & the Islands",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-thailand-service-islands",
+      "description": "Ethical elephant sanctuary volunteer work plus island-hopping (Koh Phi Phi and similar); URL references 'elephant service' though the public program name emphasizes 'Service & the Islands.'",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "17 days",
+      "lengthMinDays": 17,
+      "lengthMaxDays": 17,
+      "datesDisplay": "Jun 30 – Jul 16, 2027",
+      "dateStart": "2027-06-30",
+      "dateEnd": "2027-07-16",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Thailand",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$6,595 list / $5,935 with promotional discount",
+      "priceMin": 5935,
+      "priceMax": 6595,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/thailand-elephant-service-and-the-islands/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "As with all TFT programs, specific accommodation names are not published in advance for safety reasons - families access this via a secure parent portal after registering. Program lengths across Asia range from 10 to 26 days, with single-country trips typically 10-17 days and multi-country combination trips extending up to nearly four weeks.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Asia destination page (travelforteens.com/asia)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-1008",
+      "slug": "tft-vietnam-service-adventure-departure",
+      "name": "TFT - Vietnam Service & Adventure",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-vietnam-service-adventure",
+      "description": "The org's least expensive Asia program; likely includes rice-terrace trekking per general org marketing.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "11 days",
+      "lengthMinDays": 11,
+      "lengthMaxDays": 11,
+      "datesDisplay": "Jul 15–25, 2027",
+      "dateStart": "2027-07-15",
+      "dateEnd": "2027-07-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Vietnam",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$3,795 list / $3,425 with promotional discount",
+      "priceMin": 3425,
+      "priceMax": 3795,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/vietnam-service-and-adventure/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "As with all TFT programs, specific accommodation names are not published in advance for safety reasons - families access this via a secure parent portal after registering. Program lengths across Asia range from 10 to 26 days, with single-country trips typically 10-17 days and multi-country combination trips extending up to nearly four weeks.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Asia destination page (travelforteens.com/asia)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-1009",
+      "slug": "tft-thailand-vietnam-service-and-adventure-departure",
+      "name": "TFT - Thailand & Vietnam Service and Adventure",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-thailand-vietnam-service-adventure",
+      "description": "Two-country combination trip through Thailand and Vietnam.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "26 days",
+      "lengthMinDays": 26,
+      "lengthMaxDays": 26,
+      "datesDisplay": "Jun 30 – Jul 25, 2027",
+      "dateStart": "2027-06-30",
+      "dateEnd": "2027-07-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Thailand and Vietnam",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$9,195 list / $8,296 with promotional discount",
+      "priceMin": 8296,
+      "priceMax": 9195,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/thailand-vietnam-service-and-adventure/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "As with all TFT programs, specific accommodation names are not published in advance for safety reasons - families access this via a secure parent portal after registering. Program lengths across Asia range from 10 to 26 days, with single-country trips typically 10-17 days and multi-country combination trips extending up to nearly four weeks.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Asia destination page (travelforteens.com/asia)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-1010",
+      "slug": "tft-thailand-japan-service-adventure-departure",
+      "name": "TFT - Thailand & Japan Service & Adventure",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-thailand-japan-service-adventure",
+      "description": "The org's most expensive Asia combination trip, pairing Thailand with Japan.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "26 days",
+      "lengthMinDays": 26,
+      "lengthMaxDays": 26,
+      "datesDisplay": "Jun 30 – Jul 25, 2027",
+      "dateStart": "2027-06-30",
+      "dateEnd": "2027-07-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Thailand and Japan",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$11,395 list / $10,255 with promotional discount",
+      "priceMin": 10255,
+      "priceMax": 11395,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/thailand-japan-service-adventure/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "As with all TFT programs, specific accommodation names are not published in advance for safety reasons - families access this via a secure parent portal after registering. Program lengths across Asia range from 10 to 26 days, with single-country trips typically 10-17 days and multi-country combination trips extending up to nearly four weeks.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Asia destination page (travelforteens.com/asia)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-1011",
+      "slug": "tft-japan-south-korea-adventure-discovery-departure",
+      "name": "TFT - Japan & South Korea Adventure & Discovery",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-japan-south-korea-discovery-service",
+      "description": "Two-country combination trip; includes an overnight temple stay with monks at Golgulsa Temple in South Korea.",
+      "category": "cultural-exchange",
+      "secondaryTags": [],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-12",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 11,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "19 days",
+      "lengthMinDays": 19,
+      "lengthMaxDays": 19,
+      "datesDisplay": "Jul 7–25, 2027",
+      "dateStart": "2027-07-07",
+      "dateEnd": "2027-07-25",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Japan and South Korea",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$8,995 list / $8,095 with promotional discount",
+      "priceMin": 8095,
+      "priceMax": 8995,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/japan-south-korea-discovery-service/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "As with all TFT programs, specific accommodation names are not published in advance for safety reasons - families access this via a secure parent portal after registering. Program lengths across Asia range from 10 to 26 days, with single-country trips typically 10-17 days and multi-country combination trips extending up to nearly four weeks.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Asia destination page (travelforteens.com/asia)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-1012",
+      "slug": "tft-alaska-adventure-and-service-departure",
+      "name": "TFT - Alaska Adventure and Service",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-alaska-adventure-service",
+      "description": "Sea kayaking, hiking, whitewater rafting, and a sled-cart ride with husky puppies, plus conservation-center service work.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Animal & Wildlife Conservation"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-11",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 10,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "11 days",
+      "lengthMinDays": 11,
+      "lengthMaxDays": 11,
+      "datesDisplay": "Jul 22 – Aug 1, 2027",
+      "dateStart": "2027-07-22",
+      "dateEnd": "2027-08-01",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Alaska",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$6,295 list / $5,665 with promotional discount",
+      "priceMin": 5665,
+      "priceMax": 6295,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/alaska-adventure-and-service/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed"
+    },
+    {
+      "id": "prog-1013",
+      "slug": "tft-hawaii-alaska-service-departure",
+      "name": "TFT - Hawaii & Alaska Service",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-hawaii-alaska-service",
+      "description": "Two-state combination trip through Hawaii and Alaska.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Animal & Wildlife Conservation"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-11",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 10,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "22 days",
+      "lengthMinDays": 22,
+      "lengthMaxDays": 22,
+      "datesDisplay": "Jul 11 – Aug 1, 2027",
+      "dateStart": "2027-07-11",
+      "dateEnd": "2027-08-01",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Hawaii and Alaska",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$12,195 list / $10,975 with promotional discount",
+      "priceMin": 10975,
+      "priceMax": 12195,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/hawaii-and-alaska-service/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed"
+    },
+    {
+      "id": "prog-1014",
+      "slug": "tft-hawaii-island-hopping-adventure-service-departure",
+      "name": "TFT - Hawaii Island Hopping Adventure & Service",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-hawaii-island-hopping-adventure-service",
+      "description": "Multi-island Hawaii trip, likely visiting Oahu, Maui, and Big Island given the 'island hopping' framing.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Animal & Wildlife Conservation"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-11",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 10,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "22 days",
+      "lengthMinDays": 22,
+      "lengthMaxDays": 22,
+      "datesDisplay": "Jun 30 – Jul 21, 2027",
+      "dateStart": "2027-06-30",
+      "dateEnd": "2027-07-21",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Hawaii",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$11,795 list / $10,615 with promotional discount",
+      "priceMin": 10615,
+      "priceMax": 11795,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/hawaii-island-hopping-adventure-and-service/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed"
+    },
+    {
+      "id": "prog-1015",
+      "slug": "tft-hawaii-sea-turtle-service-adventure-departure",
+      "name": "TFT - Hawaii Sea Turtle Service & Adventure",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-hawaii-sea-turtle-service-adventure-11-days",
+      "description": "Sea turtle conservation service (snorkeling, reef surveying, beach cleanup, night snorkeling with manta rays) plus surfing and general Hawaii adventure activities.",
+      "category": "marine-science",
+      "secondaryTags": [
+        "Community Development"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-11",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 10,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "11 days",
+      "lengthMinDays": 11,
+      "lengthMaxDays": 11,
+      "datesDisplay": "3 rolling departures: Jul 11-21, Jul 22-Aug 1, Aug 2-12",
+      "dateStart": "2027-07-11",
+      "dateEnd": "2027-08-12",
+      "datesParseQuality": "approximate",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Hawaii",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$5,995 list / $5,395 with promotional discount",
+      "priceMin": 5395,
+      "priceMax": 5995,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/hawaii-sea-turtle-service-adventure-11-days/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed"
+    },
+    {
+      "id": "prog-1016",
+      "slug": "tft-hawaii-big-island-kauai-service-adventure-departure",
+      "name": "TFT - Hawaii Big Island & Kauai: Service & Adventure",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-hawaii-big-island-kauai-service-adventure",
+      "description": "Service and adventure program on the Big Island and Kauai specifically.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Animal & Wildlife Conservation"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 9-10",
+      "gradeCompletedMin": 8,
+      "gradeCompletedMax": 9,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "11 days",
+      "lengthMinDays": 11,
+      "lengthMaxDays": 11,
+      "datesDisplay": "Jun 30 – Jul 10, 2027",
+      "dateStart": "2027-06-30",
+      "dateEnd": "2027-07-10",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "provisional",
+      "locationDisplay": "Hawaii",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$5,995 list / $5,395 with promotional discount",
+      "priceMin": 5395,
+      "priceMax": 5995,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/hawaii-big-island-service/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed"
     }
   ]
 }

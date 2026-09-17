@@ -882,5 +882,138 @@
       "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
       "verifiedAt": "2026-09-15"
     }
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "tft-costa-rica-animal-rescue-11-days",
+        "tft-costa-rica-animal-rescue-21-days",
+        "tft-costa-rica-healthcare-education",
+        "tft-costa-rica-surf-service",
+        "tft-costa-rica-spanish-language-immersion-11-days",
+        "tft-costa-rica-service"
+      ]
+    },
+    "dayToDay": {
+      "notes": "TFT does not publish specific accommodation names for safety reasons (families get this after registering, via a secure parent portal) - generally small, centrally located, family-run hotels rather than large chain hotels. Tuition includes ground transportation, accommodation, chaperones/guides, program activities, taxes/tips, and all meals; airfare, visas, and personal expenses are not included, though an optional group flight is typically offered. Over 75% of TFT travelers come independently (not with a friend), which the org frames as encouraging new friendships. Dietary restrictions (vegetarian, vegan, gluten-free, etc.) are fully accommodated.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Costa Rica Service program page and general Costa Rica destination page (travelforteens.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "tft-ecuador-galapagos-service" },
+    "dayToDay": {
+      "notes": "Accommodation includes hotels, lodges, and a more rustic jungle lodge. Community service takes place at a sustainable farm on the Galápagos Islands (recycling, cooking in a traditional mud oven). As with all TFT programs, specific accommodation names are not published in advance for safety reasons - families get this via a secure parent portal after registering.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Ecuador & the Galápagos Service program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "tft-belize-scuba-service" },
+    "dayToDay": {
+      "notes": "Students stay on a private island accessible via a short flight into Placencia followed by a boat crossing. Daily structure centers on the marine conservation organization's own programming - PADI certification progress for beginners, or direct volunteer diving work for already-certified students - plus expert-led talks on topics like invasive lionfish control and ocean plastic pollution.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Belize Scuba & Service program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "tft-peru-service" },
+    "dayToDay": {
+      "notes": "Accommodation is a mix of 3-star hotels and a homestay in the village of Misminay, where students sleep in a private room attached to a local family's home, with shared restrooms and communal meals in the village center. One evening involves helping the host community prepare a traditional pachamanca meal cooked in the earth.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Peru Service program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "tft-peru-ecuador-galapagos-service" },
+    "dayToDay": {
+      "notes": "Combines the day-to-day structure of both standalone programs in sequence: the Peru Service homestay/community-service segment first, followed directly by the Ecuador & the Galápagos Service segment (farm, hotels, and lodge accommodation) - see each standalone program's notes for details on its respective portion.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Peru, Ecuador & the Galápagos Service program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "tft-australia-new-zealand-service",
+        "tft-australia-new-zealand-fiji-service"
+      ]
+    },
+    "dayToDay": {
+      "notes": "Highlights across the Oceania programs include diving/snorkeling the Great Barrier Reef, sailing through the Whitsunday Islands, hiking/spotting wildlife in the Australian Outback, and (on the Fiji leg specifically) a traditional kava ceremony and community engagement in a coastal village. As with all TFT programs, specific accommodation names are not published in advance for safety reasons.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Oceania destination page and general program marketing",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "tft-tanzania-service-safari" },
+    "dayToDay": {
+      "notes": "General TFT Africa policy: accommodation names are not published in advance for safety reasons - families access this via a secure parent portal after registering. Vaccinations are the family's responsibility to arrange via their own doctor; TFT provides general guidance but does not mandate specific vaccines.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Africa destination page (general policy, not Tanzania-specific)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "tft-south-africa-ultimate-service-safari" },
+    "dayToDay": {
+      "notes": "Accommodation varies significantly by stop: a modern hotel in Johannesburg's Sandton area, en-suite dormitory rooms (max 4 students/room) in Kruger and Plettenberg Bay, clifftop lodging overlooking the Wild Coast in Chintsa, beach-bungalow-style cabins near Addo National Park, and a modern boutique hotel in Cape Town. Packing note: students must bring their own work gloves and clothes/closed-toe shoes that can get paint on them for the service portion; TFT supplies all tools/materials on-site. US citizens receive a free 90-day tourist visa on arrival.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Ultimate South Africa Service & Safari program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "tft-japan-adventure-discovery",
+        "tft-japan-adventure",
+        "tft-bali-healthcare-medical-outreach",
+        "tft-bali-service-adventure",
+        "tft-south-korea-discovery-service",
+        "tft-thailand-service-islands",
+        "tft-vietnam-service-adventure",
+        "tft-thailand-vietnam-service-adventure",
+        "tft-thailand-japan-service-adventure",
+        "tft-japan-south-korea-discovery-service"
+      ]
+    },
+    "dayToDay": {
+      "notes": "As with all TFT programs, specific accommodation names are not published in advance for safety reasons - families access this via a secure parent portal after registering. Program lengths across Asia range from 10 to 26 days, with single-country trips typically 10-17 days and multi-country combination trips extending up to nearly four weeks.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Asia destination page (travelforteens.com/asia)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "tft-alaska-adventure-service",
+        "tft-hawaii-alaska-service",
+        "tft-hawaii-island-hopping-adventure-service",
+        "tft-hawaii-sea-turtle-service-adventure-11-days"
+      ]
+    },
+    "dayToDay": {
+      "notes": "Accommodation is a mix of modern hotels and comfortable, unique family-run lodging, all vetted and supervised by trip leaders present 24/7. As with all TFT programs, specific accommodation names are not published in advance for safety reasons. Alaska activities include sea kayaking, hiking near glaciers, whitewater rafting, and a sled-cart ride with husky puppies; Hawaii activities include surfing, snorkeling (including night snorkeling with manta rays), and sea turtle conservation work (reef surveying, beach cleanup).",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens United States destination page (travelforteens.com/unitedstates)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "tft-hawaii-big-island-kauai-service-adventure" },
+    "dayToDay": {
+      "notes": "Service and adventure program specifically on the Big Island and Kauai, distinct from the multi-island 'Island Hopping' program.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens United States destination page",
+      "verifiedAt": "2026-09-15"
+    }
   }
 ]
