@@ -965,5 +965,20 @@
         "severity": "info"
       }
     ]
+  },
+  {
+    "match": {
+      "programGroupId": ["arcc-california", "arcc-yellowstone-grand-teton"]
+    },
+    "flags": [
+      {
+        "id": "arcc-dual-grade-cohort-unclear",
+        "type": "policy",
+        "title": "Grade band shown as two ranges - cohort assignment not confirmed",
+        "body": "This program lists grades as '6th-8th | 9th-12th' rather than a single range, suggesting parallel middle-school and high-school groups run on the same dates. It's not confirmed from the source whether these are truly separate cohorts or one combined group spanning the full range - worth confirming directly.",
+        "sourceCitation": "ARCC program pages",
+        "severity": "info"
+      }
+    ]
   }
 ]

@@ -41228,7 +41228,16 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://arccprograms.com/programs/california/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [],
+      "flags": [
+        {
+          "id": "arcc-dual-grade-cohort-unclear",
+          "type": "policy",
+          "title": "Grade band shown as two ranges - cohort assignment not confirmed",
+          "body": "This program lists grades as '6th-8th | 9th-12th' rather than a single range, suggesting parallel middle-school and high-school groups run on the same dates. It's not confirmed from the source whether these are truly separate cohorts or one combined group spanning the full range - worth confirming directly.",
+          "sourceCitation": "ARCC program pages",
+          "severity": "info"
+        }
+      ],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Students camp in tents (3-4 per tent, supplied by ARCC) at front-country campgrounds and state parks - meaning always close to the group's van, with restroom facilities and running water, and showers at many sites. The group travels together in a 15-passenger van with their two leaders, and works together to plan and cook meals throughout the trip.",
@@ -41279,7 +41288,16 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://arccprograms.com/programs/california/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [],
+      "flags": [
+        {
+          "id": "arcc-dual-grade-cohort-unclear",
+          "type": "policy",
+          "title": "Grade band shown as two ranges - cohort assignment not confirmed",
+          "body": "This program lists grades as '6th-8th | 9th-12th' rather than a single range, suggesting parallel middle-school and high-school groups run on the same dates. It's not confirmed from the source whether these are truly separate cohorts or one combined group spanning the full range - worth confirming directly.",
+          "sourceCitation": "ARCC program pages",
+          "severity": "info"
+        }
+      ],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Students camp in tents (3-4 per tent, supplied by ARCC) at front-country campgrounds and state parks - meaning always close to the group's van, with restroom facilities and running water, and showers at many sites. The group travels together in a 15-passenger van with their two leaders, and works together to plan and cook meals throughout the trip.",
@@ -41330,7 +41348,16 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://arccprograms.com/programs/yellowstone-grand-teton-summer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [],
+      "flags": [
+        {
+          "id": "arcc-dual-grade-cohort-unclear",
+          "type": "policy",
+          "title": "Grade band shown as two ranges - cohort assignment not confirmed",
+          "body": "This program lists grades as '6th-8th | 9th-12th' rather than a single range, suggesting parallel middle-school and high-school groups run on the same dates. It's not confirmed from the source whether these are truly separate cohorts or one combined group spanning the full range - worth confirming directly.",
+          "sourceCitation": "ARCC program pages",
+          "severity": "info"
+        }
+      ],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "An entirely camping-based program; students sleep in tents at front-country campgrounds across National Parks, State Parks, and National Forest land, with restroom facilities, running water, and some on-site showers. The group travels together in a 15-passenger van with a small trailer, which serves as their home base, and prepares meals together as a group.",
@@ -41381,7 +41408,16 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://arccprograms.com/programs/yellowstone-grand-teton-summer/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [],
+      "flags": [
+        {
+          "id": "arcc-dual-grade-cohort-unclear",
+          "type": "policy",
+          "title": "Grade band shown as two ranges - cohort assignment not confirmed",
+          "body": "This program lists grades as '6th-8th | 9th-12th' rather than a single range, suggesting parallel middle-school and high-school groups run on the same dates. It's not confirmed from the source whether these are truly separate cohorts or one combined group spanning the full range - worth confirming directly.",
+          "sourceCitation": "ARCC program pages",
+          "severity": "info"
+        }
+      ],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "An entirely camping-based program; students sleep in tents at front-country campgrounds across National Parks, State Parks, and National Forest land, with restroom facilities, running water, and some on-site showers. The group travels together in a 15-passenger van with a small trailer, which serves as their home base, and prepares meals together as a group.",
