@@ -733,5 +733,14 @@
       "sourceCitation": "Summer Discovery UC Berkeley campus page (summerdiscovery.com)",
       "verifiedAt": "2026-09-15"
     }
+  },
+  {
+    "match": { "programGroupId": "summerdiscovery-university-of-texas-at-austin" },
+    "dayToDay": {
+      "notes": "This campus's 2-week track is Academy-only (no Individual Course/AM+PM option at that length); the 3-week track offers both Individual Courses and Academies.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Summer Discovery UT Austin campus and course listing pages (summerdiscovery.com)",
+      "verifiedAt": "2026-09-15"
+    }
   }
 ]

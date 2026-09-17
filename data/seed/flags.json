@@ -993,5 +993,18 @@
         "severity": "info"
       }
     ]
+  },
+  {
+    "match": { "programGroupId": "summerdiscovery-university-of-oregon" },
+    "flags": [
+      {
+        "id": "summerdiscovery-oregon-second-course-missing",
+        "type": "policy",
+        "title": "Campus page claims 2 subject areas, but only 1 course is visible",
+        "body": "The 'At a Glance' summary states '2 Offered' subject areas, but clicking through only surfaces the single Sports Business Academy course - the second one may not be published yet, or this may be a site display issue.",
+        "sourceCitation": "Summer Discovery University of Oregon campus page",
+        "severity": "info"
+      }
+    ]
   }
 ]
