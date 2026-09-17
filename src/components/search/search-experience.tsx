@@ -239,7 +239,7 @@ export function SearchExperience({
             ) : (
               <>
                 Explore {formatOfferingCountLabel()} by grade and interests, then heart programs to
-                save. Current list represents 2026 programs.
+                save.
               </>
             )}
           </p>

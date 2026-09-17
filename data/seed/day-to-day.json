@@ -189,27 +189,67 @@
   },
   {
     "match": {
+      "programGroupId": "boldearth-thailand"
+    },
+    "dayToDay": {
+      "notes": "Includes a rural homestay experience (bamboo weaving, tie-dye, tea cultivation with a local host family) plus a night in floating huts on Khao Sok National Park's lake - a genuinely different accommodation mix from Bold Earth's more camping-heavy domestic trips. All trip leaders are Wilderness First Responder and CPR certified.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Bold Earth Thailand trip page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "boldearth-alps"
+    },
+    "dayToDay": {
+      "notes": "Students travel hut-to-hut through the Alps, staying in mountain huts (some with showers) rather than camping or hotels, alongside some hostel-chalet nights per the org's general description of this style of trip. All trip leaders are Wilderness First Responder and CPR certified.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Bold Earth site homepage and blog references to Alps/Dolomites hut-to-hut travel",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "boldearth-dolomites"
+    },
+    "dayToDay": {
+      "notes": "Students travel hut-to-hut through the Dolomites, staying in mountain huts rather than camping or hotels for most of the trip - explicitly named by Bold Earth as one of the few international trips that also includes tent camping on certain nights. All trip leaders are Wilderness First Responder and CPR certified.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Bold Earth site homepage and blog ('7 Outdoor Skills')",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "boldearth-california"
+    },
+    "dayToDay": {
+      "notes": "A domestic trip with confirmed tent camping as part of the itinerary (explicitly named among Bold Earth's camping-inclusive trips), alongside urban exploration in San Francisco. All trip leaders are Wilderness First Responder and CPR certified.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Bold Earth blog ('7 Outdoor Skills') and California trip page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
       "programGroupId": [
         "boldearth-alaska",
-        "boldearth-alps",
         "boldearth-bold-west",
-        "boldearth-california",
         "boldearth-colorado-bold",
         "boldearth-colorado-discovery",
         "boldearth-costa-rica-active",
-        "boldearth-dolomites",
         "boldearth-hawaii",
         "boldearth-iceland",
         "boldearth-kilimanjaro",
         "boldearth-pacific-northwest",
-        "boldearth-portugal-madeira",
-        "boldearth-thailand"
+        "boldearth-portugal-madeira"
       ]
     },
     "dayToDay": {
-      "notes": "Bold Earth trips are explicitly phone-free/tech-free experiences, framed as a core program value rather than a default policy. Domestic trips camp in comfortable 4-person tents at campgrounds with running water and bathroom facilities; students shower 2-3 times per trip (not daily), though frequent swimming is part of most itineraries. All trip leaders are Wilderness First Responder and CPR certified. Students are met at the airport by trip leaders (including specific meet-at-the-gate service for unaccompanied minors, per airline regulation) and call home as soon as they've collected their luggage and joined the group. Regular family updates continue throughout the trip via blog posts and photos, even though students themselves are not in direct phone contact.",
+      "notes": "Accommodation type varies by specific trip and is not a simple domestic-vs-international split - per Bold Earth's own guidance, most trips use a mix of camping, hostels, guesthouses, and (on a few trips) hotels, with the exact nightly breakdown detailed in each trip's own itinerary. Only a minority of trips are full-camping the entire time. All trip leaders are Wilderness First Responder and CPR certified. Students are met at the airport by trip leaders and call home as soon as they've joined the group; regular family updates continue via blog posts and photos, though students are not in direct phone contact during the trip.",
       "sourceType": "official_policy",
-      "sourceCitation": "Bold Earth trip pages, FAQ, and general program pages (boldearth.com)",
+      "sourceCitation": "Bold Earth FAQ and blog ('Is Bold Earth Right for Me?') pages (boldearth.com)",
       "verifiedAt": "2026-09-15"
     }
   },
