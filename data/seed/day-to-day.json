@@ -886,8 +886,7 @@
   {
     "match": {
       "programGroupId": [
-        "tft-costa-rica-animal-rescue-11-days",
-        "tft-costa-rica-animal-rescue-21-days",
+        "tft-costa-rica-animal-rescue",
         "tft-costa-rica-healthcare-education",
         "tft-costa-rica-surf-service",
         "tft-costa-rica-spanish-language-immersion-11-days",
@@ -1042,12 +1041,7 @@
     }
   },
   {
-    "match": {
-      "programGroupId": [
-        "tft-france-french-language-immersion-15-days",
-        "tft-france-french-language-immersion-21-days"
-      ]
-    },
+    "match": { "programGroupId": "tft-france-french-language-immersion" },
     "dayToDay": {
       "notes": "Includes formal French classes taught by native speakers as a structured part of the day, alongside cultural excursions.",
       "sourceType": "official_policy",
@@ -1098,12 +1092,7 @@
     }
   },
   {
-    "match": {
-      "programGroupId": [
-        "tft-spain-spanish-language-immersion-14-days",
-        "tft-spain-spanish-language-immersion-21-days"
-      ]
-    },
+    "match": { "programGroupId": "tft-spain-spanish-language-immersion" },
     "dayToDay": {
       "notes": "Includes formal Spanish classes as a structured part of the day. Spanish meal timing runs later than in the US (lunch 2-4pm, dinner 8-9pm), with tapas culture as a core part of the food experience.",
       "sourceType": "official_policy",
