@@ -49,8 +49,9 @@ function parseGradeNumber(token: string): number | null {
   return null;
 }
 
-function risingGrade(completed: number): number {
-  return Math.max(5, completed);
+/** Rising grade N → completed grade N−1 for summer filter matching. */
+function risingToCompleted(grade: number): number {
+  return Math.max(1, grade - 1);
 }
 
 export function normalizeGrade(raw: string): GradeResult {
@@ -64,24 +65,15 @@ export function normalizeGrade(raw: string): GradeResult {
     stateRestriction = "CA";
   }
 
-  const ages = lower.match(/ages?\s*(\d+)\s*[–-]\s*(\d+)/i);
-  if (ages) {
-    const [minG, maxG] = ageRangeToGrades(Number(ages[1]), Number(ages[2]));
+  // Current-grade phrasing ("6th-7th grade") — same number for current and completed.
+  const ordinalGradeRange = lower.match(
+    /(\d+)(?:st|nd|rd|th)[-–](\d+)(?:st|nd|rd|th)?\s+grades?\b/i,
+  );
+  if (ordinalGradeRange) {
     return {
       gradeDisplay,
-      gradeCompletedMin: minG,
-      gradeCompletedMax: maxG,
-      gradeSource: "age",
-      stateRestriction,
-    };
-  }
-
-  const gradeRange = lower.match(/grades?\s*(\d+)\s*[–-]\s*(\d+)/i);
-  if (gradeRange) {
-    return {
-      gradeDisplay,
-      gradeCompletedMin: Number(gradeRange[1]),
-      gradeCompletedMax: Number(gradeRange[2]),
+      gradeCompletedMin: Number(ordinalGradeRange[1]),
+      gradeCompletedMax: Number(ordinalGradeRange[2]),
       gradeSource: "grade",
       stateRestriction,
     };
@@ -100,7 +92,34 @@ export function normalizeGrade(raw: string): GradeResult {
     }
   }
 
-  if (lower.includes("rising") && /soph\s*\/?\s*jr\s*\/?\s*sr/.test(lower)) {
+  // Plain "Grades X–Y" at the start (current/completed convention — no −1).
+  const gradeRange = lower.match(/^\s*grades?\s*(\d+)\s*[–-]\s*(\d+)/i);
+  if (gradeRange) {
+    return {
+      gradeDisplay,
+      gradeCompletedMin: Number(gradeRange[1]),
+      gradeCompletedMax: Number(gradeRange[2]),
+      gradeSource: "grade",
+      stateRestriction,
+    };
+  }
+
+  const currentGrade = lower.match(/\bcurrent\s+(\d+)(?:st|nd|rd|th)\b/);
+  if (currentGrade) {
+    const grade = Number(currentGrade[1]);
+    return {
+      gradeDisplay,
+      gradeCompletedMin: grade,
+      gradeCompletedMax: grade,
+      gradeSource: "grade",
+      stateRestriction,
+    };
+  }
+
+  const hasRisingLanguage = /\brising\b/i.test(lower) && !/\bnot rising\b/i.test(lower);
+
+  // Rising language — translate site grade to completed grade (−1).
+  if (hasRisingLanguage && /soph\s*\/?\s*jr\s*\/?\s*sr/.test(lower)) {
     return {
       gradeDisplay,
       gradeCompletedMin: 9,
@@ -110,7 +129,7 @@ export function normalizeGrade(raw: string): GradeResult {
     };
   }
 
-  if (lower.includes("rising") && /jr\s*\/?\s*sr/.test(lower)) {
+  if (hasRisingLanguage && /jr\s*\/?\s*sr/.test(lower)) {
     const ageMatch = lower.match(/\((\d+)\s+by\s+(?:jun|july)/i);
     if (ageMatch) {
       return {
@@ -130,26 +149,39 @@ export function normalizeGrade(raw: string): GradeResult {
     };
   }
 
-  if (lower.includes("rising")) {
-    const nums = [...lower.matchAll(/(\d+)(?:st|nd|rd|th)?/g)].map((m) => Number(m[1]));
-    if (nums.length >= 2) {
-      const completed = nums.map((n) => risingGrade(n - 1));
+  if (hasRisingLanguage) {
+    const gradeRangeInRising = lower.match(/grades?\s*(\d+)\s*[–-]\s*(\d+)/i);
+    if (gradeRangeInRising) {
+      const a = Number(gradeRangeInRising[1]);
+      const b = Number(gradeRangeInRising[2]);
       return {
         gradeDisplay,
-        gradeCompletedMin: Math.min(...completed),
-        gradeCompletedMax: Math.max(...completed),
+        gradeCompletedMin: risingToCompleted(Math.min(a, b)),
+        gradeCompletedMax: risingToCompleted(Math.max(a, b)),
+        gradeSource: "mixed",
+        stateRestriction,
+      };
+    }
+    const nums = [...lower.matchAll(/(\d+)(?:st|nd|rd|th)?/g)]
+      .map((m) => Number(m[1]))
+      .filter((n) => n >= 3 && n <= 12);
+    if (nums.length >= 2) {
+      return {
+        gradeDisplay,
+        gradeCompletedMin: risingToCompleted(Math.min(...nums)),
+        gradeCompletedMax: risingToCompleted(Math.max(...nums)),
         gradeSource: "mixed",
         stateRestriction,
       };
     }
     const g = parseGradeNumber(lower.replace("rising", ""));
     if (g) {
-      const completed = risingGrade(g - 1);
+      const completed = risingToCompleted(g);
       return {
         gradeDisplay,
         gradeCompletedMin: completed,
         gradeCompletedMax: completed,
-        gradeSource: "grade",
+        gradeSource: "mixed",
         stateRestriction,
       };
     }
@@ -158,7 +190,7 @@ export function normalizeGrade(raw: string): GradeResult {
         gradeDisplay,
         gradeCompletedMin: 10,
         gradeCompletedMax: 10,
-        gradeSource: "grade",
+        gradeSource: "mixed",
         stateRestriction,
       };
     }
@@ -167,7 +199,7 @@ export function normalizeGrade(raw: string): GradeResult {
         gradeDisplay,
         gradeCompletedMin: 11,
         gradeCompletedMax: 11,
-        gradeSource: "grade",
+        gradeSource: "mixed",
         stateRestriction,
       };
     }
@@ -176,7 +208,7 @@ export function normalizeGrade(raw: string): GradeResult {
         gradeDisplay,
         gradeCompletedMin: 9,
         gradeCompletedMax: 9,
-        gradeSource: "grade",
+        gradeSource: "mixed",
         stateRestriction,
       };
     }
@@ -202,28 +234,37 @@ export function normalizeGrade(raw: string): GradeResult {
     };
   }
 
-  if (lower.includes("entering") || lower.includes("completed")) {
+  const ages = lower.match(/ages?\s*(\d+)\s*[–-]\s*(\d+)/i);
+  if (ages) {
+    const [minG, maxG] = ageRangeToGrades(Number(ages[1]), Number(ages[2]));
+    return {
+      gradeDisplay,
+      gradeCompletedMin: minG,
+      gradeCompletedMax: maxG,
+      gradeSource: "age",
+      stateRestriction,
+    };
+  }
+
+  if (lower.includes("entering") || lower.includes("completed") || lower.includes("completing")) {
     const m = lower.match(/(\d+)(?:st|nd|rd|th)?\s*[–-]\s*(\d+)/);
     if (m) {
       const a = Number(m[1]);
       const b = Number(m[2]);
-      const min = lower.includes("entering") ? risingGrade(a - 1) : a;
-      const max = lower.includes("entering") ? risingGrade(b - 1) : b;
       return {
         gradeDisplay,
-        gradeCompletedMin: Math.min(min, max),
-        gradeCompletedMax: Math.max(min, max),
+        gradeCompletedMin: Math.min(a, b),
+        gradeCompletedMax: Math.max(a, b),
         gradeSource: "grade",
         stateRestriction,
       };
     }
     const single = parseGradeNumber(lower);
     if (single) {
-      const completed = lower.includes("entering") ? risingGrade(single - 1) : single;
       return {
         gradeDisplay,
-        gradeCompletedMin: completed,
-        gradeCompletedMax: completed,
+        gradeCompletedMin: single,
+        gradeCompletedMax: single,
         gradeSource: "grade",
         stateRestriction,
       };
@@ -233,16 +274,6 @@ export function normalizeGrade(raw: string): GradeResult {
   if (/\b(?:hs|high school)\s+sophomores?\b/.test(lower) || /\b(?:hs|high school)\s+soph\b/.test(lower)) {
     return {
       gradeDisplay,
-      gradeCompletedMin: 9,
-      gradeCompletedMax: 9,
-      gradeSource: "grade",
-      stateRestriction,
-    };
-  }
-
-  if (/\b(?:hs|high school)\s+juniors?\b/.test(lower) || lower === "juniors" || lower === "junior") {
-    return {
-      gradeDisplay,
       gradeCompletedMin: 10,
       gradeCompletedMax: 10,
       gradeSource: "grade",
@@ -250,7 +281,7 @@ export function normalizeGrade(raw: string): GradeResult {
     };
   }
 
-  if (/\b(?:hs|high school)\s+seniors?\b/.test(lower) || lower === "seniors" || lower === "senior") {
+  if (/\b(?:hs|high school)\s+juniors?\b/.test(lower) || lower === "juniors" || lower === "junior") {
     return {
       gradeDisplay,
       gradeCompletedMin: 11,
@@ -260,10 +291,20 @@ export function normalizeGrade(raw: string): GradeResult {
     };
   }
 
+  if (/\b(?:hs|high school)\s+seniors?\b/.test(lower) || lower === "seniors" || lower === "senior") {
+    return {
+      gradeDisplay,
+      gradeCompletedMin: 12,
+      gradeCompletedMax: 12,
+      gradeSource: "grade",
+      stateRestriction,
+    };
+  }
+
   if (lower.includes("high school") || lower.includes("hs ")) {
     return {
       gradeDisplay,
-      gradeCompletedMin: 8,
+      gradeCompletedMin: 9,
       gradeCompletedMax: 12,
       gradeSource: "mixed",
       stateRestriction,

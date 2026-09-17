@@ -139,6 +139,12 @@ if (risingRange.gradeCompletedMin !== 9 || risingRange.gradeCompletedMax !== 11)
   failed++;
 }
 
+const currentGrades = normalizeGrade("Grades 9-12");
+if (currentGrades.gradeCompletedMin !== 9 || currentGrades.gradeCompletedMax !== 12) {
+  console.error("FAIL: Grades 9-12 (current) should map to completed grades 9-12");
+  failed++;
+}
+
 const stubProgram = (overrides: Partial<Program> & Pick<Program, "name" | "locationDisplay">): Program =>
   ({
     id: "stub",
@@ -464,9 +470,9 @@ if (!gradeMatchesFilter(risingJrSrGrade, [11])) {
 }
 
 const hsJuniors = normalizeGrade("HS Juniors");
-if (hsJuniors.gradeCompletedMin !== 10 || hsJuniors.gradeCompletedMax !== 10) {
+if (hsJuniors.gradeCompletedMin !== 11 || hsJuniors.gradeCompletedMax !== 11) {
   console.error(
-    `FAIL: HS Juniors should map to completed grade 10, got ${hsJuniors.gradeCompletedMin}-${hsJuniors.gradeCompletedMax}`,
+    `FAIL: HS Juniors should map to grade 11, got ${hsJuniors.gradeCompletedMin}-${hsJuniors.gradeCompletedMax}`,
   );
   failed++;
 }
@@ -475,8 +481,8 @@ const princetonGrade = {
   gradeCompletedMax: hsJuniors.gradeCompletedMax,
   gradeSource: hsJuniors.gradeSource,
 };
-if (gradeMatchesFilter(princetonGrade, [12])) {
-  console.error("FAIL: HS Juniors program should not match completed grade 12");
+if (gradeMatchesFilter(princetonGrade, [10])) {
+  console.error("FAIL: HS Juniors program should not match grade 10");
   failed++;
 }
 
