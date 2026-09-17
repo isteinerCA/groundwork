@@ -746,7 +746,7 @@
   {
     "match": { "programGroupId": "summerdiscovery-university-of-michigan" },
     "dayToDay": {
-      "notes": "Structured as one-week course modules with a two-week minimum enrollment; unlike some other campuses, nearly the entire course roster (Individual Courses and Academies alike) repeats identically across all three 2-week sessions, so a family's choice of session mainly comes down to timing rather than course availability. Students can combine two consecutive 2-week sessions into a 4-week stay at a discount versus booking them separately.",
+      "notes": "Structured as one-week course modules with a two-week minimum enrollment; nearly the entire course roster (Individual Courses and Academies alike) repeats identically across all three 2-week sessions, so a family's choice of session mainly comes down to timing rather than course availability. Students can combine two consecutive 2-week sessions into a 4-week stay at a discount versus booking them separately.",
       "sourceType": "official_policy",
       "sourceCitation": "Summer Discovery University of Michigan campus and course listing pages (summerdiscovery.com)",
       "verifiedAt": "2026-09-15"
@@ -755,9 +755,18 @@
   {
     "match": { "programGroupId": "summerdiscovery-georgetown-university" },
     "dayToDay": {
-      "notes": "Located in Washington, D.C., giving students proximity to policy, law, and government institutions relevant to several of the campus's course topics (International Relations, Governing America, Careers in Law). Unlike several other Summer Discovery campuses, Georgetown offers no all-day Academies - every course here is an Individual Course (one morning + one afternoon pick).",
+      "notes": "Located in Washington, D.C., giving students proximity to policy, law, and government institutions relevant to several of the campus's course topics (International Relations, Governing America, Careers in Law). Individual Courses programs include one morning and one afternoon pick.",
       "sourceType": "official_policy",
       "sourceCitation": "Summer Discovery Georgetown University campus and course listing pages (summerdiscovery.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "summerdiscovery-dartmouth" },
+    "dayToDay": {
+      "notes": "All-Academy campus (no Individual Courses) with six distinct, overlapping 2-week windows rolling through the summer, rather than 2–3 sequential blocks like other Summer Discovery campuses. Grades 9–11 only — excludes rising/current seniors, narrower than the 9–12 band used at every other Summer Discovery campus.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Summer Discovery Dartmouth campus and course listing pages (summerdiscovery.com)",
       "verifiedAt": "2026-09-15"
     }
   }
