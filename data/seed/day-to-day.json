@@ -719,7 +719,7 @@
   {
     "match": { "programGroupId": "summerdiscovery-yale-university" },
     "dayToDay": {
-      "notes": "Tuition includes 2-3 meals per day, 7 days per week (a broader meal inclusion than UCLA's 2 meals/day, weekday-only pattern), plus extracurricular activities and excursions every afternoon, evening, and weekend, and use of athletic/recreation facilities. International students pay an additional registration fee ($379 residential / $239 commuter) covering medical insurance and airport transfers; international students fly into JFK, domestic students into Bradley Intl (BDL).",
+      "notes": "Tuition includes 2-3 meals per day, 7 days per week, plus extracurricular activities and excursions every afternoon, evening, and weekend, and use of athletic/recreation facilities. International students pay an additional registration fee ($379 residential / $239 commuter) covering medical insurance and airport transfers; international students fly into JFK, domestic students into Bradley Intl (BDL).",
       "sourceType": "official_policy",
       "sourceCitation": "Summer Discovery Yale University campus page (summerdiscovery.com)",
       "verifiedAt": "2026-09-15"
@@ -740,6 +740,15 @@
       "notes": "This campus's 2-week track is Academy-only (no Individual Course/AM+PM option at that length); the 3-week track offers both Individual Courses and Academies.",
       "sourceType": "official_policy",
       "sourceCitation": "Summer Discovery UT Austin campus and course listing pages (summerdiscovery.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "summerdiscovery-university-of-michigan" },
+    "dayToDay": {
+      "notes": "Structured as one-week course modules with a two-week minimum enrollment; unlike some other campuses, nearly the entire course roster (Individual Courses and Academies alike) repeats identically across all three 2-week sessions, so a family's choice of session mainly comes down to timing rather than course availability. Students can combine two consecutive 2-week sessions into a 4-week stay at a discount versus booking them separately.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Summer Discovery University of Michigan campus and course listing pages (summerdiscovery.com)",
       "verifiedAt": "2026-09-15"
     }
   }

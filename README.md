@@ -71,7 +71,7 @@ See [docs/DATA.md](./docs/DATA.md) for full details.
 src/
   app/              # Next.js routes
   lib/
-    constants/      # 12 categories, admission types, filter enums
+    constants/      # 13 categories, admission types, filter enums
     data/           # Normalization & filter helpers
     types/          # Program, SearchFilters, CSV row types
 scripts/

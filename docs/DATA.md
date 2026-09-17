@@ -36,9 +36,10 @@ Categories are used **directly from the CSV** — no mapping to the PRD's nine-b
 7. Outdoor/Wilderness  
 8. Cultural Exchange  
 9. Leadership/Gifted  
-10. Mathematics  
-11. Biomedical  
-12. Arts  
+10. Business/Entrepreneurship  
+11. Mathematics  
+12. Biomedical  
+13. Arts  
 
 ## Admission type normalization
 

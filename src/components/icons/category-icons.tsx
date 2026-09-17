@@ -98,6 +98,16 @@ const icons: Record<ProgramCategoryId, (props: IconProps) => ReactNode> = {
       </svg>
     </IconWrap>
   ),
+  "business-entrepreneurship": ({ className }) => (
+    <IconWrap className={className}>
+      <svg viewBox="0 0 40 40" fill="none" className="h-full w-full">
+        <rect x="8" y="12" width="24" height="18" rx="2" stroke="#1a365d" strokeWidth="1.5" />
+        <path d="M14 18h12M14 22h8M14 26h10" stroke="#1a365d" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M20 8v4" stroke="#c9a227" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="28" cy="10" r="3" stroke="#c9a227" strokeWidth="1.5" />
+      </svg>
+    </IconWrap>
+  ),
   mathematics: ({ className }) => (
     <IconWrap className={className}>
       <svg viewBox="0 0 40 40" fill="none" className="h-full w-full">

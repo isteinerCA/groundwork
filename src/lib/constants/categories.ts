@@ -1,5 +1,5 @@
 /**
- * Twelve primary categories from the program CSV (final schema).
+ * Thirteen primary categories from the program CSV (final schema).
  * UI labels may differ slightly from raw CSV values for display polish.
  */
 export const PROGRAM_CATEGORIES = [
@@ -58,6 +58,12 @@ export const PROGRAM_CATEGORIES = [
     description: "Talented youth, enrichment, and leadership institutes",
   },
   {
+    id: "business-entrepreneurship",
+    csvValue: "Business/Entrepreneurship",
+    label: "Business & Entrepreneurship",
+    description: "Marketing, finance, entrepreneurship, hospitality, and business academies",
+  },
+  {
     id: "mathematics",
     csvValue: "Mathematics",
     label: "Math",
@@ -89,6 +95,7 @@ export const HOME_CATEGORY_ORDER: ProgramCategoryId[] = [
   "traditional-camp",
   "cultural-exchange",
   "leadership-gifted",
+  "business-entrepreneurship",
   "mathematics",
   "arts",
   "outdoor-wilderness",
