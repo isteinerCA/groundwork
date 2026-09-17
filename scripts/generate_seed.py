@@ -14,7 +14,10 @@ CSV_PATH = ROOT / "data/source/summer-programs.csv"
 CSV_2027_PATH = ROOT / "data/source/summer-programs-2027.csv"
 FLAGS_PATH = ROOT / "data/seed/flags.json"
 DAY_TO_DAY_PATH = ROOT / "data/seed/day-to-day.json"
+PARTICIPANT_GENDER_PATH = ROOT / "data/seed/participant-gender.json"
 OUT_PATH = ROOT / "data/seed/programs.json"
+
+PARTICIPANT_GENDER_IDS = {"coed", "boys", "girls", "girls-inclusive"}
 
 PUBLISHED_REVIEW_STATUSES = {"verified", "provisional", "awaiting_source"}
 DEFAULT_REVIEW_STATUS = "provisional"
@@ -805,6 +808,12 @@ def load_day_to_day_rules():
     return json.loads(DAY_TO_DAY_PATH.read_text())
 
 
+def load_participant_gender_rules():
+    if not PARTICIPANT_GENDER_PATH.exists():
+        return []
+    return json.loads(PARTICIPANT_GENDER_PATH.read_text())
+
+
 DAY_TO_DAY_SOURCE_TYPES = {
     "official_policy",
     "program_faq",
@@ -885,6 +894,15 @@ def merge_flags(program: dict, csv_flags: list, rules: list) -> list:
     return list(by_id.values())
 
 
+def merge_participant_gender(program: dict, rules: list) -> str:
+    for rule in rules:
+        if curated_rule_matches(rule.get("match", {}), program):
+            gender = rule.get("participantGender")
+            if gender in PARTICIPANT_GENDER_IDS:
+                return gender
+    return "coed"
+
+
 def load_superseded_from_refresh(refresh_path: Path) -> tuple[set[str], set[str]]:
     """Program groups/names replaced by rows in the rolling 2027 refresh CSV."""
     groups: set[str] = set()
@@ -918,6 +936,7 @@ def build_program_from_row(
     verified: str,
     rules: list,
     day_to_day_rules: list,
+    participant_gender_rules: list,
 ) -> dict | None:
     cat = CATEGORIES.get(row["Primary Category"].strip())
     if not cat:
@@ -985,6 +1004,7 @@ def build_program_from_row(
     day_to_day = merge_day_to_day(program, day_to_day_rules)
     if day_to_day:
         program["dayToDay"] = day_to_day
+    program["participantGender"] = merge_participant_gender(program, participant_gender_rules)
     return program
 
 
@@ -992,6 +1012,7 @@ def main():
     verified = date.today().isoformat()
     rules = load_flag_rules()
     day_to_day_rules = load_day_to_day_rules()
+    participant_gender_rules = load_participant_gender_rules()
     programs = []
     superseded_groups, superseded_names = load_superseded_from_refresh(CSV_2027_PATH)
     next_id = 1
@@ -1000,7 +1021,9 @@ def main():
         for row in csv.DictReader(f):
             if is_superseded_legacy_row(row, superseded_groups, superseded_names):
                 continue
-            program = build_program_from_row(row, f"prog-{next_id}", verified, rules, day_to_day_rules)
+            program = build_program_from_row(
+                row, f"prog-{next_id}", verified, rules, day_to_day_rules, participant_gender_rules
+            )
             if program:
                 programs.append(program)
                 next_id += 1
@@ -1008,7 +1031,9 @@ def main():
     if CSV_2027_PATH.exists():
         with CSV_2027_PATH.open(newline="", encoding="utf-8-sig") as f:
             for row in csv.DictReader(f):
-                program = build_program_from_row(row, f"prog-{next_id}", verified, rules, day_to_day_rules)
+                program = build_program_from_row(
+                    row, f"prog-{next_id}", verified, rules, day_to_day_rules, participant_gender_rules
+                )
                 if program:
                     programs.append(program)
                     next_id += 1
