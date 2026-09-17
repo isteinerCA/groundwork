@@ -1306,5 +1306,14 @@
       "sourceCitation": "CIEE Dance & Culture (Buenos Aires) program page",
       "verifiedAt": "2026-09-15"
     }
+  },
+  {
+    "match": { "programGroupId": "ciee-australia-sydney-wildlife-conservation" },
+    "dayToDay": {
+      "notes": "Group housing (not homestay). Field-research heavy: students collect and analyze data on sustainability strategies in urban coastal ecosystems. Excursions include Featherdale Wildlife Sanctuary, the Blue Mountains (Scenic Railway, Three Sisters rock formation), and a traditional Aboriginal Bushtucker Tour. A Manly Beach snorkeling trip is a program highlight, done in the cooler waters of the Australian winter (the Southern Hemisphere's June-August is winter).",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Wildlife Conservation (Sydney) program page",
+      "verifiedAt": "2026-09-15"
+    }
   }
 ]

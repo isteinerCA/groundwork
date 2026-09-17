@@ -5,10 +5,13 @@ import Link from "next/link";
 import { ActiveFilterBar } from "@/components/search/active-filter-bar";
 import { CollapsibleFilterGroup } from "@/components/search/collapsible-filter-group";
 import {
+  FINE_TUNE_ANCHOR_ID,
   FilterResultsCounter,
   REFINE_FILTERS_ANCHOR_ID,
   RESULTS_ANCHOR_ID,
+  scrollToFineTune,
 } from "@/components/search/filter-results-counter";
+import { MANY_SEARCH_RESULTS_THRESHOLD } from "@/lib/search/opening-hint";
 import { SearchChat } from "@/components/search/search-chat";
 import { SearchShortlistCta } from "@/components/search/search-shortlist-cta";
 import { Chip } from "@/components/ui/chip";
@@ -491,12 +494,13 @@ export function SearchExperience({
           {filters.gradesCompleted.length > 0 ? (
             <div className="space-y-6">
               <section
+                id={FINE_TUNE_ANCHOR_ID}
                 aria-label="Refine your search"
-                className="overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)] ring-1 ring-[var(--color-navy)]/5"
+                className="scroll-mt-24 overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)] ring-1 ring-[var(--color-navy)]/5"
               >
-                <div className="border-b border-[var(--color-border)] bg-[var(--color-parchment)]/60 px-4 py-3">
+                <div className="border-b border-[var(--color-border)] bg-[var(--color-parchment)]/60 px-5 py-3">
                   <p className="text-xs font-semibold tracking-wide text-[var(--color-amber)] uppercase">
-                    Fine-tune
+                    Step 2 · Fine-tune
                   </p>
                   <h2 className="mt-1 text-lg text-[var(--color-navy)]">Refine your search</h2>
                 </div>
@@ -526,7 +530,7 @@ export function SearchExperience({
                 {results.length > 0 && (
                   <div className="border-t-2 border-[var(--color-sage)] bg-[var(--color-sage-soft)] px-4 py-4 shadow-[inset_0_1px_0_rgb(255_255_255_/_60%)] lg:py-3">
                     <p className="text-xs font-semibold tracking-wide text-[var(--color-sage)] uppercase lg:hidden">
-                      Step 2 · Compare programs
+                      Step 3 · Compare programs
                     </p>
                     <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-2 lg:mt-0">
                       <p className="text-lg font-semibold text-[var(--color-navy)] lg:text-base">
@@ -554,6 +558,21 @@ export function SearchExperience({
                         {seasonCoverage.verified} updated for {TARGET_SEASON_YEAR} ·{" "}
                         {seasonCoverage.pending} pending
                       </p>
+                    )}
+                    {resultGroupCount >= MANY_SEARCH_RESULTS_THRESHOLD && (
+                      <div className="mt-3 rounded-[var(--radius-md)] border border-[var(--color-amber)]/50 bg-white/70 px-3 py-2.5 lg:hidden">
+                        <p className="text-sm text-[var(--color-navy)]">
+                          {resultGroupCount} programs is a lot to scan — use Step 2 to narrow by
+                          location, theme, or specific dates.
+                        </p>
+                        <button
+                          type="button"
+                          onClick={scrollToFineTune}
+                          className="btn btn-secondary mt-2 w-full px-3 py-2 text-sm"
+                        >
+                          Go to Step 2 · Fine-tune
+                        </button>
+                      </div>
                     )}
                   </div>
                 )}

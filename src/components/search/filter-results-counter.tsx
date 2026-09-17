@@ -2,6 +2,7 @@
 
 const RESULTS_ANCHOR_ID = "search-results";
 const REFINE_FILTERS_ANCHOR_ID = "search-refine-filters";
+const FINE_TUNE_ANCHOR_ID = "search-fine-tune";
 
 export function scrollToSearchResults() {
   document.getElementById(RESULTS_ANCHOR_ID)?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -9,6 +10,10 @@ export function scrollToSearchResults() {
 
 export function scrollToRefineFilters() {
   document.getElementById(REFINE_FILTERS_ANCHOR_ID)?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+export function scrollToFineTune() {
+  document.getElementById(FINE_TUNE_ANCHOR_ID)?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 export function FilterResultsCounter({
@@ -62,4 +67,4 @@ export function FilterResultsCounter({
   );
 }
 
-export { RESULTS_ANCHOR_ID, REFINE_FILTERS_ANCHOR_ID };
+export { FINE_TUNE_ANCHOR_ID, REFINE_FILTERS_ANCHOR_ID, RESULTS_ANCHOR_ID };
