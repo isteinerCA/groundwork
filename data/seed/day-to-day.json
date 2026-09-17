@@ -715,5 +715,14 @@
       "sourceCitation": "Summer Discovery UCLA campus page (summerdiscovery.com)",
       "verifiedAt": "2026-09-15"
     }
+  },
+  {
+    "match": { "programGroupId": "summerdiscovery-yale-university" },
+    "dayToDay": {
+      "notes": "Tuition includes 2-3 meals per day, 7 days per week (a broader meal inclusion than UCLA's 2 meals/day, weekday-only pattern), plus extracurricular activities and excursions every afternoon, evening, and weekend, and use of athletic/recreation facilities. International students pay an additional registration fee ($379 residential / $239 commuter) covering medical insurance and airport transfers; international students fly into JFK, domestic students into Bradley Intl (BDL).",
+      "sourceType": "official_policy",
+      "sourceCitation": "Summer Discovery Yale University campus page (summerdiscovery.com)",
+      "verifiedAt": "2026-09-15"
+    }
   }
 ]
