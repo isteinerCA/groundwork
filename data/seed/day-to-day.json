@@ -1003,7 +1003,7 @@
   {
     "match": { "programGroupId": "tft-hawaii-alaska-service" },
     "dayToDay": {
-      "notes": "Accommodation is a mix of modern hotels and comfortable, unique family-run lodging, all vetted and supervised by trip leaders present 24/7. As with all TFT programs, specific accommodation names are not published in advance for safety reasons. Hawaii activities include surfing, snorkeling (including night snorkeling with manta rays), and sea turtle conservation work (reef surveying, beach cleanup).",
+      "notes": "Accommodation is a mix of modern hotels and comfortable, unique family-run lodging, all vetted and supervised by trip leaders present 24/7. As with all TFT programs, specific accommodation names are not published in advance for safety reasons. Alaska activities include sea kayaking, hiking near glaciers, whitewater rafting, and a sled-cart ride with husky puppies; Hawaii activities include surfing, snorkeling (including night snorkeling with manta rays), and sea turtle conservation work (reef surveying, beach cleanup).",
       "sourceType": "official_policy",
       "sourceCitation": "Travel For Teens United States destination page (travelforteens.com/unitedstates)",
       "verifiedAt": "2026-09-15"
@@ -1029,6 +1029,112 @@
       "notes": "Service and adventure program specifically on the Big Island and Kauai, distinct from the multi-island 'Island Hopping' program.",
       "sourceType": "official_policy",
       "sourceCitation": "Travel For Teens United States destination page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": ["tft-alpine-adventure-switzerland-france-italy"] },
+    "dayToDay": {
+      "notes": "Accommodation includes hotels and, on some nights, alpine lodging near the base of a mountain. High-ropes and canyoning activities are a structured part of the itinerary, not optional add-ons.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Switzerland destination page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "tft-france-french-language-immersion-15-days",
+        "tft-france-french-language-immersion-21-days"
+      ]
+    },
+    "dayToDay": {
+      "notes": "Includes formal French classes taught by native speakers as a structured part of the day, alongside cultural excursions.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens France destination page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "tft-greece-italy-island-service",
+        "tft-greece-sea-turtle-service"
+      ]
+    },
+    "dayToDay": {
+      "notes": "Community service work varies by program (island-based service projects, sea turtle conservation). Accommodation is centrally located, often steps from the sea on the islands. Meals emphasize authentic tavernas over tourist-oriented restaurants.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Greece destination page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "tft-greece-island-hopping-8-days",
+        "tft-greece-portugal-island-adventure"
+      ]
+    },
+    "dayToDay": {
+      "notes": "Island-hopping structure means frequent movement between destinations (e.g., Santorini, Paros, Corfu) rather than a single home base for the trip.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Greece destination page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "tft-italy-rome-amalfi-coast-explorer",
+        "tft-italy-travel-photography-workshop"
+      ]
+    },
+    "dayToDay": {
+      "notes": "As with all TFT programs, specific accommodation names are not published in advance for safety reasons. Italian meal timing runs later than in the US (lunch 1-2:30pm, dinner rarely before 7:30-8:30pm), with an early-evening Aperitivo custom before dinner.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Italy destination page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "tft-spain-spanish-language-immersion-14-days",
+        "tft-spain-spanish-language-immersion-21-days"
+      ]
+    },
+    "dayToDay": {
+      "notes": "Includes formal Spanish classes as a structured part of the day. Spanish meal timing runs later than in the US (lunch 2-4pm, dinner 8-9pm), with tapas culture as a core part of the food experience.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Spain destination page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": ["tft-portugal-adventure"] },
+    "dayToDay": {
+      "notes": "Accommodation is safe, comfortable, centrally-located hotels, all rooms supervised by staff.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Portugal destination page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "tft-iceland-adventure" },
+    "dayToDay": {
+      "notes": "Accommodation is primarily family-run guesthouses and hostels rather than American-style hotels, reflecting Iceland's rural character; guests are typically asked to remove shoes indoors. Structured as a road trip - the group changes location most days rather than having a fixed home base.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Iceland Adventure program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "tft-scotland-ireland-adventure" },
+    "dayToDay": {
+      "notes": "Accommodation includes hostels for two of the three stops and an outdoor activity center on Achill Island for the third, where daily programming (surfing, canoeing, coasteering, archery) runs continuously rather than being a single scheduled activity. Traditional Irish music sessions take place in family-friendly pubs, where teens can enjoy food and soft drinks alongside the music. As with all TFT programs, specific accommodation names are not published in advance for safety reasons.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Ireland destination page and customer testimonials (travelforteens.com/ireland)",
       "verifiedAt": "2026-09-15"
     }
   }
