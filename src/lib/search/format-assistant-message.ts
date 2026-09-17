@@ -9,6 +9,7 @@ import { getMonthLabel } from "@/lib/constants/months";
 import { filterPrograms } from "@/lib/data/filter-programs";
 import { formatDateWindowFilterLabel } from "@/lib/data/matches-date-window-filter";
 import { countSearchResultItems } from "@/lib/data/group-search-results";
+import { participantGenderFilterLabel } from "@/lib/constants/participant-gender";
 import { getRegionLabel } from "@/lib/data/us-regions";
 import { stripNoOpFilterPatch } from "@/lib/search/filter-patch-delta";
 import type { LlmParseResponse } from "@/lib/search/llm-parse-schema";
@@ -174,6 +175,10 @@ function describeFilterPatch(patch: Partial<SearchFilters>): string {
   if (patch.gradesCompleted?.length) {
     const grades = patch.gradesCompleted.map((g) => `${g}th grade`).join(", ");
     parts.push(`grade: ${grades}`);
+  }
+
+  if (patch.participantGenders?.length) {
+    parts.push(participantGenderFilterLabel(patch.participantGenders));
   }
 
   if (parts.length === 0) {

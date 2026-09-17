@@ -10,6 +10,10 @@ import type {
   FlagType,
   ProgramFormatId,
 } from "@/lib/constants/filters";
+import type {
+  ParticipantGenderFilterId,
+  ParticipantGenderId,
+} from "@/lib/constants/participant-gender";
 
 export interface ProgramFlag {
   id: string;
@@ -95,6 +99,8 @@ export interface Program {
   flags: ProgramFlag[];
   /** Present when curated day-to-day notes exist for this program/group. */
   dayToDay?: ProgramDayToDay;
+  /** Curated participant gender — merged from participant-gender.json at import. */
+  participantGender: ParticipantGenderId;
 
   /** Summer season this row describes (e.g. 2027). */
   seasonYear: number;
@@ -146,6 +152,8 @@ export interface SearchFilters {
   /** When both set, program must run entirely within this inclusive ISO date window. */
   dateWindowStart: string | null;
   dateWindowEnd: string | null;
+  /** OR logic — coed programs are excluded when any value is set. */
+  participantGenders: ParticipantGenderFilterId[];
 }
 
 export const DEFAULT_SEARCH_FILTERS: SearchFilters = {
@@ -172,6 +180,7 @@ export const DEFAULT_SEARCH_FILTERS: SearchFilters = {
   maxDurationWeeks: null,
   dateWindowStart: null,
   dateWindowEnd: null,
+  participantGenders: [],
 };
 
 /** Expected columns in the program CSV (2027 names with legacy 2026 fallbacks at import). */

@@ -7,6 +7,7 @@ import { ProgramSaveButton } from "@/components/search/program-save-button";
 import { SeasonReviewBadge } from "@/components/search/season-review-badge";
 import { btnOutline } from "@/components/ui/button-styles";
 import { ADMISSION_TYPE_BY_ID } from "@/lib/constants/admission-types";
+import { participantGenderBadgeLabel } from "@/lib/constants/participant-gender";
 import {
   categoryLabelForId,
   getProgramCategoryIds,
@@ -68,6 +69,9 @@ export function GroupedProgramCard({
   const { getShortlistsForProgram, activeShortlist, isSavedInActive, hydrated } =
     useWorkspace();
   const admission = ADMISSION_TYPE_BY_ID[representative.admissionType];
+  const participantGenderBadge = participantGenderBadgeLabel(
+    representative.participantGender,
+  );
   const trackGroups = groupProgramsByTrack(programs);
   const savedCount = hydrated
     ? programs.filter((p) => isSavedInActive(p.id)).length
@@ -111,6 +115,11 @@ export function GroupedProgramCard({
             {representative.fullyFunded && (
               <span className="rounded-full bg-[var(--color-amber-soft)] px-2.5 py-0.5 text-xs font-semibold text-[var(--color-navy)]">
                 Fully Funded
+              </span>
+            )}
+            {participantGenderBadge && (
+              <span className="rounded-full bg-violet-50 px-2.5 py-0.5 text-xs font-medium text-violet-900">
+                {participantGenderBadge}
               </span>
             )}
             <SeasonReviewBadge program={representative} />

@@ -5,6 +5,7 @@ import {
   PRICE_FILTERS,
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
+import { participantGenderFilterLabel } from "@/lib/constants/participant-gender";
 import { getMonthLabel } from "@/lib/constants/months";
 import { formatDateWindowFilterLabel } from "@/lib/data/matches-date-window-filter";
 import { TARGET_SEASON_YEAR } from "@/lib/constants/season-review";
@@ -221,6 +222,14 @@ export function getActiveFilterItems(filters: SearchFilters): ActiveFilterItem[]
       key: "season-verified-only",
       label: `${TARGET_SEASON_YEAR} verified only`,
       remove: { includePendingSeasonRefresh: true },
+    });
+  }
+
+  if (filters.participantGenders.length > 0) {
+    items.push({
+      key: "participant-gender",
+      label: participantGenderFilterLabel(filters.participantGenders),
+      remove: { participantGenders: [] },
     });
   }
 

@@ -22,6 +22,10 @@ import {
 } from "../src/lib/data/parse-csv-program-fields";
 import { parseReviewStatus, parseSeasonYear } from "../src/lib/data/normalize-season-review";
 import { isDayToDaySourceType } from "../src/lib/constants/day-to-day";
+import {
+  isParticipantGenderId,
+  type ParticipantGenderId,
+} from "../src/lib/constants/participant-gender";
 import { isValidDayToDay } from "../src/lib/data/day-to-day";
 import type { Program, ProgramCsvRow, ProgramFlag, ProgramDayToDay } from "../src/lib/types/program";
 
@@ -48,6 +52,11 @@ interface FlagRule {
 interface DayToDayRule {
   match: CuratedMatch;
   dayToDay: ProgramDayToDay;
+}
+
+interface ParticipantGenderRule {
+  match: CuratedMatch;
+  participantGender: ParticipantGenderId;
 }
 
 function parseCsv(content: string): ProgramCsvRow[] {
@@ -119,6 +128,12 @@ function loadDayToDayRules(): DayToDayRule[] {
   return JSON.parse(readFileSync(path, "utf-8")) as DayToDayRule[];
 }
 
+function loadParticipantGenderRules(): ParticipantGenderRule[] {
+  const path = resolve(process.cwd(), "data/seed/participant-gender.json");
+  if (!existsSync(path)) return [];
+  return JSON.parse(readFileSync(path, "utf-8")) as ParticipantGenderRule[];
+}
+
 function curatedRuleMatches(
   match: CuratedMatch,
   program: Pick<Program, "name" | "slug" | "programGroupId" | "trackDetail">,
@@ -176,6 +191,19 @@ function mergeDayToDay(
   return groupDefault?.dayToDay;
 }
 
+function mergeParticipantGender(
+  program: Pick<Program, "name" | "slug" | "programGroupId" | "trackDetail">,
+  rules: ParticipantGenderRule[],
+): ParticipantGenderId {
+  for (const rule of rules) {
+    if (!curatedRuleMatches(rule.match, program)) continue;
+    if (isParticipantGenderId(rule.participantGender)) {
+      return rule.participantGender;
+    }
+  }
+  return "coed";
+}
+
 function validateDayToDayRules(rules: DayToDayRule[]): void {
   for (const [index, rule] of rules.entries()) {
     const { dayToDay } = rule;
@@ -199,6 +227,7 @@ function rowToProgram(
   verifiedAt: string,
   flagRules: FlagRule[],
   dayToDayRules: DayToDayRule[],
+  participantGenderRules: ParticipantGenderRule[],
 ): Program | null {
   const category = categoryIdFromCsvValue(row["Primary Category"]);
   if (!category) {
@@ -275,8 +304,14 @@ function rowToProgram(
   const flags = mergeFlags(mergeContext, parseFlags(row.Flags), flagRules);
 
   const dayToDay = mergeDayToDay(mergeContext, dayToDayRules);
+  const participantGender = mergeParticipantGender(mergeContext, participantGenderRules);
 
-  return { ...programBase, flags, ...(dayToDay ? { dayToDay } : {}) };
+  return {
+    ...programBase,
+    flags,
+    participantGender,
+    ...(dayToDay ? { dayToDay } : {}),
+  };
 }
 
 const REFRESH_CSV_PATH = "data/source/summer-programs-2027.csv";
@@ -321,6 +356,7 @@ function main() {
 
   const flagRules = loadFlagRules();
   const dayToDayRules = loadDayToDayRules();
+  const participantGenderRules = loadParticipantGenderRules();
   validateDayToDayRules(dayToDayRules);
 
   const mergeRefresh = !inputArg;
@@ -337,7 +373,9 @@ function main() {
   }
 
   const programs = rows
-    .map((row, i) => rowToProgram(row, i, verifiedAt, flagRules, dayToDayRules))
+    .map((row, i) =>
+      rowToProgram(row, i, verifiedAt, flagRules, dayToDayRules, participantGenderRules),
+    )
     .filter((p): p is Program => p !== null);
 
   mkdirSync(dirname(outputPath), { recursive: true });

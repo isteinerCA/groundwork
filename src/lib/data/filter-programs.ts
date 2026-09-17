@@ -13,6 +13,7 @@ import {
 import { matchesNumericPriceFilter, matchesPriceFilter } from "@/lib/data/matches-price-filter";
 import { formatMatchesFilter } from "@/lib/data/normalize-format";
 import { gradeMatchesFilter } from "@/lib/data/normalize-grade";
+import { participantGenderMatchesFilter } from "@/lib/data/matches-participant-gender";
 import type { Program, SearchFilters } from "@/lib/types/program";
 
 export function filterPrograms(programs: Program[], filters: SearchFilters): Program[] {
@@ -129,6 +130,12 @@ export function matchesProgram(
   }
 
   if (!matchesDataQuery(program, filters.dataQuery, options)) return false;
+
+  if (
+    !participantGenderMatchesFilter(program, filters.participantGenders ?? [])
+  ) {
+    return false;
+  }
 
   if (
     !matchesSeasonReviewFilter(program, filters.includePendingSeasonRefresh)

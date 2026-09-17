@@ -22,7 +22,8 @@ import {
   parseGradesFromCsv,
   parsePriceFromCsv,
 } from "../src/lib/data/parse-csv-program-fields";
-import { sortPrograms } from "../src/lib/data/filter-programs";
+import { filterPrograms, sortPrograms } from "../src/lib/data/filter-programs";
+import { participantGenderMatchesFilter } from "../src/lib/data/matches-participant-gender";
 import {
   buildSearchResultItems,
   countSearchResultItems,
@@ -165,6 +166,7 @@ const stubProgram = (overrides: Partial<Program> & Pick<Program, "name" | "locat
     financialAidAvailable: false,
     websiteUrl: "https://example.com",
     flags: [],
+    participantGender: "coed",
     seasonYear: 2026,
     reviewStatus: "provisional",
     dataVerifiedAt: "2026-01-01",
@@ -770,6 +772,69 @@ if (
   }) !== "14 days"
 ) {
   console.error("FAIL: formatCompareLength should fall back to lengthMinDays without dates");
+  failed++;
+}
+
+const girlsProgram = stubProgram({
+  name: "Chimney Corners Camp",
+  locationDisplay: "Becket, MA",
+  participantGender: "girls-inclusive",
+});
+const boysProgram = stubProgram({
+  name: "Camp Becket",
+  locationDisplay: "Becket, MA",
+  participantGender: "boys",
+});
+const coedProgram = stubProgram({
+  name: "Generic Coed Camp",
+  locationDisplay: "Boston, MA",
+  participantGender: "coed",
+});
+
+if (!participantGenderMatchesFilter(girlsProgram, ["girls", "girls-inclusive"])) {
+  console.error("FAIL: girls-inclusive program should match girls-only filter");
+  failed++;
+}
+if (participantGenderMatchesFilter(coedProgram, ["girls", "girls-inclusive"])) {
+  console.error("FAIL: coed program should not match girls-only filter");
+  failed++;
+}
+if (!participantGenderMatchesFilter(boysProgram, ["boys"])) {
+  console.error("FAIL: boys program should match boys-only filter");
+  failed++;
+}
+
+const genderFilterResults = filterPrograms(
+  [girlsProgram, boysProgram, coedProgram],
+  {
+    gradesCompleted: [9],
+    categories: [],
+    admissionTypes: [],
+    formats: [],
+    durationBuckets: [],
+    collegeCreditOnly: false,
+    fullyFundedOnly: false,
+    priceFilter: "any",
+    maxPrice: null,
+    minPrice: null,
+    usOnly: false,
+    excludeUnknownPrice: false,
+    includePendingSeasonRefresh: true,
+    dataQuery: "",
+    excludeLocation: "",
+    includeRegions: [],
+    includeLocations: [],
+    includeMonths: [],
+    excludeMonths: [],
+    minDurationWeeks: null,
+    maxDurationWeeks: null,
+    dateWindowStart: null,
+    dateWindowEnd: null,
+    participantGenders: ["girls", "girls-inclusive"],
+  },
+);
+if (genderFilterResults.length !== 1 || genderFilterResults[0]?.name !== "Chimney Corners Camp") {
+  console.error("FAIL: girls-only filter should return only girls-inclusive program");
   failed++;
 }
 

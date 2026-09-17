@@ -1,0 +1,18 @@
+[
+  {
+    "match": { "slugIncludes": "young-women" },
+    "participantGender": "girls"
+  },
+  {
+    "match": { "programGroupId": "mit-wtp" },
+    "participantGender": "girls"
+  },
+  {
+    "match": { "programGroupId": "bccymca-camp-becket" },
+    "participantGender": "boys"
+  },
+  {
+    "match": { "programGroupId": "bccymca-chimney-corners" },
+    "participantGender": "girls-inclusive"
+  }
+]

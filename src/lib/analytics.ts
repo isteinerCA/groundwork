@@ -115,6 +115,7 @@ export function summarizeSearchFilters(filters: SearchFilters): EventProps {
     us_only: filters.usOnly,
     hide_unknown_price: filters.excludeUnknownPrice,
     has_data_query: filters.dataQuery.trim().length > 0,
+    participant_genders: joinList(filters.participantGenders),
   };
 
   return Object.fromEntries(

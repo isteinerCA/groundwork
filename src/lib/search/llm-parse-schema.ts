@@ -8,6 +8,7 @@ import {
   PROGRAM_FORMATS,
 } from "@/lib/constants/filters";
 import { parseMonthList, isNegatedMonthQuery, MONTH_NUMBERS, type MonthNumber } from "@/lib/constants/months";
+import { PARTICIPANT_GENDER_FILTER_IDS } from "@/lib/constants/participant-gender";
 import { TARGET_SEASON_YEAR } from "@/lib/constants/season-review";
 import { parseIsoDate } from "@/lib/data/parse-dates-display";
 import { parseMultiStateLocations, resolveLocationQuery } from "@/lib/data/matches-location";
@@ -37,6 +38,10 @@ const durationIds = DURATION_BUCKETS.map((d) => d.id) as [
 const priceIds = PRICE_FILTERS.map((p) => p.id) as [
   (typeof PRICE_FILTERS)[number]["id"],
   ...(typeof PRICE_FILTERS)[number]["id"][],
+];
+const participantGenderFilterIds = [...PARTICIPANT_GENDER_FILTER_IDS] as [
+  (typeof PARTICIPANT_GENDER_FILTER_IDS)[number],
+  ...(typeof PARTICIPANT_GENDER_FILTER_IDS)[number][],
 ];
 
 // Use numeric bounds (not z.custom) so OpenAI structured-output JSON Schema stays valid.
@@ -70,6 +75,7 @@ export const filterPatchSchema = z
     maxDurationWeeks: z.number().min(0).nullable().optional(),
     dateWindowStart: z.string().nullable().optional(),
     dateWindowEnd: z.string().nullable().optional(),
+    participantGenders: z.array(z.enum(participantGenderFilterIds)).optional(),
   })
   .strict();
 
@@ -96,6 +102,7 @@ export const searchFiltersSchema = z.object({
   maxDurationWeeks: z.number().min(0).nullable(),
   dateWindowStart: z.string().nullable(),
   dateWindowEnd: z.string().nullable(),
+  participantGenders: z.array(z.enum(participantGenderFilterIds)),
   includePendingSeasonRefresh: z.boolean(),
 });
 
@@ -262,6 +269,9 @@ export function sanitizeFilterPatch(
   }
   if (patch.dateWindowEnd !== undefined) {
     sanitized.dateWindowEnd = sanitizeIsoDateOrNull(patch.dateWindowEnd);
+  }
+  if (patch.participantGenders !== undefined) {
+    sanitized.participantGenders = [...new Set(patch.participantGenders)];
   }
   normalizeDateWindowSeasonYear(sanitized);
 

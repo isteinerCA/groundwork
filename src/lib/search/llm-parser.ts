@@ -78,6 +78,10 @@ ${durations}
 ${prices}
 - maxPrice / minPrice: number | null — exact dollar cap/floor using parsed program prices (e.g. "under $3000" → maxPrice: 3000). Prefer over buckets for specific amounts. Programs marked "Contact program" may be omitted unless excludeUnknownPrice is false — mention this in unexpressible when relevant.
 - usOnly: boolean — US programs only (exclude international)
+- participantGenders: string[] — OR logic for curated single-sex / girls-inclusive programs. Valid IDs: girls, girls-inclusive, boys. Coed programs are excluded when this filter is active.
+  "girls only", "for girls", "women only", "single-sex girls", "all girls" → participantGenders: ["girls", "girls-inclusive"]
+  "boys only", "boys camp", "for boys", "single-sex boys" → participantGenders: ["boys"]
+  Do NOT put gender requests in unexpressible — use participantGenders instead.
 - excludeUnknownPrice: boolean — hide programs with unlisted/contact-for-price
 - dataQuery: string — free-text for POSITIVE location include, program names, gotcha topics (deposit, SEVP, safety), or other include constraints. Use lowercase. Clear with empty string when removed.
 - excludeLocation: string — exclude programs in a US state/location (canonical lowercase state name, e.g. "california"). Use for "not in California", "exclude Texas", "outside Massachusetts". Clear with empty string when removed. NEVER put negated locations in dataQuery.
@@ -130,7 +134,6 @@ Set clearAll: true when the user wants to reset all filters ("start over", "clea
 
 ## Cannot filter (put in unexpressible)
 - **Participant age floor** — excluding programs that admit younger kids ("older than 12", "teen only", "13+", "no elementary", "participants must be at least…"). We cannot filter by minimum participant age; many programs list wide age ranges (e.g. ages 7–17). Do NOT change gradesCompleted to simulate this. Leave filterPatch empty (or unchanged for grades). In assistantMessage, explain the limitation and tell the user to check the **Grades** line on each program card for the full age range.
-- Gender or single-sex programs
 - Zip code / radius search
 - Specific acceptance rates or competitiveness beyond admission type
 - Real-time availability or seat counts

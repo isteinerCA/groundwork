@@ -4,6 +4,7 @@
  */
 import { DEFAULT_SEARCH_FILTERS } from "../src/lib/types/program";
 import { filterPrograms } from "../src/lib/data/filter-programs";
+import { countSearchResultItems } from "../src/lib/data/group-search-results";
 import { matchesDataQuery } from "../src/lib/data/matches-data-query";
 import { termMatchesInText } from "../src/lib/data/fuzzy-text-match";
 import { mergeFilterPatch, isExpandIntent } from "../src/lib/search/merge-filter-patch";
@@ -528,7 +529,9 @@ assert(
   !addTechMessage.includes("I've added tech camps"),
   "add tech camps message ignores LLM assistantMessage prose",
 );
-const addTechCount = filterPrograms(dataForAssistant.programs, addTechNext).length;
+const addTechCount = countSearchResultItems(
+  filterPrograms(dataForAssistant.programs, addTechNext),
+);
 assert(addTechCount > 0, "marine + tech categories return results for grade 10");
 assert(
   addTechMessage.includes(`${addTechCount} program`),
@@ -586,7 +589,9 @@ assert(
   !cosmoMessage.toLowerCase().includes("college credit"),
   "cosmo message does not mention college credit",
 );
-const cosmoCount = filterPrograms(dataForAssistant.programs, cosmoFilters).length;
+const cosmoCount = countSearchResultItems(
+  filterPrograms(dataForAssistant.programs, cosmoFilters),
+);
 assert(
   cosmoMessage.includes(`${cosmoCount} program`),
   "cosmo message includes accurate result count",
@@ -907,6 +912,43 @@ if (failed === 0) {
       "Princeton journalism program excluded for completed grade 12",
     );
   }
+}
+
+{
+  const data = JSON.parse(readFileSync("data/seed/programs.json", "utf-8")) as {
+    programs: Program[];
+  };
+  const girlsOnly = filterPrograms(data.programs, {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [8],
+    participantGenders: ["girls", "girls-inclusive"],
+  });
+  assert(
+    girlsOnly.some((p) => p.programGroupId === "bccymca-chimney-corners"),
+    "girls filter includes Chimney Corners",
+  );
+  assert(
+    girlsOnly.some((p) => p.slug.includes("young-women")),
+    "girls filter includes Lasting Adventures Young Women's programs",
+  );
+  assert(
+    !girlsOnly.some((p) => p.programGroupId === "bccymca-camp-becket"),
+    "girls filter excludes Camp Becket",
+  );
+  assert(
+    girlsOnly.every(
+      (p) => p.participantGender === "girls" || p.participantGender === "girls-inclusive",
+    ),
+    "girls filter only returns tagged girls programs",
+  );
+
+  const sanitized = sanitizeFilterPatch({
+    participantGenders: ["girls", "girls-inclusive"],
+  });
+  assert(
+    sanitized.participantGenders?.length === 2,
+    "sanitizeFilterPatch preserves participantGenders",
+  );
 }
 
 if (failed === 0) {

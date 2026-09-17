@@ -60,6 +60,14 @@ export function stripNoOpFilterPatch(
     ) {
       continue;
     }
+    if (
+      key === "participantGenders" &&
+      Array.isArray(value) &&
+      value.length === 0 &&
+      current.participantGenders.length === 0
+    ) {
+      continue;
+    }
 
     if (patchValueEqualsCurrent(key, value, current)) continue;
 
