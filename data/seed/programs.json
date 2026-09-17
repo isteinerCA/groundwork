@@ -41522,7 +41522,13 @@
       "websiteUrl": "https://arccprograms.com/programs/spain-morocco-summer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Accommodation varies: Moroccan riads, local Spanish homes, hotels, and an Amazigh community guesthouse in the High Atlas Mountains. Travel includes private shuttles, vans, trains, and a ferry crossing of the Strait of Gibraltar. All trip leaders are certified Wilderness First Responders.",
+        "sourceType": "official_policy",
+        "sourceCitation": "ARCC Spain & Morocco program page",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-735",
@@ -41567,7 +41573,13 @@
       "websiteUrl": "https://arccprograms.com/programs/peru-sacred-valley-summer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Accommodation varies: simple hotels, hostels, homestays, and a village community house. Travel is by train and private bus. All trip leaders are certified Wilderness First Responders. High altitude (Cusco is over 11,000 feet) - the itinerary builds in acclimatization time.",
+        "sourceType": "official_policy",
+        "sourceCitation": "ARCC Peru program page",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-736",
@@ -41612,7 +41624,13 @@
       "websiteUrl": "https://arccprograms.com/programs/costa-rica-cloud-forest/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Students live with homestay families in a highland ranching village for the service portion, and stay at a river lodge during the rafting segment of the trip.",
+        "sourceType": "official_policy",
+        "sourceCitation": "ARCC Costa Rica program page and third-party comparison sources",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-737",
@@ -41657,7 +41675,13 @@
       "websiteUrl": "https://arccprograms.com/programs/costa-rica-cloud-forest/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Students live with homestay families in a highland ranching village for the service portion, and stay at a river lodge during the rafting segment of the trip.",
+        "sourceType": "official_policy",
+        "sourceCitation": "ARCC Costa Rica program page and third-party comparison sources",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-738",
@@ -41702,7 +41726,13 @@
       "websiteUrl": "https://arccprograms.com/programs/australia-fiji-summer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Includes village homestays and an off-grid eco-retreat in Fiji's highlands, plus beach camping in Fiji and more conventional accommodation in Australia (Sydney, Queensland).",
+        "sourceType": "official_policy",
+        "sourceCitation": "ARCC Australia & Fiji program page and TeenLife listing",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-739",
@@ -41747,7 +41777,13 @@
       "websiteUrl": "https://arccprograms.com/programs/ecuador-galapagos-summer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Accommodation varies: hostels, small simple hotels, an eco-lodge, and rustic community buildings. Travel is by private bus, boat, and a commercial flight to/from the Galapagos. All trip leaders are certified Wilderness First Responders.",
+        "sourceType": "official_policy",
+        "sourceCitation": "ARCC Ecuador & Galapagos program page",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-740",
@@ -41792,7 +41828,13 @@
       "websiteUrl": "https://arccprograms.com/programs/kenya-tanzania-summer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Mostly camping in private campsites (tents and gear provided by ARCC), with some nights in a small hotel on Zanzibar and a guesthouse in Southern Kenya. Travel is via custom-built overland safari trucks equipped with sleeping/kitchen/storage facilities. All trip leaders are certified Wilderness First Responders.",
+        "sourceType": "official_policy",
+        "sourceCitation": "ARCC Kenya & Tanzania program page",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-741",
@@ -41837,7 +41879,13 @@
       "websiteUrl": "https://arccprograms.com/programs/vietnam-cambodia-summer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Accommodation varies: small hotels and hostels, guesthouses, and a sailboat overnight in Halong Bay. Travel includes private buses, boats, commercial flights, and tuk-tuks. All trip leaders are certified Wilderness First Responders.",
+        "sourceType": "official_policy",
+        "sourceCitation": "ARCC Vietnam & Cambodia program page",
+        "verifiedAt": "2026-09-15"
+      }
     }
   ]
 }
