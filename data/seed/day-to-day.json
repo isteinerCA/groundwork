@@ -1299,11 +1299,11 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-argentina-buenos-aires-dance-culture" },
+    "match": { "programGroupId": "ciee-argentina-buenos-aires-soccer-mental-performance" },
     "dayToDay": {
-      "notes": "Homestay-based. Intensive daily dance training, 5-6 hours a day, five days a week, across Tango, Argentine folk dance, ballet, and contemporary dance, taught by local instructors. Program culminates in an original student-choreographed piece inspired by South America. Weekend excursions to an estancia (ranch) and Iguazú Falls, matching the Spanish-language program's itinerary.",
+      "notes": "Homestay-based. Daily on-pitch training paired with sports psychology coursework (stress/anxiety management, performance zones, goal-setting). Visits La Boca neighborhood and its open-air museum, tours La Bombonera stadium (home of Boca Juniors), and includes a hands-on tango workshop with local students. Overnight stay at a traditional 19th-century estancia (ranch) with horseback riding and a traditional asado, plus a day trip to the Tigre Delta.",
       "sourceType": "official_policy",
-      "sourceCitation": "CIEE Dance & Culture (Buenos Aires) program page",
+      "sourceCitation": "CIEE Soccer & Mental Performance (Buenos Aires) program page",
       "verifiedAt": "2026-09-15"
     }
   },
@@ -1331,6 +1331,339 @@
       "notes": "Homestay-based; host families share home-cooked meals (e.g., seswaa, bogobe). Students conduct health assessments and help implement a health fair in a rural Botswana community, working alongside local community-based organizations. Includes a meeting with local high school students to discuss teen health challenges in the region, and an excursion to the Okavango Delta.",
       "sourceType": "official_policy",
       "sourceCitation": "CIEE Leadership & Service in Public Health (Gaborone) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-brazil-sao-paulo-global-entrepreneurship" },
+    "dayToDay": {
+      "notes": "Homestay-based. Visits a working chocolate mega-factory (Cacau Show) to study franchise/supply-chain business models, and Tenondé Porã Indigenous Territory to learn about Guarani cultural preservation and sustainable income sources. Culminates in a team-pitched startup concept presented to local mentors, and a churrasco barbecue.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Global Entrepreneurship (São Paulo) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-brazil-sao-paulo-soccer-mental-performance" },
+    "dayToDay": {
+      "notes": "Homestay-based. Daily on-pitch training combined with sports psychology coursework (goal-setting, motivation, confidence); students maintain a Personal Performance Portfolio throughout. Includes a tour of the historic Pacaembu Arena and a 3-day overnight excursion to the island town of Ilhabela (beaches, whale-watching, Atlantic Forest hiking).",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Soccer & Mental Performance (São Paulo) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-china-shanghai-culinary-arts-chinese-culture" },
+    "dayToDay": {
+      "notes": "Homestay-based. Hands-on cooking instruction in professional teaching kitchens, plus visits to bustling markets, neighborhood breakfast shops, and local restaurants. Overnight excursion to Yangzhou (birthplace of Huaiyang cuisine, one of China's four great culinary traditions). Also includes Tai Chi and Shaolin Kung Fu training, a pottery workshop, and a sunset Huangpu River cruise.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Culinary Arts & Chinese Culture (Shanghai) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-china-shanghai-engineering-renewable-energies" },
+    "dayToDay": {
+      "notes": "Homestay-based. Hands-on fieldwork assessing city design and sustainability, with industry tours including an automated production facility and Apollo Park (autonomous driving/intelligent transportation center). Overnight excursion to Wuxi (Huishan Old Town, Lingshan Grand Buddha, Taihu Lake). Also includes a traditional 72-step Chinese ceramic-making workshop and a Huangpu River cruise.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Engineering & Renewable Energies (Shanghai) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-china-shanghai-ai-real-world-application" },
+    "dayToDay": {
+      "notes": "Homestay-based. Students partner with a local organization on a real-world challenge, culminating in an AI-powered prototype. Includes a visit to a smart community center helping residents use digital tools, a martial arts workshop (Tai Chi and Shaolin Kung Fu, judged team competition), and table tennis at a club founded by Olympic champion Xu Xin. Overnight excursion to Wuxi.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE AI & Real-World Application (Shanghai) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-costarica-monteverde-ecology-sustainability" },
+    "dayToDay": {
+      "notes": "Farm-based living component: students milk cows, gather eggs, feed pigs, make compost, and care for seedlings in a native tree nursery. Week-long extension on the Pacific coastline for marine conservation study. Weekend excursions include El Tigre Waterfalls and Bajo del Tigre Nature Preserve (Children's Eternal Rainforest).",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Ecology & Sustainability (Monteverde) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-costarica-monteverde-photography-costa-rican-culture" },
+    "dayToDay": {
+      "notes": "Dorm/group housing. Guided photo walks and workshops led by professional photographers, covering composition, lighting, portrait, and low-light techniques. Ziplining over the Monteverde Cloud Forest canopy for aerial shots. Excursions to Santa Rosa National Park (wildlife/historic landscapes) and the Pacific coast (coastal and underwater photography).",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Photography & Costa Rican Culture (Monteverde) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-costarica-monteverde-wildlife-conservation" },
+    "dayToDay": {
+      "notes": "Group housing. Field observation in the Monteverde Cloud Forest (capuchins, toucans, two-toed sloths); a night hike to observe nocturnal species. Excursion to the Pacific coast covering marine wildlife and lowland forest ecosystems (jaguars, tapirs). Includes ziplining and a Bajo del Tigre preserve hike.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Wildlife Conservation (Monteverde) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-czechrepublic-prague-painting-czech-culture" },
+    "dayToDay": {
+      "notes": "Group housing. Coursework created in collaboration with the Malovani Kresleni art atelier. Includes a hands-on street art workshop (stenciling, layering, mural-scale work) with artists-in-residence, and the Invisible Exhibition - a sensory experience navigated in complete darkness, guided by blind or partially sighted guides. Overnight excursion to the medieval village of Český Krumlov.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Painting & Czech Culture (Prague) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-denmark-copenhagen-climate-change-policy-advocacy" },
+    "dayToDay": {
+      "notes": "Homestay-based. Visits to CopenHill (waste-to-energy plant doubling as a ski slope) and Hofor (the city's water utility). 3-day stay at Yduns Have, an eco-farm on Samsø island - picking strawberries, tending soil, caring for animals. Dialogue with students from The Green Youth Movement. Culminates in a student-developed climate advocacy strategy.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Climate Change Policy & Advocacy (Copenhagen) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-denmark-copenhagen-engineering-sustainability" },
+    "dayToDay": {
+      "notes": "Group housing. Hands-on fieldwork collecting environmental data and analyzing sustainable behavior patterns; visit to CopenHill. Bike excursion to Nyhavn Harbor and the Little Mermaid statue. Travel to Samsø (world's first renewable energy island) and Youth Island (youth changemaker hub). Culminates in a proposed engineering tool for a green initiative.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Engineering & Sustainability (Copenhagen) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-multidest-dublin-copenhagen-berlin-global-entrepreneurship-innovation-europe" },
+    "dayToDay": {
+      "notes": "Group housing; students fly between all three cities during the program. Visit to Station, a 3,700 sq. meter former police station turned student-driven innovation hub in Copenhagen. Visit to the Berlin Wall Memorial paired with a ropes course at Mount Mitte. Program culminates in a business pitch to a panel of professionals.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Global Entrepreneurship & Innovation in Europe program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-dominicanrepublic-santiago-leadership-service-public-health" },
+    "dayToDay": {
+      "notes": "Homestay-based. Visits both a public hospital and a private clinic in Santiago to compare healthcare access. Students act as junior health promoters designing a health education fair. Bachata/salsa dance classes and a visit to the Centro León art center. Tubing and rope-swing excursion in the Mao region.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Leadership & Service in Public Health (Santiago de los Caballeros) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-dominicanrepublic-santiago-leadership-service-youth-development" },
+    "dayToDay": {
+      "notes": "Homestay-based. Partners with NGO Acción Callejera to run a summer camp for underprivileged children - coaching activities, running workshops, environmental clean-up projects. Visit to the Museum of Mirabal Sisters with a guided reflection on activism and social justice. Functional Spanish classes. Excursions to mountain areas and coastal cacao farms.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Leadership & Service in Youth Development (Santiago de los Caballeros) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-england-london-ai-real-world-application" },
+    "dayToDay": {
+      "notes": "Group housing. Overnight excursion to Milton Keynes: Bletchley Park (WWII codebreaking site) and The National Museum of Computing (rebuilt Colossus computer). Day trip to Cambridge including the AI Animal Chat interactive exhibit and river punting. Also visits Sandbox VR (Stranger Things: Catalyst) and the Twist Museum.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE AI & Real-World Application (London) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-england-london-creative-writing-british-culture" },
+    "dayToDay": {
+      "notes": "Group housing. Charles Dickens walking tour and a literary tour of Oxford (Alice in Wonderland/Narnia/Tolkien sites). Overnight excursion to Shakespeare's birthplace, Stratford-upon-Avon. Culminates in an Open Mic session sharing student work.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Creative Writing & British Culture (London) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-england-london-filmmaking-british-culture" },
+    "dayToDay": {
+      "notes": "Group housing. Walking tour of iconic London/Greenwich filming locations (Bridgerton, Thor, Pirates of the Caribbean). Harry Potter Studio Tour. Weekend excursions to Oxford and Stratford-upon-Avon. Students produce and present a 5-minute film scene with a director's statement.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Filmmaking & British Culture (London) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-england-london-soccer-mental-performance" },
+    "dayToDay": {
+      "notes": "Group housing. Behind-the-scenes tour of Emirates Stadium and the Arsenal Museum; visit to Lord's Cricket Ground. Overnight trip to Manchester with stadium tours of both Manchester clubs and the National Football Museum. Also visits the Tower of London and Tower Bridge.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Soccer & Mental Performance (London) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-england-london-sports-management-marketing" },
+    "dayToDay": {
+      "notes": "Group housing. Behind-the-scenes tours of Wembley Stadium (players' tunnel, dressing rooms, press room) and Twickenham Stadium/World Rugby Museum. Students propose a sponsorship business plan for a local sporting event or club.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Sports Management & Marketing (London) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-england-london-theater-arts-british-culture" },
+    "dayToDay": {
+      "notes": "Group housing. Backstage tour of the Theatre Royal Drury Lane (world's oldest continuously operating theatre site). Globe Theatre play attendance plus backstage tour with Elizabethan acting demonstrations. Overnight trip to Stratford-upon-Avon and a day trip to Oxford. Culminates in a student-written and performed mini-play.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Theater Arts & British Culture (London) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-estonia-tallinn-ai-real-world-application" },
+    "dayToDay": {
+      "notes": "Homestay-based. Old Town walking tour paired with a discussion of Estonia's digital transformation (e-government, Skype, Bolt). Visit to Telliskivi Creative City, a converted Soviet-era railway factory now hosting 250+ companies. Hands-on Estonian cooking class (rye bread, meat pies, kringle). Visit to the Tallinn Song Festival Grounds and the Singing Revolution history.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE AI & Real-World Application (Tallinn) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-estonia-tallinn-diplomacy-government" },
+    "dayToDay": {
+      "notes": "Homestay-based. Visit to the U.S. Embassy in Tallinn, meeting senior diplomatic officials. Tours of international peace organizations including cyber defense hubs and security agencies. Negotiation simulations and conflict-resolution exercises culminating in a proposed peace-building initiative. Nõmme Adventure Park treetop obstacle course. Excursions to coastal towns like Pärnu, Kuressaare, or Haapsalu.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Diplomacy & Government (Tallinn) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-germany-berlin-engineering-automotives" },
+    "dayToDay": {
+      "notes": "Group housing. Excursion to Munich including BMW Welt and Museum, plus Marienplatz/Glockenspiel. Visits the DRIVE Volkswagen Group Forum and the German Museum of Technology in Berlin.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Engineering & Automotives (Berlin) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-germany-berlin-engineering-german-culture" },
+    "dayToDay": {
+      "notes": "Group housing. Sound engineering workshop at Trixx Studio; 3D printing/hardware tour at MotionLab. Excursions to Potsdam and Dresden to see modern engineering advancements.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Engineering & German Culture (Berlin) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-germany-berlin-german-language-culture" },
+    "dayToDay": {
+      "notes": "Homestay-based. Street art tour; visits to Olympiastadion (VIP boxes, locker rooms), the Spy Museum (laser maze challenge), and Sachsenhausen Concentration Camp or Flughafen Tempelhof. Day trip to Potsdam (Neues Palais, Chinese Tea House).",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE German Language & Culture (Berlin) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-germany-berlin-global-entrepreneurship" },
+    "dayToDay": {
+      "notes": "Homestay-based. Visit to Startup Incubator Berlin with Q&A from founding teams. Overnight excursion to Leipzig ('Hypezig') including the Völkerschlachtdenkmal monument and sites connected to Bach and Mendelssohn.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Global Entrepreneurship (Berlin) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-germany-berlin-music-production-german-culture" },
+    "dayToDay": {
+      "notes": "Group housing. Hands-on recording workshop at Trixx Studio Berlin; visit to the Berlin Philharmonie and the Futurium science museum. Kayaking through Kreuzberg's canals/Spreewald, and a trip to Potsdam's castles.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Music Production & German Culture (Berlin) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-ghana-legon-leadership-service-childrens-education" },
+    "dayToDay": {
+      "notes": "Homestay-based. Service placement at schools such as the Billa Mahmud Future Leaders School in Accra's Tse Ado community; students assist with math/science/English lessons and lead recess games. Traditional drumming, dance, cooking classes, batik-dyeing, and bead-making. Overnight excursion to Volta Lake (kayaking) and Wli Waterfalls, plus Shai Hills Resource Reserve.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Leadership & Service in Children's Education (Legon) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-ghana-legon-soccer-mental-performance" },
+    "dayToDay": {
+      "notes": "Homestay-based. Daily on-pitch training with dance lessons from the University of Ghana's Dance Department and a personal batik (tie-dye) design workshop. Meeting with a former Ghanaian professional soccer player. Kayaking on Lake Volta and a visit to the Cedi Beads Factory (recycled-glass bead making).",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Soccer & Mental Performance (Legon) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-greece-athens-architecture-greek-culture" },
+    "dayToDay": {
+      "notes": "Group housing. Sketchbook-in-hand city walks decoding Athenian design from the Odeon of Herodes Atticus to the Parthenon. Urban scavenger hunt through Anafiotika and Plaka; group mural collaboration. Excursions to Nafplio and the mountain villages of Corinthia.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Architecture & Greek Culture (Athens) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-greece-athens-art-history-greek-culture" },
+    "dayToDay": {
+      "notes": "Group housing. Experiments with ceramics, fresco painting, photography, and documentary filmmaking. Excursion to Tatoi (former royal estate) and attendance at the Athens Epidaurus Festival at the Odeon of Herodes Atticus. Day trips to Sounio/Lavrio and Nafplio.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Art History & Greek Culture (Athens) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-greece-athens-creative-writing-greek-culture" },
+    "dayToDay": {
+      "notes": "Group housing. Writing workshops at the Ancient Agora and Temple of Poseidon for inspiration; students collaborate on a drama script performed live or on film.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Creative Writing & Greek Culture (Athens) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-multidest-athens-rome-creative-writing-mythology-europe" },
+    "dayToDay": {
+      "notes": "Group housing; students travel between Athens and Rome. Character Creation Workshop at Villa Borghese; visit to Cinecittà World, Europe's largest film studio. Excursions to Nafplio and Florence. Culminates in a collaborative drama script performed live or on film.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Creative Writing & Mythology in Europe (Athens/Rome) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-greece-athens-marine-ecology-sustainability" },
+    "dayToDay": {
+      "notes": "Group housing. Coastal dune restoration work with local NGOs on the island of Aegina; water quality assessment, snorkeling, tide pool exploration. Excursions to Cape Sounion (Temple of Poseidon) and Vouliagmeni Beach.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Marine Ecology & Sustainability (Athens) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-ireland-dublin-global-entrepreneurship" },
+    "dayToDay": {
+      "notes": "Group housing. Tours of 'Silicon Docks' (Google/Meta European HQs) and small businesses like Container Coffee and Rolling Donut. Visit to Windmill Lane Recording Studios (U2's creative home). Excursion to the fishing village of Howth. Hurling lessons.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Global Entrepreneurship (Dublin) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-ireland-dublin-golf-mental-performance" },
+    "dayToDay": {
+      "notes": "Group housing. Daily golf sessions at courses including Royal Dublin with expert coaches paired with sports psychology instruction. Gaelic Games experience (hurling, Gaelic football, handball); amphibious WWII vehicle city tour; Ballad Tour of Dublin with a local musician. Day trips to Howth and Glendalough (Wicklow Mountains National Park).",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Golf & Mental Performance (Dublin) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-ireland-dublin-social-justice-advocacy" },
+    "dayToDay": {
+      "notes": "Group housing. Connects with local nonprofits serving unhoused, addiction, and migrant populations. Guided tour of 14 Henrietta Street (300 years of Dublin tenement history) and a workshop at the Rediscovery Centre (circular-economy upcycling across furniture, fashion, paint, and cycling enterprises). Visit to a replica of the Jeanie Johnston Famine Ship and the Famine Memorial. Weekend excursion to Howth.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Social Justice & Advocacy (Dublin) program page",
       "verifiedAt": "2026-09-15"
     }
   }
