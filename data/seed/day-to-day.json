@@ -884,6 +884,33 @@
     }
   },
   {
+    "match": { "programGroupId": "tft-costa-rica-ms-adrenaline" },
+    "dayToDay": {
+      "notes": "Itinerary includes an ATV-style itinerary with canyoning through jungle waterfalls, a visit to the Rio Negro hot springs (six pools naturally heated by the Rincon de la Vieja Volcano), a volcanic mud bath, and time at Tamarindo Beach. Paced more relaxed than the 9-10 grade equivalent trip to ease first-time travelers into being abroad.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Costa Rica for Middle School: Adrenaline program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "tft-costa-rica-ms-hola-costa-rica" },
+    "dayToDay": {
+      "notes": "First night at a mountain lodge overlooking a volcano in Turrialba, followed by an overnight whitewater rafting trip on the Pacuare River with a night spent in a rainforest lodge along the riverbank. Community service work (~20 hours) takes place alongside adventure activities. Designed specifically to be a gentle first international trip for younger travelers.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Costa Rica for Middle School: Hola Costa Rica program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "tft-costa-rica-ms-ultimate-adventure-service" },
+    "dayToDay": {
+      "notes": "Combines elements from the org's other Costa Rica programs into one extended trip: canyoning, hot springs, a volcanic mud bath, beachside community service (cleanups, English teaching), ziplining, and whitewater rafting. As with all TFT programs, specific accommodation names are not published in advance for safety reasons.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Costa Rica for Middle School: Ultimate Adventure & Service program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
     "match": {
       "programGroupId": [
         "tft-costa-rica-animal-rescue",
@@ -1050,14 +1077,18 @@
     }
   },
   {
-    "match": {
-      "programGroupId": [
-        "tft-greece-italy-island-service",
-        "tft-greece-sea-turtle-service"
-      ]
-    },
+    "match": { "programGroupId": "tft-greece-italy-island-service" },
     "dayToDay": {
       "notes": "Community service work varies by program (island-based service projects, sea turtle conservation). Accommodation is centrally located, often steps from the sea on the islands. Meals emphasize authentic tavernas over tourist-oriented restaurants.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens Greece destination page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "tft-greece-sea-turtle-service" },
+    "dayToDay": {
+      "notes": "Accommodation is centrally located, often steps from the sea on the islands. Meals emphasize authentic tavernas over tourist-oriented restaurants.",
       "sourceType": "official_policy",
       "sourceCitation": "Travel For Teens Greece destination page",
       "verifiedAt": "2026-09-15"

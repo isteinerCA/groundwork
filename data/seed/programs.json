@@ -1,6 +1,6 @@
 {
   "verifiedAt": "2026-09-17",
-  "count": 1032,
+  "count": 1036,
   "programs": [
     {
       "id": "prog-1",
@@ -54900,6 +54900,218 @@
     },
     {
       "id": "prog-994",
+      "slug": "tft-costa-rica-for-middle-school-adrenaline-departure",
+      "name": "TFT - Costa Rica for Middle School: Adrenaline",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-costa-rica-ms-adrenaline",
+      "description": "Adventure-focused itinerary (ziplining, waterfalls, beach time) for middle schoolers, paced more relaxed than the equivalent 9-10 grade version.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 7-8",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 7,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "11 days",
+      "lengthMinDays": 11,
+      "lengthMaxDays": 11,
+      "datesDisplay": "Jul 22 – Aug 1, 2027",
+      "dateStart": "2027-07-22",
+      "dateEnd": "2027-08-01",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Costa Rica",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,695 list / $4,225 with promotional discount",
+      "priceMin": 4225,
+      "priceMax": 4695,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/costa-rica-middle-school-adrenaline/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Itinerary includes an ATV-style itinerary with canyoning through jungle waterfalls, a visit to the Rio Negro hot springs (six pools naturally heated by the Rincon de la Vieja Volcano), a volcanic mud bath, and time at Tamarindo Beach. Paced more relaxed than the 9-10 grade equivalent trip to ease first-time travelers into being abroad.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Costa Rica for Middle School: Adrenaline program page",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-995",
+      "slug": "tft-costa-rica-for-middle-school-hola-costa-rica-departure-1",
+      "name": "TFT - Costa Rica for Middle School: Hola Costa Rica",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-costa-rica-ms-hola-costa-rica",
+      "description": "Overnight whitewater rafting on the Pacuare River (rated among the world's top rivers for rafting) plus community service, tailored for first-time middle school travelers.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "Departure 1",
+      "gradeDisplay": "Current grades 7-8",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 7,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "11 days",
+      "lengthMinDays": 11,
+      "lengthMaxDays": 11,
+      "datesDisplay": "Jun 30 – Jul 10, 2027",
+      "dateStart": "2027-06-30",
+      "dateEnd": "2027-07-10",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Costa Rica",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,595 list / $4,135 with promotional discount",
+      "priceMin": 4135,
+      "priceMax": 4595,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/hola-costa-rica-for-middle-school/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "First night at a mountain lodge overlooking a volcano in Turrialba, followed by an overnight whitewater rafting trip on the Pacuare River with a night spent in a rainforest lodge along the riverbank. Community service work (~20 hours) takes place alongside adventure activities. Designed specifically to be a gentle first international trip for younger travelers.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Costa Rica for Middle School: Hola Costa Rica program page",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-996",
+      "slug": "tft-costa-rica-for-middle-school-hola-costa-rica-departure-2",
+      "name": "TFT - Costa Rica for Middle School: Hola Costa Rica",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-costa-rica-ms-hola-costa-rica",
+      "description": "Second departure.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Cultural Exchange"
+      ],
+      "trackDetail": "Departure 2",
+      "gradeDisplay": "Current grades 7-8",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 7,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "under_2_weeks",
+      "lengthDisplay": "11 days",
+      "lengthMinDays": 11,
+      "lengthMaxDays": 11,
+      "datesDisplay": "Aug 2–12, 2027",
+      "dateStart": "2027-08-02",
+      "dateEnd": "2027-08-12",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Costa Rica",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,595 list / $4,135 with promotional discount",
+      "priceMin": 4135,
+      "priceMax": 4595,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/hola-costa-rica-for-middle-school/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "First night at a mountain lodge overlooking a volcano in Turrialba, followed by an overnight whitewater rafting trip on the Pacuare River with a night spent in a rainforest lodge along the riverbank. Community service work (~20 hours) takes place alongside adventure activities. Designed specifically to be a gentle first international trip for younger travelers.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Costa Rica for Middle School: Hola Costa Rica program page",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-997",
+      "slug": "tft-costa-rica-for-middle-school-ultimate-adventure-service-departure",
+      "name": "TFT - Costa Rica For Middle School: Ultimate Adventure & Service",
+      "institution": "Travel For Teens",
+      "programGroupId": "tft-costa-rica-ms-ultimate-adventure-service",
+      "description": "The extended combination of the org's most popular Costa Rica elements: canyoning, hot springs, beach service work, ziplining, and whitewater rafting.",
+      "category": "leadership-gifted",
+      "secondaryTags": [
+        "Outdoor/Wilderness"
+      ],
+      "trackDetail": "Departure",
+      "gradeDisplay": "Current grades 7-8",
+      "gradeCompletedMin": 6,
+      "gradeCompletedMax": 7,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "22 days",
+      "lengthMinDays": 22,
+      "lengthMaxDays": 22,
+      "datesDisplay": "Jul 22 – Aug 12, 2027",
+      "dateStart": "2027-07-22",
+      "dateEnd": "2027-08-12",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Costa Rica",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$9,095 list / $8,185 with promotional discount",
+      "priceMin": 8185,
+      "priceMax": 9095,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://www.travelforteens.com/program/costa-rica-for-middle-school-ultimate-adventure-service/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Combines elements from the org's other Costa Rica programs into one extended trip: canyoning, hot springs, a volcanic mud bath, beachside community service (cleanups, English teaching), ziplining, and whitewater rafting. As with all TFT programs, specific accommodation names are not published in advance for safety reasons.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens Costa Rica for Middle School: Ultimate Adventure & Service program page",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-998",
       "slug": "tft-ecuador-the-gal-pagos-service-departure",
       "name": "TFT - Ecuador & the Galápagos Service",
       "institution": "Travel For Teens",
@@ -54952,7 +55164,7 @@
       }
     },
     {
-      "id": "prog-995",
+      "id": "prog-999",
       "slug": "tft-belize-scuba-service-departure",
       "name": "TFT - Belize Scuba & Service",
       "institution": "Travel For Teens",
@@ -55005,7 +55217,7 @@
       }
     },
     {
-      "id": "prog-996",
+      "id": "prog-1000",
       "slug": "tft-peru-service-departure",
       "name": "TFT - Peru Service",
       "institution": "Travel For Teens",
@@ -55058,7 +55270,7 @@
       }
     },
     {
-      "id": "prog-997",
+      "id": "prog-1001",
       "slug": "tft-peru-ecuador-the-gal-pagos-service-departure",
       "name": "TFT - Peru, Ecuador, & the Galápagos Service",
       "institution": "Travel For Teens",
@@ -55111,7 +55323,7 @@
       }
     },
     {
-      "id": "prog-998",
+      "id": "prog-1002",
       "slug": "tft-australia-and-new-zealand-service-departure",
       "name": "TFT - Australia and New Zealand Service",
       "institution": "Travel For Teens",
@@ -55162,7 +55374,7 @@
       }
     },
     {
-      "id": "prog-999",
+      "id": "prog-1003",
       "slug": "tft-australia-new-zealand-fiji-service-departure",
       "name": "TFT - Australia, New Zealand & Fiji Service",
       "institution": "Travel For Teens",
@@ -55213,7 +55425,7 @@
       }
     },
     {
-      "id": "prog-1000",
+      "id": "prog-1004",
       "slug": "tft-tanzania-service-safari-departure",
       "name": "TFT - Tanzania Service & Safari",
       "institution": "Travel For Teens",
@@ -55266,7 +55478,7 @@
       }
     },
     {
-      "id": "prog-1001",
+      "id": "prog-1005",
       "slug": "tft-ultimate-south-africa-service-safari-departure",
       "name": "TFT - Ultimate South Africa Service & Safari",
       "institution": "Travel For Teens",
@@ -55319,7 +55531,7 @@
       }
     },
     {
-      "id": "prog-1002",
+      "id": "prog-1006",
       "slug": "tft-japan-adventure-discovery-departure",
       "name": "TFT - Japan Adventure & Discovery",
       "institution": "Travel For Teens",
@@ -55370,7 +55582,7 @@
       }
     },
     {
-      "id": "prog-1003",
+      "id": "prog-1007",
       "slug": "tft-japan-adventure-departure",
       "name": "TFT - Japan Adventure",
       "institution": "Travel For Teens",
@@ -55421,7 +55633,7 @@
       }
     },
     {
-      "id": "prog-1004",
+      "id": "prog-1008",
       "slug": "tft-bali-healthcare-education-medical-outreach-departure",
       "name": "TFT - Bali: Healthcare Education & Medical Outreach",
       "institution": "Travel For Teens",
@@ -55474,7 +55686,7 @@
       }
     },
     {
-      "id": "prog-1005",
+      "id": "prog-1009",
       "slug": "tft-bali-service-adventure-departure",
       "name": "TFT - Bali Service & Adventure",
       "institution": "Travel For Teens",
@@ -55527,7 +55739,7 @@
       }
     },
     {
-      "id": "prog-1006",
+      "id": "prog-1010",
       "slug": "tft-south-korea-discovery-departure",
       "name": "TFT - South Korea Discovery",
       "institution": "Travel For Teens",
@@ -55578,7 +55790,7 @@
       }
     },
     {
-      "id": "prog-1007",
+      "id": "prog-1011",
       "slug": "tft-thailand-service-the-islands-departure",
       "name": "TFT - Thailand Service & the Islands",
       "institution": "Travel For Teens",
@@ -55631,7 +55843,7 @@
       }
     },
     {
-      "id": "prog-1008",
+      "id": "prog-1012",
       "slug": "tft-vietnam-service-adventure-departure",
       "name": "TFT - Vietnam Service & Adventure",
       "institution": "Travel For Teens",
@@ -55684,7 +55896,7 @@
       }
     },
     {
-      "id": "prog-1009",
+      "id": "prog-1013",
       "slug": "tft-thailand-vietnam-service-and-adventure-departure",
       "name": "TFT - Thailand & Vietnam Service and Adventure",
       "institution": "Travel For Teens",
@@ -55737,7 +55949,7 @@
       }
     },
     {
-      "id": "prog-1010",
+      "id": "prog-1014",
       "slug": "tft-thailand-japan-service-adventure-departure",
       "name": "TFT - Thailand & Japan Service & Adventure",
       "institution": "Travel For Teens",
@@ -55790,7 +56002,7 @@
       }
     },
     {
-      "id": "prog-1011",
+      "id": "prog-1015",
       "slug": "tft-japan-south-korea-adventure-discovery-departure",
       "name": "TFT - Japan & South Korea Adventure & Discovery",
       "institution": "Travel For Teens",
@@ -55841,7 +56053,7 @@
       }
     },
     {
-      "id": "prog-1012",
+      "id": "prog-1016",
       "slug": "tft-alaska-adventure-and-service-departure",
       "name": "TFT - Alaska Adventure and Service",
       "institution": "Travel For Teens",
@@ -55894,7 +56106,7 @@
       }
     },
     {
-      "id": "prog-1013",
+      "id": "prog-1017",
       "slug": "tft-hawaii-alaska-service-departure",
       "name": "TFT - Hawaii & Alaska Service",
       "institution": "Travel For Teens",
@@ -55947,7 +56159,7 @@
       }
     },
     {
-      "id": "prog-1014",
+      "id": "prog-1018",
       "slug": "tft-hawaii-island-hopping-adventure-service-departure",
       "name": "TFT - Hawaii Island Hopping Adventure & Service",
       "institution": "Travel For Teens",
@@ -56000,7 +56212,7 @@
       }
     },
     {
-      "id": "prog-1015",
+      "id": "prog-1019",
       "slug": "tft-hawaii-sea-turtle-service-adventure-departure",
       "name": "TFT - Hawaii Sea Turtle Service & Adventure",
       "institution": "Travel For Teens",
@@ -56053,7 +56265,7 @@
       }
     },
     {
-      "id": "prog-1016",
+      "id": "prog-1020",
       "slug": "tft-hawaii-big-island-kauai-service-adventure-departure",
       "name": "TFT - Hawaii Big Island & Kauai: Service & Adventure",
       "institution": "Travel For Teens",
@@ -56106,7 +56318,7 @@
       }
     },
     {
-      "id": "prog-1017",
+      "id": "prog-1021",
       "slug": "tft-alpine-adventure-switzerland-france-italy-departure-1",
       "name": "TFT - Alpine Adventure: Switzerland, France & Italy",
       "institution": "Travel For Teens",
@@ -56159,7 +56371,7 @@
       }
     },
     {
-      "id": "prog-1018",
+      "id": "prog-1022",
       "slug": "tft-alpine-adventure-switzerland-france-italy-departure-2",
       "name": "TFT - Alpine Adventure: Switzerland, France & Italy",
       "institution": "Travel For Teens",
@@ -56212,7 +56424,7 @@
       }
     },
     {
-      "id": "prog-1019",
+      "id": "prog-1023",
       "slug": "tft-france-french-language-immersion-15-days",
       "name": "TFT - France: French Language Immersion",
       "institution": "Travel For Teens",
@@ -56263,7 +56475,7 @@
       }
     },
     {
-      "id": "prog-1020",
+      "id": "prog-1024",
       "slug": "tft-france-french-language-immersion-21-days",
       "name": "TFT - France: French Language Immersion",
       "institution": "Travel For Teens",
@@ -56314,7 +56526,7 @@
       }
     },
     {
-      "id": "prog-1021",
+      "id": "prog-1025",
       "slug": "tft-greece-italy-island-service-departure-1",
       "name": "TFT - Greece & Italy: Island Service",
       "institution": "Travel For Teens",
@@ -56367,7 +56579,7 @@
       }
     },
     {
-      "id": "prog-1022",
+      "id": "prog-1026",
       "slug": "tft-greece-italy-island-service-departure-2",
       "name": "TFT - Greece & Italy: Island Service",
       "institution": "Travel For Teens",
@@ -56420,7 +56632,7 @@
       }
     },
     {
-      "id": "prog-1023",
+      "id": "prog-1027",
       "slug": "tft-italy-rome-amalfi-coast-explorer-departure",
       "name": "TFT - Italy: Rome & Amalfi Coast Explorer",
       "institution": "Travel For Teens",
@@ -56471,7 +56683,7 @@
       }
     },
     {
-      "id": "prog-1024",
+      "id": "prog-1028",
       "slug": "tft-italy-travel-photography-workshop-departure",
       "name": "TFT - Italy Travel Photography Workshop",
       "institution": "Travel For Teens",
@@ -56524,7 +56736,7 @@
       }
     },
     {
-      "id": "prog-1025",
+      "id": "prog-1029",
       "slug": "tft-spain-spanish-language-immersion-14-days",
       "name": "TFT - Spain: Spanish Language Immersion",
       "institution": "Travel For Teens",
@@ -56575,7 +56787,7 @@
       }
     },
     {
-      "id": "prog-1026",
+      "id": "prog-1030",
       "slug": "tft-spain-spanish-language-immersion-21-days",
       "name": "TFT - Spain: Spanish Language Immersion",
       "institution": "Travel For Teens",
@@ -56626,7 +56838,7 @@
       }
     },
     {
-      "id": "prog-1027",
+      "id": "prog-1031",
       "slug": "tft-greece-sea-turtle-service-departure",
       "name": "TFT - Greece: Sea Turtle Service",
       "institution": "Travel For Teens",
@@ -56672,14 +56884,14 @@
       "flags": [],
       "participantGender": "coed",
       "dayToDay": {
-        "notes": "Community service work varies by program (island-based service projects, sea turtle conservation). Accommodation is centrally located, often steps from the sea on the islands. Meals emphasize authentic tavernas over tourist-oriented restaurants.",
+        "notes": "Accommodation is centrally located, often steps from the sea on the islands. Meals emphasize authentic tavernas over tourist-oriented restaurants.",
         "sourceType": "official_policy",
         "sourceCitation": "Travel For Teens Greece destination page",
         "verifiedAt": "2026-09-15"
       }
     },
     {
-      "id": "prog-1028",
+      "id": "prog-1032",
       "slug": "tft-greece-island-hopping-8-days-departure",
       "name": "TFT - Greece Island Hopping (8 Days)",
       "institution": "Travel For Teens",
@@ -56730,7 +56942,7 @@
       }
     },
     {
-      "id": "prog-1029",
+      "id": "prog-1033",
       "slug": "tft-greece-portugal-island-adventure-departure",
       "name": "TFT - Greece & Portugal Island Adventure",
       "institution": "Travel For Teens",
@@ -56781,16 +56993,14 @@
       }
     },
     {
-      "id": "prog-1030",
+      "id": "prog-1034",
       "slug": "tft-portugal-adventure-departure",
       "name": "TFT - Portugal Adventure",
       "institution": "Travel For Teens",
       "programGroupId": "tft-portugal-adventure",
       "description": "Lisbon, Sintra (Pena Palace, Quinta da Regaleira), and sea kayaking through the Algarve's Ponta da Piedade rock formations in Lagos.",
       "category": "cultural-exchange",
-      "secondaryTags": [
-        "Outdoor/Wilderness"
-      ],
+      "secondaryTags": [],
       "trackDetail": "Departure",
       "gradeDisplay": "Current grades 9-12",
       "gradeCompletedMin": 8,
@@ -56834,7 +57044,7 @@
       }
     },
     {
-      "id": "prog-1031",
+      "id": "prog-1035",
       "slug": "tft-scotland-ireland-adventure-departure",
       "name": "TFT - Scotland & Ireland Adventure",
       "institution": "Travel For Teens",
@@ -56887,7 +57097,7 @@
       }
     },
     {
-      "id": "prog-1032",
+      "id": "prog-1036",
       "slug": "tft-iceland-adventure-departure",
       "name": "TFT - Iceland Adventure",
       "institution": "Travel For Teens",
