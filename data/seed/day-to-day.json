@@ -708,10 +708,7 @@
     }
   },
   {
-    "match": {
-      "programGroupId": "summerdiscovery-high-school",
-      "slugIncludes": "ucla"
-    },
+    "match": { "programGroupId": "summerdiscovery-ucla" },
     "dayToDay": {
       "notes": "At UCLA, High School students have an exclusive residence hall not shared with any other program (Hedrick Summit), fully air-conditioned. Tuition includes academic instruction, housing, 2 meals/day (lunch and dinner), and extracurricular activities/excursions every afternoon, evening, and weekend, plus use of athletic/recreation facilities. International students pay an additional registration fee ($379 residential / $239 commuter) covering medical insurance and airport transfers. A completion certificate and letter of recognition are issued per course/academy taken.",
       "sourceType": "official_policy",
