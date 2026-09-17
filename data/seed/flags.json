@@ -986,5 +986,19 @@
         "severity": "info"
       }
     ]
+  },
+  {
+    "match": { "programGroupId": "ciee-france-fashion-marketing-europe" },
+    "flags": [
+      {
+        "id": "ciee-fashion-marketing-merit-aid-only",
+        "type": "pricing",
+        "title": "Need-based Global Navigator scholarship not available",
+        "body": "Only the CIEE Academic Merit Award applies to this program. The standard CIEE Global Navigator Scholarship (need-based) is explicitly not available here — important for families relying on need-based aid.",
+        "sourceCitation": "CIEE Fashion Marketing in Europe program page",
+        "sourceDate": "2026-09-15",
+        "severity": "warning"
+      }
+    ]
   }
 ]

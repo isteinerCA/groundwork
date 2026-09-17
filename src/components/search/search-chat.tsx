@@ -38,7 +38,7 @@ export function SearchChat({
     {
       id: "welcome",
       role: "assistant",
-      text: 'Try plain English like "in California only", "fully funded only", or "under $6000".',
+      text: 'Try plain English like "in California only", "under $6000", or "Costa Rica Service".',
     },
   ]);
   const listRef = useRef<HTMLDivElement>(null);

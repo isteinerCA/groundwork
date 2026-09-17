@@ -489,25 +489,40 @@ export function SearchExperience({
 
         <div className="min-w-0">
           {filters.gradesCompleted.length > 0 ? (
-            <div className="overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]">
-              <ActiveFilterBar
-                embedded
-                filters={filters}
-                lockedFilters={lockedFilters}
-                onRemove={update}
-                onClearAll={clearAll}
-              />
+            <div className="space-y-6">
+              <section
+                aria-label="Refine your search"
+                className="overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)] ring-1 ring-[var(--color-navy)]/5"
+              >
+                <div className="border-b border-[var(--color-border)] bg-[var(--color-parchment)]/60 px-4 py-3">
+                  <p className="text-xs font-semibold tracking-wide text-[var(--color-amber)] uppercase">
+                    Fine-tune
+                  </p>
+                  <h2 className="mt-1 text-lg text-[var(--color-navy)]">Refine your search</h2>
+                </div>
 
-              <SearchChat
-                embedded
-                inPanel
-                filters={filters}
-                resultCount={resultGroupCount}
-                programs={programs}
-                onApplyFilters={(next) => applyFilters(next, "chat")}
-              />
+                <ActiveFilterBar
+                  embedded
+                  filters={filters}
+                  lockedFilters={lockedFilters}
+                  onRemove={update}
+                  onClearAll={clearAll}
+                />
 
-              <div id={RESULTS_ANCHOR_ID} className="scroll-mt-24">
+                <SearchChat
+                  embedded
+                  inPanel
+                  filters={filters}
+                  resultCount={resultGroupCount}
+                  programs={programs}
+                  onApplyFilters={(next) => applyFilters(next, "chat")}
+                />
+              </section>
+
+              <section
+                id={RESULTS_ANCHOR_ID}
+                className="scroll-mt-24 overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]"
+              >
                 {results.length > 0 && (
                   <div className="border-t-2 border-[var(--color-sage)] bg-[var(--color-sage-soft)] px-4 py-4 shadow-[inset_0_1px_0_rgb(255_255_255_/_60%)] lg:py-3">
                     <p className="text-xs font-semibold tracking-wide text-[var(--color-sage)] uppercase lg:hidden">
@@ -543,7 +558,7 @@ export function SearchExperience({
                   </div>
                 )}
 
-                <div className="space-y-4 bg-[var(--color-parchment)]/30 p-4 max-lg:border-t border-[var(--color-border)] lg:bg-transparent lg:p-4">
+                <div className="space-y-4 bg-[var(--color-parchment)]/30 p-4 lg:bg-transparent lg:p-4">
                 {results.length === 0 && (
                   <div className="rounded-[var(--radius-md)] border border-dashed border-[var(--color-border)] bg-[var(--color-parchment)]/50 p-8 text-center">
                     <p className="text-lg text-[var(--color-navy)]">
@@ -584,7 +599,7 @@ export function SearchExperience({
                   ),
                 )}
                 </div>
-              </div>
+              </section>
             </div>
           ) : (
             <SearchPreviewPanel />

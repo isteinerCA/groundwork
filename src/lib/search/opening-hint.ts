@@ -18,5 +18,5 @@ export function getOpeningHint(context: OpeningHintContext): string {
   if (context.resultCount >= 25) {
     return `${context.resultCount} programs — try narrowing by budget, format, or admission type.`;
   }
-  return `${context.resultCount} programs — refine with plain English (budget, location, gotchas).`;
+  return `${context.resultCount} programs — refine with plain English (location, theme, specific dates, etc.).`;
 }

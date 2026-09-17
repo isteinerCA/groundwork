@@ -1193,5 +1193,118 @@
       "sourceCitation": "Travel For Teens Ireland destination page and customer testimonials (travelforteens.com/ireland)",
       "verifiedAt": "2026-09-15"
     }
+  },
+  {
+    "match": { "programGroupId": "ciee-france-paris-french-language-culture" },
+    "dayToDay": {
+      "notes": "Homestay-based; host families share daily meals. Daily language classes (15-20 hrs/week) paired with afternoon cultural activities in the Latin Quarter and Montmartre. Weekend excursions to Versailles and the medieval village of Provins. Morning classes and afternoon activities may swap depending on the day.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE French Language & Culture (Paris) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-france-paris-architecture-french-culture" },
+    "dayToDay": {
+      "notes": "Group housing (not homestay). Daily design workshops building toward a student-pitched architectural design and a 3-D model; urban sketching sessions built into the itinerary. Visits to Fondation Louis Vuitton and Musée du Quai Branly. Weekend excursions to Versailles and Provins.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Architecture & French Culture (Paris) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-france-paris-culinary-arts-french-culture" },
+    "dayToDay": {
+      "notes": "Group housing. Hands-on cooking workshops twice weekly at Le Cordon Bleu's Paris campus, plus visits to fresh food markets and a cheese monger. Program culminates in a two-part team cooking competition (a main dish and dessert) judged by a panel, alongside a capstone menu presentation.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Culinary Arts & French Culture (Paris) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-france-paris-fashion-design-french-culture" },
+    "dayToDay": {
+      "notes": "Group housing. Students source recycled materials from Montmartre thrift shops and the Marché St. Pierre fabric market, working with a professional seamstress. Program culminates in a student-run Global Navigator fashion show at Galeries Lafayette.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Fashion Design & French Culture (Paris) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-france-toulouse-engineering-aerospace" },
+    "dayToDay": {
+      "notes": "Group housing. Includes an Airbus Blagnac factory tour and a from-scratch student rocket-building workshop (teams of 2-3), culminating in a live rocket launch. Excursion to Pic du Midi observatory.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Engineering & Aerospace (Toulouse) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "ciee-france-toulouse-french-language-culture",
+        "ciee-france-rennes-french-language-culture"
+      ]
+    },
+    "dayToDay": {
+      "notes": "Homestay-based; host families share daily meals. Daily language classes paired with afternoon cultural activities. Toulouse: weekend excursions to Carcassonne and the French Mediterranean coast. Rennes: weekend excursions to Mont Saint-Michel and the Brittany coastline.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE French Language & Culture (Toulouse and Rennes) program pages",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-france-rennes-honors-french-language-culture" },
+    "dayToDay": {
+      "notes": "Homestay-based. Strict French-only 'Language Pledge' enforced in and out of class - students take a proficiency test before arrival and must demonstrate Intermediate-Low ACTFL/STAMP proficiency to be accepted. Weekly reflective language-learning surveys. Otherwise follows the same activity pattern as the standard Rennes program (Mont Saint-Michel, Brittany coastline). Note: this program cannot accommodate fully Kosher, Halal, or combined dietary restrictions due to local food options.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Honors French Language & Culture (Rennes) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-france-nice-marine-ecology-sustainability" },
+    "dayToDay": {
+      "notes": "Group housing. Fieldwork-heavy: snorkeling, tide-pool exploration, field observations, and 12 hours of service-learning built into the schedule. Excursions to Monaco's Oceanographic Museum and boat tours of coastal towns. Involves moderate-to-high intensity physical activity; swimming ability not required but strongly encouraged.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Marine Ecology & Sustainability (Nice) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-france-paris-filmmaking-french-culture" },
+    "dayToDay": {
+      "notes": "Group housing. Students storyboard, shoot, and edit a five-minute short film in small teams over the course of the program, then present it to peers, teachers, and local film professionals. Includes a Seine boat tour and visits to the Louvre and Musée d'Orsay for creative inspiration.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Filmmaking & French Culture (Paris) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-france-fashion-marketing-europe" },
+    "dayToDay": {
+      "notes": "Group housing; moves across three cities in three weeks (Paris, then Milan, then Madrid) - a fast-paced, single-departure program with no repeat session. Includes a jewelry-design workshop at Milan's IED art college and a visit to the Fragonard Perfume Museum in Paris. Culminates in a student-developed marketing plan pitched to a panel of industry experts.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Fashion Marketing in Europe (Paris/Milan/Madrid) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-argentina-buenos-aires-spanish-language-argentinian-culture" },
+    "dayToDay": {
+      "notes": "Homestay-based; host families share daily meals, giving students a chance to practice Spanish at home. Daily language classes paired with afternoon cultural activities across Buenos Aires's 48 neighborhoods. Weekend excursions to an estancia (ranch) for parrillada (barbecue) and gaucho culture, plus a flight to Iguazú Falls.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Spanish Language & Argentinian Culture (Buenos Aires) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-argentina-buenos-aires-dance-culture" },
+    "dayToDay": {
+      "notes": "Homestay-based. Intensive daily dance training, 5-6 hours a day, five days a week, across Tango, Argentine folk dance, ballet, and contemporary dance, taught by local instructors. Program culminates in an original student-choreographed piece inspired by South America. Weekend excursions to an estancia (ranch) and Iguazú Falls, matching the Spanish-language program's itinerary.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Dance & Culture (Buenos Aires) program page",
+      "verifiedAt": "2026-09-15"
+    }
   }
 ]
