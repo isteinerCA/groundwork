@@ -1,6 +1,8 @@
 [
   {
-    "match": { "programGroupId": "lasting-adventures-yosemite" },
+    "match": {
+      "programGroupId": "lasting-adventures-yosemite"
+    },
     "dayToDay": {
       "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities and a campfire, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip — guides send a nightly satellite check-in to the office, not to parents, consistent with the program's \"no news is good news\" approach. Parents receive a recap email with photos and a daily journal about 1–2 weeks after the trip ends.",
       "sourceType": "official_policy",
@@ -9,7 +11,9 @@
     }
   },
   {
-    "match": { "programGroupId": "lasting-adventures-olympic" },
+    "match": {
+      "programGroupId": "lasting-adventures-olympic"
+    },
     "dayToDay": {
       "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip - guides send a nightly satellite check-in to the office, not to parents. Parents receive a recap email with photos and a daily journal about 1-2 weeks after the trip ends.",
       "sourceType": "official_policy",
@@ -18,7 +22,9 @@
     }
   },
   {
-    "match": { "programGroupId": "lasting-adventures-sequoia" },
+    "match": {
+      "programGroupId": "lasting-adventures-sequoia"
+    },
     "dayToDay": {
       "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip - guides send a nightly satellite check-in to the office, not to parents. Parents receive a recap email with photos and a daily journal about 1-2 weeks after the trip ends. This trip includes a round-trip shuttle from Fresno/Yosemite International Airport.",
       "sourceType": "official_policy",
@@ -27,7 +33,9 @@
     }
   },
   {
-    "match": { "programGroupId": "bccymca-camp-becket" },
+    "match": {
+      "programGroupId": "bccymca-camp-becket"
+    },
     "dayToDay": {
       "notes": "Rustic, traditional overnight camp centered on cabin-group living, with cabin community and staff role models framed as the core of the program. Tiered pricing lets families self-select an affordable tuition level without affecting the camper's experience - the tier chosen is kept confidential.",
       "sourceType": "official_policy",
@@ -36,7 +44,9 @@
     }
   },
   {
-    "match": { "programGroupId": "bccymca-chimney-corners" },
+    "match": {
+      "programGroupId": "bccymca-chimney-corners"
+    },
     "dayToDay": {
       "notes": "Rustic, traditional overnight camp for girls and gender non-binary campers who prefer female housing, centered on cabin-group living. Tiered pricing lets families self-select an affordable tuition level without affecting the camper's experience - the tier chosen is kept confidential.",
       "sourceType": "official_policy",
@@ -45,7 +55,9 @@
     }
   },
   {
-    "match": { "programGroupId": "catalina-sea-camp" },
+    "match": {
+      "programGroupId": "catalina-sea-camp"
+    },
     "dayToDay": {
       "notes": "This is an island-based residential camp with structured cabin groups of about 8-10 campers per counselor; certified dive staff supervise at closer ratios (1 instructor per 4 campers for scuba certification, 1 per 8 for snorkeling). There is no phone contact between parents and campers at all during a session - the camp states this is an intentional independence policy, not just a logistics limitation. The only outbound communication is one-way: parents get 5 free email credits per camper per week (more purchasable), and campers can write letters, but there's no video call or phone option. In-session visits or tours from parents are not permitted. A registered nurse is on-site for the full summer.",
       "sourceType": "official_policy",
@@ -54,7 +66,9 @@
     }
   },
   {
-    "match": { "programGroupId": "interlochen-high-school" },
+    "match": {
+      "programGroupId": "interlochen-high-school"
+    },
     "dayToDay": {
       "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, organized by division. Days combine classes, rehearsals, and coursework with time for swimming in one of two campus lakes, crafts, pickup sports, and other traditional camp activities. Programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships; need-based financial aid is also available for any program longer than one week (one-week Intensives are not aid-eligible). Admission for all programs is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
       "sourceType": "official_policy",
@@ -63,7 +77,9 @@
     }
   },
   {
-    "match": { "programGroupId": "interlochen-intermediate" },
+    "match": {
+      "programGroupId": "interlochen-intermediate"
+    },
     "dayToDay": {
       "notes": "Students live in one of over 120 cabins across Interlochen's 1,200-acre campus, grouped with other Intermediate-age campers. Alongside daily rehearsals/coursework in their chosen program, students have time for traditional camp activities - swimming, field games, and archery. Every program at this division runs 3 or 6 weeks and is eligible for need-based financial aid; programs longer than one week that require an audition or portfolio are automatically considered for merit scholarships. Admission is submitted through Interlochen's Education Community portal, with a Jan. 15 priority deadline for the following summer.",
       "sourceType": "official_policy",
@@ -72,7 +88,9 @@
     }
   },
   {
-    "match": { "programGroupId": "explo-middle-school" },
+    "match": {
+      "programGroupId": "explo-middle-school"
+    },
     "dayToDay": {
       "notes": "EXPLO is explicitly an 'unplugged' program - device use is restricted as a stated program value, not merely a default policy. Residential students live in Wellesley College dorms with roommates, supported by Resident Advisors around the clock; a general staff-to-student ratio of 1:7 is advertised. Weekends are student-choice: options include whale watching, Red Sox games, museum visits, and other off-campus trips, with a 24/7 health center on site. Day students follow the same academic day as residential students but go home at night; if a day student stays for evening programming, a $38 dinner + evening event fee is charged to their account. International students live alongside domestic students in the same dorms and dining halls.",
       "sourceType": "official_policy",
@@ -81,7 +99,9 @@
     }
   },
   {
-    "match": { "programGroupId": "amigos-costa-rica" },
+    "match": {
+      "programGroupId": "amigos-costa-rica"
+    },
     "dayToDay": {
       "notes": "Discover-tier programs (2 weeks) are staff-led group experiences with daily supervision, no host-family placement, and no Spanish requirement - the lowest-independence entry point. Explore-tier (3-3.5 weeks) and Immerse-tier (4 weeks) programs place students individually with a host family, with growing independence and responsibility as program length increases; Spanish proficiency requirements grow accordingly. A 24/7 on-call safety and mental-wellness support system is reachable regardless of location. Flights, travel insurance, and gear are not included in the program fee and must be arranged separately.",
       "sourceType": "official_policy",
@@ -90,7 +110,9 @@
     }
   },
   {
-    "match": { "programGroupId": "amigos-dominican-republic" },
+    "match": {
+      "programGroupId": "amigos-dominican-republic"
+    },
     "dayToDay": {
       "notes": "Same organization-wide tier structure as other AMIGOS countries: Explore and Immerse programs here place students with host families; independence and Spanish expectations increase with program length. 24/7 safety support applies regardless of country. Flights and travel insurance are not included in the fee.",
       "sourceType": "official_policy",
@@ -99,7 +121,9 @@
     }
   },
   {
-    "match": { "programGroupId": "amigos-panama" },
+    "match": {
+      "programGroupId": "amigos-panama"
+    },
     "dayToDay": {
       "notes": "Discover-tier programs here are staff-led group experiences with no host family placement and no Spanish requirement. Explore-tier places students individually with a host family, with independence and Spanish expectations growing accordingly. A 24/7 on-call safety and mental-wellness support system applies. Flights and travel insurance are not included in the program fee.",
       "sourceType": "official_policy",
@@ -108,7 +132,9 @@
     }
   },
   {
-    "match": { "programGroupId": "amigos-paraguay" },
+    "match": {
+      "programGroupId": "amigos-paraguay"
+    },
     "dayToDay": {
       "notes": "Paraguay only offers Explore and Immerse tiers (no Discover, no Middle School) - the most independence-focused country in the org's lineup. Tierra Guarani (6 weeks) is the single longest program AMIGOS offers anywhere, including Spanish AND Guarani-language practice alongside homestay life.",
       "sourceType": "official_policy",
@@ -117,7 +143,9 @@
     }
   },
   {
-    "match": { "programGroupId": "moondance-colorado-trail" },
+    "match": {
+      "programGroupId": "moondance-colorado-trail"
+    },
     "dayToDay": {
       "notes": "Students travel as a single group of 12 with 3 adult leaders throughout the trip, camping in the backcountry (San Juan National Forest) for the backpacking segment and along the riverbank during the 2-day whitewater rafting section, with no fixed base camp. Group meets and disbands in Denver, CO. As with all Moondance trips, the program is explicitly 'unplugged' - phones and social media use are restricted as a stated program value - and there is no routine parent contact during the trip itself.",
       "sourceType": "official_policy",
@@ -387,7 +415,9 @@
     }
   },
   {
-    "match": { "programGroupId": "wpi-ignite" },
+    "match": {
+      "programGroupId": "wpi-ignite"
+    },
     "dayToDay": {
       "notes": "Commuter day program on the WPI campus: instruction runs 9am-4pm Monday-Friday. Students choose one or more weekly sessions and a STEM course track for each week; weeks are offered on a rolling basis across the summer (four distinct weeks in 2027). Lunch is not included in tuition for commuter programs.",
       "sourceType": "official_policy",
@@ -396,7 +426,9 @@
     }
   },
   {
-    "match": { "programGroupId": "wpi-launch" },
+    "match": {
+      "programGroupId": "wpi-launch"
+    },
     "dayToDay": {
       "notes": "Commuter day program on the WPI campus: instruction runs 9am-4pm Monday-Friday for one week. Students choose a single STEM course track (robotics, aerospace, forensics, video game design, etc.) taught by WPI faculty through hands-on labs, demos, and discussions.",
       "sourceType": "official_policy",
@@ -405,7 +437,9 @@
     }
   },
   {
-    "match": { "programGroupId": "wpi-high-achieving-hs" },
+    "match": {
+      "programGroupId": "wpi-high-achieving-hs"
+    },
     "dayToDay": {
       "notes": "Five-week session taking a real WPI undergraduate course for transferable college credit at 50% off standard summer tuition. Students may enroll in person on the Worcester campus, live online (synchronous), or on demand (asynchronous); WPI recommends one course per session. On-campus housing is not available — in-person students commute or arrange their own housing. Course materials average about $200 per course and are purchased separately.",
       "sourceType": "official_policy",
@@ -414,7 +448,9 @@
     }
   },
   {
-    "match": { "programGroupId": "wpi-frontiers" },
+    "match": {
+      "programGroupId": "wpi-frontiers"
+    },
     "dayToDay": {
       "notes": "Students live on the WPI campus for the session, exploring a STEM major paired with a humanities or business minor, alongside peers from around the world. The program emphasizes building independence and leadership skills within a structured but immersive 'preview of college life' format, including field trips and organized workshops.",
       "sourceType": "official_policy",
@@ -423,7 +459,9 @@
     }
   },
   {
-    "match": { "programGroupId": "mit-wtp" },
+    "match": {
+      "programGroupId": "mit-wtp"
+    },
     "dayToDay": {
       "notes": "Students live in an MIT dorm alongside the MIT undergraduate students who serve as teaching assistants. Daily required classes run Monday-Friday from approximately 9:30am-5pm, with occasional evening hours, plus some planned weekend academic field trips and social outings. The schedule includes classes, labs, homework, and unstructured social time with other WTP students. Students are expected to have no other significant time commitments during the four weeks. A laptop is expected for coursework; free loaners are available for students who need one.",
       "sourceType": "official_policy",
@@ -432,7 +470,9 @@
     }
   },
   {
-    "match": { "programGroupId": "mathworks-hsmc" },
+    "match": {
+      "programGroupId": "mathworks-hsmc"
+    },
     "dayToDay": {
       "notes": "This is a highly structured, academically intensive residential program: the daily schedule runs from 7am breakfast to 10pm, with classes and research in the morning, problem sessions or additional classes in the afternoon, and study groups in the evening. Campers are explicitly not permitted to take online courses or participate in any other program, in person or online, during the six weeks. Parent visits during camp are allowed but require prior approval through a request form, rather than being either fully open or fully prohibited.",
       "sourceType": "official_policy",
@@ -441,7 +481,9 @@
     }
   },
   {
-    "match": { "programGroupId": "mathworks-jsmcr" },
+    "match": {
+      "programGroupId": "mathworks-jsmcr"
+    },
     "dayToDay": {
       "notes": "Students live in a campus dormitory supervised by camp counselors at a ratio of 1 counselor to 4 students - closer supervision than the HSMC high schooler program. Days include daily math classes taught by university professors, study group sessions, and recreation time with free use of the university's Student Recreation Center (basketball, volleyball, racquetball, indoor track, pool). Fridays include a guest lecture from an academic or industry speaker followed by a picnic with games at a local park. As with HSMC, campers are not permitted to take online courses or participate in any other program during the two weeks.",
       "sourceType": "official_policy",
@@ -450,7 +492,9 @@
     }
   },
   {
-    "match": { "programGroupId": "nyt-edu-summer-academy-nyc" },
+    "match": {
+      "programGroupId": "nyt-edu-summer-academy-nyc"
+    },
     "dayToDay": {
       "notes": "Residential students live in a dorm-style facility in Manhattan, with roommates assigned by gender identity and age. Building security and residential staff are present in the residence hall 24/7, and Residential Directors live adjacent to the students they oversee. Both residential and day students participate in a structured set of evening and weekend activities beyond the academic day. Day students commute in for the academic portion and have the option to stay for dinner and evening/weekend programming, but go home (or to their own housing) at night rather than living on-site.",
       "sourceType": "official_policy",
@@ -459,7 +503,9 @@
     }
   },
   {
-    "match": { "programGroupId": "mathworks-jsmch" },
+    "match": {
+      "programGroupId": "mathworks-jsmch"
+    },
     "dayToDay": {
       "notes": "This is a day program with no overnight component - parents drop off and pick up daily, and San Marcos CISD provides bus transportation, but only for students enrolled in that local school district (families outside the district must arrange their own transportation, as Mathworks itself doesn't provide any). Breakfast, lunch, and a snack are provided during the school day. Students are on campus only during camp hours and go home each evening.",
       "sourceType": "official_policy",
@@ -468,7 +514,9 @@
     }
   },
   {
-    "match": { "programGroupId": "mtsi-wharton-penn" },
+    "match": {
+      "programGroupId": "mtsi-wharton-penn"
+    },
     "dayToDay": {
       "notes": "Students live in Penn dormitories with a meal plan in the undergraduate dining halls, described by the program as including 'student supervision.' The schedule is described as extremely rigorous and non-stop given that a full college credit is earned in just three weeks. Meals are provided twice daily Monday-Friday and twice on Sunday, but there are no provided meals at all on Saturdays, which are reserved for excursions and off-campus activities - students should budget for that. Full attendance is mandatory from the first day to the last; the program does not permit partial attendance or early departure under any circumstances, since credit is tied to completing the full three weeks.",
       "sourceType": "official_policy",
@@ -477,7 +525,9 @@
     }
   },
   {
-    "match": { "programGroupId": "oxford-academia-yale" },
+    "match": {
+      "programGroupId": "oxford-academia-yale"
+    },
     "dayToDay": {
       "notes": "Students live in double suite-style dorm rooms with bathrooms on the hall, with faculty and residential staff (Deans, Student Deans, Junior Deans, and Health & Activity Coordinators) living in the same residence halls, focused specifically on student life and well-being. The academic day is structured: major seminar meets six days a week for three hours, minor seminar meets three days a week for two hours, with afternoons/evenings open for electives and extracurriculars, and evening programming (guest speakers, shows, or college-admissions Q&As) bringing all seminar groups together after dinner. Breakfasts and dinners are provided at the dorm cafeteria, but lunches are not included in tuition - students handle lunch independently in small peer groups, a mix of city restaurants and picnics. On weekends, students go on staff-led or seminar-group excursions, which may include a day trip to New York City.",
       "sourceType": "official_policy",
@@ -486,7 +536,9 @@
     }
   },
   {
-    "match": { "programGroupId": "socapa-nyc" },
+    "match": {
+      "programGroupId": "socapa-nyc"
+    },
     "dayToDay": {
       "notes": "Day students attend roughly 9:45am-4pm; residential students live in NYU-area dormitory housing with lounges, computer rooms, and laundry facilities, with staff living in residence. Uniquely among SOCAPA's campuses, meals are NOT included in the Manhattan residential fee - students are responsible for purchasing their own food. For the first three days, counselors guide students to nearby restaurants and delis in Greenwich Village/East Village; after that, students sign out and explore food options in self-organized small groups (never alone, per policy). Every weekday evening (Monday-Friday) a planned activity is scheduled - a campus barbecue, a dinner out in the city, a pool visit, a theater or musical performance, or a film screening. Saturday afternoons not spent shooting/rehearsing are reserved for a group excursion (past examples include Coney Island, Broadway shows, and various museums), and at least once per session SOCAPA brings in an industry professional (actors, writers, directors) to lead a master class open to all students regardless of track. Unlike other SOCAPA campuses, there is no unaccompanied-minor airport pickup/drop-off service offered at all at the NYC campus.",
       "sourceType": "official_policy",
@@ -495,7 +547,9 @@
     }
   },
   {
-    "match": { "programGroupId": "socapa-los-angeles" },
+    "match": {
+      "programGroupId": "socapa-los-angeles"
+    },
     "dayToDay": {
       "notes": "Residential students live in Occidental College dorms with double/triple occupancy, and meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session.",
       "sourceType": "official_policy",
@@ -504,7 +558,9 @@
     }
   },
   {
-    "match": { "programGroupId": "socapa-vermont" },
+    "match": {
+      "programGroupId": "socapa-vermont"
+    },
     "dayToDay": {
       "notes": "Residential students live in Champlain College dorms with double/triple occupancy. Meals are included: three meals a day, Monday-Friday, at the campus cafeteria, plus one off-campus group dinner per session. VT uniquely offers optional 35mm/darkroom photography work (Core and Advanced Photography).",
       "sourceType": "official_policy",
@@ -513,7 +569,9 @@
     }
   },
   {
-    "match": { "programGroupId": "westcoast-connection-ucla" },
+    "match": {
+      "programGroupId": "westcoast-connection-ucla"
+    },
     "dayToDay": {
       "notes": "Residential students live in suite-style housing at Delta Terrace in Sunset Village, with their own bathroom, and staff (residence life coordinators among them) living in the same halls. A typical day: 8am wake-up, 8:30 breakfast, 9:30-11:30 morning course, 11:30 lunch (unstructured - students choose where to eat in small groups, on or off campus), 1:30-3:30 afternoon course, then free time until 6pm dinner, followed by organized evening activities. Breakfast and dinner are included in tuition; lunch is explicitly NOT included and is handled independently by students. Commuter (day) students attend roughly 9:30am-3:30/4pm on class days only, are not housed overnight, have no meals included, get limited access to UCLA recreational facilities, and may optionally join group field trips or the college-admissions workshops.",
       "sourceType": "official_policy",
@@ -534,7 +592,9 @@
     }
   },
   {
-    "match": { "programGroupId": "westcoast-connection-barcelona" },
+    "match": {
+      "programGroupId": "westcoast-connection-barcelona"
+    },
     "dayToDay": {
       "notes": "Students live in two-person suites at the Kadora Sarria Barcelona Residence, each with a private bathroom, air conditioning, and Wi-Fi; the residence has 24-hour security. A typical day: 8am wake-up, 8:30 breakfast, 10:30 morning course, 1pm lunch (unstructured - students choose where to eat in small groups), 3pm group afternoon excursion/highlight, 5:30pm 'Student's Choice' free time (sports, pool, fitness club, or city exploring), 8pm dinner (some nights at the residence, some nights out as a group or in smaller groups at local restaurants), and evening activities until 10pm. Breakfast and dinner are included in tuition; lunch is not.",
       "sourceType": "official_policy",
@@ -567,7 +627,9 @@
     }
   },
   {
-    "match": { "programGroupId": "westcoast-connection-florence" },
+    "match": {
+      "programGroupId": "westcoast-connection-florence"
+    },
     "dayToDay": {
       "notes": "Students live in single-occupancy rooms at The Social Hub Belfiore Florence Residence, each with air conditioning, Wi-Fi, a private bathroom, and a personal workstation; the residence has 24-hour security, laundry, a gym, and a rooftop pool. A typical day: 8:30am wake-up, 9am breakfast, 10:30am morning course, 1pm lunch (unstructured - students choose where to eat in small groups at local cafés and restaurants), 3pm group afternoon highlight, 5:30pm 'Student's Choice' free time (sports, gym, staff-planned activity, or city exploration), 8:30pm dinner (some nights at the residence, some nights out as a group or in smaller groups at local restaurants), and evening activities until roughly 10:15pm. Breakfast and dinner are included in tuition; lunch is not.",
       "sourceType": "official_policy",
@@ -600,7 +662,9 @@
     }
   },
   {
-    "match": { "programGroupId": "westcoast-connection-montreal" },
+    "match": {
+      "programGroupId": "westcoast-connection-montreal"
+    },
     "dayToDay": {
       "notes": "Residential students live at Residence La Citadelle, McGill University, in individual twin-bed rooms with private bathrooms, air conditioning, housekeeping service, and a personal work desk. A typical day: 8am wake-up, 8:30 breakfast, 10am morning course (or start of a full-day track option), lunch break (unstructured - students choose where to eat in small groups), 2pm afternoon course, then free time ('Student's Choice') until 7pm dinner, followed by evening activities until around 9pm. Breakfast and dinner are included in tuition; lunch is not and is handled independently by students. Commuter (day) students attend roughly 10am-4/4:30pm on class days only, are not housed overnight, have no meals included, get limited access to McGill's recreational facilities, and may optionally join the college-admissions workshops.",
       "sourceType": "official_policy",
@@ -609,7 +673,9 @@
     }
   },
   {
-    "match": { "programGroupId": "arcc-belize" },
+    "match": {
+      "programGroupId": "arcc-belize"
+    },
     "dayToDay": {
       "notes": "Students stay primarily on a private Caribbean island for the SCUBA portion of the trip, with some time on the mainland for cultural excursions. Transportation includes shuttles, vans, and a private boat to the island. Showers are available most days; there is no machine laundry, so handwashing/air-drying is expected. All trip leaders are certified Wilderness First Responders.",
       "sourceType": "official_policy",
@@ -618,7 +684,9 @@
     }
   },
   {
-    "match": { "programGroupId": "arcc-california" },
+    "match": {
+      "programGroupId": "arcc-california"
+    },
     "dayToDay": {
       "notes": "Students camp in tents (3-4 per tent, supplied by ARCC) at front-country campgrounds and state parks - meaning always close to the group's van, with restroom facilities and running water, and showers at many sites. The group travels together in a 15-passenger van with their two leaders, and works together to plan and cook meals throughout the trip.",
       "sourceType": "official_policy",
@@ -627,7 +695,9 @@
     }
   },
   {
-    "match": { "programGroupId": "arcc-yellowstone-grand-teton" },
+    "match": {
+      "programGroupId": "arcc-yellowstone-grand-teton"
+    },
     "dayToDay": {
       "notes": "An entirely camping-based program; students sleep in tents at front-country campgrounds across National Parks, State Parks, and National Forest land, with restroom facilities, running water, and some on-site showers. The group travels together in a 15-passenger van with a small trailer, which serves as their home base, and prepares meals together as a group.",
       "sourceType": "official_policy",
@@ -636,7 +706,9 @@
     }
   },
   {
-    "match": { "programGroupId": "arcc-bali-sumatra" },
+    "match": {
+      "programGroupId": "arcc-bali-sumatra"
+    },
     "dayToDay": {
       "notes": "Accommodation varies across the trip: hotels, rustic camping shelters, a jungle lodge, and dorm-style bungalows. Transportation is by private bus/van arranged by ARCC's in-country partner. All trip leaders are certified Wilderness First Responders.",
       "sourceType": "official_policy",
@@ -645,7 +717,9 @@
     }
   },
   {
-    "match": { "programGroupId": "arcc-spain-morocco" },
+    "match": {
+      "programGroupId": "arcc-spain-morocco"
+    },
     "dayToDay": {
       "notes": "Accommodation varies: Moroccan riads, local Spanish homes, hotels, and an Amazigh community guesthouse in the High Atlas Mountains. Travel includes private shuttles, vans, trains, and a ferry crossing of the Strait of Gibraltar. All trip leaders are certified Wilderness First Responders.",
       "sourceType": "official_policy",
@@ -654,7 +728,9 @@
     }
   },
   {
-    "match": { "programGroupId": "arcc-peru" },
+    "match": {
+      "programGroupId": "arcc-peru"
+    },
     "dayToDay": {
       "notes": "Accommodation varies: simple hotels, hostels, homestays, and a village community house. Travel is by train and private bus. All trip leaders are certified Wilderness First Responders. High altitude (Cusco is over 11,000 feet) - the itinerary builds in acclimatization time.",
       "sourceType": "official_policy",
@@ -663,7 +739,9 @@
     }
   },
   {
-    "match": { "programGroupId": "arcc-costa-rica" },
+    "match": {
+      "programGroupId": "arcc-costa-rica"
+    },
     "dayToDay": {
       "notes": "Students live with homestay families in a highland ranching village for the service portion, and stay at a river lodge during the rafting segment of the trip.",
       "sourceType": "official_policy",
@@ -672,7 +750,9 @@
     }
   },
   {
-    "match": { "programGroupId": "arcc-australia-fiji" },
+    "match": {
+      "programGroupId": "arcc-australia-fiji"
+    },
     "dayToDay": {
       "notes": "Includes village homestays and an off-grid eco-retreat in Fiji's highlands, plus beach camping in Fiji and more conventional accommodation in Australia (Sydney, Queensland).",
       "sourceType": "official_policy",
@@ -681,7 +761,9 @@
     }
   },
   {
-    "match": { "programGroupId": "arcc-ecuador-galapagos" },
+    "match": {
+      "programGroupId": "arcc-ecuador-galapagos"
+    },
     "dayToDay": {
       "notes": "Accommodation varies: hostels, small simple hotels, an eco-lodge, and rustic community buildings. Travel is by private bus, boat, and a commercial flight to/from the Galapagos. All trip leaders are certified Wilderness First Responders.",
       "sourceType": "official_policy",
@@ -690,7 +772,9 @@
     }
   },
   {
-    "match": { "programGroupId": "arcc-kenya-tanzania" },
+    "match": {
+      "programGroupId": "arcc-kenya-tanzania"
+    },
     "dayToDay": {
       "notes": "Mostly camping in private campsites (tents and gear provided by ARCC), with some nights in a small hotel on Zanzibar and a guesthouse in Southern Kenya. Travel is via custom-built overland safari trucks equipped with sleeping/kitchen/storage facilities. All trip leaders are certified Wilderness First Responders.",
       "sourceType": "official_policy",
@@ -699,7 +783,9 @@
     }
   },
   {
-    "match": { "programGroupId": "arcc-vietnam-cambodia" },
+    "match": {
+      "programGroupId": "arcc-vietnam-cambodia"
+    },
     "dayToDay": {
       "notes": "Accommodation varies: small hotels and hostels, guesthouses, and a sailboat overnight in Halong Bay. Travel includes private buses, boats, commercial flights, and tuk-tuks. All trip leaders are certified Wilderness First Responders.",
       "sourceType": "official_policy",
@@ -708,7 +794,9 @@
     }
   },
   {
-    "match": { "programGroupId": "summerdiscovery-ucla-middle-school" },
+    "match": {
+      "programGroupId": "summerdiscovery-ucla-middle-school"
+    },
     "dayToDay": {
       "notes": "Residential Middle School students have dedicated floors exclusively for Summer Discovery in Centennial Hall, fully air-conditioned, near basketball/tennis courts and open fields. Commuter students specifically at the Middle School level are NOT permitted to attend evening or off-campus activities/excursions - a real restriction distinct from the High School commuter policy, which does allow broader participation.",
       "sourceType": "official_policy",
@@ -717,7 +805,9 @@
     }
   },
   {
-    "match": { "programGroupId": "summerdiscovery-ucla" },
+    "match": {
+      "programGroupId": "summerdiscovery-ucla"
+    },
     "dayToDay": {
       "notes": "At UCLA, High School students have an exclusive residence hall not shared with any other program (Hedrick Summit), fully air-conditioned. Tuition includes academic instruction, housing, 2 meals/day (lunch and dinner), and extracurricular activities/excursions every afternoon, evening, and weekend, plus use of athletic/recreation facilities. International students pay an additional registration fee ($379 residential / $239 commuter) covering medical insurance and airport transfers. A completion certificate and letter of recognition are issued per course/academy taken.",
       "sourceType": "official_policy",
@@ -726,7 +816,9 @@
     }
   },
   {
-    "match": { "programGroupId": "summerdiscovery-yale-university-middle-school" },
+    "match": {
+      "programGroupId": "summerdiscovery-yale-university-middle-school"
+    },
     "dayToDay": {
       "notes": "Runs alongside Yale's High School Institute for the Gifted program on the same campus during the same 3-week window (Jul 3-23), though with separate staff, classes, and age-appropriate structure per Summer Discovery's general policy of keeping Middle School and High School operationally distinct. Tuition includes 2-3 meals per day, 7 days per week, plus extracurricular activities and excursions every afternoon, evening, and weekend, and use of athletic/recreation facilities.",
       "sourceType": "official_policy",
@@ -735,7 +827,9 @@
     }
   },
   {
-    "match": { "programGroupId": "summerdiscovery-yale-university" },
+    "match": {
+      "programGroupId": "summerdiscovery-yale-university"
+    },
     "dayToDay": {
       "notes": "Tuition includes 2-3 meals per day, 7 days per week, plus extracurricular activities and excursions every afternoon, evening, and weekend, and use of athletic/recreation facilities. International students pay an additional registration fee ($379 residential / $239 commuter) covering medical insurance and airport transfers; international students fly into JFK, domestic students into Bradley Intl (BDL).",
       "sourceType": "official_policy",
@@ -744,7 +838,9 @@
     }
   },
   {
-    "match": { "programGroupId": "summerdiscovery-uc-berkeley" },
+    "match": {
+      "programGroupId": "summerdiscovery-uc-berkeley"
+    },
     "dayToDay": {
       "notes": "Students have unparalleled access to Berkeley's labs, maker spaces, and research facilities as part of coursework. International students pay an additional $379 registration fee (residential only mentioned) covering medical insurance and airport transfers; the recommended airport is SFO.",
       "sourceType": "official_policy",
@@ -753,7 +849,9 @@
     }
   },
   {
-    "match": { "programGroupId": "summerdiscovery-university-of-texas-at-austin" },
+    "match": {
+      "programGroupId": "summerdiscovery-university-of-texas-at-austin"
+    },
     "dayToDay": {
       "notes": "This campus's 2-week track is Academy-only (no Individual Course/AM+PM option at that length); the 3-week track offers both Individual Courses and Academies.",
       "sourceType": "official_policy",
@@ -762,7 +860,9 @@
     }
   },
   {
-    "match": { "programGroupId": "summerdiscovery-university-of-michigan" },
+    "match": {
+      "programGroupId": "summerdiscovery-university-of-michigan"
+    },
     "dayToDay": {
       "notes": "Structured as one-week course modules with a two-week minimum enrollment; nearly the entire course roster (Individual Courses and Academies alike) repeats identically across all three 2-week sessions, so a family's choice of session mainly comes down to timing rather than course availability. Students can combine two consecutive 2-week sessions into a 4-week stay at a discount versus booking them separately.",
       "sourceType": "official_policy",
@@ -771,7 +871,9 @@
     }
   },
   {
-    "match": { "programGroupId": "summerdiscovery-bryn-mawr-college-middle-school" },
+    "match": {
+      "programGroupId": "summerdiscovery-bryn-mawr-college-middle-school"
+    },
     "dayToDay": {
       "notes": "Bryn Mawr's campus is noted for its architecture, often compared to Hogwarts. This is a commuter-only campus (no residential option). Included in the day: supervised outdoor playtime with games/sports (weather permitting), lunch daily at the Dining Commons, and mid-class outdoor breaks in the courtyard. The best airport for families flying in is Philadelphia International (PHL).",
       "sourceType": "official_policy",
@@ -780,7 +882,9 @@
     }
   },
   {
-    "match": { "programGroupId": "summerdiscovery-georgetown-university-middle-school" },
+    "match": {
+      "programGroupId": "summerdiscovery-georgetown-university-middle-school"
+    },
     "dayToDay": {
       "notes": "Runs with separate staff, schedule, and activities from Georgetown's High School program, consistent with Summer Discovery's general policy of keeping Middle School and High School operationally distinct even on the same campus.",
       "sourceType": "official_policy",
@@ -789,7 +893,9 @@
     }
   },
   {
-    "match": { "programGroupId": "summerdiscovery-georgetown-university" },
+    "match": {
+      "programGroupId": "summerdiscovery-georgetown-university"
+    },
     "dayToDay": {
       "notes": "Located in Washington, D.C., giving students proximity to policy, law, and government institutions relevant to several of the campus's course topics (International Relations, Governing America, Careers in Law). Individual Courses programs include one morning and one afternoon pick.",
       "sourceType": "official_policy",
@@ -798,7 +904,9 @@
     }
   },
   {
-    "match": { "programGroupId": "summerdiscovery-dartmouth" },
+    "match": {
+      "programGroupId": "summerdiscovery-dartmouth"
+    },
     "dayToDay": {
       "notes": "All-Academy campus (no Individual Courses) with six distinct, overlapping 2-week windows rolling through the summer, rather than 2–3 sequential blocks like other Summer Discovery campuses. Grades 9–11 only — excludes rising/current seniors, narrower than the 9–12 band used at every other Summer Discovery campus.",
       "sourceType": "official_policy",
@@ -807,7 +915,9 @@
     }
   },
   {
-    "match": { "programGroupId": "gla-costa-rica-middle-school" },
+    "match": {
+      "programGroupId": "gla-costa-rica-middle-school"
+    },
     "dayToDay": {
       "notes": "A shorter, middle-school-appropriate version of GLA's community service model, run with separate staffing/structure from the ages-14-18 Adventures track (consistent with how other orgs in this catalog separate their middle school and high school programs).",
       "sourceType": "official_policy",
@@ -884,7 +994,9 @@
     }
   },
   {
-    "match": { "programGroupId": "tft-costa-rica-ms-adrenaline" },
+    "match": {
+      "programGroupId": "tft-costa-rica-ms-adrenaline"
+    },
     "dayToDay": {
       "notes": "Itinerary includes an ATV-style itinerary with canyoning through jungle waterfalls, a visit to the Rio Negro hot springs (six pools naturally heated by the Rincon de la Vieja Volcano), a volcanic mud bath, and time at Tamarindo Beach. Paced more relaxed than the 9-10 grade equivalent trip to ease first-time travelers into being abroad.",
       "sourceType": "official_policy",
@@ -893,7 +1005,9 @@
     }
   },
   {
-    "match": { "programGroupId": "tft-costa-rica-ms-hola-costa-rica" },
+    "match": {
+      "programGroupId": "tft-costa-rica-ms-hola-costa-rica"
+    },
     "dayToDay": {
       "notes": "First night at a mountain lodge overlooking a volcano in Turrialba, followed by an overnight whitewater rafting trip on the Pacuare River with a night spent in a rainforest lodge along the riverbank. Community service work (~20 hours) takes place alongside adventure activities. Designed specifically to be a gentle first international trip for younger travelers.",
       "sourceType": "official_policy",
@@ -902,7 +1016,9 @@
     }
   },
   {
-    "match": { "programGroupId": "tft-costa-rica-ms-ultimate-adventure-service" },
+    "match": {
+      "programGroupId": "tft-costa-rica-ms-ultimate-adventure-service"
+    },
     "dayToDay": {
       "notes": "Combines elements from the org's other Costa Rica programs into one extended trip: canyoning, hot springs, a volcanic mud bath, beachside community service (cleanups, English teaching), ziplining, and whitewater rafting. As with all TFT programs, specific accommodation names are not published in advance for safety reasons.",
       "sourceType": "official_policy",
@@ -928,7 +1044,9 @@
     }
   },
   {
-    "match": { "programGroupId": "tft-ecuador-galapagos-service" },
+    "match": {
+      "programGroupId": "tft-ecuador-galapagos-service"
+    },
     "dayToDay": {
       "notes": "Accommodation includes hotels, lodges, and a more rustic jungle lodge. Community service takes place at a sustainable farm on the Galápagos Islands (recycling, cooking in a traditional mud oven). As with all TFT programs, specific accommodation names are not published in advance for safety reasons - families get this via a secure parent portal after registering.",
       "sourceType": "official_policy",
@@ -937,7 +1055,9 @@
     }
   },
   {
-    "match": { "programGroupId": "tft-belize-scuba-service" },
+    "match": {
+      "programGroupId": "tft-belize-scuba-service"
+    },
     "dayToDay": {
       "notes": "Students stay on a private island accessible via a short flight into Placencia followed by a boat crossing. Daily structure centers on the marine conservation organization's own programming - PADI certification progress for beginners, or direct volunteer diving work for already-certified students - plus expert-led talks on topics like invasive lionfish control and ocean plastic pollution.",
       "sourceType": "official_policy",
@@ -946,7 +1066,9 @@
     }
   },
   {
-    "match": { "programGroupId": "tft-peru-service" },
+    "match": {
+      "programGroupId": "tft-peru-service"
+    },
     "dayToDay": {
       "notes": "Accommodation is a mix of 3-star hotels and a homestay in the village of Misminay, where students sleep in a private room attached to a local family's home, with shared restrooms and communal meals in the village center. One evening involves helping the host community prepare a traditional pachamanca meal cooked in the earth.",
       "sourceType": "official_policy",
@@ -955,7 +1077,9 @@
     }
   },
   {
-    "match": { "programGroupId": "tft-peru-ecuador-galapagos-service" },
+    "match": {
+      "programGroupId": "tft-peru-ecuador-galapagos-service"
+    },
     "dayToDay": {
       "notes": "Combines the day-to-day structure of both standalone programs in sequence: the Peru Service homestay/community-service segment first, followed directly by the Ecuador & the Galápagos Service segment (farm, hotels, and lodge accommodation) - see each standalone program's notes for details on its respective portion.",
       "sourceType": "official_policy",
@@ -978,7 +1102,9 @@
     }
   },
   {
-    "match": { "programGroupId": "tft-tanzania-service-safari" },
+    "match": {
+      "programGroupId": "tft-tanzania-service-safari"
+    },
     "dayToDay": {
       "notes": "General TFT Africa policy: accommodation names are not published in advance for safety reasons - families access this via a secure parent portal after registering. Vaccinations are the family's responsibility to arrange via their own doctor; TFT provides general guidance but does not mandate specific vaccines.",
       "sourceType": "official_policy",
@@ -987,7 +1113,9 @@
     }
   },
   {
-    "match": { "programGroupId": "tft-south-africa-ultimate-service-safari" },
+    "match": {
+      "programGroupId": "tft-south-africa-ultimate-service-safari"
+    },
     "dayToDay": {
       "notes": "Accommodation varies significantly by stop: a modern hotel in Johannesburg's Sandton area, en-suite dormitory rooms (max 4 students/room) in Kruger and Plettenberg Bay, clifftop lodging overlooking the Wild Coast in Chintsa, beach-bungalow-style cabins near Addo National Park, and a modern boutique hotel in Cape Town. Packing note: students must bring their own work gloves and clothes/closed-toe shoes that can get paint on them for the service portion; TFT supplies all tools/materials on-site. US citizens receive a free 90-day tourist visa on arrival.",
       "sourceType": "official_policy",
@@ -1054,7 +1182,9 @@
     }
   },
   {
-    "match": { "programGroupId": "tft-alaska-adventure-service" },
+    "match": {
+      "programGroupId": "tft-alaska-adventure-service"
+    },
     "dayToDay": {
       "notes": "Accommodation is a mix of modern hotels and comfortable, unique family-run lodging, all vetted and supervised by trip leaders present 24/7. As with all TFT programs, specific accommodation names are not published in advance for safety reasons. Alaska activities include sea kayaking, hiking near glaciers, whitewater rafting, and a sled-cart ride with husky puppies.",
       "sourceType": "official_policy",
@@ -1063,7 +1193,9 @@
     }
   },
   {
-    "match": { "programGroupId": "tft-hawaii-alaska-service" },
+    "match": {
+      "programGroupId": "tft-hawaii-alaska-service"
+    },
     "dayToDay": {
       "notes": "Accommodation is a mix of modern hotels and comfortable, unique family-run lodging, all vetted and supervised by trip leaders present 24/7. As with all TFT programs, specific accommodation names are not published in advance for safety reasons. Alaska activities include sea kayaking, hiking near glaciers, whitewater rafting, and a sled-cart ride with husky puppies; Hawaii activities include surfing, snorkeling (including night snorkeling with manta rays), and sea turtle conservation work (reef surveying, beach cleanup).",
       "sourceType": "official_policy",
@@ -1086,7 +1218,9 @@
     }
   },
   {
-    "match": { "programGroupId": "tft-hawaii-big-island-kauai-service-adventure" },
+    "match": {
+      "programGroupId": "tft-hawaii-big-island-kauai-service-adventure"
+    },
     "dayToDay": {
       "notes": "Service and adventure program specifically on the Big Island and Kauai, distinct from the multi-island 'Island Hopping' program.",
       "sourceType": "official_policy",
@@ -1095,7 +1229,11 @@
     }
   },
   {
-    "match": { "programGroupId": ["tft-alpine-adventure-switzerland-france-italy"] },
+    "match": {
+      "programGroupId": [
+        "tft-alpine-adventure-switzerland-france-italy"
+      ]
+    },
     "dayToDay": {
       "notes": "Accommodation includes hotels and, on some nights, alpine lodging near the base of a mountain. High-ropes and canyoning activities are a structured part of the itinerary, not optional add-ons.",
       "sourceType": "official_policy",
@@ -1104,7 +1242,9 @@
     }
   },
   {
-    "match": { "programGroupId": "tft-france-french-language-immersion" },
+    "match": {
+      "programGroupId": "tft-france-french-language-immersion"
+    },
     "dayToDay": {
       "notes": "Includes formal French classes taught by native speakers as a structured part of the day, alongside cultural excursions.",
       "sourceType": "official_policy",
@@ -1113,7 +1253,9 @@
     }
   },
   {
-    "match": { "programGroupId": "tft-greece-italy-island-service" },
+    "match": {
+      "programGroupId": "tft-greece-italy-island-service"
+    },
     "dayToDay": {
       "notes": "Community service work varies by program (island-based service projects, sea turtle conservation). Accommodation is centrally located, often steps from the sea on the islands. Meals emphasize authentic tavernas over tourist-oriented restaurants.",
       "sourceType": "official_policy",
@@ -1122,7 +1264,9 @@
     }
   },
   {
-    "match": { "programGroupId": "tft-greece-sea-turtle-service" },
+    "match": {
+      "programGroupId": "tft-greece-sea-turtle-service"
+    },
     "dayToDay": {
       "notes": "Accommodation is centrally located, often steps from the sea on the islands. Meals emphasize authentic tavernas over tourist-oriented restaurants.",
       "sourceType": "official_policy",
@@ -1159,7 +1303,9 @@
     }
   },
   {
-    "match": { "programGroupId": "tft-spain-spanish-language-immersion" },
+    "match": {
+      "programGroupId": "tft-spain-spanish-language-immersion"
+    },
     "dayToDay": {
       "notes": "Includes formal Spanish classes as a structured part of the day. Spanish meal timing runs later than in the US (lunch 2-4pm, dinner 8-9pm), with tapas culture as a core part of the food experience.",
       "sourceType": "official_policy",
@@ -1168,7 +1314,11 @@
     }
   },
   {
-    "match": { "programGroupId": ["tft-portugal-adventure"] },
+    "match": {
+      "programGroupId": [
+        "tft-portugal-adventure"
+      ]
+    },
     "dayToDay": {
       "notes": "Accommodation is safe, comfortable, centrally-located hotels, all rooms supervised by staff.",
       "sourceType": "official_policy",
@@ -1177,7 +1327,9 @@
     }
   },
   {
-    "match": { "programGroupId": "tft-iceland-adventure" },
+    "match": {
+      "programGroupId": "tft-iceland-adventure"
+    },
     "dayToDay": {
       "notes": "Accommodation is primarily family-run guesthouses and hostels rather than American-style hotels, reflecting Iceland's rural character; guests are typically asked to remove shoes indoors. Structured as a road trip - the group changes location most days rather than having a fixed home base.",
       "sourceType": "official_policy",
@@ -1186,7 +1338,9 @@
     }
   },
   {
-    "match": { "programGroupId": "tft-scotland-ireland-adventure" },
+    "match": {
+      "programGroupId": "tft-scotland-ireland-adventure"
+    },
     "dayToDay": {
       "notes": "Accommodation includes hostels for two of the three stops and an outdoor activity center on Achill Island for the third, where daily programming (surfing, canoeing, coasteering, archery) runs continuously rather than being a single scheduled activity. Traditional Irish music sessions take place in family-friendly pubs, where teens can enjoy food and soft drinks alongside the music. As with all TFT programs, specific accommodation names are not published in advance for safety reasons.",
       "sourceType": "official_policy",
@@ -1195,7 +1349,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-france-paris-french-language-culture" },
+    "match": {
+      "programGroupId": "ciee-france-paris-french-language-culture"
+    },
     "dayToDay": {
       "notes": "Homestay-based; host families share daily meals. Daily language classes (15-20 hrs/week) paired with afternoon cultural activities in the Latin Quarter and Montmartre. Weekend excursions to Versailles and the medieval village of Provins. Morning classes and afternoon activities may swap depending on the day.",
       "sourceType": "official_policy",
@@ -1204,7 +1360,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-france-paris-architecture-french-culture" },
+    "match": {
+      "programGroupId": "ciee-france-paris-architecture-french-culture"
+    },
     "dayToDay": {
       "notes": "Group housing (not homestay). Daily design workshops building toward a student-pitched architectural design and a 3-D model; urban sketching sessions built into the itinerary. Visits to Fondation Louis Vuitton and Musée du Quai Branly. Weekend excursions to Versailles and Provins.",
       "sourceType": "official_policy",
@@ -1213,7 +1371,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-france-paris-culinary-arts-french-culture" },
+    "match": {
+      "programGroupId": "ciee-france-paris-culinary-arts-french-culture"
+    },
     "dayToDay": {
       "notes": "Group housing. Hands-on cooking workshops twice weekly at Le Cordon Bleu's Paris campus, plus visits to fresh food markets and a cheese monger. Program culminates in a two-part team cooking competition (a main dish and dessert) judged by a panel, alongside a capstone menu presentation.",
       "sourceType": "official_policy",
@@ -1222,7 +1382,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-france-paris-fashion-design-french-culture" },
+    "match": {
+      "programGroupId": "ciee-france-paris-fashion-design-french-culture"
+    },
     "dayToDay": {
       "notes": "Group housing. Students source recycled materials from Montmartre thrift shops and the Marché St. Pierre fabric market, working with a professional seamstress. Program culminates in a student-run Global Navigator fashion show at Galeries Lafayette.",
       "sourceType": "official_policy",
@@ -1231,7 +1393,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-france-toulouse-engineering-aerospace" },
+    "match": {
+      "programGroupId": "ciee-france-toulouse-engineering-aerospace"
+    },
     "dayToDay": {
       "notes": "Group housing. Includes an Airbus Blagnac factory tour and a from-scratch student rocket-building workshop (teams of 2-3), culminating in a live rocket launch. Excursion to Pic du Midi observatory.",
       "sourceType": "official_policy",
@@ -1254,7 +1418,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-france-rennes-honors-french-language-culture" },
+    "match": {
+      "programGroupId": "ciee-france-rennes-honors-french-language-culture"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Strict French-only 'Language Pledge' enforced in and out of class - students take a proficiency test before arrival and must demonstrate Intermediate-Low ACTFL/STAMP proficiency to be accepted. Weekly reflective language-learning surveys. Otherwise follows the same activity pattern as the standard Rennes program (Mont Saint-Michel, Brittany coastline). Note: this program cannot accommodate fully Kosher, Halal, or combined dietary restrictions due to local food options.",
       "sourceType": "official_policy",
@@ -1263,7 +1429,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-france-nice-marine-ecology-sustainability" },
+    "match": {
+      "programGroupId": "ciee-france-nice-marine-ecology-sustainability"
+    },
     "dayToDay": {
       "notes": "Group housing. Fieldwork-heavy: snorkeling, tide-pool exploration, field observations, and 12 hours of service-learning built into the schedule. Excursions to Monaco's Oceanographic Museum and boat tours of coastal towns. Involves moderate-to-high intensity physical activity; swimming ability not required but strongly encouraged.",
       "sourceType": "official_policy",
@@ -1272,7 +1440,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-france-paris-filmmaking-french-culture" },
+    "match": {
+      "programGroupId": "ciee-france-paris-filmmaking-french-culture"
+    },
     "dayToDay": {
       "notes": "Group housing. Students storyboard, shoot, and edit a five-minute short film in small teams over the course of the program, then present it to peers, teachers, and local film professionals. Includes a Seine boat tour and visits to the Louvre and Musée d'Orsay for creative inspiration.",
       "sourceType": "official_policy",
@@ -1281,16 +1451,20 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-france-fashion-marketing-europe" },
+    "match": {
+      "programGroupId": "ciee-france-fashion-marketing-europe"
+    },
     "dayToDay": {
-      "notes": "Group housing; moves across three cities in three weeks (Paris, then Milan, then Madrid) - a fast-paced, single-departure program with no repeat session. Includes a jewelry-design workshop at Milan's IED art college and a visit to the Fragonard Perfume Museum in Paris. Culminates in a student-developed marketing plan pitched to a panel of industry experts.",
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision in each of the three cities the program visits (Paris, Milan, Madrid); site-wide staffing is roughly 1 Program Leader per 12 students. The program moves between cities during the three weeks, with travel days built into the schedule. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
       "sourceType": "official_policy",
-      "sourceCitation": "CIEE Fashion Marketing in Europe (Paris/Milan/Madrid) program page",
-      "verifiedAt": "2026-09-15"
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
     }
   },
   {
-    "match": { "programGroupId": "ciee-argentina-buenos-aires-spanish-language-argentinian-culture" },
+    "match": {
+      "programGroupId": "ciee-argentina-buenos-aires-spanish-language-argentinian-culture"
+    },
     "dayToDay": {
       "notes": "Homestay-based; host families share daily meals, giving students a chance to practice Spanish at home. Daily language classes paired with afternoon cultural activities across Buenos Aires's 48 neighborhoods. Weekend excursions to an estancia (ranch) for parrillada (barbecue) and gaucho culture, plus a flight to Iguazú Falls.",
       "sourceType": "official_policy",
@@ -1299,7 +1473,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-argentina-buenos-aires-soccer-mental-performance" },
+    "match": {
+      "programGroupId": "ciee-argentina-buenos-aires-soccer-mental-performance"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Daily on-pitch training paired with sports psychology coursework (stress/anxiety management, performance zones, goal-setting). Visits La Boca neighborhood and its open-air museum, tours La Bombonera stadium (home of Boca Juniors), and includes a hands-on tango workshop with local students. Overnight stay at a traditional 19th-century estancia (ranch) with horseback riding and a traditional asado, plus a day trip to the Tigre Delta.",
       "sourceType": "official_policy",
@@ -1308,7 +1484,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-australia-sydney-wildlife-conservation" },
+    "match": {
+      "programGroupId": "ciee-australia-sydney-wildlife-conservation"
+    },
     "dayToDay": {
       "notes": "Group housing (not homestay). Field-research heavy: students collect and analyze data on sustainability strategies in urban coastal ecosystems. Excursions include Featherdale Wildlife Sanctuary, the Blue Mountains (Scenic Railway, Three Sisters rock formation), and a traditional Aboriginal Bushtucker Tour. A Manly Beach snorkeling trip is a program highlight, done in the cooler waters of the Australian winter (the Southern Hemisphere's June-August is winter).",
       "sourceType": "official_policy",
@@ -1317,7 +1495,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-botswana-gaborone-wildlife-conservation" },
+    "match": {
+      "programGroupId": "ciee-botswana-gaborone-wildlife-conservation"
+    },
     "dayToDay": {
       "notes": "Homestay-based at Mokolodi Nature Reserve on the outskirts of Gaborone, described by CIEE as a 'living lab.' Hands-on habitat-care work included (e.g., cleaning vulture ponds, tortoise enclosures) alongside sanctuary staff. Camping is part of the Okavango Delta excursion.",
       "sourceType": "official_policy",
@@ -1326,7 +1506,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-botswana-gaborone-leadership-service-public-health" },
+    "match": {
+      "programGroupId": "ciee-botswana-gaborone-leadership-service-public-health"
+    },
     "dayToDay": {
       "notes": "Homestay-based; host families share home-cooked meals (e.g., seswaa, bogobe). Students conduct health assessments and help implement a health fair in a rural Botswana community, working alongside local community-based organizations. Includes a meeting with local high school students to discuss teen health challenges in the region, and an excursion to the Okavango Delta.",
       "sourceType": "official_policy",
@@ -1335,7 +1517,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-brazil-sao-paulo-global-entrepreneurship" },
+    "match": {
+      "programGroupId": "ciee-brazil-sao-paulo-global-entrepreneurship"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Visits a working chocolate mega-factory (Cacau Show) to study franchise/supply-chain business models, and Tenondé Porã Indigenous Territory to learn about Guarani cultural preservation and sustainable income sources. Culminates in a team-pitched startup concept presented to local mentors, and a churrasco barbecue.",
       "sourceType": "official_policy",
@@ -1344,7 +1528,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-brazil-sao-paulo-soccer-mental-performance" },
+    "match": {
+      "programGroupId": "ciee-brazil-sao-paulo-soccer-mental-performance"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Daily on-pitch training combined with sports psychology coursework (goal-setting, motivation, confidence); students maintain a Personal Performance Portfolio throughout. Includes a tour of the historic Pacaembu Arena and a 3-day overnight excursion to the island town of Ilhabela (beaches, whale-watching, Atlantic Forest hiking).",
       "sourceType": "official_policy",
@@ -1353,7 +1539,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-china-shanghai-culinary-arts-chinese-culture" },
+    "match": {
+      "programGroupId": "ciee-china-shanghai-culinary-arts-chinese-culture"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Hands-on cooking instruction in professional teaching kitchens, plus visits to bustling markets, neighborhood breakfast shops, and local restaurants. Overnight excursion to Yangzhou (birthplace of Huaiyang cuisine, one of China's four great culinary traditions). Also includes Tai Chi and Shaolin Kung Fu training, a pottery workshop, and a sunset Huangpu River cruise.",
       "sourceType": "official_policy",
@@ -1362,7 +1550,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-china-shanghai-engineering-renewable-energies" },
+    "match": {
+      "programGroupId": "ciee-china-shanghai-engineering-renewable-energies"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Hands-on fieldwork assessing city design and sustainability, with industry tours including an automated production facility and Apollo Park (autonomous driving/intelligent transportation center). Overnight excursion to Wuxi (Huishan Old Town, Lingshan Grand Buddha, Taihu Lake). Also includes a traditional 72-step Chinese ceramic-making workshop and a Huangpu River cruise.",
       "sourceType": "official_policy",
@@ -1371,7 +1561,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-china-shanghai-ai-real-world-application" },
+    "match": {
+      "programGroupId": "ciee-china-shanghai-ai-real-world-application"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Students partner with a local organization on a real-world challenge, culminating in an AI-powered prototype. Includes a visit to a smart community center helping residents use digital tools, a martial arts workshop (Tai Chi and Shaolin Kung Fu, judged team competition), and table tennis at a club founded by Olympic champion Xu Xin. Overnight excursion to Wuxi.",
       "sourceType": "official_policy",
@@ -1380,7 +1572,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-costarica-monteverde-ecology-sustainability" },
+    "match": {
+      "programGroupId": "ciee-costarica-monteverde-ecology-sustainability"
+    },
     "dayToDay": {
       "notes": "Farm-based living component: students milk cows, gather eggs, feed pigs, make compost, and care for seedlings in a native tree nursery. Week-long extension on the Pacific coastline for marine conservation study. Weekend excursions include El Tigre Waterfalls and Bajo del Tigre Nature Preserve (Children's Eternal Rainforest).",
       "sourceType": "official_policy",
@@ -1389,7 +1583,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-costarica-monteverde-photography-costa-rican-culture" },
+    "match": {
+      "programGroupId": "ciee-costarica-monteverde-photography-costa-rican-culture"
+    },
     "dayToDay": {
       "notes": "Dorm/group housing. Guided photo walks and workshops led by professional photographers, covering composition, lighting, portrait, and low-light techniques. Ziplining over the Monteverde Cloud Forest canopy for aerial shots. Excursions to Santa Rosa National Park (wildlife/historic landscapes) and the Pacific coast (coastal and underwater photography).",
       "sourceType": "official_policy",
@@ -1398,7 +1594,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-costarica-monteverde-wildlife-conservation" },
+    "match": {
+      "programGroupId": "ciee-costarica-monteverde-wildlife-conservation"
+    },
     "dayToDay": {
       "notes": "Group housing. Field observation in the Monteverde Cloud Forest (capuchins, toucans, two-toed sloths); a night hike to observe nocturnal species. Excursion to the Pacific coast covering marine wildlife and lowland forest ecosystems (jaguars, tapirs). Includes ziplining and a Bajo del Tigre preserve hike.",
       "sourceType": "official_policy",
@@ -1407,7 +1605,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-czechrepublic-prague-painting-czech-culture" },
+    "match": {
+      "programGroupId": "ciee-czechrepublic-prague-painting-czech-culture"
+    },
     "dayToDay": {
       "notes": "Group housing. Coursework created in collaboration with the Malovani Kresleni art atelier. Includes a hands-on street art workshop (stenciling, layering, mural-scale work) with artists-in-residence, and the Invisible Exhibition - a sensory experience navigated in complete darkness, guided by blind or partially sighted guides. Overnight excursion to the medieval village of Český Krumlov.",
       "sourceType": "official_policy",
@@ -1416,7 +1616,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-denmark-copenhagen-climate-change-policy-advocacy" },
+    "match": {
+      "programGroupId": "ciee-denmark-copenhagen-climate-change-policy-advocacy"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Visits to CopenHill (waste-to-energy plant doubling as a ski slope) and Hofor (the city's water utility). 3-day stay at Yduns Have, an eco-farm on Samsø island - picking strawberries, tending soil, caring for animals. Dialogue with students from The Green Youth Movement. Culminates in a student-developed climate advocacy strategy.",
       "sourceType": "official_policy",
@@ -1425,7 +1627,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-denmark-copenhagen-engineering-sustainability" },
+    "match": {
+      "programGroupId": "ciee-denmark-copenhagen-engineering-sustainability"
+    },
     "dayToDay": {
       "notes": "Group housing. Hands-on fieldwork collecting environmental data and analyzing sustainable behavior patterns; visit to CopenHill. Bike excursion to Nyhavn Harbor and the Little Mermaid statue. Travel to Samsø (world's first renewable energy island) and Youth Island (youth changemaker hub). Culminates in a proposed engineering tool for a green initiative.",
       "sourceType": "official_policy",
@@ -1434,7 +1638,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-multidest-dublin-copenhagen-berlin-global-entrepreneurship-innovation-europe" },
+    "match": {
+      "programGroupId": "ciee-multidest-dublin-copenhagen-berlin-global-entrepreneurship-innovation-europe"
+    },
     "dayToDay": {
       "notes": "Group housing; students fly between all three cities during the program. Visit to Station, a 3,700 sq. meter former police station turned student-driven innovation hub in Copenhagen. Visit to the Berlin Wall Memorial paired with a ropes course at Mount Mitte. Program culminates in a business pitch to a panel of professionals.",
       "sourceType": "official_policy",
@@ -1443,7 +1649,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-dominicanrepublic-santiago-leadership-service-public-health" },
+    "match": {
+      "programGroupId": "ciee-dominicanrepublic-santiago-leadership-service-public-health"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Visits both a public hospital and a private clinic in Santiago to compare healthcare access. Students act as junior health promoters designing a health education fair. Bachata/salsa dance classes and a visit to the Centro León art center. Tubing and rope-swing excursion in the Mao region.",
       "sourceType": "official_policy",
@@ -1452,7 +1660,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-dominicanrepublic-santiago-leadership-service-youth-development" },
+    "match": {
+      "programGroupId": "ciee-dominicanrepublic-santiago-leadership-service-youth-development"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Partners with NGO Acción Callejera to run a summer camp for underprivileged children - coaching activities, running workshops, environmental clean-up projects. Visit to the Museum of Mirabal Sisters with a guided reflection on activism and social justice. Functional Spanish classes. Excursions to mountain areas and coastal cacao farms.",
       "sourceType": "official_policy",
@@ -1461,7 +1671,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-england-london-ai-real-world-application" },
+    "match": {
+      "programGroupId": "ciee-england-london-ai-real-world-application"
+    },
     "dayToDay": {
       "notes": "Group housing. Overnight excursion to Milton Keynes: Bletchley Park (WWII codebreaking site) and The National Museum of Computing (rebuilt Colossus computer). Day trip to Cambridge including the AI Animal Chat interactive exhibit and river punting. Also visits Sandbox VR (Stranger Things: Catalyst) and the Twist Museum.",
       "sourceType": "official_policy",
@@ -1470,7 +1682,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-england-london-creative-writing-british-culture" },
+    "match": {
+      "programGroupId": "ciee-england-london-creative-writing-british-culture"
+    },
     "dayToDay": {
       "notes": "Group housing. Charles Dickens walking tour and a literary tour of Oxford (Alice in Wonderland/Narnia/Tolkien sites). Overnight excursion to Shakespeare's birthplace, Stratford-upon-Avon. Culminates in an Open Mic session sharing student work.",
       "sourceType": "official_policy",
@@ -1479,7 +1693,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-england-london-filmmaking-british-culture" },
+    "match": {
+      "programGroupId": "ciee-england-london-filmmaking-british-culture"
+    },
     "dayToDay": {
       "notes": "Group housing. Walking tour of iconic London/Greenwich filming locations (Bridgerton, Thor, Pirates of the Caribbean). Harry Potter Studio Tour. Weekend excursions to Oxford and Stratford-upon-Avon. Students produce and present a 5-minute film scene with a director's statement.",
       "sourceType": "official_policy",
@@ -1488,7 +1704,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-england-london-soccer-mental-performance" },
+    "match": {
+      "programGroupId": "ciee-england-london-soccer-mental-performance"
+    },
     "dayToDay": {
       "notes": "Group housing. Behind-the-scenes tour of Emirates Stadium and the Arsenal Museum; visit to Lord's Cricket Ground. Overnight trip to Manchester with stadium tours of both Manchester clubs and the National Football Museum. Also visits the Tower of London and Tower Bridge.",
       "sourceType": "official_policy",
@@ -1497,7 +1715,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-england-london-sports-management-marketing" },
+    "match": {
+      "programGroupId": "ciee-england-london-sports-management-marketing"
+    },
     "dayToDay": {
       "notes": "Group housing. Behind-the-scenes tours of Wembley Stadium (players' tunnel, dressing rooms, press room) and Twickenham Stadium/World Rugby Museum. Students propose a sponsorship business plan for a local sporting event or club.",
       "sourceType": "official_policy",
@@ -1506,7 +1726,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-england-london-theater-arts-british-culture" },
+    "match": {
+      "programGroupId": "ciee-england-london-theater-arts-british-culture"
+    },
     "dayToDay": {
       "notes": "Group housing. Backstage tour of the Theatre Royal Drury Lane (world's oldest continuously operating theatre site). Globe Theatre play attendance plus backstage tour with Elizabethan acting demonstrations. Overnight trip to Stratford-upon-Avon and a day trip to Oxford. Culminates in a student-written and performed mini-play.",
       "sourceType": "official_policy",
@@ -1515,7 +1737,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-estonia-tallinn-ai-real-world-application" },
+    "match": {
+      "programGroupId": "ciee-estonia-tallinn-ai-real-world-application"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Old Town walking tour paired with a discussion of Estonia's digital transformation (e-government, Skype, Bolt). Visit to Telliskivi Creative City, a converted Soviet-era railway factory now hosting 250+ companies. Hands-on Estonian cooking class (rye bread, meat pies, kringle). Visit to the Tallinn Song Festival Grounds and the Singing Revolution history.",
       "sourceType": "official_policy",
@@ -1524,7 +1748,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-estonia-tallinn-diplomacy-government" },
+    "match": {
+      "programGroupId": "ciee-estonia-tallinn-diplomacy-government"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Visit to the U.S. Embassy in Tallinn, meeting senior diplomatic officials. Tours of international peace organizations including cyber defense hubs and security agencies. Negotiation simulations and conflict-resolution exercises culminating in a proposed peace-building initiative. Nõmme Adventure Park treetop obstacle course. Excursions to coastal towns like Pärnu, Kuressaare, or Haapsalu.",
       "sourceType": "official_policy",
@@ -1533,7 +1759,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-germany-berlin-engineering-automotives" },
+    "match": {
+      "programGroupId": "ciee-germany-berlin-engineering-automotives"
+    },
     "dayToDay": {
       "notes": "Group housing. Excursion to Munich including BMW Welt and Museum, plus Marienplatz/Glockenspiel. Visits the DRIVE Volkswagen Group Forum and the German Museum of Technology in Berlin.",
       "sourceType": "official_policy",
@@ -1542,7 +1770,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-germany-berlin-engineering-german-culture" },
+    "match": {
+      "programGroupId": "ciee-germany-berlin-engineering-german-culture"
+    },
     "dayToDay": {
       "notes": "Group housing. Sound engineering workshop at Trixx Studio; 3D printing/hardware tour at MotionLab. Excursions to Potsdam and Dresden to see modern engineering advancements.",
       "sourceType": "official_policy",
@@ -1551,7 +1781,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-germany-berlin-german-language-culture" },
+    "match": {
+      "programGroupId": "ciee-germany-berlin-german-language-culture"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Street art tour; visits to Olympiastadion (VIP boxes, locker rooms), the Spy Museum (laser maze challenge), and Sachsenhausen Concentration Camp or Flughafen Tempelhof. Day trip to Potsdam (Neues Palais, Chinese Tea House).",
       "sourceType": "official_policy",
@@ -1560,7 +1792,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-germany-berlin-global-entrepreneurship" },
+    "match": {
+      "programGroupId": "ciee-germany-berlin-global-entrepreneurship"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Visit to Startup Incubator Berlin with Q&A from founding teams. Overnight excursion to Leipzig ('Hypezig') including the Völkerschlachtdenkmal monument and sites connected to Bach and Mendelssohn.",
       "sourceType": "official_policy",
@@ -1569,7 +1803,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-germany-berlin-music-production-german-culture" },
+    "match": {
+      "programGroupId": "ciee-germany-berlin-music-production-german-culture"
+    },
     "dayToDay": {
       "notes": "Group housing. Hands-on recording workshop at Trixx Studio Berlin; visit to the Berlin Philharmonie and the Futurium science museum. Kayaking through Kreuzberg's canals/Spreewald, and a trip to Potsdam's castles.",
       "sourceType": "official_policy",
@@ -1578,7 +1814,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-ghana-legon-leadership-service-childrens-education" },
+    "match": {
+      "programGroupId": "ciee-ghana-legon-leadership-service-childrens-education"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Service placement at schools such as the Billa Mahmud Future Leaders School in Accra's Tse Ado community; students assist with math/science/English lessons and lead recess games. Traditional drumming, dance, cooking classes, batik-dyeing, and bead-making. Overnight excursion to Volta Lake (kayaking) and Wli Waterfalls, plus Shai Hills Resource Reserve.",
       "sourceType": "official_policy",
@@ -1587,7 +1825,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-ghana-legon-soccer-mental-performance" },
+    "match": {
+      "programGroupId": "ciee-ghana-legon-soccer-mental-performance"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Daily on-pitch training with dance lessons from the University of Ghana's Dance Department and a personal batik (tie-dye) design workshop. Meeting with a former Ghanaian professional soccer player. Kayaking on Lake Volta and a visit to the Cedi Beads Factory (recycled-glass bead making).",
       "sourceType": "official_policy",
@@ -1596,7 +1836,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-greece-athens-architecture-greek-culture" },
+    "match": {
+      "programGroupId": "ciee-greece-athens-architecture-greek-culture"
+    },
     "dayToDay": {
       "notes": "Group housing. Sketchbook-in-hand city walks decoding Athenian design from the Odeon of Herodes Atticus to the Parthenon. Urban scavenger hunt through Anafiotika and Plaka; group mural collaboration. Excursions to Nafplio and the mountain villages of Corinthia.",
       "sourceType": "official_policy",
@@ -1605,7 +1847,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-greece-athens-art-history-greek-culture" },
+    "match": {
+      "programGroupId": "ciee-greece-athens-art-history-greek-culture"
+    },
     "dayToDay": {
       "notes": "Group housing. Experiments with ceramics, fresco painting, photography, and documentary filmmaking. Excursion to Tatoi (former royal estate) and attendance at the Athens Epidaurus Festival at the Odeon of Herodes Atticus. Day trips to Sounio/Lavrio and Nafplio.",
       "sourceType": "official_policy",
@@ -1614,7 +1858,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-greece-athens-creative-writing-greek-culture" },
+    "match": {
+      "programGroupId": "ciee-greece-athens-creative-writing-greek-culture"
+    },
     "dayToDay": {
       "notes": "Group housing. Writing workshops at the Ancient Agora and Temple of Poseidon for inspiration; students collaborate on a drama script performed live or on film.",
       "sourceType": "official_policy",
@@ -1623,7 +1869,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-multidest-athens-rome-creative-writing-mythology-europe" },
+    "match": {
+      "programGroupId": "ciee-multidest-athens-rome-creative-writing-mythology-europe"
+    },
     "dayToDay": {
       "notes": "Group housing; students travel between Athens and Rome. Character Creation Workshop at Villa Borghese; visit to Cinecittà World, Europe's largest film studio. Excursions to Nafplio and Florence. Culminates in a collaborative drama script performed live or on film.",
       "sourceType": "official_policy",
@@ -1632,7 +1880,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-greece-athens-marine-ecology-sustainability" },
+    "match": {
+      "programGroupId": "ciee-greece-athens-marine-ecology-sustainability"
+    },
     "dayToDay": {
       "notes": "Group housing. Coastal dune restoration work with local NGOs on the island of Aegina; water quality assessment, snorkeling, tide pool exploration. Excursions to Cape Sounion (Temple of Poseidon) and Vouliagmeni Beach.",
       "sourceType": "official_policy",
@@ -1641,7 +1891,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-ireland-dublin-global-entrepreneurship" },
+    "match": {
+      "programGroupId": "ciee-ireland-dublin-global-entrepreneurship"
+    },
     "dayToDay": {
       "notes": "Group housing. Tours of 'Silicon Docks' (Google/Meta European HQs) and small businesses like Container Coffee and Rolling Donut. Visit to Windmill Lane Recording Studios (U2's creative home). Excursion to the fishing village of Howth. Hurling lessons.",
       "sourceType": "official_policy",
@@ -1650,7 +1902,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-ireland-dublin-golf-mental-performance" },
+    "match": {
+      "programGroupId": "ciee-ireland-dublin-golf-mental-performance"
+    },
     "dayToDay": {
       "notes": "Group housing. Daily golf sessions at courses including Royal Dublin with expert coaches paired with sports psychology instruction. Gaelic Games experience (hurling, Gaelic football, handball); amphibious WWII vehicle city tour; Ballad Tour of Dublin with a local musician. Day trips to Howth and Glendalough (Wicklow Mountains National Park).",
       "sourceType": "official_policy",
@@ -1659,7 +1913,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-ireland-dublin-social-justice-advocacy" },
+    "match": {
+      "programGroupId": "ciee-ireland-dublin-social-justice-advocacy"
+    },
     "dayToDay": {
       "notes": "Group housing. Connects with local nonprofits serving unhoused, addiction, and migrant populations. Guided tour of 14 Henrietta Street (300 years of Dublin tenement history) and a workshop at the Rediscovery Centre (circular-economy upcycling across furniture, fashion, paint, and cycling enterprises). Visit to a replica of the Jeanie Johnston Famine Ship and the Famine Memorial. Weekend excursion to Howth.",
       "sourceType": "official_policy",
@@ -1668,7 +1924,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-italy-rome-architecture-italian-culture" },
+    "match": {
+      "programGroupId": "ciee-italy-rome-architecture-italian-culture"
+    },
     "dayToDay": {
       "notes": "Group housing. Scavenger hunt through baroque Rome; sketching sessions in a historic neighborhood; mosaic-making with a local artisan. Day trip to Florence, viewed through an architectural lens.",
       "sourceType": "official_policy",
@@ -1677,7 +1935,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-italy-florence-art-history-italian-culture" },
+    "match": {
+      "programGroupId": "ciee-italy-florence-art-history-italian-culture"
+    },
     "dayToDay": {
       "notes": "Group housing. Visit to Pratolino Medici Park ('Garden of Wonders'). Day trip to the medieval town of Siena (Piazza del Campo, Siena Cathedral).",
       "sourceType": "official_policy",
@@ -1686,7 +1946,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-italy-rome-art-history-italian-culture" },
+    "match": {
+      "programGroupId": "ciee-italy-rome-art-history-italian-culture"
+    },
     "dayToDay": {
       "notes": "Group housing. Exploring the Roman Forum and Colosseum; fresco painting workshop. Excursions to Tivoli and Florence.",
       "sourceType": "official_policy",
@@ -1695,7 +1957,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-italy-rome-creative-writing-italian-culture" },
+    "match": {
+      "programGroupId": "ciee-italy-rome-creative-writing-italian-culture"
+    },
     "dayToDay": {
       "notes": "Group housing. Worldbuilding workshop at Villa di Tiberio, Sperlonga (Odyssey-themed sculptures); gnocchi-making class. Excursion to Tuscany/Florence.",
       "sourceType": "official_policy",
@@ -1704,7 +1968,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-italy-florence-culinary-arts-italian-culture" },
+    "match": {
+      "programGroupId": "ciee-italy-florence-culinary-arts-italian-culture"
+    },
     "dayToDay": {
       "notes": "Group housing. Cheese-tasting experience; visit to a sustainable Tuscan farm; gelato-making class. Excursion to the Tuscan Coast.",
       "sourceType": "official_policy",
@@ -1713,7 +1979,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-italy-florence-drawing-italian-culture" },
+    "match": {
+      "programGroupId": "ciee-italy-florence-drawing-italian-culture"
+    },
     "dayToDay": {
       "notes": "Group housing. On-site drawing class at the Specola Museum of Natural History; scavenger hunt/community meal with local high schoolers in Gavinana.",
       "sourceType": "official_policy",
@@ -1722,7 +1990,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-italy-milan-engineering-automotives" },
+    "match": {
+      "programGroupId": "ciee-italy-milan-engineering-automotives"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Day trip to Autodromo Nazionale Monza (F1 circuit) including pit lane/paddock access. Overnight excursion to Modena visiting the Enzo Ferrari Museum, with local balsamic vinegar tasting and an evening passeggiata.",
       "sourceType": "official_policy",
@@ -1731,7 +2001,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-italy-milan-fashion-design-italian-culture" },
+    "match": {
+      "programGroupId": "ciee-italy-milan-fashion-design-italian-culture"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Visits to fashion ateliers and the Armani Silos exhibit; graffiti T-shirt customizing workshop; cooking class with a local chef. Excursions to Florence and Lake Como.",
       "sourceType": "official_policy",
@@ -1740,7 +2012,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-italy-milan-fashion-marketing-business" },
+    "match": {
+      "programGroupId": "ciee-italy-milan-fashion-marketing-business"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Silk pocket square-making workshop; visit to the Fondazione Prada campus (design/contemporary art). Excursions to Lake Como and Florence.",
       "sourceType": "official_policy",
@@ -1749,7 +2023,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-italy-milan-italian-language-culture" },
+    "match": {
+      "programGroupId": "ciee-italy-milan-italian-language-culture"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Day trip to the Monza F1 circuit; viewing of da Vinci's Last Supper at Santa Maria delle Grazie; visit to Castello Sforzesco. Weekend excursions to Venice's canals and Lake Como.",
       "sourceType": "official_policy",
@@ -1758,7 +2034,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-italy-rome-italian-language-culture" },
+    "match": {
+      "programGroupId": "ciee-italy-rome-italian-language-culture"
+    },
     "dayToDay": {
       "notes": "Homestay-based. Walking tour of the Campo de' Fiori market; pasta and tiramisu cooking class with a professional chef; gelato-making at the historic Fassi gelateria. Beach day trip to Santa Severa.",
       "sourceType": "official_policy",
@@ -1767,7 +2045,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-japan-tokyo-anime-manga-japanese-culture" },
+    "match": {
+      "programGroupId": "ciee-japan-tokyo-anime-manga-japanese-culture"
+    },
     "dayToDay": {
       "notes": "Students stay in group housing (hotel-style, shared rooms with fellow Global Navigators) with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays follow a set structure of morning classes and afternoon cultural activities/excursions, with meals eaten as a group; weekends bring day or overnight excursions. A curfew applies each night, with the specific time communicated during on-program orientation rather than published in advance. Unstructured free time exists but is supervised under a buddy-system policy, and students are not permitted to leave the group housing site or travel independently without staff approval.",
       "sourceType": "official_policy",
@@ -1776,7 +2056,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-japan-tokyo-fashion-design-japanese-culture" },
+    "match": {
+      "programGroupId": "ciee-japan-tokyo-fashion-design-japanese-culture"
+    },
     "dayToDay": {
       "notes": "Students stay in group housing (hotel-style, shared rooms with fellow Global Navigators) with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays follow a set structure of morning classes and afternoon cultural activities/excursions, with meals eaten as a group; weekends bring day or overnight excursions. A curfew applies each night, with the specific time communicated during on-program orientation rather than published in advance. Unstructured free time exists but is supervised under a buddy-system policy, and students are not permitted to leave the group housing site or travel independently without staff approval.",
       "sourceType": "official_policy",
@@ -1785,7 +2067,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-japan-tokyo-japanese-language-culture" },
+    "match": {
+      "programGroupId": "ciee-japan-tokyo-japanese-language-culture"
+    },
     "dayToDay": {
       "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy), and students generally travel to and from daily classes/activities as a group rather than independently. Weekends include a mix of family time and CIEE-organized excursions. Unstructured free time is limited on weekdays given the class + activity schedule, and any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
       "sourceType": "official_policy",
@@ -1794,7 +2078,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-japan-kyoto-japanese-language-culture" },
+    "match": {
+      "programGroupId": "ciee-japan-kyoto-japanese-language-culture"
+    },
     "dayToDay": {
       "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy), and students generally travel to and from daily classes/activities as a group rather than independently. The Kyoto program page also describes a weekly 'Structured Free Time' evening block for exploring the city with friends, plus a dedicated homestay weekend. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
       "sourceType": "official_policy",
@@ -1803,7 +2089,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-japan-kyoto-soccer-mental-performance" },
+    "match": {
+      "programGroupId": "ciee-japan-kyoto-soccer-mental-performance"
+    },
     "dayToDay": {
       "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Days combine daily soccer training/practice (up to 3 hours) with sports-psychology coursework and cultural excursions; weekends bring day or overnight trips (e.g., to Osaka or Nara). A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
       "sourceType": "official_policy",
@@ -1812,7 +2100,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-japan-kyoto-culinary-arts-japanese-culture" },
+    "match": {
+      "programGroupId": "ciee-japan-kyoto-culinary-arts-japanese-culture"
+    },
     "dayToDay": {
       "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays center on cooking classes and market visits with a group meal structure, plus cultural excursions; weekends bring day or overnight trips, including to Osaka and Tokyo. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
       "sourceType": "official_policy",
@@ -1821,7 +2111,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-japan-osaka-japanese-language-culture" },
+    "match": {
+      "programGroupId": "ciee-japan-osaka-japanese-language-culture"
+    },
     "dayToDay": {
       "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy), and students generally travel to and from daily classes/activities as a group rather than independently. Weekends include a mix of family time and CIEE-organized excursions such as Universal Studios Japan and Nara Park. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
       "sourceType": "official_policy",
@@ -1830,7 +2122,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-japan-kyoto-manga-drawing-japanese-culture" },
+    "match": {
+      "programGroupId": "ciee-japan-kyoto-manga-drawing-japanese-culture"
+    },
     "dayToDay": {
       "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays follow a set structure of morning classes and afternoon cultural activities/excursions, with meals eaten as a group; weekends bring day or overnight excursions, including to Tokyo. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
       "sourceType": "official_policy",
@@ -1839,7 +2133,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-japan-tokyo-robotics-japanese-culture" },
+    "match": {
+      "programGroupId": "ciee-japan-tokyo-robotics-japanese-culture"
+    },
     "dayToDay": {
       "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays follow a set structure of hands-on robotics classes and afternoon cultural activities/excursions, with meals eaten as a group; weekends bring day or overnight excursions, such as to Yokohama. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
       "sourceType": "official_policy",
@@ -1848,7 +2144,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-japan-osaka-robotics-japanese-culture" },
+    "match": {
+      "programGroupId": "ciee-japan-osaka-robotics-japanese-culture"
+    },
     "dayToDay": {
       "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays follow a set structure of hands-on robotics classes and afternoon cultural activities/excursions, with meals eaten as a group; weekends bring day or overnight excursions. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
       "sourceType": "official_policy",
@@ -1857,7 +2155,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-japan-kyoto-video-game-design-japanese-culture" },
+    "match": {
+      "programGroupId": "ciee-japan-kyoto-video-game-design-japanese-culture"
+    },
     "dayToDay": {
       "notes": "Students stay in hotel-style group housing with shared rooms and CIEE Program Leaders residing on-site; the program page explicitly states a ratio of 1 Program Leader per 12 students plus local staff support around the clock. Weekdays run breakfast, hands-on classes with expert instructors, a group lunch, an afternoon cultural activity or workshop, and dinner out in the community (morning/afternoon may swap); weekends bring day or overnight excursions, including to Universal Studios Japan and Nara. A curfew applies each night, communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
       "sourceType": "official_policy",
@@ -1866,7 +2166,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-mexico-merida-marine-ecology-sustainability" },
+    "match": {
+      "programGroupId": "ciee-mexico-merida-marine-ecology-sustainability"
+    },
     "dayToDay": {
       "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays combine field-based marine science classes and service-learning with local NGOs; weekends and the program's two overnight excursions (Ría Lagartos, El Palmar) are chaperoned as a group. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
       "sourceType": "official_policy",
@@ -1875,7 +2177,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-mexico-merida-culinary-arts-mexican-culture" },
+    "match": {
+      "programGroupId": "ciee-mexico-merida-culinary-arts-mexican-culture"
+    },
     "dayToDay": {
       "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays center on cooking classes and market visits; weekends bring group excursions such as cenote swimming and Chichén Itzá. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
       "sourceType": "official_policy",
@@ -1884,7 +2188,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-mexico-merida-leadership-service-youth-development" },
+    "match": {
+      "programGroupId": "ciee-mexico-merida-leadership-service-youth-development"
+    },
     "dayToDay": {
       "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays are spent on-site at a partner NGO doing hands-on youth-development service work; weekends bring group excursions such as Chichén Itzá and El Corchito. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
       "sourceType": "official_policy",
@@ -1893,7 +2199,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-mexico-merida-spanish-language-mexican-culture" },
+    "match": {
+      "programGroupId": "ciee-mexico-merida-spanish-language-mexican-culture"
+    },
     "dayToDay": {
       "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy), and students generally travel to and from daily language classes/activities as a group rather than independently. Weekends include a mix of family time and CIEE-organized excursions such as El Corchito and Chichén Itzá. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
       "sourceType": "official_policy",
@@ -1902,7 +2210,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-morocco-rabat-drawing-moroccan-culture" },
+    "match": {
+      "programGroupId": "ciee-morocco-rabat-drawing-moroccan-culture"
+    },
     "dayToDay": {
       "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays center on drawing classes and market/garden sketching sessions; weekends bring group excursions such as Casablanca and an overnight trip to Marrakech and the Atlas Mountains. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
       "sourceType": "official_policy",
@@ -1911,7 +2221,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-morocco-rabat-arabic-language-moroccan-culture" },
+    "match": {
+      "programGroupId": "ciee-morocco-rabat-arabic-language-moroccan-culture"
+    },
     "dayToDay": {
       "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy), and students generally travel to and from daily Arabic classes/activities as a group rather than independently. Weekends include a mix of family time and CIEE-organized excursions such as Chefchaouen, Casablanca, and Tangier. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
       "sourceType": "official_policy",
@@ -1920,7 +2232,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-morocco-mohammedia-leadership-service-youth-development" },
+    "match": {
+      "programGroupId": "ciee-morocco-mohammedia-leadership-service-youth-development"
+    },
     "dayToDay": {
       "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays are spent on-site at the American Language Center or partner schools doing hands-on service work, with structured evening seminars reflecting on the day's service; weekends bring an overnight excursion to Marrakech and the Atlas Mountains. In free time, students have access to the American Language Center's clubs and recreational offerings (sports, music, public speaking, debate). Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
       "sourceType": "official_policy",
@@ -1929,7 +2243,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-netherlands-amsterdam-diplomacy-government" },
+    "match": {
+      "programGroupId": "ciee-netherlands-amsterdam-diplomacy-government"
+    },
     "dayToDay": {
       "notes": "Students stay in dorm/hostel-style group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine morning classes with afternoon excursions and activities, including full-day trips to The Hague and Brussels; meals are eaten as a group. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
       "sourceType": "official_policy",
@@ -1938,7 +2254,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-netherlands-amsterdam-urban-design-sustainability" },
+    "match": {
+      "programGroupId": "ciee-netherlands-amsterdam-urban-design-sustainability"
+    },
     "dayToDay": {
       "notes": "Students stay in dorm/hostel-style group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine morning classes and Design Thinking workshops with afternoon excursions, including day trips to Almere, Utrecht, and Rotterdam; meals are eaten as a group. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
       "sourceType": "official_policy",
@@ -1947,7 +2265,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-new-zealand-auckland-filmmaking-new-zealand-culture" },
+    "match": {
+      "programGroupId": "ciee-new-zealand-auckland-filmmaking-new-zealand-culture"
+    },
     "dayToDay": {
       "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine morning classes with afternoon location-scouting and filming sessions around Auckland; meals are eaten as a group. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently. The program includes one overnight excursion (Raglan).",
       "sourceType": "official_policy",
@@ -1956,7 +2276,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-new-zealand-auckland-photography-new-zealand-culture" },
+    "match": {
+      "programGroupId": "ciee-new-zealand-auckland-photography-new-zealand-culture"
+    },
     "dayToDay": {
       "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine morning classes with afternoon photo-shoot excursions around Auckland; meals are eaten as a group. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently. The program includes excursions to Rotorua and Taupō.",
       "sourceType": "official_policy",
@@ -1965,7 +2287,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-portugal-lisbon-marine-ecology-sustainability" },
+    "match": {
+      "programGroupId": "ciee-portugal-lisbon-marine-ecology-sustainability"
+    },
     "dayToDay": {
       "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays combine fieldwork days (kayaking, snorkeling, tide-pool surveys) with classroom sessions and service-learning; weekends bring group cultural activities. Given the water-based activities, supervision during fieldwork is provided by program staff and outside guides on top of the usual CIEE staffing. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
       "sourceType": "official_policy",
@@ -1974,7 +2298,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-portugal-lisbon-soccer-mental-performance" },
+    "match": {
+      "programGroupId": "ciee-portugal-lisbon-soccer-mental-performance"
+    },
     "dayToDay": {
       "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Days combine up to 3 hours of daily soccer training with sports-psychology coursework and site visits (e.g., Benfica Stadium, the National High Performance Center); weekends bring group excursions such as Porto and Sintra. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
       "sourceType": "official_policy",
@@ -1983,7 +2309,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-puerto-rico-san-juan-marine-ecology-sustainability" },
+    "match": {
+      "programGroupId": "ciee-puerto-rico-san-juan-marine-ecology-sustainability"
+    },
     "dayToDay": {
       "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine field-based marine science classes with the group's sustainability project work; meals are eaten as a group, with several activities (snorkeling, ziplining, a bioluminescent bay visit) requiring extra outside guides on top of the usual CIEE staffing. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
       "sourceType": "official_policy",
@@ -1992,7 +2320,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-scotland-edinburgh-creative-writing-scottish-culture" },
+    "match": {
+      "programGroupId": "ciee-scotland-edinburgh-creative-writing-scottish-culture"
+    },
     "dayToDay": {
       "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine writing workshops with cultural excursions and on-site lessons at historic locations; meals are eaten as a group. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
       "sourceType": "official_policy",
@@ -2001,7 +2331,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-scotland-edinburgh-drawing-scottish-culture" },
+    "match": {
+      "programGroupId": "ciee-scotland-edinburgh-drawing-scottish-culture"
+    },
     "dayToDay": {
       "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine studio-based drawing classes with cultural excursions; meals are eaten as a group. The program includes a two-night stay at an outdoor activity centre (Benmore) with instructor-led gorge walking, kayaking, and caving. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
       "sourceType": "official_policy",
@@ -2010,7 +2342,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-scotland-edinburgh-golf-mental-performance" },
+    "match": {
+      "programGroupId": "ciee-scotland-edinburgh-golf-mental-performance"
+    },
     "dayToDay": {
       "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine daily golf sessions with sports-psychology coursework and cultural excursions; meals are eaten as a group. The program includes a two-night stay at an outdoor activity centre (Benmore) with instructor-led gorge walking, kayaking, and caving. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
       "sourceType": "official_policy",
@@ -2019,7 +2353,9 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-singapore-singapore-ai-real-world-application" },
+    "match": {
+      "programGroupId": "ciee-singapore-singapore-ai-real-world-application"
+    },
     "dayToDay": {
       "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine AI workshops and organization-partner project work with cultural excursions; meals are eaten as a group. The program includes an overnight excursion to Melaka, Malaysia. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
       "sourceType": "official_policy",
@@ -2028,11 +2364,244 @@
     }
   },
   {
-    "match": { "programGroupId": "ciee-singapore-singapore-global-entrepreneurship" },
+    "match": {
+      "programGroupId": "ciee-singapore-singapore-global-entrepreneurship"
+    },
     "dayToDay": {
       "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine business classes and local business-owner interviews with cultural excursions; meals are eaten as a group. The program includes an excursion to Malacca, Malaysia. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
       "sourceType": "official_policy",
       "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-south-africa-cape-town-leadership-service-community-building"
+    },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays are spent on-site at community service placements (schools, libraries, NGOs) doing hands-on service work; the program includes a two-day trip to Johannesburg with overnight travel. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-south-africa-cape-town-marine-ecology-sustainability"
+    },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine field-based marine science classes (including snorkeling and penguin observation in False Bay) with service-learning; the program includes a safari excursion. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific) plus the Marine Ecology & Sustainability (Cape Town) program page's eligibility notes on physical activity",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-south-korea-seoul-culinary-arts-korean-culture"
+    },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine cooking classes with cultural excursions; the program includes an overnight trip to Andong. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-south-korea-seoul-korean-language-culture"
+    },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays center on language classes and a community-center service project; weekends bring excursions to Nami Island and Jeonju. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-south-korea-seoul-taipei-diplomacy-government-east-asia"
+    },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision, both in Seoul and Taipei; site-wide staffing is roughly 1 Program Leader per 12 students. The program moves between two cities during the three weeks, with travel days built into the schedule and an overnight excursion within Taiwan (Hsinchu, Chiayi, Kaohsiung) by high-speed rail. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-south-korea-seoul-engineering-automotives"
+    },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine engineering workshops and a factory tour with cultural excursions; weekends bring trips to Nami Island and Jeonju. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-south-korea-seoul-k-pop-korean-culture"
+    },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine music classes and a student-directed video shoot with cultural excursions, including a day exchange at a local Seoul high school; weekends bring a day trip to Jeonju. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-south-korea-seoul-urban-design-sustainability"
+    },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine design-thinking classes and site visits with a group project (a smart-city concept presented to outside experts); weekends bring excursions to Nami Island and Incheon. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-barcelona-spanish-language-culture"
+    },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays center on language classes; weekends bring excursions to Mount Tibidabo and Tarragona. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-barcelona-culinary-arts-spanish-culture"
+    },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine cooking classes with cultural excursions; weekends bring trips to Tarragona and Mount Tibidabo. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-madrid-fashion-marketing-business"
+    },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine business/marketing classes with visits to local fashion entrepreneurs; weekends bring excursions to Segovia and Valencia. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-madrid-honors-spanish-language-culture"
+    },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Because this is the Honors track, all cultural activities, excursions, and free time are spent exclusively with other Honors students under the Language Pledge, which requires Spanish to be spoken at all times both in and out of class. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Honors Spanish Language & Culture (Madrid) program page (Overview section) plus org-wide Housing/Safety/FAQ pages",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-seville-honors-spanish-language-culture"
+    },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Because this is the Honors track, all cultural activities, excursions, and free time are spent exclusively with other Honors students under the Language Pledge, which requires Spanish to be spoken at all times both in and out of class. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Honors Spanish Language & Culture (Seville) program page (Overview section) plus org-wide Housing/Safety/FAQ pages",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-palma-de-mallorca-marine-ecology-sustainability"
+    },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays combine classroom and field-based marine science instruction with water sports (swimming, snorkeling, kayaking, paddleboarding); the program includes an overnight excursion to Cabrera National Park. Given the water-based activities, additional outside guides supervise fieldwork on top of the usual CIEE staffing. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages, plus the Marine Ecology & Sustainability (Palma de Mallorca) program page's eligibility notes on swimming and physical activity",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-palma-de-mallorca-marine-ecology-sustainability-en-espanol"
+    },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). All instruction, activities, and conversation with staff are conducted in Spanish. Weekdays combine classroom and field-based marine science instruction with water sports (swimming, snorkeling, kayaking); the program includes overnight/day excursions similar to the English-taught version of this program. Given the water-based activities, additional outside guides supervise fieldwork on top of the usual CIEE staffing. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages, plus the Marine Ecology & Sustainability en Espanol (Palma de Mallorca) program page's eligibility notes on swimming and physical activity",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-madrid-photography-spanish-culture"
+    },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine photography classes with guided photo walks around the city; weekends bring excursions to Segovia and Valencia. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-madrid-spanish-language-culture"
+    },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays center on language classes; weekends bring excursions to Segovia and Valencia. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-palma-de-mallorca-spanish-language-culture"
+    },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays center on language classes; the program includes an overnight excursion to La Victoria natural area with water sports (snorkeling, swimming). Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages, plus the Spanish Language & Culture (Palma de Mallorca) program page's eligibility notes on physical activity",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-seville-spanish-language-culture"
+    },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays center on language classes; the program includes an overnight excursion to Granada. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-alicante-spanish-language-culture"
+    },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays center on language classes; the program includes an overnight excursion to Madrid. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-taiwan-taipei-chinese-language-taiwanese-culture"
+    },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays center on Mandarin-language classes and cultural workshops; the program includes overnight excursions to Taichung and Sun Moon Lake in Nantou, plus a day trip to Jiufen and Shifen. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific)",
       "verifiedAt": "2026-09-17"
     }
   }

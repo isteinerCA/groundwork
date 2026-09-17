@@ -1,6 +1,8 @@
 [
   {
-    "match": { "nameIncludes": "COSMOS" },
+    "match": {
+      "nameIncludes": "COSMOS"
+    },
     "flags": [
       {
         "id": "cosmos-ca-residency",
@@ -23,7 +25,9 @@
     ]
   },
   {
-    "match": { "nameIncludes": "MIT Research Science Institute" },
+    "match": {
+      "nameIncludes": "MIT Research Science Institute"
+    },
     "flags": [
       {
         "id": "rsi-selectivity",
@@ -55,7 +59,9 @@
     ]
   },
   {
-    "match": { "nameIncludes": "Harvard Secondary School Program" },
+    "match": {
+      "nameIncludes": "Harvard Secondary School Program"
+    },
     "flags": [
       {
         "id": "harvard-ssp-sevp",
@@ -78,7 +84,9 @@
     ]
   },
   {
-    "match": { "nameIncludes": "Interlochen Arts Camp" },
+    "match": {
+      "nameIncludes": "Interlochen Arts Camp"
+    },
     "flags": [
       {
         "id": "interlochen-safety-history",
@@ -92,7 +100,9 @@
     ]
   },
   {
-    "match": { "nameIncludes": "Outward Bound" },
+    "match": {
+      "nameIncludes": "Outward Bound"
+    },
     "flags": [
       {
         "id": "outward-bound-solo",
@@ -106,7 +116,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "summerdiscovery-ucla-middle-school" },
+    "match": {
+      "programGroupId": "summerdiscovery-ucla-middle-school"
+    },
     "flags": [
       {
         "id": "summerdiscovery-ucla-ms-commuter-restriction",
@@ -119,7 +131,9 @@
     ]
   },
   {
-    "match": { "nameIncludes": "Wake Forest Summer Immersion" },
+    "match": {
+      "nameIncludes": "Wake Forest Summer Immersion"
+    },
     "flags": [
       {
         "id": "wake-forest-deposit",
@@ -133,7 +147,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "lasting-adventures-olympic" },
+    "match": {
+      "programGroupId": "lasting-adventures-olympic"
+    },
     "flags": [
       {
         "id": "lasting-adventures-olympic-no-parent-contact",
@@ -194,7 +210,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "lasting-adventures-sequoia" },
+    "match": {
+      "programGroupId": "lasting-adventures-sequoia"
+    },
     "flags": [
       {
         "id": "lasting-adventures-sequoia-no-parent-contact",
@@ -215,7 +233,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "lasting-adventures-yosemite" },
+    "match": {
+      "programGroupId": "lasting-adventures-yosemite"
+    },
     "flags": [
       {
         "id": "lasting-adventures-yosemite-no-parent-contact",
@@ -292,7 +312,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "interlochen-high-school" },
+    "match": {
+      "programGroupId": "interlochen-high-school"
+    },
     "flags": [
       {
         "id": "interlochen-hs-one-week-intensive-no-aid",
@@ -305,7 +327,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "explo-middle-school" },
+    "match": {
+      "programGroupId": "explo-middle-school"
+    },
     "flags": [
       {
         "id": "explo-ms-focus-grade-restriction",
@@ -334,7 +358,10 @@
     ]
   },
   {
-    "match": { "programGroupId": "explo-middle-school", "slugIncludes": "medical-rotations" },
+    "match": {
+      "programGroupId": "explo-middle-school",
+      "slugIncludes": "medical-rotations"
+    },
     "flags": [
       {
         "id": "explo-ms-pre-med-focus",
@@ -347,7 +374,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "amigos-costa-rica" },
+    "match": {
+      "programGroupId": "amigos-costa-rica"
+    },
     "flags": [
       {
         "id": "amigos-cr-dual-pricing",
@@ -360,7 +389,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "amigos-panama" },
+    "match": {
+      "programGroupId": "amigos-panama"
+    },
     "flags": [
       {
         "id": "amigos-panama-no-immerse",
@@ -419,7 +450,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "moondance-mystery-trip" },
+    "match": {
+      "programGroupId": "moondance-mystery-trip"
+    },
     "flags": [
       {
         "id": "moondance-mystery-price-footnote",
@@ -486,7 +519,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "broadreach-belize-alumni-scuba" },
+    "match": {
+      "programGroupId": "broadreach-belize-alumni-scuba"
+    },
     "flags": [
       {
         "id": "broadreach-alumni-only",
@@ -507,7 +542,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "broadreach-fiji-shark-studies" },
+    "match": {
+      "programGroupId": "broadreach-fiji-shark-studies"
+    },
     "flags": [
       {
         "id": "broadreach-fiji-min-age",
@@ -539,7 +576,9 @@
     ]
   },
   {
-    "match": { "nameIncludes": "Broadreach MS" },
+    "match": {
+      "nameIncludes": "Broadreach MS"
+    },
     "flags": [
       {
         "id": "broadreach-ms-age-gate",
@@ -552,7 +591,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "wpi-high-achieving-hs" },
+    "match": {
+      "programGroupId": "wpi-high-achieving-hs"
+    },
     "flags": [
       {
         "id": "wpi-hahs-no-housing",
@@ -565,7 +606,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "mit-wtp" },
+    "match": {
+      "programGroupId": "mit-wtp"
+    },
     "flags": [
       {
         "id": "mit-wtp-residency-nuance",
@@ -578,7 +621,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "mit-bwsi" },
+    "match": {
+      "programGroupId": "mit-bwsi"
+    },
     "flags": [
       {
         "id": "mit-bwsi-online-prereq-completion-deadline",
@@ -591,7 +636,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "mathworks-hsmc" },
+    "match": {
+      "programGroupId": "mathworks-hsmc"
+    },
     "flags": [
       {
         "id": "mathworks-hsmc-no-outside-commitments",
@@ -604,7 +651,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "mathworks-jsmcr" },
+    "match": {
+      "programGroupId": "mathworks-jsmcr"
+    },
     "flags": [
       {
         "id": "mathworks-jsmcr-no-outside-commitments",
@@ -617,7 +666,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "mtsi-wharton-penn" },
+    "match": {
+      "programGroupId": "mtsi-wharton-penn"
+    },
     "flags": [
       {
         "id": "mtsi-mandatory-full-attendance",
@@ -638,7 +689,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "oxford-academia-yale" },
+    "match": {
+      "programGroupId": "oxford-academia-yale"
+    },
     "flags": [
       {
         "id": "oxford-academia-yale-meal-plan-contradiction",
@@ -659,7 +712,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "socapa-nyc" },
+    "match": {
+      "programGroupId": "socapa-nyc"
+    },
     "flags": [
       {
         "id": "socapa-nyc-meals-not-included",
@@ -672,7 +727,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "westcoast-connection-ucla" },
+    "match": {
+      "programGroupId": "westcoast-connection-ucla"
+    },
     "flags": [
       {
         "id": "westcoast-ucla-lunch-not-included",
@@ -803,7 +860,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "westcoast-connection-barcelona" },
+    "match": {
+      "programGroupId": "westcoast-connection-barcelona"
+    },
     "flags": [
       {
         "id": "westcoast-barcelona-lunch-not-included",
@@ -848,7 +907,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "westcoast-connection-florence" },
+    "match": {
+      "programGroupId": "westcoast-connection-florence"
+    },
     "flags": [
       {
         "id": "westcoast-florence-lunch-not-included",
@@ -877,7 +938,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "westcoast-connection-montreal" },
+    "match": {
+      "programGroupId": "westcoast-connection-montreal"
+    },
     "flags": [
       {
         "id": "westcoast-montreal-lunch-not-included",
@@ -961,7 +1024,10 @@
   },
   {
     "match": {
-      "programGroupId": ["arcc-california", "arcc-yellowstone-grand-teton"]
+      "programGroupId": [
+        "arcc-california",
+        "arcc-yellowstone-grand-teton"
+      ]
     },
     "flags": [
       {
@@ -975,7 +1041,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "arcc-australia-fiji" },
+    "match": {
+      "programGroupId": "arcc-australia-fiji"
+    },
     "flags": [
       {
         "id": "arcc-aus-fiji-age-range-unconfirmed",
@@ -988,7 +1056,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "ciee-france-fashion-marketing-europe" },
+    "match": {
+      "programGroupId": "ciee-france-fashion-marketing-europe"
+    },
     "flags": [
       {
         "id": "ciee-fashion-marketing-merit-aid-only",
@@ -998,11 +1068,21 @@
         "sourceCitation": "CIEE Fashion Marketing in Europe program page",
         "sourceDate": "2026-09-15",
         "severity": "warning"
+      },
+      {
+        "id": "fashion-marketing-europe-multi-destination",
+        "type": "safety",
+        "title": "Program moves through three cities in three countries",
+        "body": "This is a traveling program: students spend time in Paris, Milan, and Madrid within a single three-week session, with travel and border crossings built into the itinerary. Families should confirm passport/visa requirements cover all three countries.",
+        "sourceCitation": "CIEE Fashion Marketing in Europe (Paris/Milan/Madrid) program page, Overview and Destination sections",
+        "severity": "warning"
       }
     ]
   },
   {
-    "match": { "programGroupId": "ciee-belgium-brussels-diplomacy-government" },
+    "match": {
+      "programGroupId": "ciee-belgium-brussels-diplomacy-government"
+    },
     "flags": [
       {
         "id": "ciee-belgium-correction",
@@ -1015,7 +1095,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "ciee-mexico-merida-marine-ecology-sustainability" },
+    "match": {
+      "programGroupId": "ciee-mexico-merida-marine-ecology-sustainability"
+    },
     "flags": [
       {
         "id": "marine-ecology-merida-grade-requirement",
@@ -1036,7 +1118,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "ciee-mexico-merida-culinary-arts-mexican-culture" },
+    "match": {
+      "programGroupId": "ciee-mexico-merida-culinary-arts-mexican-culture"
+    },
     "flags": [
       {
         "id": "culinary-arts-merida-grade-requirement",
@@ -1057,7 +1141,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "ciee-mexico-merida-leadership-service-youth-development" },
+    "match": {
+      "programGroupId": "ciee-mexico-merida-leadership-service-youth-development"
+    },
     "flags": [
       {
         "id": "leadership-service-merida-kosher-halal",
@@ -1070,7 +1156,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "ciee-mexico-merida-spanish-language-mexican-culture" },
+    "match": {
+      "programGroupId": "ciee-mexico-merida-spanish-language-mexican-culture"
+    },
     "flags": [
       {
         "id": "spanish-language-merida-grade-requirement",
@@ -1091,7 +1179,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "ciee-morocco-rabat-arabic-language-moroccan-culture" },
+    "match": {
+      "programGroupId": "ciee-morocco-rabat-arabic-language-moroccan-culture"
+    },
     "flags": [
       {
         "id": "arabic-language-rabat-date-inconsistency",
@@ -1104,7 +1194,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "ciee-new-zealand-auckland-filmmaking-new-zealand-culture" },
+    "match": {
+      "programGroupId": "ciee-new-zealand-auckland-filmmaking-new-zealand-culture"
+    },
     "flags": [
       {
         "id": "filmmaking-auckland-kosher-diet",
@@ -1117,7 +1209,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "ciee-new-zealand-auckland-photography-new-zealand-culture" },
+    "match": {
+      "programGroupId": "ciee-new-zealand-auckland-photography-new-zealand-culture"
+    },
     "flags": [
       {
         "id": "photography-auckland-kosher-diet",
@@ -1130,7 +1224,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "ciee-portugal-lisbon-marine-ecology-sustainability" },
+    "match": {
+      "programGroupId": "ciee-portugal-lisbon-marine-ecology-sustainability"
+    },
     "flags": [
       {
         "id": "marine-ecology-lisbon-physical-activity",
@@ -1143,7 +1239,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "ciee-portugal-lisbon-soccer-mental-performance" },
+    "match": {
+      "programGroupId": "ciee-portugal-lisbon-soccer-mental-performance"
+    },
     "flags": [
       {
         "id": "soccer-lisbon-physical-commitment",
@@ -1156,7 +1254,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "ciee-puerto-rico-san-juan-marine-ecology-sustainability" },
+    "match": {
+      "programGroupId": "ciee-puerto-rico-san-juan-marine-ecology-sustainability"
+    },
     "flags": [
       {
         "id": "marine-ecology-san-juan-diet-restrictions",
@@ -1177,7 +1277,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "ciee-scotland-edinburgh-golf-mental-performance" },
+    "match": {
+      "programGroupId": "ciee-scotland-edinburgh-golf-mental-performance"
+    },
     "flags": [
       {
         "id": "golf-edinburgh-no-price-published",
@@ -1190,7 +1292,9 @@
     ]
   },
   {
-    "match": { "programGroupId": "ciee-singapore-singapore-global-entrepreneurship" },
+    "match": {
+      "programGroupId": "ciee-singapore-singapore-global-entrepreneurship"
+    },
     "flags": [
       {
         "id": "global-entrepreneurship-singapore-physical-activity",
@@ -1198,6 +1302,419 @@
         "title": "Moderate-intensity physical activity expected",
         "body": "CIEE's own eligibility notes flag that this program involves moderate-intensity physical activities (including a ropes/zipline course at Forest Adventure).",
         "sourceCitation": "CIEE Global Entrepreneurship (Singapore) program page, Eligibility section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-south-africa-cape-town-leadership-service-community-building"
+    },
+    "flags": [
+      {
+        "id": "leadership-service-cape-town-physical-activity",
+        "type": "safety",
+        "title": "Moderate- to high-intensity physical activity expected",
+        "body": "CIEE's own eligibility notes describe this program as involving moderate- to high-intensity physical activities, such as hiking and extended observational time outdoors.",
+        "sourceCitation": "CIEE Leadership & Service in Community Building (Cape Town) program page, Eligibility section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-south-africa-cape-town-marine-ecology-sustainability"
+    },
+    "flags": [
+      {
+        "id": "marine-ecology-cape-town-physical-activity",
+        "type": "safety",
+        "title": "Moderate- to high-intensity physical activity expected",
+        "body": "CIEE's own eligibility notes describe this program as involving moderate- to high-intensity physical activities, such as hiking and extended observational time outdoors.",
+        "sourceCitation": "CIEE Marine Ecology & Sustainability (Cape Town) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "marine-ecology-cape-town-cultural-context",
+        "type": "policy",
+        "title": "CIEE provides a Cape Town-specific cultural-context briefing",
+        "body": "CIEE's program page notes that local staff have prepared details about conditions and cultural attitudes that students with specific identities might encounter in Cape Town, linking to a dedicated resource. Families may want to review this ahead of applying.",
+        "sourceCitation": "CIEE Marine Ecology & Sustainability (Cape Town) program page, Cultural Awareness section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-south-korea-seoul-culinary-arts-korean-culture"
+    },
+    "flags": [
+      {
+        "id": "culinary-arts-seoul-medication-rules",
+        "type": "safety",
+        "title": "South Korea has strict medication import regulations",
+        "body": "CIEE notes that South Korea maintains strict regulations on medications brought into the country and encourages families to consult their doctor and confirm the student's medications are legal and available there before traveling.",
+        "sourceCitation": "CIEE Culinary Arts & Korean Culture (Seoul) program page, Eligibility section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-south-korea-seoul-korean-language-culture"
+    },
+    "flags": [
+      {
+        "id": "korean-language-seoul-medication-rules",
+        "type": "safety",
+        "title": "South Korea has strict medication import regulations",
+        "body": "CIEE notes that South Korea maintains strict regulations on medications brought into the country and encourages families to consult their doctor and confirm the student's medications are legal and available there before traveling.",
+        "sourceCitation": "CIEE Korean Language & Culture (Seoul) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "korean-language-seoul-grade-requirement",
+        "type": "safety",
+        "title": "Must have completed Freshman year before travel",
+        "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program — a rising freshman would not yet qualify.",
+        "sourceCitation": "CIEE Korean Language & Culture (Seoul) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "korean-language-seoul-date-inconsistency",
+        "type": "safety",
+        "title": "Session II dates are inconsistent on CIEE's own page",
+        "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027'). Families should confirm exact Session II dates directly with CIEE before booking flights.",
+        "sourceCitation": "CIEE Korean Language & Culture (Seoul) program page, Dates & Fees section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-south-korea-seoul-taipei-diplomacy-government-east-asia"
+    },
+    "flags": [
+      {
+        "id": "diplomacy-east-asia-medication-rules",
+        "type": "safety",
+        "title": "South Korea has strict medication import regulations",
+        "body": "CIEE notes that South Korea maintains strict regulations on medications brought into the country and encourages families to consult their doctor and confirm the student's medications are legal and available there before traveling.",
+        "sourceCitation": "CIEE Diplomacy & Government in East Asia (Seoul/Taipei) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "diplomacy-east-asia-scholarship-limit",
+        "type": "safety",
+        "title": "Need-based scholarship is not available for this program",
+        "body": "CIEE states that only the Academic Merit Award applies to this program; the need-based Global Navigator Scholarship (GNS) is not available here. Families seeking need-based aid for a similar diplomacy program are pointed to CIEE's Tallinn, Estonia offering instead.",
+        "sourceCitation": "CIEE Diplomacy & Government in East Asia (Seoul/Taipei) program page, Overview section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-south-korea-seoul-engineering-automotives"
+    },
+    "flags": [
+      {
+        "id": "engineering-automotives-seoul-medication-rules",
+        "type": "safety",
+        "title": "South Korea has strict medication import regulations",
+        "body": "CIEE notes that South Korea maintains strict regulations on medications brought into the country and encourages families to consult their doctor and confirm the student's medications are legal and available there before traveling.",
+        "sourceCitation": "CIEE Engineering & Automotives (Seoul) program page, Eligibility section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-south-korea-seoul-k-pop-korean-culture"
+    },
+    "flags": [
+      {
+        "id": "kpop-seoul-medication-rules",
+        "type": "safety",
+        "title": "South Korea has strict medication import regulations",
+        "body": "CIEE notes that South Korea maintains strict regulations on medications brought into the country and encourages families to consult their doctor and confirm the student's medications are legal and available there before traveling.",
+        "sourceCitation": "CIEE K-Pop & Korean Culture (Seoul) program page, Eligibility section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-south-korea-seoul-urban-design-sustainability"
+    },
+    "flags": [
+      {
+        "id": "urban-design-seoul-medication-rules",
+        "type": "safety",
+        "title": "South Korea has strict medication import regulations",
+        "body": "CIEE notes that South Korea maintains strict regulations on medications brought into the country and encourages families to consult their doctor and confirm the student's medications are legal and available there before traveling.",
+        "sourceCitation": "CIEE Urban Design & Sustainability (Seoul) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "urban-design-seoul-grade-requirement",
+        "type": "safety",
+        "title": "Must have completed Freshman year before travel",
+        "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program — a rising freshman would not yet qualify.",
+        "sourceCitation": "CIEE Urban Design & Sustainability (Seoul) program page, Eligibility section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-barcelona-spanish-language-culture"
+    },
+    "flags": [
+      {
+        "id": "spanish-language-barcelona-prereq",
+        "type": "safety",
+        "title": "Requires at least one year of high school Spanish",
+        "body": "CIEE requires students to have completed at least one year of high school Spanish before traveling. Students with two or more years of Spanish may instead qualify for the Honors Spanish Language & Culture program in Madrid or Seville.",
+        "sourceCitation": "CIEE Spanish Language & Culture (Barcelona) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "spanish-language-barcelona-date-inconsistency",
+        "type": "safety",
+        "title": "Session II dates are inconsistent on CIEE's own page",
+        "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027'). Families should confirm exact Session II dates directly with CIEE before booking flights.",
+        "sourceCitation": "CIEE Spanish Language & Culture (Barcelona) program page, Dates & Fees section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-barcelona-culinary-arts-spanish-culture"
+    },
+    "flags": [
+      {
+        "id": "culinary-arts-barcelona-grade-requirement",
+        "type": "safety",
+        "title": "Must have completed Freshman year before travel",
+        "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program -- a rising freshman would not yet qualify.",
+        "sourceCitation": "CIEE Culinary Arts & Spanish Culture (Barcelona) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "culinary-arts-barcelona-diet-restrictions",
+        "type": "safety",
+        "title": "Dietary restrictions likely to reduce program engagement",
+        "body": "CIEE's own page includes an explicit warning that dietary restrictions will likely reduce a student's ability to engage in the full content of the program courses, since the program's content is built around cooking and eating.",
+        "sourceCitation": "CIEE Culinary Arts & Spanish Culture (Barcelona) program page, Eligibility section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-madrid-honors-spanish-language-culture"
+    },
+    "flags": [
+      {
+        "id": "honors-madrid-language-gate",
+        "type": "safety",
+        "title": "Requires a pre-program Spanish proficiency test",
+        "body": "This Honors program is gated by a pre-program STAMP language proficiency test. Students must have completed high school Spanish Level 2 or higher and score at least Intermediate-Low on the ACTFL scale; those who do not meet the bar may be moved to a standard (non-Honors) Language & Culture program instead. Students who don't yet meet the criteria are directed to apply to the standard programs in Barcelona, Madrid, Palma, Seville, Buenos Aires, or Merida as a second choice.",
+        "sourceCitation": "CIEE Honors Spanish Language & Culture (Madrid) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "honors-madrid-no-dates-published",
+        "type": "safety",
+        "title": "Session I dates are not yet published for 2027",
+        "body": "Unlike most other CIEE programs researched, this page shows 'TBD' for Session I start and end dates as well, with a footnote that all dates on the page are tentative pending confirmation with a study abroad advisor.",
+        "sourceCitation": "CIEE Honors Spanish Language & Culture (Madrid) program page, Dates & Fees section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-seville-honors-spanish-language-culture"
+    },
+    "flags": [
+      {
+        "id": "honors-seville-language-gate",
+        "type": "safety",
+        "title": "Requires a pre-program Spanish proficiency test",
+        "body": "This Honors program is gated by a pre-program STAMP language proficiency test. Students must have completed high school Spanish Level 2 or higher and score at least Intermediate-Low on the ACTFL scale; those who do not meet the bar may be moved to a standard (non-Honors) Language & Culture program instead.",
+        "sourceCitation": "CIEE Honors Spanish Language & Culture (Seville) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "honors-seville-date-inconsistency",
+        "type": "safety",
+        "title": "Session II dates are inconsistent on CIEE's own page",
+        "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027').",
+        "sourceCitation": "CIEE Honors Spanish Language & Culture (Seville) program page, Dates & Fees section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-palma-de-mallorca-marine-ecology-sustainability"
+    },
+    "flags": [
+      {
+        "id": "marine-ecology-palma-swim-requirement",
+        "type": "safety",
+        "title": "Requires the ability to comfortably swim",
+        "body": "CIEE's own eligibility notes state that participants must have the ability to comfortably swim, since the program is centered around the sea, in addition to describing the program as involving moderate- to high-intensity physical activities (hiking, boating, snorkeling).",
+        "sourceCitation": "CIEE Marine Ecology & Sustainability (Palma de Mallorca) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "marine-ecology-palma-session-ii-unpublished",
+        "type": "safety",
+        "title": "Session II is entirely unpublished for 2027",
+        "body": "As of this research pass, CIEE has not published dates or a price for Session II -- both fields show 'TBD' with a footnote that dates are tentative. This is a more complete gap than the usual 'price not re-shown' pattern seen elsewhere.",
+        "sourceCitation": "CIEE Marine Ecology & Sustainability (Palma de Mallorca) program page, Dates & Fees section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-palma-de-mallorca-marine-ecology-sustainability-en-espanol"
+    },
+    "flags": [
+      {
+        "id": "marine-ecology-en-espanol-language-gate",
+        "type": "safety",
+        "title": "Requires a pre-program Spanish proficiency test",
+        "body": "Since this program is taught entirely in Spanish, participants must place at the Intermediate-Mid level or higher on the STAMP 4S proficiency test (taken in spring before departure) and have completed high school Spanish Level 3 or higher, or be able to fully participate in an oral interview in Spanish at that level. Students who do not place high enough may be moved to the English-taught version of the program instead.",
+        "sourceCitation": "CIEE Marine Ecology & Sustainability en Espanol (Palma de Mallorca) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "marine-ecology-en-espanol-swim-requirement",
+        "type": "safety",
+        "title": "Requires the ability to comfortably swim",
+        "body": "CIEE's own eligibility notes state that participants must have the ability to comfortably swim, since the program is centered around the sea, in addition to describing the program as involving moderate- to high-intensity physical activities (hiking, boating, snorkeling).",
+        "sourceCitation": "CIEE Marine Ecology & Sustainability en Espanol (Palma de Mallorca) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "marine-ecology-en-espanol-grade-requirement",
+        "type": "safety",
+        "title": "Must have completed Freshman year before travel",
+        "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program -- a rising freshman would not yet qualify.",
+        "sourceCitation": "CIEE Marine Ecology & Sustainability en Espanol (Palma de Mallorca) program page, Eligibility section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-madrid-spanish-language-culture"
+    },
+    "flags": [
+      {
+        "id": "spanish-language-madrid-prereq",
+        "type": "safety",
+        "title": "Requires at least one year of high school Spanish",
+        "body": "CIEE requires students to have completed at least one year of high school Spanish before traveling. Students with two or more years of Spanish may instead qualify for the Honors Spanish Language & Culture program in Madrid or Seville.",
+        "sourceCitation": "CIEE Spanish Language & Culture (Madrid) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "spanish-language-madrid-date-inconsistency",
+        "type": "safety",
+        "title": "Session II dates are inconsistent on CIEE's own page",
+        "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027').",
+        "sourceCitation": "CIEE Spanish Language & Culture (Madrid) program page, Dates & Fees section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-palma-de-mallorca-spanish-language-culture"
+    },
+    "flags": [
+      {
+        "id": "spanish-language-palma-prereq",
+        "type": "safety",
+        "title": "Requires at least one year of high school Spanish",
+        "body": "CIEE requires students to have completed at least one year of high school Spanish before traveling. Students with two or more years of Spanish may instead qualify for the Honors Spanish Language & Culture program in Madrid or Seville.",
+        "sourceCitation": "CIEE Spanish Language & Culture (Palma de Mallorca) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "spanish-language-palma-physical-activity",
+        "type": "safety",
+        "title": "Moderate- to high-intensity physical activity expected",
+        "body": "CIEE's own eligibility notes describe this program as involving moderate- to high-intensity physical activities, such as hiking, snorkeling, and coasteering.",
+        "sourceCitation": "CIEE Spanish Language & Culture (Palma de Mallorca) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "spanish-language-palma-date-inconsistency",
+        "type": "safety",
+        "title": "Session II dates are inconsistent on CIEE's own page",
+        "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027').",
+        "sourceCitation": "CIEE Spanish Language & Culture (Palma de Mallorca) program page, Dates & Fees section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-seville-spanish-language-culture"
+    },
+    "flags": [
+      {
+        "id": "spanish-language-seville-grade-requirement",
+        "type": "safety",
+        "title": "Must have completed Freshman year before travel",
+        "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program -- a rising freshman would not yet qualify. Unlike the Barcelona, Madrid, and Palma versions of this program, Seville does not require prior Spanish coursework and is open to all proficiency levels.",
+        "sourceCitation": "CIEE Spanish Language & Culture (Seville) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "spanish-language-seville-date-inconsistency",
+        "type": "safety",
+        "title": "Session II dates are inconsistent on CIEE's own page",
+        "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027'), with a footnote explicitly noting these dates are tentative.",
+        "sourceCitation": "CIEE Spanish Language & Culture (Seville) program page, Dates & Fees section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-spain-alicante-spanish-language-culture"
+    },
+    "flags": [
+      {
+        "id": "spanish-language-alicante-grade-requirement",
+        "type": "safety",
+        "title": "Must have completed Freshman year before travel",
+        "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program -- a rising freshman would not yet qualify. Like Seville, this program does not require prior Spanish coursework and is open to all proficiency levels.",
+        "sourceCitation": "CIEE Spanish Language & Culture (Alicante) program page, Eligibility section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-taiwan-taipei-chinese-language-taiwanese-culture"
+    },
+    "flags": [
+      {
+        "id": "chinese-language-taipei-date-inconsistency",
+        "type": "safety",
+        "title": "Session II dates are inconsistent on CIEE's own page",
+        "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027'). Unlike most other CIEE programs with this same bug, the price for Session II IS shown clearly ($8,000). Families should confirm exact Session II dates directly with CIEE before booking flights.",
+        "sourceCitation": "CIEE Chinese Language & Taiwanese Culture (Taipei) program page, Dates & Fees section",
         "severity": "warning"
       }
     ]
