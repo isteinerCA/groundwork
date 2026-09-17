@@ -192,7 +192,7 @@
       "programGroupId": "boldearth-thailand"
     },
     "dayToDay": {
-      "notes": "Includes a rural homestay experience (bamboo weaving, tie-dye, tea cultivation with a local host family) plus a night in floating huts on Khao Sok National Park's lake - a genuinely different accommodation mix from Bold Earth's more camping-heavy domestic trips. All trip leaders are Wilderness First Responder and CPR certified.",
+      "notes": "Includes a rural homestay experience (bamboo weaving, tie-dye, tea cultivation with a local host family) plus a night in floating huts on Khao Sok National Park's lake. All trip leaders are Wilderness First Responder and CPR certified.",
       "sourceType": "official_policy",
       "sourceCitation": "Bold Earth Thailand trip page",
       "verifiedAt": "2026-09-15"
@@ -203,7 +203,7 @@
       "programGroupId": "boldearth-alps"
     },
     "dayToDay": {
-      "notes": "Students travel hut-to-hut through the Alps, staying in mountain huts (some with showers) rather than camping or hotels, alongside some hostel-chalet nights per the org's general description of this style of trip. All trip leaders are Wilderness First Responder and CPR certified.",
+      "notes": "Students travel hut-to-hut through the Alps, staying in mountain huts (some with showers) rather than camping or hotels, alongside some hostel-chalet nights. All trip leaders are Wilderness First Responder and CPR certified.",
       "sourceType": "official_policy",
       "sourceCitation": "Bold Earth site homepage and blog references to Alps/Dolomites hut-to-hut travel",
       "verifiedAt": "2026-09-15"
@@ -247,9 +247,47 @@
       ]
     },
     "dayToDay": {
-      "notes": "Accommodation type varies by specific trip and is not a simple domestic-vs-international split - per Bold Earth's own guidance, most trips use a mix of camping, hostels, guesthouses, and (on a few trips) hotels, with the exact nightly breakdown detailed in each trip's own itinerary. Only a minority of trips are full-camping the entire time. All trip leaders are Wilderness First Responder and CPR certified. Students are met at the airport by trip leaders and call home as soon as they've joined the group; regular family updates continue via blog posts and photos, though students are not in direct phone contact during the trip.",
+      "notes": "Accommodation type varies by specific trip; most trips use a mix of camping, hostels, guesthouses, and (on a few trips) hotels, with the exact nightly breakdown detailed in each trip's own itinerary. Only a minority of trips are full-camping the entire time. All trip leaders are Wilderness First Responder and CPR certified. Students are met at the airport by trip leaders and call home as soon as they've joined the group; regular family updates continue via blog posts and photos, though students are not in direct phone contact during the trip.",
       "sourceType": "official_policy",
       "sourceCitation": "Bold Earth FAQ and blog ('Is Bold Earth Right for Me?') pages (boldearth.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "wa-alaska-high-trails",
+        "wa-alaska-southcentral",
+        "wa-alaska-southeast",
+        "wa-alps-pyrenees",
+        "wa-australia",
+        "wa-dolomites",
+        "wa-grand-teton",
+        "wa-great-northwest",
+        "wa-hawaiian-islands",
+        "wa-hawaii-scuba",
+        "wa-high-sierra",
+        "wa-kilimanjaro",
+        "wa-teton-crest",
+        "wa-thorofare",
+        "wa-utah-red-rocks",
+        "wa-yellowstone-fly-fishing",
+        "wa-california-explorer",
+        "wa-european-alps",
+        "wa-hawaii-explorer",
+        "wa-pacific-northwest-explorer",
+        "wa-yellowstone-explorer",
+        "wa-jackson-hole-fly-fishing",
+        "wa-olympic-coast-islands",
+        "wa-the-rockies",
+        "wa-wild-teton",
+        "wa-jackson-hole-discovery"
+      ]
+    },
+    "dayToDay": {
+      "notes": "Wilderness Adventures is explicitly a screen-free program - unplugging is presented as a core program value, not just a default policy. Students travel in small groups on the specific itinerary of their chosen trip, with accommodation and daily structure varying by program (detailed on each trip's own page). The organization was founded in 1973 and was formerly known as Wilderness Ventures before rebranding.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Wilderness Adventures homepage and general program pages (wildernessadventures.com)",
       "verifiedAt": "2026-09-15"
     }
   },
