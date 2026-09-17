@@ -724,5 +724,14 @@
       "sourceCitation": "Summer Discovery Yale University campus page (summerdiscovery.com)",
       "verifiedAt": "2026-09-15"
     }
+  },
+  {
+    "match": { "programGroupId": "summerdiscovery-uc-berkeley" },
+    "dayToDay": {
+      "notes": "Students have unparalleled access to Berkeley's labs, maker spaces, and research facilities as part of coursework. International students pay an additional $379 registration fee (residential only mentioned) covering medical insurance and airport transfers; the recommended airport is SFO.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Summer Discovery UC Berkeley campus page (summerdiscovery.com)",
+      "verifiedAt": "2026-09-15"
+    }
   }
 ]
