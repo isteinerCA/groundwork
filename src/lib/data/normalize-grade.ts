@@ -53,10 +53,6 @@ function risingGrade(completed: number): number {
   return Math.max(5, completed);
 }
 
-function currentGrade(completed: number): number {
-  return Math.min(12, completed + 1);
-}
-
 export function normalizeGrade(raw: string): GradeResult {
   const gradeDisplay = raw.trim();
   const lower = gradeDisplay.toLowerCase();
@@ -286,13 +282,10 @@ export function normalizeGrade(raw: string): GradeResult {
 
   const singleGrade = parseGradeNumber(lower);
   if (singleGrade) {
-    const completed = lower.includes("current")
-      ? currentGrade(singleGrade) - 1
-      : singleGrade;
     return {
       gradeDisplay,
-      gradeCompletedMin: completed,
-      gradeCompletedMax: completed,
+      gradeCompletedMin: singleGrade,
+      gradeCompletedMax: singleGrade,
       gradeSource: "grade",
       stateRestriction,
     };

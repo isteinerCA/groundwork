@@ -200,7 +200,7 @@ export function gradeRangeSummary(programs: Program[]): string {
   if (displays.length === 1) return displays[0];
   const min = Math.min(...programs.map((p) => p.gradeCompletedMin));
   const max = Math.max(...programs.map((p) => p.gradeCompletedMax));
-  return `Completed grades ${min}–${max} (varies by track)`;
+  return `Grades ${min}–${max} (varies by track)`;
 }
 
 export function groupWebsiteUrlsVary(programs: Program[]): boolean {
