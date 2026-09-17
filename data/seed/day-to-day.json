@@ -769,5 +769,41 @@
       "sourceCitation": "Summer Discovery Dartmouth campus and course listing pages (summerdiscovery.com)",
       "verifiedAt": "2026-09-15"
     }
+  },
+  {
+    "match": { "programGroupId": "gla-costa-rica-middle-school" },
+    "dayToDay": {
+      "notes": "A shorter, middle-school-appropriate version of GLA's community service model, run with separate staffing/structure from the ages-14-18 Adventures track (consistent with how other orgs in this catalog separate their middle school and high school programs).",
+      "sourceType": "official_policy",
+      "sourceCitation": "GLA Costa Rica Middle School Service Adventure program page (experiencegla.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "gla-bali",
+        "gla-california",
+        "gla-costa-rica",
+        "gla-dominican-republic",
+        "gla-europe",
+        "gla-galapagos",
+        "gla-ghana",
+        "gla-greece",
+        "gla-guatemala",
+        "gla-italy",
+        "gla-japan",
+        "gla-peru",
+        "gla-south-africa",
+        "gla-spain",
+        "gla-thailand"
+      ]
+    },
+    "dayToDay": {
+      "notes": "GLA programs combine hands-on service or research work (conservation, healthcare, education, community development, depending on the specific program's theme) with cultural excursions and adventure activities, all in a residential group format. Programs are organized by Global Leadership Adventures, a Terra Education-family brand (sibling to Summer Springboard).",
+      "sourceType": "official_policy",
+      "sourceCitation": "GLA program guide and general program pages (experiencegla.com)",
+      "verifiedAt": "2026-09-15"
+    }
   }
 ]

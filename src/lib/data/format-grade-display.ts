@@ -31,15 +31,18 @@ export function formatGradeEligibilityDisplay(
   >,
 ): string {
   if (program.gradeSource === "age" || program.gradeSource === "mixed") {
-    const agePhrase =
-      extractAgePhrase(program.gradeDisplay) ??
-      program.gradeDisplay.split(/[,(]/)[0]?.trim() ??
-      program.gradeDisplay;
-    const gradeMatch = formatCompletedGradesForFilter(
-      program.gradeCompletedMin,
-      program.gradeCompletedMax,
+    const ageRange = extractAgePhrase(program.gradeDisplay);
+    if (ageRange) {
+      const gradeMatch = formatCompletedGradesForFilter(
+        program.gradeCompletedMin,
+        program.gradeCompletedMax,
+      );
+      return `${ageRange} per program site (matches completed ${gradeMatch} in search filters)`;
+    }
+
+    return (
+      program.gradeDisplay.split(/[,(]/)[0]?.trim() ?? program.gradeDisplay
     );
-    return `${agePhrase} per program site (matches completed ${gradeMatch} in search filters)`;
   }
 
   return program.gradeDisplay;

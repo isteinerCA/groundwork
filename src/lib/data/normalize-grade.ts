@@ -234,6 +234,19 @@ export function normalizeGrade(raw: string): GradeResult {
     };
   }
 
+  const mustBeAgeByStart = lower.match(/\bmust be\s+(\d+)\s+by\s+(?:program\s+)?start\b/);
+  if (mustBeAgeByStart) {
+    const age = Number(mustBeAgeByStart[1]);
+    const [minG, maxG] = ageRangeToGrades(age, age);
+    return {
+      gradeDisplay,
+      gradeCompletedMin: minG,
+      gradeCompletedMax: maxG,
+      gradeSource: "age",
+      stateRestriction,
+    };
+  }
+
   const ages = lower.match(/ages?\s*(\d+)\s*[–-]\s*(\d+)/i);
   if (ages) {
     const [minG, maxG] = ageRangeToGrades(Number(ages[1]), Number(ages[2]));

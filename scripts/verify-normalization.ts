@@ -531,6 +531,29 @@ if (
   failed++;
 }
 
+const broadreachMsGrades = parseGradesFromCsv({
+  "Grades Display": "Must be 12 by program start",
+  "Grade Completed Min": "6",
+  "Grade Completed Max": "8",
+});
+if (broadreachMsGrades.gradeSource !== "age") {
+  console.error("FAIL: Broadreach MS age gate should use age gradeSource");
+  failed++;
+}
+if (gradeEligibilityLabel(broadreachMsGrades) !== "Ages") {
+  console.error("FAIL: Broadreach MS age gate should use Ages label");
+  failed++;
+}
+const broadreachMsDisplay = formatGradeEligibilityDisplay(broadreachMsGrades);
+if (broadreachMsDisplay !== "Must be 12 by program start") {
+  console.error(`FAIL: Broadreach MS display should be clean, got "${broadreachMsDisplay}"`);
+  failed++;
+}
+if (!gradeMatchesFilter(broadreachMsGrades, [7])) {
+  console.error("FAIL: Broadreach MS (grades 6-8) should match completed grade 7");
+  failed++;
+}
+
 const isoDates = parseDatesFromCsv(
   {
     "Date Start": "2027-06-06",
