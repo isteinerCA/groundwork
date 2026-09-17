@@ -38,7 +38,7 @@ export function SearchChat({
     {
       id: "welcome",
       role: "assistant",
-      text: 'I refine chip filters and search our program data — locations, gotchas, descriptions. Try "in California only", "fully funded only", or "programs with deposit flags".',
+      text: 'Try plain English like "in California only", "fully funded only", or "under $6000".',
     },
   ]);
   const listRef = useRef<HTMLDivElement>(null);
@@ -76,6 +76,10 @@ export function SearchChat({
   );
 
   const [hintPulse, setHintPulse] = useState(false);
+  const hasUserMessages = messages.some((message) => message.role === "user");
+  const visibleMessages = messages.filter(
+    (message) => message.id !== "welcome" || !hasUserMessages,
+  );
 
   useEffect(() => {
     if (filters.gradesCompleted.length === 0) return;
@@ -266,7 +270,7 @@ export function SearchChat({
                 embedded ? "max-h-48 lg:max-h-56" : "max-h-64 lg:max-h-[420px]"
               }`}
             >
-              {messages.map((message) => (
+              {visibleMessages.map((message) => (
                 <div
                   key={message.id}
                   className={

@@ -490,12 +490,6 @@ export function SearchExperience({
         <div className="min-w-0">
           {filters.gradesCompleted.length > 0 ? (
             <div className="overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-card)]">
-              {results.length > 0 && (
-                <div className="border-b border-[var(--color-border)] px-4 pt-4">
-                  <SearchShortlistCta programs={results} />
-                </div>
-              )}
-
               <ActiveFilterBar
                 embedded
                 filters={filters}
@@ -540,16 +534,12 @@ export function SearchExperience({
                         <SearchShortlistCta programs={results} compact />
                       </div>
                     </div>
-                    <p className="mt-2 text-xs text-[var(--color-text-muted)]">
-                      Heart <span aria-hidden>♡</span> programs to add them to your shortlist.
-                      {seasonCoverage.pending > 0 && (
-                        <>
-                          {" "}
-                          · {seasonCoverage.verified} updated for {TARGET_SEASON_YEAR} ·{" "}
-                          {seasonCoverage.pending} pending
-                        </>
-                      )}
-                    </p>
+                    {seasonCoverage.pending > 0 && (
+                      <p className="mt-2 text-xs text-[var(--color-text-muted)]">
+                        {seasonCoverage.verified} updated for {TARGET_SEASON_YEAR} ·{" "}
+                        {seasonCoverage.pending} pending
+                      </p>
+                    )}
                   </div>
                 )}
 
