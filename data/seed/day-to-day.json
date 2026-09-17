@@ -607,5 +607,41 @@
       "sourceCitation": "Westcoast Connection Montreal 14-day and 21-day program pages (westcoastconnection.com)",
       "verifiedAt": "2026-09-15"
     }
+  },
+  {
+    "match": { "programGroupId": "arcc-belize" },
+    "dayToDay": {
+      "notes": "Students stay primarily on a private Caribbean island for the SCUBA portion of the trip, with some time on the mainland for cultural excursions. Transportation includes shuttles, vans, and a private boat to the island. Showers are available most days; there is no machine laundry, so handwashing/air-drying is expected. All trip leaders are certified Wilderness First Responders.",
+      "sourceType": "official_policy",
+      "sourceCitation": "ARCC Belize program page (arccprograms.com)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "arcc-california" },
+    "dayToDay": {
+      "notes": "Students camp in tents (3-4 per tent, supplied by ARCC) at front-country campgrounds and state parks - meaning always close to the group's van, with restroom facilities and running water, and showers at many sites. The group travels together in a 15-passenger van with their two leaders, and works together to plan and cook meals throughout the trip.",
+      "sourceType": "official_policy",
+      "sourceCitation": "ARCC California program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "arcc-yellowstone-grand-teton" },
+    "dayToDay": {
+      "notes": "An entirely camping-based program; students sleep in tents at front-country campgrounds across National Parks, State Parks, and National Forest land, with restroom facilities, running water, and some on-site showers. The group travels together in a 15-passenger van with a small trailer, which serves as their home base, and prepares meals together as a group.",
+      "sourceType": "official_policy",
+      "sourceCitation": "ARCC Yellowstone & Grand Teton program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "arcc-bali-sumatra" },
+    "dayToDay": {
+      "notes": "Accommodation varies across the trip: hotels, rustic camping shelters, a jungle lodge, and dorm-style bungalows. Transportation is by private bus/van arranged by ARCC's in-country partner. All trip leaders are certified Wilderness First Responders.",
+      "sourceType": "official_policy",
+      "sourceCitation": "ARCC Bali & Sumatra program page",
+      "verifiedAt": "2026-09-15"
+    }
   }
 ]
