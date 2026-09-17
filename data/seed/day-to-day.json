@@ -1666,5 +1666,374 @@
       "sourceCitation": "CIEE Social Justice & Advocacy (Dublin) program page",
       "verifiedAt": "2026-09-15"
     }
+  },
+  {
+    "match": { "programGroupId": "ciee-italy-rome-architecture-italian-culture" },
+    "dayToDay": {
+      "notes": "Group housing. Scavenger hunt through baroque Rome; sketching sessions in a historic neighborhood; mosaic-making with a local artisan. Day trip to Florence, viewed through an architectural lens.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Architecture & Italian Culture (Rome) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-italy-florence-art-history-italian-culture" },
+    "dayToDay": {
+      "notes": "Group housing. Visit to Pratolino Medici Park ('Garden of Wonders'). Day trip to the medieval town of Siena (Piazza del Campo, Siena Cathedral).",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Art History & Italian Culture (Florence) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-italy-rome-art-history-italian-culture" },
+    "dayToDay": {
+      "notes": "Group housing. Exploring the Roman Forum and Colosseum; fresco painting workshop. Excursions to Tivoli and Florence.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Art History & Italian Culture (Rome) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-italy-rome-creative-writing-italian-culture" },
+    "dayToDay": {
+      "notes": "Group housing. Worldbuilding workshop at Villa di Tiberio, Sperlonga (Odyssey-themed sculptures); gnocchi-making class. Excursion to Tuscany/Florence.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Creative Writing & Italian Culture (Rome) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-italy-florence-culinary-arts-italian-culture" },
+    "dayToDay": {
+      "notes": "Group housing. Cheese-tasting experience; visit to a sustainable Tuscan farm; gelato-making class. Excursion to the Tuscan Coast.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Culinary Arts & Italian Culture (Florence) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-italy-florence-drawing-italian-culture" },
+    "dayToDay": {
+      "notes": "Group housing. On-site drawing class at the Specola Museum of Natural History; scavenger hunt/community meal with local high schoolers in Gavinana.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Drawing & Italian Culture (Florence) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-italy-milan-engineering-automotives" },
+    "dayToDay": {
+      "notes": "Homestay-based. Day trip to Autodromo Nazionale Monza (F1 circuit) including pit lane/paddock access. Overnight excursion to Modena visiting the Enzo Ferrari Museum, with local balsamic vinegar tasting and an evening passeggiata.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Engineering & Automotives (Milan) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-italy-milan-fashion-design-italian-culture" },
+    "dayToDay": {
+      "notes": "Homestay-based. Visits to fashion ateliers and the Armani Silos exhibit; graffiti T-shirt customizing workshop; cooking class with a local chef. Excursions to Florence and Lake Como.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Fashion Design & Italian Culture (Milan) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-italy-milan-fashion-marketing-business" },
+    "dayToDay": {
+      "notes": "Homestay-based. Silk pocket square-making workshop; visit to the Fondazione Prada campus (design/contemporary art). Excursions to Lake Como and Florence.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Fashion Marketing & Business (Milan) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-italy-milan-italian-language-culture" },
+    "dayToDay": {
+      "notes": "Homestay-based. Day trip to the Monza F1 circuit; viewing of da Vinci's Last Supper at Santa Maria delle Grazie; visit to Castello Sforzesco. Weekend excursions to Venice's canals and Lake Como.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Italian Language & Culture (Milan) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-italy-rome-italian-language-culture" },
+    "dayToDay": {
+      "notes": "Homestay-based. Walking tour of the Campo de' Fiori market; pasta and tiramisu cooking class with a professional chef; gelato-making at the historic Fassi gelateria. Beach day trip to Santa Severa.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Italian Language & Culture (Rome) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-japan-tokyo-anime-manga-japanese-culture" },
+    "dayToDay": {
+      "notes": "Students stay in group housing (hotel-style, shared rooms with fellow Global Navigators) with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays follow a set structure of morning classes and afternoon cultural activities/excursions, with meals eaten as a group; weekends bring day or overnight excursions. A curfew applies each night, with the specific time communicated during on-program orientation rather than published in advance. Unstructured free time exists but is supervised under a buddy-system policy, and students are not permitted to leave the group housing site or travel independently without staff approval.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page, Safety/FAQ pages, and the Video Game Design & Japanese Culture (Kyoto) program page's Daily Life/Housing/24-7 Support sections (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-japan-tokyo-fashion-design-japanese-culture" },
+    "dayToDay": {
+      "notes": "Students stay in group housing (hotel-style, shared rooms with fellow Global Navigators) with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays follow a set structure of morning classes and afternoon cultural activities/excursions, with meals eaten as a group; weekends bring day or overnight excursions. A curfew applies each night, with the specific time communicated during on-program orientation rather than published in advance. Unstructured free time exists but is supervised under a buddy-system policy, and students are not permitted to leave the group housing site or travel independently without staff approval.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page, Safety/FAQ pages, and the Video Game Design & Japanese Culture (Kyoto) program page's Daily Life/Housing/24-7 Support sections (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-japan-tokyo-japanese-language-culture" },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy), and students generally travel to and from daily classes/activities as a group rather than independently. Weekends include a mix of family time and CIEE-organized excursions. Unstructured free time is limited on weekdays given the class + activity schedule, and any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-japan-kyoto-japanese-language-culture" },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy), and students generally travel to and from daily classes/activities as a group rather than independently. The Kyoto program page also describes a weekly 'Structured Free Time' evening block for exploring the city with friends, plus a dedicated homestay weekend. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Kyoto Japanese Language & Culture program page (itinerary section) and org-wide Housing/Safety/FAQ pages",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-japan-kyoto-soccer-mental-performance" },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Days combine daily soccer training/practice (up to 3 hours) with sports-psychology coursework and cultural excursions; weekends bring day or overnight trips (e.g., to Osaka or Nara). A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/FAQ pages (org-wide policy) plus the Soccer & Mental Performance (Kyoto) program page's eligibility notes on daily training commitment",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-japan-kyoto-culinary-arts-japanese-culture" },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays center on cooking classes and market visits with a group meal structure, plus cultural excursions; weekends bring day or overnight trips, including to Osaka and Tokyo. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-japan-osaka-japanese-language-culture" },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy), and students generally travel to and from daily classes/activities as a group rather than independently. Weekends include a mix of family time and CIEE-organized excursions such as Universal Studios Japan and Nara Park. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-japan-kyoto-manga-drawing-japanese-culture" },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays follow a set structure of morning classes and afternoon cultural activities/excursions, with meals eaten as a group; weekends bring day or overnight excursions, including to Tokyo. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-japan-tokyo-robotics-japanese-culture" },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays follow a set structure of hands-on robotics classes and afternoon cultural activities/excursions, with meals eaten as a group; weekends bring day or overnight excursions, such as to Yokohama. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-japan-osaka-robotics-japanese-culture" },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays follow a set structure of hands-on robotics classes and afternoon cultural activities/excursions, with meals eaten as a group; weekends bring day or overnight excursions. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-japan-kyoto-video-game-design-japanese-culture" },
+    "dayToDay": {
+      "notes": "Students stay in hotel-style group housing with shared rooms and CIEE Program Leaders residing on-site; the program page explicitly states a ratio of 1 Program Leader per 12 students plus local staff support around the clock. Weekdays run breakfast, hands-on classes with expert instructors, a group lunch, an afternoon cultural activity or workshop, and dinner out in the community (morning/afternoon may swap); weekends bring day or overnight excursions, including to Universal Studios Japan and Nara. A curfew applies each night, communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Video Game Design & Japanese Culture (Kyoto) program page, Daily Life/Housing/24-7 Support sections, plus org-wide Safety/FAQ pages",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-mexico-merida-marine-ecology-sustainability" },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays combine field-based marine science classes and service-learning with local NGOs; weekends and the program's two overnight excursions (Ría Lagartos, El Palmar) are chaperoned as a group. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-mexico-merida-culinary-arts-mexican-culture" },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays center on cooking classes and market visits; weekends bring group excursions such as cenote swimming and Chichén Itzá. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-mexico-merida-leadership-service-youth-development" },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays are spent on-site at a partner NGO doing hands-on youth-development service work; weekends bring group excursions such as Chichén Itzá and El Corchito. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-mexico-merida-spanish-language-mexican-culture" },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy), and students generally travel to and from daily language classes/activities as a group rather than independently. Weekends include a mix of family time and CIEE-organized excursions such as El Corchito and Chichén Itzá. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-morocco-rabat-drawing-moroccan-culture" },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays center on drawing classes and market/garden sketching sessions; weekends bring group excursions such as Casablanca and an overnight trip to Marrakech and the Atlas Mountains. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-morocco-rabat-arabic-language-moroccan-culture" },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy), and students generally travel to and from daily Arabic classes/activities as a group rather than independently. Weekends include a mix of family time and CIEE-organized excursions such as Chefchaouen, Casablanca, and Tangier. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-morocco-mohammedia-leadership-service-youth-development" },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays are spent on-site at the American Language Center or partner schools doing hands-on service work, with structured evening seminars reflecting on the day's service; weekends bring an overnight excursion to Marrakech and the Atlas Mountains. In free time, students have access to the American Language Center's clubs and recreational offerings (sports, music, public speaking, debate). Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Leadership & Service in Youth Development (Mohammedia) program page (overview section) plus org-wide Housing/Safety/FAQ pages",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-netherlands-amsterdam-diplomacy-government" },
+    "dayToDay": {
+      "notes": "Students stay in dorm/hostel-style group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine morning classes with afternoon excursions and activities, including full-day trips to The Hague and Brussels; meals are eaten as a group. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-netherlands-amsterdam-urban-design-sustainability" },
+    "dayToDay": {
+      "notes": "Students stay in dorm/hostel-style group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine morning classes and Design Thinking workshops with afternoon excursions, including day trips to Almere, Utrecht, and Rotterdam; meals are eaten as a group. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-new-zealand-auckland-filmmaking-new-zealand-culture" },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine morning classes with afternoon location-scouting and filming sessions around Auckland; meals are eaten as a group. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently. The program includes one overnight excursion (Raglan).",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-new-zealand-auckland-photography-new-zealand-culture" },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine morning classes with afternoon photo-shoot excursions around Auckland; meals are eaten as a group. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently. The program includes excursions to Rotorua and Taupō.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-portugal-lisbon-marine-ecology-sustainability" },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays combine fieldwork days (kayaking, snorkeling, tide-pool surveys) with classroom sessions and service-learning; weekends bring group cultural activities. Given the water-based activities, supervision during fieldwork is provided by program staff and outside guides on top of the usual CIEE staffing. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific), plus the Marine Ecology & Sustainability (Lisbon) program page's eligibility notes on physical activity",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-portugal-lisbon-soccer-mental-performance" },
+    "dayToDay": {
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Days combine up to 3 hours of daily soccer training with sports-psychology coursework and site visits (e.g., Benfica Stadium, the National High Performance Center); weekends bring group excursions such as Porto and Sintra. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific), plus the Soccer & Mental Performance (Lisbon) program page's eligibility notes on daily training commitment",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-puerto-rico-san-juan-marine-ecology-sustainability" },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine field-based marine science classes with the group's sustainability project work; meals are eaten as a group, with several activities (snorkeling, ziplining, a bioluminescent bay visit) requiring extra outside guides on top of the usual CIEE staffing. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy) plus the Marine Ecology & Sustainability (San Juan) program page's eligibility notes on physical activity",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-scotland-edinburgh-creative-writing-scottish-culture" },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine writing workshops with cultural excursions and on-site lessons at historic locations; meals are eaten as a group. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-scotland-edinburgh-drawing-scottish-culture" },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine studio-based drawing classes with cultural excursions; meals are eaten as a group. The program includes a two-night stay at an outdoor activity centre (Benmore) with instructor-led gorge walking, kayaking, and caving. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-scotland-edinburgh-golf-mental-performance" },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine daily golf sessions with sports-psychology coursework and cultural excursions; meals are eaten as a group. The program includes a two-night stay at an outdoor activity centre (Benmore) with instructor-led gorge walking, kayaking, and caving. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-singapore-singapore-ai-real-world-application" },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine AI workshops and organization-partner project work with cultural excursions; meals are eaten as a group. The program includes an overnight excursion to Melaka, Malaysia. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": { "programGroupId": "ciee-singapore-singapore-global-entrepreneurship" },
+    "dayToDay": {
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine business classes and local business-owner interviews with cultural excursions; meals are eaten as a group. The program includes an excursion to Malacca, Malaysia. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
+      "verifiedAt": "2026-09-17"
+    }
   }
 ]

@@ -1013,5 +1013,193 @@
         "severity": "info"
       }
     ]
+  },
+  {
+    "match": { "programGroupId": "ciee-mexico-merida-marine-ecology-sustainability" },
+    "flags": [
+      {
+        "id": "marine-ecology-merida-grade-requirement",
+        "type": "safety",
+        "title": "Must have completed Freshman year before travel",
+        "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program — a rising freshman would not yet qualify.",
+        "sourceCitation": "CIEE Marine Ecology & Sustainability (Merida) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "marine-ecology-merida-kosher-halal",
+        "type": "safety",
+        "title": "Cannot accommodate fully Kosher or Halal diets",
+        "body": "CIEE states this program cannot accommodate a fully Kosher or Halal diet, due to the local cuisine and available food options.",
+        "sourceCitation": "CIEE Marine Ecology & Sustainability (Merida) program page, Eligibility section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": { "programGroupId": "ciee-mexico-merida-culinary-arts-mexican-culture" },
+    "flags": [
+      {
+        "id": "culinary-arts-merida-grade-requirement",
+        "type": "safety",
+        "title": "Must have completed Freshman year before travel",
+        "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program — a rising freshman would not yet qualify.",
+        "sourceCitation": "CIEE Culinary Arts & Mexican Culture (Merida) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "culinary-arts-merida-diet-restrictions",
+        "type": "safety",
+        "title": "Dietary restrictions likely to reduce program engagement",
+        "body": "Beyond the standard Kosher/Halal exclusion, this program's own page adds an explicit warning that dietary restrictions will likely reduce a student's ability to engage in the full content of the program courses, since the program's content is built around cooking and eating.",
+        "sourceCitation": "CIEE Culinary Arts & Mexican Culture (Merida) program page, Eligibility section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": { "programGroupId": "ciee-mexico-merida-leadership-service-youth-development" },
+    "flags": [
+      {
+        "id": "leadership-service-merida-kosher-halal",
+        "type": "safety",
+        "title": "Cannot accommodate fully Kosher or Halal diets",
+        "body": "CIEE states this program cannot accommodate a fully Kosher or Halal diet, due to the local cuisine and available food options.",
+        "sourceCitation": "CIEE Leadership & Service in Youth Development (Merida) program page, Eligibility section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": { "programGroupId": "ciee-mexico-merida-spanish-language-mexican-culture" },
+    "flags": [
+      {
+        "id": "spanish-language-merida-grade-requirement",
+        "type": "safety",
+        "title": "Must have completed Freshman year before travel",
+        "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program — a rising freshman would not yet qualify.",
+        "sourceCitation": "CIEE Spanish Language & Mexican Culture (Merida) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "spanish-language-merida-kosher-halal",
+        "type": "safety",
+        "title": "Cannot accommodate fully Kosher or Halal diets",
+        "body": "CIEE states this program cannot accommodate a fully Kosher or Halal diet, due to the local cuisine and available food options.",
+        "sourceCitation": "CIEE Spanish Language & Mexican Culture (Merida) program page, Eligibility section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": { "programGroupId": "ciee-morocco-rabat-arabic-language-moroccan-culture" },
+    "flags": [
+      {
+        "id": "arabic-language-rabat-date-inconsistency",
+        "type": "safety",
+        "title": "Session II dates are inconsistent on CIEE's own page",
+        "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027'). Families should confirm exact Session II dates directly with CIEE before booking flights.",
+        "sourceCitation": "CIEE Arabic Language & Moroccan Culture (Rabat) program page, Dates & Fees section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": { "programGroupId": "ciee-new-zealand-auckland-filmmaking-new-zealand-culture" },
+    "flags": [
+      {
+        "id": "filmmaking-auckland-kosher-diet",
+        "type": "safety",
+        "title": "Cannot accommodate a fully Kosher diet",
+        "body": "CIEE states this program cannot accommodate a fully Kosher diet, due to the local cuisine and available food options.",
+        "sourceCitation": "CIEE Filmmaking & New Zealand Culture (Auckland) program page, Eligibility section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": { "programGroupId": "ciee-new-zealand-auckland-photography-new-zealand-culture" },
+    "flags": [
+      {
+        "id": "photography-auckland-kosher-diet",
+        "type": "safety",
+        "title": "Cannot accommodate a fully Kosher diet",
+        "body": "CIEE states this program cannot accommodate a fully Kosher diet, due to the local cuisine and available food options.",
+        "sourceCitation": "CIEE Photography & New Zealand Culture (Auckland) program page, Eligibility section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": { "programGroupId": "ciee-portugal-lisbon-marine-ecology-sustainability" },
+    "flags": [
+      {
+        "id": "marine-ecology-lisbon-physical-activity",
+        "type": "safety",
+        "title": "Moderate- to high-intensity physical activity expected",
+        "body": "CIEE's own eligibility notes describe this program as involving moderate- to high-intensity physical activities such as hiking, boating, and snorkeling. Swimming ability is not required but is strongly encouraged to fully participate in the program's water-based fieldwork.",
+        "sourceCitation": "CIEE Marine Ecology & Sustainability (Lisbon) program page, Eligibility section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": { "programGroupId": "ciee-portugal-lisbon-soccer-mental-performance" },
+    "flags": [
+      {
+        "id": "soccer-lisbon-physical-commitment",
+        "type": "safety",
+        "title": "Significant daily athletic commitment expected",
+        "body": "CIEE's own eligibility notes say prior soccer experience (school, club, or rec) is preferred, and students should be prepared for daily practice/training sessions of up to 3 hours, five days a week — a heavier physical commitment than CIEE's academic or creative-arts programs.",
+        "sourceCitation": "CIEE Soccer & Mental Performance (Lisbon) program page, Eligibility section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": { "programGroupId": "ciee-puerto-rico-san-juan-marine-ecology-sustainability" },
+    "flags": [
+      {
+        "id": "marine-ecology-san-juan-diet-restrictions",
+        "type": "safety",
+        "title": "Cannot accommodate fully Vegetarian, Kosher, or Vegan diets",
+        "body": "CIEE states this program cannot accommodate a fully Vegetarian, Kosher, or Vegan diet, due to the local cuisine and available food options — a broader dietary exclusion list than CIEE's other Marine Ecology & Sustainability offerings (e.g., Lisbon, Mérida), which only exclude Kosher/Halal.",
+        "sourceCitation": "CIEE Marine Ecology & Sustainability (San Juan) program page, Eligibility section",
+        "severity": "warning"
+      },
+      {
+        "id": "marine-ecology-san-juan-physical-activity",
+        "type": "safety",
+        "title": "Moderate- to high-intensity physical activity expected",
+        "body": "CIEE's own eligibility notes flag that this program involves moderate- to high-intensity physical activities (fieldwork including snorkeling and a rainforest zipline excursion).",
+        "sourceCitation": "CIEE Marine Ecology & Sustainability (San Juan) program page, Eligibility section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": { "programGroupId": "ciee-scotland-edinburgh-golf-mental-performance" },
+    "flags": [
+      {
+        "id": "golf-edinburgh-no-price-published",
+        "type": "safety",
+        "title": "No price published yet for 2027",
+        "body": "Unlike CIEE's other Edinburgh programs, this page does not display a cost for either Summer Session I or II as of this research pass — only dates and the $25 application fee are shown. Families should contact CIEE directly for current pricing before applying.",
+        "sourceCitation": "CIEE Golf & Mental Performance (Edinburgh) program page, Dates & Fees section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": { "programGroupId": "ciee-singapore-singapore-global-entrepreneurship" },
+    "flags": [
+      {
+        "id": "global-entrepreneurship-singapore-physical-activity",
+        "type": "safety",
+        "title": "Moderate-intensity physical activity expected",
+        "body": "CIEE's own eligibility notes flag that this program involves moderate-intensity physical activities (including a ropes/zipline course at Forest Adventure).",
+        "sourceCitation": "CIEE Global Entrepreneurship (Singapore) program page, Eligibility section",
+        "severity": "warning"
+      }
+    ]
   }
 ]
