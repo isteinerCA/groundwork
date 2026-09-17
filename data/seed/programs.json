@@ -55118,9 +55118,7 @@
       "programGroupId": "tft-australia-new-zealand-service",
       "description": "Two-country combination trip through Australia and New Zealand blending community service, cultural immersion, and adventure activities.",
       "category": "leadership-gifted",
-      "secondaryTags": [
-        "Cultural Exchange"
-      ],
+      "secondaryTags": [],
       "trackDetail": "Departure",
       "gradeDisplay": "Current grades 9-12",
       "gradeCompletedMin": 8,
@@ -55171,9 +55169,7 @@
       "programGroupId": "tft-australia-new-zealand-fiji-service",
       "description": "The org's most extensive combination trip, adding Fiji onto the Australia and New Zealand itinerary. TFT's own marketing calls this the 'ultimate Oceania experience.' No standalone Fiji-only program exists in TFT's catalog - Fiji only appears as part of this combo.",
       "category": "leadership-gifted",
-      "secondaryTags": [
-        "Cultural Exchange"
-      ],
+      "secondaryTags": [],
       "trackDetail": "Departure",
       "gradeDisplay": "Current grades 9-12",
       "gradeCompletedMin": 8,
@@ -55225,7 +55221,7 @@
       "description": "Community service (likely at a school, per org-wide testimonials referencing SEGA school) combined with safari game drives, per TFT's general Tanzania marketing.",
       "category": "leadership-gifted",
       "secondaryTags": [
-        "Animal & Wildlife Conservation"
+        "Outdoor/Wilderness"
       ],
       "trackDetail": "Departure",
       "gradeDisplay": "Current grades 9-12",
@@ -55889,7 +55885,13 @@
       "websiteUrl": "https://www.travelforteens.com/program/alaska-adventure-and-service/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Accommodation is a mix of modern hotels and comfortable, unique family-run lodging, all vetted and supervised by trip leaders present 24/7. As with all TFT programs, specific accommodation names are not published in advance for safety reasons. Alaska activities include sea kayaking, hiking near glaciers, whitewater rafting, and a sled-cart ride with husky puppies.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens United States destination page (travelforteens.com/unitedstates)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-1013",
@@ -55936,7 +55938,13 @@
       "websiteUrl": "https://www.travelforteens.com/program/hawaii-and-alaska-service/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Accommodation is a mix of modern hotels and comfortable, unique family-run lodging, all vetted and supervised by trip leaders present 24/7. As with all TFT programs, specific accommodation names are not published in advance for safety reasons. Hawaii activities include surfing, snorkeling (including night snorkeling with manta rays), and sea turtle conservation work (reef surveying, beach cleanup).",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens United States destination page (travelforteens.com/unitedstates)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-1014",
@@ -55983,7 +55991,13 @@
       "websiteUrl": "https://www.travelforteens.com/program/hawaii-island-hopping-adventure-and-service/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Accommodation is a mix of modern hotels and comfortable, unique family-run lodging, all vetted and supervised by trip leaders present 24/7. As with all TFT programs, specific accommodation names are not published in advance for safety reasons. Hawaii activities include surfing, snorkeling (including night snorkeling with manta rays), and sea turtle conservation work (reef surveying, beach cleanup).",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens United States destination page (travelforteens.com/unitedstates)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-1015",
@@ -56030,7 +56044,13 @@
       "websiteUrl": "https://www.travelforteens.com/program/hawaii-sea-turtle-service-adventure-11-days/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Accommodation is a mix of modern hotels and comfortable, unique family-run lodging, all vetted and supervised by trip leaders present 24/7. As with all TFT programs, specific accommodation names are not published in advance for safety reasons. Hawaii activities include surfing, snorkeling (including night snorkeling with manta rays), and sea turtle conservation work (reef surveying, beach cleanup).",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens United States destination page (travelforteens.com/unitedstates)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-1016",
@@ -56077,7 +56097,13 @@
       "websiteUrl": "https://www.travelforteens.com/program/hawaii-big-island-service/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Service and adventure program specifically on the Big Island and Kauai, distinct from the multi-island 'Island Hopping' program.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Travel For Teens United States destination page",
+        "verifiedAt": "2026-09-15"
+      }
     }
   ]
 }

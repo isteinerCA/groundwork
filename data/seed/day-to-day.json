@@ -992,16 +992,32 @@
     }
   },
   {
+    "match": { "programGroupId": "tft-alaska-adventure-service" },
+    "dayToDay": {
+      "notes": "Accommodation is a mix of modern hotels and comfortable, unique family-run lodging, all vetted and supervised by trip leaders present 24/7. As with all TFT programs, specific accommodation names are not published in advance for safety reasons. Alaska activities include sea kayaking, hiking near glaciers, whitewater rafting, and a sled-cart ride with husky puppies.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens United States destination page (travelforteens.com/unitedstates)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": { "programGroupId": "tft-hawaii-alaska-service" },
+    "dayToDay": {
+      "notes": "Accommodation is a mix of modern hotels and comfortable, unique family-run lodging, all vetted and supervised by trip leaders present 24/7. As with all TFT programs, specific accommodation names are not published in advance for safety reasons. Hawaii activities include surfing, snorkeling (including night snorkeling with manta rays), and sea turtle conservation work (reef surveying, beach cleanup).",
+      "sourceType": "official_policy",
+      "sourceCitation": "Travel For Teens United States destination page (travelforteens.com/unitedstates)",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
     "match": {
       "programGroupId": [
-        "tft-alaska-adventure-service",
-        "tft-hawaii-alaska-service",
         "tft-hawaii-island-hopping-adventure-service",
         "tft-hawaii-sea-turtle-service-adventure-11-days"
       ]
     },
     "dayToDay": {
-      "notes": "Accommodation is a mix of modern hotels and comfortable, unique family-run lodging, all vetted and supervised by trip leaders present 24/7. As with all TFT programs, specific accommodation names are not published in advance for safety reasons. Alaska activities include sea kayaking, hiking near glaciers, whitewater rafting, and a sled-cart ride with husky puppies; Hawaii activities include surfing, snorkeling (including night snorkeling with manta rays), and sea turtle conservation work (reef surveying, beach cleanup).",
+      "notes": "Accommodation is a mix of modern hotels and comfortable, unique family-run lodging, all vetted and supervised by trip leaders present 24/7. As with all TFT programs, specific accommodation names are not published in advance for safety reasons. Hawaii activities include surfing, snorkeling (including night snorkeling with manta rays), and sea turtle conservation work (reef surveying, beach cleanup).",
       "sourceType": "official_policy",
       "sourceCitation": "Travel For Teens United States destination page (travelforteens.com/unitedstates)",
       "verifiedAt": "2026-09-15"
