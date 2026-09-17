@@ -805,5 +805,46 @@
       "sourceCitation": "GLA program guide and general program pages (experiencegla.com)",
       "verifiedAt": "2026-09-15"
     }
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "overland-alaska-explorer",
+        "overland-dolomite-explorer",
+        "overland-alpine-explorer",
+        "overland-iceland-explorer",
+        "overland-maine-coast-explorer",
+        "overland-mountains-sea-explorer",
+        "overland-new-england-explorer",
+        "overland-northwest-explorer",
+        "overland-norway-explorer",
+        "overland-rocky-mountain-explorer",
+        "overland-sierra-explorer",
+        "overland-yellowstone-teton-explorer",
+        "overland-alaska-expedition",
+        "overland-sierra-expedition",
+        "overland-iceland-expedition",
+        "overland-appalachian-trail-expedition",
+        "overland-northwest-expedition",
+        "overland-eastern-alps-expedition",
+        "overland-norway-expedition",
+        "overland-pyrenees-expedition",
+        "overland-rocky-mountain-expedition",
+        "overland-alpine-challenge",
+        "overland-kilimanjaro-challenge",
+        "overland-teton-challenge",
+        "overland-language-hiking-spain",
+        "overland-language-hiking-france",
+        "overland-environmental-stewardship-montana",
+        "overland-environmental-stewardship-alaska",
+        "overland-environmental-stewardship-new-england"
+      ]
+    },
+    "dayToDay": {
+      "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+      "verifiedAt": "2026-09-15"
+    }
   }
 ]

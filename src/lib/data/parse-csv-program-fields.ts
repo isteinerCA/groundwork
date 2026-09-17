@@ -50,12 +50,13 @@ export function parseGradesFromCsv(row: CsvRow): Pick<
   const maxOverride = parseOptionalInt(csvCell(row, "Grade Completed Max"));
 
   const parsed = normalizeGrade(display || "Grades 6–12");
-  const isMinimumAgeByStart = /\bmust be\s+\d+\s+by\s+(?:program\s+)?start\b/i.test(
-    display,
-  );
+  const hasCompletingGrades = /completing grades?\s*\d+/i.test(display);
+  const isAgeFloorOnly =
+    !hasCompletingGrades &&
+    /\bmust be\s+\d+\s+by\s+(?:program\s+)?start\b/i.test(display);
 
-  // Minimum-age-by-start is a floor, not a band — do not layer MS division grades on top.
-  if (isMinimumAgeByStart) {
+  // Standalone minimum-age rows are a floor, not a band — do not layer CSV grade overrides.
+  if (isAgeFloorOnly) {
     return parsed;
   }
 

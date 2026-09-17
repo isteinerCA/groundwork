@@ -532,36 +532,37 @@ if (
 }
 
 const broadreachMsGrades = parseGradesFromCsv({
-  "Grades Display": "Must be 12 by program start",
+  "Grades Display":
+    "Completing grades 6-8 (must be 12 years old by program start)",
   "Grade Completed Min": "6",
   "Grade Completed Max": "8",
 });
-if (broadreachMsGrades.gradeSource !== "age") {
-  console.error("FAIL: Broadreach MS age gate should use age gradeSource");
+if (broadreachMsGrades.gradeSource !== "grade") {
+  console.error("FAIL: Broadreach MS should use grade gradeSource");
   failed++;
 }
-if (broadreachMsGrades.gradeCompletedMin !== 6 || broadreachMsGrades.gradeCompletedMax !== 6) {
-  console.error("FAIL: Broadreach MS age floor should map to completed grade 6 only");
+if (broadreachMsGrades.gradeCompletedMin !== 6 || broadreachMsGrades.gradeCompletedMax !== 8) {
+  console.error("FAIL: Broadreach MS should map to completed grades 6-8");
   failed++;
 }
-if (gradeEligibilityLabel(broadreachMsGrades) !== "Ages") {
-  console.error("FAIL: Broadreach MS age gate should use Ages label");
+if (gradeEligibilityLabel(broadreachMsGrades) !== "Grades") {
+  console.error("FAIL: Broadreach MS should use Grades label");
   failed++;
 }
 const broadreachMsDisplay = formatGradeEligibilityDisplay(broadreachMsGrades);
 if (
   broadreachMsDisplay !==
-  "Must be 12 by program start (matches completed grade 6 in search filters)"
+  "Completing grades 6-8 (must be 12 years old by program start)"
 ) {
   console.error(`FAIL: Broadreach MS display format, got "${broadreachMsDisplay}"`);
   failed++;
 }
-if (!gradeMatchesFilter(broadreachMsGrades, [6])) {
-  console.error("FAIL: Broadreach MS age floor should match completed grade 6");
+if (!gradeMatchesFilter(broadreachMsGrades, [6, 7, 8])) {
+  console.error("FAIL: Broadreach MS should match completed grades 6-8");
   failed++;
 }
-if (gradeMatchesFilter(broadreachMsGrades, [7])) {
-  console.error("FAIL: Broadreach MS age floor should not match completed grade 7 via grade filter alone");
+if (gradeMatchesFilter(broadreachMsGrades, [5])) {
+  console.error("FAIL: Broadreach MS should not match completed grade 5");
   failed++;
 }
 

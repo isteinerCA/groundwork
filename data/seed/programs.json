@@ -1,6 +1,6 @@
 {
   "verifiedAt": "2026-09-17",
-  "count": 963,
+  "count": 976,
   "programs": [
     {
       "id": "prog-1",
@@ -32950,10 +32950,10 @@
       "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Jun 17-23 Departure",
-      "gradeDisplay": "Must be 12 by program start",
+      "gradeDisplay": "Completing grades 6-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 6,
-      "gradeCompletedMax": 6,
-      "gradeSource": "age",
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
       "admissionType": "first_come",
       "admissionDisplay": "First-Come",
       "formatDisplay": "Residential",
@@ -32986,8 +32986,8 @@
         {
           "id": "broadreach-ms-age-gate",
           "type": "policy",
-          "title": "Hard age requirement (12 by program start), not a grade-based cutoff",
-          "body": "This program requires students to be 12 years old by the program's start date, regardless of grade - a 6th grader who hasn't yet turned 12 would not be eligible even though 6th grade is otherwise within the org's middle-school band.",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
           "sourceCitation": "Broadreach middle school program pages",
           "severity": "warning"
         }
@@ -33010,10 +33010,10 @@
       "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Jun 25-Jul 1 Departure",
-      "gradeDisplay": "Must be 12 by program start",
+      "gradeDisplay": "Completing grades 6-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 6,
-      "gradeCompletedMax": 6,
-      "gradeSource": "age",
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
       "admissionType": "first_come",
       "admissionDisplay": "First-Come",
       "formatDisplay": "Residential",
@@ -33046,8 +33046,8 @@
         {
           "id": "broadreach-ms-age-gate",
           "type": "policy",
-          "title": "Hard age requirement (12 by program start), not a grade-based cutoff",
-          "body": "This program requires students to be 12 years old by the program's start date, regardless of grade - a 6th grader who hasn't yet turned 12 would not be eligible even though 6th grade is otherwise within the org's middle-school band.",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
           "sourceCitation": "Broadreach middle school program pages",
           "severity": "warning"
         }
@@ -33070,10 +33070,10 @@
       "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Jul 3-9 Departure",
-      "gradeDisplay": "Must be 12 by program start",
+      "gradeDisplay": "Completing grades 6-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 6,
-      "gradeCompletedMax": 6,
-      "gradeSource": "age",
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
       "admissionType": "first_come",
       "admissionDisplay": "First-Come",
       "formatDisplay": "Residential",
@@ -33106,8 +33106,8 @@
         {
           "id": "broadreach-ms-age-gate",
           "type": "policy",
-          "title": "Hard age requirement (12 by program start), not a grade-based cutoff",
-          "body": "This program requires students to be 12 years old by the program's start date, regardless of grade - a 6th grader who hasn't yet turned 12 would not be eligible even though 6th grade is otherwise within the org's middle-school band.",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
           "sourceCitation": "Broadreach middle school program pages",
           "severity": "warning"
         }
@@ -33130,10 +33130,10 @@
       "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Jul 13-19 Departure",
-      "gradeDisplay": "Must be 12 by program start",
+      "gradeDisplay": "Completing grades 6-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 6,
-      "gradeCompletedMax": 6,
-      "gradeSource": "age",
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
       "admissionType": "first_come",
       "admissionDisplay": "First-Come",
       "formatDisplay": "Residential",
@@ -33166,8 +33166,8 @@
         {
           "id": "broadreach-ms-age-gate",
           "type": "policy",
-          "title": "Hard age requirement (12 by program start), not a grade-based cutoff",
-          "body": "This program requires students to be 12 years old by the program's start date, regardless of grade - a 6th grader who hasn't yet turned 12 would not be eligible even though 6th grade is otherwise within the org's middle-school band.",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
           "sourceCitation": "Broadreach middle school program pages",
           "severity": "warning"
         }
@@ -33190,10 +33190,10 @@
       "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Jul 22-28 Departure",
-      "gradeDisplay": "Must be 12 by program start",
+      "gradeDisplay": "Completing grades 6-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 6,
-      "gradeCompletedMax": 6,
-      "gradeSource": "age",
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
       "admissionType": "first_come",
       "admissionDisplay": "First-Come",
       "formatDisplay": "Residential",
@@ -33226,8 +33226,8 @@
         {
           "id": "broadreach-ms-age-gate",
           "type": "policy",
-          "title": "Hard age requirement (12 by program start), not a grade-based cutoff",
-          "body": "This program requires students to be 12 years old by the program's start date, regardless of grade - a 6th grader who hasn't yet turned 12 would not be eligible even though 6th grade is otherwise within the org's middle-school band.",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
           "sourceCitation": "Broadreach middle school program pages",
           "severity": "warning"
         }
@@ -33250,10 +33250,10 @@
       "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Aug 3-9 Departure",
-      "gradeDisplay": "Must be 12 by program start",
+      "gradeDisplay": "Completing grades 6-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 6,
-      "gradeCompletedMax": 6,
-      "gradeSource": "age",
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
       "admissionType": "first_come",
       "admissionDisplay": "First-Come",
       "formatDisplay": "Residential",
@@ -33286,8 +33286,8 @@
         {
           "id": "broadreach-ms-age-gate",
           "type": "policy",
-          "title": "Hard age requirement (12 by program start), not a grade-based cutoff",
-          "body": "This program requires students to be 12 years old by the program's start date, regardless of grade - a 6th grader who hasn't yet turned 12 would not be eligible even though 6th grade is otherwise within the org's middle-school band.",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
           "sourceCitation": "Broadreach middle school program pages",
           "severity": "warning"
         }
@@ -33310,7 +33310,7 @@
       "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Departure 1",
-      "gradeDisplay": "Completing grades 6-8",
+      "gradeDisplay": "Completing grades 6-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 6,
       "gradeCompletedMax": 8,
       "gradeSource": "grade",
@@ -33342,7 +33342,16 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.gobroadreach.com/programs/middle-school-sailing-camp/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [],
+      "flags": [
+        {
+          "id": "broadreach-ms-age-gate",
+          "type": "policy",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
+          "sourceCitation": "Broadreach middle school program pages",
+          "severity": "warning"
+        }
+      ],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Students live aboard a sailing vessel or catamaran for the entire program, sharing space with a small crew of peers and instructors experienced in working with this younger age group. Days are structured around the boat's itinerary - sailing between islands, scuba/snorkel instruction, and shore stops - with instructors present around the clock. There is no fixed land base; the boat itself is the accommodation throughout.",
@@ -33361,7 +33370,7 @@
       "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Departure 2",
-      "gradeDisplay": "Completing grades 6-8",
+      "gradeDisplay": "Completing grades 6-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 6,
       "gradeCompletedMax": 8,
       "gradeSource": "grade",
@@ -33393,7 +33402,16 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.gobroadreach.com/programs/middle-school-sailing-camp/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [],
+      "flags": [
+        {
+          "id": "broadreach-ms-age-gate",
+          "type": "policy",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
+          "sourceCitation": "Broadreach middle school program pages",
+          "severity": "warning"
+        }
+      ],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Students live aboard a sailing vessel or catamaran for the entire program, sharing space with a small crew of peers and instructors experienced in working with this younger age group. Days are structured around the boat's itinerary - sailing between islands, scuba/snorkel instruction, and shore stops - with instructors present around the clock. There is no fixed land base; the boat itself is the accommodation throughout.",
@@ -33412,10 +33430,10 @@
       "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Jun 20-Jul 1 Departure",
-      "gradeDisplay": "Must be 12 by program start",
+      "gradeDisplay": "Completing grades 6-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 6,
-      "gradeCompletedMax": 6,
-      "gradeSource": "age",
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
       "admissionType": "first_come",
       "admissionDisplay": "First-Come",
       "formatDisplay": "Residential",
@@ -33448,8 +33466,8 @@
         {
           "id": "broadreach-ms-age-gate",
           "type": "policy",
-          "title": "Hard age requirement (12 by program start), not a grade-based cutoff",
-          "body": "This program requires students to be 12 years old by the program's start date, regardless of grade - a 6th grader who hasn't yet turned 12 would not be eligible even though 6th grade is otherwise within the org's middle-school band.",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
           "sourceCitation": "Broadreach middle school program pages",
           "severity": "warning"
         }
@@ -33472,10 +33490,10 @@
       "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Jul 5-16 Departure",
-      "gradeDisplay": "Must be 12 by program start",
+      "gradeDisplay": "Completing grades 6-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 6,
-      "gradeCompletedMax": 6,
-      "gradeSource": "age",
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
       "admissionType": "first_come",
       "admissionDisplay": "First-Come",
       "formatDisplay": "Residential",
@@ -33508,8 +33526,8 @@
         {
           "id": "broadreach-ms-age-gate",
           "type": "policy",
-          "title": "Hard age requirement (12 by program start), not a grade-based cutoff",
-          "body": "This program requires students to be 12 years old by the program's start date, regardless of grade - a 6th grader who hasn't yet turned 12 would not be eligible even though 6th grade is otherwise within the org's middle-school band.",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
           "sourceCitation": "Broadreach middle school program pages",
           "severity": "warning"
         }
@@ -33532,10 +33550,10 @@
       "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Jul 21-Aug 1 Departure",
-      "gradeDisplay": "Must be 12 by program start",
+      "gradeDisplay": "Completing grades 6-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 6,
-      "gradeCompletedMax": 6,
-      "gradeSource": "age",
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
       "admissionType": "first_come",
       "admissionDisplay": "First-Come",
       "formatDisplay": "Residential",
@@ -33568,8 +33586,8 @@
         {
           "id": "broadreach-ms-age-gate",
           "type": "policy",
-          "title": "Hard age requirement (12 by program start), not a grade-based cutoff",
-          "body": "This program requires students to be 12 years old by the program's start date, regardless of grade - a 6th grader who hasn't yet turned 12 would not be eligible even though 6th grade is otherwise within the org's middle-school band.",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
           "sourceCitation": "Broadreach middle school program pages",
           "severity": "warning"
         }
@@ -33592,10 +33610,10 @@
       "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Aug 3-14 Departure",
-      "gradeDisplay": "Must be 12 by program start",
+      "gradeDisplay": "Completing grades 6-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 6,
-      "gradeCompletedMax": 6,
-      "gradeSource": "age",
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
       "admissionType": "first_come",
       "admissionDisplay": "First-Come",
       "formatDisplay": "Residential",
@@ -33628,8 +33646,8 @@
         {
           "id": "broadreach-ms-age-gate",
           "type": "policy",
-          "title": "Hard age requirement (12 by program start), not a grade-based cutoff",
-          "body": "This program requires students to be 12 years old by the program's start date, regardless of grade - a 6th grader who hasn't yet turned 12 would not be eligible even though 6th grade is otherwise within the org's middle-school band.",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
           "sourceCitation": "Broadreach middle school program pages",
           "severity": "warning"
         }
@@ -33652,10 +33670,10 @@
       "category": "marine-science",
       "secondaryTags": [],
       "trackDetail": "Jun 20-Jul 1 Departure",
-      "gradeDisplay": "Must be 12 by program start",
+      "gradeDisplay": "Completing grades 6-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 6,
-      "gradeCompletedMax": 6,
-      "gradeSource": "age",
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
       "admissionType": "first_come",
       "admissionDisplay": "First-Come",
       "formatDisplay": "Residential",
@@ -33688,8 +33706,8 @@
         {
           "id": "broadreach-ms-age-gate",
           "type": "policy",
-          "title": "Hard age requirement (12 by program start), not a grade-based cutoff",
-          "body": "This program requires students to be 12 years old by the program's start date, regardless of grade - a 6th grader who hasn't yet turned 12 would not be eligible even though 6th grade is otherwise within the org's middle-school band.",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
           "sourceCitation": "Broadreach middle school program pages",
           "severity": "warning"
         }
@@ -33712,10 +33730,10 @@
       "category": "marine-science",
       "secondaryTags": [],
       "trackDetail": "Jul 5-16 Departure",
-      "gradeDisplay": "Must be 12 by program start",
+      "gradeDisplay": "Completing grades 6-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 6,
-      "gradeCompletedMax": 6,
-      "gradeSource": "age",
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
       "admissionType": "first_come",
       "admissionDisplay": "First-Come",
       "formatDisplay": "Residential",
@@ -33748,8 +33766,8 @@
         {
           "id": "broadreach-ms-age-gate",
           "type": "policy",
-          "title": "Hard age requirement (12 by program start), not a grade-based cutoff",
-          "body": "This program requires students to be 12 years old by the program's start date, regardless of grade - a 6th grader who hasn't yet turned 12 would not be eligible even though 6th grade is otherwise within the org's middle-school band.",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
           "sourceCitation": "Broadreach middle school program pages",
           "severity": "warning"
         }
@@ -33772,10 +33790,10 @@
       "category": "marine-science",
       "secondaryTags": [],
       "trackDetail": "Jul 21-Aug 1 Departure",
-      "gradeDisplay": "Must be 12 by program start",
+      "gradeDisplay": "Completing grades 6-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 6,
-      "gradeCompletedMax": 6,
-      "gradeSource": "age",
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
       "admissionType": "first_come",
       "admissionDisplay": "First-Come",
       "formatDisplay": "Residential",
@@ -33808,8 +33826,8 @@
         {
           "id": "broadreach-ms-age-gate",
           "type": "policy",
-          "title": "Hard age requirement (12 by program start), not a grade-based cutoff",
-          "body": "This program requires students to be 12 years old by the program's start date, regardless of grade - a 6th grader who hasn't yet turned 12 would not be eligible even though 6th grade is otherwise within the org's middle-school band.",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
           "sourceCitation": "Broadreach middle school program pages",
           "severity": "warning"
         }
@@ -33832,10 +33850,10 @@
       "category": "marine-science",
       "secondaryTags": [],
       "trackDetail": "Aug 3-14 Departure",
-      "gradeDisplay": "Must be 12 by program start",
+      "gradeDisplay": "Completing grades 6-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 6,
-      "gradeCompletedMax": 6,
-      "gradeSource": "age",
+      "gradeCompletedMax": 8,
+      "gradeSource": "grade",
       "admissionType": "first_come",
       "admissionDisplay": "First-Come",
       "formatDisplay": "Residential",
@@ -33868,8 +33886,8 @@
         {
           "id": "broadreach-ms-age-gate",
           "type": "policy",
-          "title": "Hard age requirement (12 by program start), not a grade-based cutoff",
-          "body": "This program requires students to be 12 years old by the program's start date, regardless of grade - a 6th grader who hasn't yet turned 12 would not be eligible even though 6th grade is otherwise within the org's middle-school band.",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
           "sourceCitation": "Broadreach middle school program pages",
           "severity": "warning"
         }
@@ -33892,7 +33910,7 @@
       "category": "marine-science",
       "secondaryTags": [],
       "trackDetail": "Session",
-      "gradeDisplay": "Completing grades 6-8",
+      "gradeDisplay": "Completing grades 6-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 6,
       "gradeCompletedMax": 8,
       "gradeSource": "grade",
@@ -33932,6 +33950,14 @@
           "body": "This program requires students to already hold PADI Open Water certification (or equivalent) before enrolling - not a beginner-friendly option despite the middle-school framing.",
           "sourceCitation": "Broadreach middle school program pages",
           "severity": "warning"
+        },
+        {
+          "id": "broadreach-ms-age-gate",
+          "type": "policy",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
+          "sourceCitation": "Broadreach middle school program pages",
+          "severity": "warning"
         }
       ],
       "participantGender": "coed",
@@ -33952,7 +33978,7 @@
       "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Departure 1",
-      "gradeDisplay": "Completing grades 7-8",
+      "gradeDisplay": "Completing grades 7-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 7,
       "gradeCompletedMax": 8,
       "gradeSource": "grade",
@@ -33984,7 +34010,16 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.gobroadreach.com/programs/caribbean-scuba-sailing-camp/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [],
+      "flags": [
+        {
+          "id": "broadreach-ms-age-gate",
+          "type": "policy",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
+          "sourceCitation": "Broadreach middle school program pages",
+          "severity": "warning"
+        }
+      ],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Students live aboard a sailing vessel or catamaran for the entire program, sharing space with a small crew of peers and instructors experienced in working with this younger age group. Days are structured around the boat's itinerary - sailing between islands, scuba/snorkel instruction, and shore stops - with instructors present around the clock. There is no fixed land base; the boat itself is the accommodation throughout.",
@@ -34003,7 +34038,7 @@
       "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Departure 2",
-      "gradeDisplay": "Completing grades 7-8",
+      "gradeDisplay": "Completing grades 7-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 7,
       "gradeCompletedMax": 8,
       "gradeSource": "grade",
@@ -34035,7 +34070,16 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.gobroadreach.com/programs/caribbean-scuba-sailing-camp/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [],
+      "flags": [
+        {
+          "id": "broadreach-ms-age-gate",
+          "type": "policy",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
+          "sourceCitation": "Broadreach middle school program pages",
+          "severity": "warning"
+        }
+      ],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Students live aboard a sailing vessel or catamaran for the entire program, sharing space with a small crew of peers and instructors experienced in working with this younger age group. Days are structured around the boat's itinerary - sailing between islands, scuba/snorkel instruction, and shore stops - with instructors present around the clock. There is no fixed land base; the boat itself is the accommodation throughout.",
@@ -34054,7 +34098,7 @@
       "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Session",
-      "gradeDisplay": "Completing grades 7-8",
+      "gradeDisplay": "Completing grades 7-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 7,
       "gradeCompletedMax": 8,
       "gradeSource": "grade",
@@ -34094,6 +34138,14 @@
           "body": "This program requires students to already hold PADI Open Water certification (or equivalent) before enrolling - not a beginner-friendly option despite the middle-school framing.",
           "sourceCitation": "Broadreach middle school program pages",
           "severity": "warning"
+        },
+        {
+          "id": "broadreach-ms-age-gate",
+          "type": "policy",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
+          "sourceCitation": "Broadreach middle school program pages",
+          "severity": "warning"
         }
       ],
       "participantGender": "coed",
@@ -34114,7 +34166,7 @@
       "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Departure 1",
-      "gradeDisplay": "Completing grades 7-8",
+      "gradeDisplay": "Completing grades 7-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 7,
       "gradeCompletedMax": 8,
       "gradeSource": "grade",
@@ -34154,6 +34206,14 @@
           "body": "This program requires students to already hold PADI Open Water certification (or equivalent) before enrolling - not a beginner-friendly option despite the middle-school framing.",
           "sourceCitation": "Broadreach middle school program pages",
           "severity": "warning"
+        },
+        {
+          "id": "broadreach-ms-age-gate",
+          "type": "policy",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
+          "sourceCitation": "Broadreach middle school program pages",
+          "severity": "warning"
         }
       ],
       "participantGender": "coed",
@@ -34174,7 +34234,7 @@
       "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Departure 2",
-      "gradeDisplay": "Completing grades 7-8",
+      "gradeDisplay": "Completing grades 7-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 7,
       "gradeCompletedMax": 8,
       "gradeSource": "grade",
@@ -34214,6 +34274,14 @@
           "body": "This program requires students to already hold PADI Open Water certification (or equivalent) before enrolling - not a beginner-friendly option despite the middle-school framing.",
           "sourceCitation": "Broadreach middle school program pages",
           "severity": "warning"
+        },
+        {
+          "id": "broadreach-ms-age-gate",
+          "type": "policy",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
+          "sourceCitation": "Broadreach middle school program pages",
+          "severity": "warning"
         }
       ],
       "participantGender": "coed",
@@ -34234,7 +34302,7 @@
       "category": "marine-science",
       "secondaryTags": [],
       "trackDetail": "Departure 1",
-      "gradeDisplay": "Completing grades 6-8",
+      "gradeDisplay": "Completing grades 6-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 6,
       "gradeCompletedMax": 8,
       "gradeSource": "grade",
@@ -34266,7 +34334,16 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.gobroadreach.com/programs/teen-intro-veterinary-camp/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [],
+      "flags": [
+        {
+          "id": "broadreach-ms-age-gate",
+          "type": "policy",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
+          "sourceCitation": "Broadreach middle school program pages",
+          "severity": "warning"
+        }
+      ],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Students are based out of a fixed facility for the program's duration rather than living aboard a boat, with instructors experienced in working with this younger age group. Days are built around the program's core activity (diving instruction or wildlife engagement), with excursions from that home base as part of the itinerary.",
@@ -34285,7 +34362,7 @@
       "category": "marine-science",
       "secondaryTags": [],
       "trackDetail": "Departure 2",
-      "gradeDisplay": "Completing grades 6-8",
+      "gradeDisplay": "Completing grades 6-8 (must be 12 years old by program start)",
       "gradeCompletedMin": 6,
       "gradeCompletedMax": 8,
       "gradeSource": "grade",
@@ -34317,7 +34394,16 @@
       "financialAidAvailable": false,
       "websiteUrl": "https://www.gobroadreach.com/programs/teen-intro-veterinary-camp/",
       "dataVerifiedAt": "2026-09-17",
-      "flags": [],
+      "flags": [
+        {
+          "id": "broadreach-ms-age-gate",
+          "type": "policy",
+          "title": "Must be 12 years old by program start",
+          "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
+          "sourceCitation": "Broadreach middle school program pages",
+          "severity": "warning"
+        }
+      ],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Students are based out of a fixed facility for the program's duration rather than living aboard a boat, with instructors experienced in working with this younger age group. Days are built around the program's core activity (diving instruction or wildlife engagement), with excursions from that home base as part of the itinerary.",
@@ -47879,7 +47965,7 @@
       "institution": "Global Leadership Adventures",
       "programGroupId": "gla-costa-rica",
       "description": "Animal rescue and veterinary service program.",
-      "category": "marine-science",
+      "category": "biomedical",
       "secondaryTags": [],
       "trackDetail": "Animal Rescue & Veterinary Project - Departure 1",
       "gradeDisplay": "Ages 14-18",
@@ -47930,7 +48016,7 @@
       "institution": "Global Leadership Adventures",
       "programGroupId": "gla-costa-rica",
       "description": "Second departure.",
-      "category": "marine-science",
+      "category": "biomedical",
       "secondaryTags": [],
       "trackDetail": "Animal Rescue & Veterinary Project - Departure 2",
       "gradeDisplay": "Ages 14-18",
@@ -49425,7 +49511,7 @@
       "institution": "Global Leadership Adventures",
       "programGroupId": "gla-south-africa",
       "description": "Safari and wildlife conservation program - shorter option starting the same day as the 21-day version below.",
-      "category": "marine-science",
+      "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Safari & Conservation Expedition - 14-Day",
       "gradeDisplay": "Ages 14-18",
@@ -49476,7 +49562,7 @@
       "institution": "Global Leadership Adventures",
       "programGroupId": "gla-south-africa",
       "description": "Extended 21-day version, starting the same date as the 14-day option - families choose length upfront, not an add-on extension.",
-      "category": "marine-science",
+      "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "Safari & Conservation Expedition - 21-Day",
       "gradeDisplay": "Ages 14-18",
@@ -49735,7 +49821,7 @@
       "institution": "Global Leadership Adventures",
       "programGroupId": "gla-thailand",
       "description": "Elephant conservation and cultural education program.",
-      "category": "marine-science",
+      "category": "outdoor-wilderness",
       "secondaryTags": [
         "Cultural Exchange"
       ],
@@ -49788,7 +49874,7 @@
       "institution": "Global Leadership Adventures",
       "programGroupId": "gla-thailand",
       "description": "Second departure.",
-      "category": "marine-science",
+      "category": "outdoor-wilderness",
       "secondaryTags": [
         "Cultural Exchange"
       ],
@@ -50030,7 +50116,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/alaska-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-901",
@@ -50075,7 +50167,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/alaska-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-902",
@@ -50120,7 +50218,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/dolomite-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-903",
@@ -50165,7 +50269,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/dolomite-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-904",
@@ -50210,7 +50320,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/dolomite-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-905",
@@ -50255,7 +50371,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/alpine-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-906",
@@ -50300,7 +50422,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/alpine-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-907",
@@ -50345,7 +50473,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/alpine-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-908",
@@ -50390,7 +50524,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/iceland-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-909",
@@ -50435,7 +50575,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/iceland-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-910",
@@ -50480,7 +50626,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/iceland-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-911",
@@ -50525,7 +50677,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/maine-coast-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-912",
@@ -50570,7 +50728,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/maine-coast-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-913",
@@ -50615,7 +50779,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/maine-coast-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-914",
@@ -50660,7 +50830,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/mountains-sea-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-915",
@@ -50705,7 +50881,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/mountains-sea-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-916",
@@ -50750,7 +50932,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/mountains-sea-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-917",
@@ -50795,7 +50983,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/new-england-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-918",
@@ -50840,7 +51034,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/new-england-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-919",
@@ -50885,7 +51085,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/new-england-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-920",
@@ -50930,7 +51136,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/northwest-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-921",
@@ -50975,7 +51187,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/northwest-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-922",
@@ -51020,7 +51238,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/northwest-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-923",
@@ -51065,7 +51289,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/norway-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-924",
@@ -51110,7 +51340,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/norway-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-925",
@@ -51155,7 +51391,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/rocky-mountain-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-926",
@@ -51200,7 +51442,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/rocky-mountain-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-927",
@@ -51245,7 +51493,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/rocky-mountain-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-928",
@@ -51290,7 +51544,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/sierra-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-929",
@@ -51335,7 +51595,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/sierra-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-930",
@@ -51380,7 +51646,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/sierra-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-931",
@@ -51425,7 +51697,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/yellowstone-teton-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-932",
@@ -51470,7 +51748,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/yellowstone-teton-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-933",
@@ -51515,7 +51799,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/explorer/yellowstone-teton-explorer/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-934",
@@ -51560,7 +51850,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/alaska-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-935",
@@ -51605,7 +51901,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/alaska-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-936",
@@ -51650,7 +51952,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/sierra-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-937",
@@ -51695,7 +52003,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/sierra-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-938",
@@ -51740,7 +52054,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/sierra-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-939",
@@ -51785,7 +52105,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/iceland-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-940",
@@ -51830,7 +52156,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/iceland-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-941",
@@ -51875,7 +52207,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/iceland-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-942",
@@ -51920,7 +52258,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/appalachian-trail-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-943",
@@ -51965,7 +52309,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/appalachian-trail-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-944",
@@ -52010,7 +52360,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/appalachian-trail-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-945",
@@ -52055,7 +52411,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/northwest-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-946",
@@ -52100,7 +52462,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/northwest-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-947",
@@ -52145,7 +52513,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/northwest-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-948",
@@ -52190,7 +52564,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/eastern-alps-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-949",
@@ -52235,7 +52615,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/eastern-alps-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-950",
@@ -52281,15 +52667,21 @@
       "dataVerifiedAt": "2026-09-17",
       "flags": [
         {
-          "id": "overland-norway-pretrip-training",
+          "id": "overland-norway-expedition-mandatory-training",
           "type": "policy",
-          "title": "Mandatory 4-week pre-trip training program required",
-          "body": "Enrollment requires completing Overland's mandatory 4-week pre-trip training program before the summer departure - not just open enrollment by grade and date.",
-          "sourceCitation": "Overland Norway Expedition program page (overlandsummers.com)",
+          "title": "Requires a mandatory 4-week pre-trip training program",
+          "body": "Unlike most other Overland trips, this one requires students to complete a formal 4-week training program before departure - a genuine prerequisite, not just general fitness prep.",
+          "sourceCitation": "Overland Summers Norway Expedition page",
           "severity": "warning"
         }
       ],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-951",
@@ -52335,15 +52727,21 @@
       "dataVerifiedAt": "2026-09-17",
       "flags": [
         {
-          "id": "overland-norway-pretrip-training",
+          "id": "overland-norway-expedition-mandatory-training",
           "type": "policy",
-          "title": "Mandatory 4-week pre-trip training program required",
-          "body": "Enrollment requires completing Overland's mandatory 4-week pre-trip training program before the summer departure - not just open enrollment by grade and date.",
-          "sourceCitation": "Overland Norway Expedition program page (overlandsummers.com)",
+          "title": "Requires a mandatory 4-week pre-trip training program",
+          "body": "Unlike most other Overland trips, this one requires students to complete a formal 4-week training program before departure - a genuine prerequisite, not just general fitness prep.",
+          "sourceCitation": "Overland Summers Norway Expedition page",
           "severity": "warning"
         }
       ],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-952",
@@ -52389,15 +52787,21 @@
       "dataVerifiedAt": "2026-09-17",
       "flags": [
         {
-          "id": "overland-norway-pretrip-training",
+          "id": "overland-norway-expedition-mandatory-training",
           "type": "policy",
-          "title": "Mandatory 4-week pre-trip training program required",
-          "body": "Enrollment requires completing Overland's mandatory 4-week pre-trip training program before the summer departure - not just open enrollment by grade and date.",
-          "sourceCitation": "Overland Norway Expedition program page (overlandsummers.com)",
+          "title": "Requires a mandatory 4-week pre-trip training program",
+          "body": "Unlike most other Overland trips, this one requires students to complete a formal 4-week training program before departure - a genuine prerequisite, not just general fitness prep.",
+          "sourceCitation": "Overland Summers Norway Expedition page",
           "severity": "warning"
         }
       ],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-953",
@@ -52442,7 +52846,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/pyrenees-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-954",
@@ -52487,7 +52897,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/pyrenees-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-955",
@@ -52532,7 +52948,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/rocky-mountain-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-956",
@@ -52577,7 +52999,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/rocky-mountain-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-957",
@@ -52622,7 +53050,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/expedition/rocky-mountain-expedition/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-958",
@@ -52667,7 +53101,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/challenge/alpine-challenge/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-959",
@@ -52712,7 +53152,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/challenge/alpine-challenge/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-960",
@@ -52757,7 +53203,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/challenge/kilimanjaro-challenge/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-961",
@@ -52802,7 +53254,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/challenge/kilimanjaro-challenge/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-962",
@@ -52847,7 +53305,13 @@
       "websiteUrl": "https://overlandsummers.com/trips/challenge/teton-challenge/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     },
     {
       "id": "prog-963",
@@ -52892,7 +53356,801 @@
       "websiteUrl": "https://overlandsummers.com/trips/challenge/teton-challenge/",
       "dataVerifiedAt": "2026-09-17",
       "flags": [],
-      "participantGender": "coed"
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-964",
+      "slug": "overland-language-hiking-spain-departure-1",
+      "name": "Overland - Language & Hiking Spain",
+      "institution": "Overland Summers",
+      "programGroupId": "overland-language-hiking-spain",
+      "description": "Combines Spanish language instruction (~2 hours/day speaking Spanish outside class) with full/half-day hikes in the Pyrenees. Groups arrive/depart via Barcelona.",
+      "category": "cultural-exchange",
+      "secondaryTags": [
+        "Outdoor/Wilderness"
+      ],
+      "trackDetail": "Departure 1",
+      "gradeDisplay": "Grades 8-11",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 10,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "Jun 27 – Jul 16, 2027",
+      "dateStart": "2027-06-27",
+      "dateEnd": "2027-07-16",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Spain",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$8,995",
+      "priceMin": 8995,
+      "priceMax": 8995,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/language-hiking-spain/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [
+        {
+          "id": "overland-language-commitment-requirement",
+          "type": "policy",
+          "title": "Requires genuine dedication to language learning",
+          "body": "The org states these trips 'require dedication to learning a language' - students are expected to speak the target language roughly 2 hours/day outside of formal class time, not just attend casual language exposure activities.",
+          "sourceCitation": "Overland Summers Language & Hiking trip pages",
+          "severity": "info"
+        }
+      ],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-965",
+      "slug": "overland-language-hiking-spain-departure-2",
+      "name": "Overland - Language & Hiking Spain",
+      "institution": "Overland Summers",
+      "programGroupId": "overland-language-hiking-spain",
+      "description": "Second departure.",
+      "category": "cultural-exchange",
+      "secondaryTags": [
+        "Outdoor/Wilderness"
+      ],
+      "trackDetail": "Departure 2",
+      "gradeDisplay": "Grades 8-11",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 10,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "Jul 18 – Aug 6, 2027",
+      "dateStart": "2027-07-18",
+      "dateEnd": "2027-08-06",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Spain",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$8,995",
+      "priceMin": 8995,
+      "priceMax": 8995,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/language-hiking-spain/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [
+        {
+          "id": "overland-language-commitment-requirement",
+          "type": "policy",
+          "title": "Requires genuine dedication to language learning",
+          "body": "The org states these trips 'require dedication to learning a language' - students are expected to speak the target language roughly 2 hours/day outside of formal class time, not just attend casual language exposure activities.",
+          "sourceCitation": "Overland Summers Language & Hiking trip pages",
+          "severity": "info"
+        }
+      ],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-966",
+      "slug": "overland-language-hiking-france-departure-1",
+      "name": "Overland - Language & Hiking France",
+      "institution": "Overland Summers",
+      "programGroupId": "overland-language-hiking-france",
+      "description": "French language immersion combined with hiking in the Alps.",
+      "category": "cultural-exchange",
+      "secondaryTags": [
+        "Outdoor/Wilderness"
+      ],
+      "trackDetail": "Departure 1",
+      "gradeDisplay": "Grades 8-11",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 10,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "Jun 27 – Jul 16, 2027",
+      "dateStart": "2027-06-27",
+      "dateEnd": "2027-07-16",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "France",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$8,995",
+      "priceMin": 8995,
+      "priceMax": 8995,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/language-hiking-france/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [
+        {
+          "id": "overland-language-commitment-requirement",
+          "type": "policy",
+          "title": "Requires genuine dedication to language learning",
+          "body": "The org states these trips 'require dedication to learning a language' - students are expected to speak the target language roughly 2 hours/day outside of formal class time, not just attend casual language exposure activities.",
+          "sourceCitation": "Overland Summers Language & Hiking trip pages",
+          "severity": "info"
+        }
+      ],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-967",
+      "slug": "overland-language-hiking-france-departure-2",
+      "name": "Overland - Language & Hiking France",
+      "institution": "Overland Summers",
+      "programGroupId": "overland-language-hiking-france",
+      "description": "Second departure.",
+      "category": "cultural-exchange",
+      "secondaryTags": [
+        "Outdoor/Wilderness"
+      ],
+      "trackDetail": "Departure 2",
+      "gradeDisplay": "Grades 8-11",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 10,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "Jul 18 – Aug 6, 2027",
+      "dateStart": "2027-07-18",
+      "dateEnd": "2027-08-06",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "France",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$8,995",
+      "priceMin": 8995,
+      "priceMax": 8995,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/language-hiking-france/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [
+        {
+          "id": "overland-language-commitment-requirement",
+          "type": "policy",
+          "title": "Requires genuine dedication to language learning",
+          "body": "The org states these trips 'require dedication to learning a language' - students are expected to speak the target language roughly 2 hours/day outside of formal class time, not just attend casual language exposure activities.",
+          "sourceCitation": "Overland Summers Language & Hiking trip pages",
+          "severity": "info"
+        }
+      ],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-968",
+      "slug": "overland-environmental-stewardship-montana-departure-1",
+      "name": "Overland - Environmental Stewardship Montana",
+      "institution": "Overland Summers",
+      "programGroupId": "overland-environmental-stewardship-montana",
+      "description": "Hands-on stewardship/trail work projects plus hiking; groups arrive/depart via Bozeman.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [],
+      "trackDetail": "Departure 1",
+      "gradeDisplay": "Grades 8-11",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 10,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jun 27 – Jul 9, 2027",
+      "dateStart": "2027-06-27",
+      "dateEnd": "2027-07-09",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Montana",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$5,495",
+      "priceMin": 5495,
+      "priceMax": 5495,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/environmental-stewardship-montana/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [
+        {
+          "id": "overland-stewardship-attitude-requirement",
+          "type": "policy",
+          "title": "Requires a positive attitude toward physical work",
+          "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
+          "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
+          "severity": "info"
+        }
+      ],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-969",
+      "slug": "overland-environmental-stewardship-montana-departure-2",
+      "name": "Overland - Environmental Stewardship Montana",
+      "institution": "Overland Summers",
+      "programGroupId": "overland-environmental-stewardship-montana",
+      "description": "Second departure.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [],
+      "trackDetail": "Departure 2",
+      "gradeDisplay": "Grades 8-11",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 10,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jul 11–23, 2027",
+      "dateStart": "2027-07-11",
+      "dateEnd": "2027-07-23",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Montana",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$5,495",
+      "priceMin": 5495,
+      "priceMax": 5495,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/environmental-stewardship-montana/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [
+        {
+          "id": "overland-stewardship-attitude-requirement",
+          "type": "policy",
+          "title": "Requires a positive attitude toward physical work",
+          "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
+          "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
+          "severity": "info"
+        }
+      ],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-970",
+      "slug": "overland-environmental-stewardship-montana-departure-3",
+      "name": "Overland - Environmental Stewardship Montana",
+      "institution": "Overland Summers",
+      "programGroupId": "overland-environmental-stewardship-montana",
+      "description": "Third departure.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [],
+      "trackDetail": "Departure 3",
+      "gradeDisplay": "Grades 8-11",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 10,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jul 25 – Aug 6, 2027",
+      "dateStart": "2027-07-25",
+      "dateEnd": "2027-08-06",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Montana",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$5,495",
+      "priceMin": 5495,
+      "priceMax": 5495,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/environmental-stewardship-montana/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [
+        {
+          "id": "overland-stewardship-attitude-requirement",
+          "type": "policy",
+          "title": "Requires a positive attitude toward physical work",
+          "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
+          "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
+          "severity": "info"
+        }
+      ],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-971",
+      "slug": "overland-environmental-stewardship-alaska-departure-1",
+      "name": "Overland - Environmental Stewardship Alaska",
+      "institution": "Overland Summers",
+      "programGroupId": "overland-environmental-stewardship-alaska",
+      "description": "Trail building/restoration work plus hiking and sea kayaking; groups arrive/depart via Anchorage.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [],
+      "trackDetail": "Departure 1",
+      "gradeDisplay": "Grades 8-11",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 10,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jun 27 – Jul 9, 2027",
+      "dateStart": "2027-06-27",
+      "dateEnd": "2027-07-09",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Alaska",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$5,895",
+      "priceMin": 5895,
+      "priceMax": 5895,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/environmental-stewardship-alaska/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [
+        {
+          "id": "overland-stewardship-attitude-requirement",
+          "type": "policy",
+          "title": "Requires a positive attitude toward physical work",
+          "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
+          "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
+          "severity": "info"
+        }
+      ],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-972",
+      "slug": "overland-environmental-stewardship-alaska-departure-2",
+      "name": "Overland - Environmental Stewardship Alaska",
+      "institution": "Overland Summers",
+      "programGroupId": "overland-environmental-stewardship-alaska",
+      "description": "Second departure.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [],
+      "trackDetail": "Departure 2",
+      "gradeDisplay": "Grades 8-11",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 10,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jul 11–23, 2027",
+      "dateStart": "2027-07-11",
+      "dateEnd": "2027-07-23",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Alaska",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$5,895",
+      "priceMin": 5895,
+      "priceMax": 5895,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/environmental-stewardship-alaska/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [
+        {
+          "id": "overland-stewardship-attitude-requirement",
+          "type": "policy",
+          "title": "Requires a positive attitude toward physical work",
+          "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
+          "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
+          "severity": "info"
+        }
+      ],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-973",
+      "slug": "overland-environmental-stewardship-alaska-departure-3",
+      "name": "Overland - Environmental Stewardship Alaska",
+      "institution": "Overland Summers",
+      "programGroupId": "overland-environmental-stewardship-alaska",
+      "description": "Third departure.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [],
+      "trackDetail": "Departure 3",
+      "gradeDisplay": "Grades 8-11",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 10,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jul 25 – Aug 6, 2027",
+      "dateStart": "2027-07-25",
+      "dateEnd": "2027-08-06",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Alaska",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$5,895",
+      "priceMin": 5895,
+      "priceMax": 5895,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/environmental-stewardship-alaska/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [
+        {
+          "id": "overland-stewardship-attitude-requirement",
+          "type": "policy",
+          "title": "Requires a positive attitude toward physical work",
+          "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
+          "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
+          "severity": "info"
+        }
+      ],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-974",
+      "slug": "overland-environmental-stewardship-new-england-departure-1",
+      "name": "Overland - Environmental Stewardship New England",
+      "institution": "Overland Summers",
+      "programGroupId": "overland-environmental-stewardship-new-england",
+      "description": "Trail building, farming, and hiking to the summit of Mount Greylock (MA's highest peak); groups arrive/depart via Albany.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [],
+      "trackDetail": "Departure 1",
+      "gradeDisplay": "Grades 8-11",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 10,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jun 27 – Jul 9, 2027",
+      "dateStart": "2027-06-27",
+      "dateEnd": "2027-07-09",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "New England",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,995",
+      "priceMin": 4995,
+      "priceMax": 4995,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/environmental-stewardship-new-england/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [
+        {
+          "id": "overland-stewardship-attitude-requirement",
+          "type": "policy",
+          "title": "Requires a positive attitude toward physical work",
+          "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
+          "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
+          "severity": "info"
+        }
+      ],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-975",
+      "slug": "overland-environmental-stewardship-new-england-departure-2",
+      "name": "Overland - Environmental Stewardship New England",
+      "institution": "Overland Summers",
+      "programGroupId": "overland-environmental-stewardship-new-england",
+      "description": "Second departure.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [],
+      "trackDetail": "Departure 2",
+      "gradeDisplay": "Grades 8-11",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 10,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jul 11–23, 2027",
+      "dateStart": "2027-07-11",
+      "dateEnd": "2027-07-23",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "New England",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,995",
+      "priceMin": 4995,
+      "priceMax": 4995,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/environmental-stewardship-new-england/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [
+        {
+          "id": "overland-stewardship-attitude-requirement",
+          "type": "policy",
+          "title": "Requires a positive attitude toward physical work",
+          "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
+          "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
+          "severity": "info"
+        }
+      ],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
+    },
+    {
+      "id": "prog-976",
+      "slug": "overland-environmental-stewardship-new-england-departure-3",
+      "name": "Overland - Environmental Stewardship New England",
+      "institution": "Overland Summers",
+      "programGroupId": "overland-environmental-stewardship-new-england",
+      "description": "Third departure.",
+      "category": "outdoor-wilderness",
+      "secondaryTags": [],
+      "trackDetail": "Departure 3",
+      "gradeDisplay": "Grades 8-11",
+      "gradeCompletedMin": 7,
+      "gradeCompletedMax": 10,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "Jul 25 – Aug 6, 2027",
+      "dateStart": "2027-07-25",
+      "dateEnd": "2027-08-06",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "New England",
+      "isInternational": false,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$4,995",
+      "priceMin": 4995,
+      "priceMax": 4995,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": true,
+      "websiteUrl": "https://overlandsummers.com/trips/stewardship-language/environmental-stewardship-new-england/",
+      "dataVerifiedAt": "2026-09-17",
+      "flags": [
+        {
+          "id": "overland-stewardship-attitude-requirement",
+          "type": "policy",
+          "title": "Requires a positive attitude toward physical work",
+          "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
+          "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
+          "severity": "info"
+        }
+      ],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Overland is explicitly screen-free as a stated program value, and is accredited by the American Camp Association. Groups are small (typically capped at 10-12 students) and are usually a mix of two adjacent grades. Meals are prepared as group projects rather than served to students. Students fly into a specific gateway city/airport per trip, where Overland leaders provide supervised arrival and departure - the exact city varies by trip (e.g., Anchorage for Alaska trips, Zurich for Alpine Challenge, Bozeman for Montana trips). Camping style varies by trip - primarily frontcountry (with facilities) for some, extended backcountry/backpacking for others - detailed on each trip's own page. Overland has run since 1984.",
+        "sourceType": "official_policy",
+        "sourceCitation": "Overland Summers trip pages, FAQ, and general marketing pages (overlandsummers.com)",
+        "verifiedAt": "2026-09-15"
+      }
     }
   ]
 }

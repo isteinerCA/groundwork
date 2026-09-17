@@ -123,12 +123,49 @@
     "match": { "programGroupId": "overland-norway-expedition" },
     "flags": [
       {
-        "id": "overland-norway-pretrip-training",
+        "id": "overland-norway-expedition-mandatory-training",
         "type": "policy",
-        "title": "Mandatory 4-week pre-trip training program required",
-        "body": "Enrollment requires completing Overland's mandatory 4-week pre-trip training program before the summer departure - not just open enrollment by grade and date.",
-        "sourceCitation": "Overland Norway Expedition program page (overlandsummers.com)",
+        "title": "Requires a mandatory 4-week pre-trip training program",
+        "body": "Unlike most other Overland trips, this one requires students to complete a formal 4-week training program before departure - a genuine prerequisite, not just general fitness prep.",
+        "sourceCitation": "Overland Summers Norway Expedition page",
         "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "overland-environmental-stewardship-montana",
+        "overland-environmental-stewardship-alaska",
+        "overland-environmental-stewardship-new-england"
+      ]
+    },
+    "flags": [
+      {
+        "id": "overland-stewardship-attitude-requirement",
+        "type": "policy",
+        "title": "Requires a positive attitude toward physical work",
+        "body": "The org's own materials state that stewardship-project trips 'require a positive attitude and a willingness to work' - these are genuine labor-inclusive trips (trail building, light construction, farming), not purely recreational hiking trips.",
+        "sourceCitation": "Overland Summers Environmental Stewardship trip pages",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": [
+        "overland-language-hiking-spain",
+        "overland-language-hiking-france"
+      ]
+    },
+    "flags": [
+      {
+        "id": "overland-language-commitment-requirement",
+        "type": "policy",
+        "title": "Requires genuine dedication to language learning",
+        "body": "The org states these trips 'require dedication to learning a language' - students are expected to speak the target language roughly 2 hours/day outside of formal class time, not just attend casual language exposure activities.",
+        "sourceCitation": "Overland Summers Language & Hiking trip pages",
+        "severity": "info"
       }
     ]
   },
@@ -553,19 +590,13 @@
     ]
   },
   {
-    "match": {
-      "programGroupId": [
-        "broadreach-ms-7day-scuba-sailing",
-        "broadreach-ms-12day-scuba-sailing-discoveries",
-        "broadreach-ms-intro-marine-biology"
-      ]
-    },
+    "match": { "nameIncludes": "Broadreach MS" },
     "flags": [
       {
         "id": "broadreach-ms-age-gate",
         "type": "policy",
-        "title": "Hard age requirement (12 by program start), not a grade-based cutoff",
-        "body": "This program requires students to be 12 years old by the program's start date, regardless of grade - a 6th grader who hasn't yet turned 12 would not be eligible even though 6th grade is otherwise within the org's middle-school band.",
+        "title": "Must be 12 years old by program start",
+        "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
         "sourceCitation": "Broadreach middle school program pages",
         "severity": "warning"
       }
