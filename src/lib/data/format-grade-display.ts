@@ -1,3 +1,4 @@
+import { ageRangeToGrades } from "@/lib/data/normalize-grade";
 import type { Program } from "@/lib/types/program";
 
 /** Card / table label for the eligibility row. */
@@ -20,6 +21,11 @@ function formatCompletedGradesForFilter(min: number, max: number): string {
   return `grades ${min}–${max}`;
 }
 
+function extractMinimumAgeByStart(gradeDisplay: string): number | null {
+  const match = gradeDisplay.match(/\bmust be\s+(\d+)\s+by\s+(?:program\s+)?start\b/i);
+  return match ? Number(match[1]) : null;
+}
+
 /**
  * Parent-facing eligibility line for program cards and compare view.
  * Age-based rows: site ages first, then why the program matched grade filters.
@@ -40,9 +46,19 @@ export function formatGradeEligibilityDisplay(
       return `${ageRange} per program site (matches completed ${gradeMatch} in search filters)`;
     }
 
-    return (
-      program.gradeDisplay.split(/[,(]/)[0]?.trim() ?? program.gradeDisplay
+    const sitePhrase =
+      program.gradeDisplay.split(/[,(]/)[0]?.trim() ?? program.gradeDisplay;
+    const minimumAge = extractMinimumAgeByStart(program.gradeDisplay);
+    if (minimumAge != null) {
+      const [floorGrade] = ageRangeToGrades(minimumAge, minimumAge);
+      return `${sitePhrase} (matches completed grade ${floorGrade} in search filters)`;
+    }
+
+    const gradeMatch = formatCompletedGradesForFilter(
+      program.gradeCompletedMin,
+      program.gradeCompletedMax,
     );
+    return `${sitePhrase} (matches completed ${gradeMatch} in search filters)`;
   }
 
   return program.gradeDisplay;

@@ -120,6 +120,19 @@
     ]
   },
   {
+    "match": { "programGroupId": "overland-norway-expedition" },
+    "flags": [
+      {
+        "id": "overland-norway-pretrip-training",
+        "type": "policy",
+        "title": "Mandatory 4-week pre-trip training program required",
+        "body": "Enrollment requires completing Overland's mandatory 4-week pre-trip training program before the summer departure - not just open enrollment by grade and date.",
+        "sourceCitation": "Overland Norway Expedition program page (overlandsummers.com)",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
     "match": { "nameIncludes": "Wake Forest Summer Immersion" },
     "flags": [
       {

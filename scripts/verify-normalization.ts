@@ -540,17 +540,28 @@ if (broadreachMsGrades.gradeSource !== "age") {
   console.error("FAIL: Broadreach MS age gate should use age gradeSource");
   failed++;
 }
+if (broadreachMsGrades.gradeCompletedMin !== 6 || broadreachMsGrades.gradeCompletedMax !== 6) {
+  console.error("FAIL: Broadreach MS age floor should map to completed grade 6 only");
+  failed++;
+}
 if (gradeEligibilityLabel(broadreachMsGrades) !== "Ages") {
   console.error("FAIL: Broadreach MS age gate should use Ages label");
   failed++;
 }
 const broadreachMsDisplay = formatGradeEligibilityDisplay(broadreachMsGrades);
-if (broadreachMsDisplay !== "Must be 12 by program start") {
-  console.error(`FAIL: Broadreach MS display should be clean, got "${broadreachMsDisplay}"`);
+if (
+  broadreachMsDisplay !==
+  "Must be 12 by program start (matches completed grade 6 in search filters)"
+) {
+  console.error(`FAIL: Broadreach MS display format, got "${broadreachMsDisplay}"`);
   failed++;
 }
-if (!gradeMatchesFilter(broadreachMsGrades, [7])) {
-  console.error("FAIL: Broadreach MS (grades 6-8) should match completed grade 7");
+if (!gradeMatchesFilter(broadreachMsGrades, [6])) {
+  console.error("FAIL: Broadreach MS age floor should match completed grade 6");
+  failed++;
+}
+if (gradeMatchesFilter(broadreachMsGrades, [7])) {
+  console.error("FAIL: Broadreach MS age floor should not match completed grade 7 via grade filter alone");
   failed++;
 }
 

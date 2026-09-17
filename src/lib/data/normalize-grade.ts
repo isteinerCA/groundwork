@@ -17,7 +17,7 @@ const AGE_TO_GRADE: [number, number][] = [
   [19, 12],
 ];
 
-function ageRangeToGrades(minAge: number, maxAge: number): [number, number] {
+export function ageRangeToGrades(minAge: number, maxAge: number): [number, number] {
   const gradesInRange = AGE_TO_GRADE.filter(
     ([age]) => age >= minAge && age <= maxAge,
   ).map(([, grade]) => grade);
