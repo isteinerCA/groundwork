@@ -1081,21 +1081,6 @@
   },
   {
     "match": {
-      "programGroupId": "ciee-belgium-brussels-diplomacy-government"
-    },
-    "flags": [
-      {
-        "id": "ciee-belgium-correction",
-        "type": "policy",
-        "title": "Correction: Belgium does have a CIEE High School Summer Abroad program",
-        "body": "An earlier pass concluded Belgium had no standalone summer program, based on blog posts describing Brussels only as an excursion destination. That was incorrect - Diplomacy & Government (Brussels) is a genuine, newly-launched 2027 program. The excursion-themed blog posts were describing trips FROM the related Amsterdam/Tallinn programs, which coincidentally visit Brussels as part of their own itineraries.",
-        "sourceCitation": "CIEE Diplomacy & Government (Brussels) program page",
-        "severity": "info"
-      }
-    ]
-  },
-  {
-    "match": {
       "programGroupId": "ciee-mexico-merida-marine-ecology-sustainability"
     },
     "flags": [
@@ -2170,9 +2155,9 @@
         "id": "italy-dive-med-internal-flight-cost-unknown",
         "type": "safety",
         "title": "Required internal flight cost is not disclosed",
-        "body": "Sardinia-to-Rome flight billed separately, no cost given.",
-        "severity": "warning",
-        "sourceCitation": "User-provided screenshots, rlt-italy-dive-the-med program page"
+        "body": "This program requires an additional internal flight from Sardinia to Rome that is not included in the $7,250 tuition. The Road Less Traveled books this flight on the group's behalf and adds the charge to the family's final invoice, but no estimated cost is given anywhere in the provided material. Families should ask for this figure before enrolling so they can budget accurately.",
+        "sourceCitation": "User-provided screenshot of the Italy: Dive the Med program page, Flights and Pricing & Discounts sections",
+        "severity": "warning"
       }
     ]
   },
