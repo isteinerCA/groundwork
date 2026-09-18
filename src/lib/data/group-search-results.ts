@@ -4,7 +4,6 @@ import {
   formatDatesDisplay,
   isPendingDatesDisplay,
 } from "@/lib/data/format-season-display";
-import { inclusiveDaySpanFromIso } from "@/lib/data/parse-dates-display";
 import type { Program } from "@/lib/types/program";
 
 export type SearchResultItem =
@@ -152,11 +151,9 @@ function formatDurationOptionsSummary(programs: Program[]): string {
 }
 
 export function formatGroupDateRange(programs: Program[]): string {
-  if (programs.some((p) => isPendingDatesDisplay(p))) {
-    return formatDatesDisplay(programs[0]);
-  }
-
-  const dated = programs.filter((p) => p.dateStart && p.dateEnd);
+  const dated = programs.filter(
+    (program) => program.dateStart && program.dateEnd && !isPendingDatesDisplay(program),
+  );
   if (dated.length === 0) return formatDatesDisplay(programs[0]);
 
   const starts = dated.map((p) => p.dateStart!).sort();
@@ -171,22 +168,12 @@ export function formatGroupDateRange(programs: Program[]): string {
   );
   if (singleSpan) return formatDatesDisplay(dated[0]);
 
-  const envelopeDays = inclusiveDaySpanFromIso(rangeStart, rangeEnd);
-  const longestSessionDays = Math.max(...dated.map((p) => p.lengthMinDays ?? 0));
   const durationSummary = formatDurationOptionsSummary(dated);
-  const showSessionSummary =
-    dated.length >= 2 &&
-    (envelopeDays > longestSessionDays * 1.5 || dated.length >= 3);
-
-  if (showSessionSummary) {
-    const sessionLabel = dated.length === 1 ? "session" : "sessions";
-    const span = formatIsoSpan(rangeStart, rangeEnd);
-    return durationSummary
-      ? `${dated.length} ${sessionLabel} between ${span} (${durationSummary})`
-      : `${dated.length} ${sessionLabel} between ${span}`;
-  }
-
-  return formatIsoSpan(rangeStart, rangeEnd);
+  const sessionLabel = dated.length === 1 ? "session" : "sessions";
+  const span = formatIsoSpan(rangeStart, rangeEnd);
+  return durationSummary
+    ? `${dated.length} ${sessionLabel} between ${span} (${durationSummary})`
+    : `${dated.length} ${sessionLabel} between ${span}`;
 }
 
 export function uniqueFormatDisplay(programs: Program[]): string {

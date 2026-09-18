@@ -91,13 +91,18 @@ ${regions}
 - includeLocations: string[] — include programs in specific US states (OR logic). Use canonical lowercase state names (e.g. "new york", "massachusetts", "california"). Use for multi-state requests: "NY or MA", "New York or Massachusetts only", "California or Texas". Clear with empty array [] when removed. NEVER put multi-state lists in dataQuery.
 - includeMonths: number[] — include programs whose date range overlaps these calendar months (OR logic). Use month numbers: ${months}. Examples: "in June" → [6], "June or July" → [6, 7], "programs only in June" → [6]. Matches programs that run during the month (not necessarily start in it). Clear with empty array [] when removed. NEVER put month names in dataQuery. Do NOT use for specific day ranges like "July 15-31" — use dateWindowStart/dateWindowEnd instead.
 - excludeMonths: number[] — exclude programs whose date range overlaps these calendar months. Examples: "not in August" → [8], "exclude July", "outside June", "avoid August programs" → [8]. Clear with empty array [] when removed. NEVER put negated months in includeMonths or dataQuery.
-- dateWindowStart / dateWindowEnd: ISO date strings (\`YYYY-MM-DD\`) or null — when both are set, include only programs whose **entire** date range fits inside the window (contained mode). Examples: "July 15-31", "from Jul 15 through Jul 31", "fit between June 20 and July 10" → dateWindowStart/dateWindowEnd with includeMonths cleared. A one-week program starting July 20 qualifies; a program running June–August does not. Null both to clear.
+- dateWindowStart / dateWindowEnd: ISO date strings (\`YYYY-MM-DD\`) or null.
+  - Both set: include only programs whose **entire** date range fits inside the window. Examples: "July 15-31", "from Jul 15 through Jul 31", "fit between June 20 and July 10". A one-week program starting July 20 qualifies; a program running June–August does not.
+  - dateWindowEnd only (dateWindowStart: null): program must END on or before that date. "ends before July 15" / "finish before July 15" → exclusive, so dateWindowEnd is the previous day (2027-07-14). "ends by July 15" / "no later than July 15" → inclusive (2027-07-15). Always set dateWindowStart to null so a previous start bound does not linger.
+  - dateWindowStart only (dateWindowEnd: null): program must START on or after that date. "starts after June 20" → exclusive next day (2027-06-21). "starts on or after June 20" → inclusive. Always set dateWindowEnd to null.
+  - Null both to clear. Never invent the missing side of a one-sided request, and never use includeMonths for these.
 
 ## Month rules (critical)
 - "in June", "June only", "during July" → includeMonths (NOT excludeMonths)
 - "not in August", "exclude August", "outside July", "no June programs" → excludeMonths (NOT includeMonths)
 - Do NOT set includeMonths when the user negates a month
 - Specific day ranges ("July 15-31", "between Jun 20 and Jul 10") → dateWindowStart + dateWindowEnd; clear includeMonths/excludeMonths. Do NOT downgrade to whole-month includeMonths.
+- "ends before July 15", "done by July 15", "starts after June 20" → one-sided dateWindowStart or dateWindowEnd (see above). Do NOT invent a pairing date and do NOT treat these as program-name searches.
 
 ## Expanding vs replacing filters (critical)
 - **Expand / add** keeps existing compatible filters and adds new ones (OR logic). Examples: "expand to CA and WA", "expand to marine science", "expand to online programs", "also include July".
@@ -169,6 +174,7 @@ Use includeLocations for explicit multi-state OR requests (NY or MA, California 
 Use includeMonths for positive month requests ("in June", "July only", "June and July") — never put month names in dataQuery.
 
 Use dateWindowStart/dateWindowEnd for specific calendar windows ("July 15-31", "fit these dates") — programs must fit **entirely** within the window. In assistantMessage, say you found programs that fit within those dates (shorter programs count too).
+Use a one-sided bound for "ends before/by DATE" (dateWindowEnd only) or "starts after/on DATE" (dateWindowStart only). In assistantMessage, say you filtered to programs that end by or start after that date — do not claim a full date window if only one side is set.
 
 Use excludeMonths for negated month requests ("not in August", "exclude July") — never put negated months in includeMonths or dataQuery. We match programs whose overall date range overlaps the month; specific session start dates may vary — mention that in assistantMessage when relevant.
 

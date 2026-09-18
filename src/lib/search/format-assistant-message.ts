@@ -28,7 +28,7 @@ function groupedFilterCount(programs: Program[], filters: SearchFilters): number
 }
 
 function dateWindowSessionNote(filters: SearchFilters, programs: Program[]): string | null {
-  if (!filters.dateWindowStart || !filters.dateWindowEnd) return null;
+  if (!filters.dateWindowStart && !filters.dateWindowEnd) return null;
 
   const matching = filterPrograms(programs, filters);
   const approximateCount = matching.filter(
@@ -41,7 +41,7 @@ function dateWindowSessionNote(filters: SearchFilters, programs: Program[]): str
 }
 
 function monthSessionNote(filters: SearchFilters, programs: Program[]): string | null {
-  if (filters.dateWindowStart && filters.dateWindowEnd) {
+  if (filters.dateWindowStart || filters.dateWindowEnd) {
     return dateWindowSessionNote(filters, programs);
   }
 
@@ -116,6 +116,14 @@ function describeFilterPatch(patch: Partial<SearchFilters>): string {
   if (patch.dateWindowStart && patch.dateWindowEnd) {
     parts.push(
       `that fit entirely within ${formatDateWindowFilterLabel(patch.dateWindowStart, patch.dateWindowEnd).replace(/^Fits /, "")}`,
+    );
+  } else if (patch.dateWindowEnd) {
+    parts.push(
+      `that ${formatDateWindowFilterLabel(null, patch.dateWindowEnd).replace(/^Ends /, "end ")}`,
+    );
+  } else if (patch.dateWindowStart) {
+    parts.push(
+      `that ${formatDateWindowFilterLabel(patch.dateWindowStart, null).replace(/^Starts /, "start ")}`,
     );
   }
 

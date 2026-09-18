@@ -197,7 +197,7 @@ export function getActiveFilterItems(filters: SearchFilters): ActiveFilterItem[]
     });
   }
 
-  if (filters.dateWindowStart && filters.dateWindowEnd) {
+  if (filters.dateWindowStart || filters.dateWindowEnd) {
     items.push({
       key: "date-window",
       label: formatDateWindowFilterLabel(filters.dateWindowStart, filters.dateWindowEnd),

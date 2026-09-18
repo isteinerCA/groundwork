@@ -5,9 +5,16 @@
 import { normalizeAdmissionType } from "../src/lib/data/normalize-admission";
 import { normalizeFormat } from "../src/lib/data/normalize-format";
 import { normalizeGrade, gradeMatchesFilter } from "../src/lib/data/normalize-grade";
-import { programContainedInDateWindow } from "../src/lib/data/matches-date-window-filter";
+import {
+  formatDateWindowFilterLabel,
+  programContainedInDateWindow,
+  programMatchesDateWindowFilter,
+} from "../src/lib/data/matches-date-window-filter";
 import { matchesDataQuery } from "../src/lib/data/matches-data-query";
-import { parseDateWindowQuery } from "../src/lib/search/parse-date-window-query";
+import {
+  isDateOnlyConstraintQuery,
+  parseDateWindowQuery,
+} from "../src/lib/search/parse-date-window-query";
 import {
   promoteDateWindowFromMessage,
   sanitizeFilterPatch,
@@ -844,6 +851,65 @@ if (programContainedInDateWindow(seasonLong, "2027-07-15", "2027-07-31")) {
   failed++;
 }
 
+const endsBeforeJuly15 = parseDateWindowQuery("ends before july 15");
+if (
+  !endsBeforeJuly15 ||
+  endsBeforeJuly15.dateWindowStart !== null ||
+  endsBeforeJuly15.dateWindowEnd !== "2027-07-14"
+) {
+  console.error(
+    `FAIL: "ends before july 15" should be an end-only bound of 2027-07-14, got ${JSON.stringify(endsBeforeJuly15)}`,
+  );
+  failed++;
+}
+
+const endsByJuly15 = parseDateWindowQuery("ends by July 15");
+if (!endsByJuly15 || endsByJuly15.dateWindowEnd !== "2027-07-15" || endsByJuly15.dateWindowStart !== null) {
+  console.error(`FAIL: "ends by July 15" should be inclusive 2027-07-15, got ${JSON.stringify(endsByJuly15)}`);
+  failed++;
+}
+
+const startsAfterJune20 = parseDateWindowQuery("starts after June 20");
+if (
+  !startsAfterJune20 ||
+  startsAfterJune20.dateWindowStart !== "2027-06-21" ||
+  startsAfterJune20.dateWindowEnd !== null
+) {
+  console.error(
+    `FAIL: "starts after June 20" should be a start-only bound of 2027-06-21, got ${JSON.stringify(startsAfterJune20)}`,
+  );
+  failed++;
+}
+
+const endsBeforeJuly10 = stubProgram({
+  name: "Early Finish",
+  locationDisplay: "Paris, France",
+  dateStart: "2027-06-20",
+  dateEnd: "2027-07-10",
+});
+if (!programMatchesDateWindowFilter(endsBeforeJuly10, null, "2027-07-14")) {
+  console.error("FAIL: program ending July 10 should match ends-by July 14");
+  failed++;
+}
+if (programMatchesDateWindowFilter(weekInside, null, "2027-07-14")) {
+  console.error("FAIL: program ending July 26 should not match ends-by July 14");
+  failed++;
+}
+if (formatDateWindowFilterLabel(null, "2027-07-14") !== "Ends by Jul 14, 2027") {
+  console.error(
+    `FAIL: one-sided end chip label, got "${formatDateWindowFilterLabel(null, "2027-07-14")}"`,
+  );
+  failed++;
+}
+if (!isDateOnlyConstraintQuery("ends before july 15")) {
+  console.error("FAIL: ends before july 15 should be a date-only constraint");
+  failed++;
+}
+if (isDateOnlyConstraintQuery("france ends before july 15")) {
+  console.error("FAIL: mixed location + date query should not be date-only");
+  failed++;
+}
+
 const laDepartures = Array.from({ length: 5 }, (_, index) =>
   stubProgram({
     name: "Lasting Adventures Yosemite",
@@ -860,6 +926,67 @@ const laDepartures = Array.from({ length: 5 }, (_, index) =>
 const laGroupDates = formatGroupDateRange(laDepartures);
 if (!laGroupDates.includes("5 sessions") || !laGroupDates.includes("6 days options")) {
   console.error(`FAIL: grouped card should summarize multi-session dates, got "${laGroupDates}"`);
+  failed++;
+}
+
+const overlappingSessions = [
+  stubProgram({
+    name: "TFT - France: French Language Immersion",
+    locationDisplay: "France",
+    dateStart: "2027-07-10",
+    dateEnd: "2027-07-24",
+    datesDisplay: "Jul 10–24, 2027",
+    lengthDisplay: "15 days",
+    lengthMinDays: 15,
+    seasonYear: 2027,
+    reviewStatus: "verified",
+  }),
+  stubProgram({
+    name: "TFT - France: French Language Immersion",
+    locationDisplay: "France",
+    dateStart: "2027-07-10",
+    dateEnd: "2027-07-30",
+    datesDisplay: "Jul 10–30, 2027",
+    lengthDisplay: "21 days",
+    lengthMinDays: 21,
+    seasonYear: 2027,
+    reviewStatus: "verified",
+  }),
+];
+const overlappingGroupDates = formatGroupDateRange(overlappingSessions);
+if (
+  !overlappingGroupDates.includes("2 sessions between") ||
+  !overlappingGroupDates.includes("Jul 10") ||
+  !overlappingGroupDates.includes("Jul 30")
+) {
+  console.error(
+    `FAIL: overlapping sessions should use "2 sessions between" date format, got "${overlappingGroupDates}"`,
+  );
+  failed++;
+}
+
+const mixedPendingGroupDates = formatGroupDateRange([
+  ...overlappingSessions,
+  stubProgram({
+    name: "TFT - France: French Language Immersion",
+    locationDisplay: "France",
+    dateStart: "2026-07-10",
+    dateEnd: "2026-07-24",
+    datesDisplay: "Jul 10–24, 2026",
+    lengthDisplay: "15 days",
+    lengthMinDays: 15,
+    seasonYear: 2026,
+    reviewStatus: "provisional",
+  }),
+]);
+if (
+  !mixedPendingGroupDates.includes("2 sessions between") ||
+  !mixedPendingGroupDates.includes("Jul 10") ||
+  !mixedPendingGroupDates.includes("Jul 30")
+) {
+  console.error(
+    `FAIL: one pending sibling should not hide verified multi-session dates, got "${mixedPendingGroupDates}"`,
+  );
   failed++;
 }
 

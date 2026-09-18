@@ -15,7 +15,7 @@ import { parseMultiStateLocations, resolveLocationQuery } from "@/lib/data/match
 import { resolveRegionQuery, US_REGION_IDS } from "@/lib/data/us-regions";
 import { stripNoOpFilterPatch } from "@/lib/search/filter-patch-delta";
 import { isAdditiveFilterRequest } from "@/lib/search/filter-request-intent";
-import { parseDateWindowQuery } from "@/lib/search/parse-date-window-query";
+import { isDateWindowQuery, parseDateWindowQuery } from "@/lib/search/parse-date-window-query";
 import { DEFAULT_SEARCH_FILTERS, type SearchFilters } from "@/lib/types/program";
 import type { ProgramCategoryId } from "@/lib/constants/categories";
 
@@ -376,8 +376,6 @@ function sanitizeIsoDateOrNull(value: string | null): string | null {
 
 /** Summer date windows without an explicit year should use the target season, not the LLM's guess. */
 function normalizeDateWindowSeasonYear(patch: Partial<SearchFilters>): void {
-  if (!patch.dateWindowStart || !patch.dateWindowEnd) return;
-
   const target = TARGET_SEASON_YEAR;
   const fixYear = (iso: string): string => {
     const [year, month, day] = iso.split("-");
@@ -385,12 +383,16 @@ function normalizeDateWindowSeasonYear(patch: Partial<SearchFilters>): void {
     return `${target}-${month}-${day}`;
   };
 
-  patch.dateWindowStart = fixYear(patch.dateWindowStart);
-  patch.dateWindowEnd = fixYear(patch.dateWindowEnd);
+  if (patch.dateWindowStart) {
+    patch.dateWindowStart = fixYear(patch.dateWindowStart);
+  }
+  if (patch.dateWindowEnd) {
+    patch.dateWindowEnd = fixYear(patch.dateWindowEnd);
+  }
 }
 
 function reconcileDateWindowAndMonths(patch: Partial<SearchFilters>): void {
-  const hasWindow = Boolean(patch.dateWindowStart && patch.dateWindowEnd);
+  const hasWindow = Boolean(patch.dateWindowStart || patch.dateWindowEnd);
   if (!hasWindow) return;
   patch.includeMonths = [];
   patch.excludeMonths = [];
@@ -438,6 +440,7 @@ export function isSimpleInstitutionOrNameQuery(message: string): boolean {
   const trimmed = message.trim();
   if (!trimmed || trimmed.includes("?")) return false;
   if (isAdditiveFilterRequest(trimmed)) return false;
+  if (isDateWindowQuery(trimmed)) return false;
   if (SIMPLE_QUERY_FILTER_KEYWORDS.test(trimmed)) return false;
   if (trimmed.split(/\s+/).length > 5) return false;
   return true;

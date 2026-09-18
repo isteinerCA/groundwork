@@ -7,7 +7,7 @@ import type { SearchFilters } from "@/lib/types/program";
 
 /** Words that signal structured filter intent, not a bare program name search. */
 const FILTER_INTENT_PATTERN =
-  /\b(only|just|under|over|above|below|expand|also|add|include|exclude|not in|instead|switch|change|narrow|broaden|plus|as well|first.?come|application|selective|competitive|residential|commuter|online|funded|credit|deposit|sevp|safety|wilderness|marine|stem|camps?|programs?|weeks?|days?|east coast|west coast|midwest|northeast|\$\d)\b/i;
+  /\b(only|just|under|over|above|below|before|after|until|through|between|ends?|starts?|expand|also|add|include|exclude|not in|instead|switch|change|narrow|broaden|plus|as well|first.?come|application|selective|competitive|residential|commuter|online|funded|credit|deposit|sevp|safety|wilderness|marine|stem|camps?|programs?|weeks?|days?|east coast|west coast|midwest|northeast|\$\d)\b/i;
 
 const MONTH_ONLY_PATTERN =
   /^(january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sep|sept|oct|nov|dec)$/i;

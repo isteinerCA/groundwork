@@ -102,8 +102,8 @@ export function summarizeSearchFilters(filters: SearchFilters): EventProps {
     duration_weeks: gaString(durationWeeks),
     months: joinList(filters.includeMonths),
     date_window:
-      filters.dateWindowStart && filters.dateWindowEnd
-        ? gaString(`${filters.dateWindowStart}–${filters.dateWindowEnd}`)
+      filters.dateWindowStart || filters.dateWindowEnd
+        ? gaString(`${filters.dateWindowStart ?? ""}–${filters.dateWindowEnd ?? ""}`)
         : "",
     locations: joinList(filters.includeLocations),
     regions: joinList(filters.includeRegions),

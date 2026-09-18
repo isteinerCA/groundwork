@@ -220,7 +220,8 @@ export function SearchExperience({
     filters.includeRegions.length > 0 ||
     filters.includeLocations.length > 0 ||
     filters.includeMonths.length > 0 ||
-    (filters.dateWindowStart != null && filters.dateWindowEnd != null) ||
+    filters.dateWindowStart != null ||
+    filters.dateWindowEnd != null ||
     filters.excludeMonths.length > 0 ||
     !filters.includePendingSeasonRefresh;
 

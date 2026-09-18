@@ -423,6 +423,54 @@ assert(admPatch.admissionTypes?.[0] === "first_come", "first_come admission vali
 
 assert(isSimpleInstitutionOrNameQuery("stanford"), "stanford is simple name query");
 assert(!isSimpleInstitutionOrNameQuery("fully funded only"), "fully funded is not simple query");
+assert(
+  !isSimpleInstitutionOrNameQuery("ends before july 15"),
+  "ends before july 15 is not a simple name query",
+);
+
+const endsBeforeParsed = parseLlmResponse(
+  {
+    clearAll: false,
+    filterPatch: {},
+    applied: "",
+    unexpressible: "",
+    assistantMessage: "I set the end date to July 14 to find programs that conclude before July 15.",
+  },
+  "ends before july 15",
+);
+assert(
+  endsBeforeParsed.filterPatch.dateWindowEnd === "2027-07-14",
+  "parseLlmResponse promotes ends-before July 15 to dateWindowEnd July 14",
+);
+assert(
+  endsBeforeParsed.filterPatch.dateWindowStart === null,
+  "ends-before query does not invent a start date",
+);
+
+const franceThenEndsBefore = formatAssistantMessage(
+  endsBeforeParsed,
+  {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [11],
+    dataQuery: "france",
+  },
+  {
+    ...DEFAULT_SEARCH_FILTERS,
+    gradesCompleted: [11],
+    dataQuery: "france",
+    dateWindowStart: null,
+    dateWindowEnd: "2027-07-14",
+  },
+  [],
+);
+assert(
+  /end by Jul 14, 2027/i.test(franceThenEndsBefore),
+  `assistant should describe the applied end bound, got "${franceThenEndsBefore}"`,
+);
+assert(
+  !/I set the end date/i.test(franceThenEndsBefore),
+  "assistant should not keep the LLM claim when a date bound was applied",
+);
 
 const stanfordRestricted = restrictPatchForSimpleQuery("stanford", {
   dataQuery: "stanford",

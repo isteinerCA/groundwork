@@ -12,8 +12,30 @@ import {
   buildProgramNameParseResponse,
   isLikelyProgramNameQuery,
 } from "@/lib/search/program-name-query";
+import {
+  isDateOnlyConstraintQuery,
+  parseDateWindowQuery,
+} from "@/lib/search/parse-date-window-query";
 import { stripNoOpFilterPatch } from "@/lib/search/filter-patch-delta";
 import { isSearchParseRateLimited } from "@/lib/search/rate-limit";
+
+function buildDateWindowParseResponse(message: string): LlmParseResponse | null {
+  if (!isDateOnlyConstraintQuery(message)) return null;
+  const window = parseDateWindowQuery(message);
+  if (!window) return null;
+  return {
+    clearAll: false,
+    filterPatch: {
+      dateWindowStart: window.dateWindowStart,
+      dateWindowEnd: window.dateWindowEnd,
+      includeMonths: [],
+      excludeMonths: [],
+    },
+    applied: "Updated date window",
+    unexpressible: "",
+    assistantMessage: "",
+  };
+}
 
 async function recordParse(event: Parameters<typeof persistChatLog>[0]): Promise<void> {
   try {
@@ -80,6 +102,16 @@ export async function POST(req: Request) {
     );
     await logFromParse(parseRequest, nameOverride);
     return NextResponse.json(nameOverride);
+  }
+
+  const dateWindowResult = buildDateWindowParseResponse(parseRequest.message);
+  if (dateWindowResult) {
+    dateWindowResult.filterPatch = stripNoOpFilterPatch(
+      parseRequest.currentFilters,
+      dateWindowResult.filterPatch,
+    );
+    await logFromParse(parseRequest, dateWindowResult);
+    return NextResponse.json(dateWindowResult);
   }
 
   try {

@@ -151,8 +151,9 @@ export interface SearchFilters {
   includeMonths: MonthNumber[];
   /** Calendar months (1–12) to exclude — programs overlapping these months are hidden. */
   excludeMonths: MonthNumber[];
-  /** When both set, program must run entirely within this inclusive ISO date window. */
+  /** Inclusive ISO start bound — program must start on or after this date. Pair with dateWindowEnd for a contained window. */
   dateWindowStart: string | null;
+  /** Inclusive ISO end bound — program must end on or before this date. Pair with dateWindowStart for a contained window. */
   dateWindowEnd: string | null;
   /** OR logic — coed programs are excluded when any value is set. */
   participantGenders: ParticipantGenderFilterId[];

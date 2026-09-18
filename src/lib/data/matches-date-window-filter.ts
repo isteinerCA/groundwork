@@ -6,6 +6,13 @@ function parseIsoDate(value: string): Date | null {
   return Number.isNaN(parsed.getTime()) ? null : parsed;
 }
 
+function formatChipDate(iso: string): string {
+  const date = new Date(`${iso}T12:00:00`);
+  const month = new Intl.DateTimeFormat("en-US", { month: "short" });
+  const year = date.getFullYear() || TARGET_SEASON_YEAR;
+  return `${month.format(date)} ${date.getDate()}, ${year}`;
+}
+
 /** Program dates fall entirely within the filter window (inclusive). */
 export function programContainedInDateWindow(
   program: Program,
@@ -28,28 +35,45 @@ export function programMatchesDateWindowFilter(
   windowStart: string | null,
   windowEnd: string | null,
 ): boolean {
-  if (!windowStart || !windowEnd) return true;
-  return programContainedInDateWindow(program, windowStart, windowEnd);
+  if (!windowStart && !windowEnd) return true;
+  if (!program.dateStart || !program.dateEnd) return false;
+
+  if (windowStart && windowEnd) {
+    return programContainedInDateWindow(program, windowStart, windowEnd);
+  }
+
+  if (windowEnd && program.dateEnd > windowEnd) return false;
+  if (windowStart && program.dateStart < windowStart) return false;
+  return true;
 }
 
 export function isActiveDateWindowFilter(
   windowStart: string | null,
   windowEnd: string | null,
 ): boolean {
-  return Boolean(windowStart?.trim() && windowEnd?.trim());
+  return Boolean(windowStart?.trim() || windowEnd?.trim());
 }
 
-/** Human-readable chip label for an active date window. */
-export function formatDateWindowFilterLabel(windowStart: string, windowEnd: string): string {
-  const start = new Date(`${windowStart}T12:00:00`);
-  const end = new Date(`${windowEnd}T12:00:00`);
-  const month = new Intl.DateTimeFormat("en-US", { month: "short" });
-  const year = start.getFullYear() || TARGET_SEASON_YEAR;
-  const sameMonth =
-    start.getMonth() === end.getMonth() && start.getFullYear() === end.getFullYear();
+/** Human-readable chip label for an active date window or one-sided bound. */
+export function formatDateWindowFilterLabel(
+  windowStart: string | null,
+  windowEnd: string | null,
+): string {
+  if (windowStart && windowEnd) {
+    const start = new Date(`${windowStart}T12:00:00`);
+    const end = new Date(`${windowEnd}T12:00:00`);
+    const month = new Intl.DateTimeFormat("en-US", { month: "short" });
+    const year = start.getFullYear() || TARGET_SEASON_YEAR;
+    const sameMonth =
+      start.getMonth() === end.getMonth() && start.getFullYear() === end.getFullYear();
 
-  if (sameMonth) {
-    return `Fits ${month.format(start)} ${start.getDate()}–${end.getDate()}, ${year}`;
+    if (sameMonth) {
+      return `Fits ${month.format(start)} ${start.getDate()}–${end.getDate()}, ${year}`;
+    }
+    return `Fits ${month.format(start)} ${start.getDate()} – ${month.format(end)} ${end.getDate()}, ${year}`;
   }
-  return `Fits ${month.format(start)} ${start.getDate()} – ${month.format(end)} ${end.getDate()}, ${year}`;
+
+  if (windowEnd) return `Ends by ${formatChipDate(windowEnd)}`;
+  if (windowStart) return `Starts ${formatChipDate(windowStart)} or later`;
+  return "";
 }
