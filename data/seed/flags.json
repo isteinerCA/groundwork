@@ -2160,5 +2160,442 @@
         "severity": "info"
       }
     ]
+  },
+  {
+    "match": {
+      "programGroupId": "rlt-italy-dive-the-med"
+    },
+    "flags": [
+      {
+        "id": "italy-dive-med-internal-flight-cost-unknown",
+        "type": "safety",
+        "title": "Required internal flight cost is not disclosed",
+        "body": "Sardinia-to-Rome flight billed separately, no cost given.",
+        "severity": "warning",
+        "sourceCitation": "User-provided screenshots, rlt-italy-dive-the-med program page"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rlt-morocco-desert-nights"
+    },
+    "flags": [
+      {
+        "id": "morocco-desert-nights-service-hours-range",
+        "type": "safety",
+        "title": "Service hours range is wide (10-20) and toward the high end",
+        "body": "High among service-inclusive RLT programs.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-morocco-desert-nights program page"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rlt-california-pacific-sun"
+    },
+    "flags": [
+      {
+        "id": "california-pacific-sun-middle-school-age",
+        "type": "safety",
+        "title": "This program is for grades 6-8, not the usual 9-12",
+        "body": "Distinct from Italy/Morocco.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-california-pacific-sun program page"
+      },
+      {
+        "id": "california-pacific-sun-infrequent-showers",
+        "type": "safety",
+        "title": "Showers are available only every 3-4 days",
+        "body": "Infrequent shower access among RLT programs.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-california-pacific-sun program page"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rlt-france-italy-alps-adventure"
+    },
+    "flags": [
+      {
+        "id": "france-italy-alps-reversed-session-2",
+        "type": "safety",
+        "title": "Session 2 is the same itinerary run in reverse, not a different route",
+        "body": "Session 1 into Geneva/out of Milan; Session 2 reversed. Confirm which session before booking flights.",
+        "severity": "warning",
+        "sourceCitation": "User-provided screenshots, rlt-france-italy-alps-adventure program page"
+      },
+      {
+        "id": "france-italy-alps-age-band",
+        "type": "safety",
+        "title": "This program is for grades 7-9, a distinct band from the other RLT programs",
+        "body": "Distinct age band across RLT programs researched.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-france-italy-alps-adventure program page"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rlt-maine-pathway-to-the-pines"
+    },
+    "flags": [
+      {
+        "id": "maine-pines-two-separate-age-sessions",
+        "type": "safety",
+        "title": "This program runs two separate sessions for two separate age groups",
+        "body": "MS session (6-8) and HS session (9-12) are entirely separate weeks. Book the session matching your student's grade band.",
+        "severity": "warning",
+        "sourceCitation": "User-provided screenshots, rlt-maine-pathway-to-the-pines program page"
+      },
+      {
+        "id": "maine-pines-lowest-tuition-shortest-trip",
+        "type": "safety",
+        "title": "This is among the shortest and least expensive Road Less Traveled programs researched",
+        "body": "7 days, $3,195 tuition, 6-10 service hours.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-maine-pathway-to-the-pines program page"
+      },
+      {
+        "id": "maine-pines-shower-frequency-unstated",
+        "type": "safety",
+        "title": "Shower frequency is not specified",
+        "body": "Only 'short showers' mentioned, no stated frequency.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-maine-pathway-to-the-pines program page"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rlt-hawaii-island-exploration"
+    },
+    "flags": [
+      {
+        "id": "hawaii-island-exploration-no-service-hours-listed",
+        "type": "safety",
+        "title": "No service-hours figure is listed for this program",
+        "body": "Service Hours line absent from At a Glance. Likely N/A given the Norway program's precedent, but unconfirmed for Hawaii specifically.",
+        "severity": "warning",
+        "sourceCitation": "User-provided screenshots, rlt-hawaii-island-exploration program page"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rlt-norway-peaks-and-valleys"
+    },
+    "flags": [
+      {
+        "id": "norway-peaks-valleys-no-service-component",
+        "type": "safety",
+        "title": "This program has no service-hours component (explicitly N/A)",
+        "body": "Confirms RLT runs pure adventure/backpacking trips with no service component by design.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-norway-peaks-and-valleys program page"
+      },
+      {
+        "id": "norway-peaks-valleys-technical-gear-required",
+        "type": "safety",
+        "title": "Specific technical backpacking gear is required, beyond the standard packing list",
+        "body": "Broken-in hiking boots, 70L pack, cold-weather backpacking clothing/equipment required.",
+        "severity": "warning",
+        "sourceCitation": "User-provided screenshots, rlt-norway-peaks-and-valleys program page"
+      },
+      {
+        "id": "norway-peaks-valleys-longest-highest-tuition",
+        "type": "safety",
+        "title": "This is the longest and most expensive Road Less Traveled program researched",
+        "body": "21 days, $7,795 tuition.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-norway-peaks-and-valleys program page"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rlt-azores-secret-island"
+    },
+    "flags": [
+      {
+        "id": "azores-secret-island-high-service-hours",
+        "type": "safety",
+        "title": "Service hours range (15-20) is on the higher end",
+        "body": "High among Road Less Traveled programs.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-azores-secret-island program page"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rlt-costa-rica-journey-through-jungle"
+    },
+    "flags": [
+      {
+        "id": "costa-rica-jungle-highest-service-hours",
+        "type": "safety",
+        "title": "Service hours range (15-25) was high among RLT programs at time of research",
+        "body": "Since surpassed by Peru's 25-35 and Coast to Canopy's 24-36.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-costa-rica-journey-through-jungle program page"
+      },
+      {
+        "id": "costa-rica-jungle-miami-escort-not-nyc",
+        "type": "safety",
+        "title": "The optional escorted flight departs from Miami, not New York",
+        "body": "Every other RLT program offers this from New York; confirm the correct city.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-costa-rica-journey-through-jungle program page"
+      },
+      {
+        "id": "costa-rica-jungle-middle-school-age",
+        "type": "safety",
+        "title": "This program is for grades 6-8, not the usual 9-12",
+        "body": "Like California and the Maine MS session.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-costa-rica-journey-through-jungle program page"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rlt-japan-between-two-worlds"
+    },
+    "flags": [
+      {
+        "id": "japan-two-worlds-mandatory-group-flight",
+        "type": "safety",
+        "title": "All participants fly together on a specific route, not individually",
+        "body": "No apparent independent-booking alternative on this page. Confirm LAX or SFO works for your family.",
+        "severity": "warning",
+        "sourceCitation": "User-provided screenshots, rlt-japan-between-two-worlds program page"
+      },
+      {
+        "id": "japan-two-worlds-internal-train-cost-unclear",
+        "type": "safety",
+        "title": "Whether the internal Tokyo-Yamagata bullet train cost is included in tuition is unclear",
+        "body": "Unlike Italy's explicit separate-billing language, this page does not clarify inclusion.",
+        "severity": "warning",
+        "sourceCitation": "User-provided screenshots, rlt-japan-between-two-worlds program page"
+      },
+      {
+        "id": "japan-two-worlds-no-camping",
+        "type": "safety",
+        "title": "This is the only RLT program researched with no tent-camping component",
+        "body": "Entirely hotels plus one shukubo lodge night.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-japan-between-two-worlds program page"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rlt-peru-mystic-mountains"
+    },
+    "flags": [
+      {
+        "id": "peru-mystic-mountains-highest-service-hours-by-far",
+        "type": "safety",
+        "title": "Service hours (25-35) were the highest of any RLT program at time of research",
+        "body": "Since edged out by Costa Rica: Coast to Canopy's 24-36 top end.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-peru-mystic-mountains program page"
+      },
+      {
+        "id": "peru-mystic-mountains-lima-cusco-flight-billed-separately",
+        "type": "safety",
+        "title": "Required Lima-Cusco domestic flight is billed separately from tuition",
+        "body": "Cost confirmed separate but no dollar amount given; ask before enrolling.",
+        "severity": "warning",
+        "sourceCitation": "User-provided screenshots, rlt-peru-mystic-mountains program page"
+      },
+      {
+        "id": "peru-mystic-mountains-altitude-consideration",
+        "type": "safety",
+        "title": "Program takes place at high altitude across Cusco, the Sacred Valley, and Machu Picchu",
+        "body": "Confirm acclimatization precautions with the provider.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-peru-mystic-mountains program page"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rlt-alaska-midnight-sun"
+    },
+    "flags": [
+      {
+        "id": "alaska-midnight-sun-24-hour-daylight",
+        "type": "safety",
+        "title": "Program runs during Alaska's midnight sun season",
+        "body": "Near-continuous daylight may affect sleep; ask the provider how the schedule accounts for it.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-alaska-midnight-sun program page"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rlt-iceland-nordic-elements"
+    },
+    "flags": [
+      {
+        "id": "iceland-nordic-elements-no-service-hours-listed",
+        "type": "safety",
+        "title": "No service-hours figure is listed for this program",
+        "body": "Unlike Norway's explicit N/A, this page simply omits the field, so it remains genuinely unclear whether this is a no-service trip or a screenshot gap.",
+        "severity": "warning",
+        "sourceCitation": "User-provided screenshots, rlt-iceland-nordic-elements program page"
+      },
+      {
+        "id": "iceland-nordic-elements-wide-age-band",
+        "type": "safety",
+        "title": "This program spans a wider age band (grades 8-11) than most RLT programs",
+        "body": "Fourth distinct age band across the Road Less Traveled programs researched.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-iceland-nordic-elements program page"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rlt-costa-rica-coast-to-canopy"
+    },
+    "flags": [
+      {
+        "id": "costa-rica-canopy-highest-service-hours-record",
+        "type": "safety",
+        "title": "Service hours (24-36) set a new highest top end across RLT programs",
+        "body": "Edges past Peru: Mystic Mountains (25-35) for the highest top end seen across all fifteen Road Less Traveled programs researched.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-costa-rica-coast-to-canopy program page"
+      },
+      {
+        "id": "costa-rica-canopy-possible-sibling-program",
+        "type": "safety",
+        "title": "This program closely mirrors Costa Rica: Journey through the Jungle, but for a different age band",
+        "body": "Same country, Trip Categories tag, three-part accommodation structure, and Miami escort city as Journey through the Jungle, but separately named, serves grades 9-12 rather than 6-8, and is priced/scoped differently. Confirm with the provider whether these are formally linked MS/HS versions of one itinerary.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-costa-rica-coast-to-canopy program page"
+      },
+      {
+        "id": "costa-rica-canopy-miami-escort-not-nyc",
+        "type": "safety",
+        "title": "The optional escorted flight departs from Miami, not New York",
+        "body": "Same Costa-Rica-specific pattern as Journey through the Jungle.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-costa-rica-coast-to-canopy program page"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rlt-greece-coastal-conservation"
+    },
+    "flags": [
+      {
+        "id": "greece-coastal-snorkel-gear-required",
+        "type": "safety",
+        "title": "Participants must bring their own personal snorkel gear",
+        "body": "Unlike other RLT programs where the provider supplies all equipment, this one asks participants to bring their own snorkel gear.",
+        "severity": "warning",
+        "sourceCitation": "User-provided screenshots, rlt-greece-coastal-conservation program page"
+      },
+      {
+        "id": "greece-coastal-kefalonia-flight-billed-separately",
+        "type": "safety",
+        "title": "Required Kefalonia-Athens internal flight is billed separately from tuition",
+        "body": "No dollar amount given; ask before enrolling.",
+        "severity": "warning",
+        "sourceCitation": "User-provided screenshots, rlt-greece-coastal-conservation program page"
+      },
+      {
+        "id": "greece-coastal-high-service-hours-and-tuition",
+        "type": "safety",
+        "title": "Service hours (20-30) and tuition ($7,750) are both near the top of the RLT range",
+        "body": "Tuition is second-highest of any RLT program, just behind Norway.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-greece-coastal-conservation program page"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rlt-thailand-elephants-education-cultural"
+    },
+    "flags": [
+      {
+        "id": "thailand-elephants-mandatory-group-flight",
+        "type": "safety",
+        "title": "All participants fly together on a chaperoned flight",
+        "body": "SFO to Bangkok, no apparent independent-booking alternative. Don't book until RLT's 'green light' email.",
+        "severity": "warning",
+        "sourceCitation": "User-provided screenshots, rlt-thailand-elephants-education-cultural program page"
+      },
+      {
+        "id": "thailand-elephants-bangkok-chiangmai-flight-billed-separately",
+        "type": "safety",
+        "title": "Required Bangkok-Chiang Mai internal flight is billed separately from tuition",
+        "body": "No dollar amount given.",
+        "severity": "warning",
+        "sourceCitation": "User-provided screenshots, rlt-thailand-elephants-education-cultural program page"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rlt-puerto-rico-reefs-to-rainforests"
+    },
+    "flags": [
+      {
+        "id": "puerto-rico-reefs-wide-room-sharing",
+        "type": "safety",
+        "title": "Rooms are shared by 4-8 students, wider than any other RLT program researched",
+        "body": "Notably wider than the typical 2-3 to 2-5 range, especially given this serves middle schoolers.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-puerto-rico-reefs-to-rainforests program page"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rlt-puerto-rico-reef-restoration"
+    },
+    "flags": [
+      {
+        "id": "puerto-rico-reef-restoration-scuba-category",
+        "type": "safety",
+        "title": "This program includes a Scuba component",
+        "body": "Confirm certification, swimming ability, and medical screening requirements.",
+        "severity": "info",
+        "sourceCitation": "User-provided screenshots, rlt-puerto-rico-reef-restoration program page"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rlt-scotland-ireland-celtic-isles"
+    },
+    "flags": [
+      {
+        "id": "scotland-ireland-service-hours-pending",
+        "type": "safety",
+        "title": "Service hours are explicitly marked as pending partner confirmation as of September 2026",
+        "body": "Confirm the actual number before relying on it for a school requirement.",
+        "severity": "warning",
+        "sourceCitation": "User-provided screenshots, rlt-scotland-ireland-celtic-isles program page"
+      },
+      {
+        "id": "scotland-ireland-edinburgh-dublin-flight-billed-separately",
+        "type": "safety",
+        "title": "Required Edinburgh-Dublin internal flight is billed separately from tuition",
+        "body": "No dollar amount given.",
+        "severity": "warning",
+        "sourceCitation": "User-provided screenshots, rlt-scotland-ireland-celtic-isles program page"
+      }
+    ]
   }
 ]
