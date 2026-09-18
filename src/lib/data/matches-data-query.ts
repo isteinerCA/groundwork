@@ -69,10 +69,111 @@ function hasGenericTrackDetail(trackDetail: string): boolean {
 /** Synonym groups for common activity searches on adventure/travel programs. */
 const ACTIVITY_QUERY_GROUPS: Record<string, readonly string[]> = {
   backpacking: ["backpacking", "hiking", "trekking", "mountain travel", "mountain trek"],
+  "marine biology": [
+    "marine biology",
+    "marine ecology",
+    "marine science",
+    "oceanography",
+  ],
+};
+
+/**
+ * Search terms for continent-style queries. Matching uses primary program fields only
+ * (location, name, description) so gotcha flags do not expand regional results.
+ */
+const AFRICA_SEARCH_TERMS: readonly string[] = [
+  "africa",
+  "algeria",
+  "angola",
+  "benin",
+  "botswana",
+  "burkina faso",
+  "burundi",
+  "cabo verde",
+  "cape verde",
+  "cameroon",
+  "central african republic",
+  "chad",
+  "comoros",
+  "congo",
+  "democratic republic of the congo",
+  "djibouti",
+  "egypt",
+  "equatorial guinea",
+  "eritrea",
+  "eswatini",
+  "swaziland",
+  "ethiopia",
+  "gabon",
+  "gambia",
+  "ghana",
+  "guinea",
+  "guinea-bissau",
+  "ivory coast",
+  "cote d'ivoire",
+  "kenya",
+  "lesotho",
+  "liberia",
+  "libya",
+  "madagascar",
+  "malawi",
+  "mali",
+  "mauritania",
+  "mauritius",
+  "morocco",
+  "mozambique",
+  "namibia",
+  "niger",
+  "nigeria",
+  "rwanda",
+  "sao tome",
+  "senegal",
+  "seychelles",
+  "sierra leone",
+  "somalia",
+  "south africa",
+  "south sudan",
+  "sudan",
+  "tanzania",
+  "zanzibar",
+  "togo",
+  "tunisia",
+  "uganda",
+  "zambia",
+  "zimbabwe",
+];
+
+const REGION_QUERY_GROUPS: Record<string, readonly string[]> = {
+  africa: AFRICA_SEARCH_TERMS,
 };
 
 function expandedActivityTerms(query: string): readonly string[] | null {
   return ACTIVITY_QUERY_GROUPS[query.trim().toLowerCase()] ?? null;
+}
+
+function expandedRegionTerms(query: string): readonly string[] | null {
+  return REGION_QUERY_GROUPS[query.trim().toLowerCase()] ?? null;
+}
+
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/** Word-boundary place matching — avoids compact-substring false positives (e.g. Ghana in "through … Anafiotika"). */
+function placeTermMatchesInText(term: string, text: string): boolean {
+  const trimmed = term.trim().toLowerCase();
+  if (!trimmed) return true;
+
+  const parts = trimmed.split(/\s+/).filter(Boolean).map(escapeRegExp);
+  if (parts.length === 0) return true;
+
+  const pattern = new RegExp(`\\b${parts.join("\\s+")}\\b`, "i");
+  return pattern.test(text);
+}
+
+function matchesRegionDataQuery(program: Program, terms: readonly string[]): boolean {
+  const primaryText = programPrimarySearchText(program);
+  return terms.some((term) => placeTermMatchesInText(term, primaryText));
 }
 
 function singleTermMatchesOffering(program: Program, term: string): boolean {
@@ -181,9 +282,14 @@ export function matchesDataQuery(
     return false;
   }
 
-  const activityTerms = terms.length === 1 ? expandedActivityTerms(trimmed) : null;
+  const activityTerms = expandedActivityTerms(trimmed);
   if (activityTerms) {
     return activityTerms.some((term) => singleTermMatchesOffering(program, term));
+  }
+
+  const regionTerms = terms.length === 1 ? expandedRegionTerms(trimmed) : null;
+  if (regionTerms) {
+    return matchesRegionDataQuery(program, regionTerms);
   }
 
   const haystack = programSearchText(program);

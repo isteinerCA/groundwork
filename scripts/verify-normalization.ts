@@ -326,6 +326,96 @@ if (!matchesDataQuery(alpsTrekking, "backpacking")) {
   failed++;
 }
 
+const icelandProgram = stubProgram({
+  name: "Overland - Iceland Explorer",
+  locationDisplay: "Iceland",
+  trackDetail: "Departure 1",
+});
+
+const irelandProgram = stubProgram({
+  name: "TFT - Scotland & Ireland Adventure",
+  locationDisplay: "Scotland and Ireland",
+  trackDetail: "Session 1",
+});
+
+if (!matchesDataQuery(icelandProgram, "iceland")) {
+  console.error('FAIL: Iceland program should match dataQuery "iceland"');
+  failed++;
+}
+
+if (matchesDataQuery(icelandProgram, "ireland")) {
+  console.error('FAIL: Iceland program should not match dataQuery "ireland"');
+  failed++;
+}
+
+if (!matchesDataQuery(irelandProgram, "ireland")) {
+  console.error('FAIL: Ireland program should match dataQuery "ireland"');
+  failed++;
+}
+
+if (matchesDataQuery(irelandProgram, "iceland")) {
+  console.error('FAIL: Ireland program should not match dataQuery "iceland"');
+  failed++;
+}
+
+const moroccoProgram = stubProgram({
+  name: "CIEE - Arabic Language & Moroccan Culture (Rabat)",
+  locationDisplay: "Rabat, Morocco",
+  trackDetail: "Summer Session I",
+});
+
+const ghanaProgram = stubProgram({
+  name: "CIEE - Leadership & Service in Children's Education (Legon)",
+  locationDisplay: "Legon, Ghana",
+  trackDetail: "Summer Session I",
+});
+
+if (!matchesDataQuery(moroccoProgram, "africa")) {
+  console.error('FAIL: Morocco program should match dataQuery "africa"');
+  failed++;
+}
+
+if (!matchesDataQuery(ghanaProgram, "africa")) {
+  console.error('FAIL: Ghana program should match dataQuery "africa"');
+  failed++;
+}
+
+const greeceProgram = stubProgram({
+  name: "CIEE - Architecture & Greek Culture (Athens)",
+  locationDisplay: "Athens, Greece",
+  trackDetail: "Summer Session I",
+  description:
+    "Visits to the Stavros Niarchos Foundation Cultural Center and an urban scavenger hunt through Anafiotika/Plaka.",
+});
+
+if (matchesDataQuery(greeceProgram, "africa")) {
+  console.error('FAIL: Greece program should not match dataQuery "africa"');
+  failed++;
+}
+
+const caribbeanMarineBiology = stubProgram({
+  name: "Broadreach - Caribbean Marine Biology Voyage",
+  locationDisplay: "St. Martin + the Leewards, Caribbean",
+  trackDetail: "Departure 1",
+  description: "Introductory marine biology voyage in the Caribbean.",
+});
+
+const marineEcology = stubProgram({
+  name: "CIEE - Marine Ecology & Sustainability (Nice)",
+  locationDisplay: "Nice, France",
+  trackDetail: "Summer Session I",
+});
+
+if (!matchesDataQuery(caribbeanMarineBiology, "marine biology")) {
+  console.error('FAIL: marine biology should match Caribbean Marine Biology program');
+  failed++;
+}
+
+if (!matchesDataQuery(marineEcology, "marine biology")) {
+  console.error('FAIL: marine biology should match Marine Ecology program name');
+  failed++;
+}
+
 const filmWithSharedDayToDay = stubProgram({
   name: "SOCAPA - New York City",
   locationDisplay: "New York, NY",

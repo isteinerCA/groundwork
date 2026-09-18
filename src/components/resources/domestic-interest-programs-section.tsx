@@ -24,18 +24,9 @@ export function DomesticInterestProgramsSection() {
           return (
             <div key={group.id}>
               <p className="text-sm font-medium text-[var(--color-navy)]">{group.title}</p>
-              <ul
-                className={
-                  group.id === "what"
-                    ? "mt-2 columns-2 gap-x-6"
-                    : "mt-2 space-y-2"
-                }
-              >
+              <ul className="mt-2 columns-2 gap-x-6">
                 {lists.map((list) => (
-                  <li
-                    key={list.slug}
-                    className={group.id === "what" ? "mb-2 break-inside-avoid" : undefined}
-                  >
+                  <li key={list.slug} className="mb-2 break-inside-avoid">
                     <Link
                       href={`/resources/lists/${list.slug}`}
                       className="text-base leading-snug text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"

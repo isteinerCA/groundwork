@@ -27,6 +27,7 @@ export const GLOBAL_ADVENTURE_LIST_DEFS: GlobalAdventureListDef[] = [
     group: "where",
   },
   { slug: "france-programs", linkLabel: "France", dataQuery: "france", group: "where" },
+  { slug: "germany-programs", linkLabel: "Germany", dataQuery: "germany", group: "where" },
   { slug: "china-programs", linkLabel: "China", dataQuery: "china", group: "where" },
   {
     slug: "galapagos-programs",
@@ -44,8 +45,8 @@ export const GLOBAL_ADVENTURE_LIST_DEFS: GlobalAdventureListDef[] = [
     dataQuery: "south korea",
     group: "where",
   },
-  { slug: "ireland-programs", linkLabel: "Ireland", dataQuery: "ireland", group: "where" },
   { slug: "iceland-programs", linkLabel: "Iceland", dataQuery: "iceland", group: "where" },
+  { slug: "ireland-programs", linkLabel: "Ireland", dataQuery: "ireland", group: "where" },
   {
     slug: "caribbean-programs",
     linkLabel: "Caribbean",
@@ -111,5 +112,12 @@ export const GLOBAL_ADVENTURE_LIST_DEFS: GlobalAdventureListDef[] = [
     dataQuery: "veterinary",
     group: "what",
     titleLabel: "Veterinary studies programs",
+  },
+  {
+    slug: "marine-biology-programs",
+    linkLabel: "Marine biology",
+    dataQuery: "marine biology",
+    group: "what",
+    titleLabel: "Marine biology programs",
   },
 ];

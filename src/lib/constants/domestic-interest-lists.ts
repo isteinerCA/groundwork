@@ -94,4 +94,11 @@ export const DOMESTIC_INTEREST_LIST_DEFS: DomesticInterestListDef[] = [
     group: "what",
     titleLabel: "Veterinary studies programs",
   },
+  {
+    slug: "marine-biology-us-programs",
+    linkLabel: "Marine biology",
+    dataQuery: "marine biology",
+    group: "what",
+    titleLabel: "Marine biology programs",
+  },
 ];

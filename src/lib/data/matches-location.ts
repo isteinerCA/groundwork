@@ -128,7 +128,7 @@ function levenshtein(a: string, b: string): number {
   return matrix[a.length][b.length];
 }
 
-function findStateByToken(token: string): UsState | null {
+function findStateByTokenExact(token: string): UsState | null {
   const normalized = token.trim().toLowerCase().replace(/\./g, "");
   if (!normalized || LOCATION_STOP_WORDS.has(normalized)) return null;
 
@@ -143,8 +143,18 @@ function findStateByToken(token: string): UsState | null {
     if (state.misspellings.includes(normalized)) return state;
   }
 
+  return null;
+}
+
+function findStateByToken(token: string): UsState | null {
+  const exact = findStateByTokenExact(token);
+  if (exact) return exact;
+
+  const normalized = token.trim().toLowerCase().replace(/\./g, "");
+  if (!normalized || normalized.length < 5) return null;
+
   for (const state of US_STATES) {
-    if (normalized.length >= 5 && levenshtein(normalized, state.name) <= 2) return state;
+    if (levenshtein(normalized, state.name) <= 2) return state;
   }
 
   return null;
@@ -198,9 +208,11 @@ export function resolveLocationQuery(input: string): string | undefined {
     }
   }
 
+  // Multi-word queries like "marine biology" must not fuzzy-resolve a token to Maine.
+  const tokenLookup = contentTokens.length > 1 ? findStateByTokenExact : findStateByToken;
   for (const token of contentTokens) {
     if (token.length === 2) continue;
-    const state = findStateByToken(token);
+    const state = tokenLookup(token);
     if (state) return state.name;
   }
 

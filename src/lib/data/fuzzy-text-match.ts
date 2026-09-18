@@ -33,6 +33,12 @@ function isSimilarEnough(a: string, b: string, maxDistance: number): boolean {
   return 1 - distance / Math.max(a.length, b.length) >= 0.8;
 }
 
+/** Reject fuzzy matches between distinct tokens that diverge early (e.g. Iceland ↔ Ireland). */
+function fuzzyTokensCompatible(term: string, word: string): boolean {
+  if (term.length < 5 || word.length < 5) return true;
+  return term.slice(0, 3) === word.slice(0, 3);
+}
+
 function significantWords(text: string): string[] {
   return text
     .toLowerCase()
@@ -60,13 +66,19 @@ export function termMatchesInText(term: string, text: string): boolean {
 
   for (const word of significantWords(haystack)) {
     if (trimmed.length >= 4 && word.startsWith(trimmed)) return true;
-    if (isSimilarEnough(trimmed, word, editBudget)) return true;
+    if (
+      isSimilarEnough(trimmed, word, editBudget) &&
+      fuzzyTokensCompatible(trimmed, word)
+    ) {
+      return true;
+    }
 
     const wordCompact = normalizeAlphanumeric(word);
     if (
       termCompact.length >= 4 &&
       wordCompact.length >= 4 &&
-      isSimilarEnough(termCompact, wordCompact, editBudget)
+      isSimilarEnough(termCompact, wordCompact, editBudget) &&
+      fuzzyTokensCompatible(termCompact, wordCompact)
     ) {
       return true;
     }
