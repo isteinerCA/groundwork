@@ -30,12 +30,9 @@ export function matchesProgram(
   filters: SearchFilters,
   options?: { relaxInstitutionSuffixes?: boolean },
 ): boolean {
-  if (
-    filters.gradesCompleted.length > 0 &&
-    !gradeMatchesFilter(program, filters.gradesCompleted)
-  ) {
-    return false;
-  }
+  if (filters.gradesCompleted.length === 0) return false;
+
+  if (!gradeMatchesFilter(program, filters.gradesCompleted)) return false;
 
   if (
     filters.categories.length > 0 &&

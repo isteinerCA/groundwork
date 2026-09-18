@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, type FormEvent } from "react";
 import { btnPrimary } from "@/components/ui/button-styles";
 import { trackEvent } from "@/lib/analytics";
+import { OPEN_SEARCH_HREF } from "@/lib/search/search-url";
 import { type WaitlistSource } from "@/lib/waitlist/constants";
 
 interface WaitlistSignupProps {
@@ -54,7 +55,7 @@ export function WaitlistSignup({ source, className = "" }: WaitlistSignupProps) 
         <p className="mt-2 text-sm text-emerald-800">
           We&apos;ll let you know when our 2027 summer program listings are ready. In the meantime,
           you can{" "}
-          <Link href="/search" className="font-medium text-emerald-900 underline">
+          <Link href={OPEN_SEARCH_HREF} className="font-medium text-emerald-900 underline">
             explore our current listings
           </Link>{" "}
           to get a sense of the options available.

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink, SectionEyebrow } from "@/components/ui/button-link";
+import { OPEN_SEARCH_HREF } from "@/lib/search/search-url";
 
 const GALLERY_IMAGES = [
   {
@@ -43,7 +44,7 @@ export function ProgramGallerySection() {
           {GALLERY_IMAGES.map((image) => (
             <Link
               key={image.src}
-              href="/search?open=1"
+              href={OPEN_SEARCH_HREF}
               className="group relative aspect-square overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-sm no-underline transition hover:border-[var(--color-sage)] hover:shadow-[var(--shadow-card)]"
             >
               <Image
@@ -57,7 +58,7 @@ export function ProgramGallerySection() {
           ))}
         </div>
 
-        <ButtonLink href="/search?open=1" className="mt-10">
+        <ButtonLink href={OPEN_SEARCH_HREF} className="mt-10">
           Start your shortlist
         </ButtonLink>
       </div>

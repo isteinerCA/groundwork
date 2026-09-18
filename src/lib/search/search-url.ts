@@ -157,6 +157,9 @@ export function parseSearchFiltersFromSearchParams(
   return seed;
 }
 
+/** Fresh catalog URL for marketing CTAs — skips restoring the previous search. */
+export const OPEN_SEARCH_HREF = "/search?open=1";
+
 /** Marketing CTAs use `?open=1` to skip restoring the previous search. */
 export function shouldSkipLastSearchRestore(
   params: Record<string, string | string[] | undefined>,

@@ -4,6 +4,7 @@ import {
   EARLY_BIRD_LABEL,
   formatSeasonPassPrice,
 } from "@/lib/constants/pricing";
+import { OPEN_SEARCH_HREF } from "@/lib/search/search-url";
 
 function CheckItem({ children }: { children: React.ReactNode }) {
   return (
@@ -40,7 +41,7 @@ export function HomePricingSection() {
               <CheckItem>Every flag sourced and dated</CheckItem>
               <CheckItem>Direct links to program sites</CheckItem>
             </ul>
-            <ButtonLink href="/search" variant="secondary" className="mt-8 w-full">
+            <ButtonLink href={OPEN_SEARCH_HREF} variant="secondary" className="mt-8 w-full">
               Start your shortlist
             </ButtonLink>
           </div>
@@ -73,7 +74,7 @@ export function HomePricingSection() {
               <CheckItem>Side-by-side compare + shareable link</CheckItem>
               <CheckItem>Export to CSV (print for PDF)</CheckItem>
             </ul>
-            <ButtonLink href="/search" variant="primary" className="mt-8 w-full">
+            <ButtonLink href={OPEN_SEARCH_HREF} variant="primary" className="mt-8 w-full">
               Start your shortlist
             </ButtonLink>
           </div>

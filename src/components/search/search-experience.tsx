@@ -276,7 +276,7 @@ export function SearchExperience({
               Step 1 · Filter
             </p>
             <h2 className="mt-1 text-lg text-[var(--color-navy)]">
-              What grade did your child just complete?
+              What grade did your child just complete? <span className="text-red-600">*</span>
             </h2>
             <div className="mt-3 flex flex-nowrap gap-1.5 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               {GRADE_CHIPS.map((grade) => (
@@ -292,8 +292,18 @@ export function SearchExperience({
                 />
               ))}
             </div>
+            {filters.gradesCompleted.length === 0 && (
+              <p className="mt-3 rounded-[var(--radius-md)] border border-dashed border-[var(--color-border)] bg-[var(--color-parchment)] px-3 py-2 text-sm text-[var(--color-text-muted)]">
+                Select a grade — programs for your shortlist appear{" "}
+                <span className="lg:hidden">below.</span>
+                <span className="hidden lg:inline">on the right.</span>
+              </p>
+            )}
 
-            <FilterResultsCounter count={resultGroupCount} hasGrade />
+            <FilterResultsCounter
+              count={resultGroupCount}
+              hasGrade={filters.gradesCompleted.length > 0}
+            />
 
             <div id={REFINE_FILTERS_ANCHOR_ID} className="mt-4 scroll-mt-24">
               <CollapsibleFilterGroup
@@ -511,7 +521,7 @@ export function SearchExperience({
         </aside>
 
         <div className="min-w-0">
-          {results.length > 0 || restoredLastSearch ? (
+          {filters.gradesCompleted.length > 0 ? (
             <div className="space-y-6">
               <section
                 id={FINE_TUNE_ANCHOR_ID}

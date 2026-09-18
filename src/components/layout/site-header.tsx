@@ -8,6 +8,7 @@ import { MobileNavMenuButton, MobileNavPanel } from "@/components/layout/mobile-
 import { WorkspaceNavLink } from "@/components/layout/workspace-nav-link";
 import { ButtonLink } from "@/components/ui/button-link";
 import { SITE_NAV_LINKS } from "@/lib/constants/site-nav";
+import { OPEN_SEARCH_HREF } from "@/lib/search/search-url";
 
 function HeaderAuthLinks({ onNavigate }: { onNavigate?: () => void }) {
   return (
@@ -59,7 +60,7 @@ export function SiteHeader({ logoPriority = false }: { logoPriority?: boolean })
           <div className="flex items-center gap-2 sm:gap-3">
             <WorkspaceNavLink />
             {isSignedIn ? <UserButton /> : <HeaderAuthLinks />}
-            <ButtonLink href="/search" className="px-3 py-2 text-sm sm:px-4">
+            <ButtonLink href={OPEN_SEARCH_HREF} className="px-3 py-2 text-sm sm:px-4">
               Start your shortlist
             </ButtonLink>
             <MobileNavMenuButton open={menuOpen} panelId={panelId} onToggle={toggleMenu} />

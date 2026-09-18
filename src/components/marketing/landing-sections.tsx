@@ -10,6 +10,7 @@ import {
   formatProgramCatalogLabel,
   MARKETING_OFFERING_COUNT_LABEL,
 } from "@/lib/programs/preview-programs";
+import { OPEN_SEARCH_HREF } from "@/lib/search/search-url";
 
 export function LandingHero() {
   return (
@@ -31,7 +32,7 @@ export function LandingHero() {
           seconds. <strong className="font-semibold text-[var(--color-sage)]">Free.</strong>
         </p>
         <div className="flex flex-wrap gap-3 pt-1">
-          <ButtonLink href="/search">Start your shortlist</ButtonLink>
+          <ButtonLink href={OPEN_SEARCH_HREF}>Start your shortlist</ButtonLink>
           <ButtonLink href="#categories" variant="secondary">
             Browse categories
           </ButtonLink>
@@ -121,7 +122,7 @@ export function ProblemHowItWorksSection() {
                 </li>
               ))}
             </ol>
-            <ButtonLink href="/search" className="mt-8">
+            <ButtonLink href={OPEN_SEARCH_HREF} className="mt-8">
               Start your shortlist
             </ButtonLink>
           </div>
@@ -150,6 +151,9 @@ export function CategoriesSection() {
         <h2 className="mx-auto mt-3 max-w-3xl text-3xl md:text-4xl">
           Or, if you prefer to browse, start with any of the {pathwayCount} pre-defined pathways.
         </h2>
+        <p className="mt-3 text-base text-[var(--color-text-muted)] md:text-lg">
+          (you can always refine later)
+        </p>
         <HomeCategoryTiles
           tiles={HOME_CATEGORY_ORDER.map((categoryId) => {
             const cat = PROGRAM_CATEGORIES.find((c) => c.id === categoryId)!;
@@ -161,7 +165,7 @@ export function CategoriesSection() {
             };
           })}
         />
-        <ButtonLink href="/search" variant="secondary" className="mt-10">
+        <ButtonLink href={OPEN_SEARCH_HREF} variant="secondary" className="mt-10">
           Start your shortlist
         </ButtonLink>
       </div>
@@ -215,7 +219,7 @@ export function FinePrintSection() {
             If we also find a material catch — a residency limit, a non-refundable deposit —
             we flag that separately, with the source.
           </p>
-          <ButtonLink href="/search" className="mt-8">
+          <ButtonLink href={OPEN_SEARCH_HREF} className="mt-8">
             Start your shortlist
           </ButtonLink>
         </div>
@@ -275,7 +279,7 @@ export function WorkspaceSection() {
             </div>
           ))}
         </div>
-        <ButtonLink href="/search" variant="secondary" className="mt-8">
+        <ButtonLink href={OPEN_SEARCH_HREF} variant="secondary" className="mt-8">
           Start your shortlist
         </ButtonLink>
       </div>
@@ -299,7 +303,7 @@ export function AdminSection() {
           <ButtonLink href="/contact" variant="primary-on-dark">
             Add or update program
           </ButtonLink>
-          <Link href="/search" className={btnOutlineOnDark}>
+          <Link href={OPEN_SEARCH_HREF} className={btnOutlineOnDark}>
             See current listings
           </Link>
         </div>

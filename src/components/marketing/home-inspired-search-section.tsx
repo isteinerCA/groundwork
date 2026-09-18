@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { MARKETING_OFFERING_COUNT_LABEL } from "@/lib/programs/preview-programs";
+import { OPEN_SEARCH_HREF } from "@/lib/search/search-url";
 import { cn } from "@/lib/utils";
 
 type InspiredLink = {
@@ -10,10 +10,9 @@ type InspiredLink = {
 
 type InspiredTopic = {
   label: string;
-  image: string;
-  imagePosition?: string;
-  alt: string;
   links: InspiredLink[];
+  typeClass: string;
+  rotateClass: string;
 };
 
 const LIST = (slug: string) => `/resources/lists/${slug}`;
@@ -21,112 +20,100 @@ const LIST = (slug: string) => `/resources/lists/${slug}`;
 const INSPIRED_TOPICS: InspiredTopic[] = [
   {
     label: "Sea turtles",
-    image: "/images/gallery/marine-science.jpg",
-    imagePosition: "object-[50%_70%]",
-    alt: "Students conducting field research on the water",
     links: [{ label: "Abroad", href: LIST("sea-turtle-programs") }],
+    typeClass: "font-serif text-xl italic sm:text-[1.35rem]",
+    rotateClass: "-rotate-2",
   },
   {
     label: "Kilimanjaro",
-    image: "/images/gallery/wilderness-hiking.jpg",
-    alt: "Students hiking a mountain trail",
     links: [{ label: "Abroad", href: LIST("kilimanjaro-programs") }],
+    typeClass: "font-serif text-lg tracking-wide sm:text-xl",
+    rotateClass: "rotate-1",
   },
   {
     label: "Scuba diving",
-    image: "/images/gallery/marine-science.jpg",
-    imagePosition: "object-[40%_30%]",
-    alt: "Open water and marine field research",
     links: [{ label: "Abroad", href: LIST("scuba-programs") }],
+    typeClass: "text-[0.95rem] font-medium tracking-tight sm:text-base",
+    rotateClass: "rotate-2",
   },
   {
     label: "Japan",
-    image: "/images/gallery/global-travel.jpg",
-    alt: "Students exploring a city abroad",
     links: [{ label: "Abroad", href: LIST("japan-programs") }],
+    typeClass: "font-serif text-2xl italic",
+    rotateClass: "-rotate-1",
   },
   {
     label: "Entrepreneurship",
-    image: "/images/gallery/tech-robotics.jpg",
-    alt: "Students collaborating on a hands-on project",
     links: [
       { label: "US", href: LIST("entrepreneurship-us-programs") },
       { label: "Abroad", href: LIST("entrepreneurship-programs") },
     ],
+    typeClass: "text-xs font-semibold tracking-[0.14em] uppercase",
+    rotateClass: "rotate-[1.5deg]",
   },
   {
     label: "International relations",
-    image: "/images/gallery/writing-humanities.jpg",
-    alt: "Students in discussion",
     links: [
       { label: "US", href: LIST("international-relations-diplomacy-us-programs") },
       { label: "Abroad", href: LIST("international-relations-diplomacy-programs") },
     ],
+    typeClass: "font-serif text-base italic leading-snug sm:text-lg",
+    rotateClass: "-rotate-[1.5deg]",
   },
   {
     label: "Wildlife conservation",
-    image: "/images/gallery/wilderness-hiking.jpg",
-    imagePosition: "object-[70%_40%]",
-    alt: "Students outdoors in a wild landscape",
     links: [{ label: "Abroad", href: LIST("conservation-programs") }],
+    typeClass: "font-serif text-base leading-snug sm:text-lg",
+    rotateClass: "rotate-1",
   },
   {
     label: "Architecture",
-    image: "/images/gallery/arts-dance.jpg",
-    alt: "Students in a studio and performance space",
     links: [
       { label: "US", href: LIST("architecture-us-programs") },
       { label: "Abroad", href: LIST("architecture-programs") },
     ],
+    typeClass: "text-lg italic tracking-tight",
+    rotateClass: "-rotate-2",
   },
 ];
 
-function InspiredTopicCard({ topic }: { topic: InspiredTopic }) {
-  const single = topic.links.length === 1;
+function DreamBubble({ topic }: { topic: InspiredTopic }) {
+  const primary = topic.links[0];
+  const dual = topic.links.length > 1;
+
+  const bubbleClass = cn(
+    "relative inline-flex cursor-pointer flex-col items-center justify-center rounded-[2.25rem] bg-[var(--color-parchment)] px-5 text-center text-[var(--color-navy)] shadow-[0_8px_24px_rgb(0_0_0_/_18%)] ring-1 ring-white/40 transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-[0_12px_28px_rgb(0_0_0_/_22%)]",
+    topic.rotateClass,
+    dual ? "py-3" : "min-h-[3.25rem] py-2.5",
+  );
 
   return (
-    <article className="group relative aspect-[4/5] overflow-hidden rounded-[var(--radius-lg)] bg-[var(--color-navy-dark)] shadow-[0_14px_36px_rgb(0_0_0_/_32%)] ring-1 ring-white/10 transition hover:ring-[var(--color-sage)]">
-      <Image
-        src={topic.image}
-        alt={topic.alt}
-        fill
-        className={cn(
-          "object-cover transition duration-700 group-hover:scale-105",
-          topic.imagePosition,
-        )}
-        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 280px"
-      />
-      <div
-        className="absolute inset-0 bg-[linear-gradient(to_top,rgb(10_20_27_/_82%)_0%,rgb(10_20_27_/_28%)_42%,transparent_68%)]"
-        aria-hidden
-      />
-
-      <div className="absolute inset-x-0 bottom-0 z-10 p-3.5 sm:p-4">
-        {single ? (
-          <Link
-            href={topic.links[0].href}
-            className="block text-lg leading-snug text-white no-underline after:absolute after:inset-0 sm:text-xl"
-          >
-            {topic.label}
-          </Link>
-        ) : (
-          <>
-            <h3 className="text-lg leading-snug text-white sm:text-xl">{topic.label}</h3>
-            <div className="mt-2.5 flex gap-2">
-              {topic.links.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="rounded-full bg-[var(--color-parchment)] px-3 py-1 text-[11px] font-semibold tracking-[0.12em] text-[var(--color-navy)] uppercase no-underline transition hover:bg-[var(--color-sage)]"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </>
-        )}
-      </div>
-    </article>
+    <div className={bubbleClass}>
+      <Link
+        href={primary.href}
+        className="text-inherit no-underline after:absolute after:inset-0"
+        aria-label={
+          dual ? `${topic.label} programs in the ${primary.label}` : `${topic.label} programs`
+        }
+      >
+        <span className={cn("pointer-events-none text-[var(--color-navy)]", topic.typeClass)}>
+          {topic.label}
+        </span>
+      </Link>
+      {dual ? (
+        <span className="relative z-10 mt-1.5 flex gap-3">
+          {topic.links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-[11px] font-semibold tracking-[0.16em] text-[var(--color-navy-light)] uppercase no-underline hover:text-[var(--color-sage)]"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </span>
+      ) : null}
+    </div>
   );
 }
 
@@ -146,28 +133,29 @@ export function HomeInspiredSearchSection() {
       />
 
       <div className="relative mx-auto max-w-6xl">
-        <h2 className="max-w-4xl text-3xl leading-[1.15] text-[var(--color-parchment)] md:text-5xl lg:text-[3.25rem]">
+        <h2 className="max-w-4xl text-3xl leading-[1.15] text-[var(--color-parchment)] md:text-4xl">
           Looking for something{" "}
           <em className="font-serif italic text-[var(--color-sage)]">specific?</em>
         </h2>
-        <p className="mt-5 max-w-3xl text-lg leading-relaxed text-[var(--color-parchment)]/80 md:text-xl">
-          Search across {MARKETING_OFFERING_COUNT_LABEL} programs for an experience, destination, or
-          interest.
+        <p className="mt-5 max-w-3xl text-lg leading-relaxed text-[var(--color-parchment)]/80">
+          Tell our plain English assistant what you have in mind to search across{" "}
+          {MARKETING_OFFERING_COUNT_LABEL} programs for an experience, destination, or interest.
         </p>
 
-        <p className="mt-12 text-xs font-semibold tracking-[0.14em] text-[var(--color-sage)] uppercase">
-          Get inspired
+        <p className="mt-12 text-xl text-[var(--color-parchment)]/90 md:text-2xl">
+          This summer, I am{" "}
+          <em className="font-serif italic text-[var(--color-sage)]">dreaming of</em>
         </p>
-        <ul className="mt-4 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+        <ul className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-4 sm:gap-x-4">
           {INSPIRED_TOPICS.map((topic) => (
             <li key={topic.label}>
-              <InspiredTopicCard topic={topic} />
+              <DreamBubble topic={topic} />
             </li>
           ))}
         </ul>
 
         <Link
-          href="/search?open=1"
+          href={OPEN_SEARCH_HREF}
           className="mt-12 flex w-full items-center justify-between gap-4 rounded-full border border-white/15 bg-[var(--color-parchment)] px-5 py-4 text-left no-underline shadow-[0_10px_30px_rgb(0_0_0_/_25%)] transition hover:border-[var(--color-sage)] hover:bg-white sm:px-7 sm:py-5"
         >
           <span className="min-w-0">
