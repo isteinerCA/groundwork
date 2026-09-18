@@ -13,6 +13,7 @@ import {
   getRelatedListsForTravelList,
   getRelatedListsHeading,
   getTravelListHubLink,
+  shouldShowTeenTravelArticle,
   TRAVEL_LIST_ARTICLE_SLUGS,
 } from "@/lib/content/predefined-list-related";
 
@@ -34,7 +35,8 @@ function getTravelListArticles(): ArticleWithCategory[] {
 }
 
 export function TravelListFooter({ list }: { list: PredefinedList }) {
-  const articles = getTravelListArticles();
+  const showTeenTravelArticle = shouldShowTeenTravelArticle(list);
+  const articles = showTeenTravelArticle ? getTravelListArticles() : [];
   const relatedLists = getRelatedListsForTravelList(list);
   const relatedListsHeading = getRelatedListsHeading(list);
   const abroadLists = getAbroadListsForDomesticList(list);
@@ -43,11 +45,13 @@ export function TravelListFooter({ list }: { list: PredefinedList }) {
 
   return (
     <>
-      <RelatedArticles
-        articles={articles}
-        eyebrow="Recommended reading"
-        heading="Teen travel planning"
-      />
+      {showTeenTravelArticle ? (
+        <RelatedArticles
+          articles={articles}
+          eyebrow="Recommended reading"
+          heading="Teen travel planning"
+        />
+      ) : null}
       <RelatedLists lists={relatedLists} heading={relatedListsHeading} />
       <RelatedLists
         lists={abroadLists}

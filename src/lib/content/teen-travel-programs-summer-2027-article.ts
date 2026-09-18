@@ -23,25 +23,6 @@ export const teenTravelProgramsSummer2027Article: ResourceArticle = {
       text: "Many major teen travel organizations have already published their 2027 programs, with enrollment open for trips around the world.",
     },
     {
-      type: "callout",
-      title:
-        "Considering a teen global or travel program? Learn about their different timeline",
-      paragraphs: [
-        {
-          text: "International travel, adventure, service, and cultural immersion programs often open enrollment for the following summer by August or September, earlier than many academic summer programs.",
-        },
-        {
-          text: "If international travel is on your teen's list, it's worth understanding this different planning cycle. See our guide to teen global summer programs for what we're seeing for Summer 2027 and how you can search more than 500 options by destination or specific interests to find the right fit for your teen.",
-          links: [
-            {
-              text: "guide to teen global summer programs",
-              slug: TEEN_TRAVEL_PROGRAMS_SUMMER_2027_SLUG,
-            },
-          ],
-        },
-      ],
-    },
-    {
       type: "paragraph",
       text: "But if \"teen travel program\" makes you think of sightseeing tours or traditional language immersion, it's worth taking another look. Today's options go much further.",
     },

@@ -23,6 +23,14 @@ export type TravelListHubLink = {
 
 export const TRAVEL_LIST_ARTICLE_SLUGS = [TEEN_TRAVEL_PROGRAMS_SUMMER_2027_SLUG] as const;
 
+const DOMESTIC_WHERE_TEEN_TRAVEL_ARTICLE_SLUGS = new Set([
+  "hawaii-us-programs",
+  "alaska-us-programs",
+  "wyoming-us-programs",
+  "yosemite-us-programs",
+  "colorado-us-programs",
+]);
+
 const GLOBAL_WHERE_RELATED: Record<string, readonly string[]> = {
   "japan-programs": ["south-korea-programs", "china-programs", "language-immersion-programs"],
   "costa-rica-programs": ["galapagos-programs", "caribbean-programs", "conservation-programs"],
@@ -333,6 +341,18 @@ export function isTravelPredefinedList(list: PredefinedList): boolean {
   return list.kind === "global-adventure" || list.kind === "domestic-interest";
 }
 
+export function shouldShowTeenTravelArticle(list: PredefinedList): boolean {
+  if (list.kind === "global-adventure") {
+    return true;
+  }
+
+  if (list.kind === "domestic-interest" && list.domesticInterestGroup === "where") {
+    return DOMESTIC_WHERE_TEEN_TRAVEL_ARTICLE_SLUGS.has(list.slug);
+  }
+
+  return false;
+}
+
 export function getRelatedListsHeading(list: PredefinedList): string {
   if (list.kind === "global-adventure") {
     return list.globalAdventureGroup === "where"
@@ -343,7 +363,7 @@ export function getRelatedListsHeading(list: PredefinedList): string {
   if (list.kind === "domestic-interest") {
     return list.domesticInterestGroup === "where"
       ? "Explore other US destinations"
-      : "Explore related US interests";
+      : "Explore related interests in US-based programs";
   }
 
   return "Related searches";
