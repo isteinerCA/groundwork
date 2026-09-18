@@ -206,6 +206,14 @@ def detect_international_from_csv(row: dict, location_display: str) -> bool:
     return detect_international(location_display)
 
 
+def parse_state_restriction_from_csv(row: dict) -> str | None:
+    """Two-letter US state/DC abbreviation from the CSV State column."""
+    state = csv_cell(row, "State", "State Abbr").upper()
+    if len(state) == 2 and state.isalpha():
+        return state
+    return None
+
+
 CATEGORIES = {
     "Artificial Intelligence": "artificial-intelligence",
     "STEM/Engineering": "stem-engineering",
@@ -960,6 +968,7 @@ def build_program_from_row(
     grades = parse_grades_from_csv(row)
     credit = parse_credit_from_csv(row)
     location_display = csv_cell(row, "Location Display", "Location")
+    state_restriction = parse_state_restriction_from_csv(row)
     csv_flags = []
     if row.get("Flags", "").strip():
         try:
@@ -995,6 +1004,7 @@ def build_program_from_row(
         "seasonYear": season_year,
         "reviewStatus": review_status,
         "locationDisplay": location_display,
+        **({"stateRestriction": state_restriction} if state_restriction else {}),
         "isInternational": detect_international_from_csv(row, location_display),
         **credit,
         **price,

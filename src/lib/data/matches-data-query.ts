@@ -235,7 +235,7 @@ const CARIBBEAN_SEARCH_TERMS: readonly string[] = [
   "trinidad",
   "tobago",
   "barbados",
-  "antigua",
+  "antigua and barbuda",
   "grenada",
   "st. lucia",
   "saint lucia",

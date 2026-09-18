@@ -14,6 +14,7 @@ import {
 } from "../src/lib/search/llm-parse-schema";
 import {
   matchesLocationQuery,
+  programMatchesAnyLocation,
   resolveLocationQuery,
 } from "../src/lib/data/matches-location";
 import {
@@ -544,6 +545,19 @@ if (matchesDataQuery(costaRicaCaribbeanCoast, "caribbean")) {
   failed++;
 }
 
+const guatemalaAntigua = stubProgram({
+  name: "Where There Be Dragons - Guatemala: Spanish Language Intensive (4-Week)",
+  locationDisplay: "Antigua, Pachaj, Lake Atitlan, Todos Santos, Ixil Triangle",
+  trackDetail: "Summer 2027 (4-week)",
+});
+
+if (matchesDataQuery(guatemalaAntigua, "caribbean")) {
+  console.error(
+    'FAIL: Guatemala program in Antigua, Guatemala should not match dataQuery "caribbean"',
+  );
+  failed++;
+}
+
 if (!matchesLocationQuery(georgetownCatalog, "washington dc")) {
   console.error('FAIL: Georgetown campus should match location query "washington dc"');
   failed++;
@@ -556,6 +570,60 @@ if (!matchesLocationQuery(georgetownCatalog, "district of columbia")) {
 
 if (matchesLocationQuery(georgetownCatalog, "washington")) {
   console.error('FAIL: Georgetown campus should not match Washington state query "washington"');
+  failed++;
+}
+
+const envisionGeorgetown = stubProgram({
+  name: "Envision (NYLF) - National Security",
+  locationDisplay: "Georgetown University",
+  stateRestriction: "DC",
+  trackDetail: "Residential (Georgetown University, 2027)",
+});
+
+const envisionPineBush = stubProgram({
+  name: "Envision - Veterinary Academy: Horse & Large Animal",
+  locationDisplay: "Pine Bush",
+  stateRestriction: "NY",
+  trackDetail: "Session 1",
+});
+
+if (!matchesLocationQuery(envisionGeorgetown, "district of columbia")) {
+  console.error(
+    'FAIL: Envision Georgetown offering should match via stateRestriction "DC"',
+  );
+  failed++;
+}
+
+if (!matchesLocationQuery(envisionPineBush, "new york")) {
+  console.error(
+    'FAIL: Envision Pine Bush offering should match via stateRestriction "NY"',
+  );
+  failed++;
+}
+
+const campLaurelMaine = stubProgram({
+  name: "Camp Laurel - Full Season",
+  locationDisplay: "Belgrade Lakes region (Readfield / Kents Hill), Maine",
+  stateRestriction: "ME",
+  trackDetail: "Full Season 2027",
+});
+
+if (!matchesLocationQuery(campLaurelMaine, "maine")) {
+  console.error('FAIL: Camp Laurel should match location query "maine"');
+  failed++;
+}
+
+if (
+  !programMatchesAnyLocation(campLaurelMaine, [
+    "maine",
+    "new hampshire",
+    "vermont",
+    "massachusetts",
+    "rhode island",
+    "connecticut",
+  ])
+) {
+  console.error("FAIL: Camp Laurel should match New England includeLocations");
   failed++;
 }
 
