@@ -1,43 +1,37 @@
 import Link from "next/link";
-import type { ResourceArticle } from "@/lib/constants/resources";
+import type { RelatedListItem } from "@/lib/content/predefined-list-related";
 
-type RelatedArticle = ResourceArticle & {
-  categoryLabel: string;
-};
-
-export function RelatedArticles({
-  articles,
-  eyebrow = "Keep reading",
-  heading = "Related articles",
+export function RelatedLists({
+  lists,
+  heading,
 }: {
-  articles: RelatedArticle[];
-  eyebrow?: string;
-  heading?: string;
+  lists: RelatedListItem[];
+  heading: string;
 }) {
-  if (articles.length === 0) {
+  if (lists.length === 0) {
     return null;
   }
 
   return (
     <section
-      aria-labelledby="related-articles-heading"
+      aria-labelledby="related-lists-heading"
       className="mt-8 border-t border-[var(--color-border)] pt-8"
     >
       <p className="text-xs font-semibold tracking-wide text-[var(--color-text-muted)] uppercase">
-        {eyebrow}
+        Keep exploring
       </p>
       <h2
-        id="related-articles-heading"
+        id="related-lists-heading"
         className="mt-1 font-serif text-xl font-normal text-[var(--color-navy)]"
       >
         {heading}
       </h2>
 
       <ol className="mt-5 divide-y divide-[var(--color-border)] rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)]">
-        {articles.map((article, index) => (
-          <li key={article.slug}>
+        {lists.map((list, index) => (
+          <li key={list.slug}>
             <Link
-              href={`/resources/${article.slug}`}
+              href={list.href}
               className="group flex items-start gap-4 px-4 py-4 no-underline transition hover:bg-[var(--color-parchment-dark)]/35 sm:px-5"
             >
               <span
@@ -47,11 +41,8 @@ export function RelatedArticles({
                 {index + 1}
               </span>
               <span className="min-w-0">
-                <span className="block text-xs text-[var(--color-text-muted)]">
-                  {article.categoryLabel}
-                </span>
-                <span className="mt-1 block text-base leading-snug text-[var(--color-navy-light)] transition group-hover:text-[var(--color-navy)]">
-                  {article.title}
+                <span className="block text-base leading-snug text-[var(--color-navy-light)] transition group-hover:text-[var(--color-navy)]">
+                  {list.linkLabel}
                 </span>
               </span>
               <span

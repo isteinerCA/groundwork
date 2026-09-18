@@ -6,11 +6,13 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { PredefinedListJsonLd } from "@/components/resources/predefined-list-json-ld";
 import { BreadcrumbJsonLd } from "@/components/resources/breadcrumb-json-ld";
 import { RelatedArticles } from "@/components/resources/related-articles";
+import { TravelListFooter } from "@/components/resources/travel-list-footer";
 import {
   getPredefinedListBySlug,
   PREDEFINED_LISTS,
 } from "@/lib/constants/predefined-lists";
 import { getRelatedArticlesForList } from "@/lib/constants/resources";
+import { isTravelPredefinedList } from "@/lib/content/predefined-list-related";
 import { getProgramsForPredefinedList } from "@/lib/data/predefined-list-programs";
 import { getPrograms } from "@/lib/programs";
 import { buildPredefinedListMetadata } from "@/lib/seo/predefined-list-metadata";
@@ -39,7 +41,9 @@ export default async function PredefinedListPage({ params }: PageProps) {
 
   const programs = getPrograms();
   const listPrograms = getProgramsForPredefinedList(programs, list);
-  const relatedArticles = getRelatedArticlesForList(slug);
+  const relatedArticles = isTravelPredefinedList(list)
+    ? []
+    : getRelatedArticlesForList(slug);
   const breadcrumbs = getPredefinedListBreadcrumbs(list);
 
   return (
@@ -54,7 +58,11 @@ export default async function PredefinedListPage({ params }: PageProps) {
       />
       <div className="mx-auto max-w-7xl px-4 pb-12 sm:px-6">
         <div className="mx-auto max-w-3xl">
-          <RelatedArticles articles={relatedArticles} />
+          {isTravelPredefinedList(list) ? (
+            <TravelListFooter list={list} />
+          ) : (
+            <RelatedArticles articles={relatedArticles} />
+          )}
         </div>
         <Link
           href="/resources/lists"

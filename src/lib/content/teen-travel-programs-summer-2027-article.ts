@@ -206,10 +206,14 @@ export const teenTravelProgramsSummer2027Article: ResourceArticle = {
       text: "Sometimes the destination does come first.",
     },
     {
+      type: "quote",
+      text: "\"I dream of going to Japan.\"",
+      links: [{ text: "Japan", href: list("japan-programs") }],
+    },
+    {
       type: "paragraph",
-      text: "Maybe your teen wants to go to Japan. Maybe they picture themselves in Costa Rica, want to explore the Galápagos, or have always wanted to visit Greece.",
+      text: "Maybe your teen pictures themselves in Costa Rica, want to explore the Galápagos, or have always wanted to visit Greece.",
       links: [
-        { text: "Japan", href: list("japan-programs") },
         { text: "Costa Rica", href: list("costa-rica-programs") },
         { text: "Galápagos", href: list("galapagos-programs") },
         { text: "Greece", href: list("greece-programs") },
