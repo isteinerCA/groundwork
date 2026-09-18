@@ -37,6 +37,12 @@ export const GLOBAL_ADVENTURE_LIST_DEFS: GlobalAdventureListDef[] = [
   },
   { slug: "greece-programs", linkLabel: "Greece", dataQuery: "greece", group: "where" },
   { slug: "africa-programs", linkLabel: "Africa", dataQuery: "africa", group: "where" },
+  {
+    slug: "australia-programs",
+    linkLabel: "Australia",
+    dataQuery: "australia",
+    group: "where",
+  },
   { slug: "spain-programs", linkLabel: "Spain", dataQuery: "spain", group: "where" },
   { slug: "italy-programs", linkLabel: "Italy", dataQuery: "italy", group: "where" },
   {
@@ -51,6 +57,12 @@ export const GLOBAL_ADVENTURE_LIST_DEFS: GlobalAdventureListDef[] = [
     slug: "caribbean-programs",
     linkLabel: "Caribbean",
     dataQuery: "caribbean",
+    group: "where",
+  },
+  {
+    slug: "south-america-programs",
+    linkLabel: "South America",
+    dataQuery: "south america",
     group: "where",
   },
   {

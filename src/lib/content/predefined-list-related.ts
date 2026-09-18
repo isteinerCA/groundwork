@@ -33,11 +33,21 @@ const DOMESTIC_WHERE_TEEN_TRAVEL_ARTICLE_SLUGS = new Set([
 
 const GLOBAL_WHERE_RELATED: Record<string, readonly string[]> = {
   "japan-programs": ["south-korea-programs", "china-programs", "language-immersion-programs"],
-  "costa-rica-programs": ["galapagos-programs", "caribbean-programs", "conservation-programs"],
+  "costa-rica-programs": [
+    "galapagos-programs",
+    "south-america-programs",
+    "caribbean-programs",
+    "conservation-programs",
+  ],
   "france-programs": ["spain-programs", "italy-programs", "germany-programs"],
   "germany-programs": ["france-programs", "spain-programs", "italy-programs"],
   "china-programs": ["japan-programs", "south-korea-programs", "language-immersion-programs"],
-  "galapagos-programs": ["costa-rica-programs", "marine-biology-programs", "conservation-programs"],
+  "galapagos-programs": [
+    "south-america-programs",
+    "costa-rica-programs",
+    "marine-biology-programs",
+    "conservation-programs",
+  ],
   "greece-programs": ["italy-programs", "spain-programs", "france-programs"],
   "africa-programs": ["safari-programs", "kilimanjaro-programs", "conservation-programs"],
   "spain-programs": ["france-programs", "italy-programs", "greece-programs"],
@@ -45,7 +55,24 @@ const GLOBAL_WHERE_RELATED: Record<string, readonly string[]> = {
   "south-korea-programs": ["japan-programs", "china-programs", "language-immersion-programs"],
   "iceland-programs": ["ireland-programs", "backpacking-programs", "photography-programs"],
   "ireland-programs": ["iceland-programs", "france-programs", "language-immersion-programs"],
-  "caribbean-programs": ["costa-rica-programs", "scuba-programs", "sailing-programs"],
+  "caribbean-programs": [
+    "costa-rica-programs",
+    "south-america-programs",
+    "scuba-programs",
+    "sailing-programs",
+  ],
+  "south-america-programs": [
+    "galapagos-programs",
+    "costa-rica-programs",
+    "caribbean-programs",
+    "conservation-programs",
+  ],
+  "australia-programs": [
+    "marine-biology-programs",
+    "scuba-programs",
+    "conservation-programs",
+    "backpacking-programs",
+  ],
 };
 
 const GLOBAL_WHAT_RELATED: Record<string, readonly string[]> = {

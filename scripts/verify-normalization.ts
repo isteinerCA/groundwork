@@ -470,6 +470,50 @@ if (matchesDataQuery(greeceProgram, "africa")) {
   failed++;
 }
 
+const peruProgram = stubProgram({
+  name: "Rustic Pathways - Sacred Valley Service (Peru)",
+  locationDisplay: "Sacred Valley, Peru",
+  trackDetail: "Session 1",
+});
+
+const mexicoProgram = stubProgram({
+  name: "CIEE - Spanish Language & Mexican Culture (Merida)",
+  locationDisplay: "Merida, Mexico",
+  trackDetail: "Summer Session I",
+});
+
+const dominicanProgram = stubProgram({
+  name: "AMIGOS de las Americas",
+  locationDisplay: "Dominican Republic",
+  trackDetail: "Session 1",
+});
+
+const australiaProgram = stubProgram({
+  name: "Moondance Adventures - Australia",
+  locationDisplay: "Australia",
+  trackDetail: "Departure 1",
+});
+
+if (!matchesDataQuery(peruProgram, "south america")) {
+  console.error('FAIL: Peru program should match dataQuery "south america"');
+  failed++;
+}
+
+if (matchesDataQuery(mexicoProgram, "south america")) {
+  console.error('FAIL: Mexico program should not match dataQuery "south america"');
+  failed++;
+}
+
+if (!matchesDataQuery(dominicanProgram, "caribbean")) {
+  console.error('FAIL: Dominican Republic program should match dataQuery "caribbean"');
+  failed++;
+}
+
+if (!matchesDataQuery(australiaProgram, "australia")) {
+  console.error('FAIL: Australia program should match dataQuery "australia"');
+  failed++;
+}
+
 const caribbeanMarineBiology = stubProgram({
   name: "Broadreach - Caribbean Marine Biology Voyage",
   locationDisplay: "St. Martin + the Leewards, Caribbean",

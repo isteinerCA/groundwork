@@ -233,7 +233,7 @@ export const teenTravelProgramsSummer2027Article: ResourceArticle = {
     },
     {
       type: "paragraph",
-      text: "Japan · Costa Rica · France · Germany · China · Galápagos · Greece · Africa · Spain · Italy · South Korea · Iceland · Ireland · Caribbean",
+      text: "Japan · Costa Rica · France · Germany · China · Galápagos · Greece · Africa · Spain · Italy · South Korea · Iceland · Ireland · Caribbean · South America · Australia",
       links: [
         { text: "Japan", href: list("japan-programs") },
         { text: "Costa Rica", href: list("costa-rica-programs") },
@@ -249,6 +249,8 @@ export const teenTravelProgramsSummer2027Article: ResourceArticle = {
         { text: "Iceland", href: list("iceland-programs") },
         { text: "Ireland", href: list("ireland-programs") },
         { text: "Caribbean", href: list("caribbean-programs") },
+        { text: "South America", href: list("south-america-programs") },
+        { text: "Australia", href: list("australia-programs") },
       ],
     },
     {

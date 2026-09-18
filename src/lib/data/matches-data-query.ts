@@ -154,8 +154,73 @@ const AFRICA_SEARCH_TERMS: readonly string[] = [
   "zimbabwe",
 ];
 
+const SOUTH_AMERICA_SEARCH_TERMS: readonly string[] = [
+  "argentina",
+  "bolivia",
+  "brazil",
+  "chile",
+  "colombia",
+  "ecuador",
+  "galapagos",
+  "galápagos",
+  "guyana",
+  "paraguay",
+  "peru",
+  "suriname",
+  "uruguay",
+  "venezuela",
+  "french guiana",
+  "patagonia",
+  "andes",
+  "sacred valley",
+  "machu picchu",
+  "são paulo",
+  "sao paulo",
+  "buenos aires",
+  "lima",
+  "cusco",
+  "cuzco",
+  "quito",
+  "bogota",
+  "bogotá",
+];
+
+const CARIBBEAN_SEARCH_TERMS: readonly string[] = [
+  "caribbean",
+  "cuba",
+  "dominican republic",
+  "puerto rico",
+  "jamaica",
+  "haiti",
+  "bahamas",
+  "belize",
+  "trinidad",
+  "tobago",
+  "barbados",
+  "antigua",
+  "grenada",
+  "st. lucia",
+  "saint lucia",
+  "st. martin",
+  "st. barths",
+  "virgin islands",
+  "leeward islands",
+  "windward islands",
+  "turks and caicos",
+  "cayman islands",
+  "aruba",
+  "curacao",
+  "bonaire",
+  "saba",
+  "st. kitts",
+  "nevis",
+  "st. barts",
+];
+
 const REGION_QUERY_GROUPS: Record<string, readonly string[]> = {
   africa: AFRICA_SEARCH_TERMS,
+  "south america": SOUTH_AMERICA_SEARCH_TERMS,
+  caribbean: CARIBBEAN_SEARCH_TERMS,
 };
 
 function expandedActivityTerms(query: string): readonly string[] | null {
@@ -298,7 +363,7 @@ export function matchesDataQuery(
     return activityTerms.some((term) => singleTermMatchesOffering(program, term));
   }
 
-  const regionTerms = terms.length === 1 ? expandedRegionTerms(trimmed) : null;
+  const regionTerms = expandedRegionTerms(trimmed);
   if (regionTerms) {
     return matchesRegionDataQuery(program, regionTerms);
   }
