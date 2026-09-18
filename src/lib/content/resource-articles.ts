@@ -29,7 +29,7 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
             text: "International travel, adventure, service, and cultural immersion programs often open enrollment for the following summer by August or September, earlier than many academic summer programs.",
           },
           {
-            text: "If international travel is on your teen's list, it's worth understanding this different planning cycle. See our guide to teen global summer programs for what we're seeing for Summer 2027 and how you can search more than 500 options by destination or specific interests to find the right fit for your teen.",
+            text: "If international travel is on your teen's list, it's worth understanding this different planning cycle. See our guide to teen global summer programs for what we're seeing for Summer 2027 and how you can search more than 1000 options by destination or specific interests to find the right fit for your teen.",
             links: [
               {
                 text: "guide to teen global summer programs",
