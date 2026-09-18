@@ -1718,5 +1718,447 @@
         "severity": "warning"
       }
     ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-germany-austria-alpine-adventure"
+    },
+    "flags": [
+      {
+        "id": "alpine-adventure-2027-dates-unpublished",
+        "type": "safety",
+        "title": "2027 travel dates not yet published",
+        "body": "As of this research pass, this program's own page does not show specific 2027 session dates. Only the 2026-season duration and price could be confirmed. Families should confirm current 2027 dates directly with Rustic Pathways before planning around this program.",
+        "sourceCitation": "Germany & Austria: Alpine Adventure program page",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-costa-rica-summer-camp-leadership"
+    },
+    "flags": [
+      {
+        "id": "summer-camp-leadership-2027-dates-unpublished",
+        "type": "safety",
+        "title": "2027 travel dates not yet published",
+        "body": "As of this research pass, this program's own page does not show specific 2027 session dates. Families should confirm current 2027 dates directly with Rustic Pathways before planning around this program.",
+        "sourceCitation": "Costa Rica: Summer Camp Leadership program page",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-dominican-republic-beachside-service"
+    },
+    "flags": [
+      {
+        "id": "beachside-service-not-independently-fetched",
+        "type": "safety",
+        "title": "Data sourced from search snippets, not the full live page",
+        "body": "This program's individual live 2027 page was not independently fetched in full during this research pass; details are drawn from search-result snippets and a 2026-season reference. Confirm current price, dates, and inclusions directly with Rustic Pathways before enrolling.",
+        "sourceCitation": "Search-result snippets referencing the Dominican Republic: Beachside Service program page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-thailand-adventurer"
+    },
+    "flags": [
+      {
+        "id": "thailand-adventurer-not-independently-fetched",
+        "type": "safety",
+        "title": "Data sourced from search snippets, not the full live page",
+        "body": "This program's individual live 2027 page was not independently fetched in full during this research pass; details are drawn from search-result snippets and a 2026-season reference. Confirm current price, dates, and inclusions directly with Rustic Pathways before enrolling.",
+        "sourceCitation": "Search-result snippets referencing the Thailand Adventurer program page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-italy-mediterranean-marine-biology"
+    },
+    "flags": [
+      {
+        "id": "mediterranean-marine-biology-etias",
+        "type": "safety",
+        "title": "EU ETIAS travel authorization expected from late 2026",
+        "body": "From late 2026 the EU's ETIAS travel authorization is expected to apply for entry to Italy. Families should check the current requirement before departure, since requirements can change and vary by passport.",
+        "sourceCitation": "Mediterranean Marine Biology in Italy program page, Program Details FAQ section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-ireland-iceland-ecovillage-glacier"
+    },
+    "flags": [
+      {
+        "id": "ireland-iceland-not-schengen",
+        "type": "safety",
+        "title": "Ireland is not in the Schengen Area",
+        "body": "Unlike most EU destinations in this portfolio, Ireland is not part of the Schengen Area, so the EU's ETIAS travel authorization does not apply here. Visa/entry requirements for Ireland and Iceland differ from the Schengen pattern and vary by passport.",
+        "sourceCitation": "Ireland & Iceland: Ecovillage to Glacier program page, Program Details FAQ section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-indonesia-bali-scuba-culture-adventure"
+    },
+    "flags": [
+      {
+        "id": "bali-visa-on-arrival",
+        "type": "safety",
+        "title": "US citizens need a visa on arrival for Indonesia",
+        "body": "Unlike most other Rustic Pathways destinations, US passport holders need a visa on arrival for Indonesia, purchased at Denpasar airport or online beforehand. Passports must have at least six months of validity remaining.",
+        "sourceCitation": "Bali: Scuba, Culture and Adventure program page, Program Details FAQ section",
+        "severity": "warning"
+      },
+      {
+        "id": "bali-diving-medical-screening",
+        "type": "safety",
+        "title": "Diving carries its own medical screening",
+        "body": "Because this program includes a PADI Discover Scuba pool session and two guided open-water dives, families should disclose early if a student has a medical condition that might affect their ability to dive safely.",
+        "sourceCitation": "Bali: Scuba, Culture and Adventure program page, Supervision & Safety FAQ section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-thailand-elephant-conservation"
+    },
+    "flags": [
+      {
+        "id": "thai-elephant-group-size-inconsistency",
+        "type": "safety",
+        "title": "Group size is stated inconsistently on the program's own page",
+        "body": "The program-essentials summary box on this page states a maximum of 16 students, while the FAQ section further down the same page states the group is limited to 15 students. Families should confirm the actual group size directly with Rustic Pathways.",
+        "sourceCitation": "Thai Elephant Conservation Project program page, comparing the program-essentials box to the Group & Logistics FAQ section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-peru-sacred-valley-service"
+    },
+    "flags": [
+      {
+        "id": "sacred-valley-group-size-inconsistency",
+        "type": "safety",
+        "title": "Group size is stated inconsistently on the program's own page",
+        "body": "The program-essentials summary box on this page states a maximum of 15 students, while the FAQ section further down the same page states the group is limited to 18 students. Families should confirm the actual group size directly with Rustic Pathways.",
+        "sourceCitation": "Sacred Valley Service (Peru) program page, comparing the program-essentials box to the Group & Logistics FAQ section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-thailand-come-with-nothing"
+    },
+    "flags": [
+      {
+        "id": "come-with-nothing-different-enrollment-fee",
+        "type": "safety",
+        "title": "This program uses a $200 enrollment fee, not the usual $100",
+        "body": "Every other Rustic Pathways program page checked in this research pass states a $100 one-time enrollment fee. This program's page instead states a $200 one-time enrollment fee, refundable in full within 24 hours and non-refundable after that. Families should not assume the $100 figure applies here.",
+        "sourceCitation": "Thailand: Come With Nothing program page, Flights & Cost FAQ section",
+        "severity": "warning"
+      },
+      {
+        "id": "come-with-nothing-dates-unpublished",
+        "type": "safety",
+        "title": "Specific 2027 travel dates not published",
+        "body": "This program's page shows 'Summer 2027 Available Now' without a specific date range, unlike most other Rustic Pathways programs which list exact session dates. Confirm current dates directly with Rustic Pathways.",
+        "sourceCitation": "Thailand: Come With Nothing program page",
+        "severity": "info"
+      },
+      {
+        "id": "come-with-nothing-physical-demands",
+        "type": "safety",
+        "title": "Physically and logistically demanding, rustic accommodations throughout",
+        "body": "Rustic Pathways' own page describes this as one of its most challenging programs, with most nights spent in rural hill-tribe villages sleeping on mattress pads with mosquito nets and fans, and bathroom facilities including bucket showers and squat toilets. Students should be comfortable with rustic accommodations and physically demanding service days over 23 days.",
+        "sourceCitation": "Thailand: Come With Nothing program page, Is This the Right Fit? section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-morocco-souks-high-atlas-service"
+    },
+    "flags": [
+      {
+        "id": "morocco-lgbtq-legal-context",
+        "type": "safety",
+        "title": "Moroccan law criminalizes same-sex relations",
+        "body": "Rustic Pathways' own FAQ discloses that Moroccan law criminalizes same-sex relations under Penal Code Article 489, with active enforcement. Rustic Pathways states it briefs enrolled families on local laws before travel and plans support privately with the student and family, and that no student is denied enrollment based on identity.",
+        "sourceCitation": "Morocco: Souks & High Atlas Service program page, Support FAQ section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-usa-hawaii-surf-snorkel-service"
+    },
+    "flags": [
+      {
+        "id": "hawaii-swim-ability",
+        "type": "safety",
+        "title": "Students should be able to swim comfortably",
+        "body": "Rustic Pathways' own FAQ states that students with a serious fear of water or an inability to swim should contact Admissions before enrolling, given the program's ocean-centered activities (surf lessons, catamaran snorkeling).",
+        "sourceCitation": "Hawaii: Surf, Snorkel, and Service program page, Is This the Right Fit? section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-japan-tokyo-fusion-middle-school"
+    },
+    "flags": [
+      {
+        "id": "tokyo-fusion-age-range",
+        "type": "safety",
+        "title": "This program is for ages 12-14, not the usual 14-18",
+        "body": "This is the only program in the entire Rustic Pathways portfolio researched designed specifically for middle-school-aged students (12-14); every other program is for ages 14-18. Families of older or younger students should confirm eligibility directly.",
+        "sourceCitation": "Japan: Tokyo Fusion (Middle School) program page, Program Eligibility section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-costa-rica-pura-vida-service"
+    },
+    "flags": [
+      {
+        "id": "pura-vida-2027-not-published",
+        "type": "safety",
+        "title": "This program's page is still showing 2026 content, not 2027",
+        "body": "Despite being linked from the live 2027 programs listing, this program's own page displays 'Summer 2026' and 'Last chance summer 2026' messaging, and its internal navigation links point to the 2026 programs archive rather than 2027. The 2027 edition of this program does not appear to be published yet. All dates and pricing shown should be treated as 2026 reference data, not confirmed 2027 information.",
+        "sourceCitation": "Costa Rica: Pura Vida Service program page, page-wide content and navigation links",
+        "severity": "warning"
+      },
+      {
+        "id": "pura-vida-different-enrollment-fee",
+        "type": "safety",
+        "title": "This program uses a $200 enrollment fee, not the usual $100",
+        "body": "Like Come With Nothing, this program's page states a $200 one-time enrollment fee rather than the $100 seen on most other Rustic Pathways pages, refundable in full within 24 hours and non-refundable after that.",
+        "sourceCitation": "Costa Rica: Pura Vida Service program page, Flights & Cost FAQ section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-costa-rica-surf-and-service"
+    },
+    "flags": [
+      {
+        "id": "surf-service-missing-essentials-box",
+        "type": "safety",
+        "title": "This page lacks the standard program-essentials summary box",
+        "body": "Unlike most other Rustic Pathways program pages, this one has no 'Program essentials at a glance' box, so specific 2027 session dates and the exact checkout total (tuition plus enrollment fee) could not be confirmed from the page itself. Confirm these details directly with Rustic Pathways before enrolling.",
+        "sourceCitation": "Costa Rica: Surf and Service program page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-japan-southkorea-tokyo-to-seoul"
+    },
+    "flags": [
+      {
+        "id": "tokyo-seoul-date-inconsistency",
+        "type": "safety",
+        "title": "This page states two different sets of 2027 session dates",
+        "body": "The 'Travel Dates - Summer 2027' section near the top of this page lists June 17-30, June 24-July 7, and July 8-21, 2027. Further down the same page, the 'Arrival and Departure Windows' table lists June 18-July 2, June 25-July 9, and July 9-July 23, 2027 -- a one-day discrepancy across all three sessions within a single page. Families should confirm exact dates directly with Rustic Pathways before booking flights.",
+        "sourceCitation": "Japan & Korea Teen Travel Program: Tokyo to Seoul program page, comparing the Travel Dates section to the Arrival and Departure Windows table",
+        "severity": "warning"
+      },
+      {
+        "id": "tokyo-seoul-keta-required",
+        "type": "safety",
+        "title": "K-ETA travel authorization required for South Korea",
+        "body": "US and many other passport holders require Korea Electronic Travel Authorization (K-ETA) to enter South Korea. The process takes about 72 hours and costs approximately 10,000 won (about $7). This is separate from and in addition to any Japan entry requirements.",
+        "sourceCitation": "Japan & Korea Teen Travel Program: Tokyo to Seoul program page, Program Details FAQ section",
+        "severity": "warning"
+      },
+      {
+        "id": "tokyo-seoul-disclosed-incident",
+        "type": "safety",
+        "title": "A RED-severity incident was disclosed for the 2026 season",
+        "body": "Rustic Pathways' own transparency data for this program states that in 2026 it recorded 3 incidents across 3 sessions: two GREEN (low severity, one behavioral and one medical) and one classified RED (high severity) because the group had to temporarily separate. All three were addressed and resolved during the program.",
+        "sourceCitation": "Japan & Korea Teen Travel Program: Tokyo to Seoul program page, Transparent Incident Data section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-southkorea-k-everything-spring-break"
+    },
+    "flags": [
+      {
+        "id": "k-everything-non-summer",
+        "type": "safety",
+        "title": "This is the only non-summer program in the portfolio researched",
+        "body": "This program runs during Spring Break 2027 (April 4-9), not summer. Families used to summer program timelines should note this is a different booking season entirely, timed to match Palo Alto Unified and Atlanta Public Schools spring break.",
+        "sourceCitation": "South Korea Teen Travel Program: K-Everything program page, Why This Destination? section",
+        "severity": "info"
+      },
+      {
+        "id": "k-everything-date-line-confusion",
+        "type": "safety",
+        "title": "US travel dates and Korea travel dates are not the same days",
+        "body": "This program is sold as 'Sunday April 4 to Friday April 9, 2027' using US departure/return dates, but because of the international date line and a 13-hour time difference, students are actually on the ground in Korea only from Monday morning to Friday evening (5 days, 4 nights). Families should not assume 6 full days in Korea based on the marketed date range.",
+        "sourceCitation": "South Korea Teen Travel Program: K-Everything program page, Flight Times section",
+        "severity": "warning"
+      },
+      {
+        "id": "k-everything-no-group-flight",
+        "type": "safety",
+        "title": "No group or chaperoned flight is offered",
+        "body": "Unlike most other Rustic Pathways programs, there is no group flight and no chaperoned flight option here. Every family must book independent international airfare landing at Incheon between 4:00-9:00 AM on the Monday and departing between 6:00-10:00 PM on the Friday, Korea time. Arrivals outside this window incur an additional out-of-window fee.",
+        "sourceCitation": "South Korea Teen Travel Program: K-Everything program page, Flights & Cost FAQ section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-china-great-wall-li-river"
+    },
+    "flags": [
+      {
+        "id": "china-visa-required",
+        "type": "safety",
+        "title": "US citizens need a Chinese visa for this program",
+        "body": "Unlike almost every other Rustic Pathways program, US passport holders DO need a visa to travel on this program, since it flies home directly to the United States rather than continuing to a third country. The visa must be applied for in person at a Chinese Visa Application Service Center, and families should start the process about two months before departure.",
+        "sourceCitation": "China: Great Wall to Li River program page, How Do Visas, Phones and Transport Work in China? section",
+        "severity": "warning"
+      },
+      {
+        "id": "china-whatsapp-unavailable",
+        "type": "safety",
+        "title": "WhatsApp does not work in mainland China",
+        "body": "Families expecting to communicate via WhatsApp should know it does not function on mainland Chinese networks. Every student is issued a China-enabled SIM card, and Program Leaders and the Country Director use WeChat instead for non-emergency communication.",
+        "sourceCitation": "China: Great Wall to Li River program page, Communication FAQ section",
+        "severity": "info"
+      },
+      {
+        "id": "china-no-service-hours",
+        "type": "safety",
+        "title": "This program carries no community-service component",
+        "body": "Unlike many other Rustic Pathways programs, this one has no community service component and carries no service hours. Families specifically seeking service-hour documentation should choose a different program.",
+        "sourceCitation": "China: Great Wall to Li River program page, Is This the Right Fit? section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-china-singapore-shenzhen-singapore-innovation"
+    },
+    "flags": [
+      {
+        "id": "shenzhen-singapore-visa-free-transit",
+        "type": "safety",
+        "title": "US citizens travel visa-free via China's 240-hour transit rule",
+        "body": "Because this itinerary enters mainland China directly from the US and continues onward to Singapore (a third country), students travel under China's 240-hour (10-day) visa-free transit policy, entering and exiting at Shenzhen Bao'an. This is a materially different, easier visa situation than Rustic's standalone China program (Great Wall to Li River), which does require a visa since it returns directly to the US. Singapore itself is visa-free for US passport holders, with a free online Arrival Card required within 3 days of arrival.",
+        "sourceCitation": "Shenzhen & Singapore: Two Models of Innovation program page, visa FAQ section",
+        "severity": "info"
+      },
+      {
+        "id": "shenzhen-singapore-whatsapp-unavailable",
+        "type": "safety",
+        "title": "WhatsApp does not work during the Shenzhen (mainland China) portion",
+        "body": "As with Rustic's other mainland China program, WhatsApp does not function during the Shenzhen leg of this trip. Every student is issued a China-enabled SIM card, and Program Leaders use WeChat during that portion; normal connectivity resumes once the group reaches Singapore.",
+        "sourceCitation": "Shenzhen & Singapore: Two Models of Innovation program page, Communication FAQ section",
+        "severity": "info"
+      },
+      {
+        "id": "shenzhen-singapore-highest-price",
+        "type": "safety",
+        "title": "This is the most expensive program in the portfolio researched",
+        "body": "At $13,680 tuition ($13,780 at checkout), this is the single highest-priced program across all 29 Rustic Pathways programs researched -- more than six times the price of the least expensive program in this batch.",
+        "sourceCitation": "Shenzhen & Singapore: Two Models of Innovation program page, pricing section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-portugal-spain-surf-culture-culinary"
+    },
+    "flags": [
+      {
+        "id": "portugal-spain-length-inconsistency",
+        "type": "safety",
+        "title": "This page states two different program lengths for itself",
+        "body": "The 'Program essentials at a glance' box on this page states the program is 12 days / 10 nights. Further down the same page, the itinerary section header reads 'What Does a 15-Day Program Include?' and the day-by-day list runs through Day 15 with 'Total: 15 calendar days / 13 nights.' This is a direct, unresolved contradiction within a single page. The 15-day itinerary appears more likely to be accurate given its level of detail, but families should confirm the actual program length directly with Rustic Pathways before booking flights.",
+        "sourceCitation": "Portugal & Spain: Surf, Culture & Culinary Traditions program page, comparing the program-essentials box to the itinerary section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-spain-spanish-language-immersion"
+    },
+    "flags": [
+      {
+        "id": "spain-language-immersion-saturday-departure",
+        "type": "safety",
+        "title": "This program departs on a Saturday, not Rustic's usual Wednesday",
+        "body": "Every other Rustic Pathways Europe program departs the US on a Wednesday. This program instead departs Saturday, June 19, 2027 and returns Sunday, July 4, 2027, because its partner school (Segontiae Hispanic Studies) runs its course Sunday-to-Sunday. Families should book flights against these specific dates rather than assuming the usual Wednesday pattern.",
+        "sourceCitation": "Spain: Spanish Language Immersion program page, Group & Logistics FAQ section",
+        "severity": "warning"
+      },
+      {
+        "id": "spain-language-immersion-diploma-not-proficiency-cert",
+        "type": "safety",
+        "title": "The course completion diploma is not a standardized proficiency certificate",
+        "body": "Rustic Pathways' own page clarifies that the diploma students receive at the end of this program is a record of attendance and coursework, not a standardized proficiency certification such as DELE. Families expecting a formal, transferable language credential should confirm what their own school will accept.",
+        "sourceCitation": "Spain: Spanish Language Immersion program page, Who Teaches the Classes? section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "rustic-southkorea-korean-language-immersion"
+    },
+    "flags": [
+      {
+        "id": "korean-immersion-keta-required",
+        "type": "safety",
+        "title": "K-ETA travel authorization required for South Korea",
+        "body": "US citizens do not need a visa for a stay of this length in South Korea but do need K-ETA travel authorization unless currently exempt. Requirements vary by passport.",
+        "sourceCitation": "Korean Language Immersion in Seoul program page, Do we need a visa? FAQ section",
+        "severity": "warning"
+      },
+      {
+        "id": "korean-immersion-needs-minimum-enrollment",
+        "type": "safety",
+        "title": "This program needs to fill to run",
+        "body": "Rustic Pathways' own FAQ notes that because the group is capped at just 6 students to preserve the private-instruction model, the program needs to fill to run at all. Families should be aware of possible cancellation risk if enrollment is low, and confirm current status with an advisor.",
+        "sourceCitation": "Korean Language Immersion in Seoul program page, Why is the group capped at six students? FAQ section",
+        "severity": "info"
+      }
+    ]
   }
 ]
