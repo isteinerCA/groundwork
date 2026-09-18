@@ -225,6 +225,7 @@ CATEGORIES = {
     "Cultural Exchange": "cultural-exchange",
     "Leadership/Gifted": "leadership-gifted",
     "Business/Entrepreneurship": "business-entrepreneurship",
+    "International Relations/Diplomacy": "international-relations",
     "Mathematics": "mathematics",
     "Biomedical": "biomedical",
     "Arts": "arts",

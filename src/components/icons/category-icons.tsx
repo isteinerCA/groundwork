@@ -108,6 +108,16 @@ const icons: Record<ProgramCategoryId, (props: IconProps) => ReactNode> = {
       </svg>
     </IconWrap>
   ),
+  "international-relations": ({ className }) => (
+    <IconWrap className={className}>
+      <svg viewBox="0 0 40 40" fill="none" className="h-full w-full">
+        <path d="M8 30h24" stroke="#1a365d" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M12 30V16h4v14M24 30V16h4v14" stroke="#1a365d" strokeWidth="1.5" />
+        <path d="M10 16h20v3H10v-3z" stroke="#1a365d" strokeWidth="1.5" />
+        <path d="M20 8l10 8H10l10-8z" stroke="#c9a227" strokeWidth="1.5" strokeLinejoin="round" />
+      </svg>
+    </IconWrap>
+  ),
   mathematics: ({ className }) => (
     <IconWrap className={className}>
       <svg viewBox="0 0 40 40" fill="none" className="h-full w-full">

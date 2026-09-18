@@ -2,6 +2,7 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { HomePricingSection } from "@/components/marketing/home-pricing-section";
 import { ProgramGallerySection } from "@/components/marketing/program-gallery-section";
+import { HomeInspiredSearchSection } from "@/components/marketing/home-inspired-search-section";
 import {
   AdminSection,
   CategoriesSection,
@@ -22,6 +23,7 @@ export default function HomePage() {
           <WaitlistSignup source="home" className="mb-4" />
         </div>
         <ProblemHowItWorksSection />
+        <HomeInspiredSearchSection />
         <CategoriesSection />
         <FinePrintSection />
         <ProgramGallerySection />

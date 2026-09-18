@@ -21,5 +21,5 @@ export const catalogProgramFamilyCount = new Set(
 /** Hero / "options" copy — total offerings, rounded. */
 export const MARKETING_OFFERING_COUNT_LABEL = roundMarketingCount(catalogOfferingCount);
 
-/** Filter / "programs" copy — search tile count, rounded. */
+/** Hero / "providers" copy — search tile count, rounded. */
 export const MARKETING_PROGRAM_COUNT_LABEL = roundMarketingCount(catalogProgramFamilyCount);

@@ -41,7 +41,7 @@ Save flow: **Tap ♡ on search results** → open workspace.
 
 The final CSV will include:
 
-- **12 primary categories** (see `src/lib/constants/categories.ts`)
+- **14 primary categories** (see `src/lib/constants/categories.ts`)
 - **Format column** — Residential / Online / Both
 - **Gotcha flags** — JSON in `Flags` column (or separate sheet; TBD)
 - **Price** — may include `"Contact program"` for unknown pricing
@@ -71,7 +71,7 @@ See [docs/DATA.md](./docs/DATA.md) for full details.
 src/
   app/              # Next.js routes
   lib/
-    constants/      # 13 categories, admission types, filter enums
+    constants/      # 14 categories, admission types, filter enums
     data/           # Normalization & filter helpers
     types/          # Program, SearchFilters, CSV row types
 scripts/

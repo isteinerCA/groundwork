@@ -1,5 +1,5 @@
 /**
- * Thirteen primary categories from the program CSV (final schema).
+ * Fourteen primary categories from the program CSV (final schema).
  * UI labels may differ slightly from raw CSV values for display polish.
  */
 export const PROGRAM_CATEGORIES = [
@@ -64,6 +64,12 @@ export const PROGRAM_CATEGORIES = [
     description: "Marketing, finance, entrepreneurship, hospitality, and business academies",
   },
   {
+    id: "international-relations",
+    csvValue: "International Relations/Diplomacy",
+    label: "International Relations & Diplomacy",
+    description: "Diplomacy, government, geopolitics, debate, and public policy",
+  },
+  {
     id: "mathematics",
     csvValue: "Mathematics",
     label: "Math",
@@ -85,7 +91,7 @@ export const PROGRAM_CATEGORIES = [
 
 export type ProgramCategoryId = (typeof PROGRAM_CATEGORIES)[number]["id"];
 
-/** Homepage grid order — longer labels (wilderness, pre-med) on the bottom row. */
+/** Homepage grid order — longer labels on the last row of the 4-column layout. */
 export const HOME_CATEGORY_ORDER: ProgramCategoryId[] = [
   "artificial-intelligence",
   "stem-engineering",
@@ -98,8 +104,9 @@ export const HOME_CATEGORY_ORDER: ProgramCategoryId[] = [
   "business-entrepreneurship",
   "mathematics",
   "arts",
-  "outdoor-wilderness",
   "biomedical",
+  "outdoor-wilderness",
+  "international-relations",
 ];
 
 export const CATEGORY_BY_CSV_VALUE = Object.fromEntries(

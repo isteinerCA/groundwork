@@ -9,9 +9,6 @@ export interface OpeningHintContext {
 }
 
 export function getOpeningHint(context: OpeningHintContext): string {
-  if (context.filters.gradesCompleted.length === 0) {
-    return "Select a grade above to see programs, then fine-tune here.";
-  }
   if (context.resultCount === 0) {
     return 'No programs match — broaden categories or say "start over."';
   }

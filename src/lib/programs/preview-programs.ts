@@ -55,7 +55,7 @@ export function getPreviewPrograms(programs: Program[], limit = 3): Program[] {
 }
 
 export function formatProgramCatalogLabel(): string {
-  return `${MARKETING_PROGRAM_COUNT_LABEL} curated programs`;
+  return `${MARKETING_PROGRAM_COUNT_LABEL} curated providers`;
 }
 
 /** User-facing count for search headers and metadata (never the raw import total). */

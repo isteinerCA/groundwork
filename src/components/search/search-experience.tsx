@@ -103,6 +103,7 @@ export function SearchExperience({
   programs,
   initialFilters,
   lockedFilters,
+  skipLastSearch = false,
   pageTitle = "Build your shortlist",
   pageDescription,
   customizeSearchHref,
@@ -112,6 +113,7 @@ export function SearchExperience({
   programs: Program[];
   initialFilters?: Partial<SearchFilters>;
   lockedFilters?: Partial<SearchFilters>;
+  skipLastSearch?: boolean;
   pageTitle?: string;
   pageDescription?: string;
   customizeSearchHref?: string;
@@ -132,17 +134,16 @@ export function SearchExperience({
 
   useEffect(() => {
     if (restoredLastSearch) return;
-    if (lockedFilters || hasSearchUrlSeed(initialFilters ?? {})) {
+    if (skipLastSearch || lockedFilters || hasSearchUrlSeed(initialFilters ?? {})) {
       setRestoredLastSearch(true);
       return;
     }
     const last = loadLastSearchFilters();
     if (last) setFilters(applyLockedFilters({ ...DEFAULT_SEARCH_FILTERS, ...last }, lockedFilters));
     setRestoredLastSearch(true);
-  }, [restoredLastSearch, initialFilters, lockedFilters]);
+  }, [restoredLastSearch, skipLastSearch, initialFilters, lockedFilters]);
 
   const results = useMemo(() => {
-    if (filters.gradesCompleted.length === 0) return [];
     return sortPrograms(filterPrograms(programs, filters), sort);
   }, [programs, filters, sort]);
 
@@ -275,7 +276,7 @@ export function SearchExperience({
               Step 1 · Filter
             </p>
             <h2 className="mt-1 text-lg text-[var(--color-navy)]">
-              What grade did your child just complete? <span className="text-red-600">*</span>
+              What grade did your child just complete?
             </h2>
             <div className="mt-3 flex flex-nowrap gap-1.5 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               {GRADE_CHIPS.map((grade) => (
@@ -291,18 +292,8 @@ export function SearchExperience({
                 />
               ))}
             </div>
-            {filters.gradesCompleted.length === 0 && (
-              <p className="mt-3 rounded-[var(--radius-md)] border border-dashed border-[var(--color-border)] bg-[var(--color-parchment)] px-3 py-2 text-sm text-[var(--color-text-muted)]">
-                Select a grade — programs for your shortlist appear{" "}
-                <span className="lg:hidden">below.</span>
-                <span className="hidden lg:inline">on the right.</span>
-              </p>
-            )}
 
-            <FilterResultsCounter
-              count={resultGroupCount}
-              hasGrade={filters.gradesCompleted.length > 0}
-            />
+            <FilterResultsCounter count={resultGroupCount} hasGrade />
 
             <div id={REFINE_FILTERS_ANCHOR_ID} className="mt-4 scroll-mt-24">
               <CollapsibleFilterGroup
@@ -520,7 +511,7 @@ export function SearchExperience({
         </aside>
 
         <div className="min-w-0">
-          {filters.gradesCompleted.length > 0 ? (
+          {results.length > 0 || restoredLastSearch ? (
             <div className="space-y-6">
               <section
                 id={FINE_TUNE_ANCHOR_ID}

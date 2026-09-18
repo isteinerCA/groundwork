@@ -9,7 +9,7 @@ Last updated: Sprint 1 (July 2026)
 | Column | Notes |
 |---|---|
 | Program Name | Required |
-| Primary Category | One of 12 values — see `src/lib/constants/categories.ts` |
+| Primary Category | One of 14 values — see `src/lib/constants/categories.ts` |
 | Secondary Tags | Comma-separated |
 | Any additional details about specific track | Optional; used in slug for duplicate program names |
 | Grades | Normalized to grade-completed range at import (PRD §4.4) |
@@ -23,7 +23,7 @@ Last updated: Sprint 1 (July 2026)
 | URL | Program website |
 | **Flags** | JSON array of gotcha flags (schema below) |
 
-## Twelve categories
+## Fourteen categories
 
 Categories are used **directly from the CSV** — no mapping to the PRD's nine-bucket taxonomy. UI groups may still visually cluster related categories on the landing page.
 
@@ -37,9 +37,10 @@ Categories are used **directly from the CSV** — no mapping to the PRD's nine-b
 8. Cultural Exchange  
 9. Leadership/Gifted  
 10. Business/Entrepreneurship  
-11. Mathematics  
-12. Biomedical  
-13. Arts  
+11. International Relations/Diplomacy  
+12. Mathematics  
+13. Biomedical  
+14. Arts  
 
 ## Admission type normalization
 

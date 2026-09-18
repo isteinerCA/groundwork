@@ -43,7 +43,7 @@ export function ProgramGallerySection() {
           {GALLERY_IMAGES.map((image) => (
             <Link
               key={image.src}
-              href="/search"
+              href="/search?open=1"
               className="group relative aspect-square overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-sm no-underline transition hover:border-[var(--color-sage)] hover:shadow-[var(--shadow-card)]"
             >
               <Image
@@ -57,7 +57,7 @@ export function ProgramGallerySection() {
           ))}
         </div>
 
-        <ButtonLink href="/search" className="mt-10">
+        <ButtonLink href="/search?open=1" className="mt-10">
           Start your shortlist
         </ButtonLink>
       </div>

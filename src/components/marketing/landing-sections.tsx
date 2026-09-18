@@ -23,9 +23,12 @@ export function LandingHero() {
         </h1>
         <p className="text-lg font-medium leading-relaxed text-[var(--color-navy)]">
           Find the right summer program among {MARKETING_OFFERING_COUNT_LABEL} curated options for
-          middle and high school students. Narrow them by interest, grade, dates, budget and more.
-          Build a personalized shortlist in about 90 seconds.{" "}
-          <strong className="font-semibold text-[var(--color-sage)]">Free.</strong>
+          middle and high school students. Search for anything from{" "}
+          <em className="font-serif italic text-[var(--color-sage)]">sea turtles</em> to{" "}
+          <em className="font-serif italic text-[var(--color-sage)]">Kilimanjaro</em>, or{" "}
+          <em className="font-serif italic text-[var(--color-sage)]">anything you dream of</em>,
+          then narrow by grade, dates, budget and more. Build a personalized shortlist in about 90
+          seconds. <strong className="font-semibold text-[var(--color-sage)]">Free.</strong>
         </p>
         <div className="flex flex-wrap gap-3 pt-1">
           <ButtonLink href="/search">Start your shortlist</ButtonLink>
@@ -138,14 +141,15 @@ export function ProblemHowItWorksSection() {
 }
 
 export function CategoriesSection() {
+  const pathwayCount = HOME_CATEGORY_ORDER.length;
+
   return (
     <section id="categories" className="scroll-mt-20 px-4 py-20 sm:px-6">
       <div className="mx-auto max-w-6xl text-left md:text-center">
-        <SectionEyebrow>Twelve pathways</SectionEyebrow>
-        <h2 className="mt-3 text-3xl md:text-4xl">Explore program categories.</h2>
-        <p className="mt-2 text-lg text-[var(--color-text-muted)]">
-          Twelve pathways. Countless opportunities.
-        </p>
+        <SectionEyebrow>Browse</SectionEyebrow>
+        <h2 className="mx-auto mt-3 max-w-3xl text-3xl md:text-4xl">
+          Or, if you prefer to browse, start with any of the {pathwayCount} pre-defined pathways.
+        </h2>
         <HomeCategoryTiles
           tiles={HOME_CATEGORY_ORDER.map((categoryId) => {
             const cat = PROGRAM_CATEGORIES.find((c) => c.id === categoryId)!;
@@ -153,8 +157,7 @@ export function CategoriesSection() {
               id: cat.id,
               label: cat.label,
               description: cat.description,
-              highSchoolHref: getCategoryExploreHref(cat.id, "high-school"),
-              middleSchoolHref: getCategoryExploreHref(cat.id, "middle-school"),
+              href: getCategoryExploreHref(cat.id, "high-school"),
             };
           })}
         />

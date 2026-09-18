@@ -157,6 +157,14 @@ export function parseSearchFiltersFromSearchParams(
   return seed;
 }
 
+/** Marketing CTAs use `?open=1` to skip restoring the previous search. */
+export function shouldSkipLastSearchRestore(
+  params: Record<string, string | string[] | undefined>,
+): boolean {
+  const raw = params.open;
+  return (typeof raw === "string" ? raw : undefined) === "1";
+}
+
 export function hasSearchUrlSeed(filters: Partial<SearchFilters>): boolean {
   return Boolean(
     filters.dataQuery?.trim() ||
