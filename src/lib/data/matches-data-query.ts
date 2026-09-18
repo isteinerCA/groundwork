@@ -63,12 +63,22 @@ function hasGenericTrackDetail(trackDetail: string): boolean {
   if (/^session(\s+(i+|ii+|\d+))?(\s*\(|$)/i.test(track)) return true;
   if (/\bdeparture\b/i.test(track)) return true;
   if (/^\d+-[\d]*\s*day\b/i.test(track)) return true;
+  if (/\bindividual courses\b/i.test(track)) return true;
   return false;
 }
 
 /** Synonym groups for common activity searches on adventure/travel programs. */
 const ACTIVITY_QUERY_GROUPS: Record<string, readonly string[]> = {
   backpacking: ["backpacking", "hiking", "trekking", "mountain travel", "mountain trek"],
+  "international relations": [
+    "diplomacy",
+    "geopolitics",
+    "international relations",
+    "international law",
+    "international diplomacy",
+    "governing america",
+    "world in action",
+  ],
   "marine biology": [
     "marine biology",
     "marine ecology",

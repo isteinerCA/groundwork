@@ -249,12 +249,18 @@ export function SearchExperience({
             )}
           </p>
           {customizeSearchHref ? (
-            <Link
-              href={customizeSearchHref}
-              className="mt-3 inline-block text-sm font-medium text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
-            >
-              Customize this search →
-            </Link>
+            <div className="mt-5 max-w-xl rounded-[var(--radius-lg)] border border-[var(--color-sage)] bg-[var(--color-sage-soft)] px-4 py-4 sm:px-5">
+              <p className="text-sm leading-relaxed text-[var(--color-text)]">
+                Refine by grade, dates, trip length, and price in full search — this topic stays
+                pre-filled.
+              </p>
+              <Link
+                href={customizeSearchHref}
+                className="btn btn-primary mt-3 inline-flex px-5 py-2.5 text-sm no-underline"
+              >
+                Customize this search →
+              </Link>
+            </div>
           ) : null}
         </div>
       </div>

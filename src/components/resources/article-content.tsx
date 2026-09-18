@@ -91,6 +91,25 @@ export function ArticleContent({ blocks }: { blocks: ArticleBlock[] }) {
                 {renderParagraphText(block.text, block.links)}
               </blockquote>
             );
+          case "callout":
+            return (
+              <aside
+                key={index}
+                className="rounded-[var(--radius-lg)] border border-[var(--color-sage)]/35 bg-[var(--color-sage-soft)]/45 py-4 pl-5 pr-5"
+              >
+                <p className="font-medium leading-snug text-[var(--color-navy)]">
+                  {block.title}
+                </p>
+                {block.paragraphs.map((paragraph, paragraphIndex) => (
+                  <p
+                    key={paragraphIndex}
+                    className="mt-3 leading-relaxed text-[var(--color-text)]"
+                  >
+                    {renderParagraphText(paragraph.text, paragraph.links)}
+                  </p>
+                ))}
+              </aside>
+            );
           case "list":
             return (
               <ul

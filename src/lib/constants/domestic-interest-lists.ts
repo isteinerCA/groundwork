@@ -148,6 +148,13 @@ export const DOMESTIC_INTEREST_LIST_DEFS: DomesticInterestListDef[] = [
     group: "what",
   },
   {
+    slug: "international-relations-diplomacy-us-programs",
+    linkLabel: "International Relations & Diplomacy",
+    dataQuery: "international relations",
+    group: "what",
+    titleLabel: "International Relations & Diplomacy programs",
+  },
+  {
     slug: "ecology-us-programs",
     linkLabel: "Ecology",
     dataQuery: "ecology",

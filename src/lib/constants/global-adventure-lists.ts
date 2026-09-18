@@ -80,6 +80,13 @@ export const GLOBAL_ADVENTURE_LIST_DEFS: GlobalAdventureListDef[] = [
     group: "what",
   },
   {
+    slug: "international-relations-diplomacy-programs",
+    linkLabel: "International Relations & Diplomacy",
+    dataQuery: "international relations",
+    group: "what",
+    titleLabel: "International Relations & Diplomacy programs",
+  },
+  {
     slug: "backpacking-programs",
     linkLabel: "Backpacking",
     dataQuery: "backpacking",

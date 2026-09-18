@@ -377,6 +377,32 @@ if (!matchesDataQuery(alpsTrekking, "backpacking")) {
   failed++;
 }
 
+const diplomacyProgram = stubProgram({
+  name: "CIEE - Diplomacy & Government (Brussels)",
+  locationDisplay: "Brussels, Belgium",
+  trackDetail: "Summer Session I",
+});
+
+const georgetownCatalog = stubProgram({
+  name: "Summer Discovery - Georgetown University",
+  locationDisplay: "Washington, D.C. (Georgetown University campus)",
+  trackDetail: "Individual Courses - 2-Week Residential (Session 1)",
+  description:
+    "Session 1 topics: Governing America, International Relations, Mock Trial, Psychology.",
+});
+
+if (!matchesDataQuery(diplomacyProgram, "international relations")) {
+  console.error('FAIL: international relations should match diplomacy program names');
+  failed++;
+}
+
+if (!matchesDataQuery(georgetownCatalog, "international relations")) {
+  console.error(
+    'FAIL: international relations should match catalog course lists on Individual Courses tracks',
+  );
+  failed++;
+}
+
 const icelandProgram = stubProgram({
   name: "Overland - Iceland Explorer",
   locationDisplay: "Iceland",

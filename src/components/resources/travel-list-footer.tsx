@@ -8,6 +8,8 @@ import {
   type ResourceArticle,
 } from "@/lib/constants/resources";
 import {
+  getAbroadListsForDomesticList,
+  getAbroadListsHeading,
   getRelatedListsForTravelList,
   getRelatedListsHeading,
   getTravelListHubLink,
@@ -35,6 +37,8 @@ export function TravelListFooter({ list }: { list: PredefinedList }) {
   const articles = getTravelListArticles();
   const relatedLists = getRelatedListsForTravelList(list);
   const relatedListsHeading = getRelatedListsHeading(list);
+  const abroadLists = getAbroadListsForDomesticList(list);
+  const abroadListsHeading = getAbroadListsHeading(list);
   const hubLink = getTravelListHubLink(list);
 
   return (
@@ -45,6 +49,12 @@ export function TravelListFooter({ list }: { list: PredefinedList }) {
         heading="Teen travel planning"
       />
       <RelatedLists lists={relatedLists} heading={relatedListsHeading} />
+      <RelatedLists
+        lists={abroadLists}
+        eyebrow="Also abroad"
+        heading={abroadListsHeading}
+        headingId="abroad-lists-heading"
+      />
       {hubLink ? (
         <Link
           href={hubLink.href}

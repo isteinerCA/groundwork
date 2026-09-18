@@ -21,6 +21,11 @@ export type ArticleBlock =
     }
   | { type: "subheading"; text: string }
   | { type: "quote"; text: string; links?: ArticleInlineLink[] }
+  | {
+      type: "callout";
+      title: string;
+      paragraphs: Array<{ text: string; links?: ArticleInlineLink[] }>;
+    }
   | { type: "tip"; text: string }
   | { type: "footnote"; text: string };
 

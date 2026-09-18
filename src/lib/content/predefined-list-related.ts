@@ -49,7 +49,17 @@ const GLOBAL_WHAT_RELATED: Record<string, readonly string[]> = {
     "photography-programs",
     "backpacking-programs",
   ],
-  "language-immersion-programs": ["japan-programs", "spain-programs", "france-programs"],
+  "language-immersion-programs": [
+    "japan-programs",
+    "international-relations-diplomacy-programs",
+    "france-programs",
+  ],
+  "international-relations-diplomacy-programs": [
+    "language-immersion-programs",
+    "japan-programs",
+    "south-korea-programs",
+    "entrepreneurship-programs",
+  ],
   "backpacking-programs": ["kilimanjaro-programs", "iceland-programs", "africa-programs"],
   "kilimanjaro-programs": ["safari-programs", "africa-programs", "backpacking-programs"],
   "safari-programs": ["africa-programs", "kilimanjaro-programs", "conservation-programs"],
@@ -99,6 +109,126 @@ const DOMESTIC_WHERE_RELATED: Record<string, readonly string[]> = {
   ],
 };
 
+/** Direct global "what" counterpart for overlapping domestic interests. */
+const DOMESTIC_WHAT_TO_GLOBAL: Record<string, string> = {
+  "fashion-us-programs": "fashion-programs",
+  "photography-us-programs": "photography-programs",
+  "architecture-us-programs": "architecture-programs",
+  "veterinary-studies-us-programs": "veterinary-studies-programs",
+  "marine-biology-us-programs": "marine-biology-programs",
+  "entrepreneurship-us-programs": "entrepreneurship-programs",
+  "international-relations-diplomacy-us-programs": "international-relations-diplomacy-programs",
+  "ecology-us-programs": "ecology-programs",
+};
+
+/** Global interests to suggest when a domestic "what" list has no direct international twin. */
+const DOMESTIC_WHAT_ABROAD_SUGGESTIONS: Record<string, readonly string[]> = {
+  "ai-us-programs": [
+    "entrepreneurship-programs",
+    "language-immersion-programs",
+    "architecture-programs",
+  ],
+  "business-us-programs": [
+    "entrepreneurship-programs",
+    "international-relations-diplomacy-programs",
+    "language-immersion-programs",
+  ],
+  "marketing-us-programs": [
+    "entrepreneurship-programs",
+    "fashion-programs",
+    "photography-programs",
+  ],
+  "robotics-us-programs": [
+    "entrepreneurship-programs",
+    "architecture-programs",
+    "language-immersion-programs",
+  ],
+  "engineering-us-programs": [
+    "architecture-programs",
+    "entrepreneurship-programs",
+    "marine-biology-programs",
+  ],
+  "writing-us-programs": [
+    "language-immersion-programs",
+    "photography-programs",
+    "international-relations-diplomacy-programs",
+  ],
+  "theater-us-programs": [
+    "language-immersion-programs",
+    "photography-programs",
+    "fashion-programs",
+  ],
+  "music-us-programs": [
+    "language-immersion-programs",
+    "photography-programs",
+    "fashion-programs",
+  ],
+};
+
+/** International lists that pair well with domestic "where" searches. */
+const DOMESTIC_WHERE_ABROAD: Record<string, readonly string[]> = {
+  "hawaii-us-programs": [
+    "marine-biology-programs",
+    "scuba-programs",
+    "conservation-programs",
+    "costa-rica-programs",
+  ],
+  "alaska-us-programs": [
+    "backpacking-programs",
+    "iceland-programs",
+    "kilimanjaro-programs",
+    "conservation-programs",
+  ],
+  "wyoming-us-programs": [
+    "backpacking-programs",
+    "iceland-programs",
+    "safari-programs",
+    "africa-programs",
+  ],
+  "yosemite-us-programs": [
+    "backpacking-programs",
+    "iceland-programs",
+    "costa-rica-programs",
+    "conservation-programs",
+  ],
+  "vermont-us-programs": [
+    "ecology-programs",
+    "conservation-programs",
+    "backpacking-programs",
+    "ireland-programs",
+  ],
+  "colorado-us-programs": [
+    "backpacking-programs",
+    "iceland-programs",
+    "kilimanjaro-programs",
+    "safari-programs",
+  ],
+  "new-york-us-programs": [
+    "international-relations-diplomacy-programs",
+    "fashion-programs",
+    "entrepreneurship-programs",
+    "japan-programs",
+  ],
+  "boston-us-programs": [
+    "international-relations-diplomacy-programs",
+    "entrepreneurship-programs",
+    "marine-biology-programs",
+    "ireland-programs",
+  ],
+  "san-francisco-bay-area-us-programs": [
+    "entrepreneurship-programs",
+    "photography-programs",
+    "architecture-programs",
+    "japan-programs",
+  ],
+  "los-angeles-us-programs": [
+    "fashion-programs",
+    "photography-programs",
+    "entrepreneurship-programs",
+    "spain-programs",
+  ],
+};
+
 const DOMESTIC_WHAT_RELATED: Record<string, readonly string[]> = {
   "fashion-us-programs": [
     "photography-us-programs",
@@ -134,6 +264,12 @@ const DOMESTIC_WHAT_RELATED: Record<string, readonly string[]> = {
     "business-us-programs",
     "marketing-us-programs",
     "ai-us-programs",
+  ],
+  "international-relations-diplomacy-us-programs": [
+    "new-york-us-programs",
+    "boston-us-programs",
+    "entrepreneurship-us-programs",
+    "writing-us-programs",
   ],
   "ecology-us-programs": [
     "marine-biology-us-programs",
@@ -221,22 +357,11 @@ export function getTravelListHubLink(list: PredefinedList): TravelListHubLink | 
     };
   }
 
-  if (list.kind === "domestic-interest") {
-    return {
-      label: "Browse international teen programs →",
-      href: "/resources#global-adventure",
-    };
-  }
-
   return null;
 }
 
-export function getRelatedListsForTravelList(list: PredefinedList): RelatedListItem[] {
-  if (!isTravelPredefinedList(list)) {
-    return [];
-  }
-
-  return curatedSlugsForList(list).flatMap((slug) => {
+function relatedListItemsFromSlugs(slugs: readonly string[]): RelatedListItem[] {
+  return slugs.flatMap((slug) => {
     const related = getPredefinedListBySlug(slug);
     if (!related) {
       return [];
@@ -250,4 +375,53 @@ export function getRelatedListsForTravelList(list: PredefinedList): RelatedListI
       },
     ];
   });
+}
+
+function abroadSlugsForDomesticList(list: PredefinedList): readonly string[] {
+  if (list.kind !== "domestic-interest") {
+    return [];
+  }
+
+  if (list.domesticInterestGroup === "what") {
+    const counterpart = DOMESTIC_WHAT_TO_GLOBAL[list.slug];
+    if (counterpart) {
+      return [counterpart];
+    }
+
+    return DOMESTIC_WHAT_ABROAD_SUGGESTIONS[list.slug] ?? [];
+  }
+
+  return DOMESTIC_WHERE_ABROAD[list.slug] ?? [];
+}
+
+export function getAbroadListsHeading(list: PredefinedList): string {
+  if (list.kind !== "domestic-interest") {
+    return "Explore internationally";
+  }
+
+  if (list.domesticInterestGroup === "where") {
+    return "Explore internationally";
+  }
+
+  if (DOMESTIC_WHAT_TO_GLOBAL[list.slug]) {
+    return `Explore ${list.linkLabel} abroad`;
+  }
+
+  return "Explore related interests abroad";
+}
+
+export function getAbroadListsForDomesticList(list: PredefinedList): RelatedListItem[] {
+  if (list.kind !== "domestic-interest") {
+    return [];
+  }
+
+  return relatedListItemsFromSlugs(abroadSlugsForDomesticList(list));
+}
+
+export function getRelatedListsForTravelList(list: PredefinedList): RelatedListItem[] {
+  if (!isTravelPredefinedList(list)) {
+    return [];
+  }
+
+  return relatedListItemsFromSlugs(curatedSlugsForList(list));
 }

@@ -4,9 +4,13 @@ import type { RelatedListItem } from "@/lib/content/predefined-list-related";
 export function RelatedLists({
   lists,
   heading,
+  eyebrow = "Keep exploring",
+  headingId = "related-lists-heading",
 }: {
   lists: RelatedListItem[];
   heading: string;
+  eyebrow?: string;
+  headingId?: string;
 }) {
   if (lists.length === 0) {
     return null;
@@ -14,14 +18,14 @@ export function RelatedLists({
 
   return (
     <section
-      aria-labelledby="related-lists-heading"
+      aria-labelledby={headingId}
       className="mt-8 border-t border-[var(--color-border)] pt-8"
     >
       <p className="text-xs font-semibold tracking-wide text-[var(--color-text-muted)] uppercase">
-        Keep exploring
+        {eyebrow}
       </p>
       <h2
-        id="related-lists-heading"
+        id={headingId}
         className="mt-1 font-serif text-xl font-normal text-[var(--color-navy)]"
       >
         {heading}
