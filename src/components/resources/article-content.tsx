@@ -82,6 +82,15 @@ export function ArticleContent({ blocks }: { blocks: ArticleBlock[] }) {
                 {block.text}
               </h2>
             );
+          case "quote":
+            return (
+              <blockquote
+                key={index}
+                className="border-l-[3px] border-[var(--color-sage)] py-0.5 pl-4 text-lg italic leading-relaxed text-[var(--color-navy)]"
+              >
+                {renderParagraphText(block.text, block.links)}
+              </blockquote>
+            );
           case "list":
             return (
               <ul

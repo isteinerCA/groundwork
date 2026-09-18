@@ -154,7 +154,16 @@ function findStateByToken(token: string): UsState | null {
   if (!normalized || normalized.length < 5) return null;
 
   for (const state of US_STATES) {
-    if (levenshtein(normalized, state.name) <= 2) return state;
+    if (levenshtein(normalized, state.name) > 2) continue;
+    // Avoid fuzzy state matches that diverge early (e.g. Marin → Maine).
+    if (
+      normalized.length >= 4 &&
+      state.name.length >= 4 &&
+      normalized.slice(0, 3) !== state.name.slice(0, 3)
+    ) {
+      continue;
+    }
+    return state;
   }
 
   return null;
@@ -261,6 +270,22 @@ function segmentMatchesState(segment: string, state: UsState): boolean {
   return false;
 }
 
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/** Word-boundary city/place matching — avoids "marin" matching inside "Maine". */
+function locationNeedleMatchesInText(locationText: string, needle: string): boolean {
+  const trimmed = needle.trim().toLowerCase();
+  if (!trimmed) return false;
+
+  const parts = trimmed.split(/\s+/).filter(Boolean).map(escapeRegExp);
+  if (parts.length === 0) return false;
+
+  const pattern = new RegExp(`\\b${parts.join("\\s+")}\\b`, "i");
+  return pattern.test(locationText);
+}
+
 export function matchesLocationQuery(program: Program, query: string): boolean {
   const state = resolveState(query);
   if (state) {
@@ -281,7 +306,7 @@ export function matchesLocationQuery(program: Program, query: string): boolean {
     .join(" ")
     .toLowerCase();
 
-  return locationText.includes(needle);
+  return locationNeedleMatchesInText(locationText, needle);
 }
 
 /** Parse multi-state phrases like "NY or MA" into canonical state names. */

@@ -213,6 +213,11 @@ if (resolveLocationQuery("los angeles") !== undefined) {
   failed++;
 }
 
+if (resolveLocationQuery("marin") !== undefined) {
+  console.error('FAIL: "marin" should not fuzzy-resolve to Maine');
+  failed++;
+}
+
 const laProgram = stubProgram({
   name: "UCLA Pre-College",
   locationDisplay: "Los Angeles, CA",
@@ -232,6 +237,17 @@ if (!matchesLocationQuery(laProgram, "los angeles")) {
 
 if (matchesLocationQuery(yosemiteProgram, "los angeles")) {
   console.error('FAIL: Yosemite program should not match location query "los angeles"');
+  failed++;
+}
+
+const maineProgram = stubProgram({
+  name: "Apogee Adventures - Maine Coast Junior",
+  locationDisplay: "Maine",
+  trackDetail: "Session 1",
+});
+
+if (matchesLocationQuery(maineProgram, "marin")) {
+  console.error('FAIL: Maine program should not match location query "marin"');
   failed++;
 }
 

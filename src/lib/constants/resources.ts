@@ -20,6 +20,7 @@ export type ArticleBlock =
       tone?: "default" | "muted";
     }
   | { type: "subheading"; text: string }
+  | { type: "quote"; text: string; links?: ArticleInlineLink[] }
   | { type: "tip"; text: string }
   | { type: "footnote"; text: string };
 

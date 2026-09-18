@@ -33,12 +33,9 @@ export function GlobalAdventureProgramsSection() {
           >
             {featuredArticle.title}
           </Link>
-          <p className="mt-2 max-w-3xl text-base leading-relaxed text-[var(--color-text-muted)]">
-            {featuredArticle.excerpt}
-          </p>
           <Link
             href={`/resources/${featuredArticle.slug}`}
-            className="mt-3 inline-block text-sm font-medium text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
+            className="mt-2 inline-block text-sm font-medium text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
           >
             Read the guide →
           </Link>

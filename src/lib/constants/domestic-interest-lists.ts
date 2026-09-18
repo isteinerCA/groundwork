@@ -84,7 +84,7 @@ export const DOMESTIC_INTEREST_LIST_DEFS: DomesticInterestListDef[] = [
       "oakland",
       "palo alto",
       "stanford",
-      "marin",
+      "marin county",
       "san jose",
       "cupertino",
       "menlo park",

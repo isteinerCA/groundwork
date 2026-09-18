@@ -12,7 +12,7 @@ export const teenTravelProgramsSummer2027Article: ResourceArticle = {
   publishedDate: "September 25, 2026",
   title: "Teen Travel Programs for Summer 2027: How to Find a Trip Your Teen Will Actually Love",
   excerpt:
-    "Summer 2027 teen travel enrollment is already opening. Start with what your teen wants to do—or where they want to go—then compare programs across organizations.",
+    "It's only September, but if an international adventure is on your teen's wish list for Summer 2027, it may already be time to start looking.",
   blocks: [
     {
       type: "paragraph",
@@ -114,7 +114,7 @@ export const teenTravelProgramsSummer2027Article: ResourceArticle = {
       text: "Maybe they already have a very specific answer.",
     },
     {
-      type: "paragraph",
+      type: "quote",
       text: "\"I want to work with sea turtles.\"",
       links: [{ text: "sea turtles", href: list("sea-turtle-programs") }],
     },
@@ -138,7 +138,7 @@ export const teenTravelProgramsSummer2027Article: ResourceArticle = {
       text: "Now the conversation becomes: Which of these experiences sounds most interesting?",
     },
     {
-      type: "paragraph",
+      type: "quote",
       text: "\"I want to climb Kilimanjaro.\"",
       links: [{ text: "Kilimanjaro", href: list("kilimanjaro-programs") }],
     },
@@ -149,7 +149,7 @@ export const teenTravelProgramsSummer2027Article: ResourceArticle = {
     },
     {
       type: "paragraph",
-      text: "Rather than finding one organization's Kilimanjaro trip and stopping there, you can look at different approaches to the same big goal—then compare ages, dates, trip length, itinerary, price and the rest of the experience.",
+      text: "Rather than finding one organization's Kilimanjaro trip and stopping there, you can look at different approaches to the same big goal, then compare dates, trip length, itinerary, price and the rest of the experience.",
       links: [{ text: "Kilimanjaro", href: list("kilimanjaro-programs") }],
     },
     {
@@ -157,7 +157,7 @@ export const teenTravelProgramsSummer2027Article: ResourceArticle = {
       text: "That's very different from asking, \"Which trip should we choose from this company's catalog?\"",
     },
     {
-      type: "paragraph",
+      type: "quote",
       text: "\"I want to learn to scuba dive.\"",
       links: [{ text: "scuba dive", href: list("scuba-programs") }],
     },
@@ -225,11 +225,12 @@ export const teenTravelProgramsSummer2027Article: ResourceArticle = {
     },
     {
       type: "paragraph",
-      text: "Japan · Costa Rica · France · China · Galápagos · Greece · Africa · Spain · Italy · South Korea · Ireland · Iceland · Caribbean",
+      text: "Japan · Costa Rica · France · Germany · China · Galápagos · Greece · Africa · Spain · Italy · South Korea · Iceland · Ireland · Caribbean",
       links: [
         { text: "Japan", href: list("japan-programs") },
         { text: "Costa Rica", href: list("costa-rica-programs") },
         { text: "France", href: list("france-programs") },
+        { text: "Germany", href: list("germany-programs") },
         { text: "China", href: list("china-programs") },
         { text: "Galápagos", href: list("galapagos-programs") },
         { text: "Greece", href: list("greece-programs") },
@@ -237,8 +238,8 @@ export const teenTravelProgramsSummer2027Article: ResourceArticle = {
         { text: "Spain", href: list("spain-programs") },
         { text: "Italy", href: list("italy-programs") },
         { text: "South Korea", href: list("south-korea-programs") },
-        { text: "Ireland", href: list("ireland-programs") },
         { text: "Iceland", href: list("iceland-programs") },
+        { text: "Ireland", href: list("ireland-programs") },
         { text: "Caribbean", href: list("caribbean-programs") },
       ],
     },
@@ -257,6 +258,7 @@ export const teenTravelProgramsSummer2027Article: ResourceArticle = {
       links: [
         { text: "conservation", href: list("conservation-programs") },
         { text: "language immersion", href: list("language-immersion-programs") },
+        { text: "outdoor adventure", href: list("backpacking-programs") },
       ],
     },
     {
