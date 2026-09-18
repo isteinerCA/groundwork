@@ -3,121 +3,109 @@ import { MARKETING_OFFERING_COUNT_LABEL } from "@/lib/programs/preview-programs"
 import { OPEN_SEARCH_HREF } from "@/lib/search/search-url";
 import { cn } from "@/lib/utils";
 
-type InspiredLink = {
-  label: string;
-  href: string;
-};
-
 type InspiredTopic = {
   label: string;
-  links: InspiredLink[];
+  href: string;
   typeClass: string;
   rotateClass: string;
+  bgClass: string;
 };
 
 const LIST = (slug: string) => `/resources/lists/${slug}`;
 
 const INSPIRED_TOPICS: InspiredTopic[] = [
   {
-    label: "Sea turtles",
-    links: [{ label: "Abroad", href: LIST("sea-turtle-programs") }],
-    typeClass: "font-serif text-xl italic sm:text-[1.35rem]",
-    rotateClass: "-rotate-2",
-  },
-  {
-    label: "Kilimanjaro",
-    links: [{ label: "Abroad", href: LIST("kilimanjaro-programs") }],
-    typeClass: "font-serif text-lg tracking-wide sm:text-xl",
-    rotateClass: "rotate-1",
-  },
-  {
     label: "Scuba diving",
-    links: [{ label: "Abroad", href: LIST("scuba-programs") }],
+    href: LIST("scuba-programs"),
     typeClass: "text-[0.95rem] font-medium tracking-tight sm:text-base",
     rotateClass: "rotate-2",
+    bgClass: "bg-[var(--color-parchment)]",
   },
   {
     label: "Japan",
-    links: [{ label: "Abroad", href: LIST("japan-programs") }],
+    href: LIST("japan-programs"),
     typeClass: "font-serif text-2xl italic",
     rotateClass: "-rotate-1",
+    bgClass: "bg-[var(--color-sage-soft)]",
   },
   {
-    label: "Entrepreneurship",
-    links: [
-      { label: "US", href: LIST("entrepreneurship-us-programs") },
-      { label: "Abroad", href: LIST("entrepreneurship-programs") },
-    ],
-    typeClass: "text-xs font-semibold tracking-[0.14em] uppercase",
-    rotateClass: "rotate-[1.5deg]",
-  },
-  {
-    label: "International relations",
-    links: [
-      { label: "US", href: LIST("international-relations-diplomacy-us-programs") },
-      { label: "Abroad", href: LIST("international-relations-diplomacy-programs") },
-    ],
+    label: "International relations abroad",
+    href: LIST("international-relations-diplomacy-programs"),
     typeClass: "font-serif text-base italic leading-snug sm:text-lg",
     rotateClass: "-rotate-[1.5deg]",
+    bgClass: "bg-[color-mix(in_srgb,#b7a4c4_26%,white)]",
   },
   {
-    label: "Wildlife conservation",
-    links: [{ label: "Abroad", href: LIST("conservation-programs") }],
-    typeClass: "font-serif text-base leading-snug sm:text-lg",
-    rotateClass: "rotate-1",
-  },
-  {
-    label: "Architecture",
-    links: [
-      { label: "US", href: LIST("architecture-us-programs") },
-      { label: "Abroad", href: LIST("architecture-programs") },
-    ],
+    label: "Architecture (US)",
+    href: LIST("architecture-us-programs"),
     typeClass: "text-lg italic tracking-tight",
     rotateClass: "-rotate-2",
+    bgClass: "bg-[var(--color-parchment-dark)]",
+  },
+  {
+    label: "Sea Turtles abroad",
+    href: LIST("sea-turtle-programs"),
+    typeClass: "font-serif text-xl italic sm:text-[1.35rem]",
+    rotateClass: "-rotate-2",
+    bgClass: "bg-[color-mix(in_srgb,#7a9a9e_22%,white)]",
+  },
+  {
+    label: "Kilimanjaro",
+    href: LIST("kilimanjaro-programs"),
+    typeClass: "font-serif text-lg tracking-wide sm:text-xl",
+    rotateClass: "rotate-1",
+    bgClass: "bg-white",
+  },
+  {
+    label: "Entrepreneurship (US)",
+    href: LIST("entrepreneurship-us-programs"),
+    typeClass: "text-xs font-semibold tracking-[0.14em] uppercase",
+    rotateClass: "rotate-[1.5deg]",
+    bgClass: "bg-[color-mix(in_srgb,var(--color-sage)_28%,white)]",
+  },
+  {
+    label: "AI (US)",
+    href: LIST("ai-us-programs"),
+    typeClass: "text-sm font-semibold tracking-[0.18em] uppercase",
+    rotateClass: "rotate-1",
+    bgClass: "bg-[color-mix(in_srgb,#c4a574_24%,var(--color-parchment))]",
+  },
+  {
+    label: "Wildlife conservation abroad",
+    href: LIST("conservation-programs"),
+    typeClass: "font-serif text-base leading-snug sm:text-lg",
+    rotateClass: "rotate-1",
+    bgClass: "bg-[color-mix(in_srgb,var(--color-amber)_20%,var(--color-parchment))]",
+  },
+  {
+    label: "International relations (US)",
+    href: LIST("international-relations-diplomacy-us-programs"),
+    typeClass: "font-serif text-base italic leading-snug sm:text-lg",
+    rotateClass: "-rotate-[1.5deg]",
+    bgClass: "bg-[color-mix(in_srgb,#d4a5a5_26%,white)]",
   },
 ];
 
 function DreamBubble({ topic }: { topic: InspiredTopic }) {
-  const primary = topic.links[0];
-  const dual = topic.links.length > 1;
-
-  const bubbleClass = cn(
-    "relative inline-flex cursor-pointer flex-col items-center justify-center rounded-[2.25rem] bg-[var(--color-parchment)] px-5 text-center text-[var(--color-navy)] shadow-[0_8px_24px_rgb(0_0_0_/_18%)] ring-1 ring-white/40 transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-[0_12px_28px_rgb(0_0_0_/_22%)]",
-    topic.rotateClass,
-    dual ? "py-3" : "min-h-[3.25rem] py-2.5",
-  );
-
   return (
-    <div className={bubbleClass}>
-      <Link
-        href={primary.href}
-        className="text-inherit no-underline after:absolute after:inset-0"
-        aria-label={
-          dual ? `${topic.label} programs in the ${primary.label}` : `${topic.label} programs`
-        }
-      >
-        <span className={cn("pointer-events-none text-[var(--color-navy)]", topic.typeClass)}>
-          {topic.label}
-        </span>
-      </Link>
-      {dual ? (
-        <span className="relative z-10 mt-1.5 flex gap-3">
-          {topic.links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-[11px] font-semibold tracking-[0.16em] text-[var(--color-navy-light)] uppercase no-underline hover:text-[var(--color-sage)]"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </span>
-      ) : null}
-    </div>
+    <Link
+      href={topic.href}
+      aria-label={`${topic.label} programs`}
+      className={cn(
+        "inline-flex min-h-[3.25rem] max-w-[12.5rem] items-center justify-center rounded-[2.25rem] px-4 py-2.5 text-center text-[var(--color-navy)] no-underline shadow-[0_8px_24px_rgb(0_0_0_/_18%)] ring-1 ring-white/40 transition duration-300 hover:-translate-y-0.5 hover:brightness-[1.04] hover:shadow-[0_12px_28px_rgb(0_0_0_/_22%)] sm:max-w-none sm:px-5",
+        topic.rotateClass,
+        topic.bgClass,
+      )}
+    >
+      <span className={cn("text-[var(--color-navy)]", topic.typeClass)}>{topic.label}</span>
+    </Link>
   );
 }
 
 export function HomeInspiredSearchSection() {
+  const firstRow = INSPIRED_TOPICS.slice(0, 5);
+  const secondRow = INSPIRED_TOPICS.slice(5);
+
   return (
     <section
       id="inspired-search"
@@ -143,16 +131,24 @@ export function HomeInspiredSearchSection() {
         </p>
 
         <p className="mt-12 text-xl text-[var(--color-parchment)]/90 md:text-2xl">
-          This summer, I am{" "}
-          <em className="font-serif italic text-[var(--color-sage)]">dreaming of</em>
+          What are you{" "}
+          <em className="font-serif italic text-[var(--color-sage)]">dreaming of</em> this
+          summer?
         </p>
-        <ul className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-4 sm:gap-x-4">
-          {INSPIRED_TOPICS.map((topic) => (
-            <li key={topic.label}>
-              <DreamBubble topic={topic} />
-            </li>
+        <div className="mt-6 flex flex-col items-center gap-4">
+          {[firstRow, secondRow].map((row, rowIndex) => (
+            <ul
+              key={rowIndex}
+              className="flex flex-wrap items-center justify-center gap-x-3 gap-y-3 sm:gap-x-4"
+            >
+              {row.map((topic) => (
+                <li key={topic.label}>
+                  <DreamBubble topic={topic} />
+                </li>
+              ))}
+            </ul>
           ))}
-        </ul>
+        </div>
 
         <Link
           href={OPEN_SEARCH_HREF}

@@ -72,7 +72,7 @@ const STEPS = [
   {
     num: "02",
     title: "Refine with a plain-English assistant",
-    body: "'Only fully funded' or 'in California only' updates your filters in real time. The assistant and filters work together to refine your search.",
+    body: "Search for anything from “Japan” to “international relations,” or simply describe what you have in mind. The assistant and filters work together to refine your search.",
   },
   {
     num: "03",
@@ -161,7 +161,8 @@ export function CategoriesSection() {
               id: cat.id,
               label: cat.label,
               description: cat.description,
-              href: getCategoryExploreHref(cat.id, "high-school"),
+              highSchoolHref: getCategoryExploreHref(cat.id, "high-school"),
+              middleSchoolHref: getCategoryExploreHref(cat.id, "middle-school"),
             };
           })}
         />
