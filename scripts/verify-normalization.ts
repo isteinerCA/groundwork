@@ -514,6 +514,36 @@ if (!matchesDataQuery(australiaProgram, "australia")) {
   failed++;
 }
 
+const australiaNonCaribbean = stubProgram({
+  name: "ActionQuest - Reef to Rainforest (Australia)",
+  locationDisplay: "Sydney, Whitsunday Islands, Daintree, Gold Coast",
+  trackDetail: "21-Day Session (Jul 7-27)",
+  description:
+    "AQ's only non-Caribbean program and only one with a mandatory group flight (LAX to Sydney).",
+});
+
+const costaRicaCaribbeanCoast = stubProgram({
+  name: "AMIGOS de las Americas",
+  locationDisplay: "Costa Rica",
+  trackDetail: "Olas y Cerros (Explore) - Session 1",
+  description:
+    "Three-week host-family homestay program on Costa Rica's Caribbean coast focused on sea turtle conservation.",
+});
+
+if (matchesDataQuery(australiaNonCaribbean, "caribbean")) {
+  console.error(
+    'FAIL: Australia program mentioning "non-Caribbean" in description should not match dataQuery "caribbean"',
+  );
+  failed++;
+}
+
+if (matchesDataQuery(costaRicaCaribbeanCoast, "caribbean")) {
+  console.error(
+    'FAIL: Costa Rica program on the Caribbean coast should stay on Costa Rica, not dataQuery "caribbean"',
+  );
+  failed++;
+}
+
 const caribbeanMarineBiology = stubProgram({
   name: "Broadreach - Caribbean Marine Biology Voyage",
   locationDisplay: "St. Martin + the Leewards, Caribbean",

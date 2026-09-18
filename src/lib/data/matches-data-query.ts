@@ -89,8 +89,9 @@ const ACTIVITY_QUERY_GROUPS: Record<string, readonly string[]> = {
 };
 
 /**
- * Search terms for continent-style queries. Matching uses primary program fields only
- * (location, name, description) so gotcha flags do not expand regional results.
+ * Search terms for continent-style queries. Matching uses location and identity fields only
+ * (not description) so incidental prose like "non-Caribbean" or "Caribbean coast" in Costa Rica
+ * does not pull programs into regional buckets.
  */
 const AFRICA_SEARCH_TERMS: readonly string[] = [
   "africa",
@@ -247,9 +248,16 @@ function placeTermMatchesInText(term: string, text: string): boolean {
   return pattern.test(text);
 }
 
+function programRegionSearchText(program: Program): string {
+  return [program.locationDisplay, program.name, program.institution, program.trackDetail]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
 function matchesRegionDataQuery(program: Program, terms: readonly string[]): boolean {
-  const primaryText = programPrimarySearchText(program);
-  return terms.some((term) => placeTermMatchesInText(term, primaryText));
+  const regionText = programRegionSearchText(program);
+  return terms.some((term) => placeTermMatchesInText(term, regionText));
 }
 
 function singleTermMatchesOffering(program: Program, term: string): boolean {
