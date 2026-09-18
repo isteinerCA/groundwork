@@ -1581,6 +1581,17 @@
   },
   {
     "match": {
+      "programGroupId": "ciee-china-shanghai-chinese-language-culture"
+    },
+    "dayToDay": {
+      "notes": "Students live with a host family (homestay) in Shanghai for the duration of the program, preparing and sharing Chinese meals together as part of daily language and cultural immersion. Three meals a day are provided overall with dietary needs accommodated, and all ground transportation once in-country, all cultural activities and excursions, and interactive language classes are included. Wi-Fi access is available at accommodations, but no international data plan or SIM card is included. Pre-departure advice and orientation are provided before travel, and CIEE provides 24/7 emergency on-site support plus comprehensive medical and travel protection (iNext Travel Insurance) throughout the program. An optional flight chaperone is available (flight cost itself is not included in tuition).",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE Chinese Language & Culture (Shanghai) program page, What's Included and Eligibility sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
       "programGroupId": "ciee-costarica-monteverde-ecology-sustainability"
     },
     "dayToDay": {
