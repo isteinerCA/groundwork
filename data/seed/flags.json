@@ -3917,5 +3917,643 @@
         "severity": "info"
       }
     ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-barcelona"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-costarica-service"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-endeavor-entrepreneurship"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-endeavor-fashion"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-endeavor-hollywood"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-endeavor-sportsbiz"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-florence"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-florence",
+      "offeringLabel": "2 weeks (June 27 - July 11, 2027)"
+    },
+    "flags": [
+      {
+        "id": "aca-florence-specific-note-1",
+        "type": "safety",
+        "title": "The earlier Florence 2-week session cannot add the Greece or Croatia extension",
+        "body": "This earlier 2-week session (June 27-July 11) ends before the July 17-22 Greece/Croatia extension window, unlike the later 2-week session and the 3-week session, both of which end July 17. Families wanting the Greece or Croatia extension should choose the later 2-week session or the 3-week session instead.",
+        "sourceCitation": "ACA Dates & Tuition page",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-georgetown-middleschool"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-georgetown-precollege"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-hawaii-socal-service"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-losangeles-precollege"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-malibu-precollege"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-malibu-soccer"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-malibu-surf"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-malibu-tennis"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-michigan-precollege"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      },
+      {
+        "id": "aca-michigan-precollege-specific-note-1",
+        "type": "safety",
+        "title": "No optional extension is listed for Michigan, unlike most other ACA pre-college programs",
+        "body": "No optional extension (Hawaii, SF, Boston, etc.) is listed for Michigan, unlike most other ACA pre-college programs. This may connect to the separate Michigan + Wisconsin Combo product, which functions as this program's de facto \"extension\" by joining it to the Wisconsin program instead.",
+        "sourceCitation": "ACA Dates & Tuition page",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-michigan-wisconsin-combo"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-nice"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-oxford"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      },
+      {
+        "id": "aca-oxford-specific-note-1",
+        "type": "safety",
+        "title": "Oxford is housed in a university residence hall and lists two college-level courses daily",
+        "body": "This is the only ACA study-abroad program housed in a university residence hall rather than a hotel, and the only one explicitly offering 2 college-level courses daily (vs. a more general \"college credits\" mention on the others).",
+        "sourceCitation": "ACA Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-paris"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      },
+      {
+        "id": "aca-paris-specific-note-1",
+        "type": "safety",
+        "title": "College credit is not listed for Paris, unlike ACA's other European study-abroad programs",
+        "body": "Unlike Barcelona, Florence, Nice, and Oxford -- all of which explicitly list \"College Credits\" as a program highlight -- the Paris program's highlight list does not mention college credit. This may mean Paris does not offer the college-credit option, or it may be an omission on this summary page. Confirm directly before assuming Paris includes college credit.",
+        "sourceCitation": "ACA Dates & Tuition page",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-socal-middleschool"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-teentour-european-explorer-18d"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-teentour-european-riviera-21d"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-teentour-western-pacific-30d"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-teentour-western-riviera-21d"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "aca-wisconsin-precollege"
+    },
+    "flags": [
+      {
+        "id": "aca-promotional-pricing-structure",
+        "type": "safety",
+        "title": "The published price is a standing promotional discount off a higher list price",
+        "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
+        "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
+        "severity": "info"
+      },
+      {
+        "id": "aca-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the Dates & Tuition page",
+        "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
+        "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
+        "severity": "info"
+      }
+    ]
   }
 ]
