@@ -23,7 +23,7 @@ import { WaitlistSignup } from "@/components/marketing/waitlist-signup";
 import { Breadcrumbs } from "@/components/resources/breadcrumbs";
 import { ADMISSION_TYPES } from "@/lib/constants/admission-types";
 import { SITE_NAME } from "@/lib/constants/brand";
-import { PROGRAM_CATEGORIES, type ProgramCategoryId } from "@/lib/constants/categories";
+import { PROGRAM_CATEGORIES } from "@/lib/constants/categories";
 import {
   AVAILABILITY_MONTHS,
   DURATION_BUCKETS,
@@ -52,6 +52,7 @@ import {
   isGradeLocked,
 } from "@/lib/search/apply-locked-filters";
 import { loadLastSearchFilters, saveLastSearchFilters } from "@/lib/search/last-filters";
+import { hasSearchUrlSeed } from "@/lib/search/search-url";
 import { programListAnchorId } from "@/lib/data/predefined-list-programs";
 import type { BreadcrumbItem } from "@/lib/seo/breadcrumb-json-ld";
 import type { Program, SearchFilters } from "@/lib/types/program";
@@ -77,51 +78,48 @@ function toggleAvailabilityMonth(
     : [...months, month].sort((a, b) => a - b);
 }
 
-function hasUrlSeed(
-  initialCategory?: ProgramCategoryId,
-  initialFullyFunded?: boolean,
-  initialFormat?: import("@/lib/constants/filters").ProgramFormatId,
-): boolean {
-  return Boolean(initialCategory || initialFullyFunded || initialFormat);
+function buildInitialSearchFilters(
+  initialFilters?: Partial<SearchFilters>,
+): SearchFilters {
+  return {
+    ...DEFAULT_SEARCH_FILTERS,
+    ...initialFilters,
+    categories: initialFilters?.categories ?? [],
+    formats: initialFilters?.formats ?? [],
+    gradesCompleted: initialFilters?.gradesCompleted ?? [],
+    includeLocations: initialFilters?.includeLocations ?? [],
+    includeRegions: initialFilters?.includeRegions ?? [],
+    includeMonths: initialFilters?.includeMonths ?? [],
+    excludeMonths: initialFilters?.excludeMonths ?? [],
+    admissionTypes: initialFilters?.admissionTypes ?? [],
+    durationBuckets: initialFilters?.durationBuckets ?? [],
+    participantGenders: initialFilters?.participantGenders ?? [],
+    dataQuery: initialFilters?.dataQuery ?? "",
+    excludeLocation: initialFilters?.excludeLocation ?? "",
+  };
 }
 
 export function SearchExperience({
   programs,
-  initialCategory,
-  initialFullyFunded,
-  initialFormat,
+  initialFilters,
   lockedFilters,
   pageTitle = "Build your shortlist",
   pageDescription,
+  customizeSearchHref,
   backLink,
   breadcrumbs,
 }: {
   programs: Program[];
-  initialCategory?: ProgramCategoryId;
-  initialFullyFunded?: boolean;
-  initialFormat?: import("@/lib/constants/filters").ProgramFormatId;
+  initialFilters?: Partial<SearchFilters>;
   lockedFilters?: Partial<SearchFilters>;
   pageTitle?: string;
   pageDescription?: string;
+  customizeSearchHref?: string;
   backLink?: { href: string; label: string };
   breadcrumbs?: BreadcrumbItem[];
 }) {
-  const validCategory =
-    initialCategory &&
-    PROGRAM_CATEGORIES.some((c) => c.id === initialCategory)
-      ? initialCategory
-      : undefined;
-
   const [filters, setFilters] = useState<SearchFilters>(() =>
-    applyLockedFilters(
-      {
-        ...DEFAULT_SEARCH_FILTERS,
-        categories: validCategory ? [validCategory] : [],
-        fullyFundedOnly: initialFullyFunded ?? false,
-        formats: initialFormat ? [initialFormat] : [],
-      },
-      lockedFilters,
-    ),
+    applyLockedFilters(buildInitialSearchFilters(initialFilters), lockedFilters),
   );
   const [sort, setSort] = useState<SortOption>("duration");
   const [restoredLastSearch, setRestoredLastSearch] = useState(false);
@@ -134,14 +132,14 @@ export function SearchExperience({
 
   useEffect(() => {
     if (restoredLastSearch) return;
-    if (lockedFilters || hasUrlSeed(validCategory, initialFullyFunded, initialFormat)) {
+    if (lockedFilters || hasSearchUrlSeed(initialFilters ?? {})) {
       setRestoredLastSearch(true);
       return;
     }
     const last = loadLastSearchFilters();
     if (last) setFilters(applyLockedFilters({ ...DEFAULT_SEARCH_FILTERS, ...last }, lockedFilters));
     setRestoredLastSearch(true);
-  }, [restoredLastSearch, validCategory, initialFullyFunded, initialFormat, lockedFilters]);
+  }, [restoredLastSearch, initialFilters, lockedFilters]);
 
   const results = useMemo(() => {
     if (filters.gradesCompleted.length === 0) return [];
@@ -250,6 +248,14 @@ export function SearchExperience({
               </>
             )}
           </p>
+          {customizeSearchHref ? (
+            <Link
+              href={customizeSearchHref}
+              className="mt-3 inline-block text-sm font-medium text-[var(--color-navy-light)] no-underline hover:text-[var(--color-navy)]"
+            >
+              Customize this search →
+            </Link>
+          ) : null}
         </div>
       </div>
 
