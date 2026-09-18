@@ -25219,9 +25219,9 @@
       "flags": [],
       "participantGender": "coed",
       "dayToDay": {
-        "notes": "Homestay-based; host families share daily meals. Daily language classes paired with afternoon cultural activities. Toulouse: weekend excursions to Carcassonne and the French Mediterranean coast. Rennes: weekend excursions to Mont Saint-Michel and the Brittany coastline.",
+        "notes": "Homestay-based; host families share daily meals. Daily language classes paired with afternoon cultural activities. Weekend excursions to Carcassonne and the French Mediterranean coast.",
         "sourceType": "official_policy",
-        "sourceCitation": "CIEE French Language & Culture (Toulouse and Rennes) program pages",
+        "sourceCitation": "CIEE French Language & Culture (Toulouse) program page",
         "verifiedAt": "2026-09-15"
       }
     },
@@ -25270,9 +25270,9 @@
       "flags": [],
       "participantGender": "coed",
       "dayToDay": {
-        "notes": "Homestay-based; host families share daily meals. Daily language classes paired with afternoon cultural activities. Toulouse: weekend excursions to Carcassonne and the French Mediterranean coast. Rennes: weekend excursions to Mont Saint-Michel and the Brittany coastline.",
+        "notes": "Homestay-based; host families share daily meals. Daily language classes paired with afternoon cultural activities. Weekend excursions to Carcassonne and the French Mediterranean coast.",
         "sourceType": "official_policy",
-        "sourceCitation": "CIEE French Language & Culture (Toulouse and Rennes) program pages",
+        "sourceCitation": "CIEE French Language & Culture (Toulouse) program page",
         "verifiedAt": "2026-09-15"
       }
     },
@@ -25321,9 +25321,9 @@
       "flags": [],
       "participantGender": "coed",
       "dayToDay": {
-        "notes": "Homestay-based; host families share daily meals. Daily language classes paired with afternoon cultural activities. Toulouse: weekend excursions to Carcassonne and the French Mediterranean coast. Rennes: weekend excursions to Mont Saint-Michel and the Brittany coastline.",
+        "notes": "Homestay-based; host families share daily meals. Daily language classes paired with afternoon cultural activities. Weekend excursions to Mont Saint-Michel and the Brittany coastline.",
         "sourceType": "official_policy",
-        "sourceCitation": "CIEE French Language & Culture (Toulouse and Rennes) program pages",
+        "sourceCitation": "CIEE French Language & Culture (Rennes) program page",
         "verifiedAt": "2026-09-15"
       }
     },
@@ -25372,9 +25372,9 @@
       "flags": [],
       "participantGender": "coed",
       "dayToDay": {
-        "notes": "Homestay-based; host families share daily meals. Daily language classes paired with afternoon cultural activities. Toulouse: weekend excursions to Carcassonne and the French Mediterranean coast. Rennes: weekend excursions to Mont Saint-Michel and the Brittany coastline.",
+        "notes": "Homestay-based; host families share daily meals. Daily language classes paired with afternoon cultural activities. Weekend excursions to Mont Saint-Michel and the Brittany coastline.",
         "sourceType": "official_policy",
-        "sourceCitation": "CIEE French Language & Culture (Toulouse and Rennes) program pages",
+        "sourceCitation": "CIEE French Language & Culture (Rennes) program page",
         "verifiedAt": "2026-09-15"
       }
     },
@@ -26442,7 +26442,7 @@
       "institution": "CIEE",
       "programGroupId": "ciee-china-shanghai-art-history-chinese-culture",
       "description": "Students build a creative art portfolio; includes a traditional Chinese opera workshop and a hands-on pottery workshop, plus an overnight excursion to Wuxi.",
-      "category": "arts",
+      "category": "writing-humanities",
       "secondaryTags": [
         "Cultural Exchange"
       ],
@@ -26495,7 +26495,7 @@
       "institution": "CIEE",
       "programGroupId": "ciee-china-shanghai-art-history-chinese-culture",
       "description": "Second session.",
-      "category": "arts",
+      "category": "writing-humanities",
       "secondaryTags": [
         "Cultural Exchange"
       ],
@@ -28933,7 +28933,7 @@
       "institution": "CIEE",
       "programGroupId": "ciee-greece-athens-art-history-greek-culture",
       "description": "Students build an art portfolio using traditional (ceramics, fresco) and modern (photography, documentary) mediums. Excursion to Tatoi (former royal estate) and a performance at the Athens Epidaurus Festival.",
-      "category": "arts",
+      "category": "writing-humanities",
       "secondaryTags": [
         "Cultural Exchange"
       ],
@@ -28986,7 +28986,7 @@
       "institution": "CIEE",
       "programGroupId": "ciee-greece-athens-art-history-greek-culture",
       "description": "Second session.",
-      "category": "arts",
+      "category": "writing-humanities",
       "secondaryTags": [
         "Cultural Exchange"
       ],
@@ -29622,7 +29622,7 @@
       "institution": "CIEE",
       "programGroupId": "ciee-italy-florence-art-history-italian-culture",
       "description": "Studies the Medici family's influence on Renaissance art/politics. Visit to Arcetri Observatory (Galileo) and a day trip to Pisa. Cannot accommodate fully Kosher or Halal diets.",
-      "category": "arts",
+      "category": "writing-humanities",
       "secondaryTags": [
         "Cultural Exchange"
       ],
@@ -29675,7 +29675,7 @@
       "institution": "CIEE",
       "programGroupId": "ciee-italy-florence-art-history-italian-culture",
       "description": "Second session.",
-      "category": "arts",
+      "category": "writing-humanities",
       "secondaryTags": [
         "Cultural Exchange"
       ],
@@ -29728,7 +29728,7 @@
       "institution": "CIEE",
       "programGroupId": "ciee-italy-rome-art-history-italian-culture",
       "description": "Mosaic art, fresco painting, photography and filmmaking workshops. Excursions to Tivoli and Florence.",
-      "category": "arts",
+      "category": "writing-humanities",
       "secondaryTags": [
         "Cultural Exchange"
       ],
@@ -29781,7 +29781,7 @@
       "institution": "CIEE",
       "programGroupId": "ciee-italy-rome-art-history-italian-culture",
       "description": "Second session.",
-      "category": "arts",
+      "category": "writing-humanities",
       "secondaryTags": [
         "Cultural Exchange"
       ],
@@ -31427,9 +31427,9 @@
         "Cultural Exchange"
       ],
       "trackDetail": "Summer Session I",
-      "gradeDisplay": "Current grades 10-12",
+      "gradeDisplay": "Current grades 9-12",
       "gradeCompletedMin": 9,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMax": 12,
       "gradeSource": "grade",
       "admissionType": "application",
       "admissionDisplay": "Application",
@@ -31461,14 +31461,6 @@
       "dataVerifiedAt": "2026-09-18",
       "flags": [
         {
-          "id": "marine-ecology-merida-grade-requirement",
-          "type": "safety",
-          "title": "Must have completed Freshman year before travel",
-          "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program — a rising freshman would not yet qualify.",
-          "sourceCitation": "CIEE Marine Ecology & Sustainability (Merida) program page, Eligibility section",
-          "severity": "warning"
-        },
-        {
           "id": "marine-ecology-merida-kosher-halal",
           "type": "safety",
           "title": "Cannot accommodate fully Kosher or Halal diets",
@@ -31497,9 +31489,9 @@
         "Cultural Exchange"
       ],
       "trackDetail": "Summer Session I",
-      "gradeDisplay": "Current grades 10-12",
+      "gradeDisplay": "Current grades 9-12",
       "gradeCompletedMin": 9,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMax": 12,
       "gradeSource": "grade",
       "admissionType": "application",
       "admissionDisplay": "Application",
@@ -31531,14 +31523,6 @@
       "dataVerifiedAt": "2026-09-18",
       "flags": [
         {
-          "id": "culinary-arts-merida-grade-requirement",
-          "type": "safety",
-          "title": "Must have completed Freshman year before travel",
-          "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program — a rising freshman would not yet qualify.",
-          "sourceCitation": "CIEE Culinary Arts & Mexican Culture (Merida) program page, Eligibility section",
-          "severity": "warning"
-        },
-        {
           "id": "culinary-arts-merida-diet-restrictions",
           "type": "safety",
           "title": "Dietary restrictions likely to reduce program engagement",
@@ -31567,9 +31551,9 @@
         "Cultural Exchange"
       ],
       "trackDetail": "Summer Session II",
-      "gradeDisplay": "Current grades 10-12",
+      "gradeDisplay": "Current grades 9-12",
       "gradeCompletedMin": 9,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMax": 12,
       "gradeSource": "grade",
       "admissionType": "application",
       "admissionDisplay": "Application",
@@ -31601,14 +31585,6 @@
       "dataVerifiedAt": "2026-09-18",
       "flags": [
         {
-          "id": "culinary-arts-merida-grade-requirement",
-          "type": "safety",
-          "title": "Must have completed Freshman year before travel",
-          "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program — a rising freshman would not yet qualify.",
-          "sourceCitation": "CIEE Culinary Arts & Mexican Culture (Merida) program page, Eligibility section",
-          "severity": "warning"
-        },
-        {
           "id": "culinary-arts-merida-diet-restrictions",
           "type": "safety",
           "title": "Dietary restrictions likely to reduce program engagement",
@@ -31638,8 +31614,8 @@
       ],
       "trackDetail": "Summer Session I",
       "gradeDisplay": "Current grades 9-12",
-      "gradeCompletedMin": 8,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
       "gradeSource": "grade",
       "admissionType": "application",
       "admissionDisplay": "Application",
@@ -31697,9 +31673,9 @@
       "category": "cultural-exchange",
       "secondaryTags": [],
       "trackDetail": "Summer Session I",
-      "gradeDisplay": "Current grades 10-12",
+      "gradeDisplay": "Current grades 9-12",
       "gradeCompletedMin": 9,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMax": 12,
       "gradeSource": "grade",
       "admissionType": "application",
       "admissionDisplay": "Application",
@@ -31730,14 +31706,6 @@
       "websiteUrl": "https://www.ciee.org/go-abroad/high-school-study-abroad/summer/programs/mexico/merida/spanish-language-mexican-culture",
       "dataVerifiedAt": "2026-09-18",
       "flags": [
-        {
-          "id": "spanish-language-merida-grade-requirement",
-          "type": "safety",
-          "title": "Must have completed Freshman year before travel",
-          "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program — a rising freshman would not yet qualify.",
-          "sourceCitation": "CIEE Spanish Language & Mexican Culture (Merida) program page, Eligibility section",
-          "severity": "warning"
-        },
         {
           "id": "spanish-language-merida-kosher-halal",
           "type": "safety",
@@ -31903,16 +31871,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://www.ciee.org/go-abroad/high-school-study-abroad/summer/programs/morocco/rabat/arabic-language-moroccan-culture",
       "dataVerifiedAt": "2026-09-18",
-      "flags": [
-        {
-          "id": "arabic-language-rabat-date-inconsistency",
-          "type": "safety",
-          "title": "Session II dates are inconsistent on CIEE's own page",
-          "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027'). Families should confirm exact Session II dates directly with CIEE before booking flights.",
-          "sourceCitation": "CIEE Arabic Language & Moroccan Culture (Rabat) program page, Dates & Fees section",
-          "severity": "warning"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy), and students generally travel to and from daily Arabic classes/activities as a group rather than independently. Weekends include a mix of family time and CIEE-organized excursions such as Chefchaouen, Casablanca, and Tangier. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
@@ -33353,9 +33312,9 @@
       "category": "cultural-exchange",
       "secondaryTags": [],
       "trackDetail": "Summer Session I",
-      "gradeDisplay": "Current grades 10-12",
+      "gradeDisplay": "Current grades 9-12",
       "gradeCompletedMin": 9,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMax": 12,
       "gradeSource": "grade",
       "admissionType": "application",
       "admissionDisplay": "Application",
@@ -33392,22 +33351,6 @@
           "title": "South Korea has strict medication import regulations",
           "body": "CIEE notes that South Korea maintains strict regulations on medications brought into the country and encourages families to consult their doctor and confirm the student's medications are legal and available there before traveling.",
           "sourceCitation": "CIEE Korean Language & Culture (Seoul) program page, Eligibility section",
-          "severity": "warning"
-        },
-        {
-          "id": "korean-language-seoul-grade-requirement",
-          "type": "safety",
-          "title": "Must have completed Freshman year before travel",
-          "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program — a rising freshman would not yet qualify.",
-          "sourceCitation": "CIEE Korean Language & Culture (Seoul) program page, Eligibility section",
-          "severity": "warning"
-        },
-        {
-          "id": "korean-language-seoul-date-inconsistency",
-          "type": "safety",
-          "title": "Session II dates are inconsistent on CIEE's own page",
-          "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027'). Families should confirm exact Session II dates directly with CIEE before booking flights.",
-          "sourceCitation": "CIEE Korean Language & Culture (Seoul) program page, Dates & Fees section",
           "severity": "warning"
         }
       ],
@@ -33687,9 +33630,9 @@
         "Cultural Exchange"
       ],
       "trackDetail": "Summer Session I",
-      "gradeDisplay": "Current grades 10-12",
+      "gradeDisplay": "Current grades 9-12",
       "gradeCompletedMin": 9,
-      "gradeCompletedMax": 11,
+      "gradeCompletedMax": 12,
       "gradeSource": "grade",
       "admissionType": "application",
       "admissionDisplay": "Application",
@@ -33725,14 +33668,6 @@
           "type": "safety",
           "title": "South Korea has strict medication import regulations",
           "body": "CIEE notes that South Korea maintains strict regulations on medications brought into the country and encourages families to consult their doctor and confirm the student's medications are legal and available there before traveling.",
-          "sourceCitation": "CIEE Urban Design & Sustainability (Seoul) program page, Eligibility section",
-          "severity": "warning"
-        },
-        {
-          "id": "urban-design-seoul-grade-requirement",
-          "type": "safety",
-          "title": "Must have completed Freshman year before travel",
-          "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program — a rising freshman would not yet qualify.",
           "sourceCitation": "CIEE Urban Design & Sustainability (Seoul) program page, Eligibility section",
           "severity": "warning"
         }
@@ -33795,14 +33730,6 @@
           "body": "CIEE requires students to have completed at least one year of high school Spanish before traveling. Students with two or more years of Spanish may instead qualify for the Honors Spanish Language & Culture program in Madrid or Seville.",
           "sourceCitation": "CIEE Spanish Language & Culture (Barcelona) program page, Eligibility section",
           "severity": "warning"
-        },
-        {
-          "id": "spanish-language-barcelona-date-inconsistency",
-          "type": "safety",
-          "title": "Session II dates are inconsistent on CIEE's own page",
-          "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027'). Families should confirm exact Session II dates directly with CIEE before booking flights.",
-          "sourceCitation": "CIEE Spanish Language & Culture (Barcelona) program page, Dates & Fees section",
-          "severity": "warning"
         }
       ],
       "participantGender": "coed",
@@ -33858,14 +33785,6 @@
       "websiteUrl": "https://www.ciee.org/go-abroad/high-school-study-abroad/summer/programs/spain/barcelona/culinary-arts-spanish-culture",
       "dataVerifiedAt": "2026-09-18",
       "flags": [
-        {
-          "id": "culinary-arts-barcelona-grade-requirement",
-          "type": "safety",
-          "title": "Must have completed Freshman year before travel",
-          "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program -- a rising freshman would not yet qualify.",
-          "sourceCitation": "CIEE Culinary Arts & Spanish Culture (Barcelona) program page, Eligibility section",
-          "severity": "warning"
-        },
         {
           "id": "culinary-arts-barcelona-diet-restrictions",
           "type": "safety",
@@ -33928,14 +33847,6 @@
       "websiteUrl": "https://www.ciee.org/go-abroad/high-school-study-abroad/summer/programs/spain/barcelona/culinary-arts-spanish-culture",
       "dataVerifiedAt": "2026-09-18",
       "flags": [
-        {
-          "id": "culinary-arts-barcelona-grade-requirement",
-          "type": "safety",
-          "title": "Must have completed Freshman year before travel",
-          "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program -- a rising freshman would not yet qualify.",
-          "sourceCitation": "CIEE Culinary Arts & Spanish Culture (Barcelona) program page, Eligibility section",
-          "severity": "warning"
-        },
         {
           "id": "culinary-arts-barcelona-diet-restrictions",
           "type": "safety",
@@ -34179,14 +34090,6 @@
           "body": "This Honors program is gated by a pre-program STAMP language proficiency test. Students must have completed high school Spanish Level 2 or higher and score at least Intermediate-Low on the ACTFL scale; those who do not meet the bar may be moved to a standard (non-Honors) Language & Culture program instead.",
           "sourceCitation": "CIEE Honors Spanish Language & Culture (Seville) program page, Eligibility section",
           "severity": "warning"
-        },
-        {
-          "id": "honors-seville-date-inconsistency",
-          "type": "safety",
-          "title": "Session II dates are inconsistent on CIEE's own page",
-          "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027').",
-          "sourceCitation": "CIEE Honors Spanish Language & Culture (Seville) program page, Dates & Fees section",
-          "severity": "warning"
         }
       ],
       "participantGender": "coed",
@@ -34248,14 +34151,6 @@
           "title": "Requires the ability to comfortably swim",
           "body": "CIEE's own eligibility notes state that participants must have the ability to comfortably swim, since the program is centered around the sea, in addition to describing the program as involving moderate- to high-intensity physical activities (hiking, boating, snorkeling).",
           "sourceCitation": "CIEE Marine Ecology & Sustainability (Palma de Mallorca) program page, Eligibility section",
-          "severity": "warning"
-        },
-        {
-          "id": "marine-ecology-palma-session-ii-unpublished",
-          "type": "safety",
-          "title": "Session II is entirely unpublished for 2027",
-          "body": "As of this research pass, CIEE has not published dates or a price for Session II -- both fields show 'TBD' with a footnote that dates are tentative. This is a more complete gap than the usual 'price not re-shown' pattern seen elsewhere.",
-          "sourceCitation": "CIEE Marine Ecology & Sustainability (Palma de Mallorca) program page, Dates & Fees section",
           "severity": "warning"
         }
       ],
@@ -34319,14 +34214,6 @@
           "body": "CIEE's own eligibility notes state that participants must have the ability to comfortably swim, since the program is centered around the sea, in addition to describing the program as involving moderate- to high-intensity physical activities (hiking, boating, snorkeling).",
           "sourceCitation": "CIEE Marine Ecology & Sustainability (Palma de Mallorca) program page, Eligibility section",
           "severity": "warning"
-        },
-        {
-          "id": "marine-ecology-palma-session-ii-unpublished",
-          "type": "safety",
-          "title": "Session II is entirely unpublished for 2027",
-          "body": "As of this research pass, CIEE has not published dates or a price for Session II -- both fields show 'TBD' with a footnote that dates are tentative. This is a more complete gap than the usual 'price not re-shown' pattern seen elsewhere.",
-          "sourceCitation": "CIEE Marine Ecology & Sustainability (Palma de Mallorca) program page, Dates & Fees section",
-          "severity": "warning"
         }
       ],
       "participantGender": "coed",
@@ -34343,7 +34230,7 @@
       "name": "CIEE - Marine Ecology & Sustainability en Espanol (Palma de Mallorca)",
       "institution": "CIEE",
       "programGroupId": "ciee-spain-palma-de-mallorca-marine-ecology-sustainability-en-espanol",
-      "description": "Spanish-taught version of the Palma marine ecology program. Gated by a STAMP 4S test (Intermediate-Mid minimum), completed Spanish Level 3+ (or qualifying oral interview), and comfortable swimming ability. Must have completed Freshman year of high school. Moderate- to high-intensity physical activities.",
+      "description": "Spanish-taught version of the Palma marine ecology program. Gated by a STAMP 4S test (Intermediate-Mid minimum), completed Spanish Level 3+ (or qualifying oral interview), and comfortable swimming ability. Moderate- to high-intensity physical activities.",
       "category": "marine-science",
       "secondaryTags": [
         "Cultural Exchange"
@@ -34395,14 +34282,6 @@
           "type": "safety",
           "title": "Requires the ability to comfortably swim",
           "body": "CIEE's own eligibility notes state that participants must have the ability to comfortably swim, since the program is centered around the sea, in addition to describing the program as involving moderate- to high-intensity physical activities (hiking, boating, snorkeling).",
-          "sourceCitation": "CIEE Marine Ecology & Sustainability en Espanol (Palma de Mallorca) program page, Eligibility section",
-          "severity": "warning"
-        },
-        {
-          "id": "marine-ecology-en-espanol-grade-requirement",
-          "type": "safety",
-          "title": "Must have completed Freshman year before travel",
-          "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program -- a rising freshman would not yet qualify.",
           "sourceCitation": "CIEE Marine Ecology & Sustainability en Espanol (Palma de Mallorca) program page, Eligibility section",
           "severity": "warning"
         }
@@ -34473,14 +34352,6 @@
           "type": "safety",
           "title": "Requires the ability to comfortably swim",
           "body": "CIEE's own eligibility notes state that participants must have the ability to comfortably swim, since the program is centered around the sea, in addition to describing the program as involving moderate- to high-intensity physical activities (hiking, boating, snorkeling).",
-          "sourceCitation": "CIEE Marine Ecology & Sustainability en Espanol (Palma de Mallorca) program page, Eligibility section",
-          "severity": "warning"
-        },
-        {
-          "id": "marine-ecology-en-espanol-grade-requirement",
-          "type": "safety",
-          "title": "Must have completed Freshman year before travel",
-          "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program -- a rising freshman would not yet qualify.",
           "sourceCitation": "CIEE Marine Ecology & Sustainability en Espanol (Palma de Mallorca) program page, Eligibility section",
           "severity": "warning"
         }
@@ -34596,14 +34467,6 @@
           "body": "CIEE requires students to have completed at least one year of high school Spanish before traveling. Students with two or more years of Spanish may instead qualify for the Honors Spanish Language & Culture program in Madrid or Seville.",
           "sourceCitation": "CIEE Spanish Language & Culture (Madrid) program page, Eligibility section",
           "severity": "warning"
-        },
-        {
-          "id": "spanish-language-madrid-date-inconsistency",
-          "type": "safety",
-          "title": "Session II dates are inconsistent on CIEE's own page",
-          "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027').",
-          "sourceCitation": "CIEE Spanish Language & Culture (Madrid) program page, Dates & Fees section",
-          "severity": "warning"
         }
       ],
       "participantGender": "coed",
@@ -34672,14 +34535,6 @@
           "body": "CIEE's own eligibility notes describe this program as involving moderate- to high-intensity physical activities, such as hiking, snorkeling, and coasteering.",
           "sourceCitation": "CIEE Spanish Language & Culture (Palma de Mallorca) program page, Eligibility section",
           "severity": "warning"
-        },
-        {
-          "id": "spanish-language-palma-date-inconsistency",
-          "type": "safety",
-          "title": "Session II dates are inconsistent on CIEE's own page",
-          "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027').",
-          "sourceCitation": "CIEE Spanish Language & Culture (Palma de Mallorca) program page, Dates & Fees section",
-          "severity": "warning"
         }
       ],
       "participantGender": "coed",
@@ -34734,20 +34589,12 @@
       "dataVerifiedAt": "2026-09-18",
       "flags": [
         {
-          "id": "spanish-language-seville-grade-requirement",
+          "id": "spanish-language-seville-open-proficiency",
           "type": "safety",
-          "title": "Must have completed Freshman year before travel",
-          "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program -- a rising freshman would not yet qualify. Unlike the Barcelona, Madrid, and Palma versions of this program, Seville does not require prior Spanish coursework and is open to all proficiency levels.",
+          "title": "Open to all Spanish proficiency levels",
+          "body": "Unlike the Barcelona, Madrid, and Palma versions of this program, Seville does not require prior Spanish coursework and is open to all proficiency levels.",
           "sourceCitation": "CIEE Spanish Language & Culture (Seville) program page, Eligibility section",
-          "severity": "warning"
-        },
-        {
-          "id": "spanish-language-seville-date-inconsistency",
-          "type": "safety",
-          "title": "Session II dates are inconsistent on CIEE's own page",
-          "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027'), with a footnote explicitly noting these dates are tentative.",
-          "sourceCitation": "CIEE Spanish Language & Culture (Seville) program page, Dates & Fees section",
-          "severity": "warning"
+          "severity": "info"
         }
       ],
       "participantGender": "coed",
@@ -34802,12 +34649,12 @@
       "dataVerifiedAt": "2026-09-18",
       "flags": [
         {
-          "id": "spanish-language-alicante-grade-requirement",
+          "id": "spanish-language-alicante-open-proficiency",
           "type": "safety",
-          "title": "Must have completed Freshman year before travel",
-          "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program -- a rising freshman would not yet qualify. Like Seville, this program does not require prior Spanish coursework and is open to all proficiency levels.",
+          "title": "Open to all Spanish proficiency levels",
+          "body": "Like Seville, this program does not require prior Spanish coursework and is open to all proficiency levels.",
           "sourceCitation": "CIEE Spanish Language & Culture (Alicante) program page, Eligibility section",
-          "severity": "warning"
+          "severity": "info"
         }
       ],
       "participantGender": "coed",
@@ -34860,16 +34707,7 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://www.ciee.org/go-abroad/high-school-study-abroad/summer/programs/taiwan/taipei/chinese-language-taiwanese-culture",
       "dataVerifiedAt": "2026-09-18",
-      "flags": [
-        {
-          "id": "chinese-language-taipei-date-inconsistency",
-          "type": "safety",
-          "title": "Session II dates are inconsistent on CIEE's own page",
-          "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027'). Unlike most other CIEE programs with this same bug, the price for Session II IS shown clearly ($8,000). Families should confirm exact Session II dates directly with CIEE before booking flights.",
-          "sourceCitation": "CIEE Chinese Language & Taiwanese Culture (Taipei) program page, Dates & Fees section",
-          "severity": "warning"
-        }
-      ],
+      "flags": [],
       "participantGender": "coed",
       "dayToDay": {
         "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays center on Mandarin-language classes and cultural workshops; the program includes overnight excursions to Taichung and Sun Moon Lake in Nantou, plus a day trip to Jiufen and Shifen. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",

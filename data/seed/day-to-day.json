@@ -1405,15 +1405,23 @@
   },
   {
     "match": {
-      "programGroupId": [
-        "ciee-france-toulouse-french-language-culture",
-        "ciee-france-rennes-french-language-culture"
-      ]
+      "programGroupId": "ciee-france-toulouse-french-language-culture"
     },
     "dayToDay": {
-      "notes": "Homestay-based; host families share daily meals. Daily language classes paired with afternoon cultural activities. Toulouse: weekend excursions to Carcassonne and the French Mediterranean coast. Rennes: weekend excursions to Mont Saint-Michel and the Brittany coastline.",
+      "notes": "Homestay-based; host families share daily meals. Daily language classes paired with afternoon cultural activities. Weekend excursions to Carcassonne and the French Mediterranean coast.",
       "sourceType": "official_policy",
-      "sourceCitation": "CIEE French Language & Culture (Toulouse and Rennes) program pages",
+      "sourceCitation": "CIEE French Language & Culture (Toulouse) program page",
+      "verifiedAt": "2026-09-15"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "ciee-france-rennes-french-language-culture"
+    },
+    "dayToDay": {
+      "notes": "Homestay-based; host families share daily meals. Daily language classes paired with afternoon cultural activities. Weekend excursions to Mont Saint-Michel and the Brittany coastline.",
+      "sourceType": "official_policy",
+      "sourceCitation": "CIEE French Language & Culture (Rennes) program page",
       "verifiedAt": "2026-09-15"
     }
   },

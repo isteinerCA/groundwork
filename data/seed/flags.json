@@ -8,7 +8,7 @@
         "id": "cosmos-ca-residency",
         "type": "residency",
         "title": "California residents only",
-        "body": "COSMOS accepts students completing grades 8–12 who are enrolled in a California high school. Out-of-state students are not eligible.",
+        "body": "COSMOS accepts students completing grades 8\u201312 who are enrolled in a California high school. Out-of-state students are not eligible.",
         "sourceCitation": "COSMOS statewide eligibility requirements (UC COSMOS)",
         "sourceDate": "2026-01-01",
         "severity": "warning"
@@ -17,7 +17,7 @@
         "id": "cosmos-deposit",
         "type": "deposit",
         "title": "$200 deposit non-refundable",
-        "body": "A $200 deposit is required to hold a spot and is non-refundable — including for students who receive full financial aid.",
+        "body": "A $200 deposit is required to hold a spot and is non-refundable \u2014 including for students who receive full financial aid.",
         "sourceCitation": "COSMOS program fee and deposit policy",
         "sourceDate": "2026-01-01",
         "severity": "warning"
@@ -75,7 +75,7 @@
       {
         "id": "harvard-ssp-crime",
         "type": "safety",
-        "title": "55% campus crime rate increase (2022–2023)",
+        "title": "55% campus crime rate increase (2022\u20132023)",
         "body": "Harvard reported a 55% increase in campus crime between 2022 and 2023. Review the university's Annual Security Report when evaluating a residential summer enrollment.",
         "sourceCitation": "Harvard University Annual Security Report (Clery Act)",
         "sourceDate": "2024-01-01",
@@ -108,7 +108,7 @@
         "id": "outward-bound-solo",
         "type": "physical",
         "title": "Mandatory solo wilderness camping",
-        "body": "Outward Bound courses require a solo wilderness camping period, typically 24–72 hours, as a core part of the curriculum.",
+        "body": "Outward Bound courses require a solo wilderness camping period, typically 24\u201372 hours, as a core part of the curriculum.",
         "sourceCitation": "Outward Bound USA course structure and participant requirements",
         "sourceDate": "2026-01-01",
         "severity": "warning"
@@ -250,14 +250,14 @@
   {
     "match": {
       "programGroupId": "lasting-adventures-yosemite",
-      "offeringLabel": "10-Day Mammoth to Yosemite — Jul 6-15"
+      "offeringLabel": "10-Day Mammoth to Yosemite \u2014 Jul 6-15"
     },
     "flags": [
       {
         "id": "lasting-adventures-yosemite-mammoth-experience-prereq",
         "type": "selectivity",
         "title": "\"First-come\" admission still expects prior backpacking experience",
-        "body": "The 10-Day Mammoth to Yosemite trip is First-Come with no formal application, but the program site states it's designed for experienced backpackers or past Lasting Adventures participants — a first-timer could book it without realizing they may be underprepared.",
+        "body": "The 10-Day Mammoth to Yosemite trip is First-Come with no formal application, but the program site states it's designed for experienced backpackers or past Lasting Adventures participants \u2014 a first-timer could book it without realizing they may be underprepared.",
         "sourceCitation": "Lasting Adventures 10-Day Mammoth to Yosemite Teen Adventure program page",
         "severity": "info"
       }
@@ -266,14 +266,14 @@
   {
     "match": {
       "programGroupId": "lasting-adventures-yosemite",
-      "offeringLabel": "10-Day Mammoth to Yosemite — Aug 3-12"
+      "offeringLabel": "10-Day Mammoth to Yosemite \u2014 Aug 3-12"
     },
     "flags": [
       {
         "id": "lasting-adventures-yosemite-mammoth-experience-prereq",
         "type": "selectivity",
         "title": "\"First-come\" admission still expects prior backpacking experience",
-        "body": "The 10-Day Mammoth to Yosemite trip is First-Come with no formal application, but the program site states it's designed for experienced backpackers or past Lasting Adventures participants — a first-timer could book it without realizing they may be underprepared.",
+        "body": "The 10-Day Mammoth to Yosemite trip is First-Come with no formal application, but the program site states it's designed for experienced backpackers or past Lasting Adventures participants \u2014 a first-timer could book it without realizing they may be underprepared.",
         "sourceCitation": "Lasting Adventures 10-Day Mammoth to Yosemite Teen Adventure program page",
         "severity": "info"
       }
@@ -584,7 +584,7 @@
         "id": "broadreach-ms-age-gate",
         "type": "policy",
         "title": "Must be 12 years old by program start",
-        "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date — a student in an eligible grade who has not yet turned 12 would not qualify.",
+        "body": "In addition to the completing-grades band, students must be at least 12 years old by the program start date \u2014 a student in an eligible grade who has not yet turned 12 would not qualify.",
         "sourceCitation": "Broadreach middle school program pages",
         "severity": "warning"
       }
@@ -783,7 +783,7 @@
         "id": "westcoast-ucla-hawaii-no-commuter",
         "type": "policy",
         "title": "No commuter option for the Hawaii extension",
-        "body": "This 27-day itinerary is residential only — there is no day-student or commuter enrollment for the combined UCLA and Hawaii program.",
+        "body": "This 27-day itinerary is residential only \u2014 there is no day-student or commuter enrollment for the combined UCLA and Hawaii program.",
         "sourceCitation": "Westcoast Connection UCLA plus Hawaii Extension program page",
         "severity": "info"
       }
@@ -799,7 +799,7 @@
         "id": "wcc-ucla-commuter-distinct-schedule",
         "type": "other",
         "title": "Commuter is a distinct schedule, not residential in day format",
-        "body": "The commuter option covers class days only across three non-consecutive weeks — not the full 21-day residential session with overnight and weekend programming.",
+        "body": "The commuter option covers class days only across three non-consecutive weeks \u2014 not the full 21-day residential session with overnight and weekend programming.",
         "sourceCitation": "Westcoast Connection UCLA Pre-College Commuter Option section",
         "sourceDate": "2026-09-15",
         "severity": "warning"
@@ -834,7 +834,7 @@
         "id": "wcc-ucla-commuter-distinct-schedule-14",
         "type": "other",
         "title": "Commuter is a distinct schedule, not residential in day format",
-        "body": "The commuter option covers class days only across two non-consecutive weeks — not the full 14-day residential session with overnight and weekend programming.",
+        "body": "The commuter option covers class days only across two non-consecutive weeks \u2014 not the full 14-day residential session with overnight and weekend programming.",
         "sourceCitation": "Westcoast Connection UCLA Pre-College Commuter Option section (14-day page)",
         "sourceDate": "2026-09-15",
         "severity": "warning"
@@ -883,7 +883,7 @@
       {
         "id": "westcoast-barcelona-italy-internal-flight",
         "type": "pricing",
-        "title": "$245 internal Spain–Italy flight not included in tuition",
+        "title": "$245 internal Spain\u2013Italy flight not included in tuition",
         "body": "Beyond airfare to Barcelona and home from Rome, the program charges an additional $245 for the internal flight from Spain to Italy.",
         "sourceCitation": "Westcoast Connection Barcelona plus Amalfi Coast & Rome program page",
         "severity": "warning"
@@ -899,7 +899,7 @@
       {
         "id": "westcoast-barcelona-greece-internal-flight",
         "type": "pricing",
-        "title": "$495 internal Spain–Greece flight not included in tuition",
+        "title": "$495 internal Spain\u2013Greece flight not included in tuition",
         "body": "Beyond airfare to Barcelona and home from Athens, the program charges an additional $495 for the internal flight from Spain to Greece.",
         "sourceCitation": "Westcoast Connection Barcelona plus Greek Islands program page",
         "severity": "warning"
@@ -930,7 +930,7 @@
       {
         "id": "westcoast-florence-greece-internal-flight",
         "type": "pricing",
-        "title": "$345 internal Italy–Greece flight not included in tuition",
+        "title": "$345 internal Italy\u2013Greece flight not included in tuition",
         "body": "Beyond airfare to Florence and home from Athens, the program charges an additional $345 for the internal flight from Italy to Greece.",
         "sourceCitation": "Westcoast Connection Florence plus Greek Islands program page",
         "severity": "warning"
@@ -962,7 +962,7 @@
         "id": "wcc-montreal-commuter-distinct-schedule",
         "type": "other",
         "title": "Commuter is a distinct schedule, not residential in day format",
-        "body": "The commuter option covers class days only across three non-consecutive weeks — not the full 21-day residential session with overnight and weekend programming.",
+        "body": "The commuter option covers class days only across three non-consecutive weeks \u2014 not the full 21-day residential session with overnight and weekend programming.",
         "sourceCitation": "Westcoast Connection Montreal McGill Pre-College Commuter Option section",
         "sourceDate": "2026-09-15",
         "severity": "warning"
@@ -997,7 +997,7 @@
         "id": "wcc-montreal-commuter-distinct-schedule-14",
         "type": "other",
         "title": "Commuter is a distinct schedule, not residential in day format",
-        "body": "The commuter option covers class days only across two non-consecutive weeks — not the full 14-day residential session with overnight and weekend programming.",
+        "body": "The commuter option covers class days only across two non-consecutive weeks \u2014 not the full 14-day residential session with overnight and weekend programming.",
         "sourceCitation": "Westcoast Connection Montreal McGill Pre-College Commuter Option section (14-day page)",
         "sourceDate": "2026-09-15",
         "severity": "warning"
@@ -1064,7 +1064,7 @@
         "id": "ciee-fashion-marketing-merit-aid-only",
         "type": "pricing",
         "title": "Need-based Global Navigator scholarship not available",
-        "body": "Only the CIEE Academic Merit Award applies to this program. The standard CIEE Global Navigator Scholarship (need-based) is explicitly not available here — important for families relying on need-based aid.",
+        "body": "Only the CIEE Academic Merit Award applies to this program. The standard CIEE Global Navigator Scholarship (need-based) is explicitly not available here \u2014 important for families relying on need-based aid.",
         "sourceCitation": "CIEE Fashion Marketing in Europe program page",
         "sourceDate": "2026-09-15",
         "severity": "warning"
@@ -1085,14 +1085,6 @@
     },
     "flags": [
       {
-        "id": "marine-ecology-merida-grade-requirement",
-        "type": "safety",
-        "title": "Must have completed Freshman year before travel",
-        "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program — a rising freshman would not yet qualify.",
-        "sourceCitation": "CIEE Marine Ecology & Sustainability (Merida) program page, Eligibility section",
-        "severity": "warning"
-      },
-      {
         "id": "marine-ecology-merida-kosher-halal",
         "type": "safety",
         "title": "Cannot accommodate fully Kosher or Halal diets",
@@ -1107,14 +1099,6 @@
       "programGroupId": "ciee-mexico-merida-culinary-arts-mexican-culture"
     },
     "flags": [
-      {
-        "id": "culinary-arts-merida-grade-requirement",
-        "type": "safety",
-        "title": "Must have completed Freshman year before travel",
-        "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program — a rising freshman would not yet qualify.",
-        "sourceCitation": "CIEE Culinary Arts & Mexican Culture (Merida) program page, Eligibility section",
-        "severity": "warning"
-      },
       {
         "id": "culinary-arts-merida-diet-restrictions",
         "type": "safety",
@@ -1146,34 +1130,11 @@
     },
     "flags": [
       {
-        "id": "spanish-language-merida-grade-requirement",
-        "type": "safety",
-        "title": "Must have completed Freshman year before travel",
-        "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program — a rising freshman would not yet qualify.",
-        "sourceCitation": "CIEE Spanish Language & Mexican Culture (Merida) program page, Eligibility section",
-        "severity": "warning"
-      },
-      {
         "id": "spanish-language-merida-kosher-halal",
         "type": "safety",
         "title": "Cannot accommodate fully Kosher or Halal diets",
         "body": "CIEE states this program cannot accommodate a fully Kosher or Halal diet, due to the local cuisine and available food options.",
         "sourceCitation": "CIEE Spanish Language & Mexican Culture (Merida) program page, Eligibility section",
-        "severity": "warning"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "ciee-morocco-rabat-arabic-language-moroccan-culture"
-    },
-    "flags": [
-      {
-        "id": "arabic-language-rabat-date-inconsistency",
-        "type": "safety",
-        "title": "Session II dates are inconsistent on CIEE's own page",
-        "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027'). Families should confirm exact Session II dates directly with CIEE before booking flights.",
-        "sourceCitation": "CIEE Arabic Language & Moroccan Culture (Rabat) program page, Dates & Fees section",
         "severity": "warning"
       }
     ]
@@ -1232,7 +1193,7 @@
         "id": "soccer-lisbon-physical-commitment",
         "type": "safety",
         "title": "Significant daily athletic commitment expected",
-        "body": "CIEE's own eligibility notes say prior soccer experience (school, club, or rec) is preferred, and students should be prepared for daily practice/training sessions of up to 3 hours, five days a week — a heavier physical commitment than CIEE's academic or creative-arts programs.",
+        "body": "CIEE's own eligibility notes say prior soccer experience (school, club, or rec) is preferred, and students should be prepared for daily practice/training sessions of up to 3 hours, five days a week \u2014 a heavier physical commitment than CIEE's academic or creative-arts programs.",
         "sourceCitation": "CIEE Soccer & Mental Performance (Lisbon) program page, Eligibility section",
         "severity": "warning"
       }
@@ -1247,7 +1208,7 @@
         "id": "marine-ecology-san-juan-diet-restrictions",
         "type": "safety",
         "title": "Cannot accommodate fully Vegetarian, Kosher, or Vegan diets",
-        "body": "CIEE states this program cannot accommodate a fully Vegetarian, Kosher, or Vegan diet, due to the local cuisine and available food options — a broader dietary exclusion list than CIEE's other Marine Ecology & Sustainability offerings (e.g., Lisbon, Mérida), which only exclude Kosher/Halal.",
+        "body": "CIEE states this program cannot accommodate a fully Vegetarian, Kosher, or Vegan diet, due to the local cuisine and available food options \u2014 a broader dietary exclusion list than CIEE's other Marine Ecology & Sustainability offerings (e.g., Lisbon, M\u00e9rida), which only exclude Kosher/Halal.",
         "sourceCitation": "CIEE Marine Ecology & Sustainability (San Juan) program page, Eligibility section",
         "severity": "warning"
       },
@@ -1270,7 +1231,7 @@
         "id": "golf-edinburgh-no-price-published",
         "type": "safety",
         "title": "No price published yet for 2027",
-        "body": "Unlike CIEE's other Edinburgh programs, this page does not display a cost for either Summer Session I or II as of this research pass — only dates and the $25 application fee are shown. Families should contact CIEE directly for current pricing before applying.",
+        "body": "Unlike CIEE's other Edinburgh programs, this page does not display a cost for either Summer Session I or II as of this research pass \u2014 only dates and the $25 application fee are shown. Families should contact CIEE directly for current pricing before applying.",
         "sourceCitation": "CIEE Golf & Mental Performance (Edinburgh) program page, Dates & Fees section",
         "severity": "warning"
       }
@@ -1356,22 +1317,6 @@
         "body": "CIEE notes that South Korea maintains strict regulations on medications brought into the country and encourages families to consult their doctor and confirm the student's medications are legal and available there before traveling.",
         "sourceCitation": "CIEE Korean Language & Culture (Seoul) program page, Eligibility section",
         "severity": "warning"
-      },
-      {
-        "id": "korean-language-seoul-grade-requirement",
-        "type": "safety",
-        "title": "Must have completed Freshman year before travel",
-        "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program — a rising freshman would not yet qualify.",
-        "sourceCitation": "CIEE Korean Language & Culture (Seoul) program page, Eligibility section",
-        "severity": "warning"
-      },
-      {
-        "id": "korean-language-seoul-date-inconsistency",
-        "type": "safety",
-        "title": "Session II dates are inconsistent on CIEE's own page",
-        "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027'). Families should confirm exact Session II dates directly with CIEE before booking flights.",
-        "sourceCitation": "CIEE Korean Language & Culture (Seoul) program page, Dates & Fees section",
-        "severity": "warning"
       }
     ]
   },
@@ -1440,14 +1385,6 @@
         "body": "CIEE notes that South Korea maintains strict regulations on medications brought into the country and encourages families to consult their doctor and confirm the student's medications are legal and available there before traveling.",
         "sourceCitation": "CIEE Urban Design & Sustainability (Seoul) program page, Eligibility section",
         "severity": "warning"
-      },
-      {
-        "id": "urban-design-seoul-grade-requirement",
-        "type": "safety",
-        "title": "Must have completed Freshman year before travel",
-        "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program — a rising freshman would not yet qualify.",
-        "sourceCitation": "CIEE Urban Design & Sustainability (Seoul) program page, Eligibility section",
-        "severity": "warning"
       }
     ]
   },
@@ -1463,14 +1400,6 @@
         "body": "CIEE requires students to have completed at least one year of high school Spanish before traveling. Students with two or more years of Spanish may instead qualify for the Honors Spanish Language & Culture program in Madrid or Seville.",
         "sourceCitation": "CIEE Spanish Language & Culture (Barcelona) program page, Eligibility section",
         "severity": "warning"
-      },
-      {
-        "id": "spanish-language-barcelona-date-inconsistency",
-        "type": "safety",
-        "title": "Session II dates are inconsistent on CIEE's own page",
-        "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027'). Families should confirm exact Session II dates directly with CIEE before booking flights.",
-        "sourceCitation": "CIEE Spanish Language & Culture (Barcelona) program page, Dates & Fees section",
-        "severity": "warning"
       }
     ]
   },
@@ -1479,14 +1408,6 @@
       "programGroupId": "ciee-spain-barcelona-culinary-arts-spanish-culture"
     },
     "flags": [
-      {
-        "id": "culinary-arts-barcelona-grade-requirement",
-        "type": "safety",
-        "title": "Must have completed Freshman year before travel",
-        "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program -- a rising freshman would not yet qualify.",
-        "sourceCitation": "CIEE Culinary Arts & Spanish Culture (Barcelona) program page, Eligibility section",
-        "severity": "warning"
-      },
       {
         "id": "culinary-arts-barcelona-diet-restrictions",
         "type": "safety",
@@ -1532,14 +1453,6 @@
         "body": "This Honors program is gated by a pre-program STAMP language proficiency test. Students must have completed high school Spanish Level 2 or higher and score at least Intermediate-Low on the ACTFL scale; those who do not meet the bar may be moved to a standard (non-Honors) Language & Culture program instead.",
         "sourceCitation": "CIEE Honors Spanish Language & Culture (Seville) program page, Eligibility section",
         "severity": "warning"
-      },
-      {
-        "id": "honors-seville-date-inconsistency",
-        "type": "safety",
-        "title": "Session II dates are inconsistent on CIEE's own page",
-        "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027').",
-        "sourceCitation": "CIEE Honors Spanish Language & Culture (Seville) program page, Dates & Fees section",
-        "severity": "warning"
       }
     ]
   },
@@ -1554,14 +1467,6 @@
         "title": "Requires the ability to comfortably swim",
         "body": "CIEE's own eligibility notes state that participants must have the ability to comfortably swim, since the program is centered around the sea, in addition to describing the program as involving moderate- to high-intensity physical activities (hiking, boating, snorkeling).",
         "sourceCitation": "CIEE Marine Ecology & Sustainability (Palma de Mallorca) program page, Eligibility section",
-        "severity": "warning"
-      },
-      {
-        "id": "marine-ecology-palma-session-ii-unpublished",
-        "type": "safety",
-        "title": "Session II is entirely unpublished for 2027",
-        "body": "As of this research pass, CIEE has not published dates or a price for Session II -- both fields show 'TBD' with a footnote that dates are tentative. This is a more complete gap than the usual 'price not re-shown' pattern seen elsewhere.",
-        "sourceCitation": "CIEE Marine Ecology & Sustainability (Palma de Mallorca) program page, Dates & Fees section",
         "severity": "warning"
       }
     ]
@@ -1586,14 +1491,6 @@
         "body": "CIEE's own eligibility notes state that participants must have the ability to comfortably swim, since the program is centered around the sea, in addition to describing the program as involving moderate- to high-intensity physical activities (hiking, boating, snorkeling).",
         "sourceCitation": "CIEE Marine Ecology & Sustainability en Espanol (Palma de Mallorca) program page, Eligibility section",
         "severity": "warning"
-      },
-      {
-        "id": "marine-ecology-en-espanol-grade-requirement",
-        "type": "safety",
-        "title": "Must have completed Freshman year before travel",
-        "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program -- a rising freshman would not yet qualify.",
-        "sourceCitation": "CIEE Marine Ecology & Sustainability en Espanol (Palma de Mallorca) program page, Eligibility section",
-        "severity": "warning"
       }
     ]
   },
@@ -1608,14 +1505,6 @@
         "title": "Requires at least one year of high school Spanish",
         "body": "CIEE requires students to have completed at least one year of high school Spanish before traveling. Students with two or more years of Spanish may instead qualify for the Honors Spanish Language & Culture program in Madrid or Seville.",
         "sourceCitation": "CIEE Spanish Language & Culture (Madrid) program page, Eligibility section",
-        "severity": "warning"
-      },
-      {
-        "id": "spanish-language-madrid-date-inconsistency",
-        "type": "safety",
-        "title": "Session II dates are inconsistent on CIEE's own page",
-        "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027').",
-        "sourceCitation": "CIEE Spanish Language & Culture (Madrid) program page, Dates & Fees section",
         "severity": "warning"
       }
     ]
@@ -1640,14 +1529,6 @@
         "body": "CIEE's own eligibility notes describe this program as involving moderate- to high-intensity physical activities, such as hiking, snorkeling, and coasteering.",
         "sourceCitation": "CIEE Spanish Language & Culture (Palma de Mallorca) program page, Eligibility section",
         "severity": "warning"
-      },
-      {
-        "id": "spanish-language-palma-date-inconsistency",
-        "type": "safety",
-        "title": "Session II dates are inconsistent on CIEE's own page",
-        "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027').",
-        "sourceCitation": "CIEE Spanish Language & Culture (Palma de Mallorca) program page, Dates & Fees section",
-        "severity": "warning"
       }
     ]
   },
@@ -1657,20 +1538,12 @@
     },
     "flags": [
       {
-        "id": "spanish-language-seville-grade-requirement",
+        "id": "spanish-language-seville-open-proficiency",
         "type": "safety",
-        "title": "Must have completed Freshman year before travel",
-        "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program -- a rising freshman would not yet qualify. Unlike the Barcelona, Madrid, and Palma versions of this program, Seville does not require prior Spanish coursework and is open to all proficiency levels.",
+        "title": "Open to all Spanish proficiency levels",
+        "body": "Unlike the Barcelona, Madrid, and Palma versions of this program, Seville does not require prior Spanish coursework and is open to all proficiency levels.",
         "sourceCitation": "CIEE Spanish Language & Culture (Seville) program page, Eligibility section",
-        "severity": "warning"
-      },
-      {
-        "id": "spanish-language-seville-date-inconsistency",
-        "type": "safety",
-        "title": "Session II dates are inconsistent on CIEE's own page",
-        "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027'), with a footnote explicitly noting these dates are tentative.",
-        "sourceCitation": "CIEE Spanish Language & Culture (Seville) program page, Dates & Fees section",
-        "severity": "warning"
+        "severity": "info"
       }
     ]
   },
@@ -1680,27 +1553,12 @@
     },
     "flags": [
       {
-        "id": "spanish-language-alicante-grade-requirement",
+        "id": "spanish-language-alicante-open-proficiency",
         "type": "safety",
-        "title": "Must have completed Freshman year before travel",
-        "body": "CIEE requires students to have completed Freshman year of high school before traveling on this program -- a rising freshman would not yet qualify. Like Seville, this program does not require prior Spanish coursework and is open to all proficiency levels.",
+        "title": "Open to all Spanish proficiency levels",
+        "body": "Like Seville, this program does not require prior Spanish coursework and is open to all proficiency levels.",
         "sourceCitation": "CIEE Spanish Language & Culture (Alicante) program page, Eligibility section",
-        "severity": "warning"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "ciee-taiwan-taipei-chinese-language-taiwanese-culture"
-    },
-    "flags": [
-      {
-        "id": "chinese-language-taipei-date-inconsistency",
-        "type": "safety",
-        "title": "Session II dates are inconsistent on CIEE's own page",
-        "body": "CIEE's term selector marks Session II as 'TBD,' but the Dates & Fees table on the same page lists specific dates with an apparent typo (end date shown as 'July 31, 3027'). Unlike most other CIEE programs with this same bug, the price for Session II IS shown clearly ($8,000). Families should confirm exact Session II dates directly with CIEE before booking flights.",
-        "sourceCitation": "CIEE Chinese Language & Taiwanese Culture (Taipei) program page, Dates & Fees section",
-        "severity": "warning"
+        "severity": "info"
       }
     ]
   },
