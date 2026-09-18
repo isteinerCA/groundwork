@@ -2440,5 +2440,36 @@
         "sourceCitation": "User-provided screenshots, rlt-scotland-ireland-celtic-isles program page"
       }
     ]
+  },
+  {
+    "match": {
+      "programGroupId": "hmi-summer-term"
+    },
+    "flags": [
+      {
+        "id": "hmi-summer-term-financial-aid-separate-application",
+        "type": "safety",
+        "title": "Financial aid requires a separate application submitted alongside enrollment",
+        "body": "Must submit a Clarity financial aid application at the same time as the HMI application. ~40% of students receive need-based aid; top packages can include gear rental and covered flights.",
+        "sourceCitation": "High Mountain Institute Summer Term program page, admissions and financial aid",
+        "severity": "info"
+      },
+      {
+        "id": "hmi-summer-term-flights-not-included",
+        "type": "safety",
+        "title": "Flights to and from Denver are not included in tuition",
+        "body": "Budget separately for airfare to Denver.",
+        "sourceCitation": "High Mountain Institute Summer Term program page, tuition and what's included",
+        "severity": "info"
+      },
+      {
+        "id": "hmi-summer-term-extended-wilderness-commitment",
+        "type": "safety",
+        "title": "Students must be comfortable with extended (10-day) stretches in wilderness settings",
+        "body": "No prior outdoor experience required, but two back-to-back 10-day expeditions with no easy midway exit.",
+        "sourceCitation": "High Mountain Institute Summer Term program page, main description",
+        "severity": "info"
+      }
+    ]
   }
 ]
