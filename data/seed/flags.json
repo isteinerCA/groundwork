@@ -3746,14 +3746,6 @@
         "body": "The Dates & Rates page's Summer 2027 Calendar footnote explicitly references \"Northwaters/Langskib 2nd Sessions\" beginning July 22 and ending August 14, 2027 -- the same window as Langskib's confirmed second session. However, the Northwaters Coed table itself lists only the single June 26-July 19 session (plus the by-invitation Leadership Program variant). This could mean Coed genuinely runs only one general-enrollment session in 2027 while Langskib runs two, or it could be an editing gap on the page. Families interested in a July/August timeframe should confirm directly with the provider whether a second Coed session is available before assuming none exists.",
         "sourceCitation": "Northwaters Dates & Rates page: comparison between the Summer 2027 Calendar section and the Northwaters Coed program table",
         "severity": "warning"
-      },
-      {
-        "id": "northwaters-financial-aid-generic",
-        "type": "safety",
-        "title": "Financial aid is referenced sitewide but not detailed for this specific program",
-        "body": "The site maintains a general 'Scholarship Opportunities' page linked throughout, but no specific award amounts, eligibility criteria, or application process for this program were detailed in the pages researched. Families should request specifics directly.",
-        "sourceCitation": "Sitewide navigation reference to a Scholarship Opportunities page; no program-specific detail found",
-        "severity": "info"
       }
     ]
   },
@@ -3792,67 +3784,6 @@
         "body": "On the Dates & Rates page, this program is listed under the heading \"Langskib for Boys 2-Weeks: Ages 10-12,\" but the underlying link title attribute reads \"Excalibur for Boys (ages 10-12).\" \"Excalibur for Boys ages 10-12\" also appears as its own distinct program reference elsewhere in this project's prior research on this organization. Families should confirm directly whether this 2-week program is actually branded/administered as \"Excalibur\" (a related but separate program) or is genuinely a shorter Langskib offering, since these may be two different things bundled into one table row.",
         "sourceCitation": "Northwaters Dates & Rates page: heading text vs. link title attribute for the same table entry",
         "severity": "warning"
-      },
-      {
-        "id": "northwaters-financial-aid-generic-sibling",
-        "type": "safety",
-        "title": "Financial aid is referenced sitewide but not detailed for this specific program",
-        "body": "The site maintains a general Scholarship Opportunities page linked throughout, but no specific award amounts, eligibility criteria, or application process for this program were detailed in the pages researched.",
-        "sourceCitation": "Sitewide navigation reference to a Scholarship Opportunities page; no program-specific detail found",
-        "severity": "info"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "northwaters-langskib-35wk"
-    },
-    "flags": [
-      {
-        "id": "northwaters-financial-aid-generic-sibling",
-        "type": "safety",
-        "title": "Financial aid is referenced sitewide but not detailed for this specific program",
-        "body": "The site maintains a general Scholarship Opportunities page linked throughout, but no specific award amounts, eligibility criteria, or application process for this program were detailed in the pages researched.",
-        "sourceCitation": "Sitewide navigation reference to a Scholarship Opportunities page; no program-specific detail found",
-        "severity": "info"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "northwaters-northernlights-2wk"
-    },
-    "flags": [
-      {
-        "id": "northwaters-financial-aid-generic-sibling",
-        "type": "safety",
-        "title": "Financial aid is referenced sitewide but not detailed for this specific program",
-        "body": "The site maintains a general Scholarship Opportunities page linked throughout, but no specific award amounts, eligibility criteria, or application process for this program were detailed in the pages researched.",
-        "sourceCitation": "Sitewide navigation reference to a Scholarship Opportunities page; no program-specific detail found",
-        "severity": "info"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "northwaters-youngwomen-35wk"
-    },
-    "flags": [
-      {
-        "id": "youngwomen-single-session-vs-langskib-two",
-        "type": "safety",
-        "title": "Only one 2027 session is listed, unlike the equivalent boys' program (Langskib), which has two",
-        "body": "Langskib (ages 11-17, the closest equivalent boys' program) runs two full 3.5-week sessions in 2027 (June 26-July 19 and July 22-August 14). Northwaters for Young Women (ages 12-17) lists only the later session (July 22-August 14). This may reflect a genuine scheduling/capacity difference or may be a gap on the page. Families interested in an earlier-summer session should confirm directly whether one exists.",
-        "sourceCitation": "Northwaters Dates & Rates page: comparison between the Langskib and Northwaters for Young Women program tables",
-        "severity": "warning"
-      },
-      {
-        "id": "northwaters-financial-aid-generic-sibling",
-        "type": "safety",
-        "title": "Financial aid is referenced sitewide but not detailed for this specific program",
-        "body": "The site maintains a general Scholarship Opportunities page linked throughout, but no specific award amounts, eligibility criteria, or application process for this program were detailed in the pages researched.",
-        "sourceCitation": "Sitewide navigation reference to a Scholarship Opportunities page; no program-specific detail found",
-        "severity": "info"
       }
     ]
   },
