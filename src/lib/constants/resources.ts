@@ -28,6 +28,8 @@ export type ResourceArticle = {
   categoryId: ResourceCategoryId;
   title: string;
   excerpt: string;
+  /** Display date when the article refers to a specific moment in the planning calendar. */
+  publishedDate?: string;
   blocks: ArticleBlock[];
 };
 
@@ -76,6 +78,7 @@ const ARTICLE_ORDER: Record<ResourceCategoryId, readonly string[]> = {
     "what-should-an-11th-grader-do",
   ],
   "choosing-a-program": [
+    "teen-travel-programs-summer-2027",
     "how-to-tell-if-a-summer-program-is-a-good-fit",
     "online-or-in-person",
     "are-expensive-pre-college-programs-worth-it",

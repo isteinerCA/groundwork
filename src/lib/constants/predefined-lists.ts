@@ -148,6 +148,7 @@ function buildDomesticInterestList(def: DomesticInterestListDef): PredefinedList
     lockedFilters: {
       gradesCompleted: [...GRADE_CHIPS],
       dataQuery: def.dataQuery,
+      includeLocations: def.includeLocations ? [...def.includeLocations] : [],
       usOnly: true,
     },
   };

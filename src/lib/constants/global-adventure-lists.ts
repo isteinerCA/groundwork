@@ -120,4 +120,10 @@ export const GLOBAL_ADVENTURE_LIST_DEFS: GlobalAdventureListDef[] = [
     group: "what",
     titleLabel: "Marine biology programs",
   },
+  {
+    slug: "ecology-programs",
+    linkLabel: "Ecology",
+    dataQuery: "ecology",
+    group: "what",
+  },
 ];

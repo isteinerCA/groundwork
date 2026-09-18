@@ -12,7 +12,10 @@ import {
   promoteDateWindowFromMessage,
   sanitizeFilterPatch,
 } from "../src/lib/search/llm-parse-schema";
-import { resolveLocationQuery } from "../src/lib/data/matches-location";
+import {
+  matchesLocationQuery,
+  resolveLocationQuery,
+} from "../src/lib/data/matches-location";
 import {
   formatGradeEligibilityDisplay,
   gradeEligibilityLabel,
@@ -197,6 +200,38 @@ if (resolveLocationQuery("stanford") !== undefined) {
 
 if (resolveLocationQuery("california") !== "california") {
   console.error('FAIL: "california" should still resolve to california');
+  failed++;
+}
+
+if (resolveLocationQuery("san francisco") !== undefined) {
+  console.error('FAIL: "san francisco" should not resolve to all of california');
+  failed++;
+}
+
+if (resolveLocationQuery("los angeles") !== undefined) {
+  console.error('FAIL: "los angeles" should not resolve to all of california');
+  failed++;
+}
+
+const laProgram = stubProgram({
+  name: "UCLA Pre-College",
+  locationDisplay: "Los Angeles, CA",
+  trackDetail: "Session 1",
+});
+
+const yosemiteProgram = stubProgram({
+  name: "Lasting Adventures - Yosemite",
+  locationDisplay: "Yosemite National Park, CA",
+  trackDetail: "Departure 1",
+});
+
+if (!matchesLocationQuery(laProgram, "los angeles")) {
+  console.error('FAIL: Los Angeles program should match location query "los angeles"');
+  failed++;
+}
+
+if (matchesLocationQuery(yosemiteProgram, "los angeles")) {
+  console.error('FAIL: Yosemite program should not match location query "los angeles"');
   failed++;
 }
 

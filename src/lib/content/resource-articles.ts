@@ -1,4 +1,5 @@
 import type { ResourceArticle } from "@/lib/constants/resources";
+import { teenTravelProgramsSummer2027Article } from "@/lib/content/teen-travel-programs-summer-2027-article";
 
 export const RESOURCE_ARTICLES: ResourceArticle[] = [
   {
@@ -1408,4 +1409,5 @@ export const RESOURCE_ARTICLES: ResourceArticle[] = [
       },
     ],
   },
+  teenTravelProgramsSummer2027Article,
 ];

@@ -54,6 +54,11 @@ export default async function ResourceArticlePage({ params }: PageProps) {
 
         <SectionEyebrow className="mt-6">{category.label}</SectionEyebrow>
         <h1 className="mt-2 text-3xl md:text-4xl">{article.title}</h1>
+        {article.publishedDate ? (
+          <p className="mt-3 text-sm text-[var(--color-text-muted)]">
+            Published {article.publishedDate}
+          </p>
+        ) : null}
 
         <div className="mt-8">
           <ArticleContent blocks={article.blocks} />

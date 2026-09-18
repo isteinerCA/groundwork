@@ -75,6 +75,7 @@ const ACTIVITY_QUERY_GROUPS: Record<string, readonly string[]> = {
     "marine science",
     "oceanography",
   ],
+  theater: ["theater", "theatre"],
 };
 
 /**

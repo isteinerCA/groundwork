@@ -1,4 +1,9 @@
 export const RESOURCE_ARTICLE_RECOMMENDATIONS: Record<string, readonly string[]> = {
+  "teen-travel-programs-summer-2027": [
+    "when-should-you-start-applying",
+    "how-to-tell-if-a-summer-program-is-a-good-fit",
+    "fitting-programs-into-family-calendars-and-budgets",
+  ],
   "are-expensive-pre-college-programs-worth-it": [
     "how-much-do-summer-programs-cost",
     "summer-program-vs-internship",
@@ -90,6 +95,7 @@ export const RESOURCE_ARTICLE_RECOMMENDATIONS: Record<string, readonly string[]>
     "what-makes-a-great-summer-program",
   ],
   "when-should-you-start-applying": [
+    "teen-travel-programs-summer-2027",
     "fitting-programs-into-family-calendars-and-budgets",
     "what-does-selective-mean",
     "how-much-do-summer-programs-cost",
