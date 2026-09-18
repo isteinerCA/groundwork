@@ -544,6 +544,64 @@ if (matchesDataQuery(costaRicaCaribbeanCoast, "caribbean")) {
   failed++;
 }
 
+if (!matchesLocationQuery(georgetownCatalog, "washington dc")) {
+  console.error('FAIL: Georgetown campus should match location query "washington dc"');
+  failed++;
+}
+
+if (!matchesLocationQuery(georgetownCatalog, "district of columbia")) {
+  console.error('FAIL: Georgetown campus should match location query "district of columbia"');
+  failed++;
+}
+
+if (matchesLocationQuery(georgetownCatalog, "washington")) {
+  console.error('FAIL: Georgetown campus should not match Washington state query "washington"');
+  failed++;
+}
+
+const newEnglandMaineProgram = stubProgram({
+  name: "Apogee Adventures - Maine Coast Junior",
+  locationDisplay: "Maine",
+  trackDetail: "Session 1",
+});
+
+const newEnglandVermontProgram = stubProgram({
+  name: "SOCAPA - Vermont",
+  locationDisplay: "Burlington, VT",
+  trackDetail: "Core Filmmaking - Session 1",
+});
+
+const pnwProgram = stubProgram({
+  name: "Overland - Northwest Explorer",
+  locationDisplay: "Pacific Northwest (Olympic National Park)",
+  trackDetail: "Departure 1",
+});
+
+if (!matchesDataQuery(newEnglandMaineProgram, "new england")) {
+  console.error('FAIL: Maine program should match dataQuery "new england"');
+  failed++;
+}
+
+if (!matchesDataQuery(newEnglandVermontProgram, "new england")) {
+  console.error('FAIL: Vermont program should match dataQuery "new england"');
+  failed++;
+}
+
+if (matchesDataQuery(newEnglandMaineProgram, "vermont")) {
+  console.error('FAIL: Maine program should not match dataQuery "vermont" as a regional bucket');
+  failed++;
+}
+
+if (!matchesDataQuery(pnwProgram, "pacific northwest")) {
+  console.error('FAIL: Olympic Northwest program should match dataQuery "pacific northwest"');
+  failed++;
+}
+
+if (!matchesDataQuery(georgetownCatalog, "washington dc")) {
+  console.error('FAIL: Georgetown campus should match dataQuery "washington dc"');
+  failed++;
+}
+
 const caribbeanMarineBiology = stubProgram({
   name: "Broadreach - Caribbean Marine Biology Voyage",
   locationDisplay: "St. Martin + the Leewards, Caribbean",

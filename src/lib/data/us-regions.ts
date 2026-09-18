@@ -82,7 +82,7 @@ export const US_REGIONS = [
   {
     id: "northeast",
     label: "Northeast",
-    aliases: ["northeast", "north east", "north-east", "northeast only", "the northeast", "new england"],
+    aliases: ["northeast", "north east", "north-east", "northeast only", "the northeast"],
     states: [
       "maine",
       "new hampshire",

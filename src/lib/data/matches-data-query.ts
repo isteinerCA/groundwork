@@ -1,6 +1,10 @@
 import type { Program } from "@/lib/types/program";
 import { termMatchesInText } from "@/lib/data/fuzzy-text-match";
-import { matchesLocationQuery, resolveLocationQuery } from "@/lib/data/matches-location";
+import {
+  matchesLocationQuery,
+  programMatchesAnyLocation,
+  resolveLocationQuery,
+} from "@/lib/data/matches-location";
 import { programMatchesAnyRegion, resolveRegionQuery } from "@/lib/data/us-regions";
 
 /**
@@ -68,6 +72,39 @@ function hasGenericTrackDetail(trackDetail: string): boolean {
 }
 
 /** Synonym groups for common activity searches on adventure/travel programs. */
+/** Domestic destination buckets for curated list pages and natural-language search. */
+const DOMESTIC_LOCATION_REGION_QUERIES: Record<string, readonly string[]> = {
+  "new england": [
+    "maine",
+    "new hampshire",
+    "vermont",
+    "massachusetts",
+    "rhode island",
+    "connecticut",
+  ],
+  "pacific northwest": [
+    "pacific northwest",
+    "olympic",
+    "seattle",
+    "portland",
+    "eugene",
+    "friday harbor",
+    "oregon",
+  ],
+  "washington dc": [
+    "district of columbia",
+    "washington dc",
+    "washington, dc",
+    "washington, d.c.",
+  ],
+  "washington d.c.": [
+    "district of columbia",
+    "washington dc",
+    "washington, dc",
+    "washington, d.c.",
+  ],
+};
+
 const ACTIVITY_QUERY_GROUPS: Record<string, readonly string[]> = {
   backpacking: ["backpacking", "hiking", "trekking", "mountain travel", "mountain trek"],
   "international relations": [
@@ -342,6 +379,11 @@ export function matchesDataQuery(
 ): boolean {
   const trimmed = query.trim();
   if (!trimmed) return true;
+
+  const domesticRegionLocations = DOMESTIC_LOCATION_REGION_QUERIES[trimmed.toLowerCase()];
+  if (domesticRegionLocations) {
+    return programMatchesAnyLocation(program, [...domesticRegionLocations]);
+  }
 
   const resolvedRegion = resolveRegionQuery(trimmed);
   if (resolvedRegion) {

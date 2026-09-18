@@ -68,7 +68,12 @@ const US_STATES: UsState[] = [
   { name: "west virginia", abbr: "WV", aliases: [], misspellings: [] },
   { name: "wisconsin", abbr: "WI", aliases: [], misspellings: [] },
   { name: "wyoming", abbr: "WY", aliases: [], misspellings: [] },
-  { name: "district of columbia", abbr: "DC", aliases: ["washington dc", "washington, dc"], misspellings: [] },
+  {
+    name: "district of columbia",
+    abbr: "DC",
+    aliases: ["washington dc", "washington, dc", "washington d.c.", "washington, d.c."],
+    misspellings: [],
+  },
 ];
 
 const STATE_BY_ABBR = Object.fromEntries(US_STATES.map((state) => [state.abbr, state])) as Record<
@@ -244,10 +249,27 @@ function locationSegments(locationDisplay: string): string[] {
     .filter(Boolean);
 }
 
+function normalizeLocationSegment(segment: string): string {
+  return segment
+    .trim()
+    .toLowerCase()
+    .replace(/\./g, "")
+    .replace(/\s+/g, " ");
+}
+
+function segmentIndicatesDc(segment: string): boolean {
+  const normalized = normalizeLocationSegment(segment);
+  if (!normalized) return false;
+  if (normalized.includes("district of columbia")) return true;
+  if (/\bwashington,?\s*d\s*c\b/.test(normalized)) return true;
+  return /,\s*dc\b/.test(normalized);
+}
+
 function segmentHasStateAbbrev(segment: string, abbr: string): boolean {
   const normalized = segment.trim();
   if (!normalized) return false;
-  return new RegExp(`(?:^|[,\\s])${abbr}(?:\\b|$)`, "i").test(normalized);
+  const compact = normalized.replace(/\./g, "");
+  return new RegExp(`(?:^|[,\\s])${abbr}(?:\\b|$)`, "i").test(compact);
 }
 
 function residencyMatchesState(program: Program, state: UsState): boolean {
@@ -256,13 +278,31 @@ function residencyMatchesState(program: Program, state: UsState): boolean {
 }
 
 function segmentMatchesState(segment: string, state: UsState): boolean {
+  if (state.abbr === "DC") {
+    return segmentIndicatesDc(segment) || segmentHasStateAbbrev(segment, state.abbr);
+  }
+
+  if (state.abbr === "WA" && segmentIndicatesDc(segment)) {
+    return false;
+  }
+
   if (segmentHasStateAbbrev(segment, state.abbr)) return true;
 
-  const lower = segment.toLowerCase();
-  if (lower.includes(state.name)) return true;
+  const normalized = normalizeLocationSegment(segment);
+  if (state.abbr === "WA" && /\bu washington\b/.test(normalized)) {
+    return false;
+  }
+
+  if (normalized.includes(state.name)) return true;
 
   for (const alias of state.aliases) {
-    if (new RegExp(`\\b${alias.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i").test(lower)) {
+    const normalizedAlias = normalizeLocationSegment(alias);
+    const aliasPattern = normalizedAlias
+      .split(/\s+/)
+      .filter(Boolean)
+      .map(escapeRegExp)
+      .join("\\s+");
+    if (new RegExp(`\\b${aliasPattern}\\b`, "i").test(normalized)) {
       return true;
     }
   }
@@ -279,11 +319,15 @@ function locationNeedleMatchesInText(locationText: string, needle: string): bool
   const trimmed = needle.trim().toLowerCase();
   if (!trimmed) return false;
 
-  const parts = trimmed.split(/\s+/).filter(Boolean).map(escapeRegExp);
+  const normalizedText = normalizeLocationSegment(locationText);
+  const normalizedNeedle = normalizeLocationSegment(trimmed);
+  if (!normalizedNeedle) return false;
+
+  const parts = normalizedNeedle.split(/\s+/).filter(Boolean).map(escapeRegExp);
   if (parts.length === 0) return false;
 
   const pattern = new RegExp(`\\b${parts.join("\\s+")}\\b`, "i");
-  return pattern.test(locationText);
+  return pattern.test(normalizedText);
 }
 
 export function matchesLocationQuery(program: Program, query: string): boolean {

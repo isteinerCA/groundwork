@@ -119,18 +119,41 @@ const DOMESTIC_WHERE_RELATED: Record<string, readonly string[]> = {
   ],
   "alaska-us-programs": ["wyoming-us-programs", "colorado-us-programs", "yosemite-us-programs"],
   "wyoming-us-programs": ["colorado-us-programs", "yosemite-us-programs", "alaska-us-programs"],
-  "yosemite-us-programs": ["colorado-us-programs", "wyoming-us-programs", "vermont-us-programs"],
-  "vermont-us-programs": ["boston-us-programs", "new-york-us-programs", "yosemite-us-programs"],
+  "yosemite-us-programs": [
+    "colorado-us-programs",
+    "wyoming-us-programs",
+    "pacific-northwest-us-programs",
+  ],
+  "new-england-us-programs": [
+    "boston-us-programs",
+    "washington-dc-us-programs",
+    "pacific-northwest-us-programs",
+    "marine-biology-us-programs",
+  ],
+  "pacific-northwest-us-programs": [
+    "alaska-us-programs",
+    "yosemite-us-programs",
+    "new-england-us-programs",
+    "marine-biology-us-programs",
+  ],
   "colorado-us-programs": ["wyoming-us-programs", "yosemite-us-programs", "alaska-us-programs"],
   "new-york-us-programs": [
     "boston-us-programs",
+    "washington-dc-us-programs",
     "los-angeles-us-programs",
     "san-francisco-bay-area-us-programs",
   ],
   "boston-us-programs": [
     "new-york-us-programs",
-    "vermont-us-programs",
+    "new-england-us-programs",
+    "washington-dc-us-programs",
     "san-francisco-bay-area-us-programs",
+  ],
+  "washington-dc-us-programs": [
+    "boston-us-programs",
+    "new-york-us-programs",
+    "international-relations-diplomacy-us-programs",
+    "new-england-us-programs",
   ],
   "san-francisco-bay-area-us-programs": [
     "los-angeles-us-programs",
@@ -226,11 +249,23 @@ const DOMESTIC_WHERE_ABROAD: Record<string, readonly string[]> = {
     "costa-rica-programs",
     "conservation-programs",
   ],
-  "vermont-us-programs": [
-    "ecology-programs",
+  "new-england-us-programs": [
+    "marine-biology-programs",
     "conservation-programs",
     "backpacking-programs",
     "ireland-programs",
+  ],
+  "pacific-northwest-us-programs": [
+    "backpacking-programs",
+    "iceland-programs",
+    "conservation-programs",
+    "alaska-programs",
+  ],
+  "washington-dc-us-programs": [
+    "international-relations-diplomacy-programs",
+    "france-programs",
+    "germany-programs",
+    "spain-programs",
   ],
   "colorado-us-programs": [
     "backpacking-programs",
@@ -301,15 +336,15 @@ const DOMESTIC_WHAT_RELATED: Record<string, readonly string[]> = {
     "ai-us-programs",
   ],
   "international-relations-diplomacy-us-programs": [
+    "washington-dc-us-programs",
     "new-york-us-programs",
     "boston-us-programs",
     "entrepreneurship-us-programs",
-    "writing-us-programs",
   ],
   "ecology-us-programs": [
     "marine-biology-us-programs",
     "veterinary-studies-us-programs",
-    "vermont-us-programs",
+    "new-england-us-programs",
   ],
   "business-us-programs": [
     "entrepreneurship-us-programs",
