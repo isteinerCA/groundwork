@@ -4,7 +4,7 @@
       "programGroupId": "lasting-adventures-yosemite"
     },
     "dayToDay": {
-      "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities and a campfire, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip — guides send a nightly satellite check-in to the office, not to parents, consistent with the program's \"no news is good news\" approach. Parents receive a recap email with photos and a daily journal about 1–2 weeks after the trip ends.",
+      "notes": "Students are with their guide group essentially the entire trip, sleeping outdoors at shared backcountry campsites, with a staff-to-camper ratio of at least 2 staff per 10 youth. Days are highly structured: hiking, a daily morning meeting, evening group activities and a campfire, and shared meals prepared together. There's no cell service in the backcountry, so there's no phone or text contact with family during the trip \u2014 guides send a nightly satellite check-in to the office, not to parents, consistent with the program's \"no news is good news\" approach. Parents receive a recap email with photos and a daily journal about 1\u20132 weeks after the trip ends.",
       "sourceType": "official_policy",
       "sourceCitation": "Lasting Adventures Yosemite summer camp FAQ pages (identical language across 6-Day Young Adventurer's, 6-Day High Country, and 10-Day Mammoth pages)",
       "verifiedAt": "2026-09-14"
@@ -441,7 +441,7 @@
       "programGroupId": "wpi-high-achieving-hs"
     },
     "dayToDay": {
-      "notes": "Five-week session taking a real WPI undergraduate course for transferable college credit at 50% off standard summer tuition. Students may enroll in person on the Worcester campus, live online (synchronous), or on demand (asynchronous); WPI recommends one course per session. On-campus housing is not available — in-person students commute or arrange their own housing. Course materials average about $200 per course and are purchased separately.",
+      "notes": "Five-week session taking a real WPI undergraduate course for transferable college credit at 50% off standard summer tuition. Students may enroll in person on the Worcester campus, live online (synchronous), or on demand (asynchronous); WPI recommends one course per session. On-campus housing is not available \u2014 in-person students commute or arrange their own housing. Course materials average about $200 per course and are purchased separately.",
       "sourceType": "official_policy",
       "sourceCitation": "WPI High-Achieving High School Students program page (wpi.edu)",
       "verifiedAt": "2026-09-15"
@@ -631,7 +631,7 @@
       "programGroupId": "westcoast-connection-florence"
     },
     "dayToDay": {
-      "notes": "Students live in single-occupancy rooms at The Social Hub Belfiore Florence Residence, each with air conditioning, Wi-Fi, a private bathroom, and a personal workstation; the residence has 24-hour security, laundry, a gym, and a rooftop pool. A typical day: 8:30am wake-up, 9am breakfast, 10:30am morning course, 1pm lunch (unstructured - students choose where to eat in small groups at local cafés and restaurants), 3pm group afternoon highlight, 5:30pm 'Student's Choice' free time (sports, gym, staff-planned activity, or city exploration), 8:30pm dinner (some nights at the residence, some nights out as a group or in smaller groups at local restaurants), and evening activities until roughly 10:15pm. Breakfast and dinner are included in tuition; lunch is not.",
+      "notes": "Students live in single-occupancy rooms at The Social Hub Belfiore Florence Residence, each with air conditioning, Wi-Fi, a private bathroom, and a personal workstation; the residence has 24-hour security, laundry, a gym, and a rooftop pool. A typical day: 8:30am wake-up, 9am breakfast, 10:30am morning course, 1pm lunch (unstructured - students choose where to eat in small groups at local caf\u00e9s and restaurants), 3pm group afternoon highlight, 5:30pm 'Student's Choice' free time (sports, gym, staff-planned activity, or city exploration), 8:30pm dinner (some nights at the residence, some nights out as a group or in smaller groups at local restaurants), and evening activities until roughly 10:15pm. Breakfast and dinner are included in tuition; lunch is not.",
       "sourceType": "official_policy",
       "sourceCitation": "Westcoast Connection Florence 14-day and 21-day program pages (westcoastconnection.com)",
       "verifiedAt": "2026-09-15"
@@ -908,7 +908,7 @@
       "programGroupId": "summerdiscovery-dartmouth"
     },
     "dayToDay": {
-      "notes": "All-Academy campus (no Individual Courses) with six distinct, overlapping 2-week windows rolling through the summer, rather than 2–3 sequential blocks like other Summer Discovery campuses. Grades 9–11 only — excludes rising/current seniors, narrower than the 9–12 band used at every other Summer Discovery campus.",
+      "notes": "All-Academy campus (no Individual Courses) with six distinct, overlapping 2-week windows rolling through the summer, rather than 2\u20133 sequential blocks like other Summer Discovery campuses. Grades 9\u201311 only \u2014 excludes rising/current seniors, narrower than the 9\u201312 band used at every other Summer Discovery campus.",
       "sourceType": "official_policy",
       "sourceCitation": "Summer Discovery Dartmouth campus and course listing pages (summerdiscovery.com)",
       "verifiedAt": "2026-09-15"
@@ -1048,9 +1048,9 @@
       "programGroupId": "tft-ecuador-galapagos-service"
     },
     "dayToDay": {
-      "notes": "Accommodation includes hotels, lodges, and a more rustic jungle lodge. Community service takes place at a sustainable farm on the Galápagos Islands (recycling, cooking in a traditional mud oven). As with all TFT programs, specific accommodation names are not published in advance for safety reasons - families get this via a secure parent portal after registering.",
+      "notes": "Accommodation includes hotels, lodges, and a more rustic jungle lodge. Community service takes place at a sustainable farm on the Gal\u00e1pagos Islands (recycling, cooking in a traditional mud oven). As with all TFT programs, specific accommodation names are not published in advance for safety reasons - families get this via a secure parent portal after registering.",
       "sourceType": "official_policy",
-      "sourceCitation": "Travel For Teens Ecuador & the Galápagos Service program page",
+      "sourceCitation": "Travel For Teens Ecuador & the Gal\u00e1pagos Service program page",
       "verifiedAt": "2026-09-15"
     }
   },
@@ -1081,9 +1081,9 @@
       "programGroupId": "tft-peru-ecuador-galapagos-service"
     },
     "dayToDay": {
-      "notes": "Combines the day-to-day structure of both standalone programs in sequence: the Peru Service homestay/community-service segment first, followed directly by the Ecuador & the Galápagos Service segment (farm, hotels, and lodge accommodation) - see each standalone program's notes for details on its respective portion.",
+      "notes": "Combines the day-to-day structure of both standalone programs in sequence: the Peru Service homestay/community-service segment first, followed directly by the Ecuador & the Gal\u00e1pagos Service segment (farm, hotels, and lodge accommodation) - see each standalone program's notes for details on its respective portion.",
       "sourceType": "official_policy",
-      "sourceCitation": "Travel For Teens Peru, Ecuador & the Galápagos Service program page",
+      "sourceCitation": "Travel For Teens Peru, Ecuador & the Gal\u00e1pagos Service program page",
       "verifiedAt": "2026-09-15"
     }
   },
@@ -1364,7 +1364,7 @@
       "programGroupId": "ciee-france-paris-architecture-french-culture"
     },
     "dayToDay": {
-      "notes": "Group housing (not homestay). Daily design workshops building toward a student-pitched architectural design and a 3-D model; urban sketching sessions built into the itinerary. Visits to Fondation Louis Vuitton and Musée du Quai Branly. Weekend excursions to Versailles and Provins.",
+      "notes": "Group housing (not homestay). Daily design workshops building toward a student-pitched architectural design and a 3-D model; urban sketching sessions built into the itinerary. Visits to Fondation Louis Vuitton and Mus\u00e9e du Quai Branly. Weekend excursions to Versailles and Provins.",
       "sourceType": "official_policy",
       "sourceCitation": "CIEE Architecture & French Culture (Paris) program page",
       "verifiedAt": "2026-09-15"
@@ -1386,7 +1386,7 @@
       "programGroupId": "ciee-france-paris-fashion-design-french-culture"
     },
     "dayToDay": {
-      "notes": "Group housing. Students source recycled materials from Montmartre thrift shops and the Marché St. Pierre fabric market, working with a professional seamstress. Program culminates in a student-run Global Navigator fashion show at Galeries Lafayette.",
+      "notes": "Group housing. Students source recycled materials from Montmartre thrift shops and the March\u00e9 St. Pierre fabric market, working with a professional seamstress. Program culminates in a student-run Global Navigator fashion show at Galeries Lafayette.",
       "sourceType": "official_policy",
       "sourceCitation": "CIEE Fashion Design & French Culture (Paris) program page",
       "verifiedAt": "2026-09-15"
@@ -1452,7 +1452,7 @@
       "programGroupId": "ciee-france-paris-filmmaking-french-culture"
     },
     "dayToDay": {
-      "notes": "Group housing. Students storyboard, shoot, and edit a five-minute short film in small teams over the course of the program, then present it to peers, teachers, and local film professionals. Includes a Seine boat tour and visits to the Louvre and Musée d'Orsay for creative inspiration.",
+      "notes": "Group housing. Students storyboard, shoot, and edit a five-minute short film in small teams over the course of the program, then present it to peers, teachers, and local film professionals. Includes a Seine boat tour and visits to the Louvre and Mus\u00e9e d'Orsay for creative inspiration.",
       "sourceType": "official_policy",
       "sourceCitation": "CIEE Filmmaking & French Culture (Paris) program page",
       "verifiedAt": "2026-09-15"
@@ -1474,7 +1474,7 @@
       "programGroupId": "ciee-argentina-buenos-aires-spanish-language-argentinian-culture"
     },
     "dayToDay": {
-      "notes": "Homestay-based; host families share daily meals, giving students a chance to practice Spanish at home. Daily language classes paired with afternoon cultural activities across Buenos Aires's 48 neighborhoods. Weekend excursions to an estancia (ranch) for parrillada (barbecue) and gaucho culture, plus a flight to Iguazú Falls.",
+      "notes": "Homestay-based; host families share daily meals, giving students a chance to practice Spanish at home. Daily language classes paired with afternoon cultural activities across Buenos Aires's 48 neighborhoods. Weekend excursions to an estancia (ranch) for parrillada (barbecue) and gaucho culture, plus a flight to Iguaz\u00fa Falls.",
       "sourceType": "official_policy",
       "sourceCitation": "CIEE Spanish Language & Argentinian Culture (Buenos Aires) program page",
       "verifiedAt": "2026-09-15"
@@ -1529,9 +1529,9 @@
       "programGroupId": "ciee-brazil-sao-paulo-global-entrepreneurship"
     },
     "dayToDay": {
-      "notes": "Homestay-based. Visits a working chocolate mega-factory (Cacau Show) to study franchise/supply-chain business models, and Tenondé Porã Indigenous Territory to learn about Guarani cultural preservation and sustainable income sources. Culminates in a team-pitched startup concept presented to local mentors, and a churrasco barbecue.",
+      "notes": "Homestay-based. Visits a working chocolate mega-factory (Cacau Show) to study franchise/supply-chain business models, and Tenond\u00e9 Por\u00e3 Indigenous Territory to learn about Guarani cultural preservation and sustainable income sources. Culminates in a team-pitched startup concept presented to local mentors, and a churrasco barbecue.",
       "sourceType": "official_policy",
-      "sourceCitation": "CIEE Global Entrepreneurship (São Paulo) program page",
+      "sourceCitation": "CIEE Global Entrepreneurship (S\u00e3o Paulo) program page",
       "verifiedAt": "2026-09-15"
     }
   },
@@ -1542,7 +1542,7 @@
     "dayToDay": {
       "notes": "Homestay-based. Daily on-pitch training combined with sports psychology coursework (goal-setting, motivation, confidence); students maintain a Personal Performance Portfolio throughout. Includes a tour of the historic Pacaembu Arena and a 3-day overnight excursion to the island town of Ilhabela (beaches, whale-watching, Atlantic Forest hiking).",
       "sourceType": "official_policy",
-      "sourceCitation": "CIEE Soccer & Mental Performance (São Paulo) program page",
+      "sourceCitation": "CIEE Soccer & Mental Performance (S\u00e3o Paulo) program page",
       "verifiedAt": "2026-09-15"
     }
   },
@@ -1628,7 +1628,7 @@
       "programGroupId": "ciee-czechrepublic-prague-painting-czech-culture"
     },
     "dayToDay": {
-      "notes": "Group housing. Coursework created in collaboration with the Malovani Kresleni art atelier. Includes a hands-on street art workshop (stenciling, layering, mural-scale work) with artists-in-residence, and the Invisible Exhibition - a sensory experience navigated in complete darkness, guided by blind or partially sighted guides. Overnight excursion to the medieval village of Český Krumlov.",
+      "notes": "Group housing. Coursework created in collaboration with the Malovani Kresleni art atelier. Includes a hands-on street art workshop (stenciling, layering, mural-scale work) with artists-in-residence, and the Invisible Exhibition - a sensory experience navigated in complete darkness, guided by blind or partially sighted guides. Overnight excursion to the medieval village of \u010cesk\u00fd Krumlov.",
       "sourceType": "official_policy",
       "sourceCitation": "CIEE Painting & Czech Culture (Prague) program page",
       "verifiedAt": "2026-09-15"
@@ -1639,7 +1639,7 @@
       "programGroupId": "ciee-denmark-copenhagen-climate-change-policy-advocacy"
     },
     "dayToDay": {
-      "notes": "Homestay-based. Visits to CopenHill (waste-to-energy plant doubling as a ski slope) and Hofor (the city's water utility). 3-day stay at Yduns Have, an eco-farm on Samsø island - picking strawberries, tending soil, caring for animals. Dialogue with students from The Green Youth Movement. Culminates in a student-developed climate advocacy strategy.",
+      "notes": "Homestay-based. Visits to CopenHill (waste-to-energy plant doubling as a ski slope) and Hofor (the city's water utility). 3-day stay at Yduns Have, an eco-farm on Sams\u00f8 island - picking strawberries, tending soil, caring for animals. Dialogue with students from The Green Youth Movement. Culminates in a student-developed climate advocacy strategy.",
       "sourceType": "official_policy",
       "sourceCitation": "CIEE Climate Change Policy & Advocacy (Copenhagen) program page",
       "verifiedAt": "2026-09-15"
@@ -1650,7 +1650,7 @@
       "programGroupId": "ciee-denmark-copenhagen-engineering-sustainability"
     },
     "dayToDay": {
-      "notes": "Group housing. Hands-on fieldwork collecting environmental data and analyzing sustainable behavior patterns; visit to CopenHill. Bike excursion to Nyhavn Harbor and the Little Mermaid statue. Travel to Samsø (world's first renewable energy island) and Youth Island (youth changemaker hub). Culminates in a proposed engineering tool for a green initiative.",
+      "notes": "Group housing. Hands-on fieldwork collecting environmental data and analyzing sustainable behavior patterns; visit to CopenHill. Bike excursion to Nyhavn Harbor and the Little Mermaid statue. Travel to Sams\u00f8 (world's first renewable energy island) and Youth Island (youth changemaker hub). Culminates in a proposed engineering tool for a green initiative.",
       "sourceType": "official_policy",
       "sourceCitation": "CIEE Engineering & Sustainability (Copenhagen) program page",
       "verifiedAt": "2026-09-15"
@@ -1672,7 +1672,7 @@
       "programGroupId": "ciee-dominicanrepublic-santiago-leadership-service-public-health"
     },
     "dayToDay": {
-      "notes": "Homestay-based. Visits both a public hospital and a private clinic in Santiago to compare healthcare access. Students act as junior health promoters designing a health education fair. Bachata/salsa dance classes and a visit to the Centro León art center. Tubing and rope-swing excursion in the Mao region.",
+      "notes": "Homestay-based. Visits both a public hospital and a private clinic in Santiago to compare healthcare access. Students act as junior health promoters designing a health education fair. Bachata/salsa dance classes and a visit to the Centro Le\u00f3n art center. Tubing and rope-swing excursion in the Mao region.",
       "sourceType": "official_policy",
       "sourceCitation": "CIEE Leadership & Service in Public Health (Santiago de los Caballeros) program page",
       "verifiedAt": "2026-09-15"
@@ -1683,7 +1683,7 @@
       "programGroupId": "ciee-dominicanrepublic-santiago-leadership-service-youth-development"
     },
     "dayToDay": {
-      "notes": "Homestay-based. Partners with NGO Acción Callejera to run a summer camp for underprivileged children - coaching activities, running workshops, environmental clean-up projects. Visit to the Museum of Mirabal Sisters with a guided reflection on activism and social justice. Functional Spanish classes. Excursions to mountain areas and coastal cacao farms.",
+      "notes": "Homestay-based. Partners with NGO Acci\u00f3n Callejera to run a summer camp for underprivileged children - coaching activities, running workshops, environmental clean-up projects. Visit to the Museum of Mirabal Sisters with a guided reflection on activism and social justice. Functional Spanish classes. Excursions to mountain areas and coastal cacao farms.",
       "sourceType": "official_policy",
       "sourceCitation": "CIEE Leadership & Service in Youth Development (Santiago de los Caballeros) program page",
       "verifiedAt": "2026-09-15"
@@ -1771,7 +1771,7 @@
       "programGroupId": "ciee-estonia-tallinn-diplomacy-government"
     },
     "dayToDay": {
-      "notes": "Homestay-based. Visit to the U.S. Embassy in Tallinn, meeting senior diplomatic officials. Tours of international peace organizations including cyber defense hubs and security agencies. Negotiation simulations and conflict-resolution exercises culminating in a proposed peace-building initiative. Nõmme Adventure Park treetop obstacle course. Excursions to coastal towns like Pärnu, Kuressaare, or Haapsalu.",
+      "notes": "Homestay-based. Visit to the U.S. Embassy in Tallinn, meeting senior diplomatic officials. Tours of international peace organizations including cyber defense hubs and security agencies. Negotiation simulations and conflict-resolution exercises culminating in a proposed peace-building initiative. N\u00f5mme Adventure Park treetop obstacle course. Excursions to coastal towns like P\u00e4rnu, Kuressaare, or Haapsalu.",
       "sourceType": "official_policy",
       "sourceCitation": "CIEE Diplomacy & Government (Tallinn) program page",
       "verifiedAt": "2026-09-15"
@@ -1815,7 +1815,7 @@
       "programGroupId": "ciee-germany-berlin-global-entrepreneurship"
     },
     "dayToDay": {
-      "notes": "Homestay-based. Visit to Startup Incubator Berlin with Q&A from founding teams. Overnight excursion to Leipzig ('Hypezig') including the Völkerschlachtdenkmal monument and sites connected to Bach and Mendelssohn.",
+      "notes": "Homestay-based. Visit to Startup Incubator Berlin with Q&A from founding teams. Overnight excursion to Leipzig ('Hypezig') including the V\u00f6lkerschlachtdenkmal monument and sites connected to Bach and Mendelssohn.",
       "sourceType": "official_policy",
       "sourceCitation": "CIEE Global Entrepreneurship (Berlin) program page",
       "verifiedAt": "2026-09-15"
@@ -1892,7 +1892,7 @@
       "programGroupId": "ciee-multidest-athens-rome-creative-writing-mythology-europe"
     },
     "dayToDay": {
-      "notes": "Group housing; students travel between Athens and Rome. Character Creation Workshop at Villa Borghese; visit to Cinecittà World, Europe's largest film studio. Excursions to Nafplio and Florence. Culminates in a collaborative drama script performed live or on film.",
+      "notes": "Group housing; students travel between Athens and Rome. Character Creation Workshop at Villa Borghese; visit to Cinecitt\u00e0 World, Europe's largest film studio. Excursions to Nafplio and Florence. Culminates in a collaborative drama script performed live or on film.",
       "sourceType": "official_policy",
       "sourceCitation": "CIEE Creative Writing & Mythology in Europe (Athens/Rome) program page",
       "verifiedAt": "2026-09-15"
@@ -2189,7 +2189,7 @@
       "programGroupId": "ciee-mexico-merida-marine-ecology-sustainability"
     },
     "dayToDay": {
-      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays combine field-based marine science classes and service-learning with local NGOs; weekends and the program's two overnight excursions (Ría Lagartos, El Palmar) are chaperoned as a group. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays combine field-based marine science classes and service-learning with local NGOs; weekends and the program's two overnight excursions (R\u00eda Lagartos, El Palmar) are chaperoned as a group. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
       "sourceType": "official_policy",
       "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific)",
       "verifiedAt": "2026-09-17"
@@ -2200,7 +2200,7 @@
       "programGroupId": "ciee-mexico-merida-culinary-arts-mexican-culture"
     },
     "dayToDay": {
-      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays center on cooking classes and market visits; weekends bring group excursions such as cenote swimming and Chichén Itzá. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays center on cooking classes and market visits; weekends bring group excursions such as cenote swimming and Chich\u00e9n Itz\u00e1. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
       "sourceType": "official_policy",
       "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific)",
       "verifiedAt": "2026-09-17"
@@ -2211,7 +2211,7 @@
       "programGroupId": "ciee-mexico-merida-leadership-service-youth-development"
     },
     "dayToDay": {
-      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays are spent on-site at a partner NGO doing hands-on youth-development service work; weekends bring group excursions such as Chichén Itzá and El Corchito. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy). Weekdays are spent on-site at a partner NGO doing hands-on youth-development service work; weekends bring group excursions such as Chich\u00e9n Itz\u00e1 and El Corchito. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
       "sourceType": "official_policy",
       "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific)",
       "verifiedAt": "2026-09-17"
@@ -2222,7 +2222,7 @@
       "programGroupId": "ciee-mexico-merida-spanish-language-mexican-culture"
     },
     "dayToDay": {
-      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy), and students generally travel to and from daily language classes/activities as a group rather than independently. Weekends include a mix of family time and CIEE-organized excursions such as El Corchito and Chichén Itzá. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
+      "notes": "Students live with a vetted local homestay family for the full program, sharing meals and participating in the family's daily routines; CIEE local staff and a Program Leader remain available 24/7 but do not live in the home. A nightly curfew applies (time set by the individual host family and reinforced by CIEE policy), and students generally travel to and from daily language classes/activities as a group rather than independently. Weekends include a mix of family time and CIEE-organized excursions such as El Corchito and Chich\u00e9n Itz\u00e1. Any solo outings beyond the homestay/community area require the buddy system and host family awareness.",
       "sourceType": "official_policy",
       "sourceCitation": "CIEE High School Summer Abroad Housing page (homestay section) and Safety/FAQ pages (org-wide policy, not program-specific)",
       "verifiedAt": "2026-09-17"
@@ -2299,7 +2299,7 @@
       "programGroupId": "ciee-new-zealand-auckland-photography-new-zealand-culture"
     },
     "dayToDay": {
-      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine morning classes with afternoon photo-shoot excursions around Auckland; meals are eaten as a group. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently. The program includes excursions to Rotorua and Taupō.",
+      "notes": "Students stay in group housing with CIEE Program Leaders residing on-site for overnight supervision; site-wide staffing is roughly 1 Program Leader per 12 students. Weekdays combine morning classes with afternoon photo-shoot excursions around Auckland; meals are eaten as a group. A curfew applies each night, with the exact time communicated during on-program orientation. Free time is supervised under a buddy-system policy, and students are not permitted to leave the group housing site independently. The program includes excursions to Rotorua and Taup\u014d.",
       "sourceType": "official_policy",
       "sourceCitation": "CIEE High School Summer Abroad Housing/Safety/FAQ pages (org-wide policy, not program-specific)",
       "verifiedAt": "2026-09-17"
@@ -3025,7 +3025,7 @@
       "programGroupId": "rlt-azores-secret-island"
     },
     "dayToDay": {
-      "notes": "Students camp in tents for the entire trip on São Miguel Island, sharing tents in groups of 2-3, organized by gender. Showers available every 1-2 days; campsite bathrooms include clean, flush toilets and other facilities. The group works together to set up camp, prepare meals, and keep shared spaces clean throughout. No staff ratio stated.",
+      "notes": "Students camp in tents for the entire trip on S\u00e3o Miguel Island, sharing tents in groups of 2-3, organized by gender. Showers available every 1-2 days; campsite bathrooms include clean, flush toilets and other facilities. The group works together to set up camp, prepare meals, and keep shared spaces clean throughout. No staff ratio stated.",
       "sourceType": "official_policy",
       "sourceCitation": "User-provided screenshots, Azores: The Secret Island, Accommodations section",
       "verifiedAt": "2026-09-17"
@@ -3036,7 +3036,7 @@
       "programGroupId": "rlt-costa-rica-journey-through-jungle"
     },
     "dayToDay": {
-      "notes": "Accommodation shifts across three settings. 5 nights in simple hotels with beds and bathrooms in San José and on the Caribbean coast; 6 nights in a rustic house in Turrialba near the local community, working and living alongside host families (a shared-house, host-family-adjacent arrangement rather than a traditional one-family homestay); and 2 nights at riverside campsites on raised jungle platform tents in the rainforest. Teens share tents or rooms based on gender and comfort, with leaders close by; flush toilets and short daily showers are available throughout. Everyone helps set up tents, clean shared spaces, and pack up gear. No staff ratio stated; given this serves grades 6-8, families should expect age-appropriate guidance though specific supervision detail beyond the general description is not provided.",
+      "notes": "Accommodation shifts across three settings. 5 nights in simple hotels with beds and bathrooms in San Jos\u00e9 and on the Caribbean coast; 6 nights in a rustic house in Turrialba near the local community, working and living alongside host families (a shared-house, host-family-adjacent arrangement rather than a traditional one-family homestay); and 2 nights at riverside campsites on raised jungle platform tents in the rainforest. Teens share tents or rooms based on gender and comfort, with leaders close by; flush toilets and short daily showers are available throughout. Everyone helps set up tents, clean shared spaces, and pack up gear. No staff ratio stated; given this serves grades 6-8, families should expect age-appropriate guidance though specific supervision detail beyond the general description is not provided.",
       "sourceType": "official_policy",
       "sourceCitation": "User-provided screenshots, Costa Rica: Journey through the Jungle, Accommodations section",
       "verifiedAt": "2026-09-17"
@@ -3091,7 +3091,7 @@
       "programGroupId": "rlt-costa-rica-coast-to-canopy"
     },
     "dayToDay": {
-      "notes": "Accommodation shifts across three settings. In San José and on the Caribbean coast, the group stays in simple hotels with beds and bathrooms for 4 nights. In Turrialba, the group tent camps for 6 nights near the local community, working and living alongside host families. During a rafting adventure, the group sleeps at riverside campsites for 3 nights on platform tents in the rainforest, surrounded by the sounds of wildlife. Teens share tents or rooms based on gender and comfort, with leaders close by. Bathrooms range from hotel-style flush toilets to more rustic facilities depending on location; short showers are available every 1-2 days. Everyone helps with daily chores like setting up tents and keeping shared spaces clean, framed as building connection. No staff ratio stated.",
+      "notes": "Accommodation shifts across three settings. In San Jos\u00e9 and on the Caribbean coast, the group stays in simple hotels with beds and bathrooms for 4 nights. In Turrialba, the group tent camps for 6 nights near the local community, working and living alongside host families. During a rafting adventure, the group sleeps at riverside campsites for 3 nights on platform tents in the rainforest, surrounded by the sounds of wildlife. Teens share tents or rooms based on gender and comfort, with leaders close by. Bathrooms range from hotel-style flush toilets to more rustic facilities depending on location; short showers are available every 1-2 days. Everyone helps with daily chores like setting up tents and keeping shared spaces clean, framed as building connection. No staff ratio stated.",
       "sourceType": "official_policy",
       "sourceCitation": "User-provided screenshots, Costa Rica: Coast to Canopy, Accommodations section",
       "verifiedAt": "2026-09-17"
@@ -3369,6 +3369,490 @@
       "notes": "Students travel in a single small group of 12 students and 3 instructors for the full 4 weeks, so this ratio (roughly 4:1) holds throughout every phase of the program rather than varying by activity. Accommodation type shifts by week: several nights in a workshop/orientation setting in Candelaria near Sucre; homestays with a Quechua farming family in Tiquipaya (near Cochabamba) for 1-2 weeks with few amenities described as part of the program's 'Rugged Travel' component; multi-day backcountry camping during both the Cordillera de los Frailes trek (week 2, 4 days) and the student-led Expedition Phase trek (week 4, 5 days, descending from the high Andes into cloud forest); and a final stay at an eco-lodge in Coroico. The program explicitly rates 'Rugged Travel' as a defining component, describing homestays with few amenities, extensive high-altitude walking, and lengthy public transportation travel. In week 4, students take on increased ownership over trip planning and logistics as part of the 'Expedition Phase,' a deliberate hand-off of responsibility rather than staff running the entire itinerary throughout.",
       "sourceType": "official_policy",
       "sourceCitation": "Where There Be Dragons Bolivia: Spanish Language Immersion in the Andes program page, Group Size, Program Components, and Itinerary Example sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-guatemala-spanish-language-intensive-4wk"
+    },
+    "dayToDay": {
+      "notes": "12 students and 3 instructors travel together throughout. Accommodation shifts through several homestays: a short homestay with Kiche Maya families in Pachaj, an extended homestay in San Juan la Laguna on Lake Atitlan, another homestay in the traditional Maya community of Todos Santos, and a final homestay/fieldwork stay in San Juan Cotzal working alongside a weaving cooperative of civil-war widows. A 3-day trek from Quetzaltenango to Lake Atitlan involves camping/trail lodging between homestays. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-nepal-traditions-of-himalayas"
+    },
+    "dayToDay": {
+      "notes": "12 students and 3 instructors. Days split between lodges/guesthouses during a short ridge trek out of Bhaktapur, a rural village homestay (10+ days total across rural and urban placements) with subsistence-farming families, a short stay at a Tibetan Buddhist monastery for a meditation retreat, and an urban homestay in Patan with Newari host families. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-taiwan-mandarin-language-intensive-2wk"
+    },
+    "dayToDay": {
+      "notes": "12 students and 3 instructors. Begins in a hillside town (Jiufen) for group-culture building, then a multi-night rural homestay with organic-farming families in Yilan County, and a final city stretch in Taipei. Rugged Travel is explicitly rated low given Taiwan's developed infrastructure (train, bus, bicycle). No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-bhutan-happiness-in-himalayas"
+    },
+    "dayToDay": {
+      "notes": "12 students and 3 instructors. Unlike most other WTBD programs, this one explicitly does NOT include individual homestays; instead the group stays in community housing throughout Bhutan (Thimpu, Punakha, Paro) and starts/ends with a hotel/inn stay in Kathmandu, Nepal. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-peru-4week-summer-abroad"
+    },
+    "dayToDay": {
+      "notes": "12 students and 3 instructors, matching the standard WTBD group size. The provided screenshots confirm this ratio and the program description (Andes trekking, Machu Picchu, Amazon River basin) but do not include the detailed week-by-week itinerary, program components ratings, or specific homestay/accommodation breakdown seen on other WTBD programs researched via direct page fetch. No specific staff-to-student ratio beyond the 12:3 group size, and no accommodation-type detail, could be confirmed from the material available.",
+      "sourceType": "official_policy",
+      "sourceCitation": "User-provided screenshots of the Where There Be Dragons Peru: Sacred Mountains program page, At a Glance section",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-guatemala-spanish-language-intensive-2wk"
+    },
+    "dayToDay": {
+      "notes": "12 students and 3 instructors (same group size as the 4-week sibling program). Shorter homestay stretch: an orientation stay at a coffee farm, a brief homestay with Kiche Maya families in Pachaj, and an extended homestay in San Juan la Laguna on Lake Atitlan, connected by a 3-day trek from Quetzaltenango. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-spain-combating-climate-change-2wk"
+    },
+    "dayToDay": {
+      "notes": "12 students and 3 instructors. Days move through a natural-park orientation stay in Los Alcornocales (Cadiz), a village stay in El Borge (Axarquia region) with local raisin-farming families, a homestay (or alternative accommodation, per the page) in Huetor Vega outside Granada for the bulk of the reforestation/climate work, and a final comfortable group lodging in Malaga for the last two nights. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-japan-arts-food-culture"
+    },
+    "dayToDay": {
+      "notes": "12 students and 3 instructors. Begins with a local inn stay in Wakayama for orientation, moves to a 3-7 day homestay in coastal Kyotango (students may be individually placed or paired with another Dragons student depending on the community), then Kyoto for Independent Study Projects including a supervised student-led group excursion, and closes with sightseeing days in Tokyo. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-indonesia-conservation-culture"
+    },
+    "dayToDay": {
+      "notes": "12 students and 3 instructors. Accommodation spans three distinct settings: an urban/semi-urban homestay in Yogyakarta, a mountain stay near the Dieng Plateau, and finally living directly with the Bajau 'sea nomad' community in stilted homes over open water in Wakatobi. The Rugged Travel component explicitly notes some students sleep on bamboo mats on the floor in certain homestays, under the stars on beaches, and in group jungle camping. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-china-mandarin-language-intensive-4wk"
+    },
+    "dayToDay": {
+      "notes": "12 students and 3 instructors. Opens with a stay at a small family-owned guesthouse near a remote, un-renovated section of the Great Wall, then Beijing city exploration, then an extended (5+ day) rural homestay with a Naxi ethnic-minority community in Lashihai near Lijiang, and finally an extended urban homestay in Kunming with classes held at a dedicated 'Program House' near Green Lake Park. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-india-himalayan-trekking-traditions"
+    },
+    "dayToDay": {
+      "notes": "12 students and 3 instructors. Begins with an orientation site near Leh for altitude acclimatization, then homestays in small Ladakhi villages during the shorter Sham Valley trek, then tent camping during the second, more challenging extended trek (supported by a team of guides, cooks, and pack ponies), with an exchange stop at the SECMOL sustainable-education campus. Closes with city time in Leh and a day in Delhi. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-cambodia-the-good-life"
+    },
+    "dayToDay": {
+      "notes": "12 students and 3 instructors. Starts in a local guesthouse in Phnom Penh for orientation, continues through Battambang and Siem Reap (hotel/guesthouse style lodging), a short silent retreat at a meditation center, an extended rural homestay in Banteay Chhmar with a Khmer farming community as the core of the program, and closes in Kampot where students organize their own transport and activities as part of a supervised 'Expedition Phase.' No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-thailand-sustainability-spirituality"
+    },
+    "dayToDay": {
+      "notes": "12 students and 3 instructors. Moves through an orientation stay in Sukhothai, a 3-day stay at a Buddhist monastery for a meditation retreat, a 5-day homestay with Karen community families in Huai Hin Lad Nai, a stay at Earth Home (a sustainable-living center), and a final student-led 2-day expedition phase in Chiang Rai (with instructor oversight) before closing in the mountains of Chiang Dao. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-morocco-crossroads-of-culture-2wk"
+    },
+    "dayToDay": {
+      "notes": "12 students and 3 instructors. Begins with an orientation stay in a small Middle Atlas Mountains town, then a 4-5 day semi-urban homestay in Azrou with Berber (Amazigh) families, city exploration in Fez (staying near the medina), and a closing multi-day trek with camping in the High Atlas Mountains through remote villages and nomadic communities. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-senegal-youth-leadership-arts-culture"
+    },
+    "dayToDay": {
+      "notes": "12 students and 3 instructors. Days spent in a seaside community inside a national park near St. Louis (day-stays with local families for meals), then a stop in Touba, and a multi-day homestay in Thies with local families for the bulk of the program, including a day trip to Dakar. Closes on the cliffside beaches of Toubab Dialaw for a group Transference Phase. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "camp-laurel-full-season"
+    },
+    "dayToDay": {
+      "notes": "Six campuses (3 boys, 3 girls), subdivided into cabin groups by grade. Wake-up 7:45am (older campuses) or 8:10am (younger); bedtime 8:30pm-11:00pm scaling with age. Typical day: wake-up/breakfast, morning 'Cove' gathering, cabin clean-up, 3 morning activities, buffet lunch, rest hour, 2 afternoon activities, all-camp 6th period (free choice for older campers, shower/down-time for younger), dinner, evening Cove, evening cabin program, bedtime. Two seatings for breakfast/dinner; whole camp eats lunch together. 3:1+ camper-to-staff ratio; counselors mostly college students/teachers, most over 20. Younger campers have required activities (swim/tennis lessons, team sports); older campers build individualized schedules and can specialize. All cabins have electricity and overnight night-lights.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Camp Laurel FAQ page, multiple Q&A entries on daily schedule, campus structure, staff ratio, and wake-up/bedtime times",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-nylf-medicine-health-care"
+    },
+    "dayToDay": {
+      "notes": "Residential students live in dorms on the host university campus for the full 8 days, with an Advisor and classroom group assigned on Day 1 alongside icebreaker activities. Days follow a consistent structure: morning career-exploration or workshop sessions, afternoon hands-on clinical-skills rotations or simulations (suturing, blood pressure, phlebotomy, disaster triage, wilderness/outdoor emergency medicine), and organized evening 'Team Time' social activities (ice cream social, scavenger hunt, trivia night, talent show). One day includes a site visit to a medical school or simulation center, with lunch or dinner off campus. Commuter students attend the same daytime programming (on-campus lunches included) but do not stay overnight or participate in evening Team Time activities. The page does not state a specific staff-to-student ratio beyond describing an 'Advisor' assigned to each classroom group. Health and safety oversight is described at the organizational level: Envision partners with Exlog (an international security firm) and monitors State Department and CDC guidance, with local support described as available 24/7.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision NYLF Medicine & Health Care program page, Sample Itinerary and Health & Safety sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-nylf-engineering"
+    },
+    "dayToDay": {
+      "notes": "Residential students live in dorms on the host university campus, structured around morning career-exploration sessions, afternoon hands-on workshops/simulations, and organized evening social activities. Commuter students attend the same daytime programming but do not stay overnight. Health and safety oversight: Envision partners with Exlog (an international security firm) and monitors State Department/CDC guidance, with 24/7 local support described as available. Days combine engineering design-thinking workshops with team-based projects addressing UN Sustainable Development Goals.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision NYLF Engineering program page",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-nylf-business-innovation"
+    },
+    "dayToDay": {
+      "notes": "Residential students live in dorms on the host university campus, structured around morning career-exploration sessions, afternoon hands-on workshops/simulations, and organized evening social activities. Commuter students attend the same daytime programming but do not stay overnight. Health and safety oversight: Envision partners with Exlog (an international security firm) and monitors State Department/CDC guidance, with 24/7 local support described as available. The program culminates in Envision's '8 Days to Start-Up Challenge,' a business-pitch competition against other student teams.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision NYLF Business Innovation program page",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-nylf-national-security"
+    },
+    "dayToDay": {
+      "notes": "Residential students live in dorms on the host university campus, structured around morning career-exploration sessions, afternoon hands-on workshops/simulations, and organized evening social activities. Commuter students attend the same daytime programming but do not stay overnight. Health and safety oversight: Envision partners with Exlog (an international security firm) and monitors State Department/CDC guidance, with 24/7 local support described as available. Program content focuses on diplomacy, intelligence, cybersecurity, and defense, held exclusively at Georgetown University.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision NYLF National Security program page",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-nylf-law-csi"
+    },
+    "dayToDay": {
+      "notes": "This program's FAQ provided the richest org-wide supervision detail found across Envision's site: a 17:1 student-to-staff ratio, 2 students per room (roommate requests possible if same program/session/gender and submitted 3+ weeks in advance), and nightly room checks by staff. Parents are not permitted to use program facilities (e.g., pools, gyms) during the program. Otherwise follows the standard NYLF residential structure: morning workshops, afternoon site visits/simulations, evening social activities.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision NYLF Law & CSI program page, FAQ section",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-intensive-law-trial"
+    },
+    "dayToDay": {
+      "notes": "Uses a notably tighter staffing model than the standard NYLF programs: an 8:1 student-to-staff ratio and 2-4 students per room, versus NYLF Law & CSI's 17:1 ratio and 2-per-room standard. This suggests more individualized courtroom-simulation and trial-advocacy coaching, consistent with its longer (10-day) format and higher price point.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision Intensive Law and Trial program page",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-nylf-pathways-to-stem"
+    },
+    "dayToDay": {
+      "notes": "An elementary-age (grades 3-5) program run at approximately 19 U.S. city locations, each offering both residential and commuter formats. Given the young age of participants, families should expect more structured, hands-on supervision than the teen-focused NYLF programs, though specific ratios were not captured in this research pass.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision NYLF Pathways to STEM program page",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-junior-nylc"
+    },
+    "dayToDay": {
+      "notes": "Runs separate curriculum tracks for grades 5/6 and grades 7/8 within the same program, at four U.S. locations (Washington D.C., Atlanta, Boston, and a California campus).",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision Junior National Young Leaders Conference program page",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-nylf-explore-stem"
+    },
+    "dayToDay": {
+      "notes": "Runs at approximately 17 U.S. city locations, using a 20:1 student-to-staff ratio -- looser supervision than the 10:1 ratio seen on Envision's Veterinary Academy programs and the 17:1 ratio on NYLF Law & CSI.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision NYLF Explore STEM program page",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-junior-medicine-health-care"
+    },
+    "dayToDay": {
+      "notes": "The middle-school-aged (grades 7-8) sibling of NYLF Medicine & Health Care, run at three of the same university campuses (UC Berkeley, University of Michigan, Emory) with an age-adjusted curriculum and no college-credit component.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision Junior Medicine & Health Care program page",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-rice-elite-tech"
+    },
+    "dayToDay": {
+      "notes": "Not applicable -- no active 2027 sessions to describe day-to-day structure for. The program's own marketing describes 8 distinct technology specialization tracks students can choose from at Rice University.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision Rice ELITE Tech Camp program page",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-aviation-academy"
+    },
+    "dayToDay": {
+      "notes": "Combines classroom aviation instruction with real flight experiences: a helicopter flight and a flight in a powered aircraft with an FAA-certified pilot. This is a meaningfully different physical-activity profile than Envision's classroom/simulation-based NYLF programs.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision Aviation Academy program page",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-nylf-advanced-medicine-health-care"
+    },
+    "dayToDay": {
+      "notes": "Residential students live in dorms on the host university campus, structured around morning career-exploration sessions, afternoon hands-on workshops/simulations, and organized evening social activities. Commuter students attend the same daytime programming but do not stay overnight. Health and safety oversight: Envision partners with Exlog (an international security firm) and monitors State Department/CDC guidance, with 24/7 local support described as available. This is a longer (10-day, versus the standard program's 8-day) and more advanced version, held exclusively at Georgetown University.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision NYLF Advanced Medicine & Health Care program page",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-honors-performance-hs-carnegie-hall"
+    },
+    "dayToDay": {
+      "notes": "A short, intensive rehearsal-and-performance program culminating in a Carnegie Hall performance. Day-to-day structure (rehearsal schedule, supervision detail) was not fully captured in this research pass.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision Honors Performance Series High School program page",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-honors-performance-ms-carnegie-hall"
+    },
+    "dayToDay": {
+      "notes": "The middle-school-aged, summer-scheduled sibling of the winter high school Honors Performance Series program, also culminating in a Carnegie Hall performance. Day-to-day rehearsal structure was not fully captured in this research pass.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision Honors Performance Series Middle School program page",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-vet-academy-horse-ny"
+    },
+    "dayToDay": {
+      "notes": "Days follow a consistent structure: morning veterinary lectures and field classes, afternoon animal-care rotations (food preparation, enclosure maintenance, animal enrichment) alternating with hands-on veterinary lab activities (suturing, bandaging, parasitology, radiograph interpretation, blood cytology), and evening social 'Team Time' activities. Students work toward a student-led 'Keeper Talk' presentation to real visitors by the end of the week. Run in partnership with Loop Abroad; veterinarians and senior staff are industry professionals (bachelor's degree or above), and support staff are often college students in veterinary school or education, many of them Loop Abroad program alumni. Envision staff cannot administer any medication, including over-the-counter medication -- students self-manage medication using a completed Medication Administration Form. Roommates are assigned by age unless a same-gender, same-session roommate request is submitted online at least 3 weeks before the session; a roommate is not guaranteed and some students may be placed in single rooms. Vegetarian meals are available everywhere; other dietary needs (vegan, kosher, halal, gluten-free, allergies) are handled as individual requests through the Office of Admissions. An onsite staff member is available 24 hours a day with a direct cell number provided to students. 10:1 student-to-veterinarian ratio, maximum 30 students. Students stay at SUNY New Paltz with daily transfers to Pine Bush Equine Services.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision Veterinary Academy: Horse & Large Animal Medicine (New York) program page, Sample Itinerary and FAQ sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-future-vet-ny"
+    },
+    "dayToDay": {
+      "notes": "Days follow a consistent structure: morning veterinary lectures and field classes, afternoon animal-care rotations (food preparation, enclosure maintenance, animal enrichment) alternating with hands-on veterinary lab activities (suturing, bandaging, parasitology, radiograph interpretation, blood cytology), and evening social 'Team Time' activities. Students work toward a student-led 'Keeper Talk' presentation to real visitors by the end of the week. Run in partnership with Loop Abroad; veterinarians and senior staff are industry professionals (bachelor's degree or above), and support staff are often college students in veterinary school or education, many of them Loop Abroad program alumni. Envision staff cannot administer any medication, including over-the-counter medication -- students self-manage medication using a completed Medication Administration Form. Roommates are assigned by age unless a same-gender, same-session roommate request is submitted online at least 3 weeks before the session; a roommate is not guaranteed and some students may be placed in single rooms. Vegetarian meals are available everywhere; other dietary needs (vegan, kosher, halal, gluten-free, allergies) are handled as individual requests through the Office of Admissions. An onsite staff member is available 24 hours a day with a direct cell number provided to students. Age-appropriate skill adjustments are made for the grades 6-8 age range. 10:1 ratio, maximum 30 students.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision Future Vet: Horses & Large Animals (New York) program page, Sample Itinerary and FAQ sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-vet-academy-zoo-ma"
+    },
+    "dayToDay": {
+      "notes": "Days follow a consistent structure: morning veterinary lectures and field classes, afternoon animal-care rotations (food preparation, enclosure maintenance, animal enrichment) alternating with hands-on veterinary lab activities (suturing, bandaging, parasitology, radiograph interpretation, blood cytology), and evening social 'Team Time' activities. Students work toward a student-led 'Keeper Talk' presentation to real visitors by the end of the week. Run in partnership with Loop Abroad; veterinarians and senior staff are industry professionals (bachelor's degree or above), and support staff are often college students in veterinary school or education, many of them Loop Abroad program alumni. Envision staff cannot administer any medication, including over-the-counter medication -- students self-manage medication using a completed Medication Administration Form. Roommates are assigned by age unless a same-gender, same-session roommate request is submitted online at least 3 weeks before the session; a roommate is not guaranteed and some students may be placed in single rooms. Vegetarian meals are available everywhere; other dietary needs (vegan, kosher, halal, gluten-free, allergies) are handled as individual requests through the Office of Admissions. An onsite staff member is available 24 hours a day with a direct cell number provided to students. Students stay at Stonehill College with daily transfers to the AZA-accredited Capron Park Zoo.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision Veterinary Academy: Zoo Medicine (Massachusetts) program page, Sample Itinerary and FAQ sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-future-vet-ma"
+    },
+    "dayToDay": {
+      "notes": "Days follow a consistent structure: morning veterinary lectures and field classes, afternoon animal-care rotations (food preparation, enclosure maintenance, animal enrichment) alternating with hands-on veterinary lab activities (suturing, bandaging, parasitology, radiograph interpretation, blood cytology), and evening social 'Team Time' activities. Students work toward a student-led 'Keeper Talk' presentation to real visitors by the end of the week. Run in partnership with Loop Abroad; veterinarians and senior staff are industry professionals (bachelor's degree or above), and support staff are often college students in veterinary school or education, many of them Loop Abroad program alumni. Envision staff cannot administer any medication, including over-the-counter medication -- students self-manage medication using a completed Medication Administration Form. Roommates are assigned by age unless a same-gender, same-session roommate request is submitted online at least 3 weeks before the session; a roommate is not guaranteed and some students may be placed in single rooms. Vegetarian meals are available everywhere; other dietary needs (vegan, kosher, halal, gluten-free, allergies) are handled as individual requests through the Office of Admissions. An onsite staff member is available 24 hours a day with a direct cell number provided to students. Age-appropriate adjustments for grades 6-8; includes a working farm visit for large-animal exposure not present in every zoo-medicine track.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision Future Vet: Zoo Medicine (Massachusetts) program page, Sample Itinerary and FAQ sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-vet-academy-zoo-tx"
+    },
+    "dayToDay": {
+      "notes": "Days follow a consistent structure: morning veterinary lectures and field classes, afternoon animal-care rotations (food preparation, enclosure maintenance, animal enrichment) alternating with hands-on veterinary lab activities (suturing, bandaging, parasitology, radiograph interpretation, blood cytology), and evening social 'Team Time' activities. Students work toward a student-led 'Keeper Talk' presentation to real visitors by the end of the week. Run in partnership with Loop Abroad; veterinarians and senior staff are industry professionals (bachelor's degree or above), and support staff are often college students in veterinary school or education, many of them Loop Abroad program alumni. Envision staff cannot administer any medication, including over-the-counter medication -- students self-manage medication using a completed Medication Administration Form. Roommates are assigned by age unless a same-gender, same-session roommate request is submitted online at least 3 weeks before the session; a roommate is not guaranteed and some students may be placed in single rooms. Vegetarian meals are available everywhere; other dietary needs (vegan, kosher, halal, gluten-free, allergies) are handled as individual requests through the Office of Admissions. An onsite staff member is available 24 hours a day with a direct cell number provided to students. Students work at the Texas Zoo in Victoria, TX, which houses many native-Texas rescue animals unable to return to the wild.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision Veterinary Academy: Zoo Medicine (Texas) program page, Sample Itinerary and FAQ sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-future-vet-tx"
+    },
+    "dayToDay": {
+      "notes": "Days follow a consistent structure: morning veterinary lectures and field classes, afternoon animal-care rotations (food preparation, enclosure maintenance, animal enrichment) alternating with hands-on veterinary lab activities (suturing, bandaging, parasitology, radiograph interpretation, blood cytology), and evening social 'Team Time' activities. Students work toward a student-led 'Keeper Talk' presentation to real visitors by the end of the week. Run in partnership with Loop Abroad; veterinarians and senior staff are industry professionals (bachelor's degree or above), and support staff are often college students in veterinary school or education, many of them Loop Abroad program alumni. Envision staff cannot administer any medication, including over-the-counter medication -- students self-manage medication using a completed Medication Administration Form. Roommates are assigned by age unless a same-gender, same-session roommate request is submitted online at least 3 weeks before the session; a roommate is not guaranteed and some students may be placed in single rooms. Vegetarian meals are available everywhere; other dietary needs (vegan, kosher, halal, gluten-free, allergies) are handled as individual requests through the Office of Admissions. An onsite staff member is available 24 hours a day with a direct cell number provided to students. Age-appropriate adjustments for grades 6-8; maximum 40 students at this location, slightly larger than the 30-student cap used elsewhere.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision Future Vet: Zoo Medicine (Texas) program page, Sample Itinerary and FAQ sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-future-vet-dc"
+    },
+    "dayToDay": {
+      "notes": "Held at American University with a mix of on-site labs (suturing, dissection, microscope work, first aid) and field trips to a local zoo and a farm, plus a brief D.C. monuments bus tour. Uses a 15:1 student-to-veterinarian ratio and a 30-student cap. Includes a notable wildlife blow-dart-making lab activity as part of the curriculum. Commuter and residential students share a joint final farewell meeting. Otherwise follows the same medication self-management, roommate-assignment, and dietary-accommodation policies described for the other Veterinary Academy/Future Vet programs.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision Future Vet: Zoo Medicine (Washington, D.C.) program page, Sample Itinerary and FAQ sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-oxbridge-oxford-tradition"
+    },
+    "dayToDay": {
+      "notes": "A typical day begins with breakfast in the residence dining hall, followed by a morning class (sometimes held off-site at a museum, lab, or historic landmark). Students purchase their own lunch during a midday break, then have an afternoon Major or Minor class/workshop. Evenings include a full, though optional, calendar of social/cultural activities (sports, concerts, tours, talent shows) before a group dinner and a nightly curfew. Security: students must check in at dinner and again between 9:00-10:00pm with an assigned Dean; lights out is 11:00pm; once checked in, students are not permitted to leave campus. College entrances are supervised round-the-clock by College Porters, Campus Security, and Envision/Oxbridge staff, with CCTV coverage. Some staff (Program Director, Deans, Program Assistants, Activities Directors, Medical Officer) live in the residences alongside students for round-the-clock supervision, though a specific staff-to-student ratio is not given (described as varying by program location and size). A strict zero-tolerance policy against alcohol and drugs applies, with immediate expulsion for any violation. Students are housed in gender-separated hallways or floors. A qualified Medical Officer is present at every venue. Housed at Pembroke College, Oxford.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision (Oxbridge Academic Programs) Oxford Tradition program page, FAQ section",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-oxbridge-cambridge-tradition"
+    },
+    "dayToDay": {
+      "notes": "A typical day begins with breakfast in the residence dining hall, followed by a morning class (sometimes held off-site at a museum, lab, or historic landmark). Students purchase their own lunch during a midday break, then have an afternoon Major or Minor class/workshop. Evenings include a full, though optional, calendar of social/cultural activities (sports, concerts, tours, talent shows) before a group dinner and a nightly curfew. Security: students must check in at dinner and again between 9:00-10:00pm with an assigned Dean; lights out is 11:00pm; once checked in, students are not permitted to leave campus. College entrances are supervised round-the-clock by College Porters, Campus Security, and Envision/Oxbridge staff, with CCTV coverage. Some staff (Program Director, Deans, Program Assistants, Activities Directors, Medical Officer) live in the residences alongside students for round-the-clock supervision, though a specific staff-to-student ratio is not given (described as varying by program location and size). A strict zero-tolerance policy against alcohol and drugs applies, with immediate expulsion for any violation. Students are housed in gender-separated hallways or floors. A qualified Medical Officer is present at every venue. Housed at Jesus College, Cambridge.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision (Oxbridge Academic Programs) Cambridge Tradition program page, FAQ section",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-oxbridge-barcelona"
+    },
+    "dayToDay": {
+      "notes": "Not applicable -- no active 2027 sessions. Based on the program's own marketing, the structure would mirror the other Oxbridge Academic Programs offerings (Major/Minor course structure, curfew, gender-separated housing at the Kadora Student Residence in Sarria).",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision Oxbridge in Barcelona program page",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-oxbridge-oxford-experience"
+    },
+    "dayToDay": {
+      "notes": "Not applicable -- no active 2027 sessions. Based on the program's own marketing, the structure would mirror The Oxford Tradition (Major/Minor course structure, curfew, gender-separated housing) but at Keble College rather than Pembroke, for a younger age group (grades 8-9).",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision The Oxford Experience program page",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-oxbridge-institute-advanced-studies"
+    },
+    "dayToDay": {
+      "notes": "A typical day begins with breakfast in the residence dining hall, followed by a morning class (sometimes held off-site at a museum, lab, or historic landmark). Students purchase their own lunch during a midday break, then have an afternoon Major or Minor class/workshop. Evenings include a full, though optional, calendar of social/cultural activities (sports, concerts, tours, talent shows) before a group dinner and a nightly curfew. Security: students must check in at dinner and again between 9:00-10:00pm with an assigned Dean; lights out is 11:00pm; once checked in, students are not permitted to leave campus. College entrances are supervised round-the-clock by College Porters, Campus Security, and Envision/Oxbridge staff, with CCTV coverage. Some staff (Program Director, Deans, Program Assistants, Activities Directors, Medical Officer) live in the residences alongside students for round-the-clock supervision, though a specific staff-to-student ratio is not given (described as varying by program location and size). A strict zero-tolerance policy against alcohol and drugs applies, with immediate expulsion for any violation. Students are housed in gender-separated hallways or floors. A qualified Medical Officer is present at every venue. Housed at Pembroke College, Oxford. Unlike the course-based Oxford Tradition, mornings are dedicated to small-group research supervision (6 mornings a week, 3 hours), with 3 afternoons a week set aside for professional-development workshops (resume building, negotiation, personal branding) rather than a second academic subject.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision Oxbridge Institute for Advanced Studies program page, Overview and FAQ sections",
+      "verifiedAt": "2026-09-17"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "envision-vet-academy-costa-rica"
+    },
+    "dayToDay": {
+      "notes": "Not fully captured in this research pass beyond the org-wide Loop Abroad partnership model (10:1 student-to-veterinarian ratio, maximum 30 students) seen across Envision's other Veterinary Academy programs. Given this is an international placement (unlike the domestic US Vet Academy/Future Vet locations), families should confirm accommodation type, travel logistics, and supervision detail directly, since these were not captured in the available material.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Envision Veterinary Academy: Costa Rica program page",
       "verifiedAt": "2026-09-17"
     }
   }

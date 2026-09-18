@@ -2481,16 +2481,1020 @@
         "id": "wtbd-bolivia-high-altitude-trekking",
         "type": "safety",
         "title": "This program involves extended high-altitude trekking, including a 5-day self-led descent",
-        "body": "Confirm fitness level and altitude-related health considerations directly, given El Alto's elevation and the student-led Expedition Phase trek.",
-        "sourceCitation": "Where There Be Dragons Bolivia: Spanish Language Immersion in the Andes program page, Group Size, Program Components, and Itinerary Example sections",
+        "body": "Students trek through the Cordillera de los Frailes and Cordillera Real, both high-altitude Andean ranges, including a student-led 5-day trek during the program's 'Expedition Phase' where the group takes on increased responsibility for planning and logistics. Families should confirm their student's fitness level and any altitude-related health considerations directly with the provider, especially given the program also begins at El Alto International Airport, one of the highest-elevation international airports in the world.",
+        "sourceCitation": "Where There Be Dragons Bolivia program page, Program Description and Itinerary Example sections",
         "severity": "warning"
       },
       {
         "id": "wtbd-bolivia-rugged-travel-component",
         "type": "safety",
         "title": "The program explicitly rates its 'Rugged Travel' component, describing homestays with few amenities",
-        "body": "More candidly disclosed than similar intensity notes on some other providers' pages.",
-        "sourceCitation": "Where There Be Dragons Bolivia: Spanish Language Immersion in the Andes program page, Program Components section",
+        "body": "The provider's own Program Components section describes this program's rugged-travel intensity as including homestays with few amenities, extensive high-altitude walking, and lengthy travel by public transportation. This is more candidly disclosed than similar intensity notes on some other providers' pages, and families should take it as a genuine expectation-setter rather than boilerplate.",
+        "sourceCitation": "Where There Be Dragons Bolivia program page, Program Components section",
+        "severity": "info"
+      },
+      {
+        "id": "wtbd-bolivia-financial-aid-unclear-per-program",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on this specific program page",
+        "body": "This program page does not itself confirm whether need-based aid applies to this particular program, though the WTBD site has a general sitewide Tuition Assistance section. Families should confirm eligibility and award availability directly rather than assuming this specific program has funded slots.",
+        "sourceCitation": "Absence of financial aid detail on the Bolivia program page itself; general Tuition Assistance link exists sitewide",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-guatemala-spanish-language-intensive-4wk"
+    },
+    "flags": [
+      {
+        "id": "guatemala-4wk-civil-war-content",
+        "type": "safety",
+        "title": "Program directly engages with Guatemala's civil war history and its ongoing effects",
+        "body": "Students work alongside a weaving cooperative of civil-war widows and discuss root causes of human rights issues, economic inequality, and indigenous underrepresentation. This is emotionally substantive content; families should be aware this isn't a purely recreational cultural program.",
+        "sourceCitation": "Program page, Your Journey Starts Here and testimonial sections",
+        "severity": "info"
+      },
+      {
+        "id": "guatemala-4wk-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on this program page",
+        "body": "No mention of need-based aid for this specific program.",
+        "sourceCitation": "Absence of financial aid section on the program page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-nepal-traditions-of-himalayas"
+    },
+    "flags": [
+      {
+        "id": "nepal-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on this program page",
+        "body": "No mention of need-based aid for this specific program.",
+        "sourceCitation": "Absence of financial aid section on the program page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-taiwan-mandarin-language-intensive-2wk"
+    },
+    "flags": [
+      {
+        "id": "taiwan-no-college-credit",
+        "type": "safety",
+        "title": "No college credit option is offered on this program",
+        "body": "Unlike most other WTBD summer programs researched, this page has no Optional College Credit section.",
+        "sourceCitation": "Absence of an Optional College Credit section on the program page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-bhutan-happiness-in-himalayas"
+    },
+    "flags": [
+      {
+        "id": "bhutan-wide-age-range",
+        "type": "safety",
+        "title": "This program has the widest age range of any WTBD program researched (17-22)",
+        "body": "This age band overlaps with typical gap-year ages, unlike most other WTBD summer programs which target ages 15-19. Families should confirm the age mix of the actual group they'd be joining.",
+        "sourceCitation": "Program page, Ages field",
+        "severity": "info"
+      },
+      {
+        "id": "bhutan-two-sessions-different-seasons",
+        "type": "safety",
+        "title": "This page lists both a summer 2027 session and a December 2026 session",
+        "body": "The December 2026 session (7 spaces remaining) is a different, non-summer offering. Only the July 2027 session was captured as this project's 2027 summer entry.",
+        "sourceCitation": "Program page, Upcoming Dates table",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-peru-4week-summer-abroad"
+    },
+    "flags": [
+      {
+        "id": "peru-4wk-limited-detail",
+        "type": "safety",
+        "title": "This entry has less itinerary/accommodation detail than other WTBD programs researched",
+        "body": "The live page repeatedly failed to load its body content on direct fetch (two separate attempts). Core facts (dates, tuition, ages, group size, program description) were confirmed via user-provided screenshots, but the detailed week-by-week itinerary and Program Components ratings available on other WTBD program pages were not visible in the screenshots provided. Families should confirm the fuller itinerary directly with the provider before enrolling.",
+        "sourceCitation": "Comparison between two failed direct fetches and the more limited detail available in user-provided screenshots",
+        "severity": "info"
+      },
+      {
+        "id": "peru-4wk-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated in the available material",
+        "body": "No mention of need-based aid for this specific program was visible in the provided screenshots.",
+        "sourceCitation": "Absence of financial aid information in the provided screenshots",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-guatemala-spanish-language-intensive-2wk"
+    },
+    "flags": [
+      {
+        "id": "guatemala-2wk-no-2027-dates",
+        "type": "safety",
+        "title": "This page shows only 2026 dates, both already waitlisted",
+        "body": "Unlike the 4-week Guatemala sibling program, which shows confirmed open 2027 sessions, this 2-week program's page displays only two 2026 sessions, both marked \"Accepting Waitlist.\" No 2027 session date was visible. Confirm directly whether a 2027 version of this specific program will run before assuming availability.",
+        "sourceCitation": "Program page, Upcoming Dates table",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-spain-combating-climate-change-2wk"
+    },
+    "flags": [
+      {
+        "id": "spain-climate-no-college-credit",
+        "type": "safety",
+        "title": "No college credit option is offered on this program",
+        "body": "Unlike several other WTBD summer programs researched, this page has no Optional College Credit section.",
+        "sourceCitation": "Absence of an Optional College Credit section on the program page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-japan-arts-food-culture"
+    },
+    "flags": [
+      {
+        "id": "japan-wtbd-highest-tuition",
+        "type": "safety",
+        "title": "This is the highest-tuition WTBD program researched",
+        "body": "At $9,970 (before airfare), this exceeds every other Where There Be Dragons summer program researched.",
+        "sourceCitation": "Program page, Tuition field",
+        "severity": "info"
+      },
+      {
+        "id": "japan-wtbd-application-deadline",
+        "type": "safety",
+        "title": "This program has an explicit stated application deadline (May 30, 2027)",
+        "body": "Unlike most other WTBD programs researched, which do not list a specific application cutoff date on the program page itself, this one explicitly states a Summer Application Deadline of May 30, 2027.",
+        "sourceCitation": "Program page, Program Description section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-indonesia-conservation-culture"
+    },
+    "flags": [
+      {
+        "id": "indonesia-rugged-accommodation",
+        "type": "safety",
+        "title": "Accommodations include sleeping on bamboo mats, on beaches, and jungle camping",
+        "body": "The provider's own Rugged Travel component description is unusually candid: students may sleep on bamboo mats on the floor in some homestays, under the stars on beaches, and in group jungle camping settings. Families should treat this as a genuine expectation-setter about the physical conditions of this program.",
+        "sourceCitation": "Program page, Program Components section (Rugged Travel)",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-china-mandarin-language-intensive-4wk"
+    },
+    "flags": [
+      {
+        "id": "china-wtbd-tiananmen-content",
+        "type": "safety",
+        "title": "The itinerary explicitly visits Tiananmen Square and discusses it from multiple perspectives",
+        "body": "The provider's own itinerary description names Tiananmen Square as a site the group visits and tries to understand from several different perspectives, alongside broader discussion of contemporary Chinese politics and history. Families should be aware this is substantive, not purely tourist-oriented content.",
+        "sourceCitation": "Program page, Week 1 itinerary section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-india-himalayan-trekking-traditions"
+    },
+    "flags": [
+      {
+        "id": "india-high-altitude-trekking",
+        "type": "safety",
+        "title": "This program involves multiple days of high-altitude trekking",
+        "body": "7-10 days of high-altitude trekking over rough terrain and mountain passes near Leh, one of the highest-elevation regions covered by any WTBD program. The page notes trails are non-technical and no prior trekking experience is required, but families should still confirm fitness and altitude considerations.",
+        "sourceCitation": "Program page, Program Components section (Trekking)",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-cambodia-the-good-life"
+    },
+    "flags": [
+      {
+        "id": "cambodia-khmer-rouge-content",
+        "type": "safety",
+        "title": "The program directly engages with the Khmer Rouge genocide",
+        "body": "Students visit the S21 Genocide Museum and, in the provided itinerary and testimonial, may have direct conversations with genocide survivors in their homestay village. This is emotionally substantive content; families should be aware this isn't a purely recreational cultural program.",
+        "sourceCitation": "Program page, Week 1 itinerary section and student testimonial",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-thailand-sustainability-spirituality"
+    },
+    "flags": [
+      {
+        "id": "thailand-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on this program page",
+        "body": "No mention of need-based aid for this specific program.",
+        "sourceCitation": "Absence of financial aid section on the program page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-morocco-crossroads-of-culture-2wk"
+    },
+    "flags": [
+      {
+        "id": "morocco-wtbd-no-college-credit",
+        "type": "safety",
+        "title": "No college credit option is offered on this program",
+        "body": "Unlike several other WTBD summer programs researched, this page has no Optional College Credit section.",
+        "sourceCitation": "Absence of an Optional College Credit section on the program page",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-senegal-youth-leadership-arts-culture"
+    },
+    "flags": [
+      {
+        "id": "senegal-goree-slave-trade-content",
+        "type": "safety",
+        "title": "The itinerary includes a visit to the Island of Goree and Atlantic slave trade history",
+        "body": "As part of the Dakar day trip, students visit the Island of Goree, a site associated with the history of the Atlantic slave trade, and the Museum of Black Civilization. This is substantive historical content; families should be aware this isn't a purely recreational cultural program.",
+        "sourceCitation": "Program page, Days 7-12 itinerary section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "camp-laurel-full-season"
+    },
+    "flags": [
+      {
+        "id": "camp-laurel-significant-optional-addons",
+        "type": "safety",
+        "title": "Several optional add-on fees can meaningfully increase the total cost",
+        "body": "Trip day ($600), equestrian ($1,500-$2,500), extended trip fee ($700-$975 for grades 7-9), and transportation (varies) are all separate from the $18,500 base tuition.",
+        "sourceCitation": "Camp Laurel Dates & Fees page",
+        "severity": "info"
+      },
+      {
+        "id": "camp-laurel-gender-grouped-activities",
+        "type": "safety",
+        "title": "The camp is coed overall, but most activities are single-gender",
+        "body": "All athletics are grouped by gender and ability within age group, despite the camp being coed overall.",
+        "sourceCitation": "Camp Laurel program/FAQ pages on campus structure and athletics grouping",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-nylf-medicine-health-care"
+    },
+    "flags": [
+      {
+        "id": "envision-college-credit-timing-complaint",
+        "type": "safety",
+        "title": "A documented complaint alleges college credit is not delivered in time to use on college applications",
+        "body": "This program advertises college credit (1-2 credits from George Mason University, as a non-degree high school guest student) as a core selling point, included in tuition. A 2-star Trustpilot review (July 2025) describes this as feeling like a \"bait and switch\": the reviewer states they paid roughly $5,000 expecting the credit to strengthen a college application, but the credit was not delivered in time for that purpose, and when they contacted Envision, they were told responsibility for the credit and its timing rests with George Mason University rather than with Envision, the company the family actually contracted with. This is a single review rather than a confirmed pattern, but it directly concerns the exact credit-granting mechanism this program uses, so families relying on the credit for a specific application deadline should confirm the actual transcript delivery timeline directly with Envision and George Mason University before enrolling, rather than assuming the credit will post before college application deadlines.",
+        "sourceCitation": "Trustpilot review of envisionexperience.com (French-language Trustpilot page, dated July 14, 2025, rated 2 out of 5 stars, titled \"Warning: You wont get your college credit in time\")",
+        "severity": "warning"
+      },
+      {
+        "id": "medicine-hc-save-my-spot-sessions",
+        "type": "safety",
+        "title": "Several 2027 sessions are marked 'Save My Spot' rather than directly bookable",
+        "body": "The Rice, Yale, and University of Michigan sessions all display confirmed 2027 dates and prices but are labeled 'Save my spot for 2027' rather than offering a direct 'Enroll Now' path like the Berkeley, UCLA, and Emory sessions. This likely means these sessions are not yet fully open for enrollment even though pricing and dates are published. Families interested in these specific campuses should confirm current enrollment status directly.",
+        "sourceCitation": "Envision NYLF Medicine & Health Care program page, Dates & Locations section",
+        "severity": "info"
+      },
+      {
+        "id": "medicine-hc-non-degree-guest-credit-status",
+        "type": "safety",
+        "title": "College credit is earned as a 'non-degree guest' student, not enrolled coursework",
+        "body": "The credit is explicitly described as earned \"as a non-degree high school guest\" at George Mason University. Families should confirm with their target colleges how this specific credit type transfers or is weighted in admissions review, since non-degree guest credit may be treated differently than credit from a student's own enrolled coursework.",
+        "sourceCitation": "Envision NYLF Medicine & Health Care program page, College Credit section",
+        "severity": "info"
+      },
+      {
+        "id": "medicine-hc-commuter-2027-pricing-not-shown",
+        "type": "safety",
+        "title": "2027 commuter pricing was not shown on this page",
+        "body": "The page confirms a commuter option exists (on-campus lunches included, no room & board) and explains what it includes generally, but no specific 2027 commuter price or per-campus commuter dates were visible in the Dates & Locations section, which showed only residential pricing and dates. Families interested in the commuter track should confirm current pricing directly.",
+        "sourceCitation": "Envision NYLF Medicine & Health Care program page, What does the price include? and Dates & Locations sections",
+        "severity": "info"
+      },
+      {
+        "id": "medicine-hc-university-disclaimer",
+        "type": "safety",
+        "title": "The program is legally independent of the host university (explicit disclaimer)",
+        "body": "The page includes an explicit disclaimer that the program is 'operated independently of Yale University and is not sponsored or endorsed by the University,' and that views expressed during the program are not official positions of the university. Families should not assume university-level oversight, faculty employment, or institutional endorsement simply because the program is held on a college campus.",
+        "sourceCitation": "Envision NYLF Medicine & Health Care program page, footnote below Dates & Locations section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-nylf-engineering"
+    },
+    "flags": [
+      {
+        "id": "envision-college-credit-timing-complaint",
+        "type": "safety",
+        "title": "A documented complaint alleges college credit is not delivered in time to use on college applications",
+        "body": "This program advertises college credit from George Mason University (as a non-degree high school guest student) as a core selling point, included in tuition. A 2-star Trustpilot review (July 2025) describes this as feeling like a \"bait and switch\": the reviewer paid roughly $5,000 expecting the credit to strengthen a college application, but the credit was not delivered in time for that purpose, and Envision reportedly redirected responsibility to George Mason University rather than the company the family contracted with. This is a single review rather than a confirmed pattern, but it concerns the exact credit-granting mechanism this program uses. Families relying on the credit for a specific application deadline should confirm the actual transcript delivery timeline directly with Envision and George Mason University before enrolling.",
+        "sourceCitation": "Trustpilot review of envisionexperience.com (French-language Trustpilot page, dated July 14, 2025, rated 2 out of 5 stars, titled \"Warning: You wont get your college credit in time\")",
+        "severity": "warning"
+      },
+      {
+        "id": "envision-financial-aid-generic",
+        "type": "safety",
+        "title": "Financial aid is described only generically on this page",
+        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
+        "sourceCitation": "Program page, Tuition Resources section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-nylf-business-innovation"
+    },
+    "flags": [
+      {
+        "id": "envision-college-credit-timing-complaint",
+        "type": "safety",
+        "title": "A documented complaint alleges college credit is not delivered in time to use on college applications",
+        "body": "This program advertises college credit from George Mason University (as a non-degree high school guest student) as a core selling point, included in tuition. A 2-star Trustpilot review (July 2025) describes this as feeling like a \"bait and switch\": the reviewer paid roughly $5,000 expecting the credit to strengthen a college application, but the credit was not delivered in time for that purpose, and Envision reportedly redirected responsibility to George Mason University rather than the company the family contracted with. This is a single review rather than a confirmed pattern, but it concerns the exact credit-granting mechanism this program uses. Families relying on the credit for a specific application deadline should confirm the actual transcript delivery timeline directly with Envision and George Mason University before enrolling.",
+        "sourceCitation": "Trustpilot review of envisionexperience.com (French-language Trustpilot page, dated July 14, 2025, rated 2 out of 5 stars, titled \"Warning: You wont get your college credit in time\")",
+        "severity": "warning"
+      },
+      {
+        "id": "business-innovation-stale-school-year-wording",
+        "type": "safety",
+        "title": "Page FAQ references an outdated school-year phrase",
+        "body": "The FAQ text referenced eligibility for 'grades 9-12 during the 2025-2026 school year,' which is a year behind the 2027 program cycle. This is likely a copy-editing lag rather than an actual eligibility restriction, but families should confirm current-year eligibility directly.",
+        "sourceCitation": "Program page FAQ section",
+        "severity": "info"
+      },
+      {
+        "id": "business-innovation-incomplete-session-data",
+        "type": "safety",
+        "title": "Exact 2027 session dates and per-campus pricing were not fully captured",
+        "body": "This research pass confirmed the two host campuses (Yale, UC Berkeley Clark Kerr) but not exact 2027 session dates or per-campus pricing. Confirm directly on the program page.",
+        "sourceCitation": "N/A - noted for data-completeness purposes",
+        "severity": "info"
+      },
+      {
+        "id": "envision-financial-aid-generic",
+        "type": "safety",
+        "title": "Financial aid is described only generically on this page",
+        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
+        "sourceCitation": "Program page, Tuition Resources section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-nylf-national-security"
+    },
+    "flags": [
+      {
+        "id": "envision-college-credit-timing-complaint",
+        "type": "safety",
+        "title": "A documented complaint alleges college credit is not delivered in time to use on college applications",
+        "body": "This program advertises college credit from George Mason University (as a non-degree high school guest student) as a core selling point, included in tuition. A 2-star Trustpilot review (July 2025) describes this as feeling like a \"bait and switch\": the reviewer paid roughly $5,000 expecting the credit to strengthen a college application, but the credit was not delivered in time for that purpose, and Envision reportedly redirected responsibility to George Mason University rather than the company the family contracted with. This is a single review rather than a confirmed pattern, but it concerns the exact credit-granting mechanism this program uses. Families relying on the credit for a specific application deadline should confirm the actual transcript delivery timeline directly with Envision and George Mason University before enrolling.",
+        "sourceCitation": "Trustpilot review of envisionexperience.com (French-language Trustpilot page, dated July 14, 2025, rated 2 out of 5 stars, titled \"Warning: You wont get your college credit in time\")",
+        "severity": "warning"
+      },
+      {
+        "id": "national-security-save-my-spot",
+        "type": "safety",
+        "title": "Both 2027 sessions are marked 'Save My Spot' rather than directly bookable",
+        "body": "Both listed 2027 sessions display confirmed dates and pricing but are not yet open for direct enrollment. Confirm current status directly.",
+        "sourceCitation": "Program page, Dates & Locations section",
+        "severity": "info"
+      },
+      {
+        "id": "envision-financial-aid-generic",
+        "type": "safety",
+        "title": "Financial aid is described only generically on this page",
+        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
+        "sourceCitation": "Program page, Tuition Resources section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-nylf-law-csi"
+    },
+    "flags": [
+      {
+        "id": "envision-college-credit-timing-complaint",
+        "type": "safety",
+        "title": "A documented complaint alleges college credit is not delivered in time to use on college applications",
+        "body": "This program advertises college credit from George Mason University (as a non-degree high school guest student) as a core selling point, included in tuition. A 2-star Trustpilot review (July 2025) describes this as feeling like a \"bait and switch\": the reviewer paid roughly $5,000 expecting the credit to strengthen a college application, but the credit was not delivered in time for that purpose, and Envision reportedly redirected responsibility to George Mason University rather than the company the family contracted with. This is a single review rather than a confirmed pattern, but it concerns the exact credit-granting mechanism this program uses. Families relying on the credit for a specific application deadline should confirm the actual transcript delivery timeline directly with Envision and George Mason University before enrolling.",
+        "sourceCitation": "Trustpilot review of envisionexperience.com (French-language Trustpilot page, dated July 14, 2025, rated 2 out of 5 stars, titled \"Warning: You wont get your college credit in time\")",
+        "severity": "warning"
+      },
+      {
+        "id": "law-csi-incomplete-session-data",
+        "type": "safety",
+        "title": "Exact 2027 session dates and pricing were not fully captured",
+        "body": "This research pass confirmed the Washington, D.C. location and rich FAQ/supervision detail but not exact 2027 session dates or pricing. Confirm directly on the program page.",
+        "sourceCitation": "N/A - noted for data-completeness purposes",
+        "severity": "info"
+      },
+      {
+        "id": "envision-financial-aid-generic",
+        "type": "safety",
+        "title": "Financial aid is described only generically on this page",
+        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
+        "sourceCitation": "Program page, Tuition Resources section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-intensive-law-trial"
+    },
+    "flags": [
+      {
+        "id": "intensive-law-trial-distinct-credit-model",
+        "type": "safety",
+        "title": "College credit arrangement is not confirmed as the standard George Mason model",
+        "body": "Unlike the NYLF Law & CSI program, it was not confirmed during this research pass whether this Intensive Law and Trial program uses the same George Mason University credit arrangement. Confirm directly before assuming the standing college-credit-timing complaint applies here in the same way.",
+        "sourceCitation": "N/A - noted for data-completeness purposes",
+        "severity": "info"
+      },
+      {
+        "id": "intensive-law-trial-incomplete-data",
+        "type": "safety",
+        "title": "Location, exact dates, and full pricing detail were not fully captured",
+        "body": "This research pass captured the staffing ratio and 10-day/$5,999 headline figures but not the host location or exact 2027 dates. Confirm directly.",
+        "sourceCitation": "N/A - noted for data-completeness purposes",
+        "severity": "info"
+      },
+      {
+        "id": "envision-financial-aid-generic",
+        "type": "safety",
+        "title": "Financial aid is described only generically on this page",
+        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
+        "sourceCitation": "Program page, Tuition Resources section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-nylf-pathways-to-stem"
+    },
+    "flags": [
+      {
+        "id": "pathways-stem-summary-row-scale",
+        "type": "safety",
+        "title": "This program spans ~19 city locations, represented here as a single summary row",
+        "body": "Given the scale (roughly 19 separate U.S. locations, each with its own dates and pricing), this project represents Pathways to STEM as one aggregated row rather than one row per city. Families should look up their specific city of interest directly on the program page for exact 2027 dates and pricing.",
+        "sourceCitation": "Program page, Dates & Locations section",
+        "severity": "info"
+      },
+      {
+        "id": "envision-financial-aid-generic",
+        "type": "safety",
+        "title": "Financial aid is described only generically on this page",
+        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
+        "sourceCitation": "Program page, Tuition Resources section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-junior-nylc"
+    },
+    "flags": [
+      {
+        "id": "junior-nylc-grade-range-inconsistency",
+        "type": "safety",
+        "title": "The page's top-level summary understates the actual grade range served",
+        "body": "The program's headline summary describes it as being for grades 5-6, but the FAQ and itinerary content describe two distinct curriculum tracks spanning grades 5-8. Families of rising 7th or 8th graders should not assume they're ineligible based on the summary alone -- confirm directly.",
+        "sourceCitation": "Comparison between the program page's summary text and its FAQ/itinerary content",
+        "severity": "warning"
+      },
+      {
+        "id": "junior-nylc-location-naming-inconsistency",
+        "type": "safety",
+        "title": "FAQ text and program content disagree on the California location name",
+        "body": "The FAQ text refers to a 'San Francisco' location, while the program's photos and other content reference the Berkeley campus specifically. Confirm the exact campus directly before assuming which Bay Area location applies.",
+        "sourceCitation": "Comparison between FAQ text and program imagery/content on the same page",
+        "severity": "info"
+      },
+      {
+        "id": "junior-nylc-incomplete-session-data",
+        "type": "safety",
+        "title": "Exact 2027 dates and pricing were not fully captured",
+        "body": "Confirm directly on the program page for the specific location of interest.",
+        "sourceCitation": "N/A - noted for data-completeness purposes",
+        "severity": "info"
+      },
+      {
+        "id": "envision-financial-aid-generic",
+        "type": "safety",
+        "title": "Financial aid is described only generically on this page",
+        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
+        "sourceCitation": "Program page, Tuition Resources section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-nylf-explore-stem"
+    },
+    "flags": [
+      {
+        "id": "explore-stem-summary-row-scale",
+        "type": "safety",
+        "title": "This program spans ~17 city locations, represented here as a single summary row",
+        "body": "Given the scale, this project represents Explore STEM as one aggregated row rather than one row per city. Look up the specific city of interest directly for exact 2027 dates and pricing.",
+        "sourceCitation": "Program page, Dates & Locations section",
+        "severity": "info"
+      },
+      {
+        "id": "explore-stem-looser-ratio",
+        "type": "safety",
+        "title": "This program uses a 20:1 student-to-staff ratio",
+        "body": "This is a looser supervision ratio than several other Envision programs researched (10:1 on Veterinary Academy programs, 17:1 on NYLF Law & CSI). Families should weigh this against their student's needs.",
+        "sourceCitation": "Program page, Highlights section",
+        "severity": "info"
+      },
+      {
+        "id": "envision-financial-aid-generic",
+        "type": "safety",
+        "title": "Financial aid is described only generically on this page",
+        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
+        "sourceCitation": "Program page, Tuition Resources section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-junior-medicine-health-care"
+    },
+    "flags": [
+      {
+        "id": "junior-medicine-incomplete-session-data",
+        "type": "safety",
+        "title": "Exact 2027 session dates and pricing were not fully captured",
+        "body": "Confirm directly on the program page for the specific campus of interest.",
+        "sourceCitation": "N/A - noted for data-completeness purposes",
+        "severity": "info"
+      },
+      {
+        "id": "envision-financial-aid-generic",
+        "type": "safety",
+        "title": "Financial aid is described only generically on this page",
+        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
+        "sourceCitation": "Program page, Tuition Resources section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-rice-elite-tech"
+    },
+    "flags": [
+      {
+        "id": "rice-elite-tech-no-sessions",
+        "type": "safety",
+        "title": "No 2027 sessions are currently open for enrollment",
+        "body": "The program page explicitly states 'Sorry, no sessions available right now.' This is a genuine, provider-disclosed gap rather than a research limitation. Check the program page directly for future availability.",
+        "sourceCitation": "Program page, Dates & Locations section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-aviation-academy"
+    },
+    "flags": [
+      {
+        "id": "aviation-academy-real-flight-experiences",
+        "type": "safety",
+        "title": "This program includes actual flights in small aircraft, not just simulations",
+        "body": "Unlike most Envision programs, which use classroom simulations, Aviation Academy includes a real helicopter flight and a real powered-aircraft flight with an FAA-certified pilot. Families should ask directly about the specific safety protocols, aircraft type, and pilot credentials involved, given this is meaningfully higher-risk than a ground-based activity.",
+        "sourceCitation": "Program page, Highlights section",
+        "severity": "warning"
+      },
+      {
+        "id": "aviation-academy-incomplete-data",
+        "type": "safety",
+        "title": "Exact grade range and college-credit status were not fully captured",
+        "body": "Confirm directly on the program page.",
+        "sourceCitation": "N/A - noted for data-completeness purposes",
+        "severity": "info"
+      },
+      {
+        "id": "envision-financial-aid-generic",
+        "type": "safety",
+        "title": "Financial aid is described only generically on this page",
+        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
+        "sourceCitation": "Program page, Tuition Resources section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-nylf-advanced-medicine-health-care"
+    },
+    "flags": [
+      {
+        "id": "advanced-medicine-credit-not-confirmed",
+        "type": "safety",
+        "title": "College credit arrangement was not confirmed in this research pass",
+        "body": "Unlike the standard NYLF Medicine & Health Care program, it was not confirmed during this research pass whether this Advanced program uses the same George Mason University credit arrangement. Confirm directly.",
+        "sourceCitation": "N/A - noted for data-completeness purposes",
+        "severity": "info"
+      },
+      {
+        "id": "envision-financial-aid-generic",
+        "type": "safety",
+        "title": "Financial aid is described only generically on this page",
+        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
+        "sourceCitation": "Program page, Tuition Resources section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-honors-performance-hs-carnegie-hall"
+    },
+    "flags": [
+      {
+        "id": "honors-performance-hs-not-summer",
+        "type": "safety",
+        "title": "This program runs in February 2027, not summer",
+        "body": "Unlike every other program in this set, this one is scheduled for February 4-8, 2027. It does not belong in a strict 'Summer 2027' catalog, but is included here for completeness since it was part of the researched batch.",
+        "sourceCitation": "Program page, Dates & Locations section",
+        "severity": "warning"
+      },
+      {
+        "id": "honors-performance-hs-audition-based",
+        "type": "safety",
+        "title": "Admission requires a formal audition recording and teacher reference",
+        "body": "Unlike Envision's nomination-based NYLF programs, this one requires students to submit an audition recording and a teacher reference as part of admissions -- a meaningfully more selective and audition-dependent process.",
+        "sourceCitation": "Program page, admissions-related content",
+        "severity": "info"
+      },
+      {
+        "id": "honors-performance-hs-incomplete-pricing",
+        "type": "safety",
+        "title": "Pricing was not fully captured in this research pass",
+        "body": "Confirm directly on the program page.",
+        "sourceCitation": "N/A - noted for data-completeness purposes",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-honors-performance-ms-carnegie-hall"
+    },
+    "flags": [
+      {
+        "id": "honors-performance-ms-admissions-unclear",
+        "type": "safety",
+        "title": "It is unclear whether this program requires an audition like its high school sibling",
+        "body": "The high school version of this program requires a formal audition recording and teacher reference. It was not confirmed during this research pass whether the middle school version uses the same audition-based model or Envision's more typical nomination-based admissions. Confirm directly.",
+        "sourceCitation": "N/A - noted for data-completeness purposes",
+        "severity": "info"
+      },
+      {
+        "id": "honors-performance-ms-incomplete-pricing",
+        "type": "safety",
+        "title": "Pricing was not fully captured in this research pass",
+        "body": "Confirm directly on the program page.",
+        "sourceCitation": "N/A - noted for data-completeness purposes",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-vet-academy-horse-ny"
+    },
+    "flags": [
+      {
+        "id": "vet-horse-ny-animal-work-intensity",
+        "type": "safety",
+        "title": "Program involves direct hands-on work with rescued and rehabilitation horses",
+        "body": "Students perform physical exams, injections, and suturing practice on live animals (including rescued horses, donkeys, cows, goats, sheep, and chickens) under veterinary supervision. Families should discuss comfort with direct animal handling and any allergy considerations directly with the provider.",
+        "sourceCitation": "Program page, Why This Program Changes Everything section",
+        "severity": "info"
+      },
+      {
+        "id": "envision-financial-aid-generic-dup",
+        "type": "safety",
+        "title": "Financial aid is described only generically on this page",
+        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
+        "sourceCitation": "Program page, Tuition Resources section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-future-vet-ny"
+    },
+    "flags": [
+      {
+        "id": "future-vet-ny-middle-school-animal-work",
+        "type": "safety",
+        "title": "Middle schoolers perform hands-on animal-care tasks under supervision",
+        "body": "Even at the grades 6-8 level, students perform physical examinations and basic bandaging on live rescued animals under veterinary guidance. Families should confirm their student's comfort with direct animal contact.",
+        "sourceCitation": "Program page, What Makes This Program Special section",
+        "severity": "info"
+      },
+      {
+        "id": "envision-financial-aid-generic-dup",
+        "type": "safety",
+        "title": "Financial aid is described only generically on this page",
+        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
+        "sourceCitation": "Program page, Tuition Resources section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-vet-academy-zoo-ma"
+    },
+    "flags": [
+      {
+        "id": "envision-financial-aid-generic-dup",
+        "type": "safety",
+        "title": "Financial aid is described only generically on this page",
+        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
+        "sourceCitation": "Program page, Tuition Resources section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-future-vet-ma"
+    },
+    "flags": [
+      {
+        "id": "envision-financial-aid-generic-dup",
+        "type": "safety",
+        "title": "Financial aid is described only generically on this page",
+        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
+        "sourceCitation": "Program page, Tuition Resources section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-vet-academy-zoo-tx"
+    },
+    "flags": [
+      {
+        "id": "envision-financial-aid-generic-dup",
+        "type": "safety",
+        "title": "Financial aid is described only generically on this page",
+        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
+        "sourceCitation": "Program page, Tuition Resources section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-future-vet-tx"
+    },
+    "flags": [
+      {
+        "id": "future-vet-tx-larger-group-cap",
+        "type": "safety",
+        "title": "This location uses a 40-student cap rather than the 30-student cap seen elsewhere",
+        "body": "While the 10:1 student-to-veterinarian ratio stays the same, the overall group size cap is higher here (40) than at other Veterinary Academy/Future Vet locations (30), meaning more total students and staff on-site at once.",
+        "sourceCitation": "Program page, Why Parents Choose This Texas Program section",
+        "severity": "info"
+      },
+      {
+        "id": "envision-financial-aid-generic-dup",
+        "type": "safety",
+        "title": "Financial aid is described only generically on this page",
+        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
+        "sourceCitation": "Program page, Tuition Resources section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-future-vet-dc"
+    },
+    "flags": [
+      {
+        "id": "future-vet-dc-blow-dart-activity",
+        "type": "safety",
+        "title": "Curriculum includes a wildlife blow-dart-making lab activity",
+        "body": "Unlike the other Veterinary Academy/Future Vet locations researched, this program's itinerary explicitly includes a lab where students create blow darts under veterinary guidance, described as being for remote animal treatment. Families should ask directly about the specific safety protocols used for this activity given the middle-school age range (grades 6-8).",
+        "sourceCitation": "Program page, Sample Itinerary, Day 4",
+        "severity": "warning"
+      },
+      {
+        "id": "future-vet-dc-looser-ratio",
+        "type": "safety",
+        "title": "This location uses a 15:1 ratio, looser than the 10:1 ratio at other Veterinary Academy/Future Vet locations",
+        "body": "Families should weigh this against their student's needs, especially given the grades 6-8 age range.",
+        "sourceCitation": "Program page, Small Group Learning section",
+        "severity": "info"
+      },
+      {
+        "id": "envision-financial-aid-generic-dup",
+        "type": "safety",
+        "title": "Financial aid is described only generically on this page",
+        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
+        "sourceCitation": "Program page, Tuition Resources section",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-oxbridge-oxford-tradition"
+    },
+    "flags": [
+      {
+        "id": "oxford-tradition-no-transferable-credit",
+        "type": "safety",
+        "title": "No transferable college credit is awarded, only grade reports",
+        "body": "Unlike Envision's NYLF programs (which include George Mason University credit), this Oxbridge Academic Programs offering explicitly does not award transferable university credit -- students instead receive comprehensive grade reports intended for use in college applications. This is a meaningfully different value proposition; families should not assume the standing NYLF college-credit complaint applies here.",
+        "sourceCitation": "Program page FAQ, 'Do I Get a Certificate or University Credit After Completing the Program?'",
+        "severity": "info"
+      },
+      {
+        "id": "oxford-tradition-strict-curfew-discipline",
+        "type": "safety",
+        "title": "Strict nightly curfew and zero-tolerance alcohol/drug policy with immediate expulsion",
+        "body": "Students must check in twice nightly with a Dean and are not permitted to leave campus after check-in; any alcohol or drug violation results in immediate expulsion with no stated appeal process described on the page.",
+        "sourceCitation": "Program page FAQ, security-related questions",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-oxbridge-cambridge-tradition"
+    },
+    "flags": [
+      {
+        "id": "cambridge-tradition-no-transferable-credit",
+        "type": "safety",
+        "title": "No transferable college credit is awarded, only grade reports",
+        "body": "Same structure as The Oxford Tradition: grade reports rather than transferable university credit. The standing NYLF college-credit complaint does not apply to this Oxbridge Academic Programs offering.",
+        "sourceCitation": "Program page FAQ, 'Do I get a certificate or university credit after completing the program?'",
+        "severity": "info"
+      },
+      {
+        "id": "cambridge-tradition-strict-curfew-discipline",
+        "type": "safety",
+        "title": "Strict nightly curfew and zero-tolerance alcohol/drug policy with immediate expulsion",
+        "body": "Same policy as The Oxford Tradition.",
+        "sourceCitation": "Program page FAQ, security-related questions",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-oxbridge-barcelona"
+    },
+    "flags": [
+      {
+        "id": "oxbridge-barcelona-no-sessions",
+        "type": "safety",
+        "title": "No 2027 sessions are currently open for enrollment",
+        "body": "The program page explicitly states no sessions are currently available. Check the program page directly for future availability.",
+        "sourceCitation": "Program page, Session Listing section",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-oxbridge-oxford-experience"
+    },
+    "flags": [
+      {
+        "id": "oxford-experience-no-sessions",
+        "type": "safety",
+        "title": "No 2027 sessions are currently open for enrollment",
+        "body": "The program page explicitly states no sessions are currently available. Check the program page directly for future availability.",
+        "sourceCitation": "Program page, Dates, Locations & Tuition section",
+        "severity": "warning"
+      },
+      {
+        "id": "oxford-experience-younger-age-same-curfew-policy",
+        "type": "safety",
+        "title": "This program serves a younger age group (grades 8-9) under the same curfew/discipline policies as the older-student programs",
+        "body": "The page's FAQ content on security, curfew, and discipline appears to be shared verbatim with the grades 10-12 Oxford Tradition page, without an age-specific supervision adjustment described for the younger grades 8-9 cohort. Families should ask directly whether any additional supervision applies given the younger age range.",
+        "sourceCitation": "Comparison between this program's FAQ and The Oxford Tradition's FAQ content",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-oxbridge-institute-advanced-studies"
+    },
+    "flags": [
+      {
+        "id": "oxbridge-institute-highest-tuition",
+        "type": "safety",
+        "title": "This is the highest-tuition Envision program researched",
+        "body": "At $13,795 for 29 days, this exceeds every other Envision program researched, including the similarly-long Oxford Tradition and Cambridge Tradition 4-week sessions ($13,595).",
+        "sourceCitation": "Program page, Dates, Locations, & Tuition section",
+        "severity": "info"
+      },
+      {
+        "id": "oxbridge-institute-no-transferable-credit",
+        "type": "safety",
+        "title": "No transferable college credit is awarded",
+        "body": "Like the other Oxbridge Academic Programs offerings, students receive a research project for their transcript and grade-report-style documentation rather than transferable university credit.",
+        "sourceCitation": "Program page FAQ, shared with other Oxbridge Academic Programs pages",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "envision-vet-academy-costa-rica"
+    },
+    "flags": [
+      {
+        "id": "vet-costa-rica-incomplete-data",
+        "type": "safety",
+        "title": "Exact dates, length, pricing, and college-credit status were not fully captured in this research pass",
+        "body": "This is the only international Veterinary Academy program in the set (all others are domestic US locations), and offers up to 80 veterinary hours -- more than double the 40 hours offered domestically. Given the international travel component, families should confirm passport/visa requirements, travel arrangements, and full program details directly with the provider before enrolling.",
+        "sourceCitation": "N/A - noted for data-completeness purposes",
+        "severity": "warning"
+      },
+      {
+        "id": "envision-financial-aid-generic-costa-rica",
+        "type": "safety",
+        "title": "Financial aid is described only generically on this page",
+        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
+        "sourceCitation": "Program page, Tuition Resources section",
         "severity": "info"
       }
     ]
