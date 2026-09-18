@@ -36,8 +36,8 @@ const INSPIRED_TOPICS: InspiredTopic[] = [
     bgClass: "bg-[color-mix(in_srgb,#b7a4c4_26%,white)]",
   },
   {
-    label: "Architecture (US)",
-    href: LIST("architecture-us-programs"),
+    label: "Theater (US)",
+    href: LIST("theater-us-programs"),
     typeClass: "text-lg italic tracking-tight",
     rotateClass: "-rotate-2",
     bgClass: "bg-[var(--color-parchment-dark)]",

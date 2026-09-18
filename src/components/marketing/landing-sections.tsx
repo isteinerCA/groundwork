@@ -28,7 +28,7 @@ export function LandingHero() {
           <em className="font-serif italic text-[var(--color-sage)]">sea turtles</em> to{" "}
           <em className="font-serif italic text-[var(--color-sage)]">Kilimanjaro</em>, or{" "}
           <em className="font-serif italic text-[var(--color-sage)]">anything you dream of</em>,
-          then narrow by grade, dates, budget and more. Build a personalized shortlist in about 90
+          then narrow by dates, budget and more. Build a personalized shortlist in about 90
           seconds. <strong className="font-semibold text-[var(--color-sage)]">Free.</strong>
         </p>
         <div className="flex flex-wrap gap-3 pt-1">
