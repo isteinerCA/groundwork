@@ -958,6 +958,34 @@ if (
   failed++;
 }
 
+const hmiRisingDisplay = formatGradeEligibilityDisplay({
+  gradeSource: "mixed",
+  gradeDisplay: "Rising 10th, 11th, and 12th graders",
+  gradeCompletedMin: 9,
+  gradeCompletedMax: 11,
+});
+if (
+  hmiRisingDisplay !==
+  "Rising 10th, 11th, and 12th graders (matches completed grades 9–11 in search filters)"
+) {
+  console.error(`FAIL: rising-grade list should not truncate at the first comma, got "${hmiRisingDisplay}"`);
+  failed++;
+}
+
+const risingWithAgeNote = formatGradeEligibilityDisplay({
+  gradeSource: "mixed",
+  gradeDisplay: "Rising Jr/Sr (16 by Jun 20)",
+  gradeCompletedMin: 10,
+  gradeCompletedMax: 11,
+});
+if (
+  risingWithAgeNote !==
+  "Rising Jr/Sr (matches completed grades 10–11 in search filters)"
+) {
+  console.error(`FAIL: mixed eligibility should strip parentheticals, got "${risingWithAgeNote}"`);
+  failed++;
+}
+
 const broadreachMsGrades = parseGradesFromCsv({
   "Grades Display":
     "Completing grades 6-8 (must be 12 years old by program start)",

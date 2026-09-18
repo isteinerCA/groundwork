@@ -3498,5 +3498,362 @@
         "severity": "info"
       }
     ]
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-tango-14"
+    },
+    "flags": [
+      {
+        "id": "sailcaribbean-financial-aid-unstated",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the pages researched",
+        "body": "No mention of scholarships or need-based aid was found for this program.",
+        "severity": "info",
+        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-alpha-14"
+    },
+    "flags": [
+      {
+        "id": "sailcaribbean-financial-aid-unstated-alpha14",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the pages researched",
+        "body": "No mention of scholarships or need-based aid was found for this program.",
+        "severity": "info",
+        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-bravo-21"
+    },
+    "flags": [
+      {
+        "id": "sailcaribbean-financial-aid-unstated-bravo21",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the pages researched",
+        "body": "No mention of scholarships or need-based aid was found for this program.",
+        "severity": "info",
+        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-charlie-14"
+    },
+    "flags": [
+      {
+        "id": "sailcaribbean-scuba-depth-limits",
+        "type": "safety",
+        "title": "Scuba diving involves real depth limits that scale by age and certification",
+        "body": "Maximum depth is 60ft for standard certified divers and up to 80-90ft for the most advanced students. Divers aged 11 are capped at 40ft and must dive with a PADI professional or certified diver; ages 12-14 may go to 70ft only with additional Junior Advanced Open Water training. Families should weigh their child's comfort and readiness for open-water diving at these depths, and confirm their child's actual certification status meets the Open Water (or equivalent) prerequisite before enrolling.",
+        "sourceCitation": "Sail Caribbean Scuba Diving Camp page, FAQ section",
+        "severity": "info"
+      },
+      {
+        "id": "sailcaribbean-financial-aid-unstated-charlie14",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the pages researched",
+        "body": "No mention of scholarships or need-based aid was found for this program.",
+        "severity": "info",
+        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-charlie-21"
+    },
+    "flags": [
+      {
+        "id": "sailcaribbean-scuba-depth-limits-c21",
+        "type": "safety",
+        "title": "Scuba diving involves real depth limits that scale by age and certification",
+        "body": "Same age-based depth limits as Charlie 14-Day apply (40ft for age 11, 70ft for ages 12-14 with additional training, up to 80-90ft for the most advanced certified students).",
+        "sourceCitation": "Sail Caribbean Scuba Diving Camp page, FAQ section",
+        "severity": "info"
+      },
+      {
+        "id": "sailcaribbean-financial-aid-unstated-charlie21",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the pages researched",
+        "body": "No mention of scholarships or need-based aid was found for this program.",
+        "severity": "info",
+        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-delta-21"
+    },
+    "flags": [
+      {
+        "id": "sailcaribbean-financial-aid-unstated-delta21",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the pages researched",
+        "body": "No mention of scholarships or need-based aid was found for this program.",
+        "severity": "info",
+        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-foxtrot-14"
+    },
+    "flags": [
+      {
+        "id": "sailcaribbean-financial-aid-unstated-foxtrot14",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the pages researched",
+        "body": "No mention of scholarships or need-based aid was found for this program.",
+        "severity": "info",
+        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-foxtrot-21"
+    },
+    "flags": [
+      {
+        "id": "sailcaribbean-financial-aid-unstated-foxtrot21",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the pages researched",
+        "body": "No mention of scholarships or need-based aid was found for this program.",
+        "severity": "info",
+        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-sierra-14"
+    },
+    "flags": [
+      {
+        "id": "sailcaribbean-financial-aid-unstated-sierra14",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the pages researched",
+        "body": "No mention of scholarships or need-based aid was found for this program.",
+        "severity": "info",
+        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-sierra-21"
+    },
+    "flags": [
+      {
+        "id": "sailcaribbean-financial-aid-unstated-sierra21",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the pages researched",
+        "body": "No mention of scholarships or need-based aid was found for this program.",
+        "severity": "info",
+        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-lima-sail"
+    },
+    "flags": [
+      {
+        "id": "sailcaribbean-lima-sail-incomplete-data",
+        "type": "safety",
+        "title": "Program length and detailed curriculum were not confirmed in this research pass",
+        "body": "Unlike the other 11 core programs, Lima Sail's card did not display a day-count (e.g. \"14-Day\" or \"21-Day\"), and no dedicated program page describing its curriculum was found. Confirm exact length, itinerary, and what distinguishes it from Delta (Advanced Sailing) directly with the provider.",
+        "sourceCitation": "Absence of length info on the program card and absence of a dedicated Lima page",
+        "severity": "warning"
+      },
+      {
+        "id": "sailcaribbean-financial-aid-unstated-lima-sail",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the pages researched",
+        "body": "No mention of scholarships or need-based aid was found for this program.",
+        "severity": "info",
+        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-lima-dive"
+    },
+    "flags": [
+      {
+        "id": "sailcaribbean-lima-dive-incomplete-data",
+        "type": "safety",
+        "title": "Program length and detailed curriculum were not confirmed in this research pass",
+        "body": "Like Lima Sail, no day-count or dedicated program page was found for Lima Dive. Given the PADI Divemaster-level prerequisite, this is likely Sail Caribbean's most advanced diving track (possibly leading toward professional dive certifications), but this was not confirmed directly. Confirm exact length, curriculum, and certification outcomes with the provider.",
+        "sourceCitation": "Absence of length info on the program card and absence of a dedicated Lima page",
+        "severity": "warning"
+      },
+      {
+        "id": "sailcaribbean-financial-aid-unstated-lima-dive",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the pages researched",
+        "body": "No mention of scholarships or need-based aid was found for this program.",
+        "severity": "info",
+        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-echo-mate-in-training"
+    },
+    "flags": [
+      {
+        "id": "sailcaribbean-echo-2027-status-unconfirmed",
+        "type": "safety",
+        "title": "This program's 2027 status has not been independently confirmed",
+        "body": "The 12 core teen programs (Tango, Alpha, Bravo, Charlie x2, Delta, Foxtrot x2, Sierra x2, Lima x2) were directly confirmed via user-provided screenshots of the live site to all say \"Accepting 2027 Enrollments.\" Echo Mate-In-Training was not part of that confirmed set -- it was found separately on the Marine Biology program page showing a start date of 5/27/2026. Do not assume this program has moved to a 2027 date; confirm directly before relying on this entry for 2027 planning.",
+        "sourceCitation": "Sail Caribbean Marine Biology Summer Camp page (Echo Mate-In-Training program card) vs. user-provided screenshots confirming 2027 status for the 12 core programs",
+        "severity": "warning"
+      },
+      {
+        "id": "sailcaribbean-echo-limited-detail",
+        "type": "safety",
+        "title": "This program has substantially less detail available than the 12 core teen programs",
+        "body": "No dedicated program page, itinerary, or day-to-day description was found for this college-age internship/crew-training program. It appears to be administered somewhat separately from the main teen program lineup. Confirm program structure, outcomes, and whether it leads to future summer staff employment directly with the provider.",
+        "sourceCitation": "Sail Caribbean Marine Biology Summer Camp page (program card only)",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "northwaters-coed-35wk"
+    },
+    "flags": [
+      {
+        "id": "northwaters-coed-possible-missing-second-session",
+        "type": "safety",
+        "title": "A second 2027 session may exist but is not listed in the Coed program's own table",
+        "body": "The Dates & Rates page's Summer 2027 Calendar footnote explicitly references \"Northwaters/Langskib 2nd Sessions\" beginning July 22 and ending August 14, 2027 -- the same window as Langskib's confirmed second session. However, the Northwaters Coed table itself lists only the single June 26-July 19 session (plus the by-invitation Leadership Program variant). This could mean Coed genuinely runs only one general-enrollment session in 2027 while Langskib runs two, or it could be an editing gap on the page. Families interested in a July/August timeframe should confirm directly with the provider whether a second Coed session is available before assuming none exists.",
+        "sourceCitation": "Northwaters Dates & Rates page: comparison between the Summer 2027 Calendar section and the Northwaters Coed program table",
+        "severity": "warning"
+      },
+      {
+        "id": "northwaters-financial-aid-generic",
+        "type": "safety",
+        "title": "Financial aid is referenced sitewide but not detailed for this specific program",
+        "body": "The site maintains a general 'Scholarship Opportunities' page linked throughout, but no specific award amounts, eligibility criteria, or application process for this program were detailed in the pages researched. Families should request specifics directly.",
+        "sourceCitation": "Sitewide navigation reference to a Scholarship Opportunities page; no program-specific detail found",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "northwaters-leadership-5wk"
+    },
+    "flags": [
+      {
+        "id": "northwaters-leadership-invitation-only",
+        "type": "safety",
+        "title": "This program is by invitation only, not open general enrollment",
+        "body": "Unlike the standard 3.5-week Coed session, this 5-week program is explicitly marked \"Leadership Program by invitation\" on the Dates & Rates page. Families should not assume they can simply enroll; confirm the invitation process and eligibility criteria directly with the provider.",
+        "sourceCitation": "Northwaters Dates & Rates page, footnote on the Northwaters Coed program table",
+        "severity": "warning"
+      },
+      {
+        "id": "northwaters-leadership-age-range-discrepancy",
+        "type": "safety",
+        "title": "Age range shown here (17+) may not match NWL's dedicated Leadership Program page (17-19 per site navigation)",
+        "body": "The site's main navigation lists a separate 'Leadership Program (all gender) Ages 17-19' page, while this entry (found within the Coed program's own table) shows the age range as simply '17+' with no upper bound stated. These may refer to the same program with an upper-bound age cap not reflected in this specific table, or they could be two distinct offerings. Confirm directly which is accurate, and whether an upper age limit applies, before assuming eligibility.",
+        "sourceCitation": "Comparison between the Northwaters Coed program table (Dates & Rates page) and the sitewide navigation menu's separate 'Leadership Program' listing",
+        "severity": "warning"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "northwaters-langskib-2wk-boys"
+    },
+    "flags": [
+      {
+        "id": "langskib-2wk-excalibur-naming-inconsistency",
+        "type": "safety",
+        "title": "Program name inconsistency: \"Langskib\" heading vs. \"Excalibur\" link title",
+        "body": "On the Dates & Rates page, this program is listed under the heading \"Langskib for Boys 2-Weeks: Ages 10-12,\" but the underlying link title attribute reads \"Excalibur for Boys (ages 10-12).\" \"Excalibur for Boys ages 10-12\" also appears as its own distinct program reference elsewhere in this project's prior research on this organization. Families should confirm directly whether this 2-week program is actually branded/administered as \"Excalibur\" (a related but separate program) or is genuinely a shorter Langskib offering, since these may be two different things bundled into one table row.",
+        "sourceCitation": "Northwaters Dates & Rates page: heading text vs. link title attribute for the same table entry",
+        "severity": "warning"
+      },
+      {
+        "id": "northwaters-financial-aid-generic-sibling",
+        "type": "safety",
+        "title": "Financial aid is referenced sitewide but not detailed for this specific program",
+        "body": "The site maintains a general Scholarship Opportunities page linked throughout, but no specific award amounts, eligibility criteria, or application process for this program were detailed in the pages researched.",
+        "sourceCitation": "Sitewide navigation reference to a Scholarship Opportunities page; no program-specific detail found",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "northwaters-langskib-35wk"
+    },
+    "flags": [
+      {
+        "id": "northwaters-financial-aid-generic-sibling",
+        "type": "safety",
+        "title": "Financial aid is referenced sitewide but not detailed for this specific program",
+        "body": "The site maintains a general Scholarship Opportunities page linked throughout, but no specific award amounts, eligibility criteria, or application process for this program were detailed in the pages researched.",
+        "sourceCitation": "Sitewide navigation reference to a Scholarship Opportunities page; no program-specific detail found",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "northwaters-northernlights-2wk"
+    },
+    "flags": [
+      {
+        "id": "northwaters-financial-aid-generic-sibling",
+        "type": "safety",
+        "title": "Financial aid is referenced sitewide but not detailed for this specific program",
+        "body": "The site maintains a general Scholarship Opportunities page linked throughout, but no specific award amounts, eligibility criteria, or application process for this program were detailed in the pages researched.",
+        "sourceCitation": "Sitewide navigation reference to a Scholarship Opportunities page; no program-specific detail found",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "northwaters-youngwomen-35wk"
+    },
+    "flags": [
+      {
+        "id": "youngwomen-single-session-vs-langskib-two",
+        "type": "safety",
+        "title": "Only one 2027 session is listed, unlike the equivalent boys' program (Langskib), which has two",
+        "body": "Langskib (ages 11-17, the closest equivalent boys' program) runs two full 3.5-week sessions in 2027 (June 26-July 19 and July 22-August 14). Northwaters for Young Women (ages 12-17) lists only the later session (July 22-August 14). This may reflect a genuine scheduling/capacity difference or may be a gap on the page. Families interested in an earlier-summer session should confirm directly whether one exists.",
+        "sourceCitation": "Northwaters Dates & Rates page: comparison between the Langskib and Northwaters for Young Women program tables",
+        "severity": "warning"
+      },
+      {
+        "id": "northwaters-financial-aid-generic-sibling",
+        "type": "safety",
+        "title": "Financial aid is referenced sitewide but not detailed for this specific program",
+        "body": "The site maintains a general Scholarship Opportunities page linked throughout, but no specific award amounts, eligibility criteria, or application process for this program were detailed in the pages researched.",
+        "sourceCitation": "Sitewide navigation reference to a Scholarship Opportunities page; no program-specific detail found",
+        "severity": "info"
+      }
+    ]
   }
 ]

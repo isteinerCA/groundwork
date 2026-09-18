@@ -26,6 +26,11 @@ function extractMinimumAgeByStart(gradeDisplay: string): number | null {
   return match ? Number(match[1]) : null;
 }
 
+/** Keep comma-separated rising-grade lists; strip trailing parentheticals. */
+function siteEligibilityPhrase(gradeDisplay: string): string {
+  return gradeDisplay.split("(")[0]?.trim().replace(/[,\s]+$/, "") || gradeDisplay;
+}
+
 /**
  * Parent-facing eligibility line for program cards and compare view.
  * Age-based rows: site ages first, then why the program matched grade filters.
@@ -46,8 +51,7 @@ export function formatGradeEligibilityDisplay(
       return `${ageRange} per program site (matches completed ${gradeMatch} in search filters)`;
     }
 
-    const sitePhrase =
-      program.gradeDisplay.split(/[,(]/)[0]?.trim() ?? program.gradeDisplay;
+    const sitePhrase = siteEligibilityPhrase(program.gradeDisplay);
     const minimumAge = extractMinimumAgeByStart(program.gradeDisplay);
     if (minimumAge != null) {
       const [floorGrade] = ageRangeToGrades(minimumAge, minimumAge);

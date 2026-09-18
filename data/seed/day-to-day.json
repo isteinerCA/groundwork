@@ -3855,5 +3855,214 @@
       "sourceCitation": "Envision Veterinary Academy: Costa Rica program page",
       "verifiedAt": "2026-09-17"
     }
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-tango-14"
+    },
+    "dayToDay": {
+      "notes": "Students live aboard a yacht dedicated specifically to the 11-12 age band, rather than being mixed into the general 12-18 fleet used by Alpha/Bravo/Charlie/Foxtrot/Sierra. Sails in a fleet of 2-6 boats alongside the other programs, so campers have both a close-knit single-boat crew and access to a larger multi-boat social group during shared activities (watersports, beach days, evenings in island towns). Life jackets required for all watersports, small boats, and while under sail/power on the main yacht; harnesses worn during night sails. No sailing experience required; instruction is hands-on and staff-led throughout.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Sail Caribbean Sailing Summer Camp page and dates-costs/browse-adventures program cards",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-alpha-14"
+    },
+    "dayToDay": {
+      "notes": "Standard fleet program: students live aboard a 45-50ft catamaran or monohull, grouped by age and grade, sailing in a fleet of 2-6 boats. A typical day includes sailing between anchorages, watersports (wakeboard, waterski, kneeboard, tube, snorkel, small-boat sailing, paddleboard), and evening social time both within the boat crew and across the fleet. No sailing experience required; optional ASA sailing certification is available as a self-paced 'challenge course' completed alongside regular instruction. Life jackets required for all watersports, small boats, and on the main yacht while under sail or power; harnesses worn during night sails.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Sail Caribbean Sailing Summer Camp and Watersports Summer Camp pages",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-bravo-21"
+    },
+    "dayToDay": {
+      "notes": "Same day-to-day structure as Alpha (fleet-based sailing and watersports, age/grade-grouped boats, no experience required, optional ASA certification), extended to 3 weeks, covering more islands and allowing more in-depth sailing skill progression than the 14-day version.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Sail Caribbean Sailing Summer Camp page",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-charlie-14"
+    },
+    "dayToDay": {
+      "notes": "Students must hold PADI Open Water certification or equivalent to enroll. Diving is conducted from a dedicated fleet of custom Newton dive boats (separate from the sailing yachts, to keep gear and compressors off the sailboats), operated by Sail Caribbean Divers, a PADI 5-Star Instructor Development Dive Center with three land-based locations in the BVI. Dive staff-to-student ratio is 5:1. Maximum dive depth is 60ft for standard certified divers and up to 80-90ft for the most advanced students; divers aged 11 are capped at 40ft and must dive with a PADI professional or certified diver; ages 12-14 with additional Junior Advanced Open Water training may go to 70ft. Equipment is rinsed in freshwater after every dive per PADI-recommended practice. Dive staff regularly drill with VISAR (the BVI's volunteer marine search and rescue organization) and have assisted with real rescues.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Sail Caribbean Scuba Diving Camp page, including FAQ section",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-charlie-21"
+    },
+    "dayToDay": {
+      "notes": "Same structure as Charlie 14-Day (PADI Open Water prerequisite, dedicated dive-boat fleet, 5:1 dive staff ratio, age-based depth limits, VISAR safety partnership), extended to 3 weeks to allow pursuit of additional specialty certifications such as Advanced Open Water, Rescue Diver, and others.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Sail Caribbean Scuba Diving Camp page",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-delta-21"
+    },
+    "dayToDay": {
+      "notes": "Not fully detailed in the pages researched; described only as an 'Advanced Sailing' 3-week program with 'no experience necessary' per the program card, using the same general fleet/live-aboard structure (age/grade-grouped boats, life jacket and harness policies) as the other sailing programs. Specific curriculum differences from Alpha/Bravo were not confirmed in this research pass.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Sail Caribbean dates-costs/browse-adventures program card only; no dedicated Delta program page was found or fetched",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-foxtrot-14"
+    },
+    "dayToDay": {
+      "notes": "Community-service-focused program, structured around education about the 'why' behind conservation and service work rather than just task completion. Activities include CoralWatch reef health check-ups (fish counts and coral health documentation on three endangered BVI reefs), a GreenVI EcoPark visit (2-3 hours, covering composting/recycling/gardening), ongoing on-boat composting, beach/trail/underwater cleanups, a mangrove ecology excursion led by a local naturalist, and cultural exchange activities with local BVI youth including a partnership with KATS (Kids And The Sea), a marine-safety nonprofit. All Sail Caribbean fleets (except Delta) participate in at least a fleet-wide beach cleanup and composting regardless of program; Foxtrot receives substantially more service hours and depth than other programs. Hours are tracked via internal documents; a Sail Caribbean Community Service certificate is issued after program completion. No additional fees for service activities.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Sail Caribbean Community Service Summer Camp page, including FAQ section",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-foxtrot-21"
+    },
+    "dayToDay": {
+      "notes": "Same service projects and structure as Foxtrot 14-Day, extended to 3 weeks with correspondingly more service hours (approximately 20-30 vs. 15-20 on the 14-day version). Foxtrot 21-day students also participate in turtle-tagging (via the BVI Association of Reef Keepers) and Project AWARE's Dive Against Debris, activities not available on the 14-day version.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Sail Caribbean Community Service Summer Camp page",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-sierra-14"
+    },
+    "dayToDay": {
+      "notes": "Dedicated marine-science program. Most days follow the general fleet routine (meals, crew responsibilities, sailing between anchorages) with marine-science lessons and experiences layered in at selected moorings/docks/anchorages. Sierra students get more frequent and focused lessons than the general fleet: fish-identification snorkels, CoralWatch surveys, turtle tagging, plankton tows, and invertebrate hunts, each typically 1-2 hours. Evenings return to normal boat life (cooking, games, sunset swims) with occasional special night lessons such as bioluminescence swims or nocturnal-adaptation dockside walks. Seminars are taught by a mixed team of marine science students, dive professionals, conservationists, and educators.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Sail Caribbean Marine Biology Summer Camp page, including FAQ section",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-sierra-21"
+    },
+    "dayToDay": {
+      "notes": "Same structure as Sierra 14-Day, extended to 3 weeks, providing approximately 10-20 total hours of dedicated marine science instruction and fieldwork (versus less on the 14-day version). Sierra 21-day students also join special cross-boat field trips and sails specifically with other Sierra students, for shared seminars, data collection, and analysis across the islands.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Sail Caribbean Marine Biology Summer Camp page",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-lima-sail"
+    },
+    "dayToDay": {
+      "notes": "Not detailed in the pages researched beyond the program card (HS Seniors/18+, requires prior sailing experience, $8,195-$9,995). No dedicated Lima program page was found; day-to-day structure likely mirrors the general live-aboard fleet model but with a more advanced sailing curriculum given the prior-experience prerequisite. Confirm directly with the provider.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Sail Caribbean dates-costs/browse-adventures program card only",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-lima-dive"
+    },
+    "dayToDay": {
+      "notes": "Not detailed in the pages researched beyond the program card (HS Seniors/18+, requires PADI Divemaster prerequisites, $8,195-$9,995). Given the Divemaster-level prerequisite, this program likely uses Sail Caribbean Divers' dive-boat fleet and professional-level dive staff similar to Charlie, but oriented toward students pursuing their own professional dive certifications rather than recreational certification. No dedicated Lima program page was found; confirm structure directly with the provider.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Sail Caribbean dates-costs/browse-adventures program card only",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "sailcaribbean-echo-mate-in-training"
+    },
+    "dayToDay": {
+      "notes": "Not detailed in the pages researched. Found listed as an 'Internship' category card on the Marine Biology program page (College level, $5,995, start date shown as 5/27/2026) rather than described on its own dedicated page. Likely involves training alongside Sail Caribbean captains and mates as preparation for future summer staff roles, but this was not confirmed directly.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Sail Caribbean Marine Biology Summer Camp page (program card only; no dedicated page found)",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "northwaters-coed-35wk"
+    },
+    "dayToDay": {
+      "notes": "The program begins with a full-group gathering at base camp (an island on a lake in Temagami) where staff and all participants discuss the community they're forming and agree on shared values (honesty, acceptance, trust, patience, humour). The first few days are spent building backcountry travel skills with staff and more experienced participants: portaging, packing a Duluth bag and wannigan, setting up a tent, and paddling technique. Once the group is acquainted, participants are divided into 'sections' of 6-12 participants led by 2-3 staff, formed according to individual needs, skill level, and group dynamics -- these sections then embark on their own canoe-tripping route, ranging from local lake/stream excursions near base camp to more challenging whitewater river expeditions, depending on the section's experience and skill. Leaders draw on training and experience to guide each group through the trip, building trust, communication, and community as the section sets goals, solves problems together, and makes decisions collectively. All sections return to base camp on the same day, arriving within minutes of each other to a staff-and-director welcome on the docks, followed by a shared feast and storytelling in the dining hall. The next day is spent re-integrating into the larger camp community: de-outfitting canoe trip gear, doing 'giveaways,' and a ceremony honoring each participant's accomplishments and contributions. The following day, participants from the brother program Langskib (for boys/young men) arrive by Voyageur canoe for a joint barbecue and celebration, where sections from both programs share stories from the trail.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Northwaters All Gender (Coed) program page (Arriving at Base Camp, The 20-Day Canoe Trip, and Returning Home sections)",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "northwaters-leadership-5wk"
+    },
+    "dayToDay": {
+      "notes": "Not separately detailed in the pages researched. The 5-week Leadership Program session begins the same travel day as the site-wide 'Burke Trip' per the Summer 2027 Calendar, suggesting a shared or overlapping start with other advanced/specialty programming, but the day-to-day structure of the Leadership Program itself (distinct from the standard Coed canoe-tripping structure) was not confirmed in this research pass. NWL's separate dedicated Leadership Program page (northwaters.org/program/leadership-program/) was not fetched and likely contains this detail.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Northwaters Dates & Rates page (Summer 2027 Calendar section) only; dedicated Leadership Program page not fetched in this research pass",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "northwaters-langskib-2wk-boys"
+    },
+    "dayToDay": {
+      "notes": "The program follows Northwaters & Langskib's standard structure, mirroring the day-to-day flow documented for Northwaters Coed: arrival and orientation at the island base camp in Temagami, building of backcountry skills (portaging, packing, tent setup, paddling) over the first few days, division into sections of roughly 6-12 participants led by 2-3 staff for an extended canoe-tripping expedition (route difficulty matched to the section's skill and experience), and a shared return-to-camp celebration at the end. Program-specific day-to-day detail (distinct from the Coed program's own page) was not independently confirmed in this research pass, since a dedicated page for this program was not fetched -- this entry is inferred from the shared organizational structure described on the Northwaters Coed page and the Dates & Rates page, not from this program's own dedicated page.",
+      "sourceType": "third_party_synthesis",
+      "sourceCitation": "Inferred from the Northwaters All Gender (Coed) program page (Arriving at Base Camp / The 20-Day Canoe Trip / Returning Home sections) and the Dates & Rates page; this program's own dedicated page was not fetched in this research pass",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "northwaters-langskib-35wk"
+    },
+    "dayToDay": {
+      "notes": "The program follows Northwaters & Langskib's standard structure, mirroring the day-to-day flow documented for Northwaters Coed: arrival and orientation at the island base camp in Temagami, building of backcountry skills (portaging, packing, tent setup, paddling) over the first few days, division into sections of roughly 6-12 participants led by 2-3 staff for an extended canoe-tripping expedition (route difficulty matched to the section's skill and experience), and a shared return-to-camp celebration at the end. Program-specific day-to-day detail (distinct from the Coed program's own page) was not independently confirmed in this research pass, since a dedicated page for this program was not fetched -- this entry is inferred from the shared organizational structure described on the Northwaters Coed page and the Dates & Rates page, not from this program's own dedicated page.",
+      "sourceType": "third_party_synthesis",
+      "sourceCitation": "Inferred from the Northwaters All Gender (Coed) program page (Arriving at Base Camp / The 20-Day Canoe Trip / Returning Home sections) and the Dates & Rates page; this program's own dedicated page was not fetched in this research pass",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "northwaters-northernlights-2wk"
+    },
+    "dayToDay": {
+      "notes": "The program follows Northwaters & Langskib's standard structure, mirroring the day-to-day flow documented for Northwaters Coed: arrival and orientation at the island base camp in Temagami, building of backcountry skills (portaging, packing, tent setup, paddling) over the first few days, division into sections of roughly 6-12 participants led by 2-3 staff for an extended canoe-tripping expedition (route difficulty matched to the section's skill and experience), and a shared return-to-camp celebration at the end. Program-specific day-to-day detail (distinct from the Coed program's own page) was not independently confirmed in this research pass, since a dedicated page for this program was not fetched -- this entry is inferred from the shared organizational structure described on the Northwaters Coed page and the Dates & Rates page, not from this program's own dedicated page.",
+      "sourceType": "third_party_synthesis",
+      "sourceCitation": "Inferred from the Northwaters All Gender (Coed) program page (Arriving at Base Camp / The 20-Day Canoe Trip / Returning Home sections) and the Dates & Rates page; this program's own dedicated page was not fetched in this research pass",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "northwaters-youngwomen-35wk"
+    },
+    "dayToDay": {
+      "notes": "The program follows Northwaters & Langskib's standard structure, mirroring the day-to-day flow documented for Northwaters Coed: arrival and orientation at the island base camp in Temagami, building of backcountry skills (portaging, packing, tent setup, paddling) over the first few days, division into sections of roughly 6-12 participants led by 2-3 staff for an extended canoe-tripping expedition (route difficulty matched to the section's skill and experience), and a shared return-to-camp celebration at the end. Program-specific day-to-day detail (distinct from the Coed program's own page) was not independently confirmed in this research pass, since a dedicated page for this program was not fetched -- this entry is inferred from the shared organizational structure described on the Northwaters Coed page and the Dates & Rates page, not from this program's own dedicated page.",
+      "sourceType": "third_party_synthesis",
+      "sourceCitation": "Inferred from the Northwaters All Gender (Coed) program page (Arriving at Base Camp / The 20-Day Canoe Trip / Returning Home sections) and the Dates & Rates page; this program's own dedicated page was not fetched in this research pass",
+      "verifiedAt": "2026-09-18"
+    }
   }
 ]
