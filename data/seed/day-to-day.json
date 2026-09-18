@@ -3360,5 +3360,16 @@
       "sourceCitation": "High Mountain Institute Summer Term program page, main description and Why HMI Summer Term stats sections",
       "verifiedAt": "2026-09-17"
     }
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-bolivia-spanish-language-immersion-andes"
+    },
+    "dayToDay": {
+      "notes": "Students travel in a single small group of 12 students and 3 instructors for the full 4 weeks, so this ratio (roughly 4:1) holds throughout every phase of the program rather than varying by activity. Accommodation type shifts by week: several nights in a workshop/orientation setting in Candelaria near Sucre; homestays with a Quechua farming family in Tiquipaya (near Cochabamba) for 1-2 weeks with few amenities described as part of the program's 'Rugged Travel' component; multi-day backcountry camping during both the Cordillera de los Frailes trek (week 2, 4 days) and the student-led Expedition Phase trek (week 4, 5 days, descending from the high Andes into cloud forest); and a final stay at an eco-lodge in Coroico. The program explicitly rates 'Rugged Travel' as a defining component, describing homestays with few amenities, extensive high-altitude walking, and lengthy public transportation travel. In week 4, students take on increased ownership over trip planning and logistics as part of the 'Expedition Phase,' a deliberate hand-off of responsibility rather than staff running the entire itinerary throughout.",
+      "sourceType": "official_policy",
+      "sourceCitation": "Where There Be Dragons Bolivia: Spanish Language Immersion in the Andes program page, Group Size, Program Components, and Itinerary Example sections",
+      "verifiedAt": "2026-09-17"
+    }
   }
 ]

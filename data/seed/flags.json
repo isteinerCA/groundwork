@@ -2471,5 +2471,28 @@
         "severity": "info"
       }
     ]
+  },
+  {
+    "match": {
+      "programGroupId": "wtbd-bolivia-spanish-language-immersion-andes"
+    },
+    "flags": [
+      {
+        "id": "wtbd-bolivia-high-altitude-trekking",
+        "type": "safety",
+        "title": "This program involves extended high-altitude trekking, including a 5-day self-led descent",
+        "body": "Confirm fitness level and altitude-related health considerations directly, given El Alto's elevation and the student-led Expedition Phase trek.",
+        "sourceCitation": "Where There Be Dragons Bolivia: Spanish Language Immersion in the Andes program page, Group Size, Program Components, and Itinerary Example sections",
+        "severity": "warning"
+      },
+      {
+        "id": "wtbd-bolivia-rugged-travel-component",
+        "type": "safety",
+        "title": "The program explicitly rates its 'Rugged Travel' component, describing homestays with few amenities",
+        "body": "More candidly disclosed than similar intensity notes on some other providers' pages.",
+        "sourceCitation": "Where There Be Dragons Bolivia: Spanish Language Immersion in the Andes program page, Program Components section",
+        "severity": "info"
+      }
+    ]
   }
 ]
