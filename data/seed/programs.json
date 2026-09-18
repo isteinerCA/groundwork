@@ -1,6 +1,6 @@
 {
   "verifiedAt": "2026-09-18",
-  "count": 1418,
+  "count": 1424,
   "programs": [
     {
       "id": "prog-1",
@@ -5621,8 +5621,9 @@
       "id": "prog-128",
       "slug": "creative-delegates-league-of-creative-minds-diplomacy-negotiation-international-law-geopolitics-and-",
       "name": "Creative Delegates (League of Creative Minds)",
-      "category": "leadership-gifted",
+      "category": "international-relations",
       "secondaryTags": [
+        "Leadership/Gifted",
         "Writing/Humanities"
       ],
       "trackDetail": "Diplomacy, negotiation, international law, geopolitics, and debate",
@@ -26004,9 +26005,10 @@
       "institution": "CIEE",
       "programGroupId": "ciee-belgium-brussels-diplomacy-government",
       "description": "Visits to the European Parliament (including the Hemicycle) and the Parlamentarium; culminates in a student debate on a current global challenge and a proposed peace-building initiative. Day trip to Dinant and the Caves of Han, plus a hands-on chocolate-making workshop.",
-      "category": "writing-humanities",
+      "category": "international-relations",
       "secondaryTags": [
-        "Cultural Exchange"
+        "Cultural Exchange",
+        "Writing/Humanities"
       ],
       "trackDetail": "Summer Session I",
       "gradeDisplay": "Current grades 9-12",
@@ -28122,9 +28124,10 @@
       "institution": "CIEE",
       "programGroupId": "ciee-estonia-tallinn-diplomacy-government",
       "description": "Visit to the U.S. Embassy in Tallinn with senior diplomatic officials. Negotiation simulations and conflict resolution exercises; students propose a peace-building initiative. Excursions to coastal cities (Pärnu, Kuressaare, or Haapsalu). Cannot accommodate fully Kosher, Halal, or Vegan diets.",
-      "category": "writing-humanities",
+      "category": "international-relations",
       "secondaryTags": [
-        "Cultural Exchange"
+        "Cultural Exchange",
+        "Writing/Humanities"
       ],
       "trackDetail": "Summer Session I",
       "gradeDisplay": "Current grades 9-12",
@@ -28175,9 +28178,10 @@
       "institution": "CIEE",
       "programGroupId": "ciee-estonia-tallinn-diplomacy-government",
       "description": "Second session.",
-      "category": "writing-humanities",
+      "category": "international-relations",
       "secondaryTags": [
-        "Cultural Exchange"
+        "Cultural Exchange",
+        "Writing/Humanities"
       ],
       "trackDetail": "Summer Session II",
       "gradeDisplay": "Current grades 9-12",
@@ -31869,9 +31873,10 @@
       "institution": "CIEE",
       "programGroupId": "ciee-netherlands-amsterdam-diplomacy-government",
       "description": "Day trips to The Hague (meetings with policymakers, a visit to the International Court of Justice) and Brussels (EU decision-making bodies), plus a role-playing simulation at the Parlamentarium in Amsterdam. Students work in groups to debate positions on a current global challenge. Housing is dorm/hostel-style group housing.",
-      "category": "writing-humanities",
+      "category": "international-relations",
       "secondaryTags": [
-        "Cultural Exchange"
+        "Cultural Exchange",
+        "Writing/Humanities"
       ],
       "trackDetail": "Summer Session I",
       "gradeDisplay": "Current grades 9-12",
@@ -31922,9 +31927,10 @@
       "institution": "CIEE",
       "programGroupId": "ciee-netherlands-amsterdam-diplomacy-government",
       "description": "Second session.",
-      "category": "writing-humanities",
+      "category": "international-relations",
       "secondaryTags": [
-        "Cultural Exchange"
+        "Cultural Exchange",
+        "Writing/Humanities"
       ],
       "trackDetail": "Summer Session II",
       "gradeDisplay": "Current grades 9-12",
@@ -33298,9 +33304,10 @@
       "institution": "CIEE",
       "programGroupId": "ciee-south-korea-seoul-taipei-diplomacy-government-east-asia",
       "description": "Multi-destination program starting in Seoul (debates on current East Asian issues, a visit to the DMZ) and culminating in a final mock negotiation in Taipei; overnight excursion to Hsinchu, Chiayi, and Kaohsiung (including the TSMC Museum of Innovation) via Taiwan's high-speed rail. Housing is group housing. Only the CIEE Academic Merit Award is available for this program -- the need-based Global Navigator Scholarship (GNS) is not. South Korea maintains strict regulations on medications brought into the country; CIEE encourages families to consult their doctor and confirm the student's medications are legal and available there.",
-      "category": "writing-humanities",
+      "category": "international-relations",
       "secondaryTags": [
-        "Cultural Exchange"
+        "Cultural Exchange",
+        "Writing/Humanities"
       ],
       "trackDetail": "Summer Blocks IV-V",
       "gradeDisplay": "Current grades 9-12",
@@ -76988,8 +76995,10 @@
       "institution": "Envision by WorldStrides",
       "programGroupId": "envision-nylf-national-security",
       "description": "8-day pre-college program (NYLF series) exploring diplomacy, intelligence, cybersecurity, and defense, held exclusively at Georgetown University in Washington, D.C. See flags file for the standing complaint about George Mason credit delivery timing, which applies to this program.",
-      "category": "leadership-gifted",
-      "secondaryTags": [],
+      "category": "international-relations",
+      "secondaryTags": [
+        "Leadership/Gifted"
+      ],
       "trackDetail": "Residential (Georgetown University, 2027) — Jun 26–Jul 3",
       "gradeDisplay": "Grades 9-12",
       "gradeCompletedMin": 9,
@@ -77064,8 +77073,10 @@
       "institution": "Envision by WorldStrides",
       "programGroupId": "envision-nylf-national-security",
       "description": "8-day pre-college program (NYLF series) exploring diplomacy, intelligence, cybersecurity, and defense, held exclusively at Georgetown University in Washington, D.C. See flags file for the standing complaint about George Mason credit delivery timing, which applies to this program.",
-      "category": "leadership-gifted",
-      "secondaryTags": [],
+      "category": "international-relations",
+      "secondaryTags": [
+        "Leadership/Gifted"
+      ],
       "trackDetail": "Residential (Georgetown University, 2027) — Jul 6–Jul 13",
       "gradeDisplay": "Grades 9-12",
       "gradeCompletedMin": 9,
@@ -79819,6 +79830,434 @@
         "notes": "The program follows Northwaters & Langskib's standard structure, mirroring the day-to-day flow documented for Northwaters Coed: arrival and orientation at the island base camp in Temagami, building of backcountry skills (portaging, packing, tent setup, paddling) over the first few days, division into sections of roughly 6-12 participants led by 2-3 staff for an extended canoe-tripping expedition (route difficulty matched to the section's skill and experience), and a shared return-to-camp celebration at the end. Program-specific day-to-day detail (distinct from the Coed program's own page) was not independently confirmed in this research pass, since a dedicated page for this program was not fetched -- this entry is inferred from the shared organizational structure described on the Northwaters Coed page and the Dates & Rates page, not from this program's own dedicated page.",
         "sourceType": "third_party_synthesis",
         "sourceCitation": "Inferred from the Northwaters All Gender (Coed) program page (Arriving at Base Camp / The 20-Day Canoe Trip / Returning Home sections) and the Dates & Rates page; this program's own dedicated page was not fetched in this research pass",
+        "verifiedAt": "2026-09-18"
+      }
+    },
+    {
+      "id": "prog-1493",
+      "slug": "world-class-programs-spain-seville-summer-2027-2-week-program",
+      "name": "World Class Programs - Spain (Seville)",
+      "institution": "World Class Programs",
+      "programGroupId": "worldclass-spain-seville",
+      "description": "A 2-week language-immersion and cultural-studies program based in Seville, with weekend day trips to Madrid, Cordoba, and Gibraltar. Major class options: Spanish History, Fine Art & Drawing, Spanish Language (Beginner or Advanced/Immersion). Minor options: Philosophy, Photography, Spanish Cuisine. Includes a Traditional (Flamenco) Dance workshop. Students live in staff-controlled apartments/hotels (not homestays), typically 2-4 students per bedroom, with staff housed separately in the same building. A dedicated World Class Programs Security Officer, on-call 24/7, is provided when a program is large enough to warrant one (not guaranteed on smaller programs). Academic structure: each student picks a major (meets every weekday morning) and a minor/elective (meets three afternoons a week: Monday, Wednesday, Friday), plus weekend day-trips to other cities in the region. Housing here is specifically described as 2-3 bedroom apartments with 2 students sharing each bedroom, slightly more specific than the 2-4-per-bedroom figure given on the other program pages.",
+      "category": "cultural-exchange",
+      "secondaryTags": [
+        "Arts"
+      ],
+      "trackDetail": "Summer 2027 (2-Week Program)",
+      "gradeDisplay": "Grades 9-12, no language prerequisite",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "May 30 - June 12, 2027",
+      "dateStart": "2027-05-30",
+      "dateEnd": "2027-06-12",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Seville, Spain",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$5,995 tuition",
+      "priceMin": 5995,
+      "priceMax": 5995,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.learnworldclass.com/programs/spain",
+      "dataVerifiedAt": "2026-09-18",
+      "flags": [
+        {
+          "id": "worldclass-security-officer-conditional",
+          "type": "safety",
+          "title": "The 24/7 on-site Security Officer is conditional on program size",
+          "body": "The page states a dedicated Security Officer is provided \"if a program is large enough\" -- this is not guaranteed for smaller enrollment groups. Families should ask directly what the minimum enrollment threshold is and what security staffing looks like if that threshold isn't met.",
+          "sourceCitation": "World Class Programs Spain program page",
+          "severity": "info"
+        },
+        {
+          "id": "worldclass-financial-aid-unstated-spain",
+          "type": "safety",
+          "title": "Financial aid availability is not stated on the program page",
+          "body": "No mention of scholarships or need-based aid was found.",
+          "sourceCitation": "Absence of financial aid information on the page researched",
+          "severity": "info"
+        }
+      ],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Students live in upscale student apartments in central Seville, controlled by World Class Programs and shared only with other World Class students (no host families). Apartments have living rooms, kitchens, bathrooms, and 2-3 bedrooms, each shared by two students; staff are housed in a separate apartment down the hall from students. A dedicated Security Officer stays in the building, on-call to students 24/7. Weekday structure: major class (Spanish History, Fine Art & Drawing, or Spanish Language at Beginner or Advanced/Immersion level) meets every weekday morning; minor/elective class meets three afternoons a week (Monday, Wednesday, Friday). On non-minor-class afternoons, students join a group activity. Weekends are used for day trips to other Spanish cities (Madrid, Cordoba, Gibraltar). Free time is available for the city's cafe scene and shopping districts \"within safety guidelines.\"",
+        "sourceType": "official_policy",
+        "sourceCitation": "World Class Programs Spain program page",
+        "verifiedAt": "2026-09-18"
+      }
+    },
+    {
+      "id": "prog-1494",
+      "slug": "world-class-programs-greece-italy-western-civilization-summer-2027-3-week-program",
+      "name": "World Class Programs - Greece & Italy: Western Civilization",
+      "institution": "World Class Programs",
+      "programGroupId": "worldclass-greece-italy-western-civ",
+      "description": "A 3-week classical-history and archaeology program spanning the Greek Isles and southern Italy, with planned visits (subject to change year to year) to Santorini, Mykonos, Crete, the Ruins of Ephesus, the Amalfi Coast/Positano, and Pompeii. Major class options: Classical History & Archaeology, Fine Art & Drawing, Western Religion & Traditions. Minor options: Western Philosophy, Digital Photography, Mediterranean Cuisine. Students live in staff-controlled apartments/hotels (not homestays), typically 2-4 students per bedroom, with staff housed separately in the same building. A dedicated World Class Programs Security Officer, on-call 24/7, is provided when a program is large enough to warrant one (not guaranteed on smaller programs). Academic structure: each student picks a major (meets every weekday morning) and a minor/elective (meets three afternoons a week: Monday, Wednesday, Friday), plus weekend day-trips to other cities in the region. This is Worldwide Class's most expensive program at $7,995 (matching Greece to the top price tier alongside the 3-week Japan option) and the only one combining two countries in a single program.",
+      "category": "cultural-exchange",
+      "secondaryTags": [
+        "Arts"
+      ],
+      "trackDetail": "Summer 2027 (3-Week Program)",
+      "gradeDisplay": "Grades 9-12, no language prerequisite",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "June 13 - July 3, 2027",
+      "dateStart": "2027-06-13",
+      "dateEnd": "2027-07-03",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Greek Isles and Southern Italy (exact home base city not stated on this page)",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$7,995 tuition",
+      "priceMin": 7995,
+      "priceMax": 7995,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.learnworldclass.com/programs/greece",
+      "dataVerifiedAt": "2026-09-18",
+      "flags": [
+        {
+          "id": "worldclass-greece-italy-naming-confusion",
+          "type": "safety",
+          "title": "This program's actual name and scope differ from its navigation label",
+          "body": "Listed simply as \"Greece\" in the site's navigation and URL (/programs/greece), but the program is actually titled \"Greece & Italy: Western Civilization\" and spans both countries. It is entirely separate from the standalone \"Italy\" program (Florence-based, /programs/italy). Families comparing Italy-related options should be careful not to conflate the two.",
+          "sourceCitation": "Comparison between the site navigation/URL and the program's own on-page title",
+          "severity": "warning"
+        },
+        {
+          "id": "worldclass-security-officer-conditional-greece",
+          "type": "safety",
+          "title": "The 24/7 on-site Security Officer is conditional on program size",
+          "body": "Same conditional staffing language as the other World Class programs: a Security Officer is provided \"if a program is large enough.\"",
+          "sourceCitation": "World Class Programs Greece program page",
+          "severity": "info"
+        },
+        {
+          "id": "worldclass-financial-aid-unstated-greece",
+          "type": "safety",
+          "title": "Financial aid availability is not stated on the program page",
+          "body": "No mention of scholarships or need-based aid was found.",
+          "sourceCitation": "Absence of financial aid information on the page researched",
+          "severity": "info"
+        }
+      ],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Students live with other World Class Programs students in shared accommodations within walking distance of the host city's major landmarks -- described explicitly as a \"pre-college dorm life experience,\" with no homestays. Accommodations include washing machines and air conditioning; staff are housed separately in the same building, with a dedicated Security Officer on-call 24/7 when the program is large enough. Weekday structure: major class (Classical History & Archaeology, Fine Art & Drawing, or Western Religion & Traditions) meets every weekday morning; minor class (Western Philosophy, Digital Photography, or Mediterranean Cuisine) meets three afternoons a week, with a group activity on the other afternoons. Day trips throughout the 3 weeks take students to sites across Greece and southern Italy (planned visits, subject to change year to year, have included Santorini, Mykonos, Crete, the Ruins of Ephesus, the Amalfi Coast/Positano, and Pompeii) rather than being confined to weekends only, since this program spans two countries.",
+        "sourceType": "official_policy",
+        "sourceCitation": "World Class Programs Greece (Greece & Italy: Western Civilization) program page",
+        "verifiedAt": "2026-09-18"
+      }
+    },
+    {
+      "id": "prog-1495",
+      "slug": "world-class-programs-japan-osaka-summer-2027-2-week-program",
+      "name": "World Class Programs - Japan (Osaka)",
+      "institution": "World Class Programs",
+      "programGroupId": "worldclass-japan-osaka",
+      "description": "A 2-week program based in Osaka, with weekly excursions to Tokyo and Kyoto. Major class options: Japanese History, Japanese Language, Manga Creation. Minor options: Philosophy, Photography, Japanese Cuisine. Students live in staff-controlled apartments/hotels (not homestays), typically 2-4 students per bedroom, with staff housed separately in the same building. A dedicated World Class Programs Security Officer, on-call 24/7, is provided when a program is large enough to warrant one (not guaranteed on smaller programs). Academic structure: each student picks a major (meets every weekday morning) and a minor/elective (meets three afternoons a week: Monday, Wednesday, Friday), plus weekend day-trips to other cities in the region.",
+      "category": "cultural-exchange",
+      "secondaryTags": [
+        "Arts"
+      ],
+      "trackDetail": "Summer 2027 (2-Week Program)",
+      "gradeDisplay": "Grades 9-12, no language prerequisite",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "August 1 - August 13, 2027",
+      "dateStart": "2027-08-01",
+      "dateEnd": "2027-08-13",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Osaka, Japan",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$5,495 tuition",
+      "priceMin": 5495,
+      "priceMax": 5495,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.learnworldclass.com/programs/japan",
+      "dataVerifiedAt": "2026-09-18",
+      "flags": [
+        {
+          "id": "worldclass-security-officer-conditional-japan",
+          "type": "safety",
+          "title": "The 24/7 on-site Security Officer is conditional on program size",
+          "body": "Same conditional staffing language as the other World Class programs.",
+          "sourceCitation": "World Class Programs Japan program page",
+          "severity": "info"
+        },
+        {
+          "id": "worldclass-financial-aid-unstated-japan",
+          "type": "safety",
+          "title": "Financial aid availability is not stated on the program page",
+          "body": "No mention of scholarships or need-based aid was found.",
+          "sourceCitation": "Absence of financial aid information on the page researched",
+          "severity": "info"
+        }
+      ],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Students live in upscale student apartments or hotels in central Osaka, controlled by World Class Programs and shared only with other World Class students. Each bedroom is shared by 2-4 students, with staff housed in a fully separate accommodation in the same location; a dedicated Security Officer stays on-call 24/7 when the program is large enough. Weekday structure: major class (Japanese History, Japanese Language, or Manga Creation) meets every weekday morning; minor class (Philosophy, Photography, or Japanese Cuisine) meets three afternoons a week. Students take weekly excursions to other Japanese cities, including Tokyo and Kyoto.",
+        "sourceType": "official_policy",
+        "sourceCitation": "World Class Programs Japan program page",
+        "verifiedAt": "2026-09-18"
+      }
+    },
+    {
+      "id": "prog-1496",
+      "slug": "world-class-programs-japan-osaka-summer-2027-3-week-program",
+      "name": "World Class Programs - Japan (Osaka)",
+      "institution": "World Class Programs",
+      "programGroupId": "worldclass-japan-osaka",
+      "description": "The 3-week version of the Osaka program, same curriculum and excursions (Tokyo, Kyoto) as the 2-week option, with more time in-country. Students live in staff-controlled apartments/hotels (not homestays), typically 2-4 students per bedroom, with staff housed separately in the same building. A dedicated World Class Programs Security Officer, on-call 24/7, is provided when a program is large enough to warrant one (not guaranteed on smaller programs). Academic structure: each student picks a major (meets every weekday morning) and a minor/elective (meets three afternoons a week: Monday, Wednesday, Friday), plus weekend day-trips to other cities in the region.",
+      "category": "cultural-exchange",
+      "secondaryTags": [
+        "Arts"
+      ],
+      "trackDetail": "Summer 2027 (3-Week Program)",
+      "gradeDisplay": "Grades 9-12, no language prerequisite",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "August 1 - August 21, 2027",
+      "dateStart": "2027-08-01",
+      "dateEnd": "2027-08-21",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Osaka, Japan",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$7,495 tuition",
+      "priceMin": 7495,
+      "priceMax": 7495,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.learnworldclass.com/programs/japan",
+      "dataVerifiedAt": "2026-09-18",
+      "flags": [
+        {
+          "id": "worldclass-security-officer-conditional-japan",
+          "type": "safety",
+          "title": "The 24/7 on-site Security Officer is conditional on program size",
+          "body": "Same conditional staffing language as the other World Class programs.",
+          "sourceCitation": "World Class Programs Japan program page",
+          "severity": "info"
+        },
+        {
+          "id": "worldclass-financial-aid-unstated-japan",
+          "type": "safety",
+          "title": "Financial aid availability is not stated on the program page",
+          "body": "No mention of scholarships or need-based aid was found.",
+          "sourceCitation": "Absence of financial aid information on the page researched",
+          "severity": "info"
+        }
+      ],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Students live in upscale student apartments or hotels in central Osaka, controlled by World Class Programs and shared only with other World Class students. Each bedroom is shared by 2-4 students, with staff housed in a fully separate accommodation in the same location; a dedicated Security Officer stays on-call 24/7 when the program is large enough. Weekday structure: major class (Japanese History, Japanese Language, or Manga Creation) meets every weekday morning; minor class (Philosophy, Photography, or Japanese Cuisine) meets three afternoons a week. Students take weekly excursions to other Japanese cities, including Tokyo and Kyoto.",
+        "sourceType": "official_policy",
+        "sourceCitation": "World Class Programs Japan program page",
+        "verifiedAt": "2026-09-18"
+      }
+    },
+    {
+      "id": "prog-1498",
+      "slug": "world-class-programs-italy-florence-summer-2027-2-week-program",
+      "name": "World Class Programs - Italy (Florence)",
+      "institution": "World Class Programs",
+      "programGroupId": "worldclass-italy-florence",
+      "description": "A 2-week art-history and cultural-immersion program based in Florence, with weekend day trips to Cinque Terre, Siena, San Gimignano, Pisa, and Venice. Major class options: Art History, Italian Language, Fine Art & Drawing. Minor options: Philosophy, Photography, Tuscan Cuisine. Includes a Fashion Design workshop. Students live in staff-controlled apartments/hotels (not homestays), typically 2-4 students per bedroom, with staff housed separately in the same building. A dedicated World Class Programs Security Officer, on-call 24/7, is provided when a program is large enough to warrant one (not guaranteed on smaller programs). Academic structure: each student picks a major (meets every weekday morning) and a minor/elective (meets three afternoons a week: Monday, Wednesday, Friday), plus weekend day-trips to other cities in the region.",
+      "category": "cultural-exchange",
+      "secondaryTags": [
+        "Arts"
+      ],
+      "trackDetail": "Summer 2027 (2-Week Program)",
+      "gradeDisplay": "Grades 9-12, no language prerequisite",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "2 weeks",
+      "lengthMinDays": 14,
+      "lengthMaxDays": 14,
+      "datesDisplay": "July 4 - July 16, 2027",
+      "dateStart": "2027-07-04",
+      "dateEnd": "2027-07-16",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Florence, Italy",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$5,495 tuition",
+      "priceMin": 5495,
+      "priceMax": 5495,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.learnworldclass.com/programs/italy",
+      "dataVerifiedAt": "2026-09-18",
+      "flags": [
+        {
+          "id": "worldclass-security-officer-conditional-italy",
+          "type": "safety",
+          "title": "The 24/7 on-site Security Officer is conditional on program size",
+          "body": "Same conditional staffing language as the other World Class programs.",
+          "sourceCitation": "World Class Programs Italy program page",
+          "severity": "info"
+        },
+        {
+          "id": "worldclass-financial-aid-unstated-italy",
+          "type": "safety",
+          "title": "Financial aid availability is not stated on the program page",
+          "body": "No mention of scholarships or need-based aid was found.",
+          "sourceCitation": "Absence of financial aid information on the page researched",
+          "severity": "info"
+        }
+      ],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Students live in apartments or hotels in central Florence, shared only with other World Class Programs students (no homestays), described as giving a \"pre-college dorm life experience.\" Apartments include kitchens, washing machines, and air conditioning; staff are housed separately in the same building, with a dedicated Security Officer on-call 24/7 when the program is large enough. Weekday structure: major class (Art History, Italian Language, or Fine Art & Drawing) meets every weekday morning; minor class (Philosophy, Photography, or Tuscan Cuisine) meets three afternoons a week, with a group activity on the other afternoons. Weekend day trips visit other Tuscan and regional destinations (Cinque Terre, Siena, San Gimignano, Pisa, Venice).",
+        "sourceType": "official_policy",
+        "sourceCitation": "World Class Programs Italy program page",
+        "verifiedAt": "2026-09-18"
+      }
+    },
+    {
+      "id": "prog-1499",
+      "slug": "world-class-programs-italy-florence-summer-2027-3-week-program",
+      "name": "World Class Programs - Italy (Florence)",
+      "institution": "World Class Programs",
+      "programGroupId": "worldclass-italy-florence",
+      "description": "The 3-week version of the Florence program, same curriculum and excursions as the 2-week option, with more time in-country. Students live in staff-controlled apartments/hotels (not homestays), typically 2-4 students per bedroom, with staff housed separately in the same building. A dedicated World Class Programs Security Officer, on-call 24/7, is provided when a program is large enough to warrant one (not guaranteed on smaller programs). Academic structure: each student picks a major (meets every weekday morning) and a minor/elective (meets three afternoons a week: Monday, Wednesday, Friday), plus weekend day-trips to other cities in the region.",
+      "category": "cultural-exchange",
+      "secondaryTags": [
+        "Arts"
+      ],
+      "trackDetail": "Summer 2027 (3-Week Program)",
+      "gradeDisplay": "Grades 9-12, no language prerequisite",
+      "gradeCompletedMin": 9,
+      "gradeCompletedMax": 12,
+      "gradeSource": "grade",
+      "admissionType": "first_come",
+      "admissionDisplay": "First-Come",
+      "formatDisplay": "Residential",
+      "formatTags": [
+        "residential"
+      ],
+      "durationBucket": "two_to_four_weeks",
+      "lengthDisplay": "3 weeks",
+      "lengthMinDays": 21,
+      "lengthMaxDays": 21,
+      "datesDisplay": "July 4 - July 24, 2027",
+      "dateStart": "2027-07-04",
+      "dateEnd": "2027-07-24",
+      "datesParseQuality": "exact",
+      "seasonYear": 2027,
+      "reviewStatus": "verified",
+      "locationDisplay": "Florence, Italy",
+      "isInternational": true,
+      "creditDisplay": "No",
+      "hasCollegeCredit": false,
+      "priceDisplay": "$7,495 tuition",
+      "priceMin": 7495,
+      "priceMax": 7495,
+      "priceUnknown": false,
+      "fullyFunded": false,
+      "financialAidAvailable": false,
+      "websiteUrl": "https://www.learnworldclass.com/programs/italy",
+      "dataVerifiedAt": "2026-09-18",
+      "flags": [
+        {
+          "id": "worldclass-security-officer-conditional-italy",
+          "type": "safety",
+          "title": "The 24/7 on-site Security Officer is conditional on program size",
+          "body": "Same conditional staffing language as the other World Class programs.",
+          "sourceCitation": "World Class Programs Italy program page",
+          "severity": "info"
+        },
+        {
+          "id": "worldclass-financial-aid-unstated-italy",
+          "type": "safety",
+          "title": "Financial aid availability is not stated on the program page",
+          "body": "No mention of scholarships or need-based aid was found.",
+          "sourceCitation": "Absence of financial aid information on the page researched",
+          "severity": "info"
+        }
+      ],
+      "participantGender": "coed",
+      "dayToDay": {
+        "notes": "Students live in apartments or hotels in central Florence, shared only with other World Class Programs students (no homestays), described as giving a \"pre-college dorm life experience.\" Apartments include kitchens, washing machines, and air conditioning; staff are housed separately in the same building, with a dedicated Security Officer on-call 24/7 when the program is large enough. Weekday structure: major class (Art History, Italian Language, or Fine Art & Drawing) meets every weekday morning; minor class (Philosophy, Photography, or Tuscan Cuisine) meets three afternoons a week, with a group activity on the other afternoons. Weekend day trips visit other Tuscan and regional destinations (Cinque Terre, Siena, San Gimignano, Pisa, Venice).",
+        "sourceType": "official_policy",
+        "sourceCitation": "World Class Programs Italy program page",
         "verifiedAt": "2026-09-18"
       }
     }

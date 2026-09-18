@@ -4064,5 +4064,60 @@
       "sourceCitation": "Inferred from the Northwaters All Gender (Coed) program page (Arriving at Base Camp / The 20-Day Canoe Trip / Returning Home sections) and the Dates & Rates page; this program's own dedicated page was not fetched in this research pass",
       "verifiedAt": "2026-09-18"
     }
+  },
+  {
+    "match": {
+      "programGroupId": "worldclass-spain-seville"
+    },
+    "dayToDay": {
+      "notes": "Students live in upscale student apartments in central Seville, controlled by World Class Programs and shared only with other World Class students (no host families). Apartments have living rooms, kitchens, bathrooms, and 2-3 bedrooms, each shared by two students; staff are housed in a separate apartment down the hall from students. A dedicated Security Officer stays in the building, on-call to students 24/7. Weekday structure: major class (Spanish History, Fine Art & Drawing, or Spanish Language at Beginner or Advanced/Immersion level) meets every weekday morning; minor/elective class meets three afternoons a week (Monday, Wednesday, Friday). On non-minor-class afternoons, students join a group activity. Weekends are used for day trips to other Spanish cities (Madrid, Cordoba, Gibraltar). Free time is available for the city's cafe scene and shopping districts \"within safety guidelines.\"",
+      "sourceType": "official_policy",
+      "sourceCitation": "World Class Programs Spain program page",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "worldclass-greece-italy-western-civ"
+    },
+    "dayToDay": {
+      "notes": "Students live with other World Class Programs students in shared accommodations within walking distance of the host city's major landmarks -- described explicitly as a \"pre-college dorm life experience,\" with no homestays. Accommodations include washing machines and air conditioning; staff are housed separately in the same building, with a dedicated Security Officer on-call 24/7 when the program is large enough. Weekday structure: major class (Classical History & Archaeology, Fine Art & Drawing, or Western Religion & Traditions) meets every weekday morning; minor class (Western Philosophy, Digital Photography, or Mediterranean Cuisine) meets three afternoons a week, with a group activity on the other afternoons. Day trips throughout the 3 weeks take students to sites across Greece and southern Italy (planned visits, subject to change year to year, have included Santorini, Mykonos, Crete, the Ruins of Ephesus, the Amalfi Coast/Positano, and Pompeii) rather than being confined to weekends only, since this program spans two countries.",
+      "sourceType": "official_policy",
+      "sourceCitation": "World Class Programs Greece (Greece & Italy: Western Civilization) program page",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "worldclass-japan-osaka"
+    },
+    "dayToDay": {
+      "notes": "Students live in upscale student apartments or hotels in central Osaka, controlled by World Class Programs and shared only with other World Class students. Each bedroom is shared by 2-4 students, with staff housed in a fully separate accommodation in the same location; a dedicated Security Officer stays on-call 24/7 when the program is large enough. Weekday structure: major class (Japanese History, Japanese Language, or Manga Creation) meets every weekday morning; minor class (Philosophy, Photography, or Japanese Cuisine) meets three afternoons a week. Students take weekly excursions to other Japanese cities, including Tokyo and Kyoto.",
+      "sourceType": "official_policy",
+      "sourceCitation": "World Class Programs Japan program page",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "worldclass-france-rouen"
+    },
+    "dayToDay": {
+      "notes": "Students live in upscale student apartments or hotels in central Rouen, controlled by World Class Programs and shared only with other World Class students. Each bedroom is shared by 2-4 students, with staff housed in a fully separate accommodation in the same location; a dedicated Security Officer stays on-call 24/7 when the program is large enough. Weekday structure: major class (Fine Art & Drawing, European History, or French Language at Beginner or Advanced/Immersion level) meets every weekday morning; minor class (Philosophy, Art History, Photography, or French Cuisine) meets three afternoons a week. Weekend day trips visit smaller French cities (Chartres, Versailles, Caen, Bayeux), and the program closes with an extended stay in Paris during its final days.",
+      "sourceType": "official_policy",
+      "sourceCitation": "World Class Programs France program page",
+      "verifiedAt": "2026-09-18"
+    }
+  },
+  {
+    "match": {
+      "programGroupId": "worldclass-italy-florence"
+    },
+    "dayToDay": {
+      "notes": "Students live in apartments or hotels in central Florence, shared only with other World Class Programs students (no homestays), described as giving a \"pre-college dorm life experience.\" Apartments include kitchens, washing machines, and air conditioning; staff are housed separately in the same building, with a dedicated Security Officer on-call 24/7 when the program is large enough. Weekday structure: major class (Art History, Italian Language, or Fine Art & Drawing) meets every weekday morning; minor class (Philosophy, Photography, or Tuscan Cuisine) meets three afternoons a week, with a group activity on the other afternoons. Weekend day trips visit other Tuscan and regional destinations (Cinque Terre, Siena, San Gimignano, Pisa, Venice).",
+      "sourceType": "official_policy",
+      "sourceCitation": "World Class Programs Italy program page",
+      "verifiedAt": "2026-09-18"
+    }
   }
 ]

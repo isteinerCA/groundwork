@@ -3855,5 +3855,136 @@
         "severity": "info"
       }
     ]
+  },
+  {
+    "match": {
+      "programGroupId": "worldclass-spain-seville"
+    },
+    "flags": [
+      {
+        "id": "worldclass-security-officer-conditional",
+        "type": "safety",
+        "title": "The 24/7 on-site Security Officer is conditional on program size",
+        "body": "The page states a dedicated Security Officer is provided \"if a program is large enough\" -- this is not guaranteed for smaller enrollment groups. Families should ask directly what the minimum enrollment threshold is and what security staffing looks like if that threshold isn't met.",
+        "sourceCitation": "World Class Programs Spain program page",
+        "severity": "info"
+      },
+      {
+        "id": "worldclass-financial-aid-unstated-spain",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the program page",
+        "body": "No mention of scholarships or need-based aid was found.",
+        "sourceCitation": "Absence of financial aid information on the page researched",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "worldclass-greece-italy-western-civ"
+    },
+    "flags": [
+      {
+        "id": "worldclass-greece-italy-naming-confusion",
+        "type": "safety",
+        "title": "This program's actual name and scope differ from its navigation label",
+        "body": "Listed simply as \"Greece\" in the site's navigation and URL (/programs/greece), but the program is actually titled \"Greece & Italy: Western Civilization\" and spans both countries. It is entirely separate from the standalone \"Italy\" program (Florence-based, /programs/italy). Families comparing Italy-related options should be careful not to conflate the two.",
+        "sourceCitation": "Comparison between the site navigation/URL and the program's own on-page title",
+        "severity": "warning"
+      },
+      {
+        "id": "worldclass-security-officer-conditional-greece",
+        "type": "safety",
+        "title": "The 24/7 on-site Security Officer is conditional on program size",
+        "body": "Same conditional staffing language as the other World Class programs: a Security Officer is provided \"if a program is large enough.\"",
+        "sourceCitation": "World Class Programs Greece program page",
+        "severity": "info"
+      },
+      {
+        "id": "worldclass-financial-aid-unstated-greece",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the program page",
+        "body": "No mention of scholarships or need-based aid was found.",
+        "sourceCitation": "Absence of financial aid information on the page researched",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "worldclass-japan-osaka"
+    },
+    "flags": [
+      {
+        "id": "worldclass-security-officer-conditional-japan",
+        "type": "safety",
+        "title": "The 24/7 on-site Security Officer is conditional on program size",
+        "body": "Same conditional staffing language as the other World Class programs.",
+        "sourceCitation": "World Class Programs Japan program page",
+        "severity": "info"
+      },
+      {
+        "id": "worldclass-financial-aid-unstated-japan",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the program page",
+        "body": "No mention of scholarships or need-based aid was found.",
+        "sourceCitation": "Absence of financial aid information on the page researched",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "worldclass-france-rouen"
+    },
+    "flags": [
+      {
+        "id": "worldclass-france-no-2027-dates",
+        "type": "safety",
+        "title": "No 2027 session is currently listed for this program",
+        "body": "Unlike Spain, Greece, Japan, and Italy -- all of which have confirmed 2027 dates published -- the France (Rouen) program page shows only a single 2026 session (May 31-June 13, 2026) with no 2027 section at all. This could mean the 2027 dates simply haven't been posted yet, or that this specific program has been paused or discontinued. Confirm directly with the provider before assuming a 2027 France session will run.",
+        "sourceCitation": "World Class Programs France program page, Dates section (2026 heading only, no 2027 heading present)",
+        "severity": "warning"
+      },
+      {
+        "id": "worldclass-security-officer-conditional-france",
+        "type": "safety",
+        "title": "The 24/7 on-site Security Officer is conditional on program size",
+        "body": "Same conditional staffing language as the other World Class programs.",
+        "sourceCitation": "World Class Programs France program page",
+        "severity": "info"
+      },
+      {
+        "id": "worldclass-financial-aid-unstated-france",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the program page",
+        "body": "No mention of scholarships or need-based aid was found.",
+        "sourceCitation": "Absence of financial aid information on the page researched",
+        "severity": "info"
+      }
+    ]
+  },
+  {
+    "match": {
+      "programGroupId": "worldclass-italy-florence"
+    },
+    "flags": [
+      {
+        "id": "worldclass-security-officer-conditional-italy",
+        "type": "safety",
+        "title": "The 24/7 on-site Security Officer is conditional on program size",
+        "body": "Same conditional staffing language as the other World Class programs.",
+        "sourceCitation": "World Class Programs Italy program page",
+        "severity": "info"
+      },
+      {
+        "id": "worldclass-financial-aid-unstated-italy",
+        "type": "safety",
+        "title": "Financial aid availability is not stated on the program page",
+        "body": "No mention of scholarships or need-based aid was found.",
+        "sourceCitation": "Absence of financial aid information on the page researched",
+        "severity": "info"
+      }
+    ]
   }
 ]
