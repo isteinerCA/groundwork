@@ -176,15 +176,15 @@ function compareProgramsBySort(a: Program, b: Program, sort: SortOption): number
   }
 }
 
-/** Verified target-season rows sort above pending when primary sort ties. */
+/** Verified target-season rows (2027) sort above pending/legacy (2026) rows. */
 function seasonReviewSortRank(program: Pick<Program, "reviewStatus" | "seasonYear">): number {
   return isVerifiedForTargetSeason(program) ? 0 : 1;
 }
 
 export function sortPrograms(programs: Program[], sort: SortOption): Program[] {
   return [...programs].sort((a, b) => {
-    const primary = compareProgramsBySort(a, b, sort);
-    if (primary !== 0) return primary;
-    return seasonReviewSortRank(a) - seasonReviewSortRank(b);
+    const season = seasonReviewSortRank(a) - seasonReviewSortRank(b);
+    if (season !== 0) return season;
+    return compareProgramsBySort(a, b, sort);
   });
 }

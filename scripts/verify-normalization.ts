@@ -1425,11 +1425,12 @@ const pendingProgram = stubProgram({
 });
 const sortedBySelectivity = sortPrograms([pendingProgram, verifiedProgram], "selectivity");
 if (sortedBySelectivity[0]?.id !== verifiedProgram.id) {
-  console.error("FAIL: verified 2027 programs should tiebreak above pending when selectivity matches");
+  console.error("FAIL: verified 2027 programs should sort above pending when selectivity matches");
   failed++;
 }
 
 const shortProgram = stubProgram({
+  id: "short-camp",
   name: "Short Camp",
   locationDisplay: "Boston, MA",
   lengthMinDays: 6,
@@ -1437,6 +1438,7 @@ const shortProgram = stubProgram({
   lengthDisplay: "6 days",
 });
 const longProgram = stubProgram({
+  id: "long-camp",
   name: "Long Camp",
   locationDisplay: "Boston, MA",
   lengthMinDays: 28,
@@ -1446,6 +1448,70 @@ const longProgram = stubProgram({
 const sortedByDuration = sortPrograms([longProgram, shortProgram], "duration");
 if (sortedByDuration[0]?.id !== shortProgram.id) {
   console.error("FAIL: duration sort should order by lengthMinDays shortest first");
+  failed++;
+}
+
+const longVerified2027 = stubProgram({
+  id: "long-2027",
+  name: "Long 2027 Camp",
+  locationDisplay: "Boston, MA",
+  lengthMinDays: 28,
+  lengthMaxDays: 28,
+  lengthDisplay: "4 weeks",
+  seasonYear: 2027,
+  reviewStatus: "verified",
+});
+const shortPending2026 = stubProgram({
+  id: "short-2026",
+  name: "Short 2026 Camp",
+  locationDisplay: "Boston, MA",
+  lengthMinDays: 6,
+  lengthMaxDays: 6,
+  lengthDisplay: "6 days",
+  seasonYear: 2026,
+  reviewStatus: "provisional",
+});
+const sortedSeasonThenDuration = sortPrograms(
+  [shortPending2026, longVerified2027],
+  "duration",
+);
+if (
+  sortedSeasonThenDuration[0]?.id !== longVerified2027.id ||
+  sortedSeasonThenDuration[1]?.id !== shortPending2026.id
+) {
+  console.error("FAIL: verified 2027 programs should sort above pending 2026 even when longer");
+  failed++;
+}
+
+const shortVerified2027 = stubProgram({
+  id: "short-2027",
+  name: "Short 2027 Camp",
+  locationDisplay: "Boston, MA",
+  lengthMinDays: 6,
+  lengthMaxDays: 6,
+  lengthDisplay: "6 days",
+  seasonYear: 2027,
+  reviewStatus: "verified",
+});
+const longPending2026 = stubProgram({
+  id: "long-2026",
+  name: "Long 2026 Camp",
+  locationDisplay: "Boston, MA",
+  lengthMinDays: 28,
+  lengthMaxDays: 28,
+  lengthDisplay: "4 weeks",
+  seasonYear: 2026,
+  reviewStatus: "provisional",
+});
+const sortedWithinSeasonGroups = sortPrograms(
+  [longVerified2027, shortVerified2027, longPending2026, shortPending2026],
+  "duration",
+);
+if (
+  sortedWithinSeasonGroups.map((program) => program.id).join(",") !==
+  [shortVerified2027.id, longVerified2027.id, shortPending2026.id, longPending2026.id].join(",")
+) {
+  console.error("FAIL: within 2027 and 2026 groups, duration should stay shortest first");
   failed++;
 }
 
