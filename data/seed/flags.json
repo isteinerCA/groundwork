@@ -2236,14 +2236,6 @@
         "body": "The provider's own Program Components section describes this program's rugged-travel intensity as including homestays with few amenities, extensive high-altitude walking, and lengthy travel by public transportation. This is more candidly disclosed than similar intensity notes on some other providers' pages, and families should take it as a genuine expectation-setter rather than boilerplate.",
         "sourceCitation": "Where There Be Dragons Bolivia program page, Program Components section",
         "severity": "info"
-      },
-      {
-        "id": "wtbd-bolivia-financial-aid-unclear-per-program",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on this specific program page",
-        "body": "This program page does not itself confirm whether need-based aid applies to this particular program, though the WTBD site has a general sitewide Tuition Assistance section. Families should confirm eligibility and award availability directly rather than assuming this specific program has funded slots.",
-        "sourceCitation": "Absence of financial aid detail on the Bolivia program page itself; general Tuition Assistance link exists sitewide",
-        "severity": "info"
       }
     ]
   },
@@ -2259,29 +2251,6 @@
         "body": "Students work alongside a weaving cooperative of civil-war widows and discuss root causes of human rights issues, economic inequality, and indigenous underrepresentation. This is emotionally substantive content; families should be aware this isn't a purely recreational cultural program.",
         "sourceCitation": "Program page, Your Journey Starts Here and testimonial sections",
         "severity": "info"
-      },
-      {
-        "id": "guatemala-4wk-financial-aid-unstated",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on this program page",
-        "body": "No mention of need-based aid for this specific program.",
-        "sourceCitation": "Absence of financial aid section on the program page",
-        "severity": "info"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "wtbd-nepal-traditions-of-himalayas"
-    },
-    "flags": [
-      {
-        "id": "nepal-financial-aid-unstated",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on this program page",
-        "body": "No mention of need-based aid for this specific program.",
-        "sourceCitation": "Absence of financial aid section on the program page",
-        "severity": "info"
       }
     ]
   },
@@ -2296,52 +2265,6 @@
         "title": "No college credit option is offered on this program",
         "body": "Unlike most other WTBD summer programs researched, this page has no Optional College Credit section.",
         "sourceCitation": "Absence of an Optional College Credit section on the program page",
-        "severity": "info"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "wtbd-bhutan-happiness-in-himalayas"
-    },
-    "flags": [
-      {
-        "id": "bhutan-wide-age-range",
-        "type": "safety",
-        "title": "This program has the widest age range of any WTBD program researched (17-22)",
-        "body": "This age band overlaps with typical gap-year ages, unlike most other WTBD summer programs which target ages 15-19. Families should confirm the age mix of the actual group they'd be joining.",
-        "sourceCitation": "Program page, Ages field",
-        "severity": "info"
-      },
-      {
-        "id": "bhutan-two-sessions-different-seasons",
-        "type": "safety",
-        "title": "This page lists both a summer 2027 session and a December 2026 session",
-        "body": "The December 2026 session (7 spaces remaining) is a different, non-summer offering. Only the July 2027 session was captured as this project's 2027 summer entry.",
-        "sourceCitation": "Program page, Upcoming Dates table",
-        "severity": "info"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "wtbd-peru-4week-summer-abroad"
-    },
-    "flags": [
-      {
-        "id": "peru-4wk-limited-detail",
-        "type": "safety",
-        "title": "This entry has less itinerary/accommodation detail than other WTBD programs researched",
-        "body": "The live page repeatedly failed to load its body content on direct fetch (two separate attempts). Core facts (dates, tuition, ages, group size, program description) were confirmed via user-provided screenshots, but the detailed week-by-week itinerary and Program Components ratings available on other WTBD program pages were not visible in the screenshots provided. Families should confirm the fuller itinerary directly with the provider before enrolling.",
-        "sourceCitation": "Comparison between two failed direct fetches and the more limited detail available in user-provided screenshots",
-        "severity": "info"
-      },
-      {
-        "id": "peru-4wk-financial-aid-unstated",
-        "type": "safety",
-        "title": "Financial aid availability is not stated in the available material",
-        "body": "No mention of need-based aid for this specific program was visible in the provided screenshots.",
-        "sourceCitation": "Absence of financial aid information in the provided screenshots",
         "severity": "info"
       }
     ]
@@ -2381,14 +2304,6 @@
       "programGroupId": "wtbd-japan-arts-food-culture"
     },
     "flags": [
-      {
-        "id": "japan-wtbd-highest-tuition",
-        "type": "safety",
-        "title": "This is the highest-tuition WTBD program researched",
-        "body": "At $9,970 (before airfare), this exceeds every other Where There Be Dragons summer program researched.",
-        "sourceCitation": "Program page, Tuition field",
-        "severity": "info"
-      },
       {
         "id": "japan-wtbd-application-deadline",
         "type": "safety",
@@ -2455,21 +2370,6 @@
         "title": "The program directly engages with the Khmer Rouge genocide",
         "body": "Students visit the S21 Genocide Museum and, in the provided itinerary and testimonial, may have direct conversations with genocide survivors in their homestay village. This is emotionally substantive content; families should be aware this isn't a purely recreational cultural program.",
         "sourceCitation": "Program page, Week 1 itinerary section and student testimonial",
-        "severity": "info"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "wtbd-thailand-sustainability-spirituality"
-    },
-    "flags": [
-      {
-        "id": "thailand-financial-aid-unstated",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on this program page",
-        "body": "No mention of need-based aid for this specific program.",
-        "sourceCitation": "Absence of financial aid section on the program page",
         "severity": "info"
       }
     ]
@@ -3029,51 +2929,6 @@
   },
   {
     "match": {
-      "programGroupId": "sailcaribbean-tango-14"
-    },
-    "flags": [
-      {
-        "id": "sailcaribbean-financial-aid-unstated",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on the pages researched",
-        "body": "No mention of scholarships or need-based aid was found for this program.",
-        "severity": "info",
-        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "sailcaribbean-alpha-14"
-    },
-    "flags": [
-      {
-        "id": "sailcaribbean-financial-aid-unstated-alpha14",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on the pages researched",
-        "body": "No mention of scholarships or need-based aid was found for this program.",
-        "severity": "info",
-        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "sailcaribbean-bravo-21"
-    },
-    "flags": [
-      {
-        "id": "sailcaribbean-financial-aid-unstated-bravo21",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on the pages researched",
-        "body": "No mention of scholarships or need-based aid was found for this program.",
-        "severity": "info",
-        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-      }
-    ]
-  },
-  {
-    "match": {
       "programGroupId": "sailcaribbean-charlie"
     },
     "flags": [
@@ -3084,89 +2939,6 @@
         "body": "Maximum depth is 60ft for standard certified divers and up to 80-90ft for the most advanced students. Divers aged 11 are capped at 40ft and must dive with a PADI professional or certified diver; ages 12-14 may go to 70ft only with additional Junior Advanced Open Water training. Families should weigh their child's comfort and readiness for open-water diving at these depths, and confirm their child's actual certification status meets the Open Water (or equivalent) prerequisite before enrolling.",
         "sourceCitation": "Sail Caribbean Scuba Diving Camp page, FAQ section",
         "severity": "info"
-      },
-      {
-        "id": "sailcaribbean-financial-aid-unstated-charlie",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on the pages researched",
-        "body": "No mention of scholarships or need-based aid was found for this program.",
-        "severity": "info",
-        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "sailcaribbean-delta-21"
-    },
-    "flags": [
-      {
-        "id": "sailcaribbean-financial-aid-unstated-delta21",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on the pages researched",
-        "body": "No mention of scholarships or need-based aid was found for this program.",
-        "severity": "info",
-        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "sailcaribbean-foxtrot"
-    },
-    "flags": [
-      {
-        "id": "sailcaribbean-financial-aid-unstated-foxtrot",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on the pages researched",
-        "body": "No mention of scholarships or need-based aid was found for this program.",
-        "severity": "info",
-        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "sailcaribbean-sierra"
-    },
-    "flags": [
-      {
-        "id": "sailcaribbean-financial-aid-unstated-sierra",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on the pages researched",
-        "body": "No mention of scholarships or need-based aid was found for this program.",
-        "severity": "info",
-        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "sailcaribbean-lima-sail"
-    },
-    "flags": [
-      {
-        "id": "sailcaribbean-financial-aid-unstated-lima-sail",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on the pages researched",
-        "body": "No mention of scholarships or need-based aid was found for this program.",
-        "severity": "info",
-        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "sailcaribbean-lima-dive"
-    },
-    "flags": [
-      {
-        "id": "sailcaribbean-financial-aid-unstated-lima-dive",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on the pages researched",
-        "body": "No mention of scholarships or need-based aid was found for this program.",
-        "severity": "info",
-        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
       }
     ]
   },

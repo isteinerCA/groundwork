@@ -75003,7 +75003,7 @@
       "lengthDisplay": "4 weeks",
       "lengthMinDays": 28,
       "lengthMaxDays": 28,
-      "datesDisplay": "June 28 - July 25, 2027 (single session; shown as Open availability)",
+      "datesDisplay": "June 28 - July 25, 2027 (single session)",
       "dateStart": "2027-06-28",
       "dateEnd": "2027-07-25",
       "datesParseQuality": "exact",
@@ -75035,14 +75035,6 @@
           "title": "The program explicitly rates its 'Rugged Travel' component, describing homestays with few amenities",
           "body": "The provider's own Program Components section describes this program's rugged-travel intensity as including homestays with few amenities, extensive high-altitude walking, and lengthy travel by public transportation. This is more candidly disclosed than similar intensity notes on some other providers' pages, and families should take it as a genuine expectation-setter rather than boilerplate.",
           "sourceCitation": "Where There Be Dragons Bolivia program page, Program Components section",
-          "severity": "info"
-        },
-        {
-          "id": "wtbd-bolivia-financial-aid-unclear-per-program",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on this specific program page",
-          "body": "This program page does not itself confirm whether need-based aid applies to this particular program, though the WTBD site has a general sitewide Tuition Assistance section. Families should confirm eligibility and award availability directly rather than assuming this specific program has funded slots.",
-          "sourceCitation": "Absence of financial aid detail on the Bolivia program page itself; general Tuition Assistance link exists sitewide",
           "severity": "info"
         }
       ],
@@ -75107,19 +75099,11 @@
           "body": "Students work alongside a weaving cooperative of civil-war widows and discuss root causes of human rights issues, economic inequality, and indigenous underrepresentation. This is emotionally substantive content; families should be aware this isn't a purely recreational cultural program.",
           "sourceCitation": "Program page, Your Journey Starts Here and testimonial sections",
           "severity": "info"
-        },
-        {
-          "id": "guatemala-4wk-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on this program page",
-          "body": "No mention of need-based aid for this specific program.",
-          "sourceCitation": "Absence of financial aid section on the program page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "12 students and 3 instructors travel together throughout. Accommodation shifts through several homestays: a short homestay with Kiche Maya families in Pachaj, an extended homestay in San Juan la Laguna on Lake Atitlan, another homestay in the traditional Maya community of Todos Santos, and a final homestay/fieldwork stay in San Juan Cotzal working alongside a weaving cooperative of civil-war widows. A 3-day trek from Quetzaltenango to Lake Atitlan involves camping/trail lodging between homestays. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+        "notes": "12 students and 3 instructors travel together throughout. Accommodation shifts through several homestays: a short homestay with Kiche Maya families in Pachaj, an extended homestay in San Juan la Laguna on Lake Atitlan, another homestay in the traditional Maya community of Todos Santos, and a final homestay/fieldwork stay in San Juan Cotzal working alongside a weaving cooperative of civil-war widows. A 3-day trek from Quetzaltenango to Lake Atitlan involves camping/trail lodging between homestays.",
         "sourceType": "official_policy",
         "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
         "verifiedAt": "2026-09-17"
@@ -75169,19 +75153,10 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.wheretherebedragons.com/program/summer-abroad-nepal-himalayas",
-      "flags": [
-        {
-          "id": "nepal-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on this program page",
-          "body": "No mention of need-based aid for this specific program.",
-          "sourceCitation": "Absence of financial aid section on the program page",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "12 students and 3 instructors. Days split between lodges/guesthouses during a short ridge trek out of Bhaktapur, a rural village homestay (10+ days total across rural and urban placements) with subsistence-farming families, a short stay at a Tibetan Buddhist monastery for a meditation retreat, and an urban homestay in Patan with Newari host families. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+        "notes": "12 students and 3 instructors. Days split between lodges/guesthouses during a short ridge trek out of Bhaktapur, a rural village homestay (10+ days total across rural and urban placements) with subsistence-farming families, a short stay at a Tibetan Buddhist monastery for a meditation retreat, and an urban homestay in Patan with Newari host families.",
         "sourceType": "official_policy",
         "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
         "verifiedAt": "2026-09-17"
@@ -75243,7 +75218,7 @@
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "12 students and 3 instructors. Begins in a hillside town (Jiufen) for group-culture building, then a multi-night rural homestay with organic-farming families in Yilan County, and a final city stretch in Taipei. Rugged Travel is explicitly rated low given Taiwan's developed infrastructure (train, bus, bicycle). No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+        "notes": "12 students and 3 instructors. Begins in a hillside town (Jiufen) for group-culture building, then a multi-night rural homestay with organic-farming families in Yilan County, and a final city stretch in Taipei. Rugged Travel is explicitly rated low given Taiwan's developed infrastructure (train, bus, bicycle).",
         "sourceType": "official_policy",
         "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
         "verifiedAt": "2026-09-17"
@@ -75305,7 +75280,7 @@
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "12 students and 3 instructors. Begins in a hillside town (Jiufen) for group-culture building, then a multi-night rural homestay with organic-farming families in Yilan County, and a final city stretch in Taipei. Rugged Travel is explicitly rated low given Taiwan's developed infrastructure (train, bus, bicycle). No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+        "notes": "12 students and 3 instructors. Begins in a hillside town (Jiufen) for group-culture building, then a multi-night rural homestay with organic-farming families in Yilan County, and a final city stretch in Taipei. Rugged Travel is explicitly rated low given Taiwan's developed infrastructure (train, bus, bicycle).",
         "sourceType": "official_policy",
         "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
         "verifiedAt": "2026-09-17"
@@ -75338,7 +75313,7 @@
       "lengthDisplay": "12 days",
       "lengthMinDays": 12,
       "lengthMaxDays": 12,
-      "datesDisplay": "July 15-26, 2027 (single 2027 summer session; a separate Dec 4-15, 2026 session also listed, 7 spaces)",
+      "datesDisplay": "July 15-26, 2027 (single session)",
       "dateStart": "2027-07-15",
       "dateEnd": "2027-07-26",
       "datesParseQuality": "exact",
@@ -75355,27 +75330,10 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.wheretherebedragons.com/program/bhutan-study-abroad-himalayas",
-      "flags": [
-        {
-          "id": "bhutan-wide-age-range",
-          "type": "safety",
-          "title": "This program has the widest age range of any WTBD program researched (17-22)",
-          "body": "This age band overlaps with typical gap-year ages, unlike most other WTBD summer programs which target ages 15-19. Families should confirm the age mix of the actual group they'd be joining.",
-          "sourceCitation": "Program page, Ages field",
-          "severity": "info"
-        },
-        {
-          "id": "bhutan-two-sessions-different-seasons",
-          "type": "safety",
-          "title": "This page lists both a summer 2027 session and a December 2026 session",
-          "body": "The December 2026 session (7 spaces remaining) is a different, non-summer offering. Only the July 2027 session was captured as this project's 2027 summer entry.",
-          "sourceCitation": "Program page, Upcoming Dates table",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "12 students and 3 instructors. Unlike most other WTBD programs, this one explicitly does NOT include individual homestays; instead the group stays in community housing throughout Bhutan (Thimpu, Punakha, Paro) and starts/ends with a hotel/inn stay in Kathmandu, Nepal. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+        "notes": "12 students and 3 instructors. The group stays in community housing throughout Bhutan (Thimpu, Punakha, Paro) and starts/ends with a hotel/inn stay in Kathmandu, Nepal.",
         "sourceType": "official_policy",
         "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
         "verifiedAt": "2026-09-17"
@@ -75425,27 +75383,10 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.wheretherebedragons.com/program/summer-abroad-peru-4wk",
-      "flags": [
-        {
-          "id": "peru-4wk-limited-detail",
-          "type": "safety",
-          "title": "This entry has less itinerary/accommodation detail than other WTBD programs researched",
-          "body": "The live page repeatedly failed to load its body content on direct fetch (two separate attempts). Core facts (dates, tuition, ages, group size, program description) were confirmed via user-provided screenshots, but the detailed week-by-week itinerary and Program Components ratings available on other WTBD program pages were not visible in the screenshots provided. Families should confirm the fuller itinerary directly with the provider before enrolling.",
-          "sourceCitation": "Comparison between two failed direct fetches and the more limited detail available in user-provided screenshots",
-          "severity": "info"
-        },
-        {
-          "id": "peru-4wk-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated in the available material",
-          "body": "No mention of need-based aid for this specific program was visible in the provided screenshots.",
-          "sourceCitation": "Absence of financial aid information in the provided screenshots",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "12 students and 3 instructors, matching the standard WTBD group size. The provided screenshots confirm this ratio and the program description (Andes trekking, Machu Picchu, Amazon River basin) but do not include the detailed week-by-week itinerary, program components ratings, or specific homestay/accommodation breakdown seen on other WTBD programs researched via direct page fetch. No specific staff-to-student ratio beyond the 12:3 group size, and no accommodation-type detail, could be confirmed from the material available.",
+        "notes": "12 students and 3 instructors, matching the standard WTBD group size. The provided screenshots confirm this ratio and the program description (Andes trekking, Machu Picchu, Amazon River basin) but do not include the detailed week-by-week itinerary, program components ratings, or specific homestay/accommodation breakdown seen on other WTBD programs researched via direct page fetch.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots of the Where There Be Dragons Peru: Sacred Mountains program page, At a Glance section",
         "verifiedAt": "2026-09-17"
@@ -75507,7 +75448,7 @@
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "12 students and 3 instructors. Days move through a natural-park orientation stay in Los Alcornocales (Cadiz), a village stay in El Borge (Axarquia region) with local raisin-farming families, a homestay (or alternative accommodation, per the page) in Huetor Vega outside Granada for the bulk of the reforestation/climate work, and a final comfortable group lodging in Malaga for the last two nights. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+        "notes": "12 students and 3 instructors. Days move through a natural-park orientation stay in Los Alcornocales (Cadiz), a village stay in El Borge (Axarquia region) with local raisin-farming families, a homestay (or alternative accommodation, per the page) in Huetor Vega outside Granada for the bulk of the reforestation/climate work, and a final comfortable group lodging in Malaga for the last two nights.",
         "sourceType": "official_policy",
         "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
         "verifiedAt": "2026-09-17"
@@ -75569,7 +75510,7 @@
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "12 students and 3 instructors. Days move through a natural-park orientation stay in Los Alcornocales (Cadiz), a village stay in El Borge (Axarquia region) with local raisin-farming families, a homestay (or alternative accommodation, per the page) in Huetor Vega outside Granada for the bulk of the reforestation/climate work, and a final comfortable group lodging in Malaga for the last two nights. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+        "notes": "12 students and 3 instructors. Days move through a natural-park orientation stay in Los Alcornocales (Cadiz), a village stay in El Borge (Axarquia region) with local raisin-farming families, a homestay (or alternative accommodation, per the page) in Huetor Vega outside Granada for the bulk of the reforestation/climate work, and a final comfortable group lodging in Malaga for the last two nights.",
         "sourceType": "official_policy",
         "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
         "verifiedAt": "2026-09-17"
@@ -75621,14 +75562,6 @@
       "websiteUrl": "https://www.wheretherebedragons.com/program/summer-abroad-japan-food-culture",
       "flags": [
         {
-          "id": "japan-wtbd-highest-tuition",
-          "type": "safety",
-          "title": "This is the highest-tuition WTBD program researched",
-          "body": "At $9,970 (before airfare), this exceeds every other Where There Be Dragons summer program researched.",
-          "sourceCitation": "Program page, Tuition field",
-          "severity": "info"
-        },
-        {
           "id": "japan-wtbd-application-deadline",
           "type": "safety",
           "title": "This program has an explicit stated application deadline (May 30, 2027)",
@@ -75639,7 +75572,7 @@
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "12 students and 3 instructors. Begins with a local inn stay in Wakayama for orientation, moves to a 3-7 day homestay in coastal Kyotango (students may be individually placed or paired with another Dragons student depending on the community), then Kyoto for Independent Study Projects including a supervised student-led group excursion, and closes with sightseeing days in Tokyo. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+        "notes": "12 students and 3 instructors. Begins with a local inn stay in Wakayama for orientation, moves to a 3-7 day homestay in coastal Kyotango (students may be individually placed or paired with another Dragons student depending on the community), then Kyoto for Independent Study Projects including a supervised student-led group excursion, and closes with sightseeing days in Tokyo.",
         "sourceType": "official_policy",
         "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
         "verifiedAt": "2026-09-17"
@@ -75701,7 +75634,7 @@
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "12 students and 3 instructors. Accommodation spans three distinct settings: an urban/semi-urban homestay in Yogyakarta, a mountain stay near the Dieng Plateau, and finally living directly with the Bajau 'sea nomad' community in stilted homes over open water in Wakatobi. The Rugged Travel component explicitly notes some students sleep on bamboo mats on the floor in certain homestays, under the stars on beaches, and in group jungle camping. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+        "notes": "12 students and 3 instructors. Accommodation spans three distinct settings: an urban/semi-urban homestay in Yogyakarta, a mountain stay near the Dieng Plateau, and finally living directly with the Bajau 'sea nomad' community in stilted homes over open water in Wakatobi. The Rugged Travel component explicitly notes some students sleep on bamboo mats on the floor in certain homestays, under the stars on beaches, and in group jungle camping.",
         "sourceType": "official_policy",
         "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
         "verifiedAt": "2026-09-17"
@@ -75763,7 +75696,7 @@
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "12 students and 3 instructors. Opens with a stay at a small family-owned guesthouse near a remote, un-renovated section of the Great Wall, then Beijing city exploration, then an extended (5+ day) rural homestay with a Naxi ethnic-minority community in Lashihai near Lijiang, and finally an extended urban homestay in Kunming with classes held at a dedicated 'Program House' near Green Lake Park. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+        "notes": "12 students and 3 instructors. Opens with a stay at a small family-owned guesthouse near a remote, un-renovated section of the Great Wall, then Beijing city exploration, then an extended (5+ day) rural homestay with a Naxi ethnic-minority community in Lashihai near Lijiang, and finally an extended urban homestay in Kunming with classes held at a dedicated 'Program House' near Green Lake Park.",
         "sourceType": "official_policy",
         "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
         "verifiedAt": "2026-09-17"
@@ -75826,7 +75759,7 @@
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "12 students and 3 instructors. Begins with an orientation site near Leh for altitude acclimatization, then homestays in small Ladakhi villages during the shorter Sham Valley trek, then tent camping during the second, more challenging extended trek (supported by a team of guides, cooks, and pack ponies), with an exchange stop at the SECMOL sustainable-education campus. Closes with city time in Leh and a day in Delhi. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+        "notes": "12 students and 3 instructors. Begins with an orientation site near Leh for altitude acclimatization, then homestays in small Ladakhi villages during the shorter Sham Valley trek, then tent camping during the second, more challenging extended trek (supported by a team of guides, cooks, and pack ponies), with an exchange stop at the SECMOL sustainable-education campus. Closes with city time in Leh and a day in Delhi.",
         "sourceType": "official_policy",
         "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
         "verifiedAt": "2026-09-17"
@@ -75888,7 +75821,7 @@
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "12 students and 3 instructors. Starts in a local guesthouse in Phnom Penh for orientation, continues through Battambang and Siem Reap (hotel/guesthouse style lodging), a short silent retreat at a meditation center, an extended rural homestay in Banteay Chhmar with a Khmer farming community as the core of the program, and closes in Kampot where students organize their own transport and activities as part of a supervised 'Expedition Phase.' No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+        "notes": "12 students and 3 instructors. Starts in a local guesthouse in Phnom Penh for orientation, continues through Battambang and Siem Reap (hotel/guesthouse style lodging), a short silent retreat at a meditation center, an extended rural homestay in Banteay Chhmar with a Khmer farming community as the core of the program, and closes in Kampot where students organize their own transport and activities as part of a supervised 'Expedition Phase.'",
         "sourceType": "official_policy",
         "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
         "verifiedAt": "2026-09-17"
@@ -75939,19 +75872,10 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.wheretherebedragons.com/program/summer-abroad-asia-thailand-travel",
-      "flags": [
-        {
-          "id": "thailand-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on this program page",
-          "body": "No mention of need-based aid for this specific program.",
-          "sourceCitation": "Absence of financial aid section on the program page",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "12 students and 3 instructors. Moves through an orientation stay in Sukhothai, a 3-day stay at a Buddhist monastery for a meditation retreat, a 5-day homestay with Karen community families in Huai Hin Lad Nai, a stay at Earth Home (a sustainable-living center), and a final student-led 2-day expedition phase in Chiang Rai (with instructor oversight) before closing in the mountains of Chiang Dao. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+        "notes": "12 students and 3 instructors. Moves through an orientation stay in Sukhothai, a 3-day stay at a Buddhist monastery for a meditation retreat, a 5-day homestay with Karen community families in Huai Hin Lad Nai, a stay at Earth Home (a sustainable-living center), and a final student-led 2-day expedition phase in Chiang Rai (with instructor oversight) before closing in the mountains of Chiang Dao.",
         "sourceType": "official_policy",
         "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
         "verifiedAt": "2026-09-17"
@@ -76013,7 +75937,7 @@
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "12 students and 3 instructors. Begins with an orientation stay in a small Middle Atlas Mountains town, then a 4-5 day semi-urban homestay in Azrou with Berber (Amazigh) families, city exploration in Fez (staying near the medina), and a closing multi-day trek with camping in the High Atlas Mountains through remote villages and nomadic communities. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+        "notes": "12 students and 3 instructors. Begins with an orientation stay in a small Middle Atlas Mountains town, then a 4-5 day semi-urban homestay in Azrou with Berber (Amazigh) families, city exploration in Fez (staying near the medina), and a closing multi-day trek with camping in the High Atlas Mountains through remote villages and nomadic communities.",
         "sourceType": "official_policy",
         "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
         "verifiedAt": "2026-09-17"
@@ -76027,10 +75951,10 @@
       "institution": "Where There Be Dragons",
       "programGroupId": "wtbd-senegal-youth-leadership-arts-culture",
       "description": "Centers on connecting with young Senegalese artists and activists: environmental activism and sea-turtle/coastline protection work near St. Louis, a stop in the holy city of Touba (one of the largest mosques in West Africa), a multi-day homestay in Thies with mentored arts study (drumming, dance, visual arts) and youth-activist guest speakers, a day trip to Dakar including the Island of Goree (Atlantic slave trade history) and the Museum of Black Civilization, and a closing Transference Phase on the cliffside beaches of Toubab Dialaw. 12 students, 3 instructors.",
-      "category": "arts",
+      "category": "cultural-exchange",
       "secondaryTags": [
         "Leadership/Gifted",
-        "Cultural Exchange"
+        "Arts"
       ],
       "trackDetail": "Summer 2027",
       "gradeDisplay": "Ages 15-17",
@@ -76076,7 +76000,7 @@
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "12 students and 3 instructors. Days spent in a seaside community inside a national park near St. Louis (day-stays with local families for meals), then a stop in Touba, and a multi-day homestay in Thies with local families for the bulk of the program, including a day trip to Dakar. Closes on the cliffside beaches of Toubab Dialaw for a group Transference Phase. No specific staff-to-student ratio beyond the 12:3 group size is stated.",
+        "notes": "12 students and 3 instructors. Days spent in a seaside community inside a national park near St. Louis (day-stays with local families for meals), then a stop in Touba, and a multi-day homestay in Thies with local families for the bulk of the program, including a day trip to Dakar. Closes on the cliffside beaches of Toubab Dialaw for a group Transference Phase.",
         "sourceType": "official_policy",
         "sourceCitation": "Where There Be Dragons program page, Group Size and Program Components/Itinerary Example sections",
         "verifiedAt": "2026-09-17"
@@ -78570,16 +78494,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Students live aboard a yacht dedicated specifically to the 11-12 age band, rather than being mixed into the general 12-18 fleet used by Alpha/Bravo/Charlie/Foxtrot/Sierra. Sails in a fleet of 2-6 boats alongside the other programs, so campers have both a close-knit single-boat crew and access to a larger multi-boat social group during shared activities (watersports, beach days, evenings in island towns). Life jackets required for all watersports, small boats, and while under sail/power on the main yacht; harnesses worn during night sails. No sailing experience required; instruction is hands-on and staff-led throughout.",
@@ -78633,16 +78548,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Students live aboard a yacht dedicated specifically to the 11-12 age band, rather than being mixed into the general 12-18 fleet used by Alpha/Bravo/Charlie/Foxtrot/Sierra. Sails in a fleet of 2-6 boats alongside the other programs, so campers have both a close-knit single-boat crew and access to a larger multi-boat social group during shared activities (watersports, beach days, evenings in island towns). Life jackets required for all watersports, small boats, and while under sail/power on the main yacht; harnesses worn during night sails. No sailing experience required; instruction is hands-on and staff-led throughout.",
@@ -78696,16 +78602,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Students live aboard a yacht dedicated specifically to the 11-12 age band, rather than being mixed into the general 12-18 fleet used by Alpha/Bravo/Charlie/Foxtrot/Sierra. Sails in a fleet of 2-6 boats alongside the other programs, so campers have both a close-knit single-boat crew and access to a larger multi-boat social group during shared activities (watersports, beach days, evenings in island towns). Life jackets required for all watersports, small boats, and while under sail/power on the main yacht; harnesses worn during night sails. No sailing experience required; instruction is hands-on and staff-led throughout.",
@@ -78759,16 +78656,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Students live aboard a yacht dedicated specifically to the 11-12 age band, rather than being mixed into the general 12-18 fleet used by Alpha/Bravo/Charlie/Foxtrot/Sierra. Sails in a fleet of 2-6 boats alongside the other programs, so campers have both a close-knit single-boat crew and access to a larger multi-boat social group during shared activities (watersports, beach days, evenings in island towns). Life jackets required for all watersports, small boats, and while under sail/power on the main yacht; harnesses worn during night sails. No sailing experience required; instruction is hands-on and staff-led throughout.",
@@ -78822,16 +78710,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Students live aboard a yacht dedicated specifically to the 11-12 age band, rather than being mixed into the general 12-18 fleet used by Alpha/Bravo/Charlie/Foxtrot/Sierra. Sails in a fleet of 2-6 boats alongside the other programs, so campers have both a close-knit single-boat crew and access to a larger multi-boat social group during shared activities (watersports, beach days, evenings in island towns). Life jackets required for all watersports, small boats, and while under sail/power on the main yacht; harnesses worn during night sails. No sailing experience required; instruction is hands-on and staff-led throughout.",
@@ -78884,16 +78763,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated-alpha14",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Standard fleet program: students live aboard a 45-50ft catamaran or monohull, grouped by age and grade, sailing in a fleet of 2-6 boats. A typical day includes sailing between anchorages, watersports (wakeboard, waterski, kneeboard, tube, snorkel, small-boat sailing, paddleboard), and evening social time both within the boat crew and across the fleet. No sailing experience required; optional ASA sailing certification is available as a self-paced 'challenge course' completed alongside regular instruction. Life jackets required for all watersports, small boats, and on the main yacht while under sail or power; harnesses worn during night sails.",
@@ -78946,16 +78816,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated-alpha14",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Standard fleet program: students live aboard a 45-50ft catamaran or monohull, grouped by age and grade, sailing in a fleet of 2-6 boats. A typical day includes sailing between anchorages, watersports (wakeboard, waterski, kneeboard, tube, snorkel, small-boat sailing, paddleboard), and evening social time both within the boat crew and across the fleet. No sailing experience required; optional ASA sailing certification is available as a self-paced 'challenge course' completed alongside regular instruction. Life jackets required for all watersports, small boats, and on the main yacht while under sail or power; harnesses worn during night sails.",
@@ -79008,16 +78869,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated-alpha14",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Standard fleet program: students live aboard a 45-50ft catamaran or monohull, grouped by age and grade, sailing in a fleet of 2-6 boats. A typical day includes sailing between anchorages, watersports (wakeboard, waterski, kneeboard, tube, snorkel, small-boat sailing, paddleboard), and evening social time both within the boat crew and across the fleet. No sailing experience required; optional ASA sailing certification is available as a self-paced 'challenge course' completed alongside regular instruction. Life jackets required for all watersports, small boats, and on the main yacht while under sail or power; harnesses worn during night sails.",
@@ -79070,16 +78922,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated-alpha14",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Standard fleet program: students live aboard a 45-50ft catamaran or monohull, grouped by age and grade, sailing in a fleet of 2-6 boats. A typical day includes sailing between anchorages, watersports (wakeboard, waterski, kneeboard, tube, snorkel, small-boat sailing, paddleboard), and evening social time both within the boat crew and across the fleet. No sailing experience required; optional ASA sailing certification is available as a self-paced 'challenge course' completed alongside regular instruction. Life jackets required for all watersports, small boats, and on the main yacht while under sail or power; harnesses worn during night sails.",
@@ -79132,16 +78975,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated-alpha14",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Standard fleet program: students live aboard a 45-50ft catamaran or monohull, grouped by age and grade, sailing in a fleet of 2-6 boats. A typical day includes sailing between anchorages, watersports (wakeboard, waterski, kneeboard, tube, snorkel, small-boat sailing, paddleboard), and evening social time both within the boat crew and across the fleet. No sailing experience required; optional ASA sailing certification is available as a self-paced 'challenge course' completed alongside regular instruction. Life jackets required for all watersports, small boats, and on the main yacht while under sail or power; harnesses worn during night sails.",
@@ -79194,16 +79028,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated-bravo21",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Same day-to-day structure as Alpha (fleet-based sailing and watersports, age/grade-grouped boats, no experience required, optional ASA certification), extended to 3 weeks, covering more islands and allowing more in-depth sailing skill progression than the 14-day version.",
@@ -79256,16 +79081,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated-bravo21",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Same day-to-day structure as Alpha (fleet-based sailing and watersports, age/grade-grouped boats, no experience required, optional ASA certification), extended to 3 weeks, covering more islands and allowing more in-depth sailing skill progression than the 14-day version.",
@@ -79326,14 +79142,6 @@
           "body": "Maximum depth is 60ft for standard certified divers and up to 80-90ft for the most advanced students. Divers aged 11 are capped at 40ft and must dive with a PADI professional or certified diver; ages 12-14 may go to 70ft only with additional Junior Advanced Open Water training. Families should weigh their child's comfort and readiness for open-water diving at these depths, and confirm their child's actual certification status meets the Open Water (or equivalent) prerequisite before enrolling.",
           "sourceCitation": "Sail Caribbean Scuba Diving Camp page, FAQ section",
           "severity": "info"
-        },
-        {
-          "id": "sailcaribbean-financial-aid-unstated-charlie",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -79396,14 +79204,6 @@
           "body": "Maximum depth is 60ft for standard certified divers and up to 80-90ft for the most advanced students. Divers aged 11 are capped at 40ft and must dive with a PADI professional or certified diver; ages 12-14 may go to 70ft only with additional Junior Advanced Open Water training. Families should weigh their child's comfort and readiness for open-water diving at these depths, and confirm their child's actual certification status meets the Open Water (or equivalent) prerequisite before enrolling.",
           "sourceCitation": "Sail Caribbean Scuba Diving Camp page, FAQ section",
           "severity": "info"
-        },
-        {
-          "id": "sailcaribbean-financial-aid-unstated-charlie",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -79466,14 +79266,6 @@
           "body": "Maximum depth is 60ft for standard certified divers and up to 80-90ft for the most advanced students. Divers aged 11 are capped at 40ft and must dive with a PADI professional or certified diver; ages 12-14 may go to 70ft only with additional Junior Advanced Open Water training. Families should weigh their child's comfort and readiness for open-water diving at these depths, and confirm their child's actual certification status meets the Open Water (or equivalent) prerequisite before enrolling.",
           "sourceCitation": "Sail Caribbean Scuba Diving Camp page, FAQ section",
           "severity": "info"
-        },
-        {
-          "id": "sailcaribbean-financial-aid-unstated-charlie",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -79536,14 +79328,6 @@
           "body": "Maximum depth is 60ft for standard certified divers and up to 80-90ft for the most advanced students. Divers aged 11 are capped at 40ft and must dive with a PADI professional or certified diver; ages 12-14 may go to 70ft only with additional Junior Advanced Open Water training. Families should weigh their child's comfort and readiness for open-water diving at these depths, and confirm their child's actual certification status meets the Open Water (or equivalent) prerequisite before enrolling.",
           "sourceCitation": "Sail Caribbean Scuba Diving Camp page, FAQ section",
           "severity": "info"
-        },
-        {
-          "id": "sailcaribbean-financial-aid-unstated-charlie",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -79598,16 +79382,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated-delta21",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Not fully detailed in the pages researched; described only as an 'Advanced Sailing' 3-week program with 'no experience necessary' per the program card, using the same general fleet/live-aboard structure (age/grade-grouped boats, life jacket and harness policies) as the other sailing programs. Specific curriculum differences from Alpha/Bravo were not confirmed in this research pass.",
@@ -79660,16 +79435,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated-delta21",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Not fully detailed in the pages researched; described only as an 'Advanced Sailing' 3-week program with 'no experience necessary' per the program card, using the same general fleet/live-aboard structure (age/grade-grouped boats, life jacket and harness policies) as the other sailing programs. Specific curriculum differences from Alpha/Bravo were not confirmed in this research pass.",
@@ -79723,16 +79489,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated-foxtrot",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Community-service-focused program, structured around education about the 'why' behind conservation and service work rather than just task completion. Activities include CoralWatch reef health check-ups, a GreenVI EcoPark visit, on-boat composting, beach/trail/underwater cleanups, a mangrove ecology excursion, and cultural exchange with local BVI youth including a partnership with KATS. Hours are tracked internally; a Sail Caribbean Community Service certificate is issued after program completion. 14-day sessions earn approximately 15-20 hours; 21-day sessions earn approximately 20-30 hours and add turtle-tagging (BVI Association of Reef Keepers) and Project AWARE's Dive Against Debris.",
@@ -79786,16 +79543,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated-foxtrot",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Community-service-focused program, structured around education about the 'why' behind conservation and service work rather than just task completion. Activities include CoralWatch reef health check-ups, a GreenVI EcoPark visit, on-boat composting, beach/trail/underwater cleanups, a mangrove ecology excursion, and cultural exchange with local BVI youth including a partnership with KATS. Hours are tracked internally; a Sail Caribbean Community Service certificate is issued after program completion. 14-day sessions earn approximately 15-20 hours; 21-day sessions earn approximately 20-30 hours and add turtle-tagging (BVI Association of Reef Keepers) and Project AWARE's Dive Against Debris.",
@@ -79849,16 +79597,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated-foxtrot",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Community-service-focused program, structured around education about the 'why' behind conservation and service work rather than just task completion. Activities include CoralWatch reef health check-ups, a GreenVI EcoPark visit, on-boat composting, beach/trail/underwater cleanups, a mangrove ecology excursion, and cultural exchange with local BVI youth including a partnership with KATS. Hours are tracked internally; a Sail Caribbean Community Service certificate is issued after program completion. 14-day sessions earn approximately 15-20 hours; 21-day sessions earn approximately 20-30 hours and add turtle-tagging (BVI Association of Reef Keepers) and Project AWARE's Dive Against Debris.",
@@ -79912,16 +79651,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated-foxtrot",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Community-service-focused program, structured around education about the 'why' behind conservation and service work rather than just task completion. Activities include CoralWatch reef health check-ups, a GreenVI EcoPark visit, on-boat composting, beach/trail/underwater cleanups, a mangrove ecology excursion, and cultural exchange with local BVI youth including a partnership with KATS. Hours are tracked internally; a Sail Caribbean Community Service certificate is issued after program completion. 14-day sessions earn approximately 15-20 hours; 21-day sessions earn approximately 20-30 hours and add turtle-tagging (BVI Association of Reef Keepers) and Project AWARE's Dive Against Debris.",
@@ -79974,16 +79704,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated-sierra",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Dedicated marine-science program. Most days follow the general fleet routine with marine-science lessons layered in at selected moorings. Sierra students get more frequent and focused lessons than the general fleet: fish-identification snorkels, CoralWatch surveys, turtle tagging, plankton tows, and invertebrate hunts. 14-day sessions are the two-week version; 21-day sessions provide approximately 10-20 total hours of dedicated instruction and fieldwork, plus special cross-boat field trips with other Sierra students for shared seminars, data collection, and analysis.",
@@ -80036,16 +79757,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated-sierra",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Dedicated marine-science program. Most days follow the general fleet routine with marine-science lessons layered in at selected moorings. Sierra students get more frequent and focused lessons than the general fleet: fish-identification snorkels, CoralWatch surveys, turtle tagging, plankton tows, and invertebrate hunts. 14-day sessions are the two-week version; 21-day sessions provide approximately 10-20 total hours of dedicated instruction and fieldwork, plus special cross-boat field trips with other Sierra students for shared seminars, data collection, and analysis.",
@@ -80098,16 +79810,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated-sierra",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Dedicated marine-science program. Most days follow the general fleet routine with marine-science lessons layered in at selected moorings. Sierra students get more frequent and focused lessons than the general fleet: fish-identification snorkels, CoralWatch surveys, turtle tagging, plankton tows, and invertebrate hunts. 14-day sessions are the two-week version; 21-day sessions provide approximately 10-20 total hours of dedicated instruction and fieldwork, plus special cross-boat field trips with other Sierra students for shared seminars, data collection, and analysis.",
@@ -80160,16 +79863,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated-sierra",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Dedicated marine-science program. Most days follow the general fleet routine with marine-science lessons layered in at selected moorings. Sierra students get more frequent and focused lessons than the general fleet: fish-identification snorkels, CoralWatch surveys, turtle tagging, plankton tows, and invertebrate hunts. 14-day sessions are the two-week version; 21-day sessions provide approximately 10-20 total hours of dedicated instruction and fieldwork, plus special cross-boat field trips with other Sierra students for shared seminars, data collection, and analysis.",
@@ -80222,16 +79916,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated-lima-sail",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "21-day live-aboard session for HS seniors/18+ on a dedicated Lima Fleet boat, with prior sailing experience required. Dates & Costs confirms Jul 12 \u2013 Aug 1, 2027 and $8,195 tuition (through Oct 15). No dedicated Lima curriculum page was found; day-to-day structure likely mirrors the general live-aboard fleet model with a more advanced sailing curriculum. Confirm itinerary details directly with the provider.",
@@ -80284,16 +79969,7 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.sailcaribbean.com/dates-costs/",
-      "flags": [
-        {
-          "id": "sailcaribbean-financial-aid-unstated-lima-dive",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the pages researched",
-          "body": "No mention of scholarships or need-based aid was found for this program.",
-          "severity": "info",
-          "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "21-day live-aboard session for HS seniors/18+ on a dedicated Lima Fleet boat, requiring PADI Divemaster prerequisites. Dates & Costs confirms Jul 12 \u2013 Aug 1, 2027, $8,195 tuition (through Oct 15), and 35+ dives. No dedicated Lima curriculum page was found; the program likely uses Sail Caribbean Divers' dive-boat fleet and professional-level dive staff similar to Charlie, oriented toward students pursuing professional dive certifications. Confirm structure directly with the provider.",
