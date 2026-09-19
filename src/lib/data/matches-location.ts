@@ -186,6 +186,11 @@ function resolveState(query: string): UsState | null {
 
 const LOCATION_PREPOSITIONS = new Set(["in", "at", "near"]);
 
+/** City searches that should also match nearby catalog locations. */
+const CITY_QUERY_ALIASES: Record<string, readonly string[]> = {
+  "los angeles": ["malibu"],
+};
+
 /**
  * Resolve free-text location input to a canonical state name.
  * Two-letter abbreviations match only as a standalone query ("ID", "in ID")
@@ -351,7 +356,8 @@ export function matchesLocationQuery(program: Program, query: string): boolean {
     .join(" ")
     .toLowerCase();
 
-  return locationNeedleMatchesInText(locationText, needle);
+  const needles = [needle, ...(CITY_QUERY_ALIASES[needle] ?? [])];
+  return needles.some((alias) => locationNeedleMatchesInText(locationText, alias));
 }
 
 /** Parse multi-state phrases like "NY or MA" into canonical state names. */

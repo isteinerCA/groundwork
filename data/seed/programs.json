@@ -78528,7 +78528,7 @@
     },
     {
       "id": "prog-1402",
-      "slug": "sail-caribbean-tango-14-day-early-summer-2027",
+      "slug": "sail-caribbean-tango-14-day-summer-2027-session-early-tango",
       "name": "Sail Caribbean - Tango 14-Day",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-tango-14",
@@ -78590,8 +78590,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1468",
-      "slug": "sail-caribbean-tango-14-day-1-summer-2027",
+      "id": "prog-1403",
+      "slug": "sail-caribbean-tango-14-day-summer-2027-session-tango-1",
       "name": "Sail Caribbean - Tango 14-Day",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-tango-14",
@@ -78653,8 +78653,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1469",
-      "slug": "sail-caribbean-tango-14-day-2-summer-2027",
+      "id": "prog-1404",
+      "slug": "sail-caribbean-tango-14-day-summer-2027-session-tango-2",
       "name": "Sail Caribbean - Tango 14-Day",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-tango-14",
@@ -78716,8 +78716,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1470",
-      "slug": "sail-caribbean-tango-14-day-3-summer-2027",
+      "id": "prog-1405",
+      "slug": "sail-caribbean-tango-14-day-summer-2027-session-tango-3",
       "name": "Sail Caribbean - Tango 14-Day",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-tango-14",
@@ -78779,8 +78779,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1471",
-      "slug": "sail-caribbean-tango-14-day-late-summer-2027",
+      "id": "prog-1406",
+      "slug": "sail-caribbean-tango-14-day-summer-2027-session-late-tango",
       "name": "Sail Caribbean - Tango 14-Day",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-tango-14",
@@ -78842,8 +78842,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1403",
-      "slug": "sail-caribbean-alpha-14-day-early-summer-2027",
+      "id": "prog-1407",
+      "slug": "sail-caribbean-alpha-14-day-summer-2027-session-early-alpha",
       "name": "Sail Caribbean - Alpha 14-Day",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-alpha-14",
@@ -78904,8 +78904,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1472",
-      "slug": "sail-caribbean-alpha-14-day-1-summer-2027",
+      "id": "prog-1408",
+      "slug": "sail-caribbean-alpha-14-day-summer-2027-session-alpha-1",
       "name": "Sail Caribbean - Alpha 14-Day",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-alpha-14",
@@ -78966,8 +78966,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1473",
-      "slug": "sail-caribbean-alpha-14-day-2-summer-2027",
+      "id": "prog-1409",
+      "slug": "sail-caribbean-alpha-14-day-summer-2027-session-alpha-2",
       "name": "Sail Caribbean - Alpha 14-Day",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-alpha-14",
@@ -79028,8 +79028,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1474",
-      "slug": "sail-caribbean-alpha-14-day-3-summer-2027",
+      "id": "prog-1410",
+      "slug": "sail-caribbean-alpha-14-day-summer-2027-session-alpha-3",
       "name": "Sail Caribbean - Alpha 14-Day",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-alpha-14",
@@ -79090,8 +79090,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1475",
-      "slug": "sail-caribbean-alpha-14-day-late-summer-2027",
+      "id": "prog-1411",
+      "slug": "sail-caribbean-alpha-14-day-summer-2027-session-late-alpha",
       "name": "Sail Caribbean - Alpha 14-Day",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-alpha-14",
@@ -79152,8 +79152,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1404",
-      "slug": "sail-caribbean-bravo-21-day-1-summer-2027",
+      "id": "prog-1412",
+      "slug": "sail-caribbean-bravo-21-day-summer-2027-session-bravo-1",
       "name": "Sail Caribbean - Bravo 21-Day",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-bravo-21",
@@ -79214,8 +79214,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1476",
-      "slug": "sail-caribbean-bravo-21-day-2-summer-2027",
+      "id": "prog-1413",
+      "slug": "sail-caribbean-bravo-21-day-summer-2027-session-bravo-2",
       "name": "Sail Caribbean - Bravo 21-Day",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-bravo-21",
@@ -79276,8 +79276,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1405",
-      "slug": "sail-caribbean-charlie-14-day-early-summer-2027",
+      "id": "prog-1414",
+      "slug": "sail-caribbean-charlie-14-day-session-early-charlie",
       "name": "Sail Caribbean - Charlie",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-charlie",
@@ -79346,8 +79346,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1477",
-      "slug": "sail-caribbean-charlie-14-day-late-summer-2027",
+      "id": "prog-1415",
+      "slug": "sail-caribbean-charlie-14-day-session-late-charlie",
       "name": "Sail Caribbean - Charlie",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-charlie",
@@ -79416,8 +79416,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1406",
-      "slug": "sail-caribbean-charlie-21-day-1-summer-2027",
+      "id": "prog-1416",
+      "slug": "sail-caribbean-charlie-21-day-session-charlie-1",
       "name": "Sail Caribbean - Charlie",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-charlie",
@@ -79486,8 +79486,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1478",
-      "slug": "sail-caribbean-charlie-21-day-2-summer-2027",
+      "id": "prog-1417",
+      "slug": "sail-caribbean-charlie-21-day-session-charlie-2",
       "name": "Sail Caribbean - Charlie",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-charlie",
@@ -79556,8 +79556,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1407",
-      "slug": "sail-caribbean-delta-21-day-1-summer-2027",
+      "id": "prog-1418",
+      "slug": "sail-caribbean-delta-21-day-summer-2027-session-delta-1",
       "name": "Sail Caribbean - Delta 21-Day",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-delta-21",
@@ -79618,8 +79618,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1479",
-      "slug": "sail-caribbean-delta-21-day-2-summer-2027",
+      "id": "prog-1419",
+      "slug": "sail-caribbean-delta-21-day-summer-2027-session-delta-2",
       "name": "Sail Caribbean - Delta 21-Day",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-delta-21",
@@ -79680,8 +79680,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1408",
-      "slug": "sail-caribbean-foxtrot-14-day-early-summer-2027",
+      "id": "prog-1420",
+      "slug": "sail-caribbean-foxtrot-14-day-session-early-foxtrot",
       "name": "Sail Caribbean - Foxtrot",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-foxtrot",
@@ -79743,8 +79743,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1480",
-      "slug": "sail-caribbean-foxtrot-14-day-late-summer-2027",
+      "id": "prog-1421",
+      "slug": "sail-caribbean-foxtrot-14-day-session-late-foxtrot",
       "name": "Sail Caribbean - Foxtrot",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-foxtrot",
@@ -79806,8 +79806,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1409",
-      "slug": "sail-caribbean-foxtrot-21-day-1-summer-2027",
+      "id": "prog-1422",
+      "slug": "sail-caribbean-foxtrot-21-day-session-foxtrot-1",
       "name": "Sail Caribbean - Foxtrot",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-foxtrot",
@@ -79869,8 +79869,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1481",
-      "slug": "sail-caribbean-foxtrot-21-day-2-summer-2027",
+      "id": "prog-1423",
+      "slug": "sail-caribbean-foxtrot-21-day-session-foxtrot-2",
       "name": "Sail Caribbean - Foxtrot",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-foxtrot",
@@ -79932,8 +79932,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1410",
-      "slug": "sail-caribbean-sierra-14-day-early-summer-2027",
+      "id": "prog-1424",
+      "slug": "sail-caribbean-sierra-14-day-session-early-sierra",
       "name": "Sail Caribbean - Sierra",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-sierra",
@@ -79994,8 +79994,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1482",
-      "slug": "sail-caribbean-sierra-14-day-late-summer-2027",
+      "id": "prog-1425",
+      "slug": "sail-caribbean-sierra-14-day-session-late-sierra",
       "name": "Sail Caribbean - Sierra",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-sierra",
@@ -80056,8 +80056,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1411",
-      "slug": "sail-caribbean-sierra-21-day-1-summer-2027",
+      "id": "prog-1426",
+      "slug": "sail-caribbean-sierra-21-day-session-sierra-1",
       "name": "Sail Caribbean - Sierra",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-sierra",
@@ -80118,8 +80118,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1483",
-      "slug": "sail-caribbean-sierra-21-day-2-summer-2027",
+      "id": "prog-1427",
+      "slug": "sail-caribbean-sierra-21-day-session-sierra-2",
       "name": "Sail Caribbean - Sierra",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-sierra",
@@ -80180,8 +80180,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1412",
-      "slug": "sail-caribbean-lima-sail-summer-2027",
+      "id": "prog-1428",
+      "slug": "sail-caribbean-lima-sail-summer-2027-session-lima-sail",
       "name": "Sail Caribbean - Lima Sail",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-lima-sail",
@@ -80242,8 +80242,8 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1413",
-      "slug": "sail-caribbean-lima-dive-summer-2027",
+      "id": "prog-1429",
+      "slug": "sail-caribbean-lima-dive-summer-2027-session-lima-dive",
       "name": "Sail Caribbean - Lima Dive",
       "institution": "Sail Caribbean",
       "programGroupId": "sailcaribbean-lima-dive",
@@ -80304,7 +80304,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1414",
+      "id": "prog-1430",
       "slug": "northwaters-langskib-northwaters-all-gender-coed-summer-2027-3-5-week-session",
       "name": "Northwaters & Langskib - Northwaters All Gender (Coed)",
       "institution": "Northwaters & Langskib",
@@ -80364,7 +80364,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1415",
+      "id": "prog-1431",
       "slug": "northwaters-langskib-langskib-2-week-boys-ages-10-12-summer-2027-june-30-july-13-2027",
       "name": "Northwaters & Langskib - Langskib 2-Week (Boys, Ages 10-12)",
       "institution": "Northwaters & Langskib",
@@ -80426,7 +80426,7 @@
       "participantGender": "boys"
     },
     {
-      "id": "prog-1416",
+      "id": "prog-1432",
       "slug": "northwaters-langskib-langskib-2-week-boys-ages-10-12-summer-2027-july-26-august-8-2027",
       "name": "Northwaters & Langskib - Langskib 2-Week (Boys, Ages 10-12)",
       "institution": "Northwaters & Langskib",
@@ -80488,7 +80488,7 @@
       "participantGender": "boys"
     },
     {
-      "id": "prog-1417",
+      "id": "prog-1433",
       "slug": "northwaters-langskib-langskib-3-5-week-boys-young-men-ages-11-17-summer-2027-june-26-july-19-2027",
       "name": "Northwaters & Langskib - Langskib 3.5-Week (Boys & Young Men, Ages 11-17)",
       "institution": "Northwaters & Langskib",
@@ -80539,7 +80539,7 @@
       "participantGender": "boys"
     },
     {
-      "id": "prog-1418",
+      "id": "prog-1434",
       "slug": "northwaters-langskib-langskib-3-5-week-boys-young-men-ages-11-17-summer-2027-july-22-august-14-2027",
       "name": "Northwaters & Langskib - Langskib 3.5-Week (Boys & Young Men, Ages 11-17)",
       "institution": "Northwaters & Langskib",
@@ -80590,7 +80590,7 @@
       "participantGender": "boys"
     },
     {
-      "id": "prog-1419",
+      "id": "prog-1435",
       "slug": "northwaters-langskib-northern-lights-for-girls-ages-11-14-summer-2027-june-30-july-13-2027",
       "name": "Northwaters & Langskib - Northern Lights for Girls (Ages 11-14)",
       "institution": "Northwaters & Langskib",
@@ -80643,7 +80643,7 @@
       "participantGender": "girls"
     },
     {
-      "id": "prog-1420",
+      "id": "prog-1436",
       "slug": "northwaters-langskib-northern-lights-for-girls-ages-11-14-summer-2027-july-26-august-8-2027",
       "name": "Northwaters & Langskib - Northern Lights for Girls (Ages 11-14)",
       "institution": "Northwaters & Langskib",
@@ -80696,7 +80696,7 @@
       "participantGender": "girls"
     },
     {
-      "id": "prog-1421",
+      "id": "prog-1437",
       "slug": "northwaters-langskib-northwaters-for-young-women-ages-12-17-summer-2027-single-session",
       "name": "Northwaters & Langskib - Northwaters for Young Women (Ages 12-17)",
       "institution": "Northwaters & Langskib",
@@ -80747,7 +80747,7 @@
       "participantGender": "girls"
     },
     {
-      "id": "prog-1422",
+      "id": "prog-1438",
       "slug": "world-class-programs-spain-seville-summer-2027-2-week-program",
       "name": "World Class Programs - Spain (Seville)",
       "institution": "World Class Programs",
@@ -80809,7 +80809,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1423",
+      "id": "prog-1439",
       "slug": "world-class-programs-greece-italy-western-civilization-summer-2027-3-week-program",
       "name": "World Class Programs - Greece & Italy: Western Civilization",
       "institution": "World Class Programs",
@@ -80871,7 +80871,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1424",
+      "id": "prog-1440",
       "slug": "world-class-programs-japan-osaka-summer-2027-2-week-program",
       "name": "World Class Programs - Japan (Osaka)",
       "institution": "World Class Programs",
@@ -80933,7 +80933,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1425",
+      "id": "prog-1441",
       "slug": "world-class-programs-japan-osaka-summer-2027-3-week-program",
       "name": "World Class Programs - Japan (Osaka)",
       "institution": "World Class Programs",
@@ -80995,7 +80995,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1426",
+      "id": "prog-1442",
       "slug": "world-class-programs-italy-florence-summer-2027-2-week-program",
       "name": "World Class Programs - Italy (Florence)",
       "institution": "World Class Programs",
@@ -81057,7 +81057,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1427",
+      "id": "prog-1443",
       "slug": "world-class-programs-italy-florence-summer-2027-3-week-program",
       "name": "World Class Programs - Italy (Florence)",
       "institution": "World Class Programs",
@@ -81119,7 +81119,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1428",
+      "id": "prog-1444",
       "slug": "aca-american-collegiate-adventures-barcelona-3-weeks-june-27-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Barcelona",
       "institution": "American Collegiate Adventures (ACA)",
@@ -81169,14 +81169,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -81189,7 +81181,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1429",
+      "id": "prog-1445",
       "slug": "aca-american-collegiate-adventures-barcelona-2-weeks-july-3-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Barcelona",
       "institution": "American Collegiate Adventures (ACA)",
@@ -81239,14 +81231,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -81259,7 +81243,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1430",
+      "id": "prog-1446",
       "slug": "aca-american-collegiate-adventures-florence-3-weeks-june-27-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Florence",
       "institution": "American Collegiate Adventures (ACA)",
@@ -81310,14 +81294,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -81330,7 +81306,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1431",
+      "id": "prog-1447",
       "slug": "aca-american-collegiate-adventures-florence-2-weeks-june-27-july-11-2027",
       "name": "ACA (American Collegiate Adventures) - Florence",
       "institution": "American Collegiate Adventures (ACA)",
@@ -81383,14 +81359,6 @@
           "severity": "info"
         },
         {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
-        },
-        {
           "id": "aca-florence-specific-note-1",
           "type": "safety",
           "title": "The earlier Florence 2-week session cannot add the Greece or Croatia extension",
@@ -81409,7 +81377,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1432",
+      "id": "prog-1448",
       "slug": "aca-american-collegiate-adventures-florence-2-weeks-july-3-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Florence",
       "institution": "American Collegiate Adventures (ACA)",
@@ -81460,14 +81428,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -81480,7 +81440,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1433",
+      "id": "prog-1449",
       "slug": "aca-american-collegiate-adventures-nice-3-weeks-june-27-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Nice",
       "institution": "American Collegiate Adventures (ACA)",
@@ -81530,14 +81490,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -81550,7 +81502,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1434",
+      "id": "prog-1450",
       "slug": "aca-american-collegiate-adventures-nice-2-weeks-july-3-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Nice",
       "institution": "American Collegiate Adventures (ACA)",
@@ -81600,14 +81552,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -81620,7 +81564,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1435",
+      "id": "prog-1451",
       "slug": "aca-american-collegiate-adventures-paris-3-weeks-june-27-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Paris",
       "institution": "American Collegiate Adventures (ACA)",
@@ -81672,14 +81616,6 @@
           "severity": "info"
         },
         {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
-        },
-        {
           "id": "aca-paris-specific-note-1",
           "type": "safety",
           "title": "College credit is not listed for Paris, unlike ACA's other European study-abroad programs",
@@ -81698,7 +81634,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1436",
+      "id": "prog-1452",
       "slug": "aca-american-collegiate-adventures-paris-2-weeks-july-3-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Paris",
       "institution": "American Collegiate Adventures (ACA)",
@@ -81750,14 +81686,6 @@
           "severity": "info"
         },
         {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
-        },
-        {
           "id": "aca-paris-specific-note-1",
           "type": "safety",
           "title": "College credit is not listed for Paris, unlike ACA's other European study-abroad programs",
@@ -81776,7 +81704,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1437",
+      "id": "prog-1453",
       "slug": "aca-american-collegiate-adventures-oxford-2-weeks-july-3-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Oxford",
       "institution": "American Collegiate Adventures (ACA)",
@@ -81828,14 +81756,6 @@
           "severity": "info"
         },
         {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
-        },
-        {
           "id": "aca-oxford-specific-note-1",
           "type": "safety",
           "title": "Oxford is housed in a university residence hall and lists two college-level courses daily",
@@ -81854,7 +81774,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1438",
+      "id": "prog-1454",
       "slug": "aca-american-collegiate-adventures-malibu-pepperdine-pre-college-3-weeks-june-28-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Malibu (Pepperdine) Pre-College",
       "institution": "American Collegiate Adventures (ACA)",
@@ -81903,14 +81823,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -81923,7 +81835,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1439",
+      "id": "prog-1455",
       "slug": "aca-american-collegiate-adventures-malibu-pepperdine-pre-college-2-weeks-july-5-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Malibu (Pepperdine) Pre-College",
       "institution": "American Collegiate Adventures (ACA)",
@@ -81972,14 +81884,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -81992,7 +81896,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1440",
+      "id": "prog-1456",
       "slug": "aca-american-collegiate-adventures-los-angeles-pre-college-3-weeks-june-28-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Los Angeles Pre-College",
       "institution": "American Collegiate Adventures (ACA)",
@@ -82041,14 +81945,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -82061,7 +81957,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1441",
+      "id": "prog-1457",
       "slug": "aca-american-collegiate-adventures-los-angeles-pre-college-2-weeks-july-5-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Los Angeles Pre-College",
       "institution": "American Collegiate Adventures (ACA)",
@@ -82110,14 +82006,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -82130,7 +82018,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1442",
+      "id": "prog-1458",
       "slug": "aca-american-collegiate-adventures-washington-dc-georgetown-pre-college-3-weeks-june-28-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Washington, DC (Georgetown) Pre-College",
       "institution": "American Collegiate Adventures (ACA)",
@@ -82181,14 +82069,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -82201,7 +82081,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1443",
+      "id": "prog-1459",
       "slug": "aca-american-collegiate-adventures-washington-dc-georgetown-pre-college-2-weeks-july-5-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Washington, DC (Georgetown) Pre-College",
       "institution": "American Collegiate Adventures (ACA)",
@@ -82252,14 +82132,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -82272,7 +82144,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1444",
+      "id": "prog-1460",
       "slug": "aca-american-collegiate-adventures-michigan-ann-arbor-pre-college-3-weeks-june-28-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Michigan (Ann Arbor) Pre-College",
       "institution": "American Collegiate Adventures (ACA)",
@@ -82323,14 +82195,6 @@
           "severity": "info"
         },
         {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
-        },
-        {
           "id": "aca-michigan-precollege-specific-note-1",
           "type": "safety",
           "title": "No optional extension is listed for Michigan, unlike most other ACA pre-college programs",
@@ -82349,7 +82213,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1445",
+      "id": "prog-1461",
       "slug": "aca-american-collegiate-adventures-michigan-ann-arbor-pre-college-2-weeks-july-5-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Michigan (Ann Arbor) Pre-College",
       "institution": "American Collegiate Adventures (ACA)",
@@ -82400,14 +82264,6 @@
           "severity": "info"
         },
         {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
-        },
-        {
           "id": "aca-michigan-precollege-specific-note-1",
           "type": "safety",
           "title": "No optional extension is listed for Michigan, unlike most other ACA pre-college programs",
@@ -82426,7 +82282,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1446",
+      "id": "prog-1462",
       "slug": "aca-american-collegiate-adventures-wisconsin-madison-pre-college-2-weeks-july-18-july-30-2027",
       "name": "ACA (American Collegiate Adventures) - Wisconsin (Madison) Pre-College",
       "institution": "American Collegiate Adventures (ACA)",
@@ -82475,14 +82331,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -82495,7 +82343,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1447",
+      "id": "prog-1463",
       "slug": "aca-american-collegiate-adventures-michigan-wisconsin-combo-4-weeks-july-5-july-30-2027",
       "name": "ACA (American Collegiate Adventures) - Michigan + Wisconsin Combo",
       "institution": "American Collegiate Adventures (ACA)",
@@ -82543,14 +82391,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -82563,13 +82403,13 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1448",
+      "id": "prog-1464",
       "slug": "aca-american-collegiate-adventures-washington-dc-georgetown-middle-school-3-weeks-june-28-july-17-20",
       "name": "ACA (American Collegiate Adventures) - Washington, DC (Georgetown) Middle School",
       "institution": "American Collegiate Adventures (ACA)",
       "programGroupId": "aca-georgetown-middleschool",
       "description": "A 3-week middle-school \"Camp-on-Campus\" program in Washington, D.C., covering Washington sightseeing. Uses an 8:1 student-to-staff ratio -- tighter than the 10:1 ratio used on the high-school-aged Washington, DC/Georgetown Pre-College program at the same location.",
-      "category": "leadership-gifted",
+      "category": "traditional-camp",
       "secondaryTags": [],
       "trackDetail": "3 weeks (June 28 - July 17, 2027)",
       "gradeDisplay": "Middle school",
@@ -82612,14 +82452,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -82632,13 +82464,13 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1449",
+      "id": "prog-1465",
       "slug": "aca-american-collegiate-adventures-washington-dc-georgetown-middle-school-2-weeks-july-5-july-17-202",
       "name": "ACA (American Collegiate Adventures) - Washington, DC (Georgetown) Middle School",
       "institution": "American Collegiate Adventures (ACA)",
       "programGroupId": "aca-georgetown-middleschool",
       "description": "The 2-week version of the Georgetown Middle School program.",
-      "category": "leadership-gifted",
+      "category": "traditional-camp",
       "secondaryTags": [],
       "trackDetail": "2 weeks (July 5 - July 17, 2027)",
       "gradeDisplay": "Middle school",
@@ -82681,14 +82513,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -82701,13 +82525,13 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1450",
+      "id": "prog-1466",
       "slug": "aca-american-collegiate-adventures-socal-pepperdine-middle-school-3-weeks-june-28-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - SoCal (Pepperdine) Middle School",
       "institution": "American Collegiate Adventures (ACA)",
       "programGroupId": "aca-socal-middleschool",
       "description": "A 3-week middle-school \"Camp-on-Campus\" program at Pepperdine University in Malibu, with visits to Santa Monica, Venice, and Santa Barbara. Uses an 8:1 ratio -- tighter than the 10:1 ratio used on the high-school-aged Malibu and Los Angeles Pre-College programs.",
-      "category": "leadership-gifted",
+      "category": "traditional-camp",
       "secondaryTags": [],
       "trackDetail": "3 weeks (June 28 - July 17, 2027)",
       "gradeDisplay": "Middle school",
@@ -82750,14 +82574,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -82770,13 +82586,13 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1451",
+      "id": "prog-1467",
       "slug": "aca-american-collegiate-adventures-socal-pepperdine-middle-school-2-weeks-july-5-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - SoCal (Pepperdine) Middle School",
       "institution": "American Collegiate Adventures (ACA)",
       "programGroupId": "aca-socal-middleschool",
       "description": "The 2-week version of the SoCal Middle School program.",
-      "category": "leadership-gifted",
+      "category": "traditional-camp",
       "secondaryTags": [],
       "trackDetail": "2 weeks (July 5 - July 17, 2027)",
       "gradeDisplay": "Middle school",
@@ -82819,14 +82635,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -82839,7 +82647,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1452",
+      "id": "prog-1468",
       "slug": "aca-american-collegiate-adventures-european-riviera-teen-tour-21-days-21-days-june-27-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - European Riviera Teen Tour (21 Days)",
       "institution": "American Collegiate Adventures (ACA)",
@@ -82871,7 +82679,7 @@
       "seasonYear": 2027,
       "reviewStatus": "verified",
       "locationDisplay": "Spain, France, Italy, plus Greece or Croatia",
-      "isInternational": true,
+      "isInternational": false,
       "creditDisplay": "No",
       "hasCollegeCredit": false,
       "priceDisplay": "$11,495 promotional (list $11,995)",
@@ -82889,14 +82697,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -82909,7 +82709,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1453",
+      "id": "prog-1469",
       "slug": "aca-american-collegiate-adventures-european-explorer-teen-tour-18-days-18-days-june-30-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - European Explorer Teen Tour (18 Days)",
       "institution": "American Collegiate Adventures (ACA)",
@@ -82941,7 +82741,7 @@
       "seasonYear": 2027,
       "reviewStatus": "verified",
       "locationDisplay": "Spain, France, Italy, plus Greece or Croatia",
-      "isInternational": true,
+      "isInternational": false,
       "creditDisplay": "No",
       "hasCollegeCredit": false,
       "priceDisplay": "$9,995 promotional (list $10,495)",
@@ -82959,14 +82759,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -82979,12 +82771,12 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1454",
+      "id": "prog-1470",
       "slug": "aca-american-collegiate-adventures-western-pacific-teen-tour-30-days-30-days-july-1-july-30-2027",
       "name": "ACA (American Collegiate Adventures) - Western Pacific Teen Tour (30 Days)",
       "institution": "American Collegiate Adventures (ACA)",
       "programGroupId": "aca-teentour-western-pacific-30d",
-      "description": "A 30-day touring program through Utah, Wyoming, Lake Tahoe, and Southern California, including Los Angeles. Upscale hotels described as being in \"the safest locations.\"",
+      "description": "A 30-day touring program along the U.S. West Coast, the longest single ACA program researched. Upscale hotels described as being in \"the safest locations.\"",
       "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "30 days (July 1 - July 30, 2027)",
@@ -83008,7 +82800,7 @@
       "datesParseQuality": "exact",
       "seasonYear": 2027,
       "reviewStatus": "verified",
-      "locationDisplay": "Utah, Wyoming, Lake Tahoe & Los Angeles, Southern California",
+      "locationDisplay": "Western United States (exact city list not detailed on this page)",
       "isInternational": false,
       "creditDisplay": "No",
       "hasCollegeCredit": false,
@@ -83027,14 +82819,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -83047,12 +82831,12 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1455",
+      "id": "prog-1471",
       "slug": "aca-american-collegiate-adventures-western-riviera-teen-tour-21-days-21-days-july-10-july-30-2027",
       "name": "ACA (American Collegiate Adventures) - Western Riviera Teen Tour (21 Days)",
       "institution": "American Collegiate Adventures (ACA)",
       "programGroupId": "aca-teentour-western-riviera-21d",
-      "description": "A 21-day touring program through Utah, Lake Tahoe, and Southern California, including Los Angeles.",
+      "description": "A 21-day, shorter version of the Western Pacific touring program along the U.S. West Coast.",
       "category": "outdoor-wilderness",
       "secondaryTags": [],
       "trackDetail": "21 days (July 10 - July 30, 2027)",
@@ -83076,7 +82860,7 @@
       "datesParseQuality": "exact",
       "seasonYear": 2027,
       "reviewStatus": "verified",
-      "locationDisplay": "Utah, Lake Tahoe & Los Angeles, Southern California",
+      "locationDisplay": "Western United States (exact city list not detailed on this page)",
       "isInternational": false,
       "creditDisplay": "No",
       "hasCollegeCredit": false,
@@ -83095,14 +82879,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -83115,7 +82891,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1456",
+      "id": "prog-1472",
       "slug": "aca-american-collegiate-adventures-costa-rica-community-service-2-weeks-july-5-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Costa Rica Community Service",
       "institution": "American Collegiate Adventures (ACA)",
@@ -83166,14 +82942,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -83186,12 +82954,12 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1457",
+      "id": "prog-1473",
       "slug": "aca-american-collegiate-adventures-hawaii-socal-community-service-3-weeks-june-28-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Hawaii + SoCal Community Service",
       "institution": "American Collegiate Adventures (ACA)",
       "programGroupId": "aca-hawaii-socal-service",
-      "description": "A 3-week community-service and outdoor-adventure program in Honolulu, the Big Island, and Los Angeles / Southern California. No optional extension is listed for this program.",
+      "description": "A 3-week community-service and outdoor-adventure program spanning both Hawaii and Southern California. No optional extension is listed for this program.",
       "category": "leadership-gifted",
       "secondaryTags": [
         "Cultural Exchange",
@@ -83218,7 +82986,7 @@
       "datesParseQuality": "exact",
       "seasonYear": 2027,
       "reviewStatus": "verified",
-      "locationDisplay": "Hawaii (Honolulu and the Big Island) & Los Angeles, Southern California",
+      "locationDisplay": "Hawaii and Southern California",
       "isInternational": false,
       "creditDisplay": "No",
       "hasCollegeCredit": false,
@@ -83237,14 +83005,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -83257,7 +83017,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1458",
+      "id": "prog-1474",
       "slug": "aca-american-collegiate-adventures-project-endeavor-hollywood-film-acting-2-weeks-july-5-july-17-202",
       "name": "ACA (American Collegiate Adventures) - Project Endeavor Hollywood (Film & Acting)",
       "institution": "American Collegiate Adventures (ACA)",
@@ -83306,14 +83066,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -83326,7 +83078,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1459",
+      "id": "prog-1475",
       "slug": "aca-american-collegiate-adventures-project-endeavor-entrepreneurship-2-weeks-july-5-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Project Endeavor Entrepreneurship",
       "institution": "American Collegiate Adventures (ACA)",
@@ -83375,14 +83127,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -83395,7 +83139,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1460",
+      "id": "prog-1476",
       "slug": "aca-american-collegiate-adventures-project-endeavor-sports-biz-management-2-weeks-july-5-july-17-202",
       "name": "ACA (American Collegiate Adventures) - Project Endeavor Sports Biz & Management",
       "institution": "American Collegiate Adventures (ACA)",
@@ -83444,14 +83188,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -83464,7 +83200,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1461",
+      "id": "prog-1477",
       "slug": "aca-american-collegiate-adventures-project-endeavor-fashion-design-2-weeks-july-5-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Project Endeavor Fashion Design",
       "institution": "American Collegiate Adventures (ACA)",
@@ -83515,14 +83251,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -83535,7 +83263,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1462",
+      "id": "prog-1478",
       "slug": "aca-american-collegiate-adventures-malibu-surf-camp-3-weeks-june-28-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Malibu Surf Camp",
       "institution": "American Collegiate Adventures (ACA)",
@@ -83586,14 +83314,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -83606,7 +83326,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1463",
+      "id": "prog-1479",
       "slug": "aca-american-collegiate-adventures-malibu-surf-camp-2-weeks-july-5-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Malibu Surf Camp",
       "institution": "American Collegiate Adventures (ACA)",
@@ -83657,14 +83377,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -83677,7 +83389,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1464",
+      "id": "prog-1480",
       "slug": "aca-american-collegiate-adventures-malibu-soccer-camp-3-weeks-june-28-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Malibu Soccer Camp",
       "institution": "American Collegiate Adventures (ACA)",
@@ -83728,14 +83440,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -83748,7 +83452,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1465",
+      "id": "prog-1481",
       "slug": "aca-american-collegiate-adventures-malibu-soccer-camp-2-weeks-july-5-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Malibu Soccer Camp",
       "institution": "American Collegiate Adventures (ACA)",
@@ -83799,14 +83503,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -83819,7 +83515,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1466",
+      "id": "prog-1482",
       "slug": "aca-american-collegiate-adventures-malibu-tennis-camp-3-weeks-june-28-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Malibu Tennis Camp",
       "institution": "American Collegiate Adventures (ACA)",
@@ -83870,14 +83566,6 @@
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
           "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -83890,7 +83578,7 @@
       "participantGender": "coed"
     },
     {
-      "id": "prog-1467",
+      "id": "prog-1483",
       "slug": "aca-american-collegiate-adventures-malibu-tennis-camp-2-weeks-july-5-july-17-2027",
       "name": "ACA (American Collegiate Adventures) - Malibu Tennis Camp",
       "institution": "American Collegiate Adventures (ACA)",
@@ -83940,14 +83628,6 @@
           "title": "The published price is a standing promotional discount off a higher list price",
           "body": "Every program on the Dates & Tuition page is shown with a struck-through, higher list price alongside a lower, currently-active promotional price (part of a sitewide Save up to $750 campaign). This dataset uses the promotional price as Price Min/Max, but families should confirm whether this discount is genuinely time-limited or a standing feature of ACA's pricing before treating the promotional price as guaranteed.",
           "sourceCitation": "ACA Dates & Tuition page, sitewide banner applied uniformly across every program listed",
-          "severity": "info"
-        },
-        {
-          "id": "aca-financial-aid-unstated",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the Dates & Tuition page",
-          "body": "No mention of scholarships or need-based aid was found. ACA does advertise a standing sitewide discount and a risk-free, refundable-until-Feb-1-2027 deposit, but these are promotional/payment-timing benefits, not need-based aid. Families should ask directly about financial aid.",
-          "sourceCitation": "Absence of financial aid information on the Dates & Tuition page",
           "severity": "info"
         }
       ],

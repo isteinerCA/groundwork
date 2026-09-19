@@ -104,6 +104,7 @@ const DOMESTIC_LOCATION_REGION_QUERIES: Record<string, readonly string[]> = {
     "washington, dc",
     "washington, d.c.",
   ],
+  "los angeles": ["los angeles", "malibu"],
 };
 
 const ACTIVITY_QUERY_GROUPS: Record<string, readonly string[]> = {
@@ -123,7 +124,8 @@ const ACTIVITY_QUERY_GROUPS: Record<string, readonly string[]> = {
     "marine science",
     "oceanography",
   ],
-  theater: ["theater", "theatre"],
+  theater: ["theater", "theatre", "acting"],
+  business: ["business", "biz"],
 };
 
 /**

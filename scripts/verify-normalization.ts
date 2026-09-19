@@ -295,6 +295,23 @@ if (matchesLocationQuery(yosemiteProgram, "los angeles")) {
   failed++;
 }
 
+const malibuProgram = stubProgram({
+  name: "ACA - Malibu (Pepperdine) Pre-College",
+  locationDisplay: "Malibu, California (Pepperdine University campus)",
+  state: "CA",
+  trackDetail: "3 weeks",
+});
+
+if (!matchesLocationQuery(malibuProgram, "los angeles")) {
+  console.error('FAIL: Malibu program should match location query "los angeles"');
+  failed++;
+}
+
+if (!matchesDataQuery(malibuProgram, "los angeles")) {
+  console.error('FAIL: Malibu program should match dataQuery "los angeles"');
+  failed++;
+}
+
 const rltPacificSun = stubProgram({
   name: "The Road Less Traveled - California: Pacific Sun",
   locationDisplay: "California (Pacific Coast, Yosemite, Sierra Nevada)",
@@ -849,6 +866,33 @@ const actingOffering = stubProgram({
 
 if (!matchesDataQuery(actingOffering, "acting program")) {
   console.error('FAIL: acting offering should match dataQuery "acting program"');
+  failed++;
+}
+
+const hollywoodActing = stubProgram({
+  name: "ACA - Project Endeavor Hollywood (Film & Acting)",
+  locationDisplay: "Los Angeles, California",
+  trackDetail: "Theater, Film & Acting",
+});
+
+if (!matchesDataQuery(hollywoodActing, "theater")) {
+  console.error('FAIL: Hollywood film & acting program should match dataQuery "theater"');
+  failed++;
+}
+
+const sportsBusiness = stubProgram({
+  name: "ACA - Project Endeavor Sports Biz & Management",
+  locationDisplay: "Los Angeles, California",
+  trackDetail: "2 weeks (July 5 - July 17, 2027)",
+});
+
+if (!matchesDataQuery(sportsBusiness, "business")) {
+  console.error('FAIL: Sports Biz program should match dataQuery "business"');
+  failed++;
+}
+
+if (matchesDataQuery(filmWithSharedDayToDay, "theater")) {
+  console.error("FAIL: film/screenwriting offering should not match theater without acting/theater identity");
   failed++;
 }
 
