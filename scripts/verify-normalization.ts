@@ -1176,6 +1176,27 @@ if (!gradeMatchesFilter(currentGrades912, [9])) {
   failed++;
 }
 
+const wildTetonGrades = parseGradesFromCsv({
+  "Grades Display": "Current grades 6-7",
+  "Grade Completed Min": "6",
+  "Grade Completed Max": "7",
+});
+if (
+  wildTetonGrades.gradeCompletedMin !== 6 ||
+  wildTetonGrades.gradeCompletedMax !== 7
+) {
+  console.error("FAIL: Current grades 6-7 should stay completed 6-7");
+  failed++;
+}
+if (gradeMatchesFilter(wildTetonGrades, [8])) {
+  console.error("FAIL: Current grades 6-7 should not match completed 8");
+  failed++;
+}
+if (!gradeMatchesFilter(wildTetonGrades, [7])) {
+  console.error("FAIL: Current grades 6-7 should match completed 7");
+  failed++;
+}
+
 const summerDiscoveryGrades = parseGradesFromCsv({
   "Grades Display": "Grades 9-12",
   "Grade Completed Min": "9",
@@ -1217,6 +1238,22 @@ if (
 ) {
   console.error(
     "FAIL: catalog Summer Discovery UCLA should stay current Grades 9-12 and not match completed 8",
+  );
+  failed++;
+}
+
+const wildTetonCatalog = getPrograms().find(
+  (program) => program.programGroupId === "wa-wild-teton",
+);
+if (
+  !wildTetonCatalog ||
+  wildTetonCatalog.gradeDisplay !== "Current grades 6-7" ||
+  wildTetonCatalog.gradeCompletedMin !== 6 ||
+  wildTetonCatalog.gradeCompletedMax !== 7 ||
+  gradeMatchesFilter(wildTetonCatalog, [8])
+) {
+  console.error(
+    "FAIL: catalog Wild Teton should stay current grades 6-7 and not match completed 8",
   );
   failed++;
 }
