@@ -94,7 +94,20 @@ export function normalizeGrade(raw: string): GradeResult {
 
   const stateRestriction = parseStateRestriction(gradeDisplay);
 
-  // Current-grade phrasing ("6th-7th grade") — same number for current and completed.
+  // Current-grade phrasing — same number for current and completed. Not rising.
+  const currentGradesRange = lower.match(
+    /\bcurrent\s+grades?\s*(\d+)\s*[–-]\s*(\d+)/i,
+  );
+  if (currentGradesRange) {
+    return {
+      gradeDisplay,
+      gradeCompletedMin: Number(currentGradesRange[1]),
+      gradeCompletedMax: Number(currentGradesRange[2]),
+      gradeSource: "grade",
+      stateRestriction,
+    };
+  }
+
   const ordinalGradeRange = lower.match(
     /(\d+)(?:st|nd|rd|th)[-–](\d+)(?:st|nd|rd|th)?\s+grades?\b/i,
   );

@@ -13,6 +13,7 @@ import {
   parseGradesFromCsv,
   parseLocationStateFromCsv,
 } from "../src/lib/data/parse-csv-program-fields";
+import { getPrograms } from "../src/lib/programs";
 import {
   formatDateWindowFilterLabel,
   programContainedInDateWindow,
@@ -291,6 +292,30 @@ if (!matchesLocationQuery(laProgram, "los angeles")) {
 
 if (matchesLocationQuery(yosemiteProgram, "los angeles")) {
   console.error('FAIL: Yosemite program should not match location query "los angeles"');
+  failed++;
+}
+
+const rltPacificSun = stubProgram({
+  name: "The Road Less Traveled - California: Pacific Sun",
+  locationDisplay: "California (Pacific Coast, Yosemite, Sierra Nevada)",
+  trackDetail: "Session 1 (Jul 1-14)",
+  description: "14-day domestic tent-camping program from the Pacific Coast to the Sierra Nevada.",
+});
+
+const genericCaliforniaRoadTrip = stubProgram({
+  name: "TFT - USA for Middle School: Hello California",
+  locationDisplay: "California",
+  trackDetail: "Departure",
+  description: "California-focused coastal road trip (surfing, Big Sur, Muir Woods).",
+});
+
+if (!matchesDataQuery(rltPacificSun, "yosemite")) {
+  console.error("FAIL: California trip that visits Yosemite should match dataQuery yosemite");
+  failed++;
+}
+
+if (matchesDataQuery(genericCaliforniaRoadTrip, "yosemite")) {
+  console.error("FAIL: California coastal trip should not match Yosemite without visiting the park");
   failed++;
 }
 
@@ -1128,6 +1153,88 @@ const princetonGrade = {
 };
 if (gradeMatchesFilter(princetonGrade, [10])) {
   console.error("FAIL: HS Juniors program should not match grade 10");
+  failed++;
+}
+
+const currentGrades912 = normalizeGrade("Current grades 9-12");
+if (
+  currentGrades912.gradeCompletedMin !== 9 ||
+  currentGrades912.gradeCompletedMax !== 12 ||
+  currentGrades912.gradeSource !== "grade"
+) {
+  console.error(
+    `FAIL: Current grades 9-12 should be completed 9-12, got ${currentGrades912.gradeCompletedMin}-${currentGrades912.gradeCompletedMax}`,
+  );
+  failed++;
+}
+if (gradeMatchesFilter(currentGrades912, [8])) {
+  console.error("FAIL: Current grades 9-12 should not match completed 8");
+  failed++;
+}
+if (!gradeMatchesFilter(currentGrades912, [9])) {
+  console.error("FAIL: Current grades 9-12 should match completed 9");
+  failed++;
+}
+
+const summerDiscoveryGrades = parseGradesFromCsv({
+  "Grades Display": "Grades 9-12",
+  "Grade Completed Min": "9",
+  "Grade Completed Max": "12",
+});
+if (
+  summerDiscoveryGrades.gradeCompletedMin !== 9 ||
+  summerDiscoveryGrades.gradeCompletedMax !== 12
+) {
+  console.error("FAIL: Summer Discovery current 9-12 should stay completed 9-12");
+  failed++;
+}
+if (gradeMatchesFilter(summerDiscoveryGrades, [8])) {
+  console.error("FAIL: Summer Discovery Grades 9-12 should not match completed 8");
+  failed++;
+}
+
+const rising912 = normalizeGrade("Rising 9-12");
+if (rising912.gradeCompletedMin !== 8 || rising912.gradeCompletedMax !== 11) {
+  console.error(
+    `FAIL: Rising 9-12 should be completed 8-11, got ${rising912.gradeCompletedMin}-${rising912.gradeCompletedMax}`,
+  );
+  failed++;
+}
+if (!gradeMatchesFilter(rising912, [8])) {
+  console.error("FAIL: Rising 9-12 should match completed 8");
+  failed++;
+}
+
+const summerDiscoveryUcla = getPrograms().find(
+  (program) => program.programGroupId === "summerdiscovery-ucla",
+);
+if (
+  !summerDiscoveryUcla ||
+  summerDiscoveryUcla.gradeDisplay !== "Grades 9-12" ||
+  summerDiscoveryUcla.gradeCompletedMin !== 9 ||
+  summerDiscoveryUcla.gradeCompletedMax !== 12 ||
+  gradeMatchesFilter(summerDiscoveryUcla, [8])
+) {
+  console.error(
+    "FAIL: catalog Summer Discovery UCLA should stay current Grades 9-12 and not match completed 8",
+  );
+  failed++;
+}
+
+const cieeCurrent912 = getPrograms().find(
+  (program) =>
+    program.programGroupId === "ciee-france-paris-french-language-culture" &&
+    /^current grades 9-12$/i.test(program.gradeDisplay),
+);
+if (
+  !cieeCurrent912 ||
+  cieeCurrent912.gradeCompletedMin !== 9 ||
+  cieeCurrent912.gradeCompletedMax !== 12 ||
+  gradeMatchesFilter(cieeCurrent912, [8])
+) {
+  console.error(
+    "FAIL: Current grades 9-12 catalog rows should be completed 9-12 and not match completed 8",
+  );
   failed++;
 }
 
