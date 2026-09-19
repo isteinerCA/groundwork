@@ -1677,36 +1677,6 @@
   },
   {
     "match": {
-      "programGroupId": "rustic-thailand-elephant-conservation"
-    },
-    "flags": [
-      {
-        "id": "thai-elephant-group-size-inconsistency",
-        "type": "safety",
-        "title": "Group size is stated inconsistently on the program's own page",
-        "body": "The program-essentials summary box on this page states a maximum of 16 students, while the FAQ section further down the same page states the group is limited to 15 students. Families should confirm the actual group size directly with Rustic Pathways.",
-        "sourceCitation": "Thai Elephant Conservation Project program page, comparing the program-essentials box to the Group & Logistics FAQ section",
-        "severity": "info"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "rustic-peru-sacred-valley-service"
-    },
-    "flags": [
-      {
-        "id": "sacred-valley-group-size-inconsistency",
-        "type": "safety",
-        "title": "Group size is stated inconsistently on the program's own page",
-        "body": "The program-essentials summary box on this page states a maximum of 15 students, while the FAQ section further down the same page states the group is limited to 18 students. Families should confirm the actual group size directly with Rustic Pathways.",
-        "sourceCitation": "Sacred Valley Service (Peru) program page, comparing the program-essentials box to the Group & Logistics FAQ section",
-        "severity": "info"
-      }
-    ]
-  },
-  {
-    "match": {
       "programGroupId": "rustic-thailand-come-with-nothing"
     },
     "flags": [
@@ -1852,37 +1822,6 @@
   },
   {
     "match": {
-      "programGroupId": "rustic-southkorea-k-everything-spring-break"
-    },
-    "flags": [
-      {
-        "id": "k-everything-non-summer",
-        "type": "safety",
-        "title": "This is the only non-summer program in the portfolio researched",
-        "body": "This program runs during Spring Break 2027 (April 4-9), not summer. Families used to summer program timelines should note this is a different booking season entirely, timed to match Palo Alto Unified and Atlanta Public Schools spring break.",
-        "sourceCitation": "South Korea Teen Travel Program: K-Everything program page, Why This Destination? section",
-        "severity": "info"
-      },
-      {
-        "id": "k-everything-date-line-confusion",
-        "type": "safety",
-        "title": "US travel dates and Korea travel dates are not the same days",
-        "body": "This program is sold as 'Sunday April 4 to Friday April 9, 2027' using US departure/return dates, but because of the international date line and a 13-hour time difference, students are actually on the ground in Korea only from Monday morning to Friday evening (5 days, 4 nights). Families should not assume 6 full days in Korea based on the marketed date range.",
-        "sourceCitation": "South Korea Teen Travel Program: K-Everything program page, Flight Times section",
-        "severity": "warning"
-      },
-      {
-        "id": "k-everything-no-group-flight",
-        "type": "safety",
-        "title": "No group or chaperoned flight is offered",
-        "body": "Unlike most other Rustic Pathways programs, there is no group flight and no chaperoned flight option here. Every family must book independent international airfare landing at Incheon between 4:00-9:00 AM on the Monday and departing between 6:00-10:00 PM on the Friday, Korea time. Arrivals outside this window incur an additional out-of-window fee.",
-        "sourceCitation": "South Korea Teen Travel Program: K-Everything program page, Flights & Cost FAQ section",
-        "severity": "warning"
-      }
-    ]
-  },
-  {
-    "match": {
       "programGroupId": "rustic-china-great-wall-li-river"
     },
     "flags": [
@@ -1890,7 +1829,7 @@
         "id": "china-visa-required",
         "type": "safety",
         "title": "US citizens need a Chinese visa for this program",
-        "body": "Unlike almost every other Rustic Pathways program, US passport holders DO need a visa to travel on this program, since it flies home directly to the United States rather than continuing to a third country. The visa must be applied for in person at a Chinese Visa Application Service Center, and families should start the process about two months before departure.",
+        "body": "Unlike almost every other Rustic Pathways program, US passport holders DO need a visa to travel on this program. The visa must be applied for in person at a Chinese Visa Application Service Center, and families should start the process about two months before departure.",
         "sourceCitation": "China: Great Wall to Li River program page, How Do Visas, Phones and Transport Work in China? section",
         "severity": "warning"
       },
@@ -1900,14 +1839,6 @@
         "title": "WhatsApp does not work in mainland China",
         "body": "Families expecting to communicate via WhatsApp should know it does not function on mainland Chinese networks. Every student is issued a China-enabled SIM card, and Program Leaders and the Country Director use WeChat instead for non-emergency communication.",
         "sourceCitation": "China: Great Wall to Li River program page, Communication FAQ section",
-        "severity": "info"
-      },
-      {
-        "id": "china-no-service-hours",
-        "type": "safety",
-        "title": "This program carries no community-service component",
-        "body": "Unlike many other Rustic Pathways programs, this one has no community service component and carries no service hours. Families specifically seeking service-hour documentation should choose a different program.",
-        "sourceCitation": "China: Great Wall to Li River program page, Is This the Right Fit? section",
         "severity": "info"
       }
     ]
@@ -1921,7 +1852,7 @@
         "id": "shenzhen-singapore-visa-free-transit",
         "type": "safety",
         "title": "US citizens travel visa-free via China's 240-hour transit rule",
-        "body": "Because this itinerary enters mainland China directly from the US and continues onward to Singapore (a third country), students travel under China's 240-hour (10-day) visa-free transit policy, entering and exiting at Shenzhen Bao'an. This is a materially different, easier visa situation than Rustic's standalone China program (Great Wall to Li River), which does require a visa since it returns directly to the US. Singapore itself is visa-free for US passport holders, with a free online Arrival Card required within 3 days of arrival.",
+        "body": "Because this itinerary enters mainland China directly from the US and continues onward to Singapore (a third country), students travel under China's 240-hour (10-day) visa-free transit policy, entering and exiting at Shenzhen Bao'an. Singapore itself is visa-free for US passport holders, with a free online Arrival Card required within 3 days of arrival.",
         "sourceCitation": "Shenzhen & Singapore: Two Models of Innovation program page, visa FAQ section",
         "severity": "info"
       },
@@ -1931,14 +1862,6 @@
         "title": "WhatsApp does not work during the Shenzhen (mainland China) portion",
         "body": "As with Rustic's other mainland China program, WhatsApp does not function during the Shenzhen leg of this trip. Every student is issued a China-enabled SIM card, and Program Leaders use WeChat during that portion; normal connectivity resumes once the group reaches Singapore.",
         "sourceCitation": "Shenzhen & Singapore: Two Models of Innovation program page, Communication FAQ section",
-        "severity": "info"
-      },
-      {
-        "id": "shenzhen-singapore-highest-price",
-        "type": "safety",
-        "title": "This is the most expensive program in the portfolio researched",
-        "body": "At $13,680 tuition ($13,780 at checkout), this is the single highest-priced program across all 29 Rustic Pathways programs researched -- more than six times the price of the least expensive program in this batch.",
-        "sourceCitation": "Shenzhen & Singapore: Two Models of Innovation program page, pricing section",
         "severity": "info"
       }
     ]
@@ -1963,14 +1886,6 @@
       "programGroupId": "rustic-spain-spanish-language-immersion"
     },
     "flags": [
-      {
-        "id": "spain-language-immersion-saturday-departure",
-        "type": "safety",
-        "title": "This program departs on a Saturday, not Rustic's usual Wednesday",
-        "body": "Every other Rustic Pathways Europe program departs the US on a Wednesday. This program instead departs Saturday, June 19, 2027 and returns Sunday, July 4, 2027, because its partner school (Segontiae Hispanic Studies) runs its course Sunday-to-Sunday. Families should book flights against these specific dates rather than assuming the usual Wednesday pattern.",
-        "sourceCitation": "Spain: Spanish Language Immersion program page, Group & Logistics FAQ section",
-        "severity": "warning"
-      },
       {
         "id": "spain-language-immersion-diploma-not-proficiency-cert",
         "type": "safety",
@@ -2031,29 +1946,6 @@
         "body": "High among service-inclusive RLT programs.",
         "severity": "info",
         "sourceCitation": "User-provided screenshots, rlt-morocco-desert-nights program page"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "rlt-california-pacific-sun"
-    },
-    "flags": [
-      {
-        "id": "california-pacific-sun-middle-school-age",
-        "type": "safety",
-        "title": "This program is for grades 6-8, not the usual 9-12",
-        "body": "Distinct from Italy/Morocco.",
-        "severity": "info",
-        "sourceCitation": "User-provided screenshots, rlt-california-pacific-sun program page"
-      },
-      {
-        "id": "california-pacific-sun-infrequent-showers",
-        "type": "safety",
-        "title": "Showers are available only every 3-4 days",
-        "body": "Infrequent shower access among RLT programs.",
-        "severity": "info",
-        "sourceCitation": "User-provided screenshots, rlt-california-pacific-sun program page"
       }
     ]
   },

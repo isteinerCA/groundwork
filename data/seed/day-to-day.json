@@ -2857,17 +2857,6 @@
   },
   {
     "match": {
-      "programGroupId": "rustic-southkorea-k-everything-spring-break"
-    },
-    "dayToDay": {
-      "notes": "Students room together in gender-separated rooms in a guest house in Seoul, with shared bathrooms, Wi-Fi, and communal spaces. Rustic Pathways Program Leaders stay on-site throughout for 24/7 supervision. Group capped at 14 students. Unlike most Rustic Pathways programs, there is no group or chaperoned flight option here; every family books independently within a strict overnight-flight arrival/departure window (land Incheon 4-9am Monday, depart Incheon 6-10pm Friday, Korea time).",
-      "sourceType": "official_policy",
-      "sourceCitation": "South Korea Teen Travel Program: K-Everything program page, Accommodation and Flights & Cost FAQ sections",
-      "verifiedAt": "2026-09-17"
-    }
-  },
-  {
-    "match": {
       "programGroupId": "rustic-italy-greece-culture-food"
     },
     "dayToDay": {
