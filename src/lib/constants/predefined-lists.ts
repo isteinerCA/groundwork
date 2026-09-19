@@ -107,6 +107,26 @@ function buildCategoryList(
   };
 }
 
+/** Destination-style pages: countries/regions plus Kilimanjaro and Safari. */
+const DESTINATION_HEADLINE_SLUGS = new Set([
+  "kilimanjaro-programs",
+  "safari-programs",
+]);
+
+function globalAdventureDescription(
+  def: GlobalAdventureListDef,
+  titleLabel: string,
+): string {
+  const isDestination =
+    def.group === "where" || DESTINATION_HEADLINE_SLUGS.has(def.slug);
+
+  if (isDestination) {
+    return `${titleLabel} for students in grades 6–12. Select more filters below to refine your search.`;
+  }
+
+  return `International ${titleLabel.toLowerCase()} outside the US for students in grades 6–12. Select more filters below to refine your search.`;
+}
+
 function buildGlobalAdventureList(def: GlobalAdventureListDef): PredefinedList {
   const titleLabel = def.titleLabel ?? `${def.linkLabel} programs`;
 
@@ -119,7 +139,7 @@ function buildGlobalAdventureList(def: GlobalAdventureListDef): PredefinedList {
     linkLabel: def.linkLabel,
     titleLabel,
     audienceLabel: "students in grades 6–12",
-    description: `International ${titleLabel.toLowerCase()} outside the US for students in grades 6–12. Select more filters below to refine your search.`,
+    description: globalAdventureDescription(def, titleLabel),
     lockedFilters: {
       gradesCompleted: [...GRADE_CHIPS],
       dataQuery: def.dataQuery,
@@ -132,7 +152,7 @@ function buildDomesticInterestList(def: DomesticInterestListDef): PredefinedList
   const titleLabel = def.titleLabel ?? `${def.linkLabel} programs`;
   const description =
     def.group === "where"
-      ? `${titleLabel} in the United States for students in grades 6–12. Select more filters below to refine your search.`
+      ? `Programs in ${def.linkLabel} for students in grades 6–12. Select more filters below to refine your search.`
       : `US ${titleLabel.toLowerCase()} for students in grades 6–12. Select more filters below to refine your search.`;
 
   return {
