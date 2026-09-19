@@ -273,6 +273,48 @@ if (resolveLocationQuery("marin") !== undefined) {
   failed++;
 }
 
+if (resolveLocationQuery("india") !== undefined) {
+  console.error('FAIL: "india" should not fuzzy-resolve to Indiana');
+  failed++;
+}
+
+if (resolveLocationQuery("indian") !== undefined) {
+  console.error('FAIL: "indian" should not fuzzy-resolve to Indiana');
+  failed++;
+}
+
+if (resolveLocationQuery("indiana") !== "indiana") {
+  console.error('FAIL: "indiana" should still resolve to indiana');
+  failed++;
+}
+
+const indiaProgram = stubProgram({
+  name: "Where There Be Dragons - North India: Himalayan Trekking & Traditions",
+  locationDisplay: "Phyang, Leh, Sham Valley, Ladakh",
+  isInternational: true,
+});
+
+const indianaProgram = stubProgram({
+  name: "Purdue Pre-College",
+  locationDisplay: "West Lafayette, IN",
+  state: "IN",
+});
+
+if (!matchesDataQuery(indiaProgram, "india")) {
+  console.error('FAIL: India program should match dataQuery "india"');
+  failed++;
+}
+
+if (matchesDataQuery(indianaProgram, "india")) {
+  console.error('FAIL: Indiana program should not match dataQuery "india"');
+  failed++;
+}
+
+if (!matchesDataQuery(indianaProgram, "indiana")) {
+  console.error('FAIL: Indiana program should still match dataQuery "indiana"');
+  failed++;
+}
+
 const laProgram = stubProgram({
   name: "UCLA Pre-College",
   locationDisplay: "Los Angeles, CA",

@@ -111,6 +111,7 @@ ${regions}
 - **Replace / narrow** ("California only", "only marine science", "online only", "switch to Texas"): return ONLY the new value(s). Do not carry over previous filters unless the user asked to keep them.
 
 ## Location rules (critical)
+- International countries stay in dataQuery. Do not map a country to a similarly spelled US state (India is not Indiana; keep typos like "Insia" as India).
 - "in California", "California only" → dataQuery: "california" OR includeLocations: ["california"]; clear excludeLocation and includeRegions
 - "NY or MA only", "New York or Massachusetts" → includeLocations: ["new york", "massachusetts"]; dataQuery: "", excludeLocation: "", includeRegions: []
 - "east coast only", "programs on the east coast", "east coast destinations", "narrow to east coast" → includeRegions: ["east-coast"], dataQuery: "", excludeLocation: "", includeLocations: []

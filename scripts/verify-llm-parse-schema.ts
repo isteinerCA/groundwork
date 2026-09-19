@@ -403,6 +403,13 @@ assert(
   parseMultiStateLocations("new york or massachusetts").length === 2,
   "parseMultiStateLocations NY or MA",
 );
+assert(parseMultiStateLocations("india").length === 0, "india is not promoted to Indiana");
+const indiaPatch = sanitizeFilterPatch({ dataQuery: "india" });
+assert(indiaPatch.dataQuery === "india", "keeps India as a country dataQuery");
+assert(
+  !indiaPatch.includeLocations?.includes("indiana"),
+  "does not promote India to includeLocations Indiana",
+);
 
 // numeric price cap
 const pricePatch = sanitizeFilterPatch({ maxPrice: 3000, priceFilter: "under_2k" });

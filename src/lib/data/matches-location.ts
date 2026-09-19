@@ -116,6 +116,9 @@ const LOCATION_STOP_WORDS = new Set([
   "program",
 ]);
 
+/** Destinations that look like US-state typos but are distinct places. */
+const NON_STATE_LOCATION_TOKENS = new Set(["india", "indian"]);
+
 function levenshtein(a: string, b: string): number {
   const matrix = Array.from({ length: a.length + 1 }, () => Array(b.length + 1).fill(0));
   for (let i = 0; i <= a.length; i++) matrix[i][0] = i;
@@ -151,12 +154,18 @@ function findStateByTokenExact(token: string): UsState | null {
   return null;
 }
 
+function isPrefixExtension(a: string, b: string): boolean {
+  const [shorter, longer] = a.length <= b.length ? [a, b] : [b, a];
+  return longer.startsWith(shorter) && longer.length - shorter.length >= 2;
+}
+
 function findStateByToken(token: string): UsState | null {
   const exact = findStateByTokenExact(token);
   if (exact) return exact;
 
   const normalized = token.trim().toLowerCase().replace(/\./g, "");
   if (!normalized || normalized.length < 5) return null;
+  if (NON_STATE_LOCATION_TOKENS.has(normalized)) return null;
 
   for (const state of US_STATES) {
     if (levenshtein(normalized, state.name) > 2) continue;
@@ -168,6 +177,8 @@ function findStateByToken(token: string): UsState | null {
     ) {
       continue;
     }
+    // Avoid treating a different place as a typo of a longer state (India → Indiana).
+    if (isPrefixExtension(normalized, state.name)) continue;
     return state;
   }
 
