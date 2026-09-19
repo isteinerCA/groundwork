@@ -3074,7 +3074,7 @@
   },
   {
     "match": {
-      "programGroupId": "sailcaribbean-charlie-14"
+      "programGroupId": "sailcaribbean-charlie"
     },
     "flags": [
       {
@@ -3086,30 +3086,7 @@
         "severity": "info"
       },
       {
-        "id": "sailcaribbean-financial-aid-unstated-charlie14",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on the pages researched",
-        "body": "No mention of scholarships or need-based aid was found for this program.",
-        "severity": "info",
-        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "sailcaribbean-charlie-21"
-    },
-    "flags": [
-      {
-        "id": "sailcaribbean-scuba-depth-limits-c21",
-        "type": "safety",
-        "title": "Scuba diving involves real depth limits that scale by age and certification",
-        "body": "Same age-based depth limits as Charlie 14-Day apply (40ft for age 11, 70ft for ages 12-14 with additional training, up to 80-90ft for the most advanced certified students).",
-        "sourceCitation": "Sail Caribbean Scuba Diving Camp page, FAQ section",
-        "severity": "info"
-      },
-      {
-        "id": "sailcaribbean-financial-aid-unstated-charlie21",
+        "id": "sailcaribbean-financial-aid-unstated-charlie",
         "type": "safety",
         "title": "Financial aid availability is not stated on the pages researched",
         "body": "No mention of scholarships or need-based aid was found for this program.",
@@ -3135,11 +3112,11 @@
   },
   {
     "match": {
-      "programGroupId": "sailcaribbean-foxtrot-14"
+      "programGroupId": "sailcaribbean-foxtrot"
     },
     "flags": [
       {
-        "id": "sailcaribbean-financial-aid-unstated-foxtrot14",
+        "id": "sailcaribbean-financial-aid-unstated-foxtrot",
         "type": "safety",
         "title": "Financial aid availability is not stated on the pages researched",
         "body": "No mention of scholarships or need-based aid was found for this program.",
@@ -3150,41 +3127,11 @@
   },
   {
     "match": {
-      "programGroupId": "sailcaribbean-foxtrot-21"
+      "programGroupId": "sailcaribbean-sierra"
     },
     "flags": [
       {
-        "id": "sailcaribbean-financial-aid-unstated-foxtrot21",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on the pages researched",
-        "body": "No mention of scholarships or need-based aid was found for this program.",
-        "severity": "info",
-        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "sailcaribbean-sierra-14"
-    },
-    "flags": [
-      {
-        "id": "sailcaribbean-financial-aid-unstated-sierra14",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on the pages researched",
-        "body": "No mention of scholarships or need-based aid was found for this program.",
-        "severity": "info",
-        "sourceCitation": "Sail Caribbean Dates & Costs / program pages researched 2026-09-18"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "sailcaribbean-sierra-21"
-    },
-    "flags": [
-      {
-        "id": "sailcaribbean-financial-aid-unstated-sierra21",
+        "id": "sailcaribbean-financial-aid-unstated-sierra",
         "type": "safety",
         "title": "Financial aid availability is not stated on the pages researched",
         "body": "No mention of scholarships or need-based aid was found for this program.",
@@ -3198,14 +3145,6 @@
       "programGroupId": "sailcaribbean-lima-sail"
     },
     "flags": [
-      {
-        "id": "sailcaribbean-lima-sail-incomplete-data",
-        "type": "safety",
-        "title": "Program length and detailed curriculum were not confirmed in this research pass",
-        "body": "Unlike the other 11 core programs, Lima Sail's card did not display a day-count (e.g. \"14-Day\" or \"21-Day\"), and no dedicated program page describing its curriculum was found. Confirm exact length, itinerary, and what distinguishes it from Delta (Advanced Sailing) directly with the provider.",
-        "sourceCitation": "Absence of length info on the program card and absence of a dedicated Lima page",
-        "severity": "warning"
-      },
       {
         "id": "sailcaribbean-financial-aid-unstated-lima-sail",
         "type": "safety",
@@ -3221,14 +3160,6 @@
       "programGroupId": "sailcaribbean-lima-dive"
     },
     "flags": [
-      {
-        "id": "sailcaribbean-lima-dive-incomplete-data",
-        "type": "safety",
-        "title": "Program length and detailed curriculum were not confirmed in this research pass",
-        "body": "Like Lima Sail, no day-count or dedicated program page was found for Lima Dive. Given the PADI Divemaster-level prerequisite, this is likely Sail Caribbean's most advanced diving track (possibly leading toward professional dive certifications), but this was not confirmed directly. Confirm exact length, curriculum, and certification outcomes with the provider.",
-        "sourceCitation": "Absence of length info on the program card and absence of a dedicated Lima page",
-        "severity": "warning"
-      },
       {
         "id": "sailcaribbean-financial-aid-unstated-lima-dive",
         "type": "safety",

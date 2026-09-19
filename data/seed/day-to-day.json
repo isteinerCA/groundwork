@@ -3892,23 +3892,12 @@
   },
   {
     "match": {
-      "programGroupId": "sailcaribbean-charlie-14"
+      "programGroupId": "sailcaribbean-charlie"
     },
     "dayToDay": {
-      "notes": "Students must hold PADI Open Water certification or equivalent to enroll. Diving is conducted from a dedicated fleet of custom Newton dive boats (separate from the sailing yachts, to keep gear and compressors off the sailboats), operated by Sail Caribbean Divers, a PADI 5-Star Instructor Development Dive Center with three land-based locations in the BVI. Dive staff-to-student ratio is 5:1. Maximum dive depth is 60ft for standard certified divers and up to 80-90ft for the most advanced students; divers aged 11 are capped at 40ft and must dive with a PADI professional or certified diver; ages 12-14 with additional Junior Advanced Open Water training may go to 70ft. Equipment is rinsed in freshwater after every dive per PADI-recommended practice. Dive staff regularly drill with VISAR (the BVI's volunteer marine search and rescue organization) and have assisted with real rescues.",
+      "notes": "Students must hold PADI Open Water certification or equivalent to enroll. Diving is conducted from a dedicated fleet of custom Newton dive boats (separate from the sailing yachts), operated by Sail Caribbean Divers, a PADI 5-Star Instructor Development Dive Center. Dive staff-to-student ratio is 5:1. Maximum dive depth is 60ft for standard certified divers and up to 80-90ft for the most advanced students; divers aged 11 are capped at 40ft and must dive with a PADI professional or certified diver; ages 12-14 with additional Junior Advanced Open Water training may go to 70ft. Equipment is rinsed in freshwater after every dive. 14-day sessions focus on building dive time (12-16+ dives); 21-day sessions add time for specialty certifications such as Advanced Open Water and Rescue Diver (16-20 dives).",
       "sourceType": "official_policy",
       "sourceCitation": "Sail Caribbean Scuba Diving Camp page, including FAQ section",
-      "verifiedAt": "2026-09-18"
-    }
-  },
-  {
-    "match": {
-      "programGroupId": "sailcaribbean-charlie-21"
-    },
-    "dayToDay": {
-      "notes": "Same structure as Charlie 14-Day (PADI Open Water prerequisite, dedicated dive-boat fleet, 5:1 dive staff ratio, age-based depth limits, VISAR safety partnership), extended to 3 weeks to allow pursuit of additional specialty certifications such as Advanced Open Water, Rescue Diver, and others.",
-      "sourceType": "official_policy",
-      "sourceCitation": "Sail Caribbean Scuba Diving Camp page",
       "verifiedAt": "2026-09-18"
     }
   },
@@ -3925,10 +3914,10 @@
   },
   {
     "match": {
-      "programGroupId": "sailcaribbean-foxtrot-14"
+      "programGroupId": "sailcaribbean-foxtrot"
     },
     "dayToDay": {
-      "notes": "Community-service-focused program, structured around education about the 'why' behind conservation and service work rather than just task completion. Activities include CoralWatch reef health check-ups (fish counts and coral health documentation on three endangered BVI reefs), a GreenVI EcoPark visit (2-3 hours, covering composting/recycling/gardening), ongoing on-boat composting, beach/trail/underwater cleanups, a mangrove ecology excursion led by a local naturalist, and cultural exchange activities with local BVI youth including a partnership with KATS (Kids And The Sea), a marine-safety nonprofit. All Sail Caribbean fleets (except Delta) participate in at least a fleet-wide beach cleanup and composting regardless of program; Foxtrot receives substantially more service hours and depth than other programs. Hours are tracked via internal documents; a Sail Caribbean Community Service certificate is issued after program completion. No additional fees for service activities.",
+      "notes": "Community-service-focused program, structured around education about the 'why' behind conservation and service work rather than just task completion. Activities include CoralWatch reef health check-ups, a GreenVI EcoPark visit, on-boat composting, beach/trail/underwater cleanups, a mangrove ecology excursion, and cultural exchange with local BVI youth including a partnership with KATS. Hours are tracked internally; a Sail Caribbean Community Service certificate is issued after program completion. 14-day sessions earn approximately 15-20 hours; 21-day sessions earn approximately 20-30 hours and add turtle-tagging (BVI Association of Reef Keepers) and Project AWARE's Dive Against Debris.",
       "sourceType": "official_policy",
       "sourceCitation": "Sail Caribbean Community Service Summer Camp page, including FAQ section",
       "verifiedAt": "2026-09-18"
@@ -3936,34 +3925,12 @@
   },
   {
     "match": {
-      "programGroupId": "sailcaribbean-foxtrot-21"
+      "programGroupId": "sailcaribbean-sierra"
     },
     "dayToDay": {
-      "notes": "Same service projects and structure as Foxtrot 14-Day, extended to 3 weeks with correspondingly more service hours (approximately 20-30 vs. 15-20 on the 14-day version). Foxtrot 21-day students also participate in turtle-tagging (via the BVI Association of Reef Keepers) and Project AWARE's Dive Against Debris, activities not available on the 14-day version.",
-      "sourceType": "official_policy",
-      "sourceCitation": "Sail Caribbean Community Service Summer Camp page",
-      "verifiedAt": "2026-09-18"
-    }
-  },
-  {
-    "match": {
-      "programGroupId": "sailcaribbean-sierra-14"
-    },
-    "dayToDay": {
-      "notes": "Dedicated marine-science program. Most days follow the general fleet routine (meals, crew responsibilities, sailing between anchorages) with marine-science lessons and experiences layered in at selected moorings/docks/anchorages. Sierra students get more frequent and focused lessons than the general fleet: fish-identification snorkels, CoralWatch surveys, turtle tagging, plankton tows, and invertebrate hunts, each typically 1-2 hours. Evenings return to normal boat life (cooking, games, sunset swims) with occasional special night lessons such as bioluminescence swims or nocturnal-adaptation dockside walks. Seminars are taught by a mixed team of marine science students, dive professionals, conservationists, and educators.",
+      "notes": "Dedicated marine-science program. Most days follow the general fleet routine with marine-science lessons layered in at selected moorings. Sierra students get more frequent and focused lessons than the general fleet: fish-identification snorkels, CoralWatch surveys, turtle tagging, plankton tows, and invertebrate hunts. 14-day sessions are the two-week version; 21-day sessions provide approximately 10-20 total hours of dedicated instruction and fieldwork, plus special cross-boat field trips with other Sierra students for shared seminars, data collection, and analysis.",
       "sourceType": "official_policy",
       "sourceCitation": "Sail Caribbean Marine Biology Summer Camp page, including FAQ section",
-      "verifiedAt": "2026-09-18"
-    }
-  },
-  {
-    "match": {
-      "programGroupId": "sailcaribbean-sierra-21"
-    },
-    "dayToDay": {
-      "notes": "Same structure as Sierra 14-Day, extended to 3 weeks, providing approximately 10-20 total hours of dedicated marine science instruction and fieldwork (versus less on the 14-day version). Sierra 21-day students also join special cross-boat field trips and sails specifically with other Sierra students, for shared seminars, data collection, and analysis across the islands.",
-      "sourceType": "official_policy",
-      "sourceCitation": "Sail Caribbean Marine Biology Summer Camp page",
       "verifiedAt": "2026-09-18"
     }
   },
@@ -3972,9 +3939,9 @@
       "programGroupId": "sailcaribbean-lima-sail"
     },
     "dayToDay": {
-      "notes": "Not detailed in the pages researched beyond the program card (HS Seniors/18+, requires prior sailing experience, $8,195-$9,995). No dedicated Lima program page was found; day-to-day structure likely mirrors the general live-aboard fleet model but with a more advanced sailing curriculum given the prior-experience prerequisite. Confirm directly with the provider.",
+      "notes": "21-day live-aboard session for HS seniors/18+ on a dedicated Lima Fleet boat, with prior sailing experience required. Dates & Costs confirms Jul 12 – Aug 1, 2027 and $8,195 tuition (through Oct 15). No dedicated Lima curriculum page was found; day-to-day structure likely mirrors the general live-aboard fleet model with a more advanced sailing curriculum. Confirm itinerary details directly with the provider.",
       "sourceType": "official_policy",
-      "sourceCitation": "Sail Caribbean dates-costs/browse-adventures program card only",
+      "sourceCitation": "Sail Caribbean Dates & Costs page (2027 Adventures table) and program card",
       "verifiedAt": "2026-09-18"
     }
   },
@@ -3983,9 +3950,9 @@
       "programGroupId": "sailcaribbean-lima-dive"
     },
     "dayToDay": {
-      "notes": "Not detailed in the pages researched beyond the program card (HS Seniors/18+, requires PADI Divemaster prerequisites, $8,195-$9,995). Given the Divemaster-level prerequisite, this program likely uses Sail Caribbean Divers' dive-boat fleet and professional-level dive staff similar to Charlie, but oriented toward students pursuing their own professional dive certifications rather than recreational certification. No dedicated Lima program page was found; confirm structure directly with the provider.",
+      "notes": "21-day live-aboard session for HS seniors/18+ on a dedicated Lima Fleet boat, requiring PADI Divemaster prerequisites. Dates & Costs confirms Jul 12 – Aug 1, 2027, $8,195 tuition (through Oct 15), and 35+ dives. No dedicated Lima curriculum page was found; the program likely uses Sail Caribbean Divers' dive-boat fleet and professional-level dive staff similar to Charlie, oriented toward students pursuing professional dive certifications. Confirm structure directly with the provider.",
       "sourceType": "official_policy",
-      "sourceCitation": "Sail Caribbean dates-costs/browse-adventures program card only",
+      "sourceCitation": "Sail Caribbean Dates & Costs page (2027 Adventures table) and program card",
       "verifiedAt": "2026-09-18"
     }
   },
