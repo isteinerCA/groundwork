@@ -71027,19 +71027,10 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.theroadlesstraveled.com/morocco",
-      "flags": [
-        {
-          "id": "morocco-desert-nights-service-hours-range",
-          "type": "safety",
-          "title": "Service hours range is wide (10-20) and toward the high end",
-          "body": "High among service-inclusive RLT programs.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-morocco-desert-nights program page"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Mix of local guesthouses, traditional riads, one desert-camp night, gender-divided rooms (2-5 students). Daily showers. Students help with daily tasks like tidying. No staff ratio stated.",
+        "notes": "Mix of local guesthouses, traditional riads, one desert-camp night, gender-divided rooms (2-5 students). Daily showers. Students help with daily tasks like tidying.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Morocco: Desert Nights, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -71091,7 +71082,7 @@
       "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Tent camping Pacific Coast to Sierra Nevada, 2 nights hostel at start. Showers every 3-4 days. Everyone helps set up camp, cook, clean. Serves grades 6-8. No staff ratio stated.",
+        "notes": "Tent camping Pacific Coast to Sierra Nevada, 2 nights hostel at start. Showers every 3-4 days. Everyone helps set up camp, cook, clean. Serves grades 6-8.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, California: Pacific Sun, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -71143,7 +71134,7 @@
       "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Tent camping Pacific Coast to Sierra Nevada, 2 nights hostel at start. Showers every 3-4 days. Everyone helps set up camp, cook, clean. Serves grades 6-8. No staff ratio stated.",
+        "notes": "Tent camping Pacific Coast to Sierra Nevada, 2 nights hostel at start. Showers every 3-4 days. Everyone helps set up camp, cook, clean. Serves grades 6-8.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, California: Pacific Sun, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -71201,19 +71192,11 @@
           "body": "Session 1 into Geneva/out of Milan; Session 2 reversed. Confirm which session before booking flights.",
           "severity": "warning",
           "sourceCitation": "User-provided screenshots, rlt-france-italy-alps-adventure program page"
-        },
-        {
-          "id": "france-italy-alps-age-band",
-          "type": "safety",
-          "title": "This program is for grades 7-9, a distinct band from the other RLT programs",
-          "body": "Distinct age band across RLT programs researched.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-france-italy-alps-adventure program page"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Three accommodation types: tent camping (showers every 2-3 days), 1 night mountain refuge during multi-day hike, 5 nights private group house in rural Italy. Group helps set up tents, cook, care for shared spaces. No staff ratio stated.",
+        "notes": "Three accommodation types: tent camping (showers every 2-3 days), 1 night mountain refuge during multi-day hike, 5 nights private group house in rural Italy. Group helps set up tents, cook, care for shared spaces.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, France & Italy: Alps Adventure, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -71271,19 +71254,11 @@
           "body": "Session 1 into Geneva/out of Milan; Session 2 reversed. Confirm which session before booking flights.",
           "severity": "warning",
           "sourceCitation": "User-provided screenshots, rlt-france-italy-alps-adventure program page"
-        },
-        {
-          "id": "france-italy-alps-age-band",
-          "type": "safety",
-          "title": "This program is for grades 7-9, a distinct band from the other RLT programs",
-          "body": "Distinct age band across RLT programs researched.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-france-italy-alps-adventure program page"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Three accommodation types: tent camping (showers every 2-3 days), 1 night mountain refuge during multi-day hike, 5 nights private group house in rural Italy. Group helps set up tents, cook, care for shared spaces. No staff ratio stated.",
+        "notes": "Three accommodation types: tent camping (showers every 2-3 days), 1 night mountain refuge during multi-day hike, 5 nights private group house in rural Italy. Group helps set up tents, cook, care for shared spaces.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, France & Italy: Alps Adventure, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -71462,7 +71437,7 @@
           "id": "norway-peaks-valleys-no-service-component",
           "type": "safety",
           "title": "This program has no service-hours component (explicitly N/A)",
-          "body": "Confirms RLT runs pure adventure/backpacking trips with no service component by design.",
+          "body": "This is a pure adventure/backpacking trip with no service component by design.",
           "severity": "info",
           "sourceCitation": "User-provided screenshots, rlt-norway-peaks-and-valleys program page"
         },
@@ -71473,19 +71448,11 @@
           "body": "Broken-in hiking boots, 70L pack, cold-weather backpacking clothing/equipment required.",
           "severity": "warning",
           "sourceCitation": "User-provided screenshots, rlt-norway-peaks-and-valleys program page"
-        },
-        {
-          "id": "norway-peaks-valleys-longest-highest-tuition",
-          "type": "safety",
-          "title": "This is the longest and most expensive Road Less Traveled program researched",
-          "body": "21 days, $7,795 tuition.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-norway-peaks-and-valleys program page"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Tent camping for most of the trip (front-country to remote backcountry sites, shared tents 2-3/tent, gender-divided), plus 2 nights in family-friendly hostels in Oslo and Bergen (private rooms, 2-4 people, gender-divided). Most campsites have basic bathroom access; backcountry uses portable or natural setups. Showers every 2-4 days. Group pitches tents, preps meals, maintains camp together. No staff ratio stated. Likely more physically demanding day-to-day than other RLT programs given the backcountry component and required technical gear.",
+        "notes": "Tent camping for most of the trip (front-country to remote backcountry sites, shared tents 2-3/tent, gender-divided), plus 2 nights in family-friendly hostels in Oslo and Bergen (private rooms, 2-4 people, gender-divided). Most campsites have basic bathroom access; backcountry uses portable or natural setups. Showers every 2-4 days. Group pitches tents, preps meals, maintains camp together. Physically demanding day-to-day given the backcountry component and required technical gear.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Norway: Peaks and Valleys, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -71537,15 +71504,15 @@
         {
           "id": "azores-secret-island-high-service-hours",
           "type": "safety",
-          "title": "Service hours range (15-20) is on the higher end",
-          "body": "High among Road Less Traveled programs.",
+          "title": "15-20 Service Hours",
+          "body": "Work at a local donkey sanctuary.",
           "severity": "info",
           "sourceCitation": "User-provided screenshots, rlt-azores-secret-island program page"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Students camp in tents for the entire trip on S\u00e3o Miguel Island, sharing tents in groups of 2-3, organized by gender. Showers available every 1-2 days; campsite bathrooms include clean, flush toilets and other facilities. The group works together to set up camp, prepare meals, and keep shared spaces clean throughout. No staff ratio stated.",
+        "notes": "Students camp in tents for the entire trip on S\u00e3o Miguel Island, sharing tents in groups of 2-3, organized by gender. Showers available every 1-2 days; campsite bathrooms include clean, flush toilets and other facilities. The group works together to set up camp, prepare meals, and keep shared spaces clean throughout.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Azores: The Secret Island, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -71597,33 +71564,17 @@
       "websiteUrl": "https://www.theroadlesstraveled.com/costa-rica",
       "flags": [
         {
-          "id": "costa-rica-jungle-highest-service-hours",
-          "type": "safety",
-          "title": "Service hours range (15-25) was high among RLT programs at time of research",
-          "body": "Since surpassed by Peru's 25-35 and Coast to Canopy's 24-36.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-costa-rica-journey-through-jungle program page"
-        },
-        {
           "id": "costa-rica-jungle-miami-escort-not-nyc",
           "type": "safety",
           "title": "The optional escorted flight departs from Miami, not New York",
           "body": "Every other RLT program offers this from New York; confirm the correct city.",
           "severity": "info",
           "sourceCitation": "User-provided screenshots, rlt-costa-rica-journey-through-jungle program page"
-        },
-        {
-          "id": "costa-rica-jungle-middle-school-age",
-          "type": "safety",
-          "title": "This program is for grades 6-8, not the usual 9-12",
-          "body": "Like California and the Maine MS session.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-costa-rica-journey-through-jungle program page"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Accommodation shifts across three settings. 5 nights in simple hotels with beds and bathrooms in San Jos\u00e9 and on the Caribbean coast; 6 nights in a rustic house in Turrialba near the local community, working and living alongside host families (a shared-house, host-family-adjacent arrangement rather than a traditional one-family homestay); and 2 nights at riverside campsites on raised jungle platform tents in the rainforest. Teens share tents or rooms based on gender and comfort, with leaders close by; flush toilets and short daily showers are available throughout. Everyone helps set up tents, clean shared spaces, and pack up gear. No staff ratio stated; given this serves grades 6-8, families should expect age-appropriate guidance though specific supervision detail beyond the general description is not provided.",
+        "notes": "Accommodation shifts across three settings. 5 nights in simple hotels with beds and bathrooms in San Jos\u00e9 and on the Caribbean coast; 6 nights in a rustic house in Turrialba near the local community, working and living alongside host families (a shared-house, host-family-adjacent arrangement rather than a traditional one-family homestay); and 2 nights at riverside campsites on raised jungle platform tents in the rainforest. Teens share tents or rooms based on gender and comfort, with leaders close by; flush toilets and short daily showers are available throughout. Everyone helps set up tents, clean shared spaces, and pack up gear.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Costa Rica: Journey through the Jungle, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -71675,33 +71626,17 @@
       "websiteUrl": "https://www.theroadlesstraveled.com/costa-rica",
       "flags": [
         {
-          "id": "costa-rica-jungle-highest-service-hours",
-          "type": "safety",
-          "title": "Service hours range (15-25) was high among RLT programs at time of research",
-          "body": "Since surpassed by Peru's 25-35 and Coast to Canopy's 24-36.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-costa-rica-journey-through-jungle program page"
-        },
-        {
           "id": "costa-rica-jungle-miami-escort-not-nyc",
           "type": "safety",
           "title": "The optional escorted flight departs from Miami, not New York",
           "body": "Every other RLT program offers this from New York; confirm the correct city.",
           "severity": "info",
           "sourceCitation": "User-provided screenshots, rlt-costa-rica-journey-through-jungle program page"
-        },
-        {
-          "id": "costa-rica-jungle-middle-school-age",
-          "type": "safety",
-          "title": "This program is for grades 6-8, not the usual 9-12",
-          "body": "Like California and the Maine MS session.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-costa-rica-journey-through-jungle program page"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Accommodation shifts across three settings. 5 nights in simple hotels with beds and bathrooms in San Jos\u00e9 and on the Caribbean coast; 6 nights in a rustic house in Turrialba near the local community, working and living alongside host families (a shared-house, host-family-adjacent arrangement rather than a traditional one-family homestay); and 2 nights at riverside campsites on raised jungle platform tents in the rainforest. Teens share tents or rooms based on gender and comfort, with leaders close by; flush toilets and short daily showers are available throughout. Everyone helps set up tents, clean shared spaces, and pack up gear. No staff ratio stated; given this serves grades 6-8, families should expect age-appropriate guidance though specific supervision detail beyond the general description is not provided.",
+        "notes": "Accommodation shifts across three settings. 5 nights in simple hotels with beds and bathrooms in San Jos\u00e9 and on the Caribbean coast; 6 nights in a rustic house in Turrialba near the local community, working and living alongside host families (a shared-house, host-family-adjacent arrangement rather than a traditional one-family homestay); and 2 nights at riverside campsites on raised jungle platform tents in the rainforest. Teens share tents or rooms based on gender and comfort, with leaders close by; flush toilets and short daily showers are available throughout. Everyone helps set up tents, clean shared spaces, and pack up gear.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Costa Rica: Journey through the Jungle, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -71753,33 +71688,17 @@
       "websiteUrl": "https://www.theroadlesstraveled.com/costa-rica",
       "flags": [
         {
-          "id": "costa-rica-jungle-highest-service-hours",
-          "type": "safety",
-          "title": "Service hours range (15-25) was high among RLT programs at time of research",
-          "body": "Since surpassed by Peru's 25-35 and Coast to Canopy's 24-36.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-costa-rica-journey-through-jungle program page"
-        },
-        {
           "id": "costa-rica-jungle-miami-escort-not-nyc",
           "type": "safety",
           "title": "The optional escorted flight departs from Miami, not New York",
           "body": "Every other RLT program offers this from New York; confirm the correct city.",
           "severity": "info",
           "sourceCitation": "User-provided screenshots, rlt-costa-rica-journey-through-jungle program page"
-        },
-        {
-          "id": "costa-rica-jungle-middle-school-age",
-          "type": "safety",
-          "title": "This program is for grades 6-8, not the usual 9-12",
-          "body": "Like California and the Maine MS session.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-costa-rica-journey-through-jungle program page"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Accommodation shifts across three settings. 5 nights in simple hotels with beds and bathrooms in San Jos\u00e9 and on the Caribbean coast; 6 nights in a rustic house in Turrialba near the local community, working and living alongside host families (a shared-house, host-family-adjacent arrangement rather than a traditional one-family homestay); and 2 nights at riverside campsites on raised jungle platform tents in the rainforest. Teens share tents or rooms based on gender and comfort, with leaders close by; flush toilets and short daily showers are available throughout. Everyone helps set up tents, clean shared spaces, and pack up gear. No staff ratio stated; given this serves grades 6-8, families should expect age-appropriate guidance though specific supervision detail beyond the general description is not provided.",
+        "notes": "Accommodation shifts across three settings. 5 nights in simple hotels with beds and bathrooms in San Jos\u00e9 and on the Caribbean coast; 6 nights in a rustic house in Turrialba near the local community, working and living alongside host families (a shared-house, host-family-adjacent arrangement rather than a traditional one-family homestay); and 2 nights at riverside campsites on raised jungle platform tents in the rainforest. Teens share tents or rooms based on gender and comfort, with leaders close by; flush toilets and short daily showers are available throughout. Everyone helps set up tents, clean shared spaces, and pack up gear.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Costa Rica: Journey through the Jungle, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -71840,22 +71759,14 @@
           "id": "japan-two-worlds-internal-train-cost-unclear",
           "type": "safety",
           "title": "Whether the internal Tokyo-Yamagata bullet train cost is included in tuition is unclear",
-          "body": "Unlike Italy's explicit separate-billing language, this page does not clarify inclusion.",
+          "body": "Families should verify with the provider whether this cost is included.",
           "severity": "warning",
-          "sourceCitation": "User-provided screenshots, rlt-japan-between-two-worlds program page"
-        },
-        {
-          "id": "japan-two-worlds-no-camping",
-          "type": "safety",
-          "title": "This is the only RLT program researched with no tent-camping component",
-          "body": "Entirely hotels plus one shukubo lodge night.",
-          "severity": "info",
           "sourceCitation": "User-provided screenshots, rlt-japan-between-two-worlds program page"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Unlike every other Road Less Traveled program researched, this one involves no tent camping at all. Twin rooms at clean, locally run hotels across Tokyo, Yamagata, and Tsuruoka (gender-shared, private bathrooms, AC and Wi-Fi). One night at a shukubo, a traditional pilgrim lodge historically used by mountain monks, sleeping on futons in tatami-mat rooms for a slower, more rustic pace. Most locations include laundry access and on-site staff for local recommendations. No staff ratio stated.",
+        "notes": "Twin rooms at clean, locally run hotels across Tokyo, Yamagata, and Tsuruoka (gender-shared, private bathrooms, AC and Wi-Fi). One night at a shukubo, a traditional pilgrim lodge historically used by mountain monks, sleeping on futons in tatami-mat rooms for a slower, more rustic pace. Most locations include laundry access and on-site staff for local recommendations.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Japan: Between Two Worlds, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -71916,22 +71827,14 @@
           "id": "japan-two-worlds-internal-train-cost-unclear",
           "type": "safety",
           "title": "Whether the internal Tokyo-Yamagata bullet train cost is included in tuition is unclear",
-          "body": "Unlike Italy's explicit separate-billing language, this page does not clarify inclusion.",
+          "body": "Families should verify with the provider whether this cost is included.",
           "severity": "warning",
-          "sourceCitation": "User-provided screenshots, rlt-japan-between-two-worlds program page"
-        },
-        {
-          "id": "japan-two-worlds-no-camping",
-          "type": "safety",
-          "title": "This is the only RLT program researched with no tent-camping component",
-          "body": "Entirely hotels plus one shukubo lodge night.",
-          "severity": "info",
           "sourceCitation": "User-provided screenshots, rlt-japan-between-two-worlds program page"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Unlike every other Road Less Traveled program researched, this one involves no tent camping at all. Twin rooms at clean, locally run hotels across Tokyo, Yamagata, and Tsuruoka (gender-shared, private bathrooms, AC and Wi-Fi). One night at a shukubo, a traditional pilgrim lodge historically used by mountain monks, sleeping on futons in tatami-mat rooms for a slower, more rustic pace. Most locations include laundry access and on-site staff for local recommendations. No staff ratio stated.",
+        "notes": "Twin rooms at clean, locally run hotels across Tokyo, Yamagata, and Tsuruoka (gender-shared, private bathrooms, AC and Wi-Fi). One night at a shukubo, a traditional pilgrim lodge historically used by mountain monks, sleeping on futons in tatami-mat rooms for a slower, more rustic pace. Most locations include laundry access and on-site staff for local recommendations.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Japan: Between Two Worlds, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -71983,14 +71886,6 @@
       "websiteUrl": "https://www.theroadlesstraveled.com/peru",
       "flags": [
         {
-          "id": "peru-mystic-mountains-highest-service-hours-by-far",
-          "type": "safety",
-          "title": "Service hours (25-35) were the highest of any RLT program at time of research",
-          "body": "Since edged out by Costa Rica: Coast to Canopy's 24-36 top end.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-peru-mystic-mountains program page"
-        },
-        {
           "id": "peru-mystic-mountains-lima-cusco-flight-billed-separately",
           "type": "safety",
           "title": "Required Lima-Cusco domestic flight is billed separately from tuition",
@@ -72009,7 +71904,7 @@
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Simple, locally owned hotels/guesthouses in Lima, Cusco, and Ollantaytambo (shared rooms, 2-3 per room, gender-divided), plus 3 nights of tent camping in a remote mountain village (tents for 2-3, mountain views, starry skies). Mix of western-style bathrooms and squat toilets depending on location; short showers every 1-2 days, more frequent in towns, less so while camping. No single rooms anywhere on this program; everyone shares space and pitches in. No staff ratio stated.",
+        "notes": "Simple, locally owned hotels/guesthouses in Lima, Cusco, and Ollantaytambo (shared rooms, 2-3 per room, gender-divided), plus 3 nights of tent camping in a remote mountain village (tents for 2-3, mountain views, starry skies). Mix of western-style bathrooms and squat toilets depending on location; short showers every 1-2 days, more frequent in towns, less so while camping. No single rooms anywhere on this program; everyone shares space and pitches in.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Peru: Mystic Mountains, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -72058,19 +71953,10 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.theroadlesstraveled.com/alaska",
-      "flags": [
-        {
-          "id": "alaska-midnight-sun-24-hour-daylight",
-          "type": "safety",
-          "title": "Program runs during Alaska's midnight sun season",
-          "body": "Near-continuous daylight may affect sleep; ask the provider how the schedule accounts for it.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-alaska-midnight-sun program page"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Mix of rustic campsites and cozy yurts for 7 nights, plus a shared group house for 6 nights. During camping portions, teens share tents (2-3 per tent), divided by gender. Basic amenities with flush bathrooms; short showers typically every 1-3 days. Everyone pitches in to set up tents, cook meals, and keep shared spaces clean. No staff ratio stated.",
+        "notes": "Mix of rustic campsites and cozy yurts for 7 nights, plus a shared group house for 6 nights. During camping portions, teens share tents (2-3 per tent), divided by gender. Basic amenities with flush bathrooms; short showers typically every 1-3 days. Everyone pitches in to set up tents, cook meals, and keep shared spaces clean.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Alaska: Midnight Sun, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -72119,19 +72005,10 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.theroadlesstraveled.com/alaska",
-      "flags": [
-        {
-          "id": "alaska-midnight-sun-24-hour-daylight",
-          "type": "safety",
-          "title": "Program runs during Alaska's midnight sun season",
-          "body": "Near-continuous daylight may affect sleep; ask the provider how the schedule accounts for it.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-alaska-midnight-sun program page"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Mix of rustic campsites and cozy yurts for 7 nights, plus a shared group house for 6 nights. During camping portions, teens share tents (2-3 per tent), divided by gender. Basic amenities with flush bathrooms; short showers typically every 1-3 days. Everyone pitches in to set up tents, cook meals, and keep shared spaces clean. No staff ratio stated.",
+        "notes": "Mix of rustic campsites and cozy yurts for 7 nights, plus a shared group house for 6 nights. During camping portions, teens share tents (2-3 per tent), divided by gender. Basic amenities with flush bathrooms; short showers typically every 1-3 days. Everyone pitches in to set up tents, cook meals, and keep shared spaces clean.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Alaska: Midnight Sun, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -72181,35 +72058,10 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.theroadlesstraveled.com/costa-rica-coast-to-canopy",
-      "flags": [
-        {
-          "id": "costa-rica-canopy-highest-service-hours-record",
-          "type": "safety",
-          "title": "Service hours (24-36) set a new highest top end across RLT programs",
-          "body": "Edges past Peru: Mystic Mountains (25-35) for the highest top end seen across all fifteen Road Less Traveled programs researched.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-costa-rica-coast-to-canopy program page"
-        },
-        {
-          "id": "costa-rica-canopy-possible-sibling-program",
-          "type": "safety",
-          "title": "This program closely mirrors Costa Rica: Journey through the Jungle, but for a different age band",
-          "body": "Same country, Trip Categories tag, three-part accommodation structure, and Miami escort city as Journey through the Jungle, but separately named, serves grades 9-12 rather than 6-8, and is priced/scoped differently. Confirm with the provider whether these are formally linked MS/HS versions of one itinerary.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-costa-rica-coast-to-canopy program page"
-        },
-        {
-          "id": "costa-rica-canopy-miami-escort-not-nyc",
-          "type": "safety",
-          "title": "The optional escorted flight departs from Miami, not New York",
-          "body": "Same Costa-Rica-specific pattern as Journey through the Jungle.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-costa-rica-coast-to-canopy program page"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Accommodation shifts across three settings. In San Jos\u00e9 and on the Caribbean coast, the group stays in simple hotels with beds and bathrooms for 4 nights. In Turrialba, the group tent camps for 6 nights near the local community, working and living alongside host families. During a rafting adventure, the group sleeps at riverside campsites for 3 nights on platform tents in the rainforest, surrounded by the sounds of wildlife. Teens share tents or rooms based on gender and comfort, with leaders close by. Bathrooms range from hotel-style flush toilets to more rustic facilities depending on location; short showers are available every 1-2 days. Everyone helps with daily chores like setting up tents and keeping shared spaces clean, framed as building connection. No staff ratio stated.",
+        "notes": "Accommodation shifts across three settings. In San Jos\u00e9 and on the Caribbean coast, the group stays in simple hotels with beds and bathrooms for 4 nights. In Turrialba, the group tent camps for 6 nights near the local community, working and living alongside host families. During a rafting adventure, the group sleeps at riverside campsites for 3 nights on platform tents in the rainforest, surrounded by the sounds of wildlife. Teens share tents or rooms based on gender and comfort, with leaders close by. Bathrooms range from hotel-style flush toilets to more rustic facilities depending on location; short showers are available every 1-2 days. Everyone helps with daily chores like setting up tents and keeping shared spaces clean, framed as building connection.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Costa Rica: Coast to Canopy, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -72259,35 +72111,10 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.theroadlesstraveled.com/costa-rica-coast-to-canopy",
-      "flags": [
-        {
-          "id": "costa-rica-canopy-highest-service-hours-record",
-          "type": "safety",
-          "title": "Service hours (24-36) set a new highest top end across RLT programs",
-          "body": "Edges past Peru: Mystic Mountains (25-35) for the highest top end seen across all fifteen Road Less Traveled programs researched.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-costa-rica-coast-to-canopy program page"
-        },
-        {
-          "id": "costa-rica-canopy-possible-sibling-program",
-          "type": "safety",
-          "title": "This program closely mirrors Costa Rica: Journey through the Jungle, but for a different age band",
-          "body": "Same country, Trip Categories tag, three-part accommodation structure, and Miami escort city as Journey through the Jungle, but separately named, serves grades 9-12 rather than 6-8, and is priced/scoped differently. Confirm with the provider whether these are formally linked MS/HS versions of one itinerary.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-costa-rica-coast-to-canopy program page"
-        },
-        {
-          "id": "costa-rica-canopy-miami-escort-not-nyc",
-          "type": "safety",
-          "title": "The optional escorted flight departs from Miami, not New York",
-          "body": "Same Costa-Rica-specific pattern as Journey through the Jungle.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-costa-rica-coast-to-canopy program page"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Accommodation shifts across three settings. In San Jos\u00e9 and on the Caribbean coast, the group stays in simple hotels with beds and bathrooms for 4 nights. In Turrialba, the group tent camps for 6 nights near the local community, working and living alongside host families. During a rafting adventure, the group sleeps at riverside campsites for 3 nights on platform tents in the rainforest, surrounded by the sounds of wildlife. Teens share tents or rooms based on gender and comfort, with leaders close by. Bathrooms range from hotel-style flush toilets to more rustic facilities depending on location; short showers are available every 1-2 days. Everyone helps with daily chores like setting up tents and keeping shared spaces clean, framed as building connection. No staff ratio stated.",
+        "notes": "Accommodation shifts across three settings. In San Jos\u00e9 and on the Caribbean coast, the group stays in simple hotels with beds and bathrooms for 4 nights. In Turrialba, the group tent camps for 6 nights near the local community, working and living alongside host families. During a rafting adventure, the group sleeps at riverside campsites for 3 nights on platform tents in the rainforest, surrounded by the sounds of wildlife. Teens share tents or rooms based on gender and comfort, with leaders close by. Bathrooms range from hotel-style flush toilets to more rustic facilities depending on location; short showers are available every 1-2 days. Everyone helps with daily chores like setting up tents and keeping shared spaces clean, framed as building connection.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Costa Rica: Coast to Canopy, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -72337,35 +72164,10 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.theroadlesstraveled.com/costa-rica-coast-to-canopy",
-      "flags": [
-        {
-          "id": "costa-rica-canopy-highest-service-hours-record",
-          "type": "safety",
-          "title": "Service hours (24-36) set a new highest top end across RLT programs",
-          "body": "Edges past Peru: Mystic Mountains (25-35) for the highest top end seen across all fifteen Road Less Traveled programs researched.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-costa-rica-coast-to-canopy program page"
-        },
-        {
-          "id": "costa-rica-canopy-possible-sibling-program",
-          "type": "safety",
-          "title": "This program closely mirrors Costa Rica: Journey through the Jungle, but for a different age band",
-          "body": "Same country, Trip Categories tag, three-part accommodation structure, and Miami escort city as Journey through the Jungle, but separately named, serves grades 9-12 rather than 6-8, and is priced/scoped differently. Confirm with the provider whether these are formally linked MS/HS versions of one itinerary.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-costa-rica-coast-to-canopy program page"
-        },
-        {
-          "id": "costa-rica-canopy-miami-escort-not-nyc",
-          "type": "safety",
-          "title": "The optional escorted flight departs from Miami, not New York",
-          "body": "Same Costa-Rica-specific pattern as Journey through the Jungle.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-costa-rica-coast-to-canopy program page"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Accommodation shifts across three settings. In San Jos\u00e9 and on the Caribbean coast, the group stays in simple hotels with beds and bathrooms for 4 nights. In Turrialba, the group tent camps for 6 nights near the local community, working and living alongside host families. During a rafting adventure, the group sleeps at riverside campsites for 3 nights on platform tents in the rainforest, surrounded by the sounds of wildlife. Teens share tents or rooms based on gender and comfort, with leaders close by. Bathrooms range from hotel-style flush toilets to more rustic facilities depending on location; short showers are available every 1-2 days. Everyone helps with daily chores like setting up tents and keeping shared spaces clean, framed as building connection. No staff ratio stated.",
+        "notes": "Accommodation shifts across three settings. In San Jos\u00e9 and on the Caribbean coast, the group stays in simple hotels with beds and bathrooms for 4 nights. In Turrialba, the group tent camps for 6 nights near the local community, working and living alongside host families. During a rafting adventure, the group sleeps at riverside campsites for 3 nights on platform tents in the rainforest, surrounded by the sounds of wildlife. Teens share tents or rooms based on gender and comfort, with leaders close by. Bathrooms range from hotel-style flush toilets to more rustic facilities depending on location; short showers are available every 1-2 days. Everyone helps with daily chores like setting up tents and keeping shared spaces clean, framed as building connection.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Costa Rica: Coast to Canopy, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -72420,7 +72222,7 @@
           "id": "greece-coastal-snorkel-gear-required",
           "type": "safety",
           "title": "Participants must bring their own personal snorkel gear",
-          "body": "Unlike other RLT programs where the provider supplies all equipment, this one asks participants to bring their own snorkel gear.",
+          "body": "This trip requires participants to bring their own snorkel gear.",
           "severity": "warning",
           "sourceCitation": "User-provided screenshots, rlt-greece-coastal-conservation program page"
         },
@@ -72431,19 +72233,11 @@
           "body": "No dollar amount given; ask before enrolling.",
           "severity": "warning",
           "sourceCitation": "User-provided screenshots, rlt-greece-coastal-conservation program page"
-        },
-        {
-          "id": "greece-coastal-high-service-hours-and-tuition",
-          "type": "safety",
-          "title": "Service hours (20-30) and tuition ($7,750) are both near the top of the RLT range",
-          "body": "Tuition is second-highest of any RLT program, just behind Norway.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-greece-coastal-conservation program page"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Tent camping at coastal campsites/beaches for most of the trip, shared tents 2-4 per tent (wider than typical RLT capacity), gender-divided. Athens: 2 nights Airbnb-style home at start, 1 night hotel at end, both slumber-party style rooms. Toilets and short showers every 1-2 days. Everyone helps pitch tents, prep food, pack up camp. No staff ratio stated.",
+        "notes": "Tent camping at coastal campsites/beaches for most of the trip, shared tents 2-4 per tent, gender-divided. Athens: 2 nights Airbnb-style home at start, 1 night hotel at end, both slumber-party style rooms. Toilets and short showers every 1-2 days. Everyone helps pitch tents, prep food, pack up camp.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Greece: Coastal Conservation, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -72513,7 +72307,7 @@
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Modest hotels throughout the entire 20-day trip -- no tent camping. Teens share rooms, gender-divided, leaders in separate nearby rooms. Western-style bathrooms, daily showers. Everyone helps tidy rooms and keep group spaces organized. No staff ratio stated.",
+        "notes": "Modest hotels throughout the entire 20-day trip -- no tent camping. Teens share rooms, gender-divided, leaders in separate nearby rooms. Western-style bathrooms, daily showers. Everyone helps tidy rooms and keep group spaces organized.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Thailand: Elephants, Education, and Cultural Exploration, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -72583,7 +72377,7 @@
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Modest hotels throughout the entire 20-day trip -- no tent camping. Teens share rooms, gender-divided, leaders in separate nearby rooms. Western-style bathrooms, daily showers. Everyone helps tidy rooms and keep group spaces organized. No staff ratio stated.",
+        "notes": "Modest hotels throughout the entire 20-day trip -- no tent camping. Teens share rooms, gender-divided, leaders in separate nearby rooms. Western-style bathrooms, daily showers. Everyone helps tidy rooms and keep group spaces organized.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Thailand: Elephants, Education, and Cultural Exploration, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -72633,19 +72427,10 @@
       "fullyFunded": false,
       "financialAidAvailable": false,
       "websiteUrl": "https://www.theroadlesstraveled.com/puerto-rico",
-      "flags": [
-        {
-          "id": "puerto-rico-reefs-wide-room-sharing",
-          "type": "safety",
-          "title": "Rooms are shared by 4-8 students, wider than any other RLT program researched",
-          "body": "Notably wider than the typical 2-3 to 2-5 range, especially given this serves middle schoolers.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-puerto-rico-reefs-to-rainforests program page"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Single private, locally-owned Airbnb-style house throughout, no camping (explicitly stated). Cozy, communal, like a big group sleepover. Shared rooms hold 4-8 students each, gender-divided. A/C, flush bathrooms, showers every 1-2 days. Everyone helps keep shared spaces clean and organized. No staff ratio stated; given the 4-8 person rooms and grades 6-8 age band, confirm supervision detail directly.",
+        "notes": "Single private, locally-owned Airbnb-style house throughout, no camping (explicitly stated). Cozy, communal, like a big group sleepover. Shared rooms hold 4-8 students each, gender-divided. A/C, flush bathrooms, showers every 1-2 days. Everyone helps keep shared spaces clean and organized.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Puerto Rico: Reefs to Rainforests, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -72698,7 +72483,7 @@
       "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Mix of campgrounds and group housing across Colorado and Wyoming. 9 nights tent camping near Kindness Ranch and in Rocky Mountain National Park, then 4 nights Airbnb-style group housing near Fort Collins. Shared tents/rooms gender-divided, rustic bathrooms, showers every 2-3 days. Group cooks, cleans, and keeps things running together. No staff ratio stated.",
+        "notes": "Mix of campgrounds and group housing across Colorado and Wyoming. 9 nights tent camping near Kindness Ranch and in Rocky Mountain National Park, then 4 nights Airbnb-style group housing near Fort Collins. Shared tents/rooms gender-divided, rustic bathrooms, showers every 2-3 days. Group cooks, cleans, and keeps things running together.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Colorado: Tails of Kindness, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -72751,7 +72536,7 @@
       "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Mix of campgrounds and group housing across Colorado and Wyoming. 9 nights tent camping near Kindness Ranch and in Rocky Mountain National Park, then 4 nights Airbnb-style group housing near Fort Collins. Shared tents/rooms gender-divided, rustic bathrooms, showers every 2-3 days. Group cooks, cleans, and keeps things running together. No staff ratio stated.",
+        "notes": "Mix of campgrounds and group housing across Colorado and Wyoming. 9 nights tent camping near Kindness Ranch and in Rocky Mountain National Park, then 4 nights Airbnb-style group housing near Fort Collins. Shared tents/rooms gender-divided, rustic bathrooms, showers every 2-3 days. Group cooks, cleans, and keeps things running together.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Colorado: Tails of Kindness, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -72804,7 +72589,7 @@
       "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Mix of campgrounds and group housing across Colorado and Wyoming. 9 nights tent camping near Kindness Ranch and in Rocky Mountain National Park, then 4 nights Airbnb-style group housing near Fort Collins. Shared tents/rooms gender-divided, rustic bathrooms, showers every 2-3 days. Group cooks, cleans, and keeps things running together. No staff ratio stated.",
+        "notes": "Mix of campgrounds and group housing across Colorado and Wyoming. 9 nights tent camping near Kindness Ranch and in Rocky Mountain National Park, then 4 nights Airbnb-style group housing near Fort Collins. Shared tents/rooms gender-divided, rustic bathrooms, showers every 2-3 days. Group cooks, cleans, and keeps things running together.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Colorado: Tails of Kindness, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -72867,7 +72652,7 @@
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Private, locally-owned Airbnb-style housing throughout, no camping. Shared rooms, rotating beds/sleeping mats, gender-grouped, casual 'slumber party' feel. Bathrooms shared and basic, showers every 1-2 days, water conservation encouraged. Most meals shared on outdoor patios or in common kitchens. No staff ratio stated.",
+        "notes": "Private, locally-owned Airbnb-style housing throughout, no camping. Shared rooms, rotating beds/sleeping mats, gender-grouped, casual 'slumber party' feel. Bathrooms shared and basic, showers every 1-2 days, water conservation encouraged. Most meals shared on outdoor patios or in common kitchens.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Puerto Rico: Reef Restoration, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -72919,7 +72704,7 @@
       "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Camping in the Colorado wilderness for the full 14 days, no hotel/house component at any point. Shared tents, 2-3 per tent, gender-divided, all provided by RLT. Camp-style flush toilets, showers every 3-4 days. Teens help with meal prep, camp upkeep, group logistics. No staff ratio stated.",
+        "notes": "Camping in the Colorado wilderness for the full 14 days, no hotel/house component at any point. Shared tents, 2-3 per tent, gender-divided, all provided by RLT. Camp-style flush toilets, showers every 3-4 days. Teens help with meal prep, camp upkeep, group logistics.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Colorado: Call of the Wild, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -72971,7 +72756,7 @@
       "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Camping in the Colorado wilderness for the full 14 days, no hotel/house component at any point. Shared tents, 2-3 per tent, gender-divided, all provided by RLT. Camp-style flush toilets, showers every 3-4 days. Teens help with meal prep, camp upkeep, group logistics. No staff ratio stated.",
+        "notes": "Camping in the Colorado wilderness for the full 14 days, no hotel/house component at any point. Shared tents, 2-3 per tent, gender-divided, all provided by RLT. Camp-style flush toilets, showers every 3-4 days. Teens help with meal prep, camp upkeep, group logistics.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Colorado: Call of the Wild, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -73023,7 +72808,7 @@
       "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Camping in the Colorado wilderness for the full 14 days, no hotel/house component at any point. Shared tents, 2-3 per tent, gender-divided, all provided by RLT. Camp-style flush toilets, showers every 3-4 days. Teens help with meal prep, camp upkeep, group logistics. No staff ratio stated.",
+        "notes": "Camping in the Colorado wilderness for the full 14 days, no hotel/house component at any point. Shared tents, 2-3 per tent, gender-divided, all provided by RLT. Camp-style flush toilets, showers every 3-4 days. Teens help with meal prep, camp upkeep, group logistics.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Colorado: Call of the Wild, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -73091,7 +72876,7 @@
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Mix of rustic hotels, hostels, and small lodges throughout, no camping. Shared/slumber-party-style rooms, gender-divided. Lodges range from ensuite to shared facilities, quick showers every 2-3 days. Everyone helps with setup, gear organization, keeping spaces clean. No staff ratio stated.",
+        "notes": "Mix of rustic hotels, hostels, and small lodges throughout, no camping. Shared/slumber-party-style rooms, gender-divided. Lodges range from ensuite to shared facilities, quick showers every 2-3 days. Everyone helps with setup, gear organization, keeping spaces clean.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Scotland & Ireland: Celtic Isles, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -73142,7 +72927,7 @@
       "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Family-run hostel in Barcelona for 8 nights, then a mountain bunkhouse refuge for 4 nights, no camping. Shared rooms with 2-4 participants, gender-divided. Beds, bathrooms, A/C, not luxury. Showers typically every 1-2 days depending on itinerary. Each accommodation serves as a base to explore from, eat, and unwind together. No staff ratio stated.",
+        "notes": "Family-run hostel in Barcelona for 8 nights, then a mountain bunkhouse refuge for 4 nights, no camping. Shared rooms with 2-4 participants, gender-divided. Beds, bathrooms, A/C, not luxury. Showers typically every 1-2 days depending on itinerary. Each accommodation serves as a base to explore from, eat, and unwind together.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Spain: Mountains to Mediterranean, Accommodations section",
         "verifiedAt": "2026-09-17"
