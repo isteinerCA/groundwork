@@ -3190,7 +3190,7 @@
       "programGroupId": "actionquest-nova"
     },
     "dayToDay": {
-      "notes": "Students live aboard a 45-50 ft monohull or catamaran full-time for the duration of the voyage, with 12 students and 3 staff per vessel (Skipper, first mate, and typically a third staff member such as a SCUBA instructor, medic, or marine biologist). Staff live aboard with students throughout. Each vessel has 5 cabins plus a large salon that converts to a 6th cabin, and 4 full bathrooms (heads); many students choose to sleep on deck under the stars in hammocks on clear nights. A rotating 'Job Wheel' assigns each student a different daily role (Skipper, Mate, Navigator, Engineer, Head Chef, plus support roles). Students prepare all meals themselves with staff help, using packaged/canned goods imported from the US plus fresh produce picked up locally roughly every 4 days; vegetarian, vegan, and common allergy accommodations are available with advance notice. Nova sails alongside the wider ActionQuest fleet (6-8 vessels) as a 'flotilla,' meeting the larger group at signature moments like beach BBQs. This day-to-day structure (staffing ratio, Job Wheel, Forum discussions, food policy, flotilla sailing) is standard across the ActionQuest British Virgin Islands fleet, not unique to Nova.",
+      "notes": "Students live aboard a 45-50 ft monohull or catamaran full-time for the duration of the voyage, with 12 students and 3 staff per vessel (Skipper, first mate, and typically a third staff member such as a SCUBA instructor, medic, or marine biologist). Staff live aboard with students throughout. Each vessel has 5 cabins plus a large salon that converts to a 6th cabin, and 4 full bathrooms (heads); many students choose to sleep on deck under the stars in hammocks on clear nights. A rotating 'Job Wheel' assigns each student a different daily role (Skipper, Mate, Navigator, Engineer, Head Chef, plus support roles). Students prepare all meals themselves with staff help, using packaged/canned goods imported from the US plus fresh produce picked up locally roughly every 4 days; vegetarian, vegan, and common allergy accommodations are available with advance notice. Nova sails alongside the wider ActionQuest fleet (6-8 vessels) as a 'flotilla,' meeting the larger group at signature moments like beach BBQs.",
       "sourceType": "official_policy",
       "sourceCitation": "ActionQuest Nova program page, Accommodations, Food, and Group Living FAQ sections (org-wide fleet policy)",
       "verifiedAt": "2026-09-17"
@@ -3201,9 +3201,9 @@
       "programGroupId": "actionquest-vega"
     },
     "dayToDay": {
-      "notes": "Same live-aboard structure as the rest of the ActionQuest BVI fleet: 45-50 ft monohull or catamaran, roughly 12 students and 3 staff per vessel, rotating Job Wheel roles, student-prepared meals, and flotilla sailing alongside other AQ vessels with shared beach BBQs and events.",
+      "notes": "Students live aboard a 45-50 ft monohull or catamaran with about 12 students and 3 staff who stay on the boat throughout. A rotating Job Wheel assigns daily roles, students cook meals with staff help, and the boat sails in a 6-8 vessel flotilla that meets for shared beach BBQs and events. Days mix intro sailing, scuba, and marine biology, working toward PADI Open Water and IYT Intro Sailing.",
       "sourceType": "official_policy",
-      "sourceCitation": "ActionQuest org-wide fleet policy, cross-referenced from the Nova and Vega program pages",
+      "sourceCitation": "ActionQuest Vega program page and org-wide fleet policy (Accommodations, Food, and Group Living FAQ sections)",
       "verifiedAt": "2026-09-17"
     }
   },
@@ -3212,7 +3212,7 @@
       "programGroupId": "actionquest-reef-to-rainforest"
     },
     "dayToDay": {
-      "notes": "Unlike the BVI live-aboard fleet, this program is a mixed land-and-sea itinerary in Australia: students stay in a mix of shore-based accommodations and time aboard a yacht sailing the Whitsunday Islands, with a group size of roughly 10-14 students and 2 staff (smaller than the typical BVI vessel of 12 students/3 staff). Includes hands-on community service work with the Daintree Observatory rainforest replanting project. Run in conjunction with ActionQuest's sister program GoBeyond, which may mean shared staffing or logistics with that program's structure.",
+      "notes": "This is a mixed land-and-sea itinerary in Australia: students stay in a mix of shore-based accommodations and time aboard a yacht sailing the Whitsunday Islands, with a group size of roughly 10-14 students and 2 staff. Includes hands-on community service work with the Daintree Observatory rainforest replanting project. Run in conjunction with ActionQuest's sister program GoBeyond, which may mean shared staffing or logistics with that program's structure.",
       "sourceType": "official_policy",
       "sourceCitation": "ActionQuest Reef to Rainforest program page (Australia)",
       "verifiedAt": "2026-09-17"
@@ -3223,7 +3223,7 @@
       "programGroupId": "actionquest-minerva"
     },
     "dayToDay": {
-      "notes": "Lives aboard a 50-ft monohull or 46-ft catamaran with a smaller-than-typical group: 10 students and 2 staff per vessel, sailing in a small flotilla of just 1-2 vessels (versus the main BVI fleet's 6-8 vessels) for most of the voyage, though it begins and ends alongside the larger BVI fleet. The itinerary spans over 10 islands from the BVI to Antigua and back, so days involve more open-water passages and changing customs/currencies/languages than the more geographically contained BVI-only programs.",
+      "notes": "Students live aboard a 50-ft monohull or 46-ft catamaran with 10 students and 2 staff. A rotating Job Wheel assigns daily roles and students cook meals with staff help. For most of the voyage they sail in a small flotilla of 1-2 vessels, beginning and ending alongside the larger BVI fleet. The itinerary spans over 10 islands from the BVI to Antigua and back, so days involve more open-water passages and changing customs, currencies, and languages than the BVI-only programs.",
       "sourceType": "official_policy",
       "sourceCitation": "ActionQuest Minerva program page (Caribbean Leeward Islands)",
       "verifiedAt": "2026-09-17"
@@ -3234,7 +3234,7 @@
       "programGroupId": "actionquest-neptune"
     },
     "dayToDay": {
-      "notes": "Lives aboard a 46-foot catamaran. Days are heavily scuba-focused given the 25-dive curriculum, working through PADI Advanced Open Water and 5 specialty topics at dive sites including Alice's Wonderland, Blue Chromis Reef, and the wreck of the Chikuzen. Otherwise follows the standard ActionQuest fleet structure (Job Wheel, student-prepared meals, flotilla sailing).",
+      "notes": "Students live aboard a 46-foot catamaran with about 12 students and 3 staff who stay on the boat throughout. A rotating Job Wheel assigns daily roles, students cook meals with staff help, and the boat sails in a flotilla that meets for shared beach BBQs and events. Days are heavily scuba-focused given the 25-dive curriculum, working through PADI Advanced Open Water and 5 specialty topics at dive sites including Alice's Wonderland, Blue Chromis Reef, and the wreck of the Chikuzen.",
       "sourceType": "official_policy",
       "sourceCitation": "ActionQuest Neptune program page (British Virgin Islands)",
       "verifiedAt": "2026-09-17"
@@ -3245,7 +3245,7 @@
       "programGroupId": "actionquest-dolphin"
     },
     "dayToDay": {
-      "notes": "Standard ActionQuest BVI fleet structure, with days built around the marine biology curriculum: 20-22 dives working toward the AQ Tropical Marine Biology Course, Research Diver Distinctive Specialty, and additional PADI specialties like Underwater Photography and Underwater Naturalist.",
+      "notes": "Students live aboard a 45-50 ft monohull or catamaran with about 12 students and 3 staff who stay on the boat throughout. A rotating Job Wheel assigns daily roles, students cook meals with staff help, and the boat sails in a 6-8 vessel flotilla that meets for shared beach BBQs and events. Days are built around the marine biology curriculum: 20-22 dives working toward the AQ Tropical Marine Biology Course, Research Diver Distinctive Specialty, and additional PADI specialties like Underwater Photography and Underwater Naturalist.",
       "sourceType": "official_policy",
       "sourceCitation": "ActionQuest Dolphin program page (British Virgin Islands)",
       "verifiedAt": "2026-09-17"
@@ -3256,7 +3256,7 @@
       "programGroupId": "actionquest-carina"
     },
     "dayToDay": {
-      "notes": "Standard ActionQuest BVI fleet structure, with an advanced sailing emphasis: the vessel circumnavigates the entire BVI, giving students more time at the helm plotting courses and standing watch than on the intro-level programs, alongside advanced scuba diving at sites like Mountain Point, The Chimneys, Spy Glass, and Coral Gardens.",
+      "notes": "Students live aboard a 45-50 ft monohull or catamaran with about 12 students and 3 staff who stay on the boat throughout. A rotating Job Wheel assigns daily roles, students cook meals with staff help, and the boat sails in a 6-8 vessel flotilla that meets for shared beach BBQs and events. Days have an advanced sailing emphasis: the vessel circumnavigates the entire BVI, giving students more time at the helm plotting courses and standing watch than on intro-level programs, alongside advanced scuba diving at sites like Mountain Point, The Chimneys, Spy Glass, and Coral Gardens.",
       "sourceType": "official_policy",
       "sourceCitation": "ActionQuest Carina program page (British Virgin Islands)",
       "verifiedAt": "2026-09-17"
@@ -3267,7 +3267,7 @@
       "programGroupId": "actionquest-aquarius"
     },
     "dayToDay": {
-      "notes": "Standard ActionQuest BVI fleet structure, balancing 10 advanced dives (PADI Advanced Open Water plus Peak Performance Buoyancy) with an intro-level sailing curriculum for students newer to sailing.",
+      "notes": "Students live aboard a 45-50 ft monohull or catamaran with about 12 students and 3 staff who stay on the boat throughout. A rotating Job Wheel assigns daily roles, students cook meals with staff help, and the boat sails in a 6-8 vessel flotilla that meets for shared beach BBQs and events. Days balance 10 advanced dives (PADI Advanced Open Water plus Peak Performance Buoyancy) with an intro-level sailing curriculum for students newer to sailing.",
       "sourceType": "official_policy",
       "sourceCitation": "ActionQuest Aquarius program page (British Virgin Islands)",
       "verifiedAt": "2026-09-17"
@@ -3278,7 +3278,7 @@
       "programGroupId": "actionquest-polaris"
     },
     "dayToDay": {
-      "notes": "Standard ActionQuest BVI fleet structure, with days weighted toward advanced sailing (keelboat handling, small dinghy practice, IYT International Crew & VHF Radio training) alongside an introductory scuba diving curriculum for students new to diving.",
+      "notes": "Students live aboard a 45-50 ft monohull or catamaran with about 12 students and 3 staff who stay on the boat throughout. A rotating Job Wheel assigns daily roles, students cook meals with staff help, and the boat sails in a 6-8 vessel flotilla that meets for shared beach BBQs and events. Days are weighted toward advanced sailing (keelboat handling, small dinghy practice, IYT International Crew & VHF Radio training) alongside an introductory scuba diving curriculum for students new to diving.",
       "sourceType": "official_policy",
       "sourceCitation": "ActionQuest Polaris program page (British Virgin Islands)",
       "verifiedAt": "2026-09-17"
@@ -3289,7 +3289,7 @@
       "programGroupId": "actionquest-barracuda"
     },
     "dayToDay": {
-      "notes": "Standard ActionQuest BVI fleet structure, but with a younger student cohort (ages 14 and under) than every other ActionQuest program researched. Days combine 14-18 dives working toward PADI Junior Advanced Open Water and specialties like Project AWARE and Underwater Naturalist. Given the younger age range, families should ask directly about any additional supervision adjustments beyond the standard 12-students/3-staff ratio.",
+      "notes": "Students live aboard a 45-50 ft monohull or catamaran with about 12 students and 3 staff who stay on the boat throughout. A rotating Job Wheel assigns daily roles, students cook meals with staff help, and the boat sails in a 6-8 vessel flotilla that meets for shared beach BBQs and events. This program has a younger student cohort (ages 14 and under) than the other ActionQuest programs researched. Days combine 14-18 dives working toward PADI Junior Advanced Open Water and specialties like Project AWARE and Underwater Naturalist. Given the younger age range, families should ask directly about any additional supervision adjustments beyond the 12-students/3-staff ratio.",
       "sourceType": "official_policy",
       "sourceCitation": "ActionQuest Barracuda program page (British Virgin Islands)",
       "verifiedAt": "2026-09-17"
@@ -3300,7 +3300,7 @@
       "programGroupId": "actionquest-rescue"
     },
     "dayToDay": {
-      "notes": "Slightly larger vessel groups than the standard ActionQuest ratio: 13 students and 3 staff per vessel, across a flotilla of 3-4 vessels that shares a basic itinerary with the Dolphin and Neptune programs. Days center on PADI Rescue Diver training and rescue-scenario practice, including helping guide Neptune students through rescue drills as an introduction to Divemaster-level responsibility.",
+      "notes": "Students live aboard with 13 students and 3 staff per vessel — slightly larger groups than the usual 12-and-3 — across a flotilla of 3-4 vessels that shares a basic itinerary with the Dolphin and Neptune programs. A rotating Job Wheel assigns daily roles and students cook meals with staff help. Days center on PADI Rescue Diver training and rescue-scenario practice, including helping guide Neptune students through rescue drills as an introduction to Divemaster-level responsibility.",
       "sourceType": "official_policy",
       "sourceCitation": "ActionQuest Rescue program page (British Virgin Islands)",
       "verifiedAt": "2026-09-17"
@@ -3311,7 +3311,7 @@
       "programGroupId": "actionquest-junior-divemaster"
     },
     "dayToDay": {
-      "notes": "Standard ActionQuest BVI fleet structure, but structured as a professional internship: students take on more instructional and mentorship responsibility as part of PADI Junior Divemaster training, working through 20+ dives.",
+      "notes": "Students live aboard a 45-50 ft monohull or catamaran with about 12 students and 3 staff who stay on the boat throughout. A rotating Job Wheel assigns daily roles, students cook meals with staff help, and the boat sails in a 6-8 vessel flotilla that meets for shared beach BBQs and events. Structured as a professional internship: students take on more instructional and mentorship responsibility as part of PADI Junior Divemaster training, working through 20+ dives.",
       "sourceType": "official_policy",
       "sourceCitation": "ActionQuest Junior Divemaster program page (British Virgin Islands)",
       "verifiedAt": "2026-09-17"
@@ -3322,7 +3322,7 @@
       "programGroupId": "actionquest-divemaster"
     },
     "dayToDay": {
-      "notes": "Standard ActionQuest BVI fleet structure, but for the oldest and most advanced cohort (18+, already PADI Rescue Divers with 40+ logged dives): students take on the most professional-level responsibility of any ActionQuest program, working toward PADI Professional Divemaster certification.",
+      "notes": "Students live aboard a 45-50 ft monohull or catamaran with about 12 students and 3 staff who stay on the boat throughout. A rotating Job Wheel assigns daily roles, students cook meals with staff help, and the boat sails in a 6-8 vessel flotilla that meets for shared beach BBQs and events. For the oldest and most advanced cohort (18+, already PADI Rescue Divers with 40+ logged dives), students take on the most professional-level responsibility of any ActionQuest program, working toward PADI Professional Divemaster certification.",
       "sourceType": "official_policy",
       "sourceCitation": "ActionQuest Professional Divemaster program page (British Virgin Islands)",
       "verifiedAt": "2026-09-17"
