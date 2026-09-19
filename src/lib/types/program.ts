@@ -81,6 +81,9 @@ export interface Program {
   datesParseQuality: "exact" | "approximate" | "unknown";
   locationDisplay: string;
   isInternational: boolean;
+  /** US state/DC abbreviation from the CSV State column — program location, not residency. */
+  state?: string;
+  /** Residency eligibility (e.g. CA) parsed from grades/flags — not the program's location. */
   stateRestriction?: string;
 
   hasCollegeCredit: boolean;

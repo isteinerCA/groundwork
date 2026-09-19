@@ -4,7 +4,15 @@
  */
 import { normalizeAdmissionType } from "../src/lib/data/normalize-admission";
 import { normalizeFormat } from "../src/lib/data/normalize-format";
-import { normalizeGrade, gradeMatchesFilter } from "../src/lib/data/normalize-grade";
+import {
+  gradeMatchesFilter,
+  normalizeGrade,
+  parseStateRestriction,
+} from "../src/lib/data/normalize-grade";
+import {
+  parseGradesFromCsv,
+  parseLocationStateFromCsv,
+} from "../src/lib/data/parse-csv-program-fields";
 import {
   formatDateWindowFilterLabel,
   programContainedInDateWindow,
@@ -153,6 +161,44 @@ if (risingRange.gradeCompletedMin !== 9 || risingRange.gradeCompletedMax !== 11)
 const currentGrades = normalizeGrade("Grades 9-12");
 if (currentGrades.gradeCompletedMin !== 9 || currentGrades.gradeCompletedMax !== 12) {
   console.error("FAIL: Grades 9-12 (current) should map to completed grades 9-12");
+  failed++;
+}
+
+const cosmosGrades = normalizeGrade("Completing grades 8-12, CA high school students only");
+if (cosmosGrades.stateRestriction !== "CA") {
+  console.error("FAIL: COSMOS grades text should parse CA residency restriction");
+  failed++;
+}
+
+const lastingGrades = normalizeGrade("Ages 11-13 (completed grades 5-7, per program site)");
+if (lastingGrades.stateRestriction) {
+  console.error("FAIL: Lasting Adventures grades text should not invent a residency restriction");
+  failed++;
+}
+
+if (parseStateRestriction("Rising 10th, 11th, and 12th graders")) {
+  console.error("FAIL: generic grade text should not parse a residency restriction");
+  failed++;
+}
+
+if (parseStateRestriction("Current 10th-11th grade at high school")) {
+  console.error('FAIL: "at high school" should not parse as a residency restriction');
+  failed++;
+}
+
+if (parseLocationStateFromCsv({ State: "CO" }) !== "CO") {
+  console.error("FAIL: CSV State column should parse as location state CO");
+  failed++;
+}
+
+const hmiGrades = parseGradesFromCsv({
+  "Grades Display": "Rising 10th, 11th, and 12th graders",
+  "Grade Completed Min": "9",
+  "Grade Completed Max": "11",
+  State: "CO",
+});
+if (hmiGrades.stateRestriction) {
+  console.error("FAIL: CSV State=CO must not become a residency restriction");
   failed++;
 }
 
@@ -443,6 +489,51 @@ if (matchesDataQuery(irelandProgram, "iceland")) {
   failed++;
 }
 
+const celticIslesPriceCompare = stubProgram({
+  name: "The Road Less Traveled - Scotland & Ireland: Celtic Isles",
+  locationDisplay: "Scotland & Ireland",
+  trackDetail: "Session 1 (2027)",
+  description:
+    "Tuition now ties four ways at $6,795 (with France & Italy Alps, Azores, Iceland).",
+});
+
+const franceItalyAlps = stubProgram({
+  name: "The Road Less Traveled - France & Italy: Alps Adventure",
+  locationDisplay: "France & Italy",
+  trackDetail: "Session 1 (Jul 1-14, Geneva to Milan)",
+});
+
+if (matchesDataQuery(celticIslesPriceCompare, "france")) {
+  console.error(
+    'FAIL: Scotland & Ireland program should not match France list via a price-comparison mention',
+  );
+  failed++;
+}
+
+if (matchesDataQuery(celticIslesPriceCompare, "italy")) {
+  console.error(
+    'FAIL: Scotland & Ireland program should not match Italy list via a price-comparison mention',
+  );
+  failed++;
+}
+
+if (matchesDataQuery(celticIslesPriceCompare, "iceland")) {
+  console.error(
+    'FAIL: Scotland & Ireland program should not match Iceland list via a price-comparison mention',
+  );
+  failed++;
+}
+
+if (!matchesDataQuery(celticIslesPriceCompare, "ireland")) {
+  console.error('FAIL: Celtic Isles should still match dataQuery "ireland"');
+  failed++;
+}
+
+if (!matchesDataQuery(franceItalyAlps, "france")) {
+  console.error('FAIL: France & Italy Alps should match dataQuery "france"');
+  failed++;
+}
+
 const moroccoProgram = stubProgram({
   name: "CIEE - Arabic Language & Moroccan Culture (Rabat)",
   locationDisplay: "Rabat, Morocco",
@@ -583,27 +674,27 @@ if (matchesLocationQuery(georgetownCatalog, "washington")) {
 const envisionGeorgetown = stubProgram({
   name: "Envision (NYLF) - National Security",
   locationDisplay: "Georgetown University",
-  stateRestriction: "DC",
+  state: "DC",
   trackDetail: "Residential (Georgetown University, 2027)",
 });
 
 const envisionPineBush = stubProgram({
   name: "Envision - Veterinary Academy: Horse & Large Animal",
   locationDisplay: "Pine Bush",
-  stateRestriction: "NY",
+  state: "NY",
   trackDetail: "Session 1",
 });
 
 if (!matchesLocationQuery(envisionGeorgetown, "district of columbia")) {
   console.error(
-    'FAIL: Envision Georgetown offering should match via stateRestriction "DC"',
+    'FAIL: Envision Georgetown offering should match via location state "DC"',
   );
   failed++;
 }
 
 if (!matchesLocationQuery(envisionPineBush, "new york")) {
   console.error(
-    'FAIL: Envision Pine Bush offering should match via stateRestriction "NY"',
+    'FAIL: Envision Pine Bush offering should match via location state "NY"',
   );
   failed++;
 }
@@ -611,7 +702,7 @@ if (!matchesLocationQuery(envisionPineBush, "new york")) {
 const campLaurelMaine = stubProgram({
   name: "Camp Laurel - Full Season",
   locationDisplay: "Belgrade Lakes region (Readfield / Kents Hill), Maine",
-  stateRestriction: "ME",
+  state: "ME",
   trackDetail: "Full Season 2027",
 });
 

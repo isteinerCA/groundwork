@@ -18,6 +18,7 @@ import {
   parseDurationFromCsv,
   parseCatalogOfferingFromCsv,
   parseGradesFromCsv,
+  parseLocationStateFromCsv,
   parsePriceFromCsv,
 } from "../src/lib/data/parse-csv-program-fields";
 import { parseReviewStatus, parseSeasonYear } from "../src/lib/data/normalize-season-review";
@@ -256,6 +257,7 @@ function rowToProgram(
   const dates = parseDatesFromCsv(row, seasonYear);
   const credit = parseCreditFromCsv(row);
   const locationDisplay = csvCell(row, "Location Display", "Location");
+  const locationState = parseLocationStateFromCsv(row);
   const catalogOffering = parseCatalogOfferingFromCsv(row);
 
   const programBase = {
@@ -282,6 +284,7 @@ function rowToProgram(
     seasonYear,
     reviewStatus,
     locationDisplay,
+    ...(locationState ? { state: locationState } : {}),
     isInternational: detectInternationalFromCsv(row, locationDisplay),
     ...credit,
     priceDisplay: price.priceDisplay,

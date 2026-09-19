@@ -114,7 +114,10 @@ const REGION_LOCATION_PHRASES: Record<UsRegionId, string[]> = {
 };
 
 function programLocationText(program: Program): string {
-  return [program.locationDisplay, program.trackDetail].filter(Boolean).join(" ").toLowerCase();
+  return [program.locationDisplay, program.state, program.trackDetail]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
 }
 
 function locationMatchesRegionPhrases(program: Program, regionId: UsRegionId): boolean {

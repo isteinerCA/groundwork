@@ -136,6 +136,8 @@ def parse_grades_from_csv(row: dict) -> dict:
     min_override = parse_optional_int(csv_cell(row, "Grade Completed Min"))
     max_override = parse_optional_int(csv_cell(row, "Grade Completed Max"))
     parsed = normalize_grade(display or "Grades 6-12")
+    if not parsed.get("stateRestriction"):
+        parsed.pop("stateRestriction", None)
 
     if (
         min_override is not None
@@ -206,11 +208,59 @@ def detect_international_from_csv(row: dict, location_display: str) -> bool:
     return detect_international(location_display)
 
 
-def parse_state_restriction_from_csv(row: dict) -> str | None:
-    """Two-letter US state/DC abbreviation from the CSV State column."""
-    state = csv_cell(row, "State", "State Abbr").upper()
-    if len(state) == 2 and state.isalpha():
-        return state
+US_STATE_ABBRS = {
+    "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL",
+    "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT",
+    "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI",
+    "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY", "DC",
+}
+
+STATE_NAME_TO_ABBR = {
+    "alabama": "AL", "alaska": "AK", "arizona": "AZ", "arkansas": "AR",
+    "california": "CA", "colorado": "CO", "connecticut": "CT", "delaware": "DE",
+    "florida": "FL", "georgia": "GA", "hawaii": "HI", "idaho": "ID",
+    "illinois": "IL", "indiana": "IN", "iowa": "IA", "kansas": "KS",
+    "kentucky": "KY", "louisiana": "LA", "maine": "ME", "maryland": "MD",
+    "massachusetts": "MA", "michigan": "MI", "minnesota": "MN", "mississippi": "MS",
+    "missouri": "MO", "montana": "MT", "nebraska": "NE", "nevada": "NV",
+    "new hampshire": "NH", "new jersey": "NJ", "new mexico": "NM", "new york": "NY",
+    "north carolina": "NC", "north dakota": "ND", "ohio": "OH", "oklahoma": "OK",
+    "oregon": "OR", "pennsylvania": "PA", "rhode island": "RI", "south carolina": "SC",
+    "south dakota": "SD", "tennessee": "TN", "texas": "TX", "utah": "UT",
+    "vermont": "VT", "virginia": "VA", "washington": "WA", "west virginia": "WV",
+    "wisconsin": "WI", "wyoming": "WY", "district of columbia": "DC",
+}
+
+
+def parse_location_state_from_csv(row: dict) -> str | None:
+    """US state/DC abbreviation from the CSV State column — location, not residency."""
+    raw = csv_cell(row, "State", "State Abbr").strip()
+    if not raw:
+        return None
+    if len(raw) == 2 and raw.isalpha():
+        abbr = raw.upper()
+        return abbr if abbr in US_STATE_ABBRS else None
+    return STATE_NAME_TO_ABBR.get(raw.lower())
+
+
+def parse_state_restriction_from_grades(raw: str) -> str | None:
+    """Actual residency limit from eligibility text — not the location State column."""
+    trimmed = raw.strip()
+    if not trimmed:
+        return None
+    lower = trimmed.lower()
+    abbr_match = re.search(r"\b([A-Z]{2})\s+(?:residents?|high school students?)\b", trimmed)
+    if abbr_match and abbr_match.group(1) in US_STATE_ABBRS:
+        return abbr_match.group(1)
+    for name, abbr in STATE_NAME_TO_ABBR.items():
+        if (
+            f"{name} residents" in lower
+            or f"{name} resident" in lower
+            or f"{name} high school students" in lower
+        ):
+            return abbr
+    if "california residents" in lower or re.search(r"\bca high school\b", lower):
+        return "CA"
     return None
 
 
@@ -576,12 +626,7 @@ def normalize_grade(raw: str) -> dict:
     display = raw.strip()
     lower = display.lower()
 
-    state = None
-    state_match = re.search(r"\b([a-z]{2})\s+(?:residents?|high school|only)\b", lower)
-    if state_match:
-        state = state_match.group(1).upper()
-    if "ca high school" in lower or "california residents" in lower:
-        state = "CA"
+    state = parse_state_restriction_from_grades(display)
 
     ages = re.search(r"ages?\s*(\d+)\s*[–-]\s*(\d+)", lower, re.I)
     if ages:
@@ -969,7 +1014,7 @@ def build_program_from_row(
     grades = parse_grades_from_csv(row)
     credit = parse_credit_from_csv(row)
     location_display = csv_cell(row, "Location Display", "Location")
-    state_restriction = parse_state_restriction_from_csv(row)
+    location_state = parse_location_state_from_csv(row)
     csv_flags = []
     if row.get("Flags", "").strip():
         try:
@@ -1005,7 +1050,7 @@ def build_program_from_row(
         "seasonYear": season_year,
         "reviewStatus": review_status,
         "locationDisplay": location_display,
-        **({"stateRestriction": state_restriction} if state_restriction else {}),
+        **({"state": location_state} if location_state else {}),
         "isInternational": detect_international_from_csv(row, location_display),
         **credit,
         **price,

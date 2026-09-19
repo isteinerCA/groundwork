@@ -1,3 +1,4 @@
+import { STATE_BY_ABBR, US_STATES } from "@/lib/data/matches-location";
 import type { Program } from "@/lib/types/program";
 
 type GradeResult = Pick<
@@ -54,16 +55,44 @@ function risingToCompleted(grade: number): number {
   return Math.max(1, grade - 1);
 }
 
+/**
+ * Parse an actual residency limit from eligibility text.
+ * Requires explicit "XX residents" / "XX high school students" (uppercase
+ * abbreviation) or a full state name — not the program's location State column.
+ */
+export function parseStateRestriction(raw: string): string | undefined {
+  const trimmed = raw.trim();
+  if (!trimmed) return undefined;
+  const lower = trimmed.toLowerCase();
+
+  const abbrMatch = trimmed.match(/\b([A-Z]{2})\s+(?:residents?|high school students?)\b/);
+  if (abbrMatch) {
+    const abbr = abbrMatch[1];
+    if (STATE_BY_ABBR[abbr]) return abbr;
+  }
+
+  for (const state of US_STATES) {
+    if (
+      lower.includes(`${state.name} residents`) ||
+      lower.includes(`${state.name} resident`) ||
+      lower.includes(`${state.name} high school students`)
+    ) {
+      return state.abbr;
+    }
+  }
+
+  if (lower.includes("california residents") || /\bca high school\b/.test(lower)) {
+    return "CA";
+  }
+
+  return undefined;
+}
+
 export function normalizeGrade(raw: string): GradeResult {
   const gradeDisplay = raw.trim();
   const lower = gradeDisplay.toLowerCase();
 
-  let stateRestriction: string | undefined;
-  const stateMatch = lower.match(/\b([a-z]{2})\s+(?:residents?|high school|only)\b/);
-  if (stateMatch) stateRestriction = stateMatch[1].toUpperCase();
-  if (lower.includes("ca high school") || lower.includes("california residents")) {
-    stateRestriction = "CA";
-  }
+  const stateRestriction = parseStateRestriction(gradeDisplay);
 
   // Current-grade phrasing ("6th-7th grade") — same number for current and completed.
   const ordinalGradeRange = lower.match(

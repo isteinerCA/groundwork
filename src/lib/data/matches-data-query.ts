@@ -1,3 +1,4 @@
+import { GLOBAL_ADVENTURE_LIST_DEFS } from "@/lib/constants/global-adventure-lists";
 import type { Program } from "@/lib/types/program";
 import { termMatchesInText } from "@/lib/data/fuzzy-text-match";
 import {
@@ -261,6 +262,13 @@ const REGION_QUERY_GROUPS: Record<string, readonly string[]> = {
   caribbean: CARIBBEAN_SEARCH_TERMS,
 };
 
+/** Country/place list queries — match location and identity only, not description comparisons. */
+const DESTINATION_PLACE_QUERIES = new Set(
+  GLOBAL_ADVENTURE_LIST_DEFS.filter((def) => def.group === "where")
+    .map((def) => def.dataQuery.trim().toLowerCase())
+    .filter(Boolean),
+);
+
 function expandedActivityTerms(query: string): readonly string[] | null {
   return ACTIVITY_QUERY_GROUPS[query.trim().toLowerCase()] ?? null;
 }
@@ -355,6 +363,7 @@ export function programSearchText(program: Program): string {
     program.name,
     program.institution,
     program.locationDisplay,
+    program.state,
     program.stateRestriction,
     program.gradeDisplay,
     program.trackDetail,
@@ -416,6 +425,10 @@ export function matchesDataQuery(
   const regionTerms = expandedRegionTerms(trimmed);
   if (regionTerms) {
     return matchesRegionDataQuery(program, regionTerms);
+  }
+
+  if (DESTINATION_PLACE_QUERIES.has(trimmed.toLowerCase())) {
+    return matchesRegionDataQuery(program, [trimmed.toLowerCase()]);
   }
 
   const haystack = programSearchText(program);

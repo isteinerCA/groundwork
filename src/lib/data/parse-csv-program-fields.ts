@@ -1,5 +1,6 @@
 import { normalizeDuration } from "@/lib/data/normalize-duration";
 import { normalizeGrade } from "@/lib/data/normalize-grade";
+import { getStateAbbrev, resolveLocationQuery, STATE_BY_ABBR } from "@/lib/data/matches-location";
 import {
   formatIsoDateRange,
   parseDatesDisplay,
@@ -39,6 +40,18 @@ function parseOptionalNumber(raw: string): number | null {
   if (!raw.trim()) return null;
   const parsed = Number.parseFloat(raw.replace(/,/g, "").trim());
   return Number.isFinite(parsed) ? parsed : null;
+}
+
+/** Location state from the CSV State column — never a residency restriction. */
+export function parseLocationStateFromCsv(row: CsvRow): string | undefined {
+  const raw = csvCell(row, "State", "State Abbr").trim();
+  if (!raw) return undefined;
+  if (/^[A-Za-z]{2}$/.test(raw)) {
+    const abbr = raw.toUpperCase();
+    return STATE_BY_ABBR[abbr] ? abbr : undefined;
+  }
+  const resolved = resolveLocationQuery(raw);
+  return resolved ? getStateAbbrev(resolved) : undefined;
 }
 
 export function parseGradesFromCsv(row: CsvRow): Pick<
