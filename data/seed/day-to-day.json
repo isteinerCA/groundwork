@@ -2937,7 +2937,7 @@
       "programGroupId": "rlt-italy-dive-the-med"
     },
     "dayToDay": {
-      "notes": "11 nights coastal campground in Sardinia, shared tents (2-3/tent, gender-organized), 2 nights Airbnb-style group house in Rome. Flush toilets, showers every 1-2 days. Students share camp setup/breakdown and chores. No staff ratio stated.",
+      "notes": "11 nights coastal campground in Sardinia, shared tents (2-3/tent, gender-organized), 2 nights Airbnb-style group house in Rome. Flush toilets, showers every 1-2 days. Students share camp setup/breakdown and chores.",
       "sourceType": "official_policy",
       "sourceCitation": "User-provided screenshots, Italy: Dive the Med, Accommodations section",
       "verifiedAt": "2026-09-17"
@@ -2981,7 +2981,7 @@
       "programGroupId": "rlt-maine-pathway-to-the-pines"
     },
     "dayToDay": {
-      "notes": "Tent camping in/near Acadia National Park all week, both MS and HS sessions. Flush bathrooms, short showers (no frequency given). Group sets up camp, cooks, keeps spaces clean together. No staff ratio stated; families of MS students should confirm added supervision for the younger band.",
+      "notes": "Tent camping in/near Acadia National Park all week, both MS and HS sessions. Flush bathrooms, short showers. Group sets up camp, cooks, keeps spaces clean together.",
       "sourceType": "official_policy",
       "sourceCitation": "User-provided screenshots, Maine: Pathway to the Pines, Accommodations section",
       "verifiedAt": "2026-09-17"
@@ -3539,7 +3539,14 @@
   },
   {
     "match": {
-      "programGroupId": "envision-nylf-medicine-health-care"
+      "programGroupId": [
+        "envision-nylf-medicine-health-care-berkeley",
+        "envision-nylf-medicine-health-care-ucla",
+        "envision-nylf-medicine-health-care-emory",
+        "envision-nylf-medicine-health-care-rice",
+        "envision-nylf-medicine-health-care-yale",
+        "envision-nylf-medicine-health-care-michigan"
+      ]
     },
     "dayToDay": {
       "notes": "Residential students live in dorms on the host university campus for the full 8 days, with an Advisor and classroom group assigned on Day 1 alongside icebreaker activities. Days follow a consistent structure: morning career-exploration or workshop sessions, afternoon hands-on clinical-skills rotations or simulations (suturing, blood pressure, phlebotomy, disaster triage, wilderness/outdoor emergency medicine), and organized evening 'Team Time' social activities (ice cream social, scavenger hunt, trivia night, talent show). One day includes a site visit to a medical school or simulation center, with lunch or dinner off campus. Commuter students attend the same daytime programming (on-campus lunches included) but do not stay overnight or participate in evening Team Time activities. The page does not state a specific staff-to-student ratio beyond describing an 'Advisor' assigned to each classroom group. Health and safety oversight is described at the organizational level: Envision partners with Exlog (an international security firm) and monitors State Department and CDC guidance, with local support described as available 24/7.",
@@ -3550,7 +3557,12 @@
   },
   {
     "match": {
-      "programGroupId": "envision-nylf-engineering"
+      "programGroupId": [
+        "envision-nylf-engineering-georgia-tech",
+        "envision-nylf-engineering-berkeley",
+        "envision-nylf-engineering-michigan",
+        "envision-nylf-engineering-yale"
+      ]
     },
     "dayToDay": {
       "notes": "Residential students live in dorms on the host university campus, structured around morning career-exploration sessions, afternoon hands-on workshops/simulations, and organized evening social activities. Commuter students attend the same daytime programming but do not stay overnight. Health and safety oversight: Envision partners with Exlog (an international security firm) and monitors State Department/CDC guidance, with 24/7 local support described as available. Days combine engineering design-thinking workshops with team-based projects addressing UN Sustainable Development Goals.",
@@ -3773,7 +3785,7 @@
       "programGroupId": "envision-future-vet-dc"
     },
     "dayToDay": {
-      "notes": "Held at American University with a mix of on-site labs (suturing, dissection, microscope work, first aid) and field trips to a local zoo and a farm, plus a brief D.C. monuments bus tour. Uses a 15:1 student-to-veterinarian ratio and a 30-student cap. Includes a notable wildlife blow-dart-making lab activity as part of the curriculum. Commuter and residential students share a joint final farewell meeting. Otherwise follows the same medication self-management, roommate-assignment, and dietary-accommodation policies described for the other Veterinary Academy/Future Vet programs.",
+      "notes": "Held at American University with a mix of on-site labs (suturing, dissection, microscope work, first aid) and field trips to a local zoo and a farm, plus a brief D.C. monuments bus tour. Uses a 15:1 student-to-veterinarian ratio and a 30-student cap. Includes a notable wildlife blow-dart-making lab activity as part of the curriculum. Commuter and residential students share a joint final farewell meeting. Students must inform staff of any medication and self-manage it on program; Envision staff cannot administer any medication, including over-the-counter medication such as Tylenol. Families should send more than enough medication for the full session. Parents complete a Student Medication Administration Form on the Student Portal and submit it to staff on arrival day; refrigeration or other special requests should be communicated to Envision Admissions.",
       "sourceType": "official_policy",
       "sourceCitation": "Envision Future Vet: Zoo Medicine (Washington, D.C.) program page, Sample Itinerary and FAQ sections",
       "verifiedAt": "2026-09-17"

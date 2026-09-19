@@ -1928,7 +1928,7 @@
         "id": "italy-dive-med-internal-flight-cost-unknown",
         "type": "safety",
         "title": "Required internal flight cost is not disclosed",
-        "body": "This program requires an additional internal flight from Sardinia to Rome that is not included in the $7,250 tuition. The Road Less Traveled books this flight on the group's behalf and adds the charge to the family's final invoice, but no estimated cost is given anywhere in the provided material. Families should ask for this figure before enrolling so they can budget accurately.",
+        "body": "This program requires an additional internal flight from Sardinia to Rome that is not included in the $7,250 tuition. The Road Less Traveled books this flight on the group's behalf and adds the charge to the family's final invoice, but no estimated cost is given anywhere in the provided material.",
         "sourceCitation": "User-provided screenshot of the Italy: Dive the Med program page, Flights and Pricing & Discounts sections",
         "severity": "warning"
       }
@@ -1983,22 +1983,6 @@
         "title": "This program runs two separate sessions for two separate age groups",
         "body": "MS session (6-8) and HS session (9-12) are entirely separate weeks. Book the session matching your student's grade band.",
         "severity": "warning",
-        "sourceCitation": "User-provided screenshots, rlt-maine-pathway-to-the-pines program page"
-      },
-      {
-        "id": "maine-pines-lowest-tuition-shortest-trip",
-        "type": "safety",
-        "title": "This is among the shortest and least expensive Road Less Traveled programs researched",
-        "body": "7 days, $3,195 tuition, 6-10 service hours.",
-        "severity": "info",
-        "sourceCitation": "User-provided screenshots, rlt-maine-pathway-to-the-pines program page"
-      },
-      {
-        "id": "maine-pines-shower-frequency-unstated",
-        "type": "safety",
-        "title": "Shower frequency is not specified",
-        "body": "Only 'short showers' mentioned, no stated frequency.",
-        "severity": "info",
         "sourceCitation": "User-provided screenshots, rlt-maine-pathway-to-the-pines program page"
       }
     ]
@@ -2677,7 +2661,14 @@
   },
   {
     "match": {
-      "programGroupId": "envision-nylf-medicine-health-care"
+      "programGroupId": [
+        "envision-nylf-medicine-health-care-berkeley",
+        "envision-nylf-medicine-health-care-ucla",
+        "envision-nylf-medicine-health-care-emory",
+        "envision-nylf-medicine-health-care-rice",
+        "envision-nylf-medicine-health-care-yale",
+        "envision-nylf-medicine-health-care-michigan"
+      ]
     },
     "flags": [
       {
@@ -2689,42 +2680,23 @@
         "severity": "warning"
       },
       {
-        "id": "medicine-hc-save-my-spot-sessions",
-        "type": "safety",
-        "title": "Several 2027 sessions are marked 'Save My Spot' rather than directly bookable",
-        "body": "The Rice, Yale, and University of Michigan sessions all display confirmed 2027 dates and prices but are labeled 'Save my spot for 2027' rather than offering a direct 'Enroll Now' path like the Berkeley, UCLA, and Emory sessions. This likely means these sessions are not yet fully open for enrollment even though pricing and dates are published. Families interested in these specific campuses should confirm current enrollment status directly.",
-        "sourceCitation": "Envision NYLF Medicine & Health Care program page, Dates & Locations section",
-        "severity": "info"
-      },
-      {
         "id": "medicine-hc-non-degree-guest-credit-status",
         "type": "safety",
         "title": "College credit is earned as a 'non-degree guest' student, not enrolled coursework",
         "body": "The credit is explicitly described as earned \"as a non-degree high school guest\" at George Mason University. Families should confirm with their target colleges how this specific credit type transfers or is weighted in admissions review, since non-degree guest credit may be treated differently than credit from a student's own enrolled coursework.",
         "sourceCitation": "Envision NYLF Medicine & Health Care program page, College Credit section",
         "severity": "info"
-      },
-      {
-        "id": "medicine-hc-commuter-2027-pricing-not-shown",
-        "type": "safety",
-        "title": "2027 commuter pricing was not shown on this page",
-        "body": "The page confirms a commuter option exists (on-campus lunches included, no room & board) and explains what it includes generally, but no specific 2027 commuter price or per-campus commuter dates were visible in the Dates & Locations section, which showed only residential pricing and dates. Families interested in the commuter track should confirm current pricing directly.",
-        "sourceCitation": "Envision NYLF Medicine & Health Care program page, What does the price include? and Dates & Locations sections",
-        "severity": "info"
-      },
-      {
-        "id": "medicine-hc-university-disclaimer",
-        "type": "safety",
-        "title": "The program is legally independent of the host university (explicit disclaimer)",
-        "body": "The page includes an explicit disclaimer that the program is 'operated independently of Yale University and is not sponsored or endorsed by the University,' and that views expressed during the program are not official positions of the university. Families should not assume university-level oversight, faculty employment, or institutional endorsement simply because the program is held on a college campus.",
-        "sourceCitation": "Envision NYLF Medicine & Health Care program page, footnote below Dates & Locations section",
-        "severity": "info"
       }
     ]
   },
   {
     "match": {
-      "programGroupId": "envision-nylf-engineering"
+      "programGroupId": [
+        "envision-nylf-engineering-georgia-tech",
+        "envision-nylf-engineering-berkeley",
+        "envision-nylf-engineering-michigan",
+        "envision-nylf-engineering-yale"
+      ]
     },
     "flags": [
       {
@@ -2734,14 +2706,6 @@
         "body": "This program advertises college credit from George Mason University (as a non-degree high school guest student) as a core selling point, included in tuition. A 2-star Trustpilot review (July 2025) describes this as feeling like a \"bait and switch\": the reviewer paid roughly $5,000 expecting the credit to strengthen a college application, but the credit was not delivered in time for that purpose, and Envision reportedly redirected responsibility to George Mason University rather than the company the family contracted with. This is a single review rather than a confirmed pattern, but it concerns the exact credit-granting mechanism this program uses. Families relying on the credit for a specific application deadline should confirm the actual transcript delivery timeline directly with Envision and George Mason University before enrolling.",
         "sourceCitation": "Trustpilot review of envisionexperience.com (French-language Trustpilot page, dated July 14, 2025, rated 2 out of 5 stars, titled \"Warning: You wont get your college credit in time\")",
         "severity": "warning"
-      },
-      {
-        "id": "envision-financial-aid-generic",
-        "type": "safety",
-        "title": "Financial aid is described only generically on this page",
-        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
-        "sourceCitation": "Program page, Tuition Resources section",
-        "severity": "info"
       }
     ]
   },
@@ -2773,14 +2737,6 @@
         "body": "This research pass confirmed the two host campuses (Yale, UC Berkeley Clark Kerr) but not exact 2027 session dates or per-campus pricing. Confirm directly on the program page.",
         "sourceCitation": "N/A - noted for data-completeness purposes",
         "severity": "info"
-      },
-      {
-        "id": "envision-financial-aid-generic",
-        "type": "safety",
-        "title": "Financial aid is described only generically on this page",
-        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
-        "sourceCitation": "Program page, Tuition Resources section",
-        "severity": "info"
       }
     ]
   },
@@ -2796,22 +2752,6 @@
         "body": "This program advertises college credit from George Mason University (as a non-degree high school guest student) as a core selling point, included in tuition. A 2-star Trustpilot review (July 2025) describes this as feeling like a \"bait and switch\": the reviewer paid roughly $5,000 expecting the credit to strengthen a college application, but the credit was not delivered in time for that purpose, and Envision reportedly redirected responsibility to George Mason University rather than the company the family contracted with. This is a single review rather than a confirmed pattern, but it concerns the exact credit-granting mechanism this program uses. Families relying on the credit for a specific application deadline should confirm the actual transcript delivery timeline directly with Envision and George Mason University before enrolling.",
         "sourceCitation": "Trustpilot review of envisionexperience.com (French-language Trustpilot page, dated July 14, 2025, rated 2 out of 5 stars, titled \"Warning: You wont get your college credit in time\")",
         "severity": "warning"
-      },
-      {
-        "id": "national-security-save-my-spot",
-        "type": "safety",
-        "title": "Both 2027 sessions are marked 'Save My Spot' rather than directly bookable",
-        "body": "Both listed 2027 sessions display confirmed dates and pricing but are not yet open for direct enrollment. Confirm current status directly.",
-        "sourceCitation": "Program page, Dates & Locations section",
-        "severity": "info"
-      },
-      {
-        "id": "envision-financial-aid-generic",
-        "type": "safety",
-        "title": "Financial aid is described only generically on this page",
-        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
-        "sourceCitation": "Program page, Tuition Resources section",
-        "severity": "info"
       }
     ]
   },
@@ -2834,14 +2774,6 @@
         "title": "Exact 2027 session dates and pricing were not fully captured",
         "body": "This research pass confirmed the Washington, D.C. location and rich FAQ/supervision detail but not exact 2027 session dates or pricing. Confirm directly on the program page.",
         "sourceCitation": "N/A - noted for data-completeness purposes",
-        "severity": "info"
-      },
-      {
-        "id": "envision-financial-aid-generic",
-        "type": "safety",
-        "title": "Financial aid is described only generically on this page",
-        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
-        "sourceCitation": "Program page, Tuition Resources section",
         "severity": "info"
       }
     ]
@@ -2866,14 +2798,6 @@
         "body": "This research pass captured the staffing ratio and 10-day/$5,999 headline figures but not the host location or exact 2027 dates. Confirm directly.",
         "sourceCitation": "N/A - noted for data-completeness purposes",
         "severity": "info"
-      },
-      {
-        "id": "envision-financial-aid-generic",
-        "type": "safety",
-        "title": "Financial aid is described only generically on this page",
-        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
-        "sourceCitation": "Program page, Tuition Resources section",
-        "severity": "info"
       }
     ]
   },
@@ -2888,14 +2812,6 @@
         "title": "This program spans ~19 city locations, represented here as a single summary row",
         "body": "Given the scale (roughly 19 separate U.S. locations, each with its own dates and pricing), this project represents Pathways to STEM as one aggregated row rather than one row per city. Families should look up their specific city of interest directly on the program page for exact 2027 dates and pricing.",
         "sourceCitation": "Program page, Dates & Locations section",
-        "severity": "info"
-      },
-      {
-        "id": "envision-financial-aid-generic",
-        "type": "safety",
-        "title": "Financial aid is described only generically on this page",
-        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
-        "sourceCitation": "Program page, Tuition Resources section",
         "severity": "info"
       }
     ]
@@ -2928,14 +2844,6 @@
         "body": "Confirm directly on the program page for the specific location of interest.",
         "sourceCitation": "N/A - noted for data-completeness purposes",
         "severity": "info"
-      },
-      {
-        "id": "envision-financial-aid-generic",
-        "type": "safety",
-        "title": "Financial aid is described only generically on this page",
-        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
-        "sourceCitation": "Program page, Tuition Resources section",
-        "severity": "info"
       }
     ]
   },
@@ -2959,14 +2867,6 @@
         "body": "This is a looser supervision ratio than several other Envision programs researched (10:1 on Veterinary Academy programs, 17:1 on NYLF Law & CSI). Families should weigh this against their student's needs.",
         "sourceCitation": "Program page, Highlights section",
         "severity": "info"
-      },
-      {
-        "id": "envision-financial-aid-generic",
-        "type": "safety",
-        "title": "Financial aid is described only generically on this page",
-        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
-        "sourceCitation": "Program page, Tuition Resources section",
-        "severity": "info"
       }
     ]
   },
@@ -2981,14 +2881,6 @@
         "title": "Exact 2027 session dates and pricing were not fully captured",
         "body": "Confirm directly on the program page for the specific campus of interest.",
         "sourceCitation": "N/A - noted for data-completeness purposes",
-        "severity": "info"
-      },
-      {
-        "id": "envision-financial-aid-generic",
-        "type": "safety",
-        "title": "Financial aid is described only generically on this page",
-        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
-        "sourceCitation": "Program page, Tuition Resources section",
         "severity": "info"
       }
     ]
@@ -3028,14 +2920,6 @@
         "body": "Confirm directly on the program page.",
         "sourceCitation": "N/A - noted for data-completeness purposes",
         "severity": "info"
-      },
-      {
-        "id": "envision-financial-aid-generic",
-        "type": "safety",
-        "title": "Financial aid is described only generically on this page",
-        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
-        "sourceCitation": "Program page, Tuition Resources section",
-        "severity": "info"
       }
     ]
   },
@@ -3050,14 +2934,6 @@
         "title": "College credit arrangement was not confirmed in this research pass",
         "body": "Unlike the standard NYLF Medicine & Health Care program, it was not confirmed during this research pass whether this Advanced program uses the same George Mason University credit arrangement. Confirm directly.",
         "sourceCitation": "N/A - noted for data-completeness purposes",
-        "severity": "info"
-      },
-      {
-        "id": "envision-financial-aid-generic",
-        "type": "safety",
-        "title": "Financial aid is described only generically on this page",
-        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
-        "sourceCitation": "Program page, Tuition Resources section",
         "severity": "info"
       }
     ]
@@ -3128,14 +3004,6 @@
         "body": "Students perform physical exams, injections, and suturing practice on live animals (including rescued horses, donkeys, cows, goats, sheep, and chickens) under veterinary supervision. Families should discuss comfort with direct animal handling and any allergy considerations directly with the provider.",
         "sourceCitation": "Program page, Why This Program Changes Everything section",
         "severity": "info"
-      },
-      {
-        "id": "envision-financial-aid-generic-dup",
-        "type": "safety",
-        "title": "Financial aid is described only generically on this page",
-        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
-        "sourceCitation": "Program page, Tuition Resources section",
-        "severity": "info"
       }
     ]
   },
@@ -3151,82 +3019,6 @@
         "body": "Even at the grades 6-8 level, students perform physical examinations and basic bandaging on live rescued animals under veterinary guidance. Families should confirm their student's comfort with direct animal contact.",
         "sourceCitation": "Program page, What Makes This Program Special section",
         "severity": "info"
-      },
-      {
-        "id": "envision-financial-aid-generic-dup",
-        "type": "safety",
-        "title": "Financial aid is described only generically on this page",
-        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
-        "sourceCitation": "Program page, Tuition Resources section",
-        "severity": "info"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "envision-vet-academy-zoo-ma"
-    },
-    "flags": [
-      {
-        "id": "envision-financial-aid-generic-dup",
-        "type": "safety",
-        "title": "Financial aid is described only generically on this page",
-        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
-        "sourceCitation": "Program page, Tuition Resources section",
-        "severity": "info"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "envision-future-vet-ma"
-    },
-    "flags": [
-      {
-        "id": "envision-financial-aid-generic-dup",
-        "type": "safety",
-        "title": "Financial aid is described only generically on this page",
-        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
-        "sourceCitation": "Program page, Tuition Resources section",
-        "severity": "info"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "envision-vet-academy-zoo-tx"
-    },
-    "flags": [
-      {
-        "id": "envision-financial-aid-generic-dup",
-        "type": "safety",
-        "title": "Financial aid is described only generically on this page",
-        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
-        "sourceCitation": "Program page, Tuition Resources section",
-        "severity": "info"
-      }
-    ]
-  },
-  {
-    "match": {
-      "programGroupId": "envision-future-vet-tx"
-    },
-    "flags": [
-      {
-        "id": "future-vet-tx-larger-group-cap",
-        "type": "safety",
-        "title": "This location uses a 40-student cap rather than the 30-student cap seen elsewhere",
-        "body": "While the 10:1 student-to-veterinarian ratio stays the same, the overall group size cap is higher here (40) than at other Veterinary Academy/Future Vet locations (30), meaning more total students and staff on-site at once.",
-        "sourceCitation": "Program page, Why Parents Choose This Texas Program section",
-        "severity": "info"
-      },
-      {
-        "id": "envision-financial-aid-generic-dup",
-        "type": "safety",
-        "title": "Financial aid is described only generically on this page",
-        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
-        "sourceCitation": "Program page, Tuition Resources section",
-        "severity": "info"
       }
     ]
   },
@@ -3239,7 +3031,7 @@
         "id": "future-vet-dc-blow-dart-activity",
         "type": "safety",
         "title": "Curriculum includes a wildlife blow-dart-making lab activity",
-        "body": "Unlike the other Veterinary Academy/Future Vet locations researched, this program's itinerary explicitly includes a lab where students create blow darts under veterinary guidance, described as being for remote animal treatment. Families should ask directly about the specific safety protocols used for this activity given the middle-school age range (grades 6-8).",
+        "body": "This program's itinerary explicitly includes a lab where students create blow darts under veterinary guidance, described as being for remote animal treatment.",
         "sourceCitation": "Program page, Sample Itinerary, Day 4",
         "severity": "warning"
       },
@@ -3249,14 +3041,6 @@
         "title": "This location uses a 15:1 ratio, looser than the 10:1 ratio at other Veterinary Academy/Future Vet locations",
         "body": "Families should weigh this against their student's needs, especially given the grades 6-8 age range.",
         "sourceCitation": "Program page, Small Group Learning section",
-        "severity": "info"
-      },
-      {
-        "id": "envision-financial-aid-generic-dup",
-        "type": "safety",
-        "title": "Financial aid is described only generically on this page",
-        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
-        "sourceCitation": "Program page, Tuition Resources section",
         "severity": "info"
       }
     ]
@@ -3351,14 +3135,6 @@
     },
     "flags": [
       {
-        "id": "oxbridge-institute-highest-tuition",
-        "type": "safety",
-        "title": "This is the highest-tuition Envision program researched",
-        "body": "At $13,795 for 29 days, this exceeds every other Envision program researched, including the similarly-long Oxford Tradition and Cambridge Tradition 4-week sessions ($13,595).",
-        "sourceCitation": "Program page, Dates, Locations, & Tuition section",
-        "severity": "info"
-      },
-      {
         "id": "oxbridge-institute-no-transferable-credit",
         "type": "safety",
         "title": "No transferable college credit is awarded",
@@ -3380,14 +3156,6 @@
         "body": "This is the only international Veterinary Academy program in the set (all others are domestic US locations), and offers up to 80 veterinary hours -- more than double the 40 hours offered domestically. Given the international travel component, families should confirm passport/visa requirements, travel arrangements, and full program details directly with the provider before enrolling.",
         "sourceCitation": "N/A - noted for data-completeness purposes",
         "severity": "warning"
-      },
-      {
-        "id": "envision-financial-aid-generic-costa-rica",
-        "type": "safety",
-        "title": "Financial aid is described only generically on this page",
-        "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
-        "sourceCitation": "Program page, Tuition Resources section",
-        "severity": "info"
       }
     ]
   },
@@ -3691,14 +3459,6 @@
         "body": "The page states a dedicated Security Officer is provided \"if a program is large enough\" -- this is not guaranteed for smaller enrollment groups. Families should ask directly what the minimum enrollment threshold is and what security staffing looks like if that threshold isn't met.",
         "sourceCitation": "World Class Programs Spain program page",
         "severity": "info"
-      },
-      {
-        "id": "worldclass-financial-aid-unstated-spain",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on the program page",
-        "body": "No mention of scholarships or need-based aid was found.",
-        "sourceCitation": "Absence of financial aid information on the page researched",
-        "severity": "info"
       }
     ]
   },
@@ -3708,27 +3468,11 @@
     },
     "flags": [
       {
-        "id": "worldclass-greece-italy-naming-confusion",
-        "type": "safety",
-        "title": "This program's actual name and scope differ from its navigation label",
-        "body": "Listed simply as \"Greece\" in the site's navigation and URL (/programs/greece), but the program is actually titled \"Greece & Italy: Western Civilization\" and spans both countries. It is entirely separate from the standalone \"Italy\" program (Florence-based, /programs/italy). Families comparing Italy-related options should be careful not to conflate the two.",
-        "sourceCitation": "Comparison between the site navigation/URL and the program's own on-page title",
-        "severity": "warning"
-      },
-      {
-        "id": "worldclass-security-officer-conditional-greece",
+        "id": "worldclass-security-officer-conditional",
         "type": "safety",
         "title": "The 24/7 on-site Security Officer is conditional on program size",
-        "body": "Same conditional staffing language as the other World Class programs: a Security Officer is provided \"if a program is large enough.\"",
+        "body": "The page states a dedicated Security Officer is provided \"if a program is large enough\" -- this is not guaranteed for smaller enrollment groups. Families should ask directly what the minimum enrollment threshold is and what security staffing looks like if that threshold isn't met.",
         "sourceCitation": "World Class Programs Greece program page",
-        "severity": "info"
-      },
-      {
-        "id": "worldclass-financial-aid-unstated-greece",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on the program page",
-        "body": "No mention of scholarships or need-based aid was found.",
-        "sourceCitation": "Absence of financial aid information on the page researched",
         "severity": "info"
       }
     ]
@@ -3739,19 +3483,11 @@
     },
     "flags": [
       {
-        "id": "worldclass-security-officer-conditional-japan",
+        "id": "worldclass-security-officer-conditional",
         "type": "safety",
         "title": "The 24/7 on-site Security Officer is conditional on program size",
-        "body": "Same conditional staffing language as the other World Class programs.",
+        "body": "The page states a dedicated Security Officer is provided \"if a program is large enough\" -- this is not guaranteed for smaller enrollment groups. Families should ask directly what the minimum enrollment threshold is and what security staffing looks like if that threshold isn't met.",
         "sourceCitation": "World Class Programs Japan program page",
-        "severity": "info"
-      },
-      {
-        "id": "worldclass-financial-aid-unstated-japan",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on the program page",
-        "body": "No mention of scholarships or need-based aid was found.",
-        "sourceCitation": "Absence of financial aid information on the page researched",
         "severity": "info"
       }
     ]
@@ -3770,19 +3506,11 @@
         "severity": "warning"
       },
       {
-        "id": "worldclass-security-officer-conditional-france",
+        "id": "worldclass-security-officer-conditional",
         "type": "safety",
         "title": "The 24/7 on-site Security Officer is conditional on program size",
-        "body": "Same conditional staffing language as the other World Class programs.",
+        "body": "The page states a dedicated Security Officer is provided \"if a program is large enough\" -- this is not guaranteed for smaller enrollment groups. Families should ask directly what the minimum enrollment threshold is and what security staffing looks like if that threshold isn't met.",
         "sourceCitation": "World Class Programs France program page",
-        "severity": "info"
-      },
-      {
-        "id": "worldclass-financial-aid-unstated-france",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on the program page",
-        "body": "No mention of scholarships or need-based aid was found.",
-        "sourceCitation": "Absence of financial aid information on the page researched",
         "severity": "info"
       }
     ]
@@ -3793,19 +3521,11 @@
     },
     "flags": [
       {
-        "id": "worldclass-security-officer-conditional-italy",
+        "id": "worldclass-security-officer-conditional",
         "type": "safety",
         "title": "The 24/7 on-site Security Officer is conditional on program size",
-        "body": "Same conditional staffing language as the other World Class programs.",
+        "body": "The page states a dedicated Security Officer is provided \"if a program is large enough\" -- this is not guaranteed for smaller enrollment groups. Families should ask directly what the minimum enrollment threshold is and what security staffing looks like if that threshold isn't met.",
         "sourceCitation": "World Class Programs Italy program page",
-        "severity": "info"
-      },
-      {
-        "id": "worldclass-financial-aid-unstated-italy",
-        "type": "safety",
-        "title": "Financial aid availability is not stated on the program page",
-        "body": "No mention of scholarships or need-based aid was found.",
-        "sourceCitation": "Absence of financial aid information on the page researched",
         "severity": "info"
       }
     ]

@@ -70970,14 +70970,14 @@
           "id": "italy-dive-med-internal-flight-cost-unknown",
           "type": "safety",
           "title": "Required internal flight cost is not disclosed",
-          "body": "This program requires an additional internal flight from Sardinia to Rome that is not included in the $7,250 tuition. The Road Less Traveled books this flight on the group's behalf and adds the charge to the family's final invoice, but no estimated cost is given anywhere in the provided material. Families should ask for this figure before enrolling so they can budget accurately.",
+          "body": "This program requires an additional internal flight from Sardinia to Rome that is not included in the $7,250 tuition. The Road Less Traveled books this flight on the group's behalf and adds the charge to the family's final invoice, but no estimated cost is given anywhere in the provided material.",
           "sourceCitation": "User-provided screenshot of the Italy: Dive the Med program page, Flights and Pricing & Discounts sections",
           "severity": "warning"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "11 nights coastal campground in Sardinia, shared tents (2-3/tent, gender-organized), 2 nights Airbnb-style group house in Rome. Flush toilets, showers every 1-2 days. Students share camp setup/breakdown and chores. No staff ratio stated.",
+        "notes": "11 nights coastal campground in Sardinia, shared tents (2-3/tent, gender-organized), 2 nights Airbnb-style group house in Rome. Flush toilets, showers every 1-2 days. Students share camp setup/breakdown and chores.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Italy: Dive the Med, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -71342,27 +71342,11 @@
           "body": "MS session (6-8) and HS session (9-12) are entirely separate weeks. Book the session matching your student's grade band.",
           "severity": "warning",
           "sourceCitation": "User-provided screenshots, rlt-maine-pathway-to-the-pines program page"
-        },
-        {
-          "id": "maine-pines-lowest-tuition-shortest-trip",
-          "type": "safety",
-          "title": "This is among the shortest and least expensive Road Less Traveled programs researched",
-          "body": "7 days, $3,195 tuition, 6-10 service hours.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-maine-pathway-to-the-pines program page"
-        },
-        {
-          "id": "maine-pines-shower-frequency-unstated",
-          "type": "safety",
-          "title": "Shower frequency is not specified",
-          "body": "Only 'short showers' mentioned, no stated frequency.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-maine-pathway-to-the-pines program page"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Tent camping in/near Acadia National Park all week, both MS and HS sessions. Flush bathrooms, short showers (no frequency given). Group sets up camp, cooks, keeps spaces clean together. No staff ratio stated; families of MS students should confirm added supervision for the younger band.",
+        "notes": "Tent camping in/near Acadia National Park all week, both MS and HS sessions. Flush bathrooms, short showers. Group sets up camp, cooks, keeps spaces clean together.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Maine: Pathway to the Pines, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -71421,27 +71405,11 @@
           "body": "MS session (6-8) and HS session (9-12) are entirely separate weeks. Book the session matching your student's grade band.",
           "severity": "warning",
           "sourceCitation": "User-provided screenshots, rlt-maine-pathway-to-the-pines program page"
-        },
-        {
-          "id": "maine-pines-lowest-tuition-shortest-trip",
-          "type": "safety",
-          "title": "This is among the shortest and least expensive Road Less Traveled programs researched",
-          "body": "7 days, $3,195 tuition, 6-10 service hours.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-maine-pathway-to-the-pines program page"
-        },
-        {
-          "id": "maine-pines-shower-frequency-unstated",
-          "type": "safety",
-          "title": "Shower frequency is not specified",
-          "body": "Only 'short showers' mentioned, no stated frequency.",
-          "severity": "info",
-          "sourceCitation": "User-provided screenshots, rlt-maine-pathway-to-the-pines program page"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Tent camping in/near Acadia National Park all week, both MS and HS sessions. Flush bathrooms, short showers (no frequency given). Group sets up camp, cooks, keeps spaces clean together. No staff ratio stated; families of MS students should confirm added supervision for the younger band.",
+        "notes": "Tent camping in/near Acadia National Park all week, both MS and HS sessions. Flush bathrooms, short showers. Group sets up camp, cooks, keeps spaces clean together.",
         "sourceType": "official_policy",
         "sourceCitation": "User-provided screenshots, Maine: Pathway to the Pines, Accommodations section",
         "verifiedAt": "2026-09-17"
@@ -76406,7 +76374,7 @@
       "slug": "envision-nylf-medicine-health-care-residential-university-of-california-berkeley-2027",
       "name": "Envision (NYLF) - Medicine & Health Care",
       "institution": "Envision by WorldStrides",
-      "programGroupId": "envision-nylf-medicine-health-care",
+      "programGroupId": "envision-nylf-medicine-health-care-berkeley",
       "description": "An 8-day pre-college medical program (part of the National Youth Leadership Forum series, acquired by Envision in 2007) combining hands-on clinical-skills rotations (suturing, blood pressure, phlebotomy, neuro exams), two full simulation days (a Disaster Triage simulation and an Outdoor Emergency Medicine / wilderness-medicine simulation originally developed with Stanford School of Medicine faculty), a tour of a medical school or simulation center, guest speaker panels with practicing clinicians, and a final medical case-study presentation. Runs at six university campuses in 2027 with residential-only pricing/dates confirmed; a commuter option exists (on-campus lunches included, no room & board) but 2027 commuter pricing was not shown on this page. Optional add-ons include a private airport shuttle (extra fee) and a partnership offering with Polygence (independent research mentorship).",
       "category": "biomedical",
       "secondaryTags": [
@@ -76455,35 +76423,11 @@
           "severity": "warning"
         },
         {
-          "id": "medicine-hc-save-my-spot-sessions",
-          "type": "safety",
-          "title": "Several 2027 sessions are marked 'Save My Spot' rather than directly bookable",
-          "body": "The Rice, Yale, and University of Michigan sessions all display confirmed 2027 dates and prices but are labeled 'Save my spot for 2027' rather than offering a direct 'Enroll Now' path like the Berkeley, UCLA, and Emory sessions. This likely means these sessions are not yet fully open for enrollment even though pricing and dates are published. Families interested in these specific campuses should confirm current enrollment status directly.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, Dates & Locations section",
-          "severity": "info"
-        },
-        {
           "id": "medicine-hc-non-degree-guest-credit-status",
           "type": "safety",
           "title": "College credit is earned as a 'non-degree guest' student, not enrolled coursework",
           "body": "The credit is explicitly described as earned \"as a non-degree high school guest\" at George Mason University. Families should confirm with their target colleges how this specific credit type transfers or is weighted in admissions review, since non-degree guest credit may be treated differently than credit from a student's own enrolled coursework.",
           "sourceCitation": "Envision NYLF Medicine & Health Care program page, College Credit section",
-          "severity": "info"
-        },
-        {
-          "id": "medicine-hc-commuter-2027-pricing-not-shown",
-          "type": "safety",
-          "title": "2027 commuter pricing was not shown on this page",
-          "body": "The page confirms a commuter option exists (on-campus lunches included, no room & board) and explains what it includes generally, but no specific 2027 commuter price or per-campus commuter dates were visible in the Dates & Locations section, which showed only residential pricing and dates. Families interested in the commuter track should confirm current pricing directly.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, What does the price include? and Dates & Locations sections",
-          "severity": "info"
-        },
-        {
-          "id": "medicine-hc-university-disclaimer",
-          "type": "safety",
-          "title": "The program is legally independent of the host university (explicit disclaimer)",
-          "body": "The page includes an explicit disclaimer that the program is 'operated independently of Yale University and is not sponsored or endorsed by the University,' and that views expressed during the program are not official positions of the university. Families should not assume university-level oversight, faculty employment, or institutional endorsement simply because the program is held on a college campus.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, footnote below Dates & Locations section",
           "severity": "info"
         }
       ],
@@ -76501,7 +76445,7 @@
       "slug": "envision-nylf-medicine-health-care-residential-university-of-california-los-angeles-2027-jun-26-jul-",
       "name": "Envision (NYLF) - Medicine & Health Care",
       "institution": "Envision by WorldStrides",
-      "programGroupId": "envision-nylf-medicine-health-care",
+      "programGroupId": "envision-nylf-medicine-health-care-ucla",
       "description": "An 8-day pre-college medical program (part of the National Youth Leadership Forum series, acquired by Envision in 2007) combining hands-on clinical-skills rotations (suturing, blood pressure, phlebotomy, neuro exams), two full simulation days (a Disaster Triage simulation and an Outdoor Emergency Medicine / wilderness-medicine simulation originally developed with Stanford School of Medicine faculty), a tour of a medical school or simulation center, guest speaker panels with practicing clinicians, and a final medical case-study presentation. Runs at six university campuses in 2027 with residential-only pricing/dates confirmed; a commuter option exists (on-campus lunches included, no room & board) but 2027 commuter pricing was not shown on this page. Optional add-ons include a private airport shuttle (extra fee) and a partnership offering with Polygence (independent research mentorship).",
       "category": "biomedical",
       "secondaryTags": [
@@ -76550,35 +76494,11 @@
           "severity": "warning"
         },
         {
-          "id": "medicine-hc-save-my-spot-sessions",
-          "type": "safety",
-          "title": "Several 2027 sessions are marked 'Save My Spot' rather than directly bookable",
-          "body": "The Rice, Yale, and University of Michigan sessions all display confirmed 2027 dates and prices but are labeled 'Save my spot for 2027' rather than offering a direct 'Enroll Now' path like the Berkeley, UCLA, and Emory sessions. This likely means these sessions are not yet fully open for enrollment even though pricing and dates are published. Families interested in these specific campuses should confirm current enrollment status directly.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, Dates & Locations section",
-          "severity": "info"
-        },
-        {
           "id": "medicine-hc-non-degree-guest-credit-status",
           "type": "safety",
           "title": "College credit is earned as a 'non-degree guest' student, not enrolled coursework",
           "body": "The credit is explicitly described as earned \"as a non-degree high school guest\" at George Mason University. Families should confirm with their target colleges how this specific credit type transfers or is weighted in admissions review, since non-degree guest credit may be treated differently than credit from a student's own enrolled coursework.",
           "sourceCitation": "Envision NYLF Medicine & Health Care program page, College Credit section",
-          "severity": "info"
-        },
-        {
-          "id": "medicine-hc-commuter-2027-pricing-not-shown",
-          "type": "safety",
-          "title": "2027 commuter pricing was not shown on this page",
-          "body": "The page confirms a commuter option exists (on-campus lunches included, no room & board) and explains what it includes generally, but no specific 2027 commuter price or per-campus commuter dates were visible in the Dates & Locations section, which showed only residential pricing and dates. Families interested in the commuter track should confirm current pricing directly.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, What does the price include? and Dates & Locations sections",
-          "severity": "info"
-        },
-        {
-          "id": "medicine-hc-university-disclaimer",
-          "type": "safety",
-          "title": "The program is legally independent of the host university (explicit disclaimer)",
-          "body": "The page includes an explicit disclaimer that the program is 'operated independently of Yale University and is not sponsored or endorsed by the University,' and that views expressed during the program are not official positions of the university. Families should not assume university-level oversight, faculty employment, or institutional endorsement simply because the program is held on a college campus.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, footnote below Dates & Locations section",
           "severity": "info"
         }
       ],
@@ -76596,7 +76516,7 @@
       "slug": "envision-nylf-medicine-health-care-residential-university-of-california-los-angeles-2027-jul-15-jul-",
       "name": "Envision (NYLF) - Medicine & Health Care",
       "institution": "Envision by WorldStrides",
-      "programGroupId": "envision-nylf-medicine-health-care",
+      "programGroupId": "envision-nylf-medicine-health-care-ucla",
       "description": "An 8-day pre-college medical program (part of the National Youth Leadership Forum series, acquired by Envision in 2007) combining hands-on clinical-skills rotations (suturing, blood pressure, phlebotomy, neuro exams), two full simulation days (a Disaster Triage simulation and an Outdoor Emergency Medicine / wilderness-medicine simulation originally developed with Stanford School of Medicine faculty), a tour of a medical school or simulation center, guest speaker panels with practicing clinicians, and a final medical case-study presentation. Runs at six university campuses in 2027 with residential-only pricing/dates confirmed; a commuter option exists (on-campus lunches included, no room & board) but 2027 commuter pricing was not shown on this page. Optional add-ons include a private airport shuttle (extra fee) and a partnership offering with Polygence (independent research mentorship).",
       "category": "biomedical",
       "secondaryTags": [
@@ -76645,35 +76565,11 @@
           "severity": "warning"
         },
         {
-          "id": "medicine-hc-save-my-spot-sessions",
-          "type": "safety",
-          "title": "Several 2027 sessions are marked 'Save My Spot' rather than directly bookable",
-          "body": "The Rice, Yale, and University of Michigan sessions all display confirmed 2027 dates and prices but are labeled 'Save my spot for 2027' rather than offering a direct 'Enroll Now' path like the Berkeley, UCLA, and Emory sessions. This likely means these sessions are not yet fully open for enrollment even though pricing and dates are published. Families interested in these specific campuses should confirm current enrollment status directly.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, Dates & Locations section",
-          "severity": "info"
-        },
-        {
           "id": "medicine-hc-non-degree-guest-credit-status",
           "type": "safety",
           "title": "College credit is earned as a 'non-degree guest' student, not enrolled coursework",
           "body": "The credit is explicitly described as earned \"as a non-degree high school guest\" at George Mason University. Families should confirm with their target colleges how this specific credit type transfers or is weighted in admissions review, since non-degree guest credit may be treated differently than credit from a student's own enrolled coursework.",
           "sourceCitation": "Envision NYLF Medicine & Health Care program page, College Credit section",
-          "severity": "info"
-        },
-        {
-          "id": "medicine-hc-commuter-2027-pricing-not-shown",
-          "type": "safety",
-          "title": "2027 commuter pricing was not shown on this page",
-          "body": "The page confirms a commuter option exists (on-campus lunches included, no room & board) and explains what it includes generally, but no specific 2027 commuter price or per-campus commuter dates were visible in the Dates & Locations section, which showed only residential pricing and dates. Families interested in the commuter track should confirm current pricing directly.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, What does the price include? and Dates & Locations sections",
-          "severity": "info"
-        },
-        {
-          "id": "medicine-hc-university-disclaimer",
-          "type": "safety",
-          "title": "The program is legally independent of the host university (explicit disclaimer)",
-          "body": "The page includes an explicit disclaimer that the program is 'operated independently of Yale University and is not sponsored or endorsed by the University,' and that views expressed during the program are not official positions of the university. Families should not assume university-level oversight, faculty employment, or institutional endorsement simply because the program is held on a college campus.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, footnote below Dates & Locations section",
           "severity": "info"
         }
       ],
@@ -76691,7 +76587,7 @@
       "slug": "envision-nylf-medicine-health-care-residential-emory-university-2027",
       "name": "Envision (NYLF) - Medicine & Health Care",
       "institution": "Envision by WorldStrides",
-      "programGroupId": "envision-nylf-medicine-health-care",
+      "programGroupId": "envision-nylf-medicine-health-care-emory",
       "description": "An 8-day pre-college medical program (part of the National Youth Leadership Forum series, acquired by Envision in 2007) combining hands-on clinical-skills rotations (suturing, blood pressure, phlebotomy, neuro exams), two full simulation days (a Disaster Triage simulation and an Outdoor Emergency Medicine / wilderness-medicine simulation originally developed with Stanford School of Medicine faculty), a tour of a medical school or simulation center, guest speaker panels with practicing clinicians, and a final medical case-study presentation. Runs at six university campuses in 2027 with residential-only pricing/dates confirmed; a commuter option exists (on-campus lunches included, no room & board) but 2027 commuter pricing was not shown on this page. Optional add-ons include a private airport shuttle (extra fee) and a partnership offering with Polygence (independent research mentorship).",
       "category": "biomedical",
       "secondaryTags": [
@@ -76740,35 +76636,11 @@
           "severity": "warning"
         },
         {
-          "id": "medicine-hc-save-my-spot-sessions",
-          "type": "safety",
-          "title": "Several 2027 sessions are marked 'Save My Spot' rather than directly bookable",
-          "body": "The Rice, Yale, and University of Michigan sessions all display confirmed 2027 dates and prices but are labeled 'Save my spot for 2027' rather than offering a direct 'Enroll Now' path like the Berkeley, UCLA, and Emory sessions. This likely means these sessions are not yet fully open for enrollment even though pricing and dates are published. Families interested in these specific campuses should confirm current enrollment status directly.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, Dates & Locations section",
-          "severity": "info"
-        },
-        {
           "id": "medicine-hc-non-degree-guest-credit-status",
           "type": "safety",
           "title": "College credit is earned as a 'non-degree guest' student, not enrolled coursework",
           "body": "The credit is explicitly described as earned \"as a non-degree high school guest\" at George Mason University. Families should confirm with their target colleges how this specific credit type transfers or is weighted in admissions review, since non-degree guest credit may be treated differently than credit from a student's own enrolled coursework.",
           "sourceCitation": "Envision NYLF Medicine & Health Care program page, College Credit section",
-          "severity": "info"
-        },
-        {
-          "id": "medicine-hc-commuter-2027-pricing-not-shown",
-          "type": "safety",
-          "title": "2027 commuter pricing was not shown on this page",
-          "body": "The page confirms a commuter option exists (on-campus lunches included, no room & board) and explains what it includes generally, but no specific 2027 commuter price or per-campus commuter dates were visible in the Dates & Locations section, which showed only residential pricing and dates. Families interested in the commuter track should confirm current pricing directly.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, What does the price include? and Dates & Locations sections",
-          "severity": "info"
-        },
-        {
-          "id": "medicine-hc-university-disclaimer",
-          "type": "safety",
-          "title": "The program is legally independent of the host university (explicit disclaimer)",
-          "body": "The page includes an explicit disclaimer that the program is 'operated independently of Yale University and is not sponsored or endorsed by the University,' and that views expressed during the program are not official positions of the university. Families should not assume university-level oversight, faculty employment, or institutional endorsement simply because the program is held on a college campus.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, footnote below Dates & Locations section",
           "severity": "info"
         }
       ],
@@ -76786,7 +76658,7 @@
       "slug": "envision-nylf-medicine-health-care-residential-rice-university-2027",
       "name": "Envision (NYLF) - Medicine & Health Care",
       "institution": "Envision by WorldStrides",
-      "programGroupId": "envision-nylf-medicine-health-care",
+      "programGroupId": "envision-nylf-medicine-health-care-rice",
       "description": "An 8-day pre-college medical program (part of the National Youth Leadership Forum series, acquired by Envision in 2007) combining hands-on clinical-skills rotations (suturing, blood pressure, phlebotomy, neuro exams), two full simulation days (a Disaster Triage simulation and an Outdoor Emergency Medicine / wilderness-medicine simulation originally developed with Stanford School of Medicine faculty), a tour of a medical school or simulation center, guest speaker panels with practicing clinicians, and a final medical case-study presentation. Runs at six university campuses in 2027 with residential-only pricing/dates confirmed; a commuter option exists (on-campus lunches included, no room & board) but 2027 commuter pricing was not shown on this page. Optional add-ons include a private airport shuttle (extra fee) and a partnership offering with Polygence (independent research mentorship).",
       "category": "biomedical",
       "secondaryTags": [
@@ -76835,35 +76707,11 @@
           "severity": "warning"
         },
         {
-          "id": "medicine-hc-save-my-spot-sessions",
-          "type": "safety",
-          "title": "Several 2027 sessions are marked 'Save My Spot' rather than directly bookable",
-          "body": "The Rice, Yale, and University of Michigan sessions all display confirmed 2027 dates and prices but are labeled 'Save my spot for 2027' rather than offering a direct 'Enroll Now' path like the Berkeley, UCLA, and Emory sessions. This likely means these sessions are not yet fully open for enrollment even though pricing and dates are published. Families interested in these specific campuses should confirm current enrollment status directly.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, Dates & Locations section",
-          "severity": "info"
-        },
-        {
           "id": "medicine-hc-non-degree-guest-credit-status",
           "type": "safety",
           "title": "College credit is earned as a 'non-degree guest' student, not enrolled coursework",
           "body": "The credit is explicitly described as earned \"as a non-degree high school guest\" at George Mason University. Families should confirm with their target colleges how this specific credit type transfers or is weighted in admissions review, since non-degree guest credit may be treated differently than credit from a student's own enrolled coursework.",
           "sourceCitation": "Envision NYLF Medicine & Health Care program page, College Credit section",
-          "severity": "info"
-        },
-        {
-          "id": "medicine-hc-commuter-2027-pricing-not-shown",
-          "type": "safety",
-          "title": "2027 commuter pricing was not shown on this page",
-          "body": "The page confirms a commuter option exists (on-campus lunches included, no room & board) and explains what it includes generally, but no specific 2027 commuter price or per-campus commuter dates were visible in the Dates & Locations section, which showed only residential pricing and dates. Families interested in the commuter track should confirm current pricing directly.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, What does the price include? and Dates & Locations sections",
-          "severity": "info"
-        },
-        {
-          "id": "medicine-hc-university-disclaimer",
-          "type": "safety",
-          "title": "The program is legally independent of the host university (explicit disclaimer)",
-          "body": "The page includes an explicit disclaimer that the program is 'operated independently of Yale University and is not sponsored or endorsed by the University,' and that views expressed during the program are not official positions of the university. Families should not assume university-level oversight, faculty employment, or institutional endorsement simply because the program is held on a college campus.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, footnote below Dates & Locations section",
           "severity": "info"
         }
       ],
@@ -76881,7 +76729,7 @@
       "slug": "envision-nylf-medicine-health-care-residential-yale-university-2027-jul-6-jul-13",
       "name": "Envision (NYLF) - Medicine & Health Care",
       "institution": "Envision by WorldStrides",
-      "programGroupId": "envision-nylf-medicine-health-care",
+      "programGroupId": "envision-nylf-medicine-health-care-yale",
       "description": "An 8-day pre-college medical program (part of the National Youth Leadership Forum series, acquired by Envision in 2007) combining hands-on clinical-skills rotations (suturing, blood pressure, phlebotomy, neuro exams), two full simulation days (a Disaster Triage simulation and an Outdoor Emergency Medicine / wilderness-medicine simulation originally developed with Stanford School of Medicine faculty), a tour of a medical school or simulation center, guest speaker panels with practicing clinicians, and a final medical case-study presentation. Runs at six university campuses in 2027 with residential-only pricing/dates confirmed; a commuter option exists (on-campus lunches included, no room & board) but 2027 commuter pricing was not shown on this page. Optional add-ons include a private airport shuttle (extra fee) and a partnership offering with Polygence (independent research mentorship).",
       "category": "biomedical",
       "secondaryTags": [
@@ -76930,35 +76778,11 @@
           "severity": "warning"
         },
         {
-          "id": "medicine-hc-save-my-spot-sessions",
-          "type": "safety",
-          "title": "Several 2027 sessions are marked 'Save My Spot' rather than directly bookable",
-          "body": "The Rice, Yale, and University of Michigan sessions all display confirmed 2027 dates and prices but are labeled 'Save my spot for 2027' rather than offering a direct 'Enroll Now' path like the Berkeley, UCLA, and Emory sessions. This likely means these sessions are not yet fully open for enrollment even though pricing and dates are published. Families interested in these specific campuses should confirm current enrollment status directly.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, Dates & Locations section",
-          "severity": "info"
-        },
-        {
           "id": "medicine-hc-non-degree-guest-credit-status",
           "type": "safety",
           "title": "College credit is earned as a 'non-degree guest' student, not enrolled coursework",
           "body": "The credit is explicitly described as earned \"as a non-degree high school guest\" at George Mason University. Families should confirm with their target colleges how this specific credit type transfers or is weighted in admissions review, since non-degree guest credit may be treated differently than credit from a student's own enrolled coursework.",
           "sourceCitation": "Envision NYLF Medicine & Health Care program page, College Credit section",
-          "severity": "info"
-        },
-        {
-          "id": "medicine-hc-commuter-2027-pricing-not-shown",
-          "type": "safety",
-          "title": "2027 commuter pricing was not shown on this page",
-          "body": "The page confirms a commuter option exists (on-campus lunches included, no room & board) and explains what it includes generally, but no specific 2027 commuter price or per-campus commuter dates were visible in the Dates & Locations section, which showed only residential pricing and dates. Families interested in the commuter track should confirm current pricing directly.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, What does the price include? and Dates & Locations sections",
-          "severity": "info"
-        },
-        {
-          "id": "medicine-hc-university-disclaimer",
-          "type": "safety",
-          "title": "The program is legally independent of the host university (explicit disclaimer)",
-          "body": "The page includes an explicit disclaimer that the program is 'operated independently of Yale University and is not sponsored or endorsed by the University,' and that views expressed during the program are not official positions of the university. Families should not assume university-level oversight, faculty employment, or institutional endorsement simply because the program is held on a college campus.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, footnote below Dates & Locations section",
           "severity": "info"
         }
       ],
@@ -76976,7 +76800,7 @@
       "slug": "envision-nylf-medicine-health-care-residential-yale-university-2027-jul-16-jul-23",
       "name": "Envision (NYLF) - Medicine & Health Care",
       "institution": "Envision by WorldStrides",
-      "programGroupId": "envision-nylf-medicine-health-care",
+      "programGroupId": "envision-nylf-medicine-health-care-yale",
       "description": "An 8-day pre-college medical program (part of the National Youth Leadership Forum series, acquired by Envision in 2007) combining hands-on clinical-skills rotations (suturing, blood pressure, phlebotomy, neuro exams), two full simulation days (a Disaster Triage simulation and an Outdoor Emergency Medicine / wilderness-medicine simulation originally developed with Stanford School of Medicine faculty), a tour of a medical school or simulation center, guest speaker panels with practicing clinicians, and a final medical case-study presentation. Runs at six university campuses in 2027 with residential-only pricing/dates confirmed; a commuter option exists (on-campus lunches included, no room & board) but 2027 commuter pricing was not shown on this page. Optional add-ons include a private airport shuttle (extra fee) and a partnership offering with Polygence (independent research mentorship).",
       "category": "biomedical",
       "secondaryTags": [
@@ -77025,35 +76849,11 @@
           "severity": "warning"
         },
         {
-          "id": "medicine-hc-save-my-spot-sessions",
-          "type": "safety",
-          "title": "Several 2027 sessions are marked 'Save My Spot' rather than directly bookable",
-          "body": "The Rice, Yale, and University of Michigan sessions all display confirmed 2027 dates and prices but are labeled 'Save my spot for 2027' rather than offering a direct 'Enroll Now' path like the Berkeley, UCLA, and Emory sessions. This likely means these sessions are not yet fully open for enrollment even though pricing and dates are published. Families interested in these specific campuses should confirm current enrollment status directly.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, Dates & Locations section",
-          "severity": "info"
-        },
-        {
           "id": "medicine-hc-non-degree-guest-credit-status",
           "type": "safety",
           "title": "College credit is earned as a 'non-degree guest' student, not enrolled coursework",
           "body": "The credit is explicitly described as earned \"as a non-degree high school guest\" at George Mason University. Families should confirm with their target colleges how this specific credit type transfers or is weighted in admissions review, since non-degree guest credit may be treated differently than credit from a student's own enrolled coursework.",
           "sourceCitation": "Envision NYLF Medicine & Health Care program page, College Credit section",
-          "severity": "info"
-        },
-        {
-          "id": "medicine-hc-commuter-2027-pricing-not-shown",
-          "type": "safety",
-          "title": "2027 commuter pricing was not shown on this page",
-          "body": "The page confirms a commuter option exists (on-campus lunches included, no room & board) and explains what it includes generally, but no specific 2027 commuter price or per-campus commuter dates were visible in the Dates & Locations section, which showed only residential pricing and dates. Families interested in the commuter track should confirm current pricing directly.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, What does the price include? and Dates & Locations sections",
-          "severity": "info"
-        },
-        {
-          "id": "medicine-hc-university-disclaimer",
-          "type": "safety",
-          "title": "The program is legally independent of the host university (explicit disclaimer)",
-          "body": "The page includes an explicit disclaimer that the program is 'operated independently of Yale University and is not sponsored or endorsed by the University,' and that views expressed during the program are not official positions of the university. Families should not assume university-level oversight, faculty employment, or institutional endorsement simply because the program is held on a college campus.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, footnote below Dates & Locations section",
           "severity": "info"
         }
       ],
@@ -77071,7 +76871,7 @@
       "slug": "envision-nylf-medicine-health-care-residential-yale-university-2027-jul-25-aug-1",
       "name": "Envision (NYLF) - Medicine & Health Care",
       "institution": "Envision by WorldStrides",
-      "programGroupId": "envision-nylf-medicine-health-care",
+      "programGroupId": "envision-nylf-medicine-health-care-yale",
       "description": "An 8-day pre-college medical program (part of the National Youth Leadership Forum series, acquired by Envision in 2007) combining hands-on clinical-skills rotations (suturing, blood pressure, phlebotomy, neuro exams), two full simulation days (a Disaster Triage simulation and an Outdoor Emergency Medicine / wilderness-medicine simulation originally developed with Stanford School of Medicine faculty), a tour of a medical school or simulation center, guest speaker panels with practicing clinicians, and a final medical case-study presentation. Runs at six university campuses in 2027 with residential-only pricing/dates confirmed; a commuter option exists (on-campus lunches included, no room & board) but 2027 commuter pricing was not shown on this page. Optional add-ons include a private airport shuttle (extra fee) and a partnership offering with Polygence (independent research mentorship).",
       "category": "biomedical",
       "secondaryTags": [
@@ -77120,35 +76920,11 @@
           "severity": "warning"
         },
         {
-          "id": "medicine-hc-save-my-spot-sessions",
-          "type": "safety",
-          "title": "Several 2027 sessions are marked 'Save My Spot' rather than directly bookable",
-          "body": "The Rice, Yale, and University of Michigan sessions all display confirmed 2027 dates and prices but are labeled 'Save my spot for 2027' rather than offering a direct 'Enroll Now' path like the Berkeley, UCLA, and Emory sessions. This likely means these sessions are not yet fully open for enrollment even though pricing and dates are published. Families interested in these specific campuses should confirm current enrollment status directly.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, Dates & Locations section",
-          "severity": "info"
-        },
-        {
           "id": "medicine-hc-non-degree-guest-credit-status",
           "type": "safety",
           "title": "College credit is earned as a 'non-degree guest' student, not enrolled coursework",
           "body": "The credit is explicitly described as earned \"as a non-degree high school guest\" at George Mason University. Families should confirm with their target colleges how this specific credit type transfers or is weighted in admissions review, since non-degree guest credit may be treated differently than credit from a student's own enrolled coursework.",
           "sourceCitation": "Envision NYLF Medicine & Health Care program page, College Credit section",
-          "severity": "info"
-        },
-        {
-          "id": "medicine-hc-commuter-2027-pricing-not-shown",
-          "type": "safety",
-          "title": "2027 commuter pricing was not shown on this page",
-          "body": "The page confirms a commuter option exists (on-campus lunches included, no room & board) and explains what it includes generally, but no specific 2027 commuter price or per-campus commuter dates were visible in the Dates & Locations section, which showed only residential pricing and dates. Families interested in the commuter track should confirm current pricing directly.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, What does the price include? and Dates & Locations sections",
-          "severity": "info"
-        },
-        {
-          "id": "medicine-hc-university-disclaimer",
-          "type": "safety",
-          "title": "The program is legally independent of the host university (explicit disclaimer)",
-          "body": "The page includes an explicit disclaimer that the program is 'operated independently of Yale University and is not sponsored or endorsed by the University,' and that views expressed during the program are not official positions of the university. Families should not assume university-level oversight, faculty employment, or institutional endorsement simply because the program is held on a college campus.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, footnote below Dates & Locations section",
           "severity": "info"
         }
       ],
@@ -77166,7 +76942,7 @@
       "slug": "envision-nylf-medicine-health-care-residential-university-of-michigan-2027",
       "name": "Envision (NYLF) - Medicine & Health Care",
       "institution": "Envision by WorldStrides",
-      "programGroupId": "envision-nylf-medicine-health-care",
+      "programGroupId": "envision-nylf-medicine-health-care-michigan",
       "description": "An 8-day pre-college medical program (part of the National Youth Leadership Forum series, acquired by Envision in 2007) combining hands-on clinical-skills rotations (suturing, blood pressure, phlebotomy, neuro exams), two full simulation days (a Disaster Triage simulation and an Outdoor Emergency Medicine / wilderness-medicine simulation originally developed with Stanford School of Medicine faculty), a tour of a medical school or simulation center, guest speaker panels with practicing clinicians, and a final medical case-study presentation. Runs at six university campuses in 2027 with residential-only pricing/dates confirmed; a commuter option exists (on-campus lunches included, no room & board) but 2027 commuter pricing was not shown on this page. Optional add-ons include a private airport shuttle (extra fee) and a partnership offering with Polygence (independent research mentorship).",
       "category": "biomedical",
       "secondaryTags": [
@@ -77215,35 +76991,11 @@
           "severity": "warning"
         },
         {
-          "id": "medicine-hc-save-my-spot-sessions",
-          "type": "safety",
-          "title": "Several 2027 sessions are marked 'Save My Spot' rather than directly bookable",
-          "body": "The Rice, Yale, and University of Michigan sessions all display confirmed 2027 dates and prices but are labeled 'Save my spot for 2027' rather than offering a direct 'Enroll Now' path like the Berkeley, UCLA, and Emory sessions. This likely means these sessions are not yet fully open for enrollment even though pricing and dates are published. Families interested in these specific campuses should confirm current enrollment status directly.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, Dates & Locations section",
-          "severity": "info"
-        },
-        {
           "id": "medicine-hc-non-degree-guest-credit-status",
           "type": "safety",
           "title": "College credit is earned as a 'non-degree guest' student, not enrolled coursework",
           "body": "The credit is explicitly described as earned \"as a non-degree high school guest\" at George Mason University. Families should confirm with their target colleges how this specific credit type transfers or is weighted in admissions review, since non-degree guest credit may be treated differently than credit from a student's own enrolled coursework.",
           "sourceCitation": "Envision NYLF Medicine & Health Care program page, College Credit section",
-          "severity": "info"
-        },
-        {
-          "id": "medicine-hc-commuter-2027-pricing-not-shown",
-          "type": "safety",
-          "title": "2027 commuter pricing was not shown on this page",
-          "body": "The page confirms a commuter option exists (on-campus lunches included, no room & board) and explains what it includes generally, but no specific 2027 commuter price or per-campus commuter dates were visible in the Dates & Locations section, which showed only residential pricing and dates. Families interested in the commuter track should confirm current pricing directly.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, What does the price include? and Dates & Locations sections",
-          "severity": "info"
-        },
-        {
-          "id": "medicine-hc-university-disclaimer",
-          "type": "safety",
-          "title": "The program is legally independent of the host university (explicit disclaimer)",
-          "body": "The page includes an explicit disclaimer that the program is 'operated independently of Yale University and is not sponsored or endorsed by the University,' and that views expressed during the program are not official positions of the university. Families should not assume university-level oversight, faculty employment, or institutional endorsement simply because the program is held on a college campus.",
-          "sourceCitation": "Envision NYLF Medicine & Health Care program page, footnote below Dates & Locations section",
           "severity": "info"
         }
       ],
@@ -77261,7 +77013,7 @@
       "slug": "envision-nylf-engineering-residential-georgia-institute-of-technology-2027",
       "name": "Envision (NYLF) - Engineering",
       "institution": "Envision by WorldStrides",
-      "programGroupId": "envision-nylf-engineering",
+      "programGroupId": "envision-nylf-engineering-georgia-tech",
       "description": "8-day pre-college engineering program (NYLF series) introducing design thinking and its application across disciplines, with students addressing UN Sustainable Development Goals through hands-on projects. See flags file for the standing complaint about George Mason credit delivery timing, which applies to this program.",
       "category": "stem-engineering",
       "secondaryTags": [
@@ -77308,14 +77060,6 @@
           "body": "This program advertises college credit from George Mason University (as a non-degree high school guest student) as a core selling point, included in tuition. A 2-star Trustpilot review (July 2025) describes this as feeling like a \"bait and switch\": the reviewer paid roughly $5,000 expecting the credit to strengthen a college application, but the credit was not delivered in time for that purpose, and Envision reportedly redirected responsibility to George Mason University rather than the company the family contracted with. This is a single review rather than a confirmed pattern, but it concerns the exact credit-granting mechanism this program uses. Families relying on the credit for a specific application deadline should confirm the actual transcript delivery timeline directly with Envision and George Mason University before enrolling.",
           "sourceCitation": "Trustpilot review of envisionexperience.com (French-language Trustpilot page, dated July 14, 2025, rated 2 out of 5 stars, titled \"Warning: You wont get your college credit in time\")",
           "severity": "warning"
-        },
-        {
-          "id": "envision-financial-aid-generic",
-          "type": "safety",
-          "title": "Financial aid is described only generically on this page",
-          "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
-          "sourceCitation": "Program page, Tuition Resources section",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -77332,7 +77076,7 @@
       "slug": "envision-nylf-engineering-residential-university-of-california-berkeley-2027",
       "name": "Envision (NYLF) - Engineering",
       "institution": "Envision by WorldStrides",
-      "programGroupId": "envision-nylf-engineering",
+      "programGroupId": "envision-nylf-engineering-berkeley",
       "description": "8-day pre-college engineering program (NYLF series) introducing design thinking and its application across disciplines, with students addressing UN Sustainable Development Goals through hands-on projects. See flags file for the standing complaint about George Mason credit delivery timing, which applies to this program.",
       "category": "stem-engineering",
       "secondaryTags": [
@@ -77379,14 +77123,6 @@
           "body": "This program advertises college credit from George Mason University (as a non-degree high school guest student) as a core selling point, included in tuition. A 2-star Trustpilot review (July 2025) describes this as feeling like a \"bait and switch\": the reviewer paid roughly $5,000 expecting the credit to strengthen a college application, but the credit was not delivered in time for that purpose, and Envision reportedly redirected responsibility to George Mason University rather than the company the family contracted with. This is a single review rather than a confirmed pattern, but it concerns the exact credit-granting mechanism this program uses. Families relying on the credit for a specific application deadline should confirm the actual transcript delivery timeline directly with Envision and George Mason University before enrolling.",
           "sourceCitation": "Trustpilot review of envisionexperience.com (French-language Trustpilot page, dated July 14, 2025, rated 2 out of 5 stars, titled \"Warning: You wont get your college credit in time\")",
           "severity": "warning"
-        },
-        {
-          "id": "envision-financial-aid-generic",
-          "type": "safety",
-          "title": "Financial aid is described only generically on this page",
-          "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
-          "sourceCitation": "Program page, Tuition Resources section",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -77403,7 +77139,7 @@
       "slug": "envision-nylf-engineering-residential-university-of-michigan-2027",
       "name": "Envision (NYLF) - Engineering",
       "institution": "Envision by WorldStrides",
-      "programGroupId": "envision-nylf-engineering",
+      "programGroupId": "envision-nylf-engineering-michigan",
       "description": "8-day pre-college engineering program (NYLF series) introducing design thinking and its application across disciplines, with students addressing UN Sustainable Development Goals through hands-on projects. See flags file for the standing complaint about George Mason credit delivery timing, which applies to this program.",
       "category": "stem-engineering",
       "secondaryTags": [
@@ -77450,14 +77186,6 @@
           "body": "This program advertises college credit from George Mason University (as a non-degree high school guest student) as a core selling point, included in tuition. A 2-star Trustpilot review (July 2025) describes this as feeling like a \"bait and switch\": the reviewer paid roughly $5,000 expecting the credit to strengthen a college application, but the credit was not delivered in time for that purpose, and Envision reportedly redirected responsibility to George Mason University rather than the company the family contracted with. This is a single review rather than a confirmed pattern, but it concerns the exact credit-granting mechanism this program uses. Families relying on the credit for a specific application deadline should confirm the actual transcript delivery timeline directly with Envision and George Mason University before enrolling.",
           "sourceCitation": "Trustpilot review of envisionexperience.com (French-language Trustpilot page, dated July 14, 2025, rated 2 out of 5 stars, titled \"Warning: You wont get your college credit in time\")",
           "severity": "warning"
-        },
-        {
-          "id": "envision-financial-aid-generic",
-          "type": "safety",
-          "title": "Financial aid is described only generically on this page",
-          "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
-          "sourceCitation": "Program page, Tuition Resources section",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -77474,7 +77202,7 @@
       "slug": "envision-nylf-engineering-residential-yale-university-2027-jul-16-jul-23",
       "name": "Envision (NYLF) - Engineering",
       "institution": "Envision by WorldStrides",
-      "programGroupId": "envision-nylf-engineering",
+      "programGroupId": "envision-nylf-engineering-yale",
       "description": "8-day pre-college engineering program (NYLF series) introducing design thinking and its application across disciplines, with students addressing UN Sustainable Development Goals through hands-on projects. See flags file for the standing complaint about George Mason credit delivery timing, which applies to this program.",
       "category": "stem-engineering",
       "secondaryTags": [
@@ -77521,14 +77249,6 @@
           "body": "This program advertises college credit from George Mason University (as a non-degree high school guest student) as a core selling point, included in tuition. A 2-star Trustpilot review (July 2025) describes this as feeling like a \"bait and switch\": the reviewer paid roughly $5,000 expecting the credit to strengthen a college application, but the credit was not delivered in time for that purpose, and Envision reportedly redirected responsibility to George Mason University rather than the company the family contracted with. This is a single review rather than a confirmed pattern, but it concerns the exact credit-granting mechanism this program uses. Families relying on the credit for a specific application deadline should confirm the actual transcript delivery timeline directly with Envision and George Mason University before enrolling.",
           "sourceCitation": "Trustpilot review of envisionexperience.com (French-language Trustpilot page, dated July 14, 2025, rated 2 out of 5 stars, titled \"Warning: You wont get your college credit in time\")",
           "severity": "warning"
-        },
-        {
-          "id": "envision-financial-aid-generic",
-          "type": "safety",
-          "title": "Financial aid is described only generically on this page",
-          "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
-          "sourceCitation": "Program page, Tuition Resources section",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -77545,7 +77265,7 @@
       "slug": "envision-nylf-engineering-residential-yale-university-2027-jul-25-aug-1",
       "name": "Envision (NYLF) - Engineering",
       "institution": "Envision by WorldStrides",
-      "programGroupId": "envision-nylf-engineering",
+      "programGroupId": "envision-nylf-engineering-yale",
       "description": "8-day pre-college engineering program (NYLF series) introducing design thinking and its application across disciplines, with students addressing UN Sustainable Development Goals through hands-on projects. See flags file for the standing complaint about George Mason credit delivery timing, which applies to this program.",
       "category": "stem-engineering",
       "secondaryTags": [
@@ -77592,14 +77312,6 @@
           "body": "This program advertises college credit from George Mason University (as a non-degree high school guest student) as a core selling point, included in tuition. A 2-star Trustpilot review (July 2025) describes this as feeling like a \"bait and switch\": the reviewer paid roughly $5,000 expecting the credit to strengthen a college application, but the credit was not delivered in time for that purpose, and Envision reportedly redirected responsibility to George Mason University rather than the company the family contracted with. This is a single review rather than a confirmed pattern, but it concerns the exact credit-granting mechanism this program uses. Families relying on the credit for a specific application deadline should confirm the actual transcript delivery timeline directly with Envision and George Mason University before enrolling.",
           "sourceCitation": "Trustpilot review of envisionexperience.com (French-language Trustpilot page, dated July 14, 2025, rated 2 out of 5 stars, titled \"Warning: You wont get your college credit in time\")",
           "severity": "warning"
-        },
-        {
-          "id": "envision-financial-aid-generic",
-          "type": "safety",
-          "title": "Financial aid is described only generically on this page",
-          "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
-          "sourceCitation": "Program page, Tuition Resources section",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -77663,22 +77375,6 @@
           "body": "This program advertises college credit from George Mason University (as a non-degree high school guest student) as a core selling point, included in tuition. A 2-star Trustpilot review (July 2025) describes this as feeling like a \"bait and switch\": the reviewer paid roughly $5,000 expecting the credit to strengthen a college application, but the credit was not delivered in time for that purpose, and Envision reportedly redirected responsibility to George Mason University rather than the company the family contracted with. This is a single review rather than a confirmed pattern, but it concerns the exact credit-granting mechanism this program uses. Families relying on the credit for a specific application deadline should confirm the actual transcript delivery timeline directly with Envision and George Mason University before enrolling.",
           "sourceCitation": "Trustpilot review of envisionexperience.com (French-language Trustpilot page, dated July 14, 2025, rated 2 out of 5 stars, titled \"Warning: You wont get your college credit in time\")",
           "severity": "warning"
-        },
-        {
-          "id": "national-security-save-my-spot",
-          "type": "safety",
-          "title": "Both 2027 sessions are marked 'Save My Spot' rather than directly bookable",
-          "body": "Both listed 2027 sessions display confirmed dates and pricing but are not yet open for direct enrollment. Confirm current status directly.",
-          "sourceCitation": "Program page, Dates & Locations section",
-          "severity": "info"
-        },
-        {
-          "id": "envision-financial-aid-generic",
-          "type": "safety",
-          "title": "Financial aid is described only generically on this page",
-          "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
-          "sourceCitation": "Program page, Tuition Resources section",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -77742,22 +77438,6 @@
           "body": "This program advertises college credit from George Mason University (as a non-degree high school guest student) as a core selling point, included in tuition. A 2-star Trustpilot review (July 2025) describes this as feeling like a \"bait and switch\": the reviewer paid roughly $5,000 expecting the credit to strengthen a college application, but the credit was not delivered in time for that purpose, and Envision reportedly redirected responsibility to George Mason University rather than the company the family contracted with. This is a single review rather than a confirmed pattern, but it concerns the exact credit-granting mechanism this program uses. Families relying on the credit for a specific application deadline should confirm the actual transcript delivery timeline directly with Envision and George Mason University before enrolling.",
           "sourceCitation": "Trustpilot review of envisionexperience.com (French-language Trustpilot page, dated July 14, 2025, rated 2 out of 5 stars, titled \"Warning: You wont get your college credit in time\")",
           "severity": "warning"
-        },
-        {
-          "id": "national-security-save-my-spot",
-          "type": "safety",
-          "title": "Both 2027 sessions are marked 'Save My Spot' rather than directly bookable",
-          "body": "Both listed 2027 sessions display confirmed dates and pricing but are not yet open for direct enrollment. Confirm current status directly.",
-          "sourceCitation": "Program page, Dates & Locations section",
-          "severity": "info"
-        },
-        {
-          "id": "envision-financial-aid-generic",
-          "type": "safety",
-          "title": "Financial aid is described only generically on this page",
-          "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts, eligibility criteria, or the share of students who receive aid on this particular program. Families should request specifics directly.",
-          "sourceCitation": "Program page, Tuition Resources section",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -77880,14 +77560,6 @@
           "body": "Students perform physical exams, injections, and suturing practice on live animals (including rescued horses, donkeys, cows, goats, sheep, and chickens) under veterinary supervision. Families should discuss comfort with direct animal handling and any allergy considerations directly with the provider.",
           "sourceCitation": "Program page, Why This Program Changes Everything section",
           "severity": "info"
-        },
-        {
-          "id": "envision-financial-aid-generic-dup",
-          "type": "safety",
-          "title": "Financial aid is described only generically on this page",
-          "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
-          "sourceCitation": "Program page, Tuition Resources section",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -77948,14 +77620,6 @@
           "title": "Program involves direct hands-on work with rescued and rehabilitation horses",
           "body": "Students perform physical exams, injections, and suturing practice on live animals (including rescued horses, donkeys, cows, goats, sheep, and chickens) under veterinary supervision. Families should discuss comfort with direct animal handling and any allergy considerations directly with the provider.",
           "sourceCitation": "Program page, Why This Program Changes Everything section",
-          "severity": "info"
-        },
-        {
-          "id": "envision-financial-aid-generic-dup",
-          "type": "safety",
-          "title": "Financial aid is described only generically on this page",
-          "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
-          "sourceCitation": "Program page, Tuition Resources section",
           "severity": "info"
         }
       ],
@@ -78018,14 +77682,6 @@
           "body": "Even at the grades 6-8 level, students perform physical examinations and basic bandaging on live rescued animals under veterinary guidance. Families should confirm their student's comfort with direct animal contact.",
           "sourceCitation": "Program page, What Makes This Program Special section",
           "severity": "info"
-        },
-        {
-          "id": "envision-financial-aid-generic-dup",
-          "type": "safety",
-          "title": "Financial aid is described only generically on this page",
-          "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
-          "sourceCitation": "Program page, Tuition Resources section",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -78079,16 +77735,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.envisionexperience.com/educational-experiences/vet-academy-zoo-massachusetts",
-      "flags": [
-        {
-          "id": "envision-financial-aid-generic-dup",
-          "type": "safety",
-          "title": "Financial aid is described only generically on this page",
-          "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
-          "sourceCitation": "Program page, Tuition Resources section",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Days follow a consistent structure: morning veterinary lectures and field classes, afternoon animal-care rotations (food preparation, enclosure maintenance, animal enrichment) alternating with hands-on veterinary lab activities (suturing, bandaging, parasitology, radiograph interpretation, blood cytology), and evening social 'Team Time' activities. Students work toward a student-led 'Keeper Talk' presentation to real visitors by the end of the week. Run in partnership with Loop Abroad; veterinarians and senior staff are industry professionals (bachelor's degree or above), and support staff are often college students in veterinary school or education, many of them Loop Abroad program alumni. Envision staff cannot administer any medication, including over-the-counter medication -- students self-manage medication using a completed Medication Administration Form. Roommates are assigned by age unless a same-gender, same-session roommate request is submitted online at least 3 weeks before the session; a roommate is not guaranteed and some students may be placed in single rooms. Vegetarian meals are available everywhere; other dietary needs (vegan, kosher, halal, gluten-free, allergies) are handled as individual requests through the Office of Admissions. An onsite staff member is available 24 hours a day with a direct cell number provided to students. Students stay at Stonehill College with daily transfers to the AZA-accredited Capron Park Zoo.",
@@ -78140,16 +77787,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.envisionexperience.com/educational-experiences/vet-academy-zoo-massachusetts",
-      "flags": [
-        {
-          "id": "envision-financial-aid-generic-dup",
-          "type": "safety",
-          "title": "Financial aid is described only generically on this page",
-          "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
-          "sourceCitation": "Program page, Tuition Resources section",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Days follow a consistent structure: morning veterinary lectures and field classes, afternoon animal-care rotations (food preparation, enclosure maintenance, animal enrichment) alternating with hands-on veterinary lab activities (suturing, bandaging, parasitology, radiograph interpretation, blood cytology), and evening social 'Team Time' activities. Students work toward a student-led 'Keeper Talk' presentation to real visitors by the end of the week. Run in partnership with Loop Abroad; veterinarians and senior staff are industry professionals (bachelor's degree or above), and support staff are often college students in veterinary school or education, many of them Loop Abroad program alumni. Envision staff cannot administer any medication, including over-the-counter medication -- students self-manage medication using a completed Medication Administration Form. Roommates are assigned by age unless a same-gender, same-session roommate request is submitted online at least 3 weeks before the session; a roommate is not guaranteed and some students may be placed in single rooms. Vegetarian meals are available everywhere; other dietary needs (vegan, kosher, halal, gluten-free, allergies) are handled as individual requests through the Office of Admissions. An onsite staff member is available 24 hours a day with a direct cell number provided to students. Students stay at Stonehill College with daily transfers to the AZA-accredited Capron Park Zoo.",
@@ -78201,16 +77839,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.envisionexperience.com/educational-experiences/future-vet-massachusetts",
-      "flags": [
-        {
-          "id": "envision-financial-aid-generic-dup",
-          "type": "safety",
-          "title": "Financial aid is described only generically on this page",
-          "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
-          "sourceCitation": "Program page, Tuition Resources section",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Days follow a consistent structure: morning veterinary lectures and field classes, afternoon animal-care rotations (food preparation, enclosure maintenance, animal enrichment) alternating with hands-on veterinary lab activities (suturing, bandaging, parasitology, radiograph interpretation, blood cytology), and evening social 'Team Time' activities. Students work toward a student-led 'Keeper Talk' presentation to real visitors by the end of the week. Run in partnership with Loop Abroad; veterinarians and senior staff are industry professionals (bachelor's degree or above), and support staff are often college students in veterinary school or education, many of them Loop Abroad program alumni. Envision staff cannot administer any medication, including over-the-counter medication -- students self-manage medication using a completed Medication Administration Form. Roommates are assigned by age unless a same-gender, same-session roommate request is submitted online at least 3 weeks before the session; a roommate is not guaranteed and some students may be placed in single rooms. Vegetarian meals are available everywhere; other dietary needs (vegan, kosher, halal, gluten-free, allergies) are handled as individual requests through the Office of Admissions. An onsite staff member is available 24 hours a day with a direct cell number provided to students. Age-appropriate adjustments for grades 6-8; includes a working farm visit for large-animal exposure not present in every zoo-medicine track.",
@@ -78262,16 +77891,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.envisionexperience.com/educational-experiences/vet-academy-zoo-texas",
-      "flags": [
-        {
-          "id": "envision-financial-aid-generic-dup",
-          "type": "safety",
-          "title": "Financial aid is described only generically on this page",
-          "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
-          "sourceCitation": "Program page, Tuition Resources section",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Days follow a consistent structure: morning veterinary lectures and field classes, afternoon animal-care rotations (food preparation, enclosure maintenance, animal enrichment) alternating with hands-on veterinary lab activities (suturing, bandaging, parasitology, radiograph interpretation, blood cytology), and evening social 'Team Time' activities. Students work toward a student-led 'Keeper Talk' presentation to real visitors by the end of the week. Run in partnership with Loop Abroad; veterinarians and senior staff are industry professionals (bachelor's degree or above), and support staff are often college students in veterinary school or education, many of them Loop Abroad program alumni. Envision staff cannot administer any medication, including over-the-counter medication -- students self-manage medication using a completed Medication Administration Form. Roommates are assigned by age unless a same-gender, same-session roommate request is submitted online at least 3 weeks before the session; a roommate is not guaranteed and some students may be placed in single rooms. Vegetarian meals are available everywhere; other dietary needs (vegan, kosher, halal, gluten-free, allergies) are handled as individual requests through the Office of Admissions. An onsite staff member is available 24 hours a day with a direct cell number provided to students. Students work at the Texas Zoo in Victoria, TX, which houses many native-Texas rescue animals unable to return to the wild.",
@@ -78323,16 +77943,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.envisionexperience.com/educational-experiences/vet-academy-zoo-texas",
-      "flags": [
-        {
-          "id": "envision-financial-aid-generic-dup",
-          "type": "safety",
-          "title": "Financial aid is described only generically on this page",
-          "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
-          "sourceCitation": "Program page, Tuition Resources section",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Days follow a consistent structure: morning veterinary lectures and field classes, afternoon animal-care rotations (food preparation, enclosure maintenance, animal enrichment) alternating with hands-on veterinary lab activities (suturing, bandaging, parasitology, radiograph interpretation, blood cytology), and evening social 'Team Time' activities. Students work toward a student-led 'Keeper Talk' presentation to real visitors by the end of the week. Run in partnership with Loop Abroad; veterinarians and senior staff are industry professionals (bachelor's degree or above), and support staff are often college students in veterinary school or education, many of them Loop Abroad program alumni. Envision staff cannot administer any medication, including over-the-counter medication -- students self-manage medication using a completed Medication Administration Form. Roommates are assigned by age unless a same-gender, same-session roommate request is submitted online at least 3 weeks before the session; a roommate is not guaranteed and some students may be placed in single rooms. Vegetarian meals are available everywhere; other dietary needs (vegan, kosher, halal, gluten-free, allergies) are handled as individual requests through the Office of Admissions. An onsite staff member is available 24 hours a day with a direct cell number provided to students. Students work at the Texas Zoo in Victoria, TX, which houses many native-Texas rescue animals unable to return to the wild.",
@@ -78384,24 +77995,7 @@
       "fullyFunded": false,
       "financialAidAvailable": true,
       "websiteUrl": "https://www.envisionexperience.com/educational-experiences/future-vet-texas",
-      "flags": [
-        {
-          "id": "future-vet-tx-larger-group-cap",
-          "type": "safety",
-          "title": "This location uses a 40-student cap rather than the 30-student cap seen elsewhere",
-          "body": "While the 10:1 student-to-veterinarian ratio stays the same, the overall group size cap is higher here (40) than at other Veterinary Academy/Future Vet locations (30), meaning more total students and staff on-site at once.",
-          "sourceCitation": "Program page, Why Parents Choose This Texas Program section",
-          "severity": "info"
-        },
-        {
-          "id": "envision-financial-aid-generic-dup",
-          "type": "safety",
-          "title": "Financial aid is described only generically on this page",
-          "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
-          "sourceCitation": "Program page, Tuition Resources section",
-          "severity": "info"
-        }
-      ],
+      "flags": [],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
         "notes": "Days follow a consistent structure: morning veterinary lectures and field classes, afternoon animal-care rotations (food preparation, enclosure maintenance, animal enrichment) alternating with hands-on veterinary lab activities (suturing, bandaging, parasitology, radiograph interpretation, blood cytology), and evening social 'Team Time' activities. Students work toward a student-led 'Keeper Talk' presentation to real visitors by the end of the week. Run in partnership with Loop Abroad; veterinarians and senior staff are industry professionals (bachelor's degree or above), and support staff are often college students in veterinary school or education, many of them Loop Abroad program alumni. Envision staff cannot administer any medication, including over-the-counter medication -- students self-manage medication using a completed Medication Administration Form. Roommates are assigned by age unless a same-gender, same-session roommate request is submitted online at least 3 weeks before the session; a roommate is not guaranteed and some students may be placed in single rooms. Vegetarian meals are available everywhere; other dietary needs (vegan, kosher, halal, gluten-free, allergies) are handled as individual requests through the Office of Admissions. An onsite staff member is available 24 hours a day with a direct cell number provided to students. Age-appropriate adjustments for grades 6-8; maximum 40 students at this location, slightly larger than the 30-student cap used elsewhere.",
@@ -78458,7 +78052,7 @@
           "id": "future-vet-dc-blow-dart-activity",
           "type": "safety",
           "title": "Curriculum includes a wildlife blow-dart-making lab activity",
-          "body": "Unlike the other Veterinary Academy/Future Vet locations researched, this program's itinerary explicitly includes a lab where students create blow darts under veterinary guidance, described as being for remote animal treatment. Families should ask directly about the specific safety protocols used for this activity given the middle-school age range (grades 6-8).",
+          "body": "This program's itinerary explicitly includes a lab where students create blow darts under veterinary guidance, described as being for remote animal treatment.",
           "sourceCitation": "Program page, Sample Itinerary, Day 4",
           "severity": "warning"
         },
@@ -78469,19 +78063,11 @@
           "body": "Families should weigh this against their student's needs, especially given the grades 6-8 age range.",
           "sourceCitation": "Program page, Small Group Learning section",
           "severity": "info"
-        },
-        {
-          "id": "envision-financial-aid-generic-dup",
-          "type": "safety",
-          "title": "Financial aid is described only generically on this page",
-          "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
-          "sourceCitation": "Program page, Tuition Resources section",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Held at American University with a mix of on-site labs (suturing, dissection, microscope work, first aid) and field trips to a local zoo and a farm, plus a brief D.C. monuments bus tour. Uses a 15:1 student-to-veterinarian ratio and a 30-student cap. Includes a notable wildlife blow-dart-making lab activity as part of the curriculum. Commuter and residential students share a joint final farewell meeting. Otherwise follows the same medication self-management, roommate-assignment, and dietary-accommodation policies described for the other Veterinary Academy/Future Vet programs.",
+        "notes": "Held at American University with a mix of on-site labs (suturing, dissection, microscope work, first aid) and field trips to a local zoo and a farm, plus a brief D.C. monuments bus tour. Uses a 15:1 student-to-veterinarian ratio and a 30-student cap. Includes a notable wildlife blow-dart-making lab activity as part of the curriculum. Commuter and residential students share a joint final farewell meeting. Students must inform staff of any medication and self-manage it on program; Envision staff cannot administer any medication, including over-the-counter medication such as Tylenol. Families should send more than enough medication for the full session. Parents complete a Student Medication Administration Form on the Student Portal and submit it to staff on arrival day; refrigeration or other special requests should be communicated to Envision Admissions.",
         "sourceType": "official_policy",
         "sourceCitation": "Envision Future Vet: Zoo Medicine (Washington, D.C.) program page, Sample Itinerary and FAQ sections",
         "verifiedAt": "2026-09-17"
@@ -78535,7 +78121,7 @@
           "id": "future-vet-dc-blow-dart-activity",
           "type": "safety",
           "title": "Curriculum includes a wildlife blow-dart-making lab activity",
-          "body": "Unlike the other Veterinary Academy/Future Vet locations researched, this program's itinerary explicitly includes a lab where students create blow darts under veterinary guidance, described as being for remote animal treatment. Families should ask directly about the specific safety protocols used for this activity given the middle-school age range (grades 6-8).",
+          "body": "This program's itinerary explicitly includes a lab where students create blow darts under veterinary guidance, described as being for remote animal treatment.",
           "sourceCitation": "Program page, Sample Itinerary, Day 4",
           "severity": "warning"
         },
@@ -78546,19 +78132,11 @@
           "body": "Families should weigh this against their student's needs, especially given the grades 6-8 age range.",
           "sourceCitation": "Program page, Small Group Learning section",
           "severity": "info"
-        },
-        {
-          "id": "envision-financial-aid-generic-dup",
-          "type": "safety",
-          "title": "Financial aid is described only generically on this page",
-          "body": "The page states that scholarships, payment plans, and fundraising support are available, but does not give specific award amounts or eligibility criteria for this particular program.",
-          "sourceCitation": "Program page, Tuition Resources section",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
       "dayToDay": {
-        "notes": "Held at American University with a mix of on-site labs (suturing, dissection, microscope work, first aid) and field trips to a local zoo and a farm, plus a brief D.C. monuments bus tour. Uses a 15:1 student-to-veterinarian ratio and a 30-student cap. Includes a notable wildlife blow-dart-making lab activity as part of the curriculum. Commuter and residential students share a joint final farewell meeting. Otherwise follows the same medication self-management, roommate-assignment, and dietary-accommodation policies described for the other Veterinary Academy/Future Vet programs.",
+        "notes": "Held at American University with a mix of on-site labs (suturing, dissection, microscope work, first aid) and field trips to a local zoo and a farm, plus a brief D.C. monuments bus tour. Uses a 15:1 student-to-veterinarian ratio and a 30-student cap. Includes a notable wildlife blow-dart-making lab activity as part of the curriculum. Commuter and residential students share a joint final farewell meeting. Students must inform staff of any medication and self-manage it on program; Envision staff cannot administer any medication, including over-the-counter medication such as Tylenol. Families should send more than enough medication for the full session. Parents complete a Student Medication Administration Form on the Student Portal and submit it to staff on arrival day; refrigeration or other special requests should be communicated to Envision Admissions.",
         "sourceType": "official_policy",
         "sourceCitation": "Envision Future Vet: Zoo Medicine (Washington, D.C.) program page, Sample Itinerary and FAQ sections",
         "verifiedAt": "2026-09-17"
@@ -79145,14 +78723,6 @@
       "financialAidAvailable": true,
       "websiteUrl": "https://www.envisionexperience.com/educational-experiences/oxbridge-institute-for-advanced-studies",
       "flags": [
-        {
-          "id": "oxbridge-institute-highest-tuition",
-          "type": "safety",
-          "title": "This is the highest-tuition Envision program researched",
-          "body": "At $13,795 for 29 days, this exceeds every other Envision program researched, including the similarly-long Oxford Tradition and Cambridge Tradition 4-week sessions ($13,595).",
-          "sourceCitation": "Program page, Dates, Locations, & Tuition section",
-          "severity": "info"
-        },
         {
           "id": "oxbridge-institute-no-transferable-credit",
           "type": "safety",
@@ -80444,14 +80014,6 @@
           "body": "The page states a dedicated Security Officer is provided \"if a program is large enough\" -- this is not guaranteed for smaller enrollment groups. Families should ask directly what the minimum enrollment threshold is and what security staffing looks like if that threshold isn't met.",
           "sourceCitation": "World Class Programs Spain program page",
           "severity": "info"
-        },
-        {
-          "id": "worldclass-financial-aid-unstated-spain",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the program page",
-          "body": "No mention of scholarships or need-based aid was found.",
-          "sourceCitation": "Absence of financial aid information on the page researched",
-          "severity": "info"
         }
       ],
       "dataVerifiedAt": "2026-09-18",
@@ -80495,7 +80057,7 @@
       "datesParseQuality": "exact",
       "seasonYear": 2027,
       "reviewStatus": "verified",
-      "locationDisplay": "Greek Isles and Southern Italy (exact home base city not stated on this page)",
+      "locationDisplay": "Greek Isles and Southern Italy",
       "isInternational": true,
       "creditDisplay": "No",
       "hasCollegeCredit": false,
@@ -80508,27 +80070,11 @@
       "websiteUrl": "https://www.learnworldclass.com/programs/greece",
       "flags": [
         {
-          "id": "worldclass-greece-italy-naming-confusion",
-          "type": "safety",
-          "title": "This program's actual name and scope differ from its navigation label",
-          "body": "Listed simply as \"Greece\" in the site's navigation and URL (/programs/greece), but the program is actually titled \"Greece & Italy: Western Civilization\" and spans both countries. It is entirely separate from the standalone \"Italy\" program (Florence-based, /programs/italy). Families comparing Italy-related options should be careful not to conflate the two.",
-          "sourceCitation": "Comparison between the site navigation/URL and the program's own on-page title",
-          "severity": "warning"
-        },
-        {
-          "id": "worldclass-security-officer-conditional-greece",
+          "id": "worldclass-security-officer-conditional",
           "type": "safety",
           "title": "The 24/7 on-site Security Officer is conditional on program size",
-          "body": "Same conditional staffing language as the other World Class programs: a Security Officer is provided \"if a program is large enough.\"",
+          "body": "The page states a dedicated Security Officer is provided \"if a program is large enough\" -- this is not guaranteed for smaller enrollment groups. Families should ask directly what the minimum enrollment threshold is and what security staffing looks like if that threshold isn't met.",
           "sourceCitation": "World Class Programs Greece program page",
-          "severity": "info"
-        },
-        {
-          "id": "worldclass-financial-aid-unstated-greece",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the program page",
-          "body": "No mention of scholarships or need-based aid was found.",
-          "sourceCitation": "Absence of financial aid information on the page researched",
           "severity": "info"
         }
       ],
@@ -80586,19 +80132,11 @@
       "websiteUrl": "https://www.learnworldclass.com/programs/japan",
       "flags": [
         {
-          "id": "worldclass-security-officer-conditional-japan",
+          "id": "worldclass-security-officer-conditional",
           "type": "safety",
           "title": "The 24/7 on-site Security Officer is conditional on program size",
-          "body": "Same conditional staffing language as the other World Class programs.",
+          "body": "The page states a dedicated Security Officer is provided \"if a program is large enough\" -- this is not guaranteed for smaller enrollment groups. Families should ask directly what the minimum enrollment threshold is and what security staffing looks like if that threshold isn't met.",
           "sourceCitation": "World Class Programs Japan program page",
-          "severity": "info"
-        },
-        {
-          "id": "worldclass-financial-aid-unstated-japan",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the program page",
-          "body": "No mention of scholarships or need-based aid was found.",
-          "sourceCitation": "Absence of financial aid information on the page researched",
           "severity": "info"
         }
       ],
@@ -80656,19 +80194,11 @@
       "websiteUrl": "https://www.learnworldclass.com/programs/japan",
       "flags": [
         {
-          "id": "worldclass-security-officer-conditional-japan",
+          "id": "worldclass-security-officer-conditional",
           "type": "safety",
           "title": "The 24/7 on-site Security Officer is conditional on program size",
-          "body": "Same conditional staffing language as the other World Class programs.",
+          "body": "The page states a dedicated Security Officer is provided \"if a program is large enough\" -- this is not guaranteed for smaller enrollment groups. Families should ask directly what the minimum enrollment threshold is and what security staffing looks like if that threshold isn't met.",
           "sourceCitation": "World Class Programs Japan program page",
-          "severity": "info"
-        },
-        {
-          "id": "worldclass-financial-aid-unstated-japan",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the program page",
-          "body": "No mention of scholarships or need-based aid was found.",
-          "sourceCitation": "Absence of financial aid information on the page researched",
           "severity": "info"
         }
       ],
@@ -80726,19 +80256,11 @@
       "websiteUrl": "https://www.learnworldclass.com/programs/italy",
       "flags": [
         {
-          "id": "worldclass-security-officer-conditional-italy",
+          "id": "worldclass-security-officer-conditional",
           "type": "safety",
           "title": "The 24/7 on-site Security Officer is conditional on program size",
-          "body": "Same conditional staffing language as the other World Class programs.",
+          "body": "The page states a dedicated Security Officer is provided \"if a program is large enough\" -- this is not guaranteed for smaller enrollment groups. Families should ask directly what the minimum enrollment threshold is and what security staffing looks like if that threshold isn't met.",
           "sourceCitation": "World Class Programs Italy program page",
-          "severity": "info"
-        },
-        {
-          "id": "worldclass-financial-aid-unstated-italy",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the program page",
-          "body": "No mention of scholarships or need-based aid was found.",
-          "sourceCitation": "Absence of financial aid information on the page researched",
           "severity": "info"
         }
       ],
@@ -80796,19 +80318,11 @@
       "websiteUrl": "https://www.learnworldclass.com/programs/italy",
       "flags": [
         {
-          "id": "worldclass-security-officer-conditional-italy",
+          "id": "worldclass-security-officer-conditional",
           "type": "safety",
           "title": "The 24/7 on-site Security Officer is conditional on program size",
-          "body": "Same conditional staffing language as the other World Class programs.",
+          "body": "The page states a dedicated Security Officer is provided \"if a program is large enough\" -- this is not guaranteed for smaller enrollment groups. Families should ask directly what the minimum enrollment threshold is and what security staffing looks like if that threshold isn't met.",
           "sourceCitation": "World Class Programs Italy program page",
-          "severity": "info"
-        },
-        {
-          "id": "worldclass-financial-aid-unstated-italy",
-          "type": "safety",
-          "title": "Financial aid availability is not stated on the program page",
-          "body": "No mention of scholarships or need-based aid was found.",
-          "sourceCitation": "Absence of financial aid information on the page researched",
           "severity": "info"
         }
       ],
